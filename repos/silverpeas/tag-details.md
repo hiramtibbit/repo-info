@@ -8,7 +8,7 @@
 ## `silverpeas:6.0.1`
 
 ```console
-$ docker pull silverpeas@sha256:644d9ef3f8df0ec7da4d352a21211258db948af551c16cbfe0adef90656eeb17
+$ docker pull silverpeas@sha256:c6839549b584664c0d7a2284279144d4acec9c973b4d94445b991e86716b1b55
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -166,148 +166,148 @@ CMD ["/opt/run.sh"]
 ### `silverpeas:6.0.1` - linux; arm64 variant v8
 
 ```console
-$ docker pull silverpeas@sha256:eb862e21f2cc559de5af7a4c15ce9d56d3e23758dd895a2d53ace7b900adab3a
+$ docker pull silverpeas@sha256:c49050106451c8c2eee50a06273f621378f4728e22cfb3ad364b181658e175be
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **985.7 MB (985702024 bytes)**  
+-	Total Size: **985.7 MB (985734200 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34d8a0e819360296a325f1e4e86cb7225af34378abac279717cf2cc294b09413`
+-	Image ID: `sha256:da8eb4c6abac91b27cdf56b893e33c7ef4e9e90f2efde82b74110750c9cb79cb`
 -	Default Command: `["\/opt\/run.sh"]`
 
 ```dockerfile
-# Wed, 23 Jan 2019 10:08:56 GMT
-ADD file:2748dad7410d2963c4d07521fe9d96832220c1c82b50dc0558489fe47af8528c in / 
-# Wed, 23 Jan 2019 10:09:00 GMT
+# Thu, 14 Mar 2019 09:37:10 GMT
+ADD file:fb512c07289f9bff179e81ccc3c7db7cfa5cbe0e28c60dcf2582fdb621ef4873 in / 
+# Thu, 14 Mar 2019 09:37:13 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 23 Jan 2019 10:09:02 GMT
+# Thu, 14 Mar 2019 09:37:16 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 23 Jan 2019 10:09:04 GMT
+# Thu, 14 Mar 2019 09:37:19 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 23 Jan 2019 10:09:05 GMT
+# Thu, 14 Mar 2019 09:37:20 GMT
 CMD ["/bin/bash"]
-# Wed, 23 Jan 2019 10:33:59 GMT
+# Thu, 14 Mar 2019 11:02:28 GMT
 MAINTAINER Miguel Moquillon "miguel.moquillon@silverpeas.org"
-# Wed, 23 Jan 2019 10:33:59 GMT
+# Thu, 14 Mar 2019 11:02:29 GMT
 ENV TERM=xterm
-# Wed, 23 Jan 2019 10:44:10 GMT
+# Thu, 14 Mar 2019 11:11:10 GMT
 RUN apt-get update && apt-get install -y     wget     locales     procps     net-tools     zip     unzip     openjdk-8-jdk     ffmpeg     imagemagick     ghostscript     ure     gpgv   && rm -rf /var/lib/apt/lists/*   && update-ca-certificates -f
-# Wed, 23 Jan 2019 10:44:18 GMT
+# Thu, 14 Mar 2019 11:11:20 GMT
 RUN wget -nc https://www.silverpeas.org/files/swftools-bin-0.9.2.zip   && echo 'd40bd091c84bde2872f2733a3c767b3a686c8e8477a3af3a96ef347cf05c5e43 *swftools-bin-0.9.2.zip' | sha256sum -   && unzip swftools-bin-0.9.2.zip -d /   && rm swftools-bin-0.9.2.zip
-# Wed, 23 Jan 2019 10:44:24 GMT
+# Thu, 14 Mar 2019 11:11:31 GMT
 RUN wget -nc https://www.silverpeas.org/files/pdf2json-bin-0.68.zip   && echo 'eec849cdd75224f9d44c0999ed1fbe8764a773d8ab0cf7fff4bf922ab81c9f84 *pdf2json-bin-0.68.zip' | sha256sum -   && unzip pdf2json-bin-0.68.zip -d /   && rm pdf2json-bin-0.68.zip
-# Wed, 23 Jan 2019 10:44:25 GMT
+# Thu, 14 Mar 2019 11:11:42 GMT
 ARG DEFAULT_LOCALE=en_US.UTF-8
-# Wed, 23 Jan 2019 10:44:44 GMT
+# Thu, 14 Mar 2019 11:11:52 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen   && echo "fr_FR.UTF-8 UTF-8" >> /etc/locale.gen   && echo "de_DE.UTF-8 UTF-8" >> /etc/locale.gen   && locale-gen   && update-locale LANG=${DEFAULT_LOCALE} LANGUAGE=${DEFAULT_LOCALE} LC_ALL=${DEFAULT_LOCALE}
-# Wed, 23 Jan 2019 10:44:45 GMT
+# Thu, 14 Mar 2019 11:11:53 GMT
 ENV LANG=en_US.UTF-8
-# Wed, 23 Jan 2019 10:44:46 GMT
+# Thu, 14 Mar 2019 11:11:54 GMT
 ENV LANGUAGE=en_US.UTF-8
-# Wed, 23 Jan 2019 10:44:48 GMT
+# Thu, 14 Mar 2019 11:11:55 GMT
 ENV LC_ALL=en_US.UTF-8
-# Wed, 23 Jan 2019 10:44:52 GMT
+# Thu, 14 Mar 2019 11:12:00 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Wed, 23 Jan 2019 10:44:56 GMT
+# Thu, 14 Mar 2019 11:12:04 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Wed, 23 Jan 2019 10:44:57 GMT
+# Thu, 14 Mar 2019 11:12:05 GMT
 ENV JAVA_HOME=/docker-java-home
-# Wed, 23 Jan 2019 10:44:58 GMT
+# Thu, 14 Mar 2019 11:12:06 GMT
 ENV SILVERPEAS_HOME=/opt/silverpeas
-# Wed, 23 Jan 2019 10:44:59 GMT
+# Thu, 14 Mar 2019 11:12:07 GMT
 ENV JBOSS_HOME=/opt/wildfly
-# Wed, 23 Jan 2019 10:45:00 GMT
+# Thu, 14 Mar 2019 11:12:08 GMT
 ENV SILVERPEAS_VERSION=6.0.1
-# Wed, 23 Jan 2019 10:45:02 GMT
+# Thu, 14 Mar 2019 11:12:09 GMT
 ENV WILDFLY_VERSION=10.1.0
-# Wed, 23 Jan 2019 10:45:03 GMT
+# Thu, 14 Mar 2019 11:12:11 GMT
 LABEL name=Silverpeas 6 description=Image to install and to run Silverpeas 6 vendor=Silverpeas version=6.0.1 build=1
-# Wed, 23 Jan 2019 10:46:45 GMT
+# Thu, 14 Mar 2019 11:13:09 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN wget -nc https://www.silverpeas.org/files/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip   && wget -nc https://www.silverpeas.org/files/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip.asc   && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 3F4657EF9C591F2FEA458FEBC19391EB3DF442B6   && gpg --batch --verify silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip.asc silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip   && wget -nc http://download.jboss.org/wildfly/${WILDFLY_VERSION}.Final/wildfly-${WILDFLY_VERSION}.Final.zip   && unzip silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip -d /opt   && unzip wildfly-${WILDFLY_VERSION}.Final.zip -d /opt   && mv /opt/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?} /opt/silverpeas   && mv /opt/wildfly-${WILDFLY_VERSION}.Final /opt/wildfly   && rm *.zip   && mkdir -p /root/.m2
-# Wed, 23 Jan 2019 10:46:46 GMT
+# Thu, 14 Mar 2019 11:13:10 GMT
 COPY file:d12fb4c8fc28235c5621533a9ae0d98ba26e3adf1ffc690da4a6118aa71d8190 in /root/.m2/ 
-# Wed, 23 Jan 2019 10:46:47 GMT
+# Thu, 14 Mar 2019 11:13:11 GMT
 WORKDIR /opt/silverpeas/bin
-# Wed, 23 Jan 2019 10:46:48 GMT
+# Thu, 14 Mar 2019 11:13:12 GMT
 COPY file:31e3db287bacfa9fb086f2ae49169410b9f0fdf4178bf47d0ebe93621aa996e4 in /opt/ 
-# Wed, 23 Jan 2019 10:46:49 GMT
+# Thu, 14 Mar 2019 11:13:13 GMT
 COPY file:5d883339e9add47c37406a038c7747cafede9f81436843206bab5bde7da6e2f6 in /opt/silverpeas/configuration/silverpeas/ 
-# Wed, 23 Jan 2019 10:52:46 GMT
+# Thu, 14 Mar 2019 11:17:43 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN ./silverpeas assemble   && rm ../log/build-*   && touch .install
-# Wed, 23 Jan 2019 10:52:54 GMT
+# Thu, 14 Mar 2019 11:17:46 GMT
 EXPOSE 8000 9990
-# Wed, 23 Jan 2019 10:52:55 GMT
+# Thu, 14 Mar 2019 11:17:47 GMT
 VOLUME [/opt/silverpeas/log /opt/silverpeas/data /opt/silverpeas/xmlcomponents/workflows]
-# Wed, 23 Jan 2019 10:52:58 GMT
+# Thu, 14 Mar 2019 11:17:48 GMT
 CMD ["/opt/run.sh"]
 ```
 
 -	Layers:
-	-	`sha256:3589363d0c5c7e357442b19cf74bcf437c4be71aa09601715b36178d5cee4062`  
-		Last Modified: Wed, 23 Jan 2019 10:11:35 GMT  
-		Size: 39.6 MB (39558203 bytes)  
+	-	`sha256:42a68504e090bdbf515c814e7ef1eec51c4e5e86f869c3196416372743583213`  
+		Last Modified: Fri, 22 Feb 2019 23:17:09 GMT  
+		Size: 39.6 MB (39582965 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5cc63d25106ea8d2808ce328a6c43870e467250ecb93fc5d2d7bb0303035ed20`  
-		Last Modified: Wed, 23 Jan 2019 10:11:21 GMT  
-		Size: 851.0 B  
+	-	`sha256:aca2bac1d329215e2f3bc584352d5eb878cc611f42990f3c8b2a4f86caef05cf`  
+		Last Modified: Thu, 14 Mar 2019 09:39:37 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:647f3c718ef03d58fea6fa02938ab84f8d90c261e75e2709623d4e9c41b8653c`  
-		Last Modified: Wed, 23 Jan 2019 10:11:21 GMT  
-		Size: 468.0 B  
+	-	`sha256:d9450bbb566ac27c4e32a7c6a5fc0ad9c4eb7eba18a33c7abc2aabf470369ff6`  
+		Last Modified: Thu, 14 Mar 2019 09:39:37 GMT  
+		Size: 469.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c230e6415b4d91f83140d441d457b9917fc16d17f535ac57870584ecb0fb21a3`  
-		Last Modified: Wed, 23 Jan 2019 10:11:21 GMT  
+	-	`sha256:909659e6e151b05fe5662d99effc50f4e0e47c27763091c952c98d731bb399a8`  
+		Last Modified: Thu, 14 Mar 2019 09:39:37 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:987250cbe767f91255af62998373f48b4d97377bcd7fa298825bcaeb184776ca`  
-		Last Modified: Wed, 23 Jan 2019 10:56:05 GMT  
-		Size: 185.4 MB (185373527 bytes)  
+	-	`sha256:cfd1544ac1fb9266402129ec7f7dbedda8984f1919377338d9570c3a9abe5b1e`  
+		Last Modified: Thu, 14 Mar 2019 11:19:29 GMT  
+		Size: 185.4 MB (185381028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8acbfafa01df2d36d537ea57e37af88d57b46259f9d77cc6121b58a16cb3cd94`  
-		Last Modified: Wed, 23 Jan 2019 10:53:21 GMT  
-		Size: 4.0 MB (3994031 bytes)  
+	-	`sha256:8bef980cd7fd194d3cdbc0de451aab37d1f7f733f3decd363a9d0fede5166589`  
+		Last Modified: Thu, 14 Mar 2019 11:18:29 GMT  
+		Size: 4.0 MB (3994027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:882932515498c0a2bbe3e693cd230a41a9bd91212682bece2dfe578ab783f993`  
-		Last Modified: Wed, 23 Jan 2019 10:53:23 GMT  
-		Size: 7.1 MB (7146624 bytes)  
+	-	`sha256:9a1e5dd1446f65e6b5aee92fd9736d54ea2b4ea0a00e758228ce87e67527d3b8`  
+		Last Modified: Thu, 14 Mar 2019 11:18:30 GMT  
+		Size: 7.1 MB (7146617 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fcee00f3447b371236008ad7a0896da3689963fde4ce98483725284f2e1db8e3`  
-		Last Modified: Wed, 23 Jan 2019 10:53:18 GMT  
-		Size: 845.4 KB (845415 bytes)  
+	-	`sha256:e7014634f1f796689624ed7050388d42e656e8b0d862ec2787c20994882a6cf1`  
+		Last Modified: Thu, 14 Mar 2019 11:18:25 GMT  
+		Size: 845.4 KB (845434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b0f49c6f596053a1406a33f7258557ede8df1482b7010dcc9f351332e596e92`  
-		Last Modified: Wed, 23 Jan 2019 10:53:17 GMT  
-		Size: 238.0 B  
+	-	`sha256:9aed75e52da19cf085bbe9fbc59761979606acd39a3a91de7cef3daf181818be`  
+		Last Modified: Thu, 14 Mar 2019 11:18:24 GMT  
+		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b8890ba4bdc5c2610f03ea6a9989aea3207b9ee5c8801d5be93160a49fbbdb3`  
-		Last Modified: Wed, 23 Jan 2019 10:53:17 GMT  
+	-	`sha256:3f226c6d5238e044b8c8847cbf5da2b73c73b8ac7ea5c231259cf1ce6027d8cc`  
+		Last Modified: Thu, 14 Mar 2019 11:18:25 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f8fec609344340d17e13b570b4263964734b8a2fdb7ab2f87cdfb2fc21cdbc5`  
-		Last Modified: Wed, 23 Jan 2019 10:53:38 GMT  
-		Size: 144.3 MB (144284305 bytes)  
+	-	`sha256:5db92a27c5ab1c6f20f3a673f38a71a76b117eb4159420e584dba0c084502eaa`  
+		Last Modified: Thu, 14 Mar 2019 11:18:47 GMT  
+		Size: 144.3 MB (144284242 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:432889c9c9800d37fbf9b4200039b9fa5d4ab81be604746efe5ecec0bcf8e347`  
-		Last Modified: Wed, 23 Jan 2019 10:53:16 GMT  
-		Size: 403.0 B  
+	-	`sha256:34ba47549040d21a2918c6ad43e081b638a706f140fd369afc49e03fc5a1ade8`  
+		Last Modified: Thu, 14 Mar 2019 11:18:22 GMT  
+		Size: 404.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28b0d935074b96ad48de90620106dc60d16e374011575fc5bff5cde2ceb790b3`  
-		Last Modified: Wed, 23 Jan 2019 10:53:15 GMT  
+	-	`sha256:3fa113ba741b608d840e0ea2dd9056534ad58c9b4bfec568a731032da007187e`  
+		Last Modified: Thu, 14 Mar 2019 11:18:22 GMT  
 		Size: 809.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:972c91429d892090e51e170b07277aa39b7fece1520ec911d14ff9ecf30f8862`  
-		Last Modified: Wed, 23 Jan 2019 10:53:16 GMT  
-		Size: 388.0 B  
+	-	`sha256:ef4425f55aa006b4a5470531f72c8b9d2f144af209cf35c24bfd9ab77a71b97d`  
+		Last Modified: Thu, 14 Mar 2019 11:18:22 GMT  
+		Size: 386.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8bf3ac8f94009148cdf6965fe164cdac68923c9a40e21a156508de1c669c4bc0`  
-		Last Modified: Wed, 23 Jan 2019 10:54:39 GMT  
-		Size: 604.5 MB (604496462 bytes)  
+	-	`sha256:40351f54ebfe82edbb8623ffa0548593ee8c5ae637fd3554192f3dd90f16a5eb`  
+		Last Modified: Thu, 14 Mar 2019 11:19:50 GMT  
+		Size: 604.5 MB (604496425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `silverpeas:latest`
