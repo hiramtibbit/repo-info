@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d7372e6c93c6c7b925600981b655c94829515a37cf876ff9e6d0287ff2b739d9`
-- Created: `2019-02-19T22:22:01.743148613Z`
-- Virtual Size: ~ 274.66 Mb  
+- Image ID: `sha256:d09302f77cfcc3e867829d80ff47f9e7738ffef69730d54ec44341a9fb1d359b`
+- Created: `2019-03-12T00:20:38.300667849Z`
+- Virtual Size: ~ 275.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DISTTAG=f29container`
-  - `FGC=f29`
-  - `FBR=f29`
+  - `DISTTAG=fcontainer`
+  - `FGC=f`
+  - `FBR=f`
 - Labels:
   - `maintainer=Clement Verna <cverna@fedoraproject.org>`
