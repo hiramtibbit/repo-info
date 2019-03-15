@@ -308,14 +308,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.32-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.32-4ubuntu1.dsc' binutils_2.32-4ubuntu1.dsc 11025 SHA256:c0a08986b4d1e8fed9b000b11ee7287882dedecd48b23fa03856f93f1f098ce9
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.32.orig.tar.xz' binutils_2.32.orig.tar.xz 20774880 SHA256:0ab6c55dd86a92ed561972ba15b9b70a8b9f75557f896446c82e8b36e473ee04
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.32-4ubuntu1.debian.tar.xz' binutils_2.32-4ubuntu1.debian.tar.xz 170628 SHA256:d5ca5a1b057c7330fa45c0ec9a64a83349277f686b822d6eedcd30b4f870cc21
-```
 
 ### `dpkg` source package: `bzip2=1.0.6-9`
 
@@ -476,14 +471,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.63.0-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.63.0-1ubuntu1.dsc' curl_7.63.0-1ubuntu1.dsc 2112 SHA256:8af06dab2c6a90be25495674ad7d74006ad8357f5cc2521fe98587d8a297734f
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.63.0.orig.tar.gz' curl_7.63.0.orig.tar.gz 4024015 SHA256:d483b89062832e211c887d7cf1b65c902d591b48c11fe7d174af781681580b41
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.63.0-1ubuntu1.debian.tar.xz' curl_7.63.0-1ubuntu1.debian.tar.xz 28808 SHA256:21b8a9400ee3c6b20f08c8878102178d04fbd9ac69d2de1afb98150705f617de
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-1`
 
@@ -953,14 +943,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-9-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-9=9-20190227-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-9/gcc-9_9-20190227-0ubuntu1.dsc' gcc-9_9-20190227-0ubuntu1.dsc 35868 SHA256:67b35c39d045f79952d6ee23759d240c1da31b4ac522a1271d18ca32d04f3785
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-9/gcc-9_9-20190227.orig.tar.gz' gcc-9_9-20190227.orig.tar.gz 84196717 SHA256:a8b017097aa236ec96b33abc776568091a52a4ff058d72fd6380f4dc0141610b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-9/gcc-9_9-20190227-0ubuntu1.diff.gz' gcc-9_9-20190227-0ubuntu1.diff.gz 546482 SHA256:187e58010d41b9839ea6149cdf5b5e5dbb58cb0fe463474f2402754f958c7552
-```
 
 ### `dpkg` source package: `gcc-defaults=1.181ubuntu2`
 
@@ -3508,13 +3493,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-defaults=2.7.15-4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-defaults/python-defaults_2.7.15-4.dsc' python-defaults_2.7.15-4.dsc 2917 SHA256:928c686da2a4d10382349c56711ca2fa0ec8fa458a7c09b0219eedc7107ab39f
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-defaults/python-defaults_2.7.15-4.tar.gz' python-defaults_2.7.15-4.tar.gz 82780 SHA256:70d29d2feee94aaf02f6ca3149e31473f14e5451649f8dcfb554184f6f26c9c1
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python-defaults/2.7.15-4/
+
 
 ### `dpkg` source package: `python2.7=2.7.16-1`
 
@@ -4094,13 +4079,9 @@ Licenses: (parsed from: `/usr/share/doc/x11-common/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xorg=1:7.7+19ubuntu9
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xorg/xorg_7.7+19ubuntu9.dsc' xorg_7.7+19ubuntu9.dsc 2078 SHA256:1288c2e59f6f9760ea50ad2444396a4a177dcdd7cd50558f162723c7d21abee2
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xorg/xorg_7.7+19ubuntu9.tar.gz' xorg_7.7+19ubuntu9.tar.gz 298755 SHA256:a71950c2f5c8a02d21fda3a0f2598d9e80f9c590c19e1317f93dcf38622cd97b
-```
 
 ### `dpkg` source package: `xorgproto=2018.4-4`
 

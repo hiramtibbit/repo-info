@@ -3970,20 +3970,13 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc
 - `ZLIB`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjpeg2=2.3.0-1.1
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.3.0-1.1.dsc' openjpeg2_2.3.0-1.1.dsc 2838 SHA256:582ce0d096198bdef121709303f47b4926fdee255ea34913866c79bf014568ee
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.3.0.orig.tar.gz' openjpeg2_2.3.0.orig.tar.gz 2074456 SHA256:fd5ca8cf3f195b0a54c56193c5897bb423c00db577afda4033318006769a5833
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.3.0-1.1.debian.tar.xz' openjpeg2_2.3.0-1.1.debian.tar.xz 18168 SHA256:a849e71b1c1947eb2309fd1726d21d34f7da5af5913e82c2d9ca84df6d9c13ef
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openjpeg2/2.3.0-1.1/
 
-- https://sources.debian.net/src/openjpeg2/2.3.0-1.1/ (for browsing the source)
-- https://sources.debian.net/src/openjpeg2/2.3.0-1.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjpeg2/2.3.0-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.47+dfsg-3`
 
@@ -4589,6 +4582,10 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.7-minimal/copyright`, `/usr/s
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3.7/3.7.2-2/
 
 
 ### `dpkg` source package: `readline=7.0-5`

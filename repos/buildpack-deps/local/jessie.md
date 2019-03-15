@@ -4736,20 +4736,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=215-17+deb8u10
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215-17+deb8u10.dsc' systemd_215-17+deb8u10.dsc 4153 SHA256:40eb1f418eb1e1c450b83b5edbf39ae8d66e66433925551926e16f993176f850
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215.orig.tar.xz' systemd_215.orig.tar.xz 2888652 SHA256:ce76a3c05e7d4adc806a3446a5510c0c9b76a33f19adc32754b69a0945124505
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215-17+deb8u10.debian.tar.xz' systemd_215-17+deb8u10.debian.tar.xz 246152 SHA256:dca47aceee1f94cfad27f54efe2edcb07abdf6156da3d494f410cb3665da8738
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/215-17+deb8u10/
 
-- https://sources.debian.net/src/systemd/215-17+deb8u10/ (for browsing the source)
-- https://sources.debian.net/src/systemd/215-17+deb8u10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/215-17+deb8u10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59`
 
