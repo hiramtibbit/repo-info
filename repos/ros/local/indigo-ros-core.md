@@ -3198,14 +3198,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=3.13.0-165.215
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-165.215.dsc' linux_3.13.0-165.215.dsc 7836 SHA256:2a121e0c0a91338cf29de7cbf78bd2ecc43e8c953f91d7b1f306b6e8dd9c5bf6
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-165.215.diff.gz' linux_3.13.0-165.215.diff.gz 10101126 SHA256:adf940d62a7d717c9277495832d4f920aa0668e0b7a049c898138f871104ddc3
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.15+dfsg-1`
 
@@ -5959,14 +5954,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.3-7ubuntu0.10
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.3-7ubuntu0.10.dsc' tiff_4.0.3-7ubuntu0.10.dsc 2314 SHA256:753c966ba7b6141ce6ef4e52b2f3bb1b94ec5212cfd37fe85a05e331ab4971f0
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.3-7ubuntu0.10.debian.tar.gz' tiff_4.0.3-7ubuntu0.10.debian.tar.gz 94024 SHA256:8d2cd6e7c4234342b59d2cad583d023e3b5e0a35a865ce57cc14461c7f713628
-```
 
 ### `dpkg` source package: `tinyxml=2.6.2-2`
 
