@@ -1,19 +1,18 @@
-# `ruby:2.6.1-slim-stretch`
+# `ruby:2.6.2-slim-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:26682ea22183aee02461e808b6a80f4037196f3a9112924a1d1c8b5e73abb692`
-- Created: `2019-03-09T00:31:52.481742896Z`
-- Virtual Size: ~ 132.77 Mb  
+- Image ID: `sha256:eb1b2100f0a89aa441405bcee7bba17bb2f92d80ff5420b19fbd387abba5e5f9`
+- Created: `2019-03-14T17:25:27.358860468Z`
+- Virtual Size: ~ 126.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUBY_MAJOR=2.6`
-  - `RUBY_VERSION=2.6.1`
-  - `RUBY_DOWNLOAD_SHA256=47b629808e9fd44ce1f760cdf3ed14875fc9b19d4f334e82e2cf25cb2898f2f2`
-  - `RUBYGEMS_VERSION=3.0.3`
+  - `RUBY_VERSION=2.6.2`
+  - `RUBY_DOWNLOAD_SHA256=91fcde77eea8e6206d775a48ac58450afe4883af1a42e5b358320beb33a445fa`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_PATH=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
