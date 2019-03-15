@@ -434,14 +434,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-9-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-9=9-20190227-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-9/gcc-9_9-20190227-0ubuntu1.dsc' gcc-9_9-20190227-0ubuntu1.dsc 35868 SHA256:67b35c39d045f79952d6ee23759d240c1da31b4ac522a1271d18ca32d04f3785
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-9/gcc-9_9-20190227.orig.tar.gz' gcc-9_9-20190227.orig.tar.gz 84196717 SHA256:a8b017097aa236ec96b33abc776568091a52a4ff058d72fd6380f4dc0141610b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-9/gcc-9_9-20190227-0ubuntu1.diff.gz' gcc-9_9-20190227-0ubuntu1.diff.gz 546482 SHA256:187e58010d41b9839ea6149cdf5b5e5dbb58cb0fe463474f2402754f958c7552
-```
 
 ### `dpkg` source package: `glibc=2.29-0ubuntu1`
 
