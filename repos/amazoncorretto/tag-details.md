@@ -2,10 +2,25 @@
 
 # Tags of `amazoncorretto`
 
+-	[`amazoncorretto:11`](#amazoncorretto11)
+-	[`amazoncorretto:11.0.2`](#amazoncorretto1102)
+-	[`amazoncorretto:11-al2-full`](#amazoncorretto11-al2-full)
 -	[`amazoncorretto:8`](#amazoncorretto8)
 -	[`amazoncorretto:8-al2-full`](#amazoncorretto8-al2-full)
 -	[`amazoncorretto:8u202`](#amazoncorretto8u202)
 -	[`amazoncorretto:latest`](#amazoncorrettolatest)
+
+## `amazoncorretto:11`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:11.0.2`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:11-al2-full`
+
+**does not exist** (yet?)
 
 ## `amazoncorretto:8`
 
