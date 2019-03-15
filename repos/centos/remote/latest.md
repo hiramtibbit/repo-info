@@ -1,7 +1,7 @@
 ## `centos:latest`
 
 ```console
-$ docker pull centos@sha256:000116382ac1576c46ba6b9f702784db531c56e06032af2109ea82be4acc3441
+$ docker pull centos@sha256:d10bd36382a36a9aca791aa4bc2815386738c2a4b7e1c4b463297965d940fb3f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -99,31 +99,31 @@ CMD ["/bin/bash"]
 ### `centos:latest` - linux; 386
 
 ```console
-$ docker pull centos@sha256:d070fe76cc044d7cda5e5f9623cfa875ec53ddc268c3e7799c6a00b05bab3ca9
+$ docker pull centos@sha256:1f832b4e3b9ddf67fd77831cdfb591ce5e968548a01581672e5f6b32ce1212fe
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **75.7 MB (75660126 bytes)**  
+-	Total Size: **75.7 MB (75654099 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4ce86589d900145c56f035468675c26a71a5344b454c700e70262173ed462ec9`
+-	Image ID: `sha256:fe70670fcbec5e3b3081c6800cb531002474c36563689b450d678a34a89b62c3`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Wed, 10 Oct 2018 10:38:55 GMT
 MAINTAINER https://github.com/CentOS/sig-cloud-instance-images
-# Wed, 10 Oct 2018 10:39:06 GMT
-ADD file:c574252496a0d85d62f89d7447f35f09436fb9a3d80b9ccc5f4c395df2f42a7d in / 
-# Wed, 10 Oct 2018 10:39:06 GMT
+# Fri, 15 Mar 2019 10:38:43 GMT
+ADD file:1bff68db945cc0f9c1fc4a69400bfad48924c746dd3c9261dd39989dd52cb830 in / 
+# Fri, 15 Mar 2019 10:38:43 GMT
 LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20181006
-# Wed, 10 Oct 2018 10:39:07 GMT
+# Fri, 15 Mar 2019 10:38:43 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:772072aaf465d4f46edfd6bd1b1888874b15d5947b282970848b9967d5817d04`  
-		Last Modified: Wed, 10 Oct 2018 10:40:02 GMT  
-		Size: 75.7 MB (75660126 bytes)  
+	-	`sha256:39016a8400a36ce04799adba71f8678ae257d9d8dba638d81b8c5755f01fe213`  
+		Last Modified: Fri, 15 Mar 2019 10:39:26 GMT  
+		Size: 75.7 MB (75654099 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `centos:latest` - linux; ppc64le

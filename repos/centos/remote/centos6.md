@@ -1,7 +1,7 @@
 ## `centos:centos6`
 
 ```console
-$ docker pull centos@sha256:1f8ae2858bffb51b26d1dde45e8e68c5126f475dc377d7f2d07b46e18f2a23ff
+$ docker pull centos@sha256:948da2484b40977893b59896df7dbfba8c936f28db40e55678a4c96f455dee03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -42,29 +42,29 @@ CMD ["/bin/bash"]
 ### `centos:centos6` - linux; 386
 
 ```console
-$ docker pull centos@sha256:4e6900684d778d2916056abd00e68df9395107cc441b4413ab30006c43b0fab6
+$ docker pull centos@sha256:7a92c5cdc090fa6917908e9dbfc080d94d2b91f86e68ac429ef6150848383a82
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.1 MB (70076863 bytes)**  
+-	Total Size: **70.1 MB (70074539 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63a38887c5d07f13c1531d35e91aeb027477fbdb57555f8cdca28cbcd06a9bb3`
+-	Image ID: `sha256:2fecca805e3d3918c7d296b0dcd269083169a77baea63ec1581a1b16881a0011`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Wed, 10 Oct 2018 10:38:55 GMT
 MAINTAINER https://github.com/CentOS/sig-cloud-instance-images
-# Wed, 10 Oct 2018 10:39:32 GMT
-ADD file:adec7afc1875d38a1dc58c3a805cbe109d96c1607a9faeee82e348bc4f762c1d in / 
-# Wed, 10 Oct 2018 10:39:32 GMT
+# Fri, 15 Mar 2019 10:39:01 GMT
+ADD file:a37e74347ae6032b793c87e5c46a27c0d8c24ca0ee4700f3eb1851c834b3ce19 in / 
+# Fri, 15 Mar 2019 10:39:02 GMT
 LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20181006
-# Wed, 10 Oct 2018 10:39:32 GMT
+# Fri, 15 Mar 2019 10:39:02 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:b933e805920c13f4f5f8c3a0862aa6d0302b1b498f40796e541535c3b7817c00`  
-		Last Modified: Wed, 10 Oct 2018 10:40:43 GMT  
-		Size: 70.1 MB (70076863 bytes)  
+	-	`sha256:3c3945419b531b5672104afd31d137de0c2226d41118e983353be7d4fadb3a34`  
+		Last Modified: Fri, 15 Mar 2019 10:39:49 GMT  
+		Size: 70.1 MB (70074539 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
