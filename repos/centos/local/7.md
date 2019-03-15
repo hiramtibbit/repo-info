@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1e1148e4cc2c148c6890a18e3b2d2dde41a6745ceb4e5fe94a923d811bf82ddb`
-- Created: `2018-12-06T00:21:07.135655444Z`
+- Image ID: `sha256:9f38484d220fa527b1fb19747638497179500a1bed8bf0498eb788229229e6e1`
+- Created: `2019-03-14T21:19:53.361167852Z`
 - Virtual Size: ~ 201.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `org.label-schema.build-date=20181205`
+  - `org.label-schema.build-date=20190305`
   - `org.label-schema.license=GPLv2`
   - `org.label-schema.name=CentOS Base Image`
   - `org.label-schema.schema-version=1.0`
