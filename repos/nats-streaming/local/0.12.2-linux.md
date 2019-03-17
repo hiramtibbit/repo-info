@@ -1,9 +1,9 @@
-# `nats-streaming:0.12.0-linux`
+# `nats-streaming:0.12.2-linux`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0513030f6df37922659bc233ae91c908017b1c3d4bf65c73be437fa0aa36abad`
-- Created: `2019-02-08T23:20:28.402726079Z`
+- Image ID: `sha256:4627660b4762ce7c15d8e85d77caf6acfb24c9e5d15e23ed15fe3f43f9bae892`
+- Created: `2019-03-15T23:20:30.847249344Z`
 - Virtual Size: ~ 12.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
