@@ -10,7 +10,19 @@
 -	[`traefik:1.7-alpine`](#traefik17-alpine)
 -	[`traefik:1.7-nanoserver`](#traefik17-nanoserver)
 -	[`traefik:1.7-nanoserver-sac2016`](#traefik17-nanoserver-sac2016)
+-	[`traefik:2.0`](#traefik20)
+-	[`traefik:2.0.0-alpha1`](#traefik200-alpha1)
+-	[`traefik:2.0.0-alpha1-alpine`](#traefik200-alpha1-alpine)
+-	[`traefik:2.0.0-alpha1-nanoserver`](#traefik200-alpha1-nanoserver)
+-	[`traefik:2.0.0-alpha1-nanoserver-sac2016`](#traefik200-alpha1-nanoserver-sac2016)
+-	[`traefik:2.0-alpine`](#traefik20-alpine)
+-	[`traefik:2.0-nanoserver`](#traefik20-nanoserver)
+-	[`traefik:2.0-nanoserver-sac2016`](#traefik20-nanoserver-sac2016)
 -	[`traefik:alpine`](#traefikalpine)
+-	[`traefik:faisselle`](#traefikfaisselle)
+-	[`traefik:faisselle-alpine`](#traefikfaisselle-alpine)
+-	[`traefik:faisselle-nanoserver`](#traefikfaisselle-nanoserver)
+-	[`traefik:faisselle-nanoserver-sac2016`](#traefikfaisselle-nanoserver-sac2016)
 -	[`traefik:latest`](#traefiklatest)
 -	[`traefik:maroilles`](#traefikmaroilles)
 -	[`traefik:maroilles-alpine`](#traefikmaroilles-alpine)
@@ -26,6 +38,14 @@
 -	[`traefik:v1.7-alpine`](#traefikv17-alpine)
 -	[`traefik:v1.7-nanoserver`](#traefikv17-nanoserver)
 -	[`traefik:v1.7-nanoserver-sac2016`](#traefikv17-nanoserver-sac2016)
+-	[`traefik:v2.0`](#traefikv20)
+-	[`traefik:v2.0.0-alpha1`](#traefikv200-alpha1)
+-	[`traefik:v2.0.0-alpha1-alpine`](#traefikv200-alpha1-alpine)
+-	[`traefik:v2.0.0-alpha1-nanoserver`](#traefikv200-alpha1-nanoserver)
+-	[`traefik:v2.0.0-alpha1-nanoserver-sac2016`](#traefikv200-alpha1-nanoserver-sac2016)
+-	[`traefik:v2.0-alpine`](#traefikv20-alpine)
+-	[`traefik:v2.0-nanoserver`](#traefikv20-nanoserver)
+-	[`traefik:v2.0-nanoserver-sac2016`](#traefikv20-nanoserver-sac2016)
 
 ## `traefik:1.7`
 
@@ -885,6 +905,38 @@ RUN cmd /S /C #(nop)  LABEL org.label-schema.vendor=Containous org.label-schema.
 		Size: 950.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `traefik:2.0`
+
+**does not exist** (yet?)
+
+## `traefik:2.0.0-alpha1`
+
+**does not exist** (yet?)
+
+## `traefik:2.0.0-alpha1-alpine`
+
+**does not exist** (yet?)
+
+## `traefik:2.0.0-alpha1-nanoserver`
+
+**does not exist** (yet?)
+
+## `traefik:2.0.0-alpha1-nanoserver-sac2016`
+
+**does not exist** (yet?)
+
+## `traefik:2.0-alpine`
+
+**does not exist** (yet?)
+
+## `traefik:2.0-nanoserver`
+
+**does not exist** (yet?)
+
+## `traefik:2.0-nanoserver-sac2016`
+
+**does not exist** (yet?)
+
 ## `traefik:alpine`
 
 ```console
@@ -1059,6 +1111,22 @@ RUN ["\/bin\/sh","-c","#(nop) ","LABEL org.label-schema.vendor=Containous org.la
 		Last Modified: Fri, 08 Mar 2019 03:38:05 GMT  
 		Size: 2.1 MB (2099962 bytes)  
 		MIME: application/octet-stream
+
+## `traefik:faisselle`
+
+**does not exist** (yet?)
+
+## `traefik:faisselle-alpine`
+
+**does not exist** (yet?)
+
+## `traefik:faisselle-nanoserver`
+
+**does not exist** (yet?)
+
+## `traefik:faisselle-nanoserver-sac2016`
+
+**does not exist** (yet?)
 
 ## `traefik:latest`
 
@@ -2600,3 +2668,35 @@ RUN cmd /S /C #(nop)  LABEL org.label-schema.vendor=Containous org.label-schema.
 		Last Modified: Wed, 13 Feb 2019 13:10:34 GMT  
 		Size: 950.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `traefik:v2.0`
+
+**does not exist** (yet?)
+
+## `traefik:v2.0.0-alpha1`
+
+**does not exist** (yet?)
+
+## `traefik:v2.0.0-alpha1-alpine`
+
+**does not exist** (yet?)
+
+## `traefik:v2.0.0-alpha1-nanoserver`
+
+**does not exist** (yet?)
+
+## `traefik:v2.0.0-alpha1-nanoserver-sac2016`
+
+**does not exist** (yet?)
+
+## `traefik:v2.0-alpine`
+
+**does not exist** (yet?)
+
+## `traefik:v2.0-nanoserver`
+
+**does not exist** (yet?)
+
+## `traefik:v2.0-nanoserver-sac2016`
+
+**does not exist** (yet?)
