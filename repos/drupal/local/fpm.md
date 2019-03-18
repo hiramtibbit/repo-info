@@ -1,10 +1,10 @@
-# `drupal:8.6.10-fpm`
+# `drupal:8.6.11-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4de5d5745015d92ed307414a38c72409a8c2b55b14fae8085e6c95ae3305eb5c`
-- Created: `2019-03-09T04:55:16.613759721Z`
-- Virtual Size: ~ 435.01 Mb  
+- Image ID: `sha256:972f7d2bc909f3a74297c35cad2aa70542af75dda866d1174f22c7d88ec79936`
+- Created: `2019-03-14T21:19:57.285434321Z`
+- Virtual Size: ~ 435.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -23,8 +23,8 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.16.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=7d91ed3c1447c6358a3d53f84599ef854aca4c3622de7435e2df115bf196e482`
   - `PHP_MD5=`
-  - `DRUPAL_VERSION=8.6.10`
-  - `DRUPAL_MD5=5aee2dacfb525f146fc28b4535066d1c`
+  - `DRUPAL_VERSION=8.6.11`
+  - `DRUPAL_MD5=9c2b33438b29df0395ff751b78cd1655`
 
 ## `dpkg` (`.deb`-based packages)
 
