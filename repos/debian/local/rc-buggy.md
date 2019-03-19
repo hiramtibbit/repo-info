@@ -1493,21 +1493,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.28.1-4
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.1-4.dsc' perl_5.28.1-4.dsc 2823 SHA256:8aa8c2b3a8bacbc23a1fbfc6365c86076f109142c0520eeb3a871ea979fab3b5
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.1.orig-regen-configure.tar.xz' perl_5.28.1.orig-regen-configure.tar.xz 411944 SHA256:5873b81af4514d3910ab1a8267b15ff8c0e2100dbae4edfd10b65ef72cd31ef8
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.1.orig.tar.xz' perl_5.28.1.orig.tar.xz 12372080 SHA256:fea7162d4cca940a387f0587b93f6737d884bf74d8a9d7cfd978bc12cd0b202d
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.1-4.debian.tar.xz' perl_5.28.1-4.debian.tar.xz 175692 SHA256:a73c9b6ca3ef3358506e04d369378a3ecbc6efce4850c9fbaa3d31a585ccfce5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.28.1-4/
 
-- https://sources.debian.net/src/perl/5.28.1-4/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.28.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.28.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.7-1`
 
@@ -1577,20 +1569,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=241-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_241-1.dsc' systemd_241-1.dsc 4934 SHA256:9fb3a7166dcf7fd7f0ebb94da46bee4c14d84f3c4961d1c04a385cb313f8ae39
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_241.orig.tar.gz' systemd_241.orig.tar.gz 7640538 SHA256:b2561a8e1d10a2c248253f0dda31a85dd6d69f2b54177de55e02cd1d2778316e
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_241-1.debian.tar.xz' systemd_241-1.debian.tar.xz 144940 SHA256:f0ce21381c3143a4391408d43ff9b94205c8a0dac702d5fe2b89739330070557
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/241-1/
 
-- https://sources.debian.net/src/systemd/241-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/241-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/241-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.93-8`
 
