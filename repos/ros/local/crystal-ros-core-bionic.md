@@ -713,8 +713,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris distro-info-data=0.37ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.37ubuntu0.2.dsc' distro-info-data_0.37ubuntu0.2.dsc 1441 SHA256:2f45b2bf501386a2ff64fc87d9d25ccc38741a0a4a8b50e3866510c99e75fa60
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.37ubuntu0.2.tar.xz' distro-info-data_0.37ubuntu0.2.tar.xz 6772 SHA256:ce7a876ec904c9d3a8190572e1865609e816abe4ed2bc93799112cab81716a87
+'http://security.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.37ubuntu0.2.dsc' distro-info-data_0.37ubuntu0.2.dsc 1441 SHA256:2f45b2bf501386a2ff64fc87d9d25ccc38741a0a4a8b50e3866510c99e75fa60
+'http://security.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.37ubuntu0.2.tar.xz' distro-info-data_0.37ubuntu0.2.tar.xz 6772 SHA256:ce7a876ec904c9d3a8190572e1865609e816abe4ed2bc93799112cab81716a87
 ```
 
 ### `dpkg` source package: `dpkg=1.19.0.5ubuntu2.1`
@@ -842,14 +842,9 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 - `MIT-Old-Style-with-legal-disclaimer-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris file=1:5.32-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.32-2ubuntu0.1.dsc' file_5.32-2ubuntu0.1.dsc 1972 SHA256:9a51e2699d9868215f103a43073d67264523bef725e41ecc5a70fe6e6aa6b5e1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.32.orig.tar.xz' file_5.32.orig.tar.xz 584352 SHA256:07627dc16c9a5b64352b00f24afb8d328b9ecade82afe2e2fa55201d324fd360
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.32-2ubuntu0.1.debian.tar.xz' file_5.32-2ubuntu0.1.debian.tar.xz 31976 SHA256:9ccbc392cd885ed276ae5680e817a8332912be1f8b4f5709fa0c2dea6df8c0cc
-```
 
 ### `dpkg` source package: `findutils=4.6.0+git+20170828-2`
 

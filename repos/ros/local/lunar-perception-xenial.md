@@ -1198,8 +1198,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris distro-info-data=0.28ubuntu0.9
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.9.dsc' distro-info-data_0.28ubuntu0.9.dsc 1440 SHA256:ee07369c57cd02d5ef74829c8fec85565a7c96e8b8613c38a8ba608a9a909a5c
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.9.tar.xz' distro-info-data_0.28ubuntu0.9.tar.xz 6896 SHA256:691a73b4ed46c9a2af2f9f61fb1728d621dd78f16688e48e5c95c9f35aa8fc03
+'http://security.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.9.dsc' distro-info-data_0.28ubuntu0.9.dsc 1440 SHA256:ee07369c57cd02d5ef74829c8fec85565a7c96e8b8613c38a8ba608a9a909a5c
+'http://security.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.9.tar.xz' distro-info-data_0.28ubuntu0.9.tar.xz 6896 SHA256:691a73b4ed46c9a2af2f9f61fb1728d621dd78f16688e48e5c95c9f35aa8fc03
 ```
 
 ### `dpkg` source package: `double-conversion=2.0.1-3ubuntu2`
@@ -1468,14 +1468,9 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 - `MIT-Old-Style-with-legal-disclaimer-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris file=1:5.25-2ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.25-2ubuntu1.1.dsc' file_5.25-2ubuntu1.1.dsc 2252 SHA256:3370ece4f15a7b857e7e635a7da060179571d4e772bddca6c97ce8f4ae89f5b0
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.25.orig.tar.xz' file_5.25.orig.tar.xz 537916 SHA256:8062cae8be640ff8583b8714e394dc73c3127d23f8fe9097f1433cdb36bff31c
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.25-2ubuntu1.1.debian.tar.xz' file_5.25-2ubuntu1.1.debian.tar.xz 33712 SHA256:5dc5e368317b7a55aa8d3aeef59f4e6238b841480bae2d566e250d9a89313150
-```
 
 ### `dpkg` source package: `findutils=4.6.0+git+20160126-2`
 
@@ -5313,14 +5308,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `GPL-2`
 - `redpine-signals`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-142.168
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-142.168.dsc' linux_4.4.0-142.168.dsc 9418 SHA256:81789086c0b909f6bcec861245112695009d088edebeda3ed3b3452cb102dabc
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-142.168.diff.gz' linux_4.4.0-142.168.diff.gz 15146882 SHA256:69748f28e1ffa6f8a43162941df46517dd392e00a75b560a2b0a4580bbc34554
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-3`
 
