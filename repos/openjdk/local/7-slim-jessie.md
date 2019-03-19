@@ -1830,20 +1830,13 @@ Licenses: (parsed from: `/usr/share/doc/libjpeg62-turbo/copyright`)
 - `BSD-BY-LC-NE`
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libjpeg-turbo=1:1.3.1-12+deb8u1
-'http://security.debian.org/debian-security/pool/updates/main/libj/libjpeg-turbo/libjpeg-turbo_1.3.1-12+deb8u1.dsc' libjpeg-turbo_1.3.1-12+deb8u1.dsc 2591 SHA256:1e25b1182557628cc43e271a9703ac91f8029062ef848c58f57a17d20929b336
-'http://security.debian.org/debian-security/pool/updates/main/libj/libjpeg-turbo/libjpeg-turbo_1.3.1.orig.tar.gz' libjpeg-turbo_1.3.1.orig.tar.gz 1390282 SHA256:c132907417ddc40ed552fe53d6b91d5fecbb14a356a60ddc7ea50d6be9666fb9
-'http://security.debian.org/debian-security/pool/updates/main/libj/libjpeg-turbo/libjpeg-turbo_1.3.1-12+deb8u1.debian.tar.xz' libjpeg-turbo_1.3.1-12+deb8u1.debian.tar.xz 81232 SHA256:80db43c97a0c7c7f42794773261061bec5989edce52326ccd235b101edbb825e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libjpeg-turbo/1:1.3.1-12+deb8u1/
 
-- https://sources.debian.net/src/libjpeg-turbo/1:1.3.1-12+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/libjpeg-turbo/1:1.3.1-12+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libjpeg-turbo/1:1.3.1-12+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `liblocale-gettext-perl=1.05-8`
 
