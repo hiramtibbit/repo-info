@@ -1367,19 +1367,13 @@ Licenses: (parsed from: `/usr/share/doc/lsb-base/copyright`)
 - `BSD-3-clause`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lsb=10.2018112800
-'http://deb.debian.org/debian/pool/main/l/lsb/lsb_10.2018112800.dsc' lsb_10.2018112800.dsc 1695 SHA256:8b280e3fbf938eead60d64c92d23425968b44edd91fcbed8c9206c25229616c9
-'http://deb.debian.org/debian/pool/main/l/lsb/lsb_10.2018112800.tar.xz' lsb_10.2018112800.tar.xz 42076 SHA256:5a3469feef00979bdc00f85607c35df9f45ff312a44c91179400d63300184c08
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lsb/10.2018112800/
 
-- https://sources.debian.net/src/lsb/10.2018112800/ (for browsing the source)
-- https://sources.debian.net/src/lsb/10.2018112800/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lsb/10.2018112800/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.8.3-1`
 
