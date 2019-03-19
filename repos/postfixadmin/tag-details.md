@@ -4,6 +4,10 @@
 
 -	[`postfixadmin:3`](#postfixadmin3)
 -	[`postfixadmin:3.2`](#postfixadmin32)
+-	[`postfixadmin:3.2.2`](#postfixadmin322)
+-	[`postfixadmin:3.2.2-apache`](#postfixadmin322-apache)
+-	[`postfixadmin:3.2.2-fpm`](#postfixadmin322-fpm)
+-	[`postfixadmin:3.2.2-fpm-alpine`](#postfixadmin322-fpm-alpine)
 -	[`postfixadmin:3.2-apache`](#postfixadmin32-apache)
 -	[`postfixadmin:3.2-fpm`](#postfixadmin32-fpm)
 -	[`postfixadmin:3.2-fpm-alpine`](#postfixadmin32-fpm-alpine)
@@ -1076,6 +1080,22 @@ CMD ["apache2-foreground"]
 		Last Modified: Sat, 09 Mar 2019 18:12:45 GMT  
 		Size: 1.1 KB (1144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `postfixadmin:3.2.2`
+
+**does not exist** (yet?)
+
+## `postfixadmin:3.2.2-apache`
+
+**does not exist** (yet?)
+
+## `postfixadmin:3.2.2-fpm`
+
+**does not exist** (yet?)
+
+## `postfixadmin:3.2.2-fpm-alpine`
+
+**does not exist** (yet?)
 
 ## `postfixadmin:3.2-apache`
 
