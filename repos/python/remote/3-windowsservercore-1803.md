@@ -1,45 +1,45 @@
 ## `python:3-windowsservercore-1803`
 
 ```console
-$ docker pull python@sha256:b2ee4e0f6b7761a8293a5c0cdb62dfbe6e2de569c0047854037f926d11a7d8bb
+$ docker pull python@sha256:e2d0c5523ed9ee043f364b3e71639829ab7d3cb6ff02b57c7a47f5f80802fcec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.17134.590; amd64
+	-	windows version 10.0.17134.648; amd64
 
-### `python:3-windowsservercore-1803` - windows version 10.0.17134.590; amd64
+### `python:3-windowsservercore-1803` - windows version 10.0.17134.648; amd64
 
 ```console
-$ docker pull python@sha256:9b85719218637210990fd6cd46a3ffa55cb94603178996e0407b9cf2cb6b3846
+$ docker pull python@sha256:b76e05e9afd5060b7b520c6b956760b5b0b6de2d1e788008502e0ece2d6e3615
 ```
 
 -	Docker Version: 18.03.1-ee-4
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2302061166 bytes)**  
+-	Total Size: **2.3 GB (2307374956 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c4885d40be1d83f179466d384173dac859a8a946c332930a203710b21f89415f`
+-	Image ID: `sha256:1baea57ddb6c591c5b144d70da56ee04c92a5d25073da370ca02bcd4f3c8e942`
 -	Default Command: `["python"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 12 Apr 2018 09:20:54 GMT
 RUN Apply image 10.0.17134.1
-# Thu, 07 Feb 2019 23:00:02 GMT
-RUN Install update 10.0.17134.590
-# Wed, 13 Feb 2019 11:38:10 GMT
+# Fri, 08 Mar 2019 23:20:01 GMT
+RUN Install update 10.0.17134.648
+# Sat, 16 Mar 2019 09:44:19 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 22 Feb 2019 10:38:18 GMT
+# Wed, 20 Mar 2019 09:45:36 GMT
 ENV PYTHON_VERSION=3.7.2
-# Fri, 22 Feb 2019 10:38:20 GMT
+# Wed, 20 Mar 2019 09:45:38 GMT
 ENV PYTHON_RELEASE=3.7.2
-# Fri, 22 Feb 2019 10:40:44 GMT
+# Wed, 20 Mar 2019 09:48:15 GMT
 RUN $url = ('https://www.python.org/ftp/python/{0}/python-{1}-amd64.exe' -f $env:PYTHON_RELEASE, $env:PYTHON_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'python.exe'; 		Write-Host 'Installing ...'; 	Start-Process python.exe -Wait 		-ArgumentList @( 			'/quiet', 			'InstallAllUsers=1', 			'TargetDir=C:\Python', 			'PrependPath=1', 			'Shortcuts=0', 			'Include_doc=0', 			'Include_pip=0', 			'Include_test=0' 		); 		$env:PATH = [Environment]::GetEnvironmentVariable('PATH', [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  python --version'; python --version; 		Write-Host 'Removing ...'; 	Remove-Item python.exe -Force; 		Write-Host 'Complete.';
-# Fri, 22 Feb 2019 10:40:46 GMT
+# Wed, 20 Mar 2019 09:48:18 GMT
 ENV PYTHON_PIP_VERSION=19.0.3
-# Fri, 22 Feb 2019 10:41:57 GMT
+# Wed, 20 Mar 2019 09:49:31 GMT
 RUN Write-Host ('Installing pip=={0} ...' -f $env:PYTHON_PIP_VERSION); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri 'https://bootstrap.pypa.io/get-pip.py' -OutFile 'get-pip.py'; 	python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		('pip=={0}' -f $env:PYTHON_PIP_VERSION) 	; 	Remove-Item get-pip.py -Force; 		Write-Host 'Verifying pip install ...'; 	pip --version; 		Write-Host 'Complete.';
-# Fri, 22 Feb 2019 10:41:58 GMT
+# Wed, 20 Mar 2019 09:49:32 GMT
 CMD ["python"]
 ```
 
@@ -48,35 +48,35 @@ CMD ["python"]
 		Last Modified: Tue, 18 Sep 2018 22:43:55 GMT  
 		Size: 1.7 GB (1659688273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5e94f7b83ce20c90f9f1b0323c3f9c3c791163e44e7069e47cd76cf50a3a07ef`  
-		Last Modified: Mon, 11 Feb 2019 21:11:29 GMT  
-		Size: 588.0 MB (587983329 bytes)  
+	-	`sha256:be86bca8de59067e592a8becc2e83ed2465a6d9bce324043e434aa4a15493b00`  
+		Last Modified: Mon, 11 Mar 2019 21:17:02 GMT  
+		Size: 593.3 MB (593288046 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:f0f56eeb2940f5c3391f320574c551c5f84072a3baaee150b165407a99cfba06`  
-		Last Modified: Wed, 13 Feb 2019 12:50:23 GMT  
-		Size: 1.2 KB (1213 bytes)  
+	-	`sha256:97db8a70a029fc0e25892873d5695bd2b9a1c93e4cd7dcd91fcddf338989a592`  
+		Last Modified: Sat, 16 Mar 2019 10:43:05 GMT  
+		Size: 1.2 KB (1205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85a127740a9d24763fe90ece62c1ac8070854617b9ee365164b5e4f372494772`  
-		Last Modified: Fri, 22 Feb 2019 12:16:51 GMT  
-		Size: 1.2 KB (1213 bytes)  
+	-	`sha256:c019b1f3c1ec43ac39f43968ca74c7e019a54992b0be489a3a54074e20d6f468`  
+		Last Modified: Wed, 20 Mar 2019 11:07:43 GMT  
+		Size: 1.2 KB (1203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9eed3a4907f08f4bc5adba0711de8af1cc2e42aaa86e00bf52c8eb7ff30ee7e2`  
-		Last Modified: Fri, 22 Feb 2019 12:16:48 GMT  
-		Size: 1.2 KB (1208 bytes)  
+	-	`sha256:59311641722e1f0ca08da93afb46f4d06d1a03726362fdfdbbfd821a38133a3b`  
+		Last Modified: Wed, 20 Mar 2019 11:07:40 GMT  
+		Size: 1.2 KB (1195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89774cfb2a40ac3dc4a6aa4ab482a98343ca9360cd9b0e57dbeecd185b9f7018`  
-		Last Modified: Fri, 22 Feb 2019 12:17:13 GMT  
-		Size: 49.3 MB (49267236 bytes)  
+	-	`sha256:001509541a490a0acb526b12981c312948fe1b57ecfc8facb398836cc220943c`  
+		Last Modified: Wed, 20 Mar 2019 11:08:09 GMT  
+		Size: 49.3 MB (49285656 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2506f4e91fdec282386b59b0fe2b967769e168d1bfc9005d9775ffbe7a9b1c6e`  
-		Last Modified: Fri, 22 Feb 2019 12:16:48 GMT  
-		Size: 1.2 KB (1198 bytes)  
+	-	`sha256:15c61bcc822b1aad32e5fbceca4f91073d3ca11b311d4b76785e892a513749bc`  
+		Last Modified: Wed, 20 Mar 2019 11:07:41 GMT  
+		Size: 1.2 KB (1194 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f429bf3d2f561389a7787e8ad2820515b5d59147766ad5f21c00adcb712f3118`  
-		Last Modified: Fri, 22 Feb 2019 12:16:59 GMT  
-		Size: 5.1 MB (5116296 bytes)  
+	-	`sha256:0f544f6e4bc976623599f4403f81871869257ef5219da0960b9dc0955c7345b7`  
+		Last Modified: Wed, 20 Mar 2019 11:07:54 GMT  
+		Size: 5.1 MB (5106979 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87536c30e2475e59b82117c9a4e7f436884ac3fae6b7671ff39fffcf9ea289ef`  
-		Last Modified: Fri, 22 Feb 2019 12:16:48 GMT  
-		Size: 1.2 KB (1200 bytes)  
+	-	`sha256:630e12c204c5e06629ddaa04cb36fd76fb2c14a98aefd1f1adf008bc9c0e3ef6`  
+		Last Modified: Wed, 20 Mar 2019 11:07:41 GMT  
+		Size: 1.2 KB (1205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
