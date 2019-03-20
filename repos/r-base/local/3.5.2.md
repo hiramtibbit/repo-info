@@ -358,16 +358,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cairo=1.16.0-3
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.16.0-3.dsc' cairo_1.16.0-3.dsc 2778 SHA256:e6c612bb8982b11d3c799122c19cee9d42a5dcc6bd77fb75fbe633ba9a7d7808
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.16.0.orig.tar.xz' cairo_1.16.0.orig.tar.xz 41997432 SHA256:5e7b29b3f113ef870d1e3ecf8adf21f923396401604bda16d44be45e66052331
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.16.0-3.debian.tar.xz' cairo_1.16.0-3.debian.tar.xz 29644 SHA256:fa9286245de3c6a76184d6a53a2cd74b27a218d0aa5de6b413851e33228055e4
+'http://http.debian.net/debian/pool/main/c/cairo/cairo_1.16.0-3.dsc' cairo_1.16.0-3.dsc 2778 SHA256:e6c612bb8982b11d3c799122c19cee9d42a5dcc6bd77fb75fbe633ba9a7d7808
+'http://http.debian.net/debian/pool/main/c/cairo/cairo_1.16.0.orig.tar.xz' cairo_1.16.0.orig.tar.xz 41997432 SHA256:5e7b29b3f113ef870d1e3ecf8adf21f923396401604bda16d44be45e66052331
+'http://http.debian.net/debian/pool/main/c/cairo/cairo_1.16.0-3.debian.tar.xz' cairo_1.16.0-3.debian.tar.xz 29644 SHA256:fa9286245de3c6a76184d6a53a2cd74b27a218d0aa5de6b413851e33228055e4
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/cairo/1.16.0-3/ (for browsing the source)
-- https://sources.debian.net/src/cairo/1.16.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cairo/1.16.0-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.247`
 
@@ -2727,19 +2721,13 @@ Licenses: (parsed from: `/usr/share/doc/lsb-base/copyright`)
 - `BSD-3-clause`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lsb=10.2018112800
-'http://deb.debian.org/debian/pool/main/l/lsb/lsb_10.2018112800.dsc' lsb_10.2018112800.dsc 1695 SHA256:8b280e3fbf938eead60d64c92d23425968b44edd91fcbed8c9206c25229616c9
-'http://deb.debian.org/debian/pool/main/l/lsb/lsb_10.2018112800.tar.xz' lsb_10.2018112800.tar.xz 42076 SHA256:5a3469feef00979bdc00f85607c35df9f45ff312a44c91179400d63300184c08
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lsb/10.2018112800/
 
-- https://sources.debian.net/src/lsb/10.2018112800/ (for browsing the source)
-- https://sources.debian.net/src/lsb/10.2018112800/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lsb/10.2018112800/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.8.3-1`
 
