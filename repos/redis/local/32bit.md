@@ -1,10 +1,10 @@
-# `redis:5.0.3-32bit`
+# `redis:5.0.4-32bit`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e1b7ca9027b23a38d19241a40310c42606647ae48620c25414cc66d00ce3cf2d`
-- Created: `2019-03-05T04:02:22.150432733Z`
-- Virtual Size: ~ 99.20 Mb  
+- Image ID: `sha256:ea51a7bfff08e24f837c75b6eb8a4570e3216370fdbbdb761e7826951f625c7f`
+- Created: `2019-03-19T21:35:15.74523413Z`
+- Virtual Size: ~ 99.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.10`
-  - `REDIS_VERSION=5.0.3`
-  - `REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-5.0.3.tar.gz`
-  - `REDIS_DOWNLOAD_SHA=e290b4ddf817b26254a74d5d564095b11f9cd20d8f165459efa53eb63cd93e02`
+  - `REDIS_VERSION=5.0.4`
+  - `REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-5.0.4.tar.gz`
+  - `REDIS_DOWNLOAD_SHA=3ce9ceff5a23f60913e1573f6dfcd4aa53b42d4a2789e28fa53ec2bd28c987dd`
 
 ## `dpkg` (`.deb`-based packages)
 

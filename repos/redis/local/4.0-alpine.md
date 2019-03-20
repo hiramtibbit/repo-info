@@ -1,16 +1,16 @@
-# `redis:4.0.13-alpine`
+# `redis:4.0.14-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1e985c88d45b4cd0af2c724ed39ab6034b923e267494200bce5214846acab722`
-- Created: `2019-03-08T02:55:36.334465389Z`
-- Virtual Size: ~ 35.50 Mb  
+- Image ID: `sha256:adbfeec2927ea132da957bac11f683ae695bbcbf65afc9d60020f9d1ad95668a`
+- Created: `2019-03-19T21:38:25.77087877Z`
+- Virtual Size: ~ 36.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["redis-server"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `REDIS_VERSION=4.0.13`
-  - `REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-4.0.13.tar.gz`
-  - `REDIS_DOWNLOAD_SHA=17d955227966dcd68590be6139e5fe7f2d19fc4fb7334248a904ea9cdd30c1d4`
+  - `REDIS_VERSION=4.0.14`
+  - `REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-4.0.14.tar.gz`
+  - `REDIS_DOWNLOAD_SHA=1e1e18420a86cfb285933123b04a82e1ebda20bfb0a289472745a087587e93a7`
