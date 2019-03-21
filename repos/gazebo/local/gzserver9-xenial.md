@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ad843a61345cfd64a567be45fc6b2b634db2ea2ab6574b134847c80e0206fa13`
-- Created: `2019-03-12T01:27:26.631967345Z`
-- Virtual Size: ~ 684.07 Mb  
+- Image ID: `sha256:89737fd09a9da8b93d68f48004912e5a987017f1ae3a6031104152d6c9876fed`
+- Created: `2019-03-20T22:27:21.062151542Z`
+- Virtual Size: ~ 684.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -695,8 +695,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris distro-info-data=0.28ubuntu0.9
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.9.dsc' distro-info-data_0.28ubuntu0.9.dsc 1440 SHA256:ee07369c57cd02d5ef74829c8fec85565a7c96e8b8613c38a8ba608a9a909a5c
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.9.tar.xz' distro-info-data_0.28ubuntu0.9.tar.xz 6896 SHA256:691a73b4ed46c9a2af2f9f61fb1728d621dd78f16688e48e5c95c9f35aa8fc03
+'http://security.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.9.dsc' distro-info-data_0.28ubuntu0.9.dsc 1440 SHA256:ee07369c57cd02d5ef74829c8fec85565a7c96e8b8613c38a8ba608a9a909a5c
+'http://security.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.9.tar.xz' distro-info-data_0.28ubuntu0.9.tar.xz 6896 SHA256:691a73b4ed46c9a2af2f9f61fb1728d621dd78f16688e48e5c95c9f35aa8fc03
 ```
 
 ### `dpkg` source package: `dpkg=1.18.4ubuntu1.5`
@@ -840,14 +840,9 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 - `MIT-Old-Style-with-legal-disclaimer-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris file=1:5.25-2ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.25-2ubuntu1.1.dsc' file_5.25-2ubuntu1.1.dsc 2252 SHA256:3370ece4f15a7b857e7e635a7da060179571d4e772bddca6c97ce8f4ae89f5b0
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.25.orig.tar.xz' file_5.25.orig.tar.xz 537916 SHA256:8062cae8be640ff8583b8714e394dc73c3127d23f8fe9097f1433cdb36bff31c
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.25-2ubuntu1.1.debian.tar.xz' file_5.25-2ubuntu1.1.debian.tar.xz 33712 SHA256:5dc5e368317b7a55aa8d3aeef59f4e6238b841480bae2d566e250d9a89313150
-```
 
 ### `dpkg` source package: `findutils=4.6.0+git+20160126-2`
 
@@ -1079,14 +1074,14 @@ $ apt-get source -qq --print-uris game-music-emu=0.6.0-3ubuntu0.16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/game-music-emu/game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz' game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz 5592 SHA256:a4d7a4f5d9df23098abc4c1fe82696ed8f93d893c50bb8fc14a4de84e705810d
 ```
 
-### `dpkg` source package: `gazebo9=9.6.0-1~xenial`
+### `dpkg` source package: `gazebo9=9.7.0-1~xenial`
 
 Binary Packages:
 
-- `gazebo9=9.6.0-1~xenial`
-- `gazebo9-common=9.6.0-1~xenial`
-- `gazebo9-plugin-base=9.6.0-1~xenial`
-- `libgazebo9:amd64=9.6.0-1~xenial`
+- `gazebo9=9.7.0-1~xenial`
+- `gazebo9-common=9.7.0-1~xenial`
+- `gazebo9-plugin-base=9.7.0-1~xenial`
+- `libgazebo9:amd64=9.7.0-1~xenial`
 
 Licenses: (parsed from: `/usr/share/doc/gazebo9/copyright`, `/usr/share/doc/gazebo9-common/copyright`, `/usr/share/doc/gazebo9-plugin-base/copyright`, `/usr/share/doc/libgazebo9/copyright`)
 
@@ -5432,19 +5427,24 @@ $ apt-get source -qq --print-uris tcp-wrappers=7.6.q-25
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tcp-wrappers/tcp-wrappers_7.6.q-25.debian.tar.xz' tcp-wrappers_7.6.q-25.debian.tar.xz 35504 SHA256:fb7bb73c586a0c00c76c730ab93ffd73c300e8c4fd83df76222e305a2466c7bb
 ```
 
-### `dpkg` source package: `tiff=4.0.6-1ubuntu0.5`
+### `dpkg` source package: `tiff=4.0.6-1ubuntu0.6`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.0.6-1ubuntu0.5`
+- `libtiff5:amd64=4.0.6-1ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff=4.0.6-1ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6-1ubuntu0.6.dsc' tiff_4.0.6-1ubuntu0.6.dsc 2399 SHA256:4751d2c527ae13db397bd9148f05e5c0bd4d6309db0a3be79fef99192492fd26
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6.orig.tar.gz' tiff_4.0.6.orig.tar.gz 2192991 SHA256:4d57a50907b510e3049a4bba0d7888930fdfc16ce49f1bf693e5b6247370d68c
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6-1ubuntu0.6.debian.tar.xz' tiff_4.0.6-1ubuntu0.6.debian.tar.xz 61104 SHA256:bd020a02927f9282748fdc0b9c8aacc495dae23ab9ba70d71da2275903b6b689
+```
 
 ### `dpkg` source package: `tinyxml2=2.2.0-1.1ubuntu1`
 

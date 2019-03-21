@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:661ef462cdc40809a7b6ff61a43f1057a05a90e6e867dbb1b71e0bc539bb40a5`
-- Created: `2019-03-05T03:49:53.72939414Z`
+- Image ID: `sha256:ce308a9aa70a917986ef07e6c4bda0e72a065f1272e1e04b1d05e3977cfb24cd`
+- Created: `2019-03-20T22:43:03.424836791Z`
 - Virtual Size: ~ 1.74 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1873,15 +1873,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/game-music-emu/0.6.0-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/game-music-emu/0.6.0-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gazebo9=9.6.0-1~stretch`
+### `dpkg` source package: `gazebo9=9.7.0-1~stretch`
 
 Binary Packages:
 
-- `gazebo9=9.6.0-1~stretch`
-- `gazebo9-common=9.6.0-1~stretch`
-- `gazebo9-plugin-base=9.6.0-1~stretch`
-- `libgazebo9:amd64=9.6.0-1~stretch`
-- `libgazebo9-dev:amd64=9.6.0-1~stretch`
+- `gazebo9=9.7.0-1~stretch`
+- `gazebo9-common=9.7.0-1~stretch`
+- `gazebo9-plugin-base=9.7.0-1~stretch`
+- `libgazebo9:amd64=9.7.0-1~stretch`
+- `libgazebo9-dev:amd64=9.7.0-1~stretch`
 
 Licenses: (parsed from: `/usr/share/doc/gazebo9/copyright`, `/usr/share/doc/gazebo9-common/copyright`, `/usr/share/doc/gazebo9-plugin-base/copyright`, `/usr/share/doc/libgazebo9/copyright`, `/usr/share/doc/libgazebo9-dev/copyright`)
 
@@ -7545,12 +7545,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openexr/2.2.0-11/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openexr/2.2.0-11/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjpeg2=2.1.2-1.1+deb9u2`
+### `dpkg` source package: `openjpeg2=2.1.2-1.1+deb9u3`
 
 Binary Packages:
 
-- `libopenjp2-7:amd64=2.1.2-1.1+deb9u2`
-- `libopenjp2-7-dev=2.1.2-1.1+deb9u2`
+- `libopenjp2-7:amd64=2.1.2-1.1+deb9u3`
+- `libopenjp2-7-dev=2.1.2-1.1+deb9u3`
 
 Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc/libopenjp2-7-dev/copyright`)
 
@@ -7567,17 +7567,17 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjpeg2=2.1.2-1.1+deb9u2
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.1.2-1.1+deb9u2.dsc' openjpeg2_2.1.2-1.1+deb9u2.dsc 2822 SHA256:fd31da5b80939520c938deada3826ac99a55bdd0500d73cef4d2072b0a2ea03c
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.1.2.orig.tar.gz' openjpeg2_2.1.2.orig.tar.gz 1987071 SHA256:4ce77b6ef538ef090d9bde1d5eeff8b3069ab56c4906f083475517c2c023dfa7
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.1.2-1.1+deb9u2.debian.tar.xz' openjpeg2_2.1.2-1.1+deb9u2.debian.tar.xz 23292 SHA256:be99a498bcb48176168f012e014fb8308d7543c2a163ae40830fbe2d78a36359
+$ apt-get source -qq --print-uris openjpeg2=2.1.2-1.1+deb9u3
+'http://security.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.1.2-1.1+deb9u3.dsc' openjpeg2_2.1.2-1.1+deb9u3.dsc 2797 SHA256:dcb5cf6adee12ab0cc23d9a08731df6ee87406a98f623233348580e9f0373f78
+'http://security.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.1.2.orig.tar.gz' openjpeg2_2.1.2.orig.tar.gz 1987071 SHA256:4ce77b6ef538ef090d9bde1d5eeff8b3069ab56c4906f083475517c2c023dfa7
+'http://security.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.1.2-1.1+deb9u3.debian.tar.xz' openjpeg2_2.1.2-1.1+deb9u3.debian.tar.xz 25464 SHA256:c168bec05ef60b78e1d219760d6faf67e58f9055cbde770005bd12123c3b0002
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjpeg2/2.1.2-1.1+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/openjpeg2/2.1.2-1.1+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjpeg2/2.1.2-1.1+deb9u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjpeg2/2.1.2-1.1+deb9u3/ (for browsing the source)
+- https://sources.debian.net/src/openjpeg2/2.1.2-1.1+deb9u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjpeg2/2.1.2-1.1+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-5+deb9u2`
 

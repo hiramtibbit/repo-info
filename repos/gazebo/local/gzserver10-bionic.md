@@ -608,15 +608,9 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.7-1ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7-1ubuntu2.3.dsc' cups_2.2.7-1ubuntu2.3.dsc 3007 SHA256:346b0c419424b7e81852ad391831d85c168fbf73050fd446fe796ade5d6c6160
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7.orig.tar.gz' cups_2.2.7.orig.tar.gz 10330296 SHA256:3c4b637b737077565ccdfbd5f61785d03f49461ae736fcc2c0ffaf41d2c6ea6a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7.orig.tar.gz.asc' cups_2.2.7.orig.tar.gz.asc 872 SHA256:2b17bef166e1f8a0dece544c0e4f0d847f6d2c8e784298898966352f4e47581a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7-1ubuntu2.3.debian.tar.xz' cups_2.2.7-1ubuntu2.3.debian.tar.xz 359184 SHA256:6deccffb812018c529061f0d190ca6d65789272ba3e1e89248d46141154fab4d
-```
 
 ### `dpkg` source package: `curl=7.58.0-2ubuntu3.6`
 
@@ -824,8 +818,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris distro-info-data=0.37ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.37ubuntu0.2.dsc' distro-info-data_0.37ubuntu0.2.dsc 1441 SHA256:2f45b2bf501386a2ff64fc87d9d25ccc38741a0a4a8b50e3866510c99e75fa60
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.37ubuntu0.2.tar.xz' distro-info-data_0.37ubuntu0.2.tar.xz 6772 SHA256:ce7a876ec904c9d3a8190572e1865609e816abe4ed2bc93799112cab81716a87
+'http://security.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.37ubuntu0.2.dsc' distro-info-data_0.37ubuntu0.2.dsc 1441 SHA256:2f45b2bf501386a2ff64fc87d9d25ccc38741a0a4a8b50e3866510c99e75fa60
+'http://security.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.37ubuntu0.2.tar.xz' distro-info-data_0.37ubuntu0.2.tar.xz 6772 SHA256:ce7a876ec904c9d3a8190572e1865609e816abe4ed2bc93799112cab81716a87
 ```
 
 ### `dpkg` source package: `double-conversion=2.0.1-4ubuntu1`
@@ -1015,14 +1009,9 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 - `MIT-Old-Style-with-legal-disclaimer-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris file=1:5.32-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.32-2ubuntu0.1.dsc' file_5.32-2ubuntu0.1.dsc 1972 SHA256:9a51e2699d9868215f103a43073d67264523bef725e41ecc5a70fe6e6aa6b5e1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.32.orig.tar.xz' file_5.32.orig.tar.xz 584352 SHA256:07627dc16c9a5b64352b00f24afb8d328b9ecade82afe2e2fa55201d324fd360
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.32-2ubuntu0.1.debian.tar.xz' file_5.32-2ubuntu0.1.debian.tar.xz 31976 SHA256:9ccbc392cd885ed276ae5680e817a8332912be1f8b4f5709fa0c2dea6df8c0cc
-```
 
 ### `dpkg` source package: `findutils=4.6.0+git+20170828-2`
 
@@ -3519,14 +3508,9 @@ Licenses: (parsed from: `/usr/share/doc/libsdl2-2.0-0/copyright`)
 - `SunPro`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsdl2=2.0.8+dfsg1-1ubuntu1.18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/libs/libsdl2/libsdl2_2.0.8+dfsg1-1ubuntu1.18.04.1.dsc' libsdl2_2.0.8+dfsg1-1ubuntu1.18.04.1.dsc 2754 SHA256:5f2ae24a88006dff146b8bd3ca0a653d2ad8c62bfbc46710101c37db7df23529
-'http://archive.ubuntu.com/ubuntu/pool/universe/libs/libsdl2/libsdl2_2.0.8+dfsg1.orig.tar.gz' libsdl2_2.0.8+dfsg1.orig.tar.gz 3269839 SHA256:7a76f348fa67f5c3c74592034d7b5099d25d7f04dc8a6ee4c4cb1c1abb41b328
-'http://archive.ubuntu.com/ubuntu/pool/universe/libs/libsdl2/libsdl2_2.0.8+dfsg1-1ubuntu1.18.04.1.debian.tar.xz' libsdl2_2.0.8+dfsg1-1ubuntu1.18.04.1.debian.tar.xz 17196 SHA256:d65016fef5d9976805f7c45f1e518cab27a629e645a0ce2993ac98050b66de33
-```
 
 ### `dpkg` source package: `libseccomp=2.3.1-2.1ubuntu4`
 
@@ -4729,15 +4713,9 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=18.2.2-0ubuntu1~18.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_18.2.2-0ubuntu1~18.04.2.dsc' mesa_18.2.2-0ubuntu1~18.04.2.dsc 5444 SHA256:fcd6f494723e2b5503cd604f7386004ed1e6dab86e01721fe223dc6ca73d3bb4
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_18.2.2.orig.tar.gz' mesa_18.2.2.orig.tar.gz 19618707 SHA256:c51711168971957037cc7e3e19e8abe1ec6eeab9cf236d419a1e7728a41cac8a
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_18.2.2.orig.tar.gz.asc' mesa_18.2.2.orig.tar.gz.asc 879 SHA256:edeb856778e0a62e4f49672c8173127aafa85f988dc396b10c3294a36a102509
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_18.2.2-0ubuntu1~18.04.2.diff.gz' mesa_18.2.2-0ubuntu1~18.04.2.diff.gz 111197 SHA256:c38d0af52c8cf0701092833e684fe0909913fd28a62ad9e56c7cc92471931d77
-```
 
 ### `dpkg` source package: `mime-support=3.60ubuntu1`
 
