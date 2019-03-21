@@ -1,10 +1,10 @@
-# `bash:5.0.2`
+# `bash:5.0.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5721f6764f4de9e038b10b89f6f13ee2765f29a1871437cd65436600573e3b0d`
-- Created: `2019-03-07T22:56:14.571852928Z`
-- Virtual Size: ~ 15.14 Mb  
+- Image ID: `sha256:495d6437fc1ed6a9d7b2df25aa33df4a746a77fa98f445f22693d891f669ddda`
+- Created: `2019-03-20T22:20:19.263568465Z`
+- Virtual Size: ~ 15.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,4 +14,4 @@
   - `_BASH_GPG_KEY=7C0135FB088AAF6C66C650B9BB5869F064EA74AB`
   - `_BASH_VERSION=5.0`
   - `_BASH_PATCH_LEVEL=0`
-  - `_BASH_LATEST_PATCH=2`
+  - `_BASH_LATEST_PATCH=3`
