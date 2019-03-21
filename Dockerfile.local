@@ -1,12 +1,17 @@
-FROM debian:stretch-slim
+FROM debian:buster-slim
 
-# add "apt-transport-https" for images whose "/etc/apt/sources.list" uses "https"
-RUN apt-get update \
-	&& apt-get install -y --no-install-recommends \
-		apt-transport-https \
+RUN set -eux; \
+	apt-get update; \
+	apt-get install -y --no-install-recommends \
 		ca-certificates \
 		wget \
-	&& rm -rf /var/lib/apt/lists/*
+# add "apt-transport-https" for images whose "/etc/apt/sources.list" uses "https"
+		apt-transport-https \
+# redhat-based images!
+		rpm \
+		yum-utils \
+	; \
+	rm -rf /var/lib/apt/lists/*
 
 COPY .local-scripts/*.sh /usr/local/bin/
 
