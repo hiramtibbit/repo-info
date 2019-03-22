@@ -161,13 +161,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.6.8
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.8.dsc' apt_1.6.8.dsc 2751 SHA256:3a75684546fa500a08d68a7eaa0c60b9a246a9752a305f2bb3710b4f95a5cd26
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.8.tar.xz' apt_1.6.8.tar.xz 2154964 SHA256:bab346ddc6d6db6ffdc9693e87bd4ae07fac9ac6d2ec01a6663a7908686a3770
-```
 
 ### `dpkg` source package: `asn1crypto=0.24.0-1`
 
@@ -3943,15 +3939,9 @@ Licenses: (parsed from: `/usr/share/doc/libgl1-mesa-dri/copyright`, `/usr/share/
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=18.2.2-0ubuntu1~18.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_18.2.2-0ubuntu1~18.04.2.dsc' mesa_18.2.2-0ubuntu1~18.04.2.dsc 5444 SHA256:fcd6f494723e2b5503cd604f7386004ed1e6dab86e01721fe223dc6ca73d3bb4
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_18.2.2.orig.tar.gz' mesa_18.2.2.orig.tar.gz 19618707 SHA256:c51711168971957037cc7e3e19e8abe1ec6eeab9cf236d419a1e7728a41cac8a
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_18.2.2.orig.tar.gz.asc' mesa_18.2.2.orig.tar.gz.asc 879 SHA256:edeb856778e0a62e4f49672c8173127aafa85f988dc396b10c3294a36a102509
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_18.2.2-0ubuntu1~18.04.2.diff.gz' mesa_18.2.2-0ubuntu1~18.04.2.diff.gz 111197 SHA256:c38d0af52c8cf0701092833e684fe0909913fd28a62ad9e56c7cc92471931d77
-```
 
 ### `dpkg` source package: `mime-support=3.60ubuntu1`
 

@@ -109,13 +109,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/apt-util
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.0.1ubuntu2.20
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.20.dsc' apt_1.0.1ubuntu2.20.dsc 2428 SHA256:55e8f5fafa3a5b1d182a45c4c94eee07fcdbe1ef6cc186899d4294d43ae6a35f
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.20.tar.xz' apt_1.0.1ubuntu2.20.tar.xz 1753248 SHA256:20746ba5e409beb733c866584ff7b45509ff968ad3c6e8b19e965e38dc9229d1
-```
 
 ### `dpkg` source package: `assimp=3.0~dfsg-2`
 
