@@ -1,9 +1,9 @@
-# `elasticsearch:5.6.15-alpine`
+# `elasticsearch:5.6.16-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f87b967c1ec346ff2c5b145958f29e1082ad53e228554507994e51a2312da0a0`
-- Created: `2019-03-08T04:46:22.86769737Z`
+- Image ID: `sha256:8a5425afa80fcf9405e51dc213423f9644f6a5670c0fabd274c6ec0d69dff3c9`
+- Created: `2019-03-20T00:19:55.562318433Z`
 - Virtual Size: ~ 127.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,7 +16,7 @@
   - `JAVA_VERSION=8u191`
   - `JAVA_ALPINE_VERSION=8.191.12-r0`
   - `GPG_KEY=46095ACC8548582C1A2699A9D27D666CD88E42B4`
-  - `ELASTICSEARCH_VERSION=5.6.15`
-  - `ELASTICSEARCH_TARBALL=https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.6.15.tar.gz`
-  - `ELASTICSEARCH_TARBALL_ASC=https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.6.15.tar.gz.asc`
-  - `ELASTICSEARCH_TARBALL_SHA1=42d2519fd7d47e5b0bbef05d402ff0f66fbbe2ca`
+  - `ELASTICSEARCH_VERSION=5.6.16`
+  - `ELASTICSEARCH_TARBALL=https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.6.16.tar.gz`
+  - `ELASTICSEARCH_TARBALL_ASC=https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.6.16.tar.gz.asc`
+  - `ELASTICSEARCH_TARBALL_SHA1=4ce4a1087e79d552b0d95566095827b18bcb6f67`
