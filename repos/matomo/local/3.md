@@ -1,10 +1,10 @@
-# `matomo:3.8.1-apache`
+# `matomo:3.9.1-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:02ccd0131cf1f6b09de94bcd7e149ba64673c672b4346012a14c481b38edefbd`
-- Created: `2019-03-14T21:33:31.187865458Z`
-- Virtual Size: ~ 501.27 Mb  
+- Image ID: `sha256:2324403759ae28ab89c8e9da735a2d785a929b07028ff13e4b9b763ecab61943`
+- Created: `2019-03-21T23:20:04.448750956Z`
+- Virtual Size: ~ 502.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -20,13 +20,13 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
-  - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.16`
-  - `PHP_URL=https://secure.php.net/get/php-7.2.16.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.16.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=7d91ed3c1447c6358a3d53f84599ef854aca4c3622de7435e2df115bf196e482`
+  - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
+  - `PHP_VERSION=7.3.3`
+  - `PHP_URL=https://secure.php.net/get/php-7.3.3.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.3.3.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=6bb03e79a183d0cb059a6d117bbb2e0679cab667fb713a13c6a16f56bebab9b3`
   - `PHP_MD5=`
-  - `MATOMO_VERSION=3.8.1`
+  - `MATOMO_VERSION=3.9.1`
 - Labels:
   - `maintainer=pierre@piwik.org`
 
@@ -1928,6 +1928,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2.2+deb9u2/ (for browsing the source)
 - https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2.2+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxml2/2.9.4+dfsg1-2.2+deb9u2/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `libzip=1.1.2-1.1`
+
+Binary Packages:
+
+- `libzip4:amd64=1.1.2-1.1+b1`
+
+Licenses: (parsed from: `/usr/share/doc/libzip4/copyright`)
+
+- `GPL-3`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libzip=1.1.2-1.1
+'http://deb.debian.org/debian/pool/main/libz/libzip/libzip_1.1.2-1.1.dsc' libzip_1.1.2-1.1.dsc 2162 SHA256:f973d6fb8838bb220a7ae297e19bf822b256509dc0bf53ab7374183ea7cbc651
+'http://deb.debian.org/debian/pool/main/libz/libzip/libzip_1.1.2.orig.tar.gz' libzip_1.1.2.orig.tar.gz 671193 SHA256:59ac7c09b0aa9aa7e21849c236d0a66a97aa6d442d78335c2fdfe0ee16366221
+'http://deb.debian.org/debian/pool/main/libz/libzip/libzip_1.1.2-1.1.debian.tar.xz' libzip_1.1.2-1.1.debian.tar.xz 4940 SHA256:49e5589eb16f16cc6a8011e1613d5e1a41e39ae7ca8bb576c11d181e745532bb
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libzip/1.1.2-1.1/ (for browsing the source)
+- https://sources.debian.net/src/libzip/1.1.2-1.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libzip/1.1.2-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `linux=4.9.144-3.1`
 

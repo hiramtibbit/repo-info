@@ -1,10 +1,10 @@
-# `matomo:3.8.1-fpm-alpine`
+# `matomo:3.9.1-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b214861b1b2fafc9c2cc5c6ed53851977c173d4f171cbfa55cb6227cbbbc3446`
-- Created: `2019-03-14T21:37:58.070461239Z`
-- Virtual Size: ~ 204.69 Mb  
+- Image ID: `sha256:c1bb8ed561f869278890f7552241b0f6c9b0511d67a3d2a8872174d089b1cca0`
+- Created: `2019-03-21T23:20:46.959451927Z`
+- Virtual Size: ~ 209.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,12 +17,12 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
-  - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.16`
-  - `PHP_URL=https://secure.php.net/get/php-7.2.16.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.16.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=7d91ed3c1447c6358a3d53f84599ef854aca4c3622de7435e2df115bf196e482`
+  - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
+  - `PHP_VERSION=7.3.3`
+  - `PHP_URL=https://secure.php.net/get/php-7.3.3.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.3.3.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=6bb03e79a183d0cb059a6d117bbb2e0679cab667fb713a13c6a16f56bebab9b3`
   - `PHP_MD5=`
-  - `MATOMO_VERSION=3.8.1`
+  - `MATOMO_VERSION=3.9.1`
 - Labels:
   - `maintainer=pierre@piwik.org`
