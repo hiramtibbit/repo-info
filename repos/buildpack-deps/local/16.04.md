@@ -128,8 +128,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apt=1.2.29ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.29ubuntu0.1.dsc' apt_1.2.29ubuntu0.1.dsc 2486 SHA256:be06c9b9be3dfaab177acb25f6e330a9af1f49a631b4be988739625b229ed89f
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.29ubuntu0.1.tar.xz' apt_1.2.29ubuntu0.1.tar.xz 2071944 SHA256:0d171fd81c2039f882a96c633240c293f7f7317654b905f93a12ec682b7149cd
+'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.29ubuntu0.1.dsc' apt_1.2.29ubuntu0.1.dsc 2486 SHA256:be06c9b9be3dfaab177acb25f6e330a9af1f49a631b4be988739625b229ed89f
+'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.29ubuntu0.1.tar.xz' apt_1.2.29ubuntu0.1.tar.xz 2071944 SHA256:0d171fd81c2039f882a96c633240c293f7f7317654b905f93a12ec682b7149cd
 ```
 
 ### `dpkg` source package: `atk1.0=2.18.0-1`
@@ -1120,14 +1120,9 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.32.2-1ubuntu1.5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.5.dsc' gdk-pixbuf_2.32.2-1ubuntu1.5.dsc 2989 SHA256:d3327425db711bcc8e3659f91f56c71bf338d22bf43bf3b53450436050f58250
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2.orig.tar.xz' gdk-pixbuf_2.32.2.orig.tar.xz 2429268 SHA256:d3ab06fc123b13effed4c27c77cebdfad2173ff20628d82c397b7660ae926145
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.5.debian.tar.xz' gdk-pixbuf_2.32.2-1ubuntu1.5.debian.tar.xz 19148 SHA256:505d4e611ff95885894414c951c121a355d33c40780b31c3b19a5903b65bfc8f
-```
 
 ### `dpkg` source package: `geoip=1.6.9-1`
 

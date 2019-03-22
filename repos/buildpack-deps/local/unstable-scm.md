@@ -450,20 +450,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris db5.3=5.3.28+dfsg1-0.5
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28+dfsg1-0.5.dsc' db5.3_5.3.28+dfsg1-0.5.dsc 2804 SHA256:600ef735e47273c7e8de0a9bbbf2d6f31cb1d2851117f94776d7952588c0ecc4
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28+dfsg1.orig.tar.xz' db5.3_5.3.28+dfsg1.orig.tar.xz 19723860 SHA256:b19bf3dd8ce74b95a7b215be9a7c8489e8e8f18da60d64d6340a06e75f497749
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28+dfsg1-0.5.debian.tar.xz' db5.3_5.3.28+dfsg1-0.5.debian.tar.xz 29128 SHA256:682c1736c1b5f3afbd90cf24e085a0437821ae595dc54aeef8c09ddd1c3d05fe
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/db5.3/5.3.28+dfsg1-0.5/
 
-- https://sources.debian.net/src/db5.3/5.3.28+dfsg1-0.5/ (for browsing the source)
-- https://sources.debian.net/src/db5.3/5.3.28+dfsg1-0.5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/db5.3/5.3.28+dfsg1-0.5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.71`
 
@@ -747,21 +740,13 @@ Licenses: (parsed from: `/usr/share/doc/libgdbm-compat4/copyright`, `/usr/share/
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdbm=1.18.1-3
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.18.1-3.dsc' gdbm_1.18.1-3.dsc 2635 SHA256:6042683dbbbe1f858b403e0e5719562627cb9e66ec58212f42a9e5d56605ea40
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.18.1.orig.tar.gz' gdbm_1.18.1.orig.tar.gz 941863 SHA256:86e613527e5dba544e73208f42b78b7c022d4fa5a6d5498bf18c8d6f745b91dc
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.18.1.orig.tar.gz.asc' gdbm_1.18.1.orig.tar.gz.asc 412 SHA256:3254738e7689e44ac65e78a766806828b8282e6bb1c0e5bb6156a99e567889a5
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.18.1-3.debian.tar.xz' gdbm_1.18.1-3.debian.tar.xz 28164 SHA256:a341cbfe80b3735fb4a429ed97ab52d96e18143d4525d00212dbca8dd671d844
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gdbm/1.18.1-3/
 
-- https://sources.debian.net/src/gdbm/1.18.1-3/ (for browsing the source)
-- https://sources.debian.net/src/gdbm/1.18.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gdbm/1.18.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `git=1:2.20.1-2`
 
@@ -1992,20 +1977,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.36.0-2
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.36.0-2.dsc' nghttp2_1.36.0-2.dsc 2569 SHA256:0c6a71127f2844ade6c07d8be031c2894faacce46864cc77d514915c974d9c47
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.36.0.orig.tar.bz2' nghttp2_1.36.0.orig.tar.bz2 1919021 SHA256:16a734d7414062911e23989e243ca76e7722cb3c60273723e3e3ae4c21e71ceb
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.36.0-2.debian.tar.xz' nghttp2_1.36.0-2.debian.tar.xz 12572 SHA256:be1fa967c1ab752cc73640f45757c9ed0fcbeeef1fb505ab04bb7bc46f1b287a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.36.0-2/
 
-- https://sources.debian.net/src/nghttp2/1.36.0-2/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.36.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.36.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.6-1`
 
@@ -2351,19 +2329,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-defaults=2.7.15-4
-'http://deb.debian.org/debian/pool/main/p/python-defaults/python-defaults_2.7.15-4.dsc' python-defaults_2.7.15-4.dsc 2917 SHA256:928c686da2a4d10382349c56711ca2fa0ec8fa458a7c09b0219eedc7107ab39f
-'http://deb.debian.org/debian/pool/main/p/python-defaults/python-defaults_2.7.15-4.tar.gz' python-defaults_2.7.15-4.tar.gz 82780 SHA256:70d29d2feee94aaf02f6ca3149e31473f14e5451649f8dcfb554184f6f26c9c1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python-defaults/2.7.15-4/
 
-- https://sources.debian.net/src/python-defaults/2.7.15-4/ (for browsing the source)
-- https://sources.debian.net/src/python-defaults/2.7.15-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python-defaults/2.7.15-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python2.7=2.7.16-1`
 
