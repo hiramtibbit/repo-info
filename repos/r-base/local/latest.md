@@ -354,14 +354,13 @@ Licenses: (parsed from: `/usr/share/doc/libcairo2/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cairo=1.16.0-3
-'http://http.debian.net/debian/pool/main/c/cairo/cairo_1.16.0-3.dsc' cairo_1.16.0-3.dsc 2778 SHA256:e6c612bb8982b11d3c799122c19cee9d42a5dcc6bd77fb75fbe633ba9a7d7808
-'http://http.debian.net/debian/pool/main/c/cairo/cairo_1.16.0.orig.tar.xz' cairo_1.16.0.orig.tar.xz 41997432 SHA256:5e7b29b3f113ef870d1e3ecf8adf21f923396401604bda16d44be45e66052331
-'http://http.debian.net/debian/pool/main/c/cairo/cairo_1.16.0-3.debian.tar.xz' cairo_1.16.0-3.debian.tar.xz 29644 SHA256:fa9286245de3c6a76184d6a53a2cd74b27a218d0aa5de6b413851e33228055e4
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/cairo/1.16.0-3/
+
 
 ### `dpkg` source package: `cdebconf=0.247`
 
@@ -1050,21 +1049,13 @@ Licenses: (parsed from: `/usr/share/doc/libgdbm-compat4/copyright`, `/usr/share/
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdbm=1.18.1-3
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.18.1-3.dsc' gdbm_1.18.1-3.dsc 2635 SHA256:6042683dbbbe1f858b403e0e5719562627cb9e66ec58212f42a9e5d56605ea40
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.18.1.orig.tar.gz' gdbm_1.18.1.orig.tar.gz 941863 SHA256:86e613527e5dba544e73208f42b78b7c022d4fa5a6d5498bf18c8d6f745b91dc
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.18.1.orig.tar.gz.asc' gdbm_1.18.1.orig.tar.gz.asc 412 SHA256:3254738e7689e44ac65e78a766806828b8282e6bb1c0e5bb6156a99e567889a5
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.18.1-3.debian.tar.xz' gdbm_1.18.1-3.debian.tar.xz 28164 SHA256:a341cbfe80b3735fb4a429ed97ab52d96e18143d4525d00212dbca8dd671d844
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gdbm/1.18.1-3/
 
-- https://sources.debian.net/src/gdbm/1.18.1-3/ (for browsing the source)
-- https://sources.debian.net/src/gdbm/1.18.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gdbm/1.18.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.58.3-1`
 
