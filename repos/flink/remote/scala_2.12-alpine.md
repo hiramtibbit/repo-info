@@ -1,7 +1,7 @@
 ## `flink:scala_2.12-alpine`
 
 ```console
-$ docker pull flink@sha256:08d06b494be8f965375aa37eb5ae49ef145cb3a9fa39268a7b87211fc9d3ca1e
+$ docker pull flink@sha256:1a8306a60f5f4d64d25cea951fdf32278d530f094f35fd83072c609be150d121
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -432,14 +432,14 @@ CMD ["help"]
 ### `flink:scala_2.12-alpine` - linux; ppc64le
 
 ```console
-$ docker pull flink@sha256:32e05c11f5cf18d813a5066486bd582dc5a0c6e3792ac2e121da32630c36a69f
+$ docker pull flink@sha256:dab8e9f5fa039e9415c9920a0d2e64cee3d75226881af5a01300f71c2dd207fb
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **311.8 MB (311816780 bytes)**  
+-	Total Size: **311.8 MB (311819216 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f7b1fbc9614a4905e71c69f4335b805442afa139aae8cab85fbbaeafd15701d`
+-	Image ID: `sha256:96337ef6bb641a803f6f9b9b6ad08795e5dcf29731caa2113793573b4d6a6900`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -478,17 +478,17 @@ WORKDIR /opt/flink
 ENV FLINK_URL_FILE_PATH=flink/flink-1.7.2/flink-1.7.2-bin-scala_2.12.tgz
 # Fri, 08 Mar 2019 08:22:42 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.7.2/flink-1.7.2-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.7.2/flink-1.7.2-bin-scala_2.12.tgz.asc
-# Fri, 08 Mar 2019 08:22:43 GMT
-COPY file:48bb6014c3e97895005a1862074377ac24cf0d91f0034129ec7f3c4dd3e96a38 in /KEYS 
-# Fri, 08 Mar 2019 08:25:35 GMT
+# Sat, 23 Mar 2019 09:03:48 GMT
+COPY file:6080d226172b47d9372bfe1905f1a2ac9e15ee46ef2f939add669902b31da9ae in /KEYS 
+# Sat, 23 Mar 2019 09:06:03 GMT
 RUN set -ex;   apk add --no-cache --virtual .build-deps     ca-certificates     gnupg     openssl     tar   ;     wget -nv -O flink.tgz "$FLINK_TGZ_URL";   wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";   gpg --batch --import /KEYS;   gpg --batch --verify flink.tgz.asc flink.tgz;   gpgconf --kill all;   rm -rf "$GNUPGHOME" flink.tgz.asc;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     apk del .build-deps;     chown -R flink:flink .;
-# Fri, 08 Mar 2019 08:25:38 GMT
-COPY file:82b73e728dc4710cf6b0b2a4c3b0e39f061e57bb5a799dfaca9133014e5d2c63 in / 
-# Fri, 08 Mar 2019 08:25:42 GMT
+# Sat, 23 Mar 2019 09:06:06 GMT
+COPY file:52e8c12e536aa08e39c4f96f47155e1dcf2ab878ce6da844d94e239302d89fe1 in / 
+# Sat, 23 Mar 2019 09:06:08 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 08 Mar 2019 08:25:45 GMT
+# Sat, 23 Mar 2019 09:06:10 GMT
 EXPOSE 6123 8081
-# Fri, 08 Mar 2019 08:25:48 GMT
+# Sat, 23 Mar 2019 09:06:12 GMT
 CMD ["help"]
 ```
 
@@ -517,17 +517,17 @@ CMD ["help"]
 		Last Modified: Fri, 08 Mar 2019 08:42:01 GMT  
 		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c37328e5fdd411f6ae154f0930cae0edb915f5186fa0bb04301d5f2916efc521`  
-		Last Modified: Fri, 08 Mar 2019 08:42:01 GMT  
-		Size: 61.6 KB (61621 bytes)  
+	-	`sha256:16e61481c362d9f953461bb51c720d223f84d25e9449564c5582736a681fa525`  
+		Last Modified: Sat, 23 Mar 2019 09:37:58 GMT  
+		Size: 64.0 KB (63969 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9287e0478cc4436e0e69f44f60c936a66d49089061f0ebc6aa9f78c3c74ed3c`  
-		Last Modified: Fri, 08 Mar 2019 08:42:42 GMT  
-		Size: 252.2 MB (252159393 bytes)  
+	-	`sha256:79e0d996367246523e42be7a308bc51853cdf07bbd764fc787c6e799a506a44a`  
+		Last Modified: Sat, 23 Mar 2019 09:39:11 GMT  
+		Size: 252.2 MB (252159384 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba88de4e1b8759717c46d4443175ca26bf1f94fe293ad62f656dfab40e2afd04`  
-		Last Modified: Fri, 08 Mar 2019 08:42:00 GMT  
-		Size: 1.1 KB (1141 bytes)  
+	-	`sha256:37e4eb50942874cbb2e3893fc0c7439fed8d020fe7ca8ce13f6a6d69e76b4625`  
+		Last Modified: Sat, 23 Mar 2019 09:37:58 GMT  
+		Size: 1.2 KB (1238 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `flink:scala_2.12-alpine` - linux; s390x
