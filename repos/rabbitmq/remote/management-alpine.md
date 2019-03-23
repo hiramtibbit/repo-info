@@ -1,7 +1,7 @@
 ## `rabbitmq:management-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:b99a4a7cd5bc53da6906c77a29f6e93a830b6e6b7276f7632f6beea6799c7a8b
+$ docker pull rabbitmq@sha256:65d722ecd010a2a45d8ca729b296f6f97d43ed75599f61323f4f7703fbb2a598
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15,14 +15,14 @@ $ docker pull rabbitmq@sha256:b99a4a7cd5bc53da6906c77a29f6e93a830b6e6b7276f7632f
 ### `rabbitmq:management-alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:8de71556ba69f5d77e9068567f33c120b318ba63fbe8883f182cf6f8da93ef37
+$ docker pull rabbitmq@sha256:15243c8fca246a755484f1aeb2d006e58691a533753ef45007ddc90566e404c6
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **60.3 MB (60314887 bytes)**  
+-	Total Size: **60.3 MB (60315221 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:046ca3731dc2cb757d1f963be065055671d98c6005148cc542b212bd673afd64`
+-	Image ID: `sha256:d0734dc6a1bb83a76c165599be209e172fd8715d6d861db4eb53833f6c412fde`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -41,51 +41,51 @@ ENV OPENSSL_VERSION=1.1.1b
 ENV OPENSSL_SOURCE_SHA256=5c557b023230413dfb0756f3137a13e6d726838ccd1430888ad15bfb2b43ea4b
 # Thu, 07 Mar 2019 22:39:34 GMT
 ENV OPENSSL_PGP_KEY_ID=0x8657ABB260F056B1E5190839D9C4D26D0E604491
-# Wed, 20 Mar 2019 00:35:27 GMT
-ENV OTP_VERSION=21.3.1
-# Wed, 20 Mar 2019 00:35:27 GMT
-ENV OTP_SOURCE_SHA256=ff6d8a70c81b7e8c5e46b98d351456c3e0bd54517855cb620fc54e2816083bf1
-# Wed, 20 Mar 2019 00:46:35 GMT
+# Fri, 22 Mar 2019 23:23:25 GMT
+ENV OTP_VERSION=21.3.2
+# Fri, 22 Mar 2019 23:23:25 GMT
+ENV OTP_SOURCE_SHA256=962ace7194dd113b9aba50c4a8997c3d2d210b28252c7833bbab19100f2e1914
+# Fri, 22 Mar 2019 23:32:36 GMT
 # ARGS: PGP_KEYSERVER=ha.pool.sks-keyservers.net
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		autoconf 		ca-certificates 		dpkg-dev dpkg 		gcc 		gnupg 		libc-dev 		linux-headers 		m4 		make 		ncurses-dev 		wget 	; 		OPENSSL_SOURCE_URL="https://www.openssl.org/source/openssl-$OPENSSL_VERSION.tar.gz"; 	OPENSSL_PATH="/usr/local/src/openssl-$OPENSSL_VERSION"; 	OPENSSL_CONFIG_DIR=/usr/local/etc/ssl; 		mkdir /usr/local/src; 		wget --progress dot:giga --output-document "$OPENSSL_PATH.tar.gz.asc" "$OPENSSL_SOURCE_URL.asc"; 	wget --progress dot:giga --output-document "$OPENSSL_PATH.tar.gz" "$OPENSSL_SOURCE_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver "$PGP_KEYSERVER" --recv-keys "$OPENSSL_PGP_KEY_ID"; 	gpg --batch --verify "$OPENSSL_PATH.tar.gz.asc" "$OPENSSL_PATH.tar.gz"; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	echo "$OPENSSL_SOURCE_SHA256 *$OPENSSL_PATH.tar.gz" | sha256sum -c -; 	mkdir -p "$OPENSSL_PATH"; 	tar --extract --file "$OPENSSL_PATH.tar.gz" --directory "$OPENSSL_PATH" --strip-components 1; 		cd "$OPENSSL_PATH"; 	MACHINE="$(dpkg-architecture --query DEB_BUILD_GNU_CPU)" 	RELEASE="4.x.y-z" 	SYSTEM='Linux' 	BUILD='???' 	./config --openssldir="$OPENSSL_CONFIG_DIR"; 	make -j "$(getconf _NPROCESSORS_ONLN)"; 	make install_sw install_ssldirs; 	cd ..; 	rm -rf "$OPENSSL_PATH"*; 	rmdir "$OPENSSL_CONFIG_DIR/certs" "$OPENSSL_CONFIG_DIR/private"; 	ln -sf /etc/ssl/certs /etc/ssl/private "$OPENSSL_CONFIG_DIR"; 	openssl version; 		OTP_SOURCE_URL="https://github.com/erlang/otp/archive/OTP-$OTP_VERSION.tar.gz"; 	OTP_PATH="/usr/local/src/otp-$OTP_VERSION"; 		mkdir -p "$OTP_PATH"; 	wget --progress dot:giga --output-document "$OTP_PATH.tar.gz" "$OTP_SOURCE_URL"; 	echo "$OTP_SOURCE_SHA256 *$OTP_PATH.tar.gz" | sha256sum -c -; 	tar --extract --file "$OTP_PATH.tar.gz" --directory "$OTP_PATH" --strip-components 1; 		cd "$OTP_PATH"; 	export ERL_TOP="$OTP_PATH"; 	./otp_build autoconf; 	CFLAGS="$(dpkg-buildflags --get CFLAGS)"; export CFLAGS; 	hostArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)"; 	buildArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--host="$hostArch" 		--build="$buildArch" 		--disable-dynamic-ssl-lib 		--disable-sctp 		--disable-silent-rules 		--enable-clock-gettime 		--enable-hipe 		--enable-hybrid-heap 		--enable-kernel-poll 		--enable-shared-zlib 		--enable-smp-support 		--enable-threads 		--with-microstate-accounting=extra 		--without-common_test 		--without-debugger 		--without-dialyzer 		--without-diameter 		--without-edoc 		--without-erl_docgen 		--without-erl_interface 		--without-et 		--without-eunit 		--without-ftp 		--without-jinterface 		--without-megaco 		--without-observer 		--without-odbc 		--without-reltool 		--without-ssh 		--without-tftp 		--without-wx 	; 	make -j "$(getconf _NPROCESSORS_ONLN)" GEN_OPT_FLGS="-O2 -fno-strict-aliasing"; 	make install; 	cd ..; 	rm -rf "$OTP_PATH"* /usr/local/lib/erlang/lib/*/src; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache --virtual .otp-run-deps $runDeps; 	apk del --no-network .build-deps; 		openssl version; 	erl -noshell -eval 'io:format("~p~n~n~p~n~n", [crypto:supports(), ssl:versions()]), init:stop().'
-# Wed, 20 Mar 2019 00:46:35 GMT
+# Fri, 22 Mar 2019 23:32:36 GMT
 ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq
-# Wed, 20 Mar 2019 00:46:36 GMT
+# Fri, 22 Mar 2019 23:32:37 GMT
 # ARGS: PGP_KEYSERVER=ha.pool.sks-keyservers.net
 RUN set -eux; 	addgroup -g 101 -S rabbitmq; 	adduser -u 100 -S -h "$RABBITMQ_DATA_DIR" -G rabbitmq rabbitmq; 	mkdir -p "$RABBITMQ_DATA_DIR" /etc/rabbitmq /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chown -fR rabbitmq:rabbitmq "$RABBITMQ_DATA_DIR" /etc/rabbitmq /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chmod 777 "$RABBITMQ_DATA_DIR" /etc/rabbitmq /tmp/rabbitmq-ssl /var/log/rabbitmq; 	ln -sf "$RABBITMQ_DATA_DIR/.erlang.cookie" /root/.erlang.cookie
-# Wed, 20 Mar 2019 00:48:07 GMT
+# Fri, 22 Mar 2019 23:34:58 GMT
 ENV RABBITMQ_VERSION=3.7.13
-# Wed, 20 Mar 2019 00:48:08 GMT
+# Fri, 22 Mar 2019 23:34:59 GMT
 ENV RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Wed, 20 Mar 2019 00:48:08 GMT
+# Fri, 22 Mar 2019 23:34:59 GMT
 ENV RABBITMQ_HOME=/opt/rabbitmq
-# Wed, 20 Mar 2019 00:48:08 GMT
+# Fri, 22 Mar 2019 23:34:59 GMT
 ENV PATH=/opt/rabbitmq/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
-# Wed, 20 Mar 2019 00:48:22 GMT
+# Fri, 22 Mar 2019 23:35:08 GMT
 # ARGS: PGP_KEYSERVER=ha.pool.sks-keyservers.net
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		ca-certificates 		gnupg 		wget 		xz 	; 		RABBITMQ_SOURCE_URL="https://github.com/rabbitmq/rabbitmq-server/releases/download/v$RABBITMQ_VERSION/rabbitmq-server-generic-unix-$RABBITMQ_VERSION.tar.xz"; 	RABBITMQ_PATH="/usr/local/src/rabbitmq-$RABBITMQ_VERSION"; 		wget --progress dot:giga --output-document "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_SOURCE_URL.asc"; 	wget --progress dot:giga --output-document "$RABBITMQ_PATH.tar.xz" "$RABBITMQ_SOURCE_URL"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver "$PGP_KEYSERVER" --recv-keys "$RABBITMQ_PGP_KEY_ID"; 	gpg --batch --verify "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_PATH.tar.xz"; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar --extract --file "$RABBITMQ_PATH.tar.xz" --directory "$RABBITMQ_HOME" --strip-components 1; 	rm -rf "$RABBITMQ_PATH"*; 	grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -i 's/^SYS_PREFIX=.*$/SYS_PREFIX=/' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	chown -R rabbitmq:rabbitmq "$RABBITMQ_HOME"; 		apk del .build-deps; 		[ ! -e "$RABBITMQ_DATA_DIR/.erlang.cookie" ]; 	su-exec rabbitmq rabbitmqctl help; 	su-exec rabbitmq rabbitmqctl list_ciphers; 	su-exec rabbitmq rabbitmq-plugins list; 	rm "$RABBITMQ_DATA_DIR/.erlang.cookie"
-# Wed, 20 Mar 2019 00:48:23 GMT
+# Fri, 22 Mar 2019 23:35:09 GMT
 # ARGS: PGP_KEYSERVER=ha.pool.sks-keyservers.net
 RUN ln -sf /opt/rabbitmq/plugins /plugins
-# Wed, 20 Mar 2019 00:48:23 GMT
+# Fri, 22 Mar 2019 23:35:09 GMT
 ENV HOME=/var/lib/rabbitmq
-# Wed, 20 Mar 2019 00:48:23 GMT
+# Fri, 22 Mar 2019 23:35:09 GMT
 VOLUME [/var/lib/rabbitmq]
-# Wed, 20 Mar 2019 00:48:23 GMT
+# Fri, 22 Mar 2019 23:35:10 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Wed, 20 Mar 2019 00:48:24 GMT
+# Fri, 22 Mar 2019 23:35:10 GMT
 COPY file:60db628224112457b594b043354612e74ba34decda2c62249d21ca491215c98a in /usr/local/bin/ 
-# Wed, 20 Mar 2019 00:48:24 GMT
+# Fri, 22 Mar 2019 23:35:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 20 Mar 2019 00:48:24 GMT
+# Fri, 22 Mar 2019 23:35:10 GMT
 EXPOSE 25672 4369 5671 5672
-# Wed, 20 Mar 2019 00:48:24 GMT
+# Fri, 22 Mar 2019 23:35:10 GMT
 CMD ["rabbitmq-server"]
-# Wed, 20 Mar 2019 00:48:32 GMT
+# Fri, 22 Mar 2019 23:35:15 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Wed, 20 Mar 2019 00:48:36 GMT
+# Fri, 22 Mar 2019 23:35:19 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python; 	rabbitmqadmin --version
-# Wed, 20 Mar 2019 00:48:36 GMT
+# Fri, 22 Mar 2019 23:35:19 GMT
 EXPOSE 15671 15672
 ```
 
@@ -98,33 +98,33 @@ EXPOSE 15671 15672
 		Last Modified: Thu, 07 Mar 2019 22:53:12 GMT  
 		Size: 1.4 MB (1402783 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff8d7587590bdfc0acc32adf15cb8cd1b7831ebd2200f81f7b0e8b1e8f17719`  
-		Last Modified: Wed, 20 Mar 2019 00:49:12 GMT  
-		Size: 35.8 MB (35801227 bytes)  
+	-	`sha256:a7b0720c062d5c8a665319e91f2cf6fd66d7de368cde21bfd137694efae69ac6`  
+		Last Modified: Fri, 22 Mar 2019 23:36:22 GMT  
+		Size: 35.8 MB (35801559 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3835f255353bb022acc19c57924d4442424c3fde251ab5c825d1bbe1f954e9b`  
-		Last Modified: Wed, 20 Mar 2019 00:49:07 GMT  
-		Size: 1.4 KB (1411 bytes)  
+	-	`sha256:4edfb56d40212f5fa80d0ff108c6c6243ae527d53f4da7302e88ee04a585e9b2`  
+		Last Modified: Fri, 22 Mar 2019 23:36:14 GMT  
+		Size: 1.4 KB (1415 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d261439a509a318b2b1920447eedb10bf087368b1e7578cdbaa1131c11a37d5b`  
-		Last Modified: Wed, 20 Mar 2019 00:49:39 GMT  
-		Size: 9.9 MB (9888395 bytes)  
+	-	`sha256:f60522c3c2ca387050fd86609b93917f742381b9cc92ffe8556e741c41a59554`  
+		Last Modified: Fri, 22 Mar 2019 23:37:07 GMT  
+		Size: 9.9 MB (9888383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:270311e109348a6f2b7f5e9781c9f797ce029cd2bdeb2ea9a6c36bb58c1315da`  
-		Last Modified: Wed, 20 Mar 2019 00:49:38 GMT  
+	-	`sha256:c1e865f2872907c83b9ff5959f2014906b27f6cd8ca632f810c98cfd030b538c`  
+		Last Modified: Fri, 22 Mar 2019 23:37:06 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a844ea8b06d9481d88b1b331954d9416086f0e0952263c9310e11ac2936d762`  
-		Last Modified: Wed, 20 Mar 2019 00:49:38 GMT  
-		Size: 4.4 KB (4416 bytes)  
+	-	`sha256:2d88e2917e01bd29a14f05524eab8f70d2f36a18dc16a3530e5d05f2d08a2da3`  
+		Last Modified: Fri, 22 Mar 2019 23:37:06 GMT  
+		Size: 4.4 KB (4421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1699c15cdea7f338e43c3ea80f76bd817d66518d92cfe010ba501885410b77f`  
-		Last Modified: Wed, 20 Mar 2019 00:49:43 GMT  
-		Size: 192.0 B  
+	-	`sha256:dfb4ffbda2743013a748aa3c81a2256f75f9b1ba57b3ab7f4a4a92a1ca5651d6`  
+		Last Modified: Fri, 22 Mar 2019 23:37:11 GMT  
+		Size: 191.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a11a68516ee24aa3b0dd15ff25c1267206afaad6ffc6788af7e6f6a9cd066ea`  
-		Last Modified: Wed, 20 Mar 2019 00:49:45 GMT  
-		Size: 11.0 MB (11009180 bytes)  
+	-	`sha256:3975faa2231dfb5d80475087ceaf2cbdce0cad0524300d32760a323462e3419a`  
+		Last Modified: Fri, 22 Mar 2019 23:37:14 GMT  
+		Size: 11.0 MB (11009186 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:management-alpine` - linux; arm64 variant v8
