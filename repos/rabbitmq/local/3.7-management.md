@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5ae7e27bcf341c111fa0c1d9abfac8794937c873400f0150acedfeb9ce657f4d`
-- Created: `2019-03-14T22:11:00.907319164Z`
-- Virtual Size: ~ 212.85 Mb  
+- Image ID: `sha256:4d6576293cb8b4277d896925e09270b656a38fe7ab5d5cb770f0beb9152629e0`
+- Created: `2019-03-22T23:34:54.311098167Z`
+- Virtual Size: ~ 212.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,8 +14,8 @@
   - `OPENSSL_VERSION=1.1.1b`
   - `OPENSSL_SOURCE_SHA256=5c557b023230413dfb0756f3137a13e6d726838ccd1430888ad15bfb2b43ea4b`
   - `OPENSSL_PGP_KEY_ID=0x8657ABB260F056B1E5190839D9C4D26D0E604491`
-  - `OTP_VERSION=21.3`
-  - `OTP_SOURCE_SHA256=64a6eea6c1dc2353ad80e29ef57f6ec4192c91478ac2b854d0417b6b2bf4d9bf`
+  - `OTP_VERSION=21.3.2`
+  - `OTP_SOURCE_SHA256=962ace7194dd113b9aba50c4a8997c3d2d210b28252c7833bbab19100f2e1914`
   - `RABBITMQ_DATA_DIR=/var/lib/rabbitmq`
   - `RABBITMQ_VERSION=3.7.13`
   - `RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA`
@@ -79,13 +79,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.6.8
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.8.dsc' apt_1.6.8.dsc 2751 SHA256:3a75684546fa500a08d68a7eaa0c60b9a246a9752a305f2bb3710b4f95a5cd26
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.8.tar.xz' apt_1.6.8.tar.xz 2154964 SHA256:bab346ddc6d6db6ffdc9693e87bd4ae07fac9ac6d2ec01a6663a7908686a3770
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
