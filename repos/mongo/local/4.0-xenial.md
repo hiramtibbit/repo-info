@@ -1,10 +1,10 @@
-# `mongo:4.0.6-xenial`
+# `mongo:4.0.7-xenial`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a3abd47e8d61c923dd1561ad3720af4d948627c524a53d321c2a5bd6f6467060`
-- Created: `2019-03-12T01:17:26.315962172Z`
-- Virtual Size: ~ 394.39 Mb  
+- Image ID: `sha256:30f826ce11fbd5496eaf15f8eb0624655b83ee6d18a53667f06742a2dfaebc52`
+- Created: `2019-03-22T23:11:10.367248001Z`
+- Virtual Size: ~ 408.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,4 +17,4 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=4.0`
-  - `MONGO_VERSION=4.0.6`
+  - `MONGO_VERSION=4.0.7`
