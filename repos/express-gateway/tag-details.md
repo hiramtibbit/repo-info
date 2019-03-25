@@ -2,12 +2,12 @@
 
 # Tags of `express-gateway`
 
--	[`express-gateway:1.15.0`](#express-gateway1150)
--	[`express-gateway:1.15.x`](#express-gateway115x)
+-	[`express-gateway:1.16.0`](#express-gateway1160)
+-	[`express-gateway:1.16.x`](#express-gateway116x)
 -	[`express-gateway:1.x`](#express-gateway1x)
 -	[`express-gateway:latest`](#express-gatewaylatest)
 
-## `express-gateway:1.15.0`
+## `express-gateway:1.16.0`
 
 ```console
 $ docker pull express-gateway@sha256:9e87326df836a19677f0fb8c9e71fee2869738af5ba917b0a4b3bc5d9c1d8602
@@ -21,7 +21,7 @@ $ docker pull express-gateway@sha256:9e87326df836a19677f0fb8c9e71fee2869738af5ba
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `express-gateway:1.15.0` - linux; amd64
+### `express-gateway:1.16.0` - linux; amd64
 
 ```console
 $ docker pull express-gateway@sha256:30f182c75b8ae9c1895c98cecc7ec5dc9c71a01d13f3a9edb934ff2e0f625e71
@@ -99,7 +99,7 @@ CMD ["node" "-e" "require('express-gateway')().run();"]
 		Size: 500.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `express-gateway:1.15.0` - linux; arm64 variant v8
+### `express-gateway:1.16.0` - linux; arm64 variant v8
 
 ```console
 $ docker pull express-gateway@sha256:a4c0cbc313ce526f9fa476cb9537d26d0f08f3fecc5b5d5324c035c565f0b176
@@ -177,7 +177,7 @@ CMD ["node" "-e" "require('express-gateway')().run();"]
 		Size: 499.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `express-gateway:1.15.0` - linux; 386
+### `express-gateway:1.16.0` - linux; 386
 
 ```console
 $ docker pull express-gateway@sha256:06e0bd491f16f62f0fceccd4efbc336ec4c8fe27b71f00342e334754afcbe150
@@ -255,7 +255,7 @@ CMD ["node" "-e" "require('express-gateway')().run();"]
 		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `express-gateway:1.15.0` - linux; ppc64le
+### `express-gateway:1.16.0` - linux; ppc64le
 
 ```console
 $ docker pull express-gateway@sha256:5f11475866268e7a6171e1bbe96e6281c59a53337e11d7c17c5fee4a6d49ffe2
@@ -333,7 +333,7 @@ CMD ["node" "-e" "require('express-gateway')().run();"]
 		Size: 497.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `express-gateway:1.15.0` - linux; s390x
+### `express-gateway:1.16.0` - linux; s390x
 
 ```console
 $ docker pull express-gateway@sha256:26232b14af8f223c2cfcdd3103c9f954adf3dbd52ddc2e9946cfae52efd040f8
@@ -411,7 +411,7 @@ CMD ["node" "-e" "require('express-gateway')().run();"]
 		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `express-gateway:1.15.x`
+## `express-gateway:1.16.x`
 
 ```console
 $ docker pull express-gateway@sha256:9e87326df836a19677f0fb8c9e71fee2869738af5ba917b0a4b3bc5d9c1d8602
@@ -425,7 +425,7 @@ $ docker pull express-gateway@sha256:9e87326df836a19677f0fb8c9e71fee2869738af5ba
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `express-gateway:1.15.x` - linux; amd64
+### `express-gateway:1.16.x` - linux; amd64
 
 ```console
 $ docker pull express-gateway@sha256:30f182c75b8ae9c1895c98cecc7ec5dc9c71a01d13f3a9edb934ff2e0f625e71
@@ -503,7 +503,7 @@ CMD ["node" "-e" "require('express-gateway')().run();"]
 		Size: 500.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `express-gateway:1.15.x` - linux; arm64 variant v8
+### `express-gateway:1.16.x` - linux; arm64 variant v8
 
 ```console
 $ docker pull express-gateway@sha256:a4c0cbc313ce526f9fa476cb9537d26d0f08f3fecc5b5d5324c035c565f0b176
@@ -581,7 +581,7 @@ CMD ["node" "-e" "require('express-gateway')().run();"]
 		Size: 499.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `express-gateway:1.15.x` - linux; 386
+### `express-gateway:1.16.x` - linux; 386
 
 ```console
 $ docker pull express-gateway@sha256:06e0bd491f16f62f0fceccd4efbc336ec4c8fe27b71f00342e334754afcbe150
@@ -659,7 +659,7 @@ CMD ["node" "-e" "require('express-gateway')().run();"]
 		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `express-gateway:1.15.x` - linux; ppc64le
+### `express-gateway:1.16.x` - linux; ppc64le
 
 ```console
 $ docker pull express-gateway@sha256:5f11475866268e7a6171e1bbe96e6281c59a53337e11d7c17c5fee4a6d49ffe2
@@ -737,7 +737,7 @@ CMD ["node" "-e" "require('express-gateway')().run();"]
 		Size: 497.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `express-gateway:1.15.x` - linux; s390x
+### `express-gateway:1.16.x` - linux; s390x
 
 ```console
 $ docker pull express-gateway@sha256:26232b14af8f223c2cfcdd3103c9f954adf3dbd52ddc2e9946cfae52efd040f8
