@@ -2,24 +2,26 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2e13a4a4e8cfec0c745932db57f452e4f65d1f03dd0a99fd2ac1adb8dbb21e06`
-- Created: `2019-03-12T02:02:44.931319038Z`
-- Virtual Size: ~ 464.68 Mb  
+- Image ID: `sha256:ca5959f9184cb249c5cc0b01d98e3a02b53203408faea963acc9461705e7bf28`
+- Created: `2019-03-26T00:20:17.615648969Z`
+- Virtual Size: ~ 465.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["/opt/ol/docker/docker-server"]`
+- Entrypoint: `["/opt/ol/helpers/runtime/docker-server.sh"]`
 - Command: `["/opt/ol/wlp/bin/server","run","defaultServer"]`
 - Environment:
-  - `PATH=/opt/ol/wlp/bin:/opt/ol/docker/:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/opt/ol/wlp/bin:/opt/ol/docker/:/opt/ol/helpers/build:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_VERSION=1.8.0_sr5fp30`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ol/wlp/output`
   - `WLP_SKIP_MAXPERMSIZE=true`
+  - `RANDFILE=/tmp/.rnd`
+  - `JVM_ARGS=-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/`
 - Labels:
   - `github=https://github.com/OpenLiberty/ci.docker`
-  - `maintainer=Alasdair Nottingham`
+  - `maintainer=Arthur De Magalhaes`
   - `url=https://openliberty.io/`
   - `vendor=Open Liberty`
 
