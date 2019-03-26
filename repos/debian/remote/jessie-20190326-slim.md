@@ -1,4 +1,4 @@
-## `debian:jessie-20190228-slim`
+## `debian:jessie-20190326-slim`
 
 ```console
 $ docker pull debian@sha256:447086a0685b53a17b6a2b89aaab1d84e24b47430b064dcaeb3f8f0177582bb4
@@ -11,7 +11,7 @@ $ docker pull debian@sha256:447086a0685b53a17b6a2b89aaab1d84e24b47430b064dcaeb3f
 	-	linux; arm variant v7
 	-	linux; 386
 
-### `debian:jessie-20190228-slim` - linux; amd64
+### `debian:jessie-20190326-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:a10036dc63ae96e9e5e318eb2592ae5c5dbab1fee7719420a4bf903e5ee04fd6
@@ -37,7 +37,7 @@ CMD ["bash"]
 		Size: 30.2 MB (30154842 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:jessie-20190228-slim` - linux; arm variant v5
+### `debian:jessie-20190326-slim` - linux; arm variant v5
 
 ```console
 $ docker pull debian@sha256:60ac014007b58a317b8698a9b9410557f6419b6ab5c2781f784934e77067c43e
@@ -63,7 +63,7 @@ CMD ["bash"]
 		Size: 28.5 MB (28458756 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:jessie-20190228-slim` - linux; arm variant v7
+### `debian:jessie-20190326-slim` - linux; arm variant v7
 
 ```console
 $ docker pull debian@sha256:11b450d2835f366f40a549a48aad7e61fd05b284795806af003076956cf72d86
@@ -89,7 +89,7 @@ CMD ["bash"]
 		Size: 26.3 MB (26306306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:jessie-20190228-slim` - linux; 386
+### `debian:jessie-20190326-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:27eae4c4546fcca168d111d0264807e0a0081384307fa3c2510d175f54f04a8d
