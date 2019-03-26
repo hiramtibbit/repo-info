@@ -5237,14 +5237,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.4.10-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.10-1.debian.tar.xz' python-catkin-pkg-modules_0.4.10-1.debian.tar.xz 1944 SHA512:4c76a2a1d99b6590c42186593a76a2e04bddfab22d5db5a95dff7fc4bdc1aaae04c8bb6575a3ce7b9790bb6165d82d4ff705e60210c7be8145cbf85d66ea60e8
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.10-1.dsc' python-catkin-pkg-modules_0.4.10-1.dsc 1050 SHA512:893146573a4523538af43a9de3631fa45720e792ecee9a1bfa42103229b8a5f47f4f150dc0f80a29baf508798a001aa5bf42e04a8dba1f7085a895c33d52d6e9
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.10.orig.tar.gz' python-catkin-pkg-modules_0.4.10.orig.tar.gz 58599 SHA512:e1d5f3aaea8aad2a74733bb7478c8099f93fcbb6ac0ac5c7ddb52b8534dd0483dff7c53c4c05b011f98c312fd1bd25a098d348430671ed1f8e7787d5bd0ab2f9
-```
 
 ### `dpkg` source package: `python-catkin-pkg=0.4.10-100`
 
@@ -5256,14 +5251,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg=0.4.10-100
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.10-100.debian.tar.xz' python-catkin-pkg_0.4.10-100.debian.tar.xz 1916 SHA512:3ddfe0464dfe5ef275335c15144fe02d6aae20848abc4abf24dbd9b6e92a22a05689407486dc1580c75eda736b7243ffe08b4e7c95c53d02edf74050279a3f36
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.10-100.dsc' python-catkin-pkg_0.4.10-100.dsc 986 SHA512:2fa447117806fcf594ebe8d4b59e59184def08fe4cc11933d3ccfc15842623bf25b1841a73a5638de22085aa8b4b989891065b6def99826ce8b5a026685b8c2b
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.10.orig.tar.gz' python-catkin-pkg_0.4.10.orig.tar.gz 13169 SHA512:463f25e6bc2c8c7709144fc585113fc65f56b01939c87b56504edcd53e7d3f3288ff1f2b644af6a12cea624ad52f1d2a3c267dd181dcea6ac3be247f3850a951
-```
 
 ### `dpkg` source package: `python-cffi=1.11.5-1`
 
