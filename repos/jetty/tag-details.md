@@ -3008,7 +3008,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ## `jetty:9.2.26-jre7`
 
 ```console
-$ docker pull jetty@sha256:c48c0da5778ac0e8714c7af83668d074a01b6b42ff6359982c1aceb268906a67
+$ docker pull jetty@sha256:4013bf7f2074a80fe0c04230859cdcf35f13e0950d715606a39d2bcf9129fab7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3024,136 +3024,136 @@ $ docker pull jetty@sha256:c48c0da5778ac0e8714c7af83668d074a01b6b42ff6359982c1ac
 ### `jetty:9.2.26-jre7` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:07e5f3492b727f118dbe81b00bdc5d4587acabc2d9c45b29bc34b1633f60856e
+$ docker pull jetty@sha256:649fc94fce0689eaf66491664ece9fecc55673ed8719c2f8249f4972fa4c0763
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.6 MB (164573315 bytes)**  
+-	Total Size: **164.6 MB (164575821 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a832f927c5e3807b18126532f8d96deef64dde15c4bf5e817ad8d33fb229ad33`
+-	Image ID: `sha256:1b7b023f6a82e6dcc6fa61680bdc108c16fa2ed9984d62d2c36baf98b3eb33f4`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Mon, 04 Mar 2019 23:20:17 GMT
-ADD file:e044496893d9e2cbf5a4b69ccfbb7d2997209962a78a52b6fc091c5b004cc33f in / 
-# Mon, 04 Mar 2019 23:20:18 GMT
+# Tue, 26 Mar 2019 22:39:37 GMT
+ADD file:ca3bf06a040bfe3d0d727326698ec36f9578bf9c8f6fe1050b7d85a3dd241112 in / 
+# Tue, 26 Mar 2019 22:39:37 GMT
 CMD ["bash"]
-# Tue, 05 Mar 2019 02:26:04 GMT
+# Tue, 26 Mar 2019 23:17:18 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 02:26:04 GMT
+# Tue, 26 Mar 2019 23:17:19 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 05 Mar 2019 04:17:03 GMT
+# Wed, 27 Mar 2019 00:59:59 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 04:17:03 GMT
+# Wed, 27 Mar 2019 00:59:59 GMT
 ENV LANG=C.UTF-8
-# Tue, 05 Mar 2019 04:17:04 GMT
+# Wed, 27 Mar 2019 01:00:00 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 05 Mar 2019 04:17:05 GMT
+# Wed, 27 Mar 2019 01:00:01 GMT
 RUN ln -svT "/usr/lib/jvm/java-7-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Tue, 05 Mar 2019 04:17:06 GMT
+# Wed, 27 Mar 2019 01:00:01 GMT
 ENV JAVA_HOME=/docker-java-home/jre
-# Tue, 05 Mar 2019 04:17:06 GMT
+# Wed, 27 Mar 2019 01:00:01 GMT
 ENV JAVA_VERSION=7u181
-# Tue, 05 Mar 2019 04:17:06 GMT
+# Wed, 27 Mar 2019 01:00:01 GMT
 ENV JAVA_DEBIAN_VERSION=7u181-2.6.14-2~deb8u1
-# Tue, 05 Mar 2019 04:19:36 GMT
+# Wed, 27 Mar 2019 01:02:11 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-7-jre="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Tue, 05 Mar 2019 14:19:23 GMT
+# Wed, 27 Mar 2019 11:06:01 GMT
 RUN groupadd -r jetty && useradd -r -g jetty jetty
-# Tue, 05 Mar 2019 14:19:23 GMT
+# Wed, 27 Mar 2019 11:06:01 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 05 Mar 2019 14:19:24 GMT
+# Wed, 27 Mar 2019 11:06:02 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 05 Mar 2019 14:19:26 GMT
+# Wed, 27 Mar 2019 11:06:03 GMT
 RUN mkdir -p "$JETTY_HOME"
-# Tue, 05 Mar 2019 14:19:26 GMT
+# Wed, 27 Mar 2019 11:06:04 GMT
 WORKDIR /usr/local/jetty
-# Tue, 05 Mar 2019 14:19:27 GMT
+# Wed, 27 Mar 2019 11:06:04 GMT
 ENV JETTY_VERSION=9.2.26.v20180806
-# Tue, 05 Mar 2019 14:19:27 GMT
+# Wed, 27 Mar 2019 11:06:04 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.26.v20180806/jetty-distribution-9.2.26.v20180806.tar.gz
-# Tue, 05 Mar 2019 14:19:28 GMT
+# Wed, 27 Mar 2019 11:06:04 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	FBA2B18D238AB852DF95745C76157BDF03D0DCD6 	5C9579B3DB2E506429319AAEF33B071B29559E1E
-# Tue, 05 Mar 2019 14:19:31 GMT
+# Wed, 27 Mar 2019 11:06:13 GMT
 RUN set -xe 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -rf "$GNUPGHOME" 	&& tar -xvf jetty.tar.gz --strip-components=1 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm -fr demo-base javadoc 	&& rm jetty.tar.gz* 	&& rm -rf /tmp/hsperfdata_root
-# Tue, 05 Mar 2019 14:19:31 GMT
+# Wed, 27 Mar 2019 11:06:14 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 05 Mar 2019 14:19:33 GMT
+# Wed, 27 Mar 2019 11:06:14 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 05 Mar 2019 14:19:33 GMT
+# Wed, 27 Mar 2019 11:06:14 GMT
 WORKDIR /var/lib/jetty
-# Tue, 05 Mar 2019 14:19:37 GMT
+# Wed, 27 Mar 2019 11:06:16 GMT
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" 	&& set -xe 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules" 	&& chown -R jetty:jetty "$JETTY_BASE" 	&& rm -rf /tmp/hsperfdata_root
-# Tue, 05 Mar 2019 14:19:37 GMT
+# Wed, 27 Mar 2019 11:06:16 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 05 Mar 2019 14:19:39 GMT
+# Wed, 27 Mar 2019 11:06:17 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR"
-# Tue, 05 Mar 2019 14:19:39 GMT
+# Wed, 27 Mar 2019 11:06:17 GMT
 COPY multi:87587db67954487ef9f6dc57fa1fcab90f0134d7aa6d2af7a98d1b98a6047a64 in / 
-# Tue, 05 Mar 2019 14:19:40 GMT
+# Wed, 27 Mar 2019 11:06:17 GMT
 USER jetty
-# Tue, 05 Mar 2019 14:19:40 GMT
+# Wed, 27 Mar 2019 11:06:18 GMT
 EXPOSE 8080
-# Tue, 05 Mar 2019 14:19:40 GMT
+# Wed, 27 Mar 2019 11:06:18 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 05 Mar 2019 14:19:41 GMT
+# Wed, 27 Mar 2019 11:06:18 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:85199fa09ec1510ee053da666286c385d07b8fab9fa61ae73a5b8c454e1b3397`  
-		Last Modified: Mon, 04 Mar 2019 23:24:27 GMT  
-		Size: 54.4 MB (54381658 bytes)  
+	-	`sha256:bf295113f40dde5826c75de78b0aaa190302b3b467a3d6a3f222498b0ad1cea3`  
+		Last Modified: Tue, 26 Mar 2019 22:43:06 GMT  
+		Size: 54.4 MB (54382913 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7aca5925aec20fece01837f6f93c55c62c38dfba443d19404e7be3a37f3bdf85`  
-		Last Modified: Tue, 05 Mar 2019 02:41:52 GMT  
-		Size: 17.5 MB (17539744 bytes)  
+	-	`sha256:62fe5b9a5ae4df86ade5163499bec6552c354611960eabfc7f1391f9e9f57945`  
+		Last Modified: Tue, 26 Mar 2019 23:30:21 GMT  
+		Size: 17.5 MB (17541227 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2804cbb1435bc2e32a66d185b3a714b9c3f97141f1d4a8c09a3675f213c004da`  
-		Last Modified: Tue, 05 Mar 2019 04:29:03 GMT  
-		Size: 795.2 KB (795158 bytes)  
+	-	`sha256:92748c09714e5ff3525426b1db779e7937b629687255e3c336882349d1b686ab`  
+		Last Modified: Wed, 27 Mar 2019 01:10:22 GMT  
+		Size: 795.2 KB (795203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:64d24da622655ce6014113d76763828275ccc5cd50156517ed85b9fb273749c6`  
-		Last Modified: Tue, 05 Mar 2019 04:29:03 GMT  
-		Size: 247.0 B  
+	-	`sha256:062f1282bf9c8ade4b7259d5d902417562965db5d8fb6fd3492dc251a5d9c752`  
+		Last Modified: Wed, 27 Mar 2019 01:10:22 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:602ecacd96f4b325230dbae121fe62fc8a03f775f91f886514eba5ebe29cdcd0`  
-		Last Modified: Tue, 05 Mar 2019 04:29:04 GMT  
+	-	`sha256:f94f42f0e754f4268a5de994bfff55e50179a24e32ea026e9091b0548fbb67de`  
+		Last Modified: Wed, 27 Mar 2019 01:10:22 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efa0bc495b76d17d820e3a8fbc02c09b53742381874f6237e416ded5498127ac`  
-		Last Modified: Tue, 05 Mar 2019 04:29:17 GMT  
-		Size: 81.8 MB (81821305 bytes)  
+	-	`sha256:679fb14e9d1086bc1ed6f7f5e3651e87d6eb363e7e2f15bfccbea1fef745018d`  
+		Last Modified: Wed, 27 Mar 2019 01:10:36 GMT  
+		Size: 81.8 MB (81821013 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4508e92416a99c1c0acfcdf09a04203d8c88d9bf3861e89bdf57b2ad7fda3798`  
-		Last Modified: Tue, 05 Mar 2019 14:20:28 GMT  
-		Size: 2.1 KB (2099 bytes)  
+	-	`sha256:5dbd56c05d0041ca04be7cefe90a65d20a17e521b791b2d313c3822690d1df46`  
+		Last Modified: Wed, 27 Mar 2019 11:06:48 GMT  
+		Size: 2.1 KB (2095 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c844be8e0f070caef63461bd00b89119b4c83fa6907c4f694d865fa4a6c6cc5`  
-		Last Modified: Tue, 05 Mar 2019 14:20:28 GMT  
-		Size: 152.0 B  
+	-	`sha256:d000e72e631f45706b19b5eb1f030a1c5db725e7db0320393d0654b7305121fc`  
+		Last Modified: Wed, 27 Mar 2019 11:06:49 GMT  
+		Size: 150.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2025fd0a4c087e27afa8d7e0fd3eaaa5e69703d8fb4593f25464e9668077fc95`  
-		Last Modified: Tue, 05 Mar 2019 14:20:28 GMT  
-		Size: 10.0 MB (10029700 bytes)  
+	-	`sha256:51723def584cc838e75955e2a3c5ca379f711acd440752a614c73901f1741f81`  
+		Last Modified: Wed, 27 Mar 2019 11:06:49 GMT  
+		Size: 10.0 MB (10029727 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d594ae43b7ae4cd10d32ad65c0aa084611960eebd95498706afbc42b22ea646`  
-		Last Modified: Tue, 05 Mar 2019 14:20:27 GMT  
-		Size: 138.0 B  
+	-	`sha256:8a426f9b5c8de7e3e7ebb134fbead467e31b864d5571612123a784f29b3cf716`  
+		Last Modified: Wed, 27 Mar 2019 11:06:48 GMT  
+		Size: 136.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d6656751de36918a7b80b3a0df494f59f617cc2c70451f2c98191142ed09b08`  
-		Last Modified: Tue, 05 Mar 2019 14:20:27 GMT  
+	-	`sha256:0b637ba83fc45722f416bd50c1252b66ed734c4019af601556d31a0cd3095d41`  
+		Last Modified: Wed, 27 Mar 2019 11:06:48 GMT  
 		Size: 1.5 KB (1469 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e529498739f6d5e1339c119ffb4231ac62cb29cd232559cd65d41c698376c3da`  
-		Last Modified: Tue, 05 Mar 2019 14:20:28 GMT  
-		Size: 126.0 B  
+	-	`sha256:1442c3806435df45bc110fc45104bb4364d2724757a7113ccef4397863e858b4`  
+		Last Modified: Wed, 27 Mar 2019 11:06:48 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7faeffc7801f203cff315ea80ba15d05457ffbf8c22b41469c0f3c1ac3ff8e36`  
-		Last Modified: Tue, 05 Mar 2019 14:20:27 GMT  
-		Size: 1.4 KB (1389 bytes)  
+	-	`sha256:5101cb57c60dbc54b6c1ad044ecfcc867a5c0d32bfd8f333d80f8719612f15c9`  
+		Last Modified: Wed, 27 Mar 2019 11:06:48 GMT  
+		Size: 1.4 KB (1387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `jetty:9.2.26-jre7` - linux; arm variant v5
@@ -4958,7 +4958,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ## `jetty:9.2-jre7`
 
 ```console
-$ docker pull jetty@sha256:c48c0da5778ac0e8714c7af83668d074a01b6b42ff6359982c1aceb268906a67
+$ docker pull jetty@sha256:4013bf7f2074a80fe0c04230859cdcf35f13e0950d715606a39d2bcf9129fab7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4974,136 +4974,136 @@ $ docker pull jetty@sha256:c48c0da5778ac0e8714c7af83668d074a01b6b42ff6359982c1ac
 ### `jetty:9.2-jre7` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:07e5f3492b727f118dbe81b00bdc5d4587acabc2d9c45b29bc34b1633f60856e
+$ docker pull jetty@sha256:649fc94fce0689eaf66491664ece9fecc55673ed8719c2f8249f4972fa4c0763
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.6 MB (164573315 bytes)**  
+-	Total Size: **164.6 MB (164575821 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a832f927c5e3807b18126532f8d96deef64dde15c4bf5e817ad8d33fb229ad33`
+-	Image ID: `sha256:1b7b023f6a82e6dcc6fa61680bdc108c16fa2ed9984d62d2c36baf98b3eb33f4`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Mon, 04 Mar 2019 23:20:17 GMT
-ADD file:e044496893d9e2cbf5a4b69ccfbb7d2997209962a78a52b6fc091c5b004cc33f in / 
-# Mon, 04 Mar 2019 23:20:18 GMT
+# Tue, 26 Mar 2019 22:39:37 GMT
+ADD file:ca3bf06a040bfe3d0d727326698ec36f9578bf9c8f6fe1050b7d85a3dd241112 in / 
+# Tue, 26 Mar 2019 22:39:37 GMT
 CMD ["bash"]
-# Tue, 05 Mar 2019 02:26:04 GMT
+# Tue, 26 Mar 2019 23:17:18 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 02:26:04 GMT
+# Tue, 26 Mar 2019 23:17:19 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 05 Mar 2019 04:17:03 GMT
+# Wed, 27 Mar 2019 00:59:59 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 04:17:03 GMT
+# Wed, 27 Mar 2019 00:59:59 GMT
 ENV LANG=C.UTF-8
-# Tue, 05 Mar 2019 04:17:04 GMT
+# Wed, 27 Mar 2019 01:00:00 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 05 Mar 2019 04:17:05 GMT
+# Wed, 27 Mar 2019 01:00:01 GMT
 RUN ln -svT "/usr/lib/jvm/java-7-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Tue, 05 Mar 2019 04:17:06 GMT
+# Wed, 27 Mar 2019 01:00:01 GMT
 ENV JAVA_HOME=/docker-java-home/jre
-# Tue, 05 Mar 2019 04:17:06 GMT
+# Wed, 27 Mar 2019 01:00:01 GMT
 ENV JAVA_VERSION=7u181
-# Tue, 05 Mar 2019 04:17:06 GMT
+# Wed, 27 Mar 2019 01:00:01 GMT
 ENV JAVA_DEBIAN_VERSION=7u181-2.6.14-2~deb8u1
-# Tue, 05 Mar 2019 04:19:36 GMT
+# Wed, 27 Mar 2019 01:02:11 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-7-jre="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Tue, 05 Mar 2019 14:19:23 GMT
+# Wed, 27 Mar 2019 11:06:01 GMT
 RUN groupadd -r jetty && useradd -r -g jetty jetty
-# Tue, 05 Mar 2019 14:19:23 GMT
+# Wed, 27 Mar 2019 11:06:01 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 05 Mar 2019 14:19:24 GMT
+# Wed, 27 Mar 2019 11:06:02 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 05 Mar 2019 14:19:26 GMT
+# Wed, 27 Mar 2019 11:06:03 GMT
 RUN mkdir -p "$JETTY_HOME"
-# Tue, 05 Mar 2019 14:19:26 GMT
+# Wed, 27 Mar 2019 11:06:04 GMT
 WORKDIR /usr/local/jetty
-# Tue, 05 Mar 2019 14:19:27 GMT
+# Wed, 27 Mar 2019 11:06:04 GMT
 ENV JETTY_VERSION=9.2.26.v20180806
-# Tue, 05 Mar 2019 14:19:27 GMT
+# Wed, 27 Mar 2019 11:06:04 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.26.v20180806/jetty-distribution-9.2.26.v20180806.tar.gz
-# Tue, 05 Mar 2019 14:19:28 GMT
+# Wed, 27 Mar 2019 11:06:04 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	FBA2B18D238AB852DF95745C76157BDF03D0DCD6 	5C9579B3DB2E506429319AAEF33B071B29559E1E
-# Tue, 05 Mar 2019 14:19:31 GMT
+# Wed, 27 Mar 2019 11:06:13 GMT
 RUN set -xe 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -rf "$GNUPGHOME" 	&& tar -xvf jetty.tar.gz --strip-components=1 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm -fr demo-base javadoc 	&& rm jetty.tar.gz* 	&& rm -rf /tmp/hsperfdata_root
-# Tue, 05 Mar 2019 14:19:31 GMT
+# Wed, 27 Mar 2019 11:06:14 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 05 Mar 2019 14:19:33 GMT
+# Wed, 27 Mar 2019 11:06:14 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 05 Mar 2019 14:19:33 GMT
+# Wed, 27 Mar 2019 11:06:14 GMT
 WORKDIR /var/lib/jetty
-# Tue, 05 Mar 2019 14:19:37 GMT
+# Wed, 27 Mar 2019 11:06:16 GMT
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" 	&& set -xe 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules" 	&& chown -R jetty:jetty "$JETTY_BASE" 	&& rm -rf /tmp/hsperfdata_root
-# Tue, 05 Mar 2019 14:19:37 GMT
+# Wed, 27 Mar 2019 11:06:16 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 05 Mar 2019 14:19:39 GMT
+# Wed, 27 Mar 2019 11:06:17 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR"
-# Tue, 05 Mar 2019 14:19:39 GMT
+# Wed, 27 Mar 2019 11:06:17 GMT
 COPY multi:87587db67954487ef9f6dc57fa1fcab90f0134d7aa6d2af7a98d1b98a6047a64 in / 
-# Tue, 05 Mar 2019 14:19:40 GMT
+# Wed, 27 Mar 2019 11:06:17 GMT
 USER jetty
-# Tue, 05 Mar 2019 14:19:40 GMT
+# Wed, 27 Mar 2019 11:06:18 GMT
 EXPOSE 8080
-# Tue, 05 Mar 2019 14:19:40 GMT
+# Wed, 27 Mar 2019 11:06:18 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 05 Mar 2019 14:19:41 GMT
+# Wed, 27 Mar 2019 11:06:18 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:85199fa09ec1510ee053da666286c385d07b8fab9fa61ae73a5b8c454e1b3397`  
-		Last Modified: Mon, 04 Mar 2019 23:24:27 GMT  
-		Size: 54.4 MB (54381658 bytes)  
+	-	`sha256:bf295113f40dde5826c75de78b0aaa190302b3b467a3d6a3f222498b0ad1cea3`  
+		Last Modified: Tue, 26 Mar 2019 22:43:06 GMT  
+		Size: 54.4 MB (54382913 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7aca5925aec20fece01837f6f93c55c62c38dfba443d19404e7be3a37f3bdf85`  
-		Last Modified: Tue, 05 Mar 2019 02:41:52 GMT  
-		Size: 17.5 MB (17539744 bytes)  
+	-	`sha256:62fe5b9a5ae4df86ade5163499bec6552c354611960eabfc7f1391f9e9f57945`  
+		Last Modified: Tue, 26 Mar 2019 23:30:21 GMT  
+		Size: 17.5 MB (17541227 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2804cbb1435bc2e32a66d185b3a714b9c3f97141f1d4a8c09a3675f213c004da`  
-		Last Modified: Tue, 05 Mar 2019 04:29:03 GMT  
-		Size: 795.2 KB (795158 bytes)  
+	-	`sha256:92748c09714e5ff3525426b1db779e7937b629687255e3c336882349d1b686ab`  
+		Last Modified: Wed, 27 Mar 2019 01:10:22 GMT  
+		Size: 795.2 KB (795203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:64d24da622655ce6014113d76763828275ccc5cd50156517ed85b9fb273749c6`  
-		Last Modified: Tue, 05 Mar 2019 04:29:03 GMT  
-		Size: 247.0 B  
+	-	`sha256:062f1282bf9c8ade4b7259d5d902417562965db5d8fb6fd3492dc251a5d9c752`  
+		Last Modified: Wed, 27 Mar 2019 01:10:22 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:602ecacd96f4b325230dbae121fe62fc8a03f775f91f886514eba5ebe29cdcd0`  
-		Last Modified: Tue, 05 Mar 2019 04:29:04 GMT  
+	-	`sha256:f94f42f0e754f4268a5de994bfff55e50179a24e32ea026e9091b0548fbb67de`  
+		Last Modified: Wed, 27 Mar 2019 01:10:22 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efa0bc495b76d17d820e3a8fbc02c09b53742381874f6237e416ded5498127ac`  
-		Last Modified: Tue, 05 Mar 2019 04:29:17 GMT  
-		Size: 81.8 MB (81821305 bytes)  
+	-	`sha256:679fb14e9d1086bc1ed6f7f5e3651e87d6eb363e7e2f15bfccbea1fef745018d`  
+		Last Modified: Wed, 27 Mar 2019 01:10:36 GMT  
+		Size: 81.8 MB (81821013 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4508e92416a99c1c0acfcdf09a04203d8c88d9bf3861e89bdf57b2ad7fda3798`  
-		Last Modified: Tue, 05 Mar 2019 14:20:28 GMT  
-		Size: 2.1 KB (2099 bytes)  
+	-	`sha256:5dbd56c05d0041ca04be7cefe90a65d20a17e521b791b2d313c3822690d1df46`  
+		Last Modified: Wed, 27 Mar 2019 11:06:48 GMT  
+		Size: 2.1 KB (2095 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c844be8e0f070caef63461bd00b89119b4c83fa6907c4f694d865fa4a6c6cc5`  
-		Last Modified: Tue, 05 Mar 2019 14:20:28 GMT  
-		Size: 152.0 B  
+	-	`sha256:d000e72e631f45706b19b5eb1f030a1c5db725e7db0320393d0654b7305121fc`  
+		Last Modified: Wed, 27 Mar 2019 11:06:49 GMT  
+		Size: 150.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2025fd0a4c087e27afa8d7e0fd3eaaa5e69703d8fb4593f25464e9668077fc95`  
-		Last Modified: Tue, 05 Mar 2019 14:20:28 GMT  
-		Size: 10.0 MB (10029700 bytes)  
+	-	`sha256:51723def584cc838e75955e2a3c5ca379f711acd440752a614c73901f1741f81`  
+		Last Modified: Wed, 27 Mar 2019 11:06:49 GMT  
+		Size: 10.0 MB (10029727 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d594ae43b7ae4cd10d32ad65c0aa084611960eebd95498706afbc42b22ea646`  
-		Last Modified: Tue, 05 Mar 2019 14:20:27 GMT  
-		Size: 138.0 B  
+	-	`sha256:8a426f9b5c8de7e3e7ebb134fbead467e31b864d5571612123a784f29b3cf716`  
+		Last Modified: Wed, 27 Mar 2019 11:06:48 GMT  
+		Size: 136.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d6656751de36918a7b80b3a0df494f59f617cc2c70451f2c98191142ed09b08`  
-		Last Modified: Tue, 05 Mar 2019 14:20:27 GMT  
+	-	`sha256:0b637ba83fc45722f416bd50c1252b66ed734c4019af601556d31a0cd3095d41`  
+		Last Modified: Wed, 27 Mar 2019 11:06:48 GMT  
 		Size: 1.5 KB (1469 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e529498739f6d5e1339c119ffb4231ac62cb29cd232559cd65d41c698376c3da`  
-		Last Modified: Tue, 05 Mar 2019 14:20:28 GMT  
-		Size: 126.0 B  
+	-	`sha256:1442c3806435df45bc110fc45104bb4364d2724757a7113ccef4397863e858b4`  
+		Last Modified: Wed, 27 Mar 2019 11:06:48 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7faeffc7801f203cff315ea80ba15d05457ffbf8c22b41469c0f3c1ac3ff8e36`  
-		Last Modified: Tue, 05 Mar 2019 14:20:27 GMT  
-		Size: 1.4 KB (1389 bytes)  
+	-	`sha256:5101cb57c60dbc54b6c1ad044ecfcc867a5c0d32bfd8f333d80f8719612f15c9`  
+		Last Modified: Wed, 27 Mar 2019 11:06:48 GMT  
+		Size: 1.4 KB (1387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `jetty:9.2-jre7` - linux; arm variant v5
@@ -17196,7 +17196,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ## `jetty:9.4.14-jre11`
 
 ```console
-$ docker pull jetty@sha256:474f11e6d9d34401700a83f812d23d99b15343481ca437669dee3e5d13e13172
+$ docker pull jetty@sha256:6cb7b311178131e6abe068c7ee0db19829a3e4d75a5cc8503ecbe94e9dd25f29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17212,145 +17212,145 @@ $ docker pull jetty@sha256:474f11e6d9d34401700a83f812d23d99b15343481ca437669dee3
 ### `jetty:9.4.14-jre11` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:e421549412e6b2af876ccf8e5c9e7cc4752969fd0c039d4bfd694f1c40f85600
+$ docker pull jetty@sha256:e936c28926c4c97c9034655e186c90513b46481a698acc596d8f2903862ddb8f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **202.0 MB (201954661 bytes)**  
+-	Total Size: **202.0 MB (201954329 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b481397be224647a2f5e2b3232cc3f1e74f8ac12e05ea4d938982ec4b94cbcf`
+-	Image ID: `sha256:8058b0a563bc149b618c7cd1d9beaeea18d95e0fb70332393c9cb949eaef800f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Mon, 04 Mar 2019 23:22:10 GMT
-ADD file:e4bdc12117ee95eaa94b89f258164dd42f9828c7c5c4332a608707187ccb470a in / 
-# Mon, 04 Mar 2019 23:22:10 GMT
+# Tue, 26 Mar 2019 22:41:12 GMT
+ADD file:843b8a2a9df1a07305ff3d02484d4be7f769057c6d2e311d52d59e00deb917c6 in / 
+# Tue, 26 Mar 2019 22:41:12 GMT
 CMD ["bash"]
-# Tue, 05 Mar 2019 02:35:21 GMT
+# Tue, 26 Mar 2019 23:26:30 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 02:35:27 GMT
+# Tue, 26 Mar 2019 23:26:40 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 05 Mar 2019 04:01:49 GMT
+# Wed, 27 Mar 2019 00:46:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 04:01:50 GMT
+# Wed, 27 Mar 2019 00:46:47 GMT
 RUN echo 'deb http://deb.debian.org/debian stretch-backports main' > /etc/apt/sources.list.d/stretch-backports.list
-# Tue, 05 Mar 2019 04:01:50 GMT
+# Wed, 27 Mar 2019 00:46:47 GMT
 ENV LANG=C.UTF-8
-# Tue, 05 Mar 2019 04:01:51 GMT
+# Wed, 27 Mar 2019 00:46:48 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 05 Mar 2019 04:01:52 GMT
+# Wed, 27 Mar 2019 00:46:49 GMT
 RUN ln -svT "/usr/lib/jvm/java-11-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Tue, 05 Mar 2019 04:01:53 GMT
+# Wed, 27 Mar 2019 00:46:49 GMT
 ENV JAVA_HOME=/docker-java-home
-# Tue, 05 Mar 2019 04:01:53 GMT
+# Wed, 27 Mar 2019 00:46:49 GMT
 ENV JAVA_VERSION=11.0.2
-# Tue, 05 Mar 2019 04:01:53 GMT
+# Wed, 27 Mar 2019 00:46:50 GMT
 ENV JAVA_DEBIAN_VERSION=11.0.2+9-3~bpo9+1
-# Tue, 05 Mar 2019 04:02:36 GMT
+# Wed, 27 Mar 2019 00:47:30 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		ln -svT /docker-java-home/bin/java /usr/local/bin/java; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-11-jre="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		rm -v /usr/local/bin/java; 		keytool -importkeystore -srckeystore /etc/ssl/certs/java/cacerts -destkeystore /etc/ssl/certs/java/cacerts.jks -deststoretype JKS -srcstorepass changeit -deststorepass changeit -noprompt; 	mv /etc/ssl/certs/java/cacerts.jks /etc/ssl/certs/java/cacerts; 	/var/lib/dpkg/info/ca-certificates-java.postinst configure; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Tue, 05 Mar 2019 14:17:49 GMT
+# Wed, 27 Mar 2019 11:05:19 GMT
 RUN groupadd -r jetty && useradd -r -g jetty jetty
-# Tue, 05 Mar 2019 14:17:49 GMT
+# Wed, 27 Mar 2019 11:05:19 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 05 Mar 2019 14:17:50 GMT
+# Wed, 27 Mar 2019 11:05:20 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 05 Mar 2019 14:17:51 GMT
+# Wed, 27 Mar 2019 11:05:21 GMT
 RUN mkdir -p "$JETTY_HOME"
-# Tue, 05 Mar 2019 14:17:51 GMT
+# Wed, 27 Mar 2019 11:05:22 GMT
 WORKDIR /usr/local/jetty
-# Tue, 05 Mar 2019 14:17:52 GMT
+# Wed, 27 Mar 2019 11:05:22 GMT
 ENV JETTY_VERSION=9.4.14.v20181114
-# Tue, 05 Mar 2019 14:17:52 GMT
+# Wed, 27 Mar 2019 11:05:23 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.14.v20181114/jetty-home-9.4.14.v20181114.tar.gz
-# Tue, 05 Mar 2019 14:17:53 GMT
+# Wed, 27 Mar 2019 11:05:23 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	FBA2B18D238AB852DF95745C76157BDF03D0DCD6 	5C9579B3DB2E506429319AAEF33B071B29559E1E
-# Tue, 05 Mar 2019 14:17:58 GMT
+# Wed, 27 Mar 2019 11:05:29 GMT
 RUN set -xe 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -rf "$GNUPGHOME" 	&& tar -xvf jetty.tar.gz --strip-components=1 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm jetty.tar.gz* 	&& rm -rf /tmp/hsperfdata_root
-# Tue, 05 Mar 2019 14:17:58 GMT
+# Wed, 27 Mar 2019 11:05:29 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 05 Mar 2019 14:18:00 GMT
+# Wed, 27 Mar 2019 11:05:31 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 05 Mar 2019 14:18:00 GMT
+# Wed, 27 Mar 2019 11:05:32 GMT
 WORKDIR /var/lib/jetty
-# Tue, 05 Mar 2019 14:18:03 GMT
+# Wed, 27 Mar 2019 11:05:35 GMT
 RUN set -xe 	&& java -jar "$JETTY_HOME/start.jar" --create-startd --add-to-start="server,http,deploy,jsp,jstl,ext,resources,websocket" 	&& chown -R jetty:jetty "$JETTY_BASE" 	&& rm -rf /tmp/hsperfdata_root
-# Tue, 05 Mar 2019 14:18:03 GMT
+# Wed, 27 Mar 2019 11:05:36 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 05 Mar 2019 14:18:05 GMT
+# Wed, 27 Mar 2019 11:05:37 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR"
-# Tue, 05 Mar 2019 14:18:06 GMT
+# Wed, 27 Mar 2019 11:05:38 GMT
 COPY multi:87587db67954487ef9f6dc57fa1fcab90f0134d7aa6d2af7a98d1b98a6047a64 in / 
-# Tue, 05 Mar 2019 14:18:06 GMT
+# Wed, 27 Mar 2019 11:05:38 GMT
 USER jetty
-# Tue, 05 Mar 2019 14:18:07 GMT
+# Wed, 27 Mar 2019 11:05:39 GMT
 EXPOSE 8080
-# Tue, 05 Mar 2019 14:18:07 GMT
+# Wed, 27 Mar 2019 11:05:39 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 05 Mar 2019 14:18:08 GMT
+# Wed, 27 Mar 2019 11:05:40 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:22dbe790f71562dfd3d49406b1dfd1e85e50f3dd7cb2e97b3918376ca39cae4e`  
-		Last Modified: Mon, 04 Mar 2019 23:26:18 GMT  
-		Size: 45.3 MB (45342528 bytes)  
+	-	`sha256:e79bb959ec00faf01da52437df4fad4537ec669f60455a38ad583ec2b8f00498`  
+		Last Modified: Tue, 26 Mar 2019 22:44:26 GMT  
+		Size: 45.3 MB (45342599 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0250231711a047a6e54e7107d7a3bfb0afd807f5f408d00be0d407c5b8395219`  
-		Last Modified: Tue, 05 Mar 2019 02:43:42 GMT  
-		Size: 10.8 MB (10781993 bytes)  
+	-	`sha256:d4b7902036fe0cefdfe9ccf0404fe13322ecbd552f132be73d3e840f95538838`  
+		Last Modified: Tue, 26 Mar 2019 23:32:09 GMT  
+		Size: 10.8 MB (10781908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6fba9447437b5ee1da9b33b2e2d18add55a33d0b763075202e17cad7efd3ff8f`  
-		Last Modified: Tue, 05 Mar 2019 02:43:41 GMT  
-		Size: 4.3 MB (4340113 bytes)  
+	-	`sha256:1b2a72d4e03052566e99130108071fc4eca4942c62923e3e5cf19666a23088ef`  
+		Last Modified: Tue, 26 Mar 2019 23:32:07 GMT  
+		Size: 4.3 MB (4340149 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4afad9c4aba6cc6f5b4e85b14e0a16c4807fdcc8a5e4c43a532d6aa06f5d5664`  
-		Last Modified: Tue, 05 Mar 2019 04:25:25 GMT  
-		Size: 852.9 KB (852890 bytes)  
+	-	`sha256:de423484a9466ec116a34ba24e068e72e45d6c875c82f7eb63375577b4b51236`  
+		Last Modified: Wed, 27 Mar 2019 01:08:33 GMT  
+		Size: 852.9 KB (852864 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad1519e9297a977488ae8ff5c877840e630c7acff7bd56e8154f56e9fe5431f7`  
-		Last Modified: Tue, 05 Mar 2019 04:25:24 GMT  
-		Size: 221.0 B  
+	-	`sha256:9ce08128c662b0d9d0f3d9f86364c56f7b387111dd0602f2116e7fefb7bf3322`  
+		Last Modified: Wed, 27 Mar 2019 01:08:34 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50db805a2e2130e23d677452a9392d29dc9cd1ae0676e5b31dba0fd23b4ccae8`  
-		Last Modified: Tue, 05 Mar 2019 04:25:24 GMT  
-		Size: 248.0 B  
+	-	`sha256:53b0cf80b370dc3011ff521f948fb212324f4b709f978ce5108193882a1a5a2f`  
+		Last Modified: Wed, 27 Mar 2019 01:08:33 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:23ba6d94bd68e7f0bb4379800050adffad946ba2400b8ed23807487a0e5df1f4`  
-		Last Modified: Tue, 05 Mar 2019 04:25:24 GMT  
-		Size: 130.0 B  
+	-	`sha256:52bd533f444d12d7c517d33e97d3ac0d27d31b2fbf6582dba416e47fcde1efc6`  
+		Last Modified: Wed, 27 Mar 2019 01:08:33 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:164c583a133ddf8aa4645ba59439e769e8374fb84032bce5b0ccb1355560ba3a`  
-		Last Modified: Tue, 05 Mar 2019 04:25:55 GMT  
-		Size: 131.3 MB (131315965 bytes)  
+	-	`sha256:1bc053cd8d4e277a71c9aa687ba5acbf1bc488ef70e77c6ad79ca2a6188ab4c8`  
+		Last Modified: Wed, 27 Mar 2019 01:08:58 GMT  
+		Size: 131.3 MB (131315629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ab587656eb6cb28d2415c82f8fd65406e6bc482fa67850e66ca32320fe2578a`  
-		Last Modified: Tue, 05 Mar 2019 14:20:00 GMT  
-		Size: 1.8 KB (1754 bytes)  
+	-	`sha256:149ebb5eb87f88479044d06eacc0713f373c633d7bca129fca18682aeffcf77c`  
+		Last Modified: Wed, 27 Mar 2019 11:06:39 GMT  
+		Size: 1.7 KB (1744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8353c2c369758849aa08c1800f5912bc7fc2c549860e597d38c48b9abde3a49`  
-		Last Modified: Tue, 05 Mar 2019 14:20:00 GMT  
-		Size: 152.0 B  
+	-	`sha256:3c73de6972029e0ea79217552da44a861b2d11dfe492cf47f8424f2f911a6e81`  
+		Last Modified: Wed, 27 Mar 2019 11:06:39 GMT  
+		Size: 151.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a1ba05f94480549d8832119f4b23a46fe88c5577f3b538cd23f456af64e176a`  
-		Last Modified: Tue, 05 Mar 2019 14:20:00 GMT  
-		Size: 9.3 MB (9315023 bytes)  
+	-	`sha256:231fc099d7f6611fe6e4e97a4b0ebb3d748c9e6a4853d93c04985aebf6957900`  
+		Last Modified: Wed, 27 Mar 2019 11:06:39 GMT  
+		Size: 9.3 MB (9315038 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d05ed2946ae84b5e9a00dd2b2da7c972dec6588deaba2254d55ca0df5cb1b468`  
-		Last Modified: Tue, 05 Mar 2019 14:19:59 GMT  
-		Size: 137.0 B  
+	-	`sha256:6a5359b95ef2901ea7c3f399b2e5d1fa37c96bde42dc1367415f0216817293f7`  
+		Last Modified: Wed, 27 Mar 2019 11:06:38 GMT  
+		Size: 138.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:114f68e38d8c15f4b1587ddb805a5d95f39bd0a803e9e3c0e4768d339817b40a`  
-		Last Modified: Tue, 05 Mar 2019 14:19:59 GMT  
-		Size: 2.0 KB (1994 bytes)  
+	-	`sha256:398022d074c45ca940a25a1742dfe336667d77812c9f5d3dc9c758db00a9cc8c`  
+		Last Modified: Wed, 27 Mar 2019 11:06:38 GMT  
+		Size: 2.0 KB (1993 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:faf775b8876d43a37851a94f68c00cb954abbef46706f90dd717091c6436130a`  
-		Last Modified: Tue, 05 Mar 2019 14:19:59 GMT  
+	-	`sha256:e862a81b2ed7a9f541b81d6c93ad4a3d8f0db9dd67c6de181f61fa0ab252ab7b`  
+		Last Modified: Wed, 27 Mar 2019 11:06:38 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ce02f5a26a5e5a0eea8ed3c7624448df67e3bfb19c7cddbe171775b1e410e44`  
-		Last Modified: Tue, 05 Mar 2019 14:19:59 GMT  
+	-	`sha256:4e9507022bc2acd5414caba023edb3fac1b51c0edfcaa0b435a0f57ce71766d8`  
+		Last Modified: Wed, 27 Mar 2019 11:06:38 GMT  
 		Size: 1.4 KB (1387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -19943,7 +19943,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ## `jetty:9.4-jre11`
 
 ```console
-$ docker pull jetty@sha256:474f11e6d9d34401700a83f812d23d99b15343481ca437669dee3e5d13e13172
+$ docker pull jetty@sha256:6cb7b311178131e6abe068c7ee0db19829a3e4d75a5cc8503ecbe94e9dd25f29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -19959,145 +19959,145 @@ $ docker pull jetty@sha256:474f11e6d9d34401700a83f812d23d99b15343481ca437669dee3
 ### `jetty:9.4-jre11` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:e421549412e6b2af876ccf8e5c9e7cc4752969fd0c039d4bfd694f1c40f85600
+$ docker pull jetty@sha256:e936c28926c4c97c9034655e186c90513b46481a698acc596d8f2903862ddb8f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **202.0 MB (201954661 bytes)**  
+-	Total Size: **202.0 MB (201954329 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b481397be224647a2f5e2b3232cc3f1e74f8ac12e05ea4d938982ec4b94cbcf`
+-	Image ID: `sha256:8058b0a563bc149b618c7cd1d9beaeea18d95e0fb70332393c9cb949eaef800f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Mon, 04 Mar 2019 23:22:10 GMT
-ADD file:e4bdc12117ee95eaa94b89f258164dd42f9828c7c5c4332a608707187ccb470a in / 
-# Mon, 04 Mar 2019 23:22:10 GMT
+# Tue, 26 Mar 2019 22:41:12 GMT
+ADD file:843b8a2a9df1a07305ff3d02484d4be7f769057c6d2e311d52d59e00deb917c6 in / 
+# Tue, 26 Mar 2019 22:41:12 GMT
 CMD ["bash"]
-# Tue, 05 Mar 2019 02:35:21 GMT
+# Tue, 26 Mar 2019 23:26:30 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 02:35:27 GMT
+# Tue, 26 Mar 2019 23:26:40 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 05 Mar 2019 04:01:49 GMT
+# Wed, 27 Mar 2019 00:46:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 04:01:50 GMT
+# Wed, 27 Mar 2019 00:46:47 GMT
 RUN echo 'deb http://deb.debian.org/debian stretch-backports main' > /etc/apt/sources.list.d/stretch-backports.list
-# Tue, 05 Mar 2019 04:01:50 GMT
+# Wed, 27 Mar 2019 00:46:47 GMT
 ENV LANG=C.UTF-8
-# Tue, 05 Mar 2019 04:01:51 GMT
+# Wed, 27 Mar 2019 00:46:48 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 05 Mar 2019 04:01:52 GMT
+# Wed, 27 Mar 2019 00:46:49 GMT
 RUN ln -svT "/usr/lib/jvm/java-11-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Tue, 05 Mar 2019 04:01:53 GMT
+# Wed, 27 Mar 2019 00:46:49 GMT
 ENV JAVA_HOME=/docker-java-home
-# Tue, 05 Mar 2019 04:01:53 GMT
+# Wed, 27 Mar 2019 00:46:49 GMT
 ENV JAVA_VERSION=11.0.2
-# Tue, 05 Mar 2019 04:01:53 GMT
+# Wed, 27 Mar 2019 00:46:50 GMT
 ENV JAVA_DEBIAN_VERSION=11.0.2+9-3~bpo9+1
-# Tue, 05 Mar 2019 04:02:36 GMT
+# Wed, 27 Mar 2019 00:47:30 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		ln -svT /docker-java-home/bin/java /usr/local/bin/java; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-11-jre="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		rm -v /usr/local/bin/java; 		keytool -importkeystore -srckeystore /etc/ssl/certs/java/cacerts -destkeystore /etc/ssl/certs/java/cacerts.jks -deststoretype JKS -srcstorepass changeit -deststorepass changeit -noprompt; 	mv /etc/ssl/certs/java/cacerts.jks /etc/ssl/certs/java/cacerts; 	/var/lib/dpkg/info/ca-certificates-java.postinst configure; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Tue, 05 Mar 2019 14:17:49 GMT
+# Wed, 27 Mar 2019 11:05:19 GMT
 RUN groupadd -r jetty && useradd -r -g jetty jetty
-# Tue, 05 Mar 2019 14:17:49 GMT
+# Wed, 27 Mar 2019 11:05:19 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 05 Mar 2019 14:17:50 GMT
+# Wed, 27 Mar 2019 11:05:20 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 05 Mar 2019 14:17:51 GMT
+# Wed, 27 Mar 2019 11:05:21 GMT
 RUN mkdir -p "$JETTY_HOME"
-# Tue, 05 Mar 2019 14:17:51 GMT
+# Wed, 27 Mar 2019 11:05:22 GMT
 WORKDIR /usr/local/jetty
-# Tue, 05 Mar 2019 14:17:52 GMT
+# Wed, 27 Mar 2019 11:05:22 GMT
 ENV JETTY_VERSION=9.4.14.v20181114
-# Tue, 05 Mar 2019 14:17:52 GMT
+# Wed, 27 Mar 2019 11:05:23 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.14.v20181114/jetty-home-9.4.14.v20181114.tar.gz
-# Tue, 05 Mar 2019 14:17:53 GMT
+# Wed, 27 Mar 2019 11:05:23 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	FBA2B18D238AB852DF95745C76157BDF03D0DCD6 	5C9579B3DB2E506429319AAEF33B071B29559E1E
-# Tue, 05 Mar 2019 14:17:58 GMT
+# Wed, 27 Mar 2019 11:05:29 GMT
 RUN set -xe 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -rf "$GNUPGHOME" 	&& tar -xvf jetty.tar.gz --strip-components=1 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm jetty.tar.gz* 	&& rm -rf /tmp/hsperfdata_root
-# Tue, 05 Mar 2019 14:17:58 GMT
+# Wed, 27 Mar 2019 11:05:29 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 05 Mar 2019 14:18:00 GMT
+# Wed, 27 Mar 2019 11:05:31 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 05 Mar 2019 14:18:00 GMT
+# Wed, 27 Mar 2019 11:05:32 GMT
 WORKDIR /var/lib/jetty
-# Tue, 05 Mar 2019 14:18:03 GMT
+# Wed, 27 Mar 2019 11:05:35 GMT
 RUN set -xe 	&& java -jar "$JETTY_HOME/start.jar" --create-startd --add-to-start="server,http,deploy,jsp,jstl,ext,resources,websocket" 	&& chown -R jetty:jetty "$JETTY_BASE" 	&& rm -rf /tmp/hsperfdata_root
-# Tue, 05 Mar 2019 14:18:03 GMT
+# Wed, 27 Mar 2019 11:05:36 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 05 Mar 2019 14:18:05 GMT
+# Wed, 27 Mar 2019 11:05:37 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR"
-# Tue, 05 Mar 2019 14:18:06 GMT
+# Wed, 27 Mar 2019 11:05:38 GMT
 COPY multi:87587db67954487ef9f6dc57fa1fcab90f0134d7aa6d2af7a98d1b98a6047a64 in / 
-# Tue, 05 Mar 2019 14:18:06 GMT
+# Wed, 27 Mar 2019 11:05:38 GMT
 USER jetty
-# Tue, 05 Mar 2019 14:18:07 GMT
+# Wed, 27 Mar 2019 11:05:39 GMT
 EXPOSE 8080
-# Tue, 05 Mar 2019 14:18:07 GMT
+# Wed, 27 Mar 2019 11:05:39 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 05 Mar 2019 14:18:08 GMT
+# Wed, 27 Mar 2019 11:05:40 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:22dbe790f71562dfd3d49406b1dfd1e85e50f3dd7cb2e97b3918376ca39cae4e`  
-		Last Modified: Mon, 04 Mar 2019 23:26:18 GMT  
-		Size: 45.3 MB (45342528 bytes)  
+	-	`sha256:e79bb959ec00faf01da52437df4fad4537ec669f60455a38ad583ec2b8f00498`  
+		Last Modified: Tue, 26 Mar 2019 22:44:26 GMT  
+		Size: 45.3 MB (45342599 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0250231711a047a6e54e7107d7a3bfb0afd807f5f408d00be0d407c5b8395219`  
-		Last Modified: Tue, 05 Mar 2019 02:43:42 GMT  
-		Size: 10.8 MB (10781993 bytes)  
+	-	`sha256:d4b7902036fe0cefdfe9ccf0404fe13322ecbd552f132be73d3e840f95538838`  
+		Last Modified: Tue, 26 Mar 2019 23:32:09 GMT  
+		Size: 10.8 MB (10781908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6fba9447437b5ee1da9b33b2e2d18add55a33d0b763075202e17cad7efd3ff8f`  
-		Last Modified: Tue, 05 Mar 2019 02:43:41 GMT  
-		Size: 4.3 MB (4340113 bytes)  
+	-	`sha256:1b2a72d4e03052566e99130108071fc4eca4942c62923e3e5cf19666a23088ef`  
+		Last Modified: Tue, 26 Mar 2019 23:32:07 GMT  
+		Size: 4.3 MB (4340149 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4afad9c4aba6cc6f5b4e85b14e0a16c4807fdcc8a5e4c43a532d6aa06f5d5664`  
-		Last Modified: Tue, 05 Mar 2019 04:25:25 GMT  
-		Size: 852.9 KB (852890 bytes)  
+	-	`sha256:de423484a9466ec116a34ba24e068e72e45d6c875c82f7eb63375577b4b51236`  
+		Last Modified: Wed, 27 Mar 2019 01:08:33 GMT  
+		Size: 852.9 KB (852864 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad1519e9297a977488ae8ff5c877840e630c7acff7bd56e8154f56e9fe5431f7`  
-		Last Modified: Tue, 05 Mar 2019 04:25:24 GMT  
-		Size: 221.0 B  
+	-	`sha256:9ce08128c662b0d9d0f3d9f86364c56f7b387111dd0602f2116e7fefb7bf3322`  
+		Last Modified: Wed, 27 Mar 2019 01:08:34 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50db805a2e2130e23d677452a9392d29dc9cd1ae0676e5b31dba0fd23b4ccae8`  
-		Last Modified: Tue, 05 Mar 2019 04:25:24 GMT  
-		Size: 248.0 B  
+	-	`sha256:53b0cf80b370dc3011ff521f948fb212324f4b709f978ce5108193882a1a5a2f`  
+		Last Modified: Wed, 27 Mar 2019 01:08:33 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:23ba6d94bd68e7f0bb4379800050adffad946ba2400b8ed23807487a0e5df1f4`  
-		Last Modified: Tue, 05 Mar 2019 04:25:24 GMT  
-		Size: 130.0 B  
+	-	`sha256:52bd533f444d12d7c517d33e97d3ac0d27d31b2fbf6582dba416e47fcde1efc6`  
+		Last Modified: Wed, 27 Mar 2019 01:08:33 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:164c583a133ddf8aa4645ba59439e769e8374fb84032bce5b0ccb1355560ba3a`  
-		Last Modified: Tue, 05 Mar 2019 04:25:55 GMT  
-		Size: 131.3 MB (131315965 bytes)  
+	-	`sha256:1bc053cd8d4e277a71c9aa687ba5acbf1bc488ef70e77c6ad79ca2a6188ab4c8`  
+		Last Modified: Wed, 27 Mar 2019 01:08:58 GMT  
+		Size: 131.3 MB (131315629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ab587656eb6cb28d2415c82f8fd65406e6bc482fa67850e66ca32320fe2578a`  
-		Last Modified: Tue, 05 Mar 2019 14:20:00 GMT  
-		Size: 1.8 KB (1754 bytes)  
+	-	`sha256:149ebb5eb87f88479044d06eacc0713f373c633d7bca129fca18682aeffcf77c`  
+		Last Modified: Wed, 27 Mar 2019 11:06:39 GMT  
+		Size: 1.7 KB (1744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8353c2c369758849aa08c1800f5912bc7fc2c549860e597d38c48b9abde3a49`  
-		Last Modified: Tue, 05 Mar 2019 14:20:00 GMT  
-		Size: 152.0 B  
+	-	`sha256:3c73de6972029e0ea79217552da44a861b2d11dfe492cf47f8424f2f911a6e81`  
+		Last Modified: Wed, 27 Mar 2019 11:06:39 GMT  
+		Size: 151.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a1ba05f94480549d8832119f4b23a46fe88c5577f3b538cd23f456af64e176a`  
-		Last Modified: Tue, 05 Mar 2019 14:20:00 GMT  
-		Size: 9.3 MB (9315023 bytes)  
+	-	`sha256:231fc099d7f6611fe6e4e97a4b0ebb3d748c9e6a4853d93c04985aebf6957900`  
+		Last Modified: Wed, 27 Mar 2019 11:06:39 GMT  
+		Size: 9.3 MB (9315038 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d05ed2946ae84b5e9a00dd2b2da7c972dec6588deaba2254d55ca0df5cb1b468`  
-		Last Modified: Tue, 05 Mar 2019 14:19:59 GMT  
-		Size: 137.0 B  
+	-	`sha256:6a5359b95ef2901ea7c3f399b2e5d1fa37c96bde42dc1367415f0216817293f7`  
+		Last Modified: Wed, 27 Mar 2019 11:06:38 GMT  
+		Size: 138.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:114f68e38d8c15f4b1587ddb805a5d95f39bd0a803e9e3c0e4768d339817b40a`  
-		Last Modified: Tue, 05 Mar 2019 14:19:59 GMT  
-		Size: 2.0 KB (1994 bytes)  
+	-	`sha256:398022d074c45ca940a25a1742dfe336667d77812c9f5d3dc9c758db00a9cc8c`  
+		Last Modified: Wed, 27 Mar 2019 11:06:38 GMT  
+		Size: 2.0 KB (1993 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:faf775b8876d43a37851a94f68c00cb954abbef46706f90dd717091c6436130a`  
-		Last Modified: Tue, 05 Mar 2019 14:19:59 GMT  
+	-	`sha256:e862a81b2ed7a9f541b81d6c93ad4a3d8f0db9dd67c6de181f61fa0ab252ab7b`  
+		Last Modified: Wed, 27 Mar 2019 11:06:38 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ce02f5a26a5e5a0eea8ed3c7624448df67e3bfb19c7cddbe171775b1e410e44`  
-		Last Modified: Tue, 05 Mar 2019 14:19:59 GMT  
+	-	`sha256:4e9507022bc2acd5414caba023edb3fac1b51c0edfcaa0b435a0f57ce71766d8`  
+		Last Modified: Wed, 27 Mar 2019 11:06:38 GMT  
 		Size: 1.4 KB (1387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -23417,7 +23417,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ## `jetty:9-jre11`
 
 ```console
-$ docker pull jetty@sha256:474f11e6d9d34401700a83f812d23d99b15343481ca437669dee3e5d13e13172
+$ docker pull jetty@sha256:6cb7b311178131e6abe068c7ee0db19829a3e4d75a5cc8503ecbe94e9dd25f29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -23433,145 +23433,145 @@ $ docker pull jetty@sha256:474f11e6d9d34401700a83f812d23d99b15343481ca437669dee3
 ### `jetty:9-jre11` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:e421549412e6b2af876ccf8e5c9e7cc4752969fd0c039d4bfd694f1c40f85600
+$ docker pull jetty@sha256:e936c28926c4c97c9034655e186c90513b46481a698acc596d8f2903862ddb8f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **202.0 MB (201954661 bytes)**  
+-	Total Size: **202.0 MB (201954329 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b481397be224647a2f5e2b3232cc3f1e74f8ac12e05ea4d938982ec4b94cbcf`
+-	Image ID: `sha256:8058b0a563bc149b618c7cd1d9beaeea18d95e0fb70332393c9cb949eaef800f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Mon, 04 Mar 2019 23:22:10 GMT
-ADD file:e4bdc12117ee95eaa94b89f258164dd42f9828c7c5c4332a608707187ccb470a in / 
-# Mon, 04 Mar 2019 23:22:10 GMT
+# Tue, 26 Mar 2019 22:41:12 GMT
+ADD file:843b8a2a9df1a07305ff3d02484d4be7f769057c6d2e311d52d59e00deb917c6 in / 
+# Tue, 26 Mar 2019 22:41:12 GMT
 CMD ["bash"]
-# Tue, 05 Mar 2019 02:35:21 GMT
+# Tue, 26 Mar 2019 23:26:30 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 02:35:27 GMT
+# Tue, 26 Mar 2019 23:26:40 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 05 Mar 2019 04:01:49 GMT
+# Wed, 27 Mar 2019 00:46:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 04:01:50 GMT
+# Wed, 27 Mar 2019 00:46:47 GMT
 RUN echo 'deb http://deb.debian.org/debian stretch-backports main' > /etc/apt/sources.list.d/stretch-backports.list
-# Tue, 05 Mar 2019 04:01:50 GMT
+# Wed, 27 Mar 2019 00:46:47 GMT
 ENV LANG=C.UTF-8
-# Tue, 05 Mar 2019 04:01:51 GMT
+# Wed, 27 Mar 2019 00:46:48 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 05 Mar 2019 04:01:52 GMT
+# Wed, 27 Mar 2019 00:46:49 GMT
 RUN ln -svT "/usr/lib/jvm/java-11-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Tue, 05 Mar 2019 04:01:53 GMT
+# Wed, 27 Mar 2019 00:46:49 GMT
 ENV JAVA_HOME=/docker-java-home
-# Tue, 05 Mar 2019 04:01:53 GMT
+# Wed, 27 Mar 2019 00:46:49 GMT
 ENV JAVA_VERSION=11.0.2
-# Tue, 05 Mar 2019 04:01:53 GMT
+# Wed, 27 Mar 2019 00:46:50 GMT
 ENV JAVA_DEBIAN_VERSION=11.0.2+9-3~bpo9+1
-# Tue, 05 Mar 2019 04:02:36 GMT
+# Wed, 27 Mar 2019 00:47:30 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		ln -svT /docker-java-home/bin/java /usr/local/bin/java; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-11-jre="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		rm -v /usr/local/bin/java; 		keytool -importkeystore -srckeystore /etc/ssl/certs/java/cacerts -destkeystore /etc/ssl/certs/java/cacerts.jks -deststoretype JKS -srcstorepass changeit -deststorepass changeit -noprompt; 	mv /etc/ssl/certs/java/cacerts.jks /etc/ssl/certs/java/cacerts; 	/var/lib/dpkg/info/ca-certificates-java.postinst configure; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Tue, 05 Mar 2019 14:17:49 GMT
+# Wed, 27 Mar 2019 11:05:19 GMT
 RUN groupadd -r jetty && useradd -r -g jetty jetty
-# Tue, 05 Mar 2019 14:17:49 GMT
+# Wed, 27 Mar 2019 11:05:19 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 05 Mar 2019 14:17:50 GMT
+# Wed, 27 Mar 2019 11:05:20 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 05 Mar 2019 14:17:51 GMT
+# Wed, 27 Mar 2019 11:05:21 GMT
 RUN mkdir -p "$JETTY_HOME"
-# Tue, 05 Mar 2019 14:17:51 GMT
+# Wed, 27 Mar 2019 11:05:22 GMT
 WORKDIR /usr/local/jetty
-# Tue, 05 Mar 2019 14:17:52 GMT
+# Wed, 27 Mar 2019 11:05:22 GMT
 ENV JETTY_VERSION=9.4.14.v20181114
-# Tue, 05 Mar 2019 14:17:52 GMT
+# Wed, 27 Mar 2019 11:05:23 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.14.v20181114/jetty-home-9.4.14.v20181114.tar.gz
-# Tue, 05 Mar 2019 14:17:53 GMT
+# Wed, 27 Mar 2019 11:05:23 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	FBA2B18D238AB852DF95745C76157BDF03D0DCD6 	5C9579B3DB2E506429319AAEF33B071B29559E1E
-# Tue, 05 Mar 2019 14:17:58 GMT
+# Wed, 27 Mar 2019 11:05:29 GMT
 RUN set -xe 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -rf "$GNUPGHOME" 	&& tar -xvf jetty.tar.gz --strip-components=1 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm jetty.tar.gz* 	&& rm -rf /tmp/hsperfdata_root
-# Tue, 05 Mar 2019 14:17:58 GMT
+# Wed, 27 Mar 2019 11:05:29 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 05 Mar 2019 14:18:00 GMT
+# Wed, 27 Mar 2019 11:05:31 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 05 Mar 2019 14:18:00 GMT
+# Wed, 27 Mar 2019 11:05:32 GMT
 WORKDIR /var/lib/jetty
-# Tue, 05 Mar 2019 14:18:03 GMT
+# Wed, 27 Mar 2019 11:05:35 GMT
 RUN set -xe 	&& java -jar "$JETTY_HOME/start.jar" --create-startd --add-to-start="server,http,deploy,jsp,jstl,ext,resources,websocket" 	&& chown -R jetty:jetty "$JETTY_BASE" 	&& rm -rf /tmp/hsperfdata_root
-# Tue, 05 Mar 2019 14:18:03 GMT
+# Wed, 27 Mar 2019 11:05:36 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 05 Mar 2019 14:18:05 GMT
+# Wed, 27 Mar 2019 11:05:37 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR"
-# Tue, 05 Mar 2019 14:18:06 GMT
+# Wed, 27 Mar 2019 11:05:38 GMT
 COPY multi:87587db67954487ef9f6dc57fa1fcab90f0134d7aa6d2af7a98d1b98a6047a64 in / 
-# Tue, 05 Mar 2019 14:18:06 GMT
+# Wed, 27 Mar 2019 11:05:38 GMT
 USER jetty
-# Tue, 05 Mar 2019 14:18:07 GMT
+# Wed, 27 Mar 2019 11:05:39 GMT
 EXPOSE 8080
-# Tue, 05 Mar 2019 14:18:07 GMT
+# Wed, 27 Mar 2019 11:05:39 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 05 Mar 2019 14:18:08 GMT
+# Wed, 27 Mar 2019 11:05:40 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:22dbe790f71562dfd3d49406b1dfd1e85e50f3dd7cb2e97b3918376ca39cae4e`  
-		Last Modified: Mon, 04 Mar 2019 23:26:18 GMT  
-		Size: 45.3 MB (45342528 bytes)  
+	-	`sha256:e79bb959ec00faf01da52437df4fad4537ec669f60455a38ad583ec2b8f00498`  
+		Last Modified: Tue, 26 Mar 2019 22:44:26 GMT  
+		Size: 45.3 MB (45342599 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0250231711a047a6e54e7107d7a3bfb0afd807f5f408d00be0d407c5b8395219`  
-		Last Modified: Tue, 05 Mar 2019 02:43:42 GMT  
-		Size: 10.8 MB (10781993 bytes)  
+	-	`sha256:d4b7902036fe0cefdfe9ccf0404fe13322ecbd552f132be73d3e840f95538838`  
+		Last Modified: Tue, 26 Mar 2019 23:32:09 GMT  
+		Size: 10.8 MB (10781908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6fba9447437b5ee1da9b33b2e2d18add55a33d0b763075202e17cad7efd3ff8f`  
-		Last Modified: Tue, 05 Mar 2019 02:43:41 GMT  
-		Size: 4.3 MB (4340113 bytes)  
+	-	`sha256:1b2a72d4e03052566e99130108071fc4eca4942c62923e3e5cf19666a23088ef`  
+		Last Modified: Tue, 26 Mar 2019 23:32:07 GMT  
+		Size: 4.3 MB (4340149 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4afad9c4aba6cc6f5b4e85b14e0a16c4807fdcc8a5e4c43a532d6aa06f5d5664`  
-		Last Modified: Tue, 05 Mar 2019 04:25:25 GMT  
-		Size: 852.9 KB (852890 bytes)  
+	-	`sha256:de423484a9466ec116a34ba24e068e72e45d6c875c82f7eb63375577b4b51236`  
+		Last Modified: Wed, 27 Mar 2019 01:08:33 GMT  
+		Size: 852.9 KB (852864 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad1519e9297a977488ae8ff5c877840e630c7acff7bd56e8154f56e9fe5431f7`  
-		Last Modified: Tue, 05 Mar 2019 04:25:24 GMT  
-		Size: 221.0 B  
+	-	`sha256:9ce08128c662b0d9d0f3d9f86364c56f7b387111dd0602f2116e7fefb7bf3322`  
+		Last Modified: Wed, 27 Mar 2019 01:08:34 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50db805a2e2130e23d677452a9392d29dc9cd1ae0676e5b31dba0fd23b4ccae8`  
-		Last Modified: Tue, 05 Mar 2019 04:25:24 GMT  
-		Size: 248.0 B  
+	-	`sha256:53b0cf80b370dc3011ff521f948fb212324f4b709f978ce5108193882a1a5a2f`  
+		Last Modified: Wed, 27 Mar 2019 01:08:33 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:23ba6d94bd68e7f0bb4379800050adffad946ba2400b8ed23807487a0e5df1f4`  
-		Last Modified: Tue, 05 Mar 2019 04:25:24 GMT  
-		Size: 130.0 B  
+	-	`sha256:52bd533f444d12d7c517d33e97d3ac0d27d31b2fbf6582dba416e47fcde1efc6`  
+		Last Modified: Wed, 27 Mar 2019 01:08:33 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:164c583a133ddf8aa4645ba59439e769e8374fb84032bce5b0ccb1355560ba3a`  
-		Last Modified: Tue, 05 Mar 2019 04:25:55 GMT  
-		Size: 131.3 MB (131315965 bytes)  
+	-	`sha256:1bc053cd8d4e277a71c9aa687ba5acbf1bc488ef70e77c6ad79ca2a6188ab4c8`  
+		Last Modified: Wed, 27 Mar 2019 01:08:58 GMT  
+		Size: 131.3 MB (131315629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ab587656eb6cb28d2415c82f8fd65406e6bc482fa67850e66ca32320fe2578a`  
-		Last Modified: Tue, 05 Mar 2019 14:20:00 GMT  
-		Size: 1.8 KB (1754 bytes)  
+	-	`sha256:149ebb5eb87f88479044d06eacc0713f373c633d7bca129fca18682aeffcf77c`  
+		Last Modified: Wed, 27 Mar 2019 11:06:39 GMT  
+		Size: 1.7 KB (1744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8353c2c369758849aa08c1800f5912bc7fc2c549860e597d38c48b9abde3a49`  
-		Last Modified: Tue, 05 Mar 2019 14:20:00 GMT  
-		Size: 152.0 B  
+	-	`sha256:3c73de6972029e0ea79217552da44a861b2d11dfe492cf47f8424f2f911a6e81`  
+		Last Modified: Wed, 27 Mar 2019 11:06:39 GMT  
+		Size: 151.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a1ba05f94480549d8832119f4b23a46fe88c5577f3b538cd23f456af64e176a`  
-		Last Modified: Tue, 05 Mar 2019 14:20:00 GMT  
-		Size: 9.3 MB (9315023 bytes)  
+	-	`sha256:231fc099d7f6611fe6e4e97a4b0ebb3d748c9e6a4853d93c04985aebf6957900`  
+		Last Modified: Wed, 27 Mar 2019 11:06:39 GMT  
+		Size: 9.3 MB (9315038 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d05ed2946ae84b5e9a00dd2b2da7c972dec6588deaba2254d55ca0df5cb1b468`  
-		Last Modified: Tue, 05 Mar 2019 14:19:59 GMT  
-		Size: 137.0 B  
+	-	`sha256:6a5359b95ef2901ea7c3f399b2e5d1fa37c96bde42dc1367415f0216817293f7`  
+		Last Modified: Wed, 27 Mar 2019 11:06:38 GMT  
+		Size: 138.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:114f68e38d8c15f4b1587ddb805a5d95f39bd0a803e9e3c0e4768d339817b40a`  
-		Last Modified: Tue, 05 Mar 2019 14:19:59 GMT  
-		Size: 2.0 KB (1994 bytes)  
+	-	`sha256:398022d074c45ca940a25a1742dfe336667d77812c9f5d3dc9c758db00a9cc8c`  
+		Last Modified: Wed, 27 Mar 2019 11:06:38 GMT  
+		Size: 2.0 KB (1993 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:faf775b8876d43a37851a94f68c00cb954abbef46706f90dd717091c6436130a`  
-		Last Modified: Tue, 05 Mar 2019 14:19:59 GMT  
+	-	`sha256:e862a81b2ed7a9f541b81d6c93ad4a3d8f0db9dd67c6de181f61fa0ab252ab7b`  
+		Last Modified: Wed, 27 Mar 2019 11:06:38 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ce02f5a26a5e5a0eea8ed3c7624448df67e3bfb19c7cddbe171775b1e410e44`  
-		Last Modified: Tue, 05 Mar 2019 14:19:59 GMT  
+	-	`sha256:4e9507022bc2acd5414caba023edb3fac1b51c0edfcaa0b435a0f57ce71766d8`  
+		Last Modified: Wed, 27 Mar 2019 11:06:38 GMT  
 		Size: 1.4 KB (1387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -24448,7 +24448,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ## `jetty:9-jre7`
 
 ```console
-$ docker pull jetty@sha256:c48c0da5778ac0e8714c7af83668d074a01b6b42ff6359982c1aceb268906a67
+$ docker pull jetty@sha256:4013bf7f2074a80fe0c04230859cdcf35f13e0950d715606a39d2bcf9129fab7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -24464,136 +24464,136 @@ $ docker pull jetty@sha256:c48c0da5778ac0e8714c7af83668d074a01b6b42ff6359982c1ac
 ### `jetty:9-jre7` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:07e5f3492b727f118dbe81b00bdc5d4587acabc2d9c45b29bc34b1633f60856e
+$ docker pull jetty@sha256:649fc94fce0689eaf66491664ece9fecc55673ed8719c2f8249f4972fa4c0763
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.6 MB (164573315 bytes)**  
+-	Total Size: **164.6 MB (164575821 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a832f927c5e3807b18126532f8d96deef64dde15c4bf5e817ad8d33fb229ad33`
+-	Image ID: `sha256:1b7b023f6a82e6dcc6fa61680bdc108c16fa2ed9984d62d2c36baf98b3eb33f4`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Mon, 04 Mar 2019 23:20:17 GMT
-ADD file:e044496893d9e2cbf5a4b69ccfbb7d2997209962a78a52b6fc091c5b004cc33f in / 
-# Mon, 04 Mar 2019 23:20:18 GMT
+# Tue, 26 Mar 2019 22:39:37 GMT
+ADD file:ca3bf06a040bfe3d0d727326698ec36f9578bf9c8f6fe1050b7d85a3dd241112 in / 
+# Tue, 26 Mar 2019 22:39:37 GMT
 CMD ["bash"]
-# Tue, 05 Mar 2019 02:26:04 GMT
+# Tue, 26 Mar 2019 23:17:18 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 02:26:04 GMT
+# Tue, 26 Mar 2019 23:17:19 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 05 Mar 2019 04:17:03 GMT
+# Wed, 27 Mar 2019 00:59:59 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 04:17:03 GMT
+# Wed, 27 Mar 2019 00:59:59 GMT
 ENV LANG=C.UTF-8
-# Tue, 05 Mar 2019 04:17:04 GMT
+# Wed, 27 Mar 2019 01:00:00 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 05 Mar 2019 04:17:05 GMT
+# Wed, 27 Mar 2019 01:00:01 GMT
 RUN ln -svT "/usr/lib/jvm/java-7-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Tue, 05 Mar 2019 04:17:06 GMT
+# Wed, 27 Mar 2019 01:00:01 GMT
 ENV JAVA_HOME=/docker-java-home/jre
-# Tue, 05 Mar 2019 04:17:06 GMT
+# Wed, 27 Mar 2019 01:00:01 GMT
 ENV JAVA_VERSION=7u181
-# Tue, 05 Mar 2019 04:17:06 GMT
+# Wed, 27 Mar 2019 01:00:01 GMT
 ENV JAVA_DEBIAN_VERSION=7u181-2.6.14-2~deb8u1
-# Tue, 05 Mar 2019 04:19:36 GMT
+# Wed, 27 Mar 2019 01:02:11 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-7-jre="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Tue, 05 Mar 2019 14:19:23 GMT
+# Wed, 27 Mar 2019 11:06:01 GMT
 RUN groupadd -r jetty && useradd -r -g jetty jetty
-# Tue, 05 Mar 2019 14:19:23 GMT
+# Wed, 27 Mar 2019 11:06:01 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 05 Mar 2019 14:19:24 GMT
+# Wed, 27 Mar 2019 11:06:02 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 05 Mar 2019 14:19:26 GMT
+# Wed, 27 Mar 2019 11:06:03 GMT
 RUN mkdir -p "$JETTY_HOME"
-# Tue, 05 Mar 2019 14:19:26 GMT
+# Wed, 27 Mar 2019 11:06:04 GMT
 WORKDIR /usr/local/jetty
-# Tue, 05 Mar 2019 14:19:27 GMT
+# Wed, 27 Mar 2019 11:06:04 GMT
 ENV JETTY_VERSION=9.2.26.v20180806
-# Tue, 05 Mar 2019 14:19:27 GMT
+# Wed, 27 Mar 2019 11:06:04 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.26.v20180806/jetty-distribution-9.2.26.v20180806.tar.gz
-# Tue, 05 Mar 2019 14:19:28 GMT
+# Wed, 27 Mar 2019 11:06:04 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	FBA2B18D238AB852DF95745C76157BDF03D0DCD6 	5C9579B3DB2E506429319AAEF33B071B29559E1E
-# Tue, 05 Mar 2019 14:19:31 GMT
+# Wed, 27 Mar 2019 11:06:13 GMT
 RUN set -xe 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -rf "$GNUPGHOME" 	&& tar -xvf jetty.tar.gz --strip-components=1 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm -fr demo-base javadoc 	&& rm jetty.tar.gz* 	&& rm -rf /tmp/hsperfdata_root
-# Tue, 05 Mar 2019 14:19:31 GMT
+# Wed, 27 Mar 2019 11:06:14 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 05 Mar 2019 14:19:33 GMT
+# Wed, 27 Mar 2019 11:06:14 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 05 Mar 2019 14:19:33 GMT
+# Wed, 27 Mar 2019 11:06:14 GMT
 WORKDIR /var/lib/jetty
-# Tue, 05 Mar 2019 14:19:37 GMT
+# Wed, 27 Mar 2019 11:06:16 GMT
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" 	&& set -xe 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules" 	&& chown -R jetty:jetty "$JETTY_BASE" 	&& rm -rf /tmp/hsperfdata_root
-# Tue, 05 Mar 2019 14:19:37 GMT
+# Wed, 27 Mar 2019 11:06:16 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 05 Mar 2019 14:19:39 GMT
+# Wed, 27 Mar 2019 11:06:17 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR"
-# Tue, 05 Mar 2019 14:19:39 GMT
+# Wed, 27 Mar 2019 11:06:17 GMT
 COPY multi:87587db67954487ef9f6dc57fa1fcab90f0134d7aa6d2af7a98d1b98a6047a64 in / 
-# Tue, 05 Mar 2019 14:19:40 GMT
+# Wed, 27 Mar 2019 11:06:17 GMT
 USER jetty
-# Tue, 05 Mar 2019 14:19:40 GMT
+# Wed, 27 Mar 2019 11:06:18 GMT
 EXPOSE 8080
-# Tue, 05 Mar 2019 14:19:40 GMT
+# Wed, 27 Mar 2019 11:06:18 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 05 Mar 2019 14:19:41 GMT
+# Wed, 27 Mar 2019 11:06:18 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:85199fa09ec1510ee053da666286c385d07b8fab9fa61ae73a5b8c454e1b3397`  
-		Last Modified: Mon, 04 Mar 2019 23:24:27 GMT  
-		Size: 54.4 MB (54381658 bytes)  
+	-	`sha256:bf295113f40dde5826c75de78b0aaa190302b3b467a3d6a3f222498b0ad1cea3`  
+		Last Modified: Tue, 26 Mar 2019 22:43:06 GMT  
+		Size: 54.4 MB (54382913 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7aca5925aec20fece01837f6f93c55c62c38dfba443d19404e7be3a37f3bdf85`  
-		Last Modified: Tue, 05 Mar 2019 02:41:52 GMT  
-		Size: 17.5 MB (17539744 bytes)  
+	-	`sha256:62fe5b9a5ae4df86ade5163499bec6552c354611960eabfc7f1391f9e9f57945`  
+		Last Modified: Tue, 26 Mar 2019 23:30:21 GMT  
+		Size: 17.5 MB (17541227 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2804cbb1435bc2e32a66d185b3a714b9c3f97141f1d4a8c09a3675f213c004da`  
-		Last Modified: Tue, 05 Mar 2019 04:29:03 GMT  
-		Size: 795.2 KB (795158 bytes)  
+	-	`sha256:92748c09714e5ff3525426b1db779e7937b629687255e3c336882349d1b686ab`  
+		Last Modified: Wed, 27 Mar 2019 01:10:22 GMT  
+		Size: 795.2 KB (795203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:64d24da622655ce6014113d76763828275ccc5cd50156517ed85b9fb273749c6`  
-		Last Modified: Tue, 05 Mar 2019 04:29:03 GMT  
-		Size: 247.0 B  
+	-	`sha256:062f1282bf9c8ade4b7259d5d902417562965db5d8fb6fd3492dc251a5d9c752`  
+		Last Modified: Wed, 27 Mar 2019 01:10:22 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:602ecacd96f4b325230dbae121fe62fc8a03f775f91f886514eba5ebe29cdcd0`  
-		Last Modified: Tue, 05 Mar 2019 04:29:04 GMT  
+	-	`sha256:f94f42f0e754f4268a5de994bfff55e50179a24e32ea026e9091b0548fbb67de`  
+		Last Modified: Wed, 27 Mar 2019 01:10:22 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efa0bc495b76d17d820e3a8fbc02c09b53742381874f6237e416ded5498127ac`  
-		Last Modified: Tue, 05 Mar 2019 04:29:17 GMT  
-		Size: 81.8 MB (81821305 bytes)  
+	-	`sha256:679fb14e9d1086bc1ed6f7f5e3651e87d6eb363e7e2f15bfccbea1fef745018d`  
+		Last Modified: Wed, 27 Mar 2019 01:10:36 GMT  
+		Size: 81.8 MB (81821013 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4508e92416a99c1c0acfcdf09a04203d8c88d9bf3861e89bdf57b2ad7fda3798`  
-		Last Modified: Tue, 05 Mar 2019 14:20:28 GMT  
-		Size: 2.1 KB (2099 bytes)  
+	-	`sha256:5dbd56c05d0041ca04be7cefe90a65d20a17e521b791b2d313c3822690d1df46`  
+		Last Modified: Wed, 27 Mar 2019 11:06:48 GMT  
+		Size: 2.1 KB (2095 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c844be8e0f070caef63461bd00b89119b4c83fa6907c4f694d865fa4a6c6cc5`  
-		Last Modified: Tue, 05 Mar 2019 14:20:28 GMT  
-		Size: 152.0 B  
+	-	`sha256:d000e72e631f45706b19b5eb1f030a1c5db725e7db0320393d0654b7305121fc`  
+		Last Modified: Wed, 27 Mar 2019 11:06:49 GMT  
+		Size: 150.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2025fd0a4c087e27afa8d7e0fd3eaaa5e69703d8fb4593f25464e9668077fc95`  
-		Last Modified: Tue, 05 Mar 2019 14:20:28 GMT  
-		Size: 10.0 MB (10029700 bytes)  
+	-	`sha256:51723def584cc838e75955e2a3c5ca379f711acd440752a614c73901f1741f81`  
+		Last Modified: Wed, 27 Mar 2019 11:06:49 GMT  
+		Size: 10.0 MB (10029727 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d594ae43b7ae4cd10d32ad65c0aa084611960eebd95498706afbc42b22ea646`  
-		Last Modified: Tue, 05 Mar 2019 14:20:27 GMT  
-		Size: 138.0 B  
+	-	`sha256:8a426f9b5c8de7e3e7ebb134fbead467e31b864d5571612123a784f29b3cf716`  
+		Last Modified: Wed, 27 Mar 2019 11:06:48 GMT  
+		Size: 136.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d6656751de36918a7b80b3a0df494f59f617cc2c70451f2c98191142ed09b08`  
-		Last Modified: Tue, 05 Mar 2019 14:20:27 GMT  
+	-	`sha256:0b637ba83fc45722f416bd50c1252b66ed734c4019af601556d31a0cd3095d41`  
+		Last Modified: Wed, 27 Mar 2019 11:06:48 GMT  
 		Size: 1.5 KB (1469 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e529498739f6d5e1339c119ffb4231ac62cb29cd232559cd65d41c698376c3da`  
-		Last Modified: Tue, 05 Mar 2019 14:20:28 GMT  
-		Size: 126.0 B  
+	-	`sha256:1442c3806435df45bc110fc45104bb4364d2724757a7113ccef4397863e858b4`  
+		Last Modified: Wed, 27 Mar 2019 11:06:48 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7faeffc7801f203cff315ea80ba15d05457ffbf8c22b41469c0f3c1ac3ff8e36`  
-		Last Modified: Tue, 05 Mar 2019 14:20:27 GMT  
-		Size: 1.4 KB (1389 bytes)  
+	-	`sha256:5101cb57c60dbc54b6c1ad044ecfcc867a5c0d32bfd8f333d80f8719612f15c9`  
+		Last Modified: Wed, 27 Mar 2019 11:06:48 GMT  
+		Size: 1.4 KB (1387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `jetty:9-jre7` - linux; arm variant v5
@@ -27852,7 +27852,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ## `jetty:jre7`
 
 ```console
-$ docker pull jetty@sha256:c48c0da5778ac0e8714c7af83668d074a01b6b42ff6359982c1aceb268906a67
+$ docker pull jetty@sha256:4013bf7f2074a80fe0c04230859cdcf35f13e0950d715606a39d2bcf9129fab7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -27868,136 +27868,136 @@ $ docker pull jetty@sha256:c48c0da5778ac0e8714c7af83668d074a01b6b42ff6359982c1ac
 ### `jetty:jre7` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:07e5f3492b727f118dbe81b00bdc5d4587acabc2d9c45b29bc34b1633f60856e
+$ docker pull jetty@sha256:649fc94fce0689eaf66491664ece9fecc55673ed8719c2f8249f4972fa4c0763
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.6 MB (164573315 bytes)**  
+-	Total Size: **164.6 MB (164575821 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a832f927c5e3807b18126532f8d96deef64dde15c4bf5e817ad8d33fb229ad33`
+-	Image ID: `sha256:1b7b023f6a82e6dcc6fa61680bdc108c16fa2ed9984d62d2c36baf98b3eb33f4`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Mon, 04 Mar 2019 23:20:17 GMT
-ADD file:e044496893d9e2cbf5a4b69ccfbb7d2997209962a78a52b6fc091c5b004cc33f in / 
-# Mon, 04 Mar 2019 23:20:18 GMT
+# Tue, 26 Mar 2019 22:39:37 GMT
+ADD file:ca3bf06a040bfe3d0d727326698ec36f9578bf9c8f6fe1050b7d85a3dd241112 in / 
+# Tue, 26 Mar 2019 22:39:37 GMT
 CMD ["bash"]
-# Tue, 05 Mar 2019 02:26:04 GMT
+# Tue, 26 Mar 2019 23:17:18 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 02:26:04 GMT
+# Tue, 26 Mar 2019 23:17:19 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 05 Mar 2019 04:17:03 GMT
+# Wed, 27 Mar 2019 00:59:59 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 04:17:03 GMT
+# Wed, 27 Mar 2019 00:59:59 GMT
 ENV LANG=C.UTF-8
-# Tue, 05 Mar 2019 04:17:04 GMT
+# Wed, 27 Mar 2019 01:00:00 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 05 Mar 2019 04:17:05 GMT
+# Wed, 27 Mar 2019 01:00:01 GMT
 RUN ln -svT "/usr/lib/jvm/java-7-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Tue, 05 Mar 2019 04:17:06 GMT
+# Wed, 27 Mar 2019 01:00:01 GMT
 ENV JAVA_HOME=/docker-java-home/jre
-# Tue, 05 Mar 2019 04:17:06 GMT
+# Wed, 27 Mar 2019 01:00:01 GMT
 ENV JAVA_VERSION=7u181
-# Tue, 05 Mar 2019 04:17:06 GMT
+# Wed, 27 Mar 2019 01:00:01 GMT
 ENV JAVA_DEBIAN_VERSION=7u181-2.6.14-2~deb8u1
-# Tue, 05 Mar 2019 04:19:36 GMT
+# Wed, 27 Mar 2019 01:02:11 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-7-jre="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Tue, 05 Mar 2019 14:19:23 GMT
+# Wed, 27 Mar 2019 11:06:01 GMT
 RUN groupadd -r jetty && useradd -r -g jetty jetty
-# Tue, 05 Mar 2019 14:19:23 GMT
+# Wed, 27 Mar 2019 11:06:01 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 05 Mar 2019 14:19:24 GMT
+# Wed, 27 Mar 2019 11:06:02 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 05 Mar 2019 14:19:26 GMT
+# Wed, 27 Mar 2019 11:06:03 GMT
 RUN mkdir -p "$JETTY_HOME"
-# Tue, 05 Mar 2019 14:19:26 GMT
+# Wed, 27 Mar 2019 11:06:04 GMT
 WORKDIR /usr/local/jetty
-# Tue, 05 Mar 2019 14:19:27 GMT
+# Wed, 27 Mar 2019 11:06:04 GMT
 ENV JETTY_VERSION=9.2.26.v20180806
-# Tue, 05 Mar 2019 14:19:27 GMT
+# Wed, 27 Mar 2019 11:06:04 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.26.v20180806/jetty-distribution-9.2.26.v20180806.tar.gz
-# Tue, 05 Mar 2019 14:19:28 GMT
+# Wed, 27 Mar 2019 11:06:04 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	FBA2B18D238AB852DF95745C76157BDF03D0DCD6 	5C9579B3DB2E506429319AAEF33B071B29559E1E
-# Tue, 05 Mar 2019 14:19:31 GMT
+# Wed, 27 Mar 2019 11:06:13 GMT
 RUN set -xe 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -rf "$GNUPGHOME" 	&& tar -xvf jetty.tar.gz --strip-components=1 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm -fr demo-base javadoc 	&& rm jetty.tar.gz* 	&& rm -rf /tmp/hsperfdata_root
-# Tue, 05 Mar 2019 14:19:31 GMT
+# Wed, 27 Mar 2019 11:06:14 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 05 Mar 2019 14:19:33 GMT
+# Wed, 27 Mar 2019 11:06:14 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 05 Mar 2019 14:19:33 GMT
+# Wed, 27 Mar 2019 11:06:14 GMT
 WORKDIR /var/lib/jetty
-# Tue, 05 Mar 2019 14:19:37 GMT
+# Wed, 27 Mar 2019 11:06:16 GMT
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" 	&& set -xe 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules" 	&& chown -R jetty:jetty "$JETTY_BASE" 	&& rm -rf /tmp/hsperfdata_root
-# Tue, 05 Mar 2019 14:19:37 GMT
+# Wed, 27 Mar 2019 11:06:16 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 05 Mar 2019 14:19:39 GMT
+# Wed, 27 Mar 2019 11:06:17 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR"
-# Tue, 05 Mar 2019 14:19:39 GMT
+# Wed, 27 Mar 2019 11:06:17 GMT
 COPY multi:87587db67954487ef9f6dc57fa1fcab90f0134d7aa6d2af7a98d1b98a6047a64 in / 
-# Tue, 05 Mar 2019 14:19:40 GMT
+# Wed, 27 Mar 2019 11:06:17 GMT
 USER jetty
-# Tue, 05 Mar 2019 14:19:40 GMT
+# Wed, 27 Mar 2019 11:06:18 GMT
 EXPOSE 8080
-# Tue, 05 Mar 2019 14:19:40 GMT
+# Wed, 27 Mar 2019 11:06:18 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 05 Mar 2019 14:19:41 GMT
+# Wed, 27 Mar 2019 11:06:18 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:85199fa09ec1510ee053da666286c385d07b8fab9fa61ae73a5b8c454e1b3397`  
-		Last Modified: Mon, 04 Mar 2019 23:24:27 GMT  
-		Size: 54.4 MB (54381658 bytes)  
+	-	`sha256:bf295113f40dde5826c75de78b0aaa190302b3b467a3d6a3f222498b0ad1cea3`  
+		Last Modified: Tue, 26 Mar 2019 22:43:06 GMT  
+		Size: 54.4 MB (54382913 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7aca5925aec20fece01837f6f93c55c62c38dfba443d19404e7be3a37f3bdf85`  
-		Last Modified: Tue, 05 Mar 2019 02:41:52 GMT  
-		Size: 17.5 MB (17539744 bytes)  
+	-	`sha256:62fe5b9a5ae4df86ade5163499bec6552c354611960eabfc7f1391f9e9f57945`  
+		Last Modified: Tue, 26 Mar 2019 23:30:21 GMT  
+		Size: 17.5 MB (17541227 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2804cbb1435bc2e32a66d185b3a714b9c3f97141f1d4a8c09a3675f213c004da`  
-		Last Modified: Tue, 05 Mar 2019 04:29:03 GMT  
-		Size: 795.2 KB (795158 bytes)  
+	-	`sha256:92748c09714e5ff3525426b1db779e7937b629687255e3c336882349d1b686ab`  
+		Last Modified: Wed, 27 Mar 2019 01:10:22 GMT  
+		Size: 795.2 KB (795203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:64d24da622655ce6014113d76763828275ccc5cd50156517ed85b9fb273749c6`  
-		Last Modified: Tue, 05 Mar 2019 04:29:03 GMT  
-		Size: 247.0 B  
+	-	`sha256:062f1282bf9c8ade4b7259d5d902417562965db5d8fb6fd3492dc251a5d9c752`  
+		Last Modified: Wed, 27 Mar 2019 01:10:22 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:602ecacd96f4b325230dbae121fe62fc8a03f775f91f886514eba5ebe29cdcd0`  
-		Last Modified: Tue, 05 Mar 2019 04:29:04 GMT  
+	-	`sha256:f94f42f0e754f4268a5de994bfff55e50179a24e32ea026e9091b0548fbb67de`  
+		Last Modified: Wed, 27 Mar 2019 01:10:22 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efa0bc495b76d17d820e3a8fbc02c09b53742381874f6237e416ded5498127ac`  
-		Last Modified: Tue, 05 Mar 2019 04:29:17 GMT  
-		Size: 81.8 MB (81821305 bytes)  
+	-	`sha256:679fb14e9d1086bc1ed6f7f5e3651e87d6eb363e7e2f15bfccbea1fef745018d`  
+		Last Modified: Wed, 27 Mar 2019 01:10:36 GMT  
+		Size: 81.8 MB (81821013 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4508e92416a99c1c0acfcdf09a04203d8c88d9bf3861e89bdf57b2ad7fda3798`  
-		Last Modified: Tue, 05 Mar 2019 14:20:28 GMT  
-		Size: 2.1 KB (2099 bytes)  
+	-	`sha256:5dbd56c05d0041ca04be7cefe90a65d20a17e521b791b2d313c3822690d1df46`  
+		Last Modified: Wed, 27 Mar 2019 11:06:48 GMT  
+		Size: 2.1 KB (2095 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c844be8e0f070caef63461bd00b89119b4c83fa6907c4f694d865fa4a6c6cc5`  
-		Last Modified: Tue, 05 Mar 2019 14:20:28 GMT  
-		Size: 152.0 B  
+	-	`sha256:d000e72e631f45706b19b5eb1f030a1c5db725e7db0320393d0654b7305121fc`  
+		Last Modified: Wed, 27 Mar 2019 11:06:49 GMT  
+		Size: 150.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2025fd0a4c087e27afa8d7e0fd3eaaa5e69703d8fb4593f25464e9668077fc95`  
-		Last Modified: Tue, 05 Mar 2019 14:20:28 GMT  
-		Size: 10.0 MB (10029700 bytes)  
+	-	`sha256:51723def584cc838e75955e2a3c5ca379f711acd440752a614c73901f1741f81`  
+		Last Modified: Wed, 27 Mar 2019 11:06:49 GMT  
+		Size: 10.0 MB (10029727 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d594ae43b7ae4cd10d32ad65c0aa084611960eebd95498706afbc42b22ea646`  
-		Last Modified: Tue, 05 Mar 2019 14:20:27 GMT  
-		Size: 138.0 B  
+	-	`sha256:8a426f9b5c8de7e3e7ebb134fbead467e31b864d5571612123a784f29b3cf716`  
+		Last Modified: Wed, 27 Mar 2019 11:06:48 GMT  
+		Size: 136.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d6656751de36918a7b80b3a0df494f59f617cc2c70451f2c98191142ed09b08`  
-		Last Modified: Tue, 05 Mar 2019 14:20:27 GMT  
+	-	`sha256:0b637ba83fc45722f416bd50c1252b66ed734c4019af601556d31a0cd3095d41`  
+		Last Modified: Wed, 27 Mar 2019 11:06:48 GMT  
 		Size: 1.5 KB (1469 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e529498739f6d5e1339c119ffb4231ac62cb29cd232559cd65d41c698376c3da`  
-		Last Modified: Tue, 05 Mar 2019 14:20:28 GMT  
-		Size: 126.0 B  
+	-	`sha256:1442c3806435df45bc110fc45104bb4364d2724757a7113ccef4397863e858b4`  
+		Last Modified: Wed, 27 Mar 2019 11:06:48 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7faeffc7801f203cff315ea80ba15d05457ffbf8c22b41469c0f3c1ac3ff8e36`  
-		Last Modified: Tue, 05 Mar 2019 14:20:27 GMT  
-		Size: 1.4 KB (1389 bytes)  
+	-	`sha256:5101cb57c60dbc54b6c1ad044ecfcc867a5c0d32bfd8f333d80f8719612f15c9`  
+		Last Modified: Wed, 27 Mar 2019 11:06:48 GMT  
+		Size: 1.4 KB (1387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `jetty:jre7` - linux; arm variant v5
