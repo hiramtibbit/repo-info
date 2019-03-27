@@ -1,7 +1,7 @@
 ## `openjdk:11-jdk-slim-stretch`
 
 ```console
-$ docker pull openjdk@sha256:aa8805816bc5badfa6198dd95298f7460be0b9e6a48589af18cb3993a93fd997
+$ docker pull openjdk@sha256:d8279090e0a345af5f114fcfcc4aa4c8736fe0e1299f24b0bb3e722f12b88379
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -148,67 +148,67 @@ CMD ["jshell"]
 ### `openjdk:11-jdk-slim-stretch` - linux; arm64 variant v8
 
 ```console
-$ docker pull openjdk@sha256:1e776da9f8dd08daa334fd180128f037e19502f2fd9a98c6c4f46cb3d108a1ca
+$ docker pull openjdk@sha256:0860bfd29dd38147f004bab8a6582a7fdcf312f7fe00741f1f81577cdb4f1e98
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.6 MB (269598957 bytes)**  
+-	Total Size: **269.6 MB (269590053 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3587b7b54d49807e615c22614e9a212c370d94d636eabc0bb8c78e90852e5131`
+-	Image ID: `sha256:e4f484e06aa68ba3607424e3043492d08b712cbab807e6849c93a5359bcbfeb4`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Wed, 06 Feb 2019 10:09:24 GMT
-ADD file:7fd62ee33e020bdd30665de7ce17e32b61f7ba089ee0d8bf27511946daeab6a6 in / 
-# Wed, 06 Feb 2019 10:09:27 GMT
+# Wed, 27 Mar 2019 08:47:46 GMT
+ADD file:9db7760cb1c28ef0cd3fa9ee9d0f528d2bcfe80b1c3973daa9f87e30b2047102 in / 
+# Wed, 27 Mar 2019 08:47:47 GMT
 CMD ["bash"]
-# Wed, 06 Feb 2019 11:59:53 GMT
+# Wed, 27 Mar 2019 19:25:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 06 Feb 2019 11:59:55 GMT
+# Wed, 27 Mar 2019 19:25:16 GMT
 RUN echo 'deb http://deb.debian.org/debian stretch-backports main' > /etc/apt/sources.list.d/stretch-backports.list
-# Wed, 06 Feb 2019 11:59:56 GMT
+# Wed, 27 Mar 2019 19:25:17 GMT
 ENV LANG=C.UTF-8
-# Wed, 06 Feb 2019 11:59:58 GMT
+# Wed, 27 Mar 2019 19:25:20 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Wed, 06 Feb 2019 12:00:00 GMT
+# Wed, 27 Mar 2019 19:25:22 GMT
 RUN ln -svT "/usr/lib/jvm/java-11-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Wed, 06 Feb 2019 12:00:01 GMT
+# Wed, 27 Mar 2019 19:25:23 GMT
 ENV JAVA_HOME=/docker-java-home
-# Wed, 06 Feb 2019 12:00:02 GMT
+# Wed, 27 Mar 2019 19:25:24 GMT
 ENV JAVA_VERSION=11.0.2
-# Wed, 06 Feb 2019 12:00:03 GMT
+# Wed, 27 Mar 2019 19:25:25 GMT
 ENV JAVA_DEBIAN_VERSION=11.0.2+9-3~bpo9+1
-# Wed, 06 Feb 2019 12:02:08 GMT
+# Wed, 27 Mar 2019 19:27:23 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		ln -svT /docker-java-home/bin/java /usr/local/bin/java; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-11-jdk-headless="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		rm -v /usr/local/bin/java; 		keytool -importkeystore -srckeystore /etc/ssl/certs/java/cacerts -destkeystore /etc/ssl/certs/java/cacerts.jks -deststoretype JKS -srcstorepass changeit -deststorepass changeit -noprompt; 	mv /etc/ssl/certs/java/cacerts.jks /etc/ssl/certs/java/cacerts; 	/var/lib/dpkg/info/ca-certificates-java.postinst configure; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Wed, 06 Feb 2019 12:02:09 GMT
+# Wed, 27 Mar 2019 19:27:24 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:42367302fc78a226e000d71988d3eea5bbeea023beeb97957e6f20610974197f`  
-		Last Modified: Wed, 06 Feb 2019 10:14:57 GMT  
-		Size: 20.4 MB (20350159 bytes)  
+	-	`sha256:007027d142c80b166a004bc7265c04036b80df438ac408f1a947e05c581b418e`  
+		Last Modified: Wed, 27 Mar 2019 08:52:56 GMT  
+		Size: 20.3 MB (20340179 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c857c9abd17ad597c20509970fbf55c7260550d870bd68c188e4aef3de5e7e24`  
-		Last Modified: Wed, 06 Feb 2019 12:37:08 GMT  
-		Size: 440.9 KB (440887 bytes)  
+	-	`sha256:a6b2a3db5fe5bcef92897d12d82e7bf4b1c81832ef030a3036b2cf488ad45373`  
+		Last Modified: Wed, 27 Mar 2019 19:41:48 GMT  
+		Size: 440.9 KB (440897 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20fe57e2461f417a84f0c7e2947efdd70a8c4cb6160ef633e0a7339e7ffe4493`  
-		Last Modified: Wed, 06 Feb 2019 12:37:08 GMT  
-		Size: 225.0 B  
+	-	`sha256:c3107a939efc2ffecd268a5637e3705163c31eab4af1855d8a47e1f21b3abc8c`  
+		Last Modified: Wed, 27 Mar 2019 19:41:48 GMT  
+		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5367174f3991bc5ec196a7b0f0c3e286312013447067b8bdabdf6a0065fae7db`  
-		Last Modified: Wed, 06 Feb 2019 12:37:08 GMT  
-		Size: 249.0 B  
+	-	`sha256:20ad91712d904c5cc444aaf6ea61774d3b75110c9b2a7b0a320f1c79259189cf`  
+		Last Modified: Wed, 27 Mar 2019 19:41:48 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6af31ad7097de4851a24eb3e01ad2178ccf7e4906fdd5b00c935ceb50ec99937`  
-		Last Modified: Wed, 06 Feb 2019 12:37:08 GMT  
-		Size: 132.0 B  
+	-	`sha256:bebe9595e756b55d5fb73915326e01dacd5ece818fe47b430ec90407e006244b`  
+		Last Modified: Wed, 27 Mar 2019 19:41:48 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f7b6368ed09518aaf8cb329a8a13ec9b495a8667ecf61c5d1682c6e6e4f3b2b`  
-		Last Modified: Wed, 06 Feb 2019 12:37:55 GMT  
-		Size: 248.8 MB (248807305 bytes)  
+	-	`sha256:3d2bbb7053cebc700049a8d4b9e031e3b2687e0a7320e4ca0e11264e88c12b31`  
+		Last Modified: Wed, 27 Mar 2019 19:42:40 GMT  
+		Size: 248.8 MB (248808376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:11-jdk-slim-stretch` - linux; 386
