@@ -73,7 +73,7 @@
 ## `mongo:3`
 
 ```console
-$ docker pull mongo@sha256:0f0c0b6a4b6f6f5081599dd9073d275ecb773875e990b8e80cf75b024e896263
+$ docker pull mongo@sha256:d897ef2b3ba14104374b3b8b1f976e8f0dc6642ebcacb19a1ac327cae331fd73
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -85,106 +85,106 @@ $ docker pull mongo@sha256:0f0c0b6a4b6f6f5081599dd9073d275ecb773875e990b8e80cf75
 ### `mongo:3` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:41d4490dc0ed13f62afe82b8a01382c6415e8d6f5dfdd79ae819a8bb2dea7bd6
+$ docker pull mongo@sha256:3b4cfe2e551af7ec91eb5a4e849f98a87f9e9cb8da47bf5c72936c1b4934e2ba
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.5 MB (145534852 bytes)**  
+-	Total Size: **145.5 MB (145534857 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3258f72452165172372dd72300b82d79c58f9dcdacedf45e0369c9e3a017ead6`
+-	Image ID: `sha256:e5d5a6ea073772347c503bb5a8cf2e500cd16ec04483ae8944fc351faea7c298`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Mon, 04 Mar 2019 23:22:21 GMT
-ADD file:5ea7dfe8c8bc87ebe0d06d275bce41e015310bdfc04546246302e9ce07ee416c in / 
-# Mon, 04 Mar 2019 23:22:22 GMT
+# Tue, 26 Mar 2019 22:41:26 GMT
+ADD file:4fc310c0cb879c876c5c0f571af665a0d24d36cb9263e0f53b0cda2f7e4b1844 in / 
+# Tue, 26 Mar 2019 22:41:26 GMT
 CMD ["bash"]
-# Tue, 05 Mar 2019 03:32:40 GMT
+# Wed, 27 Mar 2019 00:14:19 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Tue, 05 Mar 2019 03:32:49 GMT
+# Wed, 27 Mar 2019 00:14:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 03:32:50 GMT
+# Wed, 27 Mar 2019 00:14:29 GMT
 ENV GOSU_VERSION=1.10
-# Tue, 05 Mar 2019 03:32:50 GMT
+# Wed, 27 Mar 2019 00:14:29 GMT
 ENV JSYAML_VERSION=3.10.0
-# Tue, 05 Mar 2019 03:33:00 GMT
+# Wed, 27 Mar 2019 00:14:39 GMT
 RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-get purge -y --auto-remove wget
-# Tue, 05 Mar 2019 03:33:01 GMT
+# Wed, 27 Mar 2019 00:14:40 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 05 Mar 2019 03:33:01 GMT
+# Wed, 27 Mar 2019 00:14:40 GMT
 ENV GPG_KEYS=2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
-# Tue, 05 Mar 2019 03:33:04 GMT
+# Wed, 27 Mar 2019 00:14:43 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 05 Mar 2019 03:33:04 GMT
+# Wed, 27 Mar 2019 00:14:43 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 05 Mar 2019 03:33:04 GMT
+# Wed, 27 Mar 2019 00:14:43 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 05 Mar 2019 03:33:05 GMT
+# Wed, 27 Mar 2019 00:14:46 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 05 Mar 2019 03:33:05 GMT
+# Wed, 27 Mar 2019 00:14:46 GMT
 ENV MONGO_MAJOR=3.6
-# Tue, 05 Mar 2019 03:33:05 GMT
+# Wed, 27 Mar 2019 00:14:46 GMT
 ENV MONGO_VERSION=3.6.11
-# Tue, 05 Mar 2019 03:33:06 GMT
+# Wed, 27 Mar 2019 00:14:47 GMT
 RUN echo "deb http://$MONGO_REPO/apt/debian stretch/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR main" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 05 Mar 2019 03:33:22 GMT
+# Wed, 27 Mar 2019 00:15:03 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 05 Mar 2019 03:33:23 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 05 Mar 2019 03:33:23 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 05 Mar 2019 03:33:23 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 COPY file:aede91d254349505ddabe55af4cf4debc6cc3f959f945a489b8864e520f193e8 in /usr/local/bin/ 
-# Tue, 05 Mar 2019 03:33:24 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 05 Mar 2019 03:33:24 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 EXPOSE 27017
-# Tue, 05 Mar 2019 03:33:24 GMT
+# Wed, 27 Mar 2019 00:15:05 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:f7e2b70d04ae3f516c08c24d88de0f82699aaf3ee98af6eb208bd234136142b4`  
-		Last Modified: Mon, 04 Mar 2019 23:26:28 GMT  
-		Size: 22.5 MB (22496034 bytes)  
+	-	`sha256:27833a3ba0a545deda33bb01eaf95a14d05d43bf30bce9267d92d17f069fe897`  
+		Last Modified: Tue, 26 Mar 2019 22:44:37 GMT  
+		Size: 22.5 MB (22496048 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83448b21643b08c2422bd861c5715a8c2bb176040cef649884d354855c72d732`  
-		Last Modified: Tue, 05 Mar 2019 03:34:13 GMT  
-		Size: 1.7 KB (1744 bytes)  
+	-	`sha256:179c807caa04b513feebcd38fdd050e9db4e9934b5b26319d72b596df3048a76`  
+		Last Modified: Wed, 27 Mar 2019 00:15:54 GMT  
+		Size: 1.7 KB (1741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2dea061159a08c53a64c643b219d1966a857d6f3bd96c38518c4298bffe8305a`  
-		Last Modified: Tue, 05 Mar 2019 03:34:14 GMT  
-		Size: 3.2 MB (3225447 bytes)  
+	-	`sha256:2b23ef1b0ab3fd6c2c92aef230c250fb696d3032446b95cc615a3bc91852fa50`  
+		Last Modified: Wed, 27 Mar 2019 00:15:54 GMT  
+		Size: 3.2 MB (3225430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95e98f1e3318466e5389d5f8580f273ba3a159fe9188d61e17cf98079a53019b`  
-		Last Modified: Tue, 05 Mar 2019 03:34:14 GMT  
-		Size: 5.1 MB (5057200 bytes)  
+	-	`sha256:e3cf7dbbd547e355bca37b48982c09f80a3bc76dc37ed05b671297ffbe3d2c00`  
+		Last Modified: Wed, 27 Mar 2019 00:15:54 GMT  
+		Size: 5.1 MB (5057184 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:019ce9c7359a1f8f727fc9d95204787b9eee1863dd5a474492e603eb1fa147c1`  
-		Last Modified: Tue, 05 Mar 2019 03:34:13 GMT  
-		Size: 112.0 B  
+	-	`sha256:dc233bb2f30939e2946ee7c27091ade0851389f74ae5acbe61d34e8598d57dfd`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:766651adeb0a7894942f86b277258b49e46d763701f8d805ee05daa3965696ca`  
-		Last Modified: Tue, 05 Mar 2019 03:34:12 GMT  
-		Size: 2.0 KB (1993 bytes)  
+	-	`sha256:ef26a67bf04ef4ca60ac596d0b54331fa74f07f971b6a5b1dd24c3d81bff9a23`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
+		Size: 2.0 KB (1997 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e038b477eb03bc7c2e3d6670bbe06c8a0f7d0d23628daaa1267287e36796c6b`  
-		Last Modified: Tue, 05 Mar 2019 03:34:12 GMT  
+	-	`sha256:55ecb543777ef419362b20e68984720bbfe7cf539dbfa42cd211bfbc6a2118f5`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
 		Size: 230.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea9c514fbe7d4ee39eb8ab136e0622531c5c67326935f34fb892c8d7a532fd19`  
-		Last Modified: Tue, 05 Mar 2019 03:34:32 GMT  
-		Size: 114.7 MB (114748151 bytes)  
+	-	`sha256:35f8c6ed1ba654b006d722ed3ef26db779f1951a2a13a9827150b7e271cf78f7`  
+		Last Modified: Wed, 27 Mar 2019 00:16:12 GMT  
+		Size: 114.7 MB (114748173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84ea5e37d9c5349addfad3d236f57fcc829b2aedbc8915276f921b36a2f92328`  
-		Last Modified: Tue, 05 Mar 2019 03:34:12 GMT  
-		Size: 138.0 B  
+	-	`sha256:2a39da2ca07c372fea5903a0f09b27b36090b02feb765f8573003364f560616b`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28ba4727e25775f4d693c3014b408025f30afde706c88a0cdc174b50cdf41544`  
-		Last Modified: Tue, 05 Mar 2019 03:34:12 GMT  
-		Size: 3.8 KB (3803 bytes)  
+	-	`sha256:d72b68852da8ce068724f9bac707c0909e97b60d1f40fd4b7fe2491ecf2ea5eb`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
+		Size: 3.8 KB (3800 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:3` - windows version 10.0.14393.2848; amd64
@@ -348,7 +348,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:3.4`
 
 ```console
-$ docker pull mongo@sha256:725abeda77d3481369c8d7c009213369ba92bfbc8b71d29e93c2e2c9b6c0659c
+$ docker pull mongo@sha256:0cb9da799fff9c0478c9823105d5d9cde8e2755488b584fda821bf1eb1babe6c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -360,111 +360,111 @@ $ docker pull mongo@sha256:725abeda77d3481369c8d7c009213369ba92bfbc8b71d29e93c2e
 ### `mongo:3.4` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:1db4d58d45fc402f6c6b8f41bcb5711cf10bea26b723b117412ad896343cc43c
+$ docker pull mongo@sha256:e8be4bb2b900165e188b07808178462ed1ce5b7f87578d71f4119a9316d6b151
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.6 MB (153577296 bytes)**  
+-	Total Size: **153.6 MB (153577111 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8958526fd8a999590734f674e8db8e00c9832e2998f7ae4847badee6ce419865`
+-	Image ID: `sha256:0b7f4e6af48a1e12baa7e53e98cfdb2a81c8ca2e39fa3834ec128f85d1642b11`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Mon, 04 Mar 2019 23:20:30 GMT
-ADD file:9c83a686342b9918902182a223021336d3fba9b5e540dcdb130ad47a22033781 in / 
-# Mon, 04 Mar 2019 23:20:30 GMT
+# Tue, 26 Mar 2019 22:39:48 GMT
+ADD file:7e1c64289e566a098e45fa330e3fe3be4fb94df824f0287a0317dbadf8c643fd in / 
+# Tue, 26 Mar 2019 22:39:48 GMT
 CMD ["bash"]
-# Tue, 05 Mar 2019 03:25:53 GMT
+# Wed, 27 Mar 2019 00:07:47 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Tue, 05 Mar 2019 03:27:44 GMT
+# Wed, 27 Mar 2019 00:09:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 03:27:44 GMT
+# Wed, 27 Mar 2019 00:09:37 GMT
 ENV GOSU_VERSION=1.10
-# Tue, 05 Mar 2019 03:27:44 GMT
+# Wed, 27 Mar 2019 00:09:37 GMT
 ENV JSYAML_VERSION=3.10.0
-# Tue, 05 Mar 2019 03:30:01 GMT
+# Wed, 27 Mar 2019 00:11:52 GMT
 RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-get purge -y --auto-remove wget
-# Tue, 05 Mar 2019 03:30:02 GMT
+# Wed, 27 Mar 2019 00:11:52 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 05 Mar 2019 03:30:02 GMT
+# Wed, 27 Mar 2019 00:11:53 GMT
 ENV GPG_KEYS=0C49F3730359A14518585931BC711F9BA15703C6
-# Tue, 05 Mar 2019 03:30:32 GMT
+# Wed, 27 Mar 2019 00:12:23 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 05 Mar 2019 03:30:33 GMT
+# Wed, 27 Mar 2019 00:12:23 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 05 Mar 2019 03:30:33 GMT
+# Wed, 27 Mar 2019 00:12:23 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 05 Mar 2019 03:30:33 GMT
+# Wed, 27 Mar 2019 00:12:24 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 05 Mar 2019 03:30:33 GMT
+# Wed, 27 Mar 2019 00:12:24 GMT
 ENV MONGO_MAJOR=3.4
-# Thu, 14 Mar 2019 21:39:08 GMT
+# Wed, 27 Mar 2019 00:12:24 GMT
 ENV MONGO_VERSION=3.4.20
-# Thu, 14 Mar 2019 21:39:09 GMT
+# Wed, 27 Mar 2019 00:12:25 GMT
 RUN echo "deb http://$MONGO_REPO/apt/debian jessie/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR main" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Thu, 14 Mar 2019 21:41:01 GMT
+# Wed, 27 Mar 2019 00:14:11 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Thu, 14 Mar 2019 21:41:02 GMT
+# Wed, 27 Mar 2019 00:14:12 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Thu, 14 Mar 2019 21:41:02 GMT
+# Wed, 27 Mar 2019 00:14:12 GMT
 VOLUME [/data/db /data/configdb]
-# Thu, 14 Mar 2019 21:41:02 GMT
+# Wed, 27 Mar 2019 00:14:12 GMT
 COPY file:aede91d254349505ddabe55af4cf4debc6cc3f959f945a489b8864e520f193e8 in /usr/local/bin/ 
-# Thu, 14 Mar 2019 21:41:03 GMT
+# Wed, 27 Mar 2019 00:14:13 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat (3.4)
-# Thu, 14 Mar 2019 21:41:03 GMT
+# Wed, 27 Mar 2019 00:14:13 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 14 Mar 2019 21:41:03 GMT
+# Wed, 27 Mar 2019 00:14:13 GMT
 EXPOSE 27017
-# Thu, 14 Mar 2019 21:41:03 GMT
+# Wed, 27 Mar 2019 00:14:13 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:9fa17f107b7e9d91511082fc06c45340c4ab2b0820dc0974a963b137b3434e01`  
-		Last Modified: Mon, 04 Mar 2019 23:24:38 GMT  
-		Size: 30.2 MB (30154842 bytes)  
+	-	`sha256:2a639da97f77795f2f0ebe3bb2c9fc94b4eee47bd41faaf216118e7a8fa65dd6`  
+		Last Modified: Tue, 26 Mar 2019 22:43:17 GMT  
+		Size: 30.2 MB (30154581 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e49e5beb0b9254f391e5be8d74e81ddf09254906371665c93ca8d0d03693acfe`  
-		Last Modified: Tue, 05 Mar 2019 03:33:49 GMT  
-		Size: 2.1 KB (2095 bytes)  
+	-	`sha256:073b4f52defee106abe7b4c7622f639eecfbac0842bc6bb598d28e9a3ea4873c`  
+		Last Modified: Wed, 27 Mar 2019 00:15:27 GMT  
+		Size: 2.1 KB (2090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b6477960bd24a612352fe8184b41372a3516d57f4ffdd9738cf57f4dfc7ba41`  
-		Last Modified: Tue, 05 Mar 2019 03:33:48 GMT  
-		Size: 2.4 MB (2352427 bytes)  
+	-	`sha256:bce37d0f5c17eb358cdabddaa2869b8c3d20f805d7c5e4cb304891d90148e636`  
+		Last Modified: Wed, 27 Mar 2019 00:15:27 GMT  
+		Size: 2.4 MB (2352475 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:867c654bb710d2133db3ce5259e4b40f3f7345cb35d87b1f367af335aa229338`  
-		Last Modified: Tue, 05 Mar 2019 03:33:48 GMT  
-		Size: 816.5 KB (816498 bytes)  
+	-	`sha256:379dc19f9963ac685a1b2a7a87917918931a1ff62810f53e250509958da3d9ea`  
+		Last Modified: Wed, 27 Mar 2019 00:15:27 GMT  
+		Size: 816.5 KB (816536 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81485a90a131ee659020fba1942863445cde0f44b07c42ebb4293dc7bb88eece`  
-		Last Modified: Tue, 05 Mar 2019 03:33:48 GMT  
+	-	`sha256:e44806c61e63c836628ac923900d25102e0d71a9cec749cc5aec728a1da24026`  
+		Last Modified: Wed, 27 Mar 2019 00:15:26 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca2c5afa29da5eda3555302885c8be2f01e15fc211c52a6ddc610ef9f16a2428`  
-		Last Modified: Tue, 05 Mar 2019 03:33:48 GMT  
-		Size: 2.0 KB (2005 bytes)  
+	-	`sha256:b76faf91d209c365453f232efc7232abddb4af3b56dafeae590779938a0feb48`  
+		Last Modified: Wed, 27 Mar 2019 00:15:26 GMT  
+		Size: 2.0 KB (2004 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f3c0c38687c97db9ba3dbb6d19eadbd8b7db70c2bd70a06a316f2402c88a4b0`  
-		Last Modified: Thu, 14 Mar 2019 21:41:24 GMT  
-		Size: 233.0 B  
+	-	`sha256:dd1d9be5b26b2df481bbc6d378b1eb71e424a9503958e824b5d696864d2680cf`  
+		Last Modified: Wed, 27 Mar 2019 00:15:25 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cea41fa2d86d1661fcbb857d020503f70427fe4fe5178a316552a6c82431f2fc`  
-		Last Modified: Thu, 14 Mar 2019 21:41:44 GMT  
-		Size: 120.2 MB (120245017 bytes)  
+	-	`sha256:9420e1982a2fe6e933dd372ed697336011d937a42037e858d28e675622bc7baa`  
+		Last Modified: Wed, 27 Mar 2019 00:15:47 GMT  
+		Size: 120.2 MB (120245022 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f3b9b807ff8f2e09ad72cc14c0587c99cd4bf4bff68ccffd7c4a5ee1f674f47`  
-		Last Modified: Thu, 14 Mar 2019 21:41:24 GMT  
+	-	`sha256:9ad2432e6a03d41dafe00d7534c072ec661135b6ea2fd5f32f824e4e0cee0536`  
+		Last Modified: Wed, 27 Mar 2019 00:15:25 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7be8f971d1d1191dccd06d2af18c26abc5bdfd29bd1424b3aa82be67bab812b`  
-		Last Modified: Thu, 14 Mar 2019 21:41:24 GMT  
-		Size: 3.8 KB (3804 bytes)  
+	-	`sha256:741494f9ac47cf6675bb25d3983663ce9ad7440e12d2f2fe8f61e59c2388e1a5`  
+		Last Modified: Wed, 27 Mar 2019 00:15:25 GMT  
+		Size: 3.8 KB (3802 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1a176fbd181c4630aa3b612f1fd7aaf3f4f5e1d8d385c4675d5ede07ac0cb92`  
-		Last Modified: Thu, 14 Mar 2019 21:41:24 GMT  
+	-	`sha256:a03462db0fd4f58052d7ecded0a7c72b0ad76c3e3c3ca623f71efac3a1540d35`  
+		Last Modified: Wed, 27 Mar 2019 00:15:25 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -629,7 +629,7 @@ CMD ["mongod"]
 ## `mongo:3.4.20`
 
 ```console
-$ docker pull mongo@sha256:725abeda77d3481369c8d7c009213369ba92bfbc8b71d29e93c2e2c9b6c0659c
+$ docker pull mongo@sha256:0cb9da799fff9c0478c9823105d5d9cde8e2755488b584fda821bf1eb1babe6c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -641,111 +641,111 @@ $ docker pull mongo@sha256:725abeda77d3481369c8d7c009213369ba92bfbc8b71d29e93c2e
 ### `mongo:3.4.20` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:1db4d58d45fc402f6c6b8f41bcb5711cf10bea26b723b117412ad896343cc43c
+$ docker pull mongo@sha256:e8be4bb2b900165e188b07808178462ed1ce5b7f87578d71f4119a9316d6b151
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.6 MB (153577296 bytes)**  
+-	Total Size: **153.6 MB (153577111 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8958526fd8a999590734f674e8db8e00c9832e2998f7ae4847badee6ce419865`
+-	Image ID: `sha256:0b7f4e6af48a1e12baa7e53e98cfdb2a81c8ca2e39fa3834ec128f85d1642b11`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Mon, 04 Mar 2019 23:20:30 GMT
-ADD file:9c83a686342b9918902182a223021336d3fba9b5e540dcdb130ad47a22033781 in / 
-# Mon, 04 Mar 2019 23:20:30 GMT
+# Tue, 26 Mar 2019 22:39:48 GMT
+ADD file:7e1c64289e566a098e45fa330e3fe3be4fb94df824f0287a0317dbadf8c643fd in / 
+# Tue, 26 Mar 2019 22:39:48 GMT
 CMD ["bash"]
-# Tue, 05 Mar 2019 03:25:53 GMT
+# Wed, 27 Mar 2019 00:07:47 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Tue, 05 Mar 2019 03:27:44 GMT
+# Wed, 27 Mar 2019 00:09:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 03:27:44 GMT
+# Wed, 27 Mar 2019 00:09:37 GMT
 ENV GOSU_VERSION=1.10
-# Tue, 05 Mar 2019 03:27:44 GMT
+# Wed, 27 Mar 2019 00:09:37 GMT
 ENV JSYAML_VERSION=3.10.0
-# Tue, 05 Mar 2019 03:30:01 GMT
+# Wed, 27 Mar 2019 00:11:52 GMT
 RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-get purge -y --auto-remove wget
-# Tue, 05 Mar 2019 03:30:02 GMT
+# Wed, 27 Mar 2019 00:11:52 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 05 Mar 2019 03:30:02 GMT
+# Wed, 27 Mar 2019 00:11:53 GMT
 ENV GPG_KEYS=0C49F3730359A14518585931BC711F9BA15703C6
-# Tue, 05 Mar 2019 03:30:32 GMT
+# Wed, 27 Mar 2019 00:12:23 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 05 Mar 2019 03:30:33 GMT
+# Wed, 27 Mar 2019 00:12:23 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 05 Mar 2019 03:30:33 GMT
+# Wed, 27 Mar 2019 00:12:23 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 05 Mar 2019 03:30:33 GMT
+# Wed, 27 Mar 2019 00:12:24 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 05 Mar 2019 03:30:33 GMT
+# Wed, 27 Mar 2019 00:12:24 GMT
 ENV MONGO_MAJOR=3.4
-# Thu, 14 Mar 2019 21:39:08 GMT
+# Wed, 27 Mar 2019 00:12:24 GMT
 ENV MONGO_VERSION=3.4.20
-# Thu, 14 Mar 2019 21:39:09 GMT
+# Wed, 27 Mar 2019 00:12:25 GMT
 RUN echo "deb http://$MONGO_REPO/apt/debian jessie/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR main" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Thu, 14 Mar 2019 21:41:01 GMT
+# Wed, 27 Mar 2019 00:14:11 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Thu, 14 Mar 2019 21:41:02 GMT
+# Wed, 27 Mar 2019 00:14:12 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Thu, 14 Mar 2019 21:41:02 GMT
+# Wed, 27 Mar 2019 00:14:12 GMT
 VOLUME [/data/db /data/configdb]
-# Thu, 14 Mar 2019 21:41:02 GMT
+# Wed, 27 Mar 2019 00:14:12 GMT
 COPY file:aede91d254349505ddabe55af4cf4debc6cc3f959f945a489b8864e520f193e8 in /usr/local/bin/ 
-# Thu, 14 Mar 2019 21:41:03 GMT
+# Wed, 27 Mar 2019 00:14:13 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat (3.4)
-# Thu, 14 Mar 2019 21:41:03 GMT
+# Wed, 27 Mar 2019 00:14:13 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 14 Mar 2019 21:41:03 GMT
+# Wed, 27 Mar 2019 00:14:13 GMT
 EXPOSE 27017
-# Thu, 14 Mar 2019 21:41:03 GMT
+# Wed, 27 Mar 2019 00:14:13 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:9fa17f107b7e9d91511082fc06c45340c4ab2b0820dc0974a963b137b3434e01`  
-		Last Modified: Mon, 04 Mar 2019 23:24:38 GMT  
-		Size: 30.2 MB (30154842 bytes)  
+	-	`sha256:2a639da97f77795f2f0ebe3bb2c9fc94b4eee47bd41faaf216118e7a8fa65dd6`  
+		Last Modified: Tue, 26 Mar 2019 22:43:17 GMT  
+		Size: 30.2 MB (30154581 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e49e5beb0b9254f391e5be8d74e81ddf09254906371665c93ca8d0d03693acfe`  
-		Last Modified: Tue, 05 Mar 2019 03:33:49 GMT  
-		Size: 2.1 KB (2095 bytes)  
+	-	`sha256:073b4f52defee106abe7b4c7622f639eecfbac0842bc6bb598d28e9a3ea4873c`  
+		Last Modified: Wed, 27 Mar 2019 00:15:27 GMT  
+		Size: 2.1 KB (2090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b6477960bd24a612352fe8184b41372a3516d57f4ffdd9738cf57f4dfc7ba41`  
-		Last Modified: Tue, 05 Mar 2019 03:33:48 GMT  
-		Size: 2.4 MB (2352427 bytes)  
+	-	`sha256:bce37d0f5c17eb358cdabddaa2869b8c3d20f805d7c5e4cb304891d90148e636`  
+		Last Modified: Wed, 27 Mar 2019 00:15:27 GMT  
+		Size: 2.4 MB (2352475 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:867c654bb710d2133db3ce5259e4b40f3f7345cb35d87b1f367af335aa229338`  
-		Last Modified: Tue, 05 Mar 2019 03:33:48 GMT  
-		Size: 816.5 KB (816498 bytes)  
+	-	`sha256:379dc19f9963ac685a1b2a7a87917918931a1ff62810f53e250509958da3d9ea`  
+		Last Modified: Wed, 27 Mar 2019 00:15:27 GMT  
+		Size: 816.5 KB (816536 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81485a90a131ee659020fba1942863445cde0f44b07c42ebb4293dc7bb88eece`  
-		Last Modified: Tue, 05 Mar 2019 03:33:48 GMT  
+	-	`sha256:e44806c61e63c836628ac923900d25102e0d71a9cec749cc5aec728a1da24026`  
+		Last Modified: Wed, 27 Mar 2019 00:15:26 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca2c5afa29da5eda3555302885c8be2f01e15fc211c52a6ddc610ef9f16a2428`  
-		Last Modified: Tue, 05 Mar 2019 03:33:48 GMT  
-		Size: 2.0 KB (2005 bytes)  
+	-	`sha256:b76faf91d209c365453f232efc7232abddb4af3b56dafeae590779938a0feb48`  
+		Last Modified: Wed, 27 Mar 2019 00:15:26 GMT  
+		Size: 2.0 KB (2004 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f3c0c38687c97db9ba3dbb6d19eadbd8b7db70c2bd70a06a316f2402c88a4b0`  
-		Last Modified: Thu, 14 Mar 2019 21:41:24 GMT  
-		Size: 233.0 B  
+	-	`sha256:dd1d9be5b26b2df481bbc6d378b1eb71e424a9503958e824b5d696864d2680cf`  
+		Last Modified: Wed, 27 Mar 2019 00:15:25 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cea41fa2d86d1661fcbb857d020503f70427fe4fe5178a316552a6c82431f2fc`  
-		Last Modified: Thu, 14 Mar 2019 21:41:44 GMT  
-		Size: 120.2 MB (120245017 bytes)  
+	-	`sha256:9420e1982a2fe6e933dd372ed697336011d937a42037e858d28e675622bc7baa`  
+		Last Modified: Wed, 27 Mar 2019 00:15:47 GMT  
+		Size: 120.2 MB (120245022 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f3b9b807ff8f2e09ad72cc14c0587c99cd4bf4bff68ccffd7c4a5ee1f674f47`  
-		Last Modified: Thu, 14 Mar 2019 21:41:24 GMT  
+	-	`sha256:9ad2432e6a03d41dafe00d7534c072ec661135b6ea2fd5f32f824e4e0cee0536`  
+		Last Modified: Wed, 27 Mar 2019 00:15:25 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7be8f971d1d1191dccd06d2af18c26abc5bdfd29bd1424b3aa82be67bab812b`  
-		Last Modified: Thu, 14 Mar 2019 21:41:24 GMT  
-		Size: 3.8 KB (3804 bytes)  
+	-	`sha256:741494f9ac47cf6675bb25d3983663ce9ad7440e12d2f2fe8f61e59c2388e1a5`  
+		Last Modified: Wed, 27 Mar 2019 00:15:25 GMT  
+		Size: 3.8 KB (3802 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1a176fbd181c4630aa3b612f1fd7aaf3f4f5e1d8d385c4675d5ede07ac0cb92`  
-		Last Modified: Thu, 14 Mar 2019 21:41:24 GMT  
+	-	`sha256:a03462db0fd4f58052d7ecded0a7c72b0ad76c3e3c3ca623f71efac3a1540d35`  
+		Last Modified: Wed, 27 Mar 2019 00:15:25 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -910,7 +910,7 @@ CMD ["mongod"]
 ## `mongo:3.4.20-jessie`
 
 ```console
-$ docker pull mongo@sha256:08c94e75f2034fa03516ca695a61ba557c11dcc9af73d196a35f950515ebb242
+$ docker pull mongo@sha256:60f5c6cea9c0d526c00266407e5eae506f7061d408e2fc3475af17394d223cb7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -920,111 +920,111 @@ $ docker pull mongo@sha256:08c94e75f2034fa03516ca695a61ba557c11dcc9af73d196a35f9
 ### `mongo:3.4.20-jessie` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:1db4d58d45fc402f6c6b8f41bcb5711cf10bea26b723b117412ad896343cc43c
+$ docker pull mongo@sha256:e8be4bb2b900165e188b07808178462ed1ce5b7f87578d71f4119a9316d6b151
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.6 MB (153577296 bytes)**  
+-	Total Size: **153.6 MB (153577111 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8958526fd8a999590734f674e8db8e00c9832e2998f7ae4847badee6ce419865`
+-	Image ID: `sha256:0b7f4e6af48a1e12baa7e53e98cfdb2a81c8ca2e39fa3834ec128f85d1642b11`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Mon, 04 Mar 2019 23:20:30 GMT
-ADD file:9c83a686342b9918902182a223021336d3fba9b5e540dcdb130ad47a22033781 in / 
-# Mon, 04 Mar 2019 23:20:30 GMT
+# Tue, 26 Mar 2019 22:39:48 GMT
+ADD file:7e1c64289e566a098e45fa330e3fe3be4fb94df824f0287a0317dbadf8c643fd in / 
+# Tue, 26 Mar 2019 22:39:48 GMT
 CMD ["bash"]
-# Tue, 05 Mar 2019 03:25:53 GMT
+# Wed, 27 Mar 2019 00:07:47 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Tue, 05 Mar 2019 03:27:44 GMT
+# Wed, 27 Mar 2019 00:09:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 03:27:44 GMT
+# Wed, 27 Mar 2019 00:09:37 GMT
 ENV GOSU_VERSION=1.10
-# Tue, 05 Mar 2019 03:27:44 GMT
+# Wed, 27 Mar 2019 00:09:37 GMT
 ENV JSYAML_VERSION=3.10.0
-# Tue, 05 Mar 2019 03:30:01 GMT
+# Wed, 27 Mar 2019 00:11:52 GMT
 RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-get purge -y --auto-remove wget
-# Tue, 05 Mar 2019 03:30:02 GMT
+# Wed, 27 Mar 2019 00:11:52 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 05 Mar 2019 03:30:02 GMT
+# Wed, 27 Mar 2019 00:11:53 GMT
 ENV GPG_KEYS=0C49F3730359A14518585931BC711F9BA15703C6
-# Tue, 05 Mar 2019 03:30:32 GMT
+# Wed, 27 Mar 2019 00:12:23 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 05 Mar 2019 03:30:33 GMT
+# Wed, 27 Mar 2019 00:12:23 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 05 Mar 2019 03:30:33 GMT
+# Wed, 27 Mar 2019 00:12:23 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 05 Mar 2019 03:30:33 GMT
+# Wed, 27 Mar 2019 00:12:24 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 05 Mar 2019 03:30:33 GMT
+# Wed, 27 Mar 2019 00:12:24 GMT
 ENV MONGO_MAJOR=3.4
-# Thu, 14 Mar 2019 21:39:08 GMT
+# Wed, 27 Mar 2019 00:12:24 GMT
 ENV MONGO_VERSION=3.4.20
-# Thu, 14 Mar 2019 21:39:09 GMT
+# Wed, 27 Mar 2019 00:12:25 GMT
 RUN echo "deb http://$MONGO_REPO/apt/debian jessie/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR main" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Thu, 14 Mar 2019 21:41:01 GMT
+# Wed, 27 Mar 2019 00:14:11 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Thu, 14 Mar 2019 21:41:02 GMT
+# Wed, 27 Mar 2019 00:14:12 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Thu, 14 Mar 2019 21:41:02 GMT
+# Wed, 27 Mar 2019 00:14:12 GMT
 VOLUME [/data/db /data/configdb]
-# Thu, 14 Mar 2019 21:41:02 GMT
+# Wed, 27 Mar 2019 00:14:12 GMT
 COPY file:aede91d254349505ddabe55af4cf4debc6cc3f959f945a489b8864e520f193e8 in /usr/local/bin/ 
-# Thu, 14 Mar 2019 21:41:03 GMT
+# Wed, 27 Mar 2019 00:14:13 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat (3.4)
-# Thu, 14 Mar 2019 21:41:03 GMT
+# Wed, 27 Mar 2019 00:14:13 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 14 Mar 2019 21:41:03 GMT
+# Wed, 27 Mar 2019 00:14:13 GMT
 EXPOSE 27017
-# Thu, 14 Mar 2019 21:41:03 GMT
+# Wed, 27 Mar 2019 00:14:13 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:9fa17f107b7e9d91511082fc06c45340c4ab2b0820dc0974a963b137b3434e01`  
-		Last Modified: Mon, 04 Mar 2019 23:24:38 GMT  
-		Size: 30.2 MB (30154842 bytes)  
+	-	`sha256:2a639da97f77795f2f0ebe3bb2c9fc94b4eee47bd41faaf216118e7a8fa65dd6`  
+		Last Modified: Tue, 26 Mar 2019 22:43:17 GMT  
+		Size: 30.2 MB (30154581 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e49e5beb0b9254f391e5be8d74e81ddf09254906371665c93ca8d0d03693acfe`  
-		Last Modified: Tue, 05 Mar 2019 03:33:49 GMT  
-		Size: 2.1 KB (2095 bytes)  
+	-	`sha256:073b4f52defee106abe7b4c7622f639eecfbac0842bc6bb598d28e9a3ea4873c`  
+		Last Modified: Wed, 27 Mar 2019 00:15:27 GMT  
+		Size: 2.1 KB (2090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b6477960bd24a612352fe8184b41372a3516d57f4ffdd9738cf57f4dfc7ba41`  
-		Last Modified: Tue, 05 Mar 2019 03:33:48 GMT  
-		Size: 2.4 MB (2352427 bytes)  
+	-	`sha256:bce37d0f5c17eb358cdabddaa2869b8c3d20f805d7c5e4cb304891d90148e636`  
+		Last Modified: Wed, 27 Mar 2019 00:15:27 GMT  
+		Size: 2.4 MB (2352475 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:867c654bb710d2133db3ce5259e4b40f3f7345cb35d87b1f367af335aa229338`  
-		Last Modified: Tue, 05 Mar 2019 03:33:48 GMT  
-		Size: 816.5 KB (816498 bytes)  
+	-	`sha256:379dc19f9963ac685a1b2a7a87917918931a1ff62810f53e250509958da3d9ea`  
+		Last Modified: Wed, 27 Mar 2019 00:15:27 GMT  
+		Size: 816.5 KB (816536 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81485a90a131ee659020fba1942863445cde0f44b07c42ebb4293dc7bb88eece`  
-		Last Modified: Tue, 05 Mar 2019 03:33:48 GMT  
+	-	`sha256:e44806c61e63c836628ac923900d25102e0d71a9cec749cc5aec728a1da24026`  
+		Last Modified: Wed, 27 Mar 2019 00:15:26 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca2c5afa29da5eda3555302885c8be2f01e15fc211c52a6ddc610ef9f16a2428`  
-		Last Modified: Tue, 05 Mar 2019 03:33:48 GMT  
-		Size: 2.0 KB (2005 bytes)  
+	-	`sha256:b76faf91d209c365453f232efc7232abddb4af3b56dafeae590779938a0feb48`  
+		Last Modified: Wed, 27 Mar 2019 00:15:26 GMT  
+		Size: 2.0 KB (2004 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f3c0c38687c97db9ba3dbb6d19eadbd8b7db70c2bd70a06a316f2402c88a4b0`  
-		Last Modified: Thu, 14 Mar 2019 21:41:24 GMT  
-		Size: 233.0 B  
+	-	`sha256:dd1d9be5b26b2df481bbc6d378b1eb71e424a9503958e824b5d696864d2680cf`  
+		Last Modified: Wed, 27 Mar 2019 00:15:25 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cea41fa2d86d1661fcbb857d020503f70427fe4fe5178a316552a6c82431f2fc`  
-		Last Modified: Thu, 14 Mar 2019 21:41:44 GMT  
-		Size: 120.2 MB (120245017 bytes)  
+	-	`sha256:9420e1982a2fe6e933dd372ed697336011d937a42037e858d28e675622bc7baa`  
+		Last Modified: Wed, 27 Mar 2019 00:15:47 GMT  
+		Size: 120.2 MB (120245022 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f3b9b807ff8f2e09ad72cc14c0587c99cd4bf4bff68ccffd7c4a5ee1f674f47`  
-		Last Modified: Thu, 14 Mar 2019 21:41:24 GMT  
+	-	`sha256:9ad2432e6a03d41dafe00d7534c072ec661135b6ea2fd5f32f824e4e0cee0536`  
+		Last Modified: Wed, 27 Mar 2019 00:15:25 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7be8f971d1d1191dccd06d2af18c26abc5bdfd29bd1424b3aa82be67bab812b`  
-		Last Modified: Thu, 14 Mar 2019 21:41:24 GMT  
-		Size: 3.8 KB (3804 bytes)  
+	-	`sha256:741494f9ac47cf6675bb25d3983663ce9ad7440e12d2f2fe8f61e59c2388e1a5`  
+		Last Modified: Wed, 27 Mar 2019 00:15:25 GMT  
+		Size: 3.8 KB (3802 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1a176fbd181c4630aa3b612f1fd7aaf3f4f5e1d8d385c4675d5ede07ac0cb92`  
-		Last Modified: Thu, 14 Mar 2019 21:41:24 GMT  
+	-	`sha256:a03462db0fd4f58052d7ecded0a7c72b0ad76c3e3c3ca623f71efac3a1540d35`  
+		Last Modified: Wed, 27 Mar 2019 00:15:25 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1378,7 +1378,7 @@ CMD ["mongod"]
 ## `mongo:3.4-jessie`
 
 ```console
-$ docker pull mongo@sha256:08c94e75f2034fa03516ca695a61ba557c11dcc9af73d196a35f950515ebb242
+$ docker pull mongo@sha256:60f5c6cea9c0d526c00266407e5eae506f7061d408e2fc3475af17394d223cb7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1388,111 +1388,111 @@ $ docker pull mongo@sha256:08c94e75f2034fa03516ca695a61ba557c11dcc9af73d196a35f9
 ### `mongo:3.4-jessie` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:1db4d58d45fc402f6c6b8f41bcb5711cf10bea26b723b117412ad896343cc43c
+$ docker pull mongo@sha256:e8be4bb2b900165e188b07808178462ed1ce5b7f87578d71f4119a9316d6b151
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.6 MB (153577296 bytes)**  
+-	Total Size: **153.6 MB (153577111 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8958526fd8a999590734f674e8db8e00c9832e2998f7ae4847badee6ce419865`
+-	Image ID: `sha256:0b7f4e6af48a1e12baa7e53e98cfdb2a81c8ca2e39fa3834ec128f85d1642b11`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Mon, 04 Mar 2019 23:20:30 GMT
-ADD file:9c83a686342b9918902182a223021336d3fba9b5e540dcdb130ad47a22033781 in / 
-# Mon, 04 Mar 2019 23:20:30 GMT
+# Tue, 26 Mar 2019 22:39:48 GMT
+ADD file:7e1c64289e566a098e45fa330e3fe3be4fb94df824f0287a0317dbadf8c643fd in / 
+# Tue, 26 Mar 2019 22:39:48 GMT
 CMD ["bash"]
-# Tue, 05 Mar 2019 03:25:53 GMT
+# Wed, 27 Mar 2019 00:07:47 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Tue, 05 Mar 2019 03:27:44 GMT
+# Wed, 27 Mar 2019 00:09:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 03:27:44 GMT
+# Wed, 27 Mar 2019 00:09:37 GMT
 ENV GOSU_VERSION=1.10
-# Tue, 05 Mar 2019 03:27:44 GMT
+# Wed, 27 Mar 2019 00:09:37 GMT
 ENV JSYAML_VERSION=3.10.0
-# Tue, 05 Mar 2019 03:30:01 GMT
+# Wed, 27 Mar 2019 00:11:52 GMT
 RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-get purge -y --auto-remove wget
-# Tue, 05 Mar 2019 03:30:02 GMT
+# Wed, 27 Mar 2019 00:11:52 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 05 Mar 2019 03:30:02 GMT
+# Wed, 27 Mar 2019 00:11:53 GMT
 ENV GPG_KEYS=0C49F3730359A14518585931BC711F9BA15703C6
-# Tue, 05 Mar 2019 03:30:32 GMT
+# Wed, 27 Mar 2019 00:12:23 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 05 Mar 2019 03:30:33 GMT
+# Wed, 27 Mar 2019 00:12:23 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 05 Mar 2019 03:30:33 GMT
+# Wed, 27 Mar 2019 00:12:23 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 05 Mar 2019 03:30:33 GMT
+# Wed, 27 Mar 2019 00:12:24 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 05 Mar 2019 03:30:33 GMT
+# Wed, 27 Mar 2019 00:12:24 GMT
 ENV MONGO_MAJOR=3.4
-# Thu, 14 Mar 2019 21:39:08 GMT
+# Wed, 27 Mar 2019 00:12:24 GMT
 ENV MONGO_VERSION=3.4.20
-# Thu, 14 Mar 2019 21:39:09 GMT
+# Wed, 27 Mar 2019 00:12:25 GMT
 RUN echo "deb http://$MONGO_REPO/apt/debian jessie/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR main" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Thu, 14 Mar 2019 21:41:01 GMT
+# Wed, 27 Mar 2019 00:14:11 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Thu, 14 Mar 2019 21:41:02 GMT
+# Wed, 27 Mar 2019 00:14:12 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Thu, 14 Mar 2019 21:41:02 GMT
+# Wed, 27 Mar 2019 00:14:12 GMT
 VOLUME [/data/db /data/configdb]
-# Thu, 14 Mar 2019 21:41:02 GMT
+# Wed, 27 Mar 2019 00:14:12 GMT
 COPY file:aede91d254349505ddabe55af4cf4debc6cc3f959f945a489b8864e520f193e8 in /usr/local/bin/ 
-# Thu, 14 Mar 2019 21:41:03 GMT
+# Wed, 27 Mar 2019 00:14:13 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat (3.4)
-# Thu, 14 Mar 2019 21:41:03 GMT
+# Wed, 27 Mar 2019 00:14:13 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 14 Mar 2019 21:41:03 GMT
+# Wed, 27 Mar 2019 00:14:13 GMT
 EXPOSE 27017
-# Thu, 14 Mar 2019 21:41:03 GMT
+# Wed, 27 Mar 2019 00:14:13 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:9fa17f107b7e9d91511082fc06c45340c4ab2b0820dc0974a963b137b3434e01`  
-		Last Modified: Mon, 04 Mar 2019 23:24:38 GMT  
-		Size: 30.2 MB (30154842 bytes)  
+	-	`sha256:2a639da97f77795f2f0ebe3bb2c9fc94b4eee47bd41faaf216118e7a8fa65dd6`  
+		Last Modified: Tue, 26 Mar 2019 22:43:17 GMT  
+		Size: 30.2 MB (30154581 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e49e5beb0b9254f391e5be8d74e81ddf09254906371665c93ca8d0d03693acfe`  
-		Last Modified: Tue, 05 Mar 2019 03:33:49 GMT  
-		Size: 2.1 KB (2095 bytes)  
+	-	`sha256:073b4f52defee106abe7b4c7622f639eecfbac0842bc6bb598d28e9a3ea4873c`  
+		Last Modified: Wed, 27 Mar 2019 00:15:27 GMT  
+		Size: 2.1 KB (2090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b6477960bd24a612352fe8184b41372a3516d57f4ffdd9738cf57f4dfc7ba41`  
-		Last Modified: Tue, 05 Mar 2019 03:33:48 GMT  
-		Size: 2.4 MB (2352427 bytes)  
+	-	`sha256:bce37d0f5c17eb358cdabddaa2869b8c3d20f805d7c5e4cb304891d90148e636`  
+		Last Modified: Wed, 27 Mar 2019 00:15:27 GMT  
+		Size: 2.4 MB (2352475 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:867c654bb710d2133db3ce5259e4b40f3f7345cb35d87b1f367af335aa229338`  
-		Last Modified: Tue, 05 Mar 2019 03:33:48 GMT  
-		Size: 816.5 KB (816498 bytes)  
+	-	`sha256:379dc19f9963ac685a1b2a7a87917918931a1ff62810f53e250509958da3d9ea`  
+		Last Modified: Wed, 27 Mar 2019 00:15:27 GMT  
+		Size: 816.5 KB (816536 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81485a90a131ee659020fba1942863445cde0f44b07c42ebb4293dc7bb88eece`  
-		Last Modified: Tue, 05 Mar 2019 03:33:48 GMT  
+	-	`sha256:e44806c61e63c836628ac923900d25102e0d71a9cec749cc5aec728a1da24026`  
+		Last Modified: Wed, 27 Mar 2019 00:15:26 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca2c5afa29da5eda3555302885c8be2f01e15fc211c52a6ddc610ef9f16a2428`  
-		Last Modified: Tue, 05 Mar 2019 03:33:48 GMT  
-		Size: 2.0 KB (2005 bytes)  
+	-	`sha256:b76faf91d209c365453f232efc7232abddb4af3b56dafeae590779938a0feb48`  
+		Last Modified: Wed, 27 Mar 2019 00:15:26 GMT  
+		Size: 2.0 KB (2004 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f3c0c38687c97db9ba3dbb6d19eadbd8b7db70c2bd70a06a316f2402c88a4b0`  
-		Last Modified: Thu, 14 Mar 2019 21:41:24 GMT  
-		Size: 233.0 B  
+	-	`sha256:dd1d9be5b26b2df481bbc6d378b1eb71e424a9503958e824b5d696864d2680cf`  
+		Last Modified: Wed, 27 Mar 2019 00:15:25 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cea41fa2d86d1661fcbb857d020503f70427fe4fe5178a316552a6c82431f2fc`  
-		Last Modified: Thu, 14 Mar 2019 21:41:44 GMT  
-		Size: 120.2 MB (120245017 bytes)  
+	-	`sha256:9420e1982a2fe6e933dd372ed697336011d937a42037e858d28e675622bc7baa`  
+		Last Modified: Wed, 27 Mar 2019 00:15:47 GMT  
+		Size: 120.2 MB (120245022 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f3b9b807ff8f2e09ad72cc14c0587c99cd4bf4bff68ccffd7c4a5ee1f674f47`  
-		Last Modified: Thu, 14 Mar 2019 21:41:24 GMT  
+	-	`sha256:9ad2432e6a03d41dafe00d7534c072ec661135b6ea2fd5f32f824e4e0cee0536`  
+		Last Modified: Wed, 27 Mar 2019 00:15:25 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7be8f971d1d1191dccd06d2af18c26abc5bdfd29bd1424b3aa82be67bab812b`  
-		Last Modified: Thu, 14 Mar 2019 21:41:24 GMT  
-		Size: 3.8 KB (3804 bytes)  
+	-	`sha256:741494f9ac47cf6675bb25d3983663ce9ad7440e12d2f2fe8f61e59c2388e1a5`  
+		Last Modified: Wed, 27 Mar 2019 00:15:25 GMT  
+		Size: 3.8 KB (3802 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1a176fbd181c4630aa3b612f1fd7aaf3f4f5e1d8d385c4675d5ede07ac0cb92`  
-		Last Modified: Thu, 14 Mar 2019 21:41:24 GMT  
+	-	`sha256:a03462db0fd4f58052d7ecded0a7c72b0ad76c3e3c3ca623f71efac3a1540d35`  
+		Last Modified: Wed, 27 Mar 2019 00:15:25 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1846,7 +1846,7 @@ CMD ["mongod"]
 ## `mongo:3.6`
 
 ```console
-$ docker pull mongo@sha256:0f0c0b6a4b6f6f5081599dd9073d275ecb773875e990b8e80cf75b024e896263
+$ docker pull mongo@sha256:d897ef2b3ba14104374b3b8b1f976e8f0dc6642ebcacb19a1ac327cae331fd73
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1858,106 +1858,106 @@ $ docker pull mongo@sha256:0f0c0b6a4b6f6f5081599dd9073d275ecb773875e990b8e80cf75
 ### `mongo:3.6` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:41d4490dc0ed13f62afe82b8a01382c6415e8d6f5dfdd79ae819a8bb2dea7bd6
+$ docker pull mongo@sha256:3b4cfe2e551af7ec91eb5a4e849f98a87f9e9cb8da47bf5c72936c1b4934e2ba
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.5 MB (145534852 bytes)**  
+-	Total Size: **145.5 MB (145534857 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3258f72452165172372dd72300b82d79c58f9dcdacedf45e0369c9e3a017ead6`
+-	Image ID: `sha256:e5d5a6ea073772347c503bb5a8cf2e500cd16ec04483ae8944fc351faea7c298`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Mon, 04 Mar 2019 23:22:21 GMT
-ADD file:5ea7dfe8c8bc87ebe0d06d275bce41e015310bdfc04546246302e9ce07ee416c in / 
-# Mon, 04 Mar 2019 23:22:22 GMT
+# Tue, 26 Mar 2019 22:41:26 GMT
+ADD file:4fc310c0cb879c876c5c0f571af665a0d24d36cb9263e0f53b0cda2f7e4b1844 in / 
+# Tue, 26 Mar 2019 22:41:26 GMT
 CMD ["bash"]
-# Tue, 05 Mar 2019 03:32:40 GMT
+# Wed, 27 Mar 2019 00:14:19 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Tue, 05 Mar 2019 03:32:49 GMT
+# Wed, 27 Mar 2019 00:14:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 03:32:50 GMT
+# Wed, 27 Mar 2019 00:14:29 GMT
 ENV GOSU_VERSION=1.10
-# Tue, 05 Mar 2019 03:32:50 GMT
+# Wed, 27 Mar 2019 00:14:29 GMT
 ENV JSYAML_VERSION=3.10.0
-# Tue, 05 Mar 2019 03:33:00 GMT
+# Wed, 27 Mar 2019 00:14:39 GMT
 RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-get purge -y --auto-remove wget
-# Tue, 05 Mar 2019 03:33:01 GMT
+# Wed, 27 Mar 2019 00:14:40 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 05 Mar 2019 03:33:01 GMT
+# Wed, 27 Mar 2019 00:14:40 GMT
 ENV GPG_KEYS=2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
-# Tue, 05 Mar 2019 03:33:04 GMT
+# Wed, 27 Mar 2019 00:14:43 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 05 Mar 2019 03:33:04 GMT
+# Wed, 27 Mar 2019 00:14:43 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 05 Mar 2019 03:33:04 GMT
+# Wed, 27 Mar 2019 00:14:43 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 05 Mar 2019 03:33:05 GMT
+# Wed, 27 Mar 2019 00:14:46 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 05 Mar 2019 03:33:05 GMT
+# Wed, 27 Mar 2019 00:14:46 GMT
 ENV MONGO_MAJOR=3.6
-# Tue, 05 Mar 2019 03:33:05 GMT
+# Wed, 27 Mar 2019 00:14:46 GMT
 ENV MONGO_VERSION=3.6.11
-# Tue, 05 Mar 2019 03:33:06 GMT
+# Wed, 27 Mar 2019 00:14:47 GMT
 RUN echo "deb http://$MONGO_REPO/apt/debian stretch/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR main" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 05 Mar 2019 03:33:22 GMT
+# Wed, 27 Mar 2019 00:15:03 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 05 Mar 2019 03:33:23 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 05 Mar 2019 03:33:23 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 05 Mar 2019 03:33:23 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 COPY file:aede91d254349505ddabe55af4cf4debc6cc3f959f945a489b8864e520f193e8 in /usr/local/bin/ 
-# Tue, 05 Mar 2019 03:33:24 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 05 Mar 2019 03:33:24 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 EXPOSE 27017
-# Tue, 05 Mar 2019 03:33:24 GMT
+# Wed, 27 Mar 2019 00:15:05 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:f7e2b70d04ae3f516c08c24d88de0f82699aaf3ee98af6eb208bd234136142b4`  
-		Last Modified: Mon, 04 Mar 2019 23:26:28 GMT  
-		Size: 22.5 MB (22496034 bytes)  
+	-	`sha256:27833a3ba0a545deda33bb01eaf95a14d05d43bf30bce9267d92d17f069fe897`  
+		Last Modified: Tue, 26 Mar 2019 22:44:37 GMT  
+		Size: 22.5 MB (22496048 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83448b21643b08c2422bd861c5715a8c2bb176040cef649884d354855c72d732`  
-		Last Modified: Tue, 05 Mar 2019 03:34:13 GMT  
-		Size: 1.7 KB (1744 bytes)  
+	-	`sha256:179c807caa04b513feebcd38fdd050e9db4e9934b5b26319d72b596df3048a76`  
+		Last Modified: Wed, 27 Mar 2019 00:15:54 GMT  
+		Size: 1.7 KB (1741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2dea061159a08c53a64c643b219d1966a857d6f3bd96c38518c4298bffe8305a`  
-		Last Modified: Tue, 05 Mar 2019 03:34:14 GMT  
-		Size: 3.2 MB (3225447 bytes)  
+	-	`sha256:2b23ef1b0ab3fd6c2c92aef230c250fb696d3032446b95cc615a3bc91852fa50`  
+		Last Modified: Wed, 27 Mar 2019 00:15:54 GMT  
+		Size: 3.2 MB (3225430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95e98f1e3318466e5389d5f8580f273ba3a159fe9188d61e17cf98079a53019b`  
-		Last Modified: Tue, 05 Mar 2019 03:34:14 GMT  
-		Size: 5.1 MB (5057200 bytes)  
+	-	`sha256:e3cf7dbbd547e355bca37b48982c09f80a3bc76dc37ed05b671297ffbe3d2c00`  
+		Last Modified: Wed, 27 Mar 2019 00:15:54 GMT  
+		Size: 5.1 MB (5057184 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:019ce9c7359a1f8f727fc9d95204787b9eee1863dd5a474492e603eb1fa147c1`  
-		Last Modified: Tue, 05 Mar 2019 03:34:13 GMT  
-		Size: 112.0 B  
+	-	`sha256:dc233bb2f30939e2946ee7c27091ade0851389f74ae5acbe61d34e8598d57dfd`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:766651adeb0a7894942f86b277258b49e46d763701f8d805ee05daa3965696ca`  
-		Last Modified: Tue, 05 Mar 2019 03:34:12 GMT  
-		Size: 2.0 KB (1993 bytes)  
+	-	`sha256:ef26a67bf04ef4ca60ac596d0b54331fa74f07f971b6a5b1dd24c3d81bff9a23`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
+		Size: 2.0 KB (1997 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e038b477eb03bc7c2e3d6670bbe06c8a0f7d0d23628daaa1267287e36796c6b`  
-		Last Modified: Tue, 05 Mar 2019 03:34:12 GMT  
+	-	`sha256:55ecb543777ef419362b20e68984720bbfe7cf539dbfa42cd211bfbc6a2118f5`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
 		Size: 230.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea9c514fbe7d4ee39eb8ab136e0622531c5c67326935f34fb892c8d7a532fd19`  
-		Last Modified: Tue, 05 Mar 2019 03:34:32 GMT  
-		Size: 114.7 MB (114748151 bytes)  
+	-	`sha256:35f8c6ed1ba654b006d722ed3ef26db779f1951a2a13a9827150b7e271cf78f7`  
+		Last Modified: Wed, 27 Mar 2019 00:16:12 GMT  
+		Size: 114.7 MB (114748173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84ea5e37d9c5349addfad3d236f57fcc829b2aedbc8915276f921b36a2f92328`  
-		Last Modified: Tue, 05 Mar 2019 03:34:12 GMT  
-		Size: 138.0 B  
+	-	`sha256:2a39da2ca07c372fea5903a0f09b27b36090b02feb765f8573003364f560616b`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28ba4727e25775f4d693c3014b408025f30afde706c88a0cdc174b50cdf41544`  
-		Last Modified: Tue, 05 Mar 2019 03:34:12 GMT  
-		Size: 3.8 KB (3803 bytes)  
+	-	`sha256:d72b68852da8ce068724f9bac707c0909e97b60d1f40fd4b7fe2491ecf2ea5eb`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
+		Size: 3.8 KB (3800 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:3.6` - windows version 10.0.14393.2848; amd64
@@ -2121,7 +2121,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:3.6.11`
 
 ```console
-$ docker pull mongo@sha256:0f0c0b6a4b6f6f5081599dd9073d275ecb773875e990b8e80cf75b024e896263
+$ docker pull mongo@sha256:d897ef2b3ba14104374b3b8b1f976e8f0dc6642ebcacb19a1ac327cae331fd73
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2133,106 +2133,106 @@ $ docker pull mongo@sha256:0f0c0b6a4b6f6f5081599dd9073d275ecb773875e990b8e80cf75
 ### `mongo:3.6.11` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:41d4490dc0ed13f62afe82b8a01382c6415e8d6f5dfdd79ae819a8bb2dea7bd6
+$ docker pull mongo@sha256:3b4cfe2e551af7ec91eb5a4e849f98a87f9e9cb8da47bf5c72936c1b4934e2ba
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.5 MB (145534852 bytes)**  
+-	Total Size: **145.5 MB (145534857 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3258f72452165172372dd72300b82d79c58f9dcdacedf45e0369c9e3a017ead6`
+-	Image ID: `sha256:e5d5a6ea073772347c503bb5a8cf2e500cd16ec04483ae8944fc351faea7c298`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Mon, 04 Mar 2019 23:22:21 GMT
-ADD file:5ea7dfe8c8bc87ebe0d06d275bce41e015310bdfc04546246302e9ce07ee416c in / 
-# Mon, 04 Mar 2019 23:22:22 GMT
+# Tue, 26 Mar 2019 22:41:26 GMT
+ADD file:4fc310c0cb879c876c5c0f571af665a0d24d36cb9263e0f53b0cda2f7e4b1844 in / 
+# Tue, 26 Mar 2019 22:41:26 GMT
 CMD ["bash"]
-# Tue, 05 Mar 2019 03:32:40 GMT
+# Wed, 27 Mar 2019 00:14:19 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Tue, 05 Mar 2019 03:32:49 GMT
+# Wed, 27 Mar 2019 00:14:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 03:32:50 GMT
+# Wed, 27 Mar 2019 00:14:29 GMT
 ENV GOSU_VERSION=1.10
-# Tue, 05 Mar 2019 03:32:50 GMT
+# Wed, 27 Mar 2019 00:14:29 GMT
 ENV JSYAML_VERSION=3.10.0
-# Tue, 05 Mar 2019 03:33:00 GMT
+# Wed, 27 Mar 2019 00:14:39 GMT
 RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-get purge -y --auto-remove wget
-# Tue, 05 Mar 2019 03:33:01 GMT
+# Wed, 27 Mar 2019 00:14:40 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 05 Mar 2019 03:33:01 GMT
+# Wed, 27 Mar 2019 00:14:40 GMT
 ENV GPG_KEYS=2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
-# Tue, 05 Mar 2019 03:33:04 GMT
+# Wed, 27 Mar 2019 00:14:43 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 05 Mar 2019 03:33:04 GMT
+# Wed, 27 Mar 2019 00:14:43 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 05 Mar 2019 03:33:04 GMT
+# Wed, 27 Mar 2019 00:14:43 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 05 Mar 2019 03:33:05 GMT
+# Wed, 27 Mar 2019 00:14:46 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 05 Mar 2019 03:33:05 GMT
+# Wed, 27 Mar 2019 00:14:46 GMT
 ENV MONGO_MAJOR=3.6
-# Tue, 05 Mar 2019 03:33:05 GMT
+# Wed, 27 Mar 2019 00:14:46 GMT
 ENV MONGO_VERSION=3.6.11
-# Tue, 05 Mar 2019 03:33:06 GMT
+# Wed, 27 Mar 2019 00:14:47 GMT
 RUN echo "deb http://$MONGO_REPO/apt/debian stretch/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR main" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 05 Mar 2019 03:33:22 GMT
+# Wed, 27 Mar 2019 00:15:03 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 05 Mar 2019 03:33:23 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 05 Mar 2019 03:33:23 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 05 Mar 2019 03:33:23 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 COPY file:aede91d254349505ddabe55af4cf4debc6cc3f959f945a489b8864e520f193e8 in /usr/local/bin/ 
-# Tue, 05 Mar 2019 03:33:24 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 05 Mar 2019 03:33:24 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 EXPOSE 27017
-# Tue, 05 Mar 2019 03:33:24 GMT
+# Wed, 27 Mar 2019 00:15:05 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:f7e2b70d04ae3f516c08c24d88de0f82699aaf3ee98af6eb208bd234136142b4`  
-		Last Modified: Mon, 04 Mar 2019 23:26:28 GMT  
-		Size: 22.5 MB (22496034 bytes)  
+	-	`sha256:27833a3ba0a545deda33bb01eaf95a14d05d43bf30bce9267d92d17f069fe897`  
+		Last Modified: Tue, 26 Mar 2019 22:44:37 GMT  
+		Size: 22.5 MB (22496048 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83448b21643b08c2422bd861c5715a8c2bb176040cef649884d354855c72d732`  
-		Last Modified: Tue, 05 Mar 2019 03:34:13 GMT  
-		Size: 1.7 KB (1744 bytes)  
+	-	`sha256:179c807caa04b513feebcd38fdd050e9db4e9934b5b26319d72b596df3048a76`  
+		Last Modified: Wed, 27 Mar 2019 00:15:54 GMT  
+		Size: 1.7 KB (1741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2dea061159a08c53a64c643b219d1966a857d6f3bd96c38518c4298bffe8305a`  
-		Last Modified: Tue, 05 Mar 2019 03:34:14 GMT  
-		Size: 3.2 MB (3225447 bytes)  
+	-	`sha256:2b23ef1b0ab3fd6c2c92aef230c250fb696d3032446b95cc615a3bc91852fa50`  
+		Last Modified: Wed, 27 Mar 2019 00:15:54 GMT  
+		Size: 3.2 MB (3225430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95e98f1e3318466e5389d5f8580f273ba3a159fe9188d61e17cf98079a53019b`  
-		Last Modified: Tue, 05 Mar 2019 03:34:14 GMT  
-		Size: 5.1 MB (5057200 bytes)  
+	-	`sha256:e3cf7dbbd547e355bca37b48982c09f80a3bc76dc37ed05b671297ffbe3d2c00`  
+		Last Modified: Wed, 27 Mar 2019 00:15:54 GMT  
+		Size: 5.1 MB (5057184 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:019ce9c7359a1f8f727fc9d95204787b9eee1863dd5a474492e603eb1fa147c1`  
-		Last Modified: Tue, 05 Mar 2019 03:34:13 GMT  
-		Size: 112.0 B  
+	-	`sha256:dc233bb2f30939e2946ee7c27091ade0851389f74ae5acbe61d34e8598d57dfd`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:766651adeb0a7894942f86b277258b49e46d763701f8d805ee05daa3965696ca`  
-		Last Modified: Tue, 05 Mar 2019 03:34:12 GMT  
-		Size: 2.0 KB (1993 bytes)  
+	-	`sha256:ef26a67bf04ef4ca60ac596d0b54331fa74f07f971b6a5b1dd24c3d81bff9a23`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
+		Size: 2.0 KB (1997 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e038b477eb03bc7c2e3d6670bbe06c8a0f7d0d23628daaa1267287e36796c6b`  
-		Last Modified: Tue, 05 Mar 2019 03:34:12 GMT  
+	-	`sha256:55ecb543777ef419362b20e68984720bbfe7cf539dbfa42cd211bfbc6a2118f5`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
 		Size: 230.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea9c514fbe7d4ee39eb8ab136e0622531c5c67326935f34fb892c8d7a532fd19`  
-		Last Modified: Tue, 05 Mar 2019 03:34:32 GMT  
-		Size: 114.7 MB (114748151 bytes)  
+	-	`sha256:35f8c6ed1ba654b006d722ed3ef26db779f1951a2a13a9827150b7e271cf78f7`  
+		Last Modified: Wed, 27 Mar 2019 00:16:12 GMT  
+		Size: 114.7 MB (114748173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84ea5e37d9c5349addfad3d236f57fcc829b2aedbc8915276f921b36a2f92328`  
-		Last Modified: Tue, 05 Mar 2019 03:34:12 GMT  
-		Size: 138.0 B  
+	-	`sha256:2a39da2ca07c372fea5903a0f09b27b36090b02feb765f8573003364f560616b`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28ba4727e25775f4d693c3014b408025f30afde706c88a0cdc174b50cdf41544`  
-		Last Modified: Tue, 05 Mar 2019 03:34:12 GMT  
-		Size: 3.8 KB (3803 bytes)  
+	-	`sha256:d72b68852da8ce068724f9bac707c0909e97b60d1f40fd4b7fe2491ecf2ea5eb`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
+		Size: 3.8 KB (3800 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:3.6.11` - windows version 10.0.14393.2848; amd64
@@ -2396,7 +2396,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:3.6.11-stretch`
 
 ```console
-$ docker pull mongo@sha256:820d4d3ba9240968ee94d50b1f99db686447a2e6228cadba25ca122ae42fcf6c
+$ docker pull mongo@sha256:496bc6c25af7b38d8fe5e41cff034d65a92ca63db7068b003667de01ce0715c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2406,106 +2406,106 @@ $ docker pull mongo@sha256:820d4d3ba9240968ee94d50b1f99db686447a2e6228cadba25ca1
 ### `mongo:3.6.11-stretch` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:41d4490dc0ed13f62afe82b8a01382c6415e8d6f5dfdd79ae819a8bb2dea7bd6
+$ docker pull mongo@sha256:3b4cfe2e551af7ec91eb5a4e849f98a87f9e9cb8da47bf5c72936c1b4934e2ba
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.5 MB (145534852 bytes)**  
+-	Total Size: **145.5 MB (145534857 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3258f72452165172372dd72300b82d79c58f9dcdacedf45e0369c9e3a017ead6`
+-	Image ID: `sha256:e5d5a6ea073772347c503bb5a8cf2e500cd16ec04483ae8944fc351faea7c298`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Mon, 04 Mar 2019 23:22:21 GMT
-ADD file:5ea7dfe8c8bc87ebe0d06d275bce41e015310bdfc04546246302e9ce07ee416c in / 
-# Mon, 04 Mar 2019 23:22:22 GMT
+# Tue, 26 Mar 2019 22:41:26 GMT
+ADD file:4fc310c0cb879c876c5c0f571af665a0d24d36cb9263e0f53b0cda2f7e4b1844 in / 
+# Tue, 26 Mar 2019 22:41:26 GMT
 CMD ["bash"]
-# Tue, 05 Mar 2019 03:32:40 GMT
+# Wed, 27 Mar 2019 00:14:19 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Tue, 05 Mar 2019 03:32:49 GMT
+# Wed, 27 Mar 2019 00:14:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 03:32:50 GMT
+# Wed, 27 Mar 2019 00:14:29 GMT
 ENV GOSU_VERSION=1.10
-# Tue, 05 Mar 2019 03:32:50 GMT
+# Wed, 27 Mar 2019 00:14:29 GMT
 ENV JSYAML_VERSION=3.10.0
-# Tue, 05 Mar 2019 03:33:00 GMT
+# Wed, 27 Mar 2019 00:14:39 GMT
 RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-get purge -y --auto-remove wget
-# Tue, 05 Mar 2019 03:33:01 GMT
+# Wed, 27 Mar 2019 00:14:40 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 05 Mar 2019 03:33:01 GMT
+# Wed, 27 Mar 2019 00:14:40 GMT
 ENV GPG_KEYS=2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
-# Tue, 05 Mar 2019 03:33:04 GMT
+# Wed, 27 Mar 2019 00:14:43 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 05 Mar 2019 03:33:04 GMT
+# Wed, 27 Mar 2019 00:14:43 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 05 Mar 2019 03:33:04 GMT
+# Wed, 27 Mar 2019 00:14:43 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 05 Mar 2019 03:33:05 GMT
+# Wed, 27 Mar 2019 00:14:46 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 05 Mar 2019 03:33:05 GMT
+# Wed, 27 Mar 2019 00:14:46 GMT
 ENV MONGO_MAJOR=3.6
-# Tue, 05 Mar 2019 03:33:05 GMT
+# Wed, 27 Mar 2019 00:14:46 GMT
 ENV MONGO_VERSION=3.6.11
-# Tue, 05 Mar 2019 03:33:06 GMT
+# Wed, 27 Mar 2019 00:14:47 GMT
 RUN echo "deb http://$MONGO_REPO/apt/debian stretch/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR main" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 05 Mar 2019 03:33:22 GMT
+# Wed, 27 Mar 2019 00:15:03 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 05 Mar 2019 03:33:23 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 05 Mar 2019 03:33:23 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 05 Mar 2019 03:33:23 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 COPY file:aede91d254349505ddabe55af4cf4debc6cc3f959f945a489b8864e520f193e8 in /usr/local/bin/ 
-# Tue, 05 Mar 2019 03:33:24 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 05 Mar 2019 03:33:24 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 EXPOSE 27017
-# Tue, 05 Mar 2019 03:33:24 GMT
+# Wed, 27 Mar 2019 00:15:05 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:f7e2b70d04ae3f516c08c24d88de0f82699aaf3ee98af6eb208bd234136142b4`  
-		Last Modified: Mon, 04 Mar 2019 23:26:28 GMT  
-		Size: 22.5 MB (22496034 bytes)  
+	-	`sha256:27833a3ba0a545deda33bb01eaf95a14d05d43bf30bce9267d92d17f069fe897`  
+		Last Modified: Tue, 26 Mar 2019 22:44:37 GMT  
+		Size: 22.5 MB (22496048 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83448b21643b08c2422bd861c5715a8c2bb176040cef649884d354855c72d732`  
-		Last Modified: Tue, 05 Mar 2019 03:34:13 GMT  
-		Size: 1.7 KB (1744 bytes)  
+	-	`sha256:179c807caa04b513feebcd38fdd050e9db4e9934b5b26319d72b596df3048a76`  
+		Last Modified: Wed, 27 Mar 2019 00:15:54 GMT  
+		Size: 1.7 KB (1741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2dea061159a08c53a64c643b219d1966a857d6f3bd96c38518c4298bffe8305a`  
-		Last Modified: Tue, 05 Mar 2019 03:34:14 GMT  
-		Size: 3.2 MB (3225447 bytes)  
+	-	`sha256:2b23ef1b0ab3fd6c2c92aef230c250fb696d3032446b95cc615a3bc91852fa50`  
+		Last Modified: Wed, 27 Mar 2019 00:15:54 GMT  
+		Size: 3.2 MB (3225430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95e98f1e3318466e5389d5f8580f273ba3a159fe9188d61e17cf98079a53019b`  
-		Last Modified: Tue, 05 Mar 2019 03:34:14 GMT  
-		Size: 5.1 MB (5057200 bytes)  
+	-	`sha256:e3cf7dbbd547e355bca37b48982c09f80a3bc76dc37ed05b671297ffbe3d2c00`  
+		Last Modified: Wed, 27 Mar 2019 00:15:54 GMT  
+		Size: 5.1 MB (5057184 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:019ce9c7359a1f8f727fc9d95204787b9eee1863dd5a474492e603eb1fa147c1`  
-		Last Modified: Tue, 05 Mar 2019 03:34:13 GMT  
-		Size: 112.0 B  
+	-	`sha256:dc233bb2f30939e2946ee7c27091ade0851389f74ae5acbe61d34e8598d57dfd`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:766651adeb0a7894942f86b277258b49e46d763701f8d805ee05daa3965696ca`  
-		Last Modified: Tue, 05 Mar 2019 03:34:12 GMT  
-		Size: 2.0 KB (1993 bytes)  
+	-	`sha256:ef26a67bf04ef4ca60ac596d0b54331fa74f07f971b6a5b1dd24c3d81bff9a23`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
+		Size: 2.0 KB (1997 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e038b477eb03bc7c2e3d6670bbe06c8a0f7d0d23628daaa1267287e36796c6b`  
-		Last Modified: Tue, 05 Mar 2019 03:34:12 GMT  
+	-	`sha256:55ecb543777ef419362b20e68984720bbfe7cf539dbfa42cd211bfbc6a2118f5`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
 		Size: 230.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea9c514fbe7d4ee39eb8ab136e0622531c5c67326935f34fb892c8d7a532fd19`  
-		Last Modified: Tue, 05 Mar 2019 03:34:32 GMT  
-		Size: 114.7 MB (114748151 bytes)  
+	-	`sha256:35f8c6ed1ba654b006d722ed3ef26db779f1951a2a13a9827150b7e271cf78f7`  
+		Last Modified: Wed, 27 Mar 2019 00:16:12 GMT  
+		Size: 114.7 MB (114748173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84ea5e37d9c5349addfad3d236f57fcc829b2aedbc8915276f921b36a2f92328`  
-		Last Modified: Tue, 05 Mar 2019 03:34:12 GMT  
-		Size: 138.0 B  
+	-	`sha256:2a39da2ca07c372fea5903a0f09b27b36090b02feb765f8573003364f560616b`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28ba4727e25775f4d693c3014b408025f30afde706c88a0cdc174b50cdf41544`  
-		Last Modified: Tue, 05 Mar 2019 03:34:12 GMT  
-		Size: 3.8 KB (3803 bytes)  
+	-	`sha256:d72b68852da8ce068724f9bac707c0909e97b60d1f40fd4b7fe2491ecf2ea5eb`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
+		Size: 3.8 KB (3800 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3.6.11-windowsservercore`
@@ -2858,7 +2858,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:3.6-stretch`
 
 ```console
-$ docker pull mongo@sha256:820d4d3ba9240968ee94d50b1f99db686447a2e6228cadba25ca122ae42fcf6c
+$ docker pull mongo@sha256:496bc6c25af7b38d8fe5e41cff034d65a92ca63db7068b003667de01ce0715c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2868,106 +2868,106 @@ $ docker pull mongo@sha256:820d4d3ba9240968ee94d50b1f99db686447a2e6228cadba25ca1
 ### `mongo:3.6-stretch` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:41d4490dc0ed13f62afe82b8a01382c6415e8d6f5dfdd79ae819a8bb2dea7bd6
+$ docker pull mongo@sha256:3b4cfe2e551af7ec91eb5a4e849f98a87f9e9cb8da47bf5c72936c1b4934e2ba
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.5 MB (145534852 bytes)**  
+-	Total Size: **145.5 MB (145534857 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3258f72452165172372dd72300b82d79c58f9dcdacedf45e0369c9e3a017ead6`
+-	Image ID: `sha256:e5d5a6ea073772347c503bb5a8cf2e500cd16ec04483ae8944fc351faea7c298`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Mon, 04 Mar 2019 23:22:21 GMT
-ADD file:5ea7dfe8c8bc87ebe0d06d275bce41e015310bdfc04546246302e9ce07ee416c in / 
-# Mon, 04 Mar 2019 23:22:22 GMT
+# Tue, 26 Mar 2019 22:41:26 GMT
+ADD file:4fc310c0cb879c876c5c0f571af665a0d24d36cb9263e0f53b0cda2f7e4b1844 in / 
+# Tue, 26 Mar 2019 22:41:26 GMT
 CMD ["bash"]
-# Tue, 05 Mar 2019 03:32:40 GMT
+# Wed, 27 Mar 2019 00:14:19 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Tue, 05 Mar 2019 03:32:49 GMT
+# Wed, 27 Mar 2019 00:14:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 03:32:50 GMT
+# Wed, 27 Mar 2019 00:14:29 GMT
 ENV GOSU_VERSION=1.10
-# Tue, 05 Mar 2019 03:32:50 GMT
+# Wed, 27 Mar 2019 00:14:29 GMT
 ENV JSYAML_VERSION=3.10.0
-# Tue, 05 Mar 2019 03:33:00 GMT
+# Wed, 27 Mar 2019 00:14:39 GMT
 RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-get purge -y --auto-remove wget
-# Tue, 05 Mar 2019 03:33:01 GMT
+# Wed, 27 Mar 2019 00:14:40 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 05 Mar 2019 03:33:01 GMT
+# Wed, 27 Mar 2019 00:14:40 GMT
 ENV GPG_KEYS=2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
-# Tue, 05 Mar 2019 03:33:04 GMT
+# Wed, 27 Mar 2019 00:14:43 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 05 Mar 2019 03:33:04 GMT
+# Wed, 27 Mar 2019 00:14:43 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 05 Mar 2019 03:33:04 GMT
+# Wed, 27 Mar 2019 00:14:43 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 05 Mar 2019 03:33:05 GMT
+# Wed, 27 Mar 2019 00:14:46 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 05 Mar 2019 03:33:05 GMT
+# Wed, 27 Mar 2019 00:14:46 GMT
 ENV MONGO_MAJOR=3.6
-# Tue, 05 Mar 2019 03:33:05 GMT
+# Wed, 27 Mar 2019 00:14:46 GMT
 ENV MONGO_VERSION=3.6.11
-# Tue, 05 Mar 2019 03:33:06 GMT
+# Wed, 27 Mar 2019 00:14:47 GMT
 RUN echo "deb http://$MONGO_REPO/apt/debian stretch/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR main" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 05 Mar 2019 03:33:22 GMT
+# Wed, 27 Mar 2019 00:15:03 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 05 Mar 2019 03:33:23 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 05 Mar 2019 03:33:23 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 05 Mar 2019 03:33:23 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 COPY file:aede91d254349505ddabe55af4cf4debc6cc3f959f945a489b8864e520f193e8 in /usr/local/bin/ 
-# Tue, 05 Mar 2019 03:33:24 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 05 Mar 2019 03:33:24 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 EXPOSE 27017
-# Tue, 05 Mar 2019 03:33:24 GMT
+# Wed, 27 Mar 2019 00:15:05 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:f7e2b70d04ae3f516c08c24d88de0f82699aaf3ee98af6eb208bd234136142b4`  
-		Last Modified: Mon, 04 Mar 2019 23:26:28 GMT  
-		Size: 22.5 MB (22496034 bytes)  
+	-	`sha256:27833a3ba0a545deda33bb01eaf95a14d05d43bf30bce9267d92d17f069fe897`  
+		Last Modified: Tue, 26 Mar 2019 22:44:37 GMT  
+		Size: 22.5 MB (22496048 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83448b21643b08c2422bd861c5715a8c2bb176040cef649884d354855c72d732`  
-		Last Modified: Tue, 05 Mar 2019 03:34:13 GMT  
-		Size: 1.7 KB (1744 bytes)  
+	-	`sha256:179c807caa04b513feebcd38fdd050e9db4e9934b5b26319d72b596df3048a76`  
+		Last Modified: Wed, 27 Mar 2019 00:15:54 GMT  
+		Size: 1.7 KB (1741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2dea061159a08c53a64c643b219d1966a857d6f3bd96c38518c4298bffe8305a`  
-		Last Modified: Tue, 05 Mar 2019 03:34:14 GMT  
-		Size: 3.2 MB (3225447 bytes)  
+	-	`sha256:2b23ef1b0ab3fd6c2c92aef230c250fb696d3032446b95cc615a3bc91852fa50`  
+		Last Modified: Wed, 27 Mar 2019 00:15:54 GMT  
+		Size: 3.2 MB (3225430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95e98f1e3318466e5389d5f8580f273ba3a159fe9188d61e17cf98079a53019b`  
-		Last Modified: Tue, 05 Mar 2019 03:34:14 GMT  
-		Size: 5.1 MB (5057200 bytes)  
+	-	`sha256:e3cf7dbbd547e355bca37b48982c09f80a3bc76dc37ed05b671297ffbe3d2c00`  
+		Last Modified: Wed, 27 Mar 2019 00:15:54 GMT  
+		Size: 5.1 MB (5057184 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:019ce9c7359a1f8f727fc9d95204787b9eee1863dd5a474492e603eb1fa147c1`  
-		Last Modified: Tue, 05 Mar 2019 03:34:13 GMT  
-		Size: 112.0 B  
+	-	`sha256:dc233bb2f30939e2946ee7c27091ade0851389f74ae5acbe61d34e8598d57dfd`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:766651adeb0a7894942f86b277258b49e46d763701f8d805ee05daa3965696ca`  
-		Last Modified: Tue, 05 Mar 2019 03:34:12 GMT  
-		Size: 2.0 KB (1993 bytes)  
+	-	`sha256:ef26a67bf04ef4ca60ac596d0b54331fa74f07f971b6a5b1dd24c3d81bff9a23`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
+		Size: 2.0 KB (1997 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e038b477eb03bc7c2e3d6670bbe06c8a0f7d0d23628daaa1267287e36796c6b`  
-		Last Modified: Tue, 05 Mar 2019 03:34:12 GMT  
+	-	`sha256:55ecb543777ef419362b20e68984720bbfe7cf539dbfa42cd211bfbc6a2118f5`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
 		Size: 230.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea9c514fbe7d4ee39eb8ab136e0622531c5c67326935f34fb892c8d7a532fd19`  
-		Last Modified: Tue, 05 Mar 2019 03:34:32 GMT  
-		Size: 114.7 MB (114748151 bytes)  
+	-	`sha256:35f8c6ed1ba654b006d722ed3ef26db779f1951a2a13a9827150b7e271cf78f7`  
+		Last Modified: Wed, 27 Mar 2019 00:16:12 GMT  
+		Size: 114.7 MB (114748173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84ea5e37d9c5349addfad3d236f57fcc829b2aedbc8915276f921b36a2f92328`  
-		Last Modified: Tue, 05 Mar 2019 03:34:12 GMT  
-		Size: 138.0 B  
+	-	`sha256:2a39da2ca07c372fea5903a0f09b27b36090b02feb765f8573003364f560616b`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28ba4727e25775f4d693c3014b408025f30afde706c88a0cdc174b50cdf41544`  
-		Last Modified: Tue, 05 Mar 2019 03:34:12 GMT  
-		Size: 3.8 KB (3803 bytes)  
+	-	`sha256:d72b68852da8ce068724f9bac707c0909e97b60d1f40fd4b7fe2491ecf2ea5eb`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
+		Size: 3.8 KB (3800 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3.6-windowsservercore`
@@ -3320,7 +3320,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:3-stretch`
 
 ```console
-$ docker pull mongo@sha256:820d4d3ba9240968ee94d50b1f99db686447a2e6228cadba25ca122ae42fcf6c
+$ docker pull mongo@sha256:496bc6c25af7b38d8fe5e41cff034d65a92ca63db7068b003667de01ce0715c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3330,106 +3330,106 @@ $ docker pull mongo@sha256:820d4d3ba9240968ee94d50b1f99db686447a2e6228cadba25ca1
 ### `mongo:3-stretch` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:41d4490dc0ed13f62afe82b8a01382c6415e8d6f5dfdd79ae819a8bb2dea7bd6
+$ docker pull mongo@sha256:3b4cfe2e551af7ec91eb5a4e849f98a87f9e9cb8da47bf5c72936c1b4934e2ba
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.5 MB (145534852 bytes)**  
+-	Total Size: **145.5 MB (145534857 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3258f72452165172372dd72300b82d79c58f9dcdacedf45e0369c9e3a017ead6`
+-	Image ID: `sha256:e5d5a6ea073772347c503bb5a8cf2e500cd16ec04483ae8944fc351faea7c298`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Mon, 04 Mar 2019 23:22:21 GMT
-ADD file:5ea7dfe8c8bc87ebe0d06d275bce41e015310bdfc04546246302e9ce07ee416c in / 
-# Mon, 04 Mar 2019 23:22:22 GMT
+# Tue, 26 Mar 2019 22:41:26 GMT
+ADD file:4fc310c0cb879c876c5c0f571af665a0d24d36cb9263e0f53b0cda2f7e4b1844 in / 
+# Tue, 26 Mar 2019 22:41:26 GMT
 CMD ["bash"]
-# Tue, 05 Mar 2019 03:32:40 GMT
+# Wed, 27 Mar 2019 00:14:19 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Tue, 05 Mar 2019 03:32:49 GMT
+# Wed, 27 Mar 2019 00:14:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 03:32:50 GMT
+# Wed, 27 Mar 2019 00:14:29 GMT
 ENV GOSU_VERSION=1.10
-# Tue, 05 Mar 2019 03:32:50 GMT
+# Wed, 27 Mar 2019 00:14:29 GMT
 ENV JSYAML_VERSION=3.10.0
-# Tue, 05 Mar 2019 03:33:00 GMT
+# Wed, 27 Mar 2019 00:14:39 GMT
 RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-get purge -y --auto-remove wget
-# Tue, 05 Mar 2019 03:33:01 GMT
+# Wed, 27 Mar 2019 00:14:40 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 05 Mar 2019 03:33:01 GMT
+# Wed, 27 Mar 2019 00:14:40 GMT
 ENV GPG_KEYS=2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
-# Tue, 05 Mar 2019 03:33:04 GMT
+# Wed, 27 Mar 2019 00:14:43 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 05 Mar 2019 03:33:04 GMT
+# Wed, 27 Mar 2019 00:14:43 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 05 Mar 2019 03:33:04 GMT
+# Wed, 27 Mar 2019 00:14:43 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 05 Mar 2019 03:33:05 GMT
+# Wed, 27 Mar 2019 00:14:46 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 05 Mar 2019 03:33:05 GMT
+# Wed, 27 Mar 2019 00:14:46 GMT
 ENV MONGO_MAJOR=3.6
-# Tue, 05 Mar 2019 03:33:05 GMT
+# Wed, 27 Mar 2019 00:14:46 GMT
 ENV MONGO_VERSION=3.6.11
-# Tue, 05 Mar 2019 03:33:06 GMT
+# Wed, 27 Mar 2019 00:14:47 GMT
 RUN echo "deb http://$MONGO_REPO/apt/debian stretch/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR main" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 05 Mar 2019 03:33:22 GMT
+# Wed, 27 Mar 2019 00:15:03 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 05 Mar 2019 03:33:23 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 05 Mar 2019 03:33:23 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 05 Mar 2019 03:33:23 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 COPY file:aede91d254349505ddabe55af4cf4debc6cc3f959f945a489b8864e520f193e8 in /usr/local/bin/ 
-# Tue, 05 Mar 2019 03:33:24 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 05 Mar 2019 03:33:24 GMT
+# Wed, 27 Mar 2019 00:15:04 GMT
 EXPOSE 27017
-# Tue, 05 Mar 2019 03:33:24 GMT
+# Wed, 27 Mar 2019 00:15:05 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:f7e2b70d04ae3f516c08c24d88de0f82699aaf3ee98af6eb208bd234136142b4`  
-		Last Modified: Mon, 04 Mar 2019 23:26:28 GMT  
-		Size: 22.5 MB (22496034 bytes)  
+	-	`sha256:27833a3ba0a545deda33bb01eaf95a14d05d43bf30bce9267d92d17f069fe897`  
+		Last Modified: Tue, 26 Mar 2019 22:44:37 GMT  
+		Size: 22.5 MB (22496048 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83448b21643b08c2422bd861c5715a8c2bb176040cef649884d354855c72d732`  
-		Last Modified: Tue, 05 Mar 2019 03:34:13 GMT  
-		Size: 1.7 KB (1744 bytes)  
+	-	`sha256:179c807caa04b513feebcd38fdd050e9db4e9934b5b26319d72b596df3048a76`  
+		Last Modified: Wed, 27 Mar 2019 00:15:54 GMT  
+		Size: 1.7 KB (1741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2dea061159a08c53a64c643b219d1966a857d6f3bd96c38518c4298bffe8305a`  
-		Last Modified: Tue, 05 Mar 2019 03:34:14 GMT  
-		Size: 3.2 MB (3225447 bytes)  
+	-	`sha256:2b23ef1b0ab3fd6c2c92aef230c250fb696d3032446b95cc615a3bc91852fa50`  
+		Last Modified: Wed, 27 Mar 2019 00:15:54 GMT  
+		Size: 3.2 MB (3225430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95e98f1e3318466e5389d5f8580f273ba3a159fe9188d61e17cf98079a53019b`  
-		Last Modified: Tue, 05 Mar 2019 03:34:14 GMT  
-		Size: 5.1 MB (5057200 bytes)  
+	-	`sha256:e3cf7dbbd547e355bca37b48982c09f80a3bc76dc37ed05b671297ffbe3d2c00`  
+		Last Modified: Wed, 27 Mar 2019 00:15:54 GMT  
+		Size: 5.1 MB (5057184 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:019ce9c7359a1f8f727fc9d95204787b9eee1863dd5a474492e603eb1fa147c1`  
-		Last Modified: Tue, 05 Mar 2019 03:34:13 GMT  
-		Size: 112.0 B  
+	-	`sha256:dc233bb2f30939e2946ee7c27091ade0851389f74ae5acbe61d34e8598d57dfd`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:766651adeb0a7894942f86b277258b49e46d763701f8d805ee05daa3965696ca`  
-		Last Modified: Tue, 05 Mar 2019 03:34:12 GMT  
-		Size: 2.0 KB (1993 bytes)  
+	-	`sha256:ef26a67bf04ef4ca60ac596d0b54331fa74f07f971b6a5b1dd24c3d81bff9a23`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
+		Size: 2.0 KB (1997 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e038b477eb03bc7c2e3d6670bbe06c8a0f7d0d23628daaa1267287e36796c6b`  
-		Last Modified: Tue, 05 Mar 2019 03:34:12 GMT  
+	-	`sha256:55ecb543777ef419362b20e68984720bbfe7cf539dbfa42cd211bfbc6a2118f5`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
 		Size: 230.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea9c514fbe7d4ee39eb8ab136e0622531c5c67326935f34fb892c8d7a532fd19`  
-		Last Modified: Tue, 05 Mar 2019 03:34:32 GMT  
-		Size: 114.7 MB (114748151 bytes)  
+	-	`sha256:35f8c6ed1ba654b006d722ed3ef26db779f1951a2a13a9827150b7e271cf78f7`  
+		Last Modified: Wed, 27 Mar 2019 00:16:12 GMT  
+		Size: 114.7 MB (114748173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84ea5e37d9c5349addfad3d236f57fcc829b2aedbc8915276f921b36a2f92328`  
-		Last Modified: Tue, 05 Mar 2019 03:34:12 GMT  
-		Size: 138.0 B  
+	-	`sha256:2a39da2ca07c372fea5903a0f09b27b36090b02feb765f8573003364f560616b`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28ba4727e25775f4d693c3014b408025f30afde706c88a0cdc174b50cdf41544`  
-		Last Modified: Tue, 05 Mar 2019 03:34:12 GMT  
-		Size: 3.8 KB (3803 bytes)  
+	-	`sha256:d72b68852da8ce068724f9bac707c0909e97b60d1f40fd4b7fe2491ecf2ea5eb`  
+		Last Modified: Wed, 27 Mar 2019 00:15:53 GMT  
+		Size: 3.8 KB (3800 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3-windowsservercore`
