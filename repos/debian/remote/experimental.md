@@ -1,7 +1,7 @@
 ## `debian:experimental`
 
 ```console
-$ docker pull debian@sha256:f1b2ac2e1dae74ae246e7f6eb5eb93e9683e8add4ea6b4de45dc6559f8ac392f
+$ docker pull debian@sha256:36cc25ce9d0453d964530fd256a545067c2add09e4a3d92a0fc5c49d10ed7827
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -145,33 +145,33 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 ### `debian:experimental` - linux; 386
 
 ```console
-$ docker pull debian@sha256:d8c2fbed0e0686c7e197f312b4ac617f7e9396e8f063c7bfedb1c43cc4782c0b
+$ docker pull debian@sha256:9c7ab8aed5e236e5bf2da9ea26637020ea1d18b5410fa0653d35ad9dc2c0184f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.0 MB (50983654 bytes)**  
+-	Total Size: **51.0 MB (51036510 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2d2d822bbbf849c238a6ed44ca287c12064204d136ede091b2ad8bc91ae8b33`
+-	Image ID: `sha256:ab2611781a1acfde9ad7058c5d2fac1c8fe799b18973af544888e2783f24e0ec`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 05 Mar 2019 11:47:05 GMT
-ADD file:efa3d80e8c1ff9a779fe739354b40cde7044b4b8409deb2afc5e2bd16bba21cc in / 
-# Tue, 05 Mar 2019 11:47:06 GMT
+# Wed, 27 Mar 2019 10:44:29 GMT
+ADD file:555e0f3110cbbedb20d91ff8037a698276c44a123e10a429533c24eb7b2a7969 in / 
+# Wed, 27 Mar 2019 10:44:30 GMT
 CMD ["bash"]
-# Tue, 05 Mar 2019 11:48:48 GMT
+# Wed, 27 Mar 2019 10:44:52 GMT
 RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources.list.d/experimental.list
 ```
 
 -	Layers:
-	-	`sha256:29696965512ede425bbb7a388292e0648ef87e66030057242259b5bf6331d61b`  
-		Last Modified: Tue, 05 Mar 2019 11:56:18 GMT  
-		Size: 51.0 MB (50983432 bytes)  
+	-	`sha256:83fe35c15556fda7c586e6d8f4c6c3d0d0effffb6a479b594bd2f341a6e3e79a`  
+		Last Modified: Wed, 27 Mar 2019 10:50:21 GMT  
+		Size: 51.0 MB (51036291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83de10b90e157e179da028cae3b7ae130739dc616c97b1046396af1ebaecc0a5`  
-		Last Modified: Tue, 05 Mar 2019 11:57:23 GMT  
-		Size: 222.0 B  
+	-	`sha256:51985212e2fc1244788103deefbfabcaae311e2831b76d2cfa0009ddc6c96888`  
+		Last Modified: Wed, 27 Mar 2019 10:50:37 GMT  
+		Size: 219.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:experimental` - linux; ppc64le
