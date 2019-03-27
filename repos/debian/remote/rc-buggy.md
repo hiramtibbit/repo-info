@@ -1,7 +1,7 @@
 ## `debian:rc-buggy`
 
 ```console
-$ docker pull debian@sha256:483b06cf06ca48d0767c0f50de6a271bfbd57764e1ffda4c172a24dadea579fd
+$ docker pull debian@sha256:b1b8137d66269ad69774ec8a2c93958229215f98da16563aaccee4436800f92a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -49,32 +49,32 @@ RUN echo 'deb http://deb.debian.org/debian rc-buggy main' > /etc/apt/sources.lis
 ### `debian:rc-buggy` - linux; arm variant v5
 
 ```console
-$ docker pull debian@sha256:6d7e6bf05f04c623c1d8e4d30ca1ac3698c944d424a9ea72a0cb2d3fbe673c2f
+$ docker pull debian@sha256:ff5392bcb96b5c5e92838acc445b062bc48e6173e8a1d50daa786b29662a8f55
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.9 MB (47927316 bytes)**  
+-	Total Size: **48.0 MB (48001850 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:570d679b09c4f2fc16671b52e4e8e99fe5a541e9016beac8d39445b9f944c3da`
+-	Image ID: `sha256:6dc75d322032770febc67734e8effec5275518913fdc395644abd71cb019b0e5`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 05 Mar 2019 09:52:57 GMT
-ADD file:408a135a9a2b4df4beece5b2de3301cfa0e45a7a062eb63e9a0e7e9192bd5f99 in / 
-# Tue, 05 Mar 2019 09:52:58 GMT
+# Wed, 27 Mar 2019 08:52:02 GMT
+ADD file:ac5e335fe2fd6af8593e884cf6e7ba86f073712dd654c8b8aa8fc7c0075195b0 in / 
+# Wed, 27 Mar 2019 08:52:03 GMT
 CMD ["bash"]
-# Tue, 05 Mar 2019 09:57:53 GMT
+# Wed, 27 Mar 2019 08:55:31 GMT
 RUN echo 'deb http://deb.debian.org/debian rc-buggy main' > /etc/apt/sources.list.d/experimental.list
 ```
 
 -	Layers:
-	-	`sha256:3f835cac0c7da48ab45ed34e7fa9323dc275f7e955809e476af719eca0844a82`  
-		Last Modified: Tue, 05 Mar 2019 10:01:18 GMT  
-		Size: 47.9 MB (47927091 bytes)  
+	-	`sha256:bfd21f8be5c8af18db3021973af86c6d365dbccbad50938d0d5755ee3ec740c6`  
+		Last Modified: Wed, 27 Mar 2019 08:58:12 GMT  
+		Size: 48.0 MB (48001625 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b20f8d8cf806e5023fd8a5d790749f52e8393785c085367ef719a00db13940b4`  
-		Last Modified: Tue, 05 Mar 2019 10:04:36 GMT  
+	-	`sha256:563cd189a3bffe4dc8d1367b0b513b0ec5191d85f176926bd2a9c1f5a7d85e21`  
+		Last Modified: Wed, 27 Mar 2019 09:00:54 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
