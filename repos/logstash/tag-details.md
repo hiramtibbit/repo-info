@@ -13,7 +13,7 @@
 ## `logstash:5`
 
 ```console
-$ docker pull logstash@sha256:f6952f86363fd5331b5dd9bc7234772ec6baa15805b2de24c4df14586969c5bb
+$ docker pull logstash@sha256:e517be1d2bbf3c029e3542e169f65d39d21a08745881537a55645e9a54c8755f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -23,140 +23,140 @@ $ docker pull logstash@sha256:f6952f86363fd5331b5dd9bc7234772ec6baa15805b2de24c4
 ### `logstash:5` - linux; amd64
 
 ```console
-$ docker pull logstash@sha256:b2ab4fec3cb630de6c4d2c140fd4eece4e0004e6838902fa457989e2453d7c12
+$ docker pull logstash@sha256:d4c4afe83272521fbb6ba820b59420646c81fa0b6cad653efbd0e1e2e50bcfd9
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.6 MB (298577298 bytes)**  
+-	Total Size: **298.6 MB (298627673 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:98864069d83e3584f9ce6e063d92bedaff42ca19aae8633823b47289b04af4ac`
+-	Image ID: `sha256:113427bd7a2af51c80b62edc58f09c48db9a7b410b1ed503d9ee0b234968e4ed`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
 ```dockerfile
-# Mon, 04 Mar 2019 23:22:10 GMT
-ADD file:e4bdc12117ee95eaa94b89f258164dd42f9828c7c5c4332a608707187ccb470a in / 
-# Mon, 04 Mar 2019 23:22:10 GMT
+# Tue, 26 Mar 2019 22:41:12 GMT
+ADD file:843b8a2a9df1a07305ff3d02484d4be7f769057c6d2e311d52d59e00deb917c6 in / 
+# Tue, 26 Mar 2019 22:41:12 GMT
 CMD ["bash"]
-# Tue, 05 Mar 2019 02:35:21 GMT
+# Tue, 26 Mar 2019 23:26:30 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 02:35:27 GMT
+# Tue, 26 Mar 2019 23:26:40 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 05 Mar 2019 04:01:49 GMT
+# Wed, 27 Mar 2019 00:46:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 04:04:52 GMT
+# Wed, 27 Mar 2019 00:48:57 GMT
 ENV LANG=C.UTF-8
-# Tue, 05 Mar 2019 04:04:52 GMT
+# Wed, 27 Mar 2019 00:48:57 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 05 Mar 2019 04:04:53 GMT
+# Wed, 27 Mar 2019 00:48:58 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Tue, 05 Mar 2019 04:04:53 GMT
+# Wed, 27 Mar 2019 00:48:58 GMT
 ENV JAVA_HOME=/docker-java-home/jre
-# Tue, 05 Mar 2019 04:04:53 GMT
-ENV JAVA_VERSION=8u181
-# Tue, 05 Mar 2019 04:04:54 GMT
-ENV JAVA_DEBIAN_VERSION=8u181-b13-2~deb9u1
-# Tue, 05 Mar 2019 04:05:28 GMT
+# Wed, 27 Mar 2019 23:27:26 GMT
+ENV JAVA_VERSION=8u212
+# Wed, 27 Mar 2019 23:27:27 GMT
+ENV JAVA_DEBIAN_VERSION=8u212-b01-1~deb9u1
+# Wed, 27 Mar 2019 23:28:10 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Tue, 05 Mar 2019 14:29:23 GMT
+# Thu, 28 Mar 2019 00:23:08 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		apt-transport-https 		libzmq5 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 14:29:25 GMT
+# Thu, 28 Mar 2019 00:23:09 GMT
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
-# Tue, 05 Mar 2019 14:29:26 GMT
+# Thu, 28 Mar 2019 00:23:09 GMT
 ENV GOSU_VERSION=1.10
-# Tue, 05 Mar 2019 14:29:30 GMT
+# Thu, 28 Mar 2019 00:23:13 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Tue, 05 Mar 2019 14:29:35 GMT
+# Thu, 28 Mar 2019 00:23:16 GMT
 RUN set -ex; 	key='46095ACC8548582C1A2699A9D27D666CD88E42B4'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/elastic.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 05 Mar 2019 14:29:37 GMT
+# Thu, 28 Mar 2019 00:23:17 GMT
 RUN echo 'deb https://artifacts.elastic.co/packages/5.x/apt stable main' > /etc/apt/sources.list.d/logstash.list
-# Wed, 20 Mar 2019 00:20:41 GMT
+# Thu, 28 Mar 2019 00:23:17 GMT
 ENV LOGSTASH_VERSION=5.6.16
-# Wed, 20 Mar 2019 00:20:41 GMT
+# Thu, 28 Mar 2019 00:23:17 GMT
 ENV LOGSTASH_DEB_VERSION=1:5.6.16-1
-# Wed, 20 Mar 2019 00:21:02 GMT
+# Thu, 28 Mar 2019 00:23:44 GMT
 RUN set -ex; 	case "$LOGSTASH_VERSION" in 		2.*) apt-get update -o 'APT::Hashes::SHA1::Weak=yes' ;; 		*) apt-get update ;; 	esac; 	apt-get install -y --no-install-recommends "logstash=$LOGSTASH_DEB_VERSION"; 	rm -rf /var/lib/apt/lists/*
-# Wed, 20 Mar 2019 00:21:03 GMT
+# Thu, 28 Mar 2019 00:23:45 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 20 Mar 2019 00:21:04 GMT
+# Thu, 28 Mar 2019 00:23:45 GMT
 ENV LS_SETTINGS_DIR=/etc/logstash
-# Wed, 20 Mar 2019 00:21:05 GMT
+# Thu, 28 Mar 2019 00:23:46 GMT
 RUN set -ex; 	if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^path\.config:!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi; 	if [ -f "$LS_SETTINGS_DIR/log4j2.properties" ]; then 		cp "$LS_SETTINGS_DIR/log4j2.properties" "$LS_SETTINGS_DIR/log4j2.properties.dist"; 		truncate --size=0 "$LS_SETTINGS_DIR/log4j2.properties"; 	fi
-# Wed, 20 Mar 2019 00:21:05 GMT
+# Thu, 28 Mar 2019 00:23:47 GMT
 COPY file:ff25c1f2500609bbcb68df8cd6b717da6b108b25b64cd5da434191796325c5c8 in / 
-# Wed, 20 Mar 2019 00:21:05 GMT
+# Thu, 28 Mar 2019 00:23:47 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 20 Mar 2019 00:21:06 GMT
+# Thu, 28 Mar 2019 00:23:47 GMT
 CMD ["-e" ""]
 ```
 
 -	Layers:
-	-	`sha256:22dbe790f71562dfd3d49406b1dfd1e85e50f3dd7cb2e97b3918376ca39cae4e`  
-		Last Modified: Mon, 04 Mar 2019 23:26:18 GMT  
-		Size: 45.3 MB (45342528 bytes)  
+	-	`sha256:e79bb959ec00faf01da52437df4fad4537ec669f60455a38ad583ec2b8f00498`  
+		Last Modified: Tue, 26 Mar 2019 22:44:26 GMT  
+		Size: 45.3 MB (45342599 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0250231711a047a6e54e7107d7a3bfb0afd807f5f408d00be0d407c5b8395219`  
-		Last Modified: Tue, 05 Mar 2019 02:43:42 GMT  
-		Size: 10.8 MB (10781993 bytes)  
+	-	`sha256:d4b7902036fe0cefdfe9ccf0404fe13322ecbd552f132be73d3e840f95538838`  
+		Last Modified: Tue, 26 Mar 2019 23:32:09 GMT  
+		Size: 10.8 MB (10781908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6fba9447437b5ee1da9b33b2e2d18add55a33d0b763075202e17cad7efd3ff8f`  
-		Last Modified: Tue, 05 Mar 2019 02:43:41 GMT  
-		Size: 4.3 MB (4340113 bytes)  
+	-	`sha256:1b2a72d4e03052566e99130108071fc4eca4942c62923e3e5cf19666a23088ef`  
+		Last Modified: Tue, 26 Mar 2019 23:32:07 GMT  
+		Size: 4.3 MB (4340149 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4afad9c4aba6cc6f5b4e85b14e0a16c4807fdcc8a5e4c43a532d6aa06f5d5664`  
-		Last Modified: Tue, 05 Mar 2019 04:25:25 GMT  
-		Size: 852.9 KB (852890 bytes)  
+	-	`sha256:de423484a9466ec116a34ba24e068e72e45d6c875c82f7eb63375577b4b51236`  
+		Last Modified: Wed, 27 Mar 2019 01:08:33 GMT  
+		Size: 852.9 KB (852864 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12fce9923c9d837e515d3de06b77d97a5a0c4796a35a97cf9a6768641ea25a8c`  
-		Last Modified: Tue, 05 Mar 2019 04:27:32 GMT  
-		Size: 248.0 B  
+	-	`sha256:ceaac3b844f7ebdc4f2bac1b66847dee29481bfe3f6b67683491b22383c1928d`  
+		Last Modified: Wed, 27 Mar 2019 23:46:39 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0dd81083d77ea06270e287c0fb5be2ab4daf9003518745fbdc4f2e55d2635db0`  
-		Last Modified: Tue, 05 Mar 2019 04:27:32 GMT  
+	-	`sha256:88f01b722a52db8d5c67facd263893c5199b89fbf56505dd2051434721fbd302`  
+		Last Modified: Wed, 27 Mar 2019 23:46:39 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c2afc6ff72dd12b78d094cdbc7e04f6285e599f8a03d6cc1e935aee96b176c1`  
-		Last Modified: Tue, 05 Mar 2019 04:27:58 GMT  
-		Size: 122.1 MB (122122910 bytes)  
+	-	`sha256:c23be56a9ac10e0c4c248ce8cdf6ac08504088243c6a3878ac4681a7289c611e`  
+		Last Modified: Wed, 27 Mar 2019 23:47:05 GMT  
+		Size: 122.2 MB (122173052 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b4ec06f94305a3311bcfff4f6b56d7f941634343c07e9dfc31151a5a8ba14d0`  
-		Last Modified: Tue, 05 Mar 2019 14:30:18 GMT  
-		Size: 1.6 MB (1572585 bytes)  
+	-	`sha256:2e389b8b02070cafc84d8aed4fe459d2e6697d473044cf2c6d10858f73e8b7b5`  
+		Last Modified: Thu, 28 Mar 2019 00:24:29 GMT  
+		Size: 1.6 MB (1572643 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf03508a7e0bbe1396b828dc5fab7a46d9abf68ebcfe633792ab63e4e6dae822`  
-		Last Modified: Tue, 05 Mar 2019 14:30:17 GMT  
-		Size: 184.0 B  
+	-	`sha256:151254a698bbc099591c5f23e10f76b319079575ce48fb84142e90783591bed9`  
+		Last Modified: Thu, 28 Mar 2019 00:24:28 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa89ca3e1e2def2276b9a174e001341b88b08c8c209bc0cf3fe2af7124b88712`  
-		Last Modified: Tue, 05 Mar 2019 14:30:17 GMT  
+	-	`sha256:2384f855f47c39cf855faac21ace85d15376b635a410e35310e40ae807332639`  
+		Last Modified: Thu, 28 Mar 2019 00:24:29 GMT  
 		Size: 500.9 KB (500915 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1009560d1e9f60f815f8ecd1a94983383dd98daeac7c9873444bdebc15345be1`  
-		Last Modified: Tue, 05 Mar 2019 14:30:16 GMT  
+	-	`sha256:aa3d29504acf5bacc264c672e08ac6cdd21d247cd0e858e0418f7c56aa4ed8ff`  
+		Last Modified: Thu, 28 Mar 2019 00:24:27 GMT  
 		Size: 1.4 KB (1445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9afb19d9afdee7d408ace09efb0f0fbfb44db3ebd6fa2c386511efcefc1c7bc8`  
-		Last Modified: Tue, 05 Mar 2019 14:30:16 GMT  
-		Size: 232.0 B  
+	-	`sha256:d2f1a9a62a686251184a66604058799b1a18301c445cb908f2b4f93fa7b94863`  
+		Last Modified: Thu, 28 Mar 2019 00:24:27 GMT  
+		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61cdb8b405195346491e25892895ceae2547b430048c4d06cee9f57db2ec57d8`  
-		Last Modified: Wed, 20 Mar 2019 00:21:49 GMT  
-		Size: 113.1 MB (113058158 bytes)  
+	-	`sha256:b29b86bf6c08025678ffe5af63528416cc22fbba15e1f71a2dde1b525c850f1a`  
+		Last Modified: Thu, 28 Mar 2019 00:24:54 GMT  
+		Size: 113.1 MB (113058340 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b3909e4645d4a06478e07f472759517fa412c090a875090dbd9a4d54e574ce3`  
-		Last Modified: Wed, 20 Mar 2019 00:21:34 GMT  
-		Size: 2.7 KB (2662 bytes)  
+	-	`sha256:908e9f6b26374fe433215e9eec60957775be43433f1ef3f1dc4e395106d26d0b`  
+		Last Modified: Thu, 28 Mar 2019 00:24:28 GMT  
+		Size: 2.7 KB (2660 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:148a7b26d2f8b6029d0617627fb49daa537c6291eed24fa6c82629c53c75ed3e`  
-		Last Modified: Wed, 20 Mar 2019 00:21:33 GMT  
-		Size: 304.0 B  
+	-	`sha256:58e947206b51ff5f70a8cab3e1709abcf83825b9c517c9243aec067e19efaf8b`  
+		Last Modified: Thu, 28 Mar 2019 00:24:28 GMT  
+		Size: 302.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `logstash:5.6`
 
 ```console
-$ docker pull logstash@sha256:f6952f86363fd5331b5dd9bc7234772ec6baa15805b2de24c4df14586969c5bb
+$ docker pull logstash@sha256:e517be1d2bbf3c029e3542e169f65d39d21a08745881537a55645e9a54c8755f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -166,140 +166,140 @@ $ docker pull logstash@sha256:f6952f86363fd5331b5dd9bc7234772ec6baa15805b2de24c4
 ### `logstash:5.6` - linux; amd64
 
 ```console
-$ docker pull logstash@sha256:b2ab4fec3cb630de6c4d2c140fd4eece4e0004e6838902fa457989e2453d7c12
+$ docker pull logstash@sha256:d4c4afe83272521fbb6ba820b59420646c81fa0b6cad653efbd0e1e2e50bcfd9
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.6 MB (298577298 bytes)**  
+-	Total Size: **298.6 MB (298627673 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:98864069d83e3584f9ce6e063d92bedaff42ca19aae8633823b47289b04af4ac`
+-	Image ID: `sha256:113427bd7a2af51c80b62edc58f09c48db9a7b410b1ed503d9ee0b234968e4ed`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
 ```dockerfile
-# Mon, 04 Mar 2019 23:22:10 GMT
-ADD file:e4bdc12117ee95eaa94b89f258164dd42f9828c7c5c4332a608707187ccb470a in / 
-# Mon, 04 Mar 2019 23:22:10 GMT
+# Tue, 26 Mar 2019 22:41:12 GMT
+ADD file:843b8a2a9df1a07305ff3d02484d4be7f769057c6d2e311d52d59e00deb917c6 in / 
+# Tue, 26 Mar 2019 22:41:12 GMT
 CMD ["bash"]
-# Tue, 05 Mar 2019 02:35:21 GMT
+# Tue, 26 Mar 2019 23:26:30 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 02:35:27 GMT
+# Tue, 26 Mar 2019 23:26:40 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 05 Mar 2019 04:01:49 GMT
+# Wed, 27 Mar 2019 00:46:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 04:04:52 GMT
+# Wed, 27 Mar 2019 00:48:57 GMT
 ENV LANG=C.UTF-8
-# Tue, 05 Mar 2019 04:04:52 GMT
+# Wed, 27 Mar 2019 00:48:57 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 05 Mar 2019 04:04:53 GMT
+# Wed, 27 Mar 2019 00:48:58 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Tue, 05 Mar 2019 04:04:53 GMT
+# Wed, 27 Mar 2019 00:48:58 GMT
 ENV JAVA_HOME=/docker-java-home/jre
-# Tue, 05 Mar 2019 04:04:53 GMT
-ENV JAVA_VERSION=8u181
-# Tue, 05 Mar 2019 04:04:54 GMT
-ENV JAVA_DEBIAN_VERSION=8u181-b13-2~deb9u1
-# Tue, 05 Mar 2019 04:05:28 GMT
+# Wed, 27 Mar 2019 23:27:26 GMT
+ENV JAVA_VERSION=8u212
+# Wed, 27 Mar 2019 23:27:27 GMT
+ENV JAVA_DEBIAN_VERSION=8u212-b01-1~deb9u1
+# Wed, 27 Mar 2019 23:28:10 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Tue, 05 Mar 2019 14:29:23 GMT
+# Thu, 28 Mar 2019 00:23:08 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		apt-transport-https 		libzmq5 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 14:29:25 GMT
+# Thu, 28 Mar 2019 00:23:09 GMT
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
-# Tue, 05 Mar 2019 14:29:26 GMT
+# Thu, 28 Mar 2019 00:23:09 GMT
 ENV GOSU_VERSION=1.10
-# Tue, 05 Mar 2019 14:29:30 GMT
+# Thu, 28 Mar 2019 00:23:13 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Tue, 05 Mar 2019 14:29:35 GMT
+# Thu, 28 Mar 2019 00:23:16 GMT
 RUN set -ex; 	key='46095ACC8548582C1A2699A9D27D666CD88E42B4'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/elastic.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 05 Mar 2019 14:29:37 GMT
+# Thu, 28 Mar 2019 00:23:17 GMT
 RUN echo 'deb https://artifacts.elastic.co/packages/5.x/apt stable main' > /etc/apt/sources.list.d/logstash.list
-# Wed, 20 Mar 2019 00:20:41 GMT
+# Thu, 28 Mar 2019 00:23:17 GMT
 ENV LOGSTASH_VERSION=5.6.16
-# Wed, 20 Mar 2019 00:20:41 GMT
+# Thu, 28 Mar 2019 00:23:17 GMT
 ENV LOGSTASH_DEB_VERSION=1:5.6.16-1
-# Wed, 20 Mar 2019 00:21:02 GMT
+# Thu, 28 Mar 2019 00:23:44 GMT
 RUN set -ex; 	case "$LOGSTASH_VERSION" in 		2.*) apt-get update -o 'APT::Hashes::SHA1::Weak=yes' ;; 		*) apt-get update ;; 	esac; 	apt-get install -y --no-install-recommends "logstash=$LOGSTASH_DEB_VERSION"; 	rm -rf /var/lib/apt/lists/*
-# Wed, 20 Mar 2019 00:21:03 GMT
+# Thu, 28 Mar 2019 00:23:45 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 20 Mar 2019 00:21:04 GMT
+# Thu, 28 Mar 2019 00:23:45 GMT
 ENV LS_SETTINGS_DIR=/etc/logstash
-# Wed, 20 Mar 2019 00:21:05 GMT
+# Thu, 28 Mar 2019 00:23:46 GMT
 RUN set -ex; 	if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^path\.config:!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi; 	if [ -f "$LS_SETTINGS_DIR/log4j2.properties" ]; then 		cp "$LS_SETTINGS_DIR/log4j2.properties" "$LS_SETTINGS_DIR/log4j2.properties.dist"; 		truncate --size=0 "$LS_SETTINGS_DIR/log4j2.properties"; 	fi
-# Wed, 20 Mar 2019 00:21:05 GMT
+# Thu, 28 Mar 2019 00:23:47 GMT
 COPY file:ff25c1f2500609bbcb68df8cd6b717da6b108b25b64cd5da434191796325c5c8 in / 
-# Wed, 20 Mar 2019 00:21:05 GMT
+# Thu, 28 Mar 2019 00:23:47 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 20 Mar 2019 00:21:06 GMT
+# Thu, 28 Mar 2019 00:23:47 GMT
 CMD ["-e" ""]
 ```
 
 -	Layers:
-	-	`sha256:22dbe790f71562dfd3d49406b1dfd1e85e50f3dd7cb2e97b3918376ca39cae4e`  
-		Last Modified: Mon, 04 Mar 2019 23:26:18 GMT  
-		Size: 45.3 MB (45342528 bytes)  
+	-	`sha256:e79bb959ec00faf01da52437df4fad4537ec669f60455a38ad583ec2b8f00498`  
+		Last Modified: Tue, 26 Mar 2019 22:44:26 GMT  
+		Size: 45.3 MB (45342599 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0250231711a047a6e54e7107d7a3bfb0afd807f5f408d00be0d407c5b8395219`  
-		Last Modified: Tue, 05 Mar 2019 02:43:42 GMT  
-		Size: 10.8 MB (10781993 bytes)  
+	-	`sha256:d4b7902036fe0cefdfe9ccf0404fe13322ecbd552f132be73d3e840f95538838`  
+		Last Modified: Tue, 26 Mar 2019 23:32:09 GMT  
+		Size: 10.8 MB (10781908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6fba9447437b5ee1da9b33b2e2d18add55a33d0b763075202e17cad7efd3ff8f`  
-		Last Modified: Tue, 05 Mar 2019 02:43:41 GMT  
-		Size: 4.3 MB (4340113 bytes)  
+	-	`sha256:1b2a72d4e03052566e99130108071fc4eca4942c62923e3e5cf19666a23088ef`  
+		Last Modified: Tue, 26 Mar 2019 23:32:07 GMT  
+		Size: 4.3 MB (4340149 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4afad9c4aba6cc6f5b4e85b14e0a16c4807fdcc8a5e4c43a532d6aa06f5d5664`  
-		Last Modified: Tue, 05 Mar 2019 04:25:25 GMT  
-		Size: 852.9 KB (852890 bytes)  
+	-	`sha256:de423484a9466ec116a34ba24e068e72e45d6c875c82f7eb63375577b4b51236`  
+		Last Modified: Wed, 27 Mar 2019 01:08:33 GMT  
+		Size: 852.9 KB (852864 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12fce9923c9d837e515d3de06b77d97a5a0c4796a35a97cf9a6768641ea25a8c`  
-		Last Modified: Tue, 05 Mar 2019 04:27:32 GMT  
-		Size: 248.0 B  
+	-	`sha256:ceaac3b844f7ebdc4f2bac1b66847dee29481bfe3f6b67683491b22383c1928d`  
+		Last Modified: Wed, 27 Mar 2019 23:46:39 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0dd81083d77ea06270e287c0fb5be2ab4daf9003518745fbdc4f2e55d2635db0`  
-		Last Modified: Tue, 05 Mar 2019 04:27:32 GMT  
+	-	`sha256:88f01b722a52db8d5c67facd263893c5199b89fbf56505dd2051434721fbd302`  
+		Last Modified: Wed, 27 Mar 2019 23:46:39 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c2afc6ff72dd12b78d094cdbc7e04f6285e599f8a03d6cc1e935aee96b176c1`  
-		Last Modified: Tue, 05 Mar 2019 04:27:58 GMT  
-		Size: 122.1 MB (122122910 bytes)  
+	-	`sha256:c23be56a9ac10e0c4c248ce8cdf6ac08504088243c6a3878ac4681a7289c611e`  
+		Last Modified: Wed, 27 Mar 2019 23:47:05 GMT  
+		Size: 122.2 MB (122173052 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b4ec06f94305a3311bcfff4f6b56d7f941634343c07e9dfc31151a5a8ba14d0`  
-		Last Modified: Tue, 05 Mar 2019 14:30:18 GMT  
-		Size: 1.6 MB (1572585 bytes)  
+	-	`sha256:2e389b8b02070cafc84d8aed4fe459d2e6697d473044cf2c6d10858f73e8b7b5`  
+		Last Modified: Thu, 28 Mar 2019 00:24:29 GMT  
+		Size: 1.6 MB (1572643 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf03508a7e0bbe1396b828dc5fab7a46d9abf68ebcfe633792ab63e4e6dae822`  
-		Last Modified: Tue, 05 Mar 2019 14:30:17 GMT  
-		Size: 184.0 B  
+	-	`sha256:151254a698bbc099591c5f23e10f76b319079575ce48fb84142e90783591bed9`  
+		Last Modified: Thu, 28 Mar 2019 00:24:28 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa89ca3e1e2def2276b9a174e001341b88b08c8c209bc0cf3fe2af7124b88712`  
-		Last Modified: Tue, 05 Mar 2019 14:30:17 GMT  
+	-	`sha256:2384f855f47c39cf855faac21ace85d15376b635a410e35310e40ae807332639`  
+		Last Modified: Thu, 28 Mar 2019 00:24:29 GMT  
 		Size: 500.9 KB (500915 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1009560d1e9f60f815f8ecd1a94983383dd98daeac7c9873444bdebc15345be1`  
-		Last Modified: Tue, 05 Mar 2019 14:30:16 GMT  
+	-	`sha256:aa3d29504acf5bacc264c672e08ac6cdd21d247cd0e858e0418f7c56aa4ed8ff`  
+		Last Modified: Thu, 28 Mar 2019 00:24:27 GMT  
 		Size: 1.4 KB (1445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9afb19d9afdee7d408ace09efb0f0fbfb44db3ebd6fa2c386511efcefc1c7bc8`  
-		Last Modified: Tue, 05 Mar 2019 14:30:16 GMT  
-		Size: 232.0 B  
+	-	`sha256:d2f1a9a62a686251184a66604058799b1a18301c445cb908f2b4f93fa7b94863`  
+		Last Modified: Thu, 28 Mar 2019 00:24:27 GMT  
+		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61cdb8b405195346491e25892895ceae2547b430048c4d06cee9f57db2ec57d8`  
-		Last Modified: Wed, 20 Mar 2019 00:21:49 GMT  
-		Size: 113.1 MB (113058158 bytes)  
+	-	`sha256:b29b86bf6c08025678ffe5af63528416cc22fbba15e1f71a2dde1b525c850f1a`  
+		Last Modified: Thu, 28 Mar 2019 00:24:54 GMT  
+		Size: 113.1 MB (113058340 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b3909e4645d4a06478e07f472759517fa412c090a875090dbd9a4d54e574ce3`  
-		Last Modified: Wed, 20 Mar 2019 00:21:34 GMT  
-		Size: 2.7 KB (2662 bytes)  
+	-	`sha256:908e9f6b26374fe433215e9eec60957775be43433f1ef3f1dc4e395106d26d0b`  
+		Last Modified: Thu, 28 Mar 2019 00:24:28 GMT  
+		Size: 2.7 KB (2660 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:148a7b26d2f8b6029d0617627fb49daa537c6291eed24fa6c82629c53c75ed3e`  
-		Last Modified: Wed, 20 Mar 2019 00:21:33 GMT  
-		Size: 304.0 B  
+	-	`sha256:58e947206b51ff5f70a8cab3e1709abcf83825b9c517c9243aec067e19efaf8b`  
+		Last Modified: Thu, 28 Mar 2019 00:24:28 GMT  
+		Size: 302.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `logstash:5.6.16`
 
 ```console
-$ docker pull logstash@sha256:f6952f86363fd5331b5dd9bc7234772ec6baa15805b2de24c4df14586969c5bb
+$ docker pull logstash@sha256:e517be1d2bbf3c029e3542e169f65d39d21a08745881537a55645e9a54c8755f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -309,140 +309,140 @@ $ docker pull logstash@sha256:f6952f86363fd5331b5dd9bc7234772ec6baa15805b2de24c4
 ### `logstash:5.6.16` - linux; amd64
 
 ```console
-$ docker pull logstash@sha256:b2ab4fec3cb630de6c4d2c140fd4eece4e0004e6838902fa457989e2453d7c12
+$ docker pull logstash@sha256:d4c4afe83272521fbb6ba820b59420646c81fa0b6cad653efbd0e1e2e50bcfd9
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.6 MB (298577298 bytes)**  
+-	Total Size: **298.6 MB (298627673 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:98864069d83e3584f9ce6e063d92bedaff42ca19aae8633823b47289b04af4ac`
+-	Image ID: `sha256:113427bd7a2af51c80b62edc58f09c48db9a7b410b1ed503d9ee0b234968e4ed`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
 ```dockerfile
-# Mon, 04 Mar 2019 23:22:10 GMT
-ADD file:e4bdc12117ee95eaa94b89f258164dd42f9828c7c5c4332a608707187ccb470a in / 
-# Mon, 04 Mar 2019 23:22:10 GMT
+# Tue, 26 Mar 2019 22:41:12 GMT
+ADD file:843b8a2a9df1a07305ff3d02484d4be7f769057c6d2e311d52d59e00deb917c6 in / 
+# Tue, 26 Mar 2019 22:41:12 GMT
 CMD ["bash"]
-# Tue, 05 Mar 2019 02:35:21 GMT
+# Tue, 26 Mar 2019 23:26:30 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 02:35:27 GMT
+# Tue, 26 Mar 2019 23:26:40 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 05 Mar 2019 04:01:49 GMT
+# Wed, 27 Mar 2019 00:46:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 04:04:52 GMT
+# Wed, 27 Mar 2019 00:48:57 GMT
 ENV LANG=C.UTF-8
-# Tue, 05 Mar 2019 04:04:52 GMT
+# Wed, 27 Mar 2019 00:48:57 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 05 Mar 2019 04:04:53 GMT
+# Wed, 27 Mar 2019 00:48:58 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Tue, 05 Mar 2019 04:04:53 GMT
+# Wed, 27 Mar 2019 00:48:58 GMT
 ENV JAVA_HOME=/docker-java-home/jre
-# Tue, 05 Mar 2019 04:04:53 GMT
-ENV JAVA_VERSION=8u181
-# Tue, 05 Mar 2019 04:04:54 GMT
-ENV JAVA_DEBIAN_VERSION=8u181-b13-2~deb9u1
-# Tue, 05 Mar 2019 04:05:28 GMT
+# Wed, 27 Mar 2019 23:27:26 GMT
+ENV JAVA_VERSION=8u212
+# Wed, 27 Mar 2019 23:27:27 GMT
+ENV JAVA_DEBIAN_VERSION=8u212-b01-1~deb9u1
+# Wed, 27 Mar 2019 23:28:10 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Tue, 05 Mar 2019 14:29:23 GMT
+# Thu, 28 Mar 2019 00:23:08 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		apt-transport-https 		libzmq5 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 14:29:25 GMT
+# Thu, 28 Mar 2019 00:23:09 GMT
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
-# Tue, 05 Mar 2019 14:29:26 GMT
+# Thu, 28 Mar 2019 00:23:09 GMT
 ENV GOSU_VERSION=1.10
-# Tue, 05 Mar 2019 14:29:30 GMT
+# Thu, 28 Mar 2019 00:23:13 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Tue, 05 Mar 2019 14:29:35 GMT
+# Thu, 28 Mar 2019 00:23:16 GMT
 RUN set -ex; 	key='46095ACC8548582C1A2699A9D27D666CD88E42B4'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/elastic.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 05 Mar 2019 14:29:37 GMT
+# Thu, 28 Mar 2019 00:23:17 GMT
 RUN echo 'deb https://artifacts.elastic.co/packages/5.x/apt stable main' > /etc/apt/sources.list.d/logstash.list
-# Wed, 20 Mar 2019 00:20:41 GMT
+# Thu, 28 Mar 2019 00:23:17 GMT
 ENV LOGSTASH_VERSION=5.6.16
-# Wed, 20 Mar 2019 00:20:41 GMT
+# Thu, 28 Mar 2019 00:23:17 GMT
 ENV LOGSTASH_DEB_VERSION=1:5.6.16-1
-# Wed, 20 Mar 2019 00:21:02 GMT
+# Thu, 28 Mar 2019 00:23:44 GMT
 RUN set -ex; 	case "$LOGSTASH_VERSION" in 		2.*) apt-get update -o 'APT::Hashes::SHA1::Weak=yes' ;; 		*) apt-get update ;; 	esac; 	apt-get install -y --no-install-recommends "logstash=$LOGSTASH_DEB_VERSION"; 	rm -rf /var/lib/apt/lists/*
-# Wed, 20 Mar 2019 00:21:03 GMT
+# Thu, 28 Mar 2019 00:23:45 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 20 Mar 2019 00:21:04 GMT
+# Thu, 28 Mar 2019 00:23:45 GMT
 ENV LS_SETTINGS_DIR=/etc/logstash
-# Wed, 20 Mar 2019 00:21:05 GMT
+# Thu, 28 Mar 2019 00:23:46 GMT
 RUN set -ex; 	if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^path\.config:!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi; 	if [ -f "$LS_SETTINGS_DIR/log4j2.properties" ]; then 		cp "$LS_SETTINGS_DIR/log4j2.properties" "$LS_SETTINGS_DIR/log4j2.properties.dist"; 		truncate --size=0 "$LS_SETTINGS_DIR/log4j2.properties"; 	fi
-# Wed, 20 Mar 2019 00:21:05 GMT
+# Thu, 28 Mar 2019 00:23:47 GMT
 COPY file:ff25c1f2500609bbcb68df8cd6b717da6b108b25b64cd5da434191796325c5c8 in / 
-# Wed, 20 Mar 2019 00:21:05 GMT
+# Thu, 28 Mar 2019 00:23:47 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 20 Mar 2019 00:21:06 GMT
+# Thu, 28 Mar 2019 00:23:47 GMT
 CMD ["-e" ""]
 ```
 
 -	Layers:
-	-	`sha256:22dbe790f71562dfd3d49406b1dfd1e85e50f3dd7cb2e97b3918376ca39cae4e`  
-		Last Modified: Mon, 04 Mar 2019 23:26:18 GMT  
-		Size: 45.3 MB (45342528 bytes)  
+	-	`sha256:e79bb959ec00faf01da52437df4fad4537ec669f60455a38ad583ec2b8f00498`  
+		Last Modified: Tue, 26 Mar 2019 22:44:26 GMT  
+		Size: 45.3 MB (45342599 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0250231711a047a6e54e7107d7a3bfb0afd807f5f408d00be0d407c5b8395219`  
-		Last Modified: Tue, 05 Mar 2019 02:43:42 GMT  
-		Size: 10.8 MB (10781993 bytes)  
+	-	`sha256:d4b7902036fe0cefdfe9ccf0404fe13322ecbd552f132be73d3e840f95538838`  
+		Last Modified: Tue, 26 Mar 2019 23:32:09 GMT  
+		Size: 10.8 MB (10781908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6fba9447437b5ee1da9b33b2e2d18add55a33d0b763075202e17cad7efd3ff8f`  
-		Last Modified: Tue, 05 Mar 2019 02:43:41 GMT  
-		Size: 4.3 MB (4340113 bytes)  
+	-	`sha256:1b2a72d4e03052566e99130108071fc4eca4942c62923e3e5cf19666a23088ef`  
+		Last Modified: Tue, 26 Mar 2019 23:32:07 GMT  
+		Size: 4.3 MB (4340149 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4afad9c4aba6cc6f5b4e85b14e0a16c4807fdcc8a5e4c43a532d6aa06f5d5664`  
-		Last Modified: Tue, 05 Mar 2019 04:25:25 GMT  
-		Size: 852.9 KB (852890 bytes)  
+	-	`sha256:de423484a9466ec116a34ba24e068e72e45d6c875c82f7eb63375577b4b51236`  
+		Last Modified: Wed, 27 Mar 2019 01:08:33 GMT  
+		Size: 852.9 KB (852864 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12fce9923c9d837e515d3de06b77d97a5a0c4796a35a97cf9a6768641ea25a8c`  
-		Last Modified: Tue, 05 Mar 2019 04:27:32 GMT  
-		Size: 248.0 B  
+	-	`sha256:ceaac3b844f7ebdc4f2bac1b66847dee29481bfe3f6b67683491b22383c1928d`  
+		Last Modified: Wed, 27 Mar 2019 23:46:39 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0dd81083d77ea06270e287c0fb5be2ab4daf9003518745fbdc4f2e55d2635db0`  
-		Last Modified: Tue, 05 Mar 2019 04:27:32 GMT  
+	-	`sha256:88f01b722a52db8d5c67facd263893c5199b89fbf56505dd2051434721fbd302`  
+		Last Modified: Wed, 27 Mar 2019 23:46:39 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c2afc6ff72dd12b78d094cdbc7e04f6285e599f8a03d6cc1e935aee96b176c1`  
-		Last Modified: Tue, 05 Mar 2019 04:27:58 GMT  
-		Size: 122.1 MB (122122910 bytes)  
+	-	`sha256:c23be56a9ac10e0c4c248ce8cdf6ac08504088243c6a3878ac4681a7289c611e`  
+		Last Modified: Wed, 27 Mar 2019 23:47:05 GMT  
+		Size: 122.2 MB (122173052 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b4ec06f94305a3311bcfff4f6b56d7f941634343c07e9dfc31151a5a8ba14d0`  
-		Last Modified: Tue, 05 Mar 2019 14:30:18 GMT  
-		Size: 1.6 MB (1572585 bytes)  
+	-	`sha256:2e389b8b02070cafc84d8aed4fe459d2e6697d473044cf2c6d10858f73e8b7b5`  
+		Last Modified: Thu, 28 Mar 2019 00:24:29 GMT  
+		Size: 1.6 MB (1572643 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf03508a7e0bbe1396b828dc5fab7a46d9abf68ebcfe633792ab63e4e6dae822`  
-		Last Modified: Tue, 05 Mar 2019 14:30:17 GMT  
-		Size: 184.0 B  
+	-	`sha256:151254a698bbc099591c5f23e10f76b319079575ce48fb84142e90783591bed9`  
+		Last Modified: Thu, 28 Mar 2019 00:24:28 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa89ca3e1e2def2276b9a174e001341b88b08c8c209bc0cf3fe2af7124b88712`  
-		Last Modified: Tue, 05 Mar 2019 14:30:17 GMT  
+	-	`sha256:2384f855f47c39cf855faac21ace85d15376b635a410e35310e40ae807332639`  
+		Last Modified: Thu, 28 Mar 2019 00:24:29 GMT  
 		Size: 500.9 KB (500915 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1009560d1e9f60f815f8ecd1a94983383dd98daeac7c9873444bdebc15345be1`  
-		Last Modified: Tue, 05 Mar 2019 14:30:16 GMT  
+	-	`sha256:aa3d29504acf5bacc264c672e08ac6cdd21d247cd0e858e0418f7c56aa4ed8ff`  
+		Last Modified: Thu, 28 Mar 2019 00:24:27 GMT  
 		Size: 1.4 KB (1445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9afb19d9afdee7d408ace09efb0f0fbfb44db3ebd6fa2c386511efcefc1c7bc8`  
-		Last Modified: Tue, 05 Mar 2019 14:30:16 GMT  
-		Size: 232.0 B  
+	-	`sha256:d2f1a9a62a686251184a66604058799b1a18301c445cb908f2b4f93fa7b94863`  
+		Last Modified: Thu, 28 Mar 2019 00:24:27 GMT  
+		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61cdb8b405195346491e25892895ceae2547b430048c4d06cee9f57db2ec57d8`  
-		Last Modified: Wed, 20 Mar 2019 00:21:49 GMT  
-		Size: 113.1 MB (113058158 bytes)  
+	-	`sha256:b29b86bf6c08025678ffe5af63528416cc22fbba15e1f71a2dde1b525c850f1a`  
+		Last Modified: Thu, 28 Mar 2019 00:24:54 GMT  
+		Size: 113.1 MB (113058340 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b3909e4645d4a06478e07f472759517fa412c090a875090dbd9a4d54e574ce3`  
-		Last Modified: Wed, 20 Mar 2019 00:21:34 GMT  
-		Size: 2.7 KB (2662 bytes)  
+	-	`sha256:908e9f6b26374fe433215e9eec60957775be43433f1ef3f1dc4e395106d26d0b`  
+		Last Modified: Thu, 28 Mar 2019 00:24:28 GMT  
+		Size: 2.7 KB (2660 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:148a7b26d2f8b6029d0617627fb49daa537c6291eed24fa6c82629c53c75ed3e`  
-		Last Modified: Wed, 20 Mar 2019 00:21:33 GMT  
-		Size: 304.0 B  
+	-	`sha256:58e947206b51ff5f70a8cab3e1709abcf83825b9c517c9243aec067e19efaf8b`  
+		Last Modified: Thu, 28 Mar 2019 00:24:28 GMT  
+		Size: 302.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `logstash:5.6.16-alpine`
 
 ```console
-$ docker pull logstash@sha256:4dad72a54405e90af5ae27caf3dc30effeeb25c27d1fdb2ee82ec4265d3409f8
+$ docker pull logstash@sha256:9ca08b59bc2fc256405d0acbb1a841733e434329baf99023b922447d1294b580
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -452,14 +452,14 @@ $ docker pull logstash@sha256:4dad72a54405e90af5ae27caf3dc30effeeb25c27d1fdb2ee8
 ### `logstash:5.6.16-alpine` - linux; amd64
 
 ```console
-$ docker pull logstash@sha256:568acb89ac8d84b59b005332466a958fccb5a320abe037701405962e8d9428a1
+$ docker pull logstash@sha256:ea708129b0f5084318e2f737f26d8d787ae8640ca4fee5695bf27910754fa04e
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.7 MB (171657428 bytes)**  
+-	Total Size: **172.1 MB (172106790 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a8c4f72d2a7f68c0b3e10ab18015552b3bf51ee4c265ed6c9c85ebbd2066bae4`
+-	Image ID: `sha256:97ae24da1ebe83c5ab3159ae7a52237b0eff367063ca28fc8794eb39003f2676`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
@@ -476,35 +476,37 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 # Fri, 08 Mar 2019 02:13:42 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Fri, 08 Mar 2019 02:13:43 GMT
-ENV JAVA_VERSION=8u191
-# Fri, 08 Mar 2019 02:13:43 GMT
-ENV JAVA_ALPINE_VERSION=8.191.12-r0
-# Fri, 08 Mar 2019 02:13:45 GMT
+# Wed, 27 Mar 2019 23:29:04 GMT
+ENV JAVA_VERSION=8u201
+# Wed, 27 Mar 2019 23:29:05 GMT
+ENV JAVA_ALPINE_VERSION=8.201.08-r0
+# Wed, 27 Mar 2019 23:29:09 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 08 Mar 2019 04:55:43 GMT
+# Wed, 27 Mar 2019 23:29:10 GMT
+RUN apk add --no-cache so:libnss3.so
+# Thu, 28 Mar 2019 00:23:55 GMT
 RUN addgroup -S logstash && adduser -S -G logstash logstash
-# Fri, 08 Mar 2019 04:55:45 GMT
+# Thu, 28 Mar 2019 00:23:57 GMT
 RUN apk add --no-cache 		bash 		libc6-compat 		libzmq
-# Fri, 08 Mar 2019 04:55:46 GMT
+# Thu, 28 Mar 2019 00:23:58 GMT
 RUN apk add --no-cache 'su-exec>=0.2'
-# Fri, 08 Mar 2019 04:55:46 GMT
+# Thu, 28 Mar 2019 00:23:58 GMT
 ENV GPG_KEY=46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 08 Mar 2019 04:55:46 GMT
+# Thu, 28 Mar 2019 00:23:58 GMT
 ENV LOGSTASH_PATH=/usr/share/logstash/bin
-# Fri, 08 Mar 2019 04:55:47 GMT
+# Thu, 28 Mar 2019 00:23:59 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Wed, 20 Mar 2019 00:21:09 GMT
+# Thu, 28 Mar 2019 00:23:59 GMT
 ENV LOGSTASH_VERSION=5.6.16
-# Wed, 20 Mar 2019 00:21:10 GMT
+# Thu, 28 Mar 2019 00:23:59 GMT
 ENV LOGSTASH_TARBALL=https://artifacts.elastic.co/downloads/logstash/logstash-5.6.16.tar.gz LOGSTASH_TARBALL_ASC=https://artifacts.elastic.co/downloads/logstash/logstash-5.6.16.tar.gz.asc LOGSTASH_TARBALL_SHA1=73a9a7f655a11223ff5a1a09558663d61ac92c69
-# Wed, 20 Mar 2019 00:21:23 GMT
+# Thu, 28 Mar 2019 00:24:15 GMT
 RUN set -ex; 		if [ -z "$LOGSTASH_TARBALL_SHA1" ] && [ -z "$LOGSTASH_TARBALL_ASC" ]; then 		echo >&2 'error: have neither a SHA1 _or_ a signature file -- cannot verify download!'; 		exit 1; 	fi; 		apk add --no-cache --virtual .fetch-deps 		ca-certificates 		gnupg 		openssl 		tar 	; 		wget -O logstash.tar.gz "$LOGSTASH_TARBALL"; 		if [ "$LOGSTASH_TARBALL_SHA1" ]; then 		echo "$LOGSTASH_TARBALL_SHA1 *logstash.tar.gz" | sha1sum -c -; 	fi; 		if [ "$LOGSTASH_TARBALL_ASC" ]; then 		wget -O logstash.tar.gz.asc "$LOGSTASH_TARBALL_ASC"; 		export GNUPGHOME="$(mktemp -d)"; 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY"; 		gpg --batch --verify logstash.tar.gz.asc logstash.tar.gz; 		rm -rf "$GNUPGHOME" logstash.tar.gz.asc; 	fi; 		dir="$(dirname "$LOGSTASH_PATH")"; 		mkdir -p "$dir"; 	tar -xf logstash.tar.gz --strip-components=1 -C "$dir"; 	rm logstash.tar.gz; 		apk del .fetch-deps; 		export LS_SETTINGS_DIR="$dir/config"; 	if [ -f "$LS_SETTINGS_DIR/log4j2.properties" ]; then 		cp "$LS_SETTINGS_DIR/log4j2.properties" "$LS_SETTINGS_DIR/log4j2.properties.dist"; 		truncate -s 0 "$LS_SETTINGS_DIR/log4j2.properties"; 	fi; 		for userDir in 		"$dir/config" 		"$dir/data" 	; do 		if [ -d "$userDir" ]; then 			chown -R logstash:logstash "$userDir"; 		fi; 	done; 		logstash --version
-# Wed, 20 Mar 2019 00:21:24 GMT
+# Thu, 28 Mar 2019 00:24:16 GMT
 COPY file:ce3bf8cc5446bdbb16718eb5decb902429c53b67cd42ac64921c065e79206386 in / 
-# Wed, 20 Mar 2019 00:21:24 GMT
+# Thu, 28 Mar 2019 00:24:16 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 20 Mar 2019 00:21:25 GMT
+# Thu, 28 Mar 2019 00:24:17 GMT
 CMD ["-e" ""]
 ```
 
@@ -517,35 +519,39 @@ CMD ["-e" ""]
 		Last Modified: Fri, 08 Mar 2019 02:15:56 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:205f26e90552395346c11a0738dab5f50b49f245b5aac539ad7845f6ea92d2d4`  
-		Last Modified: Fri, 08 Mar 2019 02:16:18 GMT  
-		Size: 54.9 MB (54922705 bytes)  
+	-	`sha256:cf419f3f41ff266b1903731d3ff085a6855171b7fd823a93d15cd052dc73a0ea`  
+		Last Modified: Wed, 27 Mar 2019 23:47:37 GMT  
+		Size: 52.7 MB (52739115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:edd19ac7affd5106b5ed5cb7e7551dde953e6d4691da7da2bf75c2ac85d7ecb7`  
-		Last Modified: Fri, 08 Mar 2019 04:56:19 GMT  
-		Size: 1.3 KB (1263 bytes)  
+	-	`sha256:88430b15d43fccea92a728c80080963cf49cb06c31f196900ecbe56e0a85c007`  
+		Last Modified: Wed, 27 Mar 2019 23:47:30 GMT  
+		Size: 2.2 MB (2221565 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:513f681fd27a50ba0206de372af3875c961ea436d554107264e3626776741092`  
-		Last Modified: Fri, 08 Mar 2019 04:56:20 GMT  
-		Size: 1.6 MB (1562514 bytes)  
+	-	`sha256:7d750f16f9088534cdd50244495aaac08cec814afe8a7205b7c282ada2793744`  
+		Last Modified: Thu, 28 Mar 2019 00:25:01 GMT  
+		Size: 1.3 KB (1264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b0fa38b21e3cc1c141310f9dcfd4e27a2db1e484a65a562507becbdcb5dbf4b`  
-		Last Modified: Fri, 08 Mar 2019 04:56:19 GMT  
-		Size: 99.0 KB (98973 bytes)  
+	-	`sha256:9ab8ce4ecfca5ad103621d28c3760a4d3ec25297b143143d6a85023e99e995b9`  
+		Last Modified: Thu, 28 Mar 2019 00:25:02 GMT  
+		Size: 2.0 MB (1973402 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a23875bd569f352b6e5901d7b54fa5c77598b5e6f0a3c72c5377d44a6a5ee3c8`  
-		Last Modified: Wed, 20 Mar 2019 00:22:12 GMT  
-		Size: 112.3 MB (112316699 bytes)  
+	-	`sha256:71ea030c8edf1a9bf133f8077d10c7aa2434d244fa2a77f58a206e0ec8ac5e1d`  
+		Last Modified: Thu, 28 Mar 2019 00:25:01 GMT  
+		Size: 99.0 KB (99028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:364492888b3299f10409a6f8d81e7c75b9236a8375f21dcee65bfbc802f3ab57`  
-		Last Modified: Wed, 20 Mar 2019 00:21:57 GMT  
+	-	`sha256:024253f68e1a6720b7e690a704132e85b8ef04cf0e0629305ae77dbf7c70a2bd`  
+		Last Modified: Thu, 28 Mar 2019 00:25:21 GMT  
+		Size: 112.3 MB (112317142 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:40e72eeffdeb216135cd799dc550c865ca57316243709780f3a46792df43f47a`  
+		Last Modified: Thu, 28 Mar 2019 00:25:01 GMT  
 		Size: 306.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `logstash:5.6-alpine`
 
 ```console
-$ docker pull logstash@sha256:4dad72a54405e90af5ae27caf3dc30effeeb25c27d1fdb2ee82ec4265d3409f8
+$ docker pull logstash@sha256:9ca08b59bc2fc256405d0acbb1a841733e434329baf99023b922447d1294b580
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -555,14 +561,14 @@ $ docker pull logstash@sha256:4dad72a54405e90af5ae27caf3dc30effeeb25c27d1fdb2ee8
 ### `logstash:5.6-alpine` - linux; amd64
 
 ```console
-$ docker pull logstash@sha256:568acb89ac8d84b59b005332466a958fccb5a320abe037701405962e8d9428a1
+$ docker pull logstash@sha256:ea708129b0f5084318e2f737f26d8d787ae8640ca4fee5695bf27910754fa04e
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.7 MB (171657428 bytes)**  
+-	Total Size: **172.1 MB (172106790 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a8c4f72d2a7f68c0b3e10ab18015552b3bf51ee4c265ed6c9c85ebbd2066bae4`
+-	Image ID: `sha256:97ae24da1ebe83c5ab3159ae7a52237b0eff367063ca28fc8794eb39003f2676`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
@@ -579,35 +585,37 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 # Fri, 08 Mar 2019 02:13:42 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Fri, 08 Mar 2019 02:13:43 GMT
-ENV JAVA_VERSION=8u191
-# Fri, 08 Mar 2019 02:13:43 GMT
-ENV JAVA_ALPINE_VERSION=8.191.12-r0
-# Fri, 08 Mar 2019 02:13:45 GMT
+# Wed, 27 Mar 2019 23:29:04 GMT
+ENV JAVA_VERSION=8u201
+# Wed, 27 Mar 2019 23:29:05 GMT
+ENV JAVA_ALPINE_VERSION=8.201.08-r0
+# Wed, 27 Mar 2019 23:29:09 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 08 Mar 2019 04:55:43 GMT
+# Wed, 27 Mar 2019 23:29:10 GMT
+RUN apk add --no-cache so:libnss3.so
+# Thu, 28 Mar 2019 00:23:55 GMT
 RUN addgroup -S logstash && adduser -S -G logstash logstash
-# Fri, 08 Mar 2019 04:55:45 GMT
+# Thu, 28 Mar 2019 00:23:57 GMT
 RUN apk add --no-cache 		bash 		libc6-compat 		libzmq
-# Fri, 08 Mar 2019 04:55:46 GMT
+# Thu, 28 Mar 2019 00:23:58 GMT
 RUN apk add --no-cache 'su-exec>=0.2'
-# Fri, 08 Mar 2019 04:55:46 GMT
+# Thu, 28 Mar 2019 00:23:58 GMT
 ENV GPG_KEY=46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 08 Mar 2019 04:55:46 GMT
+# Thu, 28 Mar 2019 00:23:58 GMT
 ENV LOGSTASH_PATH=/usr/share/logstash/bin
-# Fri, 08 Mar 2019 04:55:47 GMT
+# Thu, 28 Mar 2019 00:23:59 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Wed, 20 Mar 2019 00:21:09 GMT
+# Thu, 28 Mar 2019 00:23:59 GMT
 ENV LOGSTASH_VERSION=5.6.16
-# Wed, 20 Mar 2019 00:21:10 GMT
+# Thu, 28 Mar 2019 00:23:59 GMT
 ENV LOGSTASH_TARBALL=https://artifacts.elastic.co/downloads/logstash/logstash-5.6.16.tar.gz LOGSTASH_TARBALL_ASC=https://artifacts.elastic.co/downloads/logstash/logstash-5.6.16.tar.gz.asc LOGSTASH_TARBALL_SHA1=73a9a7f655a11223ff5a1a09558663d61ac92c69
-# Wed, 20 Mar 2019 00:21:23 GMT
+# Thu, 28 Mar 2019 00:24:15 GMT
 RUN set -ex; 		if [ -z "$LOGSTASH_TARBALL_SHA1" ] && [ -z "$LOGSTASH_TARBALL_ASC" ]; then 		echo >&2 'error: have neither a SHA1 _or_ a signature file -- cannot verify download!'; 		exit 1; 	fi; 		apk add --no-cache --virtual .fetch-deps 		ca-certificates 		gnupg 		openssl 		tar 	; 		wget -O logstash.tar.gz "$LOGSTASH_TARBALL"; 		if [ "$LOGSTASH_TARBALL_SHA1" ]; then 		echo "$LOGSTASH_TARBALL_SHA1 *logstash.tar.gz" | sha1sum -c -; 	fi; 		if [ "$LOGSTASH_TARBALL_ASC" ]; then 		wget -O logstash.tar.gz.asc "$LOGSTASH_TARBALL_ASC"; 		export GNUPGHOME="$(mktemp -d)"; 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY"; 		gpg --batch --verify logstash.tar.gz.asc logstash.tar.gz; 		rm -rf "$GNUPGHOME" logstash.tar.gz.asc; 	fi; 		dir="$(dirname "$LOGSTASH_PATH")"; 		mkdir -p "$dir"; 	tar -xf logstash.tar.gz --strip-components=1 -C "$dir"; 	rm logstash.tar.gz; 		apk del .fetch-deps; 		export LS_SETTINGS_DIR="$dir/config"; 	if [ -f "$LS_SETTINGS_DIR/log4j2.properties" ]; then 		cp "$LS_SETTINGS_DIR/log4j2.properties" "$LS_SETTINGS_DIR/log4j2.properties.dist"; 		truncate -s 0 "$LS_SETTINGS_DIR/log4j2.properties"; 	fi; 		for userDir in 		"$dir/config" 		"$dir/data" 	; do 		if [ -d "$userDir" ]; then 			chown -R logstash:logstash "$userDir"; 		fi; 	done; 		logstash --version
-# Wed, 20 Mar 2019 00:21:24 GMT
+# Thu, 28 Mar 2019 00:24:16 GMT
 COPY file:ce3bf8cc5446bdbb16718eb5decb902429c53b67cd42ac64921c065e79206386 in / 
-# Wed, 20 Mar 2019 00:21:24 GMT
+# Thu, 28 Mar 2019 00:24:16 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 20 Mar 2019 00:21:25 GMT
+# Thu, 28 Mar 2019 00:24:17 GMT
 CMD ["-e" ""]
 ```
 
@@ -620,35 +628,39 @@ CMD ["-e" ""]
 		Last Modified: Fri, 08 Mar 2019 02:15:56 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:205f26e90552395346c11a0738dab5f50b49f245b5aac539ad7845f6ea92d2d4`  
-		Last Modified: Fri, 08 Mar 2019 02:16:18 GMT  
-		Size: 54.9 MB (54922705 bytes)  
+	-	`sha256:cf419f3f41ff266b1903731d3ff085a6855171b7fd823a93d15cd052dc73a0ea`  
+		Last Modified: Wed, 27 Mar 2019 23:47:37 GMT  
+		Size: 52.7 MB (52739115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:edd19ac7affd5106b5ed5cb7e7551dde953e6d4691da7da2bf75c2ac85d7ecb7`  
-		Last Modified: Fri, 08 Mar 2019 04:56:19 GMT  
-		Size: 1.3 KB (1263 bytes)  
+	-	`sha256:88430b15d43fccea92a728c80080963cf49cb06c31f196900ecbe56e0a85c007`  
+		Last Modified: Wed, 27 Mar 2019 23:47:30 GMT  
+		Size: 2.2 MB (2221565 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:513f681fd27a50ba0206de372af3875c961ea436d554107264e3626776741092`  
-		Last Modified: Fri, 08 Mar 2019 04:56:20 GMT  
-		Size: 1.6 MB (1562514 bytes)  
+	-	`sha256:7d750f16f9088534cdd50244495aaac08cec814afe8a7205b7c282ada2793744`  
+		Last Modified: Thu, 28 Mar 2019 00:25:01 GMT  
+		Size: 1.3 KB (1264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b0fa38b21e3cc1c141310f9dcfd4e27a2db1e484a65a562507becbdcb5dbf4b`  
-		Last Modified: Fri, 08 Mar 2019 04:56:19 GMT  
-		Size: 99.0 KB (98973 bytes)  
+	-	`sha256:9ab8ce4ecfca5ad103621d28c3760a4d3ec25297b143143d6a85023e99e995b9`  
+		Last Modified: Thu, 28 Mar 2019 00:25:02 GMT  
+		Size: 2.0 MB (1973402 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a23875bd569f352b6e5901d7b54fa5c77598b5e6f0a3c72c5377d44a6a5ee3c8`  
-		Last Modified: Wed, 20 Mar 2019 00:22:12 GMT  
-		Size: 112.3 MB (112316699 bytes)  
+	-	`sha256:71ea030c8edf1a9bf133f8077d10c7aa2434d244fa2a77f58a206e0ec8ac5e1d`  
+		Last Modified: Thu, 28 Mar 2019 00:25:01 GMT  
+		Size: 99.0 KB (99028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:364492888b3299f10409a6f8d81e7c75b9236a8375f21dcee65bfbc802f3ab57`  
-		Last Modified: Wed, 20 Mar 2019 00:21:57 GMT  
+	-	`sha256:024253f68e1a6720b7e690a704132e85b8ef04cf0e0629305ae77dbf7c70a2bd`  
+		Last Modified: Thu, 28 Mar 2019 00:25:21 GMT  
+		Size: 112.3 MB (112317142 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:40e72eeffdeb216135cd799dc550c865ca57316243709780f3a46792df43f47a`  
+		Last Modified: Thu, 28 Mar 2019 00:25:01 GMT  
 		Size: 306.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `logstash:5-alpine`
 
 ```console
-$ docker pull logstash@sha256:4dad72a54405e90af5ae27caf3dc30effeeb25c27d1fdb2ee82ec4265d3409f8
+$ docker pull logstash@sha256:9ca08b59bc2fc256405d0acbb1a841733e434329baf99023b922447d1294b580
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -658,14 +670,14 @@ $ docker pull logstash@sha256:4dad72a54405e90af5ae27caf3dc30effeeb25c27d1fdb2ee8
 ### `logstash:5-alpine` - linux; amd64
 
 ```console
-$ docker pull logstash@sha256:568acb89ac8d84b59b005332466a958fccb5a320abe037701405962e8d9428a1
+$ docker pull logstash@sha256:ea708129b0f5084318e2f737f26d8d787ae8640ca4fee5695bf27910754fa04e
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.7 MB (171657428 bytes)**  
+-	Total Size: **172.1 MB (172106790 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a8c4f72d2a7f68c0b3e10ab18015552b3bf51ee4c265ed6c9c85ebbd2066bae4`
+-	Image ID: `sha256:97ae24da1ebe83c5ab3159ae7a52237b0eff367063ca28fc8794eb39003f2676`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
@@ -682,35 +694,37 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 # Fri, 08 Mar 2019 02:13:42 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Fri, 08 Mar 2019 02:13:43 GMT
-ENV JAVA_VERSION=8u191
-# Fri, 08 Mar 2019 02:13:43 GMT
-ENV JAVA_ALPINE_VERSION=8.191.12-r0
-# Fri, 08 Mar 2019 02:13:45 GMT
+# Wed, 27 Mar 2019 23:29:04 GMT
+ENV JAVA_VERSION=8u201
+# Wed, 27 Mar 2019 23:29:05 GMT
+ENV JAVA_ALPINE_VERSION=8.201.08-r0
+# Wed, 27 Mar 2019 23:29:09 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 08 Mar 2019 04:55:43 GMT
+# Wed, 27 Mar 2019 23:29:10 GMT
+RUN apk add --no-cache so:libnss3.so
+# Thu, 28 Mar 2019 00:23:55 GMT
 RUN addgroup -S logstash && adduser -S -G logstash logstash
-# Fri, 08 Mar 2019 04:55:45 GMT
+# Thu, 28 Mar 2019 00:23:57 GMT
 RUN apk add --no-cache 		bash 		libc6-compat 		libzmq
-# Fri, 08 Mar 2019 04:55:46 GMT
+# Thu, 28 Mar 2019 00:23:58 GMT
 RUN apk add --no-cache 'su-exec>=0.2'
-# Fri, 08 Mar 2019 04:55:46 GMT
+# Thu, 28 Mar 2019 00:23:58 GMT
 ENV GPG_KEY=46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 08 Mar 2019 04:55:46 GMT
+# Thu, 28 Mar 2019 00:23:58 GMT
 ENV LOGSTASH_PATH=/usr/share/logstash/bin
-# Fri, 08 Mar 2019 04:55:47 GMT
+# Thu, 28 Mar 2019 00:23:59 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Wed, 20 Mar 2019 00:21:09 GMT
+# Thu, 28 Mar 2019 00:23:59 GMT
 ENV LOGSTASH_VERSION=5.6.16
-# Wed, 20 Mar 2019 00:21:10 GMT
+# Thu, 28 Mar 2019 00:23:59 GMT
 ENV LOGSTASH_TARBALL=https://artifacts.elastic.co/downloads/logstash/logstash-5.6.16.tar.gz LOGSTASH_TARBALL_ASC=https://artifacts.elastic.co/downloads/logstash/logstash-5.6.16.tar.gz.asc LOGSTASH_TARBALL_SHA1=73a9a7f655a11223ff5a1a09558663d61ac92c69
-# Wed, 20 Mar 2019 00:21:23 GMT
+# Thu, 28 Mar 2019 00:24:15 GMT
 RUN set -ex; 		if [ -z "$LOGSTASH_TARBALL_SHA1" ] && [ -z "$LOGSTASH_TARBALL_ASC" ]; then 		echo >&2 'error: have neither a SHA1 _or_ a signature file -- cannot verify download!'; 		exit 1; 	fi; 		apk add --no-cache --virtual .fetch-deps 		ca-certificates 		gnupg 		openssl 		tar 	; 		wget -O logstash.tar.gz "$LOGSTASH_TARBALL"; 		if [ "$LOGSTASH_TARBALL_SHA1" ]; then 		echo "$LOGSTASH_TARBALL_SHA1 *logstash.tar.gz" | sha1sum -c -; 	fi; 		if [ "$LOGSTASH_TARBALL_ASC" ]; then 		wget -O logstash.tar.gz.asc "$LOGSTASH_TARBALL_ASC"; 		export GNUPGHOME="$(mktemp -d)"; 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY"; 		gpg --batch --verify logstash.tar.gz.asc logstash.tar.gz; 		rm -rf "$GNUPGHOME" logstash.tar.gz.asc; 	fi; 		dir="$(dirname "$LOGSTASH_PATH")"; 		mkdir -p "$dir"; 	tar -xf logstash.tar.gz --strip-components=1 -C "$dir"; 	rm logstash.tar.gz; 		apk del .fetch-deps; 		export LS_SETTINGS_DIR="$dir/config"; 	if [ -f "$LS_SETTINGS_DIR/log4j2.properties" ]; then 		cp "$LS_SETTINGS_DIR/log4j2.properties" "$LS_SETTINGS_DIR/log4j2.properties.dist"; 		truncate -s 0 "$LS_SETTINGS_DIR/log4j2.properties"; 	fi; 		for userDir in 		"$dir/config" 		"$dir/data" 	; do 		if [ -d "$userDir" ]; then 			chown -R logstash:logstash "$userDir"; 		fi; 	done; 		logstash --version
-# Wed, 20 Mar 2019 00:21:24 GMT
+# Thu, 28 Mar 2019 00:24:16 GMT
 COPY file:ce3bf8cc5446bdbb16718eb5decb902429c53b67cd42ac64921c065e79206386 in / 
-# Wed, 20 Mar 2019 00:21:24 GMT
+# Thu, 28 Mar 2019 00:24:16 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 20 Mar 2019 00:21:25 GMT
+# Thu, 28 Mar 2019 00:24:17 GMT
 CMD ["-e" ""]
 ```
 
@@ -723,28 +737,32 @@ CMD ["-e" ""]
 		Last Modified: Fri, 08 Mar 2019 02:15:56 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:205f26e90552395346c11a0738dab5f50b49f245b5aac539ad7845f6ea92d2d4`  
-		Last Modified: Fri, 08 Mar 2019 02:16:18 GMT  
-		Size: 54.9 MB (54922705 bytes)  
+	-	`sha256:cf419f3f41ff266b1903731d3ff085a6855171b7fd823a93d15cd052dc73a0ea`  
+		Last Modified: Wed, 27 Mar 2019 23:47:37 GMT  
+		Size: 52.7 MB (52739115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:edd19ac7affd5106b5ed5cb7e7551dde953e6d4691da7da2bf75c2ac85d7ecb7`  
-		Last Modified: Fri, 08 Mar 2019 04:56:19 GMT  
-		Size: 1.3 KB (1263 bytes)  
+	-	`sha256:88430b15d43fccea92a728c80080963cf49cb06c31f196900ecbe56e0a85c007`  
+		Last Modified: Wed, 27 Mar 2019 23:47:30 GMT  
+		Size: 2.2 MB (2221565 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:513f681fd27a50ba0206de372af3875c961ea436d554107264e3626776741092`  
-		Last Modified: Fri, 08 Mar 2019 04:56:20 GMT  
-		Size: 1.6 MB (1562514 bytes)  
+	-	`sha256:7d750f16f9088534cdd50244495aaac08cec814afe8a7205b7c282ada2793744`  
+		Last Modified: Thu, 28 Mar 2019 00:25:01 GMT  
+		Size: 1.3 KB (1264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b0fa38b21e3cc1c141310f9dcfd4e27a2db1e484a65a562507becbdcb5dbf4b`  
-		Last Modified: Fri, 08 Mar 2019 04:56:19 GMT  
-		Size: 99.0 KB (98973 bytes)  
+	-	`sha256:9ab8ce4ecfca5ad103621d28c3760a4d3ec25297b143143d6a85023e99e995b9`  
+		Last Modified: Thu, 28 Mar 2019 00:25:02 GMT  
+		Size: 2.0 MB (1973402 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a23875bd569f352b6e5901d7b54fa5c77598b5e6f0a3c72c5377d44a6a5ee3c8`  
-		Last Modified: Wed, 20 Mar 2019 00:22:12 GMT  
-		Size: 112.3 MB (112316699 bytes)  
+	-	`sha256:71ea030c8edf1a9bf133f8077d10c7aa2434d244fa2a77f58a206e0ec8ac5e1d`  
+		Last Modified: Thu, 28 Mar 2019 00:25:01 GMT  
+		Size: 99.0 KB (99028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:364492888b3299f10409a6f8d81e7c75b9236a8375f21dcee65bfbc802f3ab57`  
-		Last Modified: Wed, 20 Mar 2019 00:21:57 GMT  
+	-	`sha256:024253f68e1a6720b7e690a704132e85b8ef04cf0e0629305ae77dbf7c70a2bd`  
+		Last Modified: Thu, 28 Mar 2019 00:25:21 GMT  
+		Size: 112.3 MB (112317142 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:40e72eeffdeb216135cd799dc550c865ca57316243709780f3a46792df43f47a`  
+		Last Modified: Thu, 28 Mar 2019 00:25:01 GMT  
 		Size: 306.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
