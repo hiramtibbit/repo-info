@@ -4,8 +4,8 @@
 
 -	[`xwiki:10`](#xwiki10)
 -	[`xwiki:10.11`](#xwiki1011)
--	[`xwiki:10.11.3`](#xwiki10113)
--	[`xwiki:10.11.3-postgres-tomcat`](#xwiki10113-postgres-tomcat)
+-	[`xwiki:10.11.4`](#xwiki10114)
+-	[`xwiki:10.11.4-postgres-tomcat`](#xwiki10114-postgres-tomcat)
 -	[`xwiki:10.11-postgres-tomcat`](#xwiki1011-postgres-tomcat)
 -	[`xwiki:10-mysql-tomcat`](#xwiki10-mysql-tomcat)
 -	[`xwiki:10-postgres-tomcat`](#xwiki10-postgres-tomcat)
@@ -411,7 +411,7 @@ CMD ["xwiki"]
 		Size: 2.4 KB (2409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `xwiki:10.11.3`
+## `xwiki:10.11.4`
 
 ```console
 $ docker pull xwiki@sha256:073940eeb54da1dc66e3455f1139f25501ea271e559b5f0b7d5b4769954361fe
@@ -421,7 +421,7 @@ $ docker pull xwiki@sha256:073940eeb54da1dc66e3455f1139f25501ea271e559b5f0b7d5b4
 -	Platforms:
 	-	linux; amd64
 
-### `xwiki:10.11.3` - linux; amd64
+### `xwiki:10.11.4` - linux; amd64
 
 ```console
 $ docker pull xwiki@sha256:3ccc7880b5e4ac5f2b665859b0133f90df9f2899e96039866c8a2054f5fa6125
@@ -602,7 +602,7 @@ CMD ["xwiki"]
 		Size: 2.4 KB (2409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `xwiki:10.11.3-postgres-tomcat`
+## `xwiki:10.11.4-postgres-tomcat`
 
 ```console
 $ docker pull xwiki@sha256:44da3f6c4e1d56234c97791cc192cb1d650c14de2eddd7df21d9b7587417ea9d
@@ -613,7 +613,7 @@ $ docker pull xwiki@sha256:44da3f6c4e1d56234c97791cc192cb1d650c14de2eddd7df21d9b
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
-### `xwiki:10.11.3-postgres-tomcat` - linux; amd64
+### `xwiki:10.11.4-postgres-tomcat` - linux; amd64
 
 ```console
 $ docker pull xwiki@sha256:4a2b3ecb55df91b0ded29bb7cc63ea0da9ea6eab5c820570660fe9a5f645b6d2
@@ -794,7 +794,7 @@ CMD ["xwiki"]
 		Size: 2.4 KB (2410 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `xwiki:10.11.3-postgres-tomcat` - linux; arm64 variant v8
+### `xwiki:10.11.4-postgres-tomcat` - linux; arm64 variant v8
 
 ```console
 $ docker pull xwiki@sha256:8d4c18108e708790e46476f8f8032d6cee151c5af4b4ec2908c28d8935245e90
