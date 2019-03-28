@@ -1,12 +1,13 @@
 ## `openjdk:8u201-alpine`
 
 ```console
-$ docker pull openjdk@sha256:0c035e7af121524d147cbbc96060853b9a6274be71527ae848790a33dd0a3e94
+$ docker pull openjdk@sha256:5680f3dbf8f115cdde591d0852aae97bd1637bba98f703d0581db4ea9d957532
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm64 variant v8
 	-	linux; 386
 
 ### `openjdk:8u201-alpine` - linux; amd64
@@ -61,6 +62,60 @@ RUN apk add --no-cache so:libnss3.so
 	-	`sha256:5da56be406b88bb54da46ee8f2bc94eff5d3c17cde305aa142f4f305eaa98c91`  
 		Last Modified: Wed, 27 Mar 2019 23:46:25 GMT  
 		Size: 2.2 MB (2222623 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `openjdk:8u201-alpine` - linux; arm64 variant v8
+
+```console
+$ docker pull openjdk@sha256:fe9128efa252f4c9500ddf4c4e3bd96f8a0640736a85c3a9754d7b5884f85854
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **73.5 MB (73451915 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5bc1765f59cfd0e1995b45f3aa1382c54669baed781950d7c255be05011b370c`
+-	Default Command: `["\/bin\/sh"]`
+
+```dockerfile
+# Fri, 08 Mar 2019 03:37:01 GMT
+ADD file:2e80d7b240ac8c544a868180a2a08b2533c450061e0ec276ceacaff7b87a380c in / 
+# Fri, 08 Mar 2019 03:37:02 GMT
+CMD ["/bin/sh"]
+# Fri, 08 Mar 2019 09:49:55 GMT
+ENV LANG=C.UTF-8
+# Fri, 08 Mar 2019 09:49:59 GMT
+RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
+# Fri, 08 Mar 2019 09:50:00 GMT
+ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
+# Fri, 08 Mar 2019 09:50:01 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
+# Thu, 28 Mar 2019 04:00:22 GMT
+ENV JAVA_VERSION=8u201
+# Thu, 28 Mar 2019 04:00:26 GMT
+ENV JAVA_ALPINE_VERSION=8.201.08-r0
+# Thu, 28 Mar 2019 04:00:42 GMT
+RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
+# Thu, 28 Mar 2019 04:00:49 GMT
+RUN apk add --no-cache so:libnss3.so
+```
+
+-	Layers:
+	-	`sha256:3b00a3925ee4b356facd24aea8ece58982a66577023cb3596ce3a321aef976f9`  
+		Last Modified: Fri, 08 Mar 2019 03:37:55 GMT  
+		Size: 2.7 MB (2687939 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a9dc35c571266c194f6068f0540d063943a44ec79726311c42950083e6ab2460`  
+		Last Modified: Fri, 08 Mar 2019 09:55:35 GMT  
+		Size: 238.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:847ab29b06d936106e9a44cffadfcad8c2c614f5d54207e58c87a50db4232c14`  
+		Last Modified: Thu, 28 Mar 2019 04:12:48 GMT  
+		Size: 68.5 MB (68519298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:71e12563212bb5eaedaaf7ede82f8e7a1ac7e6e779eeb04c15af6a77512c0b01`  
+		Last Modified: Thu, 28 Mar 2019 04:12:35 GMT  
+		Size: 2.2 MB (2244440 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:8u201-alpine` - linux; 386
