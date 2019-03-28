@@ -1,7 +1,7 @@
 ## `rakudo-star:latest`
 
 ```console
-$ docker pull rakudo-star@sha256:90507ae234e21ce94fcb721c18f813eabd526b72459f3bcb5e6b3a0ef3207bc6
+$ docker pull rakudo-star@sha256:63d2a9cbac4b8c20f9743613fb892c589d5293db7f716d8e5b3ae607a52510f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -78,65 +78,65 @@ CMD ["perl6"]
 ### `rakudo-star:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull rakudo-star@sha256:abe5b6565ffb6947234e95fc6e1f5ee7407931865ca3f8a9a5f6a16b0fb4e4bf
+$ docker pull rakudo-star@sha256:e4f4dd44583a37685c927d2a9bc4bb47114e17fcf1da0559b0ab97cf29500464
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.8 MB (126820207 bytes)**  
+-	Total Size: **126.8 MB (126798320 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3dd7225872765159cd707060554b20db4aaf4240f077324186a170be3297850a`
+-	Image ID: `sha256:94fcd220c0dac6af0df7707933dca0a302239363ff690728cbbd5b6979095a63`
 -	Default Command: `["perl6"]`
 
 ```dockerfile
-# Tue, 05 Mar 2019 10:00:23 GMT
-ADD file:7bdd35ab84858c7d5864b73a83750df5ac3db71ce3e586a7da68d50ed15904c8 in / 
-# Tue, 05 Mar 2019 10:00:24 GMT
+# Wed, 27 Mar 2019 08:47:20 GMT
+ADD file:8f991b13b28ce1de362b9f00e69aac8edc28124a08adeeb3b7fb02153e0b4e92 in / 
+# Wed, 27 Mar 2019 08:47:21 GMT
 CMD ["bash"]
-# Tue, 05 Mar 2019 11:31:50 GMT
+# Wed, 27 Mar 2019 10:15:55 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 11:32:09 GMT
+# Wed, 27 Mar 2019 10:16:13 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 05 Mar 2019 11:33:42 GMT
+# Wed, 27 Mar 2019 10:17:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 05 Mar 2019 18:07:43 GMT
+# Wed, 27 Mar 2019 22:28:38 GMT
 MAINTAINER Rob Hoelz
-# Tue, 05 Mar 2019 18:07:45 GMT
+# Wed, 27 Mar 2019 22:28:42 GMT
 RUN groupadd -r perl6 && useradd -r -g perl6 perl6
-# Tue, 05 Mar 2019 18:07:46 GMT
+# Wed, 27 Mar 2019 22:28:44 GMT
 ARG rakudo_version=2018.10
-# Tue, 05 Mar 2019 18:07:47 GMT
+# Wed, 27 Mar 2019 22:28:45 GMT
 ENV rakudo_version=2018.10
-# Tue, 05 Mar 2019 19:00:12 GMT
+# Wed, 27 Mar 2019 23:41:57 GMT
 RUN buildDeps='         gcc         libc6-dev         libencode-perl         make     '     url="https://rakudo.org/downloads/star/rakudo-star-${rakudo_version}.tar.gz"     keyserver='ha.pool.sks-keyservers.net'     keyfp='ECF8B611205B447E091246AF959E3D6197190DD5'     tmpdir="$(mktemp -d)"     && set -x     && export GNUPGHOME="$tmpdir"     && apt-get update     && apt-get --yes install --no-install-recommends $buildDeps     && rm -rf /var/lib/apt/lists/*     && mkdir ${tmpdir}/rakudo         && curl -fsSL ${url}.asc -o ${tmpdir}/rakudo.tar.gz.asc     && curl -fsSL $url -o ${tmpdir}/rakudo.tar.gz     && gpg --batch --keyserver $keyserver --recv-keys $keyfp     && gpg --batch --verify ${tmpdir}/rakudo.tar.gz.asc ${tmpdir}/rakudo.tar.gz         && tar xzf ${tmpdir}/rakudo.tar.gz --strip-components=1 -C ${tmpdir}/rakudo     && (         cd ${tmpdir}/rakudo         && perl Configure.pl --prefix=/usr --gen-moar         && make install     )     && rm -rf $tmpdir     && apt-get purge -y --auto-remove $buildDeps
-# Tue, 05 Mar 2019 19:00:13 GMT
+# Wed, 27 Mar 2019 23:41:58 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/site/bin
-# Tue, 05 Mar 2019 19:00:14 GMT
+# Wed, 27 Mar 2019 23:41:59 GMT
 CMD ["perl6"]
 ```
 
 -	Layers:
-	-	`sha256:fe62b3d54b9c915735c759d5d36826088c3c05a73dec307a4ec4cb502ad034ff`  
-		Last Modified: Tue, 05 Mar 2019 10:06:07 GMT  
-		Size: 43.1 MB (43131855 bytes)  
+	-	`sha256:5385e634d2a1a330aea59f510b0676b269167a579dddb586b27917d80d0dfd01`  
+		Last Modified: Wed, 27 Mar 2019 08:52:30 GMT  
+		Size: 43.1 MB (43132000 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08a498920bfeb2353594e13055200f3227c4992da6fb9617197ee55ebd4a723c`  
-		Last Modified: Tue, 05 Mar 2019 11:46:32 GMT  
-		Size: 9.7 MB (9730480 bytes)  
+	-	`sha256:6696bae2f570e0c96dcb21308e525216796d3452d1a9b8dcaba168ba37f3f464`  
+		Last Modified: Wed, 27 Mar 2019 10:36:08 GMT  
+		Size: 9.7 MB (9730463 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9bb8191548b27dfce511beab0eb0f4a401e160544b2f893ba98c3dc794636c53`  
-		Last Modified: Tue, 05 Mar 2019 11:46:30 GMT  
-		Size: 4.1 MB (4094079 bytes)  
+	-	`sha256:6dca82770cb3702e9c92d2f155923c0fb55671c1c373b8b50640b7bf05ed8418`  
+		Last Modified: Wed, 27 Mar 2019 10:36:05 GMT  
+		Size: 4.1 MB (4094072 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63fe741ca3c91de7331744358ee1d4543b1be55d55bdde318da27773bc8522fd`  
-		Last Modified: Tue, 05 Mar 2019 11:47:01 GMT  
-		Size: 48.0 MB (48007524 bytes)  
+	-	`sha256:d95e88827e80fd1e7c7d0a78bc734615833dd6ac19b07c1ad3b8b1c837bb4ece`  
+		Last Modified: Wed, 27 Mar 2019 10:36:43 GMT  
+		Size: 48.0 MB (48007546 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f36ce80c874db826ed7156d685e619e9f694f4f054cf17a8833d25f88ed665f`  
-		Last Modified: Tue, 05 Mar 2019 19:00:39 GMT  
-		Size: 1.8 KB (1768 bytes)  
+	-	`sha256:c57803e74a9bdaf91640bdce1a464911710909b454a17879143a094848cd3085`  
+		Last Modified: Wed, 27 Mar 2019 23:42:09 GMT  
+		Size: 1.8 KB (1764 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e245d6814e33a2007b5c043a0bb6c9dbc4ca73a580df3e0fe25ff6b9181ccd2`  
-		Last Modified: Tue, 05 Mar 2019 19:00:51 GMT  
-		Size: 21.9 MB (21854501 bytes)  
+	-	`sha256:c88f8065f483f77ed2f321210fb74ad7f648bac7c09659a96f3ea6df70d142ca`  
+		Last Modified: Wed, 27 Mar 2019 23:42:20 GMT  
+		Size: 21.8 MB (21832475 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
