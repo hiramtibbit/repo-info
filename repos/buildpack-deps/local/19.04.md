@@ -2666,14 +2666,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.0.0-7.8
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.0.0-7.8.dsc' linux_5.0.0-7.8.dsc 7899 SHA256:895a2caab2635d068008753dc78c171e2ac5b5f0afe07908c86dbb9727a81a96
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.0.0.orig.tar.gz' linux_5.0.0.orig.tar.gz 162593848 SHA256:d9dcf8bafdd5778274c3f9d2634500d4cc186f3ba80fc71ea1a1a100aa65ad6f
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.0.0-7.8.diff.gz' linux_5.0.0-7.8.diff.gz 3903786 SHA256:e6201dc6e806fef902a029b1cf7c6e3f857cc65f7c72b1e11a71735078d26ffb
-```
 
 ### `dpkg` source package: `lsb=10.2018112800ubuntu1`
 
@@ -3554,14 +3549,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-stdlib-extensions=3.7.2-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.7.2-3ubuntu1.dsc' python3-stdlib-extensions_3.7.2-3ubuntu1.dsc 2557 SHA256:751882a6aa616fa752d8f8351ab7f3923c2640bd2f9cc09fb5dc705d56996e35
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.7.2.orig.tar.xz' python3-stdlib-extensions_3.7.2.orig.tar.xz 1037568 SHA256:00ae6d04cd7af0f9363b64375eb76b54bd809cc2a3cfdfe69a7ca7bc900234d4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.7.2-3ubuntu1.debian.tar.xz' python3-stdlib-extensions_3.7.2-3ubuntu1.debian.tar.xz 1039504 SHA256:700f2109c53fc53b2dae0c39560d99c6859657d1f6ebd9377b7ce8013b46de7c
-```
 
 ### `dpkg` source package: `python3.7=3.7.2-3`
 
@@ -3592,14 +3582,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.7-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.7=3.7.2-3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.7/python3.7_3.7.2-3.dsc' python3.7_3.7.2-3.dsc 3439 SHA256:9e2ae1777b9b34bf17c49fc1763878953b0f3684a9d88ba36585c6f462bc7fc3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.7/python3.7_3.7.2.orig.tar.xz' python3.7_3.7.2.orig.tar.xz 17042320 SHA256:d83fe8ce51b1bb48bbcf0550fd265b9a75cdfdfa93f916f9e700aef8444bf1bb
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.7/python3.7_3.7.2-3.debian.tar.xz' python3.7_3.7.2-3.debian.tar.xz 354888 SHA256:5c34b0a15225cbd03f8837a7c2a1dd988ed6564fb426f00cb80d1f13f1464a30
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3.7/3.7.2-3/
+
 
 ### `dpkg` source package: `readline=8.0-1`
 
