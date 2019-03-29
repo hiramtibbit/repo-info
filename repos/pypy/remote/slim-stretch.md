@@ -1,4 +1,4 @@
-## `pypy:3.5-7-slim-jessie`
+## `pypy:slim-stretch`
 
 ```console
 $ docker pull pypy@sha256:e89e365c1d5c8bdc378e0e510397f1b6cafb9435ea2d7d1f8abc4b4592abed87
@@ -8,7 +8,7 @@ $ docker pull pypy@sha256:e89e365c1d5c8bdc378e0e510397f1b6cafb9435ea2d7d1f8abc4b
 -	Platforms:
 	-	linux; amd64
 
-### `pypy:3.5-7-slim-jessie` - linux; amd64
+### `pypy:slim-stretch` - linux; amd64
 
 ```console
 $ docker pull pypy@sha256:7c58e347311d13528ad6e4b951f168ec91179287df71a63d9f5cbd0bfa7d876f
