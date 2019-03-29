@@ -1,7 +1,7 @@
 ## `euleros:latest`
 
 ```console
-$ docker pull euleros@sha256:88a4d7e5cca3f5e79882f991fa0152bea2231d68cd6b03a126f52201eacf5d72
+$ docker pull euleros@sha256:ceb24c50d9eafc3c79908e5e05c0cf875343ad5161a542f06385f327741fdcc6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,27 +11,27 @@ $ docker pull euleros@sha256:88a4d7e5cca3f5e79882f991fa0152bea2231d68cd6b03a126f
 ### `euleros:latest` - linux; amd64
 
 ```console
-$ docker pull euleros@sha256:fce781d967cbacb7b463e5d405c290972c0fa145e6ae2cc997b076dfd249e45a
+$ docker pull euleros@sha256:5574fa79739b9b6f1972add7fcd8245f673c354beee646c71c7f32ee0f7827d3
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **74.2 MB (74190029 bytes)**  
+-	Total Size: **57.3 MB (57318923 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6268582d255586e7e643f0c7b3ff35008735522b79b0ee26d05bae6c03b16c48`
+-	Image ID: `sha256:edeb051fcc736cf17046f196be7f5b0cf8c0aee392b8496dfa6145292fa46efe`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 22 Sep 2018 09:19:48 GMT
-ADD file:f1cde52cc24c1c9083d58ce17ab7a7df4788eb4f7fb7003baa9afb9911d371a2 in / 
-# Sat, 22 Sep 2018 09:19:48 GMT
-LABEL name=EulerOS-2.2 Base Image vendor=EulerOS license=GPLv2 build-date=20170928
-# Sat, 22 Sep 2018 09:19:49 GMT
+# Fri, 29 Mar 2019 22:19:42 GMT
+ADD file:a5619625a93d1dd3c28374879f9e5ac51339d2a792ea957fac9211502b09cb2e in / 
+# Fri, 29 Mar 2019 22:19:42 GMT
+LABEL name=EulerOS-2.3 Base Image vendor=EulerOS license=GPLv2 build-date=20180919
+# Fri, 29 Mar 2019 22:19:43 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:a6a7ec89af33b4ec09de9fe82298fa9e8ab4bae8501e00bcaaf4ab8ae721f22b`  
-		Last Modified: Wed, 15 Nov 2017 00:53:43 GMT  
-		Size: 74.2 MB (74190029 bytes)  
+	-	`sha256:8768d3961db9d11fb60dffc7fd012137c3451c6600cf9d54fc1c7ddd0077160b`  
+		Last Modified: Fri, 29 Mar 2019 22:20:23 GMT  
+		Size: 57.3 MB (57318923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
