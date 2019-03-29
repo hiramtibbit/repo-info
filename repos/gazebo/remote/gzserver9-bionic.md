@@ -1,7 +1,7 @@
 ## `gazebo:gzserver9-bionic`
 
 ```console
-$ docker pull gazebo@sha256:8a741edc73811f16c73af0245becfb7b082d65d868bafd5a2db8fd901517d165
+$ docker pull gazebo@sha256:d8e0707ef3819787389c3260ab0977804e206c290d3b9a7c9e8eda55158d81e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,14 +13,14 @@ $ docker pull gazebo@sha256:8a741edc73811f16c73af0245becfb7b082d65d868bafd5a2db8
 ### `gazebo:gzserver9-bionic` - linux; amd64
 
 ```console
-$ docker pull gazebo@sha256:1af11644acdfbe8dc9d3ce9efb518ae4f23deede190622c5fe1b61f39ad0779b
+$ docker pull gazebo@sha256:8bd3f8b1178abdc2b09602886598f5ccc3b04ccb3c24fce9b0bdbb2c46735643
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **300.7 MB (300659622 bytes)**  
+-	Total Size: **300.8 MB (300784061 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:51b0a2d7b57b56e29f0b2890c8982be6ed56ab9ec1f2049503ed4da5e1c765a3`
+-	Image ID: `sha256:18684272859d418ac7e709a24ebaa92ac623e8d9935b808c634b626ae97d7590`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
@@ -43,15 +43,15 @@ RUN apt-get update && apt-get install -q -y     dirmngr     gnupg2     lsb-relea
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
 # Tue, 12 Mar 2019 01:29:05 GMT
 RUN . /etc/os-release     && echo "deb http://packages.osrfoundation.org/gazebo/$ID-stable `lsb_release -sc` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Wed, 20 Mar 2019 22:34:31 GMT
-RUN apt-get update && apt-get install -q -y     gazebo9=9.7.0-1*     && rm -rf /var/lib/apt/lists/*
-# Wed, 20 Mar 2019 22:34:32 GMT
+# Fri, 29 Mar 2019 21:31:21 GMT
+RUN apt-get update && apt-get install -q -y     gazebo9=9.8.0-1*     && rm -rf /var/lib/apt/lists/*
+# Fri, 29 Mar 2019 21:31:22 GMT
 EXPOSE 11345
-# Wed, 20 Mar 2019 22:34:32 GMT
+# Fri, 29 Mar 2019 21:31:22 GMT
 COPY file:b79966dec12c55a0a5c9e673326cc3faf9cbbeee0ea5f172e863df237eb8a601 in / 
-# Wed, 20 Mar 2019 22:34:32 GMT
+# Fri, 29 Mar 2019 21:31:23 GMT
 ENTRYPOINT ["/gzserver_entrypoint.sh"]
-# Wed, 20 Mar 2019 22:34:32 GMT
+# Fri, 29 Mar 2019 21:31:23 GMT
 CMD ["gzserver"]
 ```
 
@@ -88,13 +88,13 @@ CMD ["gzserver"]
 		Last Modified: Tue, 12 Mar 2019 01:41:18 GMT  
 		Size: 5.4 KB (5434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1eedca1bdd787fa3683f00b4f51b392c096d68779ef407a1be9b95ebc8c5fb4e`  
-		Last Modified: Wed, 20 Mar 2019 22:46:45 GMT  
-		Size: 252.4 MB (252435279 bytes)  
+	-	`sha256:05e648167c8faadac77a56aa07312908d76e390e9881f09e425b5b9bf283ced4`  
+		Last Modified: Fri, 29 Mar 2019 21:51:38 GMT  
+		Size: 252.6 MB (252559717 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:680eb3493b5c41ada3a051410d5523c59641e1d1bed822f3dc2eba1527c8ba11`  
-		Last Modified: Wed, 20 Mar 2019 22:45:48 GMT  
-		Size: 188.0 B  
+	-	`sha256:487f5f1d2d85c7b3da09d27f523a15b17c13b48354d606be3a5b59aeb37ade88`  
+		Last Modified: Fri, 29 Mar 2019 21:50:31 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gazebo:gzserver9-bionic` - linux; arm variant v7
