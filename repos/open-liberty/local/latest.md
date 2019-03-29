@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:19806cd7eebba01cb719083e56b3fee4f50deb7e6cda5371d50188b0d1e5c8a9`
-- Created: `2019-03-26T00:23:09.27508622Z`
-- Virtual Size: ~ 533.93 Mb  
+- Image ID: `sha256:d447e301fe7ce5145701106fff9adad0a3ecd9470bf4bd388e9b232810e1ea2c`
+- Created: `2019-03-28T21:22:59.746790455Z`
+- Virtual Size: ~ 534.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ol/helpers/runtime/docker-server.sh"]`
