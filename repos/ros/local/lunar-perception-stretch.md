@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f10b74167828fa5e5c145edcc2b83112b63b87c76c30dcbf1468fc39e86ad47e`
-- Created: `2019-03-05T05:04:19.51742743Z`
+- Image ID: `sha256:0f9eeb7eaa9c002441f2878538a2a90c5fa37dd45457c301eec9bdcedbfa2819`
+- Created: `2019-03-27T03:35:58.685693681Z`
 - Virtual Size: ~ 2.72 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -8967,12 +8967,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/opencv/2.4.9.1+dfsg1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/opencv/2.4.9.1+dfsg1-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjpeg2=2.1.2-1.1+deb9u2`
+### `dpkg` source package: `openjpeg2=2.1.2-1.1+deb9u3`
 
 Binary Packages:
 
-- `libopenjp2-7:amd64=2.1.2-1.1+deb9u2`
-- `libopenjp2-7-dev=2.1.2-1.1+deb9u2`
+- `libopenjp2-7:amd64=2.1.2-1.1+deb9u3`
+- `libopenjp2-7-dev=2.1.2-1.1+deb9u3`
 
 Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc/libopenjp2-7-dev/copyright`)
 
@@ -8989,17 +8989,17 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjpeg2=2.1.2-1.1+deb9u2
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.1.2-1.1+deb9u2.dsc' openjpeg2_2.1.2-1.1+deb9u2.dsc 2822 SHA256:fd31da5b80939520c938deada3826ac99a55bdd0500d73cef4d2072b0a2ea03c
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.1.2.orig.tar.gz' openjpeg2_2.1.2.orig.tar.gz 1987071 SHA256:4ce77b6ef538ef090d9bde1d5eeff8b3069ab56c4906f083475517c2c023dfa7
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.1.2-1.1+deb9u2.debian.tar.xz' openjpeg2_2.1.2-1.1+deb9u2.debian.tar.xz 23292 SHA256:be99a498bcb48176168f012e014fb8308d7543c2a163ae40830fbe2d78a36359
+$ apt-get source -qq --print-uris openjpeg2=2.1.2-1.1+deb9u3
+'http://security.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.1.2-1.1+deb9u3.dsc' openjpeg2_2.1.2-1.1+deb9u3.dsc 2797 SHA256:dcb5cf6adee12ab0cc23d9a08731df6ee87406a98f623233348580e9f0373f78
+'http://security.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.1.2.orig.tar.gz' openjpeg2_2.1.2.orig.tar.gz 1987071 SHA256:4ce77b6ef538ef090d9bde1d5eeff8b3069ab56c4906f083475517c2c023dfa7
+'http://security.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.1.2-1.1+deb9u3.debian.tar.xz' openjpeg2_2.1.2-1.1+deb9u3.debian.tar.xz 25464 SHA256:c168bec05ef60b78e1d219760d6faf67e58f9055cbde770005bd12123c3b0002
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjpeg2/2.1.2-1.1+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/openjpeg2/2.1.2-1.1+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjpeg2/2.1.2-1.1+deb9u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjpeg2/2.1.2-1.1+deb9u3/ (for browsing the source)
+- https://sources.debian.net/src/openjpeg2/2.1.2-1.1+deb9u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjpeg2/2.1.2-1.1+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-5+deb9u2`
 
@@ -10191,33 +10191,43 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python-autobahn/0.14.1+dfsg1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python-autobahn/0.14.1+dfsg1-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python-catkin-pkg-modules=0.4.10-1`
+### `dpkg` source package: `python-catkin-pkg-modules=0.4.11-1`
 
 Binary Packages:
 
-- `python-catkin-pkg-modules=0.4.10-1`
+- `python-catkin-pkg-modules=0.4.11-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.4.11-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.11-1.debian.tar.xz' python-catkin-pkg-modules_0.4.11-1.debian.tar.xz 1936 SHA512:dab33c74d5c9913f0da147b5d56fd137c55f48c577e8f23b2d0c4fcc57be92869c85b6f0e3d2846eb7cb72a5db307da61969652396cf321ed5262bab740927c7
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.11-1.dsc' python-catkin-pkg-modules_0.4.11-1.dsc 1050 SHA512:d068ac582486838a0c1e20559efdb66e1072f5e1c8e07d2617a5c49be26b6219654bbf931483553fcc9f9310b85741a5990fbf42b9c97c3bc6c21fd6af0a3bb8
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.11.orig.tar.gz' python-catkin-pkg-modules_0.4.11.orig.tar.gz 58840 SHA512:6801d06ee340e8ad7567872ed19b856567b31e03ddc3740f45f3758a6750cc93691e0944b1f9e81b083d587d7c942ad17b184d8a5c0fcd9a2e3db796e19a717d
+```
 
-### `dpkg` source package: `python-catkin-pkg=0.4.10-100`
+### `dpkg` source package: `python-catkin-pkg=0.4.11-100`
 
 Binary Packages:
 
-- `python-catkin-pkg=0.4.10-100`
+- `python-catkin-pkg=0.4.11-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-catkin-pkg=0.4.11-100
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.11-100.debian.tar.xz' python-catkin-pkg_0.4.11-100.debian.tar.xz 1916 SHA512:8bb2cb2039e0f0f54da2713ebcb63a7cdb0bde68c898fd6c4b7162b249cc2d37078def5e5e0aba9122d20bb516bdb62eaf4d67c368d7964668688c44b4b5eff2
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.11-100.dsc' python-catkin-pkg_0.4.11-100.dsc 986 SHA512:a770be1a5d31493f856b8fc682e9286fbd8442824027c4c04ed3116473bb554219f553efca6e4208de330970e8df4fba6e4a6a23450b536df9822fdfe00d1932
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.11.orig.tar.gz' python-catkin-pkg_0.4.11.orig.tar.gz 13290 SHA512:2eeecdafd73c72e4cabaa6898e9c02a89c760f220602c4500d2403b1652d2e4b383e351166a3eb0b02c26c18d724a2e656bbbcd336f8d73cef1bccdce45cc3df
+```
 
 ### `dpkg` source package: `python-cbor=0.1.24-1`
 
