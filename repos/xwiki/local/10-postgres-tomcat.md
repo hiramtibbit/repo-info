@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6de45fc8d7d246fcdca52c71296eec6469f67846397bbf92495c9690670bc1c7`
-- Created: `2019-03-05T14:59:50.72288358Z`
+- Image ID: `sha256:97727082011c5c7cc94ff7f09c079674f68ab98f1bf165c88c75b2ecf4ac7979`
+- Created: `2019-03-28T22:25:37.603271766Z`
 - Virtual Size: ~ 1.19 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,8 +13,8 @@
   - `PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home/jre`
-  - `JAVA_VERSION=8u181`
-  - `JAVA_DEBIAN_VERSION=8u181-b13-2~deb9u1`
+  - `JAVA_VERSION=8u212`
+  - `JAVA_DEBIAN_VERSION=8u212-b01-1~deb9u1`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
@@ -25,9 +25,9 @@
   - `TOMCAT_SHA512=3a3e624014faf87091e6dbb8bad13c68240955d62301d22cf3d75a1766859dd97500d6850fbd5d3dc012f08f9301eb24c24fa7175bcca616767fa5c18875072d`
   - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz`
   - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz.asc`
-  - `XWIKI_VERSION=10.11.3`
-  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/10.11.3`
-  - `XWIKI_DOWNLOAD_SHA256=5b544d8786b71cc51b150a3623efa17aea1dfafda429776caeb97d5a3d2c5343`
+  - `XWIKI_VERSION=10.11.4`
+  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/10.11.4`
+  - `XWIKI_DOWNLOAD_SHA256=38a25212bb73612c5f87190a31dea175cf996e22a9d8f9c08e999c5baba2db5a`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -5191,12 +5191,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.26.2-1.1+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.26.2-1.1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-8=8u181-b13-2~deb9u1`
+### `dpkg` source package: `openjdk-8=8u212-b01-1~deb9u1`
 
 Binary Packages:
 
-- `openjdk-8-jre:amd64=8u181-b13-2~deb9u1`
-- `openjdk-8-jre-headless:amd64=8u181-b13-2~deb9u1`
+- `openjdk-8-jre:amd64=8u212-b01-1~deb9u1`
+- `openjdk-8-jre-headless:amd64=8u212-b01-1~deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre/copyright`, `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 
@@ -5208,17 +5208,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre/copyright`, `/usr/share/do
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-8=8u181-b13-2~deb9u1
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u181-b13-2~deb9u1.dsc' openjdk-8_8u181-b13-2~deb9u1.dsc 4499 SHA256:e8f04a2104632b525686a180d67a57618337c18e291912797cb9c58eb888d0bc
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u181-b13.orig.tar.gz' openjdk-8_8u181-b13.orig.tar.gz 70305240 SHA256:1c75f1e91777bbeb322365686702f7fdf3e25040de5051301f3243313544f11a
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u181-b13-2~deb9u1.debian.tar.xz' openjdk-8_8u181-b13-2~deb9u1.debian.tar.xz 255716 SHA256:363df60e16c303da497bf88dd77d818df6b9cec2f5598296a4b8b27508344be9
+$ apt-get source -qq --print-uris openjdk-8=8u212-b01-1~deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-8/openjdk-8_8u212-b01-1~deb9u1.dsc' openjdk-8_8u212-b01-1~deb9u1.dsc 4492 SHA256:53185e441e3e2d7be1f5d80279a743de2465ed73353dc33f5ab3769f671e3fe2
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-8/openjdk-8_8u212-b01.orig.tar.gz' openjdk-8_8u212-b01.orig.tar.gz 70706146 SHA256:c07789df52c319fe17eba60b069e884a1930e96f61d6b5c704bd92ecf3ea0b65
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-8/openjdk-8_8u212-b01-1~deb9u1.debian.tar.xz' openjdk-8_8u212-b01-1~deb9u1.debian.tar.xz 240100 SHA256:9b53460e31ad4cefa089c4298f44e98909d11501d530283291fb748ae14e13ba
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-8/8u181-b13-2~deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-8/8u181-b13-2~deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-8/8u181-b13-2~deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-8/8u212-b01-1~deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-8/8u212-b01-1~deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-8/8u212-b01-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-5+deb9u2`
 
