@@ -3,7 +3,7 @@
 # Tags of `teamspeak`
 
 -	[`teamspeak:3.7`](#teamspeak37)
--	[`teamspeak:3.7.0`](#teamspeak370)
+-	[`teamspeak:3.7.1`](#teamspeak371)
 -	[`teamspeak:latest`](#teamspeaklatest)
 
 ## `teamspeak:3.7`
@@ -84,7 +84,7 @@ CMD ["ts3server"]
 		Size: 1.3 KB (1265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `teamspeak:3.7.0`
+## `teamspeak:3.7.1`
 
 ```console
 $ docker pull teamspeak@sha256:d98e86d03a96d1aa769ce91a8f106c3df523dcb3b7505d4c2c6cac8ce0056d62
@@ -94,7 +94,7 @@ $ docker pull teamspeak@sha256:d98e86d03a96d1aa769ce91a8f106c3df523dcb3b7505d4c2
 -	Platforms:
 	-	linux; amd64
 
-### `teamspeak:3.7.0` - linux; amd64
+### `teamspeak:3.7.1` - linux; amd64
 
 ```console
 $ docker pull teamspeak@sha256:81407f678e615876010d9e4c8b76c422dfdf17f33530cf5cbf8a464e8fb5001d
