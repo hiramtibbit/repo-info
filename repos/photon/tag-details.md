@@ -3,11 +3,11 @@
 # Tags of `photon`
 
 -	[`photon:1.0`](#photon10)
--	[`photon:1.0-20190319`](#photon10-20190319)
+-	[`photon:1.0-20190329`](#photon10-20190329)
 -	[`photon:2.0`](#photon20)
 -	[`photon:2.0-20190329`](#photon20-20190329)
 -	[`photon:3.0`](#photon30)
--	[`photon:3.0-20190320`](#photon30-20190320)
+-	[`photon:3.0-20190329`](#photon30-20190329)
 -	[`photon:dev`](#photondev)
 -	[`photon:dev-20180904`](#photondev-20180904)
 -	[`photon:latest`](#photonlatest)
@@ -50,7 +50,7 @@ CMD ["/bin/bash"]
 		Size: 49.8 MB (49758928 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `photon:1.0-20190319`
+## `photon:1.0-20190329`
 
 ```console
 $ docker pull photon@sha256:338cc0e6a4ea3217214d2ad4394f35f8b401b635e515879792edf1018311215d
@@ -60,7 +60,7 @@ $ docker pull photon@sha256:338cc0e6a4ea3217214d2ad4394f35f8b401b635e515879792ed
 -	Platforms:
 	-	linux; amd64
 
-### `photon:1.0-20190319` - linux; amd64
+### `photon:1.0-20190329` - linux; amd64
 
 ```console
 $ docker pull photon@sha256:e86b1b3a9e535f5daf86b4bb2e40156466864a381e3e972da14c5700dea8dd13
@@ -231,7 +231,7 @@ CMD ["/bin/bash"]
 		Size: 12.5 MB (12475621 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `photon:3.0-20190320`
+## `photon:3.0-20190329`
 
 ```console
 $ docker pull photon@sha256:5c7819b269cc15cde6cece1801951daef6ec75a57bf16e6f8bf0ef935190b4c7
@@ -242,7 +242,7 @@ $ docker pull photon@sha256:5c7819b269cc15cde6cece1801951daef6ec75a57bf16e6f8bf0
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
-### `photon:3.0-20190320` - linux; amd64
+### `photon:3.0-20190329` - linux; amd64
 
 ```console
 $ docker pull photon@sha256:629e0ec9bd0dd4cc98a66c4c0f34295770a30db24aadc33ecf66ef02489da1f9
@@ -270,7 +270,7 @@ CMD ["/bin/bash"]
 		Size: 14.6 MB (14602579 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `photon:3.0-20190320` - linux; arm64 variant v8
+### `photon:3.0-20190329` - linux; arm64 variant v8
 
 ```console
 $ docker pull photon@sha256:7365cb2ef561bd9863093cf4a4f9adfc05d44cdb3634341345f084d9f4ca37df
