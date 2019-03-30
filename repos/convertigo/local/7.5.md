@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a65ca6433ae3c4164328ca9df3df9d0bc09defd62f5f587994e86a87f361c97d`
-- Created: `2019-03-06T03:19:45.131723739Z`
-- Virtual Size: ~ 620.21 Mb  
+- Image ID: `sha256:48d4ca7e80f363a29620665184d5f1d620204d5b376acb089b0cd514094ebf47`
+- Created: `2019-03-28T02:09:01.702888881Z`
+- Virtual Size: ~ 620.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -13,8 +13,8 @@
   - `PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home/jre`
-  - `JAVA_VERSION=8u181`
-  - `JAVA_DEBIAN_VERSION=8u181-b13-2~deb9u1`
+  - `JAVA_VERSION=8u212`
+  - `JAVA_DEBIAN_VERSION=8u212-b01-1~deb9u1`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
@@ -3879,12 +3879,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.26.2-1.1+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.26.2-1.1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-8=8u181-b13-2~deb9u1`
+### `dpkg` source package: `openjdk-8=8u212-b01-1~deb9u1`
 
 Binary Packages:
 
-- `openjdk-8-jre:amd64=8u181-b13-2~deb9u1`
-- `openjdk-8-jre-headless:amd64=8u181-b13-2~deb9u1`
+- `openjdk-8-jre:amd64=8u212-b01-1~deb9u1`
+- `openjdk-8-jre-headless:amd64=8u212-b01-1~deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre/copyright`, `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 
@@ -3896,17 +3896,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre/copyright`, `/usr/share/do
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-8=8u181-b13-2~deb9u1
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u181-b13-2~deb9u1.dsc' openjdk-8_8u181-b13-2~deb9u1.dsc 4499 SHA256:e8f04a2104632b525686a180d67a57618337c18e291912797cb9c58eb888d0bc
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u181-b13.orig.tar.gz' openjdk-8_8u181-b13.orig.tar.gz 70305240 SHA256:1c75f1e91777bbeb322365686702f7fdf3e25040de5051301f3243313544f11a
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u181-b13-2~deb9u1.debian.tar.xz' openjdk-8_8u181-b13-2~deb9u1.debian.tar.xz 255716 SHA256:363df60e16c303da497bf88dd77d818df6b9cec2f5598296a4b8b27508344be9
+$ apt-get source -qq --print-uris openjdk-8=8u212-b01-1~deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-8/openjdk-8_8u212-b01-1~deb9u1.dsc' openjdk-8_8u212-b01-1~deb9u1.dsc 4492 SHA256:53185e441e3e2d7be1f5d80279a743de2465ed73353dc33f5ab3769f671e3fe2
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-8/openjdk-8_8u212-b01.orig.tar.gz' openjdk-8_8u212-b01.orig.tar.gz 70706146 SHA256:c07789df52c319fe17eba60b069e884a1930e96f61d6b5c704bd92ecf3ea0b65
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-8/openjdk-8_8u212-b01-1~deb9u1.debian.tar.xz' openjdk-8_8u212-b01-1~deb9u1.debian.tar.xz 240100 SHA256:9b53460e31ad4cefa089c4298f44e98909d11501d530283291fb748ae14e13ba
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-8/8u181-b13-2~deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-8/8u181-b13-2~deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-8/8u181-b13-2~deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-8/8u212-b01-1~deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-8/8u212-b01-1~deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-8/8u212-b01-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-5+deb9u2`
 
