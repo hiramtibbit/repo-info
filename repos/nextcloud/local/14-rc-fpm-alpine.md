@@ -1,10 +1,10 @@
-# `nextcloud:16.0.0beta1-fpm-alpine`
+# `nextcloud:14.0.9RC1-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ef35702c794309435f2f8f5cfa58d1c58c5c651c890f878b6d803c91323dbd1e`
-- Created: `2019-03-22T23:06:53.588225339Z`
-- Virtual Size: ~ 338.30 Mb  
+- Image ID: `sha256:f7ba659133573564c12aa550b1723c313078c7124cb37e668cc384003986a2b8`
+- Created: `2019-03-29T22:04:09.923382287Z`
+- Virtual Size: ~ 311.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -23,4 +23,4 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.16.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=7d91ed3c1447c6358a3d53f84599ef854aca4c3622de7435e2df115bf196e482`
   - `PHP_MD5=`
-  - `NEXTCLOUD_VERSION=16.0.0beta1`
+  - `NEXTCLOUD_VERSION=14.0.9RC1`
