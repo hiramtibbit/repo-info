@@ -1,7 +1,7 @@
 ## `geonetwork:latest`
 
 ```console
-$ docker pull geonetwork@sha256:7cbe98952414f801c19b99d7306e4dc4e1f6adb7ba55fcc5a38a5aa0d66f6165
+$ docker pull geonetwork@sha256:a705de80d51a9ddc9d50959826fd9235e5354371f43352f9dce9dc99da3f6575
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -323,14 +323,14 @@ CMD ["catalina.sh" "run"]
 ### `geonetwork:latest` - linux; arm variant v7
 
 ```console
-$ docker pull geonetwork@sha256:0834b14bb46d8edcdb51faefe8f9b8282a1e9bb432e0f9f2a34056f1c28eac04
+$ docker pull geonetwork@sha256:336f2cc4751cea667e694a139a5b04d6bd9da0193d41d79d50e1e7def2592af7
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **373.7 MB (373678971 bytes)**  
+-	Total Size: **373.7 MB (373680469 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:033211cd811e25ed012936d7087ac15a37228123648af0b436c95b6f8e35be20`
+-	Image ID: `sha256:075a2a3ba61e1d67caee13630af72b96b6fe8c8277ba7ff71f166a497f9cd2eb`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
@@ -381,41 +381,41 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		libapr1 	&& r
 ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23
 # Thu, 28 Mar 2019 12:57:02 GMT
 ENV TOMCAT_MAJOR=8
-# Thu, 28 Mar 2019 12:57:02 GMT
-ENV TOMCAT_VERSION=8.5.38
-# Thu, 28 Mar 2019 12:57:03 GMT
-ENV TOMCAT_SHA512=3a3e624014faf87091e6dbb8bad13c68240955d62301d22cf3d75a1766859dd97500d6850fbd5d3dc012f08f9301eb24c24fa7175bcca616767fa5c18875072d
-# Thu, 28 Mar 2019 12:57:03 GMT
-ENV TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz
-# Thu, 28 Mar 2019 12:57:03 GMT
-ENV TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz.asc
-# Thu, 28 Mar 2019 12:57:50 GMT
+# Sat, 30 Mar 2019 12:08:24 GMT
+ENV TOMCAT_VERSION=8.5.39
+# Sat, 30 Mar 2019 12:08:25 GMT
+ENV TOMCAT_SHA512=8396f526eca9b691931cfa773f43c5190e7002d938cb253335b65a32c7ef8acba2bf7c61f2ccffc4113a3ba0c46169a4e4797cdea73db32c5ba56156a9f49353
+# Sat, 30 Mar 2019 12:08:25 GMT
+ENV TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz
+# Sat, 30 Mar 2019 12:08:26 GMT
+ENV TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz.asc
+# Sat, 30 Mar 2019 12:09:09 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 		apt-get install -y --no-install-recommends gnupg dirmngr; 		export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 		apt-get install -y --no-install-recommends wget ca-certificates; 		success=; 	for url in $TOMCAT_TGZ_URLS; do 		if wget -O tomcat.tar.gz "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum -c -; 		success=; 	for url in $TOMCAT_ASC_URLS; do 		if wget -O tomcat.tar.gz.asc "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xvf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		nativeBuildDir="$(mktemp -d)"; 	tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		"openjdk-${JAVA_VERSION%%[.~bu-]*}-jdk=$JAVA_DEBIAN_VERSION" 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes; 		make -j "$(nproc)"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs work
-# Thu, 28 Mar 2019 12:57:53 GMT
+# Sat, 30 Mar 2019 12:09:13 GMT
 RUN set -e 	&& nativeLines="$(catalina.sh configtest 2>&1)" 	&& nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')" 	&& nativeLines="$(echo "$nativeLines" | sort -u)" 	&& if ! echo "$nativeLines" | grep 'INFO: Loaded APR based Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 28 Mar 2019 12:57:54 GMT
+# Sat, 30 Mar 2019 12:09:13 GMT
 EXPOSE 8080
-# Thu, 28 Mar 2019 12:57:55 GMT
+# Sat, 30 Mar 2019 12:09:14 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 28 Mar 2019 13:28:49 GMT
+# Sat, 30 Mar 2019 12:39:33 GMT
 ENV GN_FILE=geonetwork.war
-# Thu, 28 Mar 2019 13:28:50 GMT
+# Sat, 30 Mar 2019 12:39:33 GMT
 ENV DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data
-# Thu, 28 Mar 2019 13:28:50 GMT
+# Sat, 30 Mar 2019 12:39:34 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:+UseConcMarkSweepGC
-# Thu, 28 Mar 2019 13:28:50 GMT
+# Sat, 30 Mar 2019 12:39:34 GMT
 ENV GN_VERSION=3.6.0
-# Thu, 28 Mar 2019 13:28:51 GMT
+# Sat, 30 Mar 2019 12:39:34 GMT
 ENV GN_DOWNLOAD_MD5=06601ea4b16e4f8e806c7369ea0060ae
-# Thu, 28 Mar 2019 13:28:51 GMT
+# Sat, 30 Mar 2019 12:39:35 GMT
 WORKDIR /usr/local/tomcat/webapps
-# Thu, 28 Mar 2019 13:30:34 GMT
+# Sat, 30 Mar 2019 12:41:47 GMT
 RUN curl -fSL -o $GN_FILE      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/geonetwork.war/download &&      echo "$GN_DOWNLOAD_MD5 *$GN_FILE" | md5sum -c &&      mkdir -p geonetwork &&      unzip -e $GN_FILE -d geonetwork &&      rm $GN_FILE
-# Thu, 28 Mar 2019 13:30:36 GMT
+# Sat, 30 Mar 2019 12:41:49 GMT
 COPY file:0804862fd42c05f06dfa65cb1e5dad9a956d8ac6a3ddd4d962847ba159f5cfe6 in /entrypoint.sh 
-# Thu, 28 Mar 2019 13:30:36 GMT
+# Sat, 30 Mar 2019 12:41:50 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 28 Mar 2019 13:30:37 GMT
+# Sat, 30 Mar 2019 12:41:50 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -456,20 +456,20 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 28 Mar 2019 13:11:31 GMT  
 		Size: 505.0 KB (505017 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:302180004602414f6eff4ca93b346f7659c6a7e8117207611c8a176ca25b1ad8`  
-		Last Modified: Thu, 28 Mar 2019 13:12:03 GMT  
-		Size: 10.6 MB (10574223 bytes)  
+	-	`sha256:6d9c3a739b251d22fa75d266c4c939231c4d6ec7910a9eb5efe24dbb39d94fb0`  
+		Last Modified: Sat, 30 Mar 2019 12:22:08 GMT  
+		Size: 10.6 MB (10575760 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8036418bae810c26a9d3095dd7ee284b0717c9c100cc2b5e43b332f4ad1ff191`  
-		Last Modified: Thu, 28 Mar 2019 13:12:00 GMT  
-		Size: 129.0 B  
+	-	`sha256:d9a0919ed311e924eca4f5204cd2c2020b727fe84a63419dff61343a39df0699`  
+		Last Modified: Sat, 30 Mar 2019 12:22:06 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6488d78eb2865f23fd7b0afaa4a8b4c215c5fe9f1c1799415fb89fe24f8eec8f`  
-		Last Modified: Thu, 28 Mar 2019 13:37:07 GMT  
-		Size: 196.0 MB (195981237 bytes)  
+	-	`sha256:6bdcb891b754df0b4d1d7cfca6c35383b47a86014412298a710a248f70e07c0d`  
+		Last Modified: Sat, 30 Mar 2019 12:43:16 GMT  
+		Size: 196.0 MB (195981197 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3009ce3abe5354817b01ca4a36fe7adce7073d5a5e86532077a85868fc210ad5`  
-		Last Modified: Thu, 28 Mar 2019 13:36:30 GMT  
+	-	`sha256:ff5b88af0282779eae21ad24baa98d84a2de775b83218e40501610ec4979e3c7`  
+		Last Modified: Sat, 30 Mar 2019 12:42:40 GMT  
 		Size: 250.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -629,14 +629,14 @@ CMD ["catalina.sh" "run"]
 ### `geonetwork:latest` - linux; 386
 
 ```console
-$ docker pull geonetwork@sha256:40dc3722facb6110366881e3655250de1d79b1a8073942289c7396a073f1de70
+$ docker pull geonetwork@sha256:c698cf2115caea948dca5523769da689d5f681818b1c8d434882d5f7613aa702
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **392.0 MB (391997945 bytes)**  
+-	Total Size: **392.0 MB (391999010 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5f89bbaf699e540d6e7b9109ff59004915e6309737849e0a2bf42f7c119d3834`
+-	Image ID: `sha256:51982836a5f40b270f701bf3b0565d902e55e20b4314a7c8aa02a069851d94f6`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
@@ -687,41 +687,41 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		libapr1 	&& r
 ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23
 # Thu, 28 Mar 2019 04:15:32 GMT
 ENV TOMCAT_MAJOR=8
-# Thu, 28 Mar 2019 04:15:32 GMT
-ENV TOMCAT_VERSION=8.5.38
-# Thu, 28 Mar 2019 04:15:32 GMT
-ENV TOMCAT_SHA512=3a3e624014faf87091e6dbb8bad13c68240955d62301d22cf3d75a1766859dd97500d6850fbd5d3dc012f08f9301eb24c24fa7175bcca616767fa5c18875072d
-# Thu, 28 Mar 2019 04:15:33 GMT
-ENV TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz
-# Thu, 28 Mar 2019 04:15:33 GMT
-ENV TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz.asc
-# Thu, 28 Mar 2019 04:16:07 GMT
+# Sat, 30 Mar 2019 11:48:27 GMT
+ENV TOMCAT_VERSION=8.5.39
+# Sat, 30 Mar 2019 11:48:27 GMT
+ENV TOMCAT_SHA512=8396f526eca9b691931cfa773f43c5190e7002d938cb253335b65a32c7ef8acba2bf7c61f2ccffc4113a3ba0c46169a4e4797cdea73db32c5ba56156a9f49353
+# Sat, 30 Mar 2019 11:48:27 GMT
+ENV TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz
+# Sat, 30 Mar 2019 11:48:28 GMT
+ENV TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz.asc
+# Sat, 30 Mar 2019 11:49:02 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 		apt-get install -y --no-install-recommends gnupg dirmngr; 		export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 		apt-get install -y --no-install-recommends wget ca-certificates; 		success=; 	for url in $TOMCAT_TGZ_URLS; do 		if wget -O tomcat.tar.gz "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum -c -; 		success=; 	for url in $TOMCAT_ASC_URLS; do 		if wget -O tomcat.tar.gz.asc "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xvf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		nativeBuildDir="$(mktemp -d)"; 	tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		"openjdk-${JAVA_VERSION%%[.~bu-]*}-jdk=$JAVA_DEBIAN_VERSION" 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes; 		make -j "$(nproc)"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs work
-# Thu, 28 Mar 2019 04:16:09 GMT
+# Sat, 30 Mar 2019 11:49:05 GMT
 RUN set -e 	&& nativeLines="$(catalina.sh configtest 2>&1)" 	&& nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')" 	&& nativeLines="$(echo "$nativeLines" | sort -u)" 	&& if ! echo "$nativeLines" | grep 'INFO: Loaded APR based Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 28 Mar 2019 04:16:10 GMT
+# Sat, 30 Mar 2019 11:49:05 GMT
 EXPOSE 8080
-# Thu, 28 Mar 2019 04:16:10 GMT
+# Sat, 30 Mar 2019 11:49:05 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 28 Mar 2019 07:50:33 GMT
+# Sat, 30 Mar 2019 12:43:19 GMT
 ENV GN_FILE=geonetwork.war
-# Thu, 28 Mar 2019 07:50:33 GMT
+# Sat, 30 Mar 2019 12:43:19 GMT
 ENV DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data
-# Thu, 28 Mar 2019 07:50:33 GMT
+# Sat, 30 Mar 2019 12:43:19 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:+UseConcMarkSweepGC
-# Thu, 28 Mar 2019 07:50:33 GMT
+# Sat, 30 Mar 2019 12:43:20 GMT
 ENV GN_VERSION=3.6.0
-# Thu, 28 Mar 2019 07:50:34 GMT
+# Sat, 30 Mar 2019 12:43:20 GMT
 ENV GN_DOWNLOAD_MD5=06601ea4b16e4f8e806c7369ea0060ae
-# Thu, 28 Mar 2019 07:50:34 GMT
+# Sat, 30 Mar 2019 12:43:20 GMT
 WORKDIR /usr/local/tomcat/webapps
-# Thu, 28 Mar 2019 07:50:47 GMT
+# Sat, 30 Mar 2019 12:43:41 GMT
 RUN curl -fSL -o $GN_FILE      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/geonetwork.war/download &&      echo "$GN_DOWNLOAD_MD5 *$GN_FILE" | md5sum -c &&      mkdir -p geonetwork &&      unzip -e $GN_FILE -d geonetwork &&      rm $GN_FILE
-# Thu, 28 Mar 2019 07:50:47 GMT
+# Sat, 30 Mar 2019 12:43:41 GMT
 COPY file:0804862fd42c05f06dfa65cb1e5dad9a956d8ac6a3ddd4d962847ba159f5cfe6 in /entrypoint.sh 
-# Thu, 28 Mar 2019 07:50:47 GMT
+# Sat, 30 Mar 2019 12:43:42 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 28 Mar 2019 07:50:48 GMT
+# Sat, 30 Mar 2019 12:43:42 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -762,20 +762,20 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 28 Mar 2019 05:12:11 GMT  
 		Size: 540.5 KB (540513 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93ce7e9a94f4a4bebcdce5230297a8b9625c0e2af7f3a5654d70cd5886165dda`  
-		Last Modified: Thu, 28 Mar 2019 05:12:34 GMT  
-		Size: 10.5 MB (10543912 bytes)  
+	-	`sha256:04eed12a08a334688b673058933970725b8c577373f279157258bcd5699bde3e`  
+		Last Modified: Sat, 30 Mar 2019 11:59:06 GMT  
+		Size: 10.5 MB (10544989 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed9af742266be55d9f6519813459a20b84442a9afd1843b2cf6413febf539f50`  
-		Last Modified: Thu, 28 Mar 2019 05:12:33 GMT  
-		Size: 165.0 B  
+	-	`sha256:42283d6439e208dc2fd40412bac15509eeaac14dc201d204a2def0408f7d33d1`  
+		Last Modified: Sat, 30 Mar 2019 11:59:04 GMT  
+		Size: 167.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bdf181b5163165c9e51ccc1ba888fdfbd172a8dd74404ed7e22361414d371381`  
-		Last Modified: Thu, 28 Mar 2019 07:53:31 GMT  
-		Size: 196.0 MB (195981336 bytes)  
+	-	`sha256:891c75f99df63be67c74eb2cee0da7e602731147f57dc75a0938ec8b5b05816f`  
+		Last Modified: Sat, 30 Mar 2019 12:44:31 GMT  
+		Size: 196.0 MB (195981322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ff1edb745036ec73c0246eb9992cbb5f778ab0aa795d220dfd05e7dc725c723`  
-		Last Modified: Thu, 28 Mar 2019 07:53:10 GMT  
+	-	`sha256:dab6513b2f817217ece99630c971b11e28638cc2629d18199db1980d7bceeec0`  
+		Last Modified: Sat, 30 Mar 2019 12:44:10 GMT  
 		Size: 249.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
