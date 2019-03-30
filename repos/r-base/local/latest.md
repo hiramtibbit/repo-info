@@ -3907,21 +3907,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018i-2
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i-2.dsc' tzdata_2018i-2.dsc 2232 SHA256:79bda2830db31bd1668c623f468112006a76f2b3d99738982f9a592dcffb0aaa
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i.orig.tar.gz' tzdata_2018i.orig.tar.gz 377009 SHA256:82c45ef84ca3bc01d0a4a397ba8adeb8f7f199c6550740587c6ac5a7108c00d9
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i.orig.tar.gz.asc' tzdata_2018i.orig.tar.gz.asc 833 SHA256:eeaef7ccf3f1ea35274f480ad439c1ac0d6bb2a266f3dffd34ea6f282d915f2b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i-2.debian.tar.xz' tzdata_2018i-2.debian.tar.xz 104648 SHA256:f98af5cdf2b8cc54323d8d88a6cff071dde66a02bbb00dd0cff3c7a091d89fa0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2018i-2/
 
-- https://sources.debian.net/src/tzdata/2018i-2/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018i-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018i-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0038+nmu1`
 
