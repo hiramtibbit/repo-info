@@ -1,4 +1,4 @@
-## `clojure:openjdk-8-tools-deps-1.10.0.414-alpine`
+## `clojure:openjdk-8-tools-deps-1.10.0.442-alpine`
 
 ```console
 $ docker pull clojure@sha256:115dd5a10f84ac535c7b2dadf3ee60dd8b63202dc6c5314cd3bac4fdb58e7005
@@ -8,7 +8,7 @@ $ docker pull clojure@sha256:115dd5a10f84ac535c7b2dadf3ee60dd8b63202dc6c5314cd3b
 -	Platforms:
 	-	linux; amd64
 
-### `clojure:openjdk-8-tools-deps-1.10.0.414-alpine` - linux; amd64
+### `clojure:openjdk-8-tools-deps-1.10.0.442-alpine` - linux; amd64
 
 ```console
 $ docker pull clojure@sha256:7c7eb817c8f306a74e7895203909e38e041f4f4048371a278fe8ebe9e95cd7ef

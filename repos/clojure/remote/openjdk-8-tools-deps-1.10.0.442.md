@@ -1,4 +1,4 @@
-## `clojure:openjdk-8-tools-deps-1.10.0.414`
+## `clojure:openjdk-8-tools-deps-1.10.0.442`
 
 ```console
 $ docker pull clojure@sha256:3b9667cbdfc23aeeb8ec1deb4d05e3eb718104ca3170dab294df55ba07201b49
@@ -14,7 +14,7 @@ $ docker pull clojure@sha256:3b9667cbdfc23aeeb8ec1deb4d05e3eb718104ca3170dab294d
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `clojure:openjdk-8-tools-deps-1.10.0.414` - linux; amd64
+### `clojure:openjdk-8-tools-deps-1.10.0.442` - linux; amd64
 
 ```console
 $ docker pull clojure@sha256:ce9e20d792c4506d27a479d269e693d330241921f24b35123b8e902e65463b3e
@@ -116,7 +116,7 @@ CMD ["sh" "-c" "sleep 1 && exec clj"]
 		Size: 4.1 MB (4102741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `clojure:openjdk-8-tools-deps-1.10.0.414` - linux; arm variant v5
+### `clojure:openjdk-8-tools-deps-1.10.0.442` - linux; arm variant v5
 
 ```console
 $ docker pull clojure@sha256:a28f721d481a31216556f129adab8cb372651dbc7ffb7914fd1eb8117c3f02a0
@@ -218,7 +218,7 @@ CMD ["sh" "-c" "sleep 1 && exec clj"]
 		Size: 4.1 MB (4102807 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `clojure:openjdk-8-tools-deps-1.10.0.414` - linux; arm variant v7
+### `clojure:openjdk-8-tools-deps-1.10.0.442` - linux; arm variant v7
 
 ```console
 $ docker pull clojure@sha256:196888e175f56059b48861c60d6b74819b5c1d2e380f38a51847edacfeb8e7fe
@@ -320,7 +320,7 @@ CMD ["sh" "-c" "sleep 1 && exec clj"]
 		Size: 4.1 MB (4102783 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `clojure:openjdk-8-tools-deps-1.10.0.414` - linux; arm64 variant v8
+### `clojure:openjdk-8-tools-deps-1.10.0.442` - linux; arm64 variant v8
 
 ```console
 $ docker pull clojure@sha256:2a00ec68d1d28f3ea58e3a99d91b48d1d4bfcd725756a840805befe43779b39e
@@ -422,7 +422,7 @@ CMD ["sh" "-c" "sleep 1 && exec clj"]
 		Size: 4.1 MB (4102717 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `clojure:openjdk-8-tools-deps-1.10.0.414` - linux; 386
+### `clojure:openjdk-8-tools-deps-1.10.0.442` - linux; 386
 
 ```console
 $ docker pull clojure@sha256:1245319979a10095ba53e923764742be9d53735f7f8e385a13c0b3ffc63f5921
@@ -524,7 +524,7 @@ CMD ["sh" "-c" "sleep 1 && exec clj"]
 		Size: 4.1 MB (4102744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `clojure:openjdk-8-tools-deps-1.10.0.414` - linux; ppc64le
+### `clojure:openjdk-8-tools-deps-1.10.0.442` - linux; ppc64le
 
 ```console
 $ docker pull clojure@sha256:8370d46612807dce231f22051bcd17ef0869c88f2e27168bb796212040eb293d
@@ -626,7 +626,7 @@ CMD ["sh" "-c" "sleep 1 && exec clj"]
 		Size: 4.1 MB (4102772 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `clojure:openjdk-8-tools-deps-1.10.0.414` - linux; s390x
+### `clojure:openjdk-8-tools-deps-1.10.0.442` - linux; s390x
 
 ```console
 $ docker pull clojure@sha256:ce5975b3e7b39d1ea70c486c25df230d32e9bf591fcf337a376b7710a2971d57
