@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:89737fd09a9da8b93d68f48004912e5a987017f1ae3a6031104152d6c9876fed`
-- Created: `2019-03-20T22:27:21.062151542Z`
-- Virtual Size: ~ 684.36 Mb  
+- Image ID: `sha256:150de95183e9cdd9bae8aa1f8d973a05993c4766943b4bae1b6ac59e40806038`
+- Created: `2019-03-29T21:26:30.371412473Z`
+- Virtual Size: ~ 684.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -956,11 +956,11 @@ $ apt-get source -qq --print-uris fonts-dejavu=2.35-1
 'http://archive.ubuntu.com/ubuntu/pool/main/f/fonts-dejavu/fonts-dejavu_2.35-1.debian.tar.xz' fonts-dejavu_2.35-1.debian.tar.xz 10276 SHA256:5922af28fff7db4c5845c17623fe882028742f90db658f4183c21648e0cafd3d
 ```
 
-### `dpkg` source package: `freeimage=3.17.0+ds1-2`
+### `dpkg` source package: `freeimage=3.17.0+ds1-2ubuntu0.1`
 
 Binary Packages:
 
-- `libfreeimage3:amd64=3.17.0+ds1-2`
+- `libfreeimage3:amd64=3.17.0+ds1-2ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libfreeimage3/copyright`)
 
@@ -973,10 +973,10 @@ Licenses: (parsed from: `/usr/share/doc/libfreeimage3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris freeimage=3.17.0+ds1-2
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/freeimage/freeimage_3.17.0+ds1-2.dsc' freeimage_3.17.0+ds1-2.dsc 2671 SHA256:806a6de853b573e14def382742ee7ae221f31fee04fb6cae7e5115a83bfe34b5
+$ apt-get source -qq --print-uris freeimage=3.17.0+ds1-2ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/universe/f/freeimage/freeimage_3.17.0+ds1-2ubuntu0.1.dsc' freeimage_3.17.0+ds1-2ubuntu0.1.dsc 2800 SHA256:d5688b30564e8edea561946c8add549626d77219557d6b6e7f26b0ae8c2cd6f2
 'http://archive.ubuntu.com/ubuntu/pool/universe/f/freeimage/freeimage_3.17.0+ds1.orig.tar.xz' freeimage_3.17.0+ds1.orig.tar.xz 1277296 SHA256:7742f3d4edf9bc7f3a3f6c5baa9f5546e85cffa575944455e0dc10e3c13263db
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/freeimage/freeimage_3.17.0+ds1-2.debian.tar.xz' freeimage_3.17.0+ds1-2.debian.tar.xz 22476 SHA256:877f39bf3912672d6d619c6ffb15ce23081f0853109aca44739884a80bab0aa1
+'http://archive.ubuntu.com/ubuntu/pool/universe/f/freeimage/freeimage_3.17.0+ds1-2ubuntu0.1.debian.tar.xz' freeimage_3.17.0+ds1-2ubuntu0.1.debian.tar.xz 23020 SHA256:4e19b0b0957f0713e885ddcd2dacf025246de005958795d9a24d427b8ff5abc6
 ```
 
 ### `dpkg` source package: `freetype=2.6.1-0.1ubuntu2.3`
@@ -1074,14 +1074,14 @@ $ apt-get source -qq --print-uris game-music-emu=0.6.0-3ubuntu0.16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/game-music-emu/game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz' game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz 5592 SHA256:a4d7a4f5d9df23098abc4c1fe82696ed8f93d893c50bb8fc14a4de84e705810d
 ```
 
-### `dpkg` source package: `gazebo9=9.7.0-1~xenial`
+### `dpkg` source package: `gazebo9=9.8.0-1~xenial`
 
 Binary Packages:
 
-- `gazebo9=9.7.0-1~xenial`
-- `gazebo9-common=9.7.0-1~xenial`
-- `gazebo9-plugin-base=9.7.0-1~xenial`
-- `libgazebo9:amd64=9.7.0-1~xenial`
+- `gazebo9=9.8.0-1~xenial`
+- `gazebo9-common=9.8.0-1~xenial`
+- `gazebo9-plugin-base=9.8.0-1~xenial`
+- `libgazebo9:amd64=9.8.0-1~xenial`
 
 Licenses: (parsed from: `/usr/share/doc/gazebo9/copyright`, `/usr/share/doc/gazebo9-common/copyright`, `/usr/share/doc/gazebo9-plugin-base/copyright`, `/usr/share/doc/libgazebo9/copyright`)
 

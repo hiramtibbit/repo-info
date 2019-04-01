@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:842174303edc33f23a889a6535cc80d53aa12049369c26132012b544eb35b741`
-- Created: `2019-03-12T01:20:21.551840259Z`
-- Virtual Size: ~ 622.96 Mb  
+- Image ID: `sha256:0206e4013aa37af86e33fa2eeede727a6d079fbd23ced2ff23d3d0a7c975ecc9`
+- Created: `2019-03-29T21:21:48.662949293Z`
+- Virtual Size: ~ 623.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -883,11 +883,11 @@ $ apt-get source -qq --print-uris fonts-dejavu=2.35-1
 'http://archive.ubuntu.com/ubuntu/pool/main/f/fonts-dejavu/fonts-dejavu_2.35-1.debian.tar.xz' fonts-dejavu_2.35-1.debian.tar.xz 10276 SHA256:5922af28fff7db4c5845c17623fe882028742f90db658f4183c21648e0cafd3d
 ```
 
-### `dpkg` source package: `freeimage=3.17.0+ds1-2`
+### `dpkg` source package: `freeimage=3.17.0+ds1-2ubuntu0.1`
 
 Binary Packages:
 
-- `libfreeimage3:amd64=3.17.0+ds1-2`
+- `libfreeimage3:amd64=3.17.0+ds1-2ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libfreeimage3/copyright`)
 
@@ -900,10 +900,10 @@ Licenses: (parsed from: `/usr/share/doc/libfreeimage3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris freeimage=3.17.0+ds1-2
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/freeimage/freeimage_3.17.0+ds1-2.dsc' freeimage_3.17.0+ds1-2.dsc 2671 SHA256:806a6de853b573e14def382742ee7ae221f31fee04fb6cae7e5115a83bfe34b5
+$ apt-get source -qq --print-uris freeimage=3.17.0+ds1-2ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/universe/f/freeimage/freeimage_3.17.0+ds1-2ubuntu0.1.dsc' freeimage_3.17.0+ds1-2ubuntu0.1.dsc 2800 SHA256:d5688b30564e8edea561946c8add549626d77219557d6b6e7f26b0ae8c2cd6f2
 'http://archive.ubuntu.com/ubuntu/pool/universe/f/freeimage/freeimage_3.17.0+ds1.orig.tar.xz' freeimage_3.17.0+ds1.orig.tar.xz 1277296 SHA256:7742f3d4edf9bc7f3a3f6c5baa9f5546e85cffa575944455e0dc10e3c13263db
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/freeimage/freeimage_3.17.0+ds1-2.debian.tar.xz' freeimage_3.17.0+ds1-2.debian.tar.xz 22476 SHA256:877f39bf3912672d6d619c6ffb15ce23081f0853109aca44739884a80bab0aa1
+'http://archive.ubuntu.com/ubuntu/pool/universe/f/freeimage/freeimage_3.17.0+ds1-2ubuntu0.1.debian.tar.xz' freeimage_3.17.0+ds1-2ubuntu0.1.debian.tar.xz 23020 SHA256:4e19b0b0957f0713e885ddcd2dacf025246de005958795d9a24d427b8ff5abc6
 ```
 
 ### `dpkg` source package: `freetype=2.6.1-0.1ubuntu2.3`
@@ -981,14 +981,14 @@ $ apt-get source -qq --print-uris game-music-emu=0.6.0-3ubuntu0.16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/game-music-emu/game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz' game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz 5592 SHA256:a4d7a4f5d9df23098abc4c1fe82696ed8f93d893c50bb8fc14a4de84e705810d
 ```
 
-### `dpkg` source package: `gazebo7=7.14.0-1~xenial`
+### `dpkg` source package: `gazebo7=7.15.0-1~xenial`
 
 Binary Packages:
 
-- `gazebo7=7.14.0-1~xenial`
-- `gazebo7-common=7.14.0-1~xenial`
-- `gazebo7-plugin-base=7.14.0-1~xenial`
-- `libgazebo7:amd64=7.14.0-1~xenial`
+- `gazebo7=7.15.0-1~xenial`
+- `gazebo7-common=7.15.0-1~xenial`
+- `gazebo7-plugin-base=7.15.0-1~xenial`
+- `libgazebo7:amd64=7.15.0-1~xenial`
 
 Licenses: (parsed from: `/usr/share/doc/gazebo7/copyright`, `/usr/share/doc/gazebo7-common/copyright`, `/usr/share/doc/gazebo7-plugin-base/copyright`, `/usr/share/doc/libgazebo7/copyright`)
 
@@ -4570,19 +4570,24 @@ $ apt-get source -qq --print-uris tbb=4.4~20151115-0ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/universe/t/tbb/tbb_4.4~20151115-0ubuntu3.debian.tar.xz' tbb_4.4~20151115-0ubuntu3.debian.tar.xz 10056 SHA256:3882117671a997c930ad422e443ebe684b77c46c382a16333fb00d4e16ea83d4
 ```
 
-### `dpkg` source package: `tiff=4.0.6-1ubuntu0.5`
+### `dpkg` source package: `tiff=4.0.6-1ubuntu0.6`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.0.6-1ubuntu0.5`
+- `libtiff5:amd64=4.0.6-1ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff=4.0.6-1ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6-1ubuntu0.6.dsc' tiff_4.0.6-1ubuntu0.6.dsc 2399 SHA256:4751d2c527ae13db397bd9148f05e5c0bd4d6309db0a3be79fef99192492fd26
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6.orig.tar.gz' tiff_4.0.6.orig.tar.gz 2192991 SHA256:4d57a50907b510e3049a4bba0d7888930fdfc16ce49f1bf693e5b6247370d68c
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6-1ubuntu0.6.debian.tar.xz' tiff_4.0.6-1ubuntu0.6.debian.tar.xz 61104 SHA256:bd020a02927f9282748fdc0b9c8aacc495dae23ab9ba70d71da2275903b6b689
+```
 
 ### `dpkg` source package: `tinyxml2=2.2.0-1.1ubuntu1`
 

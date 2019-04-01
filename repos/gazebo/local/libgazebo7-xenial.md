@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:23d3f685c592c2f97523a1b629d718e3353cda8dbaaee2ac00e14589f6141fa2`
-- Created: `2019-03-12T01:23:12.374148611Z`
-- Virtual Size: ~ 1.46 Gb  
+- Image ID: `sha256:b0877a1caa38b412e22a9e62160063767f2321285052c3ffcb80bf5463b31450`
+- Created: `2019-03-29T21:25:01.905422648Z`
+- Virtual Size: ~ 1.47 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -1131,12 +1131,12 @@ $ apt-get source -qq --print-uris freeglut=2.8.1-2
 'http://archive.ubuntu.com/ubuntu/pool/universe/f/freeglut/freeglut_2.8.1-2.debian.tar.xz' freeglut_2.8.1-2.debian.tar.xz 17596 SHA256:7c43305b9d45829ea7619ba4635f86698054f48f7cae94b2d51dbe566fc67b67
 ```
 
-### `dpkg` source package: `freeimage=3.17.0+ds1-2`
+### `dpkg` source package: `freeimage=3.17.0+ds1-2ubuntu0.1`
 
 Binary Packages:
 
-- `libfreeimage-dev=3.17.0+ds1-2`
-- `libfreeimage3:amd64=3.17.0+ds1-2`
+- `libfreeimage-dev=3.17.0+ds1-2ubuntu0.1`
+- `libfreeimage3:amd64=3.17.0+ds1-2ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libfreeimage-dev/copyright`, `/usr/share/doc/libfreeimage3/copyright`)
 
@@ -1149,10 +1149,10 @@ Licenses: (parsed from: `/usr/share/doc/libfreeimage-dev/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris freeimage=3.17.0+ds1-2
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/freeimage/freeimage_3.17.0+ds1-2.dsc' freeimage_3.17.0+ds1-2.dsc 2671 SHA256:806a6de853b573e14def382742ee7ae221f31fee04fb6cae7e5115a83bfe34b5
+$ apt-get source -qq --print-uris freeimage=3.17.0+ds1-2ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/universe/f/freeimage/freeimage_3.17.0+ds1-2ubuntu0.1.dsc' freeimage_3.17.0+ds1-2ubuntu0.1.dsc 2800 SHA256:d5688b30564e8edea561946c8add549626d77219557d6b6e7f26b0ae8c2cd6f2
 'http://archive.ubuntu.com/ubuntu/pool/universe/f/freeimage/freeimage_3.17.0+ds1.orig.tar.xz' freeimage_3.17.0+ds1.orig.tar.xz 1277296 SHA256:7742f3d4edf9bc7f3a3f6c5baa9f5546e85cffa575944455e0dc10e3c13263db
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/freeimage/freeimage_3.17.0+ds1-2.debian.tar.xz' freeimage_3.17.0+ds1-2.debian.tar.xz 22476 SHA256:877f39bf3912672d6d619c6ffb15ce23081f0853109aca44739884a80bab0aa1
+'http://archive.ubuntu.com/ubuntu/pool/universe/f/freeimage/freeimage_3.17.0+ds1-2ubuntu0.1.debian.tar.xz' freeimage_3.17.0+ds1-2ubuntu0.1.debian.tar.xz 23020 SHA256:4e19b0b0957f0713e885ddcd2dacf025246de005958795d9a24d427b8ff5abc6
 ```
 
 ### `dpkg` source package: `freetype=2.6.1-0.1ubuntu2.3`
@@ -1230,15 +1230,15 @@ $ apt-get source -qq --print-uris game-music-emu=0.6.0-3ubuntu0.16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/game-music-emu/game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz' game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz 5592 SHA256:a4d7a4f5d9df23098abc4c1fe82696ed8f93d893c50bb8fc14a4de84e705810d
 ```
 
-### `dpkg` source package: `gazebo7=7.14.0-1~xenial`
+### `dpkg` source package: `gazebo7=7.15.0-1~xenial`
 
 Binary Packages:
 
-- `gazebo7=7.14.0-1~xenial`
-- `gazebo7-common=7.14.0-1~xenial`
-- `gazebo7-plugin-base=7.14.0-1~xenial`
-- `libgazebo7:amd64=7.14.0-1~xenial`
-- `libgazebo7-dev:amd64=7.14.0-1~xenial`
+- `gazebo7=7.15.0-1~xenial`
+- `gazebo7-common=7.15.0-1~xenial`
+- `gazebo7-plugin-base=7.15.0-1~xenial`
+- `libgazebo7:amd64=7.15.0-1~xenial`
+- `libgazebo7-dev:amd64=7.15.0-1~xenial`
 
 Licenses: (parsed from: `/usr/share/doc/gazebo7/copyright`, `/usr/share/doc/gazebo7-common/copyright`, `/usr/share/doc/gazebo7-plugin-base/copyright`, `/usr/share/doc/libgazebo7/copyright`, `/usr/share/doc/libgazebo7-dev/copyright`)
 
@@ -3865,20 +3865,25 @@ $ apt-get source -qq --print-uris linux-atm=1:2.5.1-1.5
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux-atm/linux-atm_2.5.1-1.5.debian.tar.gz' linux-atm_2.5.1-1.5.debian.tar.gz 10723 SHA256:9b2325859b3fd008b588a3897e713f52137abae08d1f5a44f5661f45a87f4d29
 ```
 
-### `dpkg` source package: `linux=4.4.0-142.168`
+### `dpkg` source package: `linux=4.4.0-143.169`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-142.168`
+- `linux-libc-dev:amd64=4.4.0-143.169`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 - `redpine-signals`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.4.0-143.169
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-143.169.dsc' linux_4.4.0-143.169.dsc 11601 SHA256:e0f1e3accfabd7e15de467651e97c0aaabc1087252230fbcd55a22da04f4ec32
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-143.169.diff.gz' linux_4.4.0-143.169.diff.gz 15208742 SHA256:d6010298ca3c26fa9086c788fb0a73085a1a21b0812521a6d3f21fa5c53fc10d
+```
 
 ### `dpkg` source package: `llvm-toolchain-6.0=1:6.0-1ubuntu2~16.04.1`
 
@@ -5734,19 +5739,24 @@ $ apt-get source -qq --print-uris tbb=4.4~20151115-0ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/universe/t/tbb/tbb_4.4~20151115-0ubuntu3.debian.tar.xz' tbb_4.4~20151115-0ubuntu3.debian.tar.xz 10056 SHA256:3882117671a997c930ad422e443ebe684b77c46c382a16333fb00d4e16ea83d4
 ```
 
-### `dpkg` source package: `tiff=4.0.6-1ubuntu0.5`
+### `dpkg` source package: `tiff=4.0.6-1ubuntu0.6`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.0.6-1ubuntu0.5`
+- `libtiff5:amd64=4.0.6-1ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff=4.0.6-1ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6-1ubuntu0.6.dsc' tiff_4.0.6-1ubuntu0.6.dsc 2399 SHA256:4751d2c527ae13db397bd9148f05e5c0bd4d6309db0a3be79fef99192492fd26
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6.orig.tar.gz' tiff_4.0.6.orig.tar.gz 2192991 SHA256:4d57a50907b510e3049a4bba0d7888930fdfc16ce49f1bf693e5b6247370d68c
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6-1ubuntu0.6.debian.tar.xz' tiff_4.0.6-1ubuntu0.6.debian.tar.xz 61104 SHA256:bd020a02927f9282748fdc0b9c8aacc495dae23ab9ba70d71da2275903b6b689
+```
 
 ### `dpkg` source package: `tinyxml2=2.2.0-1.1ubuntu1`
 
