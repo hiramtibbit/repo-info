@@ -1,7 +1,7 @@
 ## `alt:sisyphus`
 
 ```console
-$ docker pull alt@sha256:a2463233b9a80f0e27e43e0b0030c16af41ac3e553a963683f45bb886e6d1ad4
+$ docker pull alt@sha256:b88e2b886280618a41b94ec5f5e68863d8610aae1efc2d0bbc3fb73519be9669
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,29 +13,29 @@ $ docker pull alt@sha256:a2463233b9a80f0e27e43e0b0030c16af41ac3e553a963683f45bb8
 ### `alt:sisyphus` - linux; amd64
 
 ```console
-$ docker pull alt@sha256:b3d26aa83f1ab393554e3a677f1592847f4a028e6b5209993d7784c2b95dfbcc
+$ docker pull alt@sha256:7155a3f233f84e4daa143d1187a9e51721006d928d1b057c69fdc94911065766
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.9 MB (45857805 bytes)**  
+-	Total Size: **46.0 MB (45973970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6bdf0b5d3db1ca20a1e066dcd25fa31a480efee92ac283c1ab7a6bd6be1da10`
+-	Image ID: `sha256:76245dc94a56475be5d0cfdb04ee93dd98e811d3d1363e364c0becb158609820`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Wed, 26 Sep 2018 21:19:34 GMT
 MAINTAINER [Alexey Shabalin <shaba@altlinux.org>] [Gleb Fotengauer-Malinovskiy <glebfm@altlinux.org>] [Mikhail Gordeev <obirvalger@altlinux.org]
-# Mon, 25 Feb 2019 21:19:46 GMT
-ADD file:96edc369a6316da7aa427152b5b868a0d9d4eeb85afd39bdc4a32175885466e3 in / 
-# Mon, 25 Feb 2019 21:19:46 GMT
+# Mon, 01 Apr 2019 23:20:26 GMT
+ADD file:3eef9dfff6da4108e86ca69118acce58c48dfca184144d64fd7764226f82a686 in / 
+# Mon, 01 Apr 2019 23:20:26 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:d1d09aa6ecfe3992b9847ce889fe7971ed1da15e4c642b1e87dad12d96f70ef1`  
-		Last Modified: Mon, 25 Feb 2019 21:20:16 GMT  
-		Size: 45.9 MB (45857805 bytes)  
+	-	`sha256:5d89097289351b51f2d2bad74909cd196734ad9ed7555fff3ce305efa6c90f19`  
+		Last Modified: Mon, 01 Apr 2019 23:20:53 GMT  
+		Size: 46.0 MB (45973970 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `alt:sisyphus` - linux; arm64 variant v8

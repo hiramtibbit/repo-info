@@ -9,7 +9,7 @@
 ## `alt:latest`
 
 ```console
-$ docker pull alt@sha256:89e9d304d03f00fc1144c85d41569a514a156e719f4d193e0f27a3d98f9c83da
+$ docker pull alt@sha256:d6b5e95f96ffd0e1a0de784df5dd15192ea5a97911907cfcbaabf291cd2d624f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -20,29 +20,29 @@ $ docker pull alt@sha256:89e9d304d03f00fc1144c85d41569a514a156e719f4d193e0f27a3d
 ### `alt:latest` - linux; amd64
 
 ```console
-$ docker pull alt@sha256:1d412be82ee245894cdfd2fbc77820c12e1253c9cc39633803f1294665453135
+$ docker pull alt@sha256:3e166a9380a16c872dcb36b412d00c0d463995c525dbfd37ddb7c1f28e774576
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.9 MB (40871854 bytes)**  
+-	Total Size: **40.9 MB (40884283 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42513f807c92e8c36e1695b28611c88636c99940cd2a2d7715746eb1cbc349b4`
+-	Image ID: `sha256:bb727aa094cd2c0176b609c88298362157af943118b116408059bc46855c4c38`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Wed, 26 Sep 2018 21:19:34 GMT
 MAINTAINER [Alexey Shabalin <shaba@altlinux.org>] [Gleb Fotengauer-Malinovskiy <glebfm@altlinux.org>] [Mikhail Gordeev <obirvalger@altlinux.org]
-# Mon, 25 Feb 2019 21:19:35 GMT
-ADD file:f08c681594c6ebd6e937479867539189cc9d5e3350d7c29c83fc463f123bf82f in / 
-# Mon, 25 Feb 2019 21:19:35 GMT
+# Mon, 01 Apr 2019 23:20:06 GMT
+ADD file:cbf781e4b2e2f0e1f36d1432e087168eb437866aa6544e20a2689d6e9a78f189 in / 
+# Mon, 01 Apr 2019 23:20:06 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:4a9786c30cb723a091bb3fe5360fa2193ace2114758c473338dc1333c5766268`  
-		Last Modified: Mon, 25 Feb 2019 21:20:01 GMT  
-		Size: 40.9 MB (40871854 bytes)  
+	-	`sha256:644314b43446d854546208c9053ce2e47b6989e1d5e08234f224d53ff9338f63`  
+		Last Modified: Mon, 01 Apr 2019 23:20:41 GMT  
+		Size: 40.9 MB (40884283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `alt:latest` - linux; 386
@@ -76,7 +76,7 @@ CMD ["/bin/bash"]
 ## `alt:p8`
 
 ```console
-$ docker pull alt@sha256:89e9d304d03f00fc1144c85d41569a514a156e719f4d193e0f27a3d98f9c83da
+$ docker pull alt@sha256:d6b5e95f96ffd0e1a0de784df5dd15192ea5a97911907cfcbaabf291cd2d624f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -87,29 +87,29 @@ $ docker pull alt@sha256:89e9d304d03f00fc1144c85d41569a514a156e719f4d193e0f27a3d
 ### `alt:p8` - linux; amd64
 
 ```console
-$ docker pull alt@sha256:1d412be82ee245894cdfd2fbc77820c12e1253c9cc39633803f1294665453135
+$ docker pull alt@sha256:3e166a9380a16c872dcb36b412d00c0d463995c525dbfd37ddb7c1f28e774576
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.9 MB (40871854 bytes)**  
+-	Total Size: **40.9 MB (40884283 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42513f807c92e8c36e1695b28611c88636c99940cd2a2d7715746eb1cbc349b4`
+-	Image ID: `sha256:bb727aa094cd2c0176b609c88298362157af943118b116408059bc46855c4c38`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Wed, 26 Sep 2018 21:19:34 GMT
 MAINTAINER [Alexey Shabalin <shaba@altlinux.org>] [Gleb Fotengauer-Malinovskiy <glebfm@altlinux.org>] [Mikhail Gordeev <obirvalger@altlinux.org]
-# Mon, 25 Feb 2019 21:19:35 GMT
-ADD file:f08c681594c6ebd6e937479867539189cc9d5e3350d7c29c83fc463f123bf82f in / 
-# Mon, 25 Feb 2019 21:19:35 GMT
+# Mon, 01 Apr 2019 23:20:06 GMT
+ADD file:cbf781e4b2e2f0e1f36d1432e087168eb437866aa6544e20a2689d6e9a78f189 in / 
+# Mon, 01 Apr 2019 23:20:06 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:4a9786c30cb723a091bb3fe5360fa2193ace2114758c473338dc1333c5766268`  
-		Last Modified: Mon, 25 Feb 2019 21:20:01 GMT  
-		Size: 40.9 MB (40871854 bytes)  
+	-	`sha256:644314b43446d854546208c9053ce2e47b6989e1d5e08234f224d53ff9338f63`  
+		Last Modified: Mon, 01 Apr 2019 23:20:41 GMT  
+		Size: 40.9 MB (40884283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `alt:p8` - linux; 386
@@ -143,7 +143,7 @@ CMD ["/bin/bash"]
 ## `alt:sisyphus`
 
 ```console
-$ docker pull alt@sha256:a2463233b9a80f0e27e43e0b0030c16af41ac3e553a963683f45bb886e6d1ad4
+$ docker pull alt@sha256:b88e2b886280618a41b94ec5f5e68863d8610aae1efc2d0bbc3fb73519be9669
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -155,29 +155,29 @@ $ docker pull alt@sha256:a2463233b9a80f0e27e43e0b0030c16af41ac3e553a963683f45bb8
 ### `alt:sisyphus` - linux; amd64
 
 ```console
-$ docker pull alt@sha256:b3d26aa83f1ab393554e3a677f1592847f4a028e6b5209993d7784c2b95dfbcc
+$ docker pull alt@sha256:7155a3f233f84e4daa143d1187a9e51721006d928d1b057c69fdc94911065766
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.9 MB (45857805 bytes)**  
+-	Total Size: **46.0 MB (45973970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6bdf0b5d3db1ca20a1e066dcd25fa31a480efee92ac283c1ab7a6bd6be1da10`
+-	Image ID: `sha256:76245dc94a56475be5d0cfdb04ee93dd98e811d3d1363e364c0becb158609820`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Wed, 26 Sep 2018 21:19:34 GMT
 MAINTAINER [Alexey Shabalin <shaba@altlinux.org>] [Gleb Fotengauer-Malinovskiy <glebfm@altlinux.org>] [Mikhail Gordeev <obirvalger@altlinux.org]
-# Mon, 25 Feb 2019 21:19:46 GMT
-ADD file:96edc369a6316da7aa427152b5b868a0d9d4eeb85afd39bdc4a32175885466e3 in / 
-# Mon, 25 Feb 2019 21:19:46 GMT
+# Mon, 01 Apr 2019 23:20:26 GMT
+ADD file:3eef9dfff6da4108e86ca69118acce58c48dfca184144d64fd7764226f82a686 in / 
+# Mon, 01 Apr 2019 23:20:26 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:d1d09aa6ecfe3992b9847ce889fe7971ed1da15e4c642b1e87dad12d96f70ef1`  
-		Last Modified: Mon, 25 Feb 2019 21:20:16 GMT  
-		Size: 45.9 MB (45857805 bytes)  
+	-	`sha256:5d89097289351b51f2d2bad74909cd196734ad9ed7555fff3ce305efa6c90f19`  
+		Last Modified: Mon, 01 Apr 2019 23:20:53 GMT  
+		Size: 46.0 MB (45973970 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `alt:sisyphus` - linux; arm64 variant v8
