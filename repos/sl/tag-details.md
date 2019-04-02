@@ -47,7 +47,7 @@ CMD ["/bin/bash"]
 ## `sl:7`
 
 ```console
-$ docker pull sl@sha256:a26b6321aec9b20ef35538f5ef594cb8afbbafecdfd7e88ee05328124d0b7545
+$ docker pull sl@sha256:373239c4819e3563fac77d9b1f01b4367d92865879c6220b6e6e1ca6acca75a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -57,29 +57,29 @@ $ docker pull sl@sha256:a26b6321aec9b20ef35538f5ef594cb8afbbafecdfd7e88ee0532812
 ### `sl:7` - linux; amd64
 
 ```console
-$ docker pull sl@sha256:f9c22a62bb5ec704b2dcef43d24d7fb991261ddcadbade75d08e3bd2e6dab0ad
+$ docker pull sl@sha256:51b900d0b62d230acc9aa0300efc158ac29c5ce6841a1171884d06037aca6fbe
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **64.1 MB (64067264 bytes)**  
+-	Total Size: **64.1 MB (64073930 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7d52b8da32b9f7ab8ef1a2e865fce6a0a327197772153b2028eadc3fc42845f`
+-	Image ID: `sha256:4e64a8137718000891d54edbcb4f0b8f24aa8ca39dbc5d53a9e5480b9eb532d1`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 05 Mar 2019 00:34:14 GMT
-ADD file:22a755f9b02fa011db65a9a8b3f58ae5e3bd0cc609684fd541c88fe514512b13 in / 
-# Tue, 05 Mar 2019 00:34:15 GMT
-LABEL name=SL7 Base Image vendor=Scientific Linux build-date=20190304
-# Tue, 05 Mar 2019 00:34:15 GMT
+# Tue, 02 Apr 2019 00:20:08 GMT
+ADD file:b6a5572242bd1194d5afa9a19ec9ed24ebdd193bc95e95f4bfcaa5283f9bc9a5 in / 
+# Tue, 02 Apr 2019 00:20:08 GMT
+LABEL name=SL7 Base Image vendor=Scientific Linux build-date=20190401
+# Tue, 02 Apr 2019 00:20:08 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:8b1618cbee1eb1433fc11f5cb16b39f3149c8f373e045c2087f1146f638927c4`  
-		Last Modified: Mon, 04 Mar 2019 18:32:20 GMT  
-		Size: 64.1 MB (64067264 bytes)  
+	-	`sha256:34a5fb8ce9136df3600716ee84849cdfbc89773eab0d7d641a9d5b7ead20765a`  
+		Last Modified: Mon, 01 Apr 2019 18:09:43 GMT  
+		Size: 64.1 MB (64073930 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `sl:latest`
