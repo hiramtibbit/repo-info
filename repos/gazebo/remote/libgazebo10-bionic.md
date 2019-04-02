@@ -1,7 +1,7 @@
 ## `gazebo:libgazebo10-bionic`
 
 ```console
-$ docker pull gazebo@sha256:348849512801ee891bd258e3571caf775e2eb42e2afa47cff53ab7309058a564
+$ docker pull gazebo@sha256:819a3e2d0c95c2c3f6a6c4c3e7951ee67a5e26b0be355651fd3e6e17591f9228
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -199,14 +199,14 @@ RUN apt-get update && apt-get install -q -y     libgazebo10-dev=10.0.0-1*     &&
 ### `gazebo:libgazebo10-bionic` - linux; arm64 variant v8
 
 ```console
-$ docker pull gazebo@sha256:c429b4927bf03c3ffb1424219046e467b4e584668afcff286ab7ed7fb0a14341
+$ docker pull gazebo@sha256:2694d97cefd7055b128a1cf3f956c3d97b36bafa67838520a6d07bbc3b269197
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **498.1 MB (498138757 bytes)**  
+-	Total Size: **498.3 MB (498327390 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9adf92bf4e14fbc265b90a77e5911a1af593f4fdd0b5e05c79efd7a31c5ffb6f`
+-	Image ID: `sha256:6f40cef604e9d0d3db3b41b33109b474c4dee8ee02ded5ee6ad7e2c197d0d1e8`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
@@ -229,18 +229,18 @@ RUN apt-get update && apt-get install -q -y     dirmngr     gnupg2     lsb-relea
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
 # Thu, 14 Mar 2019 12:45:01 GMT
 RUN . /etc/os-release     && echo "deb http://packages.osrfoundation.org/gazebo/$ID-stable `lsb_release -sc` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Thu, 14 Mar 2019 12:58:01 GMT
-RUN apt-get update && apt-get install -q -y     gazebo10=10.0.0-1*     && rm -rf /var/lib/apt/lists/*
-# Thu, 14 Mar 2019 12:58:04 GMT
+# Tue, 02 Apr 2019 09:38:47 GMT
+RUN apt-get update && apt-get install -q -y     gazebo10=10.1.0-1*     && rm -rf /var/lib/apt/lists/*
+# Tue, 02 Apr 2019 09:38:49 GMT
 EXPOSE 11345
-# Thu, 14 Mar 2019 12:58:05 GMT
+# Tue, 02 Apr 2019 09:38:51 GMT
 COPY file:b79966dec12c55a0a5c9e673326cc3faf9cbbeee0ea5f172e863df237eb8a601 in / 
-# Thu, 14 Mar 2019 12:58:05 GMT
+# Tue, 02 Apr 2019 09:38:52 GMT
 ENTRYPOINT ["/gzserver_entrypoint.sh"]
-# Thu, 14 Mar 2019 12:58:07 GMT
+# Tue, 02 Apr 2019 09:38:53 GMT
 CMD ["gzserver"]
-# Thu, 14 Mar 2019 13:08:08 GMT
-RUN apt-get update && apt-get install -q -y     libgazebo10-dev=10.0.0-1*     && rm -rf /var/lib/apt/lists/*
+# Tue, 02 Apr 2019 09:46:36 GMT
+RUN apt-get update && apt-get install -q -y     libgazebo10-dev=10.1.0-1*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -276,15 +276,15 @@ RUN apt-get update && apt-get install -q -y     libgazebo10-dev=10.0.0-1*     &&
 		Last Modified: Thu, 14 Mar 2019 13:08:46 GMT  
 		Size: 5.4 KB (5435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6097a15409170a990c9478734c2b27e17caeb412353613fc491ca8bb22d2b7f3`  
-		Last Modified: Thu, 14 Mar 2019 13:10:00 GMT  
-		Size: 238.3 MB (238310229 bytes)  
+	-	`sha256:5d5f6898f5e07b25a0cdda00cabe642339c1bccb228290bbc4b50f513762f4f7`  
+		Last Modified: Tue, 02 Apr 2019 10:03:19 GMT  
+		Size: 238.5 MB (238488390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0b7509e113c0b81286c2d0b202f3a794965fb40ca9c124761326690a6ff9ef4`  
-		Last Modified: Thu, 14 Mar 2019 13:08:46 GMT  
-		Size: 189.0 B  
+	-	`sha256:832f393ae5cf15421b1418e4f2f426316a9bc35d96f62c4a8024e50d70aa1cf9`  
+		Last Modified: Tue, 02 Apr 2019 10:00:32 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:76ff962218f10b7ef05dcabf758157974b6ed4b85cbd8821eced35d7bb85ca1f`  
-		Last Modified: Thu, 14 Mar 2019 13:11:37 GMT  
-		Size: 216.0 MB (215964526 bytes)  
+	-	`sha256:70397830ae612db1b001d667d1094a60150edca602f16be4690d0d65b8e21bd6`  
+		Last Modified: Tue, 02 Apr 2019 10:06:39 GMT  
+		Size: 216.0 MB (215975000 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
