@@ -12,13 +12,14 @@ trap "docker rm -f '$name-data' '$name' > /dev/null || :" EXIT
 
 docker create \
 	--name "$name-data" \
-	-v /etc/apt \
+	-v /etc \
+	-v /usr/lib/rpm \
 	-v /usr/share/doc \
-	-v /var/lib/dpkg \
+	-v /var/lib \
 	"$image" \
 	bogus > /dev/null
 
-docker run -d --name "$name" --volumes-from "$name-data" repo-info:local > /dev/null
+docker run -d --name "$name" --volumes-from "$name-data" -v /etc/ssl repo-info:local > /dev/null
 
 echo '# `'"$image"'`'
 
