@@ -502,10 +502,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris curl=7.64.0-2
-'http://http.debian.net/debian/pool/main/c/curl/curl_7.64.0-2.dsc' curl_7.64.0-2.dsc 2687 SHA256:6997fa959166f0fdf5545313d307b453970c271df3d135accbbe08773fa3cbc2
-'http://http.debian.net/debian/pool/main/c/curl/curl_7.64.0.orig.tar.gz' curl_7.64.0.orig.tar.gz 4032645 SHA256:cb90d2eb74d4e358c1ed1489f8e3af96b50ea4374ad71f143fa4595e998d81b5
-'http://http.debian.net/debian/pool/main/c/curl/curl_7.64.0-2.debian.tar.xz' curl_7.64.0-2.debian.tar.xz 29696 SHA256:6173fb436e8bcea616e9bfc29eaddb25498b3a95cd5451d4cef83d957217fabe
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.64.0-2.dsc' curl_7.64.0-2.dsc 2687 SHA256:6997fa959166f0fdf5545313d307b453970c271df3d135accbbe08773fa3cbc2
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.64.0.orig.tar.gz' curl_7.64.0.orig.tar.gz 4032645 SHA256:cb90d2eb74d4e358c1ed1489f8e3af96b50ea4374ad71f143fa4595e998d81b5
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.64.0-2.debian.tar.xz' curl_7.64.0-2.debian.tar.xz 29696 SHA256:6173fb436e8bcea616e9bfc29eaddb25498b3a95cd5451d4cef83d957217fabe
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/curl/7.64.0-2/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.64.0-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.64.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-1`
 
@@ -730,9 +736,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris dpkg=1.19.6
-'http://http.debian.net/debian/pool/main/d/dpkg/dpkg_1.19.6.dsc' dpkg_1.19.6.dsc 2103 SHA256:c602dd234e810c066fb9c8ae265b4e3115b2f76dfe2c666a4f6b2fc3f036c472
-'http://http.debian.net/debian/pool/main/d/dpkg/dpkg_1.19.6.tar.xz' dpkg_1.19.6.tar.xz 4802832 SHA256:4eb1a12d1f5bd55478d2eab530dd188733e425f301e3b8c030f645f48ef43768
+'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.19.6.dsc' dpkg_1.19.6.dsc 2103 SHA256:c602dd234e810c066fb9c8ae265b4e3115b2f76dfe2c666a4f6b2fc3f036c472
+'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.19.6.tar.xz' dpkg_1.19.6.tar.xz 4802832 SHA256:4eb1a12d1f5bd55478d2eab530dd188733e425f301e3b8c030f645f48ef43768
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/dpkg/1.19.6/ (for browsing the source)
+- https://sources.debian.net/src/dpkg/1.19.6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/dpkg/1.19.6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.44.5-1`
 
@@ -3230,16 +3242,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris pcre2=10.32-4
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.32-4.dsc' pcre2_10.32-4.dsc 2342 SHA256:a777361a7da85a5ea9918fd7e8469f7dea9ade77fdd65edd82a78a03d1ce05eb
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.32.orig.tar.gz' pcre2_10.32.orig.tar.gz 2169349 SHA256:9ca9be72e1a04f22be308323caa8c06ebd0c51efe99ee11278186cafbc4fe3af
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.32-4.diff.gz' pcre2_10.32-4.diff.gz 4897 SHA256:722fb789ac655910e7af706566d0b33b69bfa846f60a4da1a5c9c8ef8dc865ef
+'http://http.debian.net/debian/pool/main/p/pcre2/pcre2_10.32-4.dsc' pcre2_10.32-4.dsc 2342 SHA256:a777361a7da85a5ea9918fd7e8469f7dea9ade77fdd65edd82a78a03d1ce05eb
+'http://http.debian.net/debian/pool/main/p/pcre2/pcre2_10.32.orig.tar.gz' pcre2_10.32.orig.tar.gz 2169349 SHA256:9ca9be72e1a04f22be308323caa8c06ebd0c51efe99ee11278186cafbc4fe3af
+'http://http.debian.net/debian/pool/main/p/pcre2/pcre2_10.32-4.diff.gz' pcre2_10.32-4.diff.gz 4897 SHA256:722fb789ac655910e7af706566d0b33b69bfa846f60a4da1a5c9c8ef8dc865ef
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/pcre2/10.32-4/ (for browsing the source)
-- https://sources.debian.net/src/pcre2/10.32-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pcre2/10.32-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre3=2:8.39-12`
 
