@@ -1,7 +1,7 @@
 ## `solr:5-alpine`
 
 ```console
-$ docker pull solr@sha256:4f64d59b1459179d5434e036b33e09d0ec3ded6a35bf37652f156f8dee715819
+$ docker pull solr@sha256:f49cc25a01ef1bbaf76029c1be65d00422763df471a77715d2efac998ef6b839
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -230,14 +230,14 @@ CMD ["solr-foreground"]
 ### `solr:5-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull solr@sha256:22d73490bad936d2b068406cd77dde82de9d1b7845786555fd0b21a5c7b43437
+$ docker pull solr@sha256:cd21207cc03b58de77341770b93945ed509a53b7a2d39dcb05ad30bb57679447
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **198.5 MB (198457324 bytes)**  
+-	Total Size: **198.4 MB (198418349 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:573b23c8d40e4d85af99d3ba86ca8a7cb74bd3b626ab2ef2f16dcb662f71bcea`
+-	Image ID: `sha256:c087169806ac99e9f17b0d225cbb634cd9add238b443d727577d4dc45f90cada`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
@@ -256,45 +256,43 @@ ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
 # Thu, 28 Mar 2019 04:09:03 GMT
 ENV JAVA_VERSION=8u201
-# Thu, 28 Mar 2019 04:09:07 GMT
-ENV JAVA_ALPINE_VERSION=8.201.08-r0
-# Thu, 28 Mar 2019 04:09:20 GMT
+# Wed, 03 Apr 2019 09:37:52 GMT
+ENV JAVA_ALPINE_VERSION=8.201.08-r1
+# Wed, 03 Apr 2019 09:38:07 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 28 Mar 2019 04:09:26 GMT
-RUN apk add --no-cache so:libnss3.so
-# Thu, 28 Mar 2019 04:31:58 GMT
+# Wed, 03 Apr 2019 11:31:01 GMT
 LABEL maintainer=Martijn Koster "mak-docker@greenhills.co.uk"
-# Thu, 28 Mar 2019 04:31:59 GMT
+# Wed, 03 Apr 2019 11:31:02 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Thu, 28 Mar 2019 04:31:59 GMT
+# Wed, 03 Apr 2019 11:31:03 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Thu, 28 Mar 2019 04:32:05 GMT
+# Wed, 03 Apr 2019 11:31:08 GMT
 RUN apk add --no-cache         lsof         gnupg         procps         tar         bash
-# Thu, 28 Mar 2019 04:32:07 GMT
+# Wed, 03 Apr 2019 11:31:11 GMT
 RUN apk add --no-cache ca-certificates wget &&         update-ca-certificates
-# Thu, 28 Mar 2019 04:46:09 GMT
+# Wed, 03 Apr 2019 11:36:31 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_VERSION=5.5.5 SOLR_URL=https://archive.apache.org/dist/lucene/solr/5.5.5/solr-5.5.5.tgz SOLR_SHA256=2bbe3a55976f118c5d8c2382d4591257f6e2af779c08c6561e44afa3181a87c1 SOLR_KEYS=5F55943E13D49059D3F342777186B06E1ED139E7 PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Thu, 28 Mar 2019 04:46:09 GMT
+# Wed, 03 Apr 2019 11:36:31 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 28 Mar 2019 04:46:10 GMT
+# Wed, 03 Apr 2019 11:36:32 GMT
 ENV GOSU_KEY=B42F6819007F00F88E364FD4036A9C25BF357DD4
-# Thu, 28 Mar 2019 04:46:13 GMT
+# Wed, 03 Apr 2019 11:36:34 GMT
 RUN addgroup -S -g $SOLR_GID $SOLR_GROUP &&     adduser -S -u $SOLR_UID -G $SOLR_GROUP $SOLR_USER
-# Thu, 28 Mar 2019 04:46:16 GMT
+# Wed, 03 Apr 2019 11:36:37 GMT
 RUN set -e;   export GNUPGHOME="/tmp/gnupg_home" &&   mkdir -p "$GNUPGHOME" &&   chmod 700 "$GNUPGHOME" &&   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf" &&   for key in $SOLR_KEYS $GOSU_KEY; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Thu, 28 Mar 2019 04:46:46 GMT
+# Wed, 03 Apr 2019 11:37:29 GMT
 RUN set -e;   export GNUPGHOME="/tmp/gnupg_home" &&   apkArch="$(apk --print-arch | sed 's/x86_64/amd64/' | sed 's/aarch64/arm64/')";   wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$apkArch";   wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$apkArch.asc";   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu &&   rm /usr/local/bin/gosu.asc &&   chmod +x /usr/local/bin/gosu &&   gosu nobody true &&   mkdir -p /opt/solr &&   echo "downloading $SOLR_URL" &&   wget -q $SOLR_URL -O /opt/solr.tgz &&   echo "downloading $SOLR_URL.asc" &&   wget -q $SOLR_URL.asc -O /opt/solr.tgz.asc &&   echo "$SOLR_SHA256 */opt/solr.tgz" | sha256sum -c - &&   (>&2 ls -l /opt/solr.tgz /opt/solr.tgz.asc) &&   gpg --batch --verify /opt/solr.tgz.asc /opt/solr.tgz &&   tar -C /opt/solr --extract --file /opt/solr.tgz --strip-components=1 &&   rm /opt/solr.tgz* &&   rm -Rf /opt/solr/docs/ &&   mkdir -p /opt/solr/server/solr/lib /opt/solr/server/solr/mycores /opt/solr/server/logs /docker-entrypoint-initdb.d /opt/docker-solr /opt/mysolrhome &&   sed -i -e 's/"\$(whoami)" == "root"/$(id -u) == 0/' /opt/solr/bin/solr &&   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr &&   sed -i -e '/-Dsolr.clustering.enabled=true/ a SOLR_OPTS="$SOLR_OPTS -Dsun.net.inetaddr.ttl=60 -Dsun.net.inetaddr.negative.ttl=60"' /opt/solr/bin/solr.in.sh &&   chown -R $SOLR_USER:$SOLR_GROUP /opt/solr /opt/mysolrhome /docker-entrypoint-initdb.d /opt/docker-solr
-# Thu, 28 Mar 2019 04:46:47 GMT
+# Wed, 03 Apr 2019 11:37:30 GMT
 COPY --chown=solr:solrdir:7aa8184dd72cb3692c8f729b55f3c09baea5f3548d04771c2f4402f5da0d1287 in /opt/docker-solr/scripts 
-# Thu, 28 Mar 2019 04:46:48 GMT
+# Wed, 03 Apr 2019 11:37:30 GMT
 EXPOSE 8983
-# Thu, 28 Mar 2019 04:46:49 GMT
+# Wed, 03 Apr 2019 11:37:31 GMT
 WORKDIR /opt/solr
-# Thu, 28 Mar 2019 04:46:50 GMT
+# Wed, 03 Apr 2019 11:37:33 GMT
 USER solr
-# Thu, 28 Mar 2019 04:46:51 GMT
+# Wed, 03 Apr 2019 11:37:33 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 28 Mar 2019 04:46:52 GMT
+# Wed, 03 Apr 2019 11:37:34 GMT
 CMD ["solr-foreground"]
 ```
 
@@ -307,37 +305,33 @@ CMD ["solr-foreground"]
 		Last Modified: Fri, 08 Mar 2019 09:55:35 GMT  
 		Size: 238.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb6dd51b343aad9613467af3aef4b898ce00930ce5bf6ded2706b29f47f2d613`  
-		Last Modified: Thu, 28 Mar 2019 04:14:28 GMT  
-		Size: 52.7 MB (52724681 bytes)  
+	-	`sha256:d966274452f0f08a7fa71690eb7a8d0847f389e523c9842ad51121d5439b6a3d`  
+		Last Modified: Wed, 03 Apr 2019 09:40:42 GMT  
+		Size: 54.9 MB (54929195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c9551e9662193a01af267a8fd7e5813e9dd98f2079c4736a15b5b1a38e41321`  
-		Last Modified: Thu, 28 Mar 2019 04:14:18 GMT  
-		Size: 2.2 MB (2243495 bytes)  
+	-	`sha256:e5dc95717f918f46e017b8e2df794c3b9b89ffe2f1ecb8c023d5257efcd5b35f`  
+		Last Modified: Wed, 03 Apr 2019 11:38:35 GMT  
+		Size: 7.4 MB (7366082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:875041cf9ded05946b651c6b0c8c027c267c748f1838650b1df93b3c5330f8fa`  
-		Last Modified: Thu, 28 Mar 2019 04:49:18 GMT  
-		Size: 7.4 MB (7366092 bytes)  
+	-	`sha256:7642ea7150c1e75c7774e52fcbebc8c9aef395f494160c080fbaad16e9d182fe`  
+		Last Modified: Wed, 03 Apr 2019 11:38:30 GMT  
+		Size: 585.3 KB (585346 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b78a5d45aadaad0ab0639a538a23e80ec48d55da1f525b347254aa1f1cb7dc14`  
-		Last Modified: Thu, 28 Mar 2019 04:49:12 GMT  
-		Size: 585.3 KB (585275 bytes)  
+	-	`sha256:7e14027203e6b50133bae70311aee56f293d954797a4aeae4716a67043e68987`  
+		Last Modified: Wed, 03 Apr 2019 11:40:57 GMT  
+		Size: 1.3 KB (1254 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a8537f1e800573c6f67f2197d1b162df7852948dd2e5c7cb45401b9c57d567af`  
-		Last Modified: Thu, 28 Mar 2019 04:56:42 GMT  
-		Size: 1.3 KB (1253 bytes)  
+	-	`sha256:a025e430defef16ea6892d6c6333cbe48821ea59a60dc98ae7704e583071e416`  
+		Last Modified: Wed, 03 Apr 2019 11:40:57 GMT  
+		Size: 88.9 KB (88926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c12f59cd50a1b2927b4f26a79425d7bb8df8bb140647a5ff67c68a65142642b8`  
-		Last Modified: Thu, 28 Mar 2019 04:56:42 GMT  
-		Size: 88.9 KB (88922 bytes)  
+	-	`sha256:bb15388edc8c7158a3c30512d5c2f64a2c8b004c7472b1d82dfdd19ce73395f6`  
+		Last Modified: Wed, 03 Apr 2019 11:41:19 GMT  
+		Size: 132.8 MB (132755138 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7d77ad09d2c26b7ad9d7cb3605b7e1f39cd8a1629b2329b1a394857db71d5a49`  
-		Last Modified: Thu, 28 Mar 2019 04:57:02 GMT  
-		Size: 132.8 MB (132755199 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86e8d6585833a14f30788040dc5556fda54b0583face1048455a0ccde6e9cf2b`  
-		Last Modified: Thu, 28 Mar 2019 04:56:42 GMT  
-		Size: 4.2 KB (4230 bytes)  
+	-	`sha256:87f193a9e8e66ca220a5a72c3e5cdc4d15c6dd2ed1aeee3d1bcbbb2f7ede7baf`  
+		Last Modified: Wed, 03 Apr 2019 11:40:57 GMT  
+		Size: 4.2 KB (4231 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:5-alpine` - linux; 386
