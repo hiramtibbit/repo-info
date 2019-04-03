@@ -1,10 +1,10 @@
-# `traefik:v2.0.0-alpha2`
+# `traefik:v2.0.0-alpha3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:17f634816a536aadcef24be2165cb02557d651cc9a98c266d4b50c17ceeb3218`
-- Created: `2019-03-19T21:34:27.360709878Z`
-- Virtual Size: ~ 56.73 Mb  
+- Image ID: `sha256:25d98378e8e5c489fe6a6bf9e36619396f3190c163fd2b6539d640312f5444d1`
+- Created: `2019-04-01T23:25:34.519183932Z`
+- Virtual Size: ~ 56.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/traefik"]`
@@ -16,4 +16,4 @@
   - `org.label-schema.name=Traefik`
   - `org.label-schema.url=https://traefik.io`
   - `org.label-schema.vendor=Containous`
-  - `org.label-schema.version=v2.0.0-alpha2`
+  - `org.label-schema.version=v2.0.0-alpha3`
