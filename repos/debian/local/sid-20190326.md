@@ -1521,21 +1521,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.28.1-5
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.1-5.dsc' perl_5.28.1-5.dsc 2835 SHA256:a0fa371a5563da70cb671f67662e8e69c799c70904a64f67820c27defc1bc8dd
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.1.orig-regen-configure.tar.xz' perl_5.28.1.orig-regen-configure.tar.xz 411944 SHA256:5873b81af4514d3910ab1a8267b15ff8c0e2100dbae4edfd10b65ef72cd31ef8
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.1.orig.tar.xz' perl_5.28.1.orig.tar.xz 12372080 SHA256:fea7162d4cca940a387f0587b93f6737d884bf74d8a9d7cfd978bc12cd0b202d
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.1-5.debian.tar.xz' perl_5.28.1-5.debian.tar.xz 178628 SHA256:d5ac8e9177d400efffc963a806746ba68127882375f7966ffa6156fc673fd550
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.28.1-5/
 
-- https://sources.debian.net/src/perl/5.28.1-5/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.28.1-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.28.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.7-1`
 
