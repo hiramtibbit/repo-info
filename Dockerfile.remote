@@ -1,4 +1,4 @@
-FROM perl:5.20
+FROM perl:5.28
 
 # secure by default ♥ (thanks to sri!)
 ENV PERL_CPANM_OPT --verbose --mirror https://cpan.metacpan.org
@@ -22,7 +22,7 @@ RUN cpanm --notest IO::Socket::SSL
 ENV LIBEV_FLAGS 4
 # epoll (Linux)
 
-RUN cpanm Mojolicious@7.94
+RUN cpanm Mojolicious@8.13
 
 # http://mojolicious.org/perldoc/Mojolicious/Guides/FAQ#What-does-Inactivity-timeout-mean
 ENV MOJO_INACTIVITY_TIMEOUT 120
