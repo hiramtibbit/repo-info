@@ -48,11 +48,79 @@ CMD ["/bin/bash"]
 
 ## `euleros:2.3.1803`
 
-**does not exist** (yet?)
+```console
+$ docker pull euleros@sha256:d3f579f5da35a98a88c9b85a4a430d276a5a389cb73a17b8388defa38a5793a6
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `euleros:2.3.1803` - linux; amd64
+
+```console
+$ docker pull euleros@sha256:41cff8f10cae502e9d34e1831f1ed3a21fce195169ef956a7aaa1899dc469c41
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **57.8 MB (57756321 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:fede3bc0e0f27bc848604ce01aad8a8785388f35bb3a89349356f2cd713fe463`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Thu, 04 Apr 2019 21:20:45 GMT
+ADD file:8d4eb5053346ad80ffd55c9476875627c2344351b60ec5a49efad084c3175179 in / 
+# Thu, 04 Apr 2019 21:20:45 GMT
+LABEL name=EulerOS-2.3 Base Image vendor=EulerOS license=GPLv2 build-date=20180919
+# Thu, 04 Apr 2019 21:20:45 GMT
+CMD ["/bin/bash"]
+```
+
+-	Layers:
+	-	`sha256:16e706965cebd533dd5a1907c4501b9b4a69e3f78df988c5dcd80b9805f02b83`  
+		Last Modified: Thu, 04 Apr 2019 21:21:19 GMT  
+		Size: 57.8 MB (57756321 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `euleros:2.3.1806`
 
-**does not exist** (yet?)
+```console
+$ docker pull euleros@sha256:89f0e5e0c37fcd65b9586e22cd30cd1f988c704c0f2d51b5430ca2c8558bf496
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `euleros:2.3.1806` - linux; amd64
+
+```console
+$ docker pull euleros@sha256:0249e88d51e9b19269bf7fe46a1b7f8513a28ee17ef3a4797e17f33dc6e14a5c
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **57.8 MB (57771288 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c202cc8daa84d0f162881c5b2db2f165b01c30668e1a98cbff679c9907bf4e20`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Thu, 04 Apr 2019 21:20:20 GMT
+ADD file:47a641f7da953c295746b48a2c83f09fb0ccb125abf797cbd68410747806b7b0 in / 
+# Thu, 04 Apr 2019 21:20:20 GMT
+LABEL name=EulerOS-2.3 Base Image vendor=EulerOS license=GPLv2 build-date=20180919
+# Thu, 04 Apr 2019 21:20:20 GMT
+CMD ["/bin/bash"]
+```
+
+-	Layers:
+	-	`sha256:b6335acf3e5e71896f9db7077c30fbd818b68d7036564fa0b50e6d72c7326953`  
+		Last Modified: Thu, 04 Apr 2019 21:21:06 GMT  
+		Size: 57.8 MB (57771288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `euleros:2.3.1809`
 
