@@ -1,10 +1,10 @@
-# `redmine:3.4.9-passenger`
+# `redmine:3.4.10-passenger`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1f5acff8ba14fd341fa55de9ddf8f5ecec8e0f68fdd7d46b37df4410b0cb3b4d`
-- Created: `2019-03-27T13:27:52.195221475Z`
-- Virtual Size: ~ 644.99 Mb  
+- Image ID: `sha256:8f64e35ceb96f5f866d31fdf5090472a81e2adcb158210e2de66c7766d86ad8d`
+- Created: `2019-04-03T23:12:34.559458418Z`
+- Virtual Size: ~ 645.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,8 +12,8 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUBY_MAJOR=2.4`
-  - `RUBY_VERSION=2.4.5`
-  - `RUBY_DOWNLOAD_SHA256=2f0cdcce9989f63ef7c2939bdb17b1ef244c4f384d85b8531d60e73d8cc31eeb`
+  - `RUBY_VERSION=2.4.6`
+  - `RUBY_DOWNLOAD_SHA256=25da31b9815bfa9bba9f9b793c055a40a35c43c6adfb1fdbd81a09099f9b529c`
   - `RUBYGEMS_VERSION=3.0.3`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_PATH=/usr/local/bundle`
@@ -21,8 +21,8 @@
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=3.4.9`
-  - `REDMINE_DOWNLOAD_MD5=d99bfaafe50e39cb3d979053c696dbd1`
+  - `REDMINE_VERSION=3.4.10`
+  - `REDMINE_DOWNLOAD_MD5=8aaab36fa91f9c7b815b96b0f8610d77`
   - `PASSENGER_VERSION=6.0.2`
   - `PASSENGER_PID_FILE=tmp/pids/server.pid`
 
