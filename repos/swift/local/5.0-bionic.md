@@ -1988,14 +1988,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.15.0-46.49
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-46.49.dsc' linux_4.15.0-46.49.dsc 8025 SHA256:523e9738620c1dc3058f6158ba804eedcb89c3b09b57cd20a78aeab5822f6f41
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-46.49.diff.gz' linux_4.15.0-46.49.diff.gz 8712667 SHA256:3c77cae0773b1130965d7eb715ca995cc2ceaa2fae515db597325e04e82f4e37
-```
 
 ### `dpkg` source package: `llvm-toolchain-3.9=1:3.9.1-19ubuntu1`
 
