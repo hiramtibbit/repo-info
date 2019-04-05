@@ -166,14 +166,9 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.0-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0-2ubuntu1.dsc' bash_5.0-2ubuntu1.dsc 2412 SHA256:551ed6287b521c70a5fb0e331a8b08df05a7209f868a31115bde8414a4cef71e
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0.orig.tar.xz' bash_5.0.orig.tar.xz 5554808 SHA256:893858ba233d65bda38039e99dd96a4102b2f6a2d5e6c1c546e0794a60beed97
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0-2ubuntu1.debian.tar.xz' bash_5.0-2ubuntu1.debian.tar.xz 65380 SHA256:22db65cfa4e0e428f747ffc247dee7cb09d7133ac542a49c75f18acdae8631a3
-```
 
 ### `dpkg` source package: `bzip2=1.0.6-9`
 
@@ -341,13 +336,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.19.5ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.5ubuntu1.dsc' dpkg_1.19.5ubuntu1.dsc 2254 SHA256:a73f5a1e08641dae6bbd76b28c0733864a82b5492efabde99fbe82c06fcfd992
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.5ubuntu1.tar.xz' dpkg_1.19.5ubuntu1.tar.xz 4713496 SHA256:4d1545c0fee2ada5c8a2e4236e0dd713713caf164319762de622ab1f60e2e340
-```
 
 ### `dpkg` source package: `e2fsprogs=1.44.5-1`
 
@@ -885,13 +876,9 @@ Licenses: (parsed from: `/usr/share/doc/lsb-base/copyright`)
 - `BSD-3-clause`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lsb=10.2018112800ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lsb/lsb_10.2018112800ubuntu1.dsc' lsb_10.2018112800ubuntu1.dsc 2142 SHA256:f2633a967ce87b9c216d475035b4479867d938fcdf866c8a36d039b701306c7c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lsb/lsb_10.2018112800ubuntu1.tar.xz' lsb_10.2018112800ubuntu1.tar.xz 45560 SHA256:a86c2e663eeed32185129d8912bb6b044419b088503fd9bd48b00cd516b3dc5f
-```
 
 ### `dpkg` source package: `lz4=1.8.3-1ubuntu1`
 
@@ -1090,15 +1077,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.28.1-4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.28.1-4.dsc' perl_5.28.1-4.dsc 2823 SHA256:8aa8c2b3a8bacbc23a1fbfc6365c86076f109142c0520eeb3a871ea979fab3b5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.28.1.orig-regen-configure.tar.xz' perl_5.28.1.orig-regen-configure.tar.xz 411944 SHA256:5873b81af4514d3910ab1a8267b15ff8c0e2100dbae4edfd10b65ef72cd31ef8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.28.1.orig.tar.xz' perl_5.28.1.orig.tar.xz 12372080 SHA256:fea7162d4cca940a387f0587b93f6737d884bf74d8a9d7cfd978bc12cd0b202d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.28.1-4.debian.tar.xz' perl_5.28.1-4.debian.tar.xz 175692 SHA256:a73c9b6ca3ef3358506e04d369378a3ecbc6efce4850c9fbaa3d31a585ccfce5
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/perl/5.28.1-4/
+
 
 ### `dpkg` source package: `procps=2:3.3.15-2ubuntu2`
 
