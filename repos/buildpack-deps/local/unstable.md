@@ -4377,21 +4377,13 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.28/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.28.1-5
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.1-5.dsc' perl_5.28.1-5.dsc 2835 SHA256:a0fa371a5563da70cb671f67662e8e69c799c70904a64f67820c27defc1bc8dd
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.1.orig-regen-configure.tar.xz' perl_5.28.1.orig-regen-configure.tar.xz 411944 SHA256:5873b81af4514d3910ab1a8267b15ff8c0e2100dbae4edfd10b65ef72cd31ef8
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.1.orig.tar.xz' perl_5.28.1.orig.tar.xz 12372080 SHA256:fea7162d4cca940a387f0587b93f6737d884bf74d8a9d7cfd978bc12cd0b202d
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.1-5.debian.tar.xz' perl_5.28.1-5.debian.tar.xz 178628 SHA256:d5ac8e9177d400efffc963a806746ba68127882375f7966ffa6156fc673fd550
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.28.1-5/
 
-- https://sources.debian.net/src/perl/5.28.1-5/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.28.1-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.28.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.1.0-1`
 
@@ -4698,20 +4690,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.7-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.7=3.7.3-1
-'http://deb.debian.org/debian/pool/main/p/python3.7/python3.7_3.7.3-1.dsc' python3.7_3.7.3-1.dsc 3397 SHA256:16ec213e9ab3e1110a514cf996b3c31ff7abe04f3d39b029b0a714dfd04590c8
-'http://deb.debian.org/debian/pool/main/p/python3.7/python3.7_3.7.3.orig.tar.xz' python3.7_3.7.3.orig.tar.xz 17108364 SHA256:da60b54064d4cfcd9c26576f6df2690e62085123826cff2e667e72a91952d318
-'http://deb.debian.org/debian/pool/main/p/python3.7/python3.7_3.7.3-1.debian.tar.xz' python3.7_3.7.3-1.debian.tar.xz 209996 SHA256:4d3b855c392adbc9417e0d96d5e9e5416aac239dbdf629cefe9e8adfccd5849e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.7/3.7.3-1/
 
-- https://sources.debian.net/src/python3.7/3.7.3-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.7/3.7.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.7/3.7.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=7.0-5`
 

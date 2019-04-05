@@ -658,14 +658,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris eglibc=2.19-0ubuntu6.14
-'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19-0ubuntu6.14.dsc' eglibc_2.19-0ubuntu6.14.dsc 7195 SHA256:1c40e2484f78cc082d4c5e5f39001f3a9bca29575501f187940ca58fe7035244
-'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19.orig.tar.xz' eglibc_2.19.orig.tar.xz 12610800 SHA256:e5d30be72b702dffae527779af1be755f0dfbf13c171998a04f7265cd4da131f
-'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19-0ubuntu6.14.debian.tar.xz' eglibc_2.19-0ubuntu6.14.debian.tar.xz 1043124 SHA256:a8c1f7278e32b4148d1d0a76d213ee6b35eca51d0ed647d3a7c4d2468a02d8d6
-```
 
 ### `dpkg` source package: `eject=2.1.5+deb1+cvs20081104-13.1ubuntu0.14.04.1`
 

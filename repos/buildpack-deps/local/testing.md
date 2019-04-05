@@ -550,20 +550,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.64.0-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.64.0-1.dsc' curl_7.64.0-1.dsc 2687 SHA256:7cef86f07f054916dd23e46d9401f163b1632d64f879cbbf5e1b1d6f98c44123
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.64.0.orig.tar.gz' curl_7.64.0.orig.tar.gz 4032645 SHA256:cb90d2eb74d4e358c1ed1489f8e3af96b50ea4374ad71f143fa4595e998d81b5
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.64.0-1.debian.tar.xz' curl_7.64.0-1.debian.tar.xz 29112 SHA256:515caa9c81f07225371411f4059d78a52159e03827119a74db2ac42dd3d73d6a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.64.0-1/
 
-- https://sources.debian.net/src/curl/7.64.0-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.64.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.64.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-1`
 
@@ -2968,20 +2961,13 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1/copyright`)
 
 - `BSD3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh2=1.8.0-2
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.8.0-2.dsc' libssh2_1.8.0-2.dsc 1447 SHA256:a3ab2120a472d0a886114ca62b44186550c060c82124616326ca8da11b2e8c7d
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.8.0.orig.tar.gz' libssh2_1.8.0.orig.tar.gz 846989 SHA256:4382d33de790b28f862e53ed59ffbd65f3def7a06e8b6e9ca1b6f70453b4d5e0
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.8.0-2.debian.tar.xz' libssh2_1.8.0-2.debian.tar.xz 7460 SHA256:2c9c438e77ed1bc84f4fc130a8018e935862a251b01749c8b79d89df655b5480
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libssh2/1.8.0-2/
 
-- https://sources.debian.net/src/libssh2/1.8.0-2/ (for browsing the source)
-- https://sources.debian.net/src/libssh2/1.8.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libssh2/1.8.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-6=4.13-3`
 
@@ -4043,9 +4029,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openexr=2.2.1-4
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_2.2.1-4.dsc' openexr_2.2.1-4.dsc 2417 SHA256:f79326d6896273dbf652ade6c400f3b427b9b6b04df10f5a94206af7a3b63433
+'http://deb.debian.org/debian/pool/main/o/openexr/openexr_2.2.1-4.1.dsc' openexr_2.2.1-4.1.dsc 2270 SHA256:52ad0ebb9b1ab827c9c35f3ae971a604e4852b77494c210eb036e2c8bf2c7aaa
 'http://deb.debian.org/debian/pool/main/o/openexr/openexr_2.2.1.orig.tar.gz' openexr_2.2.1.orig.tar.gz 18176639 SHA256:8f9a5af6131583404261931d9a5c83de0a425cb4b8b25ddab2b169fbf113aecd
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_2.2.1-4.debian.tar.xz' openexr_2.2.1-4.debian.tar.xz 17692 SHA256:e7e68ee637c245b33eb873836cf0726d6d4a004ab00c2eb436a57c522e13ab39
+'http://deb.debian.org/debian/pool/main/o/openexr/openexr_2.2.1-4.1.debian.tar.xz' openexr_2.2.1-4.1.debian.tar.xz 17976 SHA256:a1bff86eef1f812acfcc5300aeeced664eeb214e536b7eb6797da227229a245f
 ```
 
 Other potentially useful URLs:
@@ -4301,20 +4287,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcre2=10.32-4
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.32-4.dsc' pcre2_10.32-4.dsc 2342 SHA256:a777361a7da85a5ea9918fd7e8469f7dea9ade77fdd65edd82a78a03d1ce05eb
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.32.orig.tar.gz' pcre2_10.32.orig.tar.gz 2169349 SHA256:9ca9be72e1a04f22be308323caa8c06ebd0c51efe99ee11278186cafbc4fe3af
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.32-4.diff.gz' pcre2_10.32-4.diff.gz 4897 SHA256:722fb789ac655910e7af706566d0b33b69bfa846f60a4da1a5c9c8ef8dc865ef
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pcre2/10.32-4/
 
-- https://sources.debian.net/src/pcre2/10.32-4/ (for browsing the source)
-- https://sources.debian.net/src/pcre2/10.32-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pcre2/10.32-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre3=2:8.39-12`
 
@@ -4560,19 +4539,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-defaults=2.7.15-4
-'http://deb.debian.org/debian/pool/main/p/python-defaults/python-defaults_2.7.15-4.dsc' python-defaults_2.7.15-4.dsc 2917 SHA256:928c686da2a4d10382349c56711ca2fa0ec8fa458a7c09b0219eedc7107ab39f
-'http://deb.debian.org/debian/pool/main/p/python-defaults/python-defaults_2.7.15-4.tar.gz' python-defaults_2.7.15-4.tar.gz 82780 SHA256:70d29d2feee94aaf02f6ca3149e31473f14e5451649f8dcfb554184f6f26c9c1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python-defaults/2.7.15-4/
 
-- https://sources.debian.net/src/python-defaults/2.7.15-4/ (for browsing the source)
-- https://sources.debian.net/src/python-defaults/2.7.15-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python-defaults/2.7.15-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python2.7=2.7.16~rc1-1`
 
@@ -4602,20 +4575,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.16~rc1-1
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.16~rc1-1.dsc' python2.7_2.7.16~rc1-1.dsc 3372 SHA256:e7cd53a4fc5e15e0886729155add6567e023190c513bd9629ae20342748122a9
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.16~rc1.orig.tar.gz' python2.7_2.7.16~rc1.orig.tar.gz 17431588 SHA256:6468f1a55ca32966542284e35db21447924c87dec0064c107cf443cef958c25a
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.16~rc1-1.diff.gz' python2.7_2.7.16~rc1-1.diff.gz 285685 SHA256:217eadfe3fea029720f09fecb6d6bab14be899bdd4dd379e404b95721c262090
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python2.7/2.7.16~rc1-1/
 
-- https://sources.debian.net/src/python2.7/2.7.16~rc1-1/ (for browsing the source)
-- https://sources.debian.net/src/python2.7/2.7.16~rc1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python2.7/2.7.16~rc1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.7.2-1`
 
@@ -4904,21 +4870,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.27.2-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.27.2-1.dsc' sqlite3_3.27.2-1.dsc 2398 SHA256:7f8dfc034df59e7b79b071936f22268e35cc558f942b494c2dc9acc902b27a7f
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.27.2.orig-www.tar.xz' sqlite3_3.27.2.orig-www.tar.xz 5602752 SHA256:b50bea0e1974b33bcb2cec4c29fcdeecd8f960020ce0310b15fb123938844bee
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.27.2.orig.tar.xz' sqlite3_3.27.2.orig.tar.xz 6844832 SHA256:6cb1606bbc38270739d256b5ab1cf94dccf5b2a3b4cbceb0545aac76f6ef40f2
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.27.2-1.debian.tar.xz' sqlite3_3.27.2-1.debian.tar.xz 18320 SHA256:f93d0c634d5b3b6dbc32aad7aebcb6b8503e5430afd266ced30d39b13b9dfdcc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.27.2-1/
 
-- https://sources.debian.net/src/sqlite3/3.27.2-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.27.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.27.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `subversion=1.10.4-1`
 

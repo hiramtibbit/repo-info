@@ -2640,14 +2640,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.18.0-16.17
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.18.0-16.17.dsc' linux_4.18.0-16.17.dsc 8333 SHA256:61a0a6d5378d85a491e347bbd258b823a4eb8653134dc1a139618336b70b1c7d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.18.0.orig.tar.gz' linux_4.18.0.orig.tar.gz 157099820 SHA256:fd5c4f5ab07d6dccf7ef79317e36c2754438fb3d79d750df1d9868bab0de9573
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.18.0-16.17.diff.gz' linux_4.18.0-16.17.diff.gz 7470666 SHA256:54c21a5cc45bde4ef127461a4da7852bd5eff5514cfb053141c5c40030a01c00
-```
 
 ### `dpkg` source package: `lsb=9.20170808ubuntu1`
 
@@ -3405,9 +3400,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris postgresql-10=10.6-0ubuntu0.18.10.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.6-0ubuntu0.18.10.1.dsc' postgresql-10_10.6-0ubuntu0.18.10.1.dsc 3600 SHA256:a3f353b4c5b90c62808f8bdb18fc14f661295fecfc98c689ccc79a1475968792
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.6.orig.tar.bz2' postgresql-10_10.6.orig.tar.bz2 20350612 SHA256:68a8276f08bda8fbefe562faaf8831cb20664a7a1d3ffdbbcc5b83e08637624b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.6-0ubuntu0.18.10.1.debian.tar.xz' postgresql-10_10.6-0ubuntu0.18.10.1.debian.tar.xz 25040 SHA256:488d441fac088b23266731da105c9d8cab9b31ad934111e0da749f0f5ff87d06
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.6-0ubuntu0.18.10.1.dsc' postgresql-10_10.6-0ubuntu0.18.10.1.dsc 3600 SHA256:a3f353b4c5b90c62808f8bdb18fc14f661295fecfc98c689ccc79a1475968792
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.6.orig.tar.bz2' postgresql-10_10.6.orig.tar.bz2 20350612 SHA256:68a8276f08bda8fbefe562faaf8831cb20664a7a1d3ffdbbcc5b83e08637624b
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.6-0ubuntu0.18.10.1.debian.tar.xz' postgresql-10_10.6-0ubuntu0.18.10.1.debian.tar.xz 25040 SHA256:488d441fac088b23266731da105c9d8cab9b31ad934111e0da749f0f5ff87d06
 ```
 
 ### `dpkg` source package: `procps=2:3.3.15-2ubuntu1`
@@ -3798,14 +3793,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=239-7ubuntu10.10
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239-7ubuntu10.10.dsc' systemd_239-7ubuntu10.10.dsc 4978 SHA256:6082fa4c17b800ba1f0ba02252b846c22a16d35404777ed6615348f80b4253df
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239.orig.tar.gz' systemd_239.orig.tar.gz 7157293 SHA256:8a11b1b07d620f4c06a16e95bba4dd2a97e90efdf2a5ba47ed0a935085787a14
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239-7ubuntu10.10.debian.tar.xz' systemd_239-7ubuntu10.10.debian.tar.xz 200504 SHA256:45c8bf5050dc85d7ad7659844bdf734dbe6b77d7b8501db157b207a2904b8bbe
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu2`
 
