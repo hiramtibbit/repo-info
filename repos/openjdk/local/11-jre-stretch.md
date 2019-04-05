@@ -1,10 +1,10 @@
-# `openjdk:11.0.2-jre-stretch`
+# `openjdk:11.0.3-jre-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6b23d41384f973ca9a5a052e878b46764e3194c7d69b1bf1bcc24736902f21ae`
-- Created: `2019-03-27T00:47:30.327892985Z`
-- Virtual Size: ~ 478.51 Mb  
+- Image ID: `sha256:3d30e068620ed89a3858d6aa62d49244da3520b97e18bade39308984458d1ff8`
+- Created: `2019-04-04T22:33:03.711014708Z`
+- Virtual Size: ~ 478.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
-  - `JAVA_VERSION=11.0.2`
-  - `JAVA_DEBIAN_VERSION=11.0.2+9-3~bpo9+1`
+  - `JAVA_VERSION=11.0.3`
+  - `JAVA_DEBIAN_VERSION=11.0.3+1-1~bpo9+1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -3415,12 +3415,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.26.2-1.1+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.26.2-1.1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-11=11.0.2+9-3~bpo9+1`
+### `dpkg` source package: `openjdk-11=11.0.3+1-1~bpo9+1`
 
 Binary Packages:
 
-- `openjdk-11-jre:amd64=11.0.2+9-3~bpo9+1`
-- `openjdk-11-jre-headless:amd64=11.0.2+9-3~bpo9+1`
+- `openjdk-11-jre:amd64=11.0.3+1-1~bpo9+1`
+- `openjdk-11-jre-headless:amd64=11.0.3+1-1~bpo9+1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-11-jre/copyright`, `/usr/share/doc/openjdk-11-jre-headless/copyright`)
 
@@ -3432,17 +3432,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jre/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-11=11.0.2+9-3~bpo9+1
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11.0.2+9-3~bpo9+1.dsc' openjdk-11_11.0.2+9-3~bpo9+1.dsc 4598 SHA256:77991e757814c5c5158f5d575cf773de15d69112aab312e27edd665a9371e7ca
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11.0.2+9.orig.tar.xz' openjdk-11_11.0.2+9.orig.tar.xz 75308824 SHA256:a12fa76cd30ce10f9a7dc24c659af706f21540d5df315867c5fdb453c404ac3f
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11.0.2+9-3~bpo9+1.debian.tar.xz' openjdk-11_11.0.2+9-3~bpo9+1.debian.tar.xz 168504 SHA256:30862160cf8483b2da629260c70d6372bafca17e5c2dd42953757dae89bb8bd3
+$ apt-get source -qq --print-uris openjdk-11=11.0.3+1-1~bpo9+1
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11.0.3+1-1~bpo9+1.dsc' openjdk-11_11.0.3+1-1~bpo9+1.dsc 4697 SHA256:d817d5be11710fe5bfa1ba1ddfebc383611abdfff3a56dc0573932530a270635
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11.0.3+1.orig.tar.xz' openjdk-11_11.0.3+1.orig.tar.xz 75328140 SHA256:ba8d1549eb8f4e1339abdda2c3d9eea72fcf2edb8102332c569503b1583f2cf5
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11.0.3+1-1~bpo9+1.debian.tar.xz' openjdk-11_11.0.3+1-1~bpo9+1.debian.tar.xz 166532 SHA256:34b1e36bec3f4cd05cf912cf2243a6ce96a3ae91bc6d8eb64100ae724ebbf9e6
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-11/11.0.2+9-3~bpo9+1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-11/11.0.2+9-3~bpo9+1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-11/11.0.2+9-3~bpo9+1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-11/11.0.3+1-1~bpo9+1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-11/11.0.3+1-1~bpo9+1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-11/11.0.3+1-1~bpo9+1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-5+deb9u2`
 
