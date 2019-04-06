@@ -1,17 +1,17 @@
-# `node:6.17.0-onbuild`
+# `node:6.17.1-onbuild`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d23017df2923a078dd06066b210974d0b2661f0c5ce1ebc39690e79fe95e052d`
-- Created: `2019-03-27T03:43:31.655242221Z`
-- Virtual Size: ~ 884.25 Mb  
+- Image ID: `sha256:3939f24f3b0f3b6fc8f768784edbfd2c5072107e356bd6ece0c69626d70173b8`
+- Created: `2019-04-03T23:41:01.26073477Z`
+- Virtual Size: ~ 884.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["npm","start"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=6.17.0`
-  - `YARN_VERSION=1.12.3`
+  - `NODE_VERSION=6.17.1`
+  - `YARN_VERSION=1.15.2`
 
 ## `dpkg` (`.deb`-based packages)
 

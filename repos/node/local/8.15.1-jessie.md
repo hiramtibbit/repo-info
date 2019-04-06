@@ -2941,10 +2941,6 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libssh2/1.4.3-4.1+deb8u2/
-
 
 ### `dpkg` source package: `libtasn1-6=4.2-3+deb8u3`
 
