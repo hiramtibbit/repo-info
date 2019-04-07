@@ -29,6 +29,8 @@ $ yumdownloader --quiet --source --urls acl-2.2.53-2.fc29
 Enabling fedora-modular-source repository
 https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/releases/29/Modular/source/tree/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
 Trying other mirror.
+https://pubmirror2.math.uh.edu/fedora-buffet/fedora/linux/releases/29/Modular/source/tree/repodata/repomd.xml: [Errno 12] Timeout on https://pubmirror2.math.uh.edu/fedora-buffet/fedora/linux/releases/29/Modular/source/tree/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
 Enabling updates-source repository
 https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/SRPMS/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
 Trying other mirror.
@@ -45,16 +47,7 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/releases/29/Everything/so
 
 Licenses (from `rpm --query`): LGPLv2+
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls audit-libs-3.0-0.5.20181218gitbdb72c0.fc29
-Enabling fedora-modular-source repository
-Enabling updates-source repository
-Enabling updates-modular-source repository
-Enabling fedora-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/SRPMS//Packages/a/audit-3.0-0.5.20181218gitbdb72c0.fc29.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `basesystem-11-6.fc29.noarch`
 
@@ -600,61 +593,25 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/SRP
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls glibc-2.28-26.fc29
-Enabling fedora-modular-source repository
-Enabling updates-source repository
-Enabling updates-modular-source repository
-Enabling fedora-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/SRPMS//Packages/g/glibc-2.28-26.fc29.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `glibc-common-2.28-26.fc29.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls glibc-common-2.28-26.fc29
-Enabling fedora-modular-source repository
-Enabling updates-source repository
-Enabling updates-modular-source repository
-Enabling fedora-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/SRPMS//Packages/g/glibc-2.28-26.fc29.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `glibc-langpack-en-2.28-26.fc29.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls glibc-langpack-en-2.28-26.fc29
-Enabling fedora-modular-source repository
-Enabling updates-source repository
-Enabling updates-modular-source repository
-Enabling fedora-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/SRPMS//Packages/g/glibc-2.28-26.fc29.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `glibc-minimal-langpack-2.28-26.fc29.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls glibc-minimal-langpack-2.28-26.fc29
-Enabling fedora-modular-source repository
-Enabling updates-source repository
-Enabling updates-modular-source repository
-Enabling fedora-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/SRPMS//Packages/g/glibc-2.28-26.fc29.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `gmp-6.1.2-9.fc29.x86_64`
 
@@ -2295,16 +2252,7 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/releases/29/Everything/so
 
 Licenses (from `rpm --query`): Public Domain
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls tzdata-2018i-1.fc29.noarch
-Enabling fedora-modular-source repository
-Enabling updates-source repository
-Enabling updates-modular-source repository
-Enabling fedora-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/SRPMS//Packages/t/tzdata-2018i-1.fc29.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `unbound-libs-1.8.3-2.fc29.x86_64`
 
