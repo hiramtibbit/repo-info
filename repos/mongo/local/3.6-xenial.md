@@ -1,10 +1,10 @@
-# `mongo:3.6.11-xenial`
+# `mongo:3.6.12-xenial`
 
 ## Docker Metadata
 
-- Image ID: `sha256:28fd77591c32ba06c9fdab8cfebaa069fd385d7a4392cdefbecd9018d722d7a2`
-- Created: `2019-04-02T23:44:37.147547979Z`
-- Virtual Size: ~ 430.09 Mb  
+- Image ID: `sha256:1c7a2b269761317a3b1a5080829234bed47726cabae1b8dd40481b90d6e96fa6`
+- Created: `2019-04-06T00:20:11.582711307Z`
+- Virtual Size: ~ 430.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=3.6`
-  - `MONGO_VERSION=3.6.11`
+  - `MONGO_VERSION=3.6.12`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -969,15 +969,15 @@ $ apt-get source -qq --print-uris mawk=1.3.3-17ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.3-17ubuntu2.diff.gz' mawk_1.3.3-17ubuntu2.diff.gz 63882 SHA256:670103046767474be29e80f2143dc67e3d0b958972f5942c3df94883f978eded
 ```
 
-### `dpkg` source package: `mongodb-org=3.6.11`
+### `dpkg` source package: `mongodb-org=3.6.12`
 
 Binary Packages:
 
-- `mongodb-org=3.6.11`
-- `mongodb-org-mongos=3.6.11`
-- `mongodb-org-server=3.6.11`
-- `mongodb-org-shell=3.6.11`
-- `mongodb-org-tools=3.6.11`
+- `mongodb-org=3.6.12`
+- `mongodb-org-mongos=3.6.12`
+- `mongodb-org-server=3.6.12`
+- `mongodb-org-shell=3.6.12`
+- `mongodb-org-tools=3.6.12`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
