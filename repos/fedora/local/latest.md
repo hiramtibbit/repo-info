@@ -29,10 +29,10 @@ $ yumdownloader --quiet --source --urls acl-2.2.53-2.fc29
 Enabling fedora-modular-source repository
 https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/releases/29/Modular/source/tree/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
 Trying other mirror.
-https://pubmirror2.math.uh.edu/fedora-buffet/fedora/linux/releases/29/Modular/source/tree/repodata/repomd.xml: [Errno 12] Timeout on https://pubmirror2.math.uh.edu/fedora-buffet/fedora/linux/releases/29/Modular/source/tree/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
-Trying other mirror.
 Enabling updates-source repository
 https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/SRPMS/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
+Trying other mirror.
+https://pubmirror1.math.uh.edu/fedora-buffet/fedora/linux/updates/29/Everything/SRPMS/repodata/repomd.xml: [Errno -1] repomd.xml does not match metalink for updates-source
 Trying other mirror.
 Enabling updates-modular-source repository
 https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Modular/SRPMS/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
