@@ -13,7 +13,9 @@ trap "docker rm -f '$name-data' '$name' > /dev/null || :" EXIT
 docker create \
 	--name "$name-data" \
 	-v /etc \
+	-v /lib/apk \
 	-v /usr/lib/rpm \
+	-v /usr/share/apk \
 	-v /usr/share/doc \
 	-v /var/lib \
 	"$image" \
