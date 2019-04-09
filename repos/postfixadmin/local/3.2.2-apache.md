@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0bc8a079f4ee0c844429a0f10abcdf3ed6ca0b664398f114724a57ef4be56798`
-- Created: `2019-03-27T12:30:48.834043191Z`
-- Virtual Size: ~ 384.30 Mb  
+- Image ID: `sha256:565ac10fba2d76771b8fc2ae070d89bd3f43600fca91748b62921a2f9a9c411c`
+- Created: `2019-04-06T06:18:58.15977715Z`
+- Virtual Size: ~ 384.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -21,10 +21,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.3`
-  - `PHP_URL=https://secure.php.net/get/php-7.3.3.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.3.3.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=6bb03e79a183d0cb059a6d117bbb2e0679cab667fb713a13c6a16f56bebab9b3`
+  - `PHP_VERSION=7.3.4`
+  - `PHP_URL=https://www.php.net/get/php-7.3.4.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://www.php.net/get/php-7.3.4.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=6fe79fa1f8655f98ef6708cde8751299796d6c1e225081011f4104625b923b83`
   - `PHP_MD5=`
   - `POSTFIXADMIN_VERSION=3.2.2`
   - `POSTFIXADMIN_SHA512=6c84cb215e69c52c26db0651e5d0d9d8bcb0a63b00d3c197f10fa1f0442a1fde44bb514fb476a1e68a21741d603febac67282961d01270e5969ee13d145121ee`
@@ -2704,20 +2704,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=232-25+deb9u9
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_232-25+deb9u9.dsc' systemd_232-25+deb9u9.dsc 4952 SHA256:4b31a17f3a95bccff764c1115033938704915d9cec1237882e7a2387c0c40795
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_232-25+deb9u9.debian.tar.xz' systemd_232-25+deb9u9.debian.tar.xz 217000 SHA256:4a25ad8c0177cab7a3f436236422d0183e4fb4e81a8fe5e3ac690f2e7f195024
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/232-25+deb9u9/
 
-- https://sources.debian.net/src/systemd/232-25+deb9u9/ (for browsing the source)
-- https://sources.debian.net/src/systemd/232-25+deb9u9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/232-25+deb9u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 
