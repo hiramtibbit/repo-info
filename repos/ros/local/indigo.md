@@ -6323,14 +6323,9 @@ Licenses: (parsed from: `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/ude
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=204-5ubuntu20.29
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.29.dsc' systemd_204-5ubuntu20.29.dsc 3711 SHA256:9b1003fab6f0181c4aed6f0527a4214d6440107ff3a6e8729c555cb915260722
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204.orig.tar.xz' systemd_204.orig.tar.xz 2186264 SHA256:072c393503c7c1e55ca7acf3db659cbd28c7fe5fa94fab3db95360bafd96731b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.29.debian.tar.gz' systemd_204-5ubuntu20.29.debian.tar.gz 180084 SHA256:005127c686251cd81e3503295f22be40f80730adbb4bdac7ba869534499c5eac
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-41ubuntu6.3`
 
