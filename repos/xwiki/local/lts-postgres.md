@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:865a9805350e8ba4f73c25e8eecd8c4d1bed861376a9aa4d3aed30118ae25a25`
-- Created: `2019-03-29T23:12:39.194487165Z`
+- Image ID: `sha256:bd37ea738c4ac0e2ac67c04b4536efc13b06d393efd5d9fbaa633dec9f7b608a`
+- Created: `2019-04-08T23:22:53.043496473Z`
 - Virtual Size: ~ 1.19 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -25,9 +25,9 @@
   - `TOMCAT_SHA512=8396f526eca9b691931cfa773f43c5190e7002d938cb253335b65a32c7ef8acba2bf7c61f2ccffc4113a3ba0c46169a4e4797cdea73db32c5ba56156a9f49353`
   - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz`
   - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz.asc`
-  - `XWIKI_VERSION=10.11.4`
-  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/10.11.4`
-  - `XWIKI_DOWNLOAD_SHA256=38a25212bb73612c5f87190a31dea175cf996e22a9d8f9c08e999c5baba2db5a`
+  - `XWIKI_VERSION=10.11.5`
+  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/10.11.5`
+  - `XWIKI_DOWNLOAD_SHA256=cda71f7430a4063048a0a5407c21caa6dd763a94256426db47a3b61837390512`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -6029,20 +6029,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=232-25+deb9u9
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_232-25+deb9u9.dsc' systemd_232-25+deb9u9.dsc 4952 SHA256:4b31a17f3a95bccff764c1115033938704915d9cec1237882e7a2387c0c40795
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_232-25+deb9u9.debian.tar.xz' systemd_232-25+deb9u9.debian.tar.xz 217000 SHA256:4a25ad8c0177cab7a3f436236422d0183e4fb4e81a8fe5e3ac690f2e7f195024
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/232-25+deb9u9/
 
-- https://sources.debian.net/src/systemd/232-25+deb9u9/ (for browsing the source)
-- https://sources.debian.net/src/systemd/232-25+deb9u9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/232-25+deb9u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 
