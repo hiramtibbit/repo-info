@@ -3771,14 +3771,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=237-3ubuntu10.13
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.13.dsc' systemd_237-3ubuntu10.13.dsc 4656 SHA256:1dde31905a7f7644cd4ce24f6d5c65accffd48ca89da4885ffdc95509e145dcf
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA256:c83dabbe1c9de6b9db1dafdb7e04140c7d0535705c68842f6c0768653ba4913c
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.13.debian.tar.xz' systemd_237-3ubuntu10.13.debian.tar.xz 202360 SHA256:5a2d4d0ea96dc64f46c03b84b5879b2885bb34abb7697ea930570feeb6e77845
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 
@@ -3944,15 +3939,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.19.4-1ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.19.4-1ubuntu2.1.dsc' wget_1.19.4-1ubuntu2.1.dsc 2226 SHA256:77e1c82aa5ff43cfea93c9ca3d53688cf11fd6f2ccb20b088633cd12959b3011
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.19.4.orig.tar.gz' wget_1.19.4.orig.tar.gz 4310657 SHA256:93fb96b0f48a20ff5be0d9d9d3c4a986b469cb853131f9d5fe4cc9cecbc8b5b5
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.19.4.orig.tar.gz.asc' wget_1.19.4.orig.tar.gz.asc 1241 SHA256:ee273f3a27adb2d2dc02ba346759ce95cb74ded959853a8a9c9be5ae44d10fcb
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.19.4-1ubuntu2.1.debian.tar.xz' wget_1.19.4-1ubuntu2.1.debian.tar.xz 63748 SHA256:f9b6530ede3c5d922f5c0cbc2c0753ecfb970491e63f3c1d9969528c919ee6f7
-```
 
 ### `dpkg` source package: `xorg-sgml-doctools=1:1.11-1`
 

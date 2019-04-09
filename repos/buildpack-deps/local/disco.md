@@ -3251,14 +3251,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcre3=2:8.39-11
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-11.dsc' pcre3_8.39-11.dsc 2226 SHA256:50738a8e55d4bdc10fd6eecc623170d0657bd15805e630d82bc90d722fcbc435
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39.orig.tar.bz2' pcre3_8.39.orig.tar.bz2 1560758 SHA256:b858099f82483031ee02092711689e7245586ada49e534a06e678b8ea9549e8b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-11.debian.tar.gz' pcre3_8.39-11.debian.tar.gz 26414 SHA256:de1f66246fe7b4e85fba0f9e3bac69bdf3271a9c5c6b7ac0661b20051c012883
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/pcre3/2:8.39-11/
+
 
 ### `dpkg` source package: `perl=5.28.1-4`
 
@@ -3481,14 +3480,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.16-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.16-1.dsc' python2.7_2.7.16-1.dsc 3344 SHA256:51062d7a6f6b3bffe50826f4077e371c3dbbfeda91cbbcfe06d45fdebeaa5871
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.16.orig.tar.gz' python2.7_2.7.16.orig.tar.gz 17431748 SHA256:01da813a3600876f03f46db11cc5c408175e99f03af2ba942ef324389a83bad5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.16-1.diff.gz' python2.7_2.7.16-1.diff.gz 285662 SHA256:83b1510618c90acf7854cc5bd393adbc57bafc58c7871d0927cf5e4ae94e33de
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python2.7/2.7.16-1/
+
 
 ### `dpkg` source package: `python3-defaults=3.7.2-1`
 

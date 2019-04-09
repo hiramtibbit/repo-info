@@ -2485,14 +2485,9 @@ Licenses: (parsed from: `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/ude
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=204-5ubuntu20.29
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.29.dsc' systemd_204-5ubuntu20.29.dsc 3711 SHA256:9b1003fab6f0181c4aed6f0527a4214d6440107ff3a6e8729c555cb915260722
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204.orig.tar.xz' systemd_204.orig.tar.xz 2186264 SHA256:072c393503c7c1e55ca7acf3db659cbd28c7fe5fa94fab3db95360bafd96731b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.29.debian.tar.gz' systemd_204-5ubuntu20.29.debian.tar.gz 180084 SHA256:005127c686251cd81e3503295f22be40f80730adbb4bdac7ba869534499c5eac
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-41ubuntu6.3`
 
@@ -2745,14 +2740,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.15-1ubuntu1.14.04.4
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.15-1ubuntu1.14.04.4.dsc' wget_1.15-1ubuntu1.14.04.4.dsc 1927 SHA256:07d5b818fc0c633e85b0ecd709d958d465a8ba6e098538d0709e49e9fd4d01ff
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.15.orig.tar.gz' wget_1.15.orig.tar.gz 3417936 SHA256:52126be8cf1bddd7536886e74c053ad7d0ed2aa89b4b630f76785bac21695fcd
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.15-1ubuntu1.14.04.4.debian.tar.gz' wget_1.15-1ubuntu1.14.04.4.debian.tar.gz 32844 SHA256:ed354b8ba98d72177a74234c172deb293b58744df5964fd54ad589a9fa67c342
-```
 
 ### `dpkg` source package: `xkeyboard-config=2.10.1-1ubuntu1`
 
