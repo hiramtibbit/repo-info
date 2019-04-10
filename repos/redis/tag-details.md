@@ -2035,7 +2035,7 @@ CMD ["redis-server"]
 ## `redis:4.0.14-alpine`
 
 ```console
-$ docker pull redis@sha256:dae1956545a8b62d0c11250df3a53f625cc2456eee14238b0df84ed96e21c2af
+$ docker pull redis@sha256:f6226137081875ee70351244851a326208ffec21ed44abbdc71d74c99d961121
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2489,80 +2489,80 @@ CMD ["redis-server"]
 ### `redis:4.0.14-alpine` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:4ffbcb1f78e8790da4474d75f9dc644f1a4f759096878213bbbf3011bd07a00c
+$ docker pull redis@sha256:d7a7c643f8502fcca6e3598ebfd52b08d3071a395f48eb489030bb817377dd73
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.2 MB (14213531 bytes)**  
+-	Total Size: **13.8 MB (13818104 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34f4d0f9f94997371e5dbbd377a0201d371ffe7b2fba8d2d45e5cc32d49af16f`
+-	Image ID: `sha256:e958649ccad0db85005cc2be36636a8331c3d129b74e5d4e3dea108f2bbbe903`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
-# Fri, 08 Mar 2019 03:35:46 GMT
-ADD file:3f769e5ff31fbae6ea6b835fa878b05d6c6920ca4313aa63be7d057e29241d87 in / 
-# Fri, 08 Mar 2019 03:35:46 GMT
+# Wed, 10 Apr 2019 11:42:23 GMT
+ADD file:ab106eb2cf4bf0e1ca7861a56dc24e44dd206fd3ae8d3587684324e5c11136f4 in / 
+# Wed, 10 Apr 2019 11:42:23 GMT
 CMD ["/bin/sh"]
-# Fri, 08 Mar 2019 05:35:49 GMT
+# Wed, 10 Apr 2019 14:22:12 GMT
 RUN addgroup -S redis && adduser -S -G redis redis
-# Fri, 08 Mar 2019 05:35:50 GMT
+# Wed, 10 Apr 2019 14:22:15 GMT
 RUN apk add --no-cache 		'su-exec>=0.2' 		tzdata
-# Wed, 20 Mar 2019 12:40:30 GMT
+# Wed, 10 Apr 2019 14:24:30 GMT
 ENV REDIS_VERSION=4.0.14
-# Wed, 20 Mar 2019 12:40:31 GMT
+# Wed, 10 Apr 2019 14:24:31 GMT
 ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-4.0.14.tar.gz
-# Wed, 20 Mar 2019 12:40:31 GMT
+# Wed, 10 Apr 2019 14:24:31 GMT
 ENV REDIS_DOWNLOAD_SHA=1e1e18420a86cfb285933123b04a82e1ebda20bfb0a289472745a087587e93a7
-# Wed, 20 Mar 2019 12:41:39 GMT
+# Wed, 10 Apr 2019 14:25:53 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		coreutils 		gcc 		linux-headers 		make 		musl-dev 	; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 1$' /usr/src/redis/src/server.h; 	sed -ri 's!^(#define CONFIG_DEFAULT_PROTECTED_MODE) 1$!\1 0!' /usr/src/redis/src/server.h; 	grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 0$' /usr/src/redis/src/server.h; 		make -C /usr/src/redis -j "$(nproc)"; 	make -C /usr/src/redis install; 		rm -r /usr/src/redis; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .redis-rundeps $runDeps; 	apk del .build-deps; 		redis-server --version
-# Wed, 20 Mar 2019 12:41:40 GMT
+# Wed, 10 Apr 2019 14:25:57 GMT
 RUN mkdir /data && chown redis:redis /data
-# Wed, 20 Mar 2019 12:41:41 GMT
+# Wed, 10 Apr 2019 14:25:58 GMT
 VOLUME [/data]
-# Wed, 20 Mar 2019 12:41:41 GMT
+# Wed, 10 Apr 2019 14:25:59 GMT
 WORKDIR /data
-# Wed, 20 Mar 2019 12:41:42 GMT
+# Wed, 10 Apr 2019 14:25:59 GMT
 COPY file:c48b97ea65422782310396358f838c38c0747767dd606a88d4c3d0b034a60762 in /usr/local/bin/ 
-# Wed, 20 Mar 2019 12:41:42 GMT
+# Wed, 10 Apr 2019 14:26:00 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 20 Mar 2019 12:41:43 GMT
+# Wed, 10 Apr 2019 14:26:01 GMT
 EXPOSE 6379
-# Wed, 20 Mar 2019 12:41:43 GMT
+# Wed, 10 Apr 2019 14:26:02 GMT
 CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d981dc59d98dcf79c1920d433d8d56f9892f229da716de64280980f317a80ef1`  
-		Last Modified: Fri, 08 Mar 2019 03:36:19 GMT  
-		Size: 2.5 MB (2541305 bytes)  
+	-	`sha256:5b51e37a522c2e7cd3c67e8a3e5500b45189ea6698e9fdaed7f5d48282326633`  
+		Last Modified: Wed, 10 Apr 2019 11:43:06 GMT  
+		Size: 2.5 MB (2543326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:668dbb1da38bf6b755c53ced346a702cc89f825fae11e7c280c4937d86c6052f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
+	-	`sha256:8e72810cb2904dec74b6a6ec5f4a983c700825faf21979eb2e7a360b42515f26`  
+		Last Modified: Wed, 10 Apr 2019 14:26:58 GMT  
 		Size: 1.3 KB (1253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a9bb4447ea68836f7469bf09fbdaf11252c6449487839e8864900ba4b92d03f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
-		Size: 407.9 KB (407852 bytes)  
+	-	`sha256:b4816af0620533e2d07b1778a9f075eb91da554fb6e81c803e8fe455a6d9cadb`  
+		Last Modified: Wed, 10 Apr 2019 14:26:59 GMT  
+		Size: 407.9 KB (407873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:999fb1503a16236b99a7ff0d7a3221ddfbad7fb54388a5374e4d945596768737`  
-		Last Modified: Wed, 20 Mar 2019 12:43:35 GMT  
-		Size: 11.3 MB (11262610 bytes)  
+	-	`sha256:9f7203d5d1fe441f47786ad4a3c4b2eb3d0cafcb9aa56af3df281ce1f8e35fe8`  
+		Last Modified: Wed, 10 Apr 2019 14:27:41 GMT  
+		Size: 10.9 MB (10865139 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d62e66b2a21e703e0fcedd76df7f872f365e6e6fb2c4e26a95df8b2011ad7d8c`  
-		Last Modified: Wed, 20 Mar 2019 12:43:30 GMT  
-		Size: 98.0 B  
+	-	`sha256:2434d76c6682b1afdf70b4a41ffca5766c0e6028c0d18938698457310413deec`  
+		Last Modified: Wed, 10 Apr 2019 14:27:36 GMT  
+		Size: 101.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2cd52c8a3770ce676ab6279d6ad8f0a5329939110c080d3a24c9f26b571904cf`  
-		Last Modified: Wed, 20 Mar 2019 12:43:30 GMT  
-		Size: 413.0 B  
+	-	`sha256:834e59b75edc12e66c93cb940b6e197d9f2d4e35323d9eacba70504b9fa8d105`  
+		Last Modified: Wed, 10 Apr 2019 14:27:36 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:4.0.14-alpine3.9`
 
 ```console
-$ docker pull redis@sha256:dae1956545a8b62d0c11250df3a53f625cc2456eee14238b0df84ed96e21c2af
+$ docker pull redis@sha256:f6226137081875ee70351244851a326208ffec21ed44abbdc71d74c99d961121
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3016,74 +3016,74 @@ CMD ["redis-server"]
 ### `redis:4.0.14-alpine3.9` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:4ffbcb1f78e8790da4474d75f9dc644f1a4f759096878213bbbf3011bd07a00c
+$ docker pull redis@sha256:d7a7c643f8502fcca6e3598ebfd52b08d3071a395f48eb489030bb817377dd73
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.2 MB (14213531 bytes)**  
+-	Total Size: **13.8 MB (13818104 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34f4d0f9f94997371e5dbbd377a0201d371ffe7b2fba8d2d45e5cc32d49af16f`
+-	Image ID: `sha256:e958649ccad0db85005cc2be36636a8331c3d129b74e5d4e3dea108f2bbbe903`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
-# Fri, 08 Mar 2019 03:35:46 GMT
-ADD file:3f769e5ff31fbae6ea6b835fa878b05d6c6920ca4313aa63be7d057e29241d87 in / 
-# Fri, 08 Mar 2019 03:35:46 GMT
+# Wed, 10 Apr 2019 11:42:23 GMT
+ADD file:ab106eb2cf4bf0e1ca7861a56dc24e44dd206fd3ae8d3587684324e5c11136f4 in / 
+# Wed, 10 Apr 2019 11:42:23 GMT
 CMD ["/bin/sh"]
-# Fri, 08 Mar 2019 05:35:49 GMT
+# Wed, 10 Apr 2019 14:22:12 GMT
 RUN addgroup -S redis && adduser -S -G redis redis
-# Fri, 08 Mar 2019 05:35:50 GMT
+# Wed, 10 Apr 2019 14:22:15 GMT
 RUN apk add --no-cache 		'su-exec>=0.2' 		tzdata
-# Wed, 20 Mar 2019 12:40:30 GMT
+# Wed, 10 Apr 2019 14:24:30 GMT
 ENV REDIS_VERSION=4.0.14
-# Wed, 20 Mar 2019 12:40:31 GMT
+# Wed, 10 Apr 2019 14:24:31 GMT
 ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-4.0.14.tar.gz
-# Wed, 20 Mar 2019 12:40:31 GMT
+# Wed, 10 Apr 2019 14:24:31 GMT
 ENV REDIS_DOWNLOAD_SHA=1e1e18420a86cfb285933123b04a82e1ebda20bfb0a289472745a087587e93a7
-# Wed, 20 Mar 2019 12:41:39 GMT
+# Wed, 10 Apr 2019 14:25:53 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		coreutils 		gcc 		linux-headers 		make 		musl-dev 	; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 1$' /usr/src/redis/src/server.h; 	sed -ri 's!^(#define CONFIG_DEFAULT_PROTECTED_MODE) 1$!\1 0!' /usr/src/redis/src/server.h; 	grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 0$' /usr/src/redis/src/server.h; 		make -C /usr/src/redis -j "$(nproc)"; 	make -C /usr/src/redis install; 		rm -r /usr/src/redis; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .redis-rundeps $runDeps; 	apk del .build-deps; 		redis-server --version
-# Wed, 20 Mar 2019 12:41:40 GMT
+# Wed, 10 Apr 2019 14:25:57 GMT
 RUN mkdir /data && chown redis:redis /data
-# Wed, 20 Mar 2019 12:41:41 GMT
+# Wed, 10 Apr 2019 14:25:58 GMT
 VOLUME [/data]
-# Wed, 20 Mar 2019 12:41:41 GMT
+# Wed, 10 Apr 2019 14:25:59 GMT
 WORKDIR /data
-# Wed, 20 Mar 2019 12:41:42 GMT
+# Wed, 10 Apr 2019 14:25:59 GMT
 COPY file:c48b97ea65422782310396358f838c38c0747767dd606a88d4c3d0b034a60762 in /usr/local/bin/ 
-# Wed, 20 Mar 2019 12:41:42 GMT
+# Wed, 10 Apr 2019 14:26:00 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 20 Mar 2019 12:41:43 GMT
+# Wed, 10 Apr 2019 14:26:01 GMT
 EXPOSE 6379
-# Wed, 20 Mar 2019 12:41:43 GMT
+# Wed, 10 Apr 2019 14:26:02 GMT
 CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d981dc59d98dcf79c1920d433d8d56f9892f229da716de64280980f317a80ef1`  
-		Last Modified: Fri, 08 Mar 2019 03:36:19 GMT  
-		Size: 2.5 MB (2541305 bytes)  
+	-	`sha256:5b51e37a522c2e7cd3c67e8a3e5500b45189ea6698e9fdaed7f5d48282326633`  
+		Last Modified: Wed, 10 Apr 2019 11:43:06 GMT  
+		Size: 2.5 MB (2543326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:668dbb1da38bf6b755c53ced346a702cc89f825fae11e7c280c4937d86c6052f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
+	-	`sha256:8e72810cb2904dec74b6a6ec5f4a983c700825faf21979eb2e7a360b42515f26`  
+		Last Modified: Wed, 10 Apr 2019 14:26:58 GMT  
 		Size: 1.3 KB (1253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a9bb4447ea68836f7469bf09fbdaf11252c6449487839e8864900ba4b92d03f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
-		Size: 407.9 KB (407852 bytes)  
+	-	`sha256:b4816af0620533e2d07b1778a9f075eb91da554fb6e81c803e8fe455a6d9cadb`  
+		Last Modified: Wed, 10 Apr 2019 14:26:59 GMT  
+		Size: 407.9 KB (407873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:999fb1503a16236b99a7ff0d7a3221ddfbad7fb54388a5374e4d945596768737`  
-		Last Modified: Wed, 20 Mar 2019 12:43:35 GMT  
-		Size: 11.3 MB (11262610 bytes)  
+	-	`sha256:9f7203d5d1fe441f47786ad4a3c4b2eb3d0cafcb9aa56af3df281ce1f8e35fe8`  
+		Last Modified: Wed, 10 Apr 2019 14:27:41 GMT  
+		Size: 10.9 MB (10865139 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d62e66b2a21e703e0fcedd76df7f872f365e6e6fb2c4e26a95df8b2011ad7d8c`  
-		Last Modified: Wed, 20 Mar 2019 12:43:30 GMT  
-		Size: 98.0 B  
+	-	`sha256:2434d76c6682b1afdf70b4a41ffca5766c0e6028c0d18938698457310413deec`  
+		Last Modified: Wed, 10 Apr 2019 14:27:36 GMT  
+		Size: 101.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2cd52c8a3770ce676ab6279d6ad8f0a5329939110c080d3a24c9f26b571904cf`  
-		Last Modified: Wed, 20 Mar 2019 12:43:30 GMT  
-		Size: 413.0 B  
+	-	`sha256:834e59b75edc12e66c93cb940b6e197d9f2d4e35323d9eacba70504b9fa8d105`  
+		Last Modified: Wed, 10 Apr 2019 14:27:36 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:4.0.14-stretch`
@@ -3812,7 +3812,7 @@ CMD ["redis-server"]
 ## `redis:4.0-alpine`
 
 ```console
-$ docker pull redis@sha256:dae1956545a8b62d0c11250df3a53f625cc2456eee14238b0df84ed96e21c2af
+$ docker pull redis@sha256:f6226137081875ee70351244851a326208ffec21ed44abbdc71d74c99d961121
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4266,80 +4266,80 @@ CMD ["redis-server"]
 ### `redis:4.0-alpine` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:4ffbcb1f78e8790da4474d75f9dc644f1a4f759096878213bbbf3011bd07a00c
+$ docker pull redis@sha256:d7a7c643f8502fcca6e3598ebfd52b08d3071a395f48eb489030bb817377dd73
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.2 MB (14213531 bytes)**  
+-	Total Size: **13.8 MB (13818104 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34f4d0f9f94997371e5dbbd377a0201d371ffe7b2fba8d2d45e5cc32d49af16f`
+-	Image ID: `sha256:e958649ccad0db85005cc2be36636a8331c3d129b74e5d4e3dea108f2bbbe903`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
-# Fri, 08 Mar 2019 03:35:46 GMT
-ADD file:3f769e5ff31fbae6ea6b835fa878b05d6c6920ca4313aa63be7d057e29241d87 in / 
-# Fri, 08 Mar 2019 03:35:46 GMT
+# Wed, 10 Apr 2019 11:42:23 GMT
+ADD file:ab106eb2cf4bf0e1ca7861a56dc24e44dd206fd3ae8d3587684324e5c11136f4 in / 
+# Wed, 10 Apr 2019 11:42:23 GMT
 CMD ["/bin/sh"]
-# Fri, 08 Mar 2019 05:35:49 GMT
+# Wed, 10 Apr 2019 14:22:12 GMT
 RUN addgroup -S redis && adduser -S -G redis redis
-# Fri, 08 Mar 2019 05:35:50 GMT
+# Wed, 10 Apr 2019 14:22:15 GMT
 RUN apk add --no-cache 		'su-exec>=0.2' 		tzdata
-# Wed, 20 Mar 2019 12:40:30 GMT
+# Wed, 10 Apr 2019 14:24:30 GMT
 ENV REDIS_VERSION=4.0.14
-# Wed, 20 Mar 2019 12:40:31 GMT
+# Wed, 10 Apr 2019 14:24:31 GMT
 ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-4.0.14.tar.gz
-# Wed, 20 Mar 2019 12:40:31 GMT
+# Wed, 10 Apr 2019 14:24:31 GMT
 ENV REDIS_DOWNLOAD_SHA=1e1e18420a86cfb285933123b04a82e1ebda20bfb0a289472745a087587e93a7
-# Wed, 20 Mar 2019 12:41:39 GMT
+# Wed, 10 Apr 2019 14:25:53 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		coreutils 		gcc 		linux-headers 		make 		musl-dev 	; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 1$' /usr/src/redis/src/server.h; 	sed -ri 's!^(#define CONFIG_DEFAULT_PROTECTED_MODE) 1$!\1 0!' /usr/src/redis/src/server.h; 	grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 0$' /usr/src/redis/src/server.h; 		make -C /usr/src/redis -j "$(nproc)"; 	make -C /usr/src/redis install; 		rm -r /usr/src/redis; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .redis-rundeps $runDeps; 	apk del .build-deps; 		redis-server --version
-# Wed, 20 Mar 2019 12:41:40 GMT
+# Wed, 10 Apr 2019 14:25:57 GMT
 RUN mkdir /data && chown redis:redis /data
-# Wed, 20 Mar 2019 12:41:41 GMT
+# Wed, 10 Apr 2019 14:25:58 GMT
 VOLUME [/data]
-# Wed, 20 Mar 2019 12:41:41 GMT
+# Wed, 10 Apr 2019 14:25:59 GMT
 WORKDIR /data
-# Wed, 20 Mar 2019 12:41:42 GMT
+# Wed, 10 Apr 2019 14:25:59 GMT
 COPY file:c48b97ea65422782310396358f838c38c0747767dd606a88d4c3d0b034a60762 in /usr/local/bin/ 
-# Wed, 20 Mar 2019 12:41:42 GMT
+# Wed, 10 Apr 2019 14:26:00 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 20 Mar 2019 12:41:43 GMT
+# Wed, 10 Apr 2019 14:26:01 GMT
 EXPOSE 6379
-# Wed, 20 Mar 2019 12:41:43 GMT
+# Wed, 10 Apr 2019 14:26:02 GMT
 CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d981dc59d98dcf79c1920d433d8d56f9892f229da716de64280980f317a80ef1`  
-		Last Modified: Fri, 08 Mar 2019 03:36:19 GMT  
-		Size: 2.5 MB (2541305 bytes)  
+	-	`sha256:5b51e37a522c2e7cd3c67e8a3e5500b45189ea6698e9fdaed7f5d48282326633`  
+		Last Modified: Wed, 10 Apr 2019 11:43:06 GMT  
+		Size: 2.5 MB (2543326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:668dbb1da38bf6b755c53ced346a702cc89f825fae11e7c280c4937d86c6052f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
+	-	`sha256:8e72810cb2904dec74b6a6ec5f4a983c700825faf21979eb2e7a360b42515f26`  
+		Last Modified: Wed, 10 Apr 2019 14:26:58 GMT  
 		Size: 1.3 KB (1253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a9bb4447ea68836f7469bf09fbdaf11252c6449487839e8864900ba4b92d03f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
-		Size: 407.9 KB (407852 bytes)  
+	-	`sha256:b4816af0620533e2d07b1778a9f075eb91da554fb6e81c803e8fe455a6d9cadb`  
+		Last Modified: Wed, 10 Apr 2019 14:26:59 GMT  
+		Size: 407.9 KB (407873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:999fb1503a16236b99a7ff0d7a3221ddfbad7fb54388a5374e4d945596768737`  
-		Last Modified: Wed, 20 Mar 2019 12:43:35 GMT  
-		Size: 11.3 MB (11262610 bytes)  
+	-	`sha256:9f7203d5d1fe441f47786ad4a3c4b2eb3d0cafcb9aa56af3df281ce1f8e35fe8`  
+		Last Modified: Wed, 10 Apr 2019 14:27:41 GMT  
+		Size: 10.9 MB (10865139 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d62e66b2a21e703e0fcedd76df7f872f365e6e6fb2c4e26a95df8b2011ad7d8c`  
-		Last Modified: Wed, 20 Mar 2019 12:43:30 GMT  
-		Size: 98.0 B  
+	-	`sha256:2434d76c6682b1afdf70b4a41ffca5766c0e6028c0d18938698457310413deec`  
+		Last Modified: Wed, 10 Apr 2019 14:27:36 GMT  
+		Size: 101.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2cd52c8a3770ce676ab6279d6ad8f0a5329939110c080d3a24c9f26b571904cf`  
-		Last Modified: Wed, 20 Mar 2019 12:43:30 GMT  
-		Size: 413.0 B  
+	-	`sha256:834e59b75edc12e66c93cb940b6e197d9f2d4e35323d9eacba70504b9fa8d105`  
+		Last Modified: Wed, 10 Apr 2019 14:27:36 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:4.0-alpine3.9`
 
 ```console
-$ docker pull redis@sha256:dae1956545a8b62d0c11250df3a53f625cc2456eee14238b0df84ed96e21c2af
+$ docker pull redis@sha256:f6226137081875ee70351244851a326208ffec21ed44abbdc71d74c99d961121
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4793,74 +4793,74 @@ CMD ["redis-server"]
 ### `redis:4.0-alpine3.9` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:4ffbcb1f78e8790da4474d75f9dc644f1a4f759096878213bbbf3011bd07a00c
+$ docker pull redis@sha256:d7a7c643f8502fcca6e3598ebfd52b08d3071a395f48eb489030bb817377dd73
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.2 MB (14213531 bytes)**  
+-	Total Size: **13.8 MB (13818104 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34f4d0f9f94997371e5dbbd377a0201d371ffe7b2fba8d2d45e5cc32d49af16f`
+-	Image ID: `sha256:e958649ccad0db85005cc2be36636a8331c3d129b74e5d4e3dea108f2bbbe903`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
-# Fri, 08 Mar 2019 03:35:46 GMT
-ADD file:3f769e5ff31fbae6ea6b835fa878b05d6c6920ca4313aa63be7d057e29241d87 in / 
-# Fri, 08 Mar 2019 03:35:46 GMT
+# Wed, 10 Apr 2019 11:42:23 GMT
+ADD file:ab106eb2cf4bf0e1ca7861a56dc24e44dd206fd3ae8d3587684324e5c11136f4 in / 
+# Wed, 10 Apr 2019 11:42:23 GMT
 CMD ["/bin/sh"]
-# Fri, 08 Mar 2019 05:35:49 GMT
+# Wed, 10 Apr 2019 14:22:12 GMT
 RUN addgroup -S redis && adduser -S -G redis redis
-# Fri, 08 Mar 2019 05:35:50 GMT
+# Wed, 10 Apr 2019 14:22:15 GMT
 RUN apk add --no-cache 		'su-exec>=0.2' 		tzdata
-# Wed, 20 Mar 2019 12:40:30 GMT
+# Wed, 10 Apr 2019 14:24:30 GMT
 ENV REDIS_VERSION=4.0.14
-# Wed, 20 Mar 2019 12:40:31 GMT
+# Wed, 10 Apr 2019 14:24:31 GMT
 ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-4.0.14.tar.gz
-# Wed, 20 Mar 2019 12:40:31 GMT
+# Wed, 10 Apr 2019 14:24:31 GMT
 ENV REDIS_DOWNLOAD_SHA=1e1e18420a86cfb285933123b04a82e1ebda20bfb0a289472745a087587e93a7
-# Wed, 20 Mar 2019 12:41:39 GMT
+# Wed, 10 Apr 2019 14:25:53 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		coreutils 		gcc 		linux-headers 		make 		musl-dev 	; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 1$' /usr/src/redis/src/server.h; 	sed -ri 's!^(#define CONFIG_DEFAULT_PROTECTED_MODE) 1$!\1 0!' /usr/src/redis/src/server.h; 	grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 0$' /usr/src/redis/src/server.h; 		make -C /usr/src/redis -j "$(nproc)"; 	make -C /usr/src/redis install; 		rm -r /usr/src/redis; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .redis-rundeps $runDeps; 	apk del .build-deps; 		redis-server --version
-# Wed, 20 Mar 2019 12:41:40 GMT
+# Wed, 10 Apr 2019 14:25:57 GMT
 RUN mkdir /data && chown redis:redis /data
-# Wed, 20 Mar 2019 12:41:41 GMT
+# Wed, 10 Apr 2019 14:25:58 GMT
 VOLUME [/data]
-# Wed, 20 Mar 2019 12:41:41 GMT
+# Wed, 10 Apr 2019 14:25:59 GMT
 WORKDIR /data
-# Wed, 20 Mar 2019 12:41:42 GMT
+# Wed, 10 Apr 2019 14:25:59 GMT
 COPY file:c48b97ea65422782310396358f838c38c0747767dd606a88d4c3d0b034a60762 in /usr/local/bin/ 
-# Wed, 20 Mar 2019 12:41:42 GMT
+# Wed, 10 Apr 2019 14:26:00 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 20 Mar 2019 12:41:43 GMT
+# Wed, 10 Apr 2019 14:26:01 GMT
 EXPOSE 6379
-# Wed, 20 Mar 2019 12:41:43 GMT
+# Wed, 10 Apr 2019 14:26:02 GMT
 CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d981dc59d98dcf79c1920d433d8d56f9892f229da716de64280980f317a80ef1`  
-		Last Modified: Fri, 08 Mar 2019 03:36:19 GMT  
-		Size: 2.5 MB (2541305 bytes)  
+	-	`sha256:5b51e37a522c2e7cd3c67e8a3e5500b45189ea6698e9fdaed7f5d48282326633`  
+		Last Modified: Wed, 10 Apr 2019 11:43:06 GMT  
+		Size: 2.5 MB (2543326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:668dbb1da38bf6b755c53ced346a702cc89f825fae11e7c280c4937d86c6052f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
+	-	`sha256:8e72810cb2904dec74b6a6ec5f4a983c700825faf21979eb2e7a360b42515f26`  
+		Last Modified: Wed, 10 Apr 2019 14:26:58 GMT  
 		Size: 1.3 KB (1253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a9bb4447ea68836f7469bf09fbdaf11252c6449487839e8864900ba4b92d03f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
-		Size: 407.9 KB (407852 bytes)  
+	-	`sha256:b4816af0620533e2d07b1778a9f075eb91da554fb6e81c803e8fe455a6d9cadb`  
+		Last Modified: Wed, 10 Apr 2019 14:26:59 GMT  
+		Size: 407.9 KB (407873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:999fb1503a16236b99a7ff0d7a3221ddfbad7fb54388a5374e4d945596768737`  
-		Last Modified: Wed, 20 Mar 2019 12:43:35 GMT  
-		Size: 11.3 MB (11262610 bytes)  
+	-	`sha256:9f7203d5d1fe441f47786ad4a3c4b2eb3d0cafcb9aa56af3df281ce1f8e35fe8`  
+		Last Modified: Wed, 10 Apr 2019 14:27:41 GMT  
+		Size: 10.9 MB (10865139 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d62e66b2a21e703e0fcedd76df7f872f365e6e6fb2c4e26a95df8b2011ad7d8c`  
-		Last Modified: Wed, 20 Mar 2019 12:43:30 GMT  
-		Size: 98.0 B  
+	-	`sha256:2434d76c6682b1afdf70b4a41ffca5766c0e6028c0d18938698457310413deec`  
+		Last Modified: Wed, 10 Apr 2019 14:27:36 GMT  
+		Size: 101.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2cd52c8a3770ce676ab6279d6ad8f0a5329939110c080d3a24c9f26b571904cf`  
-		Last Modified: Wed, 20 Mar 2019 12:43:30 GMT  
-		Size: 413.0 B  
+	-	`sha256:834e59b75edc12e66c93cb940b6e197d9f2d4e35323d9eacba70504b9fa8d105`  
+		Last Modified: Wed, 10 Apr 2019 14:27:36 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:4.0-stretch`
@@ -5589,7 +5589,7 @@ CMD ["redis-server"]
 ## `redis:4-alpine`
 
 ```console
-$ docker pull redis@sha256:dae1956545a8b62d0c11250df3a53f625cc2456eee14238b0df84ed96e21c2af
+$ docker pull redis@sha256:f6226137081875ee70351244851a326208ffec21ed44abbdc71d74c99d961121
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6043,80 +6043,80 @@ CMD ["redis-server"]
 ### `redis:4-alpine` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:4ffbcb1f78e8790da4474d75f9dc644f1a4f759096878213bbbf3011bd07a00c
+$ docker pull redis@sha256:d7a7c643f8502fcca6e3598ebfd52b08d3071a395f48eb489030bb817377dd73
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.2 MB (14213531 bytes)**  
+-	Total Size: **13.8 MB (13818104 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34f4d0f9f94997371e5dbbd377a0201d371ffe7b2fba8d2d45e5cc32d49af16f`
+-	Image ID: `sha256:e958649ccad0db85005cc2be36636a8331c3d129b74e5d4e3dea108f2bbbe903`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
-# Fri, 08 Mar 2019 03:35:46 GMT
-ADD file:3f769e5ff31fbae6ea6b835fa878b05d6c6920ca4313aa63be7d057e29241d87 in / 
-# Fri, 08 Mar 2019 03:35:46 GMT
+# Wed, 10 Apr 2019 11:42:23 GMT
+ADD file:ab106eb2cf4bf0e1ca7861a56dc24e44dd206fd3ae8d3587684324e5c11136f4 in / 
+# Wed, 10 Apr 2019 11:42:23 GMT
 CMD ["/bin/sh"]
-# Fri, 08 Mar 2019 05:35:49 GMT
+# Wed, 10 Apr 2019 14:22:12 GMT
 RUN addgroup -S redis && adduser -S -G redis redis
-# Fri, 08 Mar 2019 05:35:50 GMT
+# Wed, 10 Apr 2019 14:22:15 GMT
 RUN apk add --no-cache 		'su-exec>=0.2' 		tzdata
-# Wed, 20 Mar 2019 12:40:30 GMT
+# Wed, 10 Apr 2019 14:24:30 GMT
 ENV REDIS_VERSION=4.0.14
-# Wed, 20 Mar 2019 12:40:31 GMT
+# Wed, 10 Apr 2019 14:24:31 GMT
 ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-4.0.14.tar.gz
-# Wed, 20 Mar 2019 12:40:31 GMT
+# Wed, 10 Apr 2019 14:24:31 GMT
 ENV REDIS_DOWNLOAD_SHA=1e1e18420a86cfb285933123b04a82e1ebda20bfb0a289472745a087587e93a7
-# Wed, 20 Mar 2019 12:41:39 GMT
+# Wed, 10 Apr 2019 14:25:53 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		coreutils 		gcc 		linux-headers 		make 		musl-dev 	; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 1$' /usr/src/redis/src/server.h; 	sed -ri 's!^(#define CONFIG_DEFAULT_PROTECTED_MODE) 1$!\1 0!' /usr/src/redis/src/server.h; 	grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 0$' /usr/src/redis/src/server.h; 		make -C /usr/src/redis -j "$(nproc)"; 	make -C /usr/src/redis install; 		rm -r /usr/src/redis; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .redis-rundeps $runDeps; 	apk del .build-deps; 		redis-server --version
-# Wed, 20 Mar 2019 12:41:40 GMT
+# Wed, 10 Apr 2019 14:25:57 GMT
 RUN mkdir /data && chown redis:redis /data
-# Wed, 20 Mar 2019 12:41:41 GMT
+# Wed, 10 Apr 2019 14:25:58 GMT
 VOLUME [/data]
-# Wed, 20 Mar 2019 12:41:41 GMT
+# Wed, 10 Apr 2019 14:25:59 GMT
 WORKDIR /data
-# Wed, 20 Mar 2019 12:41:42 GMT
+# Wed, 10 Apr 2019 14:25:59 GMT
 COPY file:c48b97ea65422782310396358f838c38c0747767dd606a88d4c3d0b034a60762 in /usr/local/bin/ 
-# Wed, 20 Mar 2019 12:41:42 GMT
+# Wed, 10 Apr 2019 14:26:00 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 20 Mar 2019 12:41:43 GMT
+# Wed, 10 Apr 2019 14:26:01 GMT
 EXPOSE 6379
-# Wed, 20 Mar 2019 12:41:43 GMT
+# Wed, 10 Apr 2019 14:26:02 GMT
 CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d981dc59d98dcf79c1920d433d8d56f9892f229da716de64280980f317a80ef1`  
-		Last Modified: Fri, 08 Mar 2019 03:36:19 GMT  
-		Size: 2.5 MB (2541305 bytes)  
+	-	`sha256:5b51e37a522c2e7cd3c67e8a3e5500b45189ea6698e9fdaed7f5d48282326633`  
+		Last Modified: Wed, 10 Apr 2019 11:43:06 GMT  
+		Size: 2.5 MB (2543326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:668dbb1da38bf6b755c53ced346a702cc89f825fae11e7c280c4937d86c6052f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
+	-	`sha256:8e72810cb2904dec74b6a6ec5f4a983c700825faf21979eb2e7a360b42515f26`  
+		Last Modified: Wed, 10 Apr 2019 14:26:58 GMT  
 		Size: 1.3 KB (1253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a9bb4447ea68836f7469bf09fbdaf11252c6449487839e8864900ba4b92d03f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
-		Size: 407.9 KB (407852 bytes)  
+	-	`sha256:b4816af0620533e2d07b1778a9f075eb91da554fb6e81c803e8fe455a6d9cadb`  
+		Last Modified: Wed, 10 Apr 2019 14:26:59 GMT  
+		Size: 407.9 KB (407873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:999fb1503a16236b99a7ff0d7a3221ddfbad7fb54388a5374e4d945596768737`  
-		Last Modified: Wed, 20 Mar 2019 12:43:35 GMT  
-		Size: 11.3 MB (11262610 bytes)  
+	-	`sha256:9f7203d5d1fe441f47786ad4a3c4b2eb3d0cafcb9aa56af3df281ce1f8e35fe8`  
+		Last Modified: Wed, 10 Apr 2019 14:27:41 GMT  
+		Size: 10.9 MB (10865139 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d62e66b2a21e703e0fcedd76df7f872f365e6e6fb2c4e26a95df8b2011ad7d8c`  
-		Last Modified: Wed, 20 Mar 2019 12:43:30 GMT  
-		Size: 98.0 B  
+	-	`sha256:2434d76c6682b1afdf70b4a41ffca5766c0e6028c0d18938698457310413deec`  
+		Last Modified: Wed, 10 Apr 2019 14:27:36 GMT  
+		Size: 101.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2cd52c8a3770ce676ab6279d6ad8f0a5329939110c080d3a24c9f26b571904cf`  
-		Last Modified: Wed, 20 Mar 2019 12:43:30 GMT  
-		Size: 413.0 B  
+	-	`sha256:834e59b75edc12e66c93cb940b6e197d9f2d4e35323d9eacba70504b9fa8d105`  
+		Last Modified: Wed, 10 Apr 2019 14:27:36 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:4-alpine3.9`
 
 ```console
-$ docker pull redis@sha256:dae1956545a8b62d0c11250df3a53f625cc2456eee14238b0df84ed96e21c2af
+$ docker pull redis@sha256:f6226137081875ee70351244851a326208ffec21ed44abbdc71d74c99d961121
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6570,74 +6570,74 @@ CMD ["redis-server"]
 ### `redis:4-alpine3.9` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:4ffbcb1f78e8790da4474d75f9dc644f1a4f759096878213bbbf3011bd07a00c
+$ docker pull redis@sha256:d7a7c643f8502fcca6e3598ebfd52b08d3071a395f48eb489030bb817377dd73
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.2 MB (14213531 bytes)**  
+-	Total Size: **13.8 MB (13818104 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34f4d0f9f94997371e5dbbd377a0201d371ffe7b2fba8d2d45e5cc32d49af16f`
+-	Image ID: `sha256:e958649ccad0db85005cc2be36636a8331c3d129b74e5d4e3dea108f2bbbe903`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
-# Fri, 08 Mar 2019 03:35:46 GMT
-ADD file:3f769e5ff31fbae6ea6b835fa878b05d6c6920ca4313aa63be7d057e29241d87 in / 
-# Fri, 08 Mar 2019 03:35:46 GMT
+# Wed, 10 Apr 2019 11:42:23 GMT
+ADD file:ab106eb2cf4bf0e1ca7861a56dc24e44dd206fd3ae8d3587684324e5c11136f4 in / 
+# Wed, 10 Apr 2019 11:42:23 GMT
 CMD ["/bin/sh"]
-# Fri, 08 Mar 2019 05:35:49 GMT
+# Wed, 10 Apr 2019 14:22:12 GMT
 RUN addgroup -S redis && adduser -S -G redis redis
-# Fri, 08 Mar 2019 05:35:50 GMT
+# Wed, 10 Apr 2019 14:22:15 GMT
 RUN apk add --no-cache 		'su-exec>=0.2' 		tzdata
-# Wed, 20 Mar 2019 12:40:30 GMT
+# Wed, 10 Apr 2019 14:24:30 GMT
 ENV REDIS_VERSION=4.0.14
-# Wed, 20 Mar 2019 12:40:31 GMT
+# Wed, 10 Apr 2019 14:24:31 GMT
 ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-4.0.14.tar.gz
-# Wed, 20 Mar 2019 12:40:31 GMT
+# Wed, 10 Apr 2019 14:24:31 GMT
 ENV REDIS_DOWNLOAD_SHA=1e1e18420a86cfb285933123b04a82e1ebda20bfb0a289472745a087587e93a7
-# Wed, 20 Mar 2019 12:41:39 GMT
+# Wed, 10 Apr 2019 14:25:53 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		coreutils 		gcc 		linux-headers 		make 		musl-dev 	; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 1$' /usr/src/redis/src/server.h; 	sed -ri 's!^(#define CONFIG_DEFAULT_PROTECTED_MODE) 1$!\1 0!' /usr/src/redis/src/server.h; 	grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 0$' /usr/src/redis/src/server.h; 		make -C /usr/src/redis -j "$(nproc)"; 	make -C /usr/src/redis install; 		rm -r /usr/src/redis; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .redis-rundeps $runDeps; 	apk del .build-deps; 		redis-server --version
-# Wed, 20 Mar 2019 12:41:40 GMT
+# Wed, 10 Apr 2019 14:25:57 GMT
 RUN mkdir /data && chown redis:redis /data
-# Wed, 20 Mar 2019 12:41:41 GMT
+# Wed, 10 Apr 2019 14:25:58 GMT
 VOLUME [/data]
-# Wed, 20 Mar 2019 12:41:41 GMT
+# Wed, 10 Apr 2019 14:25:59 GMT
 WORKDIR /data
-# Wed, 20 Mar 2019 12:41:42 GMT
+# Wed, 10 Apr 2019 14:25:59 GMT
 COPY file:c48b97ea65422782310396358f838c38c0747767dd606a88d4c3d0b034a60762 in /usr/local/bin/ 
-# Wed, 20 Mar 2019 12:41:42 GMT
+# Wed, 10 Apr 2019 14:26:00 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 20 Mar 2019 12:41:43 GMT
+# Wed, 10 Apr 2019 14:26:01 GMT
 EXPOSE 6379
-# Wed, 20 Mar 2019 12:41:43 GMT
+# Wed, 10 Apr 2019 14:26:02 GMT
 CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d981dc59d98dcf79c1920d433d8d56f9892f229da716de64280980f317a80ef1`  
-		Last Modified: Fri, 08 Mar 2019 03:36:19 GMT  
-		Size: 2.5 MB (2541305 bytes)  
+	-	`sha256:5b51e37a522c2e7cd3c67e8a3e5500b45189ea6698e9fdaed7f5d48282326633`  
+		Last Modified: Wed, 10 Apr 2019 11:43:06 GMT  
+		Size: 2.5 MB (2543326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:668dbb1da38bf6b755c53ced346a702cc89f825fae11e7c280c4937d86c6052f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
+	-	`sha256:8e72810cb2904dec74b6a6ec5f4a983c700825faf21979eb2e7a360b42515f26`  
+		Last Modified: Wed, 10 Apr 2019 14:26:58 GMT  
 		Size: 1.3 KB (1253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a9bb4447ea68836f7469bf09fbdaf11252c6449487839e8864900ba4b92d03f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
-		Size: 407.9 KB (407852 bytes)  
+	-	`sha256:b4816af0620533e2d07b1778a9f075eb91da554fb6e81c803e8fe455a6d9cadb`  
+		Last Modified: Wed, 10 Apr 2019 14:26:59 GMT  
+		Size: 407.9 KB (407873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:999fb1503a16236b99a7ff0d7a3221ddfbad7fb54388a5374e4d945596768737`  
-		Last Modified: Wed, 20 Mar 2019 12:43:35 GMT  
-		Size: 11.3 MB (11262610 bytes)  
+	-	`sha256:9f7203d5d1fe441f47786ad4a3c4b2eb3d0cafcb9aa56af3df281ce1f8e35fe8`  
+		Last Modified: Wed, 10 Apr 2019 14:27:41 GMT  
+		Size: 10.9 MB (10865139 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d62e66b2a21e703e0fcedd76df7f872f365e6e6fb2c4e26a95df8b2011ad7d8c`  
-		Last Modified: Wed, 20 Mar 2019 12:43:30 GMT  
-		Size: 98.0 B  
+	-	`sha256:2434d76c6682b1afdf70b4a41ffca5766c0e6028c0d18938698457310413deec`  
+		Last Modified: Wed, 10 Apr 2019 14:27:36 GMT  
+		Size: 101.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2cd52c8a3770ce676ab6279d6ad8f0a5329939110c080d3a24c9f26b571904cf`  
-		Last Modified: Wed, 20 Mar 2019 12:43:30 GMT  
-		Size: 413.0 B  
+	-	`sha256:834e59b75edc12e66c93cb940b6e197d9f2d4e35323d9eacba70504b9fa8d105`  
+		Last Modified: Wed, 10 Apr 2019 14:27:36 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:4-stretch`
@@ -9171,7 +9171,7 @@ CMD ["redis-server"]
 ## `redis:5.0.4-alpine`
 
 ```console
-$ docker pull redis@sha256:3846be04166bc0b6298f844609ce8b0a20bfe60b4e7e8edf7647d0445fcb7ab2
+$ docker pull redis@sha256:ef67270b8bcb6b801a67d186ed16051520867b985e4f2f1233b510938dc55b22
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9625,80 +9625,80 @@ CMD ["redis-server"]
 ### `redis:5.0.4-alpine` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:16b1ed14f6e57bb89819ad6e6d913b5893e3b45dc421684e29afc7e5bff8a85e
+$ docker pull redis@sha256:1eb67ffe3d0167eb53d8a33e8a2eaa385c7ac8337f96e1e6397d110e0da8303d
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.3 MB (18258462 bytes)**  
+-	Total Size: **17.8 MB (17821115 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3e4ef67768dbf5548b60a7de042797b2e7dc2df494d6b08fe85a1fd715f1c0dd`
+-	Image ID: `sha256:ecc683be58697fd97857072de161c829167bdea75379ac52c61c773af81bf1ee`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
-# Fri, 08 Mar 2019 03:35:46 GMT
-ADD file:3f769e5ff31fbae6ea6b835fa878b05d6c6920ca4313aa63be7d057e29241d87 in / 
-# Fri, 08 Mar 2019 03:35:46 GMT
+# Wed, 10 Apr 2019 11:42:23 GMT
+ADD file:ab106eb2cf4bf0e1ca7861a56dc24e44dd206fd3ae8d3587684324e5c11136f4 in / 
+# Wed, 10 Apr 2019 11:42:23 GMT
 CMD ["/bin/sh"]
-# Fri, 08 Mar 2019 05:35:49 GMT
+# Wed, 10 Apr 2019 14:22:12 GMT
 RUN addgroup -S redis && adduser -S -G redis redis
-# Fri, 08 Mar 2019 05:35:50 GMT
+# Wed, 10 Apr 2019 14:22:15 GMT
 RUN apk add --no-cache 		'su-exec>=0.2' 		tzdata
-# Wed, 20 Mar 2019 12:37:01 GMT
+# Wed, 10 Apr 2019 14:22:16 GMT
 ENV REDIS_VERSION=5.0.4
-# Wed, 20 Mar 2019 12:37:02 GMT
+# Wed, 10 Apr 2019 14:22:16 GMT
 ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-5.0.4.tar.gz
-# Wed, 20 Mar 2019 12:37:03 GMT
+# Wed, 10 Apr 2019 14:22:17 GMT
 ENV REDIS_DOWNLOAD_SHA=3ce9ceff5a23f60913e1573f6dfcd4aa53b42d4a2789e28fa53ec2bd28c987dd
-# Wed, 20 Mar 2019 12:38:25 GMT
+# Wed, 10 Apr 2019 14:23:46 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		coreutils 		gcc 		linux-headers 		make 		musl-dev 	; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 1$' /usr/src/redis/src/server.h; 	sed -ri 's!^(#define CONFIG_DEFAULT_PROTECTED_MODE) 1$!\1 0!' /usr/src/redis/src/server.h; 	grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 0$' /usr/src/redis/src/server.h; 		make -C /usr/src/redis -j "$(nproc)"; 	make -C /usr/src/redis install; 		rm -r /usr/src/redis; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .redis-rundeps $runDeps; 	apk del .build-deps; 		redis-server --version
-# Wed, 20 Mar 2019 12:38:27 GMT
+# Wed, 10 Apr 2019 14:23:50 GMT
 RUN mkdir /data && chown redis:redis /data
-# Wed, 20 Mar 2019 12:38:28 GMT
+# Wed, 10 Apr 2019 14:23:51 GMT
 VOLUME [/data]
-# Wed, 20 Mar 2019 12:38:28 GMT
+# Wed, 10 Apr 2019 14:23:52 GMT
 WORKDIR /data
-# Wed, 20 Mar 2019 12:38:29 GMT
+# Wed, 10 Apr 2019 14:23:53 GMT
 COPY file:c48b97ea65422782310396358f838c38c0747767dd606a88d4c3d0b034a60762 in /usr/local/bin/ 
-# Wed, 20 Mar 2019 12:38:29 GMT
+# Wed, 10 Apr 2019 14:23:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 20 Mar 2019 12:38:30 GMT
+# Wed, 10 Apr 2019 14:23:55 GMT
 EXPOSE 6379
-# Wed, 20 Mar 2019 12:38:30 GMT
+# Wed, 10 Apr 2019 14:23:56 GMT
 CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d981dc59d98dcf79c1920d433d8d56f9892f229da716de64280980f317a80ef1`  
-		Last Modified: Fri, 08 Mar 2019 03:36:19 GMT  
-		Size: 2.5 MB (2541305 bytes)  
+	-	`sha256:5b51e37a522c2e7cd3c67e8a3e5500b45189ea6698e9fdaed7f5d48282326633`  
+		Last Modified: Wed, 10 Apr 2019 11:43:06 GMT  
+		Size: 2.5 MB (2543326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:668dbb1da38bf6b755c53ced346a702cc89f825fae11e7c280c4937d86c6052f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
+	-	`sha256:8e72810cb2904dec74b6a6ec5f4a983c700825faf21979eb2e7a360b42515f26`  
+		Last Modified: Wed, 10 Apr 2019 14:26:58 GMT  
 		Size: 1.3 KB (1253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a9bb4447ea68836f7469bf09fbdaf11252c6449487839e8864900ba4b92d03f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
-		Size: 407.9 KB (407852 bytes)  
+	-	`sha256:b4816af0620533e2d07b1778a9f075eb91da554fb6e81c803e8fe455a6d9cadb`  
+		Last Modified: Wed, 10 Apr 2019 14:26:59 GMT  
+		Size: 407.9 KB (407873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a395be24428d9ff014ce30020e4a9ea7df74473a39108d7cb1206903e6daf0d8`  
-		Last Modified: Wed, 20 Mar 2019 12:42:55 GMT  
-		Size: 15.3 MB (15307542 bytes)  
+	-	`sha256:daf166aeb7e683d13516e79a7a02f63c3f6a237e0f821b521394f21fffdca6c6`  
+		Last Modified: Wed, 10 Apr 2019 14:27:06 GMT  
+		Size: 14.9 MB (14868151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4e4cc4c9a48c0e0315f79df913857436d858b63b72688053a7ac19e70a3e6d1`  
-		Last Modified: Wed, 20 Mar 2019 12:42:49 GMT  
-		Size: 98.0 B  
+	-	`sha256:ddca5358a6a73aaad90211e7f78d95b62fca2a0095375893ed5d11cd111a4d25`  
+		Last Modified: Wed, 10 Apr 2019 14:26:58 GMT  
+		Size: 100.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:094178e893cdad85f9261d0fb769bdec1d3b7caf8d638760286efd4aba37199e`  
-		Last Modified: Wed, 20 Mar 2019 12:42:49 GMT  
+	-	`sha256:d16179b45b9f6d2b424b0ad5f77b5adbda66f123a9f37d5d38d128c6f243705d`  
+		Last Modified: Wed, 10 Apr 2019 14:26:59 GMT  
 		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:5.0.4-alpine3.9`
 
 ```console
-$ docker pull redis@sha256:3846be04166bc0b6298f844609ce8b0a20bfe60b4e7e8edf7647d0445fcb7ab2
+$ docker pull redis@sha256:ef67270b8bcb6b801a67d186ed16051520867b985e4f2f1233b510938dc55b22
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10152,73 +10152,73 @@ CMD ["redis-server"]
 ### `redis:5.0.4-alpine3.9` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:16b1ed14f6e57bb89819ad6e6d913b5893e3b45dc421684e29afc7e5bff8a85e
+$ docker pull redis@sha256:1eb67ffe3d0167eb53d8a33e8a2eaa385c7ac8337f96e1e6397d110e0da8303d
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.3 MB (18258462 bytes)**  
+-	Total Size: **17.8 MB (17821115 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3e4ef67768dbf5548b60a7de042797b2e7dc2df494d6b08fe85a1fd715f1c0dd`
+-	Image ID: `sha256:ecc683be58697fd97857072de161c829167bdea75379ac52c61c773af81bf1ee`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
-# Fri, 08 Mar 2019 03:35:46 GMT
-ADD file:3f769e5ff31fbae6ea6b835fa878b05d6c6920ca4313aa63be7d057e29241d87 in / 
-# Fri, 08 Mar 2019 03:35:46 GMT
+# Wed, 10 Apr 2019 11:42:23 GMT
+ADD file:ab106eb2cf4bf0e1ca7861a56dc24e44dd206fd3ae8d3587684324e5c11136f4 in / 
+# Wed, 10 Apr 2019 11:42:23 GMT
 CMD ["/bin/sh"]
-# Fri, 08 Mar 2019 05:35:49 GMT
+# Wed, 10 Apr 2019 14:22:12 GMT
 RUN addgroup -S redis && adduser -S -G redis redis
-# Fri, 08 Mar 2019 05:35:50 GMT
+# Wed, 10 Apr 2019 14:22:15 GMT
 RUN apk add --no-cache 		'su-exec>=0.2' 		tzdata
-# Wed, 20 Mar 2019 12:37:01 GMT
+# Wed, 10 Apr 2019 14:22:16 GMT
 ENV REDIS_VERSION=5.0.4
-# Wed, 20 Mar 2019 12:37:02 GMT
+# Wed, 10 Apr 2019 14:22:16 GMT
 ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-5.0.4.tar.gz
-# Wed, 20 Mar 2019 12:37:03 GMT
+# Wed, 10 Apr 2019 14:22:17 GMT
 ENV REDIS_DOWNLOAD_SHA=3ce9ceff5a23f60913e1573f6dfcd4aa53b42d4a2789e28fa53ec2bd28c987dd
-# Wed, 20 Mar 2019 12:38:25 GMT
+# Wed, 10 Apr 2019 14:23:46 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		coreutils 		gcc 		linux-headers 		make 		musl-dev 	; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 1$' /usr/src/redis/src/server.h; 	sed -ri 's!^(#define CONFIG_DEFAULT_PROTECTED_MODE) 1$!\1 0!' /usr/src/redis/src/server.h; 	grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 0$' /usr/src/redis/src/server.h; 		make -C /usr/src/redis -j "$(nproc)"; 	make -C /usr/src/redis install; 		rm -r /usr/src/redis; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .redis-rundeps $runDeps; 	apk del .build-deps; 		redis-server --version
-# Wed, 20 Mar 2019 12:38:27 GMT
+# Wed, 10 Apr 2019 14:23:50 GMT
 RUN mkdir /data && chown redis:redis /data
-# Wed, 20 Mar 2019 12:38:28 GMT
+# Wed, 10 Apr 2019 14:23:51 GMT
 VOLUME [/data]
-# Wed, 20 Mar 2019 12:38:28 GMT
+# Wed, 10 Apr 2019 14:23:52 GMT
 WORKDIR /data
-# Wed, 20 Mar 2019 12:38:29 GMT
+# Wed, 10 Apr 2019 14:23:53 GMT
 COPY file:c48b97ea65422782310396358f838c38c0747767dd606a88d4c3d0b034a60762 in /usr/local/bin/ 
-# Wed, 20 Mar 2019 12:38:29 GMT
+# Wed, 10 Apr 2019 14:23:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 20 Mar 2019 12:38:30 GMT
+# Wed, 10 Apr 2019 14:23:55 GMT
 EXPOSE 6379
-# Wed, 20 Mar 2019 12:38:30 GMT
+# Wed, 10 Apr 2019 14:23:56 GMT
 CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d981dc59d98dcf79c1920d433d8d56f9892f229da716de64280980f317a80ef1`  
-		Last Modified: Fri, 08 Mar 2019 03:36:19 GMT  
-		Size: 2.5 MB (2541305 bytes)  
+	-	`sha256:5b51e37a522c2e7cd3c67e8a3e5500b45189ea6698e9fdaed7f5d48282326633`  
+		Last Modified: Wed, 10 Apr 2019 11:43:06 GMT  
+		Size: 2.5 MB (2543326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:668dbb1da38bf6b755c53ced346a702cc89f825fae11e7c280c4937d86c6052f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
+	-	`sha256:8e72810cb2904dec74b6a6ec5f4a983c700825faf21979eb2e7a360b42515f26`  
+		Last Modified: Wed, 10 Apr 2019 14:26:58 GMT  
 		Size: 1.3 KB (1253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a9bb4447ea68836f7469bf09fbdaf11252c6449487839e8864900ba4b92d03f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
-		Size: 407.9 KB (407852 bytes)  
+	-	`sha256:b4816af0620533e2d07b1778a9f075eb91da554fb6e81c803e8fe455a6d9cadb`  
+		Last Modified: Wed, 10 Apr 2019 14:26:59 GMT  
+		Size: 407.9 KB (407873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a395be24428d9ff014ce30020e4a9ea7df74473a39108d7cb1206903e6daf0d8`  
-		Last Modified: Wed, 20 Mar 2019 12:42:55 GMT  
-		Size: 15.3 MB (15307542 bytes)  
+	-	`sha256:daf166aeb7e683d13516e79a7a02f63c3f6a237e0f821b521394f21fffdca6c6`  
+		Last Modified: Wed, 10 Apr 2019 14:27:06 GMT  
+		Size: 14.9 MB (14868151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4e4cc4c9a48c0e0315f79df913857436d858b63b72688053a7ac19e70a3e6d1`  
-		Last Modified: Wed, 20 Mar 2019 12:42:49 GMT  
-		Size: 98.0 B  
+	-	`sha256:ddca5358a6a73aaad90211e7f78d95b62fca2a0095375893ed5d11cd111a4d25`  
+		Last Modified: Wed, 10 Apr 2019 14:26:58 GMT  
+		Size: 100.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:094178e893cdad85f9261d0fb769bdec1d3b7caf8d638760286efd4aba37199e`  
-		Last Modified: Wed, 20 Mar 2019 12:42:49 GMT  
+	-	`sha256:d16179b45b9f6d2b424b0ad5f77b5adbda66f123a9f37d5d38d128c6f243705d`  
+		Last Modified: Wed, 10 Apr 2019 14:26:59 GMT  
 		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -10766,7 +10766,7 @@ CMD ["redis-server"]
 ## `redis:5.0-alpine`
 
 ```console
-$ docker pull redis@sha256:3846be04166bc0b6298f844609ce8b0a20bfe60b4e7e8edf7647d0445fcb7ab2
+$ docker pull redis@sha256:ef67270b8bcb6b801a67d186ed16051520867b985e4f2f1233b510938dc55b22
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11220,80 +11220,80 @@ CMD ["redis-server"]
 ### `redis:5.0-alpine` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:16b1ed14f6e57bb89819ad6e6d913b5893e3b45dc421684e29afc7e5bff8a85e
+$ docker pull redis@sha256:1eb67ffe3d0167eb53d8a33e8a2eaa385c7ac8337f96e1e6397d110e0da8303d
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.3 MB (18258462 bytes)**  
+-	Total Size: **17.8 MB (17821115 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3e4ef67768dbf5548b60a7de042797b2e7dc2df494d6b08fe85a1fd715f1c0dd`
+-	Image ID: `sha256:ecc683be58697fd97857072de161c829167bdea75379ac52c61c773af81bf1ee`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
-# Fri, 08 Mar 2019 03:35:46 GMT
-ADD file:3f769e5ff31fbae6ea6b835fa878b05d6c6920ca4313aa63be7d057e29241d87 in / 
-# Fri, 08 Mar 2019 03:35:46 GMT
+# Wed, 10 Apr 2019 11:42:23 GMT
+ADD file:ab106eb2cf4bf0e1ca7861a56dc24e44dd206fd3ae8d3587684324e5c11136f4 in / 
+# Wed, 10 Apr 2019 11:42:23 GMT
 CMD ["/bin/sh"]
-# Fri, 08 Mar 2019 05:35:49 GMT
+# Wed, 10 Apr 2019 14:22:12 GMT
 RUN addgroup -S redis && adduser -S -G redis redis
-# Fri, 08 Mar 2019 05:35:50 GMT
+# Wed, 10 Apr 2019 14:22:15 GMT
 RUN apk add --no-cache 		'su-exec>=0.2' 		tzdata
-# Wed, 20 Mar 2019 12:37:01 GMT
+# Wed, 10 Apr 2019 14:22:16 GMT
 ENV REDIS_VERSION=5.0.4
-# Wed, 20 Mar 2019 12:37:02 GMT
+# Wed, 10 Apr 2019 14:22:16 GMT
 ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-5.0.4.tar.gz
-# Wed, 20 Mar 2019 12:37:03 GMT
+# Wed, 10 Apr 2019 14:22:17 GMT
 ENV REDIS_DOWNLOAD_SHA=3ce9ceff5a23f60913e1573f6dfcd4aa53b42d4a2789e28fa53ec2bd28c987dd
-# Wed, 20 Mar 2019 12:38:25 GMT
+# Wed, 10 Apr 2019 14:23:46 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		coreutils 		gcc 		linux-headers 		make 		musl-dev 	; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 1$' /usr/src/redis/src/server.h; 	sed -ri 's!^(#define CONFIG_DEFAULT_PROTECTED_MODE) 1$!\1 0!' /usr/src/redis/src/server.h; 	grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 0$' /usr/src/redis/src/server.h; 		make -C /usr/src/redis -j "$(nproc)"; 	make -C /usr/src/redis install; 		rm -r /usr/src/redis; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .redis-rundeps $runDeps; 	apk del .build-deps; 		redis-server --version
-# Wed, 20 Mar 2019 12:38:27 GMT
+# Wed, 10 Apr 2019 14:23:50 GMT
 RUN mkdir /data && chown redis:redis /data
-# Wed, 20 Mar 2019 12:38:28 GMT
+# Wed, 10 Apr 2019 14:23:51 GMT
 VOLUME [/data]
-# Wed, 20 Mar 2019 12:38:28 GMT
+# Wed, 10 Apr 2019 14:23:52 GMT
 WORKDIR /data
-# Wed, 20 Mar 2019 12:38:29 GMT
+# Wed, 10 Apr 2019 14:23:53 GMT
 COPY file:c48b97ea65422782310396358f838c38c0747767dd606a88d4c3d0b034a60762 in /usr/local/bin/ 
-# Wed, 20 Mar 2019 12:38:29 GMT
+# Wed, 10 Apr 2019 14:23:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 20 Mar 2019 12:38:30 GMT
+# Wed, 10 Apr 2019 14:23:55 GMT
 EXPOSE 6379
-# Wed, 20 Mar 2019 12:38:30 GMT
+# Wed, 10 Apr 2019 14:23:56 GMT
 CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d981dc59d98dcf79c1920d433d8d56f9892f229da716de64280980f317a80ef1`  
-		Last Modified: Fri, 08 Mar 2019 03:36:19 GMT  
-		Size: 2.5 MB (2541305 bytes)  
+	-	`sha256:5b51e37a522c2e7cd3c67e8a3e5500b45189ea6698e9fdaed7f5d48282326633`  
+		Last Modified: Wed, 10 Apr 2019 11:43:06 GMT  
+		Size: 2.5 MB (2543326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:668dbb1da38bf6b755c53ced346a702cc89f825fae11e7c280c4937d86c6052f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
+	-	`sha256:8e72810cb2904dec74b6a6ec5f4a983c700825faf21979eb2e7a360b42515f26`  
+		Last Modified: Wed, 10 Apr 2019 14:26:58 GMT  
 		Size: 1.3 KB (1253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a9bb4447ea68836f7469bf09fbdaf11252c6449487839e8864900ba4b92d03f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
-		Size: 407.9 KB (407852 bytes)  
+	-	`sha256:b4816af0620533e2d07b1778a9f075eb91da554fb6e81c803e8fe455a6d9cadb`  
+		Last Modified: Wed, 10 Apr 2019 14:26:59 GMT  
+		Size: 407.9 KB (407873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a395be24428d9ff014ce30020e4a9ea7df74473a39108d7cb1206903e6daf0d8`  
-		Last Modified: Wed, 20 Mar 2019 12:42:55 GMT  
-		Size: 15.3 MB (15307542 bytes)  
+	-	`sha256:daf166aeb7e683d13516e79a7a02f63c3f6a237e0f821b521394f21fffdca6c6`  
+		Last Modified: Wed, 10 Apr 2019 14:27:06 GMT  
+		Size: 14.9 MB (14868151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4e4cc4c9a48c0e0315f79df913857436d858b63b72688053a7ac19e70a3e6d1`  
-		Last Modified: Wed, 20 Mar 2019 12:42:49 GMT  
-		Size: 98.0 B  
+	-	`sha256:ddca5358a6a73aaad90211e7f78d95b62fca2a0095375893ed5d11cd111a4d25`  
+		Last Modified: Wed, 10 Apr 2019 14:26:58 GMT  
+		Size: 100.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:094178e893cdad85f9261d0fb769bdec1d3b7caf8d638760286efd4aba37199e`  
-		Last Modified: Wed, 20 Mar 2019 12:42:49 GMT  
+	-	`sha256:d16179b45b9f6d2b424b0ad5f77b5adbda66f123a9f37d5d38d128c6f243705d`  
+		Last Modified: Wed, 10 Apr 2019 14:26:59 GMT  
 		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:5.0-alpine3.9`
 
 ```console
-$ docker pull redis@sha256:3846be04166bc0b6298f844609ce8b0a20bfe60b4e7e8edf7647d0445fcb7ab2
+$ docker pull redis@sha256:ef67270b8bcb6b801a67d186ed16051520867b985e4f2f1233b510938dc55b22
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11747,73 +11747,73 @@ CMD ["redis-server"]
 ### `redis:5.0-alpine3.9` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:16b1ed14f6e57bb89819ad6e6d913b5893e3b45dc421684e29afc7e5bff8a85e
+$ docker pull redis@sha256:1eb67ffe3d0167eb53d8a33e8a2eaa385c7ac8337f96e1e6397d110e0da8303d
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.3 MB (18258462 bytes)**  
+-	Total Size: **17.8 MB (17821115 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3e4ef67768dbf5548b60a7de042797b2e7dc2df494d6b08fe85a1fd715f1c0dd`
+-	Image ID: `sha256:ecc683be58697fd97857072de161c829167bdea75379ac52c61c773af81bf1ee`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
-# Fri, 08 Mar 2019 03:35:46 GMT
-ADD file:3f769e5ff31fbae6ea6b835fa878b05d6c6920ca4313aa63be7d057e29241d87 in / 
-# Fri, 08 Mar 2019 03:35:46 GMT
+# Wed, 10 Apr 2019 11:42:23 GMT
+ADD file:ab106eb2cf4bf0e1ca7861a56dc24e44dd206fd3ae8d3587684324e5c11136f4 in / 
+# Wed, 10 Apr 2019 11:42:23 GMT
 CMD ["/bin/sh"]
-# Fri, 08 Mar 2019 05:35:49 GMT
+# Wed, 10 Apr 2019 14:22:12 GMT
 RUN addgroup -S redis && adduser -S -G redis redis
-# Fri, 08 Mar 2019 05:35:50 GMT
+# Wed, 10 Apr 2019 14:22:15 GMT
 RUN apk add --no-cache 		'su-exec>=0.2' 		tzdata
-# Wed, 20 Mar 2019 12:37:01 GMT
+# Wed, 10 Apr 2019 14:22:16 GMT
 ENV REDIS_VERSION=5.0.4
-# Wed, 20 Mar 2019 12:37:02 GMT
+# Wed, 10 Apr 2019 14:22:16 GMT
 ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-5.0.4.tar.gz
-# Wed, 20 Mar 2019 12:37:03 GMT
+# Wed, 10 Apr 2019 14:22:17 GMT
 ENV REDIS_DOWNLOAD_SHA=3ce9ceff5a23f60913e1573f6dfcd4aa53b42d4a2789e28fa53ec2bd28c987dd
-# Wed, 20 Mar 2019 12:38:25 GMT
+# Wed, 10 Apr 2019 14:23:46 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		coreutils 		gcc 		linux-headers 		make 		musl-dev 	; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 1$' /usr/src/redis/src/server.h; 	sed -ri 's!^(#define CONFIG_DEFAULT_PROTECTED_MODE) 1$!\1 0!' /usr/src/redis/src/server.h; 	grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 0$' /usr/src/redis/src/server.h; 		make -C /usr/src/redis -j "$(nproc)"; 	make -C /usr/src/redis install; 		rm -r /usr/src/redis; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .redis-rundeps $runDeps; 	apk del .build-deps; 		redis-server --version
-# Wed, 20 Mar 2019 12:38:27 GMT
+# Wed, 10 Apr 2019 14:23:50 GMT
 RUN mkdir /data && chown redis:redis /data
-# Wed, 20 Mar 2019 12:38:28 GMT
+# Wed, 10 Apr 2019 14:23:51 GMT
 VOLUME [/data]
-# Wed, 20 Mar 2019 12:38:28 GMT
+# Wed, 10 Apr 2019 14:23:52 GMT
 WORKDIR /data
-# Wed, 20 Mar 2019 12:38:29 GMT
+# Wed, 10 Apr 2019 14:23:53 GMT
 COPY file:c48b97ea65422782310396358f838c38c0747767dd606a88d4c3d0b034a60762 in /usr/local/bin/ 
-# Wed, 20 Mar 2019 12:38:29 GMT
+# Wed, 10 Apr 2019 14:23:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 20 Mar 2019 12:38:30 GMT
+# Wed, 10 Apr 2019 14:23:55 GMT
 EXPOSE 6379
-# Wed, 20 Mar 2019 12:38:30 GMT
+# Wed, 10 Apr 2019 14:23:56 GMT
 CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d981dc59d98dcf79c1920d433d8d56f9892f229da716de64280980f317a80ef1`  
-		Last Modified: Fri, 08 Mar 2019 03:36:19 GMT  
-		Size: 2.5 MB (2541305 bytes)  
+	-	`sha256:5b51e37a522c2e7cd3c67e8a3e5500b45189ea6698e9fdaed7f5d48282326633`  
+		Last Modified: Wed, 10 Apr 2019 11:43:06 GMT  
+		Size: 2.5 MB (2543326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:668dbb1da38bf6b755c53ced346a702cc89f825fae11e7c280c4937d86c6052f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
+	-	`sha256:8e72810cb2904dec74b6a6ec5f4a983c700825faf21979eb2e7a360b42515f26`  
+		Last Modified: Wed, 10 Apr 2019 14:26:58 GMT  
 		Size: 1.3 KB (1253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a9bb4447ea68836f7469bf09fbdaf11252c6449487839e8864900ba4b92d03f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
-		Size: 407.9 KB (407852 bytes)  
+	-	`sha256:b4816af0620533e2d07b1778a9f075eb91da554fb6e81c803e8fe455a6d9cadb`  
+		Last Modified: Wed, 10 Apr 2019 14:26:59 GMT  
+		Size: 407.9 KB (407873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a395be24428d9ff014ce30020e4a9ea7df74473a39108d7cb1206903e6daf0d8`  
-		Last Modified: Wed, 20 Mar 2019 12:42:55 GMT  
-		Size: 15.3 MB (15307542 bytes)  
+	-	`sha256:daf166aeb7e683d13516e79a7a02f63c3f6a237e0f821b521394f21fffdca6c6`  
+		Last Modified: Wed, 10 Apr 2019 14:27:06 GMT  
+		Size: 14.9 MB (14868151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4e4cc4c9a48c0e0315f79df913857436d858b63b72688053a7ac19e70a3e6d1`  
-		Last Modified: Wed, 20 Mar 2019 12:42:49 GMT  
-		Size: 98.0 B  
+	-	`sha256:ddca5358a6a73aaad90211e7f78d95b62fca2a0095375893ed5d11cd111a4d25`  
+		Last Modified: Wed, 10 Apr 2019 14:26:58 GMT  
+		Size: 100.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:094178e893cdad85f9261d0fb769bdec1d3b7caf8d638760286efd4aba37199e`  
-		Last Modified: Wed, 20 Mar 2019 12:42:49 GMT  
+	-	`sha256:d16179b45b9f6d2b424b0ad5f77b5adbda66f123a9f37d5d38d128c6f243705d`  
+		Last Modified: Wed, 10 Apr 2019 14:26:59 GMT  
 		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -12543,7 +12543,7 @@ CMD ["redis-server"]
 ## `redis:5-alpine`
 
 ```console
-$ docker pull redis@sha256:3846be04166bc0b6298f844609ce8b0a20bfe60b4e7e8edf7647d0445fcb7ab2
+$ docker pull redis@sha256:ef67270b8bcb6b801a67d186ed16051520867b985e4f2f1233b510938dc55b22
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12997,80 +12997,80 @@ CMD ["redis-server"]
 ### `redis:5-alpine` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:16b1ed14f6e57bb89819ad6e6d913b5893e3b45dc421684e29afc7e5bff8a85e
+$ docker pull redis@sha256:1eb67ffe3d0167eb53d8a33e8a2eaa385c7ac8337f96e1e6397d110e0da8303d
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.3 MB (18258462 bytes)**  
+-	Total Size: **17.8 MB (17821115 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3e4ef67768dbf5548b60a7de042797b2e7dc2df494d6b08fe85a1fd715f1c0dd`
+-	Image ID: `sha256:ecc683be58697fd97857072de161c829167bdea75379ac52c61c773af81bf1ee`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
-# Fri, 08 Mar 2019 03:35:46 GMT
-ADD file:3f769e5ff31fbae6ea6b835fa878b05d6c6920ca4313aa63be7d057e29241d87 in / 
-# Fri, 08 Mar 2019 03:35:46 GMT
+# Wed, 10 Apr 2019 11:42:23 GMT
+ADD file:ab106eb2cf4bf0e1ca7861a56dc24e44dd206fd3ae8d3587684324e5c11136f4 in / 
+# Wed, 10 Apr 2019 11:42:23 GMT
 CMD ["/bin/sh"]
-# Fri, 08 Mar 2019 05:35:49 GMT
+# Wed, 10 Apr 2019 14:22:12 GMT
 RUN addgroup -S redis && adduser -S -G redis redis
-# Fri, 08 Mar 2019 05:35:50 GMT
+# Wed, 10 Apr 2019 14:22:15 GMT
 RUN apk add --no-cache 		'su-exec>=0.2' 		tzdata
-# Wed, 20 Mar 2019 12:37:01 GMT
+# Wed, 10 Apr 2019 14:22:16 GMT
 ENV REDIS_VERSION=5.0.4
-# Wed, 20 Mar 2019 12:37:02 GMT
+# Wed, 10 Apr 2019 14:22:16 GMT
 ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-5.0.4.tar.gz
-# Wed, 20 Mar 2019 12:37:03 GMT
+# Wed, 10 Apr 2019 14:22:17 GMT
 ENV REDIS_DOWNLOAD_SHA=3ce9ceff5a23f60913e1573f6dfcd4aa53b42d4a2789e28fa53ec2bd28c987dd
-# Wed, 20 Mar 2019 12:38:25 GMT
+# Wed, 10 Apr 2019 14:23:46 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		coreutils 		gcc 		linux-headers 		make 		musl-dev 	; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 1$' /usr/src/redis/src/server.h; 	sed -ri 's!^(#define CONFIG_DEFAULT_PROTECTED_MODE) 1$!\1 0!' /usr/src/redis/src/server.h; 	grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 0$' /usr/src/redis/src/server.h; 		make -C /usr/src/redis -j "$(nproc)"; 	make -C /usr/src/redis install; 		rm -r /usr/src/redis; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .redis-rundeps $runDeps; 	apk del .build-deps; 		redis-server --version
-# Wed, 20 Mar 2019 12:38:27 GMT
+# Wed, 10 Apr 2019 14:23:50 GMT
 RUN mkdir /data && chown redis:redis /data
-# Wed, 20 Mar 2019 12:38:28 GMT
+# Wed, 10 Apr 2019 14:23:51 GMT
 VOLUME [/data]
-# Wed, 20 Mar 2019 12:38:28 GMT
+# Wed, 10 Apr 2019 14:23:52 GMT
 WORKDIR /data
-# Wed, 20 Mar 2019 12:38:29 GMT
+# Wed, 10 Apr 2019 14:23:53 GMT
 COPY file:c48b97ea65422782310396358f838c38c0747767dd606a88d4c3d0b034a60762 in /usr/local/bin/ 
-# Wed, 20 Mar 2019 12:38:29 GMT
+# Wed, 10 Apr 2019 14:23:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 20 Mar 2019 12:38:30 GMT
+# Wed, 10 Apr 2019 14:23:55 GMT
 EXPOSE 6379
-# Wed, 20 Mar 2019 12:38:30 GMT
+# Wed, 10 Apr 2019 14:23:56 GMT
 CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d981dc59d98dcf79c1920d433d8d56f9892f229da716de64280980f317a80ef1`  
-		Last Modified: Fri, 08 Mar 2019 03:36:19 GMT  
-		Size: 2.5 MB (2541305 bytes)  
+	-	`sha256:5b51e37a522c2e7cd3c67e8a3e5500b45189ea6698e9fdaed7f5d48282326633`  
+		Last Modified: Wed, 10 Apr 2019 11:43:06 GMT  
+		Size: 2.5 MB (2543326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:668dbb1da38bf6b755c53ced346a702cc89f825fae11e7c280c4937d86c6052f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
+	-	`sha256:8e72810cb2904dec74b6a6ec5f4a983c700825faf21979eb2e7a360b42515f26`  
+		Last Modified: Wed, 10 Apr 2019 14:26:58 GMT  
 		Size: 1.3 KB (1253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a9bb4447ea68836f7469bf09fbdaf11252c6449487839e8864900ba4b92d03f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
-		Size: 407.9 KB (407852 bytes)  
+	-	`sha256:b4816af0620533e2d07b1778a9f075eb91da554fb6e81c803e8fe455a6d9cadb`  
+		Last Modified: Wed, 10 Apr 2019 14:26:59 GMT  
+		Size: 407.9 KB (407873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a395be24428d9ff014ce30020e4a9ea7df74473a39108d7cb1206903e6daf0d8`  
-		Last Modified: Wed, 20 Mar 2019 12:42:55 GMT  
-		Size: 15.3 MB (15307542 bytes)  
+	-	`sha256:daf166aeb7e683d13516e79a7a02f63c3f6a237e0f821b521394f21fffdca6c6`  
+		Last Modified: Wed, 10 Apr 2019 14:27:06 GMT  
+		Size: 14.9 MB (14868151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4e4cc4c9a48c0e0315f79df913857436d858b63b72688053a7ac19e70a3e6d1`  
-		Last Modified: Wed, 20 Mar 2019 12:42:49 GMT  
-		Size: 98.0 B  
+	-	`sha256:ddca5358a6a73aaad90211e7f78d95b62fca2a0095375893ed5d11cd111a4d25`  
+		Last Modified: Wed, 10 Apr 2019 14:26:58 GMT  
+		Size: 100.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:094178e893cdad85f9261d0fb769bdec1d3b7caf8d638760286efd4aba37199e`  
-		Last Modified: Wed, 20 Mar 2019 12:42:49 GMT  
+	-	`sha256:d16179b45b9f6d2b424b0ad5f77b5adbda66f123a9f37d5d38d128c6f243705d`  
+		Last Modified: Wed, 10 Apr 2019 14:26:59 GMT  
 		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:5-alpine3.9`
 
 ```console
-$ docker pull redis@sha256:3846be04166bc0b6298f844609ce8b0a20bfe60b4e7e8edf7647d0445fcb7ab2
+$ docker pull redis@sha256:ef67270b8bcb6b801a67d186ed16051520867b985e4f2f1233b510938dc55b22
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13524,73 +13524,73 @@ CMD ["redis-server"]
 ### `redis:5-alpine3.9` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:16b1ed14f6e57bb89819ad6e6d913b5893e3b45dc421684e29afc7e5bff8a85e
+$ docker pull redis@sha256:1eb67ffe3d0167eb53d8a33e8a2eaa385c7ac8337f96e1e6397d110e0da8303d
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.3 MB (18258462 bytes)**  
+-	Total Size: **17.8 MB (17821115 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3e4ef67768dbf5548b60a7de042797b2e7dc2df494d6b08fe85a1fd715f1c0dd`
+-	Image ID: `sha256:ecc683be58697fd97857072de161c829167bdea75379ac52c61c773af81bf1ee`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
-# Fri, 08 Mar 2019 03:35:46 GMT
-ADD file:3f769e5ff31fbae6ea6b835fa878b05d6c6920ca4313aa63be7d057e29241d87 in / 
-# Fri, 08 Mar 2019 03:35:46 GMT
+# Wed, 10 Apr 2019 11:42:23 GMT
+ADD file:ab106eb2cf4bf0e1ca7861a56dc24e44dd206fd3ae8d3587684324e5c11136f4 in / 
+# Wed, 10 Apr 2019 11:42:23 GMT
 CMD ["/bin/sh"]
-# Fri, 08 Mar 2019 05:35:49 GMT
+# Wed, 10 Apr 2019 14:22:12 GMT
 RUN addgroup -S redis && adduser -S -G redis redis
-# Fri, 08 Mar 2019 05:35:50 GMT
+# Wed, 10 Apr 2019 14:22:15 GMT
 RUN apk add --no-cache 		'su-exec>=0.2' 		tzdata
-# Wed, 20 Mar 2019 12:37:01 GMT
+# Wed, 10 Apr 2019 14:22:16 GMT
 ENV REDIS_VERSION=5.0.4
-# Wed, 20 Mar 2019 12:37:02 GMT
+# Wed, 10 Apr 2019 14:22:16 GMT
 ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-5.0.4.tar.gz
-# Wed, 20 Mar 2019 12:37:03 GMT
+# Wed, 10 Apr 2019 14:22:17 GMT
 ENV REDIS_DOWNLOAD_SHA=3ce9ceff5a23f60913e1573f6dfcd4aa53b42d4a2789e28fa53ec2bd28c987dd
-# Wed, 20 Mar 2019 12:38:25 GMT
+# Wed, 10 Apr 2019 14:23:46 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		coreutils 		gcc 		linux-headers 		make 		musl-dev 	; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 1$' /usr/src/redis/src/server.h; 	sed -ri 's!^(#define CONFIG_DEFAULT_PROTECTED_MODE) 1$!\1 0!' /usr/src/redis/src/server.h; 	grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 0$' /usr/src/redis/src/server.h; 		make -C /usr/src/redis -j "$(nproc)"; 	make -C /usr/src/redis install; 		rm -r /usr/src/redis; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .redis-rundeps $runDeps; 	apk del .build-deps; 		redis-server --version
-# Wed, 20 Mar 2019 12:38:27 GMT
+# Wed, 10 Apr 2019 14:23:50 GMT
 RUN mkdir /data && chown redis:redis /data
-# Wed, 20 Mar 2019 12:38:28 GMT
+# Wed, 10 Apr 2019 14:23:51 GMT
 VOLUME [/data]
-# Wed, 20 Mar 2019 12:38:28 GMT
+# Wed, 10 Apr 2019 14:23:52 GMT
 WORKDIR /data
-# Wed, 20 Mar 2019 12:38:29 GMT
+# Wed, 10 Apr 2019 14:23:53 GMT
 COPY file:c48b97ea65422782310396358f838c38c0747767dd606a88d4c3d0b034a60762 in /usr/local/bin/ 
-# Wed, 20 Mar 2019 12:38:29 GMT
+# Wed, 10 Apr 2019 14:23:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 20 Mar 2019 12:38:30 GMT
+# Wed, 10 Apr 2019 14:23:55 GMT
 EXPOSE 6379
-# Wed, 20 Mar 2019 12:38:30 GMT
+# Wed, 10 Apr 2019 14:23:56 GMT
 CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d981dc59d98dcf79c1920d433d8d56f9892f229da716de64280980f317a80ef1`  
-		Last Modified: Fri, 08 Mar 2019 03:36:19 GMT  
-		Size: 2.5 MB (2541305 bytes)  
+	-	`sha256:5b51e37a522c2e7cd3c67e8a3e5500b45189ea6698e9fdaed7f5d48282326633`  
+		Last Modified: Wed, 10 Apr 2019 11:43:06 GMT  
+		Size: 2.5 MB (2543326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:668dbb1da38bf6b755c53ced346a702cc89f825fae11e7c280c4937d86c6052f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
+	-	`sha256:8e72810cb2904dec74b6a6ec5f4a983c700825faf21979eb2e7a360b42515f26`  
+		Last Modified: Wed, 10 Apr 2019 14:26:58 GMT  
 		Size: 1.3 KB (1253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a9bb4447ea68836f7469bf09fbdaf11252c6449487839e8864900ba4b92d03f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
-		Size: 407.9 KB (407852 bytes)  
+	-	`sha256:b4816af0620533e2d07b1778a9f075eb91da554fb6e81c803e8fe455a6d9cadb`  
+		Last Modified: Wed, 10 Apr 2019 14:26:59 GMT  
+		Size: 407.9 KB (407873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a395be24428d9ff014ce30020e4a9ea7df74473a39108d7cb1206903e6daf0d8`  
-		Last Modified: Wed, 20 Mar 2019 12:42:55 GMT  
-		Size: 15.3 MB (15307542 bytes)  
+	-	`sha256:daf166aeb7e683d13516e79a7a02f63c3f6a237e0f821b521394f21fffdca6c6`  
+		Last Modified: Wed, 10 Apr 2019 14:27:06 GMT  
+		Size: 14.9 MB (14868151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4e4cc4c9a48c0e0315f79df913857436d858b63b72688053a7ac19e70a3e6d1`  
-		Last Modified: Wed, 20 Mar 2019 12:42:49 GMT  
-		Size: 98.0 B  
+	-	`sha256:ddca5358a6a73aaad90211e7f78d95b62fca2a0095375893ed5d11cd111a4d25`  
+		Last Modified: Wed, 10 Apr 2019 14:26:58 GMT  
+		Size: 100.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:094178e893cdad85f9261d0fb769bdec1d3b7caf8d638760286efd4aba37199e`  
-		Last Modified: Wed, 20 Mar 2019 12:42:49 GMT  
+	-	`sha256:d16179b45b9f6d2b424b0ad5f77b5adbda66f123a9f37d5d38d128c6f243705d`  
+		Last Modified: Wed, 10 Apr 2019 14:26:59 GMT  
 		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -14138,7 +14138,7 @@ CMD ["redis-server"]
 ## `redis:alpine`
 
 ```console
-$ docker pull redis@sha256:3846be04166bc0b6298f844609ce8b0a20bfe60b4e7e8edf7647d0445fcb7ab2
+$ docker pull redis@sha256:ef67270b8bcb6b801a67d186ed16051520867b985e4f2f1233b510938dc55b22
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14592,80 +14592,80 @@ CMD ["redis-server"]
 ### `redis:alpine` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:16b1ed14f6e57bb89819ad6e6d913b5893e3b45dc421684e29afc7e5bff8a85e
+$ docker pull redis@sha256:1eb67ffe3d0167eb53d8a33e8a2eaa385c7ac8337f96e1e6397d110e0da8303d
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.3 MB (18258462 bytes)**  
+-	Total Size: **17.8 MB (17821115 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3e4ef67768dbf5548b60a7de042797b2e7dc2df494d6b08fe85a1fd715f1c0dd`
+-	Image ID: `sha256:ecc683be58697fd97857072de161c829167bdea75379ac52c61c773af81bf1ee`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
-# Fri, 08 Mar 2019 03:35:46 GMT
-ADD file:3f769e5ff31fbae6ea6b835fa878b05d6c6920ca4313aa63be7d057e29241d87 in / 
-# Fri, 08 Mar 2019 03:35:46 GMT
+# Wed, 10 Apr 2019 11:42:23 GMT
+ADD file:ab106eb2cf4bf0e1ca7861a56dc24e44dd206fd3ae8d3587684324e5c11136f4 in / 
+# Wed, 10 Apr 2019 11:42:23 GMT
 CMD ["/bin/sh"]
-# Fri, 08 Mar 2019 05:35:49 GMT
+# Wed, 10 Apr 2019 14:22:12 GMT
 RUN addgroup -S redis && adduser -S -G redis redis
-# Fri, 08 Mar 2019 05:35:50 GMT
+# Wed, 10 Apr 2019 14:22:15 GMT
 RUN apk add --no-cache 		'su-exec>=0.2' 		tzdata
-# Wed, 20 Mar 2019 12:37:01 GMT
+# Wed, 10 Apr 2019 14:22:16 GMT
 ENV REDIS_VERSION=5.0.4
-# Wed, 20 Mar 2019 12:37:02 GMT
+# Wed, 10 Apr 2019 14:22:16 GMT
 ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-5.0.4.tar.gz
-# Wed, 20 Mar 2019 12:37:03 GMT
+# Wed, 10 Apr 2019 14:22:17 GMT
 ENV REDIS_DOWNLOAD_SHA=3ce9ceff5a23f60913e1573f6dfcd4aa53b42d4a2789e28fa53ec2bd28c987dd
-# Wed, 20 Mar 2019 12:38:25 GMT
+# Wed, 10 Apr 2019 14:23:46 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		coreutils 		gcc 		linux-headers 		make 		musl-dev 	; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 1$' /usr/src/redis/src/server.h; 	sed -ri 's!^(#define CONFIG_DEFAULT_PROTECTED_MODE) 1$!\1 0!' /usr/src/redis/src/server.h; 	grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 0$' /usr/src/redis/src/server.h; 		make -C /usr/src/redis -j "$(nproc)"; 	make -C /usr/src/redis install; 		rm -r /usr/src/redis; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .redis-rundeps $runDeps; 	apk del .build-deps; 		redis-server --version
-# Wed, 20 Mar 2019 12:38:27 GMT
+# Wed, 10 Apr 2019 14:23:50 GMT
 RUN mkdir /data && chown redis:redis /data
-# Wed, 20 Mar 2019 12:38:28 GMT
+# Wed, 10 Apr 2019 14:23:51 GMT
 VOLUME [/data]
-# Wed, 20 Mar 2019 12:38:28 GMT
+# Wed, 10 Apr 2019 14:23:52 GMT
 WORKDIR /data
-# Wed, 20 Mar 2019 12:38:29 GMT
+# Wed, 10 Apr 2019 14:23:53 GMT
 COPY file:c48b97ea65422782310396358f838c38c0747767dd606a88d4c3d0b034a60762 in /usr/local/bin/ 
-# Wed, 20 Mar 2019 12:38:29 GMT
+# Wed, 10 Apr 2019 14:23:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 20 Mar 2019 12:38:30 GMT
+# Wed, 10 Apr 2019 14:23:55 GMT
 EXPOSE 6379
-# Wed, 20 Mar 2019 12:38:30 GMT
+# Wed, 10 Apr 2019 14:23:56 GMT
 CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d981dc59d98dcf79c1920d433d8d56f9892f229da716de64280980f317a80ef1`  
-		Last Modified: Fri, 08 Mar 2019 03:36:19 GMT  
-		Size: 2.5 MB (2541305 bytes)  
+	-	`sha256:5b51e37a522c2e7cd3c67e8a3e5500b45189ea6698e9fdaed7f5d48282326633`  
+		Last Modified: Wed, 10 Apr 2019 11:43:06 GMT  
+		Size: 2.5 MB (2543326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:668dbb1da38bf6b755c53ced346a702cc89f825fae11e7c280c4937d86c6052f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
+	-	`sha256:8e72810cb2904dec74b6a6ec5f4a983c700825faf21979eb2e7a360b42515f26`  
+		Last Modified: Wed, 10 Apr 2019 14:26:58 GMT  
 		Size: 1.3 KB (1253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a9bb4447ea68836f7469bf09fbdaf11252c6449487839e8864900ba4b92d03f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
-		Size: 407.9 KB (407852 bytes)  
+	-	`sha256:b4816af0620533e2d07b1778a9f075eb91da554fb6e81c803e8fe455a6d9cadb`  
+		Last Modified: Wed, 10 Apr 2019 14:26:59 GMT  
+		Size: 407.9 KB (407873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a395be24428d9ff014ce30020e4a9ea7df74473a39108d7cb1206903e6daf0d8`  
-		Last Modified: Wed, 20 Mar 2019 12:42:55 GMT  
-		Size: 15.3 MB (15307542 bytes)  
+	-	`sha256:daf166aeb7e683d13516e79a7a02f63c3f6a237e0f821b521394f21fffdca6c6`  
+		Last Modified: Wed, 10 Apr 2019 14:27:06 GMT  
+		Size: 14.9 MB (14868151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4e4cc4c9a48c0e0315f79df913857436d858b63b72688053a7ac19e70a3e6d1`  
-		Last Modified: Wed, 20 Mar 2019 12:42:49 GMT  
-		Size: 98.0 B  
+	-	`sha256:ddca5358a6a73aaad90211e7f78d95b62fca2a0095375893ed5d11cd111a4d25`  
+		Last Modified: Wed, 10 Apr 2019 14:26:58 GMT  
+		Size: 100.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:094178e893cdad85f9261d0fb769bdec1d3b7caf8d638760286efd4aba37199e`  
-		Last Modified: Wed, 20 Mar 2019 12:42:49 GMT  
+	-	`sha256:d16179b45b9f6d2b424b0ad5f77b5adbda66f123a9f37d5d38d128c6f243705d`  
+		Last Modified: Wed, 10 Apr 2019 14:26:59 GMT  
 		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:alpine3.9`
 
 ```console
-$ docker pull redis@sha256:3846be04166bc0b6298f844609ce8b0a20bfe60b4e7e8edf7647d0445fcb7ab2
+$ docker pull redis@sha256:ef67270b8bcb6b801a67d186ed16051520867b985e4f2f1233b510938dc55b22
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15119,73 +15119,73 @@ CMD ["redis-server"]
 ### `redis:alpine3.9` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:16b1ed14f6e57bb89819ad6e6d913b5893e3b45dc421684e29afc7e5bff8a85e
+$ docker pull redis@sha256:1eb67ffe3d0167eb53d8a33e8a2eaa385c7ac8337f96e1e6397d110e0da8303d
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.3 MB (18258462 bytes)**  
+-	Total Size: **17.8 MB (17821115 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3e4ef67768dbf5548b60a7de042797b2e7dc2df494d6b08fe85a1fd715f1c0dd`
+-	Image ID: `sha256:ecc683be58697fd97857072de161c829167bdea75379ac52c61c773af81bf1ee`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
-# Fri, 08 Mar 2019 03:35:46 GMT
-ADD file:3f769e5ff31fbae6ea6b835fa878b05d6c6920ca4313aa63be7d057e29241d87 in / 
-# Fri, 08 Mar 2019 03:35:46 GMT
+# Wed, 10 Apr 2019 11:42:23 GMT
+ADD file:ab106eb2cf4bf0e1ca7861a56dc24e44dd206fd3ae8d3587684324e5c11136f4 in / 
+# Wed, 10 Apr 2019 11:42:23 GMT
 CMD ["/bin/sh"]
-# Fri, 08 Mar 2019 05:35:49 GMT
+# Wed, 10 Apr 2019 14:22:12 GMT
 RUN addgroup -S redis && adduser -S -G redis redis
-# Fri, 08 Mar 2019 05:35:50 GMT
+# Wed, 10 Apr 2019 14:22:15 GMT
 RUN apk add --no-cache 		'su-exec>=0.2' 		tzdata
-# Wed, 20 Mar 2019 12:37:01 GMT
+# Wed, 10 Apr 2019 14:22:16 GMT
 ENV REDIS_VERSION=5.0.4
-# Wed, 20 Mar 2019 12:37:02 GMT
+# Wed, 10 Apr 2019 14:22:16 GMT
 ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-5.0.4.tar.gz
-# Wed, 20 Mar 2019 12:37:03 GMT
+# Wed, 10 Apr 2019 14:22:17 GMT
 ENV REDIS_DOWNLOAD_SHA=3ce9ceff5a23f60913e1573f6dfcd4aa53b42d4a2789e28fa53ec2bd28c987dd
-# Wed, 20 Mar 2019 12:38:25 GMT
+# Wed, 10 Apr 2019 14:23:46 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		coreutils 		gcc 		linux-headers 		make 		musl-dev 	; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 1$' /usr/src/redis/src/server.h; 	sed -ri 's!^(#define CONFIG_DEFAULT_PROTECTED_MODE) 1$!\1 0!' /usr/src/redis/src/server.h; 	grep -q '^#define CONFIG_DEFAULT_PROTECTED_MODE 0$' /usr/src/redis/src/server.h; 		make -C /usr/src/redis -j "$(nproc)"; 	make -C /usr/src/redis install; 		rm -r /usr/src/redis; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .redis-rundeps $runDeps; 	apk del .build-deps; 		redis-server --version
-# Wed, 20 Mar 2019 12:38:27 GMT
+# Wed, 10 Apr 2019 14:23:50 GMT
 RUN mkdir /data && chown redis:redis /data
-# Wed, 20 Mar 2019 12:38:28 GMT
+# Wed, 10 Apr 2019 14:23:51 GMT
 VOLUME [/data]
-# Wed, 20 Mar 2019 12:38:28 GMT
+# Wed, 10 Apr 2019 14:23:52 GMT
 WORKDIR /data
-# Wed, 20 Mar 2019 12:38:29 GMT
+# Wed, 10 Apr 2019 14:23:53 GMT
 COPY file:c48b97ea65422782310396358f838c38c0747767dd606a88d4c3d0b034a60762 in /usr/local/bin/ 
-# Wed, 20 Mar 2019 12:38:29 GMT
+# Wed, 10 Apr 2019 14:23:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 20 Mar 2019 12:38:30 GMT
+# Wed, 10 Apr 2019 14:23:55 GMT
 EXPOSE 6379
-# Wed, 20 Mar 2019 12:38:30 GMT
+# Wed, 10 Apr 2019 14:23:56 GMT
 CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d981dc59d98dcf79c1920d433d8d56f9892f229da716de64280980f317a80ef1`  
-		Last Modified: Fri, 08 Mar 2019 03:36:19 GMT  
-		Size: 2.5 MB (2541305 bytes)  
+	-	`sha256:5b51e37a522c2e7cd3c67e8a3e5500b45189ea6698e9fdaed7f5d48282326633`  
+		Last Modified: Wed, 10 Apr 2019 11:43:06 GMT  
+		Size: 2.5 MB (2543326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:668dbb1da38bf6b755c53ced346a702cc89f825fae11e7c280c4937d86c6052f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
+	-	`sha256:8e72810cb2904dec74b6a6ec5f4a983c700825faf21979eb2e7a360b42515f26`  
+		Last Modified: Wed, 10 Apr 2019 14:26:58 GMT  
 		Size: 1.3 KB (1253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a9bb4447ea68836f7469bf09fbdaf11252c6449487839e8864900ba4b92d03f`  
-		Last Modified: Fri, 08 Mar 2019 05:37:28 GMT  
-		Size: 407.9 KB (407852 bytes)  
+	-	`sha256:b4816af0620533e2d07b1778a9f075eb91da554fb6e81c803e8fe455a6d9cadb`  
+		Last Modified: Wed, 10 Apr 2019 14:26:59 GMT  
+		Size: 407.9 KB (407873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a395be24428d9ff014ce30020e4a9ea7df74473a39108d7cb1206903e6daf0d8`  
-		Last Modified: Wed, 20 Mar 2019 12:42:55 GMT  
-		Size: 15.3 MB (15307542 bytes)  
+	-	`sha256:daf166aeb7e683d13516e79a7a02f63c3f6a237e0f821b521394f21fffdca6c6`  
+		Last Modified: Wed, 10 Apr 2019 14:27:06 GMT  
+		Size: 14.9 MB (14868151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4e4cc4c9a48c0e0315f79df913857436d858b63b72688053a7ac19e70a3e6d1`  
-		Last Modified: Wed, 20 Mar 2019 12:42:49 GMT  
-		Size: 98.0 B  
+	-	`sha256:ddca5358a6a73aaad90211e7f78d95b62fca2a0095375893ed5d11cd111a4d25`  
+		Last Modified: Wed, 10 Apr 2019 14:26:58 GMT  
+		Size: 100.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:094178e893cdad85f9261d0fb769bdec1d3b7caf8d638760286efd4aba37199e`  
-		Last Modified: Wed, 20 Mar 2019 12:42:49 GMT  
+	-	`sha256:d16179b45b9f6d2b424b0ad5f77b5adbda66f123a9f37d5d38d128c6f243705d`  
+		Last Modified: Wed, 10 Apr 2019 14:26:59 GMT  
 		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
