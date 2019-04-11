@@ -1,10 +1,10 @@
-# `ghost:2.19.3`
+# `ghost:2.19.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:83453c377747aa00d7544408b2e9ca4dc011f16b39d5b210064d082584ce3892`
-- Created: `2019-04-04T21:22:34.263444312Z`
-- Virtual Size: ~ 550.55 Mb  
+- Image ID: `sha256:0e15c0977a092bd76caf1687d05139581f6ae91f8f71edd47d1a31f4506b4dd3`
+- Created: `2019-04-10T02:40:35.795961027Z`
+- Virtual Size: ~ 546.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `GHOST_CLI_VERSION=1.9.9`
   - `GHOST_INSTALL=/var/lib/ghost`
   - `GHOST_CONTENT=/var/lib/ghost/content`
-  - `GHOST_VERSION=2.19.3`
+  - `GHOST_VERSION=2.19.4`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1969,20 +1969,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=232-25+deb9u9
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_232-25+deb9u9.dsc' systemd_232-25+deb9u9.dsc 4952 SHA256:4b31a17f3a95bccff764c1115033938704915d9cec1237882e7a2387c0c40795
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_232-25+deb9u9.debian.tar.xz' systemd_232-25+deb9u9.debian.tar.xz 217000 SHA256:4a25ad8c0177cab7a3f436236422d0183e4fb4e81a8fe5e3ac690f2e7f195024
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/232-25+deb9u9/
 
-- https://sources.debian.net/src/systemd/232-25+deb9u9/ (for browsing the source)
-- https://sources.debian.net/src/systemd/232-25+deb9u9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/232-25+deb9u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 
