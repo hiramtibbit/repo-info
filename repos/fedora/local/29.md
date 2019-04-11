@@ -26,14 +26,10 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls acl-2.2.53-2.fc29
+https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/x86_64/repodata/repomd.xml: [Errno -1] repomd.xml does not match metalink for updates
+Trying other mirror.
 Enabling fedora-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/releases/29/Modular/source/tree/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
-Trying other mirror.
 Enabling updates-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/SRPMS/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
-Trying other mirror.
-https://pubmirror1.math.uh.edu/fedora-buffet/fedora/linux/updates/29/Everything/SRPMS/repodata/repomd.xml: [Errno -1] repomd.xml does not match metalink for updates-source
-Trying other mirror.
 Enabling updates-modular-source repository
 https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Modular/SRPMS/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
 Trying other mirror.
@@ -1142,16 +1138,7 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/releases/29/Everything/so
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls libmodulemd1-1.8.2-3.fc29
-Enabling fedora-modular-source repository
-Enabling updates-source repository
-Enabling updates-modular-source repository
-Enabling fedora-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/SRPMS//Packages/l/libmodulemd-2.1.0-3.fc29.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `libmount-2.32.1-1.fc29.x86_64`
 
