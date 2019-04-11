@@ -1,9 +1,9 @@
-# `drupal:8.6.13-apache`
+# `drupal:8.6.14-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:64ee9cf717460b989383197a4127a07f827da7c82a4f701e15eb772fb4370aaf`
-- Created: `2019-04-06T06:27:54.099829594Z`
+- Image ID: `sha256:5f5912eac5565aafa6fc28dae92ceabe610383d7361380a7526c1ce9c5321466`
+- Created: `2019-04-08T23:19:37.951757148Z`
 - Virtual Size: ~ 446.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -26,8 +26,8 @@
   - `PHP_ASC_URL=https://www.php.net/get/php-7.2.17.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=a3e5f51a9ae08813b3925bea3a4de02cd4906fcccf75646e267a213bb63bcf84`
   - `PHP_MD5=`
-  - `DRUPAL_VERSION=8.6.13`
-  - `DRUPAL_MD5=ded84151ebda80826f18e924dab03edd`
+  - `DRUPAL_VERSION=8.6.14`
+  - `DRUPAL_MD5=04cf60554a5036c7a69c652e669461c3`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2757,20 +2757,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=232-25+deb9u9
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_232-25+deb9u9.dsc' systemd_232-25+deb9u9.dsc 4952 SHA256:4b31a17f3a95bccff764c1115033938704915d9cec1237882e7a2387c0c40795
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_232-25+deb9u9.debian.tar.xz' systemd_232-25+deb9u9.debian.tar.xz 217000 SHA256:4a25ad8c0177cab7a3f436236422d0183e4fb4e81a8fe5e3ac690f2e7f195024
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/232-25+deb9u9/
 
-- https://sources.debian.net/src/systemd/232-25+deb9u9/ (for browsing the source)
-- https://sources.debian.net/src/systemd/232-25+deb9u9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/232-25+deb9u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 
