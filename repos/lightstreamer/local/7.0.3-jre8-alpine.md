@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d934dcc5e9f8af6e8eee735e5cc85507476dd11766477d0a103f8dc8c39023c0`
-- Created: `2019-04-03T00:37:55.878933202Z`
+- Image ID: `sha256:e88b545c6d4206a36974915647c575cbb5f96de96327e2914ed8c3b84c5192db`
+- Created: `2019-04-10T03:07:18.303024173Z`
 - Virtual Size: ~ 151.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -347,16 +347,16 @@ GPL-2.0-or-later LGPL-2.0 BSD-3-Clause MIT
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1a-r1 description:
+libcrypto1.1-1.1.1b-r1 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1a-r1 webpage:
+libcrypto1.1-1.1.1b-r1 webpage:
 https://www.openssl.org
 
-libcrypto1.1-1.1.1a-r1 installed size:
-2744320
+libcrypto1.1-1.1.1b-r1 installed size:
+2748416
 
-libcrypto1.1-1.1.1a-r1 license:
+libcrypto1.1-1.1.1b-r1 license:
 OpenSSL
 
 ```
@@ -381,16 +381,16 @@ MIT
 ### `apk` package: `libgcc`
 
 ```console
-libgcc-8.2.0-r2 description:
+libgcc-8.3.0-r0 description:
 GNU C compiler runtime libraries
 
-libgcc-8.2.0-r2 webpage:
+libgcc-8.3.0-r0 webpage:
 http://gcc.gnu.org
 
-libgcc-8.2.0-r2 installed size:
+libgcc-8.3.0-r0 installed size:
 90112
 
-libgcc-8.2.0-r2 license:
+libgcc-8.3.0-r0 license:
 GPL LGPL
 
 ```
@@ -432,16 +432,16 @@ Libpng
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1a-r1 description:
+libssl1.1-1.1.1b-r1 description:
 SSL shared libraries
 
-libssl1.1-1.1.1a-r1 webpage:
+libssl1.1-1.1.1b-r1 webpage:
 https://www.openssl.org
 
-libssl1.1-1.1.1a-r1 installed size:
+libssl1.1-1.1.1b-r1 installed size:
 536576
 
-libssl1.1-1.1.1a-r1 license:
+libssl1.1-1.1.1b-r1 license:
 OpenSSL
 
 ```
@@ -449,16 +449,16 @@ OpenSSL
 ### `apk` package: `libstdc++`
 
 ```console
-libstdc++-8.2.0-r2 description:
+libstdc++-8.3.0-r0 description:
 GNU C++ standard runtime library
 
-libstdc++-8.2.0-r2 webpage:
+libstdc++-8.3.0-r0 webpage:
 http://gcc.gnu.org
 
-libstdc++-8.2.0-r2 installed size:
+libstdc++-8.3.0-r0 installed size:
 1392640
 
-libstdc++-8.2.0-r2 license:
+libstdc++-8.3.0-r0 license:
 GPL LGPL
 
 ```
@@ -687,16 +687,16 @@ GPL-2.0 and GPL-2.0-or-later and LGPL-2.0 and MIT
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.20-r3 description:
+musl-1.1.20-r4 description:
 the musl c library (libc) implementation
 
-musl-1.1.20-r3 webpage:
+musl-1.1.20-r4 webpage:
 http://www.musl-libc.org/
 
-musl-1.1.20-r3 installed size:
+musl-1.1.20-r4 installed size:
 602112
 
-musl-1.1.20-r3 license:
+musl-1.1.20-r4 license:
 MIT
 
 ```
@@ -704,16 +704,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.1.20-r3 description:
+musl-utils-1.1.20-r4 description:
 the musl c library (libc) implementation
 
-musl-utils-1.1.20-r3 webpage:
+musl-utils-1.1.20-r4 webpage:
 http://www.musl-libc.org/
 
-musl-utils-1.1.20-r3 installed size:
+musl-utils-1.1.20-r4 installed size:
 139264
 
-musl-utils-1.1.20-r3 license:
+musl-utils-1.1.20-r4 license:
 MIT BSD GPL2+
 
 ```
