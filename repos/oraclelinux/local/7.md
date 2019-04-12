@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:62a654b8236d83ce77e1e4820e842aa6b50c4a434318131c68038f37cc065b62`
-- Created: `2019-03-29T22:13:10.038814742Z`
-- Virtual Size: ~ 234.92 Mb  
+- Image ID: `sha256:200d4182a980204b33368b16d7c011e1d11a4ef462d000b40249536f8ef32b93`
+- Created: `2019-04-12T00:38:42.630772931Z`
+- Virtual Size: ~ 234.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -679,15 +679,15 @@ $ yumdownloader --quiet --source --urls kmod-libs-20-23.0.1.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/kmod-20-23.0.1.el7.src.rpm
 ```
 
-### `rpm` package: `kpartx-0.4.9-123.el7.x86_64`
+### `rpm` package: `kpartx-0.4.9-123.0.1.el7.x86_64`
 
 Licenses (from `rpm --query`): GPL+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls kpartx-0.4.9-123.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/device-mapper-multipath-0.4.9-123.el7.src.rpm
+$ yumdownloader --quiet --source --urls kpartx-0.4.9-123.0.1.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/device-mapper-multipath-0.4.9-123.0.1.el7.src.rpm
 ```
 
 ### `rpm` package: `krb5-libs-1.15.1-37.el7_6.x86_64`
@@ -1559,15 +1559,15 @@ $ yumdownloader --quiet --source --urls pyliblzma-0.5.3-11.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/pyliblzma-0.5.3-11.el7.src.rpm
 ```
 
-### `rpm` package: `python-2.7.5-76.0.1.el7.x86_64`
+### `rpm` package: `python-2.7.5-77.0.1.el7_6.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls python-2.7.5-76.0.1.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/python-2.7.5-76.0.1.el7.src.rpm
+$ yumdownloader --quiet --source --urls python-2.7.5-77.0.1.el7_6
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/python-2.7.5-77.0.1.el7_6.src.rpm
 ```
 
 ### `rpm` package: `python-chardet-2.2.1-1.el7_1.noarch`
@@ -1647,15 +1647,15 @@ $ yumdownloader --quiet --source --urls python-kitchen-1.1.1-5.el7.noarch
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/python-kitchen-1.1.1-5.el7.src.rpm
 ```
 
-### `rpm` package: `python-libs-2.7.5-76.0.1.el7.x86_64`
+### `rpm` package: `python-libs-2.7.5-77.0.1.el7_6.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls python-libs-2.7.5-76.0.1.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/python-2.7.5-76.0.1.el7.src.rpm
+$ yumdownloader --quiet --source --urls python-libs-2.7.5-77.0.1.el7_6
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/python-2.7.5-77.0.1.el7_6.src.rpm
 ```
 
 ### `rpm` package: `python-pycurl-7.19.0-19.el7.x86_64`
@@ -1966,15 +1966,15 @@ $ yumdownloader --quiet --source --urls tcp_wrappers-libs-7.6-77.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/tcp_wrappers-7.6-77.el7.src.rpm
 ```
 
-### `rpm` package: `tzdata-2018i-1.el7.noarch`
+### `rpm` package: `tzdata-2019a-1.el7.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls tzdata-2018i-1.el7.noarch
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/tzdata-2018i-1.el7.src.rpm
+$ yumdownloader --quiet --source --urls tzdata-2019a-1.el7.noarch
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/tzdata-2019a-1.el7.src.rpm
 ```
 
 ### `rpm` package: `usermode-1.111-5.el7.x86_64`
