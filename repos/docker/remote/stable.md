@@ -1,13 +1,14 @@
 ## `docker:stable`
 
 ```console
-$ docker pull docker@sha256:c08e5695fb09c8f95d8d37844116a7e5a25209b782ec9601a26b46d27f32da10
+$ docker pull docker@sha256:12f63b68f55925351f2bc14c44ef9275df29db92b66c9ef4db16b78f2e7eed28
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm variant v6
+	-	linux; arm64 variant v8
 
 ### `docker:stable` - linux; amd64
 
@@ -137,4 +138,69 @@ CMD ["sh"]
 	-	`sha256:6fc90ee4d0bcc3ada6dfdee362d9b1c3e5cfc20271338a6524ebf61c7f32be2a`  
 		Last Modified: Fri, 12 Apr 2019 07:50:46 GMT  
 		Size: 737.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `docker:stable` - linux; arm64 variant v8
+
+```console
+$ docker pull docker@sha256:f51e8d9022a93bcad423dd2ee736228760fb6c6cd4d776b0ec7c37bacf5d3845
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **46.7 MB (46650894 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b2bcd28828a245ee5527e5d093cde55945e8bd9df0f155463205fd7987d7023a`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Wed, 10 Apr 2019 08:49:11 GMT
+ADD file:30e0a8ccdca70b20b8ce637f0ba5108157f4ba491447d20aafbe45d82392bd81 in / 
+# Wed, 10 Apr 2019 08:49:12 GMT
+CMD ["/bin/sh"]
+# Wed, 10 Apr 2019 08:49:19 GMT
+RUN apk add --no-cache 		ca-certificates
+# Wed, 10 Apr 2019 08:49:34 GMT
+RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
+# Wed, 10 Apr 2019 08:49:35 GMT
+ENV DOCKER_CHANNEL=stable
+# Fri, 12 Apr 2019 08:40:20 GMT
+ENV DOCKER_VERSION=18.09.5
+# Fri, 12 Apr 2019 08:40:32 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64) dockerArch='x86_64' ;; 		armhf) dockerArch='armel' ;; 		aarch64) dockerArch='aarch64' ;; 		ppc64le) dockerArch='ppc64le' ;; 		s390x) dockerArch='s390x' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 		if ! wget -O docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}.tgz"; then 		echo >&2 "error: failed to download 'docker-${DOCKER_VERSION}' from '${DOCKER_CHANNEL}' for '${dockerArch}'"; 		exit 1; 	fi; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
+# Fri, 12 Apr 2019 08:40:33 GMT
+COPY file:abb137d24130e7fa2bdd38694af607361ecb688521e60965681e49460964a204 in /usr/local/bin/modprobe 
+# Fri, 12 Apr 2019 08:40:33 GMT
+COPY file:232c7644a72835c769a24023d9195c15e9ea7dbe3b01f641c800526aecd5676b in /usr/local/bin/ 
+# Fri, 12 Apr 2019 08:40:34 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Fri, 12 Apr 2019 08:40:36 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:6f37394be673296a0fdc21b819c5df40431baf7d3af121bee451726dd1457493`  
+		Last Modified: Wed, 10 Apr 2019 08:50:38 GMT  
+		Size: 2.7 MB (2688778 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:624d8cd5989279cea7781d46cf9e54248dc5914b85a54e5f3dda694c3dc0aec4`  
+		Last Modified: Wed, 10 Apr 2019 08:53:01 GMT  
+		Size: 302.3 KB (302320 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ecff0f4f34353de2916477d55f845eedaf0354998b8a77494fb80ae3c6c3aa36`  
+		Last Modified: Wed, 10 Apr 2019 08:53:01 GMT  
+		Size: 154.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:07a77ccdec90d494b379d735b76a4a1a233c4e3bc318d14906e33e59f9242b6d`  
+		Last Modified: Fri, 12 Apr 2019 08:42:31 GMT  
+		Size: 43.7 MB (43658358 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c2dcd1054c2edb165706f22bd2a80233cbef92a02bd2deb340e0f8c3629a0676`  
+		Last Modified: Fri, 12 Apr 2019 08:42:08 GMT  
+		Size: 545.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:156c9e509c87970ee5b0a0f1b4cd3e5e5ea828684cc169a447aa7b3c4abe4468`  
+		Last Modified: Fri, 12 Apr 2019 08:42:08 GMT  
+		Size: 739.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
