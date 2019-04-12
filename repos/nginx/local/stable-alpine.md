@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cafef9fe265b4b5555ba35cc346cd59ac8666223198ec72d657b2033e5b6d51f`
-- Created: `2019-03-08T03:09:04.039581204Z`
+- Image ID: `sha256:8a2fb25a19f5dc1528b7a3fabe8b3145ff57fe10e4f1edac6c718a3cf4aa4b73`
+- Created: `2019-04-10T01:08:46.210666872Z`
 - Virtual Size: ~ 16.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -172,16 +172,16 @@ BSD
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1a-r1 description:
+libcrypto1.1-1.1.1b-r1 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1a-r1 webpage:
+libcrypto1.1-1.1.1b-r1 webpage:
 https://www.openssl.org
 
-libcrypto1.1-1.1.1a-r1 installed size:
-2744320
+libcrypto1.1-1.1.1b-r1 installed size:
+2748416
 
-libcrypto1.1-1.1.1a-r1 license:
+libcrypto1.1-1.1.1b-r1 license:
 OpenSSL
 
 ```
@@ -206,16 +206,16 @@ LGPL
 ### `apk` package: `libgd`
 
 ```console
-libgd-2.2.5-r1 description:
+libgd-2.2.5-r3 description:
 Library for the dynamic creation of images by programmers (libraries)
 
-libgd-2.2.5-r1 webpage:
-http://libgd.github.io/
+libgd-2.2.5-r3 webpage:
+https://libgd.github.io/
 
-libgd-2.2.5-r1 installed size:
+libgd-2.2.5-r3 installed size:
 372736
 
-libgd-2.2.5-r1 license:
+libgd-2.2.5-r3 license:
 custom
 
 ```
@@ -291,16 +291,16 @@ Libpng
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1a-r1 description:
+libssl1.1-1.1.1b-r1 description:
 SSL shared libraries
 
-libssl1.1-1.1.1a-r1 webpage:
+libssl1.1-1.1.1b-r1 webpage:
 https://www.openssl.org
 
-libssl1.1-1.1.1a-r1 installed size:
+libssl1.1-1.1.1b-r1 installed size:
 536576
 
-libssl1.1-1.1.1a-r1 license:
+libssl1.1-1.1.1b-r1 license:
 OpenSSL
 
 ```
@@ -376,16 +376,16 @@ custom
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.20-r3 description:
+musl-1.1.20-r4 description:
 the musl c library (libc) implementation
 
-musl-1.1.20-r3 webpage:
+musl-1.1.20-r4 webpage:
 http://www.musl-libc.org/
 
-musl-1.1.20-r3 installed size:
+musl-1.1.20-r4 installed size:
 602112
 
-musl-1.1.20-r3 license:
+musl-1.1.20-r4 license:
 MIT
 
 ```
@@ -393,16 +393,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.1.20-r3 description:
+musl-utils-1.1.20-r4 description:
 the musl c library (libc) implementation
 
-musl-utils-1.1.20-r3 webpage:
+musl-utils-1.1.20-r4 webpage:
 http://www.musl-libc.org/
 
-musl-utils-1.1.20-r3 installed size:
+musl-utils-1.1.20-r4 installed size:
 139264
 
-musl-utils-1.1.20-r3 license:
+musl-utils-1.1.20-r4 license:
 MIT BSD GPL2+
 
 ```

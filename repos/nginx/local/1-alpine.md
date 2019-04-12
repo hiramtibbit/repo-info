@@ -1,16 +1,16 @@
-# `nginx:1.15.10-alpine`
+# `nginx:1.15.11-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0476319fbdadbd7665f45b2765b997b0d57606faf501b4f703c58c08b06465eb`
-- Created: `2019-03-26T22:22:11.947125701Z`
-- Virtual Size: ~ 19.99 Mb  
+- Image ID: `sha256:031c45582fce6e8234175ed01cfea828a8f096e5b1ed3cdd41142d2a40244d27`
+- Created: `2019-04-10T21:24:05.3512842Z`
+- Virtual Size: ~ 16.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.15.10`
+  - `NGINX_VERSION=1.15.11`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
 
@@ -206,16 +206,16 @@ LGPL
 ### `apk` package: `libgd`
 
 ```console
-libgd-2.2.5-r1 description:
+libgd-2.2.5-r3 description:
 Library for the dynamic creation of images by programmers (libraries)
 
-libgd-2.2.5-r1 webpage:
-http://libgd.github.io/
+libgd-2.2.5-r3 webpage:
+https://libgd.github.io/
 
-libgd-2.2.5-r1 installed size:
+libgd-2.2.5-r3 installed size:
 372736
 
-libgd-2.2.5-r1 license:
+libgd-2.2.5-r3 license:
 custom
 
 ```
