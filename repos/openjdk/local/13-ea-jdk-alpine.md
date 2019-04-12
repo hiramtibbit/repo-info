@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b8f9b2226d626704087cfc8d902d5a3117b6bbda7365f3055d8e88fcde34d0db`
-- Created: `2019-03-29T22:10:20.232577833Z`
-- Virtual Size: ~ 333.39 Mb  
+- Image ID: `sha256:cc4e83fc995f97d4aa0ef3a3d6988f20fb02daadee592ea1552844e2d5f83217`
+- Created: `2019-04-10T01:51:36.850891274Z`
+- Virtual Size: ~ 333.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -122,16 +122,16 @@ BSD
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1a-r1 description:
+libcrypto1.1-1.1.1b-r1 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1a-r1 webpage:
+libcrypto1.1-1.1.1b-r1 webpage:
 https://www.openssl.org
 
-libcrypto1.1-1.1.1a-r1 installed size:
-2744320
+libcrypto1.1-1.1.1b-r1 installed size:
+2748416
 
-libcrypto1.1-1.1.1a-r1 license:
+libcrypto1.1-1.1.1b-r1 license:
 OpenSSL
 
 ```
@@ -139,16 +139,16 @@ OpenSSL
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1a-r1 description:
+libssl1.1-1.1.1b-r1 description:
 SSL shared libraries
 
-libssl1.1-1.1.1a-r1 webpage:
+libssl1.1-1.1.1b-r1 webpage:
 https://www.openssl.org
 
-libssl1.1-1.1.1a-r1 installed size:
+libssl1.1-1.1.1b-r1 installed size:
 536576
 
-libssl1.1-1.1.1a-r1 license:
+libssl1.1-1.1.1b-r1 license:
 OpenSSL
 
 ```
@@ -173,16 +173,16 @@ ISC
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.20-r3 description:
+musl-1.1.20-r4 description:
 the musl c library (libc) implementation
 
-musl-1.1.20-r3 webpage:
+musl-1.1.20-r4 webpage:
 http://www.musl-libc.org/
 
-musl-1.1.20-r3 installed size:
+musl-1.1.20-r4 installed size:
 602112
 
-musl-1.1.20-r3 license:
+musl-1.1.20-r4 license:
 MIT
 
 ```
@@ -190,16 +190,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.1.20-r3 description:
+musl-utils-1.1.20-r4 description:
 the musl c library (libc) implementation
 
-musl-utils-1.1.20-r3 webpage:
+musl-utils-1.1.20-r4 webpage:
 http://www.musl-libc.org/
 
-musl-utils-1.1.20-r3 installed size:
+musl-utils-1.1.20-r4 installed size:
 139264
 
-musl-utils-1.1.20-r3 license:
+musl-utils-1.1.20-r4 license:
 MIT BSD GPL2+
 
 ```

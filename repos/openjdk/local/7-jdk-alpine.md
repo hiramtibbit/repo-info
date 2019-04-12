@@ -1,10 +1,10 @@
-# `openjdk:7u201-jdk-alpine3.9`
+# `openjdk:7u211-jdk-alpine3.9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:efd254d0fbbacf93df5534d5b714c054d0fb2bd9a946594db42bc5b6112dbc05`
-- Created: `2019-03-08T02:14:05.873462908Z`
-- Virtual Size: ~ 147.57 Mb  
+- Image ID: `sha256:3f447c97ac35f99e416165931846d595ef2d0e157cda3ca01f2d858dde40b8e0`
+- Created: `2019-04-12T00:32:04.538964808Z`
+- Virtual Size: ~ 147.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.7-openjdk/jre/bin:/usr/lib/jvm/java-1.7-openjdk/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-1.7-openjdk`
-  - `JAVA_VERSION=7u201`
-  - `JAVA_ALPINE_VERSION=7.201.2.6.16-r0`
+  - `JAVA_VERSION=7u211`
+  - `JAVA_ALPINE_VERSION=7.211.2.6.17-r0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -649,16 +649,16 @@ GPL-2.0-or-later LGPL-2.0 BSD-3-Clause MIT
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1a-r1 description:
+libcrypto1.1-1.1.1b-r1 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1a-r1 webpage:
+libcrypto1.1-1.1.1b-r1 webpage:
 https://www.openssl.org
 
-libcrypto1.1-1.1.1a-r1 installed size:
-2744320
+libcrypto1.1-1.1.1b-r1 installed size:
+2748416
 
-libcrypto1.1-1.1.1a-r1 license:
+libcrypto1.1-1.1.1b-r1 license:
 OpenSSL
 
 ```
@@ -683,16 +683,16 @@ MIT
 ### `apk` package: `libgcc`
 
 ```console
-libgcc-8.2.0-r2 description:
+libgcc-8.3.0-r0 description:
 GNU C compiler runtime libraries
 
-libgcc-8.2.0-r2 webpage:
+libgcc-8.3.0-r0 webpage:
 http://gcc.gnu.org
 
-libgcc-8.2.0-r2 installed size:
+libgcc-8.3.0-r0 installed size:
 90112
 
-libgcc-8.2.0-r2 license:
+libgcc-8.3.0-r0 license:
 GPL LGPL
 
 ```
@@ -768,16 +768,16 @@ Libpng
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1a-r1 description:
+libssl1.1-1.1.1b-r1 description:
 SSL shared libraries
 
-libssl1.1-1.1.1a-r1 webpage:
+libssl1.1-1.1.1b-r1 webpage:
 https://www.openssl.org
 
-libssl1.1-1.1.1a-r1 installed size:
+libssl1.1-1.1.1b-r1 installed size:
 536576
 
-libssl1.1-1.1.1a-r1 license:
+libssl1.1-1.1.1b-r1 license:
 OpenSSL
 
 ```
@@ -785,16 +785,16 @@ OpenSSL
 ### `apk` package: `libstdc++`
 
 ```console
-libstdc++-8.2.0-r2 description:
+libstdc++-8.3.0-r0 description:
 GNU C++ standard runtime library
 
-libstdc++-8.2.0-r2 webpage:
+libstdc++-8.3.0-r0 webpage:
 http://gcc.gnu.org
 
-libstdc++-8.2.0-r2 installed size:
+libstdc++-8.3.0-r0 installed size:
 1392640
 
-libstdc++-8.2.0-r2 license:
+libstdc++-8.3.0-r0 license:
 GPL LGPL
 
 ```
@@ -1159,16 +1159,16 @@ GPL-2.0 and GPL-2.0-or-later and LGPL-2.0 and MIT
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.20-r3 description:
+musl-1.1.20-r4 description:
 the musl c library (libc) implementation
 
-musl-1.1.20-r3 webpage:
+musl-1.1.20-r4 webpage:
 http://www.musl-libc.org/
 
-musl-1.1.20-r3 installed size:
+musl-1.1.20-r4 installed size:
 602112
 
-musl-1.1.20-r3 license:
+musl-1.1.20-r4 license:
 MIT
 
 ```
@@ -1176,16 +1176,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.1.20-r3 description:
+musl-utils-1.1.20-r4 description:
 the musl c library (libc) implementation
 
-musl-utils-1.1.20-r3 webpage:
+musl-utils-1.1.20-r4 webpage:
 http://www.musl-libc.org/
 
-musl-utils-1.1.20-r3 installed size:
+musl-utils-1.1.20-r4 installed size:
 139264
 
-musl-utils-1.1.20-r3 license:
+musl-utils-1.1.20-r4 license:
 MIT BSD GPL2+
 
 ```
@@ -1210,16 +1210,16 @@ LGPL-2.0-or-later
 ### `apk` package: `openjdk7`
 
 ```console
-openjdk7-7.201.2.6.16-r0 description:
+openjdk7-7.211.2.6.17-r0 description:
 OpenJDK 7 via IcedTea
 
-openjdk7-7.201.2.6.16-r0 webpage:
+openjdk7-7.211.2.6.17-r0 webpage:
 https://icedtea.classpath.org/
 
-openjdk7-7.201.2.6.16-r0 installed size:
-23744512
+openjdk7-7.211.2.6.17-r0 installed size:
+23748608
 
-openjdk7-7.201.2.6.16-r0 license:
+openjdk7-7.211.2.6.17-r0 license:
 GPL-2.0 with Classpath
 
 ```
@@ -1227,16 +1227,16 @@ GPL-2.0 with Classpath
 ### `apk` package: `openjdk7-jre`
 
 ```console
-openjdk7-jre-7.201.2.6.16-r0 description:
+openjdk7-jre-7.211.2.6.17-r0 description:
 OpenJDK 7 Java Runtime
 
-openjdk7-jre-7.201.2.6.16-r0 webpage:
+openjdk7-jre-7.211.2.6.17-r0 webpage:
 https://icedtea.classpath.org/
 
-openjdk7-jre-7.201.2.6.16-r0 installed size:
+openjdk7-jre-7.211.2.6.17-r0 installed size:
 421888
 
-openjdk7-jre-7.201.2.6.16-r0 license:
+openjdk7-jre-7.211.2.6.17-r0 license:
 GPL-2.0 with Classpath
 
 ```
@@ -1244,16 +1244,16 @@ GPL-2.0 with Classpath
 ### `apk` package: `openjdk7-jre-base`
 
 ```console
-openjdk7-jre-base-7.201.2.6.16-r0 description:
+openjdk7-jre-base-7.211.2.6.17-r0 description:
 OpenJDK 7 Java Runtime (no GUI support)
 
-openjdk7-jre-base-7.201.2.6.16-r0 webpage:
+openjdk7-jre-base-7.211.2.6.17-r0 webpage:
 https://icedtea.classpath.org/
 
-openjdk7-jre-base-7.201.2.6.16-r0 installed size:
-38494208
+openjdk7-jre-base-7.211.2.6.17-r0 installed size:
+38285312
 
-openjdk7-jre-base-7.201.2.6.16-r0 license:
+openjdk7-jre-base-7.211.2.6.17-r0 license:
 GPL-2.0 with Classpath
 
 ```
@@ -1261,16 +1261,16 @@ GPL-2.0 with Classpath
 ### `apk` package: `openjdk7-jre-lib`
 
 ```console
-openjdk7-jre-lib-7.201.2.6.16-r0 description:
+openjdk7-jre-lib-7.211.2.6.17-r0 description:
 OpenJDK 7 Java Runtime (class libraries)
 
-openjdk7-jre-lib-7.201.2.6.16-r0 webpage:
+openjdk7-jre-lib-7.211.2.6.17-r0 webpage:
 https://icedtea.classpath.org/
 
-openjdk7-jre-lib-7.201.2.6.16-r0 installed size:
-40914944
+openjdk7-jre-lib-7.211.2.6.17-r0 installed size:
+40976384
 
-openjdk7-jre-lib-7.201.2.6.16-r0 license:
+openjdk7-jre-lib-7.211.2.6.17-r0 license:
 GPL-2.0 with Classpath
 
 ```
