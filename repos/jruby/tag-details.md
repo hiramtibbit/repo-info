@@ -22,20 +22,20 @@
 -	[`jruby:9.1-jre`](#jruby91-jre)
 -	[`jruby:9.1-jre-alpine`](#jruby91-jre-alpine)
 -	[`jruby:9.2`](#jruby92)
--	[`jruby:9.2.6`](#jruby926)
--	[`jruby:9.2.6.0`](#jruby9260)
--	[`jruby:9.2.6.0-alpine`](#jruby9260-alpine)
--	[`jruby:9.2.6.0-jdk`](#jruby9260-jdk)
--	[`jruby:9.2.6.0-jdk-alpine`](#jruby9260-jdk-alpine)
--	[`jruby:9.2.6.0-jre`](#jruby9260-jre)
--	[`jruby:9.2.6.0-jre-alpine`](#jruby9260-jre-alpine)
--	[`jruby:9.2.6.0-onbuild`](#jruby9260-onbuild)
--	[`jruby:9.2.6-alpine`](#jruby926-alpine)
--	[`jruby:9.2.6-jdk`](#jruby926-jdk)
--	[`jruby:9.2.6-jdk-alpine`](#jruby926-jdk-alpine)
--	[`jruby:9.2.6-jre`](#jruby926-jre)
--	[`jruby:9.2.6-jre-alpine`](#jruby926-jre-alpine)
--	[`jruby:9.2.6-onbuild`](#jruby926-onbuild)
+-	[`jruby:9.2.7`](#jruby927)
+-	[`jruby:9.2.7.0`](#jruby9270)
+-	[`jruby:9.2.7.0-alpine`](#jruby9270-alpine)
+-	[`jruby:9.2.7.0-jdk`](#jruby9270-jdk)
+-	[`jruby:9.2.7.0-jdk-alpine`](#jruby9270-jdk-alpine)
+-	[`jruby:9.2.7.0-jre`](#jruby9270-jre)
+-	[`jruby:9.2.7.0-jre-alpine`](#jruby9270-jre-alpine)
+-	[`jruby:9.2.7.0-onbuild`](#jruby9270-onbuild)
+-	[`jruby:9.2.7-alpine`](#jruby927-alpine)
+-	[`jruby:9.2.7-jdk`](#jruby927-jdk)
+-	[`jruby:9.2.7-jdk-alpine`](#jruby927-jdk-alpine)
+-	[`jruby:9.2.7-jre`](#jruby927-jre)
+-	[`jruby:9.2.7-jre-alpine`](#jruby927-jre-alpine)
+-	[`jruby:9.2.7-onbuild`](#jruby927-onbuild)
 -	[`jruby:9.2-alpine`](#jruby92-alpine)
 -	[`jruby:9.2-jdk`](#jruby92-jdk)
 -	[`jruby:9.2-jdk-alpine`](#jruby92-jdk-alpine)
@@ -8972,7 +8972,7 @@ CMD ["irb"]
 		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `jruby:9.2.6`
+## `jruby:9.2.7`
 
 ```console
 $ docker pull jruby@sha256:bf0fd532a215943b3f4ea0a8c4ba2009bfdc61bc881f02f9b280088b9a6d2c72
@@ -8986,7 +8986,7 @@ $ docker pull jruby@sha256:bf0fd532a215943b3f4ea0a8c4ba2009bfdc61bc881f02f9b2800
 	-	linux; 386
 	-	linux; ppc64le
 
-### `jruby:9.2.6` - linux; amd64
+### `jruby:9.2.7` - linux; amd64
 
 ```console
 $ docker pull jruby@sha256:f0e4e0c5bfa0be1dc129c77a17549bd93c60d5e4f783325eab7e4a9f2dba6c28
@@ -9100,7 +9100,7 @@ CMD ["irb"]
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6` - linux; arm variant v5
+### `jruby:9.2.7` - linux; arm variant v5
 
 ```console
 $ docker pull jruby@sha256:f82f5906057ed684d1b2e735560e8ac305262d281149e12869583106b5343ce9
@@ -9222,7 +9222,7 @@ CMD ["irb"]
 		Size: 196.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6` - linux; arm64 variant v8
+### `jruby:9.2.7` - linux; arm64 variant v8
 
 ```console
 $ docker pull jruby@sha256:a2e3ea291f44540c2caa4297805325911ded07dcb8be0e059c44c0f858fd4cfd
@@ -9336,7 +9336,7 @@ CMD ["irb"]
 		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6` - linux; 386
+### `jruby:9.2.7` - linux; 386
 
 ```console
 $ docker pull jruby@sha256:e4526d1c71e1872e3335d77012d707e5a3b662d17f0aed462479d6003cf8ddb3
@@ -9450,7 +9450,7 @@ CMD ["irb"]
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6` - linux; ppc64le
+### `jruby:9.2.7` - linux; ppc64le
 
 ```console
 $ docker pull jruby@sha256:ab5930294e0aaaa13b7bdeb2dfaf44229efadfb297eb0635cada7d995cd439fc
@@ -9564,7 +9564,7 @@ CMD ["irb"]
 		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `jruby:9.2.6.0`
+## `jruby:9.2.7.0`
 
 ```console
 $ docker pull jruby@sha256:bf0fd532a215943b3f4ea0a8c4ba2009bfdc61bc881f02f9b280088b9a6d2c72
@@ -9578,7 +9578,7 @@ $ docker pull jruby@sha256:bf0fd532a215943b3f4ea0a8c4ba2009bfdc61bc881f02f9b2800
 	-	linux; 386
 	-	linux; ppc64le
 
-### `jruby:9.2.6.0` - linux; amd64
+### `jruby:9.2.7.0` - linux; amd64
 
 ```console
 $ docker pull jruby@sha256:f0e4e0c5bfa0be1dc129c77a17549bd93c60d5e4f783325eab7e4a9f2dba6c28
@@ -9692,7 +9692,7 @@ CMD ["irb"]
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6.0` - linux; arm variant v5
+### `jruby:9.2.7.0` - linux; arm variant v5
 
 ```console
 $ docker pull jruby@sha256:f82f5906057ed684d1b2e735560e8ac305262d281149e12869583106b5343ce9
@@ -9814,7 +9814,7 @@ CMD ["irb"]
 		Size: 196.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6.0` - linux; arm64 variant v8
+### `jruby:9.2.7.0` - linux; arm64 variant v8
 
 ```console
 $ docker pull jruby@sha256:a2e3ea291f44540c2caa4297805325911ded07dcb8be0e059c44c0f858fd4cfd
@@ -9928,7 +9928,7 @@ CMD ["irb"]
 		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6.0` - linux; 386
+### `jruby:9.2.7.0` - linux; 386
 
 ```console
 $ docker pull jruby@sha256:e4526d1c71e1872e3335d77012d707e5a3b662d17f0aed462479d6003cf8ddb3
@@ -10042,7 +10042,7 @@ CMD ["irb"]
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6.0` - linux; ppc64le
+### `jruby:9.2.7.0` - linux; ppc64le
 
 ```console
 $ docker pull jruby@sha256:ab5930294e0aaaa13b7bdeb2dfaf44229efadfb297eb0635cada7d995cd439fc
@@ -10156,7 +10156,7 @@ CMD ["irb"]
 		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `jruby:9.2.6.0-alpine`
+## `jruby:9.2.7.0-alpine`
 
 ```console
 $ docker pull jruby@sha256:c4bdfcae92baa4cd1b3a814666afbbf8c8369b74fecd0885dcccaae340bdaa9f
@@ -10166,7 +10166,7 @@ $ docker pull jruby@sha256:c4bdfcae92baa4cd1b3a814666afbbf8c8369b74fecd0885dccca
 -	Platforms:
 	-	linux; amd64
 
-### `jruby:9.2.6.0-alpine` - linux; amd64
+### `jruby:9.2.7.0-alpine` - linux; amd64
 
 ```console
 $ docker pull jruby@sha256:0ac926a61e80f03527a4a6ef61c18aa800f89abfc5466c1e10d78e3f6ffda8ab
@@ -10258,7 +10258,7 @@ CMD ["irb"]
 		Size: 158.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `jruby:9.2.6.0-jdk`
+## `jruby:9.2.7.0-jdk`
 
 ```console
 $ docker pull jruby@sha256:662401ac616b5614c1329fafb1a8408324a32631fc93eb869f9b97c95a4b518d
@@ -10272,7 +10272,7 @@ $ docker pull jruby@sha256:662401ac616b5614c1329fafb1a8408324a32631fc93eb869f9b9
 	-	linux; 386
 	-	linux; ppc64le
 
-### `jruby:9.2.6.0-jdk` - linux; amd64
+### `jruby:9.2.7.0-jdk` - linux; amd64
 
 ```console
 $ docker pull jruby@sha256:a5dc2fd294f9d3f238b1f375e1c003143d4c0e99c542ce0cf4ffa0c1b8e039bf
@@ -10392,7 +10392,7 @@ CMD ["irb"]
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6.0-jdk` - linux; arm variant v5
+### `jruby:9.2.7.0-jdk` - linux; arm variant v5
 
 ```console
 $ docker pull jruby@sha256:01bbdfbf396ee8c965b6d1b7b5abd164e3a69134ba343d82b41adaeca16257f9
@@ -10520,7 +10520,7 @@ CMD ["irb"]
 		Size: 196.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6.0-jdk` - linux; arm64 variant v8
+### `jruby:9.2.7.0-jdk` - linux; arm64 variant v8
 
 ```console
 $ docker pull jruby@sha256:43205e3a3d0068129423f4947db4981b96afd5f155800c5108d6ed387b3c0b5b
@@ -10640,7 +10640,7 @@ CMD ["irb"]
 		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6.0-jdk` - linux; 386
+### `jruby:9.2.7.0-jdk` - linux; 386
 
 ```console
 $ docker pull jruby@sha256:ddd55299b02ec31c86ce90c9cb5ed156769501820cc876c36f4d5772a91acdb4
@@ -10760,7 +10760,7 @@ CMD ["irb"]
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6.0-jdk` - linux; ppc64le
+### `jruby:9.2.7.0-jdk` - linux; ppc64le
 
 ```console
 $ docker pull jruby@sha256:55eacce49ef18e41ac14d16571fb775ef8b871be9e1c38f5340689b9e21944b8
@@ -10880,7 +10880,7 @@ CMD ["irb"]
 		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `jruby:9.2.6.0-jdk-alpine`
+## `jruby:9.2.7.0-jdk-alpine`
 
 ```console
 $ docker pull jruby@sha256:2841917c64044058e18c0fad728edae42ac129517082453f6cd3d71a5123891d
@@ -10890,7 +10890,7 @@ $ docker pull jruby@sha256:2841917c64044058e18c0fad728edae42ac129517082453f6cd3d
 -	Platforms:
 	-	linux; amd64
 
-### `jruby:9.2.6.0-jdk-alpine` - linux; amd64
+### `jruby:9.2.7.0-jdk-alpine` - linux; amd64
 
 ```console
 $ docker pull jruby@sha256:25fcd531cc902da5ce4150a21cdd7f80314d4cdda464c5ca84ba33726a05441c
@@ -10982,7 +10982,7 @@ CMD ["irb"]
 		Size: 157.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `jruby:9.2.6.0-jre`
+## `jruby:9.2.7.0-jre`
 
 ```console
 $ docker pull jruby@sha256:bf0fd532a215943b3f4ea0a8c4ba2009bfdc61bc881f02f9b280088b9a6d2c72
@@ -10996,7 +10996,7 @@ $ docker pull jruby@sha256:bf0fd532a215943b3f4ea0a8c4ba2009bfdc61bc881f02f9b2800
 	-	linux; 386
 	-	linux; ppc64le
 
-### `jruby:9.2.6.0-jre` - linux; amd64
+### `jruby:9.2.7.0-jre` - linux; amd64
 
 ```console
 $ docker pull jruby@sha256:f0e4e0c5bfa0be1dc129c77a17549bd93c60d5e4f783325eab7e4a9f2dba6c28
@@ -11110,7 +11110,7 @@ CMD ["irb"]
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6.0-jre` - linux; arm variant v5
+### `jruby:9.2.7.0-jre` - linux; arm variant v5
 
 ```console
 $ docker pull jruby@sha256:f82f5906057ed684d1b2e735560e8ac305262d281149e12869583106b5343ce9
@@ -11232,7 +11232,7 @@ CMD ["irb"]
 		Size: 196.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6.0-jre` - linux; arm64 variant v8
+### `jruby:9.2.7.0-jre` - linux; arm64 variant v8
 
 ```console
 $ docker pull jruby@sha256:a2e3ea291f44540c2caa4297805325911ded07dcb8be0e059c44c0f858fd4cfd
@@ -11346,7 +11346,7 @@ CMD ["irb"]
 		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6.0-jre` - linux; 386
+### `jruby:9.2.7.0-jre` - linux; 386
 
 ```console
 $ docker pull jruby@sha256:e4526d1c71e1872e3335d77012d707e5a3b662d17f0aed462479d6003cf8ddb3
@@ -11460,7 +11460,7 @@ CMD ["irb"]
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6.0-jre` - linux; ppc64le
+### `jruby:9.2.7.0-jre` - linux; ppc64le
 
 ```console
 $ docker pull jruby@sha256:ab5930294e0aaaa13b7bdeb2dfaf44229efadfb297eb0635cada7d995cd439fc
@@ -11574,7 +11574,7 @@ CMD ["irb"]
 		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `jruby:9.2.6.0-jre-alpine`
+## `jruby:9.2.7.0-jre-alpine`
 
 ```console
 $ docker pull jruby@sha256:c4bdfcae92baa4cd1b3a814666afbbf8c8369b74fecd0885dcccaae340bdaa9f
@@ -11584,7 +11584,7 @@ $ docker pull jruby@sha256:c4bdfcae92baa4cd1b3a814666afbbf8c8369b74fecd0885dccca
 -	Platforms:
 	-	linux; amd64
 
-### `jruby:9.2.6.0-jre-alpine` - linux; amd64
+### `jruby:9.2.7.0-jre-alpine` - linux; amd64
 
 ```console
 $ docker pull jruby@sha256:0ac926a61e80f03527a4a6ef61c18aa800f89abfc5466c1e10d78e3f6ffda8ab
@@ -11676,7 +11676,7 @@ CMD ["irb"]
 		Size: 158.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `jruby:9.2.6.0-onbuild`
+## `jruby:9.2.7.0-onbuild`
 
 ```console
 $ docker pull jruby@sha256:de0aaf1071fbd6be3c513d6d9669d507d34e4212bc282fca119a812113fccbb6
@@ -11690,7 +11690,7 @@ $ docker pull jruby@sha256:de0aaf1071fbd6be3c513d6d9669d507d34e4212bc282fca119a8
 	-	linux; 386
 	-	linux; ppc64le
 
-### `jruby:9.2.6.0-onbuild` - linux; amd64
+### `jruby:9.2.7.0-onbuild` - linux; amd64
 
 ```console
 $ docker pull jruby@sha256:ace933f614f87d624383e94709518c9835d8b29a1afa67c11f68f7834a3e1fcd
@@ -11826,7 +11826,7 @@ ONBUILD ADD . /usr/src/app
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6.0-onbuild` - linux; arm variant v5
+### `jruby:9.2.7.0-onbuild` - linux; arm variant v5
 
 ```console
 $ docker pull jruby@sha256:863917502fbc88eff91892b8bb2d877a8954a41c7e8af38e869c0105e073135c
@@ -11962,7 +11962,7 @@ ONBUILD ADD . /usr/src/app
 		Size: 166.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6.0-onbuild` - linux; arm64 variant v8
+### `jruby:9.2.7.0-onbuild` - linux; arm64 variant v8
 
 ```console
 $ docker pull jruby@sha256:11c4bf773e33626bbf3e6aaff4b712fd4e861a73dc37f961ab51ec347293cf2e
@@ -12098,7 +12098,7 @@ ONBUILD ADD . /usr/src/app
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6.0-onbuild` - linux; 386
+### `jruby:9.2.7.0-onbuild` - linux; 386
 
 ```console
 $ docker pull jruby@sha256:a75510200fd56fb3783af0a41bd17a5edd4e0fcdaf3dc227f6b78151f0510aba
@@ -12234,7 +12234,7 @@ ONBUILD ADD . /usr/src/app
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6.0-onbuild` - linux; ppc64le
+### `jruby:9.2.7.0-onbuild` - linux; ppc64le
 
 ```console
 $ docker pull jruby@sha256:3baba1130b2b5ce7bb6d5788737b33563c9027828783981cb1d0ac52989e6926
@@ -12370,7 +12370,7 @@ ONBUILD ADD . /usr/src/app
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `jruby:9.2.6-alpine`
+## `jruby:9.2.7-alpine`
 
 ```console
 $ docker pull jruby@sha256:c4bdfcae92baa4cd1b3a814666afbbf8c8369b74fecd0885dcccaae340bdaa9f
@@ -12380,7 +12380,7 @@ $ docker pull jruby@sha256:c4bdfcae92baa4cd1b3a814666afbbf8c8369b74fecd0885dccca
 -	Platforms:
 	-	linux; amd64
 
-### `jruby:9.2.6-alpine` - linux; amd64
+### `jruby:9.2.7-alpine` - linux; amd64
 
 ```console
 $ docker pull jruby@sha256:0ac926a61e80f03527a4a6ef61c18aa800f89abfc5466c1e10d78e3f6ffda8ab
@@ -12472,7 +12472,7 @@ CMD ["irb"]
 		Size: 158.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `jruby:9.2.6-jdk`
+## `jruby:9.2.7-jdk`
 
 ```console
 $ docker pull jruby@sha256:662401ac616b5614c1329fafb1a8408324a32631fc93eb869f9b97c95a4b518d
@@ -12486,7 +12486,7 @@ $ docker pull jruby@sha256:662401ac616b5614c1329fafb1a8408324a32631fc93eb869f9b9
 	-	linux; 386
 	-	linux; ppc64le
 
-### `jruby:9.2.6-jdk` - linux; amd64
+### `jruby:9.2.7-jdk` - linux; amd64
 
 ```console
 $ docker pull jruby@sha256:a5dc2fd294f9d3f238b1f375e1c003143d4c0e99c542ce0cf4ffa0c1b8e039bf
@@ -12606,7 +12606,7 @@ CMD ["irb"]
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6-jdk` - linux; arm variant v5
+### `jruby:9.2.7-jdk` - linux; arm variant v5
 
 ```console
 $ docker pull jruby@sha256:01bbdfbf396ee8c965b6d1b7b5abd164e3a69134ba343d82b41adaeca16257f9
@@ -12734,7 +12734,7 @@ CMD ["irb"]
 		Size: 196.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6-jdk` - linux; arm64 variant v8
+### `jruby:9.2.7-jdk` - linux; arm64 variant v8
 
 ```console
 $ docker pull jruby@sha256:43205e3a3d0068129423f4947db4981b96afd5f155800c5108d6ed387b3c0b5b
@@ -12854,7 +12854,7 @@ CMD ["irb"]
 		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6-jdk` - linux; 386
+### `jruby:9.2.7-jdk` - linux; 386
 
 ```console
 $ docker pull jruby@sha256:ddd55299b02ec31c86ce90c9cb5ed156769501820cc876c36f4d5772a91acdb4
@@ -12974,7 +12974,7 @@ CMD ["irb"]
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6-jdk` - linux; ppc64le
+### `jruby:9.2.7-jdk` - linux; ppc64le
 
 ```console
 $ docker pull jruby@sha256:55eacce49ef18e41ac14d16571fb775ef8b871be9e1c38f5340689b9e21944b8
@@ -13094,7 +13094,7 @@ CMD ["irb"]
 		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `jruby:9.2.6-jdk-alpine`
+## `jruby:9.2.7-jdk-alpine`
 
 ```console
 $ docker pull jruby@sha256:2841917c64044058e18c0fad728edae42ac129517082453f6cd3d71a5123891d
@@ -13104,7 +13104,7 @@ $ docker pull jruby@sha256:2841917c64044058e18c0fad728edae42ac129517082453f6cd3d
 -	Platforms:
 	-	linux; amd64
 
-### `jruby:9.2.6-jdk-alpine` - linux; amd64
+### `jruby:9.2.7-jdk-alpine` - linux; amd64
 
 ```console
 $ docker pull jruby@sha256:25fcd531cc902da5ce4150a21cdd7f80314d4cdda464c5ca84ba33726a05441c
@@ -13196,7 +13196,7 @@ CMD ["irb"]
 		Size: 157.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `jruby:9.2.6-jre`
+## `jruby:9.2.7-jre`
 
 ```console
 $ docker pull jruby@sha256:bf0fd532a215943b3f4ea0a8c4ba2009bfdc61bc881f02f9b280088b9a6d2c72
@@ -13210,7 +13210,7 @@ $ docker pull jruby@sha256:bf0fd532a215943b3f4ea0a8c4ba2009bfdc61bc881f02f9b2800
 	-	linux; 386
 	-	linux; ppc64le
 
-### `jruby:9.2.6-jre` - linux; amd64
+### `jruby:9.2.7-jre` - linux; amd64
 
 ```console
 $ docker pull jruby@sha256:f0e4e0c5bfa0be1dc129c77a17549bd93c60d5e4f783325eab7e4a9f2dba6c28
@@ -13324,7 +13324,7 @@ CMD ["irb"]
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6-jre` - linux; arm variant v5
+### `jruby:9.2.7-jre` - linux; arm variant v5
 
 ```console
 $ docker pull jruby@sha256:f82f5906057ed684d1b2e735560e8ac305262d281149e12869583106b5343ce9
@@ -13446,7 +13446,7 @@ CMD ["irb"]
 		Size: 196.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6-jre` - linux; arm64 variant v8
+### `jruby:9.2.7-jre` - linux; arm64 variant v8
 
 ```console
 $ docker pull jruby@sha256:a2e3ea291f44540c2caa4297805325911ded07dcb8be0e059c44c0f858fd4cfd
@@ -13560,7 +13560,7 @@ CMD ["irb"]
 		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6-jre` - linux; 386
+### `jruby:9.2.7-jre` - linux; 386
 
 ```console
 $ docker pull jruby@sha256:e4526d1c71e1872e3335d77012d707e5a3b662d17f0aed462479d6003cf8ddb3
@@ -13674,7 +13674,7 @@ CMD ["irb"]
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6-jre` - linux; ppc64le
+### `jruby:9.2.7-jre` - linux; ppc64le
 
 ```console
 $ docker pull jruby@sha256:ab5930294e0aaaa13b7bdeb2dfaf44229efadfb297eb0635cada7d995cd439fc
@@ -13788,7 +13788,7 @@ CMD ["irb"]
 		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `jruby:9.2.6-jre-alpine`
+## `jruby:9.2.7-jre-alpine`
 
 ```console
 $ docker pull jruby@sha256:c4bdfcae92baa4cd1b3a814666afbbf8c8369b74fecd0885dcccaae340bdaa9f
@@ -13798,7 +13798,7 @@ $ docker pull jruby@sha256:c4bdfcae92baa4cd1b3a814666afbbf8c8369b74fecd0885dccca
 -	Platforms:
 	-	linux; amd64
 
-### `jruby:9.2.6-jre-alpine` - linux; amd64
+### `jruby:9.2.7-jre-alpine` - linux; amd64
 
 ```console
 $ docker pull jruby@sha256:0ac926a61e80f03527a4a6ef61c18aa800f89abfc5466c1e10d78e3f6ffda8ab
@@ -13890,7 +13890,7 @@ CMD ["irb"]
 		Size: 158.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `jruby:9.2.6-onbuild`
+## `jruby:9.2.7-onbuild`
 
 ```console
 $ docker pull jruby@sha256:de0aaf1071fbd6be3c513d6d9669d507d34e4212bc282fca119a812113fccbb6
@@ -13904,7 +13904,7 @@ $ docker pull jruby@sha256:de0aaf1071fbd6be3c513d6d9669d507d34e4212bc282fca119a8
 	-	linux; 386
 	-	linux; ppc64le
 
-### `jruby:9.2.6-onbuild` - linux; amd64
+### `jruby:9.2.7-onbuild` - linux; amd64
 
 ```console
 $ docker pull jruby@sha256:ace933f614f87d624383e94709518c9835d8b29a1afa67c11f68f7834a3e1fcd
@@ -14040,7 +14040,7 @@ ONBUILD ADD . /usr/src/app
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6-onbuild` - linux; arm variant v5
+### `jruby:9.2.7-onbuild` - linux; arm variant v5
 
 ```console
 $ docker pull jruby@sha256:863917502fbc88eff91892b8bb2d877a8954a41c7e8af38e869c0105e073135c
@@ -14176,7 +14176,7 @@ ONBUILD ADD . /usr/src/app
 		Size: 166.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6-onbuild` - linux; arm64 variant v8
+### `jruby:9.2.7-onbuild` - linux; arm64 variant v8
 
 ```console
 $ docker pull jruby@sha256:11c4bf773e33626bbf3e6aaff4b712fd4e861a73dc37f961ab51ec347293cf2e
@@ -14312,7 +14312,7 @@ ONBUILD ADD . /usr/src/app
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6-onbuild` - linux; 386
+### `jruby:9.2.7-onbuild` - linux; 386
 
 ```console
 $ docker pull jruby@sha256:a75510200fd56fb3783af0a41bd17a5edd4e0fcdaf3dc227f6b78151f0510aba
@@ -14448,7 +14448,7 @@ ONBUILD ADD . /usr/src/app
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.6-onbuild` - linux; ppc64le
+### `jruby:9.2.7-onbuild` - linux; ppc64le
 
 ```console
 $ docker pull jruby@sha256:3baba1130b2b5ce7bb6d5788737b33563c9027828783981cb1d0ac52989e6926
