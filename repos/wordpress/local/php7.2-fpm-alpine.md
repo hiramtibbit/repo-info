@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:66e95c076a17e485d718fd469f9a5b29732fc88714442366b14d3890a172ec99`
-- Created: `2019-04-06T06:42:56.883448115Z`
-- Virtual Size: ~ 128.60 Mb  
+- Image ID: `sha256:9eb62a845ff05b902a0cf8ee36b022cea7590632973543577b256092989dccc5`
+- Created: `2019-04-11T01:20:27.095248217Z`
+- Virtual Size: ~ 124.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -473,16 +473,16 @@ MIT
 ### `apk` package: `openssl`
 
 ```console
-openssl-1.1.1a-r1 description:
+openssl-1.1.1b-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-1.1.1a-r1 webpage:
+openssl-1.1.1b-r1 webpage:
 https://www.openssl.org
 
-openssl-1.1.1a-r1 installed size:
+openssl-1.1.1b-r1 installed size:
 675840
 
-openssl-1.1.1a-r1 license:
+openssl-1.1.1b-r1 license:
 OpenSSL
 
 ```
