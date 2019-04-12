@@ -4662,14 +4662,9 @@ Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libidn=1.33-2.1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.33-2.1ubuntu1.1.dsc' libidn_1.33-2.1ubuntu1.1.dsc 1942 SHA256:699ecb5e2ada0ab3770751e72d8eabd45eec623256c134cc5ca847bbe123ba2c
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.33.orig.tar.gz' libidn_1.33.orig.tar.gz 3501056 SHA256:44a7aab635bb721ceef6beecc4d49dfd19478325e1b47f3196f7d2acc4930e19
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.33-2.1ubuntu1.1.debian.tar.xz' libidn_1.33-2.1ubuntu1.1.debian.tar.xz 65608 SHA256:bb403956607b47b740c3549bf2cfa1dcae246ceaeae77505038353f34b8641cb
-```
 
 ### `dpkg` source package: `libinput=1.10.4-1`
 
@@ -12354,14 +12349,9 @@ Licenses: (parsed from: `/usr/share/doc/wpasupplicant/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wpa=2:2.6-15ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wpa/wpa_2.6-15ubuntu2.1.dsc' wpa_2.6-15ubuntu2.1.dsc 2491 SHA256:fecf49b8e27f6a77309f4069b7c71b96b1bab8e701d8d35408748a6ba0de7b4b
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wpa/wpa_2.6.orig.tar.xz' wpa_2.6.orig.tar.xz 2009476 SHA256:4492629ea15c9b571ac5e41679dca6703a25b637828272a0e72f3349dd1b4eac
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wpa/wpa_2.6-15ubuntu2.1.debian.tar.xz' wpa_2.6-15ubuntu2.1.debian.tar.xz 105968 SHA256:216d642328a20eef7afbe52956f88eb4f6283ada01c3879d514a278dbe894e84
-```
 
 ### `dpkg` source package: `wxpython3.0=3.0.2.0+dfsg-7`
 
