@@ -1098,14 +1098,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.29-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.29-0ubuntu1.dsc' glibc_2.29-0ubuntu1.dsc 9367 SHA256:8c7b55572eae71b388de0e8e066ff9ea31c14d49fe8cc853dd7ec9bb860034fe
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.29.orig.tar.xz' glibc_2.29.orig.tar.xz 17040280 SHA256:9e383319f5cdb1a9d58a45ea44836c23859b8d580d5748cd93bca35a01ad0669
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.29-0ubuntu1.debian.tar.xz' glibc_2.29-0ubuntu1.debian.tar.xz 856936 SHA256:6b555e7d66500bdc9c4ac9dc86931c58f21a7ff0e73b53d444f2d5d37584cb9b
-```
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-4`
 
@@ -1220,14 +1215,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `LGPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gobject-introspection=1.60.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.60.0-1.dsc' gobject-introspection_1.60.0-1.dsc 2815 SHA256:a680b3c6b8b77c3948b5eb6ce43fdf96089029ff3a96cfd0bbdd22c47661a851
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.60.0.orig.tar.xz' gobject-introspection_1.60.0.orig.tar.xz 1283732 SHA256:9efe4090cb59717126701e97062e784773f800b8d47af14c4d278ebf194df35d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.60.0-1.debian.tar.xz' gobject-introspection_1.60.0-1.debian.tar.xz 21148 SHA256:cb0f3847f06aa5b7fa34f7d5cffe27fee273cc4668de6fb002866b35147830f1
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gobject-introspection/1.60.0-1/
+
 
 ### `dpkg` source package: `graphite2=1.3.13-7`
 
@@ -2046,14 +2040,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.36-5
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.36-5.dsc' libpng1.6_1.6.36-5.dsc 2197 SHA256:5eddce67639092a956aa093f16da987b49b24ba825efcaf40af2edeea94e42e2
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.36.orig.tar.xz' libpng1.6_1.6.36.orig.tar.xz 1012544 SHA256:eceb924c1fa6b79172fdfd008d335f0e59172a86a66481e09d4089df872aa319
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.36-5.debian.tar.xz' libpng1.6_1.6.36-5.debian.tar.xz 37152 SHA256:b82f840d88d7c548f2a1f2590ba012fd090c1be4be428902224b5aab06866be7
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libpng1.6/1.6.36-5/
+
 
 ### `dpkg` source package: `libpsl=0.20.2-2`
 
@@ -2116,14 +2109,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/
 - `Sun-permissive`
 - `Unlicense`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.44.10-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.44.10-1.dsc' librsvg_2.44.10-1.dsc 2867 SHA256:db1ad6236fa9240cf5a57926eb118602acea6bc432678b9fdb50e5be4436a5a1
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.44.10.orig.tar.xz' librsvg_2.44.10.orig.tar.xz 9874524 SHA256:175bb677837d5ab3596c3287e3d40f9bb60469271fd3055f2e2d1b54aeaa4f5d
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.44.10-1.debian.tar.xz' librsvg_2.44.10-1.debian.tar.xz 21760 SHA256:fc724df72ed1942ab0f5d3caeda0d54b3b02de6aa55ed3ef02b00904e204c732
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/librsvg/2.44.10-1/
+
 
 ### `dpkg` source package: `libseccomp=2.3.3-3ubuntu2`
 
@@ -3056,14 +3048,9 @@ Licenses: (parsed from: `/usr/share/doc/libopenexr-dev/copyright`, `/usr/share/d
 
 - `openexr`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openexr=2.2.1-4build1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openexr/openexr_2.2.1-4build1.dsc' openexr_2.2.1-4build1.dsc 2286 SHA256:72e24061a210c6b2691cd462f9bd6ab6439488d3cf5cae4a2515fb837af3f911
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openexr/openexr_2.2.1.orig.tar.gz' openexr_2.2.1.orig.tar.gz 18176639 SHA256:8f9a5af6131583404261931d9a5c83de0a425cb4b8b25ddab2b169fbf113aecd
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openexr/openexr_2.2.1-4build1.debian.tar.xz' openexr_2.2.1-4build1.debian.tar.xz 17764 SHA256:12751bd57d677e9ec6965d342236146f42e3a0614d6bda1de46033fb917b1032
-```
 
 ### `dpkg` source package: `openldap=2.4.47+dfsg-3ubuntu1`
 
@@ -3076,14 +3063,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.47+dfsg-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.47+dfsg-3ubuntu1.dsc' openldap_2.4.47+dfsg-3ubuntu1.dsc 2963 SHA256:920356ce3793c9c3a4431f6a9abdbf3ace08db6513297d05facd5139f571cbba
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.47+dfsg.orig.tar.gz' openldap_2.4.47+dfsg.orig.tar.gz 4872293 SHA256:8f1ac7a4be7dd8ef158361efbfe16509756d3d9b396f5f378c3cf5c727807651
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.47+dfsg-3ubuntu1.debian.tar.xz' openldap_2.4.47+dfsg-3ubuntu1.debian.tar.xz 178128 SHA256:0f74488d2daedbfeca180dc467b79ab865f4cea4b09c69bc1135996256e44acd
-```
 
 ### `dpkg` source package: `openssh=1:7.9p1-9`
 
@@ -3102,15 +3084,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.9p1-9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.9p1-9.dsc' openssh_7.9p1-9.dsc 3161 SHA256:32cfc26396623401cd92b06cad191c55ee8a41dba91ca012ec30412991f8233c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.9p1.orig.tar.gz' openssh_7.9p1.orig.tar.gz 1565384 SHA256:6b4b3ba2253d84ed3771c8050728d597c91cfce898713beb7b64a305b6f11aad
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.9p1.orig.tar.gz.asc' openssh_7.9p1.orig.tar.gz.asc 683 SHA256:4fd584498595450d68f5514b3d79eb14425a3d6aa9e9021d9e928fdd7b4469eb
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.9p1-9.debian.tar.xz' openssh_7.9p1-9.debian.tar.xz 172068 SHA256:11972b804f024f1d7559d4a3d6be0dba61c90c6072ce3d5977c22e55f834a17b
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/openssh/1:7.9p1-9/
+
 
 ### `dpkg` source package: `openssl=1.1.1b-1ubuntu1`
 
@@ -3972,15 +3952,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.20.1-1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.20.1-1ubuntu3.dsc' wget_1.20.1-1ubuntu3.dsc 2246 SHA256:eb7cc9685274a14fca8b5fcb21d60ed30c0ef093848a66e4095a6d146948ec4c
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.20.1.orig.tar.gz' wget_1.20.1.orig.tar.gz 4392853 SHA256:b783b390cb571c837b392857945f5a1f00ec6b043177cc42abb8ee1b542ee1b3
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.20.1.orig.tar.gz.asc' wget_1.20.1.orig.tar.gz.asc 1241 SHA256:c3591a4e5602d15c43fa693c791732c1c087399ac11bda8a90975cc887a37bc8
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.20.1-1ubuntu3.debian.tar.xz' wget_1.20.1-1ubuntu3.debian.tar.xz 63284 SHA256:14c7cfc58cd0adc59750bbc51ff366174556dddd65e22975749a537941291631
-```
 
 ### `dpkg` source package: `xorg-sgml-doctools=1:1.11-1`
 

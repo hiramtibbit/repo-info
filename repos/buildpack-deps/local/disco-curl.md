@@ -496,14 +496,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.29-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.29-0ubuntu1.dsc' glibc_2.29-0ubuntu1.dsc 9367 SHA256:8c7b55572eae71b388de0e8e066ff9ea31c14d49fe8cc853dd7ec9bb860034fe
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.29.orig.tar.xz' glibc_2.29.orig.tar.xz 17040280 SHA256:9e383319f5cdb1a9d58a45ea44836c23859b8d580d5748cd93bca35a01ad0669
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.29-0ubuntu1.debian.tar.xz' glibc_2.29-0ubuntu1.debian.tar.xz 856936 SHA256:6b555e7d66500bdc9c4ac9dc86931c58f21a7ff0e73b53d444f2d5d37584cb9b
-```
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-4`
 
@@ -1288,14 +1283,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.47+dfsg-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.47+dfsg-3ubuntu1.dsc' openldap_2.4.47+dfsg-3ubuntu1.dsc 2963 SHA256:920356ce3793c9c3a4431f6a9abdbf3ace08db6513297d05facd5139f571cbba
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.47+dfsg.orig.tar.gz' openldap_2.4.47+dfsg.orig.tar.gz 4872293 SHA256:8f1ac7a4be7dd8ef158361efbfe16509756d3d9b396f5f378c3cf5c727807651
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.47+dfsg-3ubuntu1.debian.tar.xz' openldap_2.4.47+dfsg-3ubuntu1.debian.tar.xz 178128 SHA256:0f74488d2daedbfeca180dc467b79ab865f4cea4b09c69bc1135996256e44acd
-```
 
 ### `dpkg` source package: `openssl=1.1.1b-1ubuntu1`
 
@@ -1736,15 +1726,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.20.1-1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.20.1-1ubuntu3.dsc' wget_1.20.1-1ubuntu3.dsc 2246 SHA256:eb7cc9685274a14fca8b5fcb21d60ed30c0ef093848a66e4095a6d146948ec4c
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.20.1.orig.tar.gz' wget_1.20.1.orig.tar.gz 4392853 SHA256:b783b390cb571c837b392857945f5a1f00ec6b043177cc42abb8ee1b542ee1b3
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.20.1.orig.tar.gz.asc' wget_1.20.1.orig.tar.gz.asc 1241 SHA256:c3591a4e5602d15c43fa693c791732c1c087399ac11bda8a90975cc887a37bc8
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.20.1-1ubuntu3.debian.tar.xz' wget_1.20.1-1ubuntu3.debian.tar.xz 63284 SHA256:14c7cfc58cd0adc59750bbc51ff366174556dddd65e22975749a537941291631
-```
 
 ### `dpkg` source package: `xz-utils=5.2.4-1`
 
