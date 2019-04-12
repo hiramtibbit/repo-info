@@ -2,10 +2,10 @@
 
 # Tags of `rakudo-star`
 
--	[`rakudo-star:2018.10`](#rakudo-star201810)
+-	[`rakudo-star:2019.03`](#rakudo-star201903)
 -	[`rakudo-star:latest`](#rakudo-starlatest)
 
-## `rakudo-star:2018.10`
+## `rakudo-star:2019.03`
 
 ```console
 $ docker pull rakudo-star@sha256:63d2a9cbac4b8c20f9743613fb892c589d5293db7f716d8e5b3ae607a52510f8
@@ -16,7 +16,7 @@ $ docker pull rakudo-star@sha256:63d2a9cbac4b8c20f9743613fb892c589d5293db7f716d8
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
-### `rakudo-star:2018.10` - linux; amd64
+### `rakudo-star:2019.03` - linux; amd64
 
 ```console
 $ docker pull rakudo-star@sha256:3147a8bf16d651ea2423ee89e95c66ac382fb5b4029784dc7048e47d7efd425f
@@ -82,7 +82,7 @@ CMD ["perl6"]
 		Size: 22.1 MB (22121640 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `rakudo-star:2018.10` - linux; arm64 variant v8
+### `rakudo-star:2019.03` - linux; arm64 variant v8
 
 ```console
 $ docker pull rakudo-star@sha256:e4f4dd44583a37685c927d2a9bc4bb47114e17fcf1da0559b0ab97cf29500464
