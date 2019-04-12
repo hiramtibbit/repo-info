@@ -1347,14 +1347,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.17.1-1ubuntu1.4
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1-1ubuntu1.4.dsc' wget_1.17.1-1ubuntu1.4.dsc 1935 SHA256:c2a5ba4d1bb1675f49b64f9c6662787235b03aa362c1ba47d23ca9e9e3781a1d
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1.orig.tar.gz' wget_1.17.1.orig.tar.gz 3801442 SHA256:029fbb93bdc1c0c5a7507b6076a6ec2f8d34204a85aa87e5b2f61a9405b290f5
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1-1ubuntu1.4.debian.tar.xz' wget_1.17.1-1ubuntu1.4.debian.tar.xz 28640 SHA256:c2c6105db48ba75296871fa42b4197f1cfb3c4e7ec80e419835f58073f7794f0
-```
 
 ### `dpkg` source package: `xz-utils=5.1.1alpha+20120614-2ubuntu2`
 
