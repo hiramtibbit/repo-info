@@ -1,7 +1,7 @@
 ## `openjdk:11-jdk-oracle`
 
 ```console
-$ docker pull openjdk@sha256:8bb5c2f42c0929c759aa46f52f6bfd40c1fca0a8b89e58b9ea424f583cba0ae6
+$ docker pull openjdk@sha256:4e96d439008d516f7e683d0a35ea7dbbe54d03444b1ca9ab28fbbafa73234050
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,51 +11,51 @@ $ docker pull openjdk@sha256:8bb5c2f42c0929c759aa46f52f6bfd40c1fca0a8b89e58b9ea4
 ### `openjdk:11-jdk-oracle` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:16f7bee236b62afc0cf901bf4169d090fa1dbe562e3768834170dbc9af003a50
+$ docker pull openjdk@sha256:0d34f2df26d3e3238d9c05b74836a1577146f6a7c897ad50e4fcfa4c5b658c61
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.1 MB (243104784 bytes)**  
+-	Total Size: **243.1 MB (243127911 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:36d5b293a48c405b9c7b65fa6afa09d2c38c48092276c22d9f6bb2cdffd1a57a`
+-	Image ID: `sha256:680c5ad86000544d2c36dfad29c715bf33ceebfba962f30458db566f8dfeff8b`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
 # Thu, 30 Aug 2018 21:49:27 GMT
 MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
-# Fri, 29 Mar 2019 22:13:28 GMT
-ADD file:6f3fb77cb4c95452f01aa0bb19d308b18c7863f2c73cbcddb67d9ae531a8fc2e in / 
-# Fri, 29 Mar 2019 22:13:28 GMT
+# Fri, 12 Apr 2019 00:39:30 GMT
+ADD file:fc4b1a8a391c3bd11cdd229574a87e8d1133402deff8ef758f932756d5a82ca3 in / 
+# Fri, 12 Apr 2019 00:39:30 GMT
 CMD ["/bin/bash"]
-# Fri, 29 Mar 2019 22:24:20 GMT
+# Fri, 12 Apr 2019 01:03:22 GMT
 RUN set -eux; 	yum install -y 		gzip 		tar 				freetype fontconfig 	; 	rm -rf /var/cache/yum
-# Fri, 29 Mar 2019 22:24:59 GMT
+# Fri, 12 Apr 2019 01:04:54 GMT
 ENV JAVA_HOME=/usr/java/openjdk-11
-# Fri, 29 Mar 2019 22:24:59 GMT
+# Fri, 12 Apr 2019 01:04:54 GMT
 ENV PATH=/usr/java/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 29 Mar 2019 22:24:59 GMT
+# Fri, 12 Apr 2019 01:04:54 GMT
 ENV JAVA_VERSION=11.0.2
-# Fri, 29 Mar 2019 22:24:59 GMT
+# Fri, 12 Apr 2019 01:04:55 GMT
 ENV JAVA_URL=https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz
-# Fri, 29 Mar 2019 22:25:00 GMT
+# Fri, 12 Apr 2019 01:04:55 GMT
 ENV JAVA_SHA256=99be79935354f5c0df1ad293620ea36d13f48ec3ea870c838f20c504c9668b57
-# Fri, 29 Mar 2019 22:25:37 GMT
+# Fri, 12 Apr 2019 01:05:35 GMT
 RUN set -eux; 		curl -fL -o /openjdk.tgz "$JAVA_URL"; 	echo "$JAVA_SHA256 */openjdk.tgz" | sha256sum -c -; 	mkdir -p "$JAVA_HOME"; 	tar --extract --file /openjdk.tgz --directory "$JAVA_HOME" --strip-components 1; 	rm /openjdk.tgz; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		java --version; 	javac --version
-# Fri, 29 Mar 2019 22:25:37 GMT
+# Fri, 12 Apr 2019 01:05:35 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:473ea9871b29395d70351561fdbf670a69c33141674bbc3175f67d07301cc015`  
-		Last Modified: Fri, 29 Mar 2019 22:14:23 GMT  
-		Size: 42.6 MB (42597042 bytes)  
+	-	`sha256:35defbf6c365d4b156baefbecee36d050397bcc4fca7906aada0bbd00e34c76a`  
+		Last Modified: Fri, 12 Apr 2019 00:41:39 GMT  
+		Size: 42.6 MB (42610008 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:53f12c523386577a8cc3e4f89a97d85d0d0c9e9b14fd0133f9a83235f7d1efc4`  
-		Last Modified: Fri, 29 Mar 2019 22:27:22 GMT  
-		Size: 6.6 MB (6618754 bytes)  
+	-	`sha256:5362bf1d5ff8c939878cd11387a1f195da87c88b7c73c89b3d933917644c8fe1`  
+		Last Modified: Fri, 12 Apr 2019 01:07:10 GMT  
+		Size: 6.6 MB (6627887 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98bee5efe96db84740f9fb3d91e9c7457e5a3749c4e257b56e3d2f17c0a90e1a`  
-		Last Modified: Fri, 29 Mar 2019 22:28:37 GMT  
-		Size: 193.9 MB (193888988 bytes)  
+	-	`sha256:06c125b2a83b9fed99f5b4eb30b914cff23f54ad3f0fb6b63473c2d6f726b0ca`  
+		Last Modified: Fri, 12 Apr 2019 01:08:19 GMT  
+		Size: 193.9 MB (193890016 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
