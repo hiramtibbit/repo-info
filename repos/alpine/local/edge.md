@@ -1,10 +1,10 @@
-# `alpine:20190228`
+# `alpine:20190408`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7da711226313112a7e9e29efecac905250258c913d4eeb78321e79266aca243e`
-- Created: `2019-03-07T22:19:33.32261076Z`
-- Virtual Size: ~ 5.55 Mb  
+- Image ID: `sha256:3e8d7a5561f04987c8cf4e25f8138f60889ba1a0e5ec2b2e7469be88e237695b`
+- Created: `2019-04-09T23:20:00.726573147Z`
+- Virtual Size: ~ 5.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -16,16 +16,16 @@
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.1.0-r3 description:
+alpine-baselayout-3.1.1-r0 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.1.0-r3 webpage:
+alpine-baselayout-3.1.1-r0 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.1.0-r3 installed size:
-409600
+alpine-baselayout-3.1.1-r0 installed size:
+405504
 
-alpine-baselayout-3.1.0-r3 license:
+alpine-baselayout-3.1.1-r0 license:
 GPL-2.0
 
 ```
@@ -118,16 +118,16 @@ BSD
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1b-r0 description:
+libcrypto1.1-1.1.1b-r1 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1b-r0 webpage:
+libcrypto1.1-1.1.1b-r1 webpage:
 https://www.openssl.org
 
-libcrypto1.1-1.1.1b-r0 installed size:
+libcrypto1.1-1.1.1b-r1 installed size:
 2748416
 
-libcrypto1.1-1.1.1b-r0 license:
+libcrypto1.1-1.1.1b-r1 license:
 OpenSSL
 
 ```
@@ -135,16 +135,16 @@ OpenSSL
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1b-r0 description:
+libssl1.1-1.1.1b-r1 description:
 SSL shared libraries
 
-libssl1.1-1.1.1b-r0 webpage:
+libssl1.1-1.1.1b-r1 webpage:
 https://www.openssl.org
 
-libssl1.1-1.1.1b-r0 installed size:
+libssl1.1-1.1.1b-r1 installed size:
 536576
 
-libssl1.1-1.1.1b-r0 license:
+libssl1.1-1.1.1b-r1 license:
 OpenSSL
 
 ```
@@ -169,16 +169,16 @@ ISC
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.21-r0 description:
+musl-1.1.21-r2 description:
 the musl c library (libc) implementation
 
-musl-1.1.21-r0 webpage:
+musl-1.1.21-r2 webpage:
 http://www.musl-libc.org/
 
-musl-1.1.21-r0 installed size:
+musl-1.1.21-r2 installed size:
 598016
 
-musl-1.1.21-r0 license:
+musl-1.1.21-r2 license:
 MIT
 
 ```
@@ -186,16 +186,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.1.21-r0 description:
+musl-utils-1.1.21-r2 description:
 the musl c library (libc) implementation
 
-musl-utils-1.1.21-r0 webpage:
+musl-utils-1.1.21-r2 webpage:
 http://www.musl-libc.org/
 
-musl-utils-1.1.21-r0 installed size:
-139264
+musl-utils-1.1.21-r2 installed size:
+143360
 
-musl-utils-1.1.21-r0 license:
+musl-utils-1.1.21-r2 license:
 MIT BSD GPL2+
 
 ```
