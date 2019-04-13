@@ -1,10 +1,10 @@
-# `tomcat:7.0.93-jre7-alpine`
+# `tomcat:7.0.94-jre7-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:70af84d2bd2bd53b8db074e861feb95f29a6f28c124ebacc5b19e07d1933c4b1`
-- Created: `2019-04-10T03:35:05.675630425Z`
-- Virtual Size: ~ 147.26 Mb  
+- Image ID: `sha256:76457ff3f9dd0ba2cf943ca233457dde528b2f631bc8f286ef1da79174c889a2`
+- Created: `2019-04-13T00:06:22.759212963Z`
+- Virtual Size: ~ 147.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -12,17 +12,17 @@
   - `PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.7-openjdk/jre/bin:/usr/lib/jvm/java-1.7-openjdk/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-1.7-openjdk/jre`
-  - `JAVA_VERSION=7u201`
-  - `JAVA_ALPINE_VERSION=7.201.2.6.16-r0`
+  - `JAVA_VERSION=7u211`
+  - `JAVA_ALPINE_VERSION=7.211.2.6.17-r0`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=7`
-  - `TOMCAT_VERSION=7.0.93`
-  - `TOMCAT_SHA512=7ae5186f63df7821b7de4e4c92780a27ccc678119614ad074349c3d02bd2f764ac08fa72f776e880e98aad2617de01521eb3de6fe57e4a749c8c04f28e042f0a`
-  - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-7/v7.0.93/bin/apache-tomcat-7.0.93.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-7/v7.0.93/bin/apache-tomcat-7.0.93.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-7/v7.0.93/bin/apache-tomcat-7.0.93.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.93/bin/apache-tomcat-7.0.93.tar.gz`
-  - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-7/v7.0.93/bin/apache-tomcat-7.0.93.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-7/v7.0.93/bin/apache-tomcat-7.0.93.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-7/v7.0.93/bin/apache-tomcat-7.0.93.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.93/bin/apache-tomcat-7.0.93.tar.gz.asc`
+  - `TOMCAT_VERSION=7.0.94`
+  - `TOMCAT_SHA512=b16f4b08591199e15f953c34965389a80d5597c28626a51c71ce42695ddd3359dc4df7f333ef0e1a1e8f9b2b6245041d57607c46764f33e560246c119cdc0f7a`
+  - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-7/v7.0.94/bin/apache-tomcat-7.0.94.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-7/v7.0.94/bin/apache-tomcat-7.0.94.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-7/v7.0.94/bin/apache-tomcat-7.0.94.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.94/bin/apache-tomcat-7.0.94.tar.gz`
+  - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-7/v7.0.94/bin/apache-tomcat-7.0.94.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-7/v7.0.94/bin/apache-tomcat-7.0.94.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-7/v7.0.94/bin/apache-tomcat-7.0.94.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.94/bin/apache-tomcat-7.0.94.tar.gz.asc`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1304,16 +1304,16 @@ LGPL-2.0-or-later
 ### `apk` package: `openjdk7-jre`
 
 ```console
-openjdk7-jre-7.201.2.6.16-r0 description:
+openjdk7-jre-7.211.2.6.17-r0 description:
 OpenJDK 7 Java Runtime
 
-openjdk7-jre-7.201.2.6.16-r0 webpage:
+openjdk7-jre-7.211.2.6.17-r0 webpage:
 https://icedtea.classpath.org/
 
-openjdk7-jre-7.201.2.6.16-r0 installed size:
+openjdk7-jre-7.211.2.6.17-r0 installed size:
 421888
 
-openjdk7-jre-7.201.2.6.16-r0 license:
+openjdk7-jre-7.211.2.6.17-r0 license:
 GPL-2.0 with Classpath
 
 ```
@@ -1321,16 +1321,16 @@ GPL-2.0 with Classpath
 ### `apk` package: `openjdk7-jre-base`
 
 ```console
-openjdk7-jre-base-7.201.2.6.16-r0 description:
+openjdk7-jre-base-7.211.2.6.17-r0 description:
 OpenJDK 7 Java Runtime (no GUI support)
 
-openjdk7-jre-base-7.201.2.6.16-r0 webpage:
+openjdk7-jre-base-7.211.2.6.17-r0 webpage:
 https://icedtea.classpath.org/
 
-openjdk7-jre-base-7.201.2.6.16-r0 installed size:
-38494208
+openjdk7-jre-base-7.211.2.6.17-r0 installed size:
+38285312
 
-openjdk7-jre-base-7.201.2.6.16-r0 license:
+openjdk7-jre-base-7.211.2.6.17-r0 license:
 GPL-2.0 with Classpath
 
 ```
@@ -1338,16 +1338,16 @@ GPL-2.0 with Classpath
 ### `apk` package: `openjdk7-jre-lib`
 
 ```console
-openjdk7-jre-lib-7.201.2.6.16-r0 description:
+openjdk7-jre-lib-7.211.2.6.17-r0 description:
 OpenJDK 7 Java Runtime (class libraries)
 
-openjdk7-jre-lib-7.201.2.6.16-r0 webpage:
+openjdk7-jre-lib-7.211.2.6.17-r0 webpage:
 https://icedtea.classpath.org/
 
-openjdk7-jre-lib-7.201.2.6.16-r0 installed size:
-40914944
+openjdk7-jre-lib-7.211.2.6.17-r0 installed size:
+40976384
 
-openjdk7-jre-lib-7.201.2.6.16-r0 license:
+openjdk7-jre-lib-7.211.2.6.17-r0 license:
 GPL-2.0 with Classpath
 
 ```
