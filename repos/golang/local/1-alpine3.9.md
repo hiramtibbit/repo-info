@@ -1,16 +1,16 @@
-# `golang:1.12.3-alpine3.9`
+# `golang:1.12.4-alpine3.9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:821acdc20eb83a20431cba6a32782f174d7fa9f54582fe3bdebccecb77fd76b0`
-- Created: `2019-04-10T02:08:27.439358209Z`
+- Image ID: `sha256:b97a72b8e97dbc40251ba682da534597b078487c434aa6054c99cbac69534708`
+- Created: `2019-04-12T22:23:10.095285026Z`
 - Virtual Size: ~ 350.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.12.3`
+  - `GOLANG_VERSION=1.12.4`
   - `GOPATH=/go`
 
 ## `apk` (`.apk`-based packages)
