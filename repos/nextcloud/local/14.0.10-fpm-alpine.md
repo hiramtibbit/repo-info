@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e8d6e17db4f8fcb4e59d75e89318077b38dfdd3b622e1ac66957a7b64c74263e`
-- Created: `2019-04-09T23:22:26.935124019Z`
-- Virtual Size: ~ 316.12 Mb  
+- Image ID: `sha256:db5dfd2d08f1d77037e56b007e4f8af9cda24a4a51a5feca04e9d171f19018de`
+- Created: `2019-04-10T03:04:12.532837961Z`
+- Virtual Size: ~ 311.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -421,16 +421,16 @@ BSD-3-Clause
 ### `apk` package: `libgcc`
 
 ```console
-libgcc-8.2.0-r2 description:
+libgcc-8.3.0-r0 description:
 GNU C compiler runtime libraries
 
-libgcc-8.2.0-r2 webpage:
+libgcc-8.3.0-r0 webpage:
 http://gcc.gnu.org
 
-libgcc-8.2.0-r2 installed size:
+libgcc-8.3.0-r0 installed size:
 90112
 
-libgcc-8.2.0-r2 license:
+libgcc-8.3.0-r0 license:
 GPL LGPL
 
 ```
@@ -608,16 +608,16 @@ OpenSSL
 ### `apk` package: `libstdc++`
 
 ```console
-libstdc++-8.2.0-r2 description:
+libstdc++-8.3.0-r0 description:
 GNU C++ standard runtime library
 
-libstdc++-8.2.0-r2 webpage:
+libstdc++-8.3.0-r0 webpage:
 http://gcc.gnu.org
 
-libstdc++-8.2.0-r2 installed size:
+libstdc++-8.3.0-r0 installed size:
 1392640
 
-libstdc++-8.2.0-r2 license:
+libstdc++-8.3.0-r0 license:
 GPL LGPL
 
 ```
@@ -863,16 +863,16 @@ MIT
 ### `apk` package: `openssl`
 
 ```console
-openssl-1.1.1a-r1 description:
+openssl-1.1.1b-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-1.1.1a-r1 webpage:
+openssl-1.1.1b-r1 webpage:
 https://www.openssl.org
 
-openssl-1.1.1a-r1 installed size:
+openssl-1.1.1b-r1 installed size:
 675840
 
-openssl-1.1.1a-r1 license:
+openssl-1.1.1b-r1 license:
 OpenSSL
 
 ```

@@ -1,10 +1,10 @@
-# `nextcloud:16.0.0beta3-fpm-alpine`
+# `nextcloud:16.0.0RC1-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:83bdd05e81e8c14894a155201672d60c26f5bc34e286303552ad89267c7fe972`
-- Created: `2019-04-06T06:11:53.950620962Z`
-- Virtual Size: ~ 343.80 Mb  
+- Image ID: `sha256:f9e203a426762713470d550a7e1c016a80d3e1c07ba91f967e7ed33a051955b6`
+- Created: `2019-04-12T01:21:01.158760899Z`
+- Virtual Size: ~ 340.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,13 +17,13 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
-  - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.17`
-  - `PHP_URL=https://www.php.net/get/php-7.2.17.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://www.php.net/get/php-7.2.17.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=a3e5f51a9ae08813b3925bea3a4de02cd4906fcccf75646e267a213bb63bcf84`
+  - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
+  - `PHP_VERSION=7.3.4`
+  - `PHP_URL=https://www.php.net/get/php-7.3.4.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://www.php.net/get/php-7.3.4.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=6fe79fa1f8655f98ef6708cde8751299796d6c1e225081011f4104625b923b83`
   - `PHP_MD5=`
-  - `NEXTCLOUD_VERSION=16.0.0beta3`
+  - `NEXTCLOUD_VERSION=16.0.0RC1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -421,16 +421,16 @@ BSD-3-Clause
 ### `apk` package: `libgcc`
 
 ```console
-libgcc-8.2.0-r2 description:
+libgcc-8.3.0-r0 description:
 GNU C compiler runtime libraries
 
-libgcc-8.2.0-r2 webpage:
+libgcc-8.3.0-r0 webpage:
 http://gcc.gnu.org
 
-libgcc-8.2.0-r2 installed size:
+libgcc-8.3.0-r0 installed size:
 90112
 
-libgcc-8.2.0-r2 license:
+libgcc-8.3.0-r0 license:
 GPL LGPL
 
 ```
@@ -608,16 +608,16 @@ OpenSSL
 ### `apk` package: `libstdc++`
 
 ```console
-libstdc++-8.2.0-r2 description:
+libstdc++-8.3.0-r0 description:
 GNU C++ standard runtime library
 
-libstdc++-8.2.0-r2 webpage:
+libstdc++-8.3.0-r0 webpage:
 http://gcc.gnu.org
 
-libstdc++-8.2.0-r2 installed size:
+libstdc++-8.3.0-r0 installed size:
 1392640
 
-libstdc++-8.2.0-r2 license:
+libstdc++-8.3.0-r0 license:
 GPL LGPL
 
 ```
@@ -758,6 +758,23 @@ MIT
 
 ```
 
+### `apk` package: `libzip`
+
+```console
+libzip-1.5.1-r2 description:
+C library for manipulating zip archives
+
+libzip-1.5.1-r2 webpage:
+http://www.nih.at/libzip/index.html
+
+libzip-1.5.1-r2 installed size:
+122880
+
+libzip-1.5.1-r2 license:
+BSD-3-Clause
+
+```
+
 ### `apk` package: `musl`
 
 ```console
@@ -863,16 +880,16 @@ MIT
 ### `apk` package: `openssl`
 
 ```console
-openssl-1.1.1a-r1 description:
+openssl-1.1.1b-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-1.1.1a-r1 webpage:
+openssl-1.1.1b-r1 webpage:
 https://www.openssl.org
 
-openssl-1.1.1a-r1 installed size:
+openssl-1.1.1b-r1 installed size:
 675840
 
-openssl-1.1.1a-r1 license:
+openssl-1.1.1b-r1 license:
 OpenSSL
 
 ```
