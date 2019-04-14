@@ -1,10 +1,10 @@
-# `mongo:4.1.9-bionic`
+# `mongo:4.1.10-bionic`
 
 ## Docker Metadata
 
-- Image ID: `sha256:13fd523b4bd11d2b565e0ed102a406fce1cfa55d781af64c0a47e62aa576371e`
-- Created: `2019-04-02T23:46:08.483262725Z`
-- Virtual Size: ~ 377.19 Mb  
+- Image ID: `sha256:7e8c3b2f0411f02d25170db94b7ec38b3a65848c87519afc4b5a31ea07839c49`
+- Created: `2019-04-12T00:22:27.795739827Z`
+- Virtual Size: ~ 378.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org-unstable`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=4.1`
-  - `MONGO_VERSION=4.1.9`
+  - `MONGO_VERSION=4.1.10`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1187,15 +1187,15 @@ $ apt-get source -qq --print-uris mawk=1.3.3-17ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.3-17ubuntu3.diff.gz' mawk_1.3.3-17ubuntu3.diff.gz 64052 SHA256:d1be148525885cb1869e35514f55005b5043f3310b08c444625005a3e14c81fc
 ```
 
-### `dpkg` source package: `mongodb-org-unstable=4.1.9`
+### `dpkg` source package: `mongodb-org-unstable=4.1.10`
 
 Binary Packages:
 
-- `mongodb-org-unstable=4.1.9`
-- `mongodb-org-unstable-mongos=4.1.9`
-- `mongodb-org-unstable-server=4.1.9`
-- `mongodb-org-unstable-shell=4.1.9`
-- `mongodb-org-unstable-tools=4.1.9`
+- `mongodb-org-unstable=4.1.10`
+- `mongodb-org-unstable-mongos=4.1.10`
+- `mongodb-org-unstable-server=4.1.10`
+- `mongodb-org-unstable-shell=4.1.10`
+- `mongodb-org-unstable-tools=4.1.10`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
