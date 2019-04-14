@@ -26,6 +26,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls acl-2.2.53-3.fc30
+https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/x86_64/os/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
+Trying other mirror.
 Enabling rawhide-source repository
 Enabling rawhide-modular-source repository
 https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/a/acl-2.2.53-3.fc30.src.rpm
@@ -229,14 +231,7 @@ Licenses (from `rpm --query`): (GPLv2+ or AFL) and GPLv2+
 
 Licenses (from `rpm --query`): ASL 2.0
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls dbus-broker-19-1.fc31
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/d/dbus-broker-19-1.fc31.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `dbus-common-1.12.12-5.fc31.noarch`
 
@@ -547,14 +542,7 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Every
 
 Licenses (from `rpm --query`): GPLv3+
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls grep-3.1-9.fc30
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/g/grep-3.1-9.fc30.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `gzip-1.9-9.fc31.x86_64`
 
@@ -644,14 +632,7 @@ Licenses (from `rpm --query`): MIT
 
 Licenses (from `rpm --query`): GPLv2+
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls langpacks-en-1.0-16.fc30.noarch
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/l/langpacks-1.0-16.fc30.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `libacl-2.2.53-3.fc30.x86_64`
 
@@ -722,14 +703,7 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Every
 
 Licenses (from `rpm --query`): LGPLv2+
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls libblkid-2.33.1-4.fc31
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/u/util-linux-2.33.1-4.fc31.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `libcap-2.26-5.fc30.x86_64`
 
@@ -852,14 +826,7 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Every
 
 Licenses (from `rpm --query`): LGPLv2+
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls libfdisk-2.33.1-4.fc31
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/u/util-linux-2.33.1-4.fc31.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `libffi-3.1-19.fc30.x86_64`
 
@@ -962,14 +929,7 @@ Licenses (from `rpm --query`): MIT
 
 Licenses (from `rpm --query`): LGPLv2+
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls libmount-2.33.1-4.fc31
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/u/util-linux-2.33.1-4.fc31.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `libnghttp2-1.37.0-1.fc31.x86_64`
 
@@ -1124,14 +1084,7 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Every
 
 Licenses (from `rpm --query`): LGPLv2+
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls libsmartcols-2.33.1-4.fc31
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/u/util-linux-2.33.1-4.fc31.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `libsolv-0.7.4-1.fc31.x86_64`
 
@@ -1260,14 +1213,7 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Every
 
 Licenses (from `rpm --query`): BSD
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls libuuid-2.33.1-4.fc31
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/u/util-linux-2.33.1-4.fc31.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `libverto-0.3.0-7.fc30.x86_64`
 
@@ -1714,14 +1660,7 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Every
 
 Licenses (from `rpm --query`): GPLv2+
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls python3-rpm-4.14.2.1-4.fc30.1
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/r/rpm-4.14.2.1-4.fc30.1.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `python3-setuptools-40.8.0-1.fc30.noarch`
 
@@ -1792,66 +1731,31 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Every
 
 Licenses (from `rpm --query`): GPLv2+
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls rpm-4.14.2.1-4.fc30.1
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/r/rpm-4.14.2.1-4.fc30.1.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `rpm-build-libs-4.14.2.1-4.fc30.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls rpm-build-libs-4.14.2.1-4.fc30.1
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/r/rpm-4.14.2.1-4.fc30.1.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `rpm-libs-4.14.2.1-4.fc30.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls rpm-libs-4.14.2.1-4.fc30.1
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/r/rpm-4.14.2.1-4.fc30.1.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `rpm-plugin-systemd-inhibit-4.14.2.1-4.fc30.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls rpm-plugin-systemd-inhibit-4.14.2.1-4.fc30.1
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/r/rpm-4.14.2.1-4.fc30.1.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `rpm-sign-libs-4.14.2.1-4.fc30.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls rpm-sign-libs-4.14.2.1-4.fc30.1
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/r/rpm-4.14.2.1-4.fc30.1.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `sed-4.5-3.fc30.x86_64`
 
@@ -1870,14 +1774,7 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Every
 
 Licenses (from `rpm --query`): Public Domain
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls setup-2.13.2-1.fc31.noarch
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/s/setup-2.13.2-1.fc31.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `shadow-utils-4.6-11.fc31.x86_64`
 
@@ -1978,14 +1875,7 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Every
 
 Licenses (from `rpm --query`): GPLv2 and GPLv2+ and LGPLv2+ and BSD with advertising and Public Domain
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls util-linux-2.33.1-4.fc31
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/u/util-linux-2.33.1-4.fc31.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `vim-minimal-8.1.1048-1.fc31.x86_64`
 

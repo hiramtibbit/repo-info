@@ -26,10 +26,12 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls acl-2.2.53-2.fc29
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/x86_64/repodata/repomd.xml: [Errno -1] repomd.xml does not match metalink for updates
-Trying other mirror.
 Enabling fedora-modular-source repository
+https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/releases/29/Modular/source/tree/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
+Trying other mirror.
 Enabling updates-source repository
+https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/SRPMS/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
+Trying other mirror.
 Enabling updates-modular-source repository
 https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Modular/SRPMS/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
 Trying other mirror.
@@ -1762,16 +1764,7 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/SRP
 
 Licenses (from `rpm --query`): BSD
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls pcre2-10.32-8.fc29
-Enabling fedora-modular-source repository
-Enabling updates-source repository
-Enabling updates-modular-source repository
-Enabling fedora-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/SRPMS//Packages/p/pcre2-10.32-8.fc29.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `popt-1.16-15.fc29.x86_64`
 
