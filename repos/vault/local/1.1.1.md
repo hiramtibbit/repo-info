@@ -1,17 +1,17 @@
-# `vault:1.1.0`
+# `vault:1.1.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:377f405729fb5d6d8e042f04ff8ff35058de4caaf6620e23c54c5fcae74c93ad`
-- Created: `2019-03-20T23:00:07.786788765Z`
-- Virtual Size: ~ 107.99 Mb  
+- Image ID: `sha256:4496e5363fed5e522ef356e487d573fc2011d526a2d4047022ae56cd5bd861bb`
+- Created: `2019-04-12T22:55:09.64716619Z`
+- Virtual Size: ~ 108.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["server","-dev"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `VAULT_VERSION=1.1.0`
+  - `VAULT_VERSION=1.1.1`
 
 ## `apk` (`.apk`-based packages)
 
