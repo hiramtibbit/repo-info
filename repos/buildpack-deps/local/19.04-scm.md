@@ -169,13 +169,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=10.1ubuntu8
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu8.dsc' base-files_10.1ubuntu8.dsc 1612 SHA256:7086536b13fa7434bfb76373ffe2bb199318f819ffbc2a6a6ef6e2a54b18243d
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu8.tar.xz' base-files_10.1ubuntu8.tar.xz 78188 SHA256:7150fcb7513b236fc1374538073f62ec4777a2a584b6e3cbaeadc47e66abfead
-```
 
 ### `dpkg` source package: `base-passwd=3.5.46`
 
