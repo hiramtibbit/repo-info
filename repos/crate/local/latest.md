@@ -1,9 +1,9 @@
-# `crate:3.2.6`
+# `crate:3.2.7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bdb78fdfae4a1b59dd6e249dadfb3fc9c072ebd5f36ec7c5e2259d79ad2a612f`
-- Created: `2019-03-26T22:20:41.887551695Z`
+- Image ID: `sha256:851d5aa296300e09f2ca5c1beda579299bdf1caabfcb7025c7808d5d1a48453a`
+- Created: `2019-04-12T22:26:37.830128783Z`
 - Virtual Size: ~ 650.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,7 +15,7 @@
   - `CRATE_HEAP_SIZE=512M`
 - Labels:
   - `maintainer=Crate.io <office@crate.io>`
-  - `org.label-schema.build-date=2019-03-25T12:24:46.502416066+00:00`
+  - `org.label-schema.build-date=2019-04-09T14:51:03.875528243+00:00`
   - `org.label-schema.description=CrateDB is a distributed SQL database handles massive amounts of machine data in real-time.`
   - `org.label-schema.license=GPLv2`
   - `org.label-schema.name=crate`
@@ -23,7 +23,7 @@
   - `org.label-schema.url=https://crate.io/products/cratedb/`
   - `org.label-schema.vcs-url=https://github.com/crate/docker-crate`
   - `org.label-schema.vendor=Crate.io`
-  - `org.label-schema.version=3.2.6`
+  - `org.label-schema.version=3.2.7`
 
 ## `rpm` (`.rpm`-based packages)
 
