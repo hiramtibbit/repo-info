@@ -1,13 +1,14 @@
 ## `erlang:alpine`
 
 ```console
-$ docker pull erlang@sha256:2d9df4293e90904320ac9de69e16c4d5e51cc92bae29f13160647adcf9e181a4
+$ docker pull erlang@sha256:1b001043b36e16aeb71d39d3f847b7e13723a182008309b7828835711ea9f9a5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm64 variant v8
+	-	linux; 386
 	-	linux; ppc64le
 
 ### `erlang:alpine` - linux; amd64
@@ -80,6 +81,42 @@ CMD ["erl"]
 	-	`sha256:ba2b6eef3b28608059494a7fdbeb5ea15136e8853e3b582d6bf91e32ff9ca9a5`  
 		Last Modified: Tue, 16 Apr 2019 09:38:48 GMT  
 		Size: 40.3 MB (40319352 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `erlang:alpine` - linux; 386
+
+```console
+$ docker pull erlang@sha256:e425909219ec9413458360f86ed98cb4406e774f3b09f32e38c557137f5224ef
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **45.8 MB (45807914 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2fa249fe73aa46a0567223325609e66b9d26b1b1c1505f31d4e6d126ac992d35`
+-	Default Command: `["erl"]`
+
+```dockerfile
+# Wed, 10 Apr 2019 10:38:55 GMT
+ADD file:51f7bb95ef6cc3519317dcb7abbf6155e6bb7b73a17ad7d90cad7911e8a8933c in / 
+# Wed, 10 Apr 2019 10:38:55 GMT
+CMD ["/bin/sh"]
+# Tue, 16 Apr 2019 11:03:51 GMT
+ENV OTP_VERSION=21.3.5 REBAR3_VERSION=3.9.1
+# Tue, 16 Apr 2019 11:17:33 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="1223b367f1f165fcbaaeea23e7dbc0fec2d2877d0c1b6bbeefef5ac3b1e528b6" 	&& REBAR3_DOWNLOAD_SHA256="b7330a67a8cb5d6fb3b53a3246208b7c2b248546bcf62ef71a9a27b1d541c2d8" 	&& apk add --no-cache --virtual .fetch-deps 		curl 		ca-certificates 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& apk add --no-cache --virtual .build-deps 		dpkg-dev dpkg 		gcc 		g++ 		libc-dev 		linux-headers 		make 		autoconf 		ncurses-dev 		openssl-dev 		unixodbc-dev 		lksctp-tools-dev 		tar 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(getconf _NPROCESSORS_ONLN) 	  && make install ) 	&& rm -rf $ERL_TOP 	&& find /usr/local -regex '/usr/local/lib/erlang/\(lib/\|erts-\).*/\(man\|doc\|obj\|c_src\|emacs\|info\|examples\)' | xargs rm -rf 	&& find /usr/local -name src | xargs -r find | grep -v '\.hrl$' | xargs rm -v || true 	&& find /usr/local -name src | xargs -r find | xargs rmdir -vp || true 	&& scanelf --nobanner -E ET_EXEC -BF '%F' --recursive /usr/local | xargs -r strip --strip-all 	&& scanelf --nobanner -E ET_DYN -BF '%F' --recursive /usr/local | xargs -r strip --strip-unneeded 	&& runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "${REBAR3_DOWNLOAD_SHA256}  rebar3-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/rebar3-src 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src 	&& apk add --virtual .erlang-rundeps 		$runDeps 		lksctp-tools 		ca-certificates 	&& apk del .fetch-deps .build-deps
+# Tue, 16 Apr 2019 11:17:33 GMT
+CMD ["erl"]
+```
+
+-	Layers:
+	-	`sha256:9a81e6a1a3b4f174d22173a96692c9aeffaefcd00f40607d508951a2b14d6f1f`  
+		Last Modified: Wed, 10 Apr 2019 10:39:15 GMT  
+		Size: 2.8 MB (2752162 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:502f32493a51363184687bdc86bd850d0b811a05ac3ee7d2449fbd7bfbf9b0ba`  
+		Last Modified: Tue, 16 Apr 2019 11:19:03 GMT  
+		Size: 43.1 MB (43055752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:alpine` - linux; ppc64le
