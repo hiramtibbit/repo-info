@@ -216,20 +216,13 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.0-2
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.0-2.dsc' bash_5.0-2.dsc 2305 SHA256:bab9c02f6d3145025fa43f3051fa7aebe90d35429ad86c6efec128352713f86c
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.0.orig.tar.xz' bash_5.0.orig.tar.xz 5554808 SHA256:893858ba233d65bda38039e99dd96a4102b2f6a2d5e6c1c546e0794a60beed97
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.0-2.debian.tar.xz' bash_5.0-2.debian.tar.xz 90056 SHA256:59eceaf5bb39396c2034c146211b9969d3bea5d78c2c75d9e0f91f111b2ef677
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/bash/5.0-2/
 
-- https://sources.debian.net/src/bash/5.0-2/ (for browsing the source)
-- https://sources.debian.net/src/bash/5.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bash/5.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `binutils=2.31.1-16`
 
@@ -3383,14 +3376,13 @@ Licenses: (parsed from: `/usr/share/doc/r-base/copyright`, `/usr/share/doc/r-bas
 - `LGPL-2.1`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris r-base=3.5.3-1
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_3.5.3-1.dsc' r-base_3.5.3-1.dsc 3008 SHA256:1ffa11ecc851081d0f9d7b766b2ad1e16a3790e7c99f18e03a83a0be5f20ae0d
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_3.5.3.orig.tar.gz' r-base_3.5.3.orig.tar.gz 30205979 SHA256:2bfa37b7bd709f003d6b8a172ddfb6d03ddd2d672d6096439523039f7a8e678c
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_3.5.3-1.debian.tar.xz' r-base_3.5.3-1.debian.tar.xz 89348 SHA256:611de40cd3fa8b13de83d757c7bb0a24c5c80205d604377696476ae9282cf3f6
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/r-base/3.5.3-1/
+
 
 ### `dpkg` source package: `r-cran-class=7.3-15-1`
 
