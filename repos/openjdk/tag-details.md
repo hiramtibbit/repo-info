@@ -75,6 +75,34 @@
 -	[`openjdk:11-windowsservercore-1809`](#openjdk11-windowsservercore-1809)
 -	[`openjdk:11-windowsservercore-ltsc2016`](#openjdk11-windowsservercore-ltsc2016)
 -	[`openjdk:12`](#openjdk12)
+-	[`openjdk:12.0`](#openjdk120)
+-	[`openjdk:12.0.1`](#openjdk1201)
+-	[`openjdk:12.0.1-jdk`](#openjdk1201-jdk)
+-	[`openjdk:12.0.1-jdk-oracle`](#openjdk1201-jdk-oracle)
+-	[`openjdk:12.0.1-jdk-oraclelinux7`](#openjdk1201-jdk-oraclelinux7)
+-	[`openjdk:12.0.1-jdk-windowsservercore`](#openjdk1201-jdk-windowsservercore)
+-	[`openjdk:12.0.1-jdk-windowsservercore-1803`](#openjdk1201-jdk-windowsservercore-1803)
+-	[`openjdk:12.0.1-jdk-windowsservercore-1809`](#openjdk1201-jdk-windowsservercore-1809)
+-	[`openjdk:12.0.1-jdk-windowsservercore-ltsc2016`](#openjdk1201-jdk-windowsservercore-ltsc2016)
+-	[`openjdk:12.0.1-oracle`](#openjdk1201-oracle)
+-	[`openjdk:12.0.1-oraclelinux7`](#openjdk1201-oraclelinux7)
+-	[`openjdk:12.0.1-windowsservercore`](#openjdk1201-windowsservercore)
+-	[`openjdk:12.0.1-windowsservercore-1803`](#openjdk1201-windowsservercore-1803)
+-	[`openjdk:12.0.1-windowsservercore-1809`](#openjdk1201-windowsservercore-1809)
+-	[`openjdk:12.0.1-windowsservercore-ltsc2016`](#openjdk1201-windowsservercore-ltsc2016)
+-	[`openjdk:12.0-jdk`](#openjdk120-jdk)
+-	[`openjdk:12.0-jdk-oracle`](#openjdk120-jdk-oracle)
+-	[`openjdk:12.0-jdk-oraclelinux7`](#openjdk120-jdk-oraclelinux7)
+-	[`openjdk:12.0-jdk-windowsservercore`](#openjdk120-jdk-windowsservercore)
+-	[`openjdk:12.0-jdk-windowsservercore-1803`](#openjdk120-jdk-windowsservercore-1803)
+-	[`openjdk:12.0-jdk-windowsservercore-1809`](#openjdk120-jdk-windowsservercore-1809)
+-	[`openjdk:12.0-jdk-windowsservercore-ltsc2016`](#openjdk120-jdk-windowsservercore-ltsc2016)
+-	[`openjdk:12.0-oracle`](#openjdk120-oracle)
+-	[`openjdk:12.0-oraclelinux7`](#openjdk120-oraclelinux7)
+-	[`openjdk:12.0-windowsservercore`](#openjdk120-windowsservercore)
+-	[`openjdk:12.0-windowsservercore-1803`](#openjdk120-windowsservercore-1803)
+-	[`openjdk:12.0-windowsservercore-1809`](#openjdk120-windowsservercore-1809)
+-	[`openjdk:12.0-windowsservercore-ltsc2016`](#openjdk120-windowsservercore-ltsc2016)
 -	[`openjdk:12-jdk`](#openjdk12-jdk)
 -	[`openjdk:12-jdk-oracle`](#openjdk12-jdk-oracle)
 -	[`openjdk:12-jdk-oraclelinux7`](#openjdk12-jdk-oraclelinux7)
@@ -92,12 +120,12 @@
 -	[`openjdk:13-alpine`](#openjdk13-alpine)
 -	[`openjdk:13-alpine3.9`](#openjdk13-alpine39)
 -	[`openjdk:13-ea`](#openjdk13-ea)
--	[`openjdk:13-ea-14-alpine`](#openjdk13-ea-14-alpine)
--	[`openjdk:13-ea-14-alpine3.9`](#openjdk13-ea-14-alpine39)
--	[`openjdk:13-ea-14-jdk-alpine`](#openjdk13-ea-14-jdk-alpine)
--	[`openjdk:13-ea-14-jdk-alpine3.9`](#openjdk13-ea-14-jdk-alpine39)
 -	[`openjdk:13-ea-16`](#openjdk13-ea-16)
+-	[`openjdk:13-ea-16-alpine`](#openjdk13-ea-16-alpine)
+-	[`openjdk:13-ea-16-alpine3.9`](#openjdk13-ea-16-alpine39)
 -	[`openjdk:13-ea-16-jdk`](#openjdk13-ea-16-jdk)
+-	[`openjdk:13-ea-16-jdk-alpine`](#openjdk13-ea-16-jdk-alpine)
+-	[`openjdk:13-ea-16-jdk-alpine3.9`](#openjdk13-ea-16-jdk-alpine39)
 -	[`openjdk:13-ea-16-jdk-oracle`](#openjdk13-ea-16-jdk-oracle)
 -	[`openjdk:13-ea-16-jdk-oraclelinux7`](#openjdk13-ea-16-jdk-oraclelinux7)
 -	[`openjdk:13-ea-16-jdk-windowsservercore`](#openjdk13-ea-16-jdk-windowsservercore)
@@ -21001,6 +21029,118 @@ CMD ["jshell"]
 		Size: 1.2 KB (1208 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:12.0`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0.1`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0.1-jdk`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0.1-jdk-oracle`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0.1-jdk-oraclelinux7`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0.1-jdk-windowsservercore`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0.1-jdk-windowsservercore-1803`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0.1-jdk-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0.1-jdk-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0.1-oracle`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0.1-oraclelinux7`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0.1-windowsservercore`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0.1-windowsservercore-1803`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0.1-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0.1-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0-jdk`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0-jdk-oracle`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0-jdk-oraclelinux7`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0-jdk-windowsservercore`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0-jdk-windowsservercore-1803`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0-jdk-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0-jdk-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0-oracle`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0-oraclelinux7`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0-windowsservercore`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0-windowsservercore-1803`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `openjdk:12.0-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
 ## `openjdk:12-jdk`
 
 ```console
@@ -23421,222 +23561,6 @@ CMD ["jshell"]
 		Size: 1.2 KB (1210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `openjdk:13-ea-14-alpine`
-
-```console
-$ docker pull openjdk@sha256:33426e9186d971ae3f0cd37c218ad8bc71de785bf4cddf6ce711c607e3f61cb4
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
-	-	linux; amd64
-
-### `openjdk:13-ea-14-alpine` - linux; amd64
-
-```console
-$ docker pull openjdk@sha256:cc55b2f37453b74311ce05a659db363dae5cf8903baeb04fbb82c064502e1296
-```
-
--	Docker Version: 18.06.1-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **198.6 MB (198627154 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cc4e83fc995f97d4aa0ef3a3d6988f20fb02daadee592ea1552844e2d5f83217`
--	Default Command: `["jshell"]`
-
-```dockerfile
-# Tue, 09 Apr 2019 23:20:18 GMT
-ADD file:2e3a37883f56a4a278bec2931fc9f91fb9ebdaa9047540fe8fde419b84a1701b in / 
-# Tue, 09 Apr 2019 23:20:18 GMT
-CMD ["/bin/sh"]
-# Wed, 10 Apr 2019 01:49:28 GMT
-ENV JAVA_HOME=/opt/openjdk-13
-# Wed, 10 Apr 2019 01:49:28 GMT
-ENV PATH=/opt/openjdk-13/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 10 Apr 2019 01:49:28 GMT
-ENV JAVA_VERSION=13-ea+14
-# Wed, 10 Apr 2019 01:49:29 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/alpine/14/binaries/openjdk-13-ea+14_linux-x64-musl_bin.tar.gz
-# Wed, 10 Apr 2019 01:49:29 GMT
-ENV JAVA_SHA256=65902947d71998184de49eec5b420c489f31cb9a33eafd431dad445e97438250
-# Wed, 10 Apr 2019 01:51:36 GMT
-RUN set -eux; 		wget -O /openjdk.tgz "$JAVA_URL"; 	echo "$JAVA_SHA256 */openjdk.tgz" | sha256sum -c -; 	mkdir -p "$JAVA_HOME"; 	tar --extract --file /openjdk.tgz --directory "$JAVA_HOME" --strip-components 1; 	rm /openjdk.tgz; 		java -Xshare:dump; 		java --version; 	javac --version
-# Wed, 10 Apr 2019 01:51:36 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:bdf0201b3a056acc4d6062cc88cd8a4ad5979983bfb640f15a145e09ed985f92`  
-		Last Modified: Tue, 09 Apr 2019 10:24:14 GMT  
-		Size: 2.8 MB (2757009 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34775b16ae4d0d9b11c066d543b1a7469011b38a117108046667fd773e473b59`  
-		Last Modified: Wed, 10 Apr 2019 01:56:43 GMT  
-		Size: 195.9 MB (195870145 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `openjdk:13-ea-14-alpine3.9`
-
-```console
-$ docker pull openjdk@sha256:33426e9186d971ae3f0cd37c218ad8bc71de785bf4cddf6ce711c607e3f61cb4
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
-	-	linux; amd64
-
-### `openjdk:13-ea-14-alpine3.9` - linux; amd64
-
-```console
-$ docker pull openjdk@sha256:cc55b2f37453b74311ce05a659db363dae5cf8903baeb04fbb82c064502e1296
-```
-
--	Docker Version: 18.06.1-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **198.6 MB (198627154 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cc4e83fc995f97d4aa0ef3a3d6988f20fb02daadee592ea1552844e2d5f83217`
--	Default Command: `["jshell"]`
-
-```dockerfile
-# Tue, 09 Apr 2019 23:20:18 GMT
-ADD file:2e3a37883f56a4a278bec2931fc9f91fb9ebdaa9047540fe8fde419b84a1701b in / 
-# Tue, 09 Apr 2019 23:20:18 GMT
-CMD ["/bin/sh"]
-# Wed, 10 Apr 2019 01:49:28 GMT
-ENV JAVA_HOME=/opt/openjdk-13
-# Wed, 10 Apr 2019 01:49:28 GMT
-ENV PATH=/opt/openjdk-13/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 10 Apr 2019 01:49:28 GMT
-ENV JAVA_VERSION=13-ea+14
-# Wed, 10 Apr 2019 01:49:29 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/alpine/14/binaries/openjdk-13-ea+14_linux-x64-musl_bin.tar.gz
-# Wed, 10 Apr 2019 01:49:29 GMT
-ENV JAVA_SHA256=65902947d71998184de49eec5b420c489f31cb9a33eafd431dad445e97438250
-# Wed, 10 Apr 2019 01:51:36 GMT
-RUN set -eux; 		wget -O /openjdk.tgz "$JAVA_URL"; 	echo "$JAVA_SHA256 */openjdk.tgz" | sha256sum -c -; 	mkdir -p "$JAVA_HOME"; 	tar --extract --file /openjdk.tgz --directory "$JAVA_HOME" --strip-components 1; 	rm /openjdk.tgz; 		java -Xshare:dump; 		java --version; 	javac --version
-# Wed, 10 Apr 2019 01:51:36 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:bdf0201b3a056acc4d6062cc88cd8a4ad5979983bfb640f15a145e09ed985f92`  
-		Last Modified: Tue, 09 Apr 2019 10:24:14 GMT  
-		Size: 2.8 MB (2757009 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34775b16ae4d0d9b11c066d543b1a7469011b38a117108046667fd773e473b59`  
-		Last Modified: Wed, 10 Apr 2019 01:56:43 GMT  
-		Size: 195.9 MB (195870145 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `openjdk:13-ea-14-jdk-alpine`
-
-```console
-$ docker pull openjdk@sha256:33426e9186d971ae3f0cd37c218ad8bc71de785bf4cddf6ce711c607e3f61cb4
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
-	-	linux; amd64
-
-### `openjdk:13-ea-14-jdk-alpine` - linux; amd64
-
-```console
-$ docker pull openjdk@sha256:cc55b2f37453b74311ce05a659db363dae5cf8903baeb04fbb82c064502e1296
-```
-
--	Docker Version: 18.06.1-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **198.6 MB (198627154 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cc4e83fc995f97d4aa0ef3a3d6988f20fb02daadee592ea1552844e2d5f83217`
--	Default Command: `["jshell"]`
-
-```dockerfile
-# Tue, 09 Apr 2019 23:20:18 GMT
-ADD file:2e3a37883f56a4a278bec2931fc9f91fb9ebdaa9047540fe8fde419b84a1701b in / 
-# Tue, 09 Apr 2019 23:20:18 GMT
-CMD ["/bin/sh"]
-# Wed, 10 Apr 2019 01:49:28 GMT
-ENV JAVA_HOME=/opt/openjdk-13
-# Wed, 10 Apr 2019 01:49:28 GMT
-ENV PATH=/opt/openjdk-13/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 10 Apr 2019 01:49:28 GMT
-ENV JAVA_VERSION=13-ea+14
-# Wed, 10 Apr 2019 01:49:29 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/alpine/14/binaries/openjdk-13-ea+14_linux-x64-musl_bin.tar.gz
-# Wed, 10 Apr 2019 01:49:29 GMT
-ENV JAVA_SHA256=65902947d71998184de49eec5b420c489f31cb9a33eafd431dad445e97438250
-# Wed, 10 Apr 2019 01:51:36 GMT
-RUN set -eux; 		wget -O /openjdk.tgz "$JAVA_URL"; 	echo "$JAVA_SHA256 */openjdk.tgz" | sha256sum -c -; 	mkdir -p "$JAVA_HOME"; 	tar --extract --file /openjdk.tgz --directory "$JAVA_HOME" --strip-components 1; 	rm /openjdk.tgz; 		java -Xshare:dump; 		java --version; 	javac --version
-# Wed, 10 Apr 2019 01:51:36 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:bdf0201b3a056acc4d6062cc88cd8a4ad5979983bfb640f15a145e09ed985f92`  
-		Last Modified: Tue, 09 Apr 2019 10:24:14 GMT  
-		Size: 2.8 MB (2757009 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34775b16ae4d0d9b11c066d543b1a7469011b38a117108046667fd773e473b59`  
-		Last Modified: Wed, 10 Apr 2019 01:56:43 GMT  
-		Size: 195.9 MB (195870145 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `openjdk:13-ea-14-jdk-alpine3.9`
-
-```console
-$ docker pull openjdk@sha256:33426e9186d971ae3f0cd37c218ad8bc71de785bf4cddf6ce711c607e3f61cb4
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
-	-	linux; amd64
-
-### `openjdk:13-ea-14-jdk-alpine3.9` - linux; amd64
-
-```console
-$ docker pull openjdk@sha256:cc55b2f37453b74311ce05a659db363dae5cf8903baeb04fbb82c064502e1296
-```
-
--	Docker Version: 18.06.1-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **198.6 MB (198627154 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cc4e83fc995f97d4aa0ef3a3d6988f20fb02daadee592ea1552844e2d5f83217`
--	Default Command: `["jshell"]`
-
-```dockerfile
-# Tue, 09 Apr 2019 23:20:18 GMT
-ADD file:2e3a37883f56a4a278bec2931fc9f91fb9ebdaa9047540fe8fde419b84a1701b in / 
-# Tue, 09 Apr 2019 23:20:18 GMT
-CMD ["/bin/sh"]
-# Wed, 10 Apr 2019 01:49:28 GMT
-ENV JAVA_HOME=/opt/openjdk-13
-# Wed, 10 Apr 2019 01:49:28 GMT
-ENV PATH=/opt/openjdk-13/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 10 Apr 2019 01:49:28 GMT
-ENV JAVA_VERSION=13-ea+14
-# Wed, 10 Apr 2019 01:49:29 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/alpine/14/binaries/openjdk-13-ea+14_linux-x64-musl_bin.tar.gz
-# Wed, 10 Apr 2019 01:49:29 GMT
-ENV JAVA_SHA256=65902947d71998184de49eec5b420c489f31cb9a33eafd431dad445e97438250
-# Wed, 10 Apr 2019 01:51:36 GMT
-RUN set -eux; 		wget -O /openjdk.tgz "$JAVA_URL"; 	echo "$JAVA_SHA256 */openjdk.tgz" | sha256sum -c -; 	mkdir -p "$JAVA_HOME"; 	tar --extract --file /openjdk.tgz --directory "$JAVA_HOME" --strip-components 1; 	rm /openjdk.tgz; 		java -Xshare:dump; 		java --version; 	javac --version
-# Wed, 10 Apr 2019 01:51:36 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:bdf0201b3a056acc4d6062cc88cd8a4ad5979983bfb640f15a145e09ed985f92`  
-		Last Modified: Tue, 09 Apr 2019 10:24:14 GMT  
-		Size: 2.8 MB (2757009 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34775b16ae4d0d9b11c066d543b1a7469011b38a117108046667fd773e473b59`  
-		Last Modified: Wed, 10 Apr 2019 01:56:43 GMT  
-		Size: 195.9 MB (195870145 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
 ## `openjdk:13-ea-16`
 
 ```console
@@ -23957,6 +23881,14 @@ CMD ["jshell"]
 		Size: 1.2 KB (1210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:13-ea-16-alpine`
+
+**does not exist** (yet?)
+
+## `openjdk:13-ea-16-alpine3.9`
+
+**does not exist** (yet?)
+
 ## `openjdk:13-ea-16-jdk`
 
 ```console
@@ -24276,6 +24208,14 @@ CMD ["jshell"]
 		Last Modified: Fri, 12 Apr 2019 01:47:04 GMT  
 		Size: 1.2 KB (1210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:13-ea-16-jdk-alpine`
+
+**does not exist** (yet?)
+
+## `openjdk:13-ea-16-jdk-alpine3.9`
+
+**does not exist** (yet?)
 
 ## `openjdk:13-ea-16-jdk-oracle`
 
