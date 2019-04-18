@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d0ce41e84f5f121e71cd32735300ba4ad5518dcfb8656479ed7fe22af8fc8ed6`
-- Created: `2019-04-02T23:53:00.759688669Z`
-- Virtual Size: ~ 574.19 Mb  
+- Image ID: `sha256:6d1827c909977625e9d22bc73060eafbdc539348d83893427935e96d4f1d37e2`
+- Created: `2019-04-18T00:18:13.267070877Z`
+- Virtual Size: ~ 574.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,8 +12,8 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUBY_MAJOR=2.6`
-  - `RUBY_VERSION=2.6.2`
-  - `RUBY_DOWNLOAD_SHA256=91fcde77eea8e6206d775a48ac58450afe4883af1a42e5b358320beb33a445fa`
+  - `RUBY_VERSION=2.6.3`
+  - `RUBY_DOWNLOAD_SHA256=11a83f85c03d3f0fc9b8a9b6cad1b2674f26c5aaa43ba858d4b0fcc2b54171e1`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_PATH=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
@@ -2298,11 +2298,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libsepol/2.6-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libsepol/2.6-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libssh2=1.7.0-1`
+### `dpkg` source package: `libssh2=1.7.0-1+deb9u1`
 
 Binary Packages:
 
-- `libssh2-1:amd64=1.7.0-1`
+- `libssh2-1:amd64=1.7.0-1+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libssh2-1/copyright`)
 
@@ -2311,17 +2311,17 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libssh2=1.7.0-1
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.7.0-1.dsc' libssh2_1.7.0-1.dsc 1828 SHA256:4f2880ce02d40c4904f750687424e9f2c1aa68a4632da9866e08c809a69f7425
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.7.0.orig.tar.gz' libssh2_1.7.0.orig.tar.gz 811714 SHA256:e4561fd43a50539a8c2ceb37841691baf03ecb7daf043766da1b112e4280d584
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.7.0-1.debian.tar.xz' libssh2_1.7.0-1.debian.tar.xz 6396 SHA256:2f4fb78f0d6d33492ef63e04a0d007f03e56466542c0b8271bbcdcb530f31f8e
+$ apt-get source -qq --print-uris libssh2=1.7.0-1+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2_1.7.0-1+deb9u1.dsc' libssh2_1.7.0-1+deb9u1.dsc 2046 SHA256:dc4db042d18ecd49012df85a8de5b8dd3b512300688b0e9f527a4c505fabe5f1
+'http://security.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2_1.7.0.orig.tar.gz' libssh2_1.7.0.orig.tar.gz 811714 SHA256:e4561fd43a50539a8c2ceb37841691baf03ecb7daf043766da1b112e4280d584
+'http://security.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2_1.7.0-1+deb9u1.debian.tar.xz' libssh2_1.7.0-1+deb9u1.debian.tar.xz 13008 SHA256:e0291b5d7ff5a67abd318b923650569d2d4c112122a7b7b97cc3c563f10ae296
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libssh2/1.7.0-1/ (for browsing the source)
-- https://sources.debian.net/src/libssh2/1.7.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libssh2/1.7.0-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libssh2/1.7.0-1+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/libssh2/1.7.0-1+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libssh2/1.7.0-1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-6=4.10-1.1+deb9u1`
 
@@ -4060,11 +4060,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/util-linux/2.29.2-1+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/util-linux/2.29.2-1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `wget=1.18-5+deb9u2`
+### `dpkg` source package: `wget=1.18-5+deb9u3`
 
 Binary Packages:
 
-- `wget=1.18-5+deb9u2`
+- `wget=1.18-5+deb9u3`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
@@ -4074,17 +4074,17 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris wget=1.18-5+deb9u2
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.18-5+deb9u2.dsc' wget_1.18-5+deb9u2.dsc 2085 SHA256:613256e709fb78230402013e0f30c6cd9dfa441a3c705c96a6ecd419c5adde8a
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.18.orig.tar.gz' wget_1.18.orig.tar.gz 3865525 SHA256:a00a65fab84cc46e24c53ce88c45604668a7a479276e037dc2f558e34717fb2d
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.18-5+deb9u2.debian.tar.xz' wget_1.18-5+deb9u2.debian.tar.xz 23308 SHA256:8d98535e4062442c1eb0bcdb557551ee64323f09352528f741afd20ed81b09b1
+$ apt-get source -qq --print-uris wget=1.18-5+deb9u3
+'http://security.debian.org/debian-security/pool/updates/main/w/wget/wget_1.18-5+deb9u3.dsc' wget_1.18-5+deb9u3.dsc 2085 SHA256:0ffd4ef70f0e0c919fd60aa0135ca4b920ebaa9793935dd3a615103f7d209525
+'http://security.debian.org/debian-security/pool/updates/main/w/wget/wget_1.18.orig.tar.gz' wget_1.18.orig.tar.gz 3865525 SHA256:a00a65fab84cc46e24c53ce88c45604668a7a479276e037dc2f558e34717fb2d
+'http://security.debian.org/debian-security/pool/updates/main/w/wget/wget_1.18-5+deb9u3.debian.tar.xz' wget_1.18-5+deb9u3.debian.tar.xz 23672 SHA256:da643e00461f2a4451256ec2547a3c2d9d3c9819f3657e459d6cbdaa6c5390ad
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/wget/1.18-5+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/wget/1.18-5+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/wget/1.18-5+deb9u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/wget/1.18-5+deb9u3/ (for browsing the source)
+- https://sources.debian.net/src/wget/1.18-5+deb9u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/wget/1.18-5+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xz-utils=5.2.2-1.2`
 
