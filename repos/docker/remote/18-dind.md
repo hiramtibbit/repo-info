@@ -1,7 +1,7 @@
 ## `docker:18-dind`
 
 ```console
-$ docker pull docker@sha256:dcbafac80475958b3fe827aff5a71f89e10bc616b6a769e7ce87d1220b5ce169
+$ docker pull docker@sha256:7ed03cb37cbe109867455393e670016149ae80fde931cf4773fabd8cf6284ee6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -112,14 +112,14 @@ CMD []
 ### `docker:18-dind` - linux; arm variant v6
 
 ```console
-$ docker pull docker@sha256:45982b698104d3a47ce93b0e88ce2ae26811d69537b45a3ac8f170c5da120dcc
+$ docker pull docker@sha256:0245ebcf15425a092e7a1086cc875c7f624a7f28ba423083877c9e957ec3f020
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.3 MB (51341176 bytes)**  
+-	Total Size: **51.3 MB (51341200 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ea064c3310ee8953a29a8eca168caf17309788c52beb4b4b87ba816a3809510`
+-	Image ID: `sha256:f19043a0baded3e1115693c87bb16e40149022983357e16acbbc810af96a2b99`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
@@ -154,15 +154,15 @@ RUN set -x 	&& addgroup -S dockremap 	&& adduser -S -G dockremap dockremap 	&& e
 ENV DIND_COMMIT=37498f009d8bf25fbb6199e8ccd34bed84f2874b
 # Fri, 12 Apr 2019 07:49:55 GMT
 RUN set -eux; 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; 	chmod +x /usr/local/bin/dind
-# Fri, 12 Apr 2019 07:49:56 GMT
-COPY file:8fa7199c70073054a7b943c52e969a2548c7f60c27b4aed162225222996db4a9 in /usr/local/bin/ 
-# Fri, 12 Apr 2019 07:49:56 GMT
+# Thu, 18 Apr 2019 07:49:43 GMT
+COPY file:779dca3bbfbd33f9223bd74feaf003513d1936b73cdbfb2a8e52d9a12505d90c in /usr/local/bin/ 
+# Thu, 18 Apr 2019 07:49:44 GMT
 VOLUME [/var/lib/docker]
-# Fri, 12 Apr 2019 07:49:56 GMT
+# Thu, 18 Apr 2019 07:49:44 GMT
 EXPOSE 2375
-# Fri, 12 Apr 2019 07:49:57 GMT
+# Thu, 18 Apr 2019 07:49:44 GMT
 ENTRYPOINT ["dockerd-entrypoint.sh"]
-# Fri, 12 Apr 2019 07:49:57 GMT
+# Thu, 18 Apr 2019 07:49:45 GMT
 CMD []
 ```
 
@@ -203,22 +203,22 @@ CMD []
 		Last Modified: Fri, 12 Apr 2019 07:51:13 GMT  
 		Size: 758.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97c871e929dbe4300c16e09252a65f875af8c7ce71b3cb4b828ed8e8bd885c64`  
-		Last Modified: Fri, 12 Apr 2019 07:51:14 GMT  
-		Size: 557.0 B  
+	-	`sha256:736d86739dc745e202f7065df66c82dfebf5835c9a7875c06470864bc3b1abcd`  
+		Last Modified: Thu, 18 Apr 2019 07:50:40 GMT  
+		Size: 581.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `docker:18-dind` - linux; arm64 variant v8
 
 ```console
-$ docker pull docker@sha256:92f0a6e5dc716fdea2782f9695e6357a349303b25752e661d7f23b498921b902
+$ docker pull docker@sha256:5c5d3af4c3eb0a43d2844c90d9cd95655bbd5fae661b9c6affb1d3f04f489111
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.5 MB (51463331 bytes)**  
+-	Total Size: **51.5 MB (51463357 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:91396dcb6f290aa02f2b2441028fa0b718940113a6925d4313f41a4c67dd5be8`
+-	Image ID: `sha256:fba23834d0f46463931357b9a085b28eab74f2aa6975daba259b56d40017a8fc`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
@@ -253,15 +253,15 @@ RUN set -x 	&& addgroup -S dockremap 	&& adduser -S -G dockremap dockremap 	&& e
 ENV DIND_COMMIT=37498f009d8bf25fbb6199e8ccd34bed84f2874b
 # Fri, 12 Apr 2019 08:40:59 GMT
 RUN set -eux; 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; 	chmod +x /usr/local/bin/dind
-# Fri, 12 Apr 2019 08:41:00 GMT
-COPY file:8fa7199c70073054a7b943c52e969a2548c7f60c27b4aed162225222996db4a9 in /usr/local/bin/ 
-# Fri, 12 Apr 2019 08:41:00 GMT
+# Thu, 18 Apr 2019 08:39:55 GMT
+COPY file:779dca3bbfbd33f9223bd74feaf003513d1936b73cdbfb2a8e52d9a12505d90c in /usr/local/bin/ 
+# Thu, 18 Apr 2019 08:39:56 GMT
 VOLUME [/var/lib/docker]
-# Fri, 12 Apr 2019 08:41:01 GMT
+# Thu, 18 Apr 2019 08:39:57 GMT
 EXPOSE 2375
-# Fri, 12 Apr 2019 08:41:03 GMT
+# Thu, 18 Apr 2019 08:39:58 GMT
 ENTRYPOINT ["dockerd-entrypoint.sh"]
-# Fri, 12 Apr 2019 08:41:04 GMT
+# Thu, 18 Apr 2019 08:39:59 GMT
 CMD []
 ```
 
@@ -302,7 +302,7 @@ CMD []
 		Last Modified: Fri, 12 Apr 2019 08:42:46 GMT  
 		Size: 756.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e81f9457ba9f5f61d37469a31437002ad4c2ea760dfab8af1e53b68d1c94baa3`  
-		Last Modified: Fri, 12 Apr 2019 08:42:46 GMT  
-		Size: 554.0 B  
+	-	`sha256:5edbea9f0a51867be4ec1bb4be9642c776ab3cceb21847ae1d102bd3f91caa11`  
+		Last Modified: Thu, 18 Apr 2019 08:41:16 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
