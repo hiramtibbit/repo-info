@@ -1,10 +1,10 @@
-# `gradle:5.3.1-jdk8-slim`
+# `gradle:5.4.0-jdk8-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9e515233d54d66ce589545bc4bf13f14df4e86ba46de4f7fc5f20379c292742c`
-- Created: `2019-03-29T21:21:54.474942467Z`
-- Virtual Size: ~ 346.40 Mb  
+- Image ID: `sha256:bbb8f05aa014a1e23f760a01868ccd89c512812caa2c208b02f8af9ef4cd4d2e`
+- Created: `2019-04-16T21:20:22.058747798Z`
+- Virtual Size: ~ 346.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -15,7 +15,7 @@
   - `JAVA_VERSION=8u212`
   - `JAVA_DEBIAN_VERSION=8u212-b01-1~deb9u1`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=5.3.1`
+  - `GRADLE_VERSION=5.4`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2522,11 +2522,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/util-linux/2.29.2-1+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/util-linux/2.29.2-1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `wget=1.18-5+deb9u2`
+### `dpkg` source package: `wget=1.18-5+deb9u3`
 
 Binary Packages:
 
-- `wget=1.18-5+deb9u2`
+- `wget=1.18-5+deb9u3`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
@@ -2536,17 +2536,17 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris wget=1.18-5+deb9u2
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.18-5+deb9u2.dsc' wget_1.18-5+deb9u2.dsc 2085 SHA256:613256e709fb78230402013e0f30c6cd9dfa441a3c705c96a6ecd419c5adde8a
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.18.orig.tar.gz' wget_1.18.orig.tar.gz 3865525 SHA256:a00a65fab84cc46e24c53ce88c45604668a7a479276e037dc2f558e34717fb2d
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.18-5+deb9u2.debian.tar.xz' wget_1.18-5+deb9u2.debian.tar.xz 23308 SHA256:8d98535e4062442c1eb0bcdb557551ee64323f09352528f741afd20ed81b09b1
+$ apt-get source -qq --print-uris wget=1.18-5+deb9u3
+'http://security.debian.org/debian-security/pool/updates/main/w/wget/wget_1.18-5+deb9u3.dsc' wget_1.18-5+deb9u3.dsc 2085 SHA256:0ffd4ef70f0e0c919fd60aa0135ca4b920ebaa9793935dd3a615103f7d209525
+'http://security.debian.org/debian-security/pool/updates/main/w/wget/wget_1.18.orig.tar.gz' wget_1.18.orig.tar.gz 3865525 SHA256:a00a65fab84cc46e24c53ce88c45604668a7a479276e037dc2f558e34717fb2d
+'http://security.debian.org/debian-security/pool/updates/main/w/wget/wget_1.18-5+deb9u3.debian.tar.xz' wget_1.18-5+deb9u3.debian.tar.xz 23672 SHA256:da643e00461f2a4451256ec2547a3c2d9d3c9819f3657e459d6cbdaa6c5390ad
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/wget/1.18-5+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/wget/1.18-5+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/wget/1.18-5+deb9u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/wget/1.18-5+deb9u3/ (for browsing the source)
+- https://sources.debian.net/src/wget/1.18-5+deb9u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/wget/1.18-5+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xorg=1:7.7+19`
 
