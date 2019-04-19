@@ -1,16 +1,16 @@
-# `nginx:1.15.11-alpine`
+# `nginx:1.15.12-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:031c45582fce6e8234175ed01cfea828a8f096e5b1ed3cdd41142d2a40244d27`
-- Created: `2019-04-10T21:24:05.3512842Z`
+- Image ID: `sha256:0be75340bd9bc5c3b9476910537275090a9181838415b558d3a16e8155a69860`
+- Created: `2019-04-16T21:22:25.035537959Z`
 - Virtual Size: ~ 16.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.15.11`
+  - `NGINX_VERSION=1.15.12`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
 
@@ -461,16 +461,16 @@ GPL-2.0
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2018i-r0 description:
+tzdata-2019a-r0 description:
 Timezone data
 
-tzdata-2018i-r0 webpage:
+tzdata-2019a-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2018i-r0 installed size:
-3547136
+tzdata-2019a-r0 installed size:
+3538944
 
-tzdata-2018i-r0 license:
+tzdata-2019a-r0 license:
 Public-Domain
 
 ```
