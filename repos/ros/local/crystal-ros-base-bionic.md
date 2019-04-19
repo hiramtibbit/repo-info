@@ -3469,14 +3469,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-rospkg-modules=1.1.7-1
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rospkg-modules/python3-rospkg-modules_1.1.7-1.dsc' python3-rospkg-modules_1.1.7-1.dsc 940 SHA256:f0847cb47066f35b17e3e0ff7d24b0f106ec386cf775acf1f123989fdb1a9718
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rospkg-modules/python3-rospkg-modules_1.1.7.orig.tar.gz' python3-rospkg-modules_1.1.7.orig.tar.gz 40118 SHA256:b4794676bcdba57ee1625d7d487362bf0fc93307baccff7bff3e44bd3486ecff
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rospkg-modules/python3-rospkg-modules_1.1.7-1.debian.tar.xz' python3-rospkg-modules_1.1.7-1.debian.tar.xz 1188 SHA256:44727ac731456691f568953887bcc666cf0c06cd0c0b35b1ff248b233b990661
-```
 
 ### `dpkg` source package: `python3-rospkg=1.1.7-100`
 
@@ -3488,14 +3483,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-rospkg=1.1.7-100
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rospkg/python3-rospkg_1.1.7-100.dsc' python3-rospkg_1.1.7-100.dsc 876 SHA256:c09b9c101086a9552b17df798dce2b1dae2a4366fed767eaf8249de247882af0
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rospkg/python3-rospkg_1.1.7.orig.tar.gz' python3-rospkg_1.1.7.orig.tar.gz 17046 SHA256:96fb3e3878184fdcd6e0c5aacad442aeac69174c89a42caa39e8704b6c5cd484
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rospkg/python3-rospkg_1.1.7-100.debian.tar.xz' python3-rospkg_1.1.7-100.debian.tar.xz 1176 SHA256:6c005f9b6439037e0a4856f515b88751c52947a2143d674846f8bcf9db2ac8a3
-```
 
 ### `dpkg` source package: `python3-stdlib-extensions=3.6.7-1~18.04`
 

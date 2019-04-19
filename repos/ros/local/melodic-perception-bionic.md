@@ -2362,14 +2362,9 @@ Licenses: (parsed from: `/usr/share/doc/autopoint/copyright`, `/usr/share/doc/ge
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gettext=0.19.8.1-6ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gettext/gettext_0.19.8.1-6ubuntu0.1.dsc' gettext_0.19.8.1-6ubuntu0.1.dsc 2446 SHA256:773e4ec93c809f2a0e8e57e06ba254aae8bbb790fc7dbec79812b356f2e48ee3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gettext/gettext_0.19.8.1.orig.tar.xz' gettext_0.19.8.1.orig.tar.xz 7209808 SHA256:105556dbc5c3fbbc2aa0edb46d22d055748b6f5c7cd7a8d99f8e7eb84e938be4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gettext/gettext_0.19.8.1-6ubuntu0.1.debian.tar.xz' gettext_0.19.8.1-6ubuntu0.1.debian.tar.xz 32328 SHA256:3d25403746cf6f1a8267e393ce210eb699a8f70fe384ae7f4d2d1989fbf17e58
-```
 
 ### `dpkg` source package: `giflib=5.1.4-2`
 
