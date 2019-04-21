@@ -915,16 +915,7 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/releases/29/Everything/so
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls libcom_err-1.44.4-1.fc29
-Enabling fedora-modular-source repository
-Enabling updates-source repository
-Enabling updates-modular-source repository
-Enabling fedora-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/SRPMS//Packages/e/e2fsprogs-1.44.4-1.fc29.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `libcomps-0.1.10-2.fc29.x86_64`
 
