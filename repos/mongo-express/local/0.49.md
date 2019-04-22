@@ -2,17 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:376d1d9e09954917b9d53d7550728ca45eab173b8e039ff9cee40e672a99f882`
-- Created: `2019-03-08T05:22:44.040357351Z`
-- Virtual Size: ~ 96.00 Mb  
+- Image ID: `sha256:57f0364881d862c98b27cc745e04da6b913937e5bf0acd7ec1af8fdecfa1d4a7`
+- Created: `2019-04-20T01:11:15.455561232Z`
+- Virtual Size: ~ 96.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
 - Command: `["mongo-express"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=8.15.1`
-  - `YARN_VERSION=1.12.3`
+  - `NODE_VERSION=8.16.0`
+  - `YARN_VERSION=1.15.2`
   - `ME_CONFIG_EDITORTHEME=default`
   - `ME_CONFIG_MONGODB_SERVER=mongo`
   - `ME_CONFIG_MONGODB_ENABLE_ADMIN=true`
@@ -26,16 +26,16 @@
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.1.0-r0 description:
+alpine-baselayout-3.1.0-r3 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.1.0-r0 webpage:
+alpine-baselayout-3.1.0-r3 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.1.0-r0 installed size:
-397312
+alpine-baselayout-3.1.0-r3 installed size:
+409600
 
-alpine-baselayout-3.1.0-r0 license:
+alpine-baselayout-3.1.0-r3 license:
 GPL-2.0
 
 ```
@@ -60,16 +60,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.10.1-r0 description:
+apk-tools-2.10.3-r1 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.10.1-r0 webpage:
+apk-tools-2.10.3-r1 webpage:
 https://git.alpinelinux.org/cgit/apk-tools/
 
-apk-tools-2.10.1-r0 installed size:
+apk-tools-2.10.3-r1 installed size:
 262144
 
-apk-tools-2.10.1-r0 license:
+apk-tools-2.10.3-r1 license:
 GPL2
 
 ```
@@ -84,7 +84,7 @@ bash-4.4.19-r1 webpage:
 https://www.gnu.org/software/bash/bash.html
 
 bash-4.4.19-r1 installed size:
-987136
+1142784
 
 bash-4.4.19-r1 license:
 GPL-3.0-or-later
@@ -94,17 +94,34 @@ GPL-3.0-or-later
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.28.4-r3 description:
+busybox-1.29.3-r10 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.28.4-r3 webpage:
+busybox-1.29.3-r10 webpage:
 http://busybox.net
 
-busybox-1.28.4-r3 installed size:
+busybox-1.29.3-r10 installed size:
 905216
 
-busybox-1.28.4-r3 license:
+busybox-1.29.3-r10 license:
 GPL-2.0
+
+```
+
+### `apk` package: `ca-certificates-cacert`
+
+```console
+ca-certificates-cacert-20190108-r0 description:
+Mozilla bundled certificates
+
+ca-certificates-cacert-20190108-r0 webpage:
+https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
+
+ca-certificates-cacert-20190108-r0 installed size:
+245760
+
+ca-certificates-cacert-20190108-r0 license:
+MPL-2.0 GPL-2.0-or-later
 
 ```
 
@@ -125,104 +142,104 @@ BSD
 
 ```
 
+### `apk` package: `libcrypto1.1`
+
+```console
+libcrypto1.1-1.1.1b-r1 description:
+Crypto library from openssl
+
+libcrypto1.1-1.1.1b-r1 webpage:
+https://www.openssl.org
+
+libcrypto1.1-1.1.1b-r1 installed size:
+2748416
+
+libcrypto1.1-1.1.1b-r1 license:
+OpenSSL
+
+```
+
 ### `apk` package: `libgcc`
 
 ```console
-libgcc-6.4.0-r9 description:
+libgcc-8.3.0-r0 description:
 GNU C compiler runtime libraries
 
-libgcc-6.4.0-r9 webpage:
+libgcc-8.3.0-r0 webpage:
 http://gcc.gnu.org
 
-libgcc-6.4.0-r9 installed size:
-86016
+libgcc-8.3.0-r0 installed size:
+90112
 
-libgcc-6.4.0-r9 license:
+libgcc-8.3.0-r0 license:
 GPL LGPL
 
 ```
 
-### `apk` package: `libressl2.7-libcrypto`
+### `apk` package: `libssl1.1`
 
 ```console
-libressl2.7-libcrypto-2.7.5-r0 description:
-libressl libcrypto library
+libssl1.1-1.1.1b-r1 description:
+SSL shared libraries
 
-libressl2.7-libcrypto-2.7.5-r0 webpage:
-https://www.libressl.org/
+libssl1.1-1.1.1b-r1 webpage:
+https://www.openssl.org
 
-libressl2.7-libcrypto-2.7.5-r0 installed size:
-2125824
+libssl1.1-1.1.1b-r1 installed size:
+536576
 
-libressl2.7-libcrypto-2.7.5-r0 license:
-custom
-
-```
-
-### `apk` package: `libressl2.7-libssl`
-
-```console
-libressl2.7-libssl-2.7.5-r0 description:
-libressl libssl library
-
-libressl2.7-libssl-2.7.5-r0 webpage:
-https://www.libressl.org/
-
-libressl2.7-libssl-2.7.5-r0 installed size:
-327680
-
-libressl2.7-libssl-2.7.5-r0 license:
-custom
-
-```
-
-### `apk` package: `libressl2.7-libtls`
-
-```console
-libressl2.7-libtls-2.7.5-r0 description:
-libressl libtls library
-
-libressl2.7-libtls-2.7.5-r0 webpage:
-https://www.libressl.org/
-
-libressl2.7-libtls-2.7.5-r0 installed size:
-77824
-
-libressl2.7-libtls-2.7.5-r0 license:
-custom
+libssl1.1-1.1.1b-r1 license:
+OpenSSL
 
 ```
 
 ### `apk` package: `libstdc++`
 
 ```console
-libstdc++-6.4.0-r9 description:
+libstdc++-8.3.0-r0 description:
 GNU C++ standard runtime library
 
-libstdc++-6.4.0-r9 webpage:
+libstdc++-8.3.0-r0 webpage:
 http://gcc.gnu.org
 
-libstdc++-6.4.0-r9 installed size:
-1388544
+libstdc++-8.3.0-r0 installed size:
+1392640
 
-libstdc++-6.4.0-r9 license:
+libstdc++-8.3.0-r0 license:
 GPL LGPL
+
+```
+
+### `apk` package: `libtls-standalone`
+
+```console
+libtls-standalone-2.7.4-r6 description:
+libtls extricated from libressl sources
+
+libtls-standalone-2.7.4-r6 webpage:
+http://www.libressl.org/
+
+libtls-standalone-2.7.4-r6 installed size:
+110592
+
+libtls-standalone-2.7.4-r6 license:
+ISC
 
 ```
 
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.19-r10 description:
+musl-1.1.20-r4 description:
 the musl c library (libc) implementation
 
-musl-1.1.19-r10 webpage:
+musl-1.1.20-r4 webpage:
 http://www.musl-libc.org/
 
-musl-1.1.19-r10 installed size:
+musl-1.1.20-r4 installed size:
 602112
 
-musl-1.1.19-r10 license:
+musl-1.1.20-r4 license:
 MIT
 
 ```
@@ -230,16 +247,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.1.19-r10 description:
+musl-utils-1.1.20-r4 description:
 the musl c library (libc) implementation
 
-musl-utils-1.1.19-r10 webpage:
+musl-utils-1.1.20-r4 webpage:
 http://www.musl-libc.org/
 
-musl-utils-1.1.19-r10 installed size:
-122880
+musl-utils-1.1.20-r4 installed size:
+139264
 
-musl-utils-1.1.19-r10 license:
+musl-utils-1.1.20-r4 license:
 MIT BSD GPL2+
 
 ```
@@ -247,16 +264,16 @@ MIT BSD GPL2+
 ### `apk` package: `ncurses-libs`
 
 ```console
-ncurses-libs-6.1_p20180818-r1 description:
+ncurses-libs-6.1_p20190105-r0 description:
 Ncurses libraries
 
-ncurses-libs-6.1_p20180818-r1 webpage:
+ncurses-libs-6.1_p20190105-r0 webpage:
 https://www.gnu.org/software/ncurses/
 
-ncurses-libs-6.1_p20180818-r1 installed size:
-479232
+ncurses-libs-6.1_p20190105-r0 installed size:
+499712
 
-ncurses-libs-6.1_p20180818-r1 license:
+ncurses-libs-6.1_p20190105-r0 license:
 MIT
 
 ```
@@ -264,16 +281,16 @@ MIT
 ### `apk` package: `ncurses-terminfo`
 
 ```console
-ncurses-terminfo-6.1_p20180818-r1 description:
+ncurses-terminfo-6.1_p20190105-r0 description:
 Console display library (other terminfo files)
 
-ncurses-terminfo-6.1_p20180818-r1 webpage:
+ncurses-terminfo-6.1_p20190105-r0 webpage:
 https://www.gnu.org/software/ncurses/
 
-ncurses-terminfo-6.1_p20180818-r1 installed size:
-7245824
+ncurses-terminfo-6.1_p20190105-r0 installed size:
+7274496
 
-ncurses-terminfo-6.1_p20180818-r1 license:
+ncurses-terminfo-6.1_p20190105-r0 license:
 MIT
 
 ```
@@ -281,16 +298,16 @@ MIT
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.1_p20180818-r1 description:
+ncurses-terminfo-base-6.1_p20190105-r0 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.1_p20180818-r1 webpage:
+ncurses-terminfo-base-6.1_p20190105-r0 webpage:
 https://www.gnu.org/software/ncurses/
 
-ncurses-terminfo-base-6.1_p20180818-r1 installed size:
+ncurses-terminfo-base-6.1_p20190105-r0 installed size:
 94208
 
-ncurses-terminfo-base-6.1_p20180818-r1 license:
+ncurses-terminfo-base-6.1_p20190105-r0 license:
 MIT
 
 ```
@@ -298,16 +315,16 @@ MIT
 ### `apk` package: `readline`
 
 ```console
-readline-7.0.003-r0 description:
+readline-7.0.003-r1 description:
 GNU readline library
 
-readline-7.0.003-r0 webpage:
-https://cnswww.cns.cwru.edu/php/chet/readline/rltop.html
+readline-7.0.003-r1 webpage:
+https://tiswww.cwru.edu/php/chet/readline/rltop.html
 
-readline-7.0.003-r0 installed size:
-282624
+readline-7.0.003-r1 installed size:
+294912
 
-readline-7.0.003-r0 license:
+readline-7.0.003-r1 license:
 GPL
 
 ```
@@ -322,7 +339,7 @@ scanelf-1.2.3-r0 webpage:
 https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities
 
 scanelf-1.2.3-r0 installed size:
-94208
+98304
 
 scanelf-1.2.3-r0 license:
 GPL-2.0
@@ -332,16 +349,16 @@ GPL-2.0
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.28.4-r3 description:
+ssl_client-1.29.3-r10 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.28.4-r3 webpage:
+ssl_client-1.29.3-r10 webpage:
 http://busybox.net
 
-ssl_client-1.28.4-r3 installed size:
-24576
+ssl_client-1.29.3-r10 installed size:
+28672
 
-ssl_client-1.28.4-r3 license:
+ssl_client-1.29.3-r10 license:
 GPL-2.0
 
 ```
@@ -356,7 +373,7 @@ tini-0.18.0-r0 webpage:
 https://github.com/krallin/tini
 
 tini-0.18.0-r0 installed size:
-32768
+36864
 
 tini-0.18.0-r0 license:
 MIT
@@ -373,7 +390,7 @@ zlib-1.2.11-r1 webpage:
 http://zlib.net
 
 zlib-1.2.11-r1 installed size:
-102400
+110592
 
 zlib-1.2.11-r1 license:
 zlib
