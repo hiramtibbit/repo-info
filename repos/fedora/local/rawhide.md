@@ -27,6 +27,8 @@ Source:
 ```console
 $ yumdownloader --quiet --source --urls acl-2.2.53-3.fc30
 Enabling rawhide-source repository
+http://mirror.stavlor.net/pub/fedora/linux/development/rawhide/Everything/source/tree/repodata/repomd.xml: [Errno -1] repomd.xml does not match metalink for rawhide-source
+Trying other mirror.
 Enabling rawhide-modular-source repository
 https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/a/acl-2.2.53-3.fc30.src.rpm
 ```
