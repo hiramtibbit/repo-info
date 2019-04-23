@@ -1,7 +1,7 @@
 ## `neurodebian:jessie`
 
 ```console
-$ docker pull neurodebian@sha256:e76bb6906cffb028a6d536723a6bb3a27ee1e21fca80244981516ccc90e2c30c
+$ docker pull neurodebian@sha256:2fae2167dd0294b35b88def3e0712964097b07a6aefe69443ca75388a5cd1ec7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull neurodebian@sha256:e76bb6906cffb028a6d536723a6bb3a27ee1e21fca80244
 ### `neurodebian:jessie` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:fb2c716aabd662b3411e8f9797fd4d7d920faeaf8b2dac3090368c4d1161cc6b
+$ docker pull neurodebian@sha256:839e22a34b07617619c8a4acc4ae7af892d2e664527b9176151e199c6d38ae5d
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.7 MB (54688058 bytes)**  
+-	Total Size: **54.7 MB (54688084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70aee2c8d5d1210a7ae108b101ed3cb00bdd2e59b65ac8fa41adaf5db09bf704`
+-	Image ID: `sha256:308e385c0730c8f4baee92551f6203026b4717d407922a4242c0c8c942486c1f`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -28,11 +28,11 @@ ADD file:ca3bf06a040bfe3d0d727326698ec36f9578bf9c8f6fe1050b7d85a3dd241112 in /
 CMD ["bash"]
 # Tue, 26 Mar 2019 23:58:38 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 26 Mar 2019 23:59:10 GMT
-RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Tue, 26 Mar 2019 23:59:11 GMT
+# Tue, 23 Apr 2019 00:56:46 GMT
+RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --batch --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
+# Tue, 23 Apr 2019 00:56:47 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian jessie main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel jessie main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Wed, 27 Mar 2019 00:01:02 GMT
+# Tue, 23 Apr 2019 00:58:35 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get 	&& rm -rf /var/lib/apt/lists/*
 ```
 
@@ -45,15 +45,15 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neu
 		Last Modified: Wed, 27 Mar 2019 00:03:04 GMT  
 		Size: 296.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c1f5ffcc87fc004c8550f666727a4af8973749b72a98a3f71800a1a21452435`  
-		Last Modified: Wed, 27 Mar 2019 00:03:04 GMT  
+	-	`sha256:f80008a2b2609eb1caa801aad2087751de9e1f2f7634257196cc77a90898f9bd`  
+		Last Modified: Tue, 23 Apr 2019 01:00:16 GMT  
 		Size: 3.2 KB (3157 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:910b13c0477a836d51520c002e3b6d097bbf19ba469f6f1ad1027b1ac15c2be8`  
-		Last Modified: Wed, 27 Mar 2019 00:03:04 GMT  
+	-	`sha256:0b21c088a122872733650bd6ea8bb2162c70f2355207a121d182f772718d8cfe`  
+		Last Modified: Tue, 23 Apr 2019 01:00:17 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e98ee5fb899e39217308021a8f6997357589bab642a1a1b2001f28c656a76c73`  
-		Last Modified: Wed, 27 Mar 2019 00:03:04 GMT  
-		Size: 301.5 KB (301453 bytes)  
+	-	`sha256:292d1751c7a10732f331fa22bcc93bb6a5ea234b1a45c7235ec1cbd1cc6183cd`  
+		Last Modified: Tue, 23 Apr 2019 01:00:16 GMT  
+		Size: 301.5 KB (301479 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
