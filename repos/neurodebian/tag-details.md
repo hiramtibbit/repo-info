@@ -6,6 +6,8 @@
 -	[`neurodebian:bionic-non-free`](#neurodebianbionic-non-free)
 -	[`neurodebian:buster`](#neurodebianbuster)
 -	[`neurodebian:buster-non-free`](#neurodebianbuster-non-free)
+-	[`neurodebian:cosmic`](#neurodebiancosmic)
+-	[`neurodebian:cosmic-non-free`](#neurodebiancosmic-non-free)
 -	[`neurodebian:jessie`](#neurodebianjessie)
 -	[`neurodebian:jessie-non-free`](#neurodebianjessie-non-free)
 -	[`neurodebian:latest`](#neurodebianlatest)
@@ -18,6 +20,8 @@
 -	[`neurodebian:nd16.04-non-free`](#neurodebiannd1604-non-free)
 -	[`neurodebian:nd18.04`](#neurodebiannd1804)
 -	[`neurodebian:nd18.04-non-free`](#neurodebiannd1804-non-free)
+-	[`neurodebian:nd18.10`](#neurodebiannd1810)
+-	[`neurodebian:nd18.10-non-free`](#neurodebiannd1810-non-free)
 -	[`neurodebian:nd80`](#neurodebiannd80)
 -	[`neurodebian:nd80-non-free`](#neurodebiannd80-non-free)
 -	[`neurodebian:nd90`](#neurodebiannd90)
@@ -320,6 +324,14 @@ RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurod
 		Last Modified: Wed, 27 Mar 2019 00:03:23 GMT  
 		Size: 368.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `neurodebian:cosmic`
+
+**does not exist** (yet?)
+
+## `neurodebian:cosmic-non-free`
+
+**does not exist** (yet?)
 
 ## `neurodebian:jessie`
 
@@ -1178,6 +1190,14 @@ RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurod
 		Last Modified: Tue, 12 Mar 2019 01:16:24 GMT  
 		Size: 255.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `neurodebian:nd18.10`
+
+**does not exist** (yet?)
+
+## `neurodebian:nd18.10-non-free`
+
+**does not exist** (yet?)
 
 ## `neurodebian:nd80`
 
