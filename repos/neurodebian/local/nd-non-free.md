@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:900d74d013d7ee74d8f460019e03bdae6a67fc9364da3c29d9590bb89575d547`
-- Created: `2019-03-27T00:02:47.571582388Z`
+- Image ID: `sha256:06f4ff9c7ef161b60c0759b1500d4c52ca3a0f5b25403424b1a89e74cb482e51`
+- Created: `2019-04-23T00:59:29.023134903Z`
 - Virtual Size: ~ 133.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -159,19 +159,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=10.1
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_10.1.dsc' base-files_10.1.dsc 1071 SHA256:993f58ec810722bf0210e06e351d58f1a316827b0995ffd03edbd2c3dc406130
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_10.1.tar.xz' base-files_10.1.tar.xz 65064 SHA256:368d2c32572802838de1151be45e8964669d3901429856bee06d219f125801d3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/10.1/
 
-- https://sources.debian.net/src/base-files/10.1/ (for browsing the source)
-- https://sources.debian.net/src/base-files/10.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/10.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.46`
 
@@ -1539,11 +1533,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.4.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.4.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `neurodebian=0.38.3`
+### `dpkg` source package: `neurodebian=0.39.0`
 
 Binary Packages:
 
-- `neurodebian-freeze=0.38.3`
+- `neurodebian-freeze=0.39.0`
 
 Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 
@@ -1555,16 +1549,16 @@ Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris neurodebian=0.38.3
-'http://deb.debian.org/debian/pool/main/n/neurodebian/neurodebian_0.38.3.dsc' neurodebian_0.38.3.dsc 2078 SHA256:242f2bed28c20fdd049417144bd187f15810a67c303f0d29083d152067941b2e
-'http://deb.debian.org/debian/pool/main/n/neurodebian/neurodebian_0.38.3.tar.xz' neurodebian_0.38.3.tar.xz 8326180 SHA256:7a5b9361612afc2eaf0d7bf6bdf7cc85ab21fa6f2daa472543f3f56f9a54d196
+$ apt-get source -qq --print-uris neurodebian=0.39.0
+'http://deb.debian.org/debian/pool/main/n/neurodebian/neurodebian_0.39.0.dsc' neurodebian_0.39.0.dsc 2078 SHA256:2aae2d0fdb7ce96a281bedf165784e948761be7b714cec06efc3c1652aac7e57
+'http://deb.debian.org/debian/pool/main/n/neurodebian/neurodebian_0.39.0.tar.xz' neurodebian_0.39.0.tar.xz 8326284 SHA256:42f2e7734e2d0d023bf05c64bf913fbba8ad400de5fc37c338fbec35163372d0
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/neurodebian/0.38.3/ (for browsing the source)
-- https://sources.debian.net/src/neurodebian/0.38.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/neurodebian/0.38.3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/neurodebian/0.39.0/ (for browsing the source)
+- https://sources.debian.net/src/neurodebian/0.39.0/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/neurodebian/0.39.0/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.6-1`
 

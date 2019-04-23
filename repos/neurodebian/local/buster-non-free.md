@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fafd78aa3965937f78fb048365cd204e46f015fc6f270adc6efab10098c707cf`
-- Created: `2019-03-27T00:02:23.435175152Z`
+- Image ID: `sha256:b26f841e1049b2270d9f093d17bfc653edda0386b88c5f0ad8f0a99c3be5f72e`
+- Created: `2019-04-23T00:59:15.186890115Z`
 - Virtual Size: ~ 133.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1547,11 +1547,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.4.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.4.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `neurodebian=0.38.3`
+### `dpkg` source package: `neurodebian=0.39.0~nd100+1`
 
 Binary Packages:
 
-- `neurodebian-freeze=0.38.3`
+- `neurodebian-freeze=0.39.0~nd100+1`
 
 Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 
@@ -1563,16 +1563,10 @@ Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris neurodebian=0.38.3
-'http://deb.debian.org/debian/pool/main/n/neurodebian/neurodebian_0.38.3.dsc' neurodebian_0.38.3.dsc 2078 SHA256:242f2bed28c20fdd049417144bd187f15810a67c303f0d29083d152067941b2e
-'http://deb.debian.org/debian/pool/main/n/neurodebian/neurodebian_0.38.3.tar.xz' neurodebian_0.38.3.tar.xz 8326180 SHA256:7a5b9361612afc2eaf0d7bf6bdf7cc85ab21fa6f2daa472543f3f56f9a54d196
+$ apt-get source -qq --print-uris neurodebian=0.39.0~nd100+1
+'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.39.0~nd100+1.dsc' neurodebian_0.39.0~nd100+1.dsc 1477 SHA256:836ea386885c13f8e960a11b82f71e9cdf0c1d254ea6be79d8287ff7fa484624
+'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.39.0~nd100+1.tar.xz' neurodebian_0.39.0~nd100+1.tar.xz 8326192 SHA256:1abfebc5ff01d3f3a1ad1c18726f92a2c82743c707343c18a188c3cd85085f8e
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/neurodebian/0.38.3/ (for browsing the source)
-- https://sources.debian.net/src/neurodebian/0.38.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/neurodebian/0.38.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.6-1`
 
@@ -1768,21 +1762,13 @@ Licenses: (parsed from: `/usr/share/doc/pinentry-curses/copyright`)
 - `LGPL-3+`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pinentry=1.1.0-1
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.1.0-1.dsc' pinentry_1.1.0-1.dsc 2910 SHA256:8cda3442923c0e18f9c3d5a2817a97a54db7447046b9c469e890abd19c680247
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.1.0.orig.tar.bz2' pinentry_1.1.0.orig.tar.bz2 467702 SHA256:68076686fa724a290ea49cdf0d1c0c1500907d1b759a3bcbfbec0293e8f56570
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.1.0.orig.tar.bz2.asc' pinentry_1.1.0.orig.tar.bz2.asc 534 SHA256:0e3a7633b9fddf9c01c3dcf74aeb94888cc6d5d233f0b8357b0b9c1a1fed9a73
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.1.0-1.debian.tar.xz' pinentry_1.1.0-1.debian.tar.xz 15408 SHA256:ddee92638e762f125ac09b86b4f3b31e2d240e8d2dcce940302293bb2ea0873e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pinentry/1.1.0-1/
 
-- https://sources.debian.net/src/pinentry/1.1.0-1/ (for browsing the source)
-- https://sources.debian.net/src/pinentry/1.1.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pinentry/1.1.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=7.0-5`
 
