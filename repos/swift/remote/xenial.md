@@ -1,7 +1,7 @@
 ## `swift:xenial`
 
 ```console
-$ docker pull swift@sha256:9e362ecf95c207f0836beae4168620458cf887fa15a50331b8bae7d0522faac3
+$ docker pull swift@sha256:9ce9419b00b10cea2f72a27c95d46a267d33173831c4d49ba6716720eacaa189
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull swift@sha256:9e362ecf95c207f0836beae4168620458cf887fa15a50331b8bae
 ### `swift:xenial` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:6232fc825a8c7ab56fe9f6e81a991f8c72193b325c7374cffb91859206f739d2
+$ docker pull swift@sha256:f14380f4210a9145f7b35aa456e0d253b20f8ebd52f8b6f15d12d22248fdbaa9
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **571.2 MB (571165572 bytes)**  
+-	Total Size: **476.8 MB (476832514 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:654ae4c28f35f8df2d2d1d38d3df9f8a426c6403dcc5c0391bbba56a423d78f8`
+-	Image ID: `sha256:df6d0f11ff983f843b9a4f73d1e67444267808edf7d5b0475e7e19d009c90c52`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -36,19 +36,19 @@ CMD ["/bin/bash"]
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
 # Tue, 12 Mar 2019 01:45:30 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Tue, 12 Mar 2019 01:46:52 GMT
-RUN apt-get -q update &&     apt-get -q install -y     make     libc6-dev     clang-3.8     curl     libedit-dev     libpython2.7     libicu-dev     libssl-dev     libxml2     tzdata     git     libcurl4-openssl-dev     pkg-config     && update-alternatives --quiet --install /usr/bin/clang clang /usr/bin/clang-3.8 100     && update-alternatives --quiet --install /usr/bin/clang++ clang++ /usr/bin/clang++-3.8 100     && rm -r /var/lib/apt/lists/*
-# Tue, 12 Mar 2019 01:46:53 GMT
+# Tue, 23 Apr 2019 22:23:58 GMT
+RUN apt-get -q update &&     apt-get -q install -y     libatomic1     libbsd0     libcurl3     libxml2     libedit2     libsqlite3-0     libc6-dev     binutils     libgcc-5-dev     libstdc++-5-dev     libpython2.7     tzdata     git     pkg-config     && rm -r /var/lib/apt/lists/*
+# Tue, 23 Apr 2019 22:23:58 GMT
 ARG SWIFT_PLATFORM=ubuntu16.04
-# Sat, 30 Mar 2019 00:23:45 GMT
-ARG SWIFT_BRANCH=swift-5.0-release
-# Sat, 30 Mar 2019 00:23:45 GMT
-ARG SWIFT_VERSION=swift-5.0-RELEASE
-# Sat, 30 Mar 2019 00:23:45 GMT
-ENV SWIFT_PLATFORM=ubuntu16.04 SWIFT_BRANCH=swift-5.0-release SWIFT_VERSION=swift-5.0-RELEASE
-# Sat, 30 Mar 2019 00:24:41 GMT
-RUN SWIFT_URL=https://swift.org/builds/$SWIFT_BRANCH/$(echo "$SWIFT_PLATFORM" | tr -d .)/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz     && curl -fSsL $SWIFT_URL -o swift.tar.gz     && curl -fSsL $SWIFT_URL.sig -o swift.tar.gz.sig     && export GNUPGHOME="$(mktemp -d)"     && set -e;         for key in           A62AE125BBBFBB96A6E042EC925CC1CCED3D1561         ; do           gpg --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";         done     && gpg --batch --verify --quiet swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && rm -r "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && chmod -R o+r /usr/lib/swift
-# Sat, 30 Mar 2019 00:24:43 GMT
+# Tue, 23 Apr 2019 22:23:58 GMT
+ARG SWIFT_BRANCH=swift-5.0.1-release
+# Tue, 23 Apr 2019 22:23:58 GMT
+ARG SWIFT_VERSION=swift-5.0.1-RELEASE
+# Tue, 23 Apr 2019 22:23:59 GMT
+ENV SWIFT_PLATFORM=ubuntu16.04 SWIFT_BRANCH=swift-5.0.1-release SWIFT_VERSION=swift-5.0.1-RELEASE
+# Tue, 23 Apr 2019 22:25:02 GMT
+RUN SWIFT_URL=https://swift.org/builds/$SWIFT_BRANCH/$(echo "$SWIFT_PLATFORM" | tr -d .)/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz     && apt-get -q update     && apt-get -q install -y curl     && curl -fSsL $SWIFT_URL -o swift.tar.gz     && curl -fSsL $SWIFT_URL.sig -o swift.tar.gz.sig     && apt-get purge -y curl     && apt-get -y autoremove     && export GNUPGHOME="$(mktemp -d)"     && set -e;         for key in           A62AE125BBBFBB96A6E042EC925CC1CCED3D1561         ; do           gpg --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";         done     && gpg --batch --verify --quiet swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && rm -r "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && chmod -R o+r /usr/lib/swift
+# Tue, 23 Apr 2019 22:25:09 GMT
 RUN swift --version
 ```
 
@@ -69,11 +69,11 @@ RUN swift --version
 		Last Modified: Tue, 12 Mar 2019 00:22:19 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c8e5a5bb3e3a593cf4b28e416012654f81c13204e76c4435ee09593c2746688`  
-		Last Modified: Tue, 12 Mar 2019 01:54:00 GMT  
-		Size: 224.5 MB (224475277 bytes)  
+	-	`sha256:892c683d285d1b111962d0b237c4439d359479acaa6eea1f647bf547621cce58`  
+		Last Modified: Tue, 23 Apr 2019 22:27:01 GMT  
+		Size: 111.4 MB (111417270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7744b2617fa3e2e64ffd475132a4ecaf3067e06865aa0f3a087a8f72403d9c3`  
-		Last Modified: Sat, 30 Mar 2019 00:27:03 GMT  
-		Size: 303.1 MB (303127258 bytes)  
+	-	`sha256:c3f4cf8786a485ede384696eab4ece100ec79ca71737a8d7cf0477200ec2cf6d`  
+		Last Modified: Tue, 23 Apr 2019 22:27:33 GMT  
+		Size: 321.9 MB (321852207 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
