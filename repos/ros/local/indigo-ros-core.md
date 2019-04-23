@@ -4473,14 +4473,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-rospkg-modules=1.1.7-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.7-1.dsc' python-rospkg-modules_1.1.7-1.dsc 953 SHA256:33b4aa87fe81014a4e75af693eaf774ad50a130db6606398b09d3493d9fa1ade
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.7.orig.tar.gz' python-rospkg-modules_1.1.7.orig.tar.gz 39986 SHA256:9317ac27b68e807884781a07339123ea7b2c3911bbf8a0a2f321e7c7de1f904e
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.7-1.debian.tar.xz' python-rospkg-modules_1.1.7-1.debian.tar.xz 1144 SHA256:2cc798fb32dc340f1b640e8be0ef9e1ad6f0d8a10099c5ddb4b98e7a45b360ee
-```
 
 ### `dpkg` source package: `python-rospkg=1.1.7-100`
 
@@ -4492,14 +4487,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-rospkg=1.1.7-100
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.7-100.dsc' python-rospkg_1.1.7-100.dsc 889 SHA256:91196293547af117a86a3a6530841fe2ccf85332d5ba1574f96546f65bc822fb
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.7.orig.tar.gz' python-rospkg_1.1.7.orig.tar.gz 16920 SHA256:caf4f2615c9bdff92d92f3a0fb6a2e42f5085099d90a635ec7134c869ea23a1c
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.7-100.debian.tar.xz' python-rospkg_1.1.7-100.debian.tar.xz 1140 SHA256:722cf76cbd9c81734874ccdb101fc10cbd94b6e7edb2e304718688e182195731
-```
 
 ### `dpkg` source package: `python-setuptools=3.3-1ubuntu2`
 
@@ -5993,13 +5983,9 @@ Licenses: (parsed from: `/usr/share/doc/ubuntu-advantage-tools/copyright`)
 - `GPL-3`
 - `GPL-3.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ubuntu-advantage-tools=10ubuntu0.14.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-advantage-tools/ubuntu-advantage-tools_10ubuntu0.14.04.2.dsc' ubuntu-advantage-tools_10ubuntu0.14.04.2.dsc 1396 SHA256:b660add317d25dfa8bd0af790ea303007c21ba58dab2aaefd1e0fab62028461a
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-advantage-tools/ubuntu-advantage-tools_10ubuntu0.14.04.2.tar.xz' ubuntu-advantage-tools_10ubuntu0.14.04.2.tar.xz 26604 SHA256:33583848adb6d81c17c6ed958f3703f93870a83613307066d901adec6b45b216
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 
