@@ -1,10 +1,10 @@
-# `maven:3.6.0-jdk-11`
+# `maven:3.6.1-jdk-11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:592298276402a8feafb127b57464c4e723f1c8bced39186db4af3e6b90458a50`
-- Created: `2019-04-04T23:03:29.872125881Z`
-- Virtual Size: ~ 825.17 Mb  
+- Image ID: `sha256:afbbea07a7c781e9f67213a8efd0f9662941ca656ed91d050c2cc6003860af36`
+- Created: `2019-04-16T22:38:05.371845531Z`
+- Virtual Size: ~ 825.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`

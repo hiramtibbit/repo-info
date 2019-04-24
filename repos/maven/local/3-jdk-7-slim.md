@@ -1,10 +1,10 @@
-# `maven:3.6.0-jdk-7-slim`
+# `maven:3.6.1-jdk-7-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:891fe8a78d74a1212369bd9f6e1f18e1882c610c92b2ca1aefad6049f7782aed`
-- Created: `2019-03-28T00:19:56.983853387Z`
-- Virtual Size: ~ 251.82 Mb  
+- Image ID: `sha256:5a6d98ffb549d7525d7344c74638fd801424e4a89bf860972eec69e398659e70`
+- Created: `2019-04-16T22:40:22.326848109Z`
+- Virtual Size: ~ 251.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -1446,20 +1446,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris jasper=1.900.1-debian1-2.4+deb8u5
-'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u5.dsc' jasper_1.900.1-debian1-2.4+deb8u5.dsc 2120 SHA256:5977b748da5ced64de8abcf0b31efc015ed4fdb626266c98207873a634397ebc
-'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-debian1.orig.tar.gz' jasper_1.900.1-debian1.orig.tar.gz 1140771 SHA256:7276e8407080d8263b39aeac8305032b0534c7df25bf02718b3944711e3c81d7
-'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u5.debian.tar.xz' jasper_1.900.1-debian1-2.4+deb8u5.debian.tar.xz 40220 SHA256:56f624ee083d13ae8a779266458023f82356a8cc114ce713d668755a3069438a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/jasper/1.900.1-debian1-2.4+deb8u5/
 
-- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u5/ (for browsing the source)
-- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/jasper/1.900.1-debian1-2.4+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `java-atk-wrapper=0.30.5-1`
 
@@ -2150,23 +2143,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libsndfile/1.0.25-9.1+deb8u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libsndfile/1.0.25-9.1+deb8u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libssh2=1.4.3-4.1+deb8u2`
+### `dpkg` source package: `libssh2=1.4.3-4.1+deb8u3`
 
 Binary Packages:
 
-- `libssh2-1:amd64=1.4.3-4.1+deb8u2`
+- `libssh2-1:amd64=1.4.3-4.1+deb8u3`
 
 Licenses: (parsed from: `/usr/share/doc/libssh2-1/copyright`)
 
 - `BSD`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libssh2=1.4.3-4.1+deb8u3
+'http://security.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2_1.4.3-4.1+deb8u3.dsc' libssh2_1.4.3-4.1+deb8u3.dsc 1928 SHA256:31de099ac637f875c752833d449f2df7f555025e5535dea8bf622a15c22831ef
+'http://security.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2_1.4.3.orig.tar.gz' libssh2_1.4.3.orig.tar.gz 685712 SHA256:eac6f85f9df9db2e6386906a6227eb2cd7b3245739561cad7d6dc1d5d021b96d
+'http://security.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2_1.4.3-4.1+deb8u3.debian.tar.xz' libssh2_1.4.3-4.1+deb8u3.debian.tar.xz 15632 SHA256:b25cc7bc596134042c4df08e2b9cc188d83ffb112e501f45571eca698766c730
+```
 
-- http://snapshot.debian.org/package/libssh2/1.4.3-4.1+deb8u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libssh2/1.4.3-4.1+deb8u3/ (for browsing the source)
+- https://sources.debian.net/src/libssh2/1.4.3-4.1+deb8u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libssh2/1.4.3-4.1+deb8u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-6=4.2-3+deb8u3`
 

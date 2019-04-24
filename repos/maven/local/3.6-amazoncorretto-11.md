@@ -1,17 +1,17 @@
-# `maven:3.6.1-amazoncorretto-8`
+# `maven:3.6.1-amazoncorretto-11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c2737aaa91768776275037b6166b6064f16ef6ef693dca953f17effa555df5f5`
-- Created: `2019-04-22T22:27:19.014529305Z`
-- Virtual Size: ~ 536.75 Mb  
+- Image ID: `sha256:6b145904c35c1a701399dca0d020268dc585f2f813d25e43337556307267789f`
+- Created: `2019-04-16T22:41:50.626278242Z`
+- Virtual Size: ~ 637.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
 - Command: `["mvn"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto`
+  - `JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 
@@ -359,7 +359,7 @@ Licenses (from `rpm --query`): pubkey
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `gpg-pubkey-d043e83b-5cbb7765`
+### `rpm` package: `gpg-pubkey-f8152b28-5cb10725`
 
 Licenses (from `rpm --query`): pubkey
 
@@ -413,9 +413,9 @@ Enabling amzn2-core-source repository
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/8c195638952748f26fff75f02bd72d734e934add5be9e0249432bc5877bc39d0//../../../../../blobstore/968c079ef8a8a2efee76ff59cd99e06dd242b8813960171d0f5c23f4a6eb0bb2/texinfo-5.1-5.amzn2.src.rpm
 ```
 
-### `rpm` package: `java-1.8.0-amazon-corretto-devel-1.8.0_212.b04-2.x86_64`
+### `rpm` package: `java-11-amazon-corretto-devel-11.0.3.7-1.x86_64`
 
-Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib.
+Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 

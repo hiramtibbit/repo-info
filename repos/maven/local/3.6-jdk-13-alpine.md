@@ -1,10 +1,10 @@
-# `maven:3.6.0-jdk-13-alpine`
+# `maven:3.6.1-jdk-13-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e5fa985ccb2661574098b98215a49ba4a81e36e1e096754c80fe5a1d43b20539`
-- Created: `2019-04-10T03:30:37.00662504Z`
-- Virtual Size: ~ 350.69 Mb  
+- Image ID: `sha256:1f87834f82f80c8ef47f314b3792fc550a4e56be63fd68e31a02cbb503e3e41b`
+- Created: `2019-04-18T00:08:52.678871041Z`
+- Virtual Size: ~ 350.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/opt/openjdk-13/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/openjdk-13`
-  - `JAVA_VERSION=13-ea+14`
-  - `JAVA_URL=https://download.java.net/java/early_access/alpine/14/binaries/openjdk-13-ea+14_linux-x64-musl_bin.tar.gz`
-  - `JAVA_SHA256=65902947d71998184de49eec5b420c489f31cb9a33eafd431dad445e97438250`
+  - `JAVA_VERSION=13-ea+16`
+  - `JAVA_URL=https://download.java.net/java/early_access/alpine/16/binaries/openjdk-13-ea+16_linux-x64-musl_bin.tar.gz`
+  - `JAVA_SHA256=1e3bcc2efccf17b1c86053dece5c9f5543d9c0ec1809a2586e89d3fe0e20e37d`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 

@@ -1,10 +1,10 @@
-# `maven:3.6.0-ibmjava-8-alpine`
+# `maven:3.6.1-ibmjava-8-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:17e515e0818c8236bdeef017e3d873dc9542c69f845337dd1361d20df927badc`
-- Created: `2019-04-02T23:03:29.692053332Z`
-- Virtual Size: ~ 270.04 Mb  
+- Image ID: `sha256:72ed157361c1086a3747949b08d2626036e82aa3c30fb269e08305a4bc66c3bb`
+- Created: `2019-04-16T22:41:07.547690536Z`
+- Virtual Size: ~ 270.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`

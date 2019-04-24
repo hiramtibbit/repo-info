@@ -1,10 +1,10 @@
-# `maven:3.6.0-jdk-7`
+# `maven:3.6.1-jdk-7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8b2567824094e0ab184b1f292cd6d0309c08c4e5378069ea359e991a7cac5625`
-- Created: `2019-03-28T00:20:09.007685146Z`
-- Virtual Size: ~ 485.11 Mb  
+- Image ID: `sha256:900b2dc5a2810ea2ec8e75409144ed3ce27c37237e5fe46a8cc988c4fed748cf`
+- Created: `2019-04-16T22:40:36.135137562Z`
+- Virtual Size: ~ 485.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -1717,20 +1717,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris jasper=1.900.1-debian1-2.4+deb8u5
-'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u5.dsc' jasper_1.900.1-debian1-2.4+deb8u5.dsc 2120 SHA256:5977b748da5ced64de8abcf0b31efc015ed4fdb626266c98207873a634397ebc
-'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-debian1.orig.tar.gz' jasper_1.900.1-debian1.orig.tar.gz 1140771 SHA256:7276e8407080d8263b39aeac8305032b0534c7df25bf02718b3944711e3c81d7
-'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u5.debian.tar.xz' jasper_1.900.1-debian1-2.4+deb8u5.debian.tar.xz 40220 SHA256:56f624ee083d13ae8a779266458023f82356a8cc114ce713d668755a3069438a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/jasper/1.900.1-debian1-2.4+deb8u5/
 
-- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u5/ (for browsing the source)
-- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/jasper/1.900.1-debian1-2.4+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `java-atk-wrapper=0.30.5-1`
 
