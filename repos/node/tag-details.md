@@ -38,6 +38,16 @@
 -	[`node:11-slim`](#node11-slim)
 -	[`node:11-stretch`](#node11-stretch)
 -	[`node:11-stretch-slim`](#node11-stretch-slim)
+-	[`node:12.0`](#node120)
+-	[`node:12.0.0`](#node1200)
+-	[`node:12.0.0-alpine`](#node1200-alpine)
+-	[`node:12.0.0-slim`](#node1200-slim)
+-	[`node:12.0.0-stretch`](#node1200-stretch)
+-	[`node:12.0.0-stretch-slim`](#node1200-stretch-slim)
+-	[`node:12.0-alpine`](#node120-alpine)
+-	[`node:12.0-slim`](#node120-slim)
+-	[`node:12.0-stretch`](#node120-stretch)
+-	[`node:12.0-stretch-slim`](#node120-stretch-slim)
 -	[`node:6`](#node6)
 -	[`node:6.17`](#node617)
 -	[`node:6.17.1`](#node6171)
@@ -10369,6 +10379,46 @@ CMD ["node"]
 		Last Modified: Fri, 12 Apr 2019 12:10:22 GMT  
 		Size: 1.3 MB (1324748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `node:12.0`
+
+**does not exist** (yet?)
+
+## `node:12.0.0`
+
+**does not exist** (yet?)
+
+## `node:12.0.0-alpine`
+
+**does not exist** (yet?)
+
+## `node:12.0.0-slim`
+
+**does not exist** (yet?)
+
+## `node:12.0.0-stretch`
+
+**does not exist** (yet?)
+
+## `node:12.0.0-stretch-slim`
+
+**does not exist** (yet?)
+
+## `node:12.0-alpine`
+
+**does not exist** (yet?)
+
+## `node:12.0-slim`
+
+**does not exist** (yet?)
+
+## `node:12.0-stretch`
+
+**does not exist** (yet?)
+
+## `node:12.0-stretch-slim`
+
+**does not exist** (yet?)
 
 ## `node:6`
 
