@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:595e5a41485943620a3355c2880844bd897eacbf562e8216e79e0e5c9536de60`
-- Created: `2019-04-16T22:20:30.723830308Z`
+- Image ID: `sha256:68fe666c02f585e287fb583e38667aab6d830fb49319ff7b2a0b27c06ecda55d`
+- Created: `2019-04-22T22:24:37.32379224Z`
 - Virtual Size: ~ 389.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto.x86_64`
+  - `JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -350,13 +350,13 @@ Enabling amzn2-core-source repository
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/8c195638952748f26fff75f02bd72d734e934add5be9e0249432bc5877bc39d0//../../../../../blobstore/acecef76ff4bca479390747cc9ea36ec3a6c855ac89951228f4183d2dea1fb31/gnupg2-2.0.22-5.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `gpg-pubkey-ab2654f9-5cb504ef`
+### `rpm` package: `gpg-pubkey-c87f5b1a-593863f8`
 
 Licenses (from `rpm --query`): pubkey
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `gpg-pubkey-c87f5b1a-593863f8`
+### `rpm` package: `gpg-pubkey-d043e83b-5cbb7765`
 
 Licenses (from `rpm --query`): pubkey
 
@@ -398,7 +398,7 @@ Enabling amzn2-core-source repository
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/8c195638952748f26fff75f02bd72d734e934add5be9e0249432bc5877bc39d0//../../../../../blobstore/968c079ef8a8a2efee76ff59cd99e06dd242b8813960171d0f5c23f4a6eb0bb2/texinfo-5.1-5.amzn2.src.rpm
 ```
 
-### `rpm` package: `java-1.8.0-amazon-corretto-devel-1.8.0_212.b04-1.x86_64`
+### `rpm` package: `java-1.8.0-amazon-corretto-devel-1.8.0_212.b04-2.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib.
 
