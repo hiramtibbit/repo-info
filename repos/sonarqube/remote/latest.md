@@ -1,7 +1,7 @@
 ## `sonarqube:latest`
 
 ```console
-$ docker pull sonarqube@sha256:024084ef7a410c38d5830255a8f0c846c7c17a30c28f427ea3734b110dd39682
+$ docker pull sonarqube@sha256:7e3086215d86430bb1bde555d755605e351f59ed7fa721aaff0d7478b665086a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull sonarqube@sha256:024084ef7a410c38d5830255a8f0c846c7c17a30c28f427ea
 ### `sonarqube:latest` - linux; amd64
 
 ```console
-$ docker pull sonarqube@sha256:6f09683589bdabb5a570fd8cdacdf6e2e363d5ff79abaad449711bb5f3ebfb6c
+$ docker pull sonarqube@sha256:91cce47fd6b8871ca36cd269248000190238a0dd1cc646164cdac0a6bdecc1fc
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **442.7 MB (442687553 bytes)**  
+-	Total Size: **442.7 MB (442687562 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e6ca21e4e839a1e82ccd15970283271b9eb1ce3e45b15e299625b5f4dd416fb6`
+-	Image ID: `sha256:570788666d7972f024d830ccdb5cbb2aa677bc87fdaac1c5d1a8afac747aa75f`
 -	Entrypoint: `[".\/bin\/run.sh"]`
 
 ```dockerfile
@@ -62,11 +62,11 @@ RUN set -x     && (gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-key
 VOLUME [/opt/sonarqube/data]
 # Thu, 28 Mar 2019 00:05:37 GMT
 WORKDIR /opt/sonarqube
-# Thu, 28 Mar 2019 00:05:37 GMT
-COPY file:108dc63c48e0f9caa767ef121de21a22716e7e01b409a40c32da36ee92cbf013 in /opt/sonarqube/bin/ 
-# Thu, 28 Mar 2019 00:05:37 GMT
+# Wed, 24 Apr 2019 21:37:18 GMT
+COPY file:11ab5c1c06a392784b593d333305f8188621a0da21d5a6d9fe37648f6c82181b in /opt/sonarqube/bin/ 
+# Wed, 24 Apr 2019 21:37:18 GMT
 USER sonarqube
-# Thu, 28 Mar 2019 00:05:37 GMT
+# Wed, 24 Apr 2019 21:37:19 GMT
 ENTRYPOINT ["./bin/run.sh"]
 ```
 
@@ -115,7 +115,7 @@ ENTRYPOINT ["./bin/run.sh"]
 		Last Modified: Thu, 28 Mar 2019 00:06:13 GMT  
 		Size: 195.6 MB (195552433 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e26c458b5f55560af2459283ab2be79f983c991efab5937acc5bb7ccf35b21b`  
-		Last Modified: Thu, 28 Mar 2019 00:05:59 GMT  
-		Size: 660.0 B  
+	-	`sha256:c59744850b2980c4d558e326fa23d6cfcea6742b07b3f52875a51144570f46a0`  
+		Last Modified: Wed, 24 Apr 2019 21:37:57 GMT  
+		Size: 669.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
