@@ -1,7 +1,7 @@
 ## `php:7-fpm-stretch`
 
 ```console
-$ docker pull php@sha256:339e96016d3163c1469f7775d6c5da9b47a88836e0531bc6dffa59d068320352
+$ docker pull php@sha256:3d6c37e974395c0eadfff8e964ef540798f0b089f87f2ceaa55e455f48d9a9ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -458,14 +458,14 @@ CMD ["php-fpm"]
 ### `php:7-fpm-stretch` - linux; 386
 
 ```console
-$ docker pull php@sha256:34cba2aed713a9110ec2a8592124e1773f19de544532a9d1ce40bab01621e44e
+$ docker pull php@sha256:32f5ff620aefe4ccff6bf1caeea01a9d9b949bdea6a85c675ffcc0e9f0934f76
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **136.3 MB (136340442 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:234d5e3178a0eddec2f7624a5423541abd309281a53adfd18ae2e08550f0d821`
+-	Image ID: `sha256:b5f062406e1d57ff4d3d5758c7b6224b937ff98150545f56435f75c78de3f99e`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -516,9 +516,11 @@ ENTRYPOINT ["docker-php-entrypoint"]
 WORKDIR /var/www/html
 # Sat, 06 Apr 2019 11:05:17 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Sat, 06 Apr 2019 11:05:17 GMT
+# Thu, 25 Apr 2019 11:21:52 GMT
+STOPSIGNAL SIGQUIT
+# Thu, 25 Apr 2019 11:21:52 GMT
 EXPOSE 9000
-# Sat, 06 Apr 2019 11:05:17 GMT
+# Thu, 25 Apr 2019 11:21:53 GMT
 CMD ["php-fpm"]
 ```
 
