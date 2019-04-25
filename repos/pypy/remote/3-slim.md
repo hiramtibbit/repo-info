@@ -1,7 +1,7 @@
 ## `pypy:3-slim`
 
 ```console
-$ docker pull pypy@sha256:dff7e9c00792a0fbe81c79f5158f1d46fe7a7b8afc1e1a4f5fa50fef10b36075
+$ docker pull pypy@sha256:4a2b3a6d477635f15f57585c54ad4605f92c851df6aa1e26a1b3e40712e18115
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -158,14 +158,14 @@ CMD ["pypy3"]
 ### `pypy:3-slim` - linux; s390x
 
 ```console
-$ docker pull pypy@sha256:d818528400123c7c67cdd587e61fc8986f221e0a686a0769578f29a77b74770e
+$ docker pull pypy@sha256:b3f25ce1eba708563fbe43a96959125b70953d870d67abb2a337c35715812253
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **64.3 MB (64311494 bytes)**  
+-	Total Size: **64.3 MB (64332673 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4f5a222ba2062a77fc0ca7388e628afba0256cfe992ea655168b0626046a7c12`
+-	Image ID: `sha256:1fed6a78d776b18a0694e01121d22c2fd623b7d5add76dc3241c253f69c1c373`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
@@ -181,11 +181,11 @@ ENV LANG=C.UTF-8
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libffi6 		libgdbm3 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
 # Wed, 27 Mar 2019 22:55:00 GMT
 ENV PYPY_VERSION=7.0.0
-# Wed, 27 Mar 2019 22:55:00 GMT
-ENV PYTHON_PIP_VERSION=19.0.3
-# Tue, 02 Apr 2019 11:52:05 GMT
+# Thu, 25 Apr 2019 12:29:41 GMT
+ENV PYTHON_PIP_VERSION=19.1
+# Thu, 25 Apr 2019 12:30:43 GMT
 RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) pypyArch='linux64'; sha256='729e3c54325969c98bd3658c6342b9f5987b96bad1d6def04250a08401b54c4b' ;; 		i386) pypyArch='linux32'; sha256='b8db8fbca9621de8ea8cd7184b322f2dddb2f385e8e5a63dfb75bb3fea4b2e3f' ;; 		ppc64el) pypyArch='ppc64le'; sha256='2912884da05abc2cdf71dd337c3f280095351312c1a1732a52b6878174a0fd02' ;; 		s390x) pypyArch='s390x'; sha256='d588b045cc0d3a75c31fce54c1d181b1206ad9a5dd272fe79160a6268401605f' ;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		wget 		libncurses5 	; 		wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3.5-v${PYPY_VERSION}-${pypyArch}.tar.bz2" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum -c; 	tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2; 	find /usr/local/lib-python -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		pypy3 --version; 		if [ -f /usr/local/lib_pypy/_ssl_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libssl-dev; 		cd /usr/local/lib_pypy; 		pypy3 _ssl_build.py; 	fi; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		pypy3 get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		rm -f get-pip.py; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 	pip --version
-# Tue, 02 Apr 2019 11:52:06 GMT
+# Thu, 25 Apr 2019 12:30:44 GMT
 CMD ["pypy3"]
 ```
 
@@ -198,7 +198,7 @@ CMD ["pypy3"]
 		Last Modified: Tue, 02 Apr 2019 11:56:31 GMT  
 		Size: 3.0 MB (3015918 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:178f20be514d3563bf5e0cbced80416c3eefb8c02824b3be5c006441b70ba0d1`  
-		Last Modified: Tue, 02 Apr 2019 11:56:51 GMT  
-		Size: 39.0 MB (38950294 bytes)  
+	-	`sha256:0787f48934ac568b965891358e291a9b363949a760509810725fa19787af12f7`  
+		Last Modified: Thu, 25 Apr 2019 12:34:22 GMT  
+		Size: 39.0 MB (38971473 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
