@@ -1,7 +1,7 @@
 ## `pypy:3-7-slim-stretch`
 
 ```console
-$ docker pull pypy@sha256:6a4a8520244dd8d59551dc4786e1402800406e3aab6ccad0a81040f707d9f860
+$ docker pull pypy@sha256:dff7e9c00792a0fbe81c79f5158f1d46fe7a7b8afc1e1a4f5fa50fef10b36075
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -62,14 +62,14 @@ CMD ["pypy3"]
 ### `pypy:3-7-slim-stretch` - linux; 386
 
 ```console
-$ docker pull pypy@sha256:c3d0f4a5cf130a91ce097dc6fad65a478ee9abde3ac669a884186a7386b086d9
+$ docker pull pypy@sha256:b097e3cf93022c08ea0478b79b0ce6bea51ec30ce770123f7e47b440f5edfe38
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **64.6 MB (64571017 bytes)**  
+-	Total Size: **64.6 MB (64593274 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0e3bd84a18787121c5b1c72d57b9eb46d1b5c28ba882f8469c603441249791c7`
+-	Image ID: `sha256:df2eded2926d809dba0163ceb9671cf5351ce9d32fef0945a5e3cb00fbcf4181`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
@@ -85,11 +85,11 @@ ENV LANG=C.UTF-8
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libffi6 		libgdbm3 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
 # Sat, 30 Mar 2019 11:41:33 GMT
 ENV PYPY_VERSION=7.0.0
-# Sat, 30 Mar 2019 11:41:33 GMT
-ENV PYTHON_PIP_VERSION=19.0.3
-# Sat, 30 Mar 2019 11:42:16 GMT
+# Thu, 25 Apr 2019 11:39:02 GMT
+ENV PYTHON_PIP_VERSION=19.1
+# Thu, 25 Apr 2019 11:40:09 GMT
 RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) pypyArch='linux64'; sha256='729e3c54325969c98bd3658c6342b9f5987b96bad1d6def04250a08401b54c4b' ;; 		i386) pypyArch='linux32'; sha256='b8db8fbca9621de8ea8cd7184b322f2dddb2f385e8e5a63dfb75bb3fea4b2e3f' ;; 		ppc64el) pypyArch='ppc64le'; sha256='2912884da05abc2cdf71dd337c3f280095351312c1a1732a52b6878174a0fd02' ;; 		s390x) pypyArch='s390x'; sha256='d588b045cc0d3a75c31fce54c1d181b1206ad9a5dd272fe79160a6268401605f' ;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		wget 		libncurses5 	; 		wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3.5-v${PYPY_VERSION}-${pypyArch}.tar.bz2" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum -c; 	tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2; 	find /usr/local/lib-python -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		pypy3 --version; 		if [ -f /usr/local/lib_pypy/_ssl_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libssl-dev; 		cd /usr/local/lib_pypy; 		pypy3 _ssl_build.py; 	fi; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		pypy3 get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		rm -f get-pip.py; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 	pip --version
-# Sat, 30 Mar 2019 11:42:16 GMT
+# Thu, 25 Apr 2019 11:40:10 GMT
 CMD ["pypy3"]
 ```
 
@@ -102,9 +102,9 @@ CMD ["pypy3"]
 		Last Modified: Sat, 30 Mar 2019 11:44:30 GMT  
 		Size: 3.3 MB (3320747 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6412e8ded3c430376d6ca27e777c85f69e7599629d6ea40a08db214df0cd6397`  
-		Last Modified: Sat, 30 Mar 2019 11:44:41 GMT  
-		Size: 38.1 MB (38124525 bytes)  
+	-	`sha256:a657a0db02a348f6d5fafc0aee8c418805e9ad82442fce9addd40fbdb09cfb52`  
+		Last Modified: Thu, 25 Apr 2019 11:42:23 GMT  
+		Size: 38.1 MB (38146782 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `pypy:3-7-slim-stretch` - linux; ppc64le
