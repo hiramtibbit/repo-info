@@ -1,7 +1,7 @@
 ## `postgres:10-alpine`
 
 ```console
-$ docker pull postgres@sha256:e2d8cfc0454b5ad12720ea0265e060d1a24f45405a714deb3e9f9313d45f6762
+$ docker pull postgres@sha256:44b6994b9577fff8cf5b980ca77a7e65a2ac4d237933be6fdd536c4a83af64b4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -203,14 +203,14 @@ CMD ["postgres"]
 ### `postgres:10-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull postgres@sha256:e2e7db99a30d9058fb54704e9da3efe5aea21a59cbd80dd6ab8ec55923644936
+$ docker pull postgres@sha256:8b9f9ac120c78f6a48a769f0ef9e81f43639e3098a5530fb03c78dcd408a6c9c
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.6 MB (25649269 bytes)**  
+-	Total Size: **25.6 MB (25649277 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9cd3272edd9ae136184ac9caffc845aae66b0520b6e871b74000eb60618db116`
+-	Image ID: `sha256:e722c72df24bbf600b4d142cde2f5ca0ca401c1fe01e3a8cc214d3bf8da40956`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -239,19 +239,19 @@ RUN sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/local/share/pos
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
 # Wed, 10 Apr 2019 12:50:46 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Wed, 10 Apr 2019 12:50:48 GMT
-RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Wed, 10 Apr 2019 12:50:48 GMT
+# Thu, 25 Apr 2019 12:04:33 GMT
+RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
+# Thu, 25 Apr 2019 12:04:33 GMT
 VOLUME [/var/lib/postgresql/data]
-# Wed, 10 Apr 2019 12:50:49 GMT
+# Thu, 25 Apr 2019 12:04:34 GMT
 COPY file:06aacea0082744225fdd508b7ef4d5280ad1b35ec665f4399894e8fd2cfd37ad in /usr/local/bin/ 
-# Wed, 10 Apr 2019 12:50:50 GMT
+# Thu, 25 Apr 2019 12:04:36 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Wed, 10 Apr 2019 12:50:51 GMT
+# Thu, 25 Apr 2019 12:04:36 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 10 Apr 2019 12:50:51 GMT
+# Thu, 25 Apr 2019 12:04:37 GMT
 EXPOSE 5432
-# Wed, 10 Apr 2019 12:50:52 GMT
+# Thu, 25 Apr 2019 12:04:38 GMT
 CMD ["postgres"]
 ```
 
@@ -280,16 +280,16 @@ CMD ["postgres"]
 		Last Modified: Wed, 10 Apr 2019 12:57:48 GMT  
 		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:631b2228d239274b998889c9f719e206dc6592a7d6b63fc484864e240a6e50a1`  
-		Last Modified: Wed, 10 Apr 2019 12:57:48 GMT  
-		Size: 201.0 B  
+	-	`sha256:dc53acd72eaaf1a1b6684fcb2057af781ba7316a20325bd4f88788ccdcb4495b`  
+		Last Modified: Thu, 25 Apr 2019 12:06:20 GMT  
+		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:938fadc29c7a25b0b09f6ea9234a86c50141ac4065ed9b7f7b27aab3ba38c846`  
-		Last Modified: Wed, 10 Apr 2019 12:57:48 GMT  
-		Size: 2.4 KB (2370 bytes)  
+	-	`sha256:8c99ad5055b239bd31a57fe6ea88bba6e5ab03fe61d7ed62de28af8772935773`  
+		Last Modified: Thu, 25 Apr 2019 12:06:20 GMT  
+		Size: 2.4 KB (2375 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10265bd2d6b596b802df2a12ac20e4a83f4caf6441e75f3d0d182e60e8817e2c`  
-		Last Modified: Wed, 10 Apr 2019 12:57:48 GMT  
+	-	`sha256:12eb347620d471a5106cf080606ca07fde385723fb3cce6798c529dbe5e465f7`  
+		Last Modified: Thu, 25 Apr 2019 12:06:20 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -575,14 +575,14 @@ CMD ["postgres"]
 ### `postgres:10-alpine` - linux; s390x
 
 ```console
-$ docker pull postgres@sha256:31aba79b36b83453659ab35ecf52eb61d676401dde566e110af5f505bbbb3ca5
+$ docker pull postgres@sha256:c69bbbd9dc47b690cecce8b0fa360062c555e0ef28c5ffc93537498bc79fbf31
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.4 MB (27372254 bytes)**  
+-	Total Size: **27.4 MB (27372257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1dc7cb399ccb08ba68ff764250dbef3bd96c51de975056131a2bf378994af36e`
+-	Image ID: `sha256:373a3303740b14f5ff1caec63d6d3a19ab58c1a6f71d0c2d08ca2b4d387c9186`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -611,19 +611,19 @@ RUN sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/local/share/pos
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
 # Wed, 10 Apr 2019 14:40:20 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Wed, 10 Apr 2019 14:40:23 GMT
-RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Wed, 10 Apr 2019 14:40:23 GMT
+# Thu, 25 Apr 2019 12:26:31 GMT
+RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
+# Thu, 25 Apr 2019 12:26:32 GMT
 VOLUME [/var/lib/postgresql/data]
-# Wed, 10 Apr 2019 14:40:24 GMT
+# Thu, 25 Apr 2019 12:26:32 GMT
 COPY file:06aacea0082744225fdd508b7ef4d5280ad1b35ec665f4399894e8fd2cfd37ad in /usr/local/bin/ 
-# Wed, 10 Apr 2019 14:40:26 GMT
+# Thu, 25 Apr 2019 12:26:33 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Wed, 10 Apr 2019 14:40:27 GMT
+# Thu, 25 Apr 2019 12:26:33 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 10 Apr 2019 14:40:27 GMT
+# Thu, 25 Apr 2019 12:26:33 GMT
 EXPOSE 5432
-# Wed, 10 Apr 2019 14:40:28 GMT
+# Thu, 25 Apr 2019 12:26:33 GMT
 CMD ["postgres"]
 ```
 
@@ -652,15 +652,15 @@ CMD ["postgres"]
 		Last Modified: Wed, 10 Apr 2019 14:58:55 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b2094fc4a6e6fc94b3c1ee9fee2af6137f24fe37b46360c7a02084f0de7ebe9`  
-		Last Modified: Wed, 10 Apr 2019 14:58:55 GMT  
-		Size: 169.0 B  
+	-	`sha256:194af454fcd786f8a2db6a244b688378ff3414c4f201bbb12949fd25f5b2c6c8`  
+		Last Modified: Thu, 25 Apr 2019 12:28:03 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdca912c96c25b6ba2724d5d6f92f66c19dd0d6de1f15c2b89581c59908fb502`  
-		Last Modified: Wed, 10 Apr 2019 14:58:55 GMT  
-		Size: 2.4 KB (2374 bytes)  
+	-	`sha256:f08e049f9c80eddef82dbaf8b046a2ce70a97235588867d507c970e70531ef6f`  
+		Last Modified: Thu, 25 Apr 2019 12:28:04 GMT  
+		Size: 2.4 KB (2375 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20ae11fe212dd9aec597289d15ab03c82c730c13271c084988f1adf269e5726a`  
-		Last Modified: Wed, 10 Apr 2019 14:58:56 GMT  
+	-	`sha256:9482914cf5d817979326cdd230e6ce2b631545bf6641b04301fafd7871a9a0fe`  
+		Last Modified: Thu, 25 Apr 2019 12:28:03 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
