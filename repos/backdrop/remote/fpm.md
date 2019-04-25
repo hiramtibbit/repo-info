@@ -1,7 +1,7 @@
 ## `backdrop:fpm`
 
 ```console
-$ docker pull backdrop@sha256:af122ac7bd9d4057a0397410c9f2ec21274bda079f24514f5c6b73216656c21e
+$ docker pull backdrop@sha256:c685c70c6ab5b69db3803d442e410e555a8b7b49ae41abbf2d2f9bcfa096e32d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull backdrop@sha256:af122ac7bd9d4057a0397410c9f2ec21274bda079f24514f5c
 ### `backdrop:fpm` - linux; amd64
 
 ```console
-$ docker pull backdrop@sha256:68b0dc107e22ab3deb730493c35c8b2f28bfbe8103a332657b5335b1227c85d2
+$ docker pull backdrop@sha256:37635fed3fbe9c701695c156613bbbb19d2025b4172af7207f9303e73f1fc835
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.9 MB (141870185 bytes)**  
+-	Total Size: **141.9 MB (141870184 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3f84d55b5d5b77fba6b758f50e95422f64c64b11bfddde63e9bd00ca2dd17742`
+-	Image ID: `sha256:030ec872eab3ae6534afedde8ba16254701655ae74e26508f1be9dcc39c4e1fe`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -70,25 +70,27 @@ ENTRYPOINT ["docker-php-entrypoint"]
 WORKDIR /var/www/html
 # Sat, 06 Apr 2019 03:28:50 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Sat, 06 Apr 2019 03:28:51 GMT
+# Thu, 25 Apr 2019 00:38:21 GMT
+STOPSIGNAL SIGQUIT
+# Thu, 25 Apr 2019 00:38:21 GMT
 EXPOSE 9000
-# Sat, 06 Apr 2019 03:28:51 GMT
+# Thu, 25 Apr 2019 00:38:22 GMT
 CMD ["php-fpm"]
-# Sat, 06 Apr 2019 06:25:02 GMT
+# Thu, 25 Apr 2019 00:58:30 GMT
 RUN apt-get update && apt-get install -y libpng-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
-# Sat, 06 Apr 2019 06:25:02 GMT
+# Thu, 25 Apr 2019 00:58:30 GMT
 WORKDIR /var/www/html
-# Thu, 18 Apr 2019 18:19:26 GMT
+# Thu, 25 Apr 2019 00:58:30 GMT
 ENV BACKDROP_VERSION=1.12.6
-# Thu, 18 Apr 2019 18:19:26 GMT
+# Thu, 25 Apr 2019 00:58:31 GMT
 ENV BACKDROP_MD5=dc4d954ae8dcdae39f17c9a25c2493f8
-# Thu, 18 Apr 2019 18:19:30 GMT
+# Thu, 25 Apr 2019 00:58:34 GMT
 RUN curl -fSL "https://github.com/backdrop/backdrop/archive/${BACKDROP_VERSION}.tar.gz" -o backdrop.tar.gz 	&& echo "${BACKDROP_MD5} *backdrop.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f backdrop.tar.gz 	&& rm backdrop.tar.gz 	&& chown -R www-data:www-data sites
-# Thu, 18 Apr 2019 18:19:30 GMT
+# Thu, 25 Apr 2019 00:58:34 GMT
 COPY file:dc282a331b642ab4cd043a874f505e04001cc1bdcf4f846fb117f413030d2835 in /entrypoint.sh 
-# Thu, 18 Apr 2019 18:19:30 GMT
+# Thu, 25 Apr 2019 00:58:34 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 18 Apr 2019 18:19:30 GMT
+# Thu, 25 Apr 2019 00:58:35 GMT
 CMD ["php-fpm"]
 ```
 
@@ -133,16 +135,16 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 06 Apr 2019 05:34:33 GMT  
 		Size: 7.8 KB (7800 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b77b29f85e6e68961a820edad88554cbb57c7bb53a19cf8d7a1fdf0cbd9785ab`  
-		Last Modified: Sat, 06 Apr 2019 06:25:38 GMT  
-		Size: 2.6 MB (2561852 bytes)  
+	-	`sha256:c87ccd419aabd92d53acc986317c03ffaa8526c46f35863a21b35430c939a8ee`  
+		Last Modified: Thu, 25 Apr 2019 00:58:54 GMT  
+		Size: 2.6 MB (2561851 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9dc73f2ec50d0277440e8d1c7a60a4d720622abe54a001316801ea71c94ad187`  
-		Last Modified: Thu, 18 Apr 2019 18:19:52 GMT  
+	-	`sha256:fba0eb7272dda7afa44214d68c5672472df8e7c8afb572b483270e3388680c50`  
+		Last Modified: Thu, 25 Apr 2019 00:58:56 GMT  
 		Size: 8.4 MB (8430199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3ab27b0a905d2c71b238b3be0f476f15e3d59e26f09d9f1579c45f9fd9431ca`  
-		Last Modified: Thu, 18 Apr 2019 18:19:50 GMT  
+	-	`sha256:d187528f42ff01caac1901413224e7f6f590bc8c19cd16c7e6e0a1a0c8e57973`  
+		Last Modified: Thu, 25 Apr 2019 00:58:54 GMT  
 		Size: 948.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
