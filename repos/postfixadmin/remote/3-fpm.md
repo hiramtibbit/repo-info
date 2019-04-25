@@ -1,7 +1,7 @@
 ## `postfixadmin:3-fpm`
 
 ```console
-$ docker pull postfixadmin@sha256:f3b5f16711f4aa193305e146fc9efe54dc58d1e7e5c8076097d91fc34d2399e6
+$ docker pull postfixadmin@sha256:84867ef7904101d587bb93e11f75cf241b61a744c75f1e6d73cfd35e11c938ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -443,14 +443,14 @@ CMD ["php-fpm"]
 ### `postfixadmin:3-fpm` - linux; arm64 variant v8
 
 ```console
-$ docker pull postfixadmin@sha256:350a5dbe74e23673fad2916e1267a2b877f6affd9cd149e7ef6c7c376640c96a
+$ docker pull postfixadmin@sha256:31876727f20d3eb1adc59b4a91b454b7b3664e1eed072a0bec1e3fa682df5980
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **120.2 MB (120225788 bytes)**  
+-	Total Size: **120.2 MB (120225807 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8908623a5567241e58ae27e1645440054d86b5b935777ef8cec2cdb66729e074`
+-	Image ID: `sha256:02f73991bc4c9d4e86dd67ef8ce8f5ff66052b1c5c0a024d257eea623fddf244`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -501,29 +501,31 @@ ENTRYPOINT ["docker-php-entrypoint"]
 WORKDIR /var/www/html
 # Sat, 06 Apr 2019 09:32:14 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Sat, 06 Apr 2019 09:32:15 GMT
+# Thu, 25 Apr 2019 09:11:12 GMT
+STOPSIGNAL SIGQUIT
+# Thu, 25 Apr 2019 09:11:13 GMT
 EXPOSE 9000
-# Sat, 06 Apr 2019 09:32:15 GMT
+# Thu, 25 Apr 2019 09:11:14 GMT
 CMD ["php-fpm"]
-# Sat, 06 Apr 2019 14:24:48 GMT
+# Thu, 25 Apr 2019 10:45:21 GMT
 LABEL maintainer=David Goodwin <david@codepoets.co.uk> (@DavidGoodwin)
-# Sat, 06 Apr 2019 14:26:36 GMT
+# Thu, 25 Apr 2019 10:47:19 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 	libpq-dev 	libsqlite3-dev 	; 		docker-php-ext-install 		mysqli 		pdo_mysql 		pdo_pgsql 		pdo_sqlite 		pgsql 	; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 		ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 			apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
-# Sat, 06 Apr 2019 14:26:37 GMT
+# Thu, 25 Apr 2019 10:47:20 GMT
 ARG POSTFIXADMIN_VERSION=3.2.2
-# Sat, 06 Apr 2019 14:26:38 GMT
+# Thu, 25 Apr 2019 10:47:21 GMT
 ARG POSTFIXADMIN_SHA512=6c84cb215e69c52c26db0651e5d0d9d8bcb0a63b00d3c197f10fa1f0442a1fde44bb514fb476a1e68a21741d603febac67282961d01270e5969ee13d145121ee
-# Sat, 06 Apr 2019 14:26:39 GMT
+# Thu, 25 Apr 2019 10:47:22 GMT
 ENV POSTFIXADMIN_VERSION=3.2.2
-# Sat, 06 Apr 2019 14:26:40 GMT
+# Thu, 25 Apr 2019 10:47:22 GMT
 ENV POSTFIXADMIN_SHA512=6c84cb215e69c52c26db0651e5d0d9d8bcb0a63b00d3c197f10fa1f0442a1fde44bb514fb476a1e68a21741d603febac67282961d01270e5969ee13d145121ee
-# Sat, 06 Apr 2019 14:26:43 GMT
+# Thu, 25 Apr 2019 10:47:26 GMT
 RUN set -eu; 	curl -fsSL -o postfixadmin.tar.gz "https://github.com/postfixadmin/postfixadmin/archive/postfixadmin-${POSTFIXADMIN_VERSION}.tar.gz"; 	echo "$POSTFIXADMIN_SHA512 *postfixadmin.tar.gz" | sha512sum -c -; 	mkdir /usr/src/postfixadmin; 	tar -xf postfixadmin.tar.gz -C /usr/src/postfixadmin --strip-components=1; 	rm postfixadmin.tar.gz; 	mkdir -p /usr/src/postfixadmin/templates_c; 	chown -R www-data:www-data /usr/src/postfixadmin
-# Sat, 06 Apr 2019 14:26:45 GMT
+# Thu, 25 Apr 2019 10:47:27 GMT
 COPY file:83be1dbd46cfa4c9ff6241f21a00fcd952c07b15bab1c6cf82fac6bfbae210c8 in /usr/local/bin/ 
-# Sat, 06 Apr 2019 14:26:46 GMT
+# Thu, 25 Apr 2019 10:47:27 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Sat, 06 Apr 2019 14:26:46 GMT
+# Thu, 25 Apr 2019 10:47:28 GMT
 CMD ["php-fpm"]
 ```
 
@@ -568,17 +570,17 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 06 Apr 2019 13:35:43 GMT  
 		Size: 8.3 KB (8289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3766280ae27a89df2323c32e8fdf6884246e36d7815e926b587f590a325cf703`  
-		Last Modified: Sat, 06 Apr 2019 14:29:34 GMT  
-		Size: 1.1 MB (1101918 bytes)  
+	-	`sha256:441849663208b851c4ebb750c1dc35404cdb5f5c8e7453ae5b6273ff831bac1a`  
+		Last Modified: Thu, 25 Apr 2019 10:49:26 GMT  
+		Size: 1.1 MB (1101935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60333c7730e823e90498a09104e41f394c7194a5af05ee5e1907e4a2a28a9a3e`  
-		Last Modified: Sat, 06 Apr 2019 14:29:34 GMT  
+	-	`sha256:de0172cf628584585b73de4d9f76f09bed292c559a1c53237175f7437ea46591`  
+		Last Modified: Thu, 25 Apr 2019 10:49:26 GMT  
 		Size: 1.3 MB (1333889 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e9e3e57de1c4dcff088abfa13584363f1389510f821c3acfa3ada2182028370`  
-		Last Modified: Sat, 06 Apr 2019 14:29:33 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:ed72712cd440c99a5747171b5350f356ed9f7b9576d32db252e4a9c6d295cbeb`  
+		Last Modified: Thu, 25 Apr 2019 10:49:26 GMT  
+		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postfixadmin:3-fpm` - linux; 386
