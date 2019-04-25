@@ -1,7 +1,7 @@
 ## `fedora:rawhide`
 
 ```console
-$ docker pull fedora@sha256:bebd0884dd33c30eb022e708483e42a3fd4be4ac911c58d0f3454af5094f3375
+$ docker pull fedora@sha256:57df91040b8c7e9e3a6060cd742d85dfcea59ad81e080e526d2b67e00371540d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -44,14 +44,14 @@ CMD ["/bin/bash"]
 ### `fedora:rawhide` - linux; arm64 variant v8
 
 ```console
-$ docker pull fedora@sha256:2d96a130f93dc1dfea25601156a0f6fc5a16975faf44100303408aee81fc7ed0
+$ docker pull fedora@sha256:59b4ba3dd9a4ce59037c99527e04178c4a020ad63e4dfe5a7a10f5ca22a57b03
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **90.5 MB (90544617 bytes)**  
+-	Total Size: **91.0 MB (91020704 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cfe331a0ddc1d8b793f4dcf7fe282b3bfcbc734f1593d63ee7aba3c79ba3c5a7`
+-	Image ID: `sha256:ba9438499376b0d0fdadbe70444ccac8b6c5f936a4e4376f8687966a50aaa13e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -59,16 +59,16 @@ $ docker pull fedora@sha256:2d96a130f93dc1dfea25601156a0f6fc5a16975faf4410030340
 LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
 # Thu, 04 Apr 2019 08:51:11 GMT
 ENV DISTTAG=f31container FGC=f31 FBR=f31
-# Thu, 04 Apr 2019 08:51:33 GMT
-ADD file:64ad15824a0dc91bea110757a7a4a67182951485d2fcce53d98f7e5529197413 in / 
-# Thu, 04 Apr 2019 08:51:35 GMT
+# Thu, 25 Apr 2019 08:42:33 GMT
+ADD file:d22427b712429d4fae37d4c822b0946c127df24cb70aa807b861d40e5df8bff9 in / 
+# Thu, 25 Apr 2019 08:42:35 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:38730dd54caeb562512f548a6fda40e80d3bf09aa93c362cb79f6d21a83c4587`  
-		Last Modified: Thu, 04 Apr 2019 08:53:14 GMT  
-		Size: 90.5 MB (90544617 bytes)  
+	-	`sha256:7df2f45c72337787467f041dbe31f18a7196dcd50dab358fc86d35e09eda4ac8`  
+		Last Modified: Thu, 25 Apr 2019 08:44:18 GMT  
+		Size: 91.0 MB (91020704 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `fedora:rawhide` - linux; ppc64le
