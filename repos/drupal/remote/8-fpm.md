@@ -1,7 +1,7 @@
 ## `drupal:8-fpm`
 
 ```console
-$ docker pull drupal@sha256:8c04c1f5d4eebd7987f15a6146dd6ef671cfbd1341e10da79427d0a24892472a
+$ docker pull drupal@sha256:c1ca4ad55c66c37cf689761d2aac87ccbf91ccdb1c554485fb27a95f27aa9f66
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -419,14 +419,14 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 ### `drupal:8-fpm` - linux; arm64 variant v8
 
 ```console
-$ docker pull drupal@sha256:048557bcc208e7009b878fda53f1110220261970f392ec34d84f7da0c10f288e
+$ docker pull drupal@sha256:c5e5c9e2567ea4d24ac9d2c65d1f878791cc2221ede702c8534297de81a54fa4
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.0 MB (136021577 bytes)**  
+-	Total Size: **136.0 MB (136021599 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa3df4bca6499c4078b18dca02c5c78f72dd1d906ad1f4951cfd9ed188fd24fb`
+-	Image ID: `sha256:f9ac593abb94cc4247920e089cfc7c29c3ca38258372dabfd0e22fd02b0a53c8`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -477,21 +477,23 @@ ENTRYPOINT ["docker-php-entrypoint"]
 WORKDIR /var/www/html
 # Sat, 06 Apr 2019 11:02:25 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Sat, 06 Apr 2019 11:02:25 GMT
+# Thu, 25 Apr 2019 09:13:06 GMT
+STOPSIGNAL SIGQUIT
+# Thu, 25 Apr 2019 09:13:07 GMT
 EXPOSE 9000
-# Sat, 06 Apr 2019 11:02:26 GMT
+# Thu, 25 Apr 2019 09:13:08 GMT
 CMD ["php-fpm"]
-# Sat, 06 Apr 2019 15:31:05 GMT
+# Thu, 25 Apr 2019 10:05:35 GMT
 RUN set -ex; 		if command -v a2enmod; then 		a2enmod rewrite; 	fi; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libjpeg-dev 		libpng-dev 		libpq-dev 	; 		docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr; 	docker-php-ext-install -j "$(nproc)" 		gd 		opcache 		pdo_mysql 		pdo_pgsql 		zip 	; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
-# Sat, 06 Apr 2019 15:31:06 GMT
+# Thu, 25 Apr 2019 10:05:37 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Sat, 06 Apr 2019 15:31:07 GMT
+# Thu, 25 Apr 2019 10:05:38 GMT
 WORKDIR /var/www/html
-# Thu, 18 Apr 2019 08:42:16 GMT
+# Thu, 25 Apr 2019 10:05:38 GMT
 ENV DRUPAL_VERSION=8.6.15
-# Thu, 18 Apr 2019 08:42:17 GMT
+# Thu, 25 Apr 2019 10:05:39 GMT
 ENV DRUPAL_MD5=85ae6b9f7309cc8564331fd77369dffd
-# Thu, 18 Apr 2019 08:42:30 GMT
+# Thu, 25 Apr 2019 10:05:52 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites modules themes
 ```
 
@@ -536,16 +538,16 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Sat, 06 Apr 2019 13:40:24 GMT  
 		Size: 7.8 KB (7800 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b292acc0c623c5c0b9a732af9d51d9f25e96e242969c31b84fe91a40cf15616c`  
-		Last Modified: Sat, 06 Apr 2019 15:41:40 GMT  
-		Size: 1.1 MB (1084087 bytes)  
+	-	`sha256:b7acceaf3a17b9d6e876966734c804682d4a0ff236cf80673563df3064afce81`  
+		Last Modified: Thu, 25 Apr 2019 10:13:23 GMT  
+		Size: 1.1 MB (1084109 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd8f13942008272c4008d17f513265d5a4c4fe91a2136b304e1ff8a91d18ab29`  
-		Last Modified: Sat, 06 Apr 2019 15:41:39 GMT  
+	-	`sha256:a65675ec0b893f5bead23f887e27cdd52e9c29667bee6def9bffdc7f1f97c397`  
+		Last Modified: Thu, 25 Apr 2019 10:13:23 GMT  
 		Size: 351.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:22ae34502dbd9dca154b94b52e12c195d7a684642d44d1f03ebc35afe8da7d03`  
-		Last Modified: Thu, 18 Apr 2019 08:47:03 GMT  
+	-	`sha256:b16c5c707d8365c60d1fa7e29ef886eb4e79cf5b030e0317ebd10417b5ae2604`  
+		Last Modified: Thu, 25 Apr 2019 10:13:35 GMT  
 		Size: 17.3 MB (17255930 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -685,14 +687,14 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 ### `drupal:8-fpm` - linux; ppc64le
 
 ```console
-$ docker pull drupal@sha256:1591b37160646c92367705d8193bb463c8865d47c2a4fcc1333880880bec5695
+$ docker pull drupal@sha256:f6fee14ca4d97f425ccae2ba60d9ef8d0cc829d9e7e25fd9646db10c62d981ad
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **143.8 MB (143800871 bytes)**  
+-	Total Size: **143.8 MB (143801000 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:788a0101a5bc2a93668f8b8d3b1d625a744a730933ca06d55272adecb9cf606d`
+-	Image ID: `sha256:fcff5ac9ac036f994a690ab33ff5bfb7df4712bd450803f79edf8765fdf4ccfb`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -743,21 +745,23 @@ ENTRYPOINT ["docker-php-entrypoint"]
 WORKDIR /var/www/html
 # Sat, 06 Apr 2019 09:42:21 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Sat, 06 Apr 2019 09:42:23 GMT
+# Thu, 25 Apr 2019 09:21:40 GMT
+STOPSIGNAL SIGQUIT
+# Thu, 25 Apr 2019 09:21:43 GMT
 EXPOSE 9000
-# Sat, 06 Apr 2019 09:42:26 GMT
+# Thu, 25 Apr 2019 09:21:46 GMT
 CMD ["php-fpm"]
-# Sat, 06 Apr 2019 13:25:08 GMT
+# Thu, 25 Apr 2019 10:05:40 GMT
 RUN set -ex; 		if command -v a2enmod; then 		a2enmod rewrite; 	fi; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libjpeg-dev 		libpng-dev 		libpq-dev 	; 		docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr; 	docker-php-ext-install -j "$(nproc)" 		gd 		opcache 		pdo_mysql 		pdo_pgsql 		zip 	; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
-# Sat, 06 Apr 2019 13:25:13 GMT
+# Thu, 25 Apr 2019 10:05:47 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Sat, 06 Apr 2019 13:25:14 GMT
+# Thu, 25 Apr 2019 10:05:51 GMT
 WORKDIR /var/www/html
-# Thu, 18 Apr 2019 08:18:35 GMT
+# Thu, 25 Apr 2019 10:05:53 GMT
 ENV DRUPAL_VERSION=8.6.15
-# Thu, 18 Apr 2019 08:18:38 GMT
+# Thu, 25 Apr 2019 10:05:57 GMT
 ENV DRUPAL_MD5=85ae6b9f7309cc8564331fd77369dffd
-# Thu, 18 Apr 2019 08:18:56 GMT
+# Thu, 25 Apr 2019 10:06:18 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites modules themes
 ```
 
@@ -802,15 +806,15 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Sat, 06 Apr 2019 11:20:36 GMT  
 		Size: 7.8 KB (7801 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8a4d6d3d9ec2d35e140da47c070bcde5cc106c4e481c077a4a81747d9e40a04`  
-		Last Modified: Sat, 06 Apr 2019 13:35:44 GMT  
-		Size: 1.2 MB (1174250 bytes)  
+	-	`sha256:e537c60fb33da473faf3ee708abcc656378d3501495207df149cb1414be13df3`  
+		Last Modified: Thu, 25 Apr 2019 10:16:33 GMT  
+		Size: 1.2 MB (1174351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10b90d5b914aa50221bec4bac30d4a4614ec9e9986a71c2eaacc1e267afdc854`  
-		Last Modified: Sat, 06 Apr 2019 13:35:42 GMT  
-		Size: 349.0 B  
+	-	`sha256:28b713f14e0a5e011d5723a140479c05a5e67db7c7d049ac20ce086899a6dbae`  
+		Last Modified: Thu, 25 Apr 2019 10:16:31 GMT  
+		Size: 351.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:64a98c4ebbc29d4a410764b70ce4590d00ccefcb0a69cb8b57b8dd6e66ff1aef`  
-		Last Modified: Thu, 18 Apr 2019 08:26:57 GMT  
-		Size: 17.3 MB (17256086 bytes)  
+	-	`sha256:6b7dfc536aab53537bcb7a159bd4f0d4b9a1ad2f02a05d8b7076545df1d2fb06`  
+		Last Modified: Thu, 25 Apr 2019 10:17:38 GMT  
+		Size: 17.3 MB (17256112 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
