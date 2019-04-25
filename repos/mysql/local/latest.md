@@ -1,10 +1,10 @@
-# `mysql:8.0.15`
+# `mysql:8.0.16`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7bb2586065cd50457e315a5dab0732a87c45c5fad619c017732f5a13e58b51dd`
-- Created: `2019-03-26T23:42:03.939173665Z`
-- Virtual Size: ~ 476.97 Mb  
+- Image ID: `sha256:d72169616e20dc86bbf814d01652003a53388d2151d8bb0060a08696036ca34d`
+- Created: `2019-04-25T00:23:19.754434424Z`
+- Virtual Size: ~ 443.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.7`
   - `MYSQL_MAJOR=8.0`
-  - `MYSQL_VERSION=8.0.15-1debian9`
+  - `MYSQL_VERSION=8.0.16-1debian9`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1332,14 +1332,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mecab/0.996-3.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mecab/0.996-3.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mysql-community=8.0.15-1debian9`
+### `dpkg` source package: `mysql-community=8.0.16-1debian9`
 
 Binary Packages:
 
-- `mysql-common=8.0.15-1debian9`
-- `mysql-community-client=8.0.15-1debian9`
-- `mysql-community-client-core=8.0.15-1debian9`
-- `mysql-community-server-core=8.0.15-1debian9`
+- `mysql-common=8.0.16-1debian9`
+- `mysql-community-client=8.0.16-1debian9`
+- `mysql-community-client-core=8.0.16-1debian9`
+- `mysql-community-server-core=8.0.16-1debian9`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1348,10 +1348,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mysql-community=8.0.15-1debian9
-'http://repo.mysql.com/apt/debian/pool/mysql-8.0/m/mysql-community/mysql-community_8.0.15-1debian9.dsc' mysql-community_8.0.15-1debian9.dsc 2352 SHA256:62fce45b27035ccdda8036c21090047c4289bf503cf7a0ddabd40f176046a6e8
-'http://repo.mysql.com/apt/debian/pool/mysql-8.0/m/mysql-community/mysql-community_8.0.15.orig.tar.gz' mysql-community_8.0.15.orig.tar.gz 118026335 SHA256:bb1bca2dc2f23ee9dd395cc4db93b64561d4ac20b53be5d1dae563f7be64825e
-'http://repo.mysql.com/apt/debian/pool/mysql-8.0/m/mysql-community/mysql-community_8.0.15-1debian9.debian.tar.xz' mysql-community_8.0.15-1debian9.debian.tar.xz 19920 SHA256:79a2e340829304ab924116e19ed1702f1fb7a531fb4491e9bccf9e4a56c9a6b3
+$ apt-get source -qq --print-uris mysql-community=8.0.16-1debian9
+'http://repo.mysql.com/apt/debian/pool/mysql-8.0/m/mysql-community/mysql-community_8.0.16-1debian9.dsc' mysql-community_8.0.16-1debian9.dsc 2352 SHA256:e578b2aa9086c2e9c1507f993065beb4efd4df0486b2b9a1efc4a3ec36dacdef
+'http://repo.mysql.com/apt/debian/pool/mysql-8.0/m/mysql-community/mysql-community_8.0.16.orig.tar.gz' mysql-community_8.0.16.orig.tar.gz 146811037 SHA256:8d9fe89920dc8bbbde2857b7b877ad2fa5ec2f231c68e941d484f3b72735eaea
+'http://repo.mysql.com/apt/debian/pool/mysql-8.0/m/mysql-community/mysql-community_8.0.16-1debian9.debian.tar.xz' mysql-community_8.0.16-1debian9.debian.tar.xz 20056 SHA256:4b93bbcb0568ae316ea1789633c951ad5f45d34670a28f72798f9ad0196eedfe
 ```
 
 ### `dpkg` source package: `ncurses=6.0+20161126-1+deb9u2`
