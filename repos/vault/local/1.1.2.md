@@ -1,17 +1,16 @@
-# `vault:1.1.1`
+# `vault:1.1.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4496e5363fed5e522ef356e487d573fc2011d526a2d4047022ae56cd5bd861bb`
-- Created: `2019-04-12T22:55:09.64716619Z`
-- Virtual Size: ~ 108.06 Mb  
+- Image ID: `sha256:8a23297b2305aee7e6259b2d9ae5e67745cae3c4b695d7858260cd69e1f96ef7`
+- Created: `2019-04-23T21:20:15.335244277Z`
+- Virtual Size: ~ 108.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["server","-dev"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `VAULT_VERSION=1.1.1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -290,16 +289,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2018f-r0 description:
+tzdata-2018i-r0 description:
 Timezone data
 
-tzdata-2018f-r0 webpage:
+tzdata-2018i-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2018f-r0 installed size:
-3518464
+tzdata-2018i-r0 installed size:
+3526656
 
-tzdata-2018f-r0 license:
+tzdata-2018i-r0 license:
 Public-Domain
 
 ```
