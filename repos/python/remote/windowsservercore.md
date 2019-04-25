@@ -1,7 +1,7 @@
 ## `python:windowsservercore`
 
 ```console
-$ docker pull python@sha256:c3620cdd1ce3a029584df38060693de7d199c16f1c6c118ca6c37a741aacf3d1
+$ docker pull python@sha256:0a6f91f5ed5fd51e1da0aee6f6810a3cfd8a52306a7d2ab441c5dcfa8441f022
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,14 +13,14 @@ $ docker pull python@sha256:c3620cdd1ce3a029584df38060693de7d199c16f1c6c118ca6c3
 ### `python:windowsservercore` - windows version 10.0.14393.2906; amd64
 
 ```console
-$ docker pull python@sha256:4d2f40dc41769010e6e2203e9a74501d3ece9f90b3f1a3d3afe63181df6e1d94
+$ docker pull python@sha256:79464e701915fa05a4ab56760a1e883734348e6429c34503051412f2836d7fd7
 ```
 
 -	Docker Version: 18.03.1-ee-4
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.7 GB (5702200035 bytes)**  
+-	Total Size: **5.7 GB (5702216766 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0409cc0c626177d244f82481d2471527dab2f644de541385d779f079c760f334`
+-	Image ID: `sha256:f8725bd42cf5740abb9713bec6e9b0531a1606ec61eccd2ade02a151de7db7aa`
 -	Default Command: `["python"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -37,11 +37,11 @@ ENV PYTHON_VERSION=3.7.3
 ENV PYTHON_RELEASE=3.7.3
 # Thu, 11 Apr 2019 23:14:04 GMT
 RUN $url = ('https://www.python.org/ftp/python/{0}/python-{1}-amd64.exe' -f $env:PYTHON_RELEASE, $env:PYTHON_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'python.exe'; 		Write-Host 'Installing ...'; 	Start-Process python.exe -Wait 		-ArgumentList @( 			'/quiet', 			'InstallAllUsers=1', 			'TargetDir=C:\Python', 			'PrependPath=1', 			'Shortcuts=0', 			'Include_doc=0', 			'Include_pip=0', 			'Include_test=0' 		); 		$env:PATH = [Environment]::GetEnvironmentVariable('PATH', [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  python --version'; python --version; 		Write-Host 'Removing ...'; 	Remove-Item python.exe -Force; 		Write-Host 'Complete.';
-# Thu, 11 Apr 2019 23:14:05 GMT
-ENV PYTHON_PIP_VERSION=19.0.3
-# Thu, 11 Apr 2019 23:15:52 GMT
+# Thu, 25 Apr 2019 09:20:55 GMT
+ENV PYTHON_PIP_VERSION=19.1
+# Thu, 25 Apr 2019 09:22:33 GMT
 RUN Write-Host ('Installing pip=={0} ...' -f $env:PYTHON_PIP_VERSION); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri 'https://bootstrap.pypa.io/get-pip.py' -OutFile 'get-pip.py'; 	python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		('pip=={0}' -f $env:PYTHON_PIP_VERSION) 	; 	Remove-Item get-pip.py -Force; 		Write-Host 'Verifying pip install ...'; 	pip --version; 		Write-Host 'Complete.';
-# Thu, 11 Apr 2019 23:15:53 GMT
+# Thu, 25 Apr 2019 09:22:35 GMT
 CMD ["python"]
 ```
 
@@ -70,30 +70,30 @@ CMD ["python"]
 		Last Modified: Fri, 12 Apr 2019 00:05:47 GMT  
 		Size: 49.8 MB (49843478 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8f0dde4e23772d62037e461da2283fc3015a94175ed4ba09da7db5d0098aaca`  
-		Last Modified: Fri, 12 Apr 2019 00:05:23 GMT  
-		Size: 1.2 KB (1207 bytes)  
+	-	`sha256:48fb630758ed1a2e55f97427809dfc18b489273a87cd662455fc779d3ab03cda`  
+		Last Modified: Thu, 25 Apr 2019 09:38:46 GMT  
+		Size: 1.2 KB (1214 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e3c39892d8a108f3cea25c0047e1d73406f018560aa9e4f0bd4ad5ae2a90b8d`  
-		Last Modified: Fri, 12 Apr 2019 00:05:35 GMT  
-		Size: 10.0 MB (9980816 bytes)  
+	-	`sha256:797f270d0148be96cbada21ea222650326213b52c469a103dc8dd2b04dddef0e`  
+		Last Modified: Thu, 25 Apr 2019 09:38:53 GMT  
+		Size: 10.0 MB (9997539 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9778750d70d6ad3fa3536c2bd822df28b09f285087f4a252d981b5c7cf9f569d`  
-		Last Modified: Fri, 12 Apr 2019 00:05:22 GMT  
-		Size: 1.2 KB (1207 bytes)  
+	-	`sha256:34953db459b76f888cac9434c556affd375d72785f0007786088e774711afed8`  
+		Last Modified: Thu, 25 Apr 2019 09:38:46 GMT  
+		Size: 1.2 KB (1208 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:windowsservercore` - windows version 10.0.17134.706; amd64
 
 ```console
-$ docker pull python@sha256:79e70a7328f583bb77a361ee7b51f9a23e0b16d5e8b1c75b600062007cf33470
+$ docker pull python@sha256:d318744e4e0e83bf1822d5b0631ab031efd9d7642042515f9783893d9f177fe2
 ```
 
 -	Docker Version: 18.03.1-ee-4
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2310851691 bytes)**  
+-	Total Size: **2.3 GB (2310873965 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b847f91b9ae2b270e34790289b9be9817d0a3c13e5f6b4326bd9314fbed4afa2`
+-	Image ID: `sha256:d9d9dec1cc3773f2369aaad57a995000c6b6aab5d8769ef031dab7f07c7da795`
 -	Default Command: `["python"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -110,11 +110,11 @@ ENV PYTHON_VERSION=3.7.3
 ENV PYTHON_RELEASE=3.7.3
 # Thu, 11 Apr 2019 23:22:44 GMT
 RUN $url = ('https://www.python.org/ftp/python/{0}/python-{1}-amd64.exe' -f $env:PYTHON_RELEASE, $env:PYTHON_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'python.exe'; 		Write-Host 'Installing ...'; 	Start-Process python.exe -Wait 		-ArgumentList @( 			'/quiet', 			'InstallAllUsers=1', 			'TargetDir=C:\Python', 			'PrependPath=1', 			'Shortcuts=0', 			'Include_doc=0', 			'Include_pip=0', 			'Include_test=0' 		); 		$env:PATH = [Environment]::GetEnvironmentVariable('PATH', [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  python --version'; python --version; 		Write-Host 'Removing ...'; 	Remove-Item python.exe -Force; 		Write-Host 'Complete.';
-# Thu, 11 Apr 2019 23:22:46 GMT
-ENV PYTHON_PIP_VERSION=19.0.3
-# Thu, 11 Apr 2019 23:23:54 GMT
+# Thu, 25 Apr 2019 09:22:53 GMT
+ENV PYTHON_PIP_VERSION=19.1
+# Thu, 25 Apr 2019 09:23:57 GMT
 RUN Write-Host ('Installing pip=={0} ...' -f $env:PYTHON_PIP_VERSION); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri 'https://bootstrap.pypa.io/get-pip.py' -OutFile 'get-pip.py'; 	python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		('pip=={0}' -f $env:PYTHON_PIP_VERSION) 	; 	Remove-Item get-pip.py -Force; 		Write-Host 'Verifying pip install ...'; 	pip --version; 		Write-Host 'Complete.';
-# Thu, 11 Apr 2019 23:23:56 GMT
+# Thu, 25 Apr 2019 09:23:59 GMT
 CMD ["python"]
 ```
 
@@ -143,30 +143,30 @@ CMD ["python"]
 		Last Modified: Fri, 12 Apr 2019 00:07:19 GMT  
 		Size: 49.4 MB (49388168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68e8b411f4eed9bef1276fcf0b64cc1c959d178173f93bf50712be4af8fdbbff`  
-		Last Modified: Fri, 12 Apr 2019 00:06:53 GMT  
-		Size: 1.2 KB (1205 bytes)  
+	-	`sha256:8bf9516d0138958ea6953037b60088a27c99db4b2b7d3541dad490471b3b04db`  
+		Last Modified: Thu, 25 Apr 2019 09:39:14 GMT  
+		Size: 1.2 KB (1211 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f01806744ded1309bd06ea497801f1d49679223c1176a0fbe0cf7916f327366d`  
-		Last Modified: Fri, 12 Apr 2019 00:07:04 GMT  
-		Size: 5.1 MB (5106892 bytes)  
+	-	`sha256:5058945caab351527b26b96fc8f0e0eb07039b66942831f4eec959dadc157ae3`  
+		Last Modified: Thu, 25 Apr 2019 09:39:20 GMT  
+		Size: 5.1 MB (5129153 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57c34d61a2eb157b1471a8cab0df062a0099ed93cc8c4df34a8468e019069b72`  
-		Last Modified: Fri, 12 Apr 2019 00:06:53 GMT  
-		Size: 1.2 KB (1199 bytes)  
+	-	`sha256:71d0bcdba5290b90873915a659fc6f0c9e0183c26d05613d3c377eeb035ff1be`  
+		Last Modified: Thu, 25 Apr 2019 09:39:14 GMT  
+		Size: 1.2 KB (1206 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:windowsservercore` - windows version 10.0.17763.437; amd64
 
 ```console
-$ docker pull python@sha256:a0879564203a301f2a9a6c689d41cfead913e26762d7259707c2c51e6c89ed6b
+$ docker pull python@sha256:dba722af7906453eb95ec00346e866824734c1c7a1977cf7fa2a7d60bd3bfede
 ```
 
 -	Docker Version: 18.03.1-ee-4
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.0 GB (2027996388 bytes)**  
+-	Total Size: **2.0 GB (2028016415 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:abaf8d2948ede93a446bb10f3f0240f1dcc8757b970444c58d88838fe6516ca8`
+-	Image ID: `sha256:96f981d76226319a169e1b322960a2ab7c414acf2057bb142e6066d61599dc22`
 -	Default Command: `["python"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -183,11 +183,11 @@ ENV PYTHON_VERSION=3.7.3
 ENV PYTHON_RELEASE=3.7.3
 # Thu, 11 Apr 2019 23:26:19 GMT
 RUN $url = ('https://www.python.org/ftp/python/{0}/python-{1}-amd64.exe' -f $env:PYTHON_RELEASE, $env:PYTHON_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'python.exe'; 		Write-Host 'Installing ...'; 	Start-Process python.exe -Wait 		-ArgumentList @( 			'/quiet', 			'InstallAllUsers=1', 			'TargetDir=C:\Python', 			'PrependPath=1', 			'Shortcuts=0', 			'Include_doc=0', 			'Include_pip=0', 			'Include_test=0' 		); 		$env:PATH = [Environment]::GetEnvironmentVariable('PATH', [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  python --version'; python --version; 		Write-Host 'Removing ...'; 	Remove-Item python.exe -Force; 		Write-Host 'Complete.';
-# Thu, 11 Apr 2019 23:26:20 GMT
-ENV PYTHON_PIP_VERSION=19.0.3
-# Thu, 11 Apr 2019 23:27:24 GMT
+# Thu, 25 Apr 2019 09:24:07 GMT
+ENV PYTHON_PIP_VERSION=19.1
+# Thu, 25 Apr 2019 09:25:06 GMT
 RUN Write-Host ('Installing pip=={0} ...' -f $env:PYTHON_PIP_VERSION); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri 'https://bootstrap.pypa.io/get-pip.py' -OutFile 'get-pip.py'; 	python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		('pip=={0}' -f $env:PYTHON_PIP_VERSION) 	; 	Remove-Item get-pip.py -Force; 		Write-Host 'Verifying pip install ...'; 	pip --version; 		Write-Host 'Complete.';
-# Thu, 11 Apr 2019 23:27:25 GMT
+# Thu, 25 Apr 2019 09:25:08 GMT
 CMD ["python"]
 ```
 
@@ -216,15 +216,15 @@ CMD ["python"]
 		Last Modified: Fri, 12 Apr 2019 00:08:03 GMT  
 		Size: 49.0 MB (49003831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03cfc0061a76c9d53c799ac83e8d9815af375b066331a7024384a6c9b7249057`  
-		Last Modified: Fri, 12 Apr 2019 00:07:39 GMT  
-		Size: 1.2 KB (1210 bytes)  
+	-	`sha256:e25100ae4402419a7d063aa7e0eb43a7267dfd008562df55212b309685797dfe`  
+		Last Modified: Thu, 25 Apr 2019 09:39:41 GMT  
+		Size: 1.2 KB (1211 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:551e6ddedf33bc3fa662210edb9509c0a84b69c4fe4036bb8c77913c37d35a9d`  
-		Last Modified: Fri, 12 Apr 2019 00:07:50 GMT  
-		Size: 5.1 MB (5123261 bytes)  
+	-	`sha256:9c8297af40693259aee0f46c176ac507faa51069b6893cde30680b300547950a`  
+		Last Modified: Thu, 25 Apr 2019 09:39:47 GMT  
+		Size: 5.1 MB (5143294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c566a80ad21ef57d1e94bc6ce3a5dce0a5388962e2d86f3caafcfeecc682b106`  
-		Last Modified: Fri, 12 Apr 2019 00:07:39 GMT  
-		Size: 1.2 KB (1213 bytes)  
+	-	`sha256:b8ecb579a2d503be1d29ce5b2479146ad41325694cf9de14d69ee538e902de03`  
+		Last Modified: Thu, 25 Apr 2019 09:39:41 GMT  
+		Size: 1.2 KB (1206 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
