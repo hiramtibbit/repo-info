@@ -1,16 +1,18 @@
-# `nginx:1.14.2-alpine`
+# `nginx:1.16.0-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8a2fb25a19f5dc1528b7a3fabe8b3145ff57fe10e4f1edac6c718a3cf4aa4b73`
-- Created: `2019-04-10T01:08:46.210666872Z`
-- Virtual Size: ~ 16.03 Mb  
+- Image ID: `sha256:a74ad6df6eeb2b7f567daa472241382a002f08621d45864f09566633c30b6ebd`
+- Created: `2019-04-23T22:22:09.940118198Z`
+- Virtual Size: ~ 20.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.14.2`
+  - `NGINX_VERSION=1.16.0`
+  - `NJS_VERSION=0.3.1`
+  - `PKG_RELEASE=1`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
 
@@ -183,6 +185,23 @@ libcrypto1.1-1.1.1b-r1 installed size:
 
 libcrypto1.1-1.1.1b-r1 license:
 OpenSSL
+
+```
+
+### `apk` package: `libedit`
+
+```console
+libedit-20181209.3.1-r0 description:
+BSD line editing library
+
+libedit-20181209.3.1-r0 webpage:
+https://www.thrysoee.dk/editline
+
+libedit-20181209.3.1-r0 installed size:
+200704
+
+libedit-20181209.3.1-r0 license:
+BSD-3-Clause
 
 ```
 
@@ -359,16 +378,16 @@ MIT
 ### `apk` package: `libxslt`
 
 ```console
-libxslt-1.1.32-r0 description:
+libxslt-1.1.33-r1 description:
 XML stylesheet transformation library
 
-libxslt-1.1.32-r0 webpage:
+libxslt-1.1.33-r1 webpage:
 http://xmlsoft.org/XSLT/
 
-libxslt-1.1.32-r0 installed size:
+libxslt-1.1.33-r1 installed size:
 368640
 
-libxslt-1.1.32-r0 license:
+libxslt-1.1.33-r1 license:
 custom
 
 ```
@@ -404,6 +423,142 @@ musl-utils-1.1.20-r4 installed size:
 
 musl-utils-1.1.20-r4 license:
 MIT BSD GPL2+
+
+```
+
+### `apk` package: `ncurses-libs`
+
+```console
+ncurses-libs-6.1_p20190105-r0 description:
+Ncurses libraries
+
+ncurses-libs-6.1_p20190105-r0 webpage:
+https://www.gnu.org/software/ncurses/
+
+ncurses-libs-6.1_p20190105-r0 installed size:
+499712
+
+ncurses-libs-6.1_p20190105-r0 license:
+MIT
+
+```
+
+### `apk` package: `ncurses-terminfo`
+
+```console
+ncurses-terminfo-6.1_p20190105-r0 description:
+Console display library (other terminfo files)
+
+ncurses-terminfo-6.1_p20190105-r0 webpage:
+https://www.gnu.org/software/ncurses/
+
+ncurses-terminfo-6.1_p20190105-r0 installed size:
+7274496
+
+ncurses-terminfo-6.1_p20190105-r0 license:
+MIT
+
+```
+
+### `apk` package: `ncurses-terminfo-base`
+
+```console
+ncurses-terminfo-base-6.1_p20190105-r0 description:
+Descriptions of common terminals
+
+ncurses-terminfo-base-6.1_p20190105-r0 webpage:
+https://www.gnu.org/software/ncurses/
+
+ncurses-terminfo-base-6.1_p20190105-r0 installed size:
+94208
+
+ncurses-terminfo-base-6.1_p20190105-r0 license:
+MIT
+
+```
+
+### `apk` package: `nginx`
+
+```console
+nginx-1.16.0-r1 description:
+High performance web server
+
+nginx-1.16.0-r1 webpage:
+http://nginx.org/
+
+nginx-1.16.0-r1 installed size:
+2560000
+
+nginx-1.16.0-r1 license:
+2-clause BSD-like license
+
+```
+
+### `apk` package: `nginx-module-geoip`
+
+```console
+nginx-module-geoip-1.16.0-r1 description:
+nginx GeoIP dynamic modules
+
+nginx-module-geoip-1.16.0-r1 webpage:
+http://nginx.org/
+
+nginx-module-geoip-1.16.0-r1 installed size:
+118784
+
+nginx-module-geoip-1.16.0-r1 license:
+2-clause BSD-like license
+
+```
+
+### `apk` package: `nginx-module-image-filter`
+
+```console
+nginx-module-image-filter-1.16.0-r1 description:
+nginx image filter dynamic module
+
+nginx-module-image-filter-1.16.0-r1 webpage:
+http://nginx.org/
+
+nginx-module-image-filter-1.16.0-r1 installed size:
+90112
+
+nginx-module-image-filter-1.16.0-r1 license:
+2-clause BSD-like license
+
+```
+
+### `apk` package: `nginx-module-njs`
+
+```console
+nginx-module-njs-1.16.0.0.3.1-r1 description:
+nginx njs dynamic modules
+
+nginx-module-njs-1.16.0.0.3.1-r1 webpage:
+http://nginx.org/
+
+nginx-module-njs-1.16.0.0.3.1-r1 installed size:
+1867776
+
+nginx-module-njs-1.16.0.0.3.1-r1 license:
+2-clause BSD-like license
+
+```
+
+### `apk` package: `nginx-module-xslt`
+
+```console
+nginx-module-xslt-1.16.0-r1 description:
+nginx xslt dynamic module
+
+nginx-module-xslt-1.16.0-r1 webpage:
+http://nginx.org/
+
+nginx-module-xslt-1.16.0-r1 installed size:
+86016
+
+nginx-module-xslt-1.16.0-r1 license:
+2-clause BSD-like license
 
 ```
 
@@ -461,16 +616,16 @@ GPL-2.0
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2018i-r0 description:
+tzdata-2019a-r0 description:
 Timezone data
 
-tzdata-2018i-r0 webpage:
+tzdata-2019a-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2018i-r0 installed size:
-3547136
+tzdata-2019a-r0 installed size:
+3538944
 
-tzdata-2018i-r0 license:
+tzdata-2019a-r0 license:
 Public-Domain
 
 ```
