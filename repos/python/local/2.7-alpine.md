@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6260494ffce3e031596333048d318f0880109839b4b0abe31c1dc2621358db32`
-- Created: `2019-04-10T01:44:54.028385042Z`
-- Virtual Size: ~ 61.27 Mb  
+- Image ID: `sha256:0d9f5380c80043e96adabc4f62639b063ad9e59046db3e298f55796ada86ad43`
+- Created: `2019-04-25T00:43:27.363311995Z`
+- Virtual Size: ~ 61.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
@@ -14,7 +14,7 @@
   - `PYTHONIOENCODING=UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
   - `PYTHON_VERSION=2.7.16`
-  - `PYTHON_PIP_VERSION=19.0.3`
+  - `PYTHON_PIP_VERSION=19.1`
 
 ## `apk` (`.apk`-based packages)
 
