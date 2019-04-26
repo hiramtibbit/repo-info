@@ -4,6 +4,8 @@
 
 -	[`eclipse-mosquitto:1.5`](#eclipse-mosquitto15)
 -	[`eclipse-mosquitto:1.5.8`](#eclipse-mosquitto158)
+-	[`eclipse-mosquitto:1.6`](#eclipse-mosquitto16)
+-	[`eclipse-mosquitto:1.6.1`](#eclipse-mosquitto161)
 -	[`eclipse-mosquitto:latest`](#eclipse-mosquittolatest)
 
 ## `eclipse-mosquitto:1.5`
@@ -623,6 +625,14 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 		Last Modified: Fri, 08 Mar 2019 03:52:34 GMT  
 		Size: 144.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `eclipse-mosquitto:1.6`
+
+**does not exist** (yet?)
+
+## `eclipse-mosquitto:1.6.1`
+
+**does not exist** (yet?)
 
 ## `eclipse-mosquitto:latest`
 
