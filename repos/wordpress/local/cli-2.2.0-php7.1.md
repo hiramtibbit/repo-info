@@ -1,10 +1,10 @@
-# `wordpress:cli-2.1.0-php7.3`
+# `wordpress:cli-2.2.0-php7.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:09c2b80b69d4ad5fba570a43d548f4610b6779c98d1d7dea300ce72099dba6cb`
-- Created: `2019-04-10T02:56:22.940103196Z`
-- Virtual Size: ~ 123.15 Mb  
+- Image ID: `sha256:c9f3096f9f4ebe1e54aa951f1736e721b2b35b4a648ad99f9ec17ae7a6d8927a`
+- Created: `2019-04-25T23:28:38.693610908Z`
+- Virtual Size: ~ 113.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,15 +16,15 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
-  - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.4`
-  - `PHP_URL=https://www.php.net/get/php-7.3.4.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://www.php.net/get/php-7.3.4.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=6fe79fa1f8655f98ef6708cde8751299796d6c1e225081011f4104625b923b83`
+  - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 1729F83938DA44E27BA0F4D3DBDB397470D12172`
+  - `PHP_VERSION=7.1.28`
+  - `PHP_URL=https://www.php.net/get/php-7.1.28.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://www.php.net/get/php-7.1.28.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=45131497ec0a947e3f9145c000e8fcc1f86b46518ee3f6810d80efa2d39521e2`
   - `PHP_MD5=`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
-  - `WORDPRESS_CLI_VERSION=2.1.0`
-  - `WORDPRESS_CLI_SHA512=c2ff556c21c85bbcf11be38d058224f53d3d57a1da45320ecf0079d480063dcdc11b5029b94b0b181c1e3bec84745300cd848d28065c0d3619f598980cc17244`
+  - `WORDPRESS_CLI_VERSION=2.2.0`
+  - `WORDPRESS_CLI_SHA512=2103f04a5014d629eaa42755815c9cec6bb489ed7b0ea6e77dedb309e8af098ab902b2f9c6369ae4b7cb8cc1f20fbb4dedcda83eb1d0c34b880fa6e8a3ae249d`
 
 ## `apk` (`.apk`-based packages)
 
@@ -76,23 +76,6 @@ apk-tools-2.10.3-r1 installed size:
 
 apk-tools-2.10.3-r1 license:
 GPL2
-
-```
-
-### `apk` package: `argon2-libs`
-
-```console
-argon2-libs-20171227-r1 description:
-The password hash Argon2, winner of PHC (libraries)
-
-argon2-libs-20171227-r1 webpage:
-https://github.com/P-H-C/phc-winner-argon2
-
-argon2-libs-20171227-r1 installed size:
-49152
-
-argon2-libs-20171227-r1 license:
-Apache-2.0 CC0-1.0
 
 ```
 
@@ -317,23 +300,6 @@ Libpng
 
 ```
 
-### `apk` package: `libsodium`
-
-```console
-libsodium-1.0.16-r0 description:
-P(ortable|ackageable) NaCl-based crypto library
-
-libsodium-1.0.16-r0 webpage:
-https://github.com/jedisct1/libsodium
-
-libsodium-1.0.16-r0 installed size:
-327680
-
-libsodium-1.0.16-r0 license:
-ISC
-
-```
-
 ### `apk` package: `libssh2`
 
 ```console
@@ -416,23 +382,6 @@ libxml2-2.9.9-r1 installed size:
 
 libxml2-2.9.9-r1 license:
 MIT
-
-```
-
-### `apk` package: `libzip`
-
-```console
-libzip-1.5.1-r2 description:
-C library for manipulating zip archives
-
-libzip-1.5.1-r2 webpage:
-http://www.nih.at/libzip/index.html
-
-libzip-1.5.1-r2 installed size:
-122880
-
-libzip-1.5.1-r2 license:
-BSD-3-Clause
 
 ```
 

@@ -1,10 +1,10 @@
-# `wordpress:cli-2.1.0`
+# `wordpress:cli-2.2.0-php7.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2fe21feab0a015db6f947fed214274cd76af3c868a7401db741effcdd3938c79`
-- Created: `2019-04-10T02:55:01.251289289Z`
-- Virtual Size: ~ 122.63 Mb  
+- Image ID: `sha256:30fb1bf205e9233cea9d70dd59d549bacfd7768b36aa8aac9e699d99ad7f4428`
+- Created: `2019-04-25T23:28:50.46365334Z`
+- Virtual Size: ~ 123.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,15 +16,15 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
-  - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.17`
-  - `PHP_URL=https://www.php.net/get/php-7.2.17.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://www.php.net/get/php-7.2.17.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=a3e5f51a9ae08813b3925bea3a4de02cd4906fcccf75646e267a213bb63bcf84`
+  - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
+  - `PHP_VERSION=7.3.4`
+  - `PHP_URL=https://www.php.net/get/php-7.3.4.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://www.php.net/get/php-7.3.4.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=6fe79fa1f8655f98ef6708cde8751299796d6c1e225081011f4104625b923b83`
   - `PHP_MD5=`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
-  - `WORDPRESS_CLI_VERSION=2.1.0`
-  - `WORDPRESS_CLI_SHA512=c2ff556c21c85bbcf11be38d058224f53d3d57a1da45320ecf0079d480063dcdc11b5029b94b0b181c1e3bec84745300cd848d28065c0d3619f598980cc17244`
+  - `WORDPRESS_CLI_VERSION=2.2.0`
+  - `WORDPRESS_CLI_SHA512=2103f04a5014d629eaa42755815c9cec6bb489ed7b0ea6e77dedb309e8af098ab902b2f9c6369ae4b7cb8cc1f20fbb4dedcda83eb1d0c34b880fa6e8a3ae249d`
 
 ## `apk` (`.apk`-based packages)
 
@@ -416,6 +416,23 @@ libxml2-2.9.9-r1 installed size:
 
 libxml2-2.9.9-r1 license:
 MIT
+
+```
+
+### `apk` package: `libzip`
+
+```console
+libzip-1.5.1-r2 description:
+C library for manipulating zip archives
+
+libzip-1.5.1-r2 webpage:
+http://www.nih.at/libzip/index.html
+
+libzip-1.5.1-r2 installed size:
+122880
+
+libzip-1.5.1-r2 license:
+BSD-3-Clause
 
 ```
 
