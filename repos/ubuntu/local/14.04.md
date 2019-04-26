@@ -2332,14 +2332,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018i-0ubuntu0.14.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018i-0ubuntu0.14.04.dsc' tzdata_2018i-0ubuntu0.14.04.dsc 2080 SHA256:00e3d00469fe865a5ef2817a718280c5d1d9db35281ece020065ee58233f79a1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018i.orig.tar.gz' tzdata_2018i.orig.tar.gz 377009 SHA256:82c45ef84ca3bc01d0a4a397ba8adeb8f7f199c6550740587c6ac5a7108c00d9
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018i-0ubuntu0.14.04.debian.tar.xz' tzdata_2018i-0ubuntu0.14.04.debian.tar.xz 100552 SHA256:aa7d91d0f56372284defd2d68d44ae7099a8bc0f41147a7e01bedc21fde48bbc
-```
 
 ### `dpkg` source package: `ubuntu-advantage-tools=10ubuntu0.14.04.2`
 
@@ -2352,13 +2347,9 @@ Licenses: (parsed from: `/usr/share/doc/ubuntu-advantage-tools/copyright`)
 - `GPL-3`
 - `GPL-3.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ubuntu-advantage-tools=10ubuntu0.14.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-advantage-tools/ubuntu-advantage-tools_10ubuntu0.14.04.2.dsc' ubuntu-advantage-tools_10ubuntu0.14.04.2.dsc 1396 SHA256:b660add317d25dfa8bd0af790ea303007c21ba58dab2aaefd1e0fab62028461a
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-advantage-tools/ubuntu-advantage-tools_10ubuntu0.14.04.2.tar.xz' ubuntu-advantage-tools_10ubuntu0.14.04.2.tar.xz 26604 SHA256:33583848adb6d81c17c6ed958f3703f93870a83613307066d901adec6b45b216
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 
