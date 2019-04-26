@@ -231,7 +231,7 @@ Source:
 $ yumdownloader --quiet --source --urls dnf-2.7.5-1.mga6.noarch
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//dnf-2.7.5-1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//dnf-2.7.5-1.mga6.src.rpm
 ```
 
 ### `rpm` package: `dnf-conf-2.7.5-1.mga6.noarch`
@@ -244,7 +244,7 @@ Source:
 $ yumdownloader --quiet --source --urls dnf-conf-2.7.5-1.mga6.noarch
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//dnf-2.7.5-1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//dnf-2.7.5-1.mga6.src.rpm
 ```
 
 ### `rpm` package: `e2fsprogs-1.43.4-1.mga6.x86_64`
@@ -387,7 +387,7 @@ Source:
 $ yumdownloader --quiet --source --urls glibc-2.22-28.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//glibc-2.22-28.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//glibc-2.22-28.mga6.src.rpm
 ```
 
 ### `rpm` package: `gnupg2-2.1.21-2.mga6.x86_64`
@@ -445,7 +445,7 @@ Source:
 $ yumdownloader --quiet --source --urls hawkey-man-0.11.1-1.mga6.noarch
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//libdnf-0.11.1-1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//libdnf-0.11.1-1.mga6.src.rpm
 ```
 
 ### `rpm` package: `hostname-3.18-1.mga6.x86_64`
@@ -471,7 +471,7 @@ Source:
 $ yumdownloader --quiet --source --urls icu58-data-58.2-3.2.mga6.noarch
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//icu-58.2-3.2.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//icu-58.2-3.2.mga6.src.rpm
 ```
 
 ### `rpm` package: `ifmetric-0.3-17.mga6.x86_64`
@@ -536,7 +536,7 @@ Source:
 $ yumdownloader --quiet --source --urls iproute2-4.14.1-1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//iproute2-4.14.1-1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//iproute2-4.14.1-1.mga6.src.rpm
 ```
 
 ### `rpm` package: `iputils-20161105-2.mga6.x86_64`
@@ -588,7 +588,7 @@ Source:
 $ yumdownloader --quiet --source --urls krb5-1.15.1-2.3.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//krb5-1.15.1-2.3.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//krb5-1.15.1-2.3.mga6.src.rpm
 ```
 
 ### `rpm` package: `less-487-1.mga6.x86_64`
@@ -627,7 +627,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64archive13-3.3.1-1.1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//libarchive-3.3.1-1.1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//libarchive-3.3.1-1.1.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64assuan0-2.4.3-1.mga6.x86_64`
@@ -783,7 +783,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64curl4-7.54.1-2.5.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//curl-7.54.1-2.5.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//curl-7.54.1-2.5.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64daemon0-0.14-10.mga6.x86_64`
@@ -809,7 +809,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64db5.3-5.3.28-10.1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//db53-5.3.28-10.1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//db53-5.3.28-10.1.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64dbnss5.3-5.3.28-10.1.mga6.x86_64`
@@ -822,7 +822,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64dbnss5.3-5.3.28-10.1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//db53-5.3.28-10.1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//db53-5.3.28-10.1.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64dbus1_3-1.10.16-1.mga6.x86_64`
@@ -874,7 +874,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64dnf1-0.11.1-1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//libdnf-0.11.1-1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//libdnf-0.11.1-1.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64elfutils1-0.169-1.mga6.x86_64`
@@ -965,7 +965,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64gcrypt20-1.7.8-1.1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//libgcrypt-1.7.8-1.1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//libgcrypt-1.7.8-1.1.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64gdbm4-1.12-1.mga6.x86_64`
@@ -1082,7 +1082,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64icu58-58.2-3.2.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//icu-58.2-3.2.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//icu-58.2-3.2.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64idn11-1.33-1.1.mga6.x86_64`
@@ -1095,7 +1095,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64idn11-1.33-1.1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//libidn-1.33-1.1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//libidn-1.33-1.1.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64intl8-0.19.8.1-1.mga6.x86_64`
@@ -1134,7 +1134,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64krb53-1.15.1-2.3.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//krb5-1.15.1-2.3.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//krb5-1.15.1-2.3.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64ksba8-1.3.5-1.mga6.x86_64`
@@ -1251,7 +1251,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64ncurses6-6.0-8.1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//ncurses-6.0-8.1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//ncurses-6.0-8.1.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64ncursesw6-6.0-8.1.mga6.x86_64`
@@ -1264,7 +1264,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64ncursesw6-6.0-8.1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//ncurses-6.0-8.1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//ncurses-6.0-8.1.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64nettle6-3.3-1.mga6.x86_64`
@@ -1316,7 +1316,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64nspr4-4.19-1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//nspr-4.19-1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//nspr-4.19-1.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64nss3-3.28.6-1.3.mga6.x86_64`
@@ -1329,7 +1329,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64nss3-3.28.6-1.3.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//nss-3.28.6-1.3.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//nss-3.28.6-1.3.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64openssl-engines1.0.0-1.0.2o-1.mga6.x86_64`
@@ -1342,7 +1342,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64openssl-engines1.0.0-1.0.2o-1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//openssl-1.0.2o-1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//openssl-1.0.2o-1.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64openssl1.0.0-1.0.2o-1.mga6.x86_64`
@@ -1355,7 +1355,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64openssl1.0.0-1.0.2o-1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//openssl-1.0.2o-1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//openssl-1.0.2o-1.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64p11-kit0-0.23.2-2.mga6.x86_64`
@@ -1407,7 +1407,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64pcre1-8.41-1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//pcre-8.41-1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//pcre-8.41-1.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64popt0-1.16-13.mga6.x86_64`
@@ -1446,7 +1446,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64python2.7-2.7.13-1.1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//python-2.7.13-1.1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//python-2.7.13-1.1.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64python2.7-stdlib-2.7.13-1.1.mga6.x86_64`
@@ -1459,7 +1459,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64python2.7-stdlib-2.7.13-1.1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//python-2.7.13-1.1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//python-2.7.13-1.1.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64python3.5-3.5.3-1.2.mga6.x86_64`
@@ -1472,7 +1472,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64python3.5-3.5.3-1.2.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//python3-3.5.3-1.2.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//python3-3.5.3-1.2.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64python3.5-stdlib-3.5.3-1.2.mga6.x86_64`
@@ -1485,7 +1485,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64python3.5-stdlib-3.5.3-1.2.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//python3-3.5.3-1.2.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//python3-3.5.3-1.2.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64qrencode3-3.4.4-5.mga6.x86_64`
@@ -1537,7 +1537,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64rpm7-4.13.1-3.2.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//rpm-4.13.1-3.2.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//rpm-4.13.1-3.2.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64rpmbuild7-4.13.1-3.2.mga6.x86_64`
@@ -1550,7 +1550,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64rpmbuild7-4.13.1-3.2.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//rpm-4.13.1-3.2.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//rpm-4.13.1-3.2.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64rpmsign7-4.13.1-3.2.mga6.x86_64`
@@ -1563,7 +1563,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64rpmsign7-4.13.1-3.2.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//rpm-4.13.1-3.2.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//rpm-4.13.1-3.2.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64sasl2_3-2.1.26-12.mga6.x86_64`
@@ -1628,7 +1628,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64solv0-0.6.30-1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//libsolv-0.6.30-1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//libsolv-0.6.30-1.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64sqlite3_0-3.17.0-2.2.mga6.x86_64`
@@ -1641,7 +1641,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64sqlite3_0-3.17.0-2.2.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//sqlite3-3.17.0-2.2.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//sqlite3-3.17.0-2.2.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64ssh2_1-1.7.0-2.mga6.x86_64`
@@ -1667,7 +1667,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64systemd0-230-12.3.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//systemd-230-12.3.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//systemd-230-12.3.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64tasn1_6-4.13-1.mga6.x86_64`
@@ -1680,7 +1680,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64tasn1_6-4.13-1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//libtasn1-4.13-1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//libtasn1-4.13-1.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64tcb0-1.1-7.mga6.x86_64`
@@ -1706,7 +1706,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64udev1-230-12.3.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//systemd-230-12.3.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//systemd-230-12.3.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64unistring2-0.9.7-1.mga6.x86_64`
@@ -1745,7 +1745,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64user1-0.62-8.2.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//libuser-0.62-8.2.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//libuser-0.62-8.2.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64uuid1-2.28.2-2.mga6.x86_64`
@@ -1784,7 +1784,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64xml2_2-2.9.7-1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//libxml2-2.9.7-1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//libxml2-2.9.7-1.mga6.src.rpm
 ```
 
 ### `rpm` package: `lib64zlib1-1.2.11-4.1.mga6.x86_64`
@@ -1797,7 +1797,7 @@ Source:
 $ yumdownloader --quiet --source --urls lib64zlib1-1.2.11-4.1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//zlib-1.2.11-4.1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//zlib-1.2.11-4.1.mga6.src.rpm
 ```
 
 ### `rpm` package: `libgcc1-5.5.0-1.mga6.x86_64`
@@ -1810,7 +1810,7 @@ Source:
 $ yumdownloader --quiet --source --urls libgcc1-5.5.0-1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//gcc-5.5.0-1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//gcc-5.5.0-1.mga6.src.rpm
 ```
 
 ### `rpm` package: `libgpg-error-common-1.24-1.mga6.noarch`
@@ -1862,7 +1862,7 @@ Source:
 $ yumdownloader --quiet --source --urls libsolv-tools-0.6.30-1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//libsolv-0.6.30-1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//libsolv-0.6.30-1.mga6.src.rpm
 ```
 
 ### `rpm` package: `libstdc++6-5.5.0-1.mga6.x86_64`
@@ -1875,7 +1875,7 @@ Source:
 $ yumdownloader --quiet --source --urls libstdc++6-5.5.0-1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//gcc-5.5.0-1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//gcc-5.5.0-1.mga6.src.rpm
 ```
 
 ### `rpm` package: `libuser-0.62-8.2.mga6.x86_64`
@@ -1888,7 +1888,7 @@ Source:
 $ yumdownloader --quiet --source --urls libuser-0.62-8.2.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//libuser-0.62-8.2.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//libuser-0.62-8.2.mga6.src.rpm
 ```
 
 ### `rpm` package: `libutempter-1.1.6-5.mga6.x86_64`
@@ -1914,7 +1914,7 @@ Source:
 $ yumdownloader --quiet --source --urls locales-2.22-7.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//locales-2.22-7.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//locales-2.22-7.mga6.src.rpm
 ```
 
 ### `rpm` package: `locales-en-2.22-7.mga6.x86_64`
@@ -1927,7 +1927,7 @@ Source:
 $ yumdownloader --quiet --source --urls locales-en-2.22-7.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//locales-2.22-7.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//locales-2.22-7.mga6.src.rpm
 ```
 
 ### `rpm` package: `lockdev-1.0.4-0.120111007git.12.mga6.x86_64`
@@ -2070,7 +2070,7 @@ Source:
 $ yumdownloader --quiet --source --urls meta-task-6-1.1.mga6.noarch
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//meta-task-6-1.1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//meta-task-6-1.1.mga6.src.rpm
 ```
 
 ### `rpm` package: `multiarch-utils-1.0.13-7.mga6.noarch`
@@ -2096,7 +2096,7 @@ Source:
 $ yumdownloader --quiet --source --urls ncurses-6.0-8.1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//ncurses-6.0-8.1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//ncurses-6.0-8.1.mga6.src.rpm
 ```
 
 ### `rpm` package: `net-tools-2.0-0.20150915git.4.mga6.x86_64`
@@ -2122,7 +2122,7 @@ Source:
 $ yumdownloader --quiet --source --urls nss-3.28.6-1.3.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//nss-3.28.6-1.3.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//nss-3.28.6-1.3.mga6.src.rpm
 ```
 
 ### `rpm` package: `nss-myhostname-230-12.3.mga6.x86_64`
@@ -2135,7 +2135,7 @@ Source:
 $ yumdownloader --quiet --source --urls nss-myhostname-230-12.3.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//systemd-230-12.3.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//systemd-230-12.3.mga6.src.rpm
 ```
 
 ### `rpm` package: `nss_tcb-1.1-7.mga6.x86_64`
@@ -2226,7 +2226,7 @@ Source:
 $ yumdownloader --quiet --source --urls perl-5.22.3-3.1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//perl-5.22.3-3.1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//perl-5.22.3-3.1.mga6.src.rpm
 ```
 
 ### `rpm` package: `perl-Config-IniFiles-2.890.0-2.mga6.noarch`
@@ -2369,7 +2369,7 @@ Source:
 $ yumdownloader --quiet --source --urls perl-XML-LibXML-2.12.900-1.1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//perl-XML-LibXML-2.12.900-1.1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//perl-XML-LibXML-2.12.900-1.1.mga6.src.rpm
 ```
 
 ### `rpm` package: `perl-XML-NamespaceSupport-1.110.0-9.mga6.noarch`
@@ -2421,7 +2421,7 @@ Source:
 $ yumdownloader --quiet --source --urls perl-base-5.22.3-3.1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//perl-5.22.3-3.1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//perl-5.22.3-3.1.mga6.src.rpm
 ```
 
 ### `rpm` package: `pinentry-1.0.0-2.mga6.x86_64`
@@ -2486,7 +2486,7 @@ Source:
 $ yumdownloader --quiet --source --urls python-2.7.13-1.1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//python-2.7.13-1.1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//python-2.7.13-1.1.mga6.src.rpm
 ```
 
 ### `rpm` package: `python-rpm-macros-3-4.mga6.noarch`
@@ -2525,7 +2525,7 @@ Source:
 $ yumdownloader --quiet --source --urls python3-3.5.3-1.2.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//python3-3.5.3-1.2.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//python3-3.5.3-1.2.mga6.src.rpm
 ```
 
 ### `rpm` package: `python3-dnf-2.7.5-1.mga6.noarch`
@@ -2538,7 +2538,7 @@ Source:
 $ yumdownloader --quiet --source --urls python3-dnf-2.7.5-1.mga6.noarch
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//dnf-2.7.5-1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//dnf-2.7.5-1.mga6.src.rpm
 ```
 
 ### `rpm` package: `python3-gpg-1.8.0-11.mga6.x86_64`
@@ -2564,7 +2564,7 @@ Source:
 $ yumdownloader --quiet --source --urls python3-hawkey-0.11.1-1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//libdnf-0.11.1-1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//libdnf-0.11.1-1.mga6.src.rpm
 ```
 
 ### `rpm` package: `python3-iniparse-0.4-14.mga6.noarch`
@@ -2642,7 +2642,7 @@ Source:
 $ yumdownloader --quiet --source --urls python3-rpm-4.13.1-3.2.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//rpm-4.13.1-3.2.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//rpm-4.13.1-3.2.mga6.src.rpm
 ```
 
 ### `rpm` package: `python3-rpm-macros-3-4.mga6.noarch`
@@ -2720,7 +2720,7 @@ Source:
 $ yumdownloader --quiet --source --urls rootcerts-20180104.00-1.mga6.noarch
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//rootcerts-20180104.00-1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//rootcerts-20180104.00-1.mga6.src.rpm
 ```
 
 ### `rpm` package: `rootfiles-11.0-14.mga6.noarch`
@@ -2746,7 +2746,7 @@ Source:
 $ yumdownloader --quiet --source --urls rpm-4.13.1-3.2.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//rpm-4.13.1-3.2.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//rpm-4.13.1-3.2.mga6.src.rpm
 ```
 
 ### `rpm` package: `rpm-helper-0.24.17-4.mga6.noarch`
@@ -2772,7 +2772,7 @@ Source:
 $ yumdownloader --quiet --source --urls rpm-mageia-setup-2.20.1-1.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//rpm-mageia-setup-2.20.1-1.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//rpm-mageia-setup-2.20.1-1.mga6.src.rpm
 ```
 
 ### `rpm` package: `run-parts-4.4-7.mga6.x86_64`
@@ -2837,7 +2837,7 @@ Source:
 $ yumdownloader --quiet --source --urls shadow-utils-4.4-1.2.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//shadow-utils-4.4-1.2.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//shadow-utils-4.4-1.2.mga6.src.rpm
 ```
 
 ### `rpm` package: `systemd-230-12.3.mga6.x86_64`
@@ -2850,7 +2850,7 @@ Source:
 $ yumdownloader --quiet --source --urls systemd-230-12.3.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//systemd-230-12.3.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//systemd-230-12.3.mga6.src.rpm
 ```
 
 ### `rpm` package: `systemd-units-230-12.3.mga6.x86_64`
@@ -2863,7 +2863,7 @@ Source:
 $ yumdownloader --quiet --source --urls systemd-units-230-12.3.mga6
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//systemd-230-12.3.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//systemd-230-12.3.mga6.src.rpm
 ```
 
 ### `rpm` package: `tar-1.29-3.mga6.x86_64`
@@ -2941,7 +2941,7 @@ Source:
 $ yumdownloader --quiet --source --urls urpmi-8.110-2.mga6.noarch
 Enabling updates-x86_64-source repository
 Enabling mageia-x86_64-source repository
-http://mirrors.kernel.org/mageia/distrib/6/SRPMS/core/updates//urpmi-8.110-2.mga6.src.rpm
+http://mageia.jameswhitby.net/mageia/distrib/6/SRPMS/core/updates//urpmi-8.110-2.mga6.src.rpm
 ```
 
 ### `rpm` package: `util-linux-2.28.2-2.mga6.x86_64`
