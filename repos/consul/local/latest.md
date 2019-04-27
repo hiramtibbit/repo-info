@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:df36de474d545697ce640b80e381694fce93fbbf965475b694141ba1f62ad9cf`
-- Created: `2019-03-21T17:19:33.479304693Z`
-- Virtual Size: ~ 106.86 Mb  
+- Image ID: `sha256:9c997447125031923539648cce2ad3bb1df4ca59417635b922217ae8338037d4`
+- Created: `2019-04-26T21:40:04.216681295Z`
+- Virtual Size: ~ 108.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -19,17 +19,17 @@
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.0.5-r2 description:
+alpine-baselayout-3.1.0-r3 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.0.5-r2 webpage:
-http://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
+alpine-baselayout-3.1.0-r3 webpage:
+https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.0.5-r2 installed size:
-397312
+alpine-baselayout-3.1.0-r3 installed size:
+409600
 
-alpine-baselayout-3.0.5-r2 license:
-GPL2
+alpine-baselayout-3.1.0-r3 license:
+GPL-2.0
 
 ```
 
@@ -53,16 +53,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.10.1-r0 description:
+apk-tools-2.10.3-r1 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.10.1-r0 webpage:
+apk-tools-2.10.3-r1 webpage:
 https://git.alpinelinux.org/cgit/apk-tools/
 
-apk-tools-2.10.1-r0 installed size:
+apk-tools-2.10.3-r1 installed size:
 262144
 
-apk-tools-2.10.1-r0 license:
+apk-tools-2.10.3-r1 license:
 GPL2
 
 ```
@@ -70,50 +70,67 @@ GPL2
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.27.2-r11 description:
+busybox-1.29.3-r10 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.27.2-r11 webpage:
+busybox-1.29.3-r10 webpage:
 http://busybox.net
 
-busybox-1.27.2-r11 installed size:
-901120
+busybox-1.29.3-r10 installed size:
+905216
 
-busybox-1.27.2-r11 license:
-GPL2
+busybox-1.29.3-r10 license:
+GPL-2.0
 
 ```
 
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20171114-r0 description:
+ca-certificates-20190108-r0 description:
 Common CA certificates PEM files
 
-ca-certificates-20171114-r0 webpage:
+ca-certificates-20190108-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20171114-r0 installed size:
-741376
+ca-certificates-20190108-r0 installed size:
+737280
 
-ca-certificates-20171114-r0 license:
-MPL 2.0 GPL2+
+ca-certificates-20190108-r0 license:
+MPL-2.0 GPL-2.0-or-later
+
+```
+
+### `apk` package: `ca-certificates-cacert`
+
+```console
+ca-certificates-cacert-20190108-r0 description:
+Mozilla bundled certificates
+
+ca-certificates-cacert-20190108-r0 webpage:
+https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
+
+ca-certificates-cacert-20190108-r0 installed size:
+245760
+
+ca-certificates-cacert-20190108-r0 license:
+MPL-2.0 GPL-2.0-or-later
 
 ```
 
 ### `apk` package: `curl`
 
 ```console
-curl-7.61.1-r2 description:
+curl-7.64.0-r1 description:
 URL retrival utility and library
 
-curl-7.61.1-r2 webpage:
+curl-7.64.0-r1 webpage:
 https://curl.haxx.se
 
-curl-7.61.1-r2 installed size:
-225280
+curl-7.64.0-r1 installed size:
+233472
 
-curl-7.61.1-r2 license:
+curl-7.64.0-r1 license:
 MIT
 
 ```
@@ -121,16 +138,16 @@ MIT
 ### `apk` package: `dumb-init`
 
 ```console
-dumb-init-1.2.0-r0 description:
+dumb-init-1.2.2-r1 description:
 A minimal init system for Linux containers
 
-dumb-init-1.2.0-r0 webpage:
+dumb-init-1.2.2-r1 webpage:
 https://github.com/Yelp/dumb-init
 
-dumb-init-1.2.0-r0 installed size:
-57344
+dumb-init-1.2.2-r1 installed size:
+61440
 
-dumb-init-1.2.0-r0 license:
+dumb-init-1.2.2-r1 license:
 MIT
 
 ```
@@ -138,33 +155,33 @@ MIT
 ### `apk` package: `iputils`
 
 ```console
-iputils-20121221-r8 description:
+iputils-20180629-r1 description:
 IP Configuration Utilities (and Ping)
 
-iputils-20121221-r8 webpage:
-http://www.linuxfoundation.org/en/Net:Iputils
+iputils-20180629-r1 webpage:
+https://github.com/iputils/iputils/
 
-iputils-20121221-r8 installed size:
-237568
+iputils-20180629-r1 installed size:
+270336
 
-iputils-20121221-r8 license:
-BSD
+iputils-20180629-r1 license:
+BSD-3-Clause GPL-2.0-or-later
 
 ```
 
 ### `apk` package: `jq`
 
 ```console
-jq-1.5-r5 description:
+jq-1.6-r0 description:
 A lightweight and flexible command-line JSON processor
 
-jq-1.5-r5 webpage:
+jq-1.6-r0 webpage:
 http://stedolan.github.io/jq/
 
-jq-1.5-r5 installed size:
-512000
+jq-1.6-r0 installed size:
+565248
 
-jq-1.5-r5 license:
+jq-1.6-r0 license:
 MIT
 
 ```
@@ -189,118 +206,118 @@ BSD
 ### `apk` package: `libcap`
 
 ```console
-libcap-2.25-r1 description:
+libcap-2.26-r0 description:
 POSIX 1003.1e capabilities
 
-libcap-2.25-r1 webpage:
+libcap-2.26-r0 webpage:
 http://www.friedhoff.org/posixfilecaps.html
 
-libcap-2.25-r1 installed size:
-90112
+libcap-2.26-r0 installed size:
+118784
 
-libcap-2.25-r1 license:
+libcap-2.26-r0 license:
 GPL
+
+```
+
+### `apk` package: `libcrypto1.1`
+
+```console
+libcrypto1.1-1.1.1b-r1 description:
+Crypto library from openssl
+
+libcrypto1.1-1.1.1b-r1 webpage:
+https://www.openssl.org
+
+libcrypto1.1-1.1.1b-r1 installed size:
+2748416
+
+libcrypto1.1-1.1.1b-r1 license:
+OpenSSL
 
 ```
 
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.61.1-r2 description:
+libcurl-7.64.0-r1 description:
 The multiprotocol file transfer library
 
-libcurl-7.61.1-r2 webpage:
+libcurl-7.64.0-r1 webpage:
 https://curl.haxx.se
 
-libcurl-7.61.1-r2 installed size:
-446464
+libcurl-7.64.0-r1 installed size:
+487424
 
-libcurl-7.61.1-r2 license:
+libcurl-7.64.0-r1 license:
 MIT
-
-```
-
-### `apk` package: `libressl2.6-libcrypto`
-
-```console
-libressl2.6-libcrypto-2.6.5-r0 description:
-libressl libcrypto library
-
-libressl2.6-libcrypto-2.6.5-r0 webpage:
-https://www.libressl.org/
-
-libressl2.6-libcrypto-2.6.5-r0 installed size:
-1953792
-
-libressl2.6-libcrypto-2.6.5-r0 license:
-custom
-
-```
-
-### `apk` package: `libressl2.6-libssl`
-
-```console
-libressl2.6-libssl-2.6.5-r0 description:
-libressl libssl library
-
-libressl2.6-libssl-2.6.5-r0 webpage:
-https://www.libressl.org/
-
-libressl2.6-libssl-2.6.5-r0 installed size:
-327680
-
-libressl2.6-libssl-2.6.5-r0 license:
-custom
-
-```
-
-### `apk` package: `libressl2.6-libtls`
-
-```console
-libressl2.6-libtls-2.6.5-r0 description:
-libressl libtls library
-
-libressl2.6-libtls-2.6.5-r0 webpage:
-https://www.libressl.org/
-
-libressl2.6-libtls-2.6.5-r0 installed size:
-73728
-
-libressl2.6-libtls-2.6.5-r0 license:
-custom
 
 ```
 
 ### `apk` package: `libssh2`
 
 ```console
-libssh2-1.8.1-r0 description:
+libssh2-1.8.2-r0 description:
 library for accessing ssh1/ssh2 protocol servers
 
-libssh2-1.8.1-r0 webpage:
+libssh2-1.8.2-r0 webpage:
 https://libssh2.org/
 
-libssh2-1.8.1-r0 installed size:
+libssh2-1.8.2-r0 installed size:
 180224
 
-libssh2-1.8.1-r0 license:
+libssh2-1.8.2-r0 license:
 BSD
+
+```
+
+### `apk` package: `libssl1.1`
+
+```console
+libssl1.1-1.1.1b-r1 description:
+SSL shared libraries
+
+libssl1.1-1.1.1b-r1 webpage:
+https://www.openssl.org
+
+libssl1.1-1.1.1b-r1 installed size:
+536576
+
+libssl1.1-1.1.1b-r1 license:
+OpenSSL
+
+```
+
+### `apk` package: `libtls-standalone`
+
+```console
+libtls-standalone-2.7.4-r6 description:
+libtls extricated from libressl sources
+
+libtls-standalone-2.7.4-r6 webpage:
+http://www.libressl.org/
+
+libtls-standalone-2.7.4-r6 installed size:
+110592
+
+libtls-standalone-2.7.4-r6 license:
+ISC
 
 ```
 
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.18-r3 description:
+musl-1.1.20-r4 description:
 the musl c library (libc) implementation
 
-musl-1.1.18-r3 webpage:
+musl-1.1.20-r4 webpage:
 http://www.musl-libc.org/
 
-musl-1.1.18-r3 installed size:
-581632
+musl-1.1.20-r4 installed size:
+602112
 
-musl-1.1.18-r3 license:
+musl-1.1.20-r4 license:
 MIT
 
 ```
@@ -308,33 +325,50 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.1.18-r3 description:
+musl-utils-1.1.20-r4 description:
 the musl c library (libc) implementation
 
-musl-utils-1.1.18-r3 webpage:
+musl-utils-1.1.20-r4 webpage:
 http://www.musl-libc.org/
 
-musl-utils-1.1.18-r3 installed size:
-122880
+musl-utils-1.1.20-r4 installed size:
+139264
 
-musl-utils-1.1.18-r3 license:
+musl-utils-1.1.20-r4 license:
 MIT BSD GPL2+
+
+```
+
+### `apk` package: `nghttp2-libs`
+
+```console
+nghttp2-libs-1.35.1-r0 description:
+Experimental HTTP/2 client, server and proxy (libraries)
+
+nghttp2-libs-1.35.1-r0 webpage:
+https://nghttp2.org
+
+nghttp2-libs-1.35.1-r0 installed size:
+155648
+
+nghttp2-libs-1.35.1-r0 license:
+MIT
 
 ```
 
 ### `apk` package: `oniguruma`
 
 ```console
-oniguruma-6.6.1-r0 description:
+oniguruma-6.9.1-r0 description:
 a regular expressions library
 
-oniguruma-6.6.1-r0 webpage:
+oniguruma-6.9.1-r0 webpage:
 http://www.geocities.jp/kosako3/oniguruma/
 
-oniguruma-6.6.1-r0 installed size:
-671744
+oniguruma-6.9.1-r0 installed size:
+544768
 
-oniguruma-6.6.1-r0 license:
+oniguruma-6.9.1-r0 license:
 BSD
 
 ```
@@ -342,34 +376,34 @@ BSD
 ### `apk` package: `scanelf`
 
 ```console
-scanelf-1.2.2-r1 description:
+scanelf-1.2.3-r0 description:
 Scan ELF binaries for stuff
 
-scanelf-1.2.2-r1 webpage:
+scanelf-1.2.3-r0 webpage:
 https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities
 
-scanelf-1.2.2-r1 installed size:
-90112
+scanelf-1.2.3-r0 installed size:
+98304
 
-scanelf-1.2.2-r1 license:
-GPL2
+scanelf-1.2.3-r0 license:
+GPL-2.0
 
 ```
 
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.27.2-r11 description:
+ssl_client-1.29.3-r10 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.27.2-r11 webpage:
+ssl_client-1.29.3-r10 webpage:
 http://busybox.net
 
-ssl_client-1.27.2-r11 installed size:
-24576
+ssl_client-1.29.3-r10 installed size:
+28672
 
-ssl_client-1.27.2-r11 license:
-GPL2
+ssl_client-1.29.3-r10 license:
+GPL-2.0
 
 ```
 
@@ -383,7 +417,7 @@ su-exec-0.2-r0 webpage:
 https://github.com/ncopa/su-exec
 
 su-exec-0.2-r0 installed size:
-20480
+24576
 
 su-exec-0.2-r0 license:
 MIT
@@ -400,7 +434,7 @@ zlib-1.2.11-r1 webpage:
 http://zlib.net
 
 zlib-1.2.11-r1 installed size:
-102400
+110592
 
 zlib-1.2.11-r1 license:
 zlib
