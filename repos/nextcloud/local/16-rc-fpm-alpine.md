@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:661f200440e35224df936f3badd0d8a82b6633d8eb3373d33eaece757d90dd39`
-- Created: `2019-04-18T23:21:04.745111005Z`
+- Image ID: `sha256:b367b2bb455d62c9771c984ee19ce98eb19bf1c9466d96f75062282cbc60f418`
+- Created: `2019-04-25T01:13:19.943809913Z`
 - Virtual Size: ~ 340.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -251,16 +251,16 @@ MIT ICU Unicode-TOU
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.0.8.23-r0 description:
+imagemagick-libs-7.0.8.38-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.0.8.23-r0 webpage:
+imagemagick-libs-7.0.8.38-r0 webpage:
 https://www.imagemagick.org
 
-imagemagick-libs-7.0.8.23-r0 installed size:
-3284992
+imagemagick-libs-7.0.8.38-r0 installed size:
+3289088
 
-imagemagick-libs-7.0.8.23-r0 license:
+imagemagick-libs-7.0.8.38-r0 license:
 ImageMagick
 
 ```
