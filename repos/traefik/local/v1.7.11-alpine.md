@@ -1,10 +1,10 @@
-# `traefik:v1.7.10-alpine`
+# `traefik:v1.7.11-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1930b7508541abea87aad96fda1c625649345127bb39376ad138fe71ac0c0a98`
-- Created: `2019-04-10T02:01:31.067180989Z`
-- Virtual Size: ~ 78.16 Mb  
+- Image ID: `sha256:2761899631d036000b3b6a8c5e3138b645da8bef3cf44cecef641292254a3a58`
+- Created: `2019-04-26T22:24:06.171796292Z`
+- Virtual Size: ~ 78.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -12,12 +12,12 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `org.label-schema.description=A modern reverse-proxy`
-  - `org.label-schema.docker.schema-version=1.0`
-  - `org.label-schema.name=Traefik`
-  - `org.label-schema.url=https://traefik.io`
-  - `org.label-schema.vendor=Containous`
-  - `org.label-schema.version=v1.7.10`
+  - `org.opencontainers.image.description=A modern reverse-proxy`
+  - `org.opencontainers.image.documentation=https://docs.traefik.io`
+  - `org.opencontainers.image.title=Traefik`
+  - `org.opencontainers.image.url=https://traefik.io`
+  - `org.opencontainers.image.vendor=Containous`
+  - `org.opencontainers.image.version=v1.7.11`
 
 ## `apk` (`.apk`-based packages)
 
