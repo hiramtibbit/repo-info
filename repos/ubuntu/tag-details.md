@@ -23,7 +23,7 @@
 ## `ubuntu:14.04`
 
 ```console
-$ docker pull ubuntu@sha256:2d894ba19249e599610046b56ba33ea94e9ec97312bcc808d457bfa354681037
+$ docker pull ubuntu@sha256:ce7d73872d1fc131703d6bb8922904f535664799bc7178040c0d289829329b2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -125,45 +125,45 @@ CMD ["/bin/bash"]
 ### `ubuntu:14.04` - linux; arm64 variant v8
 
 ```console
-$ docker pull ubuntu@sha256:eda5132a7cb653bbd7fa42d773efbed4565167dd790858be921f58d4cf5c5329
+$ docker pull ubuntu@sha256:83d0505d25ef6f5cfa23e4f1c6524e4a58bc948e477836229ad2206eeee4825f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.3 MB (63271310 bytes)**  
+-	Total Size: **63.3 MB (63305879 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0a58d6d6515930dfc37173c60e8e69e3347ee0eb05f6f61b80afba608117267`
+-	Image ID: `sha256:fe186540bbbee171cbf473d26f6418b414b4fc56695472d0e80cb66988d6e9f8`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 14 Mar 2019 09:36:37 GMT
-ADD file:6f285b235a72a3aa8cf7c578d863e7098bc2e45cdcb4cbac36d22f50ea80e071 in / 
-# Thu, 14 Mar 2019 09:36:41 GMT
+# Sat, 27 Apr 2019 09:37:46 GMT
+ADD file:b7712277488ca5feca49e84f24daf6ff1c099901e2da74e441a745d48d480001 in / 
+# Sat, 27 Apr 2019 09:37:50 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 14 Mar 2019 09:36:43 GMT
+# Sat, 27 Apr 2019 09:37:53 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 14 Mar 2019 09:36:46 GMT
+# Sat, 27 Apr 2019 09:37:56 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 14 Mar 2019 09:36:47 GMT
+# Sat, 27 Apr 2019 09:37:57 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:804d6a3905aa72301e4e1bb5d06797cb6ee283d086cb9bc270b57e23edb55e47`  
-		Last Modified: Mon, 11 Mar 2019 15:20:35 GMT  
-		Size: 63.2 MB (63211687 bytes)  
+	-	`sha256:e46ac618d4e0cb1e6551fd0f4cfa29cc3eff5914890afe801c91820c1449c2bf`  
+		Last Modified: Sat, 27 Apr 2019 09:41:03 GMT  
+		Size: 63.2 MB (63246265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b70fb30e31fad10fa93e3a07c02d9d205ee475f42eeb3b784b2a300de043975`  
-		Last Modified: Thu, 14 Mar 2019 09:39:00 GMT  
-		Size: 59.1 KB (59102 bytes)  
+	-	`sha256:cfd21d82a86a4094a01e4222157b4eceb2e137d60928d46a9af40c1c1e76412b`  
+		Last Modified: Sat, 27 Apr 2019 09:40:39 GMT  
+		Size: 59.1 KB (59094 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:965f010c044e42545db11a054bb3309407b975bcfbab2492753216a7eb0a72b8`  
-		Last Modified: Thu, 14 Mar 2019 09:39:00 GMT  
-		Size: 359.0 B  
+	-	`sha256:6c19489b78574361031a2bef05fd44706fb4dd54abc9bebfb083ed168e588cc1`  
+		Last Modified: Sat, 27 Apr 2019 09:40:39 GMT  
+		Size: 356.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:005d86a5dc57ca266ba593b46fe86fdf251bf7c3a46a0163e29e0ca2c07014c0`  
-		Last Modified: Thu, 14 Mar 2019 09:39:00 GMT  
-		Size: 162.0 B  
+	-	`sha256:6d772c8eda5a1bbcde9462db9ebb43561b0635923b8cde579c330d964a9d45e9`  
+		Last Modified: Sat, 27 Apr 2019 09:40:38 GMT  
+		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:14.04` - linux; 386
@@ -213,51 +213,51 @@ CMD ["/bin/bash"]
 ### `ubuntu:14.04` - linux; ppc64le
 
 ```console
-$ docker pull ubuntu@sha256:389cc27153fe275dbe1dd94a1a6295d787c871c1bca7673d2d99091447807638
+$ docker pull ubuntu@sha256:cad23b2c64eb839ccb3ba60a4559ad17f037425728ad33443ad603881d145277
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.9 MB (69876237 bytes)**  
+-	Total Size: **69.9 MB (69918555 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bfb6dfd682b73fb85d4114300d3c31dc1e1a2643198591fa213e0d68f16effa8`
+-	Image ID: `sha256:947b9bb216de43a8a0056ac9233fdb188015b2bd8d5c294aa0a8e1255395e61d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 12 Mar 2019 08:38:09 GMT
-ADD file:4d2f8c359b4e201499c70a6b9f25e299347d15566f8fe1bc105f9d8a8ce59718 in / 
-# Tue, 12 Mar 2019 08:38:18 GMT
+# Sat, 27 Apr 2019 09:26:17 GMT
+ADD file:e018e98231d39ca8bef7e56dbb0687f83a2a39d6140571ed73e7c4a96ffe79c5 in / 
+# Sat, 27 Apr 2019 09:26:25 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Tue, 12 Mar 2019 08:38:22 GMT
+# Sat, 27 Apr 2019 09:26:30 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 12 Mar 2019 08:38:29 GMT
+# Sat, 27 Apr 2019 09:26:35 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Tue, 12 Mar 2019 08:38:32 GMT
+# Sat, 27 Apr 2019 09:26:37 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:f467b6300e666a0c45e457f955904030094680a70a36a7d5163528195ad96427`  
-		Last Modified: Mon, 11 Mar 2019 15:23:13 GMT  
-		Size: 69.8 MB (69812255 bytes)  
+	-	`sha256:21e2c51dc921cff8e3d821254ff7cea5dca04fe8bc70a9f35b6f4aaccfbb3137`  
+		Last Modified: Sat, 27 Apr 2019 09:32:33 GMT  
+		Size: 69.9 MB (69854590 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:522d28292b119385dc82dbe1d2b8e92b44d5da06db492b34c48634e622f7f558`  
-		Last Modified: Tue, 12 Mar 2019 08:40:54 GMT  
-		Size: 63.4 KB (63434 bytes)  
+	-	`sha256:dadcb4f1379bb8eaa4ab324ab11552f7c2d8176578149c437f97b95e84f02f3e`  
+		Last Modified: Sat, 27 Apr 2019 09:31:35 GMT  
+		Size: 63.4 KB (63418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b2f8d4755a70999526fab64b7c6bab50520d0613f2db63344001fdf40effb29`  
-		Last Modified: Tue, 12 Mar 2019 08:40:53 GMT  
-		Size: 361.0 B  
+	-	`sha256:e78abe4347f0f3d6c51deae815ff7a2986d4b1783cdcdcc73487f025e9c41e00`  
+		Last Modified: Sat, 27 Apr 2019 09:31:35 GMT  
+		Size: 360.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:425f5728bb9dc938d35ff7ca325ca02d610429aff390d9ec208b9a45b5007cff`  
-		Last Modified: Tue, 12 Mar 2019 08:40:54 GMT  
+	-	`sha256:d7d271af6e174f309e31a22d58cc08c9066236f5982dd090cb0af618bba847e9`  
+		Last Modified: Sat, 27 Apr 2019 09:31:35 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ubuntu:16.04`
 
 ```console
-$ docker pull ubuntu@sha256:5da0fc56841046569e19a16658912602b57311c99e51d455a85ff45bffbfba37
+$ docker pull ubuntu@sha256:d701427fc4836935fbd2743624f8a5966e7a35a87b9177cdfa7de807e07ed756
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -360,44 +360,44 @@ CMD ["/bin/bash"]
 ### `ubuntu:16.04` - linux; arm64 variant v8
 
 ```console
-$ docker pull ubuntu@sha256:ad1c2a2c4964e6fc97c62f69b1ab2173927be8e8a07d3d885cb338829b898f43
+$ docker pull ubuntu@sha256:d2fa47c0c22a356bf633bb03bac23d870ef0e3d91225d6d5899b21156c7543bc
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.6 MB (39584457 bytes)**  
+-	Total Size: **39.7 MB (39730887 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2dbbe80955e78efb6e29a4a5c2e96a9185524c4ce7cac230e8094ee62fd523bc`
+-	Image ID: `sha256:149b98a0932ee75a23bbc68de361e71961d6bfea65652145ebf6255f9e6ceedc`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 14 Mar 2019 09:37:10 GMT
-ADD file:fb512c07289f9bff179e81ccc3c7db7cfa5cbe0e28c60dcf2582fdb621ef4873 in / 
-# Thu, 14 Mar 2019 09:37:13 GMT
+# Sat, 27 Apr 2019 09:38:29 GMT
+ADD file:871bd7b9746504992c714acf86c19916c9ea2061e665aba4547c02f5a87dda1d in / 
+# Sat, 27 Apr 2019 09:38:33 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 14 Mar 2019 09:37:16 GMT
+# Sat, 27 Apr 2019 09:38:36 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 14 Mar 2019 09:37:19 GMT
+# Sat, 27 Apr 2019 09:38:40 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 14 Mar 2019 09:37:20 GMT
+# Sat, 27 Apr 2019 09:38:41 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:42a68504e090bdbf515c814e7ef1eec51c4e5e86f869c3196416372743583213`  
-		Last Modified: Fri, 22 Feb 2019 23:17:09 GMT  
-		Size: 39.6 MB (39582965 bytes)  
+	-	`sha256:9faae00b8c161eeb3f6dd501b8afea1b3ff6f0cdaafbffc40c8c05e370ca8581`  
+		Last Modified: Fri, 26 Apr 2019 22:12:20 GMT  
+		Size: 39.7 MB (39729396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aca2bac1d329215e2f3bc584352d5eb878cc611f42990f3c8b2a4f86caef05cf`  
-		Last Modified: Thu, 14 Mar 2019 09:39:37 GMT  
-		Size: 854.0 B  
+	-	`sha256:da2435bdd32c230705ab3d701ff85763cf6f15db3db0ae7677723535a9966f3c`  
+		Last Modified: Sat, 27 Apr 2019 09:41:13 GMT  
+		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9450bbb566ac27c4e32a7c6a5fc0ad9c4eb7eba18a33c7abc2aabf470369ff6`  
-		Last Modified: Thu, 14 Mar 2019 09:39:37 GMT  
-		Size: 469.0 B  
+	-	`sha256:d3baab0b94b9762c01dab9564e661e1a9fd77ca7ac7d91fbef8143875e9ad0d5`  
+		Last Modified: Sat, 27 Apr 2019 09:41:13 GMT  
+		Size: 470.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:909659e6e151b05fe5662d99effc50f4e0e47c27763091c952c98d731bb399a8`  
-		Last Modified: Thu, 14 Mar 2019 09:39:37 GMT  
+	-	`sha256:b8d2291befdb8dfc512786348c157758756137ac5176472743061ac5a04f4a7e`  
+		Last Modified: Sat, 27 Apr 2019 09:41:12 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -448,45 +448,45 @@ CMD ["/bin/bash"]
 ### `ubuntu:16.04` - linux; ppc64le
 
 ```console
-$ docker pull ubuntu@sha256:dd7a6449012f5b3f12cbacc3a13df990c19a54fbe371ca8dd442cece7bc7edf1
+$ docker pull ubuntu@sha256:b82a121ed878a5704ee662794d7da17bf20e6bd5951543daa32d280e91d9c864
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.8 MB (45776544 bytes)**  
+-	Total Size: **45.9 MB (45930132 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e95488c25b8219bb76d31a9846fb6c6535a06cde70ff5b41352cc88771600f6b`
+-	Image ID: `sha256:5dd8620862e6562d893b760ea7f2ad94dca6f8d2ee8c57abb3281106e04dab97`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 12 Mar 2019 08:38:49 GMT
-ADD file:662e1451430b294da63b388f789556544f888e1c853a682bee04b16c1ce0c5f8 in / 
-# Tue, 12 Mar 2019 08:39:00 GMT
+# Sat, 27 Apr 2019 09:28:21 GMT
+ADD file:3e448359ea1b7f0a4f4b69f4542cd08e7bface0c7e835f38b7cb9aff4351346d in / 
+# Sat, 27 Apr 2019 09:28:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Tue, 12 Mar 2019 08:39:09 GMT
+# Sat, 27 Apr 2019 09:28:33 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 12 Mar 2019 08:39:15 GMT
+# Sat, 27 Apr 2019 09:28:40 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Tue, 12 Mar 2019 08:39:18 GMT
+# Sat, 27 Apr 2019 09:28:43 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:4d4e695beabdb9803aaf0b66ff290a2b37ee4b2c6ac6c54a79af9402ec1e8c63`  
-		Last Modified: Mon, 04 Mar 2019 15:21:34 GMT  
-		Size: 45.8 MB (45775047 bytes)  
+	-	`sha256:abd5c019819de70ac57ed3f6553b5cb918700ea013051f9b5c34647068e1f358`  
+		Last Modified: Sat, 27 Apr 2019 09:33:19 GMT  
+		Size: 45.9 MB (45928636 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b4bc7904c59ff5c00672c95b43d447ee8bc66491ed4d8ec9b6977517a8c0e5f`  
-		Last Modified: Tue, 12 Mar 2019 08:41:22 GMT  
-		Size: 852.0 B  
+	-	`sha256:ffb1e9f7f3b1c7c2b3164a88da4d80c35edd5e9c958d483ef7a5d3f1760bc574`  
+		Last Modified: Sat, 27 Apr 2019 09:32:45 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44807514cf46fe796993725e6d846bd71cbb1b6d5732ff662eed4fdacd6b0f99`  
-		Last Modified: Tue, 12 Mar 2019 08:41:22 GMT  
-		Size: 475.0 B  
+	-	`sha256:b19320290aeb9b108bf4f79b24b0ec8f8d136510f1d37e51c972a5cd0276e8a0`  
+		Last Modified: Sat, 27 Apr 2019 09:32:46 GMT  
+		Size: 476.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:478e6a97f35ae67ea6d8b7e0069332d9070fb6a49956271e8ab2671463d94e4c`  
-		Last Modified: Tue, 12 Mar 2019 08:41:23 GMT  
-		Size: 170.0 B  
+	-	`sha256:354d5ed794e921901f7c634ba79e69add39da2a185fcf0defbdf90418b77a394`  
+		Last Modified: Sat, 27 Apr 2019 09:32:46 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:16.04` - linux; s390x
@@ -536,7 +536,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:18.04`
 
 ```console
-$ docker pull ubuntu@sha256:ff716f1a3077cbd7108fb10091f6f403cc0e7aec23f1f0202f408d7f81a0d0d0
+$ docker pull ubuntu@sha256:2ec14da8c88a6099a325c8a72c8a346c0926d3c0f26bff16bf469e845e0f8494
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -639,44 +639,44 @@ CMD ["/bin/bash"]
 ### `ubuntu:18.04` - linux; arm64 variant v8
 
 ```console
-$ docker pull ubuntu@sha256:92d9e5deed4c994a64f04cb023370e79ce273fabde51f8cfc7cf66b594147eb2
+$ docker pull ubuntu@sha256:de263810f197bad68d1b3e77ec31bc6bcca05d490b93d446dd5a07dc3eaae744
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.2 MB (29177086 bytes)**  
+-	Total Size: **33.3 MB (33344945 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0926e73e524558778056641f4a0e19835ffe2621a096af50d2a2708abf90ca8e`
+-	Image ID: `sha256:e76720cc7bfddc9c2e98f52f886453e472c4afdcf9536305bd668cd280abe94a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 14 Mar 2019 09:34:18 GMT
-ADD file:4cccf4e4a71783b1ac058bcfcabe23b3901e829c3859551be9d7e732cb9e3f86 in / 
-# Thu, 14 Mar 2019 09:34:21 GMT
+# Sat, 27 Apr 2019 09:35:52 GMT
+ADD file:f046142405da23f452b26e01729a6fdc5a92b0fa85ec8456a1fee249160217bb in / 
+# Sat, 27 Apr 2019 09:35:55 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 14 Mar 2019 09:34:22 GMT
+# Sat, 27 Apr 2019 09:35:57 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 14 Mar 2019 09:34:31 GMT
+# Sat, 27 Apr 2019 09:35:59 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 14 Mar 2019 09:34:32 GMT
+# Sat, 27 Apr 2019 09:36:00 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:a0ceea30e08b5fa042d10308a43b8b093b67ce44e98a69ea8d277d00077387ab`  
-		Last Modified: Fri, 08 Mar 2019 23:47:38 GMT  
-		Size: 29.2 MB (29175537 bytes)  
+	-	`sha256:bf7c45c81bd70f13db7f1612a4596418f2c15b48384d2c1d5597b7534e60b3f3`  
+		Last Modified: Sat, 27 Apr 2019 09:39:34 GMT  
+		Size: 33.3 MB (33343401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82ef245d4e8728acd667d550023b9ffbb688c7976f78f72986d132072041e5a1`  
-		Last Modified: Thu, 14 Mar 2019 09:37:47 GMT  
-		Size: 854.0 B  
+	-	`sha256:5396f07cded369e173bde57fa17c337db371930ea1b2e925d3c04cb407794d5c`  
+		Last Modified: Sat, 27 Apr 2019 09:39:13 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9bb25026742c32e7fe5417efb6bc0ff5ad1eb9963007aebd5f71e9bc333e9ba`  
-		Last Modified: Thu, 14 Mar 2019 09:37:47 GMT  
+	-	`sha256:e0ceb566582d63624b9d3a22ead5cbf0836b8c5bca41b4b7bb777c9c11923ede`  
+		Last Modified: Sat, 27 Apr 2019 09:39:13 GMT  
 		Size: 532.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b62b2948ac15d07c725e6074399d5e49e916e79b2c7738d6ad63e4d1b090db8f`  
-		Last Modified: Thu, 14 Mar 2019 09:37:47 GMT  
+	-	`sha256:bdb3982847b2f6cb9353dc95b2dbd7092a92764a1946b9901adf59d886849542`  
+		Last Modified: Sat, 27 Apr 2019 09:39:13 GMT  
 		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -727,45 +727,45 @@ CMD ["/bin/bash"]
 ### `ubuntu:18.04` - linux; ppc64le
 
 ```console
-$ docker pull ubuntu@sha256:6eb5f0c149d010fdb9fcabf0c7a7360c589497e1e4b5cf78a274135eb24d7480
+$ docker pull ubuntu@sha256:1a3a00c47723eab7033ab45bd38662f8b387122d9fd385625e6cc3df7d768145
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.8 MB (35832545 bytes)**  
+-	Total Size: **39.9 MB (39946442 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a7cbdb00296352501acb49c048b3e04ab282aaa21720b4367967c82b2000e1bb`
+-	Image ID: `sha256:edf1f91056b961e352b9ae0d72294aac592d7768386e1a6d87fddb3454666e30`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 12 Mar 2019 08:36:02 GMT
-ADD file:6c9385eb6664a846c72d3c5498fc035a58c62525035b16099b9c193127bc4b2a in / 
-# Tue, 12 Mar 2019 08:36:09 GMT
+# Sat, 27 Apr 2019 09:15:37 GMT
+ADD file:f84af4a2bfeabb29759492bc1fcee90da44b5088e561155cd4c4fa69ec03c939 in / 
+# Sat, 27 Apr 2019 09:15:48 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Tue, 12 Mar 2019 08:36:16 GMT
+# Sat, 27 Apr 2019 09:16:01 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 12 Mar 2019 08:36:25 GMT
+# Sat, 27 Apr 2019 09:16:09 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Tue, 12 Mar 2019 08:36:28 GMT
+# Sat, 27 Apr 2019 09:16:14 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:3bc68f2d2d199135cfbad5cf36252da8055f0d928ae25036d127dc2e4589fb18`  
-		Last Modified: Tue, 12 Mar 2019 08:39:50 GMT  
-		Size: 35.8 MB (35830968 bytes)  
+	-	`sha256:05afd6335a2fc38939add8f98ac929a68b140fc6e14a89f99688d334f1cb40d5`  
+		Last Modified: Sat, 27 Apr 2019 09:29:49 GMT  
+		Size: 39.9 MB (39944868 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0b8fe3eb9f1763e3c0e9c2517a8f1d9b4067f70500b63b66033fe88312efd39`  
-		Last Modified: Tue, 12 Mar 2019 08:39:40 GMT  
-		Size: 856.0 B  
+	-	`sha256:bd52c18e7316709788a8ac0c7bfc70726c6c98a10685f8eb6e0cf2663ea3bf11`  
+		Last Modified: Sat, 27 Apr 2019 09:29:18 GMT  
+		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42fd213a0950a606039b023961bba2b91ee9d330c52d8583de302510ca56e9df`  
-		Last Modified: Tue, 12 Mar 2019 08:39:40 GMT  
-		Size: 533.0 B  
+	-	`sha256:5d43c0889ab8534b4f1762afc266e4da05e8d2a9751b469a98650943dc658ac0`  
+		Last Modified: Sat, 27 Apr 2019 09:29:18 GMT  
+		Size: 536.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb8002c958b1eeb578b48c50651cddd51a3d83c7e1d5d3a83147ea5f549b064f`  
-		Last Modified: Tue, 12 Mar 2019 08:39:40 GMT  
-		Size: 188.0 B  
+	-	`sha256:4d262c134c8e6db6fe2f46ebce5a86da0b7466032b6496665161825e36afffdc`  
+		Last Modified: Sat, 27 Apr 2019 09:29:18 GMT  
+		Size: 186.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:18.04` - linux; s390x
@@ -815,7 +815,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:18.10`
 
 ```console
-$ docker pull ubuntu@sha256:a2bb2b8e5164897a596f94d2a910028b92fb93edf0e4f49d847f1f7af87e204c
+$ docker pull ubuntu@sha256:f822ae0203c99ce671226d88f1fc289bb382b4fff795243d1865cc323c17cc59
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -918,44 +918,44 @@ CMD ["/bin/bash"]
 ### `ubuntu:18.10` - linux; arm64 variant v8
 
 ```console
-$ docker pull ubuntu@sha256:0ec73c1b00b273bbf61cf7750d6cffd817993e995b7234230939c26301a002d1
+$ docker pull ubuntu@sha256:fad078b9d4f4d8659abe15d7cd03170d6d4b8fd880819e2c11360ea0a68d5e81
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.6 MB (27576025 bytes)**  
+-	Total Size: **27.6 MB (27580443 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8327ab55b1c73089b0a543ccecb7deb47bf851b888ca76ac5fc82d108f973643`
+-	Image ID: `sha256:d3631a6f66cace5695286aa19d81055563e1402042fe2c3cacbeba192d47a423`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 14 Mar 2019 09:35:37 GMT
-ADD file:bb35650463800e191b418d7da8f6d48af3eb84d7b5f3640f6e5dd5112e2a1385 in / 
-# Thu, 14 Mar 2019 09:35:39 GMT
+# Sat, 27 Apr 2019 09:36:20 GMT
+ADD file:553fca2155f2b626dbc844a86d150a795f7596945a028911e9e65b52a75fab62 in / 
+# Sat, 27 Apr 2019 09:36:22 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 14 Mar 2019 09:35:41 GMT
+# Sat, 27 Apr 2019 09:36:26 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 14 Mar 2019 09:35:43 GMT
+# Sat, 27 Apr 2019 09:36:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 14 Mar 2019 09:35:44 GMT
+# Sat, 27 Apr 2019 09:36:29 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:7cf0a21e5b4f87de3e324323f0ef0e0e757f5639c90d3325436eaa50bb35c2d4`  
-		Last Modified: Thu, 14 Mar 2019 09:38:24 GMT  
-		Size: 27.6 MB (27574782 bytes)  
+	-	`sha256:c894f8296d41be2ffaca8f8ef57181f09265114d21ab969299e8616eab1e5dc0`  
+		Last Modified: Mon, 22 Apr 2019 15:16:14 GMT  
+		Size: 27.6 MB (27579200 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5db071b7879007c38472ac2ae602ad89f06e293a0f038b0ea13205053bb370b5`  
-		Last Modified: Thu, 14 Mar 2019 09:38:13 GMT  
-		Size: 868.0 B  
+	-	`sha256:1827f8d6d7d5322a3e5de6f09f63edaff2d90dd69a64a52646e5ec7f6e437bab`  
+		Last Modified: Sat, 27 Apr 2019 09:39:48 GMT  
+		Size: 866.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dad373a016cf071eac0b9b1752aca4e365b24eb8bf2bbf31e35495236ada727f`  
-		Last Modified: Thu, 14 Mar 2019 09:38:13 GMT  
-		Size: 212.0 B  
+	-	`sha256:dcd1f0c92a0a7f7dbfe035edc2df6b5cd3d5e22d8c554ebcf3c496911f6cbd23`  
+		Last Modified: Sat, 27 Apr 2019 09:39:48 GMT  
+		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee8cbc133a25405bd6f60e323444f511a2cc3b320807426532c8535a33c1a5e2`  
-		Last Modified: Thu, 14 Mar 2019 09:38:13 GMT  
+	-	`sha256:e6f5293ca941f33109b4f3d981f6783a90c18688058e9426bab434b086639f10`  
+		Last Modified: Sat, 27 Apr 2019 09:39:48 GMT  
 		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1006,44 +1006,44 @@ CMD ["/bin/bash"]
 ### `ubuntu:18.10` - linux; ppc64le
 
 ```console
-$ docker pull ubuntu@sha256:6ce4e218c28b83d1e70db4b23d2898d501a8457f89ce205a0760ed3adfe372c7
+$ docker pull ubuntu@sha256:85afa5b68e7268eded43bfd49f1ffefc142b282a5b112a786c3a59ce97047624
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **34.1 MB (34125128 bytes)**  
+-	Total Size: **34.1 MB (34125081 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1973d462e16f22138b936acd40de9c10c7b157d399da809ca6d5bfe02731a7ce`
+-	Image ID: `sha256:d4164b233777170dd83317b8d212f6cc45436d9ff22b970794a57ee406bb6c63`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 12 Mar 2019 08:36:45 GMT
-ADD file:8f354e6cff0ac873d406a338b07995aeb7c026c707e01f483d2d0ef5fe00c725 in / 
-# Tue, 12 Mar 2019 08:36:57 GMT
+# Sat, 27 Apr 2019 09:20:38 GMT
+ADD file:44c88b73d704bd032f51ed3607964b5709cbea6ae4b07e6ee0a6bf2fe5acfc3f in / 
+# Sat, 27 Apr 2019 09:20:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Tue, 12 Mar 2019 08:37:03 GMT
+# Sat, 27 Apr 2019 09:20:52 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 12 Mar 2019 08:37:10 GMT
+# Sat, 27 Apr 2019 09:21:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Tue, 12 Mar 2019 08:37:13 GMT
+# Sat, 27 Apr 2019 09:21:02 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:864251cd0e66280cdf2c56112679d0440d2bbaeed8fad2764afac91efdc66538`  
-		Last Modified: Tue, 12 Mar 2019 08:40:13 GMT  
-		Size: 34.1 MB (34123862 bytes)  
+	-	`sha256:6e719ad17430745f564beae472b51ff771ce7f912280e9adfcc17fdc856e77fc`  
+		Last Modified: Mon, 22 Apr 2019 15:17:33 GMT  
+		Size: 34.1 MB (34123812 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:76c211eefd0ecb87a39430bb4ad123970b6f40d8218d6b3b79c0892c18d93505`  
-		Last Modified: Tue, 12 Mar 2019 08:40:05 GMT  
+	-	`sha256:b02ffb7f2fdc5b239bc7f5afc1f21b73ab3c5d172cf15c0952ced65394ec1de6`  
+		Last Modified: Sat, 27 Apr 2019 09:30:06 GMT  
 		Size: 868.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed0b20de1eb6637526eaa29a61dd4b3548037128107b4efc60085a883059d24b`  
-		Last Modified: Tue, 12 Mar 2019 08:40:06 GMT  
-		Size: 210.0 B  
+	-	`sha256:c4de7c4e0b5db5a901196d9cecb096664601404e6ed044b9d5b6b6910ad4118d`  
+		Last Modified: Sat, 27 Apr 2019 09:30:06 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:22d257debec8fef751da56315bda0d530cb28d7db8f11e2461d811b8e283e310`  
-		Last Modified: Tue, 12 Mar 2019 08:40:06 GMT  
+	-	`sha256:e5717908812f9d703aa401bd4f7c395c20a16140ad33e65d725a8ba0c0fa6d82`  
+		Last Modified: Sat, 27 Apr 2019 09:30:06 GMT  
 		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1094,7 +1094,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:19.04`
 
 ```console
-$ docker pull ubuntu@sha256:64f07bcc1b827a88a85b22299b7dfb187b9b2b985a4b6393870d7f82b5445541
+$ docker pull ubuntu@sha256:e582f832791acd641874ad85ccede2a491e8a0c1f23d7f7e40da339449ef84ab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1197,45 +1197,45 @@ CMD ["/bin/bash"]
 ### `ubuntu:19.04` - linux; arm64 variant v8
 
 ```console
-$ docker pull ubuntu@sha256:84ea6bce906e2c052a9d4a36b1f4594cdcb582b1ae1e054b5326d27ea49b18eb
+$ docker pull ubuntu@sha256:67db735055fa62cc15f7716d8f6323fe6973c5ff73eb958660a5ddcc4656cb14
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.6 MB (28566126 bytes)**  
+-	Total Size: **28.5 MB (28524606 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a83202ea51c11e9e7f148dc95a1167f46d12b49700dd7aab2b4b7e81eb7de4a5`
+-	Image ID: `sha256:9c31d770b64aa5332870f322ac09e5d0e5262c06832d7f5f234228f810ef277f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 14 Mar 2019 09:36:04 GMT
-ADD file:5e18ef3eaf8210502b612e56077c33baef533723c2017d205b516a8dec9c9023 in / 
-# Thu, 14 Mar 2019 09:36:07 GMT
+# Sat, 27 Apr 2019 09:36:54 GMT
+ADD file:46d0c7536c7b2b2f997639dceb16911ce53a4c1443fe8cb284761b357e060370 in / 
+# Sat, 27 Apr 2019 09:36:56 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 14 Mar 2019 09:36:09 GMT
+# Sat, 27 Apr 2019 09:36:59 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 14 Mar 2019 09:36:11 GMT
+# Sat, 27 Apr 2019 09:37:02 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 14 Mar 2019 09:36:12 GMT
+# Sat, 27 Apr 2019 09:37:03 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:f3a20987ba9217a7a73974b8935c60d400be00cc290682a6afce8ed5eef6eb1c`  
-		Last Modified: Mon, 11 Mar 2019 15:16:02 GMT  
-		Size: 28.6 MB (28564892 bytes)  
+	-	`sha256:b6f4ef9b288b3aff27ce5cfc89c07fa63622e5f9745260281096961d866c6f88`  
+		Last Modified: Sat, 27 Apr 2019 09:40:26 GMT  
+		Size: 28.5 MB (28523391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6faa60d339af6971077e3d900e43b10810ecf337070262cd43fd13b0e26e718`  
-		Last Modified: Thu, 14 Mar 2019 09:38:36 GMT  
-		Size: 861.0 B  
+	-	`sha256:305214ff3f3f45f33e3dafa1a62b682ceef5757eedbc71a63f6519fbe74dfaea`  
+		Last Modified: Sat, 27 Apr 2019 09:40:12 GMT  
+		Size: 862.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f17b4c63f71d33824fd9e175418ead0edd59cdfd1df0849de3fe7a5322b5bdad`  
-		Last Modified: Thu, 14 Mar 2019 09:38:36 GMT  
-		Size: 209.0 B  
+	-	`sha256:bafc8e4e87f1adaf5e5c1dd74d0d48172ee80fc4fd5613d7e8bf2baec1c342fd`  
+		Last Modified: Sat, 27 Apr 2019 09:40:12 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59a470f0f21c7144c2834fdcc9dea1169d78d7cd9350b249e421bf6da7b25378`  
-		Last Modified: Thu, 14 Mar 2019 09:38:36 GMT  
-		Size: 164.0 B  
+	-	`sha256:61986756c9f477d13733af507c3a31953f49008e9343f25a5448c0bb144283b1`  
+		Last Modified: Sat, 27 Apr 2019 09:40:12 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:19.04` - linux; 386
@@ -1285,45 +1285,45 @@ CMD ["/bin/bash"]
 ### `ubuntu:19.04` - linux; ppc64le
 
 ```console
-$ docker pull ubuntu@sha256:d015916f99a49493ac15463b9e29daf0e6652fd0d540d2b25452d40b1281c049
+$ docker pull ubuntu@sha256:c21fb0a9d90458584a0c3be59b6a7f1dacead30546e4f3eb3b3047bb451fed88
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.1 MB (35072883 bytes)**  
+-	Total Size: **35.0 MB (35026201 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fd9919d89f0fb2e8fead3237e40a0b8e99cd07a5f3ab0eee129dcdab41bb8285`
+-	Image ID: `sha256:b7735a5bf361d40a27bcd1f3fe987122b9fec45a2f4ca880290f2110c220471f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 12 Mar 2019 08:37:26 GMT
-ADD file:99c5084356aaf3f0d14875c162b7d21310db0f53d229a6f62b4e47d75afff17a in / 
-# Tue, 12 Mar 2019 08:37:34 GMT
+# Sat, 27 Apr 2019 09:24:32 GMT
+ADD file:58bb3a0119a14002fa97781ba0f47f14a78ec4a1b0ccdb3d6709f91cd330b340 in / 
+# Sat, 27 Apr 2019 09:24:41 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Tue, 12 Mar 2019 08:37:42 GMT
+# Sat, 27 Apr 2019 09:24:48 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 12 Mar 2019 08:37:50 GMT
+# Sat, 27 Apr 2019 09:24:51 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Tue, 12 Mar 2019 08:37:53 GMT
+# Sat, 27 Apr 2019 09:24:53 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:9eb2d03a20b5e2d58bf30cc7f1081b6f6cf5d5a1e456c4b84da563bf97ed4d3b`  
-		Last Modified: Mon, 11 Mar 2019 15:20:12 GMT  
-		Size: 35.1 MB (35071623 bytes)  
+	-	`sha256:a999c107c313f741c65c3a8769432eb37516e9d8d70d880e8c422bdaf0a585fc`  
+		Last Modified: Sat, 27 Apr 2019 09:31:20 GMT  
+		Size: 35.0 MB (35024949 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:def68938cff29e439715d73601d88c1e8150f132680727c69ce4b4de00f82b56`  
-		Last Modified: Tue, 12 Mar 2019 08:40:28 GMT  
-		Size: 865.0 B  
+	-	`sha256:1aa2b0476ee53b4f0e8d4a8b579933f32271ac9bf8bc59b5db23ceaa5a4b1688`  
+		Last Modified: Sat, 27 Apr 2019 09:30:50 GMT  
+		Size: 872.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec0c417a094c366af0ddacdea6b1dfd772863da2d9c5cb14d42a993202191b5f`  
-		Last Modified: Tue, 12 Mar 2019 08:40:28 GMT  
-		Size: 210.0 B  
+	-	`sha256:f7377a54be74859898e331f16ce38ed25707db0fc01a825977654155e9118026`  
+		Last Modified: Sat, 27 Apr 2019 09:30:50 GMT  
+		Size: 193.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81cd2045aed7a64d1412d65135e4d405309b0af654ba9e03d6b19d34c50a54d3`  
-		Last Modified: Tue, 12 Mar 2019 08:40:28 GMT  
-		Size: 185.0 B  
+	-	`sha256:25a57350737985b161b838f05ab6e216fc9a1b04899afbe9371a4005d977109c`  
+		Last Modified: Sat, 27 Apr 2019 09:30:50 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:19.04` - linux; s390x
@@ -1373,7 +1373,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:bionic`
 
 ```console
-$ docker pull ubuntu@sha256:ff716f1a3077cbd7108fb10091f6f403cc0e7aec23f1f0202f408d7f81a0d0d0
+$ docker pull ubuntu@sha256:2ec14da8c88a6099a325c8a72c8a346c0926d3c0f26bff16bf469e845e0f8494
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1476,44 +1476,44 @@ CMD ["/bin/bash"]
 ### `ubuntu:bionic` - linux; arm64 variant v8
 
 ```console
-$ docker pull ubuntu@sha256:92d9e5deed4c994a64f04cb023370e79ce273fabde51f8cfc7cf66b594147eb2
+$ docker pull ubuntu@sha256:de263810f197bad68d1b3e77ec31bc6bcca05d490b93d446dd5a07dc3eaae744
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.2 MB (29177086 bytes)**  
+-	Total Size: **33.3 MB (33344945 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0926e73e524558778056641f4a0e19835ffe2621a096af50d2a2708abf90ca8e`
+-	Image ID: `sha256:e76720cc7bfddc9c2e98f52f886453e472c4afdcf9536305bd668cd280abe94a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 14 Mar 2019 09:34:18 GMT
-ADD file:4cccf4e4a71783b1ac058bcfcabe23b3901e829c3859551be9d7e732cb9e3f86 in / 
-# Thu, 14 Mar 2019 09:34:21 GMT
+# Sat, 27 Apr 2019 09:35:52 GMT
+ADD file:f046142405da23f452b26e01729a6fdc5a92b0fa85ec8456a1fee249160217bb in / 
+# Sat, 27 Apr 2019 09:35:55 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 14 Mar 2019 09:34:22 GMT
+# Sat, 27 Apr 2019 09:35:57 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 14 Mar 2019 09:34:31 GMT
+# Sat, 27 Apr 2019 09:35:59 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 14 Mar 2019 09:34:32 GMT
+# Sat, 27 Apr 2019 09:36:00 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:a0ceea30e08b5fa042d10308a43b8b093b67ce44e98a69ea8d277d00077387ab`  
-		Last Modified: Fri, 08 Mar 2019 23:47:38 GMT  
-		Size: 29.2 MB (29175537 bytes)  
+	-	`sha256:bf7c45c81bd70f13db7f1612a4596418f2c15b48384d2c1d5597b7534e60b3f3`  
+		Last Modified: Sat, 27 Apr 2019 09:39:34 GMT  
+		Size: 33.3 MB (33343401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82ef245d4e8728acd667d550023b9ffbb688c7976f78f72986d132072041e5a1`  
-		Last Modified: Thu, 14 Mar 2019 09:37:47 GMT  
-		Size: 854.0 B  
+	-	`sha256:5396f07cded369e173bde57fa17c337db371930ea1b2e925d3c04cb407794d5c`  
+		Last Modified: Sat, 27 Apr 2019 09:39:13 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9bb25026742c32e7fe5417efb6bc0ff5ad1eb9963007aebd5f71e9bc333e9ba`  
-		Last Modified: Thu, 14 Mar 2019 09:37:47 GMT  
+	-	`sha256:e0ceb566582d63624b9d3a22ead5cbf0836b8c5bca41b4b7bb777c9c11923ede`  
+		Last Modified: Sat, 27 Apr 2019 09:39:13 GMT  
 		Size: 532.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b62b2948ac15d07c725e6074399d5e49e916e79b2c7738d6ad63e4d1b090db8f`  
-		Last Modified: Thu, 14 Mar 2019 09:37:47 GMT  
+	-	`sha256:bdb3982847b2f6cb9353dc95b2dbd7092a92764a1946b9901adf59d886849542`  
+		Last Modified: Sat, 27 Apr 2019 09:39:13 GMT  
 		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1564,45 +1564,45 @@ CMD ["/bin/bash"]
 ### `ubuntu:bionic` - linux; ppc64le
 
 ```console
-$ docker pull ubuntu@sha256:6eb5f0c149d010fdb9fcabf0c7a7360c589497e1e4b5cf78a274135eb24d7480
+$ docker pull ubuntu@sha256:1a3a00c47723eab7033ab45bd38662f8b387122d9fd385625e6cc3df7d768145
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.8 MB (35832545 bytes)**  
+-	Total Size: **39.9 MB (39946442 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a7cbdb00296352501acb49c048b3e04ab282aaa21720b4367967c82b2000e1bb`
+-	Image ID: `sha256:edf1f91056b961e352b9ae0d72294aac592d7768386e1a6d87fddb3454666e30`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 12 Mar 2019 08:36:02 GMT
-ADD file:6c9385eb6664a846c72d3c5498fc035a58c62525035b16099b9c193127bc4b2a in / 
-# Tue, 12 Mar 2019 08:36:09 GMT
+# Sat, 27 Apr 2019 09:15:37 GMT
+ADD file:f84af4a2bfeabb29759492bc1fcee90da44b5088e561155cd4c4fa69ec03c939 in / 
+# Sat, 27 Apr 2019 09:15:48 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Tue, 12 Mar 2019 08:36:16 GMT
+# Sat, 27 Apr 2019 09:16:01 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 12 Mar 2019 08:36:25 GMT
+# Sat, 27 Apr 2019 09:16:09 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Tue, 12 Mar 2019 08:36:28 GMT
+# Sat, 27 Apr 2019 09:16:14 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:3bc68f2d2d199135cfbad5cf36252da8055f0d928ae25036d127dc2e4589fb18`  
-		Last Modified: Tue, 12 Mar 2019 08:39:50 GMT  
-		Size: 35.8 MB (35830968 bytes)  
+	-	`sha256:05afd6335a2fc38939add8f98ac929a68b140fc6e14a89f99688d334f1cb40d5`  
+		Last Modified: Sat, 27 Apr 2019 09:29:49 GMT  
+		Size: 39.9 MB (39944868 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0b8fe3eb9f1763e3c0e9c2517a8f1d9b4067f70500b63b66033fe88312efd39`  
-		Last Modified: Tue, 12 Mar 2019 08:39:40 GMT  
-		Size: 856.0 B  
+	-	`sha256:bd52c18e7316709788a8ac0c7bfc70726c6c98a10685f8eb6e0cf2663ea3bf11`  
+		Last Modified: Sat, 27 Apr 2019 09:29:18 GMT  
+		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42fd213a0950a606039b023961bba2b91ee9d330c52d8583de302510ca56e9df`  
-		Last Modified: Tue, 12 Mar 2019 08:39:40 GMT  
-		Size: 533.0 B  
+	-	`sha256:5d43c0889ab8534b4f1762afc266e4da05e8d2a9751b469a98650943dc658ac0`  
+		Last Modified: Sat, 27 Apr 2019 09:29:18 GMT  
+		Size: 536.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb8002c958b1eeb578b48c50651cddd51a3d83c7e1d5d3a83147ea5f549b064f`  
-		Last Modified: Tue, 12 Mar 2019 08:39:40 GMT  
-		Size: 188.0 B  
+	-	`sha256:4d262c134c8e6db6fe2f46ebce5a86da0b7466032b6496665161825e36afffdc`  
+		Last Modified: Sat, 27 Apr 2019 09:29:18 GMT  
+		Size: 186.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:bionic` - linux; s390x
@@ -1652,7 +1652,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:bionic-20190424`
 
 ```console
-$ docker pull ubuntu@sha256:ff716f1a3077cbd7108fb10091f6f403cc0e7aec23f1f0202f408d7f81a0d0d0
+$ docker pull ubuntu@sha256:2ec14da8c88a6099a325c8a72c8a346c0926d3c0f26bff16bf469e845e0f8494
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1755,44 +1755,44 @@ CMD ["/bin/bash"]
 ### `ubuntu:bionic-20190424` - linux; arm64 variant v8
 
 ```console
-$ docker pull ubuntu@sha256:92d9e5deed4c994a64f04cb023370e79ce273fabde51f8cfc7cf66b594147eb2
+$ docker pull ubuntu@sha256:de263810f197bad68d1b3e77ec31bc6bcca05d490b93d446dd5a07dc3eaae744
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.2 MB (29177086 bytes)**  
+-	Total Size: **33.3 MB (33344945 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0926e73e524558778056641f4a0e19835ffe2621a096af50d2a2708abf90ca8e`
+-	Image ID: `sha256:e76720cc7bfddc9c2e98f52f886453e472c4afdcf9536305bd668cd280abe94a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 14 Mar 2019 09:34:18 GMT
-ADD file:4cccf4e4a71783b1ac058bcfcabe23b3901e829c3859551be9d7e732cb9e3f86 in / 
-# Thu, 14 Mar 2019 09:34:21 GMT
+# Sat, 27 Apr 2019 09:35:52 GMT
+ADD file:f046142405da23f452b26e01729a6fdc5a92b0fa85ec8456a1fee249160217bb in / 
+# Sat, 27 Apr 2019 09:35:55 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 14 Mar 2019 09:34:22 GMT
+# Sat, 27 Apr 2019 09:35:57 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 14 Mar 2019 09:34:31 GMT
+# Sat, 27 Apr 2019 09:35:59 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 14 Mar 2019 09:34:32 GMT
+# Sat, 27 Apr 2019 09:36:00 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:a0ceea30e08b5fa042d10308a43b8b093b67ce44e98a69ea8d277d00077387ab`  
-		Last Modified: Fri, 08 Mar 2019 23:47:38 GMT  
-		Size: 29.2 MB (29175537 bytes)  
+	-	`sha256:bf7c45c81bd70f13db7f1612a4596418f2c15b48384d2c1d5597b7534e60b3f3`  
+		Last Modified: Sat, 27 Apr 2019 09:39:34 GMT  
+		Size: 33.3 MB (33343401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82ef245d4e8728acd667d550023b9ffbb688c7976f78f72986d132072041e5a1`  
-		Last Modified: Thu, 14 Mar 2019 09:37:47 GMT  
-		Size: 854.0 B  
+	-	`sha256:5396f07cded369e173bde57fa17c337db371930ea1b2e925d3c04cb407794d5c`  
+		Last Modified: Sat, 27 Apr 2019 09:39:13 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9bb25026742c32e7fe5417efb6bc0ff5ad1eb9963007aebd5f71e9bc333e9ba`  
-		Last Modified: Thu, 14 Mar 2019 09:37:47 GMT  
+	-	`sha256:e0ceb566582d63624b9d3a22ead5cbf0836b8c5bca41b4b7bb777c9c11923ede`  
+		Last Modified: Sat, 27 Apr 2019 09:39:13 GMT  
 		Size: 532.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b62b2948ac15d07c725e6074399d5e49e916e79b2c7738d6ad63e4d1b090db8f`  
-		Last Modified: Thu, 14 Mar 2019 09:37:47 GMT  
+	-	`sha256:bdb3982847b2f6cb9353dc95b2dbd7092a92764a1946b9901adf59d886849542`  
+		Last Modified: Sat, 27 Apr 2019 09:39:13 GMT  
 		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1843,45 +1843,45 @@ CMD ["/bin/bash"]
 ### `ubuntu:bionic-20190424` - linux; ppc64le
 
 ```console
-$ docker pull ubuntu@sha256:6eb5f0c149d010fdb9fcabf0c7a7360c589497e1e4b5cf78a274135eb24d7480
+$ docker pull ubuntu@sha256:1a3a00c47723eab7033ab45bd38662f8b387122d9fd385625e6cc3df7d768145
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.8 MB (35832545 bytes)**  
+-	Total Size: **39.9 MB (39946442 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a7cbdb00296352501acb49c048b3e04ab282aaa21720b4367967c82b2000e1bb`
+-	Image ID: `sha256:edf1f91056b961e352b9ae0d72294aac592d7768386e1a6d87fddb3454666e30`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 12 Mar 2019 08:36:02 GMT
-ADD file:6c9385eb6664a846c72d3c5498fc035a58c62525035b16099b9c193127bc4b2a in / 
-# Tue, 12 Mar 2019 08:36:09 GMT
+# Sat, 27 Apr 2019 09:15:37 GMT
+ADD file:f84af4a2bfeabb29759492bc1fcee90da44b5088e561155cd4c4fa69ec03c939 in / 
+# Sat, 27 Apr 2019 09:15:48 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Tue, 12 Mar 2019 08:36:16 GMT
+# Sat, 27 Apr 2019 09:16:01 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 12 Mar 2019 08:36:25 GMT
+# Sat, 27 Apr 2019 09:16:09 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Tue, 12 Mar 2019 08:36:28 GMT
+# Sat, 27 Apr 2019 09:16:14 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:3bc68f2d2d199135cfbad5cf36252da8055f0d928ae25036d127dc2e4589fb18`  
-		Last Modified: Tue, 12 Mar 2019 08:39:50 GMT  
-		Size: 35.8 MB (35830968 bytes)  
+	-	`sha256:05afd6335a2fc38939add8f98ac929a68b140fc6e14a89f99688d334f1cb40d5`  
+		Last Modified: Sat, 27 Apr 2019 09:29:49 GMT  
+		Size: 39.9 MB (39944868 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0b8fe3eb9f1763e3c0e9c2517a8f1d9b4067f70500b63b66033fe88312efd39`  
-		Last Modified: Tue, 12 Mar 2019 08:39:40 GMT  
-		Size: 856.0 B  
+	-	`sha256:bd52c18e7316709788a8ac0c7bfc70726c6c98a10685f8eb6e0cf2663ea3bf11`  
+		Last Modified: Sat, 27 Apr 2019 09:29:18 GMT  
+		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42fd213a0950a606039b023961bba2b91ee9d330c52d8583de302510ca56e9df`  
-		Last Modified: Tue, 12 Mar 2019 08:39:40 GMT  
-		Size: 533.0 B  
+	-	`sha256:5d43c0889ab8534b4f1762afc266e4da05e8d2a9751b469a98650943dc658ac0`  
+		Last Modified: Sat, 27 Apr 2019 09:29:18 GMT  
+		Size: 536.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb8002c958b1eeb578b48c50651cddd51a3d83c7e1d5d3a83147ea5f549b064f`  
-		Last Modified: Tue, 12 Mar 2019 08:39:40 GMT  
-		Size: 188.0 B  
+	-	`sha256:4d262c134c8e6db6fe2f46ebce5a86da0b7466032b6496665161825e36afffdc`  
+		Last Modified: Sat, 27 Apr 2019 09:29:18 GMT  
+		Size: 186.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:bionic-20190424` - linux; s390x
@@ -1931,7 +1931,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:cosmic`
 
 ```console
-$ docker pull ubuntu@sha256:a2bb2b8e5164897a596f94d2a910028b92fb93edf0e4f49d847f1f7af87e204c
+$ docker pull ubuntu@sha256:f822ae0203c99ce671226d88f1fc289bb382b4fff795243d1865cc323c17cc59
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2034,44 +2034,44 @@ CMD ["/bin/bash"]
 ### `ubuntu:cosmic` - linux; arm64 variant v8
 
 ```console
-$ docker pull ubuntu@sha256:0ec73c1b00b273bbf61cf7750d6cffd817993e995b7234230939c26301a002d1
+$ docker pull ubuntu@sha256:fad078b9d4f4d8659abe15d7cd03170d6d4b8fd880819e2c11360ea0a68d5e81
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.6 MB (27576025 bytes)**  
+-	Total Size: **27.6 MB (27580443 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8327ab55b1c73089b0a543ccecb7deb47bf851b888ca76ac5fc82d108f973643`
+-	Image ID: `sha256:d3631a6f66cace5695286aa19d81055563e1402042fe2c3cacbeba192d47a423`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 14 Mar 2019 09:35:37 GMT
-ADD file:bb35650463800e191b418d7da8f6d48af3eb84d7b5f3640f6e5dd5112e2a1385 in / 
-# Thu, 14 Mar 2019 09:35:39 GMT
+# Sat, 27 Apr 2019 09:36:20 GMT
+ADD file:553fca2155f2b626dbc844a86d150a795f7596945a028911e9e65b52a75fab62 in / 
+# Sat, 27 Apr 2019 09:36:22 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 14 Mar 2019 09:35:41 GMT
+# Sat, 27 Apr 2019 09:36:26 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 14 Mar 2019 09:35:43 GMT
+# Sat, 27 Apr 2019 09:36:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 14 Mar 2019 09:35:44 GMT
+# Sat, 27 Apr 2019 09:36:29 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:7cf0a21e5b4f87de3e324323f0ef0e0e757f5639c90d3325436eaa50bb35c2d4`  
-		Last Modified: Thu, 14 Mar 2019 09:38:24 GMT  
-		Size: 27.6 MB (27574782 bytes)  
+	-	`sha256:c894f8296d41be2ffaca8f8ef57181f09265114d21ab969299e8616eab1e5dc0`  
+		Last Modified: Mon, 22 Apr 2019 15:16:14 GMT  
+		Size: 27.6 MB (27579200 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5db071b7879007c38472ac2ae602ad89f06e293a0f038b0ea13205053bb370b5`  
-		Last Modified: Thu, 14 Mar 2019 09:38:13 GMT  
-		Size: 868.0 B  
+	-	`sha256:1827f8d6d7d5322a3e5de6f09f63edaff2d90dd69a64a52646e5ec7f6e437bab`  
+		Last Modified: Sat, 27 Apr 2019 09:39:48 GMT  
+		Size: 866.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dad373a016cf071eac0b9b1752aca4e365b24eb8bf2bbf31e35495236ada727f`  
-		Last Modified: Thu, 14 Mar 2019 09:38:13 GMT  
-		Size: 212.0 B  
+	-	`sha256:dcd1f0c92a0a7f7dbfe035edc2df6b5cd3d5e22d8c554ebcf3c496911f6cbd23`  
+		Last Modified: Sat, 27 Apr 2019 09:39:48 GMT  
+		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee8cbc133a25405bd6f60e323444f511a2cc3b320807426532c8535a33c1a5e2`  
-		Last Modified: Thu, 14 Mar 2019 09:38:13 GMT  
+	-	`sha256:e6f5293ca941f33109b4f3d981f6783a90c18688058e9426bab434b086639f10`  
+		Last Modified: Sat, 27 Apr 2019 09:39:48 GMT  
 		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2122,44 +2122,44 @@ CMD ["/bin/bash"]
 ### `ubuntu:cosmic` - linux; ppc64le
 
 ```console
-$ docker pull ubuntu@sha256:6ce4e218c28b83d1e70db4b23d2898d501a8457f89ce205a0760ed3adfe372c7
+$ docker pull ubuntu@sha256:85afa5b68e7268eded43bfd49f1ffefc142b282a5b112a786c3a59ce97047624
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **34.1 MB (34125128 bytes)**  
+-	Total Size: **34.1 MB (34125081 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1973d462e16f22138b936acd40de9c10c7b157d399da809ca6d5bfe02731a7ce`
+-	Image ID: `sha256:d4164b233777170dd83317b8d212f6cc45436d9ff22b970794a57ee406bb6c63`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 12 Mar 2019 08:36:45 GMT
-ADD file:8f354e6cff0ac873d406a338b07995aeb7c026c707e01f483d2d0ef5fe00c725 in / 
-# Tue, 12 Mar 2019 08:36:57 GMT
+# Sat, 27 Apr 2019 09:20:38 GMT
+ADD file:44c88b73d704bd032f51ed3607964b5709cbea6ae4b07e6ee0a6bf2fe5acfc3f in / 
+# Sat, 27 Apr 2019 09:20:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Tue, 12 Mar 2019 08:37:03 GMT
+# Sat, 27 Apr 2019 09:20:52 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 12 Mar 2019 08:37:10 GMT
+# Sat, 27 Apr 2019 09:21:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Tue, 12 Mar 2019 08:37:13 GMT
+# Sat, 27 Apr 2019 09:21:02 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:864251cd0e66280cdf2c56112679d0440d2bbaeed8fad2764afac91efdc66538`  
-		Last Modified: Tue, 12 Mar 2019 08:40:13 GMT  
-		Size: 34.1 MB (34123862 bytes)  
+	-	`sha256:6e719ad17430745f564beae472b51ff771ce7f912280e9adfcc17fdc856e77fc`  
+		Last Modified: Mon, 22 Apr 2019 15:17:33 GMT  
+		Size: 34.1 MB (34123812 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:76c211eefd0ecb87a39430bb4ad123970b6f40d8218d6b3b79c0892c18d93505`  
-		Last Modified: Tue, 12 Mar 2019 08:40:05 GMT  
+	-	`sha256:b02ffb7f2fdc5b239bc7f5afc1f21b73ab3c5d172cf15c0952ced65394ec1de6`  
+		Last Modified: Sat, 27 Apr 2019 09:30:06 GMT  
 		Size: 868.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed0b20de1eb6637526eaa29a61dd4b3548037128107b4efc60085a883059d24b`  
-		Last Modified: Tue, 12 Mar 2019 08:40:06 GMT  
-		Size: 210.0 B  
+	-	`sha256:c4de7c4e0b5db5a901196d9cecb096664601404e6ed044b9d5b6b6910ad4118d`  
+		Last Modified: Sat, 27 Apr 2019 09:30:06 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:22d257debec8fef751da56315bda0d530cb28d7db8f11e2461d811b8e283e310`  
-		Last Modified: Tue, 12 Mar 2019 08:40:06 GMT  
+	-	`sha256:e5717908812f9d703aa401bd4f7c395c20a16140ad33e65d725a8ba0c0fa6d82`  
+		Last Modified: Sat, 27 Apr 2019 09:30:06 GMT  
 		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2210,7 +2210,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:cosmic-20190418`
 
 ```console
-$ docker pull ubuntu@sha256:a2bb2b8e5164897a596f94d2a910028b92fb93edf0e4f49d847f1f7af87e204c
+$ docker pull ubuntu@sha256:f822ae0203c99ce671226d88f1fc289bb382b4fff795243d1865cc323c17cc59
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2313,44 +2313,44 @@ CMD ["/bin/bash"]
 ### `ubuntu:cosmic-20190418` - linux; arm64 variant v8
 
 ```console
-$ docker pull ubuntu@sha256:0ec73c1b00b273bbf61cf7750d6cffd817993e995b7234230939c26301a002d1
+$ docker pull ubuntu@sha256:fad078b9d4f4d8659abe15d7cd03170d6d4b8fd880819e2c11360ea0a68d5e81
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.6 MB (27576025 bytes)**  
+-	Total Size: **27.6 MB (27580443 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8327ab55b1c73089b0a543ccecb7deb47bf851b888ca76ac5fc82d108f973643`
+-	Image ID: `sha256:d3631a6f66cace5695286aa19d81055563e1402042fe2c3cacbeba192d47a423`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 14 Mar 2019 09:35:37 GMT
-ADD file:bb35650463800e191b418d7da8f6d48af3eb84d7b5f3640f6e5dd5112e2a1385 in / 
-# Thu, 14 Mar 2019 09:35:39 GMT
+# Sat, 27 Apr 2019 09:36:20 GMT
+ADD file:553fca2155f2b626dbc844a86d150a795f7596945a028911e9e65b52a75fab62 in / 
+# Sat, 27 Apr 2019 09:36:22 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 14 Mar 2019 09:35:41 GMT
+# Sat, 27 Apr 2019 09:36:26 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 14 Mar 2019 09:35:43 GMT
+# Sat, 27 Apr 2019 09:36:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 14 Mar 2019 09:35:44 GMT
+# Sat, 27 Apr 2019 09:36:29 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:7cf0a21e5b4f87de3e324323f0ef0e0e757f5639c90d3325436eaa50bb35c2d4`  
-		Last Modified: Thu, 14 Mar 2019 09:38:24 GMT  
-		Size: 27.6 MB (27574782 bytes)  
+	-	`sha256:c894f8296d41be2ffaca8f8ef57181f09265114d21ab969299e8616eab1e5dc0`  
+		Last Modified: Mon, 22 Apr 2019 15:16:14 GMT  
+		Size: 27.6 MB (27579200 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5db071b7879007c38472ac2ae602ad89f06e293a0f038b0ea13205053bb370b5`  
-		Last Modified: Thu, 14 Mar 2019 09:38:13 GMT  
-		Size: 868.0 B  
+	-	`sha256:1827f8d6d7d5322a3e5de6f09f63edaff2d90dd69a64a52646e5ec7f6e437bab`  
+		Last Modified: Sat, 27 Apr 2019 09:39:48 GMT  
+		Size: 866.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dad373a016cf071eac0b9b1752aca4e365b24eb8bf2bbf31e35495236ada727f`  
-		Last Modified: Thu, 14 Mar 2019 09:38:13 GMT  
-		Size: 212.0 B  
+	-	`sha256:dcd1f0c92a0a7f7dbfe035edc2df6b5cd3d5e22d8c554ebcf3c496911f6cbd23`  
+		Last Modified: Sat, 27 Apr 2019 09:39:48 GMT  
+		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee8cbc133a25405bd6f60e323444f511a2cc3b320807426532c8535a33c1a5e2`  
-		Last Modified: Thu, 14 Mar 2019 09:38:13 GMT  
+	-	`sha256:e6f5293ca941f33109b4f3d981f6783a90c18688058e9426bab434b086639f10`  
+		Last Modified: Sat, 27 Apr 2019 09:39:48 GMT  
 		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2401,44 +2401,44 @@ CMD ["/bin/bash"]
 ### `ubuntu:cosmic-20190418` - linux; ppc64le
 
 ```console
-$ docker pull ubuntu@sha256:6ce4e218c28b83d1e70db4b23d2898d501a8457f89ce205a0760ed3adfe372c7
+$ docker pull ubuntu@sha256:85afa5b68e7268eded43bfd49f1ffefc142b282a5b112a786c3a59ce97047624
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **34.1 MB (34125128 bytes)**  
+-	Total Size: **34.1 MB (34125081 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1973d462e16f22138b936acd40de9c10c7b157d399da809ca6d5bfe02731a7ce`
+-	Image ID: `sha256:d4164b233777170dd83317b8d212f6cc45436d9ff22b970794a57ee406bb6c63`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 12 Mar 2019 08:36:45 GMT
-ADD file:8f354e6cff0ac873d406a338b07995aeb7c026c707e01f483d2d0ef5fe00c725 in / 
-# Tue, 12 Mar 2019 08:36:57 GMT
+# Sat, 27 Apr 2019 09:20:38 GMT
+ADD file:44c88b73d704bd032f51ed3607964b5709cbea6ae4b07e6ee0a6bf2fe5acfc3f in / 
+# Sat, 27 Apr 2019 09:20:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Tue, 12 Mar 2019 08:37:03 GMT
+# Sat, 27 Apr 2019 09:20:52 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 12 Mar 2019 08:37:10 GMT
+# Sat, 27 Apr 2019 09:21:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Tue, 12 Mar 2019 08:37:13 GMT
+# Sat, 27 Apr 2019 09:21:02 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:864251cd0e66280cdf2c56112679d0440d2bbaeed8fad2764afac91efdc66538`  
-		Last Modified: Tue, 12 Mar 2019 08:40:13 GMT  
-		Size: 34.1 MB (34123862 bytes)  
+	-	`sha256:6e719ad17430745f564beae472b51ff771ce7f912280e9adfcc17fdc856e77fc`  
+		Last Modified: Mon, 22 Apr 2019 15:17:33 GMT  
+		Size: 34.1 MB (34123812 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:76c211eefd0ecb87a39430bb4ad123970b6f40d8218d6b3b79c0892c18d93505`  
-		Last Modified: Tue, 12 Mar 2019 08:40:05 GMT  
+	-	`sha256:b02ffb7f2fdc5b239bc7f5afc1f21b73ab3c5d172cf15c0952ced65394ec1de6`  
+		Last Modified: Sat, 27 Apr 2019 09:30:06 GMT  
 		Size: 868.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed0b20de1eb6637526eaa29a61dd4b3548037128107b4efc60085a883059d24b`  
-		Last Modified: Tue, 12 Mar 2019 08:40:06 GMT  
-		Size: 210.0 B  
+	-	`sha256:c4de7c4e0b5db5a901196d9cecb096664601404e6ed044b9d5b6b6910ad4118d`  
+		Last Modified: Sat, 27 Apr 2019 09:30:06 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:22d257debec8fef751da56315bda0d530cb28d7db8f11e2461d811b8e283e310`  
-		Last Modified: Tue, 12 Mar 2019 08:40:06 GMT  
+	-	`sha256:e5717908812f9d703aa401bd4f7c395c20a16140ad33e65d725a8ba0c0fa6d82`  
+		Last Modified: Sat, 27 Apr 2019 09:30:06 GMT  
 		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2489,7 +2489,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:disco`
 
 ```console
-$ docker pull ubuntu@sha256:64f07bcc1b827a88a85b22299b7dfb187b9b2b985a4b6393870d7f82b5445541
+$ docker pull ubuntu@sha256:e582f832791acd641874ad85ccede2a491e8a0c1f23d7f7e40da339449ef84ab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2592,45 +2592,45 @@ CMD ["/bin/bash"]
 ### `ubuntu:disco` - linux; arm64 variant v8
 
 ```console
-$ docker pull ubuntu@sha256:84ea6bce906e2c052a9d4a36b1f4594cdcb582b1ae1e054b5326d27ea49b18eb
+$ docker pull ubuntu@sha256:67db735055fa62cc15f7716d8f6323fe6973c5ff73eb958660a5ddcc4656cb14
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.6 MB (28566126 bytes)**  
+-	Total Size: **28.5 MB (28524606 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a83202ea51c11e9e7f148dc95a1167f46d12b49700dd7aab2b4b7e81eb7de4a5`
+-	Image ID: `sha256:9c31d770b64aa5332870f322ac09e5d0e5262c06832d7f5f234228f810ef277f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 14 Mar 2019 09:36:04 GMT
-ADD file:5e18ef3eaf8210502b612e56077c33baef533723c2017d205b516a8dec9c9023 in / 
-# Thu, 14 Mar 2019 09:36:07 GMT
+# Sat, 27 Apr 2019 09:36:54 GMT
+ADD file:46d0c7536c7b2b2f997639dceb16911ce53a4c1443fe8cb284761b357e060370 in / 
+# Sat, 27 Apr 2019 09:36:56 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 14 Mar 2019 09:36:09 GMT
+# Sat, 27 Apr 2019 09:36:59 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 14 Mar 2019 09:36:11 GMT
+# Sat, 27 Apr 2019 09:37:02 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 14 Mar 2019 09:36:12 GMT
+# Sat, 27 Apr 2019 09:37:03 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:f3a20987ba9217a7a73974b8935c60d400be00cc290682a6afce8ed5eef6eb1c`  
-		Last Modified: Mon, 11 Mar 2019 15:16:02 GMT  
-		Size: 28.6 MB (28564892 bytes)  
+	-	`sha256:b6f4ef9b288b3aff27ce5cfc89c07fa63622e5f9745260281096961d866c6f88`  
+		Last Modified: Sat, 27 Apr 2019 09:40:26 GMT  
+		Size: 28.5 MB (28523391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6faa60d339af6971077e3d900e43b10810ecf337070262cd43fd13b0e26e718`  
-		Last Modified: Thu, 14 Mar 2019 09:38:36 GMT  
-		Size: 861.0 B  
+	-	`sha256:305214ff3f3f45f33e3dafa1a62b682ceef5757eedbc71a63f6519fbe74dfaea`  
+		Last Modified: Sat, 27 Apr 2019 09:40:12 GMT  
+		Size: 862.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f17b4c63f71d33824fd9e175418ead0edd59cdfd1df0849de3fe7a5322b5bdad`  
-		Last Modified: Thu, 14 Mar 2019 09:38:36 GMT  
-		Size: 209.0 B  
+	-	`sha256:bafc8e4e87f1adaf5e5c1dd74d0d48172ee80fc4fd5613d7e8bf2baec1c342fd`  
+		Last Modified: Sat, 27 Apr 2019 09:40:12 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59a470f0f21c7144c2834fdcc9dea1169d78d7cd9350b249e421bf6da7b25378`  
-		Last Modified: Thu, 14 Mar 2019 09:38:36 GMT  
-		Size: 164.0 B  
+	-	`sha256:61986756c9f477d13733af507c3a31953f49008e9343f25a5448c0bb144283b1`  
+		Last Modified: Sat, 27 Apr 2019 09:40:12 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:disco` - linux; 386
@@ -2680,45 +2680,45 @@ CMD ["/bin/bash"]
 ### `ubuntu:disco` - linux; ppc64le
 
 ```console
-$ docker pull ubuntu@sha256:d015916f99a49493ac15463b9e29daf0e6652fd0d540d2b25452d40b1281c049
+$ docker pull ubuntu@sha256:c21fb0a9d90458584a0c3be59b6a7f1dacead30546e4f3eb3b3047bb451fed88
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.1 MB (35072883 bytes)**  
+-	Total Size: **35.0 MB (35026201 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fd9919d89f0fb2e8fead3237e40a0b8e99cd07a5f3ab0eee129dcdab41bb8285`
+-	Image ID: `sha256:b7735a5bf361d40a27bcd1f3fe987122b9fec45a2f4ca880290f2110c220471f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 12 Mar 2019 08:37:26 GMT
-ADD file:99c5084356aaf3f0d14875c162b7d21310db0f53d229a6f62b4e47d75afff17a in / 
-# Tue, 12 Mar 2019 08:37:34 GMT
+# Sat, 27 Apr 2019 09:24:32 GMT
+ADD file:58bb3a0119a14002fa97781ba0f47f14a78ec4a1b0ccdb3d6709f91cd330b340 in / 
+# Sat, 27 Apr 2019 09:24:41 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Tue, 12 Mar 2019 08:37:42 GMT
+# Sat, 27 Apr 2019 09:24:48 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 12 Mar 2019 08:37:50 GMT
+# Sat, 27 Apr 2019 09:24:51 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Tue, 12 Mar 2019 08:37:53 GMT
+# Sat, 27 Apr 2019 09:24:53 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:9eb2d03a20b5e2d58bf30cc7f1081b6f6cf5d5a1e456c4b84da563bf97ed4d3b`  
-		Last Modified: Mon, 11 Mar 2019 15:20:12 GMT  
-		Size: 35.1 MB (35071623 bytes)  
+	-	`sha256:a999c107c313f741c65c3a8769432eb37516e9d8d70d880e8c422bdaf0a585fc`  
+		Last Modified: Sat, 27 Apr 2019 09:31:20 GMT  
+		Size: 35.0 MB (35024949 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:def68938cff29e439715d73601d88c1e8150f132680727c69ce4b4de00f82b56`  
-		Last Modified: Tue, 12 Mar 2019 08:40:28 GMT  
-		Size: 865.0 B  
+	-	`sha256:1aa2b0476ee53b4f0e8d4a8b579933f32271ac9bf8bc59b5db23ceaa5a4b1688`  
+		Last Modified: Sat, 27 Apr 2019 09:30:50 GMT  
+		Size: 872.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec0c417a094c366af0ddacdea6b1dfd772863da2d9c5cb14d42a993202191b5f`  
-		Last Modified: Tue, 12 Mar 2019 08:40:28 GMT  
-		Size: 210.0 B  
+	-	`sha256:f7377a54be74859898e331f16ce38ed25707db0fc01a825977654155e9118026`  
+		Last Modified: Sat, 27 Apr 2019 09:30:50 GMT  
+		Size: 193.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81cd2045aed7a64d1412d65135e4d405309b0af654ba9e03d6b19d34c50a54d3`  
-		Last Modified: Tue, 12 Mar 2019 08:40:28 GMT  
-		Size: 185.0 B  
+	-	`sha256:25a57350737985b161b838f05ab6e216fc9a1b04899afbe9371a4005d977109c`  
+		Last Modified: Sat, 27 Apr 2019 09:30:50 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:disco` - linux; s390x
@@ -2768,7 +2768,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:disco-20190423`
 
 ```console
-$ docker pull ubuntu@sha256:64f07bcc1b827a88a85b22299b7dfb187b9b2b985a4b6393870d7f82b5445541
+$ docker pull ubuntu@sha256:e582f832791acd641874ad85ccede2a491e8a0c1f23d7f7e40da339449ef84ab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2871,45 +2871,45 @@ CMD ["/bin/bash"]
 ### `ubuntu:disco-20190423` - linux; arm64 variant v8
 
 ```console
-$ docker pull ubuntu@sha256:84ea6bce906e2c052a9d4a36b1f4594cdcb582b1ae1e054b5326d27ea49b18eb
+$ docker pull ubuntu@sha256:67db735055fa62cc15f7716d8f6323fe6973c5ff73eb958660a5ddcc4656cb14
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.6 MB (28566126 bytes)**  
+-	Total Size: **28.5 MB (28524606 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a83202ea51c11e9e7f148dc95a1167f46d12b49700dd7aab2b4b7e81eb7de4a5`
+-	Image ID: `sha256:9c31d770b64aa5332870f322ac09e5d0e5262c06832d7f5f234228f810ef277f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 14 Mar 2019 09:36:04 GMT
-ADD file:5e18ef3eaf8210502b612e56077c33baef533723c2017d205b516a8dec9c9023 in / 
-# Thu, 14 Mar 2019 09:36:07 GMT
+# Sat, 27 Apr 2019 09:36:54 GMT
+ADD file:46d0c7536c7b2b2f997639dceb16911ce53a4c1443fe8cb284761b357e060370 in / 
+# Sat, 27 Apr 2019 09:36:56 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 14 Mar 2019 09:36:09 GMT
+# Sat, 27 Apr 2019 09:36:59 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 14 Mar 2019 09:36:11 GMT
+# Sat, 27 Apr 2019 09:37:02 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 14 Mar 2019 09:36:12 GMT
+# Sat, 27 Apr 2019 09:37:03 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:f3a20987ba9217a7a73974b8935c60d400be00cc290682a6afce8ed5eef6eb1c`  
-		Last Modified: Mon, 11 Mar 2019 15:16:02 GMT  
-		Size: 28.6 MB (28564892 bytes)  
+	-	`sha256:b6f4ef9b288b3aff27ce5cfc89c07fa63622e5f9745260281096961d866c6f88`  
+		Last Modified: Sat, 27 Apr 2019 09:40:26 GMT  
+		Size: 28.5 MB (28523391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6faa60d339af6971077e3d900e43b10810ecf337070262cd43fd13b0e26e718`  
-		Last Modified: Thu, 14 Mar 2019 09:38:36 GMT  
-		Size: 861.0 B  
+	-	`sha256:305214ff3f3f45f33e3dafa1a62b682ceef5757eedbc71a63f6519fbe74dfaea`  
+		Last Modified: Sat, 27 Apr 2019 09:40:12 GMT  
+		Size: 862.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f17b4c63f71d33824fd9e175418ead0edd59cdfd1df0849de3fe7a5322b5bdad`  
-		Last Modified: Thu, 14 Mar 2019 09:38:36 GMT  
-		Size: 209.0 B  
+	-	`sha256:bafc8e4e87f1adaf5e5c1dd74d0d48172ee80fc4fd5613d7e8bf2baec1c342fd`  
+		Last Modified: Sat, 27 Apr 2019 09:40:12 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59a470f0f21c7144c2834fdcc9dea1169d78d7cd9350b249e421bf6da7b25378`  
-		Last Modified: Thu, 14 Mar 2019 09:38:36 GMT  
-		Size: 164.0 B  
+	-	`sha256:61986756c9f477d13733af507c3a31953f49008e9343f25a5448c0bb144283b1`  
+		Last Modified: Sat, 27 Apr 2019 09:40:12 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:disco-20190423` - linux; 386
@@ -2959,45 +2959,45 @@ CMD ["/bin/bash"]
 ### `ubuntu:disco-20190423` - linux; ppc64le
 
 ```console
-$ docker pull ubuntu@sha256:d015916f99a49493ac15463b9e29daf0e6652fd0d540d2b25452d40b1281c049
+$ docker pull ubuntu@sha256:c21fb0a9d90458584a0c3be59b6a7f1dacead30546e4f3eb3b3047bb451fed88
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.1 MB (35072883 bytes)**  
+-	Total Size: **35.0 MB (35026201 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fd9919d89f0fb2e8fead3237e40a0b8e99cd07a5f3ab0eee129dcdab41bb8285`
+-	Image ID: `sha256:b7735a5bf361d40a27bcd1f3fe987122b9fec45a2f4ca880290f2110c220471f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 12 Mar 2019 08:37:26 GMT
-ADD file:99c5084356aaf3f0d14875c162b7d21310db0f53d229a6f62b4e47d75afff17a in / 
-# Tue, 12 Mar 2019 08:37:34 GMT
+# Sat, 27 Apr 2019 09:24:32 GMT
+ADD file:58bb3a0119a14002fa97781ba0f47f14a78ec4a1b0ccdb3d6709f91cd330b340 in / 
+# Sat, 27 Apr 2019 09:24:41 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Tue, 12 Mar 2019 08:37:42 GMT
+# Sat, 27 Apr 2019 09:24:48 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 12 Mar 2019 08:37:50 GMT
+# Sat, 27 Apr 2019 09:24:51 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Tue, 12 Mar 2019 08:37:53 GMT
+# Sat, 27 Apr 2019 09:24:53 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:9eb2d03a20b5e2d58bf30cc7f1081b6f6cf5d5a1e456c4b84da563bf97ed4d3b`  
-		Last Modified: Mon, 11 Mar 2019 15:20:12 GMT  
-		Size: 35.1 MB (35071623 bytes)  
+	-	`sha256:a999c107c313f741c65c3a8769432eb37516e9d8d70d880e8c422bdaf0a585fc`  
+		Last Modified: Sat, 27 Apr 2019 09:31:20 GMT  
+		Size: 35.0 MB (35024949 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:def68938cff29e439715d73601d88c1e8150f132680727c69ce4b4de00f82b56`  
-		Last Modified: Tue, 12 Mar 2019 08:40:28 GMT  
-		Size: 865.0 B  
+	-	`sha256:1aa2b0476ee53b4f0e8d4a8b579933f32271ac9bf8bc59b5db23ceaa5a4b1688`  
+		Last Modified: Sat, 27 Apr 2019 09:30:50 GMT  
+		Size: 872.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec0c417a094c366af0ddacdea6b1dfd772863da2d9c5cb14d42a993202191b5f`  
-		Last Modified: Tue, 12 Mar 2019 08:40:28 GMT  
-		Size: 210.0 B  
+	-	`sha256:f7377a54be74859898e331f16ce38ed25707db0fc01a825977654155e9118026`  
+		Last Modified: Sat, 27 Apr 2019 09:30:50 GMT  
+		Size: 193.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81cd2045aed7a64d1412d65135e4d405309b0af654ba9e03d6b19d34c50a54d3`  
-		Last Modified: Tue, 12 Mar 2019 08:40:28 GMT  
-		Size: 185.0 B  
+	-	`sha256:25a57350737985b161b838f05ab6e216fc9a1b04899afbe9371a4005d977109c`  
+		Last Modified: Sat, 27 Apr 2019 09:30:50 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:disco-20190423` - linux; s390x
@@ -3047,7 +3047,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:latest`
 
 ```console
-$ docker pull ubuntu@sha256:ff716f1a3077cbd7108fb10091f6f403cc0e7aec23f1f0202f408d7f81a0d0d0
+$ docker pull ubuntu@sha256:2ec14da8c88a6099a325c8a72c8a346c0926d3c0f26bff16bf469e845e0f8494
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3150,44 +3150,44 @@ CMD ["/bin/bash"]
 ### `ubuntu:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull ubuntu@sha256:92d9e5deed4c994a64f04cb023370e79ce273fabde51f8cfc7cf66b594147eb2
+$ docker pull ubuntu@sha256:de263810f197bad68d1b3e77ec31bc6bcca05d490b93d446dd5a07dc3eaae744
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.2 MB (29177086 bytes)**  
+-	Total Size: **33.3 MB (33344945 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0926e73e524558778056641f4a0e19835ffe2621a096af50d2a2708abf90ca8e`
+-	Image ID: `sha256:e76720cc7bfddc9c2e98f52f886453e472c4afdcf9536305bd668cd280abe94a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 14 Mar 2019 09:34:18 GMT
-ADD file:4cccf4e4a71783b1ac058bcfcabe23b3901e829c3859551be9d7e732cb9e3f86 in / 
-# Thu, 14 Mar 2019 09:34:21 GMT
+# Sat, 27 Apr 2019 09:35:52 GMT
+ADD file:f046142405da23f452b26e01729a6fdc5a92b0fa85ec8456a1fee249160217bb in / 
+# Sat, 27 Apr 2019 09:35:55 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 14 Mar 2019 09:34:22 GMT
+# Sat, 27 Apr 2019 09:35:57 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 14 Mar 2019 09:34:31 GMT
+# Sat, 27 Apr 2019 09:35:59 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 14 Mar 2019 09:34:32 GMT
+# Sat, 27 Apr 2019 09:36:00 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:a0ceea30e08b5fa042d10308a43b8b093b67ce44e98a69ea8d277d00077387ab`  
-		Last Modified: Fri, 08 Mar 2019 23:47:38 GMT  
-		Size: 29.2 MB (29175537 bytes)  
+	-	`sha256:bf7c45c81bd70f13db7f1612a4596418f2c15b48384d2c1d5597b7534e60b3f3`  
+		Last Modified: Sat, 27 Apr 2019 09:39:34 GMT  
+		Size: 33.3 MB (33343401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82ef245d4e8728acd667d550023b9ffbb688c7976f78f72986d132072041e5a1`  
-		Last Modified: Thu, 14 Mar 2019 09:37:47 GMT  
-		Size: 854.0 B  
+	-	`sha256:5396f07cded369e173bde57fa17c337db371930ea1b2e925d3c04cb407794d5c`  
+		Last Modified: Sat, 27 Apr 2019 09:39:13 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9bb25026742c32e7fe5417efb6bc0ff5ad1eb9963007aebd5f71e9bc333e9ba`  
-		Last Modified: Thu, 14 Mar 2019 09:37:47 GMT  
+	-	`sha256:e0ceb566582d63624b9d3a22ead5cbf0836b8c5bca41b4b7bb777c9c11923ede`  
+		Last Modified: Sat, 27 Apr 2019 09:39:13 GMT  
 		Size: 532.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b62b2948ac15d07c725e6074399d5e49e916e79b2c7738d6ad63e4d1b090db8f`  
-		Last Modified: Thu, 14 Mar 2019 09:37:47 GMT  
+	-	`sha256:bdb3982847b2f6cb9353dc95b2dbd7092a92764a1946b9901adf59d886849542`  
+		Last Modified: Sat, 27 Apr 2019 09:39:13 GMT  
 		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -3238,45 +3238,45 @@ CMD ["/bin/bash"]
 ### `ubuntu:latest` - linux; ppc64le
 
 ```console
-$ docker pull ubuntu@sha256:6eb5f0c149d010fdb9fcabf0c7a7360c589497e1e4b5cf78a274135eb24d7480
+$ docker pull ubuntu@sha256:1a3a00c47723eab7033ab45bd38662f8b387122d9fd385625e6cc3df7d768145
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.8 MB (35832545 bytes)**  
+-	Total Size: **39.9 MB (39946442 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a7cbdb00296352501acb49c048b3e04ab282aaa21720b4367967c82b2000e1bb`
+-	Image ID: `sha256:edf1f91056b961e352b9ae0d72294aac592d7768386e1a6d87fddb3454666e30`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 12 Mar 2019 08:36:02 GMT
-ADD file:6c9385eb6664a846c72d3c5498fc035a58c62525035b16099b9c193127bc4b2a in / 
-# Tue, 12 Mar 2019 08:36:09 GMT
+# Sat, 27 Apr 2019 09:15:37 GMT
+ADD file:f84af4a2bfeabb29759492bc1fcee90da44b5088e561155cd4c4fa69ec03c939 in / 
+# Sat, 27 Apr 2019 09:15:48 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Tue, 12 Mar 2019 08:36:16 GMT
+# Sat, 27 Apr 2019 09:16:01 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 12 Mar 2019 08:36:25 GMT
+# Sat, 27 Apr 2019 09:16:09 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Tue, 12 Mar 2019 08:36:28 GMT
+# Sat, 27 Apr 2019 09:16:14 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:3bc68f2d2d199135cfbad5cf36252da8055f0d928ae25036d127dc2e4589fb18`  
-		Last Modified: Tue, 12 Mar 2019 08:39:50 GMT  
-		Size: 35.8 MB (35830968 bytes)  
+	-	`sha256:05afd6335a2fc38939add8f98ac929a68b140fc6e14a89f99688d334f1cb40d5`  
+		Last Modified: Sat, 27 Apr 2019 09:29:49 GMT  
+		Size: 39.9 MB (39944868 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0b8fe3eb9f1763e3c0e9c2517a8f1d9b4067f70500b63b66033fe88312efd39`  
-		Last Modified: Tue, 12 Mar 2019 08:39:40 GMT  
-		Size: 856.0 B  
+	-	`sha256:bd52c18e7316709788a8ac0c7bfc70726c6c98a10685f8eb6e0cf2663ea3bf11`  
+		Last Modified: Sat, 27 Apr 2019 09:29:18 GMT  
+		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42fd213a0950a606039b023961bba2b91ee9d330c52d8583de302510ca56e9df`  
-		Last Modified: Tue, 12 Mar 2019 08:39:40 GMT  
-		Size: 533.0 B  
+	-	`sha256:5d43c0889ab8534b4f1762afc266e4da05e8d2a9751b469a98650943dc658ac0`  
+		Last Modified: Sat, 27 Apr 2019 09:29:18 GMT  
+		Size: 536.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb8002c958b1eeb578b48c50651cddd51a3d83c7e1d5d3a83147ea5f549b064f`  
-		Last Modified: Tue, 12 Mar 2019 08:39:40 GMT  
-		Size: 188.0 B  
+	-	`sha256:4d262c134c8e6db6fe2f46ebce5a86da0b7466032b6496665161825e36afffdc`  
+		Last Modified: Sat, 27 Apr 2019 09:29:18 GMT  
+		Size: 186.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:latest` - linux; s390x
@@ -3326,7 +3326,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:rolling`
 
 ```console
-$ docker pull ubuntu@sha256:64f07bcc1b827a88a85b22299b7dfb187b9b2b985a4b6393870d7f82b5445541
+$ docker pull ubuntu@sha256:e582f832791acd641874ad85ccede2a491e8a0c1f23d7f7e40da339449ef84ab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3429,45 +3429,45 @@ CMD ["/bin/bash"]
 ### `ubuntu:rolling` - linux; arm64 variant v8
 
 ```console
-$ docker pull ubuntu@sha256:84ea6bce906e2c052a9d4a36b1f4594cdcb582b1ae1e054b5326d27ea49b18eb
+$ docker pull ubuntu@sha256:67db735055fa62cc15f7716d8f6323fe6973c5ff73eb958660a5ddcc4656cb14
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.6 MB (28566126 bytes)**  
+-	Total Size: **28.5 MB (28524606 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a83202ea51c11e9e7f148dc95a1167f46d12b49700dd7aab2b4b7e81eb7de4a5`
+-	Image ID: `sha256:9c31d770b64aa5332870f322ac09e5d0e5262c06832d7f5f234228f810ef277f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 14 Mar 2019 09:36:04 GMT
-ADD file:5e18ef3eaf8210502b612e56077c33baef533723c2017d205b516a8dec9c9023 in / 
-# Thu, 14 Mar 2019 09:36:07 GMT
+# Sat, 27 Apr 2019 09:36:54 GMT
+ADD file:46d0c7536c7b2b2f997639dceb16911ce53a4c1443fe8cb284761b357e060370 in / 
+# Sat, 27 Apr 2019 09:36:56 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 14 Mar 2019 09:36:09 GMT
+# Sat, 27 Apr 2019 09:36:59 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 14 Mar 2019 09:36:11 GMT
+# Sat, 27 Apr 2019 09:37:02 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 14 Mar 2019 09:36:12 GMT
+# Sat, 27 Apr 2019 09:37:03 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:f3a20987ba9217a7a73974b8935c60d400be00cc290682a6afce8ed5eef6eb1c`  
-		Last Modified: Mon, 11 Mar 2019 15:16:02 GMT  
-		Size: 28.6 MB (28564892 bytes)  
+	-	`sha256:b6f4ef9b288b3aff27ce5cfc89c07fa63622e5f9745260281096961d866c6f88`  
+		Last Modified: Sat, 27 Apr 2019 09:40:26 GMT  
+		Size: 28.5 MB (28523391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6faa60d339af6971077e3d900e43b10810ecf337070262cd43fd13b0e26e718`  
-		Last Modified: Thu, 14 Mar 2019 09:38:36 GMT  
-		Size: 861.0 B  
+	-	`sha256:305214ff3f3f45f33e3dafa1a62b682ceef5757eedbc71a63f6519fbe74dfaea`  
+		Last Modified: Sat, 27 Apr 2019 09:40:12 GMT  
+		Size: 862.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f17b4c63f71d33824fd9e175418ead0edd59cdfd1df0849de3fe7a5322b5bdad`  
-		Last Modified: Thu, 14 Mar 2019 09:38:36 GMT  
-		Size: 209.0 B  
+	-	`sha256:bafc8e4e87f1adaf5e5c1dd74d0d48172ee80fc4fd5613d7e8bf2baec1c342fd`  
+		Last Modified: Sat, 27 Apr 2019 09:40:12 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59a470f0f21c7144c2834fdcc9dea1169d78d7cd9350b249e421bf6da7b25378`  
-		Last Modified: Thu, 14 Mar 2019 09:38:36 GMT  
-		Size: 164.0 B  
+	-	`sha256:61986756c9f477d13733af507c3a31953f49008e9343f25a5448c0bb144283b1`  
+		Last Modified: Sat, 27 Apr 2019 09:40:12 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:rolling` - linux; 386
@@ -3517,45 +3517,45 @@ CMD ["/bin/bash"]
 ### `ubuntu:rolling` - linux; ppc64le
 
 ```console
-$ docker pull ubuntu@sha256:d015916f99a49493ac15463b9e29daf0e6652fd0d540d2b25452d40b1281c049
+$ docker pull ubuntu@sha256:c21fb0a9d90458584a0c3be59b6a7f1dacead30546e4f3eb3b3047bb451fed88
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.1 MB (35072883 bytes)**  
+-	Total Size: **35.0 MB (35026201 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fd9919d89f0fb2e8fead3237e40a0b8e99cd07a5f3ab0eee129dcdab41bb8285`
+-	Image ID: `sha256:b7735a5bf361d40a27bcd1f3fe987122b9fec45a2f4ca880290f2110c220471f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 12 Mar 2019 08:37:26 GMT
-ADD file:99c5084356aaf3f0d14875c162b7d21310db0f53d229a6f62b4e47d75afff17a in / 
-# Tue, 12 Mar 2019 08:37:34 GMT
+# Sat, 27 Apr 2019 09:24:32 GMT
+ADD file:58bb3a0119a14002fa97781ba0f47f14a78ec4a1b0ccdb3d6709f91cd330b340 in / 
+# Sat, 27 Apr 2019 09:24:41 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Tue, 12 Mar 2019 08:37:42 GMT
+# Sat, 27 Apr 2019 09:24:48 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 12 Mar 2019 08:37:50 GMT
+# Sat, 27 Apr 2019 09:24:51 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Tue, 12 Mar 2019 08:37:53 GMT
+# Sat, 27 Apr 2019 09:24:53 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:9eb2d03a20b5e2d58bf30cc7f1081b6f6cf5d5a1e456c4b84da563bf97ed4d3b`  
-		Last Modified: Mon, 11 Mar 2019 15:20:12 GMT  
-		Size: 35.1 MB (35071623 bytes)  
+	-	`sha256:a999c107c313f741c65c3a8769432eb37516e9d8d70d880e8c422bdaf0a585fc`  
+		Last Modified: Sat, 27 Apr 2019 09:31:20 GMT  
+		Size: 35.0 MB (35024949 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:def68938cff29e439715d73601d88c1e8150f132680727c69ce4b4de00f82b56`  
-		Last Modified: Tue, 12 Mar 2019 08:40:28 GMT  
-		Size: 865.0 B  
+	-	`sha256:1aa2b0476ee53b4f0e8d4a8b579933f32271ac9bf8bc59b5db23ceaa5a4b1688`  
+		Last Modified: Sat, 27 Apr 2019 09:30:50 GMT  
+		Size: 872.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec0c417a094c366af0ddacdea6b1dfd772863da2d9c5cb14d42a993202191b5f`  
-		Last Modified: Tue, 12 Mar 2019 08:40:28 GMT  
-		Size: 210.0 B  
+	-	`sha256:f7377a54be74859898e331f16ce38ed25707db0fc01a825977654155e9118026`  
+		Last Modified: Sat, 27 Apr 2019 09:30:50 GMT  
+		Size: 193.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81cd2045aed7a64d1412d65135e4d405309b0af654ba9e03d6b19d34c50a54d3`  
-		Last Modified: Tue, 12 Mar 2019 08:40:28 GMT  
-		Size: 185.0 B  
+	-	`sha256:25a57350737985b161b838f05ab6e216fc9a1b04899afbe9371a4005d977109c`  
+		Last Modified: Sat, 27 Apr 2019 09:30:50 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:rolling` - linux; s390x
@@ -3605,7 +3605,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:trusty`
 
 ```console
-$ docker pull ubuntu@sha256:2d894ba19249e599610046b56ba33ea94e9ec97312bcc808d457bfa354681037
+$ docker pull ubuntu@sha256:ce7d73872d1fc131703d6bb8922904f535664799bc7178040c0d289829329b2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3707,45 +3707,45 @@ CMD ["/bin/bash"]
 ### `ubuntu:trusty` - linux; arm64 variant v8
 
 ```console
-$ docker pull ubuntu@sha256:eda5132a7cb653bbd7fa42d773efbed4565167dd790858be921f58d4cf5c5329
+$ docker pull ubuntu@sha256:83d0505d25ef6f5cfa23e4f1c6524e4a58bc948e477836229ad2206eeee4825f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.3 MB (63271310 bytes)**  
+-	Total Size: **63.3 MB (63305879 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0a58d6d6515930dfc37173c60e8e69e3347ee0eb05f6f61b80afba608117267`
+-	Image ID: `sha256:fe186540bbbee171cbf473d26f6418b414b4fc56695472d0e80cb66988d6e9f8`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 14 Mar 2019 09:36:37 GMT
-ADD file:6f285b235a72a3aa8cf7c578d863e7098bc2e45cdcb4cbac36d22f50ea80e071 in / 
-# Thu, 14 Mar 2019 09:36:41 GMT
+# Sat, 27 Apr 2019 09:37:46 GMT
+ADD file:b7712277488ca5feca49e84f24daf6ff1c099901e2da74e441a745d48d480001 in / 
+# Sat, 27 Apr 2019 09:37:50 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 14 Mar 2019 09:36:43 GMT
+# Sat, 27 Apr 2019 09:37:53 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 14 Mar 2019 09:36:46 GMT
+# Sat, 27 Apr 2019 09:37:56 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 14 Mar 2019 09:36:47 GMT
+# Sat, 27 Apr 2019 09:37:57 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:804d6a3905aa72301e4e1bb5d06797cb6ee283d086cb9bc270b57e23edb55e47`  
-		Last Modified: Mon, 11 Mar 2019 15:20:35 GMT  
-		Size: 63.2 MB (63211687 bytes)  
+	-	`sha256:e46ac618d4e0cb1e6551fd0f4cfa29cc3eff5914890afe801c91820c1449c2bf`  
+		Last Modified: Sat, 27 Apr 2019 09:41:03 GMT  
+		Size: 63.2 MB (63246265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b70fb30e31fad10fa93e3a07c02d9d205ee475f42eeb3b784b2a300de043975`  
-		Last Modified: Thu, 14 Mar 2019 09:39:00 GMT  
-		Size: 59.1 KB (59102 bytes)  
+	-	`sha256:cfd21d82a86a4094a01e4222157b4eceb2e137d60928d46a9af40c1c1e76412b`  
+		Last Modified: Sat, 27 Apr 2019 09:40:39 GMT  
+		Size: 59.1 KB (59094 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:965f010c044e42545db11a054bb3309407b975bcfbab2492753216a7eb0a72b8`  
-		Last Modified: Thu, 14 Mar 2019 09:39:00 GMT  
-		Size: 359.0 B  
+	-	`sha256:6c19489b78574361031a2bef05fd44706fb4dd54abc9bebfb083ed168e588cc1`  
+		Last Modified: Sat, 27 Apr 2019 09:40:39 GMT  
+		Size: 356.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:005d86a5dc57ca266ba593b46fe86fdf251bf7c3a46a0163e29e0ca2c07014c0`  
-		Last Modified: Thu, 14 Mar 2019 09:39:00 GMT  
-		Size: 162.0 B  
+	-	`sha256:6d772c8eda5a1bbcde9462db9ebb43561b0635923b8cde579c330d964a9d45e9`  
+		Last Modified: Sat, 27 Apr 2019 09:40:38 GMT  
+		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:trusty` - linux; 386
@@ -3795,51 +3795,51 @@ CMD ["/bin/bash"]
 ### `ubuntu:trusty` - linux; ppc64le
 
 ```console
-$ docker pull ubuntu@sha256:389cc27153fe275dbe1dd94a1a6295d787c871c1bca7673d2d99091447807638
+$ docker pull ubuntu@sha256:cad23b2c64eb839ccb3ba60a4559ad17f037425728ad33443ad603881d145277
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.9 MB (69876237 bytes)**  
+-	Total Size: **69.9 MB (69918555 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bfb6dfd682b73fb85d4114300d3c31dc1e1a2643198591fa213e0d68f16effa8`
+-	Image ID: `sha256:947b9bb216de43a8a0056ac9233fdb188015b2bd8d5c294aa0a8e1255395e61d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 12 Mar 2019 08:38:09 GMT
-ADD file:4d2f8c359b4e201499c70a6b9f25e299347d15566f8fe1bc105f9d8a8ce59718 in / 
-# Tue, 12 Mar 2019 08:38:18 GMT
+# Sat, 27 Apr 2019 09:26:17 GMT
+ADD file:e018e98231d39ca8bef7e56dbb0687f83a2a39d6140571ed73e7c4a96ffe79c5 in / 
+# Sat, 27 Apr 2019 09:26:25 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Tue, 12 Mar 2019 08:38:22 GMT
+# Sat, 27 Apr 2019 09:26:30 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 12 Mar 2019 08:38:29 GMT
+# Sat, 27 Apr 2019 09:26:35 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Tue, 12 Mar 2019 08:38:32 GMT
+# Sat, 27 Apr 2019 09:26:37 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:f467b6300e666a0c45e457f955904030094680a70a36a7d5163528195ad96427`  
-		Last Modified: Mon, 11 Mar 2019 15:23:13 GMT  
-		Size: 69.8 MB (69812255 bytes)  
+	-	`sha256:21e2c51dc921cff8e3d821254ff7cea5dca04fe8bc70a9f35b6f4aaccfbb3137`  
+		Last Modified: Sat, 27 Apr 2019 09:32:33 GMT  
+		Size: 69.9 MB (69854590 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:522d28292b119385dc82dbe1d2b8e92b44d5da06db492b34c48634e622f7f558`  
-		Last Modified: Tue, 12 Mar 2019 08:40:54 GMT  
-		Size: 63.4 KB (63434 bytes)  
+	-	`sha256:dadcb4f1379bb8eaa4ab324ab11552f7c2d8176578149c437f97b95e84f02f3e`  
+		Last Modified: Sat, 27 Apr 2019 09:31:35 GMT  
+		Size: 63.4 KB (63418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b2f8d4755a70999526fab64b7c6bab50520d0613f2db63344001fdf40effb29`  
-		Last Modified: Tue, 12 Mar 2019 08:40:53 GMT  
-		Size: 361.0 B  
+	-	`sha256:e78abe4347f0f3d6c51deae815ff7a2986d4b1783cdcdcc73487f025e9c41e00`  
+		Last Modified: Sat, 27 Apr 2019 09:31:35 GMT  
+		Size: 360.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:425f5728bb9dc938d35ff7ca325ca02d610429aff390d9ec208b9a45b5007cff`  
-		Last Modified: Tue, 12 Mar 2019 08:40:54 GMT  
+	-	`sha256:d7d271af6e174f309e31a22d58cc08c9066236f5982dd090cb0af618bba847e9`  
+		Last Modified: Sat, 27 Apr 2019 09:31:35 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ubuntu:trusty-20190425`
 
 ```console
-$ docker pull ubuntu@sha256:2d894ba19249e599610046b56ba33ea94e9ec97312bcc808d457bfa354681037
+$ docker pull ubuntu@sha256:ce7d73872d1fc131703d6bb8922904f535664799bc7178040c0d289829329b2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3941,45 +3941,45 @@ CMD ["/bin/bash"]
 ### `ubuntu:trusty-20190425` - linux; arm64 variant v8
 
 ```console
-$ docker pull ubuntu@sha256:eda5132a7cb653bbd7fa42d773efbed4565167dd790858be921f58d4cf5c5329
+$ docker pull ubuntu@sha256:83d0505d25ef6f5cfa23e4f1c6524e4a58bc948e477836229ad2206eeee4825f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.3 MB (63271310 bytes)**  
+-	Total Size: **63.3 MB (63305879 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0a58d6d6515930dfc37173c60e8e69e3347ee0eb05f6f61b80afba608117267`
+-	Image ID: `sha256:fe186540bbbee171cbf473d26f6418b414b4fc56695472d0e80cb66988d6e9f8`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 14 Mar 2019 09:36:37 GMT
-ADD file:6f285b235a72a3aa8cf7c578d863e7098bc2e45cdcb4cbac36d22f50ea80e071 in / 
-# Thu, 14 Mar 2019 09:36:41 GMT
+# Sat, 27 Apr 2019 09:37:46 GMT
+ADD file:b7712277488ca5feca49e84f24daf6ff1c099901e2da74e441a745d48d480001 in / 
+# Sat, 27 Apr 2019 09:37:50 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 14 Mar 2019 09:36:43 GMT
+# Sat, 27 Apr 2019 09:37:53 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 14 Mar 2019 09:36:46 GMT
+# Sat, 27 Apr 2019 09:37:56 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 14 Mar 2019 09:36:47 GMT
+# Sat, 27 Apr 2019 09:37:57 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:804d6a3905aa72301e4e1bb5d06797cb6ee283d086cb9bc270b57e23edb55e47`  
-		Last Modified: Mon, 11 Mar 2019 15:20:35 GMT  
-		Size: 63.2 MB (63211687 bytes)  
+	-	`sha256:e46ac618d4e0cb1e6551fd0f4cfa29cc3eff5914890afe801c91820c1449c2bf`  
+		Last Modified: Sat, 27 Apr 2019 09:41:03 GMT  
+		Size: 63.2 MB (63246265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b70fb30e31fad10fa93e3a07c02d9d205ee475f42eeb3b784b2a300de043975`  
-		Last Modified: Thu, 14 Mar 2019 09:39:00 GMT  
-		Size: 59.1 KB (59102 bytes)  
+	-	`sha256:cfd21d82a86a4094a01e4222157b4eceb2e137d60928d46a9af40c1c1e76412b`  
+		Last Modified: Sat, 27 Apr 2019 09:40:39 GMT  
+		Size: 59.1 KB (59094 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:965f010c044e42545db11a054bb3309407b975bcfbab2492753216a7eb0a72b8`  
-		Last Modified: Thu, 14 Mar 2019 09:39:00 GMT  
-		Size: 359.0 B  
+	-	`sha256:6c19489b78574361031a2bef05fd44706fb4dd54abc9bebfb083ed168e588cc1`  
+		Last Modified: Sat, 27 Apr 2019 09:40:39 GMT  
+		Size: 356.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:005d86a5dc57ca266ba593b46fe86fdf251bf7c3a46a0163e29e0ca2c07014c0`  
-		Last Modified: Thu, 14 Mar 2019 09:39:00 GMT  
-		Size: 162.0 B  
+	-	`sha256:6d772c8eda5a1bbcde9462db9ebb43561b0635923b8cde579c330d964a9d45e9`  
+		Last Modified: Sat, 27 Apr 2019 09:40:38 GMT  
+		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:trusty-20190425` - linux; 386
@@ -4029,51 +4029,51 @@ CMD ["/bin/bash"]
 ### `ubuntu:trusty-20190425` - linux; ppc64le
 
 ```console
-$ docker pull ubuntu@sha256:389cc27153fe275dbe1dd94a1a6295d787c871c1bca7673d2d99091447807638
+$ docker pull ubuntu@sha256:cad23b2c64eb839ccb3ba60a4559ad17f037425728ad33443ad603881d145277
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.9 MB (69876237 bytes)**  
+-	Total Size: **69.9 MB (69918555 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bfb6dfd682b73fb85d4114300d3c31dc1e1a2643198591fa213e0d68f16effa8`
+-	Image ID: `sha256:947b9bb216de43a8a0056ac9233fdb188015b2bd8d5c294aa0a8e1255395e61d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 12 Mar 2019 08:38:09 GMT
-ADD file:4d2f8c359b4e201499c70a6b9f25e299347d15566f8fe1bc105f9d8a8ce59718 in / 
-# Tue, 12 Mar 2019 08:38:18 GMT
+# Sat, 27 Apr 2019 09:26:17 GMT
+ADD file:e018e98231d39ca8bef7e56dbb0687f83a2a39d6140571ed73e7c4a96ffe79c5 in / 
+# Sat, 27 Apr 2019 09:26:25 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Tue, 12 Mar 2019 08:38:22 GMT
+# Sat, 27 Apr 2019 09:26:30 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 12 Mar 2019 08:38:29 GMT
+# Sat, 27 Apr 2019 09:26:35 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Tue, 12 Mar 2019 08:38:32 GMT
+# Sat, 27 Apr 2019 09:26:37 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:f467b6300e666a0c45e457f955904030094680a70a36a7d5163528195ad96427`  
-		Last Modified: Mon, 11 Mar 2019 15:23:13 GMT  
-		Size: 69.8 MB (69812255 bytes)  
+	-	`sha256:21e2c51dc921cff8e3d821254ff7cea5dca04fe8bc70a9f35b6f4aaccfbb3137`  
+		Last Modified: Sat, 27 Apr 2019 09:32:33 GMT  
+		Size: 69.9 MB (69854590 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:522d28292b119385dc82dbe1d2b8e92b44d5da06db492b34c48634e622f7f558`  
-		Last Modified: Tue, 12 Mar 2019 08:40:54 GMT  
-		Size: 63.4 KB (63434 bytes)  
+	-	`sha256:dadcb4f1379bb8eaa4ab324ab11552f7c2d8176578149c437f97b95e84f02f3e`  
+		Last Modified: Sat, 27 Apr 2019 09:31:35 GMT  
+		Size: 63.4 KB (63418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b2f8d4755a70999526fab64b7c6bab50520d0613f2db63344001fdf40effb29`  
-		Last Modified: Tue, 12 Mar 2019 08:40:53 GMT  
-		Size: 361.0 B  
+	-	`sha256:e78abe4347f0f3d6c51deae815ff7a2986d4b1783cdcdcc73487f025e9c41e00`  
+		Last Modified: Sat, 27 Apr 2019 09:31:35 GMT  
+		Size: 360.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:425f5728bb9dc938d35ff7ca325ca02d610429aff390d9ec208b9a45b5007cff`  
-		Last Modified: Tue, 12 Mar 2019 08:40:54 GMT  
+	-	`sha256:d7d271af6e174f309e31a22d58cc08c9066236f5982dd090cb0af618bba847e9`  
+		Last Modified: Sat, 27 Apr 2019 09:31:35 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ubuntu:xenial`
 
 ```console
-$ docker pull ubuntu@sha256:5da0fc56841046569e19a16658912602b57311c99e51d455a85ff45bffbfba37
+$ docker pull ubuntu@sha256:d701427fc4836935fbd2743624f8a5966e7a35a87b9177cdfa7de807e07ed756
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4176,44 +4176,44 @@ CMD ["/bin/bash"]
 ### `ubuntu:xenial` - linux; arm64 variant v8
 
 ```console
-$ docker pull ubuntu@sha256:ad1c2a2c4964e6fc97c62f69b1ab2173927be8e8a07d3d885cb338829b898f43
+$ docker pull ubuntu@sha256:d2fa47c0c22a356bf633bb03bac23d870ef0e3d91225d6d5899b21156c7543bc
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.6 MB (39584457 bytes)**  
+-	Total Size: **39.7 MB (39730887 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2dbbe80955e78efb6e29a4a5c2e96a9185524c4ce7cac230e8094ee62fd523bc`
+-	Image ID: `sha256:149b98a0932ee75a23bbc68de361e71961d6bfea65652145ebf6255f9e6ceedc`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 14 Mar 2019 09:37:10 GMT
-ADD file:fb512c07289f9bff179e81ccc3c7db7cfa5cbe0e28c60dcf2582fdb621ef4873 in / 
-# Thu, 14 Mar 2019 09:37:13 GMT
+# Sat, 27 Apr 2019 09:38:29 GMT
+ADD file:871bd7b9746504992c714acf86c19916c9ea2061e665aba4547c02f5a87dda1d in / 
+# Sat, 27 Apr 2019 09:38:33 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 14 Mar 2019 09:37:16 GMT
+# Sat, 27 Apr 2019 09:38:36 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 14 Mar 2019 09:37:19 GMT
+# Sat, 27 Apr 2019 09:38:40 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 14 Mar 2019 09:37:20 GMT
+# Sat, 27 Apr 2019 09:38:41 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:42a68504e090bdbf515c814e7ef1eec51c4e5e86f869c3196416372743583213`  
-		Last Modified: Fri, 22 Feb 2019 23:17:09 GMT  
-		Size: 39.6 MB (39582965 bytes)  
+	-	`sha256:9faae00b8c161eeb3f6dd501b8afea1b3ff6f0cdaafbffc40c8c05e370ca8581`  
+		Last Modified: Fri, 26 Apr 2019 22:12:20 GMT  
+		Size: 39.7 MB (39729396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aca2bac1d329215e2f3bc584352d5eb878cc611f42990f3c8b2a4f86caef05cf`  
-		Last Modified: Thu, 14 Mar 2019 09:39:37 GMT  
-		Size: 854.0 B  
+	-	`sha256:da2435bdd32c230705ab3d701ff85763cf6f15db3db0ae7677723535a9966f3c`  
+		Last Modified: Sat, 27 Apr 2019 09:41:13 GMT  
+		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9450bbb566ac27c4e32a7c6a5fc0ad9c4eb7eba18a33c7abc2aabf470369ff6`  
-		Last Modified: Thu, 14 Mar 2019 09:39:37 GMT  
-		Size: 469.0 B  
+	-	`sha256:d3baab0b94b9762c01dab9564e661e1a9fd77ca7ac7d91fbef8143875e9ad0d5`  
+		Last Modified: Sat, 27 Apr 2019 09:41:13 GMT  
+		Size: 470.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:909659e6e151b05fe5662d99effc50f4e0e47c27763091c952c98d731bb399a8`  
-		Last Modified: Thu, 14 Mar 2019 09:39:37 GMT  
+	-	`sha256:b8d2291befdb8dfc512786348c157758756137ac5176472743061ac5a04f4a7e`  
+		Last Modified: Sat, 27 Apr 2019 09:41:12 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -4264,45 +4264,45 @@ CMD ["/bin/bash"]
 ### `ubuntu:xenial` - linux; ppc64le
 
 ```console
-$ docker pull ubuntu@sha256:dd7a6449012f5b3f12cbacc3a13df990c19a54fbe371ca8dd442cece7bc7edf1
+$ docker pull ubuntu@sha256:b82a121ed878a5704ee662794d7da17bf20e6bd5951543daa32d280e91d9c864
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.8 MB (45776544 bytes)**  
+-	Total Size: **45.9 MB (45930132 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e95488c25b8219bb76d31a9846fb6c6535a06cde70ff5b41352cc88771600f6b`
+-	Image ID: `sha256:5dd8620862e6562d893b760ea7f2ad94dca6f8d2ee8c57abb3281106e04dab97`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 12 Mar 2019 08:38:49 GMT
-ADD file:662e1451430b294da63b388f789556544f888e1c853a682bee04b16c1ce0c5f8 in / 
-# Tue, 12 Mar 2019 08:39:00 GMT
+# Sat, 27 Apr 2019 09:28:21 GMT
+ADD file:3e448359ea1b7f0a4f4b69f4542cd08e7bface0c7e835f38b7cb9aff4351346d in / 
+# Sat, 27 Apr 2019 09:28:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Tue, 12 Mar 2019 08:39:09 GMT
+# Sat, 27 Apr 2019 09:28:33 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 12 Mar 2019 08:39:15 GMT
+# Sat, 27 Apr 2019 09:28:40 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Tue, 12 Mar 2019 08:39:18 GMT
+# Sat, 27 Apr 2019 09:28:43 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:4d4e695beabdb9803aaf0b66ff290a2b37ee4b2c6ac6c54a79af9402ec1e8c63`  
-		Last Modified: Mon, 04 Mar 2019 15:21:34 GMT  
-		Size: 45.8 MB (45775047 bytes)  
+	-	`sha256:abd5c019819de70ac57ed3f6553b5cb918700ea013051f9b5c34647068e1f358`  
+		Last Modified: Sat, 27 Apr 2019 09:33:19 GMT  
+		Size: 45.9 MB (45928636 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b4bc7904c59ff5c00672c95b43d447ee8bc66491ed4d8ec9b6977517a8c0e5f`  
-		Last Modified: Tue, 12 Mar 2019 08:41:22 GMT  
-		Size: 852.0 B  
+	-	`sha256:ffb1e9f7f3b1c7c2b3164a88da4d80c35edd5e9c958d483ef7a5d3f1760bc574`  
+		Last Modified: Sat, 27 Apr 2019 09:32:45 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44807514cf46fe796993725e6d846bd71cbb1b6d5732ff662eed4fdacd6b0f99`  
-		Last Modified: Tue, 12 Mar 2019 08:41:22 GMT  
-		Size: 475.0 B  
+	-	`sha256:b19320290aeb9b108bf4f79b24b0ec8f8d136510f1d37e51c972a5cd0276e8a0`  
+		Last Modified: Sat, 27 Apr 2019 09:32:46 GMT  
+		Size: 476.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:478e6a97f35ae67ea6d8b7e0069332d9070fb6a49956271e8ab2671463d94e4c`  
-		Last Modified: Tue, 12 Mar 2019 08:41:23 GMT  
-		Size: 170.0 B  
+	-	`sha256:354d5ed794e921901f7c634ba79e69add39da2a185fcf0defbdf90418b77a394`  
+		Last Modified: Sat, 27 Apr 2019 09:32:46 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:xenial` - linux; s390x
@@ -4352,7 +4352,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:xenial-20190425`
 
 ```console
-$ docker pull ubuntu@sha256:5da0fc56841046569e19a16658912602b57311c99e51d455a85ff45bffbfba37
+$ docker pull ubuntu@sha256:d701427fc4836935fbd2743624f8a5966e7a35a87b9177cdfa7de807e07ed756
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4455,44 +4455,44 @@ CMD ["/bin/bash"]
 ### `ubuntu:xenial-20190425` - linux; arm64 variant v8
 
 ```console
-$ docker pull ubuntu@sha256:ad1c2a2c4964e6fc97c62f69b1ab2173927be8e8a07d3d885cb338829b898f43
+$ docker pull ubuntu@sha256:d2fa47c0c22a356bf633bb03bac23d870ef0e3d91225d6d5899b21156c7543bc
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.6 MB (39584457 bytes)**  
+-	Total Size: **39.7 MB (39730887 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2dbbe80955e78efb6e29a4a5c2e96a9185524c4ce7cac230e8094ee62fd523bc`
+-	Image ID: `sha256:149b98a0932ee75a23bbc68de361e71961d6bfea65652145ebf6255f9e6ceedc`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 14 Mar 2019 09:37:10 GMT
-ADD file:fb512c07289f9bff179e81ccc3c7db7cfa5cbe0e28c60dcf2582fdb621ef4873 in / 
-# Thu, 14 Mar 2019 09:37:13 GMT
+# Sat, 27 Apr 2019 09:38:29 GMT
+ADD file:871bd7b9746504992c714acf86c19916c9ea2061e665aba4547c02f5a87dda1d in / 
+# Sat, 27 Apr 2019 09:38:33 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 14 Mar 2019 09:37:16 GMT
+# Sat, 27 Apr 2019 09:38:36 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 14 Mar 2019 09:37:19 GMT
+# Sat, 27 Apr 2019 09:38:40 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 14 Mar 2019 09:37:20 GMT
+# Sat, 27 Apr 2019 09:38:41 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:42a68504e090bdbf515c814e7ef1eec51c4e5e86f869c3196416372743583213`  
-		Last Modified: Fri, 22 Feb 2019 23:17:09 GMT  
-		Size: 39.6 MB (39582965 bytes)  
+	-	`sha256:9faae00b8c161eeb3f6dd501b8afea1b3ff6f0cdaafbffc40c8c05e370ca8581`  
+		Last Modified: Fri, 26 Apr 2019 22:12:20 GMT  
+		Size: 39.7 MB (39729396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aca2bac1d329215e2f3bc584352d5eb878cc611f42990f3c8b2a4f86caef05cf`  
-		Last Modified: Thu, 14 Mar 2019 09:39:37 GMT  
-		Size: 854.0 B  
+	-	`sha256:da2435bdd32c230705ab3d701ff85763cf6f15db3db0ae7677723535a9966f3c`  
+		Last Modified: Sat, 27 Apr 2019 09:41:13 GMT  
+		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9450bbb566ac27c4e32a7c6a5fc0ad9c4eb7eba18a33c7abc2aabf470369ff6`  
-		Last Modified: Thu, 14 Mar 2019 09:39:37 GMT  
-		Size: 469.0 B  
+	-	`sha256:d3baab0b94b9762c01dab9564e661e1a9fd77ca7ac7d91fbef8143875e9ad0d5`  
+		Last Modified: Sat, 27 Apr 2019 09:41:13 GMT  
+		Size: 470.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:909659e6e151b05fe5662d99effc50f4e0e47c27763091c952c98d731bb399a8`  
-		Last Modified: Thu, 14 Mar 2019 09:39:37 GMT  
+	-	`sha256:b8d2291befdb8dfc512786348c157758756137ac5176472743061ac5a04f4a7e`  
+		Last Modified: Sat, 27 Apr 2019 09:41:12 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -4543,45 +4543,45 @@ CMD ["/bin/bash"]
 ### `ubuntu:xenial-20190425` - linux; ppc64le
 
 ```console
-$ docker pull ubuntu@sha256:dd7a6449012f5b3f12cbacc3a13df990c19a54fbe371ca8dd442cece7bc7edf1
+$ docker pull ubuntu@sha256:b82a121ed878a5704ee662794d7da17bf20e6bd5951543daa32d280e91d9c864
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.8 MB (45776544 bytes)**  
+-	Total Size: **45.9 MB (45930132 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e95488c25b8219bb76d31a9846fb6c6535a06cde70ff5b41352cc88771600f6b`
+-	Image ID: `sha256:5dd8620862e6562d893b760ea7f2ad94dca6f8d2ee8c57abb3281106e04dab97`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 12 Mar 2019 08:38:49 GMT
-ADD file:662e1451430b294da63b388f789556544f888e1c853a682bee04b16c1ce0c5f8 in / 
-# Tue, 12 Mar 2019 08:39:00 GMT
+# Sat, 27 Apr 2019 09:28:21 GMT
+ADD file:3e448359ea1b7f0a4f4b69f4542cd08e7bface0c7e835f38b7cb9aff4351346d in / 
+# Sat, 27 Apr 2019 09:28:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Tue, 12 Mar 2019 08:39:09 GMT
+# Sat, 27 Apr 2019 09:28:33 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 12 Mar 2019 08:39:15 GMT
+# Sat, 27 Apr 2019 09:28:40 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Tue, 12 Mar 2019 08:39:18 GMT
+# Sat, 27 Apr 2019 09:28:43 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:4d4e695beabdb9803aaf0b66ff290a2b37ee4b2c6ac6c54a79af9402ec1e8c63`  
-		Last Modified: Mon, 04 Mar 2019 15:21:34 GMT  
-		Size: 45.8 MB (45775047 bytes)  
+	-	`sha256:abd5c019819de70ac57ed3f6553b5cb918700ea013051f9b5c34647068e1f358`  
+		Last Modified: Sat, 27 Apr 2019 09:33:19 GMT  
+		Size: 45.9 MB (45928636 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b4bc7904c59ff5c00672c95b43d447ee8bc66491ed4d8ec9b6977517a8c0e5f`  
-		Last Modified: Tue, 12 Mar 2019 08:41:22 GMT  
-		Size: 852.0 B  
+	-	`sha256:ffb1e9f7f3b1c7c2b3164a88da4d80c35edd5e9c958d483ef7a5d3f1760bc574`  
+		Last Modified: Sat, 27 Apr 2019 09:32:45 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44807514cf46fe796993725e6d846bd71cbb1b6d5732ff662eed4fdacd6b0f99`  
-		Last Modified: Tue, 12 Mar 2019 08:41:22 GMT  
-		Size: 475.0 B  
+	-	`sha256:b19320290aeb9b108bf4f79b24b0ec8f8d136510f1d37e51c972a5cd0276e8a0`  
+		Last Modified: Sat, 27 Apr 2019 09:32:46 GMT  
+		Size: 476.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:478e6a97f35ae67ea6d8b7e0069332d9070fb6a49956271e8ab2671463d94e4c`  
-		Last Modified: Tue, 12 Mar 2019 08:41:23 GMT  
-		Size: 170.0 B  
+	-	`sha256:354d5ed794e921901f7c634ba79e69add39da2a185fcf0defbdf90418b77a394`  
+		Last Modified: Sat, 27 Apr 2019 09:32:46 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:xenial-20190425` - linux; s390x
