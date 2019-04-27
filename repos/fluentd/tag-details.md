@@ -11,7 +11,7 @@
 ## `fluentd:latest`
 
 ```console
-$ docker pull fluentd@sha256:5687c14d0a63371aeeae88ca77c3c99a962ed2556edb3b8820a9710a42519c68
+$ docker pull fluentd@sha256:0c090ac54eb40fbf12c45ddc4870e4d92c65049efd10e567fb6855338c7a9e9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -21,6 +21,7 @@ $ docker pull fluentd@sha256:5687c14d0a63371aeeae88ca77c3c99a962ed2556edb3b8820a
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
+	-	linux; s390x
 
 ### `fluentd:latest` - linux; amd64
 
@@ -357,10 +358,77 @@ CMD ["fluentd"]
 		Size: 446.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `fluentd:latest` - linux; s390x
+
+```console
+$ docker pull fluentd@sha256:36397cbf3387e6daabe0c4a87214ceadd61427777ddd94176c13c383a275d3f7
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **13.9 MB (13904732 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4821da075d02e89022f5aa14a9fd8e58b9e8063d02f7267d04239856f7d7e2a4`
+-	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
+-	Default Command: `["fluentd"]`
+
+```dockerfile
+# Wed, 10 Apr 2019 11:42:23 GMT
+ADD file:ab106eb2cf4bf0e1ca7861a56dc24e44dd206fd3ae8d3587684324e5c11136f4 in / 
+# Wed, 10 Apr 2019 11:42:23 GMT
+CMD ["/bin/sh"]
+# Sat, 27 Apr 2019 11:41:39 GMT
+LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
+# Sat, 27 Apr 2019 11:41:39 GMT
+LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.4.2
+# Sat, 27 Apr 2019 11:42:41 GMT
+RUN apk update  && apk add --no-cache         ca-certificates         ruby ruby-irb ruby-etc ruby-webrick         tini  && apk add --no-cache --virtual .build-deps         build-base         ruby-dev gnupg  && echo 'gem: --no-document' >> /etc/gemrc  && gem install oj -v 3.3.10  && gem install json -v 2.2.0  && gem install fluentd -v 1.4.2  && gem install bigdecimal -v 1.3.5  && apk del .build-deps  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem
+# Sat, 27 Apr 2019 11:42:45 GMT
+RUN addgroup -S fluent && adduser -S -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd
+# Sat, 27 Apr 2019 11:42:45 GMT
+COPY file:06d9a84b9b428b4e0ef5a9e3699798758dc9716908d82091239fb9f85dd30d70 in /fluentd/etc/ 
+# Sat, 27 Apr 2019 11:42:46 GMT
+COPY file:f70a6a04a7c32c744ebb989e7d706ca5f78829c1489be8d165d4b1b682c9eaf8 in /bin/ 
+# Sat, 27 Apr 2019 11:42:46 GMT
+ENV FLUENTD_CONF=fluent.conf
+# Sat, 27 Apr 2019 11:42:47 GMT
+ENV LD_PRELOAD=
+# Sat, 27 Apr 2019 11:42:48 GMT
+EXPOSE 24224 5140
+# Sat, 27 Apr 2019 11:42:49 GMT
+USER fluent
+# Sat, 27 Apr 2019 11:42:50 GMT
+ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
+# Sat, 27 Apr 2019 11:42:50 GMT
+CMD ["fluentd"]
+```
+
+-	Layers:
+	-	`sha256:5b51e37a522c2e7cd3c67e8a3e5500b45189ea6698e9fdaed7f5d48282326633`  
+		Last Modified: Wed, 10 Apr 2019 11:43:06 GMT  
+		Size: 2.5 MB (2543326 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:641b3bd07969fe864d82f770b0646412d7506c39a2c10c2b8f256ad26088dae5`  
+		Last Modified: Sat, 27 Apr 2019 11:47:48 GMT  
+		Size: 11.4 MB (11359233 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:901a6c4ffd293822fcdcef69062c3b8d8678722317f4e1d228acc3009bd9266d`  
+		Last Modified: Sat, 27 Apr 2019 11:47:41 GMT  
+		Size: 1.3 KB (1317 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:19439ec7cdbcc3ea2b62bad58b3d014d2f40848e012fe2bbf3e98654466ff464`  
+		Last Modified: Sat, 27 Apr 2019 11:47:41 GMT  
+		Size: 409.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8cf96bc1b46b7cf59b39b6d60ccf82918b6b41169f4f152f234a4fdfefa1651b`  
+		Last Modified: Sat, 27 Apr 2019 11:47:41 GMT  
+		Size: 447.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `fluentd:v1.4-2`
 
 ```console
-$ docker pull fluentd@sha256:5687c14d0a63371aeeae88ca77c3c99a962ed2556edb3b8820a9710a42519c68
+$ docker pull fluentd@sha256:0c090ac54eb40fbf12c45ddc4870e4d92c65049efd10e567fb6855338c7a9e9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -370,6 +438,7 @@ $ docker pull fluentd@sha256:5687c14d0a63371aeeae88ca77c3c99a962ed2556edb3b8820a
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
+	-	linux; s390x
 
 ### `fluentd:v1.4-2` - linux; amd64
 
@@ -706,10 +775,77 @@ CMD ["fluentd"]
 		Size: 446.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `fluentd:v1.4-2` - linux; s390x
+
+```console
+$ docker pull fluentd@sha256:36397cbf3387e6daabe0c4a87214ceadd61427777ddd94176c13c383a275d3f7
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **13.9 MB (13904732 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4821da075d02e89022f5aa14a9fd8e58b9e8063d02f7267d04239856f7d7e2a4`
+-	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
+-	Default Command: `["fluentd"]`
+
+```dockerfile
+# Wed, 10 Apr 2019 11:42:23 GMT
+ADD file:ab106eb2cf4bf0e1ca7861a56dc24e44dd206fd3ae8d3587684324e5c11136f4 in / 
+# Wed, 10 Apr 2019 11:42:23 GMT
+CMD ["/bin/sh"]
+# Sat, 27 Apr 2019 11:41:39 GMT
+LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
+# Sat, 27 Apr 2019 11:41:39 GMT
+LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.4.2
+# Sat, 27 Apr 2019 11:42:41 GMT
+RUN apk update  && apk add --no-cache         ca-certificates         ruby ruby-irb ruby-etc ruby-webrick         tini  && apk add --no-cache --virtual .build-deps         build-base         ruby-dev gnupg  && echo 'gem: --no-document' >> /etc/gemrc  && gem install oj -v 3.3.10  && gem install json -v 2.2.0  && gem install fluentd -v 1.4.2  && gem install bigdecimal -v 1.3.5  && apk del .build-deps  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem
+# Sat, 27 Apr 2019 11:42:45 GMT
+RUN addgroup -S fluent && adduser -S -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd
+# Sat, 27 Apr 2019 11:42:45 GMT
+COPY file:06d9a84b9b428b4e0ef5a9e3699798758dc9716908d82091239fb9f85dd30d70 in /fluentd/etc/ 
+# Sat, 27 Apr 2019 11:42:46 GMT
+COPY file:f70a6a04a7c32c744ebb989e7d706ca5f78829c1489be8d165d4b1b682c9eaf8 in /bin/ 
+# Sat, 27 Apr 2019 11:42:46 GMT
+ENV FLUENTD_CONF=fluent.conf
+# Sat, 27 Apr 2019 11:42:47 GMT
+ENV LD_PRELOAD=
+# Sat, 27 Apr 2019 11:42:48 GMT
+EXPOSE 24224 5140
+# Sat, 27 Apr 2019 11:42:49 GMT
+USER fluent
+# Sat, 27 Apr 2019 11:42:50 GMT
+ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
+# Sat, 27 Apr 2019 11:42:50 GMT
+CMD ["fluentd"]
+```
+
+-	Layers:
+	-	`sha256:5b51e37a522c2e7cd3c67e8a3e5500b45189ea6698e9fdaed7f5d48282326633`  
+		Last Modified: Wed, 10 Apr 2019 11:43:06 GMT  
+		Size: 2.5 MB (2543326 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:641b3bd07969fe864d82f770b0646412d7506c39a2c10c2b8f256ad26088dae5`  
+		Last Modified: Sat, 27 Apr 2019 11:47:48 GMT  
+		Size: 11.4 MB (11359233 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:901a6c4ffd293822fcdcef69062c3b8d8678722317f4e1d228acc3009bd9266d`  
+		Last Modified: Sat, 27 Apr 2019 11:47:41 GMT  
+		Size: 1.3 KB (1317 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:19439ec7cdbcc3ea2b62bad58b3d014d2f40848e012fe2bbf3e98654466ff464`  
+		Last Modified: Sat, 27 Apr 2019 11:47:41 GMT  
+		Size: 409.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8cf96bc1b46b7cf59b39b6d60ccf82918b6b41169f4f152f234a4fdfefa1651b`  
+		Last Modified: Sat, 27 Apr 2019 11:47:41 GMT  
+		Size: 447.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `fluentd:v1.4.2-2.0`
 
 ```console
-$ docker pull fluentd@sha256:5687c14d0a63371aeeae88ca77c3c99a962ed2556edb3b8820a9710a42519c68
+$ docker pull fluentd@sha256:0c090ac54eb40fbf12c45ddc4870e4d92c65049efd10e567fb6855338c7a9e9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -719,6 +855,7 @@ $ docker pull fluentd@sha256:5687c14d0a63371aeeae88ca77c3c99a962ed2556edb3b8820a
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
+	-	linux; s390x
 
 ### `fluentd:v1.4.2-2.0` - linux; amd64
 
@@ -1055,19 +1192,88 @@ CMD ["fluentd"]
 		Size: 446.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `fluentd:v1.4.2-2.0` - linux; s390x
+
+```console
+$ docker pull fluentd@sha256:36397cbf3387e6daabe0c4a87214ceadd61427777ddd94176c13c383a275d3f7
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **13.9 MB (13904732 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4821da075d02e89022f5aa14a9fd8e58b9e8063d02f7267d04239856f7d7e2a4`
+-	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
+-	Default Command: `["fluentd"]`
+
+```dockerfile
+# Wed, 10 Apr 2019 11:42:23 GMT
+ADD file:ab106eb2cf4bf0e1ca7861a56dc24e44dd206fd3ae8d3587684324e5c11136f4 in / 
+# Wed, 10 Apr 2019 11:42:23 GMT
+CMD ["/bin/sh"]
+# Sat, 27 Apr 2019 11:41:39 GMT
+LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
+# Sat, 27 Apr 2019 11:41:39 GMT
+LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.4.2
+# Sat, 27 Apr 2019 11:42:41 GMT
+RUN apk update  && apk add --no-cache         ca-certificates         ruby ruby-irb ruby-etc ruby-webrick         tini  && apk add --no-cache --virtual .build-deps         build-base         ruby-dev gnupg  && echo 'gem: --no-document' >> /etc/gemrc  && gem install oj -v 3.3.10  && gem install json -v 2.2.0  && gem install fluentd -v 1.4.2  && gem install bigdecimal -v 1.3.5  && apk del .build-deps  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem
+# Sat, 27 Apr 2019 11:42:45 GMT
+RUN addgroup -S fluent && adduser -S -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd
+# Sat, 27 Apr 2019 11:42:45 GMT
+COPY file:06d9a84b9b428b4e0ef5a9e3699798758dc9716908d82091239fb9f85dd30d70 in /fluentd/etc/ 
+# Sat, 27 Apr 2019 11:42:46 GMT
+COPY file:f70a6a04a7c32c744ebb989e7d706ca5f78829c1489be8d165d4b1b682c9eaf8 in /bin/ 
+# Sat, 27 Apr 2019 11:42:46 GMT
+ENV FLUENTD_CONF=fluent.conf
+# Sat, 27 Apr 2019 11:42:47 GMT
+ENV LD_PRELOAD=
+# Sat, 27 Apr 2019 11:42:48 GMT
+EXPOSE 24224 5140
+# Sat, 27 Apr 2019 11:42:49 GMT
+USER fluent
+# Sat, 27 Apr 2019 11:42:50 GMT
+ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
+# Sat, 27 Apr 2019 11:42:50 GMT
+CMD ["fluentd"]
+```
+
+-	Layers:
+	-	`sha256:5b51e37a522c2e7cd3c67e8a3e5500b45189ea6698e9fdaed7f5d48282326633`  
+		Last Modified: Wed, 10 Apr 2019 11:43:06 GMT  
+		Size: 2.5 MB (2543326 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:641b3bd07969fe864d82f770b0646412d7506c39a2c10c2b8f256ad26088dae5`  
+		Last Modified: Sat, 27 Apr 2019 11:47:48 GMT  
+		Size: 11.4 MB (11359233 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:901a6c4ffd293822fcdcef69062c3b8d8678722317f4e1d228acc3009bd9266d`  
+		Last Modified: Sat, 27 Apr 2019 11:47:41 GMT  
+		Size: 1.3 KB (1317 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:19439ec7cdbcc3ea2b62bad58b3d014d2f40848e012fe2bbf3e98654466ff464`  
+		Last Modified: Sat, 27 Apr 2019 11:47:41 GMT  
+		Size: 409.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8cf96bc1b46b7cf59b39b6d60ccf82918b6b41169f4f152f234a4fdfefa1651b`  
+		Last Modified: Sat, 27 Apr 2019 11:47:41 GMT  
+		Size: 447.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `fluentd:v1.4.2-debian-2.0`
 
 ```console
-$ docker pull fluentd@sha256:fa8437a9583f1d86c565651684244a5659508c8eec3ebd7382f14b7cc0498f85
+$ docker pull fluentd@sha256:61ef9f443b92e81ef0dfc55546854369d6bc4e7365e2bf84fb58c8260aa4e28f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm variant v5
+	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
+	-	linux; s390x
 
 ### `fluentd:v1.4.2-debian-2.0` - linux; amd64
 
@@ -1280,6 +1486,113 @@ CMD ["fluentd"]
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b944c82c53e8cc4927bd7f69a704c2390465fa79fe15f1a821a6ae6c6555aa53`  
 		Last Modified: Sat, 27 Apr 2019 08:51:26 GMT  
+		Size: 446.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `fluentd:v1.4.2-debian-2.0` - linux; arm variant v7
+
+```console
+$ docker pull fluentd@sha256:450085566badbaff3b156bc767b1db7937c45a9393da82bba59db57336445152
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **64.2 MB (64186362 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8697904f4969c9f50c31bbe54f1dc5ac1b641311fa2fe101bed7de04515e09dd`
+-	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
+-	Default Command: `["fluentd"]`
+
+```dockerfile
+# Wed, 27 Mar 2019 12:07:48 GMT
+ADD file:6bf06125d936ccaf67981470df5ef6b9bd5dee3c0ef0e042a448fc60bb02f191 in / 
+# Wed, 27 Mar 2019 12:07:49 GMT
+CMD ["bash"]
+# Wed, 27 Mar 2019 15:02:37 GMT
+RUN apt-get update 	&& apt-get install -y --no-install-recommends 		bzip2 		ca-certificates 		libffi-dev 		libgdbm3 		libgmp-dev 		libssl-dev 		libyaml-dev 		procps 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 27 Mar 2019 15:02:39 GMT
+RUN mkdir -p /usr/local/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
+# Wed, 27 Mar 2019 15:02:40 GMT
+ENV RUBY_MAJOR=2.6
+# Thu, 18 Apr 2019 12:10:35 GMT
+ENV RUBY_VERSION=2.6.3
+# Thu, 18 Apr 2019 12:10:37 GMT
+ENV RUBY_DOWNLOAD_SHA256=11a83f85c03d3f0fc9b8a9b6cad1b2674f26c5aaa43ba858d4b0fcc2b54171e1
+# Thu, 18 Apr 2019 12:13:46 GMT
+RUN set -ex 		&& savedAptMark="$(apt-mark showmanual)" 	&& apt-get update && apt-get install -y --no-install-recommends 		autoconf 		bison 		dpkg-dev 		gcc 		libbz2-dev 		libgdbm-dev 		libglib2.0-dev 		libncurses-dev 		libreadline-dev 		libxml2-dev 		libxslt-dev 		make 		ruby 		wget 		xz-utils 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-mark auto '.*' > /dev/null 	&& apt-mark manual $savedAptMark 	&& find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false 		&& cd / 	&& rm -r /usr/src/ruby 	&& ruby --version && gem --version && bundle --version
+# Thu, 18 Apr 2019 12:13:48 GMT
+ENV GEM_HOME=/usr/local/bundle
+# Thu, 18 Apr 2019 12:13:49 GMT
+ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
+# Thu, 18 Apr 2019 12:13:49 GMT
+ENV PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Thu, 18 Apr 2019 12:13:52 GMT
+RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME"
+# Thu, 18 Apr 2019 12:13:53 GMT
+CMD ["irb"]
+# Sat, 27 Apr 2019 11:57:25 GMT
+LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
+# Sat, 27 Apr 2019 11:57:26 GMT
+LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.4.2
+# Sat, 27 Apr 2019 11:57:26 GMT
+ENV TINI_VERSION=0.18.0
+# Sat, 27 Apr 2019 12:00:06 GMT
+RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && gem install oj -v 3.3.10  && gem install json -v 2.2.0  && gem install fluentd -v 1.4.2  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch"  && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5  && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini  && rm -r /usr/local/bin/tini.asc  && chmod +x /usr/local/bin/tini  && tini -h  && wget -O /tmp/jemalloc-4.5.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/4.5.0/jemalloc-4.5.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-4.5.0.tar.bz2 && cd jemalloc-4.5.0/  && ./configure && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem
+# Sat, 27 Apr 2019 12:00:07 GMT
+RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd
+# Sat, 27 Apr 2019 12:00:08 GMT
+COPY file:06d9a84b9b428b4e0ef5a9e3699798758dc9716908d82091239fb9f85dd30d70 in /fluentd/etc/ 
+# Sat, 27 Apr 2019 12:00:08 GMT
+COPY file:f70a6a04a7c32c744ebb989e7d706ca5f78829c1489be8d165d4b1b682c9eaf8 in /bin/ 
+# Sat, 27 Apr 2019 12:00:09 GMT
+ENV FLUENTD_CONF=fluent.conf
+# Sat, 27 Apr 2019 12:00:09 GMT
+ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
+# Sat, 27 Apr 2019 12:00:10 GMT
+EXPOSE 24224 5140
+# Sat, 27 Apr 2019 12:00:10 GMT
+USER fluent
+# Sat, 27 Apr 2019 12:00:11 GMT
+ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
+# Sat, 27 Apr 2019 12:00:11 GMT
+CMD ["fluentd"]
+```
+
+-	Layers:
+	-	`sha256:fac132c5d16f670820c8c4ae332bd663c2ff856e9af86b2b23a201db263d851e`  
+		Last Modified: Wed, 27 Mar 2019 12:13:15 GMT  
+		Size: 19.3 MB (19282442 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a9c49cc9bf813783c8adad9a8112b31eb2329d6e61f1f236daa69ead9b7c5ae3`  
+		Last Modified: Wed, 27 Mar 2019 15:53:45 GMT  
+		Size: 9.1 MB (9079104 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:819e11271eca83204620d6fb3eeb33dd25ff007c2b251045f34cc378acf4f0cd`  
+		Last Modified: Wed, 27 Mar 2019 15:53:41 GMT  
+		Size: 206.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8871fe4978fa4225668bbc026b62412b971d07ac7df05f300ad4d4d59daa0d97`  
+		Last Modified: Thu, 18 Apr 2019 12:18:20 GMT  
+		Size: 19.3 MB (19293275 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:af854397c90109de28033b52b306dac3e5f40c9231e0b6223e84084c20ff496e`  
+		Last Modified: Thu, 18 Apr 2019 12:18:15 GMT  
+		Size: 184.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c2dd51a056cd8d138974dae5480a5435b1a6a2c10cab58d0a7cc8c765b888911`  
+		Last Modified: Sat, 27 Apr 2019 12:00:35 GMT  
+		Size: 16.5 MB (16528456 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:981a33055afc8359d810b997bb89900ae1cc5012623f033df90f175eb3258024`  
+		Last Modified: Sat, 27 Apr 2019 12:00:30 GMT  
+		Size: 1.8 KB (1843 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b71e73c464886439f12b14f0d73aeb8b72527a77d46d2e6bf37cd26a805f64e9`  
+		Last Modified: Sat, 27 Apr 2019 12:00:30 GMT  
+		Size: 406.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d4028dee228dff909731dc32c8573e694a5430b813cde5554a08f089c7c4915b`  
+		Last Modified: Sat, 27 Apr 2019 12:00:30 GMT  
 		Size: 446.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1604,19 +1917,128 @@ CMD ["fluentd"]
 		Size: 445.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `fluentd:v1.4.2-debian-2.0` - linux; s390x
+
+```console
+$ docker pull fluentd@sha256:10ef7fdfa63b4dc2e11bd8dce4326643351e588206eb313af4ba7406cf5d72c6
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **73.8 MB (73758186 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:45804608339a85a2b7e466cc09349c54048b4acdb6b8c0e3fcf5cbf81dc14782`
+-	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
+-	Default Command: `["fluentd"]`
+
+```dockerfile
+# Wed, 27 Mar 2019 11:43:45 GMT
+ADD file:bbc08c16057153af2910791402d3a29eb5da11e030d2fc6778644c444142d2ab in / 
+# Wed, 27 Mar 2019 11:43:46 GMT
+CMD ["bash"]
+# Wed, 27 Mar 2019 15:24:29 GMT
+RUN apt-get update 	&& apt-get install -y --no-install-recommends 		bzip2 		ca-certificates 		libffi-dev 		libgdbm3 		libgmp-dev 		libssl-dev 		libyaml-dev 		procps 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 27 Mar 2019 15:24:32 GMT
+RUN mkdir -p /usr/local/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
+# Wed, 27 Mar 2019 15:24:32 GMT
+ENV RUBY_MAJOR=2.6
+# Thu, 18 Apr 2019 15:42:26 GMT
+ENV RUBY_VERSION=2.6.3
+# Thu, 18 Apr 2019 15:42:27 GMT
+ENV RUBY_DOWNLOAD_SHA256=11a83f85c03d3f0fc9b8a9b6cad1b2674f26c5aaa43ba858d4b0fcc2b54171e1
+# Thu, 18 Apr 2019 15:47:57 GMT
+RUN set -ex 		&& savedAptMark="$(apt-mark showmanual)" 	&& apt-get update && apt-get install -y --no-install-recommends 		autoconf 		bison 		dpkg-dev 		gcc 		libbz2-dev 		libgdbm-dev 		libglib2.0-dev 		libncurses-dev 		libreadline-dev 		libxml2-dev 		libxslt-dev 		make 		ruby 		wget 		xz-utils 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-mark auto '.*' > /dev/null 	&& apt-mark manual $savedAptMark 	&& find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false 		&& cd / 	&& rm -r /usr/src/ruby 	&& ruby --version && gem --version && bundle --version
+# Thu, 18 Apr 2019 15:47:57 GMT
+ENV GEM_HOME=/usr/local/bundle
+# Thu, 18 Apr 2019 15:47:58 GMT
+ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
+# Thu, 18 Apr 2019 15:47:58 GMT
+ENV PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Thu, 18 Apr 2019 15:48:00 GMT
+RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME"
+# Thu, 18 Apr 2019 15:48:01 GMT
+CMD ["irb"]
+# Sat, 27 Apr 2019 11:43:01 GMT
+LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
+# Sat, 27 Apr 2019 11:43:03 GMT
+LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.4.2
+# Sat, 27 Apr 2019 11:43:03 GMT
+ENV TINI_VERSION=0.18.0
+# Sat, 27 Apr 2019 11:47:07 GMT
+RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && gem install oj -v 3.3.10  && gem install json -v 2.2.0  && gem install fluentd -v 1.4.2  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch"  && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5  && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini  && rm -r /usr/local/bin/tini.asc  && chmod +x /usr/local/bin/tini  && tini -h  && wget -O /tmp/jemalloc-4.5.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/4.5.0/jemalloc-4.5.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-4.5.0.tar.bz2 && cd jemalloc-4.5.0/  && ./configure && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem
+# Sat, 27 Apr 2019 11:47:11 GMT
+RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd
+# Sat, 27 Apr 2019 11:47:12 GMT
+COPY file:06d9a84b9b428b4e0ef5a9e3699798758dc9716908d82091239fb9f85dd30d70 in /fluentd/etc/ 
+# Sat, 27 Apr 2019 11:47:13 GMT
+COPY file:f70a6a04a7c32c744ebb989e7d706ca5f78829c1489be8d165d4b1b682c9eaf8 in /bin/ 
+# Sat, 27 Apr 2019 11:47:13 GMT
+ENV FLUENTD_CONF=fluent.conf
+# Sat, 27 Apr 2019 11:47:14 GMT
+ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
+# Sat, 27 Apr 2019 11:47:14 GMT
+EXPOSE 24224 5140
+# Sat, 27 Apr 2019 11:47:15 GMT
+USER fluent
+# Sat, 27 Apr 2019 11:47:16 GMT
+ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
+# Sat, 27 Apr 2019 11:47:19 GMT
+CMD ["fluentd"]
+```
+
+-	Layers:
+	-	`sha256:9ce36a197e11ef57ec11f749055a2d2db6113c6b0026d930d3ddbbd86a7ec15b`  
+		Last Modified: Wed, 27 Mar 2019 11:46:50 GMT  
+		Size: 22.3 MB (22345282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9136d6190ab77b3e9ab9c467fa4d462ec05bc3271cd4c5f140aa2805f83851db`  
+		Last Modified: Wed, 27 Mar 2019 15:49:43 GMT  
+		Size: 11.6 MB (11577628 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bc3a0b1fb24a2e46e9629ed6f6b483f560041432e96e86e23159dbbfdab02bb6`  
+		Last Modified: Wed, 27 Mar 2019 15:49:39 GMT  
+		Size: 207.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:53d24879684d4a4e8b4570e50a16d905c1f033b3ef1482c8bdc8fd2b479982c6`  
+		Last Modified: Thu, 18 Apr 2019 15:59:29 GMT  
+		Size: 20.3 MB (20266423 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:503c0c98aa1ad53de5760a95d495beabe07dcfc056fb8a9d3116aff75ed46568`  
+		Last Modified: Thu, 18 Apr 2019 15:59:26 GMT  
+		Size: 148.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d6559450f01edf09d52d62f75178560a2d7b85b9ba051d89f2ae699230ebe698`  
+		Last Modified: Sat, 27 Apr 2019 11:48:06 GMT  
+		Size: 19.6 MB (19565820 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:89257798a7f525261fc3b670c6d7c6b71dc79489b74883b01f982533a247d7fa`  
+		Last Modified: Sat, 27 Apr 2019 11:47:59 GMT  
+		Size: 1.8 KB (1827 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1b58eb70d5fecb8c815c76d703b229d849a28f96f2768b846efccc9629f93f1b`  
+		Last Modified: Sat, 27 Apr 2019 11:47:59 GMT  
+		Size: 408.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6017a11c2bd1610cc2b517f1ad9f2d2de508cfa8552f0c6b31775a386e10594d`  
+		Last Modified: Sat, 27 Apr 2019 11:47:59 GMT  
+		Size: 443.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `fluentd:v1.4-debian-2`
 
 ```console
-$ docker pull fluentd@sha256:fa8437a9583f1d86c565651684244a5659508c8eec3ebd7382f14b7cc0498f85
+$ docker pull fluentd@sha256:61ef9f443b92e81ef0dfc55546854369d6bc4e7365e2bf84fb58c8260aa4e28f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm variant v5
+	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
+	-	linux; s390x
 
 ### `fluentd:v1.4-debian-2` - linux; amd64
 
@@ -1829,6 +2251,113 @@ CMD ["fluentd"]
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b944c82c53e8cc4927bd7f69a704c2390465fa79fe15f1a821a6ae6c6555aa53`  
 		Last Modified: Sat, 27 Apr 2019 08:51:26 GMT  
+		Size: 446.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `fluentd:v1.4-debian-2` - linux; arm variant v7
+
+```console
+$ docker pull fluentd@sha256:450085566badbaff3b156bc767b1db7937c45a9393da82bba59db57336445152
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **64.2 MB (64186362 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8697904f4969c9f50c31bbe54f1dc5ac1b641311fa2fe101bed7de04515e09dd`
+-	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
+-	Default Command: `["fluentd"]`
+
+```dockerfile
+# Wed, 27 Mar 2019 12:07:48 GMT
+ADD file:6bf06125d936ccaf67981470df5ef6b9bd5dee3c0ef0e042a448fc60bb02f191 in / 
+# Wed, 27 Mar 2019 12:07:49 GMT
+CMD ["bash"]
+# Wed, 27 Mar 2019 15:02:37 GMT
+RUN apt-get update 	&& apt-get install -y --no-install-recommends 		bzip2 		ca-certificates 		libffi-dev 		libgdbm3 		libgmp-dev 		libssl-dev 		libyaml-dev 		procps 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 27 Mar 2019 15:02:39 GMT
+RUN mkdir -p /usr/local/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
+# Wed, 27 Mar 2019 15:02:40 GMT
+ENV RUBY_MAJOR=2.6
+# Thu, 18 Apr 2019 12:10:35 GMT
+ENV RUBY_VERSION=2.6.3
+# Thu, 18 Apr 2019 12:10:37 GMT
+ENV RUBY_DOWNLOAD_SHA256=11a83f85c03d3f0fc9b8a9b6cad1b2674f26c5aaa43ba858d4b0fcc2b54171e1
+# Thu, 18 Apr 2019 12:13:46 GMT
+RUN set -ex 		&& savedAptMark="$(apt-mark showmanual)" 	&& apt-get update && apt-get install -y --no-install-recommends 		autoconf 		bison 		dpkg-dev 		gcc 		libbz2-dev 		libgdbm-dev 		libglib2.0-dev 		libncurses-dev 		libreadline-dev 		libxml2-dev 		libxslt-dev 		make 		ruby 		wget 		xz-utils 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-mark auto '.*' > /dev/null 	&& apt-mark manual $savedAptMark 	&& find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false 		&& cd / 	&& rm -r /usr/src/ruby 	&& ruby --version && gem --version && bundle --version
+# Thu, 18 Apr 2019 12:13:48 GMT
+ENV GEM_HOME=/usr/local/bundle
+# Thu, 18 Apr 2019 12:13:49 GMT
+ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
+# Thu, 18 Apr 2019 12:13:49 GMT
+ENV PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Thu, 18 Apr 2019 12:13:52 GMT
+RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME"
+# Thu, 18 Apr 2019 12:13:53 GMT
+CMD ["irb"]
+# Sat, 27 Apr 2019 11:57:25 GMT
+LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
+# Sat, 27 Apr 2019 11:57:26 GMT
+LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.4.2
+# Sat, 27 Apr 2019 11:57:26 GMT
+ENV TINI_VERSION=0.18.0
+# Sat, 27 Apr 2019 12:00:06 GMT
+RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && gem install oj -v 3.3.10  && gem install json -v 2.2.0  && gem install fluentd -v 1.4.2  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch"  && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5  && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini  && rm -r /usr/local/bin/tini.asc  && chmod +x /usr/local/bin/tini  && tini -h  && wget -O /tmp/jemalloc-4.5.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/4.5.0/jemalloc-4.5.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-4.5.0.tar.bz2 && cd jemalloc-4.5.0/  && ./configure && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem
+# Sat, 27 Apr 2019 12:00:07 GMT
+RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd
+# Sat, 27 Apr 2019 12:00:08 GMT
+COPY file:06d9a84b9b428b4e0ef5a9e3699798758dc9716908d82091239fb9f85dd30d70 in /fluentd/etc/ 
+# Sat, 27 Apr 2019 12:00:08 GMT
+COPY file:f70a6a04a7c32c744ebb989e7d706ca5f78829c1489be8d165d4b1b682c9eaf8 in /bin/ 
+# Sat, 27 Apr 2019 12:00:09 GMT
+ENV FLUENTD_CONF=fluent.conf
+# Sat, 27 Apr 2019 12:00:09 GMT
+ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
+# Sat, 27 Apr 2019 12:00:10 GMT
+EXPOSE 24224 5140
+# Sat, 27 Apr 2019 12:00:10 GMT
+USER fluent
+# Sat, 27 Apr 2019 12:00:11 GMT
+ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
+# Sat, 27 Apr 2019 12:00:11 GMT
+CMD ["fluentd"]
+```
+
+-	Layers:
+	-	`sha256:fac132c5d16f670820c8c4ae332bd663c2ff856e9af86b2b23a201db263d851e`  
+		Last Modified: Wed, 27 Mar 2019 12:13:15 GMT  
+		Size: 19.3 MB (19282442 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a9c49cc9bf813783c8adad9a8112b31eb2329d6e61f1f236daa69ead9b7c5ae3`  
+		Last Modified: Wed, 27 Mar 2019 15:53:45 GMT  
+		Size: 9.1 MB (9079104 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:819e11271eca83204620d6fb3eeb33dd25ff007c2b251045f34cc378acf4f0cd`  
+		Last Modified: Wed, 27 Mar 2019 15:53:41 GMT  
+		Size: 206.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8871fe4978fa4225668bbc026b62412b971d07ac7df05f300ad4d4d59daa0d97`  
+		Last Modified: Thu, 18 Apr 2019 12:18:20 GMT  
+		Size: 19.3 MB (19293275 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:af854397c90109de28033b52b306dac3e5f40c9231e0b6223e84084c20ff496e`  
+		Last Modified: Thu, 18 Apr 2019 12:18:15 GMT  
+		Size: 184.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c2dd51a056cd8d138974dae5480a5435b1a6a2c10cab58d0a7cc8c765b888911`  
+		Last Modified: Sat, 27 Apr 2019 12:00:35 GMT  
+		Size: 16.5 MB (16528456 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:981a33055afc8359d810b997bb89900ae1cc5012623f033df90f175eb3258024`  
+		Last Modified: Sat, 27 Apr 2019 12:00:30 GMT  
+		Size: 1.8 KB (1843 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b71e73c464886439f12b14f0d73aeb8b72527a77d46d2e6bf37cd26a805f64e9`  
+		Last Modified: Sat, 27 Apr 2019 12:00:30 GMT  
+		Size: 406.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d4028dee228dff909731dc32c8573e694a5430b813cde5554a08f089c7c4915b`  
+		Last Modified: Sat, 27 Apr 2019 12:00:30 GMT  
 		Size: 446.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2151,4 +2680,111 @@ CMD ["fluentd"]
 	-	`sha256:0f21ca67f597481cf3787342d09ffdd43b2970702dfd6eb9c3b5a2e59c0be90c`  
 		Last Modified: Sat, 27 Apr 2019 08:44:16 GMT  
 		Size: 445.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `fluentd:v1.4-debian-2` - linux; s390x
+
+```console
+$ docker pull fluentd@sha256:10ef7fdfa63b4dc2e11bd8dce4326643351e588206eb313af4ba7406cf5d72c6
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **73.8 MB (73758186 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:45804608339a85a2b7e466cc09349c54048b4acdb6b8c0e3fcf5cbf81dc14782`
+-	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
+-	Default Command: `["fluentd"]`
+
+```dockerfile
+# Wed, 27 Mar 2019 11:43:45 GMT
+ADD file:bbc08c16057153af2910791402d3a29eb5da11e030d2fc6778644c444142d2ab in / 
+# Wed, 27 Mar 2019 11:43:46 GMT
+CMD ["bash"]
+# Wed, 27 Mar 2019 15:24:29 GMT
+RUN apt-get update 	&& apt-get install -y --no-install-recommends 		bzip2 		ca-certificates 		libffi-dev 		libgdbm3 		libgmp-dev 		libssl-dev 		libyaml-dev 		procps 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 27 Mar 2019 15:24:32 GMT
+RUN mkdir -p /usr/local/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
+# Wed, 27 Mar 2019 15:24:32 GMT
+ENV RUBY_MAJOR=2.6
+# Thu, 18 Apr 2019 15:42:26 GMT
+ENV RUBY_VERSION=2.6.3
+# Thu, 18 Apr 2019 15:42:27 GMT
+ENV RUBY_DOWNLOAD_SHA256=11a83f85c03d3f0fc9b8a9b6cad1b2674f26c5aaa43ba858d4b0fcc2b54171e1
+# Thu, 18 Apr 2019 15:47:57 GMT
+RUN set -ex 		&& savedAptMark="$(apt-mark showmanual)" 	&& apt-get update && apt-get install -y --no-install-recommends 		autoconf 		bison 		dpkg-dev 		gcc 		libbz2-dev 		libgdbm-dev 		libglib2.0-dev 		libncurses-dev 		libreadline-dev 		libxml2-dev 		libxslt-dev 		make 		ruby 		wget 		xz-utils 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-mark auto '.*' > /dev/null 	&& apt-mark manual $savedAptMark 	&& find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false 		&& cd / 	&& rm -r /usr/src/ruby 	&& ruby --version && gem --version && bundle --version
+# Thu, 18 Apr 2019 15:47:57 GMT
+ENV GEM_HOME=/usr/local/bundle
+# Thu, 18 Apr 2019 15:47:58 GMT
+ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
+# Thu, 18 Apr 2019 15:47:58 GMT
+ENV PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Thu, 18 Apr 2019 15:48:00 GMT
+RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME"
+# Thu, 18 Apr 2019 15:48:01 GMT
+CMD ["irb"]
+# Sat, 27 Apr 2019 11:43:01 GMT
+LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
+# Sat, 27 Apr 2019 11:43:03 GMT
+LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.4.2
+# Sat, 27 Apr 2019 11:43:03 GMT
+ENV TINI_VERSION=0.18.0
+# Sat, 27 Apr 2019 11:47:07 GMT
+RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && gem install oj -v 3.3.10  && gem install json -v 2.2.0  && gem install fluentd -v 1.4.2  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch"  && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5  && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini  && rm -r /usr/local/bin/tini.asc  && chmod +x /usr/local/bin/tini  && tini -h  && wget -O /tmp/jemalloc-4.5.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/4.5.0/jemalloc-4.5.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-4.5.0.tar.bz2 && cd jemalloc-4.5.0/  && ./configure && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem
+# Sat, 27 Apr 2019 11:47:11 GMT
+RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd
+# Sat, 27 Apr 2019 11:47:12 GMT
+COPY file:06d9a84b9b428b4e0ef5a9e3699798758dc9716908d82091239fb9f85dd30d70 in /fluentd/etc/ 
+# Sat, 27 Apr 2019 11:47:13 GMT
+COPY file:f70a6a04a7c32c744ebb989e7d706ca5f78829c1489be8d165d4b1b682c9eaf8 in /bin/ 
+# Sat, 27 Apr 2019 11:47:13 GMT
+ENV FLUENTD_CONF=fluent.conf
+# Sat, 27 Apr 2019 11:47:14 GMT
+ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
+# Sat, 27 Apr 2019 11:47:14 GMT
+EXPOSE 24224 5140
+# Sat, 27 Apr 2019 11:47:15 GMT
+USER fluent
+# Sat, 27 Apr 2019 11:47:16 GMT
+ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
+# Sat, 27 Apr 2019 11:47:19 GMT
+CMD ["fluentd"]
+```
+
+-	Layers:
+	-	`sha256:9ce36a197e11ef57ec11f749055a2d2db6113c6b0026d930d3ddbbd86a7ec15b`  
+		Last Modified: Wed, 27 Mar 2019 11:46:50 GMT  
+		Size: 22.3 MB (22345282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9136d6190ab77b3e9ab9c467fa4d462ec05bc3271cd4c5f140aa2805f83851db`  
+		Last Modified: Wed, 27 Mar 2019 15:49:43 GMT  
+		Size: 11.6 MB (11577628 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bc3a0b1fb24a2e46e9629ed6f6b483f560041432e96e86e23159dbbfdab02bb6`  
+		Last Modified: Wed, 27 Mar 2019 15:49:39 GMT  
+		Size: 207.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:53d24879684d4a4e8b4570e50a16d905c1f033b3ef1482c8bdc8fd2b479982c6`  
+		Last Modified: Thu, 18 Apr 2019 15:59:29 GMT  
+		Size: 20.3 MB (20266423 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:503c0c98aa1ad53de5760a95d495beabe07dcfc056fb8a9d3116aff75ed46568`  
+		Last Modified: Thu, 18 Apr 2019 15:59:26 GMT  
+		Size: 148.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d6559450f01edf09d52d62f75178560a2d7b85b9ba051d89f2ae699230ebe698`  
+		Last Modified: Sat, 27 Apr 2019 11:48:06 GMT  
+		Size: 19.6 MB (19565820 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:89257798a7f525261fc3b670c6d7c6b71dc79489b74883b01f982533a247d7fa`  
+		Last Modified: Sat, 27 Apr 2019 11:47:59 GMT  
+		Size: 1.8 KB (1827 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1b58eb70d5fecb8c815c76d703b229d849a28f96f2768b846efccc9629f93f1b`  
+		Last Modified: Sat, 27 Apr 2019 11:47:59 GMT  
+		Size: 408.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6017a11c2bd1610cc2b517f1ad9f2d2de508cfa8552f0c6b31775a386e10594d`  
+		Last Modified: Sat, 27 Apr 2019 11:47:59 GMT  
+		Size: 443.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

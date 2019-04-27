@@ -1,7 +1,7 @@
 ## `fluentd:latest`
 
 ```console
-$ docker pull fluentd@sha256:5687c14d0a63371aeeae88ca77c3c99a962ed2556edb3b8820a9710a42519c68
+$ docker pull fluentd@sha256:0c090ac54eb40fbf12c45ddc4870e4d92c65049efd10e567fb6855338c7a9e9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,6 +11,7 @@ $ docker pull fluentd@sha256:5687c14d0a63371aeeae88ca77c3c99a962ed2556edb3b8820a
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
+	-	linux; s390x
 
 ### `fluentd:latest` - linux; amd64
 
@@ -345,4 +346,71 @@ CMD ["fluentd"]
 	-	`sha256:a6d8beca48c32b892afeec83feeaef47ac1d48e4fd8bb707c7d4295d03ff1643`  
 		Last Modified: Sat, 27 Apr 2019 08:43:52 GMT  
 		Size: 446.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `fluentd:latest` - linux; s390x
+
+```console
+$ docker pull fluentd@sha256:36397cbf3387e6daabe0c4a87214ceadd61427777ddd94176c13c383a275d3f7
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **13.9 MB (13904732 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4821da075d02e89022f5aa14a9fd8e58b9e8063d02f7267d04239856f7d7e2a4`
+-	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
+-	Default Command: `["fluentd"]`
+
+```dockerfile
+# Wed, 10 Apr 2019 11:42:23 GMT
+ADD file:ab106eb2cf4bf0e1ca7861a56dc24e44dd206fd3ae8d3587684324e5c11136f4 in / 
+# Wed, 10 Apr 2019 11:42:23 GMT
+CMD ["/bin/sh"]
+# Sat, 27 Apr 2019 11:41:39 GMT
+LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
+# Sat, 27 Apr 2019 11:41:39 GMT
+LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.4.2
+# Sat, 27 Apr 2019 11:42:41 GMT
+RUN apk update  && apk add --no-cache         ca-certificates         ruby ruby-irb ruby-etc ruby-webrick         tini  && apk add --no-cache --virtual .build-deps         build-base         ruby-dev gnupg  && echo 'gem: --no-document' >> /etc/gemrc  && gem install oj -v 3.3.10  && gem install json -v 2.2.0  && gem install fluentd -v 1.4.2  && gem install bigdecimal -v 1.3.5  && apk del .build-deps  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem
+# Sat, 27 Apr 2019 11:42:45 GMT
+RUN addgroup -S fluent && adduser -S -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd
+# Sat, 27 Apr 2019 11:42:45 GMT
+COPY file:06d9a84b9b428b4e0ef5a9e3699798758dc9716908d82091239fb9f85dd30d70 in /fluentd/etc/ 
+# Sat, 27 Apr 2019 11:42:46 GMT
+COPY file:f70a6a04a7c32c744ebb989e7d706ca5f78829c1489be8d165d4b1b682c9eaf8 in /bin/ 
+# Sat, 27 Apr 2019 11:42:46 GMT
+ENV FLUENTD_CONF=fluent.conf
+# Sat, 27 Apr 2019 11:42:47 GMT
+ENV LD_PRELOAD=
+# Sat, 27 Apr 2019 11:42:48 GMT
+EXPOSE 24224 5140
+# Sat, 27 Apr 2019 11:42:49 GMT
+USER fluent
+# Sat, 27 Apr 2019 11:42:50 GMT
+ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
+# Sat, 27 Apr 2019 11:42:50 GMT
+CMD ["fluentd"]
+```
+
+-	Layers:
+	-	`sha256:5b51e37a522c2e7cd3c67e8a3e5500b45189ea6698e9fdaed7f5d48282326633`  
+		Last Modified: Wed, 10 Apr 2019 11:43:06 GMT  
+		Size: 2.5 MB (2543326 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:641b3bd07969fe864d82f770b0646412d7506c39a2c10c2b8f256ad26088dae5`  
+		Last Modified: Sat, 27 Apr 2019 11:47:48 GMT  
+		Size: 11.4 MB (11359233 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:901a6c4ffd293822fcdcef69062c3b8d8678722317f4e1d228acc3009bd9266d`  
+		Last Modified: Sat, 27 Apr 2019 11:47:41 GMT  
+		Size: 1.3 KB (1317 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:19439ec7cdbcc3ea2b62bad58b3d014d2f40848e012fe2bbf3e98654466ff464`  
+		Last Modified: Sat, 27 Apr 2019 11:47:41 GMT  
+		Size: 409.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8cf96bc1b46b7cf59b39b6d60ccf82918b6b41169f4f152f234a4fdfefa1651b`  
+		Last Modified: Sat, 27 Apr 2019 11:47:41 GMT  
+		Size: 447.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
