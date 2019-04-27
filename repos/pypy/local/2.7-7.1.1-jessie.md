@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:44757c525c99fb3d1764f4900d153d3d1384fc507de44c3d4751e376d0695e26`
-- Created: `2019-04-17T23:27:11.527249904Z`
-- Virtual Size: ~ 743.36 Mb  
+- Image ID: `sha256:01cf26bda037788886a8bab4c46d6f7e92d54b52adc7049bdc34f0cc631e9f19`
+- Created: `2019-04-25T00:28:32.66175044Z`
+- Virtual Size: ~ 743.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `PYPY_VERSION=7.1.1`
-  - `PYTHON_PIP_VERSION=19.0.3`
+  - `PYTHON_PIP_VERSION=19.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -4750,20 +4750,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=215-17+deb8u11
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215-17+deb8u11.dsc' systemd_215-17+deb8u11.dsc 4414 SHA256:a155ce9a3a8c76b4a23795d259fae505f700a73e0bdcbf1fdea213e8fdf53d8c
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215.orig.tar.xz' systemd_215.orig.tar.xz 2888652 SHA256:ce76a3c05e7d4adc806a3446a5510c0c9b76a33f19adc32754b69a0945124505
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215-17+deb8u11.debian.tar.xz' systemd_215-17+deb8u11.debian.tar.xz 245604 SHA256:4e9d765876b1c90a6f1155e4c04e84c9b900990d4c2ef973a35a9cf2fc4f16fd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/215-17+deb8u11/
 
-- https://sources.debian.net/src/systemd/215-17+deb8u11/ (for browsing the source)
-- https://sources.debian.net/src/systemd/215-17+deb8u11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/215-17+deb8u11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59`
 
