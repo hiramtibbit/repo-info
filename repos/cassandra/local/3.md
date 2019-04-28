@@ -249,19 +249,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=9.9+deb9u8
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u8.dsc' base-files_9.9+deb9u8.dsc 1095 SHA256:47c7f433564ff41cee51d4f089c064f334c3b1cd978aa87fafab35182787a2b4
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u8.tar.xz' base-files_9.9+deb9u8.tar.xz 63056 SHA256:864151c7a2e6b41fcb465672484cdb74979881d3043f5db70c2720b9c929e8c1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/9.9+deb9u8/
 
-- https://sources.debian.net/src/base-files/9.9+deb9u8/ (for browsing the source)
-- https://sources.debian.net/src/base-files/9.9+deb9u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/9.9+deb9u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -349,19 +343,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates-java/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates-java=20170929~deb9u1
-'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20170929~deb9u1.dsc' ca-certificates-java_20170929~deb9u1.dsc 1911 SHA256:582795dfacd82ab6899991c36805c89ecff1665966e760f27ea0b2391b07c438
-'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20170929~deb9u1.tar.xz' ca-certificates-java_20170929~deb9u1.tar.xz 16284 SHA256:50a12804d4b00608d29401a304cfbc7901f88fc9f2d2860e02dbb266073edd02
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ca-certificates-java/20170929~deb9u1/
 
-- https://sources.debian.net/src/ca-certificates-java/20170929~deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates-java/20170929~deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates-java/20170929~deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ca-certificates=20161130+nmu1+deb9u1`
 
@@ -1272,19 +1260,13 @@ Licenses: (parsed from: `/usr/share/doc/java-common/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris java-common=0.58
-'http://deb.debian.org/debian/pool/main/j/java-common/java-common_0.58.dsc' java-common_0.58.dsc 2109 SHA256:10cb7d741100cec958b6aa00b3f990bcae5635040f3f1e3ad9323842a1eb12b5
-'http://deb.debian.org/debian/pool/main/j/java-common/java-common_0.58.tar.xz' java-common_0.58.tar.xz 13008 SHA256:730e1b8e5486a13a92e152dcf2bfb9a12a5e580258d76230c7181edf45765733
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/java-common/0.58/
 
-- https://sources.debian.net/src/java-common/0.58/ (for browsing the source)
-- https://sources.debian.net/src/java-common/0.58/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/java-common/0.58/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `jemalloc=3.6.0-9.1`
 
@@ -2391,9 +2373,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openjdk-8=8u212-b01-1~deb9u1
-'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-8/openjdk-8_8u212-b01-1~deb9u1.dsc' openjdk-8_8u212-b01-1~deb9u1.dsc 4492 SHA256:53185e441e3e2d7be1f5d80279a743de2465ed73353dc33f5ab3769f671e3fe2
-'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-8/openjdk-8_8u212-b01.orig.tar.gz' openjdk-8_8u212-b01.orig.tar.gz 70706146 SHA256:c07789df52c319fe17eba60b069e884a1930e96f61d6b5c704bd92ecf3ea0b65
-'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-8/openjdk-8_8u212-b01-1~deb9u1.debian.tar.xz' openjdk-8_8u212-b01-1~deb9u1.debian.tar.xz 240100 SHA256:9b53460e31ad4cefa089c4298f44e98909d11501d530283291fb748ae14e13ba
+'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u212-b01-1~deb9u1.dsc' openjdk-8_8u212-b01-1~deb9u1.dsc 4492 SHA256:53185e441e3e2d7be1f5d80279a743de2465ed73353dc33f5ab3769f671e3fe2
+'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u212-b01.orig.tar.gz' openjdk-8_8u212-b01.orig.tar.gz 70706146 SHA256:c07789df52c319fe17eba60b069e884a1930e96f61d6b5c704bd92ecf3ea0b65
+'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u212-b01-1~deb9u1.debian.tar.xz' openjdk-8_8u212-b01-1~deb9u1.debian.tar.xz 240100 SHA256:9b53460e31ad4cefa089c4298f44e98909d11501d530283291fb748ae14e13ba
 ```
 
 Other potentially useful URLs:
@@ -2993,21 +2975,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018i-0+deb9u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i-0+deb9u1.dsc' tzdata_2018i-0+deb9u1.dsc 2270 SHA256:1ac28ccb98227c943c903778a6f8cf3cb567cf98e5558099236db8a93e9084d6
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i.orig.tar.gz' tzdata_2018i.orig.tar.gz 377009 SHA256:82c45ef84ca3bc01d0a4a397ba8adeb8f7f199c6550740587c6ac5a7108c00d9
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i.orig.tar.gz.asc' tzdata_2018i.orig.tar.gz.asc 833 SHA256:eeaef7ccf3f1ea35274f480ad439c1ac0d6bb2a266f3dffd34ea6f282d915f2b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i-0+deb9u1.debian.tar.xz' tzdata_2018i-0+deb9u1.debian.tar.xz 101576 SHA256:9045fdd19624d963371c0ab769923ba6cda3a107b1a7669e591d3f72dcd93ed3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2018i-0+deb9u1/
 
-- https://sources.debian.net/src/tzdata/2018i-0+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018i-0+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018i-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0036`
 
