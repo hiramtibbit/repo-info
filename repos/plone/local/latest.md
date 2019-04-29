@@ -173,19 +173,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=9.9+deb9u8
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u8.dsc' base-files_9.9+deb9u8.dsc 1095 SHA256:47c7f433564ff41cee51d4f089c064f334c3b1cd978aa87fafab35182787a2b4
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u8.tar.xz' base-files_9.9+deb9u8.tar.xz 63056 SHA256:864151c7a2e6b41fcb465672484cdb74979881d3043f5db70c2720b9c929e8c1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/9.9+deb9u8/
 
-- https://sources.debian.net/src/base-files/9.9+deb9u8/ (for browsing the source)
-- https://sources.debian.net/src/base-files/9.9+deb9u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/9.9+deb9u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -2034,9 +2028,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openjpeg2=2.1.2-1.1+deb9u3
-'http://security.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.1.2-1.1+deb9u3.dsc' openjpeg2_2.1.2-1.1+deb9u3.dsc 2797 SHA256:dcb5cf6adee12ab0cc23d9a08731df6ee87406a98f623233348580e9f0373f78
-'http://security.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.1.2.orig.tar.gz' openjpeg2_2.1.2.orig.tar.gz 1987071 SHA256:4ce77b6ef538ef090d9bde1d5eeff8b3069ab56c4906f083475517c2c023dfa7
-'http://security.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.1.2-1.1+deb9u3.debian.tar.xz' openjpeg2_2.1.2-1.1+deb9u3.debian.tar.xz 25464 SHA256:c168bec05ef60b78e1d219760d6faf67e58f9055cbde770005bd12123c3b0002
+'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.1.2-1.1+deb9u3.dsc' openjpeg2_2.1.2-1.1+deb9u3.dsc 2797 SHA256:dcb5cf6adee12ab0cc23d9a08731df6ee87406a98f623233348580e9f0373f78
+'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.1.2.orig.tar.gz' openjpeg2_2.1.2.orig.tar.gz 1987071 SHA256:4ce77b6ef538ef090d9bde1d5eeff8b3069ab56c4906f083475517c2c023dfa7
+'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.1.2-1.1+deb9u3.debian.tar.xz' openjpeg2_2.1.2-1.1+deb9u3.debian.tar.xz 25464 SHA256:c168bec05ef60b78e1d219760d6faf67e58f9055cbde770005bd12123c3b0002
 ```
 
 Other potentially useful URLs:
@@ -2325,9 +2319,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris rsync=3.1.2-1+deb9u1
-'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.1.2-1+deb9u1.dsc' rsync_3.1.2-1+deb9u1.dsc 1873 SHA256:991696d7997fc545ddbb784a315b21c252133368caefdb5efea460d4c4161050
-'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.1.2.orig.tar.gz' rsync_3.1.2.orig.tar.gz 892724 SHA256:ecfa62a7fa3c4c18b9eccd8c16eaddee4bd308a76ea50b5c02a5840f09c0a1c2
-'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.1.2-1+deb9u1.debian.tar.xz' rsync_3.1.2-1+deb9u1.debian.tar.xz 27796 SHA256:913fcaa83d9d2d9aa344b9ea30b4b8c38000ef54d0a5c8c112b7f110a88535b4
+'http://security.debian.org/debian-security/pool/updates/main/r/rsync/rsync_3.1.2-1+deb9u1.dsc' rsync_3.1.2-1+deb9u1.dsc 1873 SHA256:991696d7997fc545ddbb784a315b21c252133368caefdb5efea460d4c4161050
+'http://security.debian.org/debian-security/pool/updates/main/r/rsync/rsync_3.1.2.orig.tar.gz' rsync_3.1.2.orig.tar.gz 892724 SHA256:ecfa62a7fa3c4c18b9eccd8c16eaddee4bd308a76ea50b5c02a5840f09c0a1c2
+'http://security.debian.org/debian-security/pool/updates/main/r/rsync/rsync_3.1.2-1+deb9u1.debian.tar.xz' rsync_3.1.2-1+deb9u1.debian.tar.xz 27796 SHA256:913fcaa83d9d2d9aa344b9ea30b4b8c38000ef54d0a5c8c112b7f110a88535b4
 ```
 
 Other potentially useful URLs:
@@ -2575,21 +2569,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018i-0+deb9u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i-0+deb9u1.dsc' tzdata_2018i-0+deb9u1.dsc 2270 SHA256:1ac28ccb98227c943c903778a6f8cf3cb567cf98e5558099236db8a93e9084d6
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i.orig.tar.gz' tzdata_2018i.orig.tar.gz 377009 SHA256:82c45ef84ca3bc01d0a4a397ba8adeb8f7f199c6550740587c6ac5a7108c00d9
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i.orig.tar.gz.asc' tzdata_2018i.orig.tar.gz.asc 833 SHA256:eeaef7ccf3f1ea35274f480ad439c1ac0d6bb2a266f3dffd34ea6f282d915f2b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i-0+deb9u1.debian.tar.xz' tzdata_2018i-0+deb9u1.debian.tar.xz 101576 SHA256:9045fdd19624d963371c0ab769923ba6cda3a107b1a7669e591d3f72dcd93ed3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2018i-0+deb9u1/
 
-- https://sources.debian.net/src/tzdata/2018i-0+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018i-0+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018i-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0036`
 
