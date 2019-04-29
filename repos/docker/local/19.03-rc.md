@@ -1,10 +1,10 @@
-# `docker:19.03.0-beta2`
+# `docker:19.03.0-beta3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1a32b0745c6383692dc7be4d465dfab0c13ae7e8fece147437237a0f5fd4a4e4`
-- Created: `2019-04-22T22:25:43.788038077Z`
-- Virtual Size: ~ 213.22 Mb  
+- Image ID: `sha256:d82298dc89cfb42871e82ed00cfe23977e69f7c5f53e4fc9176343ab94cd685d`
+- Created: `2019-04-25T23:19:47.734993637Z`
+- Virtual Size: ~ 213.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_CHANNEL=test`
-  - `DOCKER_VERSION=19.03.0-beta2`
+  - `DOCKER_VERSION=19.03.0-beta3`
 
 ## `apk` (`.apk`-based packages)
 

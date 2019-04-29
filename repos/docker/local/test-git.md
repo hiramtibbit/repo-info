@@ -1,10 +1,10 @@
-# `docker:19.03.0-beta2-git`
+# `docker:19.03.0-beta3-git`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8e13dc74ce091dd99ac4b0179ce3b67f3e1bd050979c6b10ce6bfb82a207f801`
-- Created: `2019-04-22T22:25:55.42577078Z`
-- Virtual Size: ~ 233.48 Mb  
+- Image ID: `sha256:a7bd614ceff7bcbad93524edca0e236b2cc02aeaa090378fa5d4ac9e000fb888`
+- Created: `2019-04-25T23:19:59.189792994Z`
+- Virtual Size: ~ 233.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_CHANNEL=test`
-  - `DOCKER_VERSION=19.03.0-beta2`
+  - `DOCKER_VERSION=19.03.0-beta3`
 
 ## `apk` (`.apk`-based packages)
 
@@ -376,16 +376,16 @@ MIT
 ### `apk` package: `openssh-client`
 
 ```console
-openssh-client-7.9_p1-r4 description:
+openssh-client-7.9_p1-r5 description:
 OpenBSD's SSH client
 
-openssh-client-7.9_p1-r4 webpage:
+openssh-client-7.9_p1-r5 webpage:
 https://www.openssh.org/portable.html
 
-openssh-client-7.9_p1-r4 installed size:
+openssh-client-7.9_p1-r5 installed size:
 2715648
 
-openssh-client-7.9_p1-r4 license:
+openssh-client-7.9_p1-r5 license:
 BSD
 
 ```
@@ -393,16 +393,16 @@ BSD
 ### `apk` package: `openssh-keygen`
 
 ```console
-openssh-keygen-7.9_p1-r4 description:
+openssh-keygen-7.9_p1-r5 description:
 ssh helper program for generating keys
 
-openssh-keygen-7.9_p1-r4 webpage:
+openssh-keygen-7.9_p1-r5 webpage:
 https://www.openssh.org/portable.html
 
-openssh-keygen-7.9_p1-r4 installed size:
+openssh-keygen-7.9_p1-r5 installed size:
 380928
 
-openssh-keygen-7.9_p1-r4 license:
+openssh-keygen-7.9_p1-r5 license:
 BSD
 
 ```
