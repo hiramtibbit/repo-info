@@ -1,7 +1,7 @@
 ## `nextcloud:14-apache`
 
 ```console
-$ docker pull nextcloud@sha256:a42abb9d1354037e7dbcb6ec5c288bb265b3852a94b3c2da36b4741979959655
+$ docker pull nextcloud@sha256:42bbe5def2ca1e0a55f78de2a8c1dcecaafb8c547726bd41e0ccdcfd73bae77f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,14 +16,14 @@ $ docker pull nextcloud@sha256:a42abb9d1354037e7dbcb6ec5c288bb265b3852a94b3c2da3
 ### `nextcloud:14-apache` - linux; amd64
 
 ```console
-$ docker pull nextcloud@sha256:c66449197e103ec33cb13d21db73bfa355a2dab7273a3c3768e1d2a9121dbf7e
+$ docker pull nextcloud@sha256:f077a0744ca93d80f883a3a17143804b4090a3d616ad98dd45530c9ef6b1d6c9
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.3 MB (208303905 bytes)**  
+-	Total Size: **208.3 MB (208304561 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c04498d5ba08866d05890052614bf557839ba2341eac6daa6c83bec694e0916`
+-	Image ID: `sha256:06424b84c401bcd8a8538d5c3b1606dffd188bb2f0f207a45ebe53d8591fa719`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -104,13 +104,13 @@ RUN a2enmod rewrite remoteip ;    {     echo RemoteIPHeader X-Real-IP ;     echo
 ENV NEXTCLOUD_VERSION=14.0.10
 # Tue, 09 Apr 2019 23:22:01 GMT
 RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
-# Tue, 09 Apr 2019 23:22:01 GMT
-COPY multi:5ccd74024c795c246cbd9cdc108de31e6dba873dd783f90af54ceb6d82a2692e in / 
-# Tue, 09 Apr 2019 23:22:02 GMT
-COPY multi:99ef5f8cff1e4ea70df1acc5f5f5da22fd63ce35761265628aa6550bb64b164c in /usr/src/nextcloud/config/ 
-# Tue, 09 Apr 2019 23:22:02 GMT
+# Mon, 29 Apr 2019 17:26:51 GMT
+COPY multi:9becf8db86a36079e58a2e1e3148078d695076b3e1553c15ddfdfca7f992716a in / 
+# Mon, 29 Apr 2019 17:26:51 GMT
+COPY multi:5cf40efacac43f35e2bacdff3007ac2827f574b362232829de7112d9559cb801 in /usr/src/nextcloud/config/ 
+# Mon, 29 Apr 2019 17:26:51 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 09 Apr 2019 23:22:02 GMT
+# Mon, 29 Apr 2019 17:26:52 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -187,13 +187,13 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 09 Apr 2019 23:25:24 GMT  
 		Size: 59.5 MB (59502929 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97739b7441ab1dade1eacdaa663a75825b0436a515c9e235379ab9d0f92abda8`  
-		Last Modified: Tue, 09 Apr 2019 23:25:13 GMT  
-		Size: 1.9 KB (1921 bytes)  
+	-	`sha256:ffe8ddcaa035ad34a0a8d70c979c5f124d700092f6f604e63be962306d71cbcc`  
+		Last Modified: Mon, 29 Apr 2019 17:29:15 GMT  
+		Size: 2.4 KB (2373 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8724e505574c36afb8832ac9c2f00d9ef8a2495cd349cf1f4b2dbe932b3a6792`  
-		Last Modified: Tue, 09 Apr 2019 23:25:13 GMT  
-		Size: 923.0 B  
+	-	`sha256:dc49f7efe103e55b1c16334b9a516d5fed429db99e6356eef7803013edd0ac44`  
+		Last Modified: Mon, 29 Apr 2019 17:29:15 GMT  
+		Size: 1.1 KB (1127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:14-apache` - linux; arm variant v5
