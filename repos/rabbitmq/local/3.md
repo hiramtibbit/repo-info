@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a8443c8aa9a330f7ae9b288761fda360af6b3ce823120edbb61cd26bc5d43f02`
-- Created: `2019-04-17T23:57:21.279836103Z`
-- Virtual Size: ~ 183.38 Mb  
+- Image ID: `sha256:5c0e9749ca78b36b48fc4efc73d32dca40fc164d6f21d6fddb0b6bb79c7ca021`
+- Created: `2019-04-26T23:29:21.716705696Z`
+- Virtual Size: ~ 196.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,8 +14,8 @@
   - `OPENSSL_VERSION=1.1.1b`
   - `OPENSSL_SOURCE_SHA256=5c557b023230413dfb0756f3137a13e6d726838ccd1430888ad15bfb2b43ea4b`
   - `OPENSSL_PGP_KEY_ID=0x8657ABB260F056B1E5190839D9C4D26D0E604491`
-  - `OTP_VERSION=21.3.5`
-  - `OTP_SOURCE_SHA256=1223b367f1f165fcbaaeea23e7dbc0fec2d2877d0c1b6bbeefef5ac3b1e528b6`
+  - `OTP_VERSION=21.3.7`
+  - `OTP_SOURCE_SHA256=c14aebda6afae82809325c18d51a66e618b3f237b856080a7d8f4b5bb089e758`
   - `RABBITMQ_DATA_DIR=/var/lib/rabbitmq`
   - `RABBITMQ_VERSION=3.7.14`
   - `RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA`
@@ -67,21 +67,25 @@ $ apt-get source -qq --print-uris adduser=3.116ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.116ubuntu1.tar.xz' adduser_3.116ubuntu1.tar.xz 216868 SHA256:f34f1d95e96ecae3b068a3dd666848f82f06cbb26152c56a6b72bd71555a8f18
 ```
 
-### `dpkg` source package: `apt=1.6.8`
+### `dpkg` source package: `apt=1.6.10`
 
 Binary Packages:
 
-- `apt=1.6.8`
-- `libapt-pkg5.0:amd64=1.6.8`
+- `apt=1.6.10`
+- `libapt-pkg5.0:amd64=1.6.10`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=1.6.10
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.10.dsc' apt_1.6.10.dsc 2768 SHA256:d420ec284effadf6df0492246bb4abdf66c867d82fe7a24375dad1fbe1abd9bf
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.10.tar.xz' apt_1.6.10.tar.xz 2156180 SHA256:eea7420e33976526d6d05d2f5045cab706df7a18bbd763aa284390b5d6ccc6e3
+```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
@@ -414,14 +418,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`)
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.3.0-27ubuntu1~18.04
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.3.0-27ubuntu1~18.04.dsc' gcc-7_7.3.0-27ubuntu1~18.04.dsc 28285 SHA256:5374b6648fdc46ff2d9b5267d9b03bbf6c9d7a48e273f666d3a14bcdb01f2ce0
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.3.0.orig.tar.gz' gcc-7_7.3.0.orig.tar.gz 73555852 SHA256:9e29793395d3012c0d71ee5f680642c594bf1dee0184cd74d2e0e67c70598283
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.3.0-27ubuntu1~18.04.diff.gz' gcc-7_7.3.0-27ubuntu1~18.04.diff.gz 996303 SHA256:ad7f083469cd4b7dad8796ed779504e742caae862ac13351ca6fb0b27d745a56
-```
 
 ### `dpkg` source package: `gcc-8=8.2.0-1ubuntu2~18.04`
 
@@ -440,14 +439,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8.2.0-1ubuntu2~18.04
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0-1ubuntu2~18.04.dsc' gcc-8_8.2.0-1ubuntu2~18.04.dsc 36291 SHA256:73af7438517e473ce305701bab7d9fa764e59432317f8244112046bda9633136
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0.orig.tar.gz' gcc-8_8.2.0.orig.tar.gz 75164400 SHA256:e1009caeec1d024f278de02238d3a558bc23b0cd3ae08c885c36fe5a44b3269d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0-1ubuntu2~18.04.diff.gz' gcc-8_8.2.0-1ubuntu2~18.04.diff.gz 3960987 SHA256:0d9d73f1de12d04fcfe9042f32fc97a19e0f5439b2d553ce450405642a3494f5
-```
 
 ### `dpkg` source package: `glibc=2.27-3ubuntu1`
 
@@ -757,11 +751,11 @@ $ apt-get source -qq --print-uris libidn2=2.0.4-1.1build2
 'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn2/libidn2_2.0.4-1.1build2.debian.tar.xz' libidn2_2.0.4-1.1build2.debian.tar.xz 10285784 SHA256:fd3d28167dba38fcfd2951f09a6dc5408fa0a62c68597e743bb20e6b0a0367d1
 ```
 
-### `dpkg` source package: `libseccomp=2.3.1-2.1ubuntu4`
+### `dpkg` source package: `libseccomp=2.3.1-2.1ubuntu4.1`
 
 Binary Packages:
 
-- `libseccomp2:amd64=2.3.1-2.1ubuntu4`
+- `libseccomp2:amd64=2.3.1-2.1ubuntu4.1`
 
 Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
@@ -771,10 +765,10 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libseccomp=2.3.1-2.1ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1ubuntu4.dsc' libseccomp_2.3.1-2.1ubuntu4.dsc 2248 SHA256:ad6ca3804ad758a00401f11d1a0a6a2e1da132bfcd47b58a60d0c83929271d96
+$ apt-get source -qq --print-uris libseccomp=2.3.1-2.1ubuntu4.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1ubuntu4.1.dsc' libseccomp_2.3.1-2.1ubuntu4.1.dsc 2270 SHA256:1f6e43a20c88c60ef306367ead0b7521ae29cfab6ec144f720221f08266495fb
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1.orig.tar.gz' libseccomp_2.3.1.orig.tar.gz 552299 SHA256:ff5bdd2168790f1979e24eaa498f8606c2f2d96f08a8dc4006a2e88affa4562b
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1ubuntu4.debian.tar.xz' libseccomp_2.3.1-2.1ubuntu4.debian.tar.xz 17516 SHA256:1acba6ca57b66015a876fbb342b1a1a22721c410fa1c597b08498369edc607f5
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1ubuntu4.1.debian.tar.xz' libseccomp_2.3.1-2.1ubuntu4.1.debian.tar.xz 22068 SHA256:c3f4bb21e442f2856b9c8240cbfe7322bb79507bf1ea4955e3db99dd3fa39fe0
 ```
 
 ### `dpkg` source package: `libselinux=2.7-2build2`
@@ -861,11 +855,11 @@ $ apt-get source -qq --print-uris libtasn1-6=4.13-2
 'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.13-2.debian.tar.xz' libtasn1-6_4.13-2.debian.tar.xz 63332 SHA256:f36a43fb898c031b6b1a5f43b35af1aea95ac164bb2b57c7f07d1c098ed9f7eb
 ```
 
-### `dpkg` source package: `libunistring=0.9.9-0ubuntu1`
+### `dpkg` source package: `libunistring=0.9.9-0ubuntu2`
 
 Binary Packages:
 
-- `libunistring2:amd64=0.9.9-0ubuntu1`
+- `libunistring2:amd64=0.9.9-0ubuntu2`
 
 Licenses: (parsed from: `/usr/share/doc/libunistring2/copyright`)
 
@@ -884,10 +878,10 @@ Licenses: (parsed from: `/usr/share/doc/libunistring2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libunistring=0.9.9-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunistring/libunistring_0.9.9-0ubuntu1.dsc' libunistring_0.9.9-0ubuntu1.dsc 1974 SHA256:ae7c9c50fd8ba84a19b4304deb7e924e3c51e5285909a373d5bccb3b6f85b6fb
+$ apt-get source -qq --print-uris libunistring=0.9.9-0ubuntu2
+'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunistring/libunistring_0.9.9-0ubuntu2.dsc' libunistring_0.9.9-0ubuntu2.dsc 2006 SHA256:b2c297bb30b94a8b4435bb749f0f65564376049fbaf262e9689435217d55a38b
 'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunistring/libunistring_0.9.9.orig.tar.xz' libunistring_0.9.9.orig.tar.xz 2042992 SHA256:a4d993ecfce16cf503ff7579f5da64619cee66226fb3b998dafb706190d9a833
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunistring/libunistring_0.9.9-0ubuntu1.debian.tar.xz' libunistring_0.9.9-0ubuntu1.debian.tar.xz 40024 SHA256:86f14f6266d66b9aa613ac2263b6d73163ab3865144c1a68fc6fb401e52360dc
+'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunistring/libunistring_0.9.9-0ubuntu2.debian.tar.xz' libunistring_0.9.9-0ubuntu2.debian.tar.xz 40424 SHA256:cb7a56608d98804e4dc83e1cae6035ef6b89e18f3dcbcd44afb16e32313ed4ba
 ```
 
 ### `dpkg` source package: `libzstd=1.3.3+dfsg-2ubuntu1`
@@ -1224,12 +1218,12 @@ $ apt-get source -qq --print-uris shadow=1:4.5-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5-1ubuntu1.debian.tar.xz' shadow_4.5-1ubuntu1.debian.tar.xz 470524 SHA256:51e534983f0500229b51b3f3ccbee3b041e48d3ea6e5f64c914351a0e996dc05
 ```
 
-### `dpkg` source package: `systemd=237-3ubuntu10.13`
+### `dpkg` source package: `systemd=237-3ubuntu10.21`
 
 Binary Packages:
 
-- `libsystemd0:amd64=237-3ubuntu10.13`
-- `libudev1:amd64=237-3ubuntu10.13`
+- `libsystemd0:amd64=237-3ubuntu10.21`
+- `libudev1:amd64=237-3ubuntu10.21`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1241,9 +1235,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=237-3ubuntu10.21
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.21.dsc' systemd_237-3ubuntu10.21.dsc 5149 SHA256:2c3d4d2f7eb889bba214ab1bf25daa1871402050f3ed128ab40655c73fe266ab
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA256:c83dabbe1c9de6b9db1dafdb7e04140c7d0535705c68842f6c0768653ba4913c
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.21.debian.tar.xz' systemd_237-3ubuntu10.21.debian.tar.xz 213008 SHA256:e41c3ffe44c696a619f43bb6cbf07fb292feef1dcb725c770fea325ab6f51f26
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 
