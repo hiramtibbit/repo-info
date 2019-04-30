@@ -2,23 +2,23 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:50367883f660f171707eb77999e3dbbe8aa663fa093a37c48ae5aa8a82380f4c`
-- Created: `2019-04-03T22:24:41.841847455Z`
-- Virtual Size: ~ 273.08 Mb  
+- Image ID: `sha256:3273bf1337711e5c9a5095a02ab39a0df56619364f1143c50cbb14faf09672ca`
+- Created: `2019-04-29T18:00:34.917453989Z`
+- Virtual Size: ~ 276.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ol/helpers/runtime/docker-server.sh"]`
 - Command: `["/opt/ol/wlp/bin/server","run","defaultServer"]`
 - Environment:
   - `PATH=/opt/ol/wlp/bin:/opt/ol/docker/:/opt/ol/helpers/build:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr5fp31`
+  - `JAVA_VERSION=1.8.0_sr5fp35`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ol/wlp/output`
   - `WLP_SKIP_MAXPERMSIZE=true`
   - `RANDFILE=/tmp/.rnd`
-  - `JVM_ARGS=-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/`
+  - `JVM_ARGS=-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/ -XX:+UseContainerSupport`
   - `KEYSTORE_REQUIRED=true`
 - Labels:
   - `github=https://github.com/OpenLiberty/ci.docker`
@@ -320,16 +320,16 @@ GPL2
 ### `apk` package: `wget`
 
 ```console
-wget-1.20.1-r0 description:
+wget-1.20.3-r0 description:
 A network utility to retrieve files from the Web
 
-wget-1.20.1-r0 webpage:
+wget-1.20.3-r0 webpage:
 https://www.gnu.org/software/wget/wget.html
 
-wget-1.20.1-r0 installed size:
-475136
+wget-1.20.3-r0 installed size:
+479232
 
-wget-1.20.1-r0 license:
+wget-1.20.3-r0 license:
 GPL3+
 
 ```
