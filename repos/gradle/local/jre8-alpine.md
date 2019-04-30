@@ -1,9 +1,9 @@
-# `gradle:5.4.0-jre8-alpine`
+# `gradle:5.4.1-jre8-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b19e7efdbe64bfa3037b66a42cafcb664a8d347d4f60bf59119ed3ce60f365ff`
-- Created: `2019-04-16T21:20:33.073230563Z`
+- Image ID: `sha256:f0659b67cb77984d5c61caa88b3168d0d940115770c9a18f23aa9e3d51b77e7a`
+- Created: `2019-04-27T00:26:11.235786207Z`
 - Virtual Size: ~ 184.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,7 +15,7 @@
   - `JAVA_VERSION=8u201`
   - `JAVA_ALPINE_VERSION=8.201.08-r1`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=5.4`
+  - `GRADLE_VERSION=5.4.1`
 
 ## `apk` (`.apk`-based packages)
 
