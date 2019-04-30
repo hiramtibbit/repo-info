@@ -156,19 +156,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=9.9+deb9u8
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u8.dsc' base-files_9.9+deb9u8.dsc 1095 SHA256:47c7f433564ff41cee51d4f089c064f334c3b1cd978aa87fafab35182787a2b4
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u8.tar.xz' base-files_9.9+deb9u8.tar.xz 63056 SHA256:864151c7a2e6b41fcb465672484cdb74979881d3043f5db70c2720b9c929e8c1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/9.9+deb9u8/
 
-- https://sources.debian.net/src/base-files/9.9+deb9u8/ (for browsing the source)
-- https://sources.debian.net/src/base-files/9.9+deb9u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/9.9+deb9u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -1414,20 +1408,13 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1/copyright`)
 
 - `BSD3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh2=1.7.0-1
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.7.0-1.dsc' libssh2_1.7.0-1.dsc 1828 SHA256:4f2880ce02d40c4904f750687424e9f2c1aa68a4632da9866e08c809a69f7425
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.7.0.orig.tar.gz' libssh2_1.7.0.orig.tar.gz 811714 SHA256:e4561fd43a50539a8c2ceb37841691baf03ecb7daf043766da1b112e4280d584
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.7.0-1.debian.tar.xz' libssh2_1.7.0-1.debian.tar.xz 6396 SHA256:2f4fb78f0d6d33492ef63e04a0d007f03e56466542c0b8271bbcdcb530f31f8e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libssh2/1.7.0-1/
 
-- https://sources.debian.net/src/libssh2/1.7.0-1/ (for browsing the source)
-- https://sources.debian.net/src/libssh2/1.7.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libssh2/1.7.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-6=4.10-1.1+deb9u1`
 
@@ -2070,20 +2057,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.6=9.6.11-0+deb9u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.11-0+deb9u1.dsc' postgresql-9.6_9.6.11-0+deb9u1.dsc 3709 SHA256:23911f168aa142cc997742ca6606486174f1e5efb23fc2d33486f70256d7ff3f
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.11.orig.tar.bz2' postgresql-9.6_9.6.11.orig.tar.bz2 20009048 SHA256:38250adc69a1e8613fb926c894cda1d01031391a03648894b9a6e13ff354a530
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.11-0+deb9u1.debian.tar.xz' postgresql-9.6_9.6.11-0+deb9u1.debian.tar.xz 23968 SHA256:06082c0afa7ce1841dc73c61b503b4aff8235450c48abd389ef881b6312817b3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-9.6/9.6.11-0+deb9u1/
 
-- https://sources.debian.net/src/postgresql-9.6/9.6.11-0+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-9.6/9.6.11-0+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-9.6/9.6.11-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `psqlodbc=1:09.05.0400-2`
 
@@ -2489,21 +2469,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018i-0+deb9u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i-0+deb9u1.dsc' tzdata_2018i-0+deb9u1.dsc 2270 SHA256:1ac28ccb98227c943c903778a6f8cf3cb567cf98e5558099236db8a93e9084d6
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i.orig.tar.gz' tzdata_2018i.orig.tar.gz 377009 SHA256:82c45ef84ca3bc01d0a4a397ba8adeb8f7f199c6550740587c6ac5a7108c00d9
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i.orig.tar.gz.asc' tzdata_2018i.orig.tar.gz.asc 833 SHA256:eeaef7ccf3f1ea35274f480ad439c1ac0d6bb2a266f3dffd34ea6f282d915f2b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i-0+deb9u1.debian.tar.xz' tzdata_2018i-0+deb9u1.debian.tar.xz 101576 SHA256:9045fdd19624d963371c0ab769923ba6cda3a107b1a7669e591d3f72dcd93ed3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2018i-0+deb9u1/
 
-- https://sources.debian.net/src/tzdata/2018i-0+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018i-0+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018i-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unixodbc=2.3.4-1`
 
