@@ -1,30 +1,29 @@
-# `websphere-liberty:19.0.0.3-microProfile2`
+# `websphere-liberty:19.0.0.4-microProfile2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8f7febff81d691f5e39b67e574b511b75d58bd824eb4e8d47836e03396274285`
-- Created: `2019-04-19T23:28:30.487296284Z`
-- Virtual Size: ~ 479.46 Mb  
+- Image ID: `sha256:ad3b12961af4aa039613e0259d7ea14b3caf7e6f0829ae3580557094235558c0`
+- Created: `2019-04-29T18:29:32.508574283Z`
+- Virtual Size: ~ 476.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/helpers/runtime/docker-server.sh"]`
 - Command: `["/opt/ibm/wlp/bin/server","run","defaultServer"]`
 - Environment:
   - `PATH=/opt/ibm/wlp/bin:/opt/ibm/helpers/build:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr5fp31`
+  - `JAVA_VERSION=1.8.0_sr5fp35`
   - `JAVA_HOME=/opt/ibm/java/jre`
-  - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
-  - `LIBERTY_VERSION=19.0.0_03`
+  - `IBM_JAVA_OPTIONS=-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/ -XX:+UseContainerSupport`
+  - `LIBERTY_VERSION=19.0.0_04`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ibm/wlp/output`
   - `RANDFILE=/tmp/.rnd`
-  - `JVM_ARGS=-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/`
   - `KEYSTORE_REQUIRED=true`
 - Labels:
-  - `BuildLabel=cl190320190321-1636`
+  - `BuildLabel=cl190420190419-0642`
   - `ProductID=fbf6a96d49214c0abc6a3bc5da6e48cd`
   - `ProductName=WebSphere Application Server Liberty`
-  - `ProductVersion=19.0.0.3`
+  - `ProductVersion=19.0.0.4`
   - `maintainer=Arthur De Magalhaes <arthurdm@ca.ibm.com> (@arthurdm)`
 
 ## `dpkg` (`.deb`-based packages)
@@ -90,12 +89,12 @@ $ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.10
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.10.debian.tar.xz' apparmor_2.10.95-0ubuntu2.10.debian.tar.xz 98036 SHA256:7d901aaf5deedb5ca0575994b02e0d9d60d6f0ee93fb974b46699f5ab4c82764
 ```
 
-### `dpkg` source package: `apt=1.2.29ubuntu0.1`
+### `dpkg` source package: `apt=1.2.31`
 
 Binary Packages:
 
-- `apt=1.2.29ubuntu0.1`
-- `libapt-pkg5.0:amd64=1.2.29ubuntu0.1`
+- `apt=1.2.31`
+- `libapt-pkg5.0:amd64=1.2.31`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
@@ -105,9 +104,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.2.29ubuntu0.1
-'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.29ubuntu0.1.dsc' apt_1.2.29ubuntu0.1.dsc 2486 SHA256:be06c9b9be3dfaab177acb25f6e330a9af1f49a631b4be988739625b229ed89f
-'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.29ubuntu0.1.tar.xz' apt_1.2.29ubuntu0.1.tar.xz 2071944 SHA256:0d171fd81c2039f882a96c633240c293f7f7317654b905f93a12ec682b7149cd
+$ apt-get source -qq --print-uris apt=1.2.31
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.31.dsc' apt_1.2.31.dsc 2392 SHA256:3b666447f59fd770319a996c9782fd78aee87a5f9100f1b6b88b21aaaceaf0c8
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.31.tar.xz' apt_1.2.31.tar.xz 2080660 SHA256:03ded4f5e9b8d43ecec083704b2dcabf20c182ed382db9ac7251da0b0b038059
 ```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
@@ -733,36 +732,6 @@ $ apt-get source -qq --print-uris libgpg-error=1.21-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.21-2ubuntu1.debian.tar.xz' libgpg-error_1.21-2ubuntu1.debian.tar.xz 11988 SHA256:b67f4686d39ec678e860b28d05e07567ec6d43025c18b82c1e9a5dda07a00ed9
 ```
 
-### `dpkg` source package: `libidn=1.32-3ubuntu1.2`
-
-Binary Packages:
-
-- `libidn11:amd64=1.32-3ubuntu1.2`
-
-Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`)
-
-- `GAP`
-- `GFDL-1.3`
-- `GFDL-1.3+`
-- `GPL-2`
-- `GPL-2+`
-- `GPL-3`
-- `GPL-3+`
-- `LGPL-2`
-- `LGPL-2.1`
-- `LGPL-2.1+`
-- `LGPL-3`
-- `LGPL-3+`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris libidn=1.32-3ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.32-3ubuntu1.2.dsc' libidn_1.32-3ubuntu1.2.dsc 2303 SHA256:7e8ac6585e9ab5e0fce89ff91ff1972709da56551814973b84ef36e6c84072e4
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.32.orig.tar.gz' libidn_1.32.orig.tar.gz 3483155 SHA256:ba5d5afee2beff703a34ee094668da5c6ea5afa38784cebba8924105e185c4f5
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.32-3ubuntu1.2.debian.tar.xz' libidn_1.32-3ubuntu1.2.debian.tar.xz 84724 SHA256:f898167a432eeb656fe372b0565af7ab26f8eeaf269cfd768d34fa97fcaa3a4c
-```
-
 ### `dpkg` source package: `libseccomp=2.3.1-2.1ubuntu2~16.04.1`
 
 Binary Packages:
@@ -1171,12 +1140,12 @@ $ apt-get source -qq --print-uris sensible-utils=0.0.9ubuntu0.16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.9ubuntu0.16.04.1.tar.xz' sensible-utils_0.0.9ubuntu0.16.04.1.tar.xz 54048 SHA256:3790882bdc1a54691ed28084b161bc0a01fc8f9adf49e6f7497d72b54fb07ee3
 ```
 
-### `dpkg` source package: `shadow=1:4.2-3.1ubuntu5.3`
+### `dpkg` source package: `shadow=1:4.2-3.1ubuntu5.4`
 
 Binary Packages:
 
-- `login=1:4.2-3.1ubuntu5.3`
-- `passwd=1:4.2-3.1ubuntu5.3`
+- `login=1:4.2-3.1ubuntu5.4`
+- `passwd=1:4.2-3.1ubuntu5.4`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
@@ -1185,20 +1154,20 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 Source:
 
 ```console
-$ apt-get source -qq --print-uris shadow=1:4.2-3.1ubuntu5.3
-'http://security.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.1ubuntu5.3.dsc' shadow_4.2-3.1ubuntu5.3.dsc 2120 SHA256:2b7b87f7999f5956c915fcd3fc166b0c9c459644ce8ec5505d57f2cca1b31b76
-'http://security.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://security.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.1ubuntu5.3.debian.tar.xz' shadow_4.2-3.1ubuntu5.3.debian.tar.xz 505880 SHA256:654fb836e170a8395532ff589c644da6306745d4f630130082971b532bdd68f6
+$ apt-get source -qq --print-uris shadow=1:4.2-3.1ubuntu5.4
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.1ubuntu5.4.dsc' shadow_4.2-3.1ubuntu5.4.dsc 2513 SHA256:964bf283d4a1ec090c4e4044133789485ca608206cf87dda678c3350eda3590d
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.1ubuntu5.4.debian.tar.xz' shadow_4.2-3.1ubuntu5.4.debian.tar.xz 506364 SHA256:50ccd266ff5bdc8577fe090b04c9be675340bf59b44fa843cd20174055540a15
 ```
 
-### `dpkg` source package: `systemd=229-4ubuntu21.16`
+### `dpkg` source package: `systemd=229-4ubuntu21.21`
 
 Binary Packages:
 
-- `libsystemd0:amd64=229-4ubuntu21.16`
-- `libudev1:amd64=229-4ubuntu21.16`
-- `systemd=229-4ubuntu21.16`
-- `systemd-sysv=229-4ubuntu21.16`
+- `libsystemd0:amd64=229-4ubuntu21.21`
+- `libudev1:amd64=229-4ubuntu21.21`
+- `systemd=229-4ubuntu21.21`
+- `systemd-sysv=229-4ubuntu21.21`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
@@ -1210,9 +1179,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=229-4ubuntu21.21
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.21.dsc' systemd_229-4ubuntu21.21.dsc 4145 SHA256:fbcdbbf8e501f6b0cfc0cc43b35f9068b5cbd21fc1511d12696c399a32e33c2a
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.21.debian.tar.xz' systemd_229-4ubuntu21.21.debian.tar.xz 294908 SHA256:0858a022f0b0a1fadf2458ea16128ead04573940375775bdd579e334366e07c4
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
@@ -1271,25 +1245,6 @@ Source:
 $ apt-get source -qq --print-uris ubuntu-keyring=2012.05.19
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2012.05.19.dsc' ubuntu-keyring_2012.05.19.dsc 1542 SHA256:a98138a8ef99905330f7f1340d04f8a9104c8706243e4c694b46db7d11c89d16
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2012.05.19.tar.gz' ubuntu-keyring_2012.05.19.tar.gz 18495 SHA256:8b3bb00770c7b1e5c0abb215ecf8c383cb3b709292a52aeb1022b5556e768b69
-```
-
-### `dpkg` source package: `unzip=6.0-20ubuntu1`
-
-Binary Packages:
-
-- `unzip=6.0-20ubuntu1`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris unzip=6.0-20ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-20ubuntu1.dsc' unzip_6.0-20ubuntu1.dsc 1782 SHA256:b3a01c0cf67b19ae87c621f1362474283841a88e4388335dbe29dd331efb6814
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-20ubuntu1.debian.tar.xz' unzip_6.0-20ubuntu1.debian.tar.xz 19896 SHA256:0ddf122ef15b739e3ea06db4b9e80f40759dce23a2c886678881453a43bd0842
 ```
 
 ### `dpkg` source package: `ustr=1.0.4-5`
@@ -1356,21 +1311,6 @@ $ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.6
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1.orig.tar.xz' util-linux_2.27.1.orig.tar.xz 3964512 SHA256:0a818fcdede99aec43ffe6ca5b5388bff80d162f2f7bd4541dca94fecb87a290
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.6.debian.tar.xz' util-linux_2.27.1-6ubuntu3.6.debian.tar.xz 86092 SHA256:e5fdc30a0e8a920286c42d0f8acb86d8c80866676cf5b6d8474b838283d9d705
 ```
-
-### `dpkg` source package: `wget=1.17.1-1ubuntu1.4`
-
-Binary Packages:
-
-- `wget=1.17.1-1ubuntu1.4`
-
-Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
-
-- `GFDL-1.2`
-- `GPL-3`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
 
 ### `dpkg` source package: `xz-utils=5.1.1alpha+20120614-2ubuntu2`
 
