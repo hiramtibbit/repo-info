@@ -1,10 +1,10 @@
-# `solr:6.6.5-alpine`
+# `solr:8.0.0-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f064f823aaa6ec231d0dfc7f78874328a36bca373a08b436cb1fe9c8b79a6a55`
-- Created: `2019-04-10T03:40:07.740355079Z`
-- Virtual Size: ~ 275.57 Mb  
+- Image ID: `sha256:5f395063581173a3af8dc302e824aebd369640f7f89e3f9cc9ed4e448e31cff6`
+- Created: `2019-04-29T17:40:48.795105127Z`
+- Virtual Size: ~ 300.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -19,10 +19,15 @@
   - `SOLR_UID=8983`
   - `SOLR_GROUP=solr`
   - `SOLR_GID=8983`
-  - `SOLR_VERSION=6.6.5`
-  - `SOLR_URL=https://archive.apache.org/dist/lucene/solr/6.6.5/solr-6.6.5.tgz`
-  - `SOLR_SHA256=fa65e922bc32d36ef65bee866095da563aa5ddd7e953798c06b6494572d51729`
-  - `SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C`
+  - `SOLR_VERSION=8.0.0`
+  - `SOLR_URL=https://archive.apache.org/dist/lucene/solr/8.0.0/solr-8.0.0.tgz`
+  - `SOLR_SHA256=0e6392d3b980ab917c731b054101aafcebceacc0e5063cb1e305aeeaec911d12`
+  - `SOLR_KEYS=052C5B48A480B9CEA9E218A5F98C13CFA5A135D8`
+  - `SOLR_INCLUDE=/etc/default/solr.in.sh`
+  - `SOLR_HOME=/var/solr/data`
+  - `SOLR_PID_DIR=/var/solr`
+  - `SOLR_LOGS_DIR=/var/solr/logs`
+  - `LOG4J_PROPS=/var/solr/log4j2.xml`
   - `GOSU_VERSION=1.11`
   - `GOSU_KEY=B42F6819007F00F88E364FD4036A9C25BF357DD4`
 - Labels:
@@ -30,6 +35,23 @@
   - `repository=https://github.com/docker-solr/docker-solr`
 
 ## `apk` (`.apk`-based packages)
+
+### `apk` package: `acl`
+
+```console
+acl-2.2.52-r5 description:
+Access control list utilities
+
+acl-2.2.52-r5 webpage:
+https://savannah.nongnu.org/projects/acl
+
+acl-2.2.52-r5 installed size:
+118784
+
+acl-2.2.52-r5 license:
+LGPL-2.1-or-later AND GPL-2.0-or-later
+
+```
 
 ### `apk` package: `alpine-baselayout`
 
@@ -255,16 +277,16 @@ GPL
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.6.4-r0 description:
+gnutls-3.6.7-r0 description:
 A TLS protocol implementation
 
-gnutls-3.6.4-r0 webpage:
+gnutls-3.6.7-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.6.4-r0 installed size:
-1531904
+gnutls-3.6.7-r0 installed size:
+1572864
 
-gnutls-3.6.4-r0 license:
+gnutls-3.6.7-r0 license:
 GPL
 
 ```
@@ -371,6 +393,23 @@ MIT
 
 ```
 
+### `apk` package: `libacl`
+
+```console
+libacl-2.2.52-r5 description:
+Dynamic library for access control list support
+
+libacl-2.2.52-r5 webpage:
+https://savannah.nongnu.org/projects/acl
+
+libacl-2.2.52-r5 installed size:
+53248
+
+libacl-2.2.52-r5 license:
+LGPL-2.1-or-later AND GPL-2.0-or-later
+
+```
+
 ### `apk` package: `libassuan`
 
 ```console
@@ -385,6 +424,23 @@ libassuan-2.5.1-r0 installed size:
 
 libassuan-2.5.1-r0 license:
 LGPL-2.0-or-later
+
+```
+
+### `apk` package: `libattr`
+
+```console
+libattr-2.4.47-r7 description:
+Dynamic library for extended attribute support
+
+libattr-2.4.47-r7 webpage:
+https://savannah.nongnu.org/projects/attr
+
+libattr-2.4.47-r7 installed size:
+28672
+
+libattr-2.4.47-r7 license:
+GPL-2.0-or-later LGPL-2.0-or-later
 
 ```
 

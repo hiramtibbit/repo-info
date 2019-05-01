@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:98ef77d534325eeeee03a5268bcd7da5251b0fc0bb53d9aa1d82419969c13ffe`
-- Created: `2019-04-10T03:38:43.066627344Z`
-- Virtual Size: ~ 300.07 Mb  
+- Image ID: `sha256:d99ec3d2d14c71e9badacf7c192f5de4135ae4057c3b4f888ea8dbbc0dec8952`
+- Created: `2019-04-29T17:42:07.543872099Z`
+- Virtual Size: ~ 300.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -30,6 +30,23 @@
   - `repository=https://github.com/docker-solr/docker-solr`
 
 ## `apk` (`.apk`-based packages)
+
+### `apk` package: `acl`
+
+```console
+acl-2.2.52-r5 description:
+Access control list utilities
+
+acl-2.2.52-r5 webpage:
+https://savannah.nongnu.org/projects/acl
+
+acl-2.2.52-r5 installed size:
+118784
+
+acl-2.2.52-r5 license:
+LGPL-2.1-or-later AND GPL-2.0-or-later
+
+```
 
 ### `apk` package: `alpine-baselayout`
 
@@ -255,16 +272,16 @@ GPL
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.6.4-r0 description:
+gnutls-3.6.7-r0 description:
 A TLS protocol implementation
 
-gnutls-3.6.4-r0 webpage:
+gnutls-3.6.7-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.6.4-r0 installed size:
-1531904
+gnutls-3.6.7-r0 installed size:
+1572864
 
-gnutls-3.6.4-r0 license:
+gnutls-3.6.7-r0 license:
 GPL
 
 ```
@@ -371,6 +388,23 @@ MIT
 
 ```
 
+### `apk` package: `libacl`
+
+```console
+libacl-2.2.52-r5 description:
+Dynamic library for access control list support
+
+libacl-2.2.52-r5 webpage:
+https://savannah.nongnu.org/projects/acl
+
+libacl-2.2.52-r5 installed size:
+53248
+
+libacl-2.2.52-r5 license:
+LGPL-2.1-or-later AND GPL-2.0-or-later
+
+```
+
 ### `apk` package: `libassuan`
 
 ```console
@@ -385,6 +419,23 @@ libassuan-2.5.1-r0 installed size:
 
 libassuan-2.5.1-r0 license:
 LGPL-2.0-or-later
+
+```
+
+### `apk` package: `libattr`
+
+```console
+libattr-2.4.47-r7 description:
+Dynamic library for extended attribute support
+
+libattr-2.4.47-r7 webpage:
+https://savannah.nongnu.org/projects/attr
+
+libattr-2.4.47-r7 installed size:
+28672
+
+libattr-2.4.47-r7 license:
+GPL-2.0-or-later LGPL-2.0-or-later
 
 ```
 
