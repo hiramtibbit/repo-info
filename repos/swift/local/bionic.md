@@ -190,14 +190,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.30-21ubuntu1~18.04
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.30-21ubuntu1~18.04.dsc' binutils_2.30-21ubuntu1~18.04.dsc 11624 SHA256:4ffc258658dd2eeb10c3672bad9e0748d9cba59fc0651e9fd034aa386e7c5a71
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.30.orig.tar.xz' binutils_2.30.orig.tar.xz 20286700 SHA256:6e46b8aeae2f727a36f0bd9505e405768a72218f1796f0d09757d45209871ae6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.30-21ubuntu1~18.04.debian.tar.xz' binutils_2.30-21ubuntu1~18.04.debian.tar.xz 559720 SHA256:e9bbd94d4afb31007b9729c1022bd4018a3279a7daf6d521b768b0e09881838e
-```
 
 ### `dpkg` source package: `build-essential=12.4ubuntu1`
 
@@ -620,14 +615,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-7/copyright`, `/usr/share/doc/g++-7/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.3.0-27ubuntu1~18.04
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.3.0-27ubuntu1~18.04.dsc' gcc-7_7.3.0-27ubuntu1~18.04.dsc 28285 SHA256:5374b6648fdc46ff2d9b5267d9b03bbf6c9d7a48e273f666d3a14bcdb01f2ce0
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.3.0.orig.tar.gz' gcc-7_7.3.0.orig.tar.gz 73555852 SHA256:9e29793395d3012c0d71ee5f680642c594bf1dee0184cd74d2e0e67c70598283
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.3.0-27ubuntu1~18.04.diff.gz' gcc-7_7.3.0-27ubuntu1~18.04.diff.gz 996303 SHA256:ad7f083469cd4b7dad8796ed779504e742caae862ac13351ca6fb0b27d745a56
-```
 
 ### `dpkg` source package: `gcc-8=8.2.0-1ubuntu2~18.04`
 
@@ -654,14 +644,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8.2.0-1ubuntu2~18.04
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0-1ubuntu2~18.04.dsc' gcc-8_8.2.0-1ubuntu2~18.04.dsc 36291 SHA256:73af7438517e473ce305701bab7d9fa764e59432317f8244112046bda9633136
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0.orig.tar.gz' gcc-8_8.2.0.orig.tar.gz 75164400 SHA256:e1009caeec1d024f278de02238d3a558bc23b0cd3ae08c885c36fe5a44b3269d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0-1ubuntu2~18.04.diff.gz' gcc-8_8.2.0-1ubuntu2~18.04.diff.gz 3960987 SHA256:0d9d73f1de12d04fcfe9042f32fc97a19e0f5439b2d553ce450405642a3494f5
-```
 
 ### `dpkg` source package: `gcc-defaults=1.176ubuntu2.1`
 
@@ -675,13 +660,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.176ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.176ubuntu2.1.dsc' gcc-defaults_1.176ubuntu2.1.dsc 15556 SHA256:f6d94600f03ddcaa7f51278abd22486146fb96efdcdbdab73e2e28f8ae4b6208
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.176ubuntu2.1.tar.gz' gcc-defaults_1.176ubuntu2.1.tar.gz 208462 SHA256:b2130b006973d6a723a2961e94d96c524cabf5e6c839d14adcab21aea9c87004
-```
 
 ### `dpkg` source package: `gdbm=1.14.1-6`
 
@@ -753,14 +734,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.56.3-0ubuntu0.18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.3-0ubuntu0.18.04.1.dsc' glib2.0_2.56.3-0ubuntu0.18.04.1.dsc 3583 SHA256:59acbed92f28ed082ca91eebfaa0a7c46a5b4e26657942184e422e3a57540686
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.3.orig.tar.xz' glib2.0_2.56.3.orig.tar.xz 7009912 SHA256:a9a4c5b4c81b6c75bc140bdf5e32120ef3ce841b7413214ecf5f987acec74cb2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.3-0ubuntu0.18.04.1.debian.tar.xz' glib2.0_2.56.3-0ubuntu0.18.04.1.debian.tar.xz 79184 SHA256:dfb6fd85913758841461f5e6318597fd57f4fc6a95b9bbde66b608cf4638f1f3
-```
 
 ### `dpkg` source package: `glibc=2.27-3ubuntu1`
 
@@ -2055,14 +2031,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.45+dfsg-1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg-1ubuntu1.1.dsc' openldap_2.4.45+dfsg-1ubuntu1.1.dsc 2805 SHA256:9f673c1afea3e40d7c0c0510b772c7fb897e33e253ae6703ea6197401bd13086
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg.orig.tar.gz' openldap_2.4.45+dfsg.orig.tar.gz 4846458 SHA256:d51c70423aa0554d454fd3d43e7f2e940523b4ef07979305b48c233ae44b2b32
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg-1ubuntu1.1.debian.tar.xz' openldap_2.4.45+dfsg-1ubuntu1.1.debian.tar.xz 175268 SHA256:9440833280fe408c38bdcd9a58f3644d10c2ab3ef40871875fd644c559a8085a
-```
 
 ### `dpkg` source package: `openssh=1:7.6p1-4ubuntu0.3`
 
