@@ -32,6 +32,8 @@ Trying other mirror.
 Enabling updates-source repository
 https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/SRPMS/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
 Trying other mirror.
+http://mirrors.mit.edu/fedora/linux/updates/29/Everything/SRPMS/repodata/repomd.xml: [Errno 12] Timeout on http://mirrors.mit.edu/fedora/linux/updates/29/Everything/SRPMS/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
 Enabling updates-modular-source repository
 https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Modular/SRPMS/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
 Trying other mirror.
@@ -1215,16 +1217,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 Licenses (from `rpm --query`): GPLv2+
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls libreport-filesystem-2.10.0-1.fc29.noarch
-Enabling fedora-modular-source repository
-Enabling updates-source repository
-Enabling updates-modular-source repository
-Enabling fedora-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/SRPMS//Packages/l/libreport-2.10.0-1.fc29.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `libseccomp-2.3.3-3.fc29.x86_64`
 

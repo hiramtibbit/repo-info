@@ -339,40 +339,19 @@ Licenses (from `rpm --query`): GPLv2+ and GPLv2 and GPL
 
 Licenses (from `rpm --query`): GPLv2+ or LGPLv3+
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls elfutils-default-yama-scope-0.176-1.fc30.noarch
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/e/elfutils-0.176-1.fc30.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `elfutils-libelf-0.176-1.fc30.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ or LGPLv3+
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls elfutils-libelf-0.176-1.fc30
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/e/elfutils-0.176-1.fc30.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `elfutils-libs-0.176-1.fc30.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ or LGPLv3+
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls elfutils-libs-0.176-1.fc30
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/e/elfutils-0.176-1.fc30.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `expat-2.2.6-2.fc30.x86_64`
 
@@ -469,14 +448,7 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Every
 
 Licenses (from `rpm --query`): Public Domain
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls filesystem-3.10-1.fc30
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/f/filesystem-3.10-1.fc30.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `gawk-4.2.1-6.fc31.x86_64`
 
@@ -1346,14 +1318,7 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Every
 
 Licenses (from `rpm --query`): BSD and GPLv2
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls libzstd-1.3.8-2.fc30
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/z/zstd-1.3.8-2.fc30.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `lua-libs-5.3.5-5.fc30.x86_64`
 
