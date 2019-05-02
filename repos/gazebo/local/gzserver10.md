@@ -1318,14 +1318,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.3.0-27ubuntu1~18.04
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.3.0-27ubuntu1~18.04.dsc' gcc-7_7.3.0-27ubuntu1~18.04.dsc 28285 SHA256:5374b6648fdc46ff2d9b5267d9b03bbf6c9d7a48e273f666d3a14bcdb01f2ce0
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.3.0.orig.tar.gz' gcc-7_7.3.0.orig.tar.gz 73555852 SHA256:9e29793395d3012c0d71ee5f680642c594bf1dee0184cd74d2e0e67c70598283
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.3.0-27ubuntu1~18.04.diff.gz' gcc-7_7.3.0-27ubuntu1~18.04.diff.gz 996303 SHA256:ad7f083469cd4b7dad8796ed779504e742caae862ac13351ca6fb0b27d745a56
-```
 
 ### `dpkg` source package: `gcc-8=8.2.0-1ubuntu2~18.04`
 
@@ -1346,14 +1341,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8.2.0-1ubuntu2~18.04
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0-1ubuntu2~18.04.dsc' gcc-8_8.2.0-1ubuntu2~18.04.dsc 36291 SHA256:73af7438517e473ce305701bab7d9fa764e59432317f8244112046bda9633136
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0.orig.tar.gz' gcc-8_8.2.0.orig.tar.gz 75164400 SHA256:e1009caeec1d024f278de02238d3a558bc23b0cd3ae08c885c36fe5a44b3269d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0-1ubuntu2~18.04.diff.gz' gcc-8_8.2.0-1ubuntu2~18.04.diff.gz 3960987 SHA256:0d9d73f1de12d04fcfe9042f32fc97a19e0f5439b2d553ce450405642a3494f5
-```
 
 ### `dpkg` source package: `gdal=2.2.3+dfsg-2`
 
@@ -1508,14 +1498,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.56.3-0ubuntu0.18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.3-0ubuntu0.18.04.1.dsc' glib2.0_2.56.3-0ubuntu0.18.04.1.dsc 3583 SHA256:59acbed92f28ed082ca91eebfaa0a7c46a5b4e26657942184e422e3a57540686
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.3.orig.tar.xz' glib2.0_2.56.3.orig.tar.xz 7009912 SHA256:a9a4c5b4c81b6c75bc140bdf5e32120ef3ce841b7413214ecf5f987acec74cb2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.3-0ubuntu0.18.04.1.debian.tar.xz' glib2.0_2.56.3-0ubuntu0.18.04.1.debian.tar.xz 79184 SHA256:dfb6fd85913758841461f5e6318597fd57f4fc6a95b9bbde66b608cf4638f1f3
-```
 
 ### `dpkg` source package: `glibc=2.27-3ubuntu1`
 
@@ -1719,14 +1704,9 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`, `/usr/
 - `SWL`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gtk+3.0=3.22.30-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.30-1ubuntu2.dsc' gtk+3.0_3.22.30-1ubuntu2.dsc 4085 SHA256:fbced27a3de07145e03964fc315be7b86c54ca3e0cafefa579ab5b4fccfd3235
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.30.orig.tar.xz' gtk+3.0_3.22.30.orig.tar.xz 18946084 SHA256:a1a4a5c12703d4e1ccda28333b87ff462741dc365131fbc94c218ae81d9a6567
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.30-1ubuntu2.debian.tar.xz' gtk+3.0_3.22.30-1ubuntu2.debian.tar.xz 161228 SHA256:64ae0f521f3eba4dd46c4d561568349ca5aed8f176e417c314833be0ff4590bb
-```
 
 ### `dpkg` source package: `gts=0.7.6+darcs121130-4`
 
@@ -3336,14 +3316,9 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.34-1ubuntu0.18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.34-1ubuntu0.18.04.1.dsc' libpng1.6_1.6.34-1ubuntu0.18.04.1.dsc 2346 SHA256:2b227336bc96188c0a09c90817f8e97a84d92b81f5b7cd71b7c74a5e6a786190
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.34.orig.tar.xz' libpng1.6_1.6.34.orig.tar.xz 997968 SHA256:2f1e960d92ce3b3abd03d06dfec9637dfbd22febf107a536b44f7a47c60659f6
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.34-1ubuntu0.18.04.1.debian.tar.xz' libpng1.6_1.6.34-1ubuntu0.18.04.1.debian.tar.xz 24128 SHA256:e1766dbb7bb0344a3ad4776ec6cfaf0314e25e4af12f5322e62df076bdf17015
-```
 
 ### `dpkg` source package: `libproxy=0.4.15-1`
 
@@ -4858,14 +4833,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient20/copyright`)
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-5.7=5.7.25-0ubuntu0.18.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.25-0ubuntu0.18.04.2.dsc' mysql-5.7_5.7.25-0ubuntu0.18.04.2.dsc 3391 SHA256:6ad713d29a849895eb96f02698fd0363a1f76af973d86edfdc6dbb08fc689a79
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.25.orig.tar.gz' mysql-5.7_5.7.25.orig.tar.gz 49107578 SHA256:354c427c8679c6a4774f60723ea211e54b4383307764d240940f960d110bf5cf
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.25-0ubuntu0.18.04.2.debian.tar.xz' mysql-5.7_5.7.25-0ubuntu0.18.04.2.debian.tar.xz 156820 SHA256:34d1c2a7188bc0e1beede0a150eae298799ea310d43dff6d2b13fed3e08db9f7
-```
 
 ### `dpkg` source package: `mysql-defaults=1.0.4`
 
@@ -5248,14 +5218,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.45+dfsg-1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg-1ubuntu1.1.dsc' openldap_2.4.45+dfsg-1ubuntu1.1.dsc 2805 SHA256:9f673c1afea3e40d7c0c0510b772c7fb897e33e253ae6703ea6197401bd13086
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg.orig.tar.gz' openldap_2.4.45+dfsg.orig.tar.gz 4846458 SHA256:d51c70423aa0554d454fd3d43e7f2e940523b4ef07979305b48c233ae44b2b32
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg-1ubuntu1.1.debian.tar.xz' openldap_2.4.45+dfsg-1ubuntu1.1.debian.tar.xz 175268 SHA256:9440833280fe408c38bdcd9a58f3644d10c2ab3ef40871875fd644c559a8085a
-```
 
 ### `dpkg` source package: `openssl=1.1.0g-2ubuntu4.3`
 
@@ -6581,14 +6546,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wavpack=5.1.0-2ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_5.1.0-2ubuntu1.2.dsc' wavpack_5.1.0-2ubuntu1.2.dsc 2196 SHA256:5390721c4830c8a1ae4b4f19fcc52fffa8425e35a418a8bb593e90a237837641
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_5.1.0.orig.tar.bz2' wavpack_5.1.0.orig.tar.bz2 824331 SHA256:1939627d5358d1da62bc6158d63f7ed12905552f3a799c799ee90296a7612944
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_5.1.0-2ubuntu1.2.debian.tar.xz' wavpack_5.1.0-2ubuntu1.2.debian.tar.xz 9888 SHA256:d0ff12fb8c273773ec6106d852ad544f213ce2d516c83e81d9b00bf1ec745fc7
-```
 
 ### `dpkg` source package: `wayland=1.16.0-1ubuntu1.1~18.04.1`
 
