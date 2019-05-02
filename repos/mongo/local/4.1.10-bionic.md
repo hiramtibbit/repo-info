@@ -478,14 +478,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8.2.0-1ubuntu2~18.04
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0-1ubuntu2~18.04.dsc' gcc-8_8.2.0-1ubuntu2~18.04.dsc 36291 SHA256:73af7438517e473ce305701bab7d9fa764e59432317f8244112046bda9633136
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0.orig.tar.gz' gcc-8_8.2.0.orig.tar.gz 75164400 SHA256:e1009caeec1d024f278de02238d3a558bc23b0cd3ae08c885c36fe5a44b3269d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0-1ubuntu2~18.04.diff.gz' gcc-8_8.2.0-1ubuntu2~18.04.diff.gz 3960987 SHA256:0d9d73f1de12d04fcfe9042f32fc97a19e0f5439b2d553ce450405642a3494f5
-```
 
 ### `dpkg` source package: `glibc=2.27-3ubuntu1`
 
@@ -1341,14 +1336,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.45+dfsg-1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg-1ubuntu1.1.dsc' openldap_2.4.45+dfsg-1ubuntu1.1.dsc 2805 SHA256:9f673c1afea3e40d7c0c0510b772c7fb897e33e253ae6703ea6197401bd13086
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg.orig.tar.gz' openldap_2.4.45+dfsg.orig.tar.gz 4846458 SHA256:d51c70423aa0554d454fd3d43e7f2e940523b4ef07979305b48c233ae44b2b32
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg-1ubuntu1.1.debian.tar.xz' openldap_2.4.45+dfsg-1ubuntu1.1.debian.tar.xz 175268 SHA256:9440833280fe408c38bdcd9a58f3644d10c2ab3ef40871875fd644c559a8085a
-```
 
 ### `dpkg` source package: `openssl=1.1.0g-2ubuntu4.3`
 
