@@ -1195,14 +1195,13 @@ Licenses: (parsed from: `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.28-9
-'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.28-9.dsc' glibc_2.28-9.dsc 8885 SHA256:e8abfd8e99890e93324c6c0ec1b4a093b0bde628151848bf5d26114eb1f11376
-'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.28.orig.tar.xz' glibc_2.28.orig.tar.xz 17061292 SHA256:53d3c1c7bff0fb25d4c7874bf13435dc44a71fd7dd5ffc9bfdcb513cdfc36854
-'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.28-9.debian.tar.xz' glibc_2.28-9.debian.tar.xz 882956 SHA256:59908f806fe0eddd6929705d3a493e6b96aa5dcb2f0e6e824aae57040adafbd8
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/glibc/2.28-9/
+
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-4`
 
