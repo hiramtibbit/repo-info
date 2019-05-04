@@ -1,10 +1,10 @@
-# `jetty:9.2.26-jre7`
+# `jetty:9.2.28-jre7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7daa2611ed550d7c34332fe074683ae15d4cf19dea72ba7bf74bf5f08016f342`
-- Created: `2019-03-28T00:09:46.007225867Z`
-- Virtual Size: ~ 343.38 Mb  
+- Image ID: `sha256:02ac44829ac2b3ffbd4e80824b4fb8f7430452aca4c77278b94735dcd6a2c57e`
+- Created: `2019-05-03T21:21:59.119217403Z`
+- Virtual Size: ~ 343.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -16,8 +16,8 @@
   - `JAVA_VERSION=7u211`
   - `JAVA_DEBIAN_VERSION=7u211-2.6.17-1~deb8u1`
   - `JETTY_HOME=/usr/local/jetty`
-  - `JETTY_VERSION=9.2.26.v20180806`
-  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.26.v20180806/jetty-distribution-9.2.26.v20180806.tar.gz`
+  - `JETTY_VERSION=9.2.28.v20190418`
+  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.28.v20190418/jetty-distribution-9.2.28.v20190418.tar.gz`
   - `JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	FBA2B18D238AB852DF95745C76157BDF03D0DCD6 	5C9579B3DB2E506429319AAEF33B071B29559E1E`
   - `JETTY_BASE=/var/lib/jetty`
   - `TMPDIR=/tmp/jetty`
