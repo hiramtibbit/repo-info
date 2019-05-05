@@ -32,8 +32,6 @@ Trying other mirror.
 Enabling updates-source repository
 https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/SRPMS/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
 Trying other mirror.
-http://mirrors.mit.edu/fedora/linux/updates/29/Everything/SRPMS/repodata/repomd.xml: [Errno 12] Timeout on http://mirrors.mit.edu/fedora/linux/updates/29/Everything/SRPMS/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
-Trying other mirror.
 Enabling updates-modular-source repository
 https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Modular/SRPMS/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
 Trying other mirror.
