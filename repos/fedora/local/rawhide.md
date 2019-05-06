@@ -1230,14 +1230,7 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Every
 
 Licenses (from `rpm --query`): LGPLv2+ and BSD and Public Domain
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls libxcrypt-4.4.4-2.fc31
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/l/libxcrypt-4.4.4-2.fc31.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `libxml2-2.9.9-2.fc30.x86_64`
 
