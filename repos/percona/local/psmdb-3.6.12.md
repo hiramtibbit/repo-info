@@ -1,10 +1,10 @@
-# `percona:psmdb-3.6.11`
+# `percona:psmdb-3.6.12`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b00e7dfae76e17529816116cd5b379353926882926f5a8df65f86d249b31a5af`
-- Created: `2019-03-15T20:29:20.838771825Z`
-- Virtual Size: ~ 481.42 Mb  
+- Image ID: `sha256:0e388dab387389b5958fa4c4d7b4a4c59c67864678bd82da142cf2800e0685a5`
+- Created: `2019-05-03T22:30:06.731167687Z`
+- Virtual Size: ~ 482.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `PERCONA_MAJOR=36`
-  - `PERCONA_VERSION=3.6.11-3.1.el7`
+  - `PERCONA_VERSION=3.6.12-3.2.el7`
   - `K8S_TOOLS_VERSION=0.4.1`
 - Labels:
   - `org.label-schema.build-date=20190305`
@@ -23,25 +23,25 @@
 
 ## `rpm` (`.rpm`-based packages)
 
-### `rpm` package: `Percona-Server-MongoDB-36-mongos-3.6.11-3.1.el7.x86_64`
+### `rpm` package: `Percona-Server-MongoDB-36-mongos-3.6.12-3.2.el7.x86_64`
 
 Licenses (from `rpm --query`): AGPL
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `Percona-Server-MongoDB-36-server-3.6.11-3.1.el7.x86_64`
+### `rpm` package: `Percona-Server-MongoDB-36-server-3.6.12-3.2.el7.x86_64`
 
 Licenses (from `rpm --query`): AGPL
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `Percona-Server-MongoDB-36-shell-3.6.11-3.1.el7.x86_64`
+### `rpm` package: `Percona-Server-MongoDB-36-shell-3.6.12-3.2.el7.x86_64`
 
 Licenses (from `rpm --query`): AGPL
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `Percona-Server-MongoDB-36-tools-3.6.11-3.1.el7.x86_64`
+### `rpm` package: `Percona-Server-MongoDB-36-tools-3.6.12-3.2.el7.x86_64`
 
 Licenses (from `rpm --query`): AGPL
 
