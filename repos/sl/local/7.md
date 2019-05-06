@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4e64a8137718000891d54edbcb4f0b8f24aa8ca39dbc5d53a9e5480b9eb532d1`
-- Created: `2019-04-02T00:20:08.995582558Z`
-- Virtual Size: ~ 170.82 Mb  
+- Image ID: `sha256:fc74b885f4a994427bf4df8bfda572d51cdf133faf13a631bab1a568814ea853`
+- Created: `2019-05-03T21:23:02.291997355Z`
+- Virtual Size: ~ 170.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `build-date=20190401`
+  - `build-date=20190501`
   - `name=SL7 Base Image`
   - `vendor=Scientific Linux`
 
@@ -264,30 +264,30 @@ Enabling repos-source repository
 http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/dbus-1.10.24-13.el7_6.src.rpm
 ```
 
-### `rpm` package: `device-mapper-1.02.149-10.el7_6.3.x86_64`
+### `rpm` package: `device-mapper-1.02.149-10.el7_6.7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls device-mapper-1.02.149-10.el7_6.3
+$ yumdownloader --quiet --source --urls device-mapper-1.02.149-10.el7_6.7
 Enabling sl-source repository
 Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/lvm2-2.02.180-10.el7_6.3.src.rpm
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/lvm2-2.02.180-10.el7_6.7.src.rpm
 ```
 
-### `rpm` package: `device-mapper-libs-1.02.149-10.el7_6.3.x86_64`
+### `rpm` package: `device-mapper-libs-1.02.149-10.el7_6.7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls device-mapper-libs-1.02.149-10.el7_6.3
+$ yumdownloader --quiet --source --urls device-mapper-libs-1.02.149-10.el7_6.7
 Enabling sl-source repository
 Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/lvm2-2.02.180-10.el7_6.3.src.rpm
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/lvm2-2.02.180-10.el7_6.7.src.rpm
 ```
 
 ### `rpm` package: `diffutils-3.3-4.el7.x86_64`
@@ -459,30 +459,30 @@ Enabling repos-source repository
 http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/glib2-2.56.1-2.el7.src.rpm
 ```
 
-### `rpm` package: `glibc-2.17-260.el7_6.3.x86_64`
+### `rpm` package: `glibc-2.17-260.el7_6.4.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls glibc-2.17-260.el7_6.3
+$ yumdownloader --quiet --source --urls glibc-2.17-260.el7_6.4
 Enabling sl-source repository
 Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/glibc-2.17-260.el7_6.3.src.rpm
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/glibc-2.17-260.el7_6.4.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.17-260.el7_6.3.x86_64`
+### `rpm` package: `glibc-common-2.17-260.el7_6.4.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls glibc-common-2.17-260.el7_6.3
+$ yumdownloader --quiet --source --urls glibc-common-2.17-260.el7_6.4
 Enabling sl-source repository
 Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/glibc-2.17-260.el7_6.3.src.rpm
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/glibc-2.17-260.el7_6.4.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.0.0-15.el7.x86_64`
@@ -835,17 +835,17 @@ Enabling repos-source repository
 http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/libffi-3.0.13-18.el7.src.rpm
 ```
 
-### `rpm` package: `libgcc-4.8.5-36.el7_6.1.x86_64`
+### `rpm` package: `libgcc-4.8.5-36.el7_6.2.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls libgcc-4.8.5-36.el7_6.1
+$ yumdownloader --quiet --source --urls libgcc-4.8.5-36.el7_6.2
 Enabling sl-source repository
 Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/gcc-4.8.5-36.el7_6.1.src.rpm
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/gcc-4.8.5-36.el7_6.2.src.rpm
 ```
 
 ### `rpm` package: `libgcrypt-1.5.3-14.el7.x86_64`
@@ -978,17 +978,17 @@ Enabling repos-source repository
 http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/libssh2-1.4.3-12.el7_6.2.src.rpm
 ```
 
-### `rpm` package: `libstdc++-4.8.5-36.el7_6.1.x86_64`
+### `rpm` package: `libstdc++-4.8.5-36.el7_6.2.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls libstdc++-4.8.5-36.el7_6.1
+$ yumdownloader --quiet --source --urls libstdc++-4.8.5-36.el7_6.2
 Enabling sl-source repository
 Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/gcc-4.8.5-36.el7_6.1.src.rpm
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/gcc-4.8.5-36.el7_6.2.src.rpm
 ```
 
 ### `rpm` package: `libtasn1-4.10-1.el7.x86_64`
@@ -1433,17 +1433,17 @@ Enabling repos-source repository
 http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/pyliblzma-0.5.3-11.el7.src.rpm
 ```
 
-### `rpm` package: `python-2.7.5-76.el7.x86_64`
+### `rpm` package: `python-2.7.5-77.el7_6.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls python-2.7.5-76.el7
+$ yumdownloader --quiet --source --urls python-2.7.5-77.el7_6
 Enabling sl-source repository
 Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/python-2.7.5-76.el7.src.rpm
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/python-2.7.5-77.el7_6.src.rpm
 ```
 
 ### `rpm` package: `python-iniparse-0.4-9.el7.noarch`
@@ -1459,17 +1459,17 @@ Enabling repos-source repository
 http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/python-iniparse-0.4-9.el7.src.rpm
 ```
 
-### `rpm` package: `python-libs-2.7.5-76.el7.x86_64`
+### `rpm` package: `python-libs-2.7.5-77.el7_6.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls python-libs-2.7.5-76.el7
+$ yumdownloader --quiet --source --urls python-libs-2.7.5-77.el7_6
 Enabling sl-source repository
 Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/python-2.7.5-76.el7.src.rpm
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/python-2.7.5-77.el7_6.src.rpm
 ```
 
 ### `rpm` package: `python-pycurl-7.19.0-19.el7.x86_64`
@@ -1680,30 +1680,30 @@ Enabling repos-source repository
 http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/sqlite-3.7.17-8.el7.src.rpm
 ```
 
-### `rpm` package: `systemd-219-62.el7_6.5.x86_64`
+### `rpm` package: `systemd-219-62.el7_6.6.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls systemd-219-62.el7_6.5
+$ yumdownloader --quiet --source --urls systemd-219-62.el7_6.6
 Enabling sl-source repository
 Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/systemd-219-62.el7_6.5.src.rpm
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/systemd-219-62.el7_6.6.src.rpm
 ```
 
-### `rpm` package: `systemd-libs-219-62.el7_6.5.x86_64`
+### `rpm` package: `systemd-libs-219-62.el7_6.6.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls systemd-libs-219-62.el7_6.5
+$ yumdownloader --quiet --source --urls systemd-libs-219-62.el7_6.6
 Enabling sl-source repository
 Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/systemd-219-62.el7_6.5.src.rpm
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/systemd-219-62.el7_6.6.src.rpm
 ```
 
 ### `rpm` package: `tar-1.26-35.el7.x86_64`
