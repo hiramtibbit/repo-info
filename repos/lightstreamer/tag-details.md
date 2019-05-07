@@ -1771,7 +1771,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.0.3-alpine`
 
 ```console
-$ docker pull lightstreamer@sha256:9c9e5161372f59e2944843020ad8a1375969b1ca8fae2bda4aad8cce504ae8b1
+$ docker pull lightstreamer@sha256:cb02b5d0892107b0e02e2506b0ff388d5f94f7443c7a7e09c567e2be71790707
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1854,14 +1854,14 @@ CMD ["./LS.sh" "run"]
 ### `lightstreamer:7.0.3-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull lightstreamer@sha256:6c8b3e79ee75342d187428d24f4c76248df176129fac8060edc6352550b2fafd
+$ docker pull lightstreamer@sha256:fc5d9e0cd4f4797674e4d10879abf308b15cc308ff0bfbd4892295280c4e682d
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **97.5 MB (97537564 bytes)**  
+-	Total Size: **97.6 MB (97551081 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79a390198912c9f5bab4df9c9502e680f229cba1b3f5a5188c14e41e4edb9f86`
+-	Image ID: `sha256:38fe1a2f0006bca168925c7fc46ab9c022da13a571294f911787895bf7308284`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -1877,27 +1877,27 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 # Wed, 10 Apr 2019 13:50:31 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Wed, 10 Apr 2019 13:50:33 GMT
-ENV JAVA_VERSION=8u201
-# Wed, 10 Apr 2019 13:50:35 GMT
-ENV JAVA_ALPINE_VERSION=8.201.08-r1
-# Wed, 10 Apr 2019 13:50:50 GMT
+# Tue, 07 May 2019 09:02:55 GMT
+ENV JAVA_VERSION=8u212
+# Tue, 07 May 2019 09:02:56 GMT
+ENV JAVA_ALPINE_VERSION=8.212.04-r0
+# Tue, 07 May 2019 09:03:02 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 10 Apr 2019 15:56:39 GMT
+# Tue, 07 May 2019 09:42:14 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 10 Apr 2019 15:56:40 GMT
+# Tue, 07 May 2019 09:42:14 GMT
 ENV LIGHTSTREAMER_VERSION=7_0_3_20190107
-# Wed, 10 Apr 2019 15:56:41 GMT
+# Tue, 07 May 2019 09:42:15 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_7_0_3_20190107.tar.gz
-# Wed, 10 Apr 2019 15:56:42 GMT
+# Tue, 07 May 2019 09:42:16 GMT
 WORKDIR /lightstreamer
-# Wed, 10 Apr 2019 15:56:55 GMT
+# Tue, 07 May 2019 09:42:26 GMT
 RUN set -ex;         apk add --no-cache --virtual .deps                    gnupg                    tar                    curl         && gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2         &&  set -ex;                curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}                && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc                && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz                && tar -xvf Lightstreamer.tar.gz --strip-components=1                && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh                && sed -i -e '164,$s/<appender-ref ref="LSConsole" \/>/<!--<appender-ref ref="LSConsole" \/>-->/'                          -e '116,$s/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                          -e '/<!--<appender-ref ref="LSConsole" \/>-->/ d' conf/lightstreamer_log_conf.xml                && apk del .deps                && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 10 Apr 2019 15:56:56 GMT
+# Tue, 07 May 2019 09:42:27 GMT
 EXPOSE 8080
-# Wed, 10 Apr 2019 15:56:57 GMT
+# Tue, 07 May 2019 09:42:27 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 10 Apr 2019 15:56:57 GMT
+# Tue, 07 May 2019 09:42:28 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -1910,17 +1910,17 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Wed, 10 Apr 2019 13:54:59 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e78228c716bb6c3a10bb270a49d539dd97f566d1096b0be9c36640eb8c5a1436`  
-		Last Modified: Wed, 10 Apr 2019 13:56:24 GMT  
-		Size: 54.9 MB (54929226 bytes)  
+	-	`sha256:5d10db63af1f96048923a5f41d823c0323006317e5fc0aa7c2e88238ca37bf98`  
+		Last Modified: Tue, 07 May 2019 09:05:22 GMT  
+		Size: 54.9 MB (54942629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c032055f34bdb761d305e163000b85930a17a243542201618d469f2938000de`  
-		Last Modified: Wed, 10 Apr 2019 15:57:30 GMT  
+	-	`sha256:4b873ce48cc233858f437dacadb09a43570da725f4ef3b5dc5d524f683762a74`  
+		Last Modified: Tue, 07 May 2019 09:42:59 GMT  
 		Size: 102.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:900ca412b1731c045bb6dd6d5df77cc7e189b56ce20e4cb42efd9947249c9f7f`  
-		Last Modified: Wed, 10 Apr 2019 15:57:39 GMT  
-		Size: 39.9 MB (39919221 bytes)  
+	-	`sha256:7a7f56f883390feb8b9fd3beb4e87dd659b197016ede10af8a6893eec20792f2`  
+		Last Modified: Tue, 07 May 2019 09:43:07 GMT  
+		Size: 39.9 MB (39919335 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `lightstreamer:7.0.3-jre11`
@@ -2360,7 +2360,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.0.3-jre8-alpine`
 
 ```console
-$ docker pull lightstreamer@sha256:9c9e5161372f59e2944843020ad8a1375969b1ca8fae2bda4aad8cce504ae8b1
+$ docker pull lightstreamer@sha256:cb02b5d0892107b0e02e2506b0ff388d5f94f7443c7a7e09c567e2be71790707
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2443,14 +2443,14 @@ CMD ["./LS.sh" "run"]
 ### `lightstreamer:7.0.3-jre8-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull lightstreamer@sha256:6c8b3e79ee75342d187428d24f4c76248df176129fac8060edc6352550b2fafd
+$ docker pull lightstreamer@sha256:fc5d9e0cd4f4797674e4d10879abf308b15cc308ff0bfbd4892295280c4e682d
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **97.5 MB (97537564 bytes)**  
+-	Total Size: **97.6 MB (97551081 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79a390198912c9f5bab4df9c9502e680f229cba1b3f5a5188c14e41e4edb9f86`
+-	Image ID: `sha256:38fe1a2f0006bca168925c7fc46ab9c022da13a571294f911787895bf7308284`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -2466,27 +2466,27 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 # Wed, 10 Apr 2019 13:50:31 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Wed, 10 Apr 2019 13:50:33 GMT
-ENV JAVA_VERSION=8u201
-# Wed, 10 Apr 2019 13:50:35 GMT
-ENV JAVA_ALPINE_VERSION=8.201.08-r1
-# Wed, 10 Apr 2019 13:50:50 GMT
+# Tue, 07 May 2019 09:02:55 GMT
+ENV JAVA_VERSION=8u212
+# Tue, 07 May 2019 09:02:56 GMT
+ENV JAVA_ALPINE_VERSION=8.212.04-r0
+# Tue, 07 May 2019 09:03:02 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 10 Apr 2019 15:56:39 GMT
+# Tue, 07 May 2019 09:42:14 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 10 Apr 2019 15:56:40 GMT
+# Tue, 07 May 2019 09:42:14 GMT
 ENV LIGHTSTREAMER_VERSION=7_0_3_20190107
-# Wed, 10 Apr 2019 15:56:41 GMT
+# Tue, 07 May 2019 09:42:15 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_7_0_3_20190107.tar.gz
-# Wed, 10 Apr 2019 15:56:42 GMT
+# Tue, 07 May 2019 09:42:16 GMT
 WORKDIR /lightstreamer
-# Wed, 10 Apr 2019 15:56:55 GMT
+# Tue, 07 May 2019 09:42:26 GMT
 RUN set -ex;         apk add --no-cache --virtual .deps                    gnupg                    tar                    curl         && gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2         &&  set -ex;                curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}                && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc                && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz                && tar -xvf Lightstreamer.tar.gz --strip-components=1                && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh                && sed -i -e '164,$s/<appender-ref ref="LSConsole" \/>/<!--<appender-ref ref="LSConsole" \/>-->/'                          -e '116,$s/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                          -e '/<!--<appender-ref ref="LSConsole" \/>-->/ d' conf/lightstreamer_log_conf.xml                && apk del .deps                && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 10 Apr 2019 15:56:56 GMT
+# Tue, 07 May 2019 09:42:27 GMT
 EXPOSE 8080
-# Wed, 10 Apr 2019 15:56:57 GMT
+# Tue, 07 May 2019 09:42:27 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 10 Apr 2019 15:56:57 GMT
+# Tue, 07 May 2019 09:42:28 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -2499,23 +2499,23 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Wed, 10 Apr 2019 13:54:59 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e78228c716bb6c3a10bb270a49d539dd97f566d1096b0be9c36640eb8c5a1436`  
-		Last Modified: Wed, 10 Apr 2019 13:56:24 GMT  
-		Size: 54.9 MB (54929226 bytes)  
+	-	`sha256:5d10db63af1f96048923a5f41d823c0323006317e5fc0aa7c2e88238ca37bf98`  
+		Last Modified: Tue, 07 May 2019 09:05:22 GMT  
+		Size: 54.9 MB (54942629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c032055f34bdb761d305e163000b85930a17a243542201618d469f2938000de`  
-		Last Modified: Wed, 10 Apr 2019 15:57:30 GMT  
+	-	`sha256:4b873ce48cc233858f437dacadb09a43570da725f4ef3b5dc5d524f683762a74`  
+		Last Modified: Tue, 07 May 2019 09:42:59 GMT  
 		Size: 102.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:900ca412b1731c045bb6dd6d5df77cc7e189b56ce20e4cb42efd9947249c9f7f`  
-		Last Modified: Wed, 10 Apr 2019 15:57:39 GMT  
-		Size: 39.9 MB (39919221 bytes)  
+	-	`sha256:7a7f56f883390feb8b9fd3beb4e87dd659b197016ede10af8a6893eec20792f2`  
+		Last Modified: Tue, 07 May 2019 09:43:07 GMT  
+		Size: 39.9 MB (39919335 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `lightstreamer:7.0-alpine`
 
 ```console
-$ docker pull lightstreamer@sha256:9c9e5161372f59e2944843020ad8a1375969b1ca8fae2bda4aad8cce504ae8b1
+$ docker pull lightstreamer@sha256:cb02b5d0892107b0e02e2506b0ff388d5f94f7443c7a7e09c567e2be71790707
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2598,14 +2598,14 @@ CMD ["./LS.sh" "run"]
 ### `lightstreamer:7.0-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull lightstreamer@sha256:6c8b3e79ee75342d187428d24f4c76248df176129fac8060edc6352550b2fafd
+$ docker pull lightstreamer@sha256:fc5d9e0cd4f4797674e4d10879abf308b15cc308ff0bfbd4892295280c4e682d
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **97.5 MB (97537564 bytes)**  
+-	Total Size: **97.6 MB (97551081 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79a390198912c9f5bab4df9c9502e680f229cba1b3f5a5188c14e41e4edb9f86`
+-	Image ID: `sha256:38fe1a2f0006bca168925c7fc46ab9c022da13a571294f911787895bf7308284`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -2621,27 +2621,27 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 # Wed, 10 Apr 2019 13:50:31 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Wed, 10 Apr 2019 13:50:33 GMT
-ENV JAVA_VERSION=8u201
-# Wed, 10 Apr 2019 13:50:35 GMT
-ENV JAVA_ALPINE_VERSION=8.201.08-r1
-# Wed, 10 Apr 2019 13:50:50 GMT
+# Tue, 07 May 2019 09:02:55 GMT
+ENV JAVA_VERSION=8u212
+# Tue, 07 May 2019 09:02:56 GMT
+ENV JAVA_ALPINE_VERSION=8.212.04-r0
+# Tue, 07 May 2019 09:03:02 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 10 Apr 2019 15:56:39 GMT
+# Tue, 07 May 2019 09:42:14 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 10 Apr 2019 15:56:40 GMT
+# Tue, 07 May 2019 09:42:14 GMT
 ENV LIGHTSTREAMER_VERSION=7_0_3_20190107
-# Wed, 10 Apr 2019 15:56:41 GMT
+# Tue, 07 May 2019 09:42:15 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_7_0_3_20190107.tar.gz
-# Wed, 10 Apr 2019 15:56:42 GMT
+# Tue, 07 May 2019 09:42:16 GMT
 WORKDIR /lightstreamer
-# Wed, 10 Apr 2019 15:56:55 GMT
+# Tue, 07 May 2019 09:42:26 GMT
 RUN set -ex;         apk add --no-cache --virtual .deps                    gnupg                    tar                    curl         && gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2         &&  set -ex;                curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}                && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc                && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz                && tar -xvf Lightstreamer.tar.gz --strip-components=1                && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh                && sed -i -e '164,$s/<appender-ref ref="LSConsole" \/>/<!--<appender-ref ref="LSConsole" \/>-->/'                          -e '116,$s/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                          -e '/<!--<appender-ref ref="LSConsole" \/>-->/ d' conf/lightstreamer_log_conf.xml                && apk del .deps                && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 10 Apr 2019 15:56:56 GMT
+# Tue, 07 May 2019 09:42:27 GMT
 EXPOSE 8080
-# Wed, 10 Apr 2019 15:56:57 GMT
+# Tue, 07 May 2019 09:42:27 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 10 Apr 2019 15:56:57 GMT
+# Tue, 07 May 2019 09:42:28 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -2654,17 +2654,17 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Wed, 10 Apr 2019 13:54:59 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e78228c716bb6c3a10bb270a49d539dd97f566d1096b0be9c36640eb8c5a1436`  
-		Last Modified: Wed, 10 Apr 2019 13:56:24 GMT  
-		Size: 54.9 MB (54929226 bytes)  
+	-	`sha256:5d10db63af1f96048923a5f41d823c0323006317e5fc0aa7c2e88238ca37bf98`  
+		Last Modified: Tue, 07 May 2019 09:05:22 GMT  
+		Size: 54.9 MB (54942629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c032055f34bdb761d305e163000b85930a17a243542201618d469f2938000de`  
-		Last Modified: Wed, 10 Apr 2019 15:57:30 GMT  
+	-	`sha256:4b873ce48cc233858f437dacadb09a43570da725f4ef3b5dc5d524f683762a74`  
+		Last Modified: Tue, 07 May 2019 09:42:59 GMT  
 		Size: 102.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:900ca412b1731c045bb6dd6d5df77cc7e189b56ce20e4cb42efd9947249c9f7f`  
-		Last Modified: Wed, 10 Apr 2019 15:57:39 GMT  
-		Size: 39.9 MB (39919221 bytes)  
+	-	`sha256:7a7f56f883390feb8b9fd3beb4e87dd659b197016ede10af8a6893eec20792f2`  
+		Last Modified: Tue, 07 May 2019 09:43:07 GMT  
+		Size: 39.9 MB (39919335 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `lightstreamer:7.0-jre11`
@@ -3104,7 +3104,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.0-jre8-alpine`
 
 ```console
-$ docker pull lightstreamer@sha256:9c9e5161372f59e2944843020ad8a1375969b1ca8fae2bda4aad8cce504ae8b1
+$ docker pull lightstreamer@sha256:cb02b5d0892107b0e02e2506b0ff388d5f94f7443c7a7e09c567e2be71790707
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3187,14 +3187,14 @@ CMD ["./LS.sh" "run"]
 ### `lightstreamer:7.0-jre8-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull lightstreamer@sha256:6c8b3e79ee75342d187428d24f4c76248df176129fac8060edc6352550b2fafd
+$ docker pull lightstreamer@sha256:fc5d9e0cd4f4797674e4d10879abf308b15cc308ff0bfbd4892295280c4e682d
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **97.5 MB (97537564 bytes)**  
+-	Total Size: **97.6 MB (97551081 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79a390198912c9f5bab4df9c9502e680f229cba1b3f5a5188c14e41e4edb9f86`
+-	Image ID: `sha256:38fe1a2f0006bca168925c7fc46ab9c022da13a571294f911787895bf7308284`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -3210,27 +3210,27 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 # Wed, 10 Apr 2019 13:50:31 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Wed, 10 Apr 2019 13:50:33 GMT
-ENV JAVA_VERSION=8u201
-# Wed, 10 Apr 2019 13:50:35 GMT
-ENV JAVA_ALPINE_VERSION=8.201.08-r1
-# Wed, 10 Apr 2019 13:50:50 GMT
+# Tue, 07 May 2019 09:02:55 GMT
+ENV JAVA_VERSION=8u212
+# Tue, 07 May 2019 09:02:56 GMT
+ENV JAVA_ALPINE_VERSION=8.212.04-r0
+# Tue, 07 May 2019 09:03:02 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 10 Apr 2019 15:56:39 GMT
+# Tue, 07 May 2019 09:42:14 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 10 Apr 2019 15:56:40 GMT
+# Tue, 07 May 2019 09:42:14 GMT
 ENV LIGHTSTREAMER_VERSION=7_0_3_20190107
-# Wed, 10 Apr 2019 15:56:41 GMT
+# Tue, 07 May 2019 09:42:15 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_7_0_3_20190107.tar.gz
-# Wed, 10 Apr 2019 15:56:42 GMT
+# Tue, 07 May 2019 09:42:16 GMT
 WORKDIR /lightstreamer
-# Wed, 10 Apr 2019 15:56:55 GMT
+# Tue, 07 May 2019 09:42:26 GMT
 RUN set -ex;         apk add --no-cache --virtual .deps                    gnupg                    tar                    curl         && gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2         &&  set -ex;                curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}                && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc                && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz                && tar -xvf Lightstreamer.tar.gz --strip-components=1                && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh                && sed -i -e '164,$s/<appender-ref ref="LSConsole" \/>/<!--<appender-ref ref="LSConsole" \/>-->/'                          -e '116,$s/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                          -e '/<!--<appender-ref ref="LSConsole" \/>-->/ d' conf/lightstreamer_log_conf.xml                && apk del .deps                && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 10 Apr 2019 15:56:56 GMT
+# Tue, 07 May 2019 09:42:27 GMT
 EXPOSE 8080
-# Wed, 10 Apr 2019 15:56:57 GMT
+# Tue, 07 May 2019 09:42:27 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 10 Apr 2019 15:56:57 GMT
+# Tue, 07 May 2019 09:42:28 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -3243,23 +3243,23 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Wed, 10 Apr 2019 13:54:59 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e78228c716bb6c3a10bb270a49d539dd97f566d1096b0be9c36640eb8c5a1436`  
-		Last Modified: Wed, 10 Apr 2019 13:56:24 GMT  
-		Size: 54.9 MB (54929226 bytes)  
+	-	`sha256:5d10db63af1f96048923a5f41d823c0323006317e5fc0aa7c2e88238ca37bf98`  
+		Last Modified: Tue, 07 May 2019 09:05:22 GMT  
+		Size: 54.9 MB (54942629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c032055f34bdb761d305e163000b85930a17a243542201618d469f2938000de`  
-		Last Modified: Wed, 10 Apr 2019 15:57:30 GMT  
+	-	`sha256:4b873ce48cc233858f437dacadb09a43570da725f4ef3b5dc5d524f683762a74`  
+		Last Modified: Tue, 07 May 2019 09:42:59 GMT  
 		Size: 102.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:900ca412b1731c045bb6dd6d5df77cc7e189b56ce20e4cb42efd9947249c9f7f`  
-		Last Modified: Wed, 10 Apr 2019 15:57:39 GMT  
-		Size: 39.9 MB (39919221 bytes)  
+	-	`sha256:7a7f56f883390feb8b9fd3beb4e87dd659b197016ede10af8a6893eec20792f2`  
+		Last Modified: Tue, 07 May 2019 09:43:07 GMT  
+		Size: 39.9 MB (39919335 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `lightstreamer:7-alpine`
 
 ```console
-$ docker pull lightstreamer@sha256:9c9e5161372f59e2944843020ad8a1375969b1ca8fae2bda4aad8cce504ae8b1
+$ docker pull lightstreamer@sha256:cb02b5d0892107b0e02e2506b0ff388d5f94f7443c7a7e09c567e2be71790707
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3342,14 +3342,14 @@ CMD ["./LS.sh" "run"]
 ### `lightstreamer:7-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull lightstreamer@sha256:6c8b3e79ee75342d187428d24f4c76248df176129fac8060edc6352550b2fafd
+$ docker pull lightstreamer@sha256:fc5d9e0cd4f4797674e4d10879abf308b15cc308ff0bfbd4892295280c4e682d
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **97.5 MB (97537564 bytes)**  
+-	Total Size: **97.6 MB (97551081 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79a390198912c9f5bab4df9c9502e680f229cba1b3f5a5188c14e41e4edb9f86`
+-	Image ID: `sha256:38fe1a2f0006bca168925c7fc46ab9c022da13a571294f911787895bf7308284`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -3365,27 +3365,27 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 # Wed, 10 Apr 2019 13:50:31 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Wed, 10 Apr 2019 13:50:33 GMT
-ENV JAVA_VERSION=8u201
-# Wed, 10 Apr 2019 13:50:35 GMT
-ENV JAVA_ALPINE_VERSION=8.201.08-r1
-# Wed, 10 Apr 2019 13:50:50 GMT
+# Tue, 07 May 2019 09:02:55 GMT
+ENV JAVA_VERSION=8u212
+# Tue, 07 May 2019 09:02:56 GMT
+ENV JAVA_ALPINE_VERSION=8.212.04-r0
+# Tue, 07 May 2019 09:03:02 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 10 Apr 2019 15:56:39 GMT
+# Tue, 07 May 2019 09:42:14 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 10 Apr 2019 15:56:40 GMT
+# Tue, 07 May 2019 09:42:14 GMT
 ENV LIGHTSTREAMER_VERSION=7_0_3_20190107
-# Wed, 10 Apr 2019 15:56:41 GMT
+# Tue, 07 May 2019 09:42:15 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_7_0_3_20190107.tar.gz
-# Wed, 10 Apr 2019 15:56:42 GMT
+# Tue, 07 May 2019 09:42:16 GMT
 WORKDIR /lightstreamer
-# Wed, 10 Apr 2019 15:56:55 GMT
+# Tue, 07 May 2019 09:42:26 GMT
 RUN set -ex;         apk add --no-cache --virtual .deps                    gnupg                    tar                    curl         && gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2         &&  set -ex;                curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}                && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc                && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz                && tar -xvf Lightstreamer.tar.gz --strip-components=1                && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh                && sed -i -e '164,$s/<appender-ref ref="LSConsole" \/>/<!--<appender-ref ref="LSConsole" \/>-->/'                          -e '116,$s/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                          -e '/<!--<appender-ref ref="LSConsole" \/>-->/ d' conf/lightstreamer_log_conf.xml                && apk del .deps                && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 10 Apr 2019 15:56:56 GMT
+# Tue, 07 May 2019 09:42:27 GMT
 EXPOSE 8080
-# Wed, 10 Apr 2019 15:56:57 GMT
+# Tue, 07 May 2019 09:42:27 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 10 Apr 2019 15:56:57 GMT
+# Tue, 07 May 2019 09:42:28 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -3398,17 +3398,17 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Wed, 10 Apr 2019 13:54:59 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e78228c716bb6c3a10bb270a49d539dd97f566d1096b0be9c36640eb8c5a1436`  
-		Last Modified: Wed, 10 Apr 2019 13:56:24 GMT  
-		Size: 54.9 MB (54929226 bytes)  
+	-	`sha256:5d10db63af1f96048923a5f41d823c0323006317e5fc0aa7c2e88238ca37bf98`  
+		Last Modified: Tue, 07 May 2019 09:05:22 GMT  
+		Size: 54.9 MB (54942629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c032055f34bdb761d305e163000b85930a17a243542201618d469f2938000de`  
-		Last Modified: Wed, 10 Apr 2019 15:57:30 GMT  
+	-	`sha256:4b873ce48cc233858f437dacadb09a43570da725f4ef3b5dc5d524f683762a74`  
+		Last Modified: Tue, 07 May 2019 09:42:59 GMT  
 		Size: 102.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:900ca412b1731c045bb6dd6d5df77cc7e189b56ce20e4cb42efd9947249c9f7f`  
-		Last Modified: Wed, 10 Apr 2019 15:57:39 GMT  
-		Size: 39.9 MB (39919221 bytes)  
+	-	`sha256:7a7f56f883390feb8b9fd3beb4e87dd659b197016ede10af8a6893eec20792f2`  
+		Last Modified: Tue, 07 May 2019 09:43:07 GMT  
+		Size: 39.9 MB (39919335 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `lightstreamer:7-jre11`
@@ -3848,7 +3848,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7-jre8-alpine`
 
 ```console
-$ docker pull lightstreamer@sha256:9c9e5161372f59e2944843020ad8a1375969b1ca8fae2bda4aad8cce504ae8b1
+$ docker pull lightstreamer@sha256:cb02b5d0892107b0e02e2506b0ff388d5f94f7443c7a7e09c567e2be71790707
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3931,14 +3931,14 @@ CMD ["./LS.sh" "run"]
 ### `lightstreamer:7-jre8-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull lightstreamer@sha256:6c8b3e79ee75342d187428d24f4c76248df176129fac8060edc6352550b2fafd
+$ docker pull lightstreamer@sha256:fc5d9e0cd4f4797674e4d10879abf308b15cc308ff0bfbd4892295280c4e682d
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **97.5 MB (97537564 bytes)**  
+-	Total Size: **97.6 MB (97551081 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79a390198912c9f5bab4df9c9502e680f229cba1b3f5a5188c14e41e4edb9f86`
+-	Image ID: `sha256:38fe1a2f0006bca168925c7fc46ab9c022da13a571294f911787895bf7308284`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -3954,27 +3954,27 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 # Wed, 10 Apr 2019 13:50:31 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Wed, 10 Apr 2019 13:50:33 GMT
-ENV JAVA_VERSION=8u201
-# Wed, 10 Apr 2019 13:50:35 GMT
-ENV JAVA_ALPINE_VERSION=8.201.08-r1
-# Wed, 10 Apr 2019 13:50:50 GMT
+# Tue, 07 May 2019 09:02:55 GMT
+ENV JAVA_VERSION=8u212
+# Tue, 07 May 2019 09:02:56 GMT
+ENV JAVA_ALPINE_VERSION=8.212.04-r0
+# Tue, 07 May 2019 09:03:02 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 10 Apr 2019 15:56:39 GMT
+# Tue, 07 May 2019 09:42:14 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 10 Apr 2019 15:56:40 GMT
+# Tue, 07 May 2019 09:42:14 GMT
 ENV LIGHTSTREAMER_VERSION=7_0_3_20190107
-# Wed, 10 Apr 2019 15:56:41 GMT
+# Tue, 07 May 2019 09:42:15 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_7_0_3_20190107.tar.gz
-# Wed, 10 Apr 2019 15:56:42 GMT
+# Tue, 07 May 2019 09:42:16 GMT
 WORKDIR /lightstreamer
-# Wed, 10 Apr 2019 15:56:55 GMT
+# Tue, 07 May 2019 09:42:26 GMT
 RUN set -ex;         apk add --no-cache --virtual .deps                    gnupg                    tar                    curl         && gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2         &&  set -ex;                curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}                && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc                && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz                && tar -xvf Lightstreamer.tar.gz --strip-components=1                && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh                && sed -i -e '164,$s/<appender-ref ref="LSConsole" \/>/<!--<appender-ref ref="LSConsole" \/>-->/'                          -e '116,$s/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                          -e '/<!--<appender-ref ref="LSConsole" \/>-->/ d' conf/lightstreamer_log_conf.xml                && apk del .deps                && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 10 Apr 2019 15:56:56 GMT
+# Tue, 07 May 2019 09:42:27 GMT
 EXPOSE 8080
-# Wed, 10 Apr 2019 15:56:57 GMT
+# Tue, 07 May 2019 09:42:27 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 10 Apr 2019 15:56:57 GMT
+# Tue, 07 May 2019 09:42:28 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -3987,17 +3987,17 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Wed, 10 Apr 2019 13:54:59 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e78228c716bb6c3a10bb270a49d539dd97f566d1096b0be9c36640eb8c5a1436`  
-		Last Modified: Wed, 10 Apr 2019 13:56:24 GMT  
-		Size: 54.9 MB (54929226 bytes)  
+	-	`sha256:5d10db63af1f96048923a5f41d823c0323006317e5fc0aa7c2e88238ca37bf98`  
+		Last Modified: Tue, 07 May 2019 09:05:22 GMT  
+		Size: 54.9 MB (54942629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c032055f34bdb761d305e163000b85930a17a243542201618d469f2938000de`  
-		Last Modified: Wed, 10 Apr 2019 15:57:30 GMT  
+	-	`sha256:4b873ce48cc233858f437dacadb09a43570da725f4ef3b5dc5d524f683762a74`  
+		Last Modified: Tue, 07 May 2019 09:42:59 GMT  
 		Size: 102.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:900ca412b1731c045bb6dd6d5df77cc7e189b56ce20e4cb42efd9947249c9f7f`  
-		Last Modified: Wed, 10 Apr 2019 15:57:39 GMT  
-		Size: 39.9 MB (39919221 bytes)  
+	-	`sha256:7a7f56f883390feb8b9fd3beb4e87dd659b197016ede10af8a6893eec20792f2`  
+		Last Modified: Tue, 07 May 2019 09:43:07 GMT  
+		Size: 39.9 MB (39919335 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `lightstreamer:latest`
