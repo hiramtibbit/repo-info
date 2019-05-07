@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:162f5eee1e4162712531591a8817a1142abdb2f35048e1fbae905f85a44a86ae`
-- Created: `2019-04-27T00:25:45.854909448Z`
-- Virtual Size: ~ 204.25 Mb  
+- Image ID: `sha256:df3dc8cadd75ea80f06d30a1df6c614b71f4cb3923e67a041326c560e296643e`
+- Created: `2019-05-07T00:50:31.240008922Z`
+- Virtual Size: ~ 204.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk`
-  - `JAVA_VERSION=8u201`
-  - `JAVA_ALPINE_VERSION=8.201.08-r1`
+  - `JAVA_VERSION=8u212`
+  - `JAVA_ALPINE_VERSION=8.212.04-r0`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=5.4.1`
 
@@ -413,16 +413,16 @@ IJG
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.35-r0 description:
+libpng-1.6.37-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.35-r0 webpage:
+libpng-1.6.37-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.35-r0 installed size:
+libpng-1.6.37-r0 installed size:
 204800
 
-libpng-1.6.35-r0 license:
+libpng-1.6.37-r0 license:
 Libpng
 
 ```
@@ -753,16 +753,16 @@ MPL GPL
 ### `apk` package: `openjdk8`
 
 ```console
-openjdk8-8.201.08-r1 description:
+openjdk8-8.212.04-r0 description:
 OpenJDK 8 provided by IcedTea
 
-openjdk8-8.201.08-r1 webpage:
+openjdk8-8.212.04-r0 webpage:
 https://icedtea.classpath.org/
 
-openjdk8-8.201.08-r1 installed size:
-20008960
+openjdk8-8.212.04-r0 installed size:
+20041728
 
-openjdk8-8.201.08-r1 license:
+openjdk8-8.212.04-r0 license:
 custom
 
 ```
@@ -770,16 +770,16 @@ custom
 ### `apk` package: `openjdk8-jre`
 
 ```console
-openjdk8-jre-8.201.08-r1 description:
+openjdk8-jre-8.212.04-r0 description:
 OpenJDK 8 Java Runtime
 
-openjdk8-jre-8.201.08-r1 webpage:
+openjdk8-jre-8.212.04-r0 webpage:
 https://icedtea.classpath.org/
 
-openjdk8-jre-8.201.08-r1 installed size:
+openjdk8-jre-8.212.04-r0 installed size:
 970752
 
-openjdk8-jre-8.201.08-r1 license:
+openjdk8-jre-8.212.04-r0 license:
 custom
 
 ```
@@ -787,16 +787,16 @@ custom
 ### `apk` package: `openjdk8-jre-base`
 
 ```console
-openjdk8-jre-base-8.201.08-r1 description:
+openjdk8-jre-base-8.212.04-r0 description:
 OpenJDK 8 Java Runtime (no GUI support)
 
-openjdk8-jre-base-8.201.08-r1 webpage:
+openjdk8-jre-base-8.212.04-r0 webpage:
 https://icedtea.classpath.org/
 
-openjdk8-jre-base-8.201.08-r1 installed size:
-13492224
+openjdk8-jre-base-8.212.04-r0 installed size:
+13529088
 
-openjdk8-jre-base-8.201.08-r1 license:
+openjdk8-jre-base-8.212.04-r0 license:
 custom
 
 ```
@@ -804,16 +804,16 @@ custom
 ### `apk` package: `openjdk8-jre-lib`
 
 ```console
-openjdk8-jre-lib-8.201.08-r1 description:
+openjdk8-jre-lib-8.212.04-r0 description:
 OpenJDK 8 Java Runtime (class libraries)
 
-openjdk8-jre-lib-8.201.08-r1 webpage:
+openjdk8-jre-lib-8.212.04-r0 webpage:
 https://icedtea.classpath.org/
 
-openjdk8-jre-lib-8.201.08-r1 installed size:
-46878720
+openjdk8-jre-lib-8.212.04-r0 installed size:
+46891008
 
-openjdk8-jre-lib-8.201.08-r1 license:
+openjdk8-jre-lib-8.212.04-r0 license:
 custom
 
 ```
