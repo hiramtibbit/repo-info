@@ -1,7 +1,7 @@
 ## `yourls:latest`
 
 ```console
-$ docker pull yourls@sha256:7182be7e801bab25b1db15fb1e13c734ec15d9a6dcec3911cb98c605c43e3dce
+$ docker pull yourls@sha256:f9266f04618898cf6983a8c26d3e8895667cfcea89d16114bb958d5d4f4f202f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -756,14 +756,14 @@ CMD ["apache2-foreground"]
 ### `yourls:latest` - linux; 386
 
 ```console
-$ docker pull yourls@sha256:86322e139aa0b9aec28aeaa5df95e020520321053e9f389878c4d9768a1b9ece
+$ docker pull yourls@sha256:ebc57cabc42784ebc66e788ee0b113fd7599dd8edbcb5fb920c0404a937d4729
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **143.2 MB (143205727 bytes)**  
+-	Total Size: **143.2 MB (143205725 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56512a39cae64edd8666fd6d917d5314335704db16a02b9acb843fee830cefd9`
+-	Image ID: `sha256:4a36e05e56dbc7c1f93ce7195933fa498aaf497dea3b8a9801a8b96b2f4dd2b5`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -848,11 +848,11 @@ RUN set -ex;     curl -o yourls.tar.gz -fsSL "https://github.com/YOURLS/YOURLS/a
 COPY file:dae29f9c1e1fe04a79abdb2b0965f1a821bebbe26ab1e1e13cae7fe5fbaf788d in /usr/local/bin/ 
 # Sat, 04 May 2019 09:29:18 GMT
 COPY file:3f52182221aa0be7c7b12ddf051434d36a6c19e6da6da6b973ace390c4e1ce25 in /usr/src/yourls/user/ 
-# Sat, 04 May 2019 09:29:18 GMT
-COPY file:5b7ff05d0c98ad759c4bec0ef8a7ce74cae42e95b42564b55f43b341c2c3e3f5 in /var/www/html/ 
-# Sat, 04 May 2019 09:29:18 GMT
+# Tue, 07 May 2019 10:47:58 GMT
+COPY file:5b7ff05d0c98ad759c4bec0ef8a7ce74cae42e95b42564b55f43b341c2c3e3f5 in /usr/src/yourls/ 
+# Tue, 07 May 2019 10:47:58 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 04 May 2019 09:29:19 GMT
+# Tue, 07 May 2019 10:47:58 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -933,9 +933,9 @@ CMD ["apache2-foreground"]
 		Last Modified: Sat, 04 May 2019 09:31:13 GMT  
 		Size: 1.8 KB (1802 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:febd5083fab0a8d65818aef2ec69211fb7b098ba2c9a1b95a9c97029169146ca`  
-		Last Modified: Sat, 04 May 2019 09:31:13 GMT  
-		Size: 333.0 B  
+	-	`sha256:cfd255d6a8c2f2f410fcb2207156b903669ae63d2c3aee7d4460b9fb51448353`  
+		Last Modified: Tue, 07 May 2019 10:48:14 GMT  
+		Size: 331.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `yourls:latest` - linux; ppc64le
