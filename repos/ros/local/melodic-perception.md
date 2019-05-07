@@ -1517,13 +1517,9 @@ Licenses: (parsed from: `/usr/share/doc/distro-info-data/copyright`)
 
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris distro-info-data=0.37ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.37ubuntu0.4.dsc' distro-info-data_0.37ubuntu0.4.dsc 1413 SHA256:11d3a75b396e6b2c83e357004f50d02fd6d454d44c2708fc0fc30d9d8a74adc3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.37ubuntu0.4.tar.xz' distro-info-data_0.37ubuntu0.4.tar.xz 6956 SHA256:b954f14a1052095e6c424a34415d8eda684021fbe1f9d564317d7ea81c93188d
-```
 
 ### `dpkg` source package: `double-conversion=2.0.1-4ubuntu1`
 
@@ -1755,15 +1751,9 @@ Licenses: (parsed from: `/usr/share/doc/libavcodec-dev/copyright`, `/usr/share/d
 - `man-page`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ffmpeg=7:3.4.4-0ubuntu0.18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_3.4.4-0ubuntu0.18.04.1.dsc' ffmpeg_3.4.4-0ubuntu0.18.04.1.dsc 5245 SHA256:97a6f37b80b1230574b796582a7048ceedf009174eaccbeb4dfc224bc86a00e8
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_3.4.4.orig.tar.xz' ffmpeg_3.4.4.orig.tar.xz 8485304 SHA256:386f7601e865df6bddde05bb6927119b5a853f0b92e2e9834f59c125a17d3fc6
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_3.4.4.orig.tar.xz.asc' ffmpeg_3.4.4.orig.tar.xz.asc 473 SHA256:6ada8ffb5bf8a4850b3fc2646c13d42f5e4c168a71cb0e259686af35004928e2
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_3.4.4-0ubuntu0.18.04.1.debian.tar.xz' ffmpeg_3.4.4-0ubuntu0.18.04.1.debian.tar.xz 41928 SHA256:9435d582c463df6e42529ac8e710c753885aeacd14f51d5aa7ea2422b9de0e37
-```
 
 ### `dpkg` source package: `file=1:5.32-2ubuntu0.2`
 
