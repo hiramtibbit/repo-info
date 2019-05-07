@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a6b6bee764a1b71d2e7beb4337bde4fdde85cb809ba57551a4fcd4268ca4486e`
-- Created: `2019-04-25T01:31:02.768924564Z`
-- Virtual Size: ~ 205.70 Mb  
+- Image ID: `sha256:ac9dbed5c6fd0b79e41691785381d967f8163d1a1684b16f413f7fc2c24e183a`
+- Created: `2019-05-04T06:10:23.751086172Z`
+- Virtual Size: ~ 205.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.4`
-  - `PHP_URL=https://www.php.net/get/php-7.3.4.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://www.php.net/get/php-7.3.4.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=6fe79fa1f8655f98ef6708cde8751299796d6c1e225081011f4104625b923b83`
+  - `PHP_VERSION=7.3.5`
+  - `PHP_URL=https://www.php.net/get/php-7.3.5.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://www.php.net/get/php-7.3.5.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=e1011838a46fd4a195c8453b333916622d7ff5bce4aca2d9d99afac142db2472`
   - `PHP_MD5=`
   - `MATOMO_VERSION=3.9.1`
 - Labels:
