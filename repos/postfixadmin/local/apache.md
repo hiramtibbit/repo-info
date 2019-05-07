@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:565ac10fba2d76771b8fc2ae070d89bd3f43600fca91748b62921a2f9a9c411c`
-- Created: `2019-04-06T06:18:58.15977715Z`
-- Virtual Size: ~ 384.32 Mb  
+- Image ID: `sha256:5f0739bf5dee1d396ffd11404925e12a0653fedd40bbfc232e16b3ad2d19baec`
+- Created: `2019-05-04T06:59:54.33354482Z`
+- Virtual Size: ~ 384.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -21,10 +21,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.4`
-  - `PHP_URL=https://www.php.net/get/php-7.3.4.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://www.php.net/get/php-7.3.4.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=6fe79fa1f8655f98ef6708cde8751299796d6c1e225081011f4104625b923b83`
+  - `PHP_VERSION=7.3.5`
+  - `PHP_URL=https://www.php.net/get/php-7.3.5.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://www.php.net/get/php-7.3.5.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=e1011838a46fd4a195c8453b333916622d7ff5bce4aca2d9d99afac142db2472`
   - `PHP_MD5=`
   - `POSTFIXADMIN_VERSION=3.2.2`
   - `POSTFIXADMIN_SHA512=6c84cb215e69c52c26db0651e5d0d9d8bcb0a63b00d3c197f10fa1f0442a1fde44bb514fb476a1e68a21741d603febac67282961d01270e5969ee13d145121ee`
@@ -2444,11 +2444,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pkg-config/0.29-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pkg-config/0.29-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-9.6=9.6.11-0+deb9u1`
+### `dpkg` source package: `postgresql-9.6=9.6.12-0+deb9u1`
 
 Binary Packages:
 
-- `libpq5:amd64=9.6.11-0+deb9u1`
+- `libpq5:amd64=9.6.12-0+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -2467,13 +2467,20 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 - `nagaysau-ishii`
 - `rijndael`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris postgresql-9.6=9.6.12-0+deb9u1
+'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.12-0+deb9u1.dsc' postgresql-9.6_9.6.12-0+deb9u1.dsc 3709 SHA256:da76e8ac602ae5e8c054883159b3a15155167d94bc87f453daff68b7a961fa93
+'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.12.orig.tar.bz2' postgresql-9.6_9.6.12.orig.tar.bz2 18759442 SHA256:2e8c8446ba94767bda8a26cf5a2152bf0ae68a86aaebf894132a763084579d84
+'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.12-0+deb9u1.debian.tar.xz' postgresql-9.6_9.6.12-0+deb9u1.debian.tar.xz 26604 SHA256:7c78ec53c98d06af5098872725eae9cc9cbf0987a336621d190abff758366c92
+```
 
-- http://snapshot.debian.org/package/postgresql-9.6/9.6.11-0+deb9u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/postgresql-9.6/9.6.12-0+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-9.6/9.6.12-0+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-9.6/9.6.12-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.12-3+deb9u1`
 
