@@ -13,7 +13,7 @@
 ## `storm:1.0`
 
 ```console
-$ docker pull storm@sha256:8068e6ad7d472e3c1798671bcde7c2bc8fc8784af5db17d9814ca05fb90c3f08
+$ docker pull storm@sha256:ba1ac2f8b2c1e9e201dd2b861ce7124bd277730aa8cc6b5b18b52ca2cb78efc7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -198,14 +198,14 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 ### `storm:1.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull storm@sha256:6a033566b1bcc3eff2150e6d38a137b13150bd674e7a20c5cd66cee2f2795550
+$ docker pull storm@sha256:592733ac102452797d4f2b43c7c6e34bea4b75fbdd3812473824a999fce65150
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **262.5 MB (262494363 bytes)**  
+-	Total Size: **262.4 MB (262431440 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:66cbb897dac51cf3ab262772ce69a2a2d68ac9c0be8117ddbf724aa6660f97a6`
+-	Image ID: `sha256:78ee013777200c6558de1e88aaa75e928d09f4a19b0191a6bc62cd3dd5e286c2`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -221,32 +221,32 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 # Wed, 10 Apr 2019 13:50:31 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Wed, 10 Apr 2019 13:50:33 GMT
-ENV JAVA_VERSION=8u201
-# Wed, 10 Apr 2019 13:50:35 GMT
-ENV JAVA_ALPINE_VERSION=8.201.08-r1
-# Wed, 10 Apr 2019 13:50:50 GMT
+# Tue, 07 May 2019 09:02:55 GMT
+ENV JAVA_VERSION=8u212
+# Tue, 07 May 2019 09:02:56 GMT
+ENV JAVA_ALPINE_VERSION=8.212.04-r0
+# Tue, 07 May 2019 09:03:02 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 10 Apr 2019 16:15:36 GMT
+# Tue, 07 May 2019 09:36:45 GMT
 RUN apk add --no-cache     bash     python     su-exec
-# Wed, 10 Apr 2019 16:15:37 GMT
+# Tue, 07 May 2019 09:36:46 GMT
 ENV STORM_USER=storm STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Wed, 10 Apr 2019 16:15:39 GMT
+# Tue, 07 May 2019 09:36:48 GMT
 RUN set -ex;     adduser -D "$STORM_USER";     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R "$STORM_USER:$STORM_USER" "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Wed, 10 Apr 2019 16:15:40 GMT
+# Tue, 07 May 2019 09:36:49 GMT
 ARG GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
-# Wed, 10 Apr 2019 16:15:41 GMT
+# Tue, 07 May 2019 09:36:49 GMT
 ARG DISTRO_NAME=apache-storm-1.0.6
-# Wed, 10 Apr 2019 16:16:10 GMT
+# Tue, 07 May 2019 09:37:49 GMT
 # ARGS: DISTRO_NAME=apache-storm-1.0.6 GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
 RUN set -ex;     apk add --no-cache --virtual .build-deps       gnupg;     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     chown -R "$STORM_USER:$STORM_USER" "$DISTRO_NAME";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     apk del .build-deps
-# Wed, 10 Apr 2019 16:16:11 GMT
+# Tue, 07 May 2019 09:37:50 GMT
 WORKDIR /apache-storm-1.0.6
-# Wed, 10 Apr 2019 16:16:12 GMT
+# Tue, 07 May 2019 09:37:51 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/apache-storm-1.0.6/bin
-# Wed, 10 Apr 2019 16:16:13 GMT
+# Tue, 07 May 2019 09:37:51 GMT
 COPY file:41358f8195908dd4207afb275bf643e637d0038f1f85ad646c03aa426ca9297d in / 
-# Wed, 10 Apr 2019 16:16:13 GMT
+# Tue, 07 May 2019 09:37:52 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -259,25 +259,25 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Wed, 10 Apr 2019 13:54:59 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e78228c716bb6c3a10bb270a49d539dd97f566d1096b0be9c36640eb8c5a1436`  
-		Last Modified: Wed, 10 Apr 2019 13:56:24 GMT  
-		Size: 54.9 MB (54929226 bytes)  
+	-	`sha256:5d10db63af1f96048923a5f41d823c0323006317e5fc0aa7c2e88238ca37bf98`  
+		Last Modified: Tue, 07 May 2019 09:05:22 GMT  
+		Size: 54.9 MB (54942629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05fdf802bf8992b4f4932b2cd84cd9a568b1ddb8ba8a03e207f5b1aee8b34a46`  
-		Last Modified: Wed, 10 Apr 2019 16:18:14 GMT  
-		Size: 11.6 MB (11609475 bytes)  
+	-	`sha256:120baf78dd6f0c0200ad3df13f513c39883b29250a1aef996057e6295d246af3`  
+		Last Modified: Tue, 07 May 2019 09:39:43 GMT  
+		Size: 11.5 MB (11533025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbfdca28070b7150dddcade09a6b2ca611005ca15b77290f529546b0b186d0c6`  
-		Last Modified: Wed, 10 Apr 2019 16:18:04 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:5d02e495cd3c339f17f84b9173d3c5e137846303585f5c0abbeef34f8a71dd72`  
+		Last Modified: Tue, 07 May 2019 09:39:37 GMT  
+		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0f43a92f83363a3a170a555e80327654a7e92e0e75f1bab54f71a4e7cdfb052`  
-		Last Modified: Wed, 10 Apr 2019 16:18:35 GMT  
-		Size: 193.3 MB (193264934 bytes)  
+	-	`sha256:0d779dbcf99fcc716b33b7840ed49d3e4917e626f4d887623785665062c8e8fa`  
+		Last Modified: Tue, 07 May 2019 09:40:05 GMT  
+		Size: 193.3 MB (193265054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9271b4ffd38b3b3c97f36a7cbfe0d0932a965f89ce0ab07f2dec6611257bb8c1`  
-		Last Modified: Wed, 10 Apr 2019 16:18:04 GMT  
-		Size: 416.0 B  
+	-	`sha256:2478bf38afe64869b3f78a6d6c604713a95a2004fa54f3a8ed75dcfb40c1be09`  
+		Last Modified: Tue, 07 May 2019 09:39:37 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `storm:1.0` - linux; 386
@@ -368,14 +368,14 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 ### `storm:1.0` - linux; ppc64le
 
 ```console
-$ docker pull storm@sha256:0aef011e0c01b55a14af9dcaf50328f72e2561b5a36ec8223b2b066a9a4cb9e9
+$ docker pull storm@sha256:ff6c3161bb91c224655021acb391d76d84ae76e105ebfc8471ebc28b11d55cc2
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **263.5 MB (263459275 bytes)**  
+-	Total Size: **263.4 MB (263385426 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32de6bcd0b527f765602bb2517e5c8e28e7c41fe181d074cb2715ffe7b4ac129`
+-	Image ID: `sha256:31c55de6f5928c5752fa721f8de1835b00d449ee423852df7198fb49b61b306a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -391,32 +391,32 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 # Wed, 10 Apr 2019 10:35:07 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Wed, 10 Apr 2019 10:35:10 GMT
-ENV JAVA_VERSION=8u201
-# Wed, 10 Apr 2019 10:35:13 GMT
-ENV JAVA_ALPINE_VERSION=8.201.08-r1
-# Wed, 10 Apr 2019 10:35:27 GMT
+# Tue, 07 May 2019 08:26:32 GMT
+ENV JAVA_VERSION=8u212
+# Tue, 07 May 2019 08:26:36 GMT
+ENV JAVA_ALPINE_VERSION=8.212.04-r0
+# Tue, 07 May 2019 08:26:49 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 10 Apr 2019 12:29:22 GMT
+# Tue, 07 May 2019 09:22:59 GMT
 RUN apk add --no-cache     bash     python     su-exec
-# Wed, 10 Apr 2019 12:29:26 GMT
+# Tue, 07 May 2019 09:23:03 GMT
 ENV STORM_USER=storm STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Wed, 10 Apr 2019 12:29:35 GMT
+# Tue, 07 May 2019 09:23:14 GMT
 RUN set -ex;     adduser -D "$STORM_USER";     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R "$STORM_USER:$STORM_USER" "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Wed, 10 Apr 2019 12:29:38 GMT
+# Tue, 07 May 2019 09:23:19 GMT
 ARG GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
-# Wed, 10 Apr 2019 12:29:42 GMT
+# Tue, 07 May 2019 09:23:27 GMT
 ARG DISTRO_NAME=apache-storm-1.0.6
-# Wed, 10 Apr 2019 12:30:03 GMT
+# Tue, 07 May 2019 09:31:16 GMT
 # ARGS: DISTRO_NAME=apache-storm-1.0.6 GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
 RUN set -ex;     apk add --no-cache --virtual .build-deps       gnupg;     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     chown -R "$STORM_USER:$STORM_USER" "$DISTRO_NAME";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     apk del .build-deps
-# Wed, 10 Apr 2019 12:30:07 GMT
+# Tue, 07 May 2019 09:31:23 GMT
 WORKDIR /apache-storm-1.0.6
-# Wed, 10 Apr 2019 12:30:09 GMT
+# Tue, 07 May 2019 09:31:27 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/apache-storm-1.0.6/bin
-# Wed, 10 Apr 2019 12:30:10 GMT
+# Tue, 07 May 2019 09:31:29 GMT
 COPY file:41358f8195908dd4207afb275bf643e637d0038f1f85ad646c03aa426ca9297d in / 
-# Wed, 10 Apr 2019 12:30:11 GMT
+# Tue, 07 May 2019 09:31:32 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -429,25 +429,25 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Wed, 10 Apr 2019 10:38:58 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a35ad59adc8e8f19b104a95ecd5f2b050e924dce137d090bca2b613e15cc6c56`  
-		Last Modified: Wed, 10 Apr 2019 10:39:46 GMT  
-		Size: 55.6 MB (55588899 bytes)  
+	-	`sha256:a878fd53e767670ae9dd90a12c593d6ebea9c9b8d8e5ae4af9dfb25b20674f42`  
+		Last Modified: Tue, 07 May 2019 08:30:01 GMT  
+		Size: 55.6 MB (55592005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a162e07625da560fd1f47c85554a061499fac47d43bdba6ff0bc64db62ca5712`  
-		Last Modified: Wed, 10 Apr 2019 12:33:48 GMT  
-		Size: 11.8 MB (11821324 bytes)  
+	-	`sha256:115d76a037efbea99d52e5a268f07aaf37ba345c57def4f00c83dee4420a8ce9`  
+		Last Modified: Tue, 07 May 2019 09:34:28 GMT  
+		Size: 11.7 MB (11744322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52ae030f565e48d11568ef968226d865c25b80b8946f29b744fdd0b835c3dd51`  
-		Last Modified: Wed, 10 Apr 2019 12:33:42 GMT  
-		Size: 1.4 KB (1367 bytes)  
+	-	`sha256:f3dadda6bbb5e74ab4a759b4c16b7238512a34c3ddcb8ff6b9004e2dc11bcd7f`  
+		Last Modified: Tue, 07 May 2019 09:34:22 GMT  
+		Size: 1.4 KB (1364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d3d857781468080aee0bb7ec2a3f081002ec4e6cf0ccef3ff7002a31441b421`  
-		Last Modified: Wed, 10 Apr 2019 12:34:04 GMT  
-		Size: 193.3 MB (193266010 bytes)  
+	-	`sha256:8f2d3e7e3bdd525da63674a9a57a7854de8005f87c964ff400183c206a6e4f2c`  
+		Last Modified: Tue, 07 May 2019 09:34:47 GMT  
+		Size: 193.3 MB (193266062 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:883453f332d2a5f2a7c1edba8a6e8198f5b1d239a4a31fdee1d730ee9611d15d`  
-		Last Modified: Wed, 10 Apr 2019 12:33:42 GMT  
-		Size: 418.0 B  
+	-	`sha256:32ef4bf72c73ca16bb1500dc99c2604112e2385303148be94658bb76e6f26d40`  
+		Last Modified: Tue, 07 May 2019 09:34:22 GMT  
+		Size: 416.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `storm:1.0` - linux; s390x
@@ -538,7 +538,7 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 ## `storm:1.0.6`
 
 ```console
-$ docker pull storm@sha256:8068e6ad7d472e3c1798671bcde7c2bc8fc8784af5db17d9814ca05fb90c3f08
+$ docker pull storm@sha256:ba1ac2f8b2c1e9e201dd2b861ce7124bd277730aa8cc6b5b18b52ca2cb78efc7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -723,14 +723,14 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 ### `storm:1.0.6` - linux; arm64 variant v8
 
 ```console
-$ docker pull storm@sha256:6a033566b1bcc3eff2150e6d38a137b13150bd674e7a20c5cd66cee2f2795550
+$ docker pull storm@sha256:592733ac102452797d4f2b43c7c6e34bea4b75fbdd3812473824a999fce65150
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **262.5 MB (262494363 bytes)**  
+-	Total Size: **262.4 MB (262431440 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:66cbb897dac51cf3ab262772ce69a2a2d68ac9c0be8117ddbf724aa6660f97a6`
+-	Image ID: `sha256:78ee013777200c6558de1e88aaa75e928d09f4a19b0191a6bc62cd3dd5e286c2`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -746,32 +746,32 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 # Wed, 10 Apr 2019 13:50:31 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Wed, 10 Apr 2019 13:50:33 GMT
-ENV JAVA_VERSION=8u201
-# Wed, 10 Apr 2019 13:50:35 GMT
-ENV JAVA_ALPINE_VERSION=8.201.08-r1
-# Wed, 10 Apr 2019 13:50:50 GMT
+# Tue, 07 May 2019 09:02:55 GMT
+ENV JAVA_VERSION=8u212
+# Tue, 07 May 2019 09:02:56 GMT
+ENV JAVA_ALPINE_VERSION=8.212.04-r0
+# Tue, 07 May 2019 09:03:02 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 10 Apr 2019 16:15:36 GMT
+# Tue, 07 May 2019 09:36:45 GMT
 RUN apk add --no-cache     bash     python     su-exec
-# Wed, 10 Apr 2019 16:15:37 GMT
+# Tue, 07 May 2019 09:36:46 GMT
 ENV STORM_USER=storm STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Wed, 10 Apr 2019 16:15:39 GMT
+# Tue, 07 May 2019 09:36:48 GMT
 RUN set -ex;     adduser -D "$STORM_USER";     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R "$STORM_USER:$STORM_USER" "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Wed, 10 Apr 2019 16:15:40 GMT
+# Tue, 07 May 2019 09:36:49 GMT
 ARG GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
-# Wed, 10 Apr 2019 16:15:41 GMT
+# Tue, 07 May 2019 09:36:49 GMT
 ARG DISTRO_NAME=apache-storm-1.0.6
-# Wed, 10 Apr 2019 16:16:10 GMT
+# Tue, 07 May 2019 09:37:49 GMT
 # ARGS: DISTRO_NAME=apache-storm-1.0.6 GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
 RUN set -ex;     apk add --no-cache --virtual .build-deps       gnupg;     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     chown -R "$STORM_USER:$STORM_USER" "$DISTRO_NAME";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     apk del .build-deps
-# Wed, 10 Apr 2019 16:16:11 GMT
+# Tue, 07 May 2019 09:37:50 GMT
 WORKDIR /apache-storm-1.0.6
-# Wed, 10 Apr 2019 16:16:12 GMT
+# Tue, 07 May 2019 09:37:51 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/apache-storm-1.0.6/bin
-# Wed, 10 Apr 2019 16:16:13 GMT
+# Tue, 07 May 2019 09:37:51 GMT
 COPY file:41358f8195908dd4207afb275bf643e637d0038f1f85ad646c03aa426ca9297d in / 
-# Wed, 10 Apr 2019 16:16:13 GMT
+# Tue, 07 May 2019 09:37:52 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -784,25 +784,25 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Wed, 10 Apr 2019 13:54:59 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e78228c716bb6c3a10bb270a49d539dd97f566d1096b0be9c36640eb8c5a1436`  
-		Last Modified: Wed, 10 Apr 2019 13:56:24 GMT  
-		Size: 54.9 MB (54929226 bytes)  
+	-	`sha256:5d10db63af1f96048923a5f41d823c0323006317e5fc0aa7c2e88238ca37bf98`  
+		Last Modified: Tue, 07 May 2019 09:05:22 GMT  
+		Size: 54.9 MB (54942629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05fdf802bf8992b4f4932b2cd84cd9a568b1ddb8ba8a03e207f5b1aee8b34a46`  
-		Last Modified: Wed, 10 Apr 2019 16:18:14 GMT  
-		Size: 11.6 MB (11609475 bytes)  
+	-	`sha256:120baf78dd6f0c0200ad3df13f513c39883b29250a1aef996057e6295d246af3`  
+		Last Modified: Tue, 07 May 2019 09:39:43 GMT  
+		Size: 11.5 MB (11533025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbfdca28070b7150dddcade09a6b2ca611005ca15b77290f529546b0b186d0c6`  
-		Last Modified: Wed, 10 Apr 2019 16:18:04 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:5d02e495cd3c339f17f84b9173d3c5e137846303585f5c0abbeef34f8a71dd72`  
+		Last Modified: Tue, 07 May 2019 09:39:37 GMT  
+		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0f43a92f83363a3a170a555e80327654a7e92e0e75f1bab54f71a4e7cdfb052`  
-		Last Modified: Wed, 10 Apr 2019 16:18:35 GMT  
-		Size: 193.3 MB (193264934 bytes)  
+	-	`sha256:0d779dbcf99fcc716b33b7840ed49d3e4917e626f4d887623785665062c8e8fa`  
+		Last Modified: Tue, 07 May 2019 09:40:05 GMT  
+		Size: 193.3 MB (193265054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9271b4ffd38b3b3c97f36a7cbfe0d0932a965f89ce0ab07f2dec6611257bb8c1`  
-		Last Modified: Wed, 10 Apr 2019 16:18:04 GMT  
-		Size: 416.0 B  
+	-	`sha256:2478bf38afe64869b3f78a6d6c604713a95a2004fa54f3a8ed75dcfb40c1be09`  
+		Last Modified: Tue, 07 May 2019 09:39:37 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `storm:1.0.6` - linux; 386
@@ -893,14 +893,14 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 ### `storm:1.0.6` - linux; ppc64le
 
 ```console
-$ docker pull storm@sha256:0aef011e0c01b55a14af9dcaf50328f72e2561b5a36ec8223b2b066a9a4cb9e9
+$ docker pull storm@sha256:ff6c3161bb91c224655021acb391d76d84ae76e105ebfc8471ebc28b11d55cc2
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **263.5 MB (263459275 bytes)**  
+-	Total Size: **263.4 MB (263385426 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32de6bcd0b527f765602bb2517e5c8e28e7c41fe181d074cb2715ffe7b4ac129`
+-	Image ID: `sha256:31c55de6f5928c5752fa721f8de1835b00d449ee423852df7198fb49b61b306a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -916,32 +916,32 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 # Wed, 10 Apr 2019 10:35:07 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Wed, 10 Apr 2019 10:35:10 GMT
-ENV JAVA_VERSION=8u201
-# Wed, 10 Apr 2019 10:35:13 GMT
-ENV JAVA_ALPINE_VERSION=8.201.08-r1
-# Wed, 10 Apr 2019 10:35:27 GMT
+# Tue, 07 May 2019 08:26:32 GMT
+ENV JAVA_VERSION=8u212
+# Tue, 07 May 2019 08:26:36 GMT
+ENV JAVA_ALPINE_VERSION=8.212.04-r0
+# Tue, 07 May 2019 08:26:49 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 10 Apr 2019 12:29:22 GMT
+# Tue, 07 May 2019 09:22:59 GMT
 RUN apk add --no-cache     bash     python     su-exec
-# Wed, 10 Apr 2019 12:29:26 GMT
+# Tue, 07 May 2019 09:23:03 GMT
 ENV STORM_USER=storm STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Wed, 10 Apr 2019 12:29:35 GMT
+# Tue, 07 May 2019 09:23:14 GMT
 RUN set -ex;     adduser -D "$STORM_USER";     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R "$STORM_USER:$STORM_USER" "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Wed, 10 Apr 2019 12:29:38 GMT
+# Tue, 07 May 2019 09:23:19 GMT
 ARG GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
-# Wed, 10 Apr 2019 12:29:42 GMT
+# Tue, 07 May 2019 09:23:27 GMT
 ARG DISTRO_NAME=apache-storm-1.0.6
-# Wed, 10 Apr 2019 12:30:03 GMT
+# Tue, 07 May 2019 09:31:16 GMT
 # ARGS: DISTRO_NAME=apache-storm-1.0.6 GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
 RUN set -ex;     apk add --no-cache --virtual .build-deps       gnupg;     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     chown -R "$STORM_USER:$STORM_USER" "$DISTRO_NAME";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     apk del .build-deps
-# Wed, 10 Apr 2019 12:30:07 GMT
+# Tue, 07 May 2019 09:31:23 GMT
 WORKDIR /apache-storm-1.0.6
-# Wed, 10 Apr 2019 12:30:09 GMT
+# Tue, 07 May 2019 09:31:27 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/apache-storm-1.0.6/bin
-# Wed, 10 Apr 2019 12:30:10 GMT
+# Tue, 07 May 2019 09:31:29 GMT
 COPY file:41358f8195908dd4207afb275bf643e637d0038f1f85ad646c03aa426ca9297d in / 
-# Wed, 10 Apr 2019 12:30:11 GMT
+# Tue, 07 May 2019 09:31:32 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -954,25 +954,25 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Wed, 10 Apr 2019 10:38:58 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a35ad59adc8e8f19b104a95ecd5f2b050e924dce137d090bca2b613e15cc6c56`  
-		Last Modified: Wed, 10 Apr 2019 10:39:46 GMT  
-		Size: 55.6 MB (55588899 bytes)  
+	-	`sha256:a878fd53e767670ae9dd90a12c593d6ebea9c9b8d8e5ae4af9dfb25b20674f42`  
+		Last Modified: Tue, 07 May 2019 08:30:01 GMT  
+		Size: 55.6 MB (55592005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a162e07625da560fd1f47c85554a061499fac47d43bdba6ff0bc64db62ca5712`  
-		Last Modified: Wed, 10 Apr 2019 12:33:48 GMT  
-		Size: 11.8 MB (11821324 bytes)  
+	-	`sha256:115d76a037efbea99d52e5a268f07aaf37ba345c57def4f00c83dee4420a8ce9`  
+		Last Modified: Tue, 07 May 2019 09:34:28 GMT  
+		Size: 11.7 MB (11744322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52ae030f565e48d11568ef968226d865c25b80b8946f29b744fdd0b835c3dd51`  
-		Last Modified: Wed, 10 Apr 2019 12:33:42 GMT  
-		Size: 1.4 KB (1367 bytes)  
+	-	`sha256:f3dadda6bbb5e74ab4a759b4c16b7238512a34c3ddcb8ff6b9004e2dc11bcd7f`  
+		Last Modified: Tue, 07 May 2019 09:34:22 GMT  
+		Size: 1.4 KB (1364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d3d857781468080aee0bb7ec2a3f081002ec4e6cf0ccef3ff7002a31441b421`  
-		Last Modified: Wed, 10 Apr 2019 12:34:04 GMT  
-		Size: 193.3 MB (193266010 bytes)  
+	-	`sha256:8f2d3e7e3bdd525da63674a9a57a7854de8005f87c964ff400183c206a6e4f2c`  
+		Last Modified: Tue, 07 May 2019 09:34:47 GMT  
+		Size: 193.3 MB (193266062 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:883453f332d2a5f2a7c1edba8a6e8198f5b1d239a4a31fdee1d730ee9611d15d`  
-		Last Modified: Wed, 10 Apr 2019 12:33:42 GMT  
-		Size: 418.0 B  
+	-	`sha256:32ef4bf72c73ca16bb1500dc99c2604112e2385303148be94658bb76e6f26d40`  
+		Last Modified: Tue, 07 May 2019 09:34:22 GMT  
+		Size: 416.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `storm:1.0.6` - linux; s390x
@@ -1063,7 +1063,7 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 ## `storm:1.1`
 
 ```console
-$ docker pull storm@sha256:bc3c9a0cb7f1c3797a42db5aad201372923d3ada0e5c1883f95b69103f17d879
+$ docker pull storm@sha256:ed1f668aafa4171f7e272ae1303fdf14bec1d48700b57176306ef6003f6b3236
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1248,14 +1248,14 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 ### `storm:1.1` - linux; arm64 variant v8
 
 ```console
-$ docker pull storm@sha256:addbc50145ff90ac3afb9ea0bb0ffd1b4ce034153a4b670b401bc3b678bbe93c
+$ docker pull storm@sha256:07aa311f5cd19811916578610b9fa4dc161bc6f14e05c8f3ab6f0226aea71c6a
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **152.7 MB (152743577 bytes)**  
+-	Total Size: **152.7 MB (152680676 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0bb0a3e0d681380555f0d979fe99de11d3fe4e90e656115d5f513a2313df741`
+-	Image ID: `sha256:e058d5514846e71a44a37e38b58f56c2ff1689abe08ef99637d924020861506f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -1271,32 +1271,32 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 # Wed, 10 Apr 2019 13:50:31 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Wed, 10 Apr 2019 13:50:33 GMT
-ENV JAVA_VERSION=8u201
-# Wed, 10 Apr 2019 13:50:35 GMT
-ENV JAVA_ALPINE_VERSION=8.201.08-r1
-# Wed, 10 Apr 2019 13:50:50 GMT
+# Tue, 07 May 2019 09:02:55 GMT
+ENV JAVA_VERSION=8u212
+# Tue, 07 May 2019 09:02:56 GMT
+ENV JAVA_ALPINE_VERSION=8.212.04-r0
+# Tue, 07 May 2019 09:03:02 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 10 Apr 2019 16:15:36 GMT
+# Tue, 07 May 2019 09:36:45 GMT
 RUN apk add --no-cache     bash     python     su-exec
-# Wed, 10 Apr 2019 16:15:37 GMT
+# Tue, 07 May 2019 09:36:46 GMT
 ENV STORM_USER=storm STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Wed, 10 Apr 2019 16:15:39 GMT
+# Tue, 07 May 2019 09:36:48 GMT
 RUN set -ex;     adduser -D "$STORM_USER";     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R "$STORM_USER:$STORM_USER" "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Wed, 10 Apr 2019 16:15:40 GMT
+# Tue, 07 May 2019 09:36:49 GMT
 ARG GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
-# Wed, 10 Apr 2019 16:16:25 GMT
+# Tue, 07 May 2019 09:37:56 GMT
 ARG DISTRO_NAME=apache-storm-1.1.3
-# Wed, 10 Apr 2019 16:16:48 GMT
+# Tue, 07 May 2019 09:38:18 GMT
 # ARGS: DISTRO_NAME=apache-storm-1.1.3 GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
 RUN set -ex;     apk add --no-cache --virtual .build-deps       gnupg;     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     chown -R "$STORM_USER:$STORM_USER" "$DISTRO_NAME";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     apk del .build-deps
-# Wed, 10 Apr 2019 16:16:48 GMT
+# Tue, 07 May 2019 09:38:19 GMT
 WORKDIR /apache-storm-1.1.3
-# Wed, 10 Apr 2019 16:16:49 GMT
+# Tue, 07 May 2019 09:38:19 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/apache-storm-1.1.3/bin
-# Wed, 10 Apr 2019 16:16:50 GMT
+# Tue, 07 May 2019 09:38:20 GMT
 COPY file:41358f8195908dd4207afb275bf643e637d0038f1f85ad646c03aa426ca9297d in / 
-# Wed, 10 Apr 2019 16:16:50 GMT
+# Tue, 07 May 2019 09:38:20 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -1309,24 +1309,24 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Wed, 10 Apr 2019 13:54:59 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e78228c716bb6c3a10bb270a49d539dd97f566d1096b0be9c36640eb8c5a1436`  
-		Last Modified: Wed, 10 Apr 2019 13:56:24 GMT  
-		Size: 54.9 MB (54929226 bytes)  
+	-	`sha256:5d10db63af1f96048923a5f41d823c0323006317e5fc0aa7c2e88238ca37bf98`  
+		Last Modified: Tue, 07 May 2019 09:05:22 GMT  
+		Size: 54.9 MB (54942629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05fdf802bf8992b4f4932b2cd84cd9a568b1ddb8ba8a03e207f5b1aee8b34a46`  
-		Last Modified: Wed, 10 Apr 2019 16:18:14 GMT  
-		Size: 11.6 MB (11609475 bytes)  
+	-	`sha256:120baf78dd6f0c0200ad3df13f513c39883b29250a1aef996057e6295d246af3`  
+		Last Modified: Tue, 07 May 2019 09:39:43 GMT  
+		Size: 11.5 MB (11533025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbfdca28070b7150dddcade09a6b2ca611005ca15b77290f529546b0b186d0c6`  
-		Last Modified: Wed, 10 Apr 2019 16:18:04 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:5d02e495cd3c339f17f84b9173d3c5e137846303585f5c0abbeef34f8a71dd72`  
+		Last Modified: Tue, 07 May 2019 09:39:37 GMT  
+		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34e51aad19d9b4e1ac9574b7b0518a626808ad36aef5117bad0c79cdc3b0c727`  
-		Last Modified: Wed, 10 Apr 2019 16:18:58 GMT  
-		Size: 83.5 MB (83514148 bytes)  
+	-	`sha256:485a5f042421708f668ff76563d2b6b2f1400ebee67fc2208156c417d08d90a6`  
+		Last Modified: Tue, 07 May 2019 09:40:29 GMT  
+		Size: 83.5 MB (83514292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef920d155050e6abc18237a7ec0ac93f1a295a4a5bba2b5151b155911c7782ad`  
-		Last Modified: Wed, 10 Apr 2019 16:18:46 GMT  
+	-	`sha256:ba627c00880600fdc41fc394f326630db5f24817facc468a0dba9d893485c5bf`  
+		Last Modified: Tue, 07 May 2019 09:40:15 GMT  
 		Size: 416.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1418,14 +1418,14 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 ### `storm:1.1` - linux; ppc64le
 
 ```console
-$ docker pull storm@sha256:7b5d8260b9845f2126f5052cef577df1b09771a6128e32682f6e35da4617d86b
+$ docker pull storm@sha256:4ff602c90188e5492f59be491a9ca4dcb2535ad1254aec1bedb884cae89e2e3d
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.7 MB (153708438 bytes)**  
+-	Total Size: **153.6 MB (153634545 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9ebe8ed5a0623626331d5df1bff26cd384ac0e58b1f656a572ea4ddec4c31358`
+-	Image ID: `sha256:2d7e98fcd3a0e78ce57529ec96dac0edae9bed6f8b83184de198740c90c27d20`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -1441,32 +1441,32 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 # Wed, 10 Apr 2019 10:35:07 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Wed, 10 Apr 2019 10:35:10 GMT
-ENV JAVA_VERSION=8u201
-# Wed, 10 Apr 2019 10:35:13 GMT
-ENV JAVA_ALPINE_VERSION=8.201.08-r1
-# Wed, 10 Apr 2019 10:35:27 GMT
+# Tue, 07 May 2019 08:26:32 GMT
+ENV JAVA_VERSION=8u212
+# Tue, 07 May 2019 08:26:36 GMT
+ENV JAVA_ALPINE_VERSION=8.212.04-r0
+# Tue, 07 May 2019 08:26:49 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 10 Apr 2019 12:29:22 GMT
+# Tue, 07 May 2019 09:22:59 GMT
 RUN apk add --no-cache     bash     python     su-exec
-# Wed, 10 Apr 2019 12:29:26 GMT
+# Tue, 07 May 2019 09:23:03 GMT
 ENV STORM_USER=storm STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Wed, 10 Apr 2019 12:29:35 GMT
+# Tue, 07 May 2019 09:23:14 GMT
 RUN set -ex;     adduser -D "$STORM_USER";     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R "$STORM_USER:$STORM_USER" "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Wed, 10 Apr 2019 12:29:38 GMT
+# Tue, 07 May 2019 09:23:19 GMT
 ARG GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
-# Wed, 10 Apr 2019 12:30:22 GMT
+# Tue, 07 May 2019 09:31:48 GMT
 ARG DISTRO_NAME=apache-storm-1.1.3
-# Wed, 10 Apr 2019 12:31:21 GMT
+# Tue, 07 May 2019 09:32:59 GMT
 # ARGS: DISTRO_NAME=apache-storm-1.1.3 GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
 RUN set -ex;     apk add --no-cache --virtual .build-deps       gnupg;     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     chown -R "$STORM_USER:$STORM_USER" "$DISTRO_NAME";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     apk del .build-deps
-# Wed, 10 Apr 2019 12:31:24 GMT
+# Tue, 07 May 2019 09:33:04 GMT
 WORKDIR /apache-storm-1.1.3
-# Wed, 10 Apr 2019 12:31:25 GMT
+# Tue, 07 May 2019 09:33:08 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/apache-storm-1.1.3/bin
-# Wed, 10 Apr 2019 12:31:27 GMT
+# Tue, 07 May 2019 09:33:10 GMT
 COPY file:41358f8195908dd4207afb275bf643e637d0038f1f85ad646c03aa426ca9297d in / 
-# Wed, 10 Apr 2019 12:31:29 GMT
+# Tue, 07 May 2019 09:33:14 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -1479,24 +1479,24 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Wed, 10 Apr 2019 10:38:58 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a35ad59adc8e8f19b104a95ecd5f2b050e924dce137d090bca2b613e15cc6c56`  
-		Last Modified: Wed, 10 Apr 2019 10:39:46 GMT  
-		Size: 55.6 MB (55588899 bytes)  
+	-	`sha256:a878fd53e767670ae9dd90a12c593d6ebea9c9b8d8e5ae4af9dfb25b20674f42`  
+		Last Modified: Tue, 07 May 2019 08:30:01 GMT  
+		Size: 55.6 MB (55592005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a162e07625da560fd1f47c85554a061499fac47d43bdba6ff0bc64db62ca5712`  
-		Last Modified: Wed, 10 Apr 2019 12:33:48 GMT  
-		Size: 11.8 MB (11821324 bytes)  
+	-	`sha256:115d76a037efbea99d52e5a268f07aaf37ba345c57def4f00c83dee4420a8ce9`  
+		Last Modified: Tue, 07 May 2019 09:34:28 GMT  
+		Size: 11.7 MB (11744322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52ae030f565e48d11568ef968226d865c25b80b8946f29b744fdd0b835c3dd51`  
-		Last Modified: Wed, 10 Apr 2019 12:33:42 GMT  
-		Size: 1.4 KB (1367 bytes)  
+	-	`sha256:f3dadda6bbb5e74ab4a759b4c16b7238512a34c3ddcb8ff6b9004e2dc11bcd7f`  
+		Last Modified: Tue, 07 May 2019 09:34:22 GMT  
+		Size: 1.4 KB (1364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca9d6172374a435fb55b60e10d398f3ec7b97aa3324834683e2fcc48969f7f65`  
-		Last Modified: Wed, 10 Apr 2019 12:34:28 GMT  
-		Size: 83.5 MB (83515175 bytes)  
+	-	`sha256:a4bac13f7c96610d025fbf96ebd489b9d526c84d8673999b2c6e7e16b83fca59`  
+		Last Modified: Tue, 07 May 2019 09:35:12 GMT  
+		Size: 83.5 MB (83515181 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39a5d217006e207349d414192ebd6a868072f096deebec360558d081d3c4c4fc`  
-		Last Modified: Wed, 10 Apr 2019 12:34:18 GMT  
+	-	`sha256:2ce3fcbccab69b294cfc1569a3de328c48bcbb48293cdcccbf813bde8c70ea4b`  
+		Last Modified: Tue, 07 May 2019 09:35:01 GMT  
 		Size: 416.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1588,7 +1588,7 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 ## `storm:1.1.3`
 
 ```console
-$ docker pull storm@sha256:bc3c9a0cb7f1c3797a42db5aad201372923d3ada0e5c1883f95b69103f17d879
+$ docker pull storm@sha256:ed1f668aafa4171f7e272ae1303fdf14bec1d48700b57176306ef6003f6b3236
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1773,14 +1773,14 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 ### `storm:1.1.3` - linux; arm64 variant v8
 
 ```console
-$ docker pull storm@sha256:addbc50145ff90ac3afb9ea0bb0ffd1b4ce034153a4b670b401bc3b678bbe93c
+$ docker pull storm@sha256:07aa311f5cd19811916578610b9fa4dc161bc6f14e05c8f3ab6f0226aea71c6a
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **152.7 MB (152743577 bytes)**  
+-	Total Size: **152.7 MB (152680676 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0bb0a3e0d681380555f0d979fe99de11d3fe4e90e656115d5f513a2313df741`
+-	Image ID: `sha256:e058d5514846e71a44a37e38b58f56c2ff1689abe08ef99637d924020861506f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -1796,32 +1796,32 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 # Wed, 10 Apr 2019 13:50:31 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Wed, 10 Apr 2019 13:50:33 GMT
-ENV JAVA_VERSION=8u201
-# Wed, 10 Apr 2019 13:50:35 GMT
-ENV JAVA_ALPINE_VERSION=8.201.08-r1
-# Wed, 10 Apr 2019 13:50:50 GMT
+# Tue, 07 May 2019 09:02:55 GMT
+ENV JAVA_VERSION=8u212
+# Tue, 07 May 2019 09:02:56 GMT
+ENV JAVA_ALPINE_VERSION=8.212.04-r0
+# Tue, 07 May 2019 09:03:02 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 10 Apr 2019 16:15:36 GMT
+# Tue, 07 May 2019 09:36:45 GMT
 RUN apk add --no-cache     bash     python     su-exec
-# Wed, 10 Apr 2019 16:15:37 GMT
+# Tue, 07 May 2019 09:36:46 GMT
 ENV STORM_USER=storm STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Wed, 10 Apr 2019 16:15:39 GMT
+# Tue, 07 May 2019 09:36:48 GMT
 RUN set -ex;     adduser -D "$STORM_USER";     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R "$STORM_USER:$STORM_USER" "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Wed, 10 Apr 2019 16:15:40 GMT
+# Tue, 07 May 2019 09:36:49 GMT
 ARG GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
-# Wed, 10 Apr 2019 16:16:25 GMT
+# Tue, 07 May 2019 09:37:56 GMT
 ARG DISTRO_NAME=apache-storm-1.1.3
-# Wed, 10 Apr 2019 16:16:48 GMT
+# Tue, 07 May 2019 09:38:18 GMT
 # ARGS: DISTRO_NAME=apache-storm-1.1.3 GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
 RUN set -ex;     apk add --no-cache --virtual .build-deps       gnupg;     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     chown -R "$STORM_USER:$STORM_USER" "$DISTRO_NAME";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     apk del .build-deps
-# Wed, 10 Apr 2019 16:16:48 GMT
+# Tue, 07 May 2019 09:38:19 GMT
 WORKDIR /apache-storm-1.1.3
-# Wed, 10 Apr 2019 16:16:49 GMT
+# Tue, 07 May 2019 09:38:19 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/apache-storm-1.1.3/bin
-# Wed, 10 Apr 2019 16:16:50 GMT
+# Tue, 07 May 2019 09:38:20 GMT
 COPY file:41358f8195908dd4207afb275bf643e637d0038f1f85ad646c03aa426ca9297d in / 
-# Wed, 10 Apr 2019 16:16:50 GMT
+# Tue, 07 May 2019 09:38:20 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -1834,24 +1834,24 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Wed, 10 Apr 2019 13:54:59 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e78228c716bb6c3a10bb270a49d539dd97f566d1096b0be9c36640eb8c5a1436`  
-		Last Modified: Wed, 10 Apr 2019 13:56:24 GMT  
-		Size: 54.9 MB (54929226 bytes)  
+	-	`sha256:5d10db63af1f96048923a5f41d823c0323006317e5fc0aa7c2e88238ca37bf98`  
+		Last Modified: Tue, 07 May 2019 09:05:22 GMT  
+		Size: 54.9 MB (54942629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05fdf802bf8992b4f4932b2cd84cd9a568b1ddb8ba8a03e207f5b1aee8b34a46`  
-		Last Modified: Wed, 10 Apr 2019 16:18:14 GMT  
-		Size: 11.6 MB (11609475 bytes)  
+	-	`sha256:120baf78dd6f0c0200ad3df13f513c39883b29250a1aef996057e6295d246af3`  
+		Last Modified: Tue, 07 May 2019 09:39:43 GMT  
+		Size: 11.5 MB (11533025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbfdca28070b7150dddcade09a6b2ca611005ca15b77290f529546b0b186d0c6`  
-		Last Modified: Wed, 10 Apr 2019 16:18:04 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:5d02e495cd3c339f17f84b9173d3c5e137846303585f5c0abbeef34f8a71dd72`  
+		Last Modified: Tue, 07 May 2019 09:39:37 GMT  
+		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34e51aad19d9b4e1ac9574b7b0518a626808ad36aef5117bad0c79cdc3b0c727`  
-		Last Modified: Wed, 10 Apr 2019 16:18:58 GMT  
-		Size: 83.5 MB (83514148 bytes)  
+	-	`sha256:485a5f042421708f668ff76563d2b6b2f1400ebee67fc2208156c417d08d90a6`  
+		Last Modified: Tue, 07 May 2019 09:40:29 GMT  
+		Size: 83.5 MB (83514292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef920d155050e6abc18237a7ec0ac93f1a295a4a5bba2b5151b155911c7782ad`  
-		Last Modified: Wed, 10 Apr 2019 16:18:46 GMT  
+	-	`sha256:ba627c00880600fdc41fc394f326630db5f24817facc468a0dba9d893485c5bf`  
+		Last Modified: Tue, 07 May 2019 09:40:15 GMT  
 		Size: 416.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1943,14 +1943,14 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 ### `storm:1.1.3` - linux; ppc64le
 
 ```console
-$ docker pull storm@sha256:7b5d8260b9845f2126f5052cef577df1b09771a6128e32682f6e35da4617d86b
+$ docker pull storm@sha256:4ff602c90188e5492f59be491a9ca4dcb2535ad1254aec1bedb884cae89e2e3d
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.7 MB (153708438 bytes)**  
+-	Total Size: **153.6 MB (153634545 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9ebe8ed5a0623626331d5df1bff26cd384ac0e58b1f656a572ea4ddec4c31358`
+-	Image ID: `sha256:2d7e98fcd3a0e78ce57529ec96dac0edae9bed6f8b83184de198740c90c27d20`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -1966,32 +1966,32 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 # Wed, 10 Apr 2019 10:35:07 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Wed, 10 Apr 2019 10:35:10 GMT
-ENV JAVA_VERSION=8u201
-# Wed, 10 Apr 2019 10:35:13 GMT
-ENV JAVA_ALPINE_VERSION=8.201.08-r1
-# Wed, 10 Apr 2019 10:35:27 GMT
+# Tue, 07 May 2019 08:26:32 GMT
+ENV JAVA_VERSION=8u212
+# Tue, 07 May 2019 08:26:36 GMT
+ENV JAVA_ALPINE_VERSION=8.212.04-r0
+# Tue, 07 May 2019 08:26:49 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 10 Apr 2019 12:29:22 GMT
+# Tue, 07 May 2019 09:22:59 GMT
 RUN apk add --no-cache     bash     python     su-exec
-# Wed, 10 Apr 2019 12:29:26 GMT
+# Tue, 07 May 2019 09:23:03 GMT
 ENV STORM_USER=storm STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Wed, 10 Apr 2019 12:29:35 GMT
+# Tue, 07 May 2019 09:23:14 GMT
 RUN set -ex;     adduser -D "$STORM_USER";     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R "$STORM_USER:$STORM_USER" "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Wed, 10 Apr 2019 12:29:38 GMT
+# Tue, 07 May 2019 09:23:19 GMT
 ARG GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
-# Wed, 10 Apr 2019 12:30:22 GMT
+# Tue, 07 May 2019 09:31:48 GMT
 ARG DISTRO_NAME=apache-storm-1.1.3
-# Wed, 10 Apr 2019 12:31:21 GMT
+# Tue, 07 May 2019 09:32:59 GMT
 # ARGS: DISTRO_NAME=apache-storm-1.1.3 GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
 RUN set -ex;     apk add --no-cache --virtual .build-deps       gnupg;     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     chown -R "$STORM_USER:$STORM_USER" "$DISTRO_NAME";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     apk del .build-deps
-# Wed, 10 Apr 2019 12:31:24 GMT
+# Tue, 07 May 2019 09:33:04 GMT
 WORKDIR /apache-storm-1.1.3
-# Wed, 10 Apr 2019 12:31:25 GMT
+# Tue, 07 May 2019 09:33:08 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/apache-storm-1.1.3/bin
-# Wed, 10 Apr 2019 12:31:27 GMT
+# Tue, 07 May 2019 09:33:10 GMT
 COPY file:41358f8195908dd4207afb275bf643e637d0038f1f85ad646c03aa426ca9297d in / 
-# Wed, 10 Apr 2019 12:31:29 GMT
+# Tue, 07 May 2019 09:33:14 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -2004,24 +2004,24 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Wed, 10 Apr 2019 10:38:58 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a35ad59adc8e8f19b104a95ecd5f2b050e924dce137d090bca2b613e15cc6c56`  
-		Last Modified: Wed, 10 Apr 2019 10:39:46 GMT  
-		Size: 55.6 MB (55588899 bytes)  
+	-	`sha256:a878fd53e767670ae9dd90a12c593d6ebea9c9b8d8e5ae4af9dfb25b20674f42`  
+		Last Modified: Tue, 07 May 2019 08:30:01 GMT  
+		Size: 55.6 MB (55592005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a162e07625da560fd1f47c85554a061499fac47d43bdba6ff0bc64db62ca5712`  
-		Last Modified: Wed, 10 Apr 2019 12:33:48 GMT  
-		Size: 11.8 MB (11821324 bytes)  
+	-	`sha256:115d76a037efbea99d52e5a268f07aaf37ba345c57def4f00c83dee4420a8ce9`  
+		Last Modified: Tue, 07 May 2019 09:34:28 GMT  
+		Size: 11.7 MB (11744322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52ae030f565e48d11568ef968226d865c25b80b8946f29b744fdd0b835c3dd51`  
-		Last Modified: Wed, 10 Apr 2019 12:33:42 GMT  
-		Size: 1.4 KB (1367 bytes)  
+	-	`sha256:f3dadda6bbb5e74ab4a759b4c16b7238512a34c3ddcb8ff6b9004e2dc11bcd7f`  
+		Last Modified: Tue, 07 May 2019 09:34:22 GMT  
+		Size: 1.4 KB (1364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca9d6172374a435fb55b60e10d398f3ec7b97aa3324834683e2fcc48969f7f65`  
-		Last Modified: Wed, 10 Apr 2019 12:34:28 GMT  
-		Size: 83.5 MB (83515175 bytes)  
+	-	`sha256:a4bac13f7c96610d025fbf96ebd489b9d526c84d8673999b2c6e7e16b83fca59`  
+		Last Modified: Tue, 07 May 2019 09:35:12 GMT  
+		Size: 83.5 MB (83515181 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39a5d217006e207349d414192ebd6a868072f096deebec360558d081d3c4c4fc`  
-		Last Modified: Wed, 10 Apr 2019 12:34:18 GMT  
+	-	`sha256:2ce3fcbccab69b294cfc1569a3de328c48bcbb48293cdcccbf813bde8c70ea4b`  
+		Last Modified: Tue, 07 May 2019 09:35:01 GMT  
 		Size: 416.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2113,7 +2113,7 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 ## `storm:1.2`
 
 ```console
-$ docker pull storm@sha256:a653baf3633e1a4a66755ab047a10f8d7dd2acc6cd16ca1e6f487822f3ae2643
+$ docker pull storm@sha256:32eeac38c89e6e71298280010748bdc80305bd7c95ce231423a473c019a9a7bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2298,14 +2298,14 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 ### `storm:1.2` - linux; arm64 variant v8
 
 ```console
-$ docker pull storm@sha256:899ae699b2e323be957585d27025173bfd1b5bc62130e94c3a628df04d14a01d
+$ docker pull storm@sha256:d5db1e114897f89c4a1da7fca71d8165510d737167313ef6e05df03761fe360f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **238.1 MB (238085776 bytes)**  
+-	Total Size: **238.0 MB (238023031 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:898796a742df91595f8fdad89addcaf5a7d370a4e805a1ab0816e6f0a285ef58`
+-	Image ID: `sha256:dff4862f7b21d87405a07a27ab12f286a1a18b2353980fa1cde9efdb2d5de4f8`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -2321,32 +2321,32 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 # Wed, 10 Apr 2019 13:50:31 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Wed, 10 Apr 2019 13:50:33 GMT
-ENV JAVA_VERSION=8u201
-# Wed, 10 Apr 2019 13:50:35 GMT
-ENV JAVA_ALPINE_VERSION=8.201.08-r1
-# Wed, 10 Apr 2019 13:50:50 GMT
+# Tue, 07 May 2019 09:02:55 GMT
+ENV JAVA_VERSION=8u212
+# Tue, 07 May 2019 09:02:56 GMT
+ENV JAVA_ALPINE_VERSION=8.212.04-r0
+# Tue, 07 May 2019 09:03:02 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 10 Apr 2019 16:15:36 GMT
+# Tue, 07 May 2019 09:36:45 GMT
 RUN apk add --no-cache     bash     python     su-exec
-# Wed, 10 Apr 2019 16:15:37 GMT
+# Tue, 07 May 2019 09:36:46 GMT
 ENV STORM_USER=storm STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Wed, 10 Apr 2019 16:15:39 GMT
+# Tue, 07 May 2019 09:36:48 GMT
 RUN set -ex;     adduser -D "$STORM_USER";     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R "$STORM_USER:$STORM_USER" "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Wed, 10 Apr 2019 16:15:40 GMT
+# Tue, 07 May 2019 09:36:49 GMT
 ARG GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
-# Wed, 10 Apr 2019 16:16:59 GMT
+# Tue, 07 May 2019 09:38:26 GMT
 ARG DISTRO_NAME=apache-storm-1.2.2
-# Wed, 10 Apr 2019 16:17:37 GMT
+# Tue, 07 May 2019 09:39:18 GMT
 # ARGS: DISTRO_NAME=apache-storm-1.2.2 GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
 RUN set -ex;     apk add --no-cache --virtual .build-deps       gnupg;     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     chown -R "$STORM_USER:$STORM_USER" "$DISTRO_NAME";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     apk del .build-deps
-# Wed, 10 Apr 2019 16:17:38 GMT
+# Tue, 07 May 2019 09:39:18 GMT
 WORKDIR /apache-storm-1.2.2
-# Wed, 10 Apr 2019 16:17:39 GMT
+# Tue, 07 May 2019 09:39:19 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/apache-storm-1.2.2/bin
-# Wed, 10 Apr 2019 16:17:39 GMT
+# Tue, 07 May 2019 09:39:19 GMT
 COPY file:41358f8195908dd4207afb275bf643e637d0038f1f85ad646c03aa426ca9297d in / 
-# Wed, 10 Apr 2019 16:17:41 GMT
+# Tue, 07 May 2019 09:39:20 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -2359,25 +2359,25 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Wed, 10 Apr 2019 13:54:59 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e78228c716bb6c3a10bb270a49d539dd97f566d1096b0be9c36640eb8c5a1436`  
-		Last Modified: Wed, 10 Apr 2019 13:56:24 GMT  
-		Size: 54.9 MB (54929226 bytes)  
+	-	`sha256:5d10db63af1f96048923a5f41d823c0323006317e5fc0aa7c2e88238ca37bf98`  
+		Last Modified: Tue, 07 May 2019 09:05:22 GMT  
+		Size: 54.9 MB (54942629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05fdf802bf8992b4f4932b2cd84cd9a568b1ddb8ba8a03e207f5b1aee8b34a46`  
-		Last Modified: Wed, 10 Apr 2019 16:18:14 GMT  
-		Size: 11.6 MB (11609475 bytes)  
+	-	`sha256:120baf78dd6f0c0200ad3df13f513c39883b29250a1aef996057e6295d246af3`  
+		Last Modified: Tue, 07 May 2019 09:39:43 GMT  
+		Size: 11.5 MB (11533025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbfdca28070b7150dddcade09a6b2ca611005ca15b77290f529546b0b186d0c6`  
-		Last Modified: Wed, 10 Apr 2019 16:18:04 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:5d02e495cd3c339f17f84b9173d3c5e137846303585f5c0abbeef34f8a71dd72`  
+		Last Modified: Tue, 07 May 2019 09:39:37 GMT  
+		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86fc0e6c0a7addfa51e509fab79f19a31be809051d4541747c6a569723347829`  
-		Last Modified: Wed, 10 Apr 2019 16:19:35 GMT  
-		Size: 168.9 MB (168856347 bytes)  
+	-	`sha256:64f7325ad941ead969b0103f14b5337b6b9b351d60a373cd7867b213d693b55e`  
+		Last Modified: Tue, 07 May 2019 09:41:03 GMT  
+		Size: 168.9 MB (168856646 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f22b56dc1947d4c3d36d69a113c5df5f641f9c6de68e3c731bb6b92379ee7a5`  
-		Last Modified: Wed, 10 Apr 2019 16:19:07 GMT  
-		Size: 416.0 B  
+	-	`sha256:d80dfe70bbfbf9587926f6ecec7dda21d5c9b1ec9835bcd9aaf8050299011337`  
+		Last Modified: Tue, 07 May 2019 09:40:39 GMT  
+		Size: 417.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `storm:1.2` - linux; 386
@@ -2468,14 +2468,14 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 ### `storm:1.2` - linux; ppc64le
 
 ```console
-$ docker pull storm@sha256:5a9934d127ad6891c6c9d0531d8acfa07743e40fcf5fa97283fb727376bb62c6
+$ docker pull storm@sha256:b99636316582a1c7c2f3f9c6ffbe2f641f7abd174989b1b504a8aef4f9e08b14
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **239.1 MB (239050741 bytes)**  
+-	Total Size: **239.0 MB (238976853 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:096ba5269dd55e1f72ce3560777d439a0ddab1c694da1fcdee4840516c8e1004`
+-	Image ID: `sha256:bdc065e382d9696d2f6e30cc6dca246f0b7b6ac4b3b689a03805515bee8c018d`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -2491,32 +2491,32 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 # Wed, 10 Apr 2019 10:35:07 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Wed, 10 Apr 2019 10:35:10 GMT
-ENV JAVA_VERSION=8u201
-# Wed, 10 Apr 2019 10:35:13 GMT
-ENV JAVA_ALPINE_VERSION=8.201.08-r1
-# Wed, 10 Apr 2019 10:35:27 GMT
+# Tue, 07 May 2019 08:26:32 GMT
+ENV JAVA_VERSION=8u212
+# Tue, 07 May 2019 08:26:36 GMT
+ENV JAVA_ALPINE_VERSION=8.212.04-r0
+# Tue, 07 May 2019 08:26:49 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 10 Apr 2019 12:29:22 GMT
+# Tue, 07 May 2019 09:22:59 GMT
 RUN apk add --no-cache     bash     python     su-exec
-# Wed, 10 Apr 2019 12:29:26 GMT
+# Tue, 07 May 2019 09:23:03 GMT
 ENV STORM_USER=storm STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Wed, 10 Apr 2019 12:29:35 GMT
+# Tue, 07 May 2019 09:23:14 GMT
 RUN set -ex;     adduser -D "$STORM_USER";     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R "$STORM_USER:$STORM_USER" "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Wed, 10 Apr 2019 12:29:38 GMT
+# Tue, 07 May 2019 09:23:19 GMT
 ARG GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
-# Wed, 10 Apr 2019 12:31:36 GMT
+# Tue, 07 May 2019 09:33:26 GMT
 ARG DISTRO_NAME=apache-storm-1.2.2
-# Wed, 10 Apr 2019 12:33:08 GMT
+# Tue, 07 May 2019 09:33:50 GMT
 # ARGS: DISTRO_NAME=apache-storm-1.2.2 GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
 RUN set -ex;     apk add --no-cache --virtual .build-deps       gnupg;     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     chown -R "$STORM_USER:$STORM_USER" "$DISTRO_NAME";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     apk del .build-deps
-# Wed, 10 Apr 2019 12:33:13 GMT
+# Tue, 07 May 2019 09:33:55 GMT
 WORKDIR /apache-storm-1.2.2
-# Wed, 10 Apr 2019 12:33:15 GMT
+# Tue, 07 May 2019 09:33:57 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/apache-storm-1.2.2/bin
-# Wed, 10 Apr 2019 12:33:17 GMT
+# Tue, 07 May 2019 09:33:59 GMT
 COPY file:41358f8195908dd4207afb275bf643e637d0038f1f85ad646c03aa426ca9297d in / 
-# Wed, 10 Apr 2019 12:33:21 GMT
+# Tue, 07 May 2019 09:34:02 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -2529,25 +2529,25 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Wed, 10 Apr 2019 10:38:58 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a35ad59adc8e8f19b104a95ecd5f2b050e924dce137d090bca2b613e15cc6c56`  
-		Last Modified: Wed, 10 Apr 2019 10:39:46 GMT  
-		Size: 55.6 MB (55588899 bytes)  
+	-	`sha256:a878fd53e767670ae9dd90a12c593d6ebea9c9b8d8e5ae4af9dfb25b20674f42`  
+		Last Modified: Tue, 07 May 2019 08:30:01 GMT  
+		Size: 55.6 MB (55592005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a162e07625da560fd1f47c85554a061499fac47d43bdba6ff0bc64db62ca5712`  
-		Last Modified: Wed, 10 Apr 2019 12:33:48 GMT  
-		Size: 11.8 MB (11821324 bytes)  
+	-	`sha256:115d76a037efbea99d52e5a268f07aaf37ba345c57def4f00c83dee4420a8ce9`  
+		Last Modified: Tue, 07 May 2019 09:34:28 GMT  
+		Size: 11.7 MB (11744322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52ae030f565e48d11568ef968226d865c25b80b8946f29b744fdd0b835c3dd51`  
-		Last Modified: Wed, 10 Apr 2019 12:33:42 GMT  
-		Size: 1.4 KB (1367 bytes)  
+	-	`sha256:f3dadda6bbb5e74ab4a759b4c16b7238512a34c3ddcb8ff6b9004e2dc11bcd7f`  
+		Last Modified: Tue, 07 May 2019 09:34:22 GMT  
+		Size: 1.4 KB (1364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a96fc5b2616f95e9561576f19c781daaa2fb4b494f07f5dc3e491f7e16a4a3e`  
-		Last Modified: Wed, 10 Apr 2019 12:34:59 GMT  
-		Size: 168.9 MB (168857478 bytes)  
+	-	`sha256:15c6da364c15e2300185c35182992222a94b0d20f1e42bec6ab780a2bc720a99`  
+		Last Modified: Tue, 07 May 2019 09:35:48 GMT  
+		Size: 168.9 MB (168857488 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8026534b69adf973219dde7efd2a6f0e9a644902a09ed1b063531defb637543`  
-		Last Modified: Wed, 10 Apr 2019 12:34:39 GMT  
-		Size: 416.0 B  
+	-	`sha256:e788e7e8b23fcc161d329cdc76c9b7d82358f7a622803a63b482e3f7561313b5`  
+		Last Modified: Tue, 07 May 2019 09:35:29 GMT  
+		Size: 417.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `storm:1.2` - linux; s390x
@@ -2638,7 +2638,7 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 ## `storm:1.2.2`
 
 ```console
-$ docker pull storm@sha256:a653baf3633e1a4a66755ab047a10f8d7dd2acc6cd16ca1e6f487822f3ae2643
+$ docker pull storm@sha256:32eeac38c89e6e71298280010748bdc80305bd7c95ce231423a473c019a9a7bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2823,14 +2823,14 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 ### `storm:1.2.2` - linux; arm64 variant v8
 
 ```console
-$ docker pull storm@sha256:899ae699b2e323be957585d27025173bfd1b5bc62130e94c3a628df04d14a01d
+$ docker pull storm@sha256:d5db1e114897f89c4a1da7fca71d8165510d737167313ef6e05df03761fe360f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **238.1 MB (238085776 bytes)**  
+-	Total Size: **238.0 MB (238023031 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:898796a742df91595f8fdad89addcaf5a7d370a4e805a1ab0816e6f0a285ef58`
+-	Image ID: `sha256:dff4862f7b21d87405a07a27ab12f286a1a18b2353980fa1cde9efdb2d5de4f8`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -2846,32 +2846,32 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 # Wed, 10 Apr 2019 13:50:31 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Wed, 10 Apr 2019 13:50:33 GMT
-ENV JAVA_VERSION=8u201
-# Wed, 10 Apr 2019 13:50:35 GMT
-ENV JAVA_ALPINE_VERSION=8.201.08-r1
-# Wed, 10 Apr 2019 13:50:50 GMT
+# Tue, 07 May 2019 09:02:55 GMT
+ENV JAVA_VERSION=8u212
+# Tue, 07 May 2019 09:02:56 GMT
+ENV JAVA_ALPINE_VERSION=8.212.04-r0
+# Tue, 07 May 2019 09:03:02 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 10 Apr 2019 16:15:36 GMT
+# Tue, 07 May 2019 09:36:45 GMT
 RUN apk add --no-cache     bash     python     su-exec
-# Wed, 10 Apr 2019 16:15:37 GMT
+# Tue, 07 May 2019 09:36:46 GMT
 ENV STORM_USER=storm STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Wed, 10 Apr 2019 16:15:39 GMT
+# Tue, 07 May 2019 09:36:48 GMT
 RUN set -ex;     adduser -D "$STORM_USER";     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R "$STORM_USER:$STORM_USER" "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Wed, 10 Apr 2019 16:15:40 GMT
+# Tue, 07 May 2019 09:36:49 GMT
 ARG GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
-# Wed, 10 Apr 2019 16:16:59 GMT
+# Tue, 07 May 2019 09:38:26 GMT
 ARG DISTRO_NAME=apache-storm-1.2.2
-# Wed, 10 Apr 2019 16:17:37 GMT
+# Tue, 07 May 2019 09:39:18 GMT
 # ARGS: DISTRO_NAME=apache-storm-1.2.2 GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
 RUN set -ex;     apk add --no-cache --virtual .build-deps       gnupg;     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     chown -R "$STORM_USER:$STORM_USER" "$DISTRO_NAME";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     apk del .build-deps
-# Wed, 10 Apr 2019 16:17:38 GMT
+# Tue, 07 May 2019 09:39:18 GMT
 WORKDIR /apache-storm-1.2.2
-# Wed, 10 Apr 2019 16:17:39 GMT
+# Tue, 07 May 2019 09:39:19 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/apache-storm-1.2.2/bin
-# Wed, 10 Apr 2019 16:17:39 GMT
+# Tue, 07 May 2019 09:39:19 GMT
 COPY file:41358f8195908dd4207afb275bf643e637d0038f1f85ad646c03aa426ca9297d in / 
-# Wed, 10 Apr 2019 16:17:41 GMT
+# Tue, 07 May 2019 09:39:20 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -2884,25 +2884,25 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Wed, 10 Apr 2019 13:54:59 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e78228c716bb6c3a10bb270a49d539dd97f566d1096b0be9c36640eb8c5a1436`  
-		Last Modified: Wed, 10 Apr 2019 13:56:24 GMT  
-		Size: 54.9 MB (54929226 bytes)  
+	-	`sha256:5d10db63af1f96048923a5f41d823c0323006317e5fc0aa7c2e88238ca37bf98`  
+		Last Modified: Tue, 07 May 2019 09:05:22 GMT  
+		Size: 54.9 MB (54942629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05fdf802bf8992b4f4932b2cd84cd9a568b1ddb8ba8a03e207f5b1aee8b34a46`  
-		Last Modified: Wed, 10 Apr 2019 16:18:14 GMT  
-		Size: 11.6 MB (11609475 bytes)  
+	-	`sha256:120baf78dd6f0c0200ad3df13f513c39883b29250a1aef996057e6295d246af3`  
+		Last Modified: Tue, 07 May 2019 09:39:43 GMT  
+		Size: 11.5 MB (11533025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbfdca28070b7150dddcade09a6b2ca611005ca15b77290f529546b0b186d0c6`  
-		Last Modified: Wed, 10 Apr 2019 16:18:04 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:5d02e495cd3c339f17f84b9173d3c5e137846303585f5c0abbeef34f8a71dd72`  
+		Last Modified: Tue, 07 May 2019 09:39:37 GMT  
+		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86fc0e6c0a7addfa51e509fab79f19a31be809051d4541747c6a569723347829`  
-		Last Modified: Wed, 10 Apr 2019 16:19:35 GMT  
-		Size: 168.9 MB (168856347 bytes)  
+	-	`sha256:64f7325ad941ead969b0103f14b5337b6b9b351d60a373cd7867b213d693b55e`  
+		Last Modified: Tue, 07 May 2019 09:41:03 GMT  
+		Size: 168.9 MB (168856646 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f22b56dc1947d4c3d36d69a113c5df5f641f9c6de68e3c731bb6b92379ee7a5`  
-		Last Modified: Wed, 10 Apr 2019 16:19:07 GMT  
-		Size: 416.0 B  
+	-	`sha256:d80dfe70bbfbf9587926f6ecec7dda21d5c9b1ec9835bcd9aaf8050299011337`  
+		Last Modified: Tue, 07 May 2019 09:40:39 GMT  
+		Size: 417.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `storm:1.2.2` - linux; 386
@@ -2993,14 +2993,14 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 ### `storm:1.2.2` - linux; ppc64le
 
 ```console
-$ docker pull storm@sha256:5a9934d127ad6891c6c9d0531d8acfa07743e40fcf5fa97283fb727376bb62c6
+$ docker pull storm@sha256:b99636316582a1c7c2f3f9c6ffbe2f641f7abd174989b1b504a8aef4f9e08b14
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **239.1 MB (239050741 bytes)**  
+-	Total Size: **239.0 MB (238976853 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:096ba5269dd55e1f72ce3560777d439a0ddab1c694da1fcdee4840516c8e1004`
+-	Image ID: `sha256:bdc065e382d9696d2f6e30cc6dca246f0b7b6ac4b3b689a03805515bee8c018d`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -3016,32 +3016,32 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 # Wed, 10 Apr 2019 10:35:07 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Wed, 10 Apr 2019 10:35:10 GMT
-ENV JAVA_VERSION=8u201
-# Wed, 10 Apr 2019 10:35:13 GMT
-ENV JAVA_ALPINE_VERSION=8.201.08-r1
-# Wed, 10 Apr 2019 10:35:27 GMT
+# Tue, 07 May 2019 08:26:32 GMT
+ENV JAVA_VERSION=8u212
+# Tue, 07 May 2019 08:26:36 GMT
+ENV JAVA_ALPINE_VERSION=8.212.04-r0
+# Tue, 07 May 2019 08:26:49 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 10 Apr 2019 12:29:22 GMT
+# Tue, 07 May 2019 09:22:59 GMT
 RUN apk add --no-cache     bash     python     su-exec
-# Wed, 10 Apr 2019 12:29:26 GMT
+# Tue, 07 May 2019 09:23:03 GMT
 ENV STORM_USER=storm STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Wed, 10 Apr 2019 12:29:35 GMT
+# Tue, 07 May 2019 09:23:14 GMT
 RUN set -ex;     adduser -D "$STORM_USER";     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R "$STORM_USER:$STORM_USER" "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Wed, 10 Apr 2019 12:29:38 GMT
+# Tue, 07 May 2019 09:23:19 GMT
 ARG GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
-# Wed, 10 Apr 2019 12:31:36 GMT
+# Tue, 07 May 2019 09:33:26 GMT
 ARG DISTRO_NAME=apache-storm-1.2.2
-# Wed, 10 Apr 2019 12:33:08 GMT
+# Tue, 07 May 2019 09:33:50 GMT
 # ARGS: DISTRO_NAME=apache-storm-1.2.2 GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
 RUN set -ex;     apk add --no-cache --virtual .build-deps       gnupg;     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     chown -R "$STORM_USER:$STORM_USER" "$DISTRO_NAME";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     apk del .build-deps
-# Wed, 10 Apr 2019 12:33:13 GMT
+# Tue, 07 May 2019 09:33:55 GMT
 WORKDIR /apache-storm-1.2.2
-# Wed, 10 Apr 2019 12:33:15 GMT
+# Tue, 07 May 2019 09:33:57 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/apache-storm-1.2.2/bin
-# Wed, 10 Apr 2019 12:33:17 GMT
+# Tue, 07 May 2019 09:33:59 GMT
 COPY file:41358f8195908dd4207afb275bf643e637d0038f1f85ad646c03aa426ca9297d in / 
-# Wed, 10 Apr 2019 12:33:21 GMT
+# Tue, 07 May 2019 09:34:02 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -3054,25 +3054,25 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Wed, 10 Apr 2019 10:38:58 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a35ad59adc8e8f19b104a95ecd5f2b050e924dce137d090bca2b613e15cc6c56`  
-		Last Modified: Wed, 10 Apr 2019 10:39:46 GMT  
-		Size: 55.6 MB (55588899 bytes)  
+	-	`sha256:a878fd53e767670ae9dd90a12c593d6ebea9c9b8d8e5ae4af9dfb25b20674f42`  
+		Last Modified: Tue, 07 May 2019 08:30:01 GMT  
+		Size: 55.6 MB (55592005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a162e07625da560fd1f47c85554a061499fac47d43bdba6ff0bc64db62ca5712`  
-		Last Modified: Wed, 10 Apr 2019 12:33:48 GMT  
-		Size: 11.8 MB (11821324 bytes)  
+	-	`sha256:115d76a037efbea99d52e5a268f07aaf37ba345c57def4f00c83dee4420a8ce9`  
+		Last Modified: Tue, 07 May 2019 09:34:28 GMT  
+		Size: 11.7 MB (11744322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52ae030f565e48d11568ef968226d865c25b80b8946f29b744fdd0b835c3dd51`  
-		Last Modified: Wed, 10 Apr 2019 12:33:42 GMT  
-		Size: 1.4 KB (1367 bytes)  
+	-	`sha256:f3dadda6bbb5e74ab4a759b4c16b7238512a34c3ddcb8ff6b9004e2dc11bcd7f`  
+		Last Modified: Tue, 07 May 2019 09:34:22 GMT  
+		Size: 1.4 KB (1364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a96fc5b2616f95e9561576f19c781daaa2fb4b494f07f5dc3e491f7e16a4a3e`  
-		Last Modified: Wed, 10 Apr 2019 12:34:59 GMT  
-		Size: 168.9 MB (168857478 bytes)  
+	-	`sha256:15c6da364c15e2300185c35182992222a94b0d20f1e42bec6ab780a2bc720a99`  
+		Last Modified: Tue, 07 May 2019 09:35:48 GMT  
+		Size: 168.9 MB (168857488 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8026534b69adf973219dde7efd2a6f0e9a644902a09ed1b063531defb637543`  
-		Last Modified: Wed, 10 Apr 2019 12:34:39 GMT  
-		Size: 416.0 B  
+	-	`sha256:e788e7e8b23fcc161d329cdc76c9b7d82358f7a622803a63b482e3f7561313b5`  
+		Last Modified: Tue, 07 May 2019 09:35:29 GMT  
+		Size: 417.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `storm:1.2.2` - linux; s390x
@@ -3163,7 +3163,7 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 ## `storm:latest`
 
 ```console
-$ docker pull storm@sha256:a653baf3633e1a4a66755ab047a10f8d7dd2acc6cd16ca1e6f487822f3ae2643
+$ docker pull storm@sha256:32eeac38c89e6e71298280010748bdc80305bd7c95ce231423a473c019a9a7bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3348,14 +3348,14 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 ### `storm:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull storm@sha256:899ae699b2e323be957585d27025173bfd1b5bc62130e94c3a628df04d14a01d
+$ docker pull storm@sha256:d5db1e114897f89c4a1da7fca71d8165510d737167313ef6e05df03761fe360f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **238.1 MB (238085776 bytes)**  
+-	Total Size: **238.0 MB (238023031 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:898796a742df91595f8fdad89addcaf5a7d370a4e805a1ab0816e6f0a285ef58`
+-	Image ID: `sha256:dff4862f7b21d87405a07a27ab12f286a1a18b2353980fa1cde9efdb2d5de4f8`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -3371,32 +3371,32 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 # Wed, 10 Apr 2019 13:50:31 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Wed, 10 Apr 2019 13:50:33 GMT
-ENV JAVA_VERSION=8u201
-# Wed, 10 Apr 2019 13:50:35 GMT
-ENV JAVA_ALPINE_VERSION=8.201.08-r1
-# Wed, 10 Apr 2019 13:50:50 GMT
+# Tue, 07 May 2019 09:02:55 GMT
+ENV JAVA_VERSION=8u212
+# Tue, 07 May 2019 09:02:56 GMT
+ENV JAVA_ALPINE_VERSION=8.212.04-r0
+# Tue, 07 May 2019 09:03:02 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 10 Apr 2019 16:15:36 GMT
+# Tue, 07 May 2019 09:36:45 GMT
 RUN apk add --no-cache     bash     python     su-exec
-# Wed, 10 Apr 2019 16:15:37 GMT
+# Tue, 07 May 2019 09:36:46 GMT
 ENV STORM_USER=storm STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Wed, 10 Apr 2019 16:15:39 GMT
+# Tue, 07 May 2019 09:36:48 GMT
 RUN set -ex;     adduser -D "$STORM_USER";     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R "$STORM_USER:$STORM_USER" "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Wed, 10 Apr 2019 16:15:40 GMT
+# Tue, 07 May 2019 09:36:49 GMT
 ARG GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
-# Wed, 10 Apr 2019 16:16:59 GMT
+# Tue, 07 May 2019 09:38:26 GMT
 ARG DISTRO_NAME=apache-storm-1.2.2
-# Wed, 10 Apr 2019 16:17:37 GMT
+# Tue, 07 May 2019 09:39:18 GMT
 # ARGS: DISTRO_NAME=apache-storm-1.2.2 GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
 RUN set -ex;     apk add --no-cache --virtual .build-deps       gnupg;     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     chown -R "$STORM_USER:$STORM_USER" "$DISTRO_NAME";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     apk del .build-deps
-# Wed, 10 Apr 2019 16:17:38 GMT
+# Tue, 07 May 2019 09:39:18 GMT
 WORKDIR /apache-storm-1.2.2
-# Wed, 10 Apr 2019 16:17:39 GMT
+# Tue, 07 May 2019 09:39:19 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/apache-storm-1.2.2/bin
-# Wed, 10 Apr 2019 16:17:39 GMT
+# Tue, 07 May 2019 09:39:19 GMT
 COPY file:41358f8195908dd4207afb275bf643e637d0038f1f85ad646c03aa426ca9297d in / 
-# Wed, 10 Apr 2019 16:17:41 GMT
+# Tue, 07 May 2019 09:39:20 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -3409,25 +3409,25 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Wed, 10 Apr 2019 13:54:59 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e78228c716bb6c3a10bb270a49d539dd97f566d1096b0be9c36640eb8c5a1436`  
-		Last Modified: Wed, 10 Apr 2019 13:56:24 GMT  
-		Size: 54.9 MB (54929226 bytes)  
+	-	`sha256:5d10db63af1f96048923a5f41d823c0323006317e5fc0aa7c2e88238ca37bf98`  
+		Last Modified: Tue, 07 May 2019 09:05:22 GMT  
+		Size: 54.9 MB (54942629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05fdf802bf8992b4f4932b2cd84cd9a568b1ddb8ba8a03e207f5b1aee8b34a46`  
-		Last Modified: Wed, 10 Apr 2019 16:18:14 GMT  
-		Size: 11.6 MB (11609475 bytes)  
+	-	`sha256:120baf78dd6f0c0200ad3df13f513c39883b29250a1aef996057e6295d246af3`  
+		Last Modified: Tue, 07 May 2019 09:39:43 GMT  
+		Size: 11.5 MB (11533025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbfdca28070b7150dddcade09a6b2ca611005ca15b77290f529546b0b186d0c6`  
-		Last Modified: Wed, 10 Apr 2019 16:18:04 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:5d02e495cd3c339f17f84b9173d3c5e137846303585f5c0abbeef34f8a71dd72`  
+		Last Modified: Tue, 07 May 2019 09:39:37 GMT  
+		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86fc0e6c0a7addfa51e509fab79f19a31be809051d4541747c6a569723347829`  
-		Last Modified: Wed, 10 Apr 2019 16:19:35 GMT  
-		Size: 168.9 MB (168856347 bytes)  
+	-	`sha256:64f7325ad941ead969b0103f14b5337b6b9b351d60a373cd7867b213d693b55e`  
+		Last Modified: Tue, 07 May 2019 09:41:03 GMT  
+		Size: 168.9 MB (168856646 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f22b56dc1947d4c3d36d69a113c5df5f641f9c6de68e3c731bb6b92379ee7a5`  
-		Last Modified: Wed, 10 Apr 2019 16:19:07 GMT  
-		Size: 416.0 B  
+	-	`sha256:d80dfe70bbfbf9587926f6ecec7dda21d5c9b1ec9835bcd9aaf8050299011337`  
+		Last Modified: Tue, 07 May 2019 09:40:39 GMT  
+		Size: 417.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `storm:latest` - linux; 386
@@ -3518,14 +3518,14 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 ### `storm:latest` - linux; ppc64le
 
 ```console
-$ docker pull storm@sha256:5a9934d127ad6891c6c9d0531d8acfa07743e40fcf5fa97283fb727376bb62c6
+$ docker pull storm@sha256:b99636316582a1c7c2f3f9c6ffbe2f641f7abd174989b1b504a8aef4f9e08b14
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **239.1 MB (239050741 bytes)**  
+-	Total Size: **239.0 MB (238976853 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:096ba5269dd55e1f72ce3560777d439a0ddab1c694da1fcdee4840516c8e1004`
+-	Image ID: `sha256:bdc065e382d9696d2f6e30cc6dca246f0b7b6ac4b3b689a03805515bee8c018d`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -3541,32 +3541,32 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 # Wed, 10 Apr 2019 10:35:07 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Wed, 10 Apr 2019 10:35:10 GMT
-ENV JAVA_VERSION=8u201
-# Wed, 10 Apr 2019 10:35:13 GMT
-ENV JAVA_ALPINE_VERSION=8.201.08-r1
-# Wed, 10 Apr 2019 10:35:27 GMT
+# Tue, 07 May 2019 08:26:32 GMT
+ENV JAVA_VERSION=8u212
+# Tue, 07 May 2019 08:26:36 GMT
+ENV JAVA_ALPINE_VERSION=8.212.04-r0
+# Tue, 07 May 2019 08:26:49 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 10 Apr 2019 12:29:22 GMT
+# Tue, 07 May 2019 09:22:59 GMT
 RUN apk add --no-cache     bash     python     su-exec
-# Wed, 10 Apr 2019 12:29:26 GMT
+# Tue, 07 May 2019 09:23:03 GMT
 ENV STORM_USER=storm STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Wed, 10 Apr 2019 12:29:35 GMT
+# Tue, 07 May 2019 09:23:14 GMT
 RUN set -ex;     adduser -D "$STORM_USER";     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R "$STORM_USER:$STORM_USER" "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Wed, 10 Apr 2019 12:29:38 GMT
+# Tue, 07 May 2019 09:23:19 GMT
 ARG GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
-# Wed, 10 Apr 2019 12:31:36 GMT
+# Tue, 07 May 2019 09:33:26 GMT
 ARG DISTRO_NAME=apache-storm-1.2.2
-# Wed, 10 Apr 2019 12:33:08 GMT
+# Tue, 07 May 2019 09:33:50 GMT
 # ARGS: DISTRO_NAME=apache-storm-1.2.2 GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
 RUN set -ex;     apk add --no-cache --virtual .build-deps       gnupg;     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     chown -R "$STORM_USER:$STORM_USER" "$DISTRO_NAME";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     apk del .build-deps
-# Wed, 10 Apr 2019 12:33:13 GMT
+# Tue, 07 May 2019 09:33:55 GMT
 WORKDIR /apache-storm-1.2.2
-# Wed, 10 Apr 2019 12:33:15 GMT
+# Tue, 07 May 2019 09:33:57 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/apache-storm-1.2.2/bin
-# Wed, 10 Apr 2019 12:33:17 GMT
+# Tue, 07 May 2019 09:33:59 GMT
 COPY file:41358f8195908dd4207afb275bf643e637d0038f1f85ad646c03aa426ca9297d in / 
-# Wed, 10 Apr 2019 12:33:21 GMT
+# Tue, 07 May 2019 09:34:02 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -3579,25 +3579,25 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Wed, 10 Apr 2019 10:38:58 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a35ad59adc8e8f19b104a95ecd5f2b050e924dce137d090bca2b613e15cc6c56`  
-		Last Modified: Wed, 10 Apr 2019 10:39:46 GMT  
-		Size: 55.6 MB (55588899 bytes)  
+	-	`sha256:a878fd53e767670ae9dd90a12c593d6ebea9c9b8d8e5ae4af9dfb25b20674f42`  
+		Last Modified: Tue, 07 May 2019 08:30:01 GMT  
+		Size: 55.6 MB (55592005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a162e07625da560fd1f47c85554a061499fac47d43bdba6ff0bc64db62ca5712`  
-		Last Modified: Wed, 10 Apr 2019 12:33:48 GMT  
-		Size: 11.8 MB (11821324 bytes)  
+	-	`sha256:115d76a037efbea99d52e5a268f07aaf37ba345c57def4f00c83dee4420a8ce9`  
+		Last Modified: Tue, 07 May 2019 09:34:28 GMT  
+		Size: 11.7 MB (11744322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52ae030f565e48d11568ef968226d865c25b80b8946f29b744fdd0b835c3dd51`  
-		Last Modified: Wed, 10 Apr 2019 12:33:42 GMT  
-		Size: 1.4 KB (1367 bytes)  
+	-	`sha256:f3dadda6bbb5e74ab4a759b4c16b7238512a34c3ddcb8ff6b9004e2dc11bcd7f`  
+		Last Modified: Tue, 07 May 2019 09:34:22 GMT  
+		Size: 1.4 KB (1364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a96fc5b2616f95e9561576f19c781daaa2fb4b494f07f5dc3e491f7e16a4a3e`  
-		Last Modified: Wed, 10 Apr 2019 12:34:59 GMT  
-		Size: 168.9 MB (168857478 bytes)  
+	-	`sha256:15c6da364c15e2300185c35182992222a94b0d20f1e42bec6ab780a2bc720a99`  
+		Last Modified: Tue, 07 May 2019 09:35:48 GMT  
+		Size: 168.9 MB (168857488 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8026534b69adf973219dde7efd2a6f0e9a644902a09ed1b063531defb637543`  
-		Last Modified: Wed, 10 Apr 2019 12:34:39 GMT  
-		Size: 416.0 B  
+	-	`sha256:e788e7e8b23fcc161d329cdc76c9b7d82358f7a622803a63b482e3f7561313b5`  
+		Last Modified: Tue, 07 May 2019 09:35:29 GMT  
+		Size: 417.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `storm:latest` - linux; s390x
