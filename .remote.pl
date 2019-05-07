@@ -635,7 +635,7 @@ get '/markdown/*image' => sub {
 	return image_to_markdown_p($image)->then(sub {
 		$c->res->headers->content_type('text/plain');
 		$c->render(text => shift);
-	}, sub {
+	})->catch(sub {
 		$c->reply->exception(@_);
 	});
 };
