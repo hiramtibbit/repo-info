@@ -56,7 +56,7 @@ sub _ua_retry_req_p {
 		}
 		say {*STDERR} 'UA error response: ' . $tx->error->{message};
 		return _ua_retry_req_p($tries, $method, @methodArgs);
-	}, sub {
+	})->catch(sub {
 		die @_ if $lastTry;
 		say {*STDERR} 'UA error: ' . join ', ', @_;
 		return _ua_retry_req_p($tries, $method, @methodArgs);
@@ -615,7 +615,7 @@ if (@ARGV && $ARGV[0] eq '--') {
 
 	Mojo::Promise->all(map { image_to_markdown_p($_) } @ARGV)->then(sub {
 		print join "\n", map { @$_ } @_;
-	}, sub {
+	})->catch(sub {
 		say {*STDERR} 'error: ' . $_ for @_;
 		exit scalar @_;
 	})->wait;
