@@ -1,7 +1,7 @@
 ## `mediawiki:legacylts`
 
 ```console
-$ docker pull mediawiki@sha256:d4c81d155c23cd08b614c72a7287878e10cf3014cf13879bafe46f9ad929e694
+$ docker pull mediawiki@sha256:0b6318776de886777d340031139af5128a679b1be931cff113f3f604180b4880
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -682,14 +682,14 @@ RUN curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSIO
 ### `mediawiki:legacylts` - linux; 386
 
 ```console
-$ docker pull mediawiki@sha256:295fcfb702557da0586cc945b1d3f2c37444a786611402b9eddb410f43b2ca3d
+$ docker pull mediawiki@sha256:6ae72a430737e161bf29193c3280778a6b08ecae378472adda2ca7b6222dd9b0
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **230.0 MB (229996112 bytes)**  
+-	Total Size: **203.8 MB (203792398 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e627bd7b018a182843936747545aeafe87866f0708cbf233b6142bc9c74f8608`
+-	Image ID: `sha256:cca55b883063ec9c3e2905eed6776feb2a959eaaef2b303ed43a2cd8b5cccc0c`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -754,25 +754,23 @@ WORKDIR /var/www/html
 EXPOSE 80
 # Sat, 04 May 2019 05:24:28 GMT
 CMD ["apache2-foreground"]
-# Sat, 04 May 2019 08:20:58 GMT
-RUN apt-get update && apt-get install -y 		git 		imagemagick 		libicu-dev 		python 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Sat, 04 May 2019 08:22:37 GMT
-RUN docker-php-ext-install mbstring mysqli opcache intl
-# Sat, 04 May 2019 08:22:48 GMT
-RUN pecl channel-update pecl.php.net 	&& pecl install apcu-5.1.8 	&& docker-php-ext-enable apcu
-# Sat, 04 May 2019 08:22:49 GMT
+# Tue, 07 May 2019 10:42:06 GMT
+RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends 		git 		imagemagick 		python 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 07 May 2019 10:44:04 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 	; 		docker-php-ext-install 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install apcu-5.1.16; 	docker-php-ext-enable 		apcu 	; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
+# Tue, 07 May 2019 10:44:05 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Sat, 04 May 2019 08:22:50 GMT
+# Tue, 07 May 2019 10:44:05 GMT
 RUN mkdir -p /var/www/data 	&& chown -R www-data:www-data /var/www/data
-# Sat, 04 May 2019 08:22:50 GMT
+# Tue, 07 May 2019 10:44:05 GMT
 ENV MEDIAWIKI_MAJOR_VERSION=1.27
-# Sat, 04 May 2019 08:22:50 GMT
+# Tue, 07 May 2019 10:44:06 GMT
 ENV MEDIAWIKI_BRANCH=REL1_27
-# Sat, 04 May 2019 08:22:50 GMT
+# Tue, 07 May 2019 10:44:06 GMT
 ENV MEDIAWIKI_VERSION=1.27.5
-# Sat, 04 May 2019 08:22:50 GMT
+# Tue, 07 May 2019 10:44:06 GMT
 ENV MEDIAWIKI_SHA512=2f341ed5afab24b81c315db6bcc58dd617f95231f71408c08bb2a8b974c95b7edd93d0f3c857f24058111c3228b9919a0f1c2fd2f85be940dc571e390225027a
-# Sat, 04 May 2019 08:22:59 GMT
+# Tue, 07 May 2019 10:44:14 GMT
 RUN curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz 	&& echo "${MEDIAWIKI_SHA512} *mediawiki.tar.gz" | sha512sum -c - 	&& tar -xz --strip-components=1 -f mediawiki.tar.gz 	&& rm mediawiki.tar.gz 	&& chown -R www-data:www-data extensions skins cache images
 ```
 
@@ -825,29 +823,25 @@ RUN curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSIO
 		Last Modified: Sat, 04 May 2019 07:26:56 GMT  
 		Size: 907.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:786600205b62085cb1a55935d30764b01bff20fe8753282f87ba276a9c829dcf`  
-		Last Modified: Sat, 04 May 2019 08:24:21 GMT  
-		Size: 56.5 MB (56500819 bytes)  
+	-	`sha256:a3c1129d0079cb4d6f651b14fa515c59e407675c039b04ce86ae5b3e59062647`  
+		Last Modified: Tue, 07 May 2019 10:45:16 GMT  
+		Size: 29.9 MB (29914190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c7ec9c299002e04a948e2681b15df0606f896e7077eedb9722f57ba176b5dfd`  
-		Last Modified: Sat, 04 May 2019 08:24:06 GMT  
-		Size: 1.7 MB (1668121 bytes)  
+	-	`sha256:92e2371d9eba42d1056272c2d36859cc11ee4a6fc51cc49cfab5a1b932e20d16`  
+		Last Modified: Tue, 07 May 2019 10:45:09 GMT  
+		Size: 2.4 MB (2445999 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e9d2018db19a80a84ec601b69794b80348ab5d0645ce329b65aa026b45d27d9`  
-		Last Modified: Sat, 04 May 2019 08:24:05 GMT  
-		Size: 395.0 KB (395046 bytes)  
+	-	`sha256:1ab3a29de35ea62fa2d5afe96bd8c37c1c173666554d5a4b5b1295952c9204e9`  
+		Last Modified: Tue, 07 May 2019 10:45:08 GMT  
+		Size: 353.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b0b996eb892b3131ca4c3dc76183790c7624abb4e20410c51b9030b71af8fe5`  
-		Last Modified: Sat, 04 May 2019 08:24:05 GMT  
-		Size: 352.0 B  
+	-	`sha256:2eb0fc5c9943b5183a112803610a73de500e13e32e1a6f4bcc52d818d0fe743b`  
+		Last Modified: Tue, 07 May 2019 10:45:08 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b251b73c0c863ad8a9b2f4d35d2f40b26629bcaa3f0af18879a8deaef4981a70`  
-		Last Modified: Sat, 04 May 2019 08:24:05 GMT  
-		Size: 140.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bff3cf7496432b172ee16364efee3a268623a574218d291b5f7e40680356b9fb`  
-		Last Modified: Sat, 04 May 2019 08:24:21 GMT  
-		Size: 31.9 MB (31933429 bytes)  
+	-	`sha256:66353739c94f3cc8facddc042bc355db2627ddd0401709c1d2a0eadc6b31cb8f`  
+		Last Modified: Tue, 07 May 2019 10:45:23 GMT  
+		Size: 31.9 MB (31933512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mediawiki:legacylts` - linux; ppc64le
