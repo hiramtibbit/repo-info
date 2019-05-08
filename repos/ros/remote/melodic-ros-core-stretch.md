@@ -1,7 +1,7 @@
 ## `ros:melodic-ros-core-stretch`
 
 ```console
-$ docker pull ros@sha256:da0762fa207a7dca41e7f8fe203fbac0242cb48b4bafddb3f7493059b68630d8
+$ docker pull ros@sha256:d4b3de4eed08af508ac4a18dc3ec59174f3c874002379508711805f77e199e2a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -91,78 +91,78 @@ CMD ["bash"]
 ### `ros:melodic-ros-core-stretch` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:be21200c99cfe2ffbc63e311eb70d2d79b82104210062e8848df5de48c415f88
+$ docker pull ros@sha256:a8afbee938b03da9ef5a963b33b23ce82654e54ab378254631e8bef4a75d802c
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **338.6 MB (338626043 bytes)**  
+-	Total Size: **338.7 MB (338722840 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e74a8b89c1700c44e01c897e2d9d65e2ffa23288f9898574de75903890de09c5`
+-	Image ID: `sha256:7c83c2f6379a07b0c9e08871a5ea6ecc3a1accb196fe2724f6eb7975a25631aa`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 27 Mar 2019 08:47:20 GMT
-ADD file:8f991b13b28ce1de362b9f00e69aac8edc28124a08adeeb3b7fb02153e0b4e92 in / 
-# Wed, 27 Mar 2019 08:47:21 GMT
+# Wed, 08 May 2019 08:48:25 GMT
+ADD file:153045f4fe6532d8c2ff273bb249a7a3a4cba913c26a4103ba5ddce1af02c1e5 in / 
+# Wed, 08 May 2019 08:48:26 GMT
 CMD ["bash"]
-# Wed, 27 Mar 2019 09:35:42 GMT
+# Wed, 08 May 2019 12:39:46 GMT
 RUN apt-get update && apt-get install -q -y     dirmngr     gnupg2     lsb-release     && rm -rf /var/lib/apt/lists/*
-# Wed, 27 Mar 2019 15:30:57 GMT
+# Wed, 08 May 2019 17:44:01 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Wed, 27 Mar 2019 15:31:01 GMT
+# Wed, 08 May 2019 17:44:03 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu `lsb_release -sc` main" > /etc/apt/sources.list.d/ros-latest.list
-# Wed, 27 Mar 2019 15:34:29 GMT
+# Wed, 08 May 2019 17:45:39 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Wed, 27 Mar 2019 15:34:31 GMT
+# Wed, 08 May 2019 17:45:40 GMT
 ENV LANG=C.UTF-8
-# Wed, 27 Mar 2019 15:34:32 GMT
+# Wed, 08 May 2019 17:45:41 GMT
 ENV LC_ALL=C.UTF-8
-# Wed, 27 Mar 2019 15:35:27 GMT
+# Wed, 08 May 2019 17:46:22 GMT
 RUN rosdep init     && rosdep update
-# Wed, 27 Mar 2019 16:29:26 GMT
+# Wed, 08 May 2019 18:17:45 GMT
 ENV ROS_DISTRO=melodic
-# Wed, 27 Mar 2019 16:40:23 GMT
+# Wed, 08 May 2019 18:26:35 GMT
 RUN apt-get update && apt-get install -y     ros-melodic-ros-core=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 27 Mar 2019 16:40:29 GMT
+# Wed, 08 May 2019 18:26:41 GMT
 COPY file:cbbaa0f5d6a276512315f5b4d7347e94a120cefbda9058ebb0d678847ff4837f in / 
-# Wed, 27 Mar 2019 16:40:30 GMT
+# Wed, 08 May 2019 18:26:42 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 27 Mar 2019 16:40:31 GMT
+# Wed, 08 May 2019 18:26:43 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:5385e634d2a1a330aea59f510b0676b269167a579dddb586b27917d80d0dfd01`  
-		Last Modified: Wed, 27 Mar 2019 08:52:30 GMT  
-		Size: 43.1 MB (43132000 bytes)  
+	-	`sha256:5894e28291972e44f5c3eba2779a85979bae6f95ed4f3e43ea5c98a132f06c48`  
+		Last Modified: Wed, 08 May 2019 08:54:43 GMT  
+		Size: 43.1 MB (43141955 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d338dbd78ea3a9e8f68cefe88489efca81668d61c3fab2dbde834ef5aed274d`  
-		Last Modified: Wed, 27 Mar 2019 17:07:59 GMT  
-		Size: 19.7 MB (19745047 bytes)  
+	-	`sha256:fe3a75126aa029dd6ab801196dd1c5e6aee65091a6979cbc4def29e80d06137f`  
+		Last Modified: Wed, 08 May 2019 12:59:51 GMT  
+		Size: 19.7 MB (19745150 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5beb4ff9aa67af9bbc91dd85bc722aac01a15b3a16feb8ba8d31b9a6a7139d8b`  
-		Last Modified: Wed, 27 Mar 2019 17:07:40 GMT  
-		Size: 1.4 KB (1376 bytes)  
+	-	`sha256:c36089d1d545ba823b26319d15c26dd99c3715e4b35ad172029435d806c1b10b`  
+		Last Modified: Wed, 08 May 2019 18:48:41 GMT  
+		Size: 1.4 KB (1378 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b7aa0272c2ab5991755fd4536238fce51210c60be48217c7284821c98d7c398`  
-		Last Modified: Wed, 27 Mar 2019 17:07:38 GMT  
+	-	`sha256:6565c19dec3dadbc14a60b67c967a44f1011cfc28d97abd27e3435d40eaa399b`  
+		Last Modified: Wed, 08 May 2019 18:48:39 GMT  
 		Size: 5.0 KB (4980 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10f89edf17fb85923794e64c55739228a59087832785d0067a277ee9477e61d2`  
-		Last Modified: Wed, 27 Mar 2019 17:08:22 GMT  
-		Size: 51.5 MB (51493680 bytes)  
+	-	`sha256:1a587974942663dce139e167693a1e655bcec4a05a4dafcee51f9483d4ce21ec`  
+		Last Modified: Wed, 08 May 2019 18:49:27 GMT  
+		Size: 51.5 MB (51493736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd402b06f6ad66ae39e7cb8a08ea0bb88e892d2d4269bbf88405779ca3902e9f`  
-		Last Modified: Wed, 27 Mar 2019 17:07:38 GMT  
-		Size: 628.9 KB (628922 bytes)  
+	-	`sha256:ddb350e2558751d30747f75bdf2355a1c924c5adc6edad8100662b4f266e9d12`  
+		Last Modified: Wed, 08 May 2019 18:48:40 GMT  
+		Size: 656.4 KB (656390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1f8c8997cc36e3a773e7cf60b9ef94b54ce8a908809b365db44bca39460641c`  
-		Last Modified: Wed, 27 Mar 2019 17:15:45 GMT  
-		Size: 223.6 MB (223619842 bytes)  
+	-	`sha256:269f91a65b147a94a5713f3add231834b7037b7d9a11922c00da22c38bd58f05`  
+		Last Modified: Wed, 08 May 2019 18:57:11 GMT  
+		Size: 223.7 MB (223679056 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1501ec1c53ae64a49c2f352362485137c585ee1c2b3ff3d83aa3b7b454f8f677`  
-		Last Modified: Wed, 27 Mar 2019 17:14:14 GMT  
-		Size: 196.0 B  
+	-	`sha256:ea8fba45a3a316d31c3b1cd3f1f54340e5b5b4193f510196c2bb97743113ae34`  
+		Last Modified: Wed, 08 May 2019 18:55:33 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
