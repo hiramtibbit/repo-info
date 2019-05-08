@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:01cf26bda037788886a8bab4c46d6f7e92d54b52adc7049bdc34f0cc631e9f19`
-- Created: `2019-04-25T00:28:32.66175044Z`
-- Virtual Size: ~ 743.42 Mb  
+- Image ID: `sha256:025e728f5d5cca062e4cdf9bbfe045d4a700ac652e3e4f6110179055bc831717`
+- Created: `2019-05-08T05:55:54.782657701Z`
+- Virtual Size: ~ 743.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `PYPY_VERSION=7.1.1`
-  - `PYTHON_PIP_VERSION=19.1`
+  - `PYTHON_PIP_VERSION=19.1.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1993,24 +1993,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/isl/0.12.2-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/isl/0.12.2-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `jasper=1.900.1-debian1-2.4+deb8u5`
+### `dpkg` source package: `jasper=1.900.1-debian1-2.4+deb8u6`
 
 Binary Packages:
 
-- `libjasper-dev=1.900.1-debian1-2.4+deb8u5`
-- `libjasper1:amd64=1.900.1-debian1-2.4+deb8u5`
+- `libjasper-dev=1.900.1-debian1-2.4+deb8u6`
+- `libjasper1:amd64=1.900.1-debian1-2.4+deb8u6`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris jasper=1.900.1-debian1-2.4+deb8u6
+'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u6.dsc' jasper_1.900.1-debian1-2.4+deb8u6.dsc 2120 SHA256:4b184dd7f8691c356cb7168f3886b543c0743ba8620681c95e57251bb4fa9dc7
+'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-debian1.orig.tar.gz' jasper_1.900.1-debian1.orig.tar.gz 1140771 SHA256:7276e8407080d8263b39aeac8305032b0534c7df25bf02718b3944711e3c81d7
+'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u6.debian.tar.xz' jasper_1.900.1-debian1-2.4+deb8u6.debian.tar.xz 40280 SHA256:8848691c4284c0927e5393233a8f66d6b82732243d36765ab9a7d6216aa5680f
+```
 
-- http://snapshot.debian.org/package/jasper/1.900.1-debian1-2.4+deb8u5/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u6/ (for browsing the source)
+- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/jasper/1.900.1-debian1-2.4+deb8u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `jbigkit=2.1-3.1`
 
@@ -2039,11 +2046,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/jbigkit/2.1-3.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/jbigkit/2.1-3.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `jquery=1.7.2+dfsg-3.2`
+### `dpkg` source package: `jquery=1.7.2+dfsg-3.2+deb8u6`
 
 Binary Packages:
 
-- `libjs-jquery=1.7.2+dfsg-3.2`
+- `libjs-jquery=1.7.2+dfsg-3.2+deb8u6`
 
 Licenses: (parsed from: `/usr/share/doc/libjs-jquery/copyright`)
 
@@ -2055,17 +2062,17 @@ Licenses: (parsed from: `/usr/share/doc/libjs-jquery/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris jquery=1.7.2+dfsg-3.2
-'http://deb.debian.org/debian/pool/main/j/jquery/jquery_1.7.2+dfsg-3.2.dsc' jquery_1.7.2+dfsg-3.2.dsc 1657 SHA256:1f77761ba508bdedff0ce97b3b723ac2aabbb252c23b1686cbc8a5c1233c1d75
-'http://deb.debian.org/debian/pool/main/j/jquery/jquery_1.7.2+dfsg.orig.tar.gz' jquery_1.7.2+dfsg.orig.tar.gz 147053 SHA256:43384d8c975c723a3b7d6f46e7ff1518d161760e0781a37675eeda1a05a503fe
-'http://deb.debian.org/debian/pool/main/j/jquery/jquery_1.7.2+dfsg-3.2.debian.tar.xz' jquery_1.7.2+dfsg-3.2.debian.tar.xz 5868 SHA256:9a42b97c3dad850c40a139354dd9d6c2fe3c2c8da67572062b7e0d3c3d2898e5
+$ apt-get source -qq --print-uris jquery=1.7.2+dfsg-3.2+deb8u6
+'http://security.debian.org/debian-security/pool/updates/main/j/jquery/jquery_1.7.2+dfsg-3.2+deb8u6.dsc' jquery_1.7.2+dfsg-3.2+deb8u6.dsc 2028 SHA256:ebb8947e539092493b9684146bdf9456689acc179f76717e7d3417e5e804c5db
+'http://security.debian.org/debian-security/pool/updates/main/j/jquery/jquery_1.7.2+dfsg.orig.tar.gz' jquery_1.7.2+dfsg.orig.tar.gz 147053 SHA256:43384d8c975c723a3b7d6f46e7ff1518d161760e0781a37675eeda1a05a503fe
+'http://security.debian.org/debian-security/pool/updates/main/j/jquery/jquery_1.7.2+dfsg-3.2+deb8u6.debian.tar.xz' jquery_1.7.2+dfsg-3.2+deb8u6.debian.tar.xz 6348 SHA256:007b6eb38a4787c74173840b1dec1e86cd50494398b8fda50208b83718508ab3
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/jquery/1.7.2+dfsg-3.2/ (for browsing the source)
-- https://sources.debian.net/src/jquery/1.7.2+dfsg-3.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/jquery/1.7.2+dfsg-3.2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/jquery/1.7.2+dfsg-3.2+deb8u6/ (for browsing the source)
+- https://sources.debian.net/src/jquery/1.7.2+dfsg-3.2+deb8u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/jquery/1.7.2+dfsg-3.2+deb8u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `keyutils=1.5.9-5`
 
@@ -2922,23 +2929,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libsm/2:1.2.2-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libsm/2:1.2.2-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libssh2=1.4.3-4.1+deb8u2`
+### `dpkg` source package: `libssh2=1.4.3-4.1+deb8u3`
 
 Binary Packages:
 
-- `libssh2-1:amd64=1.4.3-4.1+deb8u2`
+- `libssh2-1:amd64=1.4.3-4.1+deb8u3`
 
 Licenses: (parsed from: `/usr/share/doc/libssh2-1/copyright`)
 
 - `BSD`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libssh2=1.4.3-4.1+deb8u3
+'http://security.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2_1.4.3-4.1+deb8u3.dsc' libssh2_1.4.3-4.1+deb8u3.dsc 1928 SHA256:31de099ac637f875c752833d449f2df7f555025e5535dea8bf622a15c22831ef
+'http://security.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2_1.4.3.orig.tar.gz' libssh2_1.4.3.orig.tar.gz 685712 SHA256:eac6f85f9df9db2e6386906a6227eb2cd7b3245739561cad7d6dc1d5d021b96d
+'http://security.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2_1.4.3-4.1+deb8u3.debian.tar.xz' libssh2_1.4.3-4.1+deb8u3.debian.tar.xz 15632 SHA256:b25cc7bc596134042c4df08e2b9cc188d83ffb112e501f45571eca698766c730
+```
 
-- http://snapshot.debian.org/package/libssh2/1.4.3-4.1+deb8u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libssh2/1.4.3-4.1+deb8u3/ (for browsing the source)
+- https://sources.debian.net/src/libssh2/1.4.3-4.1+deb8u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libssh2/1.4.3-4.1+deb8u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-6=4.2-3+deb8u3`
 
@@ -3447,12 +3461,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxrender/1:0.9.8-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxrender/1:0.9.8-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxslt=1.1.28-2+deb8u3`
+### `dpkg` source package: `libxslt=1.1.28-2+deb8u4`
 
 Binary Packages:
 
-- `libxslt1-dev:amd64=1.1.28-2+deb8u3`
-- `libxslt1.1:amd64=1.1.28-2+deb8u3`
+- `libxslt1-dev:amd64=1.1.28-2+deb8u4`
+- `libxslt1.1:amd64=1.1.28-2+deb8u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3461,17 +3475,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxslt=1.1.28-2+deb8u3
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.28-2+deb8u3.dsc' libxslt_1.1.28-2+deb8u3.dsc 2558 SHA256:3f6ef4e304e36b1cc6d07747bca5d3ae960829a816afaf33612b9e49ec4aa32a
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.28.orig.tar.gz' libxslt_1.1.28.orig.tar.gz 3435907 SHA256:5fc7151a57b89c03d7b825df5a0fae0a8d5f05674c0e7cf2937ecec4d54a028c
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.28-2+deb8u3.debian.tar.xz' libxslt_1.1.28-2+deb8u3.debian.tar.xz 38232 SHA256:cd29e58484bae65a6bbd755db32fe5201d5ed9ddbbc39c6068b6264f9c3d9545
+$ apt-get source -qq --print-uris libxslt=1.1.28-2+deb8u4
+'http://security.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.28-2+deb8u4.dsc' libxslt_1.1.28-2+deb8u4.dsc 2403 SHA256:40350976d950555c803753069fa2415a1d768331c087c1959a47f83157731229
+'http://security.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.28.orig.tar.gz' libxslt_1.1.28.orig.tar.gz 3435907 SHA256:5fc7151a57b89c03d7b825df5a0fae0a8d5f05674c0e7cf2937ecec4d54a028c
+'http://security.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.28-2+deb8u4.debian.tar.xz' libxslt_1.1.28-2+deb8u4.debian.tar.xz 38864 SHA256:c7cad1c1c6fe0e2e96d05f258869b4e6a62c82c1c8631f71bad56ac7f4ca6dbc
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxslt/1.1.28-2+deb8u3/ (for browsing the source)
-- https://sources.debian.net/src/libxslt/1.1.28-2+deb8u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxslt/1.1.28-2+deb8u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libxslt/1.1.28-2+deb8u4/ (for browsing the source)
+- https://sources.debian.net/src/libxslt/1.1.28-2+deb8u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxslt/1.1.28-2+deb8u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxss=1:1.2.2-1`
 
@@ -3551,11 +3565,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libyaml/0.1.6-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libyaml/0.1.6-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=3.16.59-1`
+### `dpkg` source package: `linux=3.16.64-2`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.16.59-1`
+- `linux-libc-dev:amd64=3.16.64-2`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3566,17 +3580,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=3.16.59-1
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.59-1.dsc' linux_3.16.59-1.dsc 140642 SHA256:4a266a627825e948606c7fcc573c258e09d591a57100107df4ec5f8dbad756ae
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.59.orig.tar.xz' linux_3.16.59.orig.tar.xz 82000932 SHA256:5a8c026cb5af665d1e092b093ddf422bfd0037fa0bcc054def17da61a7a5bb6f
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.59-1.debian.tar.xz' linux_3.16.59-1.debian.tar.xz 1141232 SHA256:a9d3721764e4e2e35941d4ada1bdadbc53f4a9c9b88977fedf23f5932614d2e1
+$ apt-get source -qq --print-uris linux=3.16.64-2
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.64-2.dsc' linux_3.16.64-2.dsc 140642 SHA256:2822d2dd6b3b622de2219a57cf81df3d1bbdbe8fd1e02b6e18ac58182ea5f259
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.64.orig.tar.xz' linux_3.16.64.orig.tar.xz 82030984 SHA256:9b790f2a34a33be968c76dfb1c71c4a5dbede590b5d5e8b18d2a2a8c1b95a036
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.64-2.debian.tar.xz' linux_3.16.64-2.debian.tar.xz 1835672 SHA256:6d461ec26396397cc1fe9328d6e46675e7434943c61d0d916bc94b93ce440442
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/3.16.59-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/3.16.59-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/3.16.59-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/3.16.64-2/ (for browsing the source)
+- https://sources.debian.net/src/linux/3.16.64-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/3.16.64-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 
@@ -3731,12 +3745,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mawk/1.3.3-17/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mawk/1.3.3-17/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mercurial=3.1.2-2+deb8u6`
+### `dpkg` source package: `mercurial=3.1.2-2+deb8u7`
 
 Binary Packages:
 
-- `mercurial=3.1.2-2+deb8u6`
-- `mercurial-common=3.1.2-2+deb8u6`
+- `mercurial=3.1.2-2+deb8u7`
+- `mercurial-common=3.1.2-2+deb8u7`
 
 Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/mercurial-common/copyright`)
 
@@ -3746,17 +3760,17 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mercurial=3.1.2-2+deb8u6
-'http://security.debian.org/debian-security/pool/updates/main/m/mercurial/mercurial_3.1.2-2+deb8u6.dsc' mercurial_3.1.2-2+deb8u6.dsc 1942 SHA256:685ec88bd2946974a35d35679b5d012b8874553799736c66c7c3b1e54b56653c
+$ apt-get source -qq --print-uris mercurial=3.1.2-2+deb8u7
+'http://security.debian.org/debian-security/pool/updates/main/m/mercurial/mercurial_3.1.2-2+deb8u7.dsc' mercurial_3.1.2-2+deb8u7.dsc 2287 SHA256:33a015ea156747c770ca254e17b9871c779db15be9e6b6aa679d7496140bce28
 'http://security.debian.org/debian-security/pool/updates/main/m/mercurial/mercurial_3.1.2.orig.tar.gz' mercurial_3.1.2.orig.tar.gz 3983825 SHA256:5dbe5ceb3707e378528dc9346af280919760aa1a8bcc27be12c1fe2bafa78d3a
-'http://security.debian.org/debian-security/pool/updates/main/m/mercurial/mercurial_3.1.2-2+deb8u6.debian.tar.xz' mercurial_3.1.2-2+deb8u6.debian.tar.xz 73872 SHA256:620183effa4dcb23a4318a9909b3f1e25e0515c79a01284ff1461cb86c01598a
+'http://security.debian.org/debian-security/pool/updates/main/m/mercurial/mercurial_3.1.2-2+deb8u7.debian.tar.xz' mercurial_3.1.2-2+deb8u7.debian.tar.xz 74408 SHA256:5193356d426b700e7d402eb9e591c729ecf59567f28234c87a5a664cf8769678
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/mercurial/3.1.2-2+deb8u6/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/3.1.2-2+deb8u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/3.1.2-2+deb8u6/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/mercurial/3.1.2-2+deb8u7/ (for browsing the source)
+- https://sources.debian.net/src/mercurial/3.1.2-2+deb8u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mercurial/3.1.2-2+deb8u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.58`
 
@@ -4731,15 +4745,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/subversion/1.8.10-6+deb8u6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/subversion/1.8.10-6+deb8u6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=215-17+deb8u11`
+### `dpkg` source package: `systemd=215-17+deb8u13`
 
 Binary Packages:
 
-- `libsystemd0:amd64=215-17+deb8u11`
-- `libudev1:amd64=215-17+deb8u11`
-- `systemd=215-17+deb8u11`
-- `systemd-sysv=215-17+deb8u11`
-- `udev=215-17+deb8u11`
+- `libsystemd0:amd64=215-17+deb8u13`
+- `libudev1:amd64=215-17+deb8u13`
+- `systemd=215-17+deb8u13`
+- `systemd-sysv=215-17+deb8u13`
+- `udev=215-17+deb8u13`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`, `/usr/share/doc/udev/copyright`)
 
@@ -4750,13 +4764,20 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris systemd=215-17+deb8u13
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215-17+deb8u13.dsc' systemd_215-17+deb8u13.dsc 4182 SHA256:d8c3f700871e3962b7c16fbaf8e7c8aaa0fb95a4410dff04d54e229169451ec3
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215.orig.tar.xz' systemd_215.orig.tar.xz 2888652 SHA256:ce76a3c05e7d4adc806a3446a5510c0c9b76a33f19adc32754b69a0945124505
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215-17+deb8u13.debian.tar.xz' systemd_215-17+deb8u13.debian.tar.xz 248816 SHA256:7274d5e33a526b06d37558999325b15f8dd773ad9ddd61cc7f5e12f1bca839db
+```
 
-- http://snapshot.debian.org/package/systemd/215-17+deb8u11/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/systemd/215-17+deb8u13/ (for browsing the source)
+- https://sources.debian.net/src/systemd/215-17+deb8u13/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/215-17+deb8u13/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59`
 
@@ -4915,23 +4936,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tk8.6/8.6.2-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tk8.6/8.6.2-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2018i-0+deb8u1`
+### `dpkg` source package: `tzdata=2019a-0+deb8u1`
 
 Binary Packages:
 
-- `tzdata=2018i-0+deb8u1`
+- `tzdata=2019a-0+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2019a-0+deb8u1
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2019a-0+deb8u1.dsc' tzdata_2019a-0+deb8u1.dsc 1985 SHA256:858fe36e4f1ae1d6612f97c2d0a9e1c134bd7b5b5959b4980ce96d0c6e929468
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2019a.orig.tar.gz' tzdata_2019a.orig.tar.gz 378961 SHA256:90366ddf4aa03e37a16cd49255af77f801822310b213f195e2206ead48c59772
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2019a-0+deb8u1.debian.tar.xz' tzdata_2019a-0+deb8u1.debian.tar.xz 102980 SHA256:29477395b140ebff19d2e1da116cccf0366762fa8064ec07287e0b315c729af9
+```
 
-- http://snapshot.debian.org/package/tzdata/2018i-0+deb8u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2019a-0+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2019a-0+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2019a-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0030`
 
@@ -5058,11 +5086,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/util-linux/2.25.2-6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/util-linux/2.25.2-6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `wget=1.16-1+deb8u5`
+### `dpkg` source package: `wget=1.16-1+deb8u6`
 
 Binary Packages:
 
-- `wget=1.16-1+deb8u5`
+- `wget=1.16-1+deb8u6`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
@@ -5072,17 +5100,17 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris wget=1.16-1+deb8u5
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.16-1+deb8u5.dsc' wget_1.16-1+deb8u5.dsc 1938 SHA256:7b899a289fafd193a3f37f53eb539583330f2235e16916d007d8cd6387022265
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.16.orig.tar.gz' wget_1.16.orig.tar.gz 3325041 SHA256:b977fc10ac7a72d987d48136251aeb332f2dced1aabd50d6d56bdf72e2b79101
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.16-1+deb8u5.debian.tar.xz' wget_1.16-1+deb8u5.debian.tar.xz 23544 SHA256:14427e02817a510a7e43828ef87842c93cecc37397ebbed450df61d1d8f303da
+$ apt-get source -qq --print-uris wget=1.16-1+deb8u6
+'http://security.debian.org/debian-security/pool/updates/main/w/wget/wget_1.16-1+deb8u6.dsc' wget_1.16-1+deb8u6.dsc 1942 SHA256:df5fb85bc5e7d4230ca5064415f70846d33f7a3222f45156b302d5e699257653
+'http://security.debian.org/debian-security/pool/updates/main/w/wget/wget_1.16.orig.tar.gz' wget_1.16.orig.tar.gz 3325041 SHA256:b977fc10ac7a72d987d48136251aeb332f2dced1aabd50d6d56bdf72e2b79101
+'http://security.debian.org/debian-security/pool/updates/main/w/wget/wget_1.16-1+deb8u6.debian.tar.xz' wget_1.16-1+deb8u6.debian.tar.xz 24260 SHA256:88c778c49633860b8b6fb5966bfaf72e15e543f19dca456892285cb8b37eef16
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/wget/1.16-1+deb8u5/ (for browsing the source)
-- https://sources.debian.net/src/wget/1.16-1+deb8u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/wget/1.16-1+deb8u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/wget/1.16-1+deb8u6/ (for browsing the source)
+- https://sources.debian.net/src/wget/1.16-1+deb8u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/wget/1.16-1+deb8u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `x11proto-core=7.0.26-1`
 
