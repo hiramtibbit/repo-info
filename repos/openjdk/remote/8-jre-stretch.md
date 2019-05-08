@@ -1,7 +1,7 @@
 ## `openjdk:8-jre-stretch`
 
 ```console
-$ docker pull openjdk@sha256:d23e4ffc071086a22aacc226e3c349d2dd179313e368b47c7b53470c52152f4a
+$ docker pull openjdk@sha256:f363a6ddb1591cc52d56098cb5eed3ef2a884bf911bd84d83e722bdf6635fffd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -437,69 +437,69 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 ### `openjdk:8-jre-stretch` - linux; s390x
 
 ```console
-$ docker pull openjdk@sha256:6791f9300235a63ab8c61bbd62bd2744e5f84916e5b76670fb42fac6bccfce5d
+$ docker pull openjdk@sha256:10ce820b639c68c9ac2ddda4ab9e029a0f1158b877e81dce07e1da439d46edf4
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.9 MB (174934401 bytes)**  
+-	Total Size: **174.9 MB (174933164 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75d5a0c8d0967bb068e54e7d9d3ad0e9357062518f932c37678b69e25e6a70ed`
+-	Image ID: `sha256:1d3b500cfa9a178c7474dd61174688cabb70f42f4007ba1dc7e4901ef428c10f`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 27 Mar 2019 11:43:28 GMT
-ADD file:7110876caa1efff30ec13a260b6ecdc3169bb586a858211431cf38aa2eaf6b40 in / 
-# Wed, 27 Mar 2019 11:43:29 GMT
+# Wed, 08 May 2019 11:46:30 GMT
+ADD file:35b243252442c1fc6a9e4f7bea498f5b7302c530eb804ed6a79c5b84a68a96fd in / 
+# Wed, 08 May 2019 11:46:31 GMT
 CMD ["bash"]
-# Wed, 27 Mar 2019 12:43:50 GMT
+# Wed, 08 May 2019 13:48:49 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 27 Mar 2019 12:43:58 GMT
+# Wed, 08 May 2019 13:48:59 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 27 Mar 2019 15:25:04 GMT
+# Wed, 08 May 2019 14:42:10 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 27 Mar 2019 15:27:47 GMT
+# Wed, 08 May 2019 14:52:21 GMT
 ENV LANG=C.UTF-8
-# Wed, 27 Mar 2019 15:27:48 GMT
+# Wed, 08 May 2019 14:52:23 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Wed, 27 Mar 2019 15:27:49 GMT
+# Wed, 08 May 2019 14:52:32 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Wed, 27 Mar 2019 15:27:49 GMT
+# Wed, 08 May 2019 14:52:35 GMT
 ENV JAVA_HOME=/docker-java-home/jre
-# Thu, 28 Mar 2019 11:47:58 GMT
+# Wed, 08 May 2019 14:52:36 GMT
 ENV JAVA_VERSION=8u212
-# Thu, 28 Mar 2019 11:47:59 GMT
+# Wed, 08 May 2019 14:52:36 GMT
 ENV JAVA_DEBIAN_VERSION=8u212-b01-1~deb9u1
-# Thu, 28 Mar 2019 11:48:58 GMT
+# Wed, 08 May 2019 14:54:55 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
 ```
 
 -	Layers:
-	-	`sha256:d2a11bbe31e5b32e46b5e6bae2c7bab6594a74680c9c80903b5790853e800a1e`  
-		Last Modified: Wed, 27 Mar 2019 11:46:35 GMT  
-		Size: 45.2 MB (45199333 bytes)  
+	-	`sha256:3602dd773e45048fcb10569c368bf7ddac54267760f371efbe1bb65ba8d67361`  
+		Last Modified: Wed, 08 May 2019 11:52:15 GMT  
+		Size: 45.2 MB (45197648 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6d50ce7d399845400d5a183933ebc5c6cb7095927c6fe7b71f3546b52c20916`  
-		Last Modified: Wed, 27 Mar 2019 12:53:49 GMT  
-		Size: 10.3 MB (10314977 bytes)  
+	-	`sha256:412a17b553a57c91ed490be0279a1aafa108b9a60b10f8c482ed85ca94de3a3c`  
+		Last Modified: Wed, 08 May 2019 14:00:34 GMT  
+		Size: 10.3 MB (10314565 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cb29f88d766eb640800085e76903c14e35253dd5d563451d0fc44981c807de0`  
-		Last Modified: Wed, 27 Mar 2019 12:53:47 GMT  
-		Size: 4.4 MB (4372243 bytes)  
+	-	`sha256:5007dca2cc2afa05648742b75324a09e45eae504d384750ed7c6de3e5e5d65d2`  
+		Last Modified: Wed, 08 May 2019 14:00:30 GMT  
+		Size: 4.4 MB (4372280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35c476f6d7dc309c9fd699a4d839f327a2dcc209be486bd54f1d3e966df43d6f`  
-		Last Modified: Wed, 27 Mar 2019 15:31:20 GMT  
-		Size: 863.7 KB (863668 bytes)  
+	-	`sha256:baf61465b03d8ec5e8064ba91220d0e97c4dd5b75a7d2fe644aab7cc4a0a514c`  
+		Last Modified: Wed, 08 May 2019 15:01:34 GMT  
+		Size: 863.9 KB (863943 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e3ceb45fd1537dc8d1cca5965d81e0ff74e2683431dd83cde21c74673a854c7`  
-		Last Modified: Thu, 28 Mar 2019 11:52:55 GMT  
+	-	`sha256:35375a807e76af07efe2bf1c77fce29498511166f4b41f158e181805528ce229`  
+		Last Modified: Wed, 08 May 2019 15:04:54 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2aa76793d64fdc241d875dbacf67160cf1b9a9be4fadf88c74704a3a22dddcb1`  
-		Last Modified: Thu, 28 Mar 2019 11:52:55 GMT  
+	-	`sha256:da53975ff11a25b69ce30d4b02d88f1b27cff3e5b1a2e08d05f6721e388f4a5d`  
+		Last Modified: Wed, 08 May 2019 15:04:54 GMT  
 		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae0ae9b45eff33aaf7b47a2c6656b097fe5053f50ee1efd595531602275c0a93`  
-		Last Modified: Thu, 28 Mar 2019 11:53:18 GMT  
-		Size: 114.2 MB (114183800 bytes)  
+	-	`sha256:d381e46be773491220b0199e519c4f97308fee82af49481321e3d769db7b7b0a`  
+		Last Modified: Wed, 08 May 2019 15:05:36 GMT  
+		Size: 114.2 MB (114184348 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
