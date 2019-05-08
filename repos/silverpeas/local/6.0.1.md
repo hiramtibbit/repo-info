@@ -1046,14 +1046,9 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ghostscript=9.26~dfsg+0-0ubuntu0.16.04.8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.26~dfsg+0-0ubuntu0.16.04.8.dsc' ghostscript_9.26~dfsg+0-0ubuntu0.16.04.8.dsc 2926 SHA256:84be2f41e80c86544f188c9eaa3f018d1ff8120a8773ba3515d14526db0f7dba
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.26~dfsg+0.orig.tar.xz' ghostscript_9.26~dfsg+0.orig.tar.xz 27040868 SHA256:f13dd2be0499ae47f508d66be4f7a61056674c2ee6ff53d954e84bc634986bd7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.26~dfsg+0-0ubuntu0.16.04.8.debian.tar.xz' ghostscript_9.26~dfsg+0-0ubuntu0.16.04.8.debian.tar.xz 143092 SHA256:e18f264986f6a8de232a46dc4a64b1b217c813116da85219b50677505be48386
-```
 
 ### `dpkg` source package: `giflib=5.1.4-0.3~16.04`
 
