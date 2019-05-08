@@ -1,7 +1,7 @@
 ## `ros:lunar-perception-stretch`
 
 ```console
-$ docker pull ros@sha256:8e41688886b9cfec5d79817ea25303f9a6f3db62348aa7ae05850360a8bb4376
+$ docker pull ros@sha256:fcb581694dd7409ccad21a4770bc92568bf97fea71090097aa68a368bfaf1b35
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,92 +12,92 @@ $ docker pull ros@sha256:8e41688886b9cfec5d79817ea25303f9a6f3db62348aa7ae0585036
 ### `ros:lunar-perception-stretch` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:9436e857b3e028f4b105bb0a254bad703e53bbd51368e4a367e9d61eef003966
+$ docker pull ros@sha256:957c8cf4949343126b44e0123e523a5e472c691469638fb0a851ac34e496f41a
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **933.3 MB (933303260 bytes)**  
+-	Total Size: **933.4 MB (933358861 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f9eeb7eaa9c002441f2878538a2a90c5fa37dd45457c301eec9bdcedbfa2819`
+-	Image ID: `sha256:36cb19128c2f433c7901ecaad3ea911f49d5b010888383399e21bf123f6438d4`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 26 Mar 2019 22:41:12 GMT
-ADD file:843b8a2a9df1a07305ff3d02484d4be7f769057c6d2e311d52d59e00deb917c6 in / 
-# Tue, 26 Mar 2019 22:41:12 GMT
+# Wed, 08 May 2019 00:33:09 GMT
+ADD file:caf91edab64f988bc24766c58ee66c00311c7c921296b8e5b51d7023422a1485 in / 
+# Wed, 08 May 2019 00:33:10 GMT
 CMD ["bash"]
-# Tue, 26 Mar 2019 23:17:43 GMT
+# Wed, 08 May 2019 01:11:45 GMT
 RUN apt-get update && apt-get install -q -y     dirmngr     gnupg2     lsb-release     && rm -rf /var/lib/apt/lists/*
-# Wed, 27 Mar 2019 03:25:24 GMT
+# Wed, 08 May 2019 01:48:01 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Wed, 27 Mar 2019 03:25:25 GMT
+# Wed, 08 May 2019 01:48:02 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu `lsb_release -sc` main" > /etc/apt/sources.list.d/ros-latest.list
-# Wed, 27 Mar 2019 03:26:08 GMT
+# Wed, 08 May 2019 01:48:35 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Wed, 27 Mar 2019 03:26:08 GMT
+# Wed, 08 May 2019 01:48:36 GMT
 ENV LANG=C.UTF-8
-# Wed, 27 Mar 2019 03:26:08 GMT
+# Wed, 08 May 2019 01:48:36 GMT
 ENV LC_ALL=C.UTF-8
-# Wed, 27 Mar 2019 03:26:23 GMT
+# Wed, 08 May 2019 01:48:48 GMT
 RUN rosdep init     && rosdep update
-# Wed, 27 Mar 2019 03:26:23 GMT
+# Wed, 08 May 2019 01:48:48 GMT
 ENV ROS_DISTRO=lunar
-# Wed, 27 Mar 2019 03:28:05 GMT
+# Wed, 08 May 2019 01:50:00 GMT
 RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 27 Mar 2019 03:28:06 GMT
+# Wed, 08 May 2019 01:50:01 GMT
 COPY file:cbbaa0f5d6a276512315f5b4d7347e94a120cefbda9058ebb0d678847ff4837f in / 
-# Wed, 27 Mar 2019 03:28:06 GMT
+# Wed, 08 May 2019 01:50:01 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 27 Mar 2019 03:28:06 GMT
+# Wed, 08 May 2019 01:50:01 GMT
 CMD ["bash"]
-# Wed, 27 Mar 2019 03:29:21 GMT
+# Wed, 08 May 2019 01:51:03 GMT
 RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 27 Mar 2019 03:35:58 GMT
+# Wed, 08 May 2019 01:55:21 GMT
 RUN apt-get update && apt-get install -y     ros-lunar-perception=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:e79bb959ec00faf01da52437df4fad4537ec669f60455a38ad583ec2b8f00498`  
-		Last Modified: Tue, 26 Mar 2019 22:44:26 GMT  
-		Size: 45.3 MB (45342599 bytes)  
+	-	`sha256:c5e155d5a1d130a7f8a3e24cee0d9e1349bff13f90ec6a941478e558fde53c14`  
+		Last Modified: Wed, 08 May 2019 00:37:42 GMT  
+		Size: 45.3 MB (45339314 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3cc7577829ec656f5fa65d58d5c0d75518769ad093463eb8dd397639f252c5c0`  
-		Last Modified: Wed, 27 Mar 2019 03:42:06 GMT  
-		Size: 21.1 MB (21090893 bytes)  
+	-	`sha256:d9f9cf699210422079153157eff4d098d7573fa49263b6d8e5b5ff53f3690146`  
+		Last Modified: Wed, 08 May 2019 01:16:05 GMT  
+		Size: 21.1 MB (21090863 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:96d69ae8539511ff9224e3c177bdc82de0d70d6cc5317edff54317ac91d57e3d`  
-		Last Modified: Wed, 27 Mar 2019 03:42:00 GMT  
-		Size: 1.4 KB (1376 bytes)  
+	-	`sha256:f0bea7b6a7e144228d241eba7ed6108bf5f01c9683c9ececa901d356bafe18ce`  
+		Last Modified: Wed, 08 May 2019 02:01:40 GMT  
+		Size: 1.4 KB (1377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7c7cdcad485568d6d98d8ca9044cde9a08bdd6381bf3d2922ee7d7feb668c72`  
-		Last Modified: Wed, 27 Mar 2019 03:41:59 GMT  
-		Size: 5.0 KB (4969 bytes)  
+	-	`sha256:e27d855df06f71f1a31eabe4d8068bb63250d3359cc8efea15c0b672096a226e`  
+		Last Modified: Wed, 08 May 2019 02:01:39 GMT  
+		Size: 5.0 KB (4970 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a442945ec43cc10ec17008f56027b485b574afe498eb74a9e0c3288c4ba94c20`  
-		Last Modified: Wed, 27 Mar 2019 03:42:14 GMT  
-		Size: 53.5 MB (53541032 bytes)  
+	-	`sha256:17173731882ab6af3c3fb1b9b22c6dd580d6a76fbcd34865e39776f3a1ed4e71`  
+		Last Modified: Wed, 08 May 2019 02:01:53 GMT  
+		Size: 53.5 MB (53547735 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09774012244bb90654d45ff1cfea27c88c5e6c843594ac1ce79e4942865bf8da`  
-		Last Modified: Wed, 27 Mar 2019 03:41:59 GMT  
-		Size: 628.9 KB (628907 bytes)  
+	-	`sha256:8e0c36841004b7f30103b35c363ef4c6fc0671a9b14bc86ee206f59c0ccd382c`  
+		Last Modified: Wed, 08 May 2019 02:01:39 GMT  
+		Size: 656.4 KB (656376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21069d82b66eba638810c3deb3bcefe4fdd6b474b2cd06ca586385f0bf14c3ae`  
-		Last Modified: Wed, 27 Mar 2019 03:42:52 GMT  
-		Size: 251.2 MB (251159100 bytes)  
+	-	`sha256:23224fd5f367eb7a6ab20012ce5e1c310342eff32d58ecebb675da2dc50d0dbf`  
+		Last Modified: Wed, 08 May 2019 02:02:34 GMT  
+		Size: 251.2 MB (251177782 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1907bbc5daab0e8b5d6644f0f9ae8920b4c8a2d83a4a6de68e3d26314a159ee2`  
-		Last Modified: Wed, 27 Mar 2019 03:41:59 GMT  
+	-	`sha256:7ec8dc77adad38d8c71e1da0cc9b71adf9f9380c43e234f192957b3de049717c`  
+		Last Modified: Wed, 08 May 2019 02:01:39 GMT  
 		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8d1eb839d2da7b4c07949c86d20b8e50fa8446f0e8bd0fe7057868bfcd871ae`  
-		Last Modified: Wed, 27 Mar 2019 03:43:21 GMT  
-		Size: 123.1 MB (123069283 bytes)  
+	-	`sha256:c4d7ede2d718953de4bf4166dcafb3597ae7a264db610a690fd3c4cb0e150d42`  
+		Last Modified: Wed, 08 May 2019 02:03:15 GMT  
+		Size: 123.1 MB (123066684 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b4149287c22712d74a37c28506cf982421db742f01552e290105f74d52a71c3`  
-		Last Modified: Wed, 27 Mar 2019 03:45:13 GMT  
-		Size: 438.5 MB (438464906 bytes)  
+	-	`sha256:bb7ff2ddda786a1753ce588f705c8b6c5d5fa52901a8525c06003edddc12b33e`  
+		Last Modified: Wed, 08 May 2019 02:05:22 GMT  
+		Size: 438.5 MB (438473565 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:lunar-perception-stretch` - linux; arm64 variant v8
