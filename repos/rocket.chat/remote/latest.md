@@ -1,7 +1,7 @@
 ## `rocket.chat:latest`
 
 ```console
-$ docker pull rocket.chat@sha256:b779eb2a2576bcd9274ea130786bdf4a9c5541d77f5baa198c38976d2aac6acf
+$ docker pull rocket.chat@sha256:bd65d52c817834275d545a087d8e97b7ace948c1804febe2436d5269e3bfa034
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,77 +11,77 @@ $ docker pull rocket.chat@sha256:b779eb2a2576bcd9274ea130786bdf4a9c5541d77f5baa1
 ### `rocket.chat:latest` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:c7df1f4366720020a77c674e9c464776841a3aa87f313fb160464f0df9c2019b
+$ docker pull rocket.chat@sha256:3dccb42b0460505ef7d8c770d7c9cbde3a12eb72734498996d6ee409a7c554e2
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **218.0 MB (217992798 bytes)**  
+-	Total Size: **218.0 MB (217992780 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5072b06f0544072cbdfd19c67761c3318ea022da0db53dba90df2e5ff9dd5bea`
+-	Image ID: `sha256:2e608642ca764dc0be1dc40bacb3353e210c2c3affff151b942024cc3bbb2f6d`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Tue, 26 Mar 2019 22:39:48 GMT
-ADD file:7e1c64289e566a098e45fa330e3fe3be4fb94df824f0287a0317dbadf8c643fd in / 
-# Tue, 26 Mar 2019 22:39:48 GMT
+# Wed, 08 May 2019 00:30:43 GMT
+ADD file:2a97e6ac5eb5fead96f0d2bf3dc1f8732ff2a912450eb7d01a5f81731f66c2b6 in / 
+# Wed, 08 May 2019 00:30:43 GMT
 CMD ["bash"]
-# Wed, 27 Mar 2019 00:16:37 GMT
+# Wed, 08 May 2019 04:57:26 GMT
 RUN gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys DD8F2338BAE7501E3DD5AC78C273792F7D83545D
-# Wed, 27 Mar 2019 00:16:37 GMT
+# Wed, 08 May 2019 04:57:26 GMT
 ENV NODE_VERSION=8.11.4
-# Wed, 27 Mar 2019 00:16:37 GMT
+# Wed, 08 May 2019 04:57:26 GMT
 ENV NODE_ENV=production
-# Wed, 27 Mar 2019 00:18:32 GMT
+# Wed, 08 May 2019 04:59:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates curl; 	rm -rf /var/lib/apt/lists/*; 	curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.gz"; 	curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"; 	gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc; 	grep " node-v$NODE_VERSION-linux-x64.tar.gz\$" SHASUMS256.txt | sha256sum -c -; 	tar -xf "node-v$NODE_VERSION-linux-x64.tar.gz" -C /usr/local --strip-components=1 --no-same-owner; 	rm "node-v$NODE_VERSION-linux-x64.tar.gz" SHASUMS256.txt.asc SHASUMS256.txt; 	npm cache clear --force
-# Wed, 27 Mar 2019 00:18:32 GMT
+# Wed, 08 May 2019 04:59:30 GMT
 LABEL maintainer=buildmaster@rocket.chat
-# Wed, 27 Mar 2019 00:18:33 GMT
+# Wed, 08 May 2019 04:59:31 GMT
 RUN groupadd -r rocketchat &&  useradd -r -g rocketchat rocketchat &&  mkdir -p /app/uploads &&  chown rocketchat.rocketchat /app/uploads
-# Wed, 27 Mar 2019 00:18:33 GMT
+# Wed, 08 May 2019 04:59:31 GMT
 VOLUME [/app/uploads]
-# Wed, 27 Mar 2019 00:18:34 GMT
+# Wed, 08 May 2019 04:59:32 GMT
 RUN gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104
-# Wed, 01 May 2019 06:19:53 GMT
+# Wed, 08 May 2019 04:59:32 GMT
 ENV RC_VERSION=1.0.2
-# Wed, 01 May 2019 06:19:53 GMT
+# Wed, 08 May 2019 04:59:33 GMT
 WORKDIR /app
-# Wed, 01 May 2019 06:20:47 GMT
+# Wed, 08 May 2019 05:00:48 GMT
 RUN curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz &&  curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc &&  gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz &&  tar zxvf rocket.chat.tgz &&  rm rocket.chat.tgz rocket.chat.tgz.asc &&  cd bundle/programs/server &&  npm install &&  npm cache clear --force &&  chown -R rocketchat:rocketchat /app
-# Wed, 01 May 2019 06:20:49 GMT
+# Wed, 08 May 2019 05:00:51 GMT
 USER rocketchat
-# Wed, 01 May 2019 06:20:49 GMT
+# Wed, 08 May 2019 05:00:51 GMT
 WORKDIR /app/bundle
-# Wed, 01 May 2019 06:20:50 GMT
+# Wed, 08 May 2019 05:00:51 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000 Accounts_AvatarStorePath=/app/uploads
-# Wed, 01 May 2019 06:20:50 GMT
+# Wed, 08 May 2019 05:00:51 GMT
 EXPOSE 3000
-# Wed, 01 May 2019 06:20:50 GMT
+# Wed, 08 May 2019 05:00:51 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:2a639da97f77795f2f0ebe3bb2c9fc94b4eee47bd41faaf216118e7a8fa65dd6`  
-		Last Modified: Tue, 26 Mar 2019 22:43:17 GMT  
-		Size: 30.2 MB (30154581 bytes)  
+	-	`sha256:80e253c906dee8d7b26d7dafa4166149c57cb763d43ba6d483710370c32da5cd`  
+		Last Modified: Wed, 08 May 2019 00:36:18 GMT  
+		Size: 30.2 MB (30154060 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a453fafce6f4038b1220d63281e48e0cafc69f98128c25f2059c74e8ba33a065`  
-		Last Modified: Wed, 27 Mar 2019 00:19:39 GMT  
-		Size: 9.8 KB (9808 bytes)  
+	-	`sha256:d51cf7d7ee8fd301b14c8548f65b3e5b4b80c46b3372e89f665d84b3abeadafa`  
+		Last Modified: Wed, 08 May 2019 05:01:01 GMT  
+		Size: 9.8 KB (9807 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d9f1a741ab6b0478f670885ab876c63ded3bf51b26fa2998d700a402539fd53`  
-		Last Modified: Wed, 27 Mar 2019 00:19:45 GMT  
-		Size: 23.2 MB (23210404 bytes)  
+	-	`sha256:2247500de751d6a797d7493901c875d22bb80c6bb62baa8e9c60a3cd4d57ee7a`  
+		Last Modified: Wed, 08 May 2019 05:01:08 GMT  
+		Size: 23.2 MB (23210444 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3296b2c21f10142dbdd9d3e1630e093f2908fbbc7646d6a540c3eeba6ec82cea`  
-		Last Modified: Wed, 27 Mar 2019 00:19:39 GMT  
-		Size: 2.1 KB (2136 bytes)  
+	-	`sha256:72442fd11cfc8e9c3af58806b7cd807a685134c9a8fe91ffb3634fe4c12e3e1f`  
+		Last Modified: Wed, 08 May 2019 05:01:01 GMT  
+		Size: 2.1 KB (2135 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:570d1988ffb08abe4153f9d2beb5c0637be881468d3c42d9435f03d0848dd3df`  
-		Last Modified: Wed, 27 Mar 2019 00:19:39 GMT  
+	-	`sha256:356026534fc8c5c3a7971e5e5e33bbc4e88f8793b63684422f4025c27bb9879b`  
+		Last Modified: Wed, 08 May 2019 05:01:00 GMT  
 		Size: 8.1 KB (8122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4043ff5729fa5fd617bca176f4cadd7a166537beef59c625e8f9edccba5fdb3c`  
-		Last Modified: Wed, 01 May 2019 06:21:39 GMT  
-		Size: 164.6 MB (164607747 bytes)  
+	-	`sha256:8f82b3702360c0d6b06482696a9e9fcf4406fa35417b67d536c0844f38f4a366`  
+		Last Modified: Wed, 08 May 2019 05:01:55 GMT  
+		Size: 164.6 MB (164608212 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
