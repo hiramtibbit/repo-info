@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d4a07e6ce470b5888ec230eaa25a9b7ebcc0b2d8722bf0720464770867b8cf32`
-- Created: `2019-04-02T23:38:51.502912804Z`
-- Virtual Size: ~ 131.70 Mb  
+- Image ID: `sha256:b7cc370ac278cb8b059c2de708b4a687e079919779da32a6682bc73dc9398d87`
+- Created: `2019-05-08T02:05:56.082572189Z`
+- Virtual Size: ~ 131.69 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
@@ -201,23 +201,29 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/audit/1:2.6.7-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/audit/1:2.6.7-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `base-files=9.9+deb9u8`
+### `dpkg` source package: `base-files=9.9+deb9u9`
 
 Binary Packages:
 
-- `base-files=9.9+deb9u8`
+- `base-files=9.9+deb9u9`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris base-files=9.9+deb9u9
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u9.dsc' base-files_9.9+deb9u9.dsc 1095 SHA256:3e239985d47ee0d4c581b588669955c92c8fab976e915212ac77b383e21b217f
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u9.tar.xz' base-files_9.9+deb9u9.tar.xz 63068 SHA256:be4c432570e32ad1598c1105cd4fb87b4bf6df3d7fef1646b1f2ed30b298fd7f
+```
 
-- http://snapshot.debian.org/package/base-files/9.9+deb9u8/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/base-files/9.9+deb9u9/ (for browsing the source)
+- https://sources.debian.net/src/base-files/9.9+deb9u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/9.9+deb9u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -1209,11 +1215,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2.2+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxml2/2.9.4+dfsg1-2.2+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=4.9.144-3.1`
+### `dpkg` source package: `linux=4.9.168-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.9.144-3.1`
+- `linux-libc-dev:amd64=4.9.168-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1226,17 +1232,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.9.144-3.1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.144-3.1.dsc' linux_4.9.144-3.1.dsc 123237 SHA256:08df9a1f6b929b9c7d26d92a47afa58920c4ae33774bcaa33b974491af9500a3
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.144.orig.tar.xz' linux_4.9.144.orig.tar.xz 94741144 SHA256:e505a81b9e6e8d995c38f790889c6043cc7e33d158179fbcb0d1947dcb49620f
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.144-3.1.debian.tar.xz' linux_4.9.144-3.1.debian.tar.xz 2650708 SHA256:676db0b126acddab25bfa73df9d6b4f0665827348b0f3f9d12e1a38d755512ac
+$ apt-get source -qq --print-uris linux=4.9.168-1
+'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.168-1.dsc' linux_4.9.168-1.dsc 123355 SHA256:de77aa221fa4c7db1cf995cb6a5b25784489ddcbba98d82b55fa24fadd4f0969
+'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.168.orig.tar.xz' linux_4.9.168.orig.tar.xz 94774584 SHA256:8a2c04045b47472584fc8e72d8663b5c720b8ba5efba878f48ddba93bac29a7f
+'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.168-1.debian.tar.xz' linux_4.9.168-1.debian.tar.xz 2670296 SHA256:b0cd27aaf68066b9594e31dea165ba885b7b6ef238416084215a57c03e07fa4a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/4.9.144-3.1/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.9.144-3.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.9.144-3.1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/4.9.168-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.9.168-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.9.168-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-1`
 
@@ -1727,12 +1733,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/shadow/1:4.4-4.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/shadow/1:4.4-4.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=232-25+deb9u9`
+### `dpkg` source package: `systemd=232-25+deb9u11`
 
 Binary Packages:
 
-- `libsystemd0:amd64=232-25+deb9u9`
-- `libudev1:amd64=232-25+deb9u9`
+- `libsystemd0:amd64=232-25+deb9u11`
+- `libudev1:amd64=232-25+deb9u11`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1744,13 +1750,20 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris systemd=232-25+deb9u11
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25+deb9u11.dsc' systemd_232-25+deb9u11.dsc 4801 SHA256:afc41f50bc973f3d483aee66c9e6d9c66a0974bd77ed5daf164e3c8d57e03222
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25+deb9u11.debian.tar.xz' systemd_232-25+deb9u11.debian.tar.xz 221496 SHA256:0e3f326944a8f4c348a648c783d145fd616c9e42186c4efb7a20f737040a97bb
+```
 
-- http://snapshot.debian.org/package/systemd/232-25+deb9u9/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/systemd/232-25+deb9u11/ (for browsing the source)
+- https://sources.debian.net/src/systemd/232-25+deb9u11/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/232-25+deb9u11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 
@@ -1803,23 +1816,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.29b-1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.29b-1.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2018i-0+deb9u1`
+### `dpkg` source package: `tzdata=2019a-0+deb9u1`
 
 Binary Packages:
 
-- `tzdata=2018i-0+deb9u1`
+- `tzdata=2019a-0+deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2019a-0+deb9u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2019a-0+deb9u1.dsc' tzdata_2019a-0+deb9u1.dsc 2029 SHA256:a4a40761510436e037bead94747441ef871987607737d47d703f73bbfbced796
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2019a.orig.tar.gz' tzdata_2019a.orig.tar.gz 378961 SHA256:90366ddf4aa03e37a16cd49255af77f801822310b213f195e2206ead48c59772
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2019a-0+deb9u1.debian.tar.xz' tzdata_2019a-0+deb9u1.debian.tar.xz 101712 SHA256:b0e0a67122cb464901afa4a910d21da0bca86ef799875e54ba4cf3d5c54a5c92
+```
 
-- http://snapshot.debian.org/package/tzdata/2018i-0+deb9u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2019a-0+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2019a-0+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2019a-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-6`
 
