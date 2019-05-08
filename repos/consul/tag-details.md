@@ -14,6 +14,8 @@
 -	[`consul:1.3.1`](#consul131)
 -	[`consul:1.4`](#consul14)
 -	[`consul:1.4.4`](#consul144)
+-	[`consul:1.5`](#consul15)
+-	[`consul:1.5.0`](#consul150)
 -	[`consul:latest`](#consullatest)
 
 ## `consul:0.9`
@@ -3771,6 +3773,14 @@ CMD ["agent" "-dev" "-client" "0.0.0.0"]
 		Last Modified: Fri, 26 Apr 2019 21:41:27 GMT  
 		Size: 1.7 KB (1679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `consul:1.5`
+
+**does not exist** (yet?)
+
+## `consul:1.5.0`
+
+**does not exist** (yet?)
 
 ## `consul:latest`
 
