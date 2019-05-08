@@ -1,7 +1,7 @@
 ## `debian:buster-backports`
 
 ```console
-$ docker pull debian@sha256:cb26930b559b20087225f32ee6c7f3907c4de38513e81faec2cb7c69eecda5d8
+$ docker pull debian@sha256:c0790f0f7bff84500cd71f8a24bca5a2ab072cb18dfed02968a59ac23e2bf0de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9,6 +9,7 @@ $ docker pull debian@sha256:cb26930b559b20087225f32ee6c7f3907c4de38513e81faec2cb
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm64 variant v8
+	-	linux; 386
 	-	linux; ppc64le
 
 ### `debian:buster-backports` - linux; amd64
@@ -105,6 +106,38 @@ RUN echo 'deb http://deb.debian.org/debian buster-backports main' > /etc/apt/sou
 	-	`sha256:dd8da678466317a57b54b3543eaa1dca97189e7885bec6efcd9b2d409eed2295`  
 		Last Modified: Wed, 08 May 2019 08:52:29 GMT  
 		Size: 225.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `debian:buster-backports` - linux; 386
+
+```console
+$ docker pull debian@sha256:9fe5fb7006806a15589808ac5532d05869c8b8e136bed08a5f2ea368ca1729d4
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **51.1 MB (51051696 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2ee31097f3cb76b1ef2278579b3bf956e4b6636e078f5e59f4a491ccb3e970c5`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 08 May 2019 10:40:04 GMT
+ADD file:30f011b9e0c275ea9962efaf87570e947bdee578f35ddf488daed9b8e449e80a in / 
+# Wed, 08 May 2019 10:40:05 GMT
+CMD ["bash"]
+# Wed, 08 May 2019 10:40:10 GMT
+RUN echo 'deb http://deb.debian.org/debian buster-backports main' > /etc/apt/sources.list.d/backports.list
+```
+
+-	Layers:
+	-	`sha256:e9d0c8ace522928ce461c4347585b97c1e69f79d3c6219ea3be772d35020cd97`  
+		Last Modified: Wed, 08 May 2019 10:53:14 GMT  
+		Size: 51.1 MB (51051474 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:be3849bc9d85a80acc2c56364a5a964ae95b3f14e824fb645d16388edbd8528d`  
+		Last Modified: Wed, 08 May 2019 10:53:19 GMT  
+		Size: 222.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:buster-backports` - linux; ppc64le
