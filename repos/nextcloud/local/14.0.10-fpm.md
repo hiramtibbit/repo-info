@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3b7080e3a4a66fc56faec916e62a37f33d1ff2ac8fac3334d28379b4dcfb3d99`
-- Created: `2019-04-30T21:53:15.85492027Z`
-- Virtual Size: ~ 578.56 Mb  
+- Image ID: `sha256:536d37677243695ac73f58012e9fbdbcb3a38ee7471ca94c0cd03ea6554607a0`
+- Created: `2019-05-04T06:10:30.387787292Z`
+- Virtual Size: ~ 578.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.17`
-  - `PHP_URL=https://www.php.net/get/php-7.2.17.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://www.php.net/get/php-7.2.17.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=a3e5f51a9ae08813b3925bea3a4de02cd4906fcccf75646e267a213bb63bcf84`
+  - `PHP_VERSION=7.2.18`
+  - `PHP_URL=https://www.php.net/get/php-7.2.18.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://www.php.net/get/php-7.2.18.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=9970dbb3ab1298c9e6aac54bebfa841c8ad14b18eead65594a68fa841364cb8d`
   - `PHP_MD5=`
   - `NEXTCLOUD_VERSION=14.0.10`
 
@@ -1253,13 +1253,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/icu/57.1-6+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/icu/57.1-6+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:6.9.7.4+dfsg-11+deb9u6`
+### `dpkg` source package: `imagemagick=8:6.9.7.4+dfsg-11+deb9u7`
 
 Binary Packages:
 
-- `imagemagick-6-common=8:6.9.7.4+dfsg-11+deb9u6`
-- `libmagickcore-6.q16-3:amd64=8:6.9.7.4+dfsg-11+deb9u6`
-- `libmagickwand-6.q16-3:amd64=8:6.9.7.4+dfsg-11+deb9u6`
+- `imagemagick-6-common=8:6.9.7.4+dfsg-11+deb9u7`
+- `libmagickcore-6.q16-3:amd64=8:6.9.7.4+dfsg-11+deb9u7`
+- `libmagickwand-6.q16-3:amd64=8:6.9.7.4+dfsg-11+deb9u7`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick-6-common/copyright`, `/usr/share/doc/libmagickcore-6.q16-3/copyright`, `/usr/share/doc/libmagickwand-6.q16-3/copyright`)
 
@@ -1290,17 +1290,17 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick-6-common/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.7.4+dfsg-11+deb9u6
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-11+deb9u6.dsc' imagemagick_6.9.7.4+dfsg-11+deb9u6.dsc 5165 SHA256:e6ccd430801ccc82e0af0dd5468c30ce2c206b11aeec081868a024662ccd2921
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.7.4+dfsg.orig.tar.xz' imagemagick_6.9.7.4+dfsg.orig.tar.xz 8929800 SHA256:47fb2cdd26f5913318c4504f16ea363e04d1f400dda9ec52e461ab661d724026
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-11+deb9u6.debian.tar.xz' imagemagick_6.9.7.4+dfsg-11+deb9u6.debian.tar.xz 245208 SHA256:8aa037bba5c1eeb99e7591a19dcaf5d76ecc408562ec9727f24c26ccd4bbe7e4
+$ apt-get source -qq --print-uris imagemagick=8:6.9.7.4+dfsg-11+deb9u7
+'http://security.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-11+deb9u7.dsc' imagemagick_6.9.7.4+dfsg-11+deb9u7.dsc 5165 SHA256:fdc1447a6b42d535ccec23dd0b526361606f339cc0df01b9152d3dd27c776424
+'http://security.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.7.4+dfsg.orig.tar.xz' imagemagick_6.9.7.4+dfsg.orig.tar.xz 8929800 SHA256:47fb2cdd26f5913318c4504f16ea363e04d1f400dda9ec52e461ab661d724026
+'http://security.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-11+deb9u7.debian.tar.xz' imagemagick_6.9.7.4+dfsg-11+deb9u7.debian.tar.xz 245624 SHA256:3112539cad0b68c31d420721a299c553fdc390bcc2fb9e26d7453e4918f69228
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/imagemagick/8:6.9.7.4+dfsg-11+deb9u6/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:6.9.7.4+dfsg-11+deb9u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:6.9.7.4+dfsg-11+deb9u6/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/imagemagick/8:6.9.7.4+dfsg-11+deb9u7/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:6.9.7.4+dfsg-11+deb9u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:6.9.7.4+dfsg-11+deb9u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.48`
 
@@ -1785,11 +1785,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libmemcached/1.0.18-4.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libmemcached/1.0.18-4.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libpng1.6=1.6.28-1`
+### `dpkg` source package: `libpng1.6=1.6.28-1+deb9u1`
 
 Binary Packages:
 
-- `libpng16-16:amd64=1.6.28-1`
+- `libpng16-16:amd64=1.6.28-1+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 
@@ -1802,17 +1802,17 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.28-1
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.28-1.dsc' libpng1.6_1.6.28-1.dsc 2206 SHA256:2fa452aab9350841f28bb78bae90989c351871e31fe7ba26fe221d0eeebf1c25
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.28.orig.tar.xz' libpng1.6_1.6.28.orig.tar.xz 984536 SHA256:d8d3ec9de6b5db740fefac702c37ffcf96ae46cb17c18c1544635a3852f78f7a
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.28-1.debian.tar.xz' libpng1.6_1.6.28-1.debian.tar.xz 22368 SHA256:512c40a43a3a6fe7e2bc044574920d30f6669f1187ad0039fca4cae3d2b7c161
+$ apt-get source -qq --print-uris libpng1.6=1.6.28-1+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.28-1+deb9u1.dsc' libpng1.6_1.6.28-1+deb9u1.dsc 2403 SHA256:e33f21a69c0406eaee4ca7157c7234c3a078bab83f57c399cd2ddc8d7c868ddf
+'http://security.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.28.orig.tar.xz' libpng1.6_1.6.28.orig.tar.xz 984536 SHA256:d8d3ec9de6b5db740fefac702c37ffcf96ae46cb17c18c1544635a3852f78f7a
+'http://security.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.28-1+deb9u1.debian.tar.xz' libpng1.6_1.6.28-1+deb9u1.debian.tar.xz 22844 SHA256:c082fb471028f37bfb9510057f7d4854e1200b5115d2c308da9c2837375585e9
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libpng1.6/1.6.28-1/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.28-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.28-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libpng1.6/1.6.28-1+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.28-1+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.28-1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.17.0-3`
 
@@ -2864,11 +2864,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/popt/1.16-10/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/popt/1.16-10/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-9.6=9.6.11-0+deb9u1`
+### `dpkg` source package: `postgresql-9.6=9.6.12-0+deb9u1`
 
 Binary Packages:
 
-- `libpq5:amd64=9.6.11-0+deb9u1`
+- `libpq5:amd64=9.6.12-0+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -2887,13 +2887,20 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 - `nagaysau-ishii`
 - `rijndael`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris postgresql-9.6=9.6.12-0+deb9u1
+'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.12-0+deb9u1.dsc' postgresql-9.6_9.6.12-0+deb9u1.dsc 3709 SHA256:da76e8ac602ae5e8c054883159b3a15155167d94bc87f453daff68b7a961fa93
+'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.12.orig.tar.bz2' postgresql-9.6_9.6.12.orig.tar.bz2 18759442 SHA256:2e8c8446ba94767bda8a26cf5a2152bf0ae68a86aaebf894132a763084579d84
+'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.12-0+deb9u1.debian.tar.xz' postgresql-9.6_9.6.12-0+deb9u1.debian.tar.xz 26604 SHA256:7c78ec53c98d06af5098872725eae9cc9cbf0987a336621d190abff758366c92
+```
 
-- http://snapshot.debian.org/package/postgresql-9.6/9.6.11-0+deb9u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/postgresql-9.6/9.6.12-0+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-9.6/9.6.12-0+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-9.6/9.6.12-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `re2c=0.16-2`
 
@@ -2920,11 +2927,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/re2c/0.16-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/re2c/0.16-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `rsync=3.1.2-1+deb9u1`
+### `dpkg` source package: `rsync=3.1.2-1+deb9u2`
 
 Binary Packages:
 
-- `rsync=3.1.2-1+deb9u1`
+- `rsync=3.1.2-1+deb9u2`
 
 Licenses: (parsed from: `/usr/share/doc/rsync/copyright`)
 
@@ -2933,17 +2940,17 @@ Licenses: (parsed from: `/usr/share/doc/rsync/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris rsync=3.1.2-1+deb9u1
-'http://security.debian.org/debian-security/pool/updates/main/r/rsync/rsync_3.1.2-1+deb9u1.dsc' rsync_3.1.2-1+deb9u1.dsc 1873 SHA256:991696d7997fc545ddbb784a315b21c252133368caefdb5efea460d4c4161050
-'http://security.debian.org/debian-security/pool/updates/main/r/rsync/rsync_3.1.2.orig.tar.gz' rsync_3.1.2.orig.tar.gz 892724 SHA256:ecfa62a7fa3c4c18b9eccd8c16eaddee4bd308a76ea50b5c02a5840f09c0a1c2
-'http://security.debian.org/debian-security/pool/updates/main/r/rsync/rsync_3.1.2-1+deb9u1.debian.tar.xz' rsync_3.1.2-1+deb9u1.debian.tar.xz 27796 SHA256:913fcaa83d9d2d9aa344b9ea30b4b8c38000ef54d0a5c8c112b7f110a88535b4
+$ apt-get source -qq --print-uris rsync=3.1.2-1+deb9u2
+'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.1.2-1+deb9u2.dsc' rsync_3.1.2-1+deb9u2.dsc 1717 SHA256:7ff035929408e160639c0d27c56ea910e561b5858da724ba1e88104855d8b065
+'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.1.2.orig.tar.gz' rsync_3.1.2.orig.tar.gz 892724 SHA256:ecfa62a7fa3c4c18b9eccd8c16eaddee4bd308a76ea50b5c02a5840f09c0a1c2
+'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.1.2-1+deb9u2.debian.tar.xz' rsync_3.1.2-1+deb9u2.debian.tar.xz 31156 SHA256:9c9b13658cf79ba0171337574365837f0b40696f0e615f794dbfecc2c562fc84
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/rsync/3.1.2-1+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/rsync/3.1.2-1+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rsync/3.1.2-1+deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/rsync/3.1.2-1+deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/rsync/3.1.2-1+deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/rsync/3.1.2-1+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-1`
 
