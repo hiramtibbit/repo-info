@@ -1,7 +1,7 @@
 ## `lightstreamer:7-jre8`
 
 ```console
-$ docker pull lightstreamer@sha256:f0f830eda4a9c395f3e040adbde03836162b7432bcb008d1265f7e60bd3ca987
+$ docker pull lightstreamer@sha256:52b02a924772facbfb5a9dbc44fdc8264c2861ce42f388d1dc987eeeb39fbe2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -112,99 +112,99 @@ CMD ["./LS.sh" "run"]
 ### `lightstreamer:7-jre8` - linux; arm64 variant v8
 
 ```console
-$ docker pull lightstreamer@sha256:be693afa4e701b4f5c570e82fce0d59be87e826d300379f1d7b2e2028d2012fe
+$ docker pull lightstreamer@sha256:488cccc7ec6229bbb64069e533305bc170b3df7149b262816936e05c3f47a5c1
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **210.8 MB (210753184 bytes)**  
+-	Total Size: **210.8 MB (210768174 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:85d8bfd391f8627792011b3e662676dcb3abed73358c4064f0d4599352a83351`
+-	Image ID: `sha256:aeb309c19a6beb913268ce35f6009bb04bad380ee007d0ef0ec2f31550005798`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Wed, 27 Mar 2019 08:47:20 GMT
-ADD file:8f991b13b28ce1de362b9f00e69aac8edc28124a08adeeb3b7fb02153e0b4e92 in / 
-# Wed, 27 Mar 2019 08:47:21 GMT
+# Wed, 08 May 2019 08:48:25 GMT
+ADD file:153045f4fe6532d8c2ff273bb249a7a3a4cba913c26a4103ba5ddce1af02c1e5 in / 
+# Wed, 08 May 2019 08:48:26 GMT
 CMD ["bash"]
-# Wed, 27 Mar 2019 10:15:55 GMT
+# Wed, 08 May 2019 11:51:12 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 27 Mar 2019 10:16:13 GMT
+# Wed, 08 May 2019 11:51:50 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 27 Mar 2019 19:27:52 GMT
+# Wed, 08 May 2019 16:06:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 27 Mar 2019 19:36:54 GMT
+# Wed, 08 May 2019 16:20:20 GMT
 ENV LANG=C.UTF-8
-# Wed, 27 Mar 2019 19:36:57 GMT
+# Wed, 08 May 2019 16:20:22 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Wed, 27 Mar 2019 19:36:59 GMT
+# Wed, 08 May 2019 16:20:24 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Wed, 27 Mar 2019 19:37:00 GMT
+# Wed, 08 May 2019 16:20:25 GMT
 ENV JAVA_HOME=/docker-java-home/jre
-# Thu, 28 Mar 2019 04:01:01 GMT
+# Wed, 08 May 2019 16:20:25 GMT
 ENV JAVA_VERSION=8u212
-# Thu, 28 Mar 2019 04:01:05 GMT
+# Wed, 08 May 2019 16:20:26 GMT
 ENV JAVA_DEBIAN_VERSION=8u212-b01-1~deb9u1
-# Thu, 28 Mar 2019 04:06:36 GMT
+# Wed, 08 May 2019 16:26:07 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Thu, 28 Mar 2019 04:40:36 GMT
+# Thu, 09 May 2019 07:15:01 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Thu, 28 Mar 2019 04:40:41 GMT
+# Thu, 09 May 2019 07:15:07 GMT
 RUN gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Thu, 28 Mar 2019 04:40:42 GMT
+# Thu, 09 May 2019 07:15:08 GMT
 ENV LIGHTSTREAMER_VERSION=7_0_3_20190107
-# Thu, 28 Mar 2019 04:40:42 GMT
+# Thu, 09 May 2019 07:15:10 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_7_0_3_20190107.tar.gz
-# Thu, 28 Mar 2019 04:40:43 GMT
+# Thu, 09 May 2019 07:15:13 GMT
 WORKDIR /lightstreamer
-# Thu, 28 Mar 2019 04:40:52 GMT
+# Thu, 09 May 2019 07:15:24 GMT
 RUN set -ex;         curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh         && sed -i -e '164,$s/<appender-ref ref="LSConsole" \/>/<!--<appender-ref ref="LSConsole" \/>-->/'                   -e '116,$s/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<!--<appender-ref ref="LSConsole" \/>-->/ d' conf/lightstreamer_log_conf.xml         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Thu, 28 Mar 2019 04:40:53 GMT
+# Thu, 09 May 2019 07:15:26 GMT
 EXPOSE 8080
-# Thu, 28 Mar 2019 04:40:54 GMT
+# Thu, 09 May 2019 07:15:27 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Thu, 28 Mar 2019 04:40:56 GMT
+# Thu, 09 May 2019 07:15:28 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:5385e634d2a1a330aea59f510b0676b269167a579dddb586b27917d80d0dfd01`  
-		Last Modified: Wed, 27 Mar 2019 08:52:30 GMT  
-		Size: 43.1 MB (43132000 bytes)  
+	-	`sha256:5894e28291972e44f5c3eba2779a85979bae6f95ed4f3e43ea5c98a132f06c48`  
+		Last Modified: Wed, 08 May 2019 08:54:43 GMT  
+		Size: 43.1 MB (43141955 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6696bae2f570e0c96dcb21308e525216796d3452d1a9b8dcaba168ba37f3f464`  
-		Last Modified: Wed, 27 Mar 2019 10:36:08 GMT  
-		Size: 9.7 MB (9730463 bytes)  
+	-	`sha256:7a8e6888cee6fef7c223eeaf2ca4c51bc0c21b4631971f416eb6a529a05e96cb`  
+		Last Modified: Wed, 08 May 2019 12:07:05 GMT  
+		Size: 9.7 MB (9733078 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dca82770cb3702e9c92d2f155923c0fb55671c1c373b8b50640b7bf05ed8418`  
-		Last Modified: Wed, 27 Mar 2019 10:36:05 GMT  
-		Size: 4.1 MB (4094072 bytes)  
+	-	`sha256:8bf90e854779f4c5edab378626d847fd0ab7aa9441b63a7db31a7db55d2b255b`  
+		Last Modified: Wed, 08 May 2019 12:07:03 GMT  
+		Size: 4.1 MB (4094187 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86f9a2434e166bc5bb8f8a3bf11f42053e0ab7483f5ba117a8d95cda3949a304`  
-		Last Modified: Wed, 27 Mar 2019 19:43:23 GMT  
-		Size: 839.2 KB (839168 bytes)  
+	-	`sha256:266e07372d3cf38feb8825ddae8cb9f335282ad809bba6aeaac01c34a13b9394`  
+		Last Modified: Wed, 08 May 2019 16:31:36 GMT  
+		Size: 839.5 KB (839462 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35de3b06942b0872f8bddc0e61fbd0adcd351bda7995a3c1498e0bf28d39c9a8`  
-		Last Modified: Thu, 28 Mar 2019 04:13:07 GMT  
+	-	`sha256:a659800b4725d142bb026865f3fe7c0783f10d06c59d098da99786f2d1651351`  
+		Last Modified: Wed, 08 May 2019 16:35:05 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b8d78217f184ff677815878b71fbb8c673f93b382d9d09c8cc34a671f085cc8`  
-		Last Modified: Thu, 28 Mar 2019 04:13:06 GMT  
-		Size: 132.0 B  
+	-	`sha256:2b72fcad374b58026407e0d656f469140e3725eb1baa7468dfaba55fc642503d`  
+		Last Modified: Wed, 08 May 2019 16:35:05 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6d9e5d36c3694ad4709069f3b65061eb834f5f5a252b8db0bc73eea230e88f7`  
-		Last Modified: Thu, 28 Mar 2019 04:13:43 GMT  
-		Size: 113.1 MB (113075196 bytes)  
+	-	`sha256:f06f957e19b2a1bce1a9143c3ec174bda06b3a5d74ef7122a0b81a3a730deae6`  
+		Last Modified: Wed, 08 May 2019 16:35:55 GMT  
+		Size: 113.1 MB (113077224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ecf89119bae435c337dfc6783381c2c7532e98771af4b45302b6c514a5cd9a3`  
-		Last Modified: Thu, 28 Mar 2019 04:43:44 GMT  
-		Size: 2.0 KB (2012 bytes)  
+	-	`sha256:b1ad3961ffaef0e5f9fe23f1e55354dda861fb6cb680fff69b3bef16b4e61a57`  
+		Last Modified: Thu, 09 May 2019 07:17:12 GMT  
+		Size: 2.0 KB (2018 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:754184c746d033c418a40d3b81c4e76a0ded41832f91b9a7a4093d135b0908aa`  
-		Last Modified: Thu, 28 Mar 2019 04:43:44 GMT  
+	-	`sha256:2da940e22f36a8c65117e0c1536fe5f85b63a2a89b4c20f2b4f8f4b04516d9b2`  
+		Last Modified: Thu, 09 May 2019 07:17:13 GMT  
 		Size: 102.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2459634660fdbdf6e9bc2d8201d769c959efa88084bd9710a7c4b4ed202fe00`  
-		Last Modified: Thu, 28 Mar 2019 04:43:52 GMT  
-		Size: 39.9 MB (39879792 bytes)  
+	-	`sha256:dda4c5f7e724f39285913e123c44a97b7c2a2cd2b61c306b85ca7c2f5fb421b6`  
+		Last Modified: Thu, 09 May 2019 07:17:21 GMT  
+		Size: 39.9 MB (39879770 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
