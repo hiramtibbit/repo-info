@@ -1,17 +1,17 @@
-# `percona:8.0.15-5-centos`
+# `percona:8.0.15-6-centos`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9ce6803bbebee94012b6f3e5d6b4c5a5ea06b67084210c893a55a412b7e153a4`
-- Created: `2019-03-15T20:28:21.658922377Z`
-- Virtual Size: ~ 719.58 Mb  
+- Image ID: `sha256:a65e5da28c0ca510bf80189f91fc529b4568ed5abae270b3ef8727c903f59952`
+- Created: `2019-05-08T19:20:46.874339592Z`
+- Virtual Size: ~ 726.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["mysqld"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PERCONA_VERSION=8.0.15-5.1.el7`
+  - `PERCONA_VERSION=8.0.15-6.1.el7`
 - Labels:
   - `org.label-schema.build-date=20190305`
   - `org.label-schema.license=GPLv2`
@@ -1577,37 +1577,37 @@ Licenses (from `rpm --query`): GPL-3.0+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `percona-server-client-8.0.15-5.1.el7.x86_64`
+### `rpm` package: `percona-server-client-8.0.15-6.1.el7.x86_64`
 
 Licenses (from `rpm --query`): Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `percona-server-rocksdb-8.0.15-5.1.el7.x86_64`
+### `rpm` package: `percona-server-rocksdb-8.0.15-6.1.el7.x86_64`
 
 Licenses (from `rpm --query`): Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `percona-server-server-8.0.15-5.1.el7.x86_64`
+### `rpm` package: `percona-server-server-8.0.15-6.1.el7.x86_64`
 
 Licenses (from `rpm --query`): Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `percona-server-shared-8.0.15-5.1.el7.x86_64`
+### `rpm` package: `percona-server-shared-8.0.15-6.1.el7.x86_64`
 
 Licenses (from `rpm --query`): Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `percona-server-shared-compat-8.0.15-5.1.el7.x86_64`
+### `rpm` package: `percona-server-shared-compat-8.0.15-6.1.el7.x86_64`
 
 Licenses (from `rpm --query`): Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `percona-server-tokudb-8.0.15-5.1.el7.x86_64`
+### `rpm` package: `percona-server-tokudb-8.0.15-6.1.el7.x86_64`
 
 Licenses (from `rpm --query`): Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
 
