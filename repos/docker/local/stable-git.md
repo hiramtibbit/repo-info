@@ -1,9 +1,9 @@
-# `docker:18.09.5-git`
+# `docker:18.09.6-git`
 
 ## Docker Metadata
 
-- Image ID: `sha256:72df215a69e820dc9b36f38340ab95f44bd68cad90327a7493a01e65838f3640`
-- Created: `2019-04-12T00:19:55.154280643Z`
+- Image ID: `sha256:0ff94870c60e4570c1d394741b6661bb6e4892a7c8cb1a9eda48531e3dec0b84`
+- Created: `2019-05-07T01:20:00.145511516Z`
 - Virtual Size: ~ 191.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_CHANNEL=stable`
-  - `DOCKER_VERSION=18.09.5`
+  - `DOCKER_VERSION=18.09.6`
 
 ## `apk` (`.apk`-based packages)
 
@@ -376,16 +376,16 @@ MIT
 ### `apk` package: `openssh-client`
 
 ```console
-openssh-client-7.9_p1-r4 description:
+openssh-client-7.9_p1-r5 description:
 OpenBSD's SSH client
 
-openssh-client-7.9_p1-r4 webpage:
+openssh-client-7.9_p1-r5 webpage:
 https://www.openssh.org/portable.html
 
-openssh-client-7.9_p1-r4 installed size:
+openssh-client-7.9_p1-r5 installed size:
 2715648
 
-openssh-client-7.9_p1-r4 license:
+openssh-client-7.9_p1-r5 license:
 BSD
 
 ```
@@ -393,16 +393,16 @@ BSD
 ### `apk` package: `openssh-keygen`
 
 ```console
-openssh-keygen-7.9_p1-r4 description:
+openssh-keygen-7.9_p1-r5 description:
 ssh helper program for generating keys
 
-openssh-keygen-7.9_p1-r4 webpage:
+openssh-keygen-7.9_p1-r5 webpage:
 https://www.openssh.org/portable.html
 
-openssh-keygen-7.9_p1-r4 installed size:
+openssh-keygen-7.9_p1-r5 installed size:
 380928
 
-openssh-keygen-7.9_p1-r4 license:
+openssh-keygen-7.9_p1-r5 license:
 BSD
 
 ```

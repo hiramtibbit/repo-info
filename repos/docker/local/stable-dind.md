@@ -1,9 +1,9 @@
-# `docker:18.09.5-dind`
+# `docker:18.09.6-dind`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0efc0b6c950098541b41bf0b4b12b127f90cd398d1dbc331701dc8f9b24f3e4a`
-- Created: `2019-04-17T23:19:39.752021164Z`
+- Image ID: `sha256:6204caf6c5927058f10fab0e4661b5f7a37d9a986a89b28a176a9958a0a5b7d3`
+- Created: `2019-05-07T01:19:55.027182588Z`
 - Virtual Size: ~ 183.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_CHANNEL=stable`
-  - `DOCKER_VERSION=18.09.5`
+  - `DOCKER_VERSION=18.09.6`
   - `DIND_COMMIT=37498f009d8bf25fbb6199e8ccd34bed84f2874b`
 
 ## `apk` (`.apk`-based packages)
