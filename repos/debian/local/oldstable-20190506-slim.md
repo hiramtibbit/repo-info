@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1e7cc7fc332b18069e84b68214f18fb647dfad200c40fe5be3fb6d12474db233`
-- Created: `2019-03-26T22:40:11.118842597Z`
+- Image ID: `sha256:66b0b15048232958596b3c4fa4920e20151fe051a5066d1932197b37e4610bac`
+- Created: `2019-05-08T00:31:25.983073689Z`
 - Virtual Size: ~ 81.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1491,15 +1491,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/startpar/0.59-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/startpar/0.59-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=215-17+deb8u11`
+### `dpkg` source package: `systemd=215-17+deb8u13`
 
 Binary Packages:
 
-- `libsystemd0:amd64=215-17+deb8u11`
-- `libudev1:amd64=215-17+deb8u11`
-- `systemd=215-17+deb8u11`
-- `systemd-sysv=215-17+deb8u11`
-- `udev=215-17+deb8u11`
+- `libsystemd0:amd64=215-17+deb8u13`
+- `libudev1:amd64=215-17+deb8u13`
+- `systemd=215-17+deb8u13`
+- `systemd-sysv=215-17+deb8u13`
+- `udev=215-17+deb8u13`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`, `/usr/share/doc/udev/copyright`)
 
@@ -1510,13 +1510,20 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris systemd=215-17+deb8u13
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215-17+deb8u13.dsc' systemd_215-17+deb8u13.dsc 4182 SHA256:d8c3f700871e3962b7c16fbaf8e7c8aaa0fb95a4410dff04d54e229169451ec3
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215.orig.tar.xz' systemd_215.orig.tar.xz 2888652 SHA256:ce76a3c05e7d4adc806a3446a5510c0c9b76a33f19adc32754b69a0945124505
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215-17+deb8u13.debian.tar.xz' systemd_215-17+deb8u13.debian.tar.xz 248816 SHA256:7274d5e33a526b06d37558999325b15f8dd773ad9ddd61cc7f5e12f1bca839db
+```
 
-- http://snapshot.debian.org/package/systemd/215-17+deb8u11/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/systemd/215-17+deb8u13/ (for browsing the source)
+- https://sources.debian.net/src/systemd/215-17+deb8u13/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/215-17+deb8u13/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59`
 
@@ -1571,23 +1578,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.27.1-2+deb8u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.27.1-2+deb8u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2018i-0+deb8u1`
+### `dpkg` source package: `tzdata=2019a-0+deb8u1`
 
 Binary Packages:
 
-- `tzdata=2018i-0+deb8u1`
+- `tzdata=2019a-0+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2019a-0+deb8u1
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2019a-0+deb8u1.dsc' tzdata_2019a-0+deb8u1.dsc 1985 SHA256:858fe36e4f1ae1d6612f97c2d0a9e1c134bd7b5b5959b4980ce96d0c6e929468
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2019a.orig.tar.gz' tzdata_2019a.orig.tar.gz 378961 SHA256:90366ddf4aa03e37a16cd49255af77f801822310b213f195e2206ead48c59772
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2019a-0+deb8u1.debian.tar.xz' tzdata_2019a-0+deb8u1.debian.tar.xz 102980 SHA256:29477395b140ebff19d2e1da116cccf0366762fa8064ec07287e0b315c729af9
+```
 
-- http://snapshot.debian.org/package/tzdata/2018i-0+deb8u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2019a-0+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2019a-0+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2019a-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 
