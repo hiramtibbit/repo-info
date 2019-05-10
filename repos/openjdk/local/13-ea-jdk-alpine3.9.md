@@ -1,19 +1,19 @@
-# `openjdk:13-ea-16-jdk-alpine3.9`
+# `openjdk:13-ea-19-jdk-alpine3.9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1b27cbf25cea60c312b3469eb18c544d81480e11b3779f5b4ca336511d7c9590`
-- Created: `2019-04-17T23:26:53.989788345Z`
-- Virtual Size: ~ 333.48 Mb  
+- Image ID: `sha256:f6e69b1614bd0c1c3405f7e624a6d19f4afec38423af886eca59ef72247271e4`
+- Created: `2019-05-09T23:26:55.084134177Z`
+- Virtual Size: ~ 335.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
 - Environment:
   - `PATH=/opt/openjdk-13/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/openjdk-13`
-  - `JAVA_VERSION=13-ea+16`
-  - `JAVA_URL=https://download.java.net/java/early_access/alpine/16/binaries/openjdk-13-ea+16_linux-x64-musl_bin.tar.gz`
-  - `JAVA_SHA256=1e3bcc2efccf17b1c86053dece5c9f5543d9c0ec1809a2586e89d3fe0e20e37d`
+  - `JAVA_VERSION=13-ea+19`
+  - `JAVA_URL=https://download.java.net/java/early_access/alpine/19/binaries/openjdk-13-ea+19_linux-x64-musl_bin.tar.gz`
+  - `JAVA_SHA256=010ea985fba7e3d89a9170545c4e697da983cffc442b84e65dba3baa771299a5`
 
 ## `apk` (`.apk`-based packages)
 
