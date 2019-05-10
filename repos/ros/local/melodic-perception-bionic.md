@@ -12345,14 +12345,9 @@ Licenses: (parsed from: `/usr/share/doc/wpasupplicant/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wpa=2:2.6-15ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wpa/wpa_2.6-15ubuntu2.2.dsc' wpa_2.6-15ubuntu2.2.dsc 2507 SHA256:b613be41a08fef16bfbcaceefe179bfb9c617dce5140128944a605faba8e0d91
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wpa/wpa_2.6.orig.tar.xz' wpa_2.6.orig.tar.xz 2009476 SHA256:4492629ea15c9b571ac5e41679dca6703a25b637828272a0e72f3349dd1b4eac
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wpa/wpa_2.6-15ubuntu2.2.debian.tar.xz' wpa_2.6-15ubuntu2.2.debian.tar.xz 123040 SHA256:cd5ba4f4a0d6c1efd086ec3e87ba52d330db435819764a5baf4881f3c1f1689a
-```
 
 ### `dpkg` source package: `wxpython3.0=3.0.2.0+dfsg-7`
 
