@@ -3991,20 +3991,13 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:8.1.0875-2
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.1.0875-2.dsc' vim_8.1.0875-2.dsc 2918 SHA256:1756c9fba2a1dbb71b4a74de5224835047c6f8bb66c07b4ef8d5499fe2adb818
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.1.0875.orig.tar.gz' vim_8.1.0875.orig.tar.gz 14067291 SHA256:fb5b487f424d3a4d17b7c74fe64bf1faa9dc9a65da6da246e6d8c02489ba8b0b
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.1.0875-2.debian.tar.xz' vim_8.1.0875-2.debian.tar.xz 173480 SHA256:b00079369aab4035a2426818bf77b2b2958a3391c9ff7068a97b919a7b7f9fa5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/vim/2:8.1.0875-2/
 
-- https://sources.debian.net/src/vim/2:8.1.0875-2/ (for browsing the source)
-- https://sources.debian.net/src/vim/2:8.1.0875-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/vim/2:8.1.0875-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.20.1-1.1`
 
