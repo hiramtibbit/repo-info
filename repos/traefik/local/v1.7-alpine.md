@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2761899631d036000b3b6a8c5e3138b645da8bef3cf44cecef641292254a3a58`
-- Created: `2019-04-26T22:24:06.171796292Z`
+- Image ID: `sha256:e9b5d6f8e6c9802e8006a1249b77d0fc6d7458d7003b7645554ba80d870ed83e`
+- Created: `2019-05-11T03:12:23.636028035Z`
 - Virtual Size: ~ 78.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -262,16 +262,16 @@ GPL-2.0
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2018i-r0 description:
+tzdata-2019a-r0 description:
 Timezone data
 
-tzdata-2018i-r0 webpage:
+tzdata-2019a-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2018i-r0 installed size:
-3547136
+tzdata-2019a-r0 installed size:
+3538944
 
-tzdata-2018i-r0 license:
+tzdata-2019a-r0 license:
 Public-Domain
 
 ```
