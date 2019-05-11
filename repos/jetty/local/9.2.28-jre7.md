@@ -3185,20 +3185,13 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-7-jre/copyright`, `/usr/share/do
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-7=7u211-2.6.17-1~deb8u1
-'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-7/openjdk-7_7u211-2.6.17-1~deb8u1.dsc' openjdk-7_7u211-2.6.17-1~deb8u1.dsc 4677 SHA256:842bfc8a27dd693d9819c0c1732f849f66065bcc3113116e7007d394a1a7c813
-'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-7/openjdk-7_7u211-2.6.17.orig.tar.gz' openjdk-7_7u211-2.6.17.orig.tar.gz 54110615 SHA256:4bcb8247f12c07d5002a3763bbf937da6daeee942439507eea9c4fc4fb190f96
-'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-7/openjdk-7_7u211-2.6.17-1~deb8u1.debian.tar.xz' openjdk-7_7u211-2.6.17-1~deb8u1.debian.tar.xz 173328 SHA256:a2a82ad7ad83f602ea6b654561ffa5b3837f591993dcb10cae49383cde17562c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openjdk-7/7u211-2.6.17-1~deb8u1/
 
-- https://sources.debian.net/src/openjdk-7/7u211-2.6.17-1~deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-7/7u211-2.6.17-1~deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-7/7u211-2.6.17-1~deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.40+dfsg-1+deb8u4`
 
