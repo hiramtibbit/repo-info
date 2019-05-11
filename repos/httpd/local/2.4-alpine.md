@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1d42e93b142c4e5c1043a37cce0d9aabdceb3b0df178c6de8530569fd37235d0`
-- Created: `2019-04-09T23:54:20.774950767Z`
-- Virtual Size: ~ 123.86 Mb  
+- Image ID: `sha256:324a76ee954f0aba6f41c742d4ebf131bd6a2559b34dd6883ba1bd49a1a2df64`
+- Created: `2019-05-11T02:38:37.967657917Z`
+- Virtual Size: ~ 123.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
@@ -616,16 +616,16 @@ MIT
 ### `apk` package: `mariadb-common`
 
 ```console
-mariadb-common-10.3.13-r0 description:
+mariadb-common-10.3.13-r1 description:
 MariaDB common files for both server and client
 
-mariadb-common-10.3.13-r0 webpage:
+mariadb-common-10.3.13-r1 webpage:
 https://www.mariadb.org
 
-mariadb-common-10.3.13-r0 installed size:
+mariadb-common-10.3.13-r1 installed size:
 2240512
 
-mariadb-common-10.3.13-r0 license:
+mariadb-common-10.3.13-r1 license:
 GPL-2.0-or-later
 
 ```
@@ -667,16 +667,16 @@ LGPL-2.1-or-later
 ### `apk` package: `mariadb-dev`
 
 ```console
-mariadb-dev-10.3.13-r0 description:
+mariadb-dev-10.3.13-r1 description:
 A fast SQL database server (development files)
 
-mariadb-dev-10.3.13-r0 webpage:
+mariadb-dev-10.3.13-r1 webpage:
 https://www.mariadb.org
 
-mariadb-dev-10.3.13-r0 installed size:
+mariadb-dev-10.3.13-r1 installed size:
 5779456
 
-mariadb-dev-10.3.13-r0 license:
+mariadb-dev-10.3.13-r1 license:
 GPL-2.0-or-later
 
 ```
@@ -684,16 +684,16 @@ GPL-2.0-or-later
 ### `apk` package: `mariadb-embedded`
 
 ```console
-mariadb-embedded-10.3.13-r0 description:
+mariadb-embedded-10.3.13-r1 description:
 MariaDB as an embeddable library
 
-mariadb-embedded-10.3.13-r0 webpage:
+mariadb-embedded-10.3.13-r1 webpage:
 https://www.mariadb.org
 
-mariadb-embedded-10.3.13-r0 installed size:
-16863232
+mariadb-embedded-10.3.13-r1 installed size:
+16871424
 
-mariadb-embedded-10.3.13-r0 license:
+mariadb-embedded-10.3.13-r1 license:
 GPL-2.0-or-later
 
 ```
