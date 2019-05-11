@@ -440,14 +440,9 @@ Licenses: (parsed from: `/usr/share/doc/libcupsfilters1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups-filters=1.8.3-2ubuntu3.4
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups-filters/cups-filters_1.8.3-2ubuntu3.4.dsc' cups-filters_1.8.3-2ubuntu3.4.dsc 2997 SHA256:6a3b822ed02982367c3cdfa6d78c5add9c6d8d1f2b31594431424bb66b4bdf6f
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups-filters/cups-filters_1.8.3.orig.tar.xz' cups-filters_1.8.3.orig.tar.xz 1373028 SHA256:e1e786f1fbcd3a203d87ebb4106a0ba8d579953cbe22056d12d4ee8143f5341a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups-filters/cups-filters_1.8.3-2ubuntu3.4.debian.tar.xz' cups-filters_1.8.3-2ubuntu3.4.debian.tar.xz 70892 SHA256:691f49bdb488afcbe2fe44c2bf9c5ccd70f01636dd2e3ccd44e7eb223aa49bbc
-```
 
 ### `dpkg` source package: `cups=2.1.3-4ubuntu0.7`
 
