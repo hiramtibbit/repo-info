@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:636b179eae293b62002f3e3e355066820e053c722075bc44bd208ce4b8c032cf`
-- Created: `2019-04-26T22:20:02.081473251Z`
+- Image ID: `sha256:a95ac1c3a2a01cfdb4e169a03439fdcc58c74ab213dc84e9063c7097aba98f9b`
+- Created: `2019-05-11T00:25:13.455387923Z`
 - Virtual Size: ~ 40.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -313,16 +313,16 @@ GPL
 ### `apk` package: `ruby`
 
 ```console
-ruby-2.5.3-r1 description:
+ruby-2.5.5-r0 description:
 An object-oriented language for quick and easy programming
 
-ruby-2.5.3-r1 webpage:
+ruby-2.5.5-r0 webpage:
 http://www.ruby-lang.org/en/
 
-ruby-2.5.3-r1 installed size:
+ruby-2.5.5-r0 installed size:
 40960
 
-ruby-2.5.3-r1 license:
+ruby-2.5.5-r0 license:
 Ruby BSD-2-Clause
 
 ```
@@ -330,16 +330,16 @@ Ruby BSD-2-Clause
 ### `apk` package: `ruby-etc`
 
 ```console
-ruby-etc-2.5.3-r1 description:
+ruby-etc-2.5.5-r0 description:
 Provides access to information typically stored in UNIX /etc directory
 
-ruby-etc-2.5.3-r1 webpage:
+ruby-etc-2.5.5-r0 webpage:
 http://www.ruby-lang.org/en/
 
-ruby-etc-2.5.3-r1 installed size:
+ruby-etc-2.5.5-r0 installed size:
 77824
 
-ruby-etc-2.5.3-r1 license:
+ruby-etc-2.5.5-r0 license:
 BSD-2-Clause
 
 ```
@@ -347,16 +347,16 @@ BSD-2-Clause
 ### `apk` package: `ruby-irb`
 
 ```console
-ruby-irb-2.5.3-r1 description:
+ruby-irb-2.5.5-r0 description:
 The Interactive Ruby
 
-ruby-irb-2.5.3-r1 webpage:
+ruby-irb-2.5.5-r0 webpage:
 http://www.ruby-lang.org/en/
 
-ruby-irb-2.5.3-r1 installed size:
+ruby-irb-2.5.5-r0 installed size:
 319488
 
-ruby-irb-2.5.3-r1 license:
+ruby-irb-2.5.5-r0 license:
 Ruby BSD-2-Clause
 
 ```
@@ -364,16 +364,16 @@ Ruby BSD-2-Clause
 ### `apk` package: `ruby-libs`
 
 ```console
-ruby-libs-2.5.3-r1 description:
+ruby-libs-2.5.5-r0 description:
 Libraries necessary to run Ruby
 
-ruby-libs-2.5.3-r1 webpage:
+ruby-libs-2.5.5-r0 webpage:
 http://www.ruby-lang.org/en/
 
-ruby-libs-2.5.3-r1 installed size:
-13111296
+ruby-libs-2.5.5-r0 installed size:
+13103104
 
-ruby-libs-2.5.3-r1 license:
+ruby-libs-2.5.5-r0 license:
 Ruby BSD-2-Clause
 
 ```
@@ -381,16 +381,16 @@ Ruby BSD-2-Clause
 ### `apk` package: `ruby-webrick`
 
 ```console
-ruby-webrick-2.5.3-r1 description:
+ruby-webrick-2.5.5-r0 description:
 HTTP server toolkit for Ruby
 
-ruby-webrick-2.5.3-r1 webpage:
+ruby-webrick-2.5.5-r0 webpage:
 http://www.ruby-lang.org/en/
 
-ruby-webrick-2.5.3-r1 installed size:
+ruby-webrick-2.5.5-r0 installed size:
 315392
 
-ruby-webrick-2.5.3-r1 license:
+ruby-webrick-2.5.5-r0 license:
 BSD-2-Clause
 
 ```
