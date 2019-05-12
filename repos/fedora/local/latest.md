@@ -1500,16 +1500,7 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/SRP
 
 Licenses (from `rpm --query`): BSD and GPLv2
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls libzstd-1.3.8-1.fc29
-Enabling fedora-modular-source repository
-Enabling updates-source repository
-Enabling updates-modular-source repository
-Enabling fedora-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/SRPMS//Packages/z/zstd-1.3.8-1.fc29.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `lua-libs-5.3.5-3.fc29.x86_64`
 
