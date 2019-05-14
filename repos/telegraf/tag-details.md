@@ -20,7 +20,7 @@
 ## `telegraf:1.10`
 
 ```console
-$ docker pull telegraf@sha256:c29ab35c1d543945d647926a1a180f91cce67f7415dce6b43bfcac64d3d16eb6
+$ docker pull telegraf@sha256:d0c8630602cf85c5cba47903516c35d3f3d27d99f2e230c3c4a7e12ac0c37965
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -245,7 +245,7 @@ CMD ["telegraf"]
 ## `telegraf:1.10.3`
 
 ```console
-$ docker pull telegraf@sha256:c29ab35c1d543945d647926a1a180f91cce67f7415dce6b43bfcac64d3d16eb6
+$ docker pull telegraf@sha256:d0c8630602cf85c5cba47903516c35d3f3d27d99f2e230c3c4a7e12ac0c37965
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -470,7 +470,7 @@ CMD ["telegraf"]
 ## `telegraf:1.10.3-alpine`
 
 ```console
-$ docker pull telegraf@sha256:6e39036c83d718a75ed75651028c124c42bc1e2d24cb9d17037c7a49976ec5b5
+$ docker pull telegraf@sha256:9106295bc67459633b4d6151c2e1b9949e501560b2e659fe541bda691c566bcf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -539,7 +539,7 @@ CMD ["telegraf"]
 ## `telegraf:1.10-alpine`
 
 ```console
-$ docker pull telegraf@sha256:6e39036c83d718a75ed75651028c124c42bc1e2d24cb9d17037c7a49976ec5b5
+$ docker pull telegraf@sha256:9106295bc67459633b4d6151c2e1b9949e501560b2e659fe541bda691c566bcf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -608,7 +608,7 @@ CMD ["telegraf"]
 ## `telegraf:1.8`
 
 ```console
-$ docker pull telegraf@sha256:0d483b7b9a7c4eef6972229b4d57a974af2a56a4ffee58f6deb99de5b9611dc3
+$ docker pull telegraf@sha256:df21e97d3a71b64f0fd12aaf13a4e3f2f08b3555492a38e5ab3801bf3250a34a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -833,7 +833,7 @@ CMD ["telegraf"]
 ## `telegraf:1.8.3`
 
 ```console
-$ docker pull telegraf@sha256:0d483b7b9a7c4eef6972229b4d57a974af2a56a4ffee58f6deb99de5b9611dc3
+$ docker pull telegraf@sha256:df21e97d3a71b64f0fd12aaf13a4e3f2f08b3555492a38e5ab3801bf3250a34a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1058,7 +1058,7 @@ CMD ["telegraf"]
 ## `telegraf:1.8.3-alpine`
 
 ```console
-$ docker pull telegraf@sha256:e12a189c470b8dbbc7f736d777c259554d069596ce97f41e1843bd07341038b2
+$ docker pull telegraf@sha256:9cec48f5a995be842489079ccddfc1561f840fa778caca0eede28c5c552d4838
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1127,7 +1127,7 @@ CMD ["telegraf"]
 ## `telegraf:1.8-alpine`
 
 ```console
-$ docker pull telegraf@sha256:e12a189c470b8dbbc7f736d777c259554d069596ce97f41e1843bd07341038b2
+$ docker pull telegraf@sha256:9cec48f5a995be842489079ccddfc1561f840fa778caca0eede28c5c552d4838
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1196,7 +1196,7 @@ CMD ["telegraf"]
 ## `telegraf:1.9`
 
 ```console
-$ docker pull telegraf@sha256:ba45ac44e08434811f588b765b507149ae8367639336d155aab0372dce3e8b7f
+$ docker pull telegraf@sha256:420e39e87ffca34646ea8c3aec1cb5e0da126bcffcd26cac87381edb6700684d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1421,7 +1421,7 @@ CMD ["telegraf"]
 ## `telegraf:1.9.5`
 
 ```console
-$ docker pull telegraf@sha256:ba45ac44e08434811f588b765b507149ae8367639336d155aab0372dce3e8b7f
+$ docker pull telegraf@sha256:420e39e87ffca34646ea8c3aec1cb5e0da126bcffcd26cac87381edb6700684d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1646,7 +1646,7 @@ CMD ["telegraf"]
 ## `telegraf:1.9.5-alpine`
 
 ```console
-$ docker pull telegraf@sha256:4022b44df0b3d1715bfcb16488931b943b4ea1799dfd6a1df755a538bdadf60f
+$ docker pull telegraf@sha256:f0d9a2de341e9fc8e1d2947578a200d50b5dde63f9ea05b2a12f49d42b41068f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1715,7 +1715,7 @@ CMD ["telegraf"]
 ## `telegraf:1.9-alpine`
 
 ```console
-$ docker pull telegraf@sha256:4022b44df0b3d1715bfcb16488931b943b4ea1799dfd6a1df755a538bdadf60f
+$ docker pull telegraf@sha256:f0d9a2de341e9fc8e1d2947578a200d50b5dde63f9ea05b2a12f49d42b41068f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1784,7 +1784,7 @@ CMD ["telegraf"]
 ## `telegraf:alpine`
 
 ```console
-$ docker pull telegraf@sha256:6e39036c83d718a75ed75651028c124c42bc1e2d24cb9d17037c7a49976ec5b5
+$ docker pull telegraf@sha256:9106295bc67459633b4d6151c2e1b9949e501560b2e659fe541bda691c566bcf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1853,7 +1853,7 @@ CMD ["telegraf"]
 ## `telegraf:latest`
 
 ```console
-$ docker pull telegraf@sha256:c29ab35c1d543945d647926a1a180f91cce67f7415dce6b43bfcac64d3d16eb6
+$ docker pull telegraf@sha256:d0c8630602cf85c5cba47903516c35d3f3d27d99f2e230c3c4a7e12ac0c37965
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
