@@ -1,7 +1,7 @@
 ## `couchbase:latest`
 
 ```console
-$ docker pull couchbase@sha256:bf13af2b564dcd7e69acc703beb777fa6b3cf803fd0afd16c702f86bed5380c1
+$ docker pull couchbase@sha256:6afa7c90e6d8030a07de6c892add759e340fda1347eb6c27683871eb0bcca504
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

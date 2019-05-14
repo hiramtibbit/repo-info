@@ -12,7 +12,7 @@
 ## `couchbase:6.0.1`
 
 ```console
-$ docker pull couchbase@sha256:bf13af2b564dcd7e69acc703beb777fa6b3cf803fd0afd16c702f86bed5380c1
+$ docker pull couchbase@sha256:6afa7c90e6d8030a07de6c892add759e340fda1347eb6c27683871eb0bcca504
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -146,7 +146,7 @@ VOLUME [/opt/couchbase/var]
 ## `couchbase:community`
 
 ```console
-$ docker pull couchbase@sha256:403e811c5ef03d5339ed47a966cea872daa92febfa55234d599e540bb8e08f44
+$ docker pull couchbase@sha256:a3357cf20d03295a9fba74a9c8b2d34e24f99e0298bdb242cdbb4d81d095a413
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -280,7 +280,7 @@ VOLUME [/opt/couchbase/var]
 ## `couchbase:community-6.0.0`
 
 ```console
-$ docker pull couchbase@sha256:403e811c5ef03d5339ed47a966cea872daa92febfa55234d599e540bb8e08f44
+$ docker pull couchbase@sha256:a3357cf20d03295a9fba74a9c8b2d34e24f99e0298bdb242cdbb4d81d095a413
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -414,7 +414,7 @@ VOLUME [/opt/couchbase/var]
 ## `couchbase:enterprise`
 
 ```console
-$ docker pull couchbase@sha256:bf13af2b564dcd7e69acc703beb777fa6b3cf803fd0afd16c702f86bed5380c1
+$ docker pull couchbase@sha256:6afa7c90e6d8030a07de6c892add759e340fda1347eb6c27683871eb0bcca504
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -548,7 +548,7 @@ VOLUME [/opt/couchbase/var]
 ## `couchbase:enterprise-6.0.1`
 
 ```console
-$ docker pull couchbase@sha256:bf13af2b564dcd7e69acc703beb777fa6b3cf803fd0afd16c702f86bed5380c1
+$ docker pull couchbase@sha256:6afa7c90e6d8030a07de6c892add759e340fda1347eb6c27683871eb0bcca504
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -682,7 +682,7 @@ VOLUME [/opt/couchbase/var]
 ## `couchbase:latest`
 
 ```console
-$ docker pull couchbase@sha256:bf13af2b564dcd7e69acc703beb777fa6b3cf803fd0afd16c702f86bed5380c1
+$ docker pull couchbase@sha256:6afa7c90e6d8030a07de6c892add759e340fda1347eb6c27683871eb0bcca504
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
