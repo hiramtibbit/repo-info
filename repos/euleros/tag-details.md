@@ -11,7 +11,7 @@
 ## `euleros:2.2`
 
 ```console
-$ docker pull euleros@sha256:a41185edaba52a963e0b55496affa83bddcdac46f7dec2762881d29a035133c9
+$ docker pull euleros@sha256:9a661654cb6daec287d9782575688e268927b4b3fea866ad420f61f0c61d588d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -49,7 +49,7 @@ CMD ["/bin/bash"]
 ## `euleros:2.3.1803`
 
 ```console
-$ docker pull euleros@sha256:264bf70fc04d1d42ad36e097a82d0c13fb165da5c34870d2186dec3b6b409210
+$ docker pull euleros@sha256:4e008ab5d19a6e97fa54e99ecac46c5fabd40172b493877d8430dada9cc4eb3f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -116,7 +116,7 @@ CMD ["/bin/bash"]
 ## `euleros:2.3.1806`
 
 ```console
-$ docker pull euleros@sha256:6dcb4ac250afc1e5e6e03ff8a2aa7372bd6af0253fbcf855446480e29364c7ca
+$ docker pull euleros@sha256:aadd9688d7cac9e6c878728239506dffdfec1b5627a3683632cab03d96ae6bc7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -183,7 +183,7 @@ CMD ["/bin/bash"]
 ## `euleros:2.3.1809`
 
 ```console
-$ docker pull euleros@sha256:ecba9c6394cd37a541b28388cbbf60e686eb03856dc5ad8b5e842a18974cb00a
+$ docker pull euleros@sha256:a6b815e0e99f4dd799b68c29e826922c00cf85b333f8f550c04536e287568714
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -250,7 +250,7 @@ CMD ["/bin/bash"]
 ## `euleros:latest`
 
 ```console
-$ docker pull euleros@sha256:ecba9c6394cd37a541b28388cbbf60e686eb03856dc5ad8b5e842a18974cb00a
+$ docker pull euleros@sha256:a6b815e0e99f4dd799b68c29e826922c00cf85b333f8f550c04536e287568714
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

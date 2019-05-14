@@ -1,7 +1,7 @@
 ## `euleros:latest`
 
 ```console
-$ docker pull euleros@sha256:ecba9c6394cd37a541b28388cbbf60e686eb03856dc5ad8b5e842a18974cb00a
+$ docker pull euleros@sha256:a6b815e0e99f4dd799b68c29e826922c00cf85b333f8f550c04536e287568714
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
