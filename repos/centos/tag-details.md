@@ -35,7 +35,7 @@
 ## `centos:6`
 
 ```console
-$ docker pull centos@sha256:948da2484b40977893b59896df7dbfba8c936f28db40e55678a4c96f455dee03
+$ docker pull centos@sha256:dec8f471302de43f4cfcf82f56d99a5227b5ea1aa6d02fa56344986e1f4610e7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -106,7 +106,7 @@ CMD ["/bin/bash"]
 ## `centos:6.10`
 
 ```console
-$ docker pull centos@sha256:24d17fa6c174019858b4a90df44443e8fad3cfa0f04c8ef31e4a9e80d776df85
+$ docker pull centos@sha256:a0d7c1950ac8ada32d3ae7ff0c9c2c9cc061c605aeeec6b27fded5b58be16fab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -144,7 +144,7 @@ CMD ["/bin/bash"]
 ## `centos:6.6`
 
 ```console
-$ docker pull centos@sha256:340d26d13b126cb29f9fafad729321a56b2f71c472ee2aae2e83088a3a9e8c3f
+$ docker pull centos@sha256:32b80b90ba17ed16e9fa3430a49f53ff6de0d4c76ad8631717a1373d5921fa26
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -179,7 +179,7 @@ ADD file:323d96a96f4ecb68e9e7aa9bfb8025c6f144a97f26687a95f0ffa0547944ea6e in /
 ## `centos:6.7`
 
 ```console
-$ docker pull centos@sha256:fbdc884421f5649d1ca3ae8f7f11bb955dff90879b1602702ab7ea26f9b33757
+$ docker pull centos@sha256:4c952fc7d30ed134109c769387313ab864711d1bd8b4660017f9d27243622df1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -221,7 +221,7 @@ CMD ["/bin/bash"]
 ## `centos:6.8`
 
 ```console
-$ docker pull centos@sha256:b0984ca22db2139601c3c71c720591ba106da3ca5ff7453816ed31f39789dd85
+$ docker pull centos@sha256:39abd0c8e375de6fb7334d42ec2a46643f34cbc1bbaf37e2b484065f05eaa7a2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -261,7 +261,7 @@ CMD ["/bin/bash"]
 ## `centos:6.9`
 
 ```console
-$ docker pull centos@sha256:8c538ac91da5eb1be8f4962cb02f7171043aa782eac22b6046fecc0fd4d006c5
+$ docker pull centos@sha256:6fff0a9edc920968351eb357c5b84016000fec6956e6d745f695e5a34f18ecd2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -299,7 +299,7 @@ CMD ["/bin/bash"]
 ## `centos:7`
 
 ```console
-$ docker pull centos@sha256:8d487d68857f5bc9595793279b33d082b03713341ddec91054382641d14db861
+$ docker pull centos@sha256:b5e66c4651870a1ad435cd75922fe2cb943c9e973a9673822d1414824a1d0475
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -455,7 +455,7 @@ CMD ["/bin/bash"]
 ## `centos:7.0.1406`
 
 ```console
-$ docker pull centos@sha256:85fc7d1ac8dcefe6567c5b86e6420c6110e416733fb44748948f201626f7241d
+$ docker pull centos@sha256:182394d34a0d73e987ffacf6d0e0caa3a0fe7bc1738798872b41e6245e0ee99d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -490,7 +490,7 @@ ADD file:caf0c5a82b42cdeb369ddb2b3d88a27198b9379d4c201626b26125422e3f1841 in /
 ## `centos:7.1.1503`
 
 ```console
-$ docker pull centos@sha256:4fcae4523cf9034611b50173b2a9b578e38e82c403f924c00c87daf319606dc7
+$ docker pull centos@sha256:713cbede4acabfe33b7901645d254dd0109cc7045dd00a6527e5391fbf72857a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -528,7 +528,7 @@ CMD ["/bin/bash"]
 ## `centos:7.2.1511`
 
 ```console
-$ docker pull centos@sha256:28f14903e337f2c897aa74e8c3c5ff38086849866a1a88b6554632e7d68c7c21
+$ docker pull centos@sha256:50cca1e74da4b6a4eb4ade029c8fdd4ee8564776801914d9bd89df8c6344add0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -572,7 +572,7 @@ CMD ["/bin/bash"]
 ## `centos:7.3.1611`
 
 ```console
-$ docker pull centos@sha256:a8007e12819a8a2b2d203542e65befe81cc8ab11fd49209769d3e0019a9343e9
+$ docker pull centos@sha256:8cc318f64d59d20035d7979824ced1c2aa01c8b2b5ab60b82044a43989262cfe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -612,7 +612,7 @@ CMD ["/bin/bash"]
 ## `centos:7.4.1708`
 
 ```console
-$ docker pull centos@sha256:6c6df0a69b2244369ffb893c1d3feb617d16d0f1a208a0d46b76f8f73b0cc989
+$ docker pull centos@sha256:8906d699cbd9406b07a105bedebc14a5945c200971b0a3a067aa245badc545b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -650,7 +650,7 @@ CMD ["/bin/bash"]
 ## `centos:7.5.1804`
 
 ```console
-$ docker pull centos@sha256:c777d447a06ac17206510fdbbafe1a9ae49c26684c01c7663a1214a1a476bbdf
+$ docker pull centos@sha256:7a45e4a1efbaafc1d9aa89925b6fdb33288a96d35ea0581412316e2f0ad3720a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -688,7 +688,7 @@ CMD ["/bin/bash"]
 ## `centos:7.6.1810`
 
 ```console
-$ docker pull centos@sha256:6ae4cddb2b37f889afd576a17a5286b311dcbf10a904409670827f6f9b50065e
+$ docker pull centos@sha256:0baec775bbf3e01cc770d5823c285b291b44ca05bb7c31b8674db5dae1d2aea9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -755,7 +755,7 @@ CMD ["/bin/bash"]
 ## `centos:centos6`
 
 ```console
-$ docker pull centos@sha256:948da2484b40977893b59896df7dbfba8c936f28db40e55678a4c96f455dee03
+$ docker pull centos@sha256:dec8f471302de43f4cfcf82f56d99a5227b5ea1aa6d02fa56344986e1f4610e7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -826,7 +826,7 @@ CMD ["/bin/bash"]
 ## `centos:centos6.10`
 
 ```console
-$ docker pull centos@sha256:24d17fa6c174019858b4a90df44443e8fad3cfa0f04c8ef31e4a9e80d776df85
+$ docker pull centos@sha256:a0d7c1950ac8ada32d3ae7ff0c9c2c9cc061c605aeeec6b27fded5b58be16fab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -864,7 +864,7 @@ CMD ["/bin/bash"]
 ## `centos:centos6.6`
 
 ```console
-$ docker pull centos@sha256:340d26d13b126cb29f9fafad729321a56b2f71c472ee2aae2e83088a3a9e8c3f
+$ docker pull centos@sha256:32b80b90ba17ed16e9fa3430a49f53ff6de0d4c76ad8631717a1373d5921fa26
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -899,7 +899,7 @@ ADD file:323d96a96f4ecb68e9e7aa9bfb8025c6f144a97f26687a95f0ffa0547944ea6e in /
 ## `centos:centos6.7`
 
 ```console
-$ docker pull centos@sha256:fbdc884421f5649d1ca3ae8f7f11bb955dff90879b1602702ab7ea26f9b33757
+$ docker pull centos@sha256:4c952fc7d30ed134109c769387313ab864711d1bd8b4660017f9d27243622df1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -941,7 +941,7 @@ CMD ["/bin/bash"]
 ## `centos:centos6.8`
 
 ```console
-$ docker pull centos@sha256:b0984ca22db2139601c3c71c720591ba106da3ca5ff7453816ed31f39789dd85
+$ docker pull centos@sha256:39abd0c8e375de6fb7334d42ec2a46643f34cbc1bbaf37e2b484065f05eaa7a2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -981,7 +981,7 @@ CMD ["/bin/bash"]
 ## `centos:centos6.9`
 
 ```console
-$ docker pull centos@sha256:8c538ac91da5eb1be8f4962cb02f7171043aa782eac22b6046fecc0fd4d006c5
+$ docker pull centos@sha256:6fff0a9edc920968351eb357c5b84016000fec6956e6d745f695e5a34f18ecd2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1019,7 +1019,7 @@ CMD ["/bin/bash"]
 ## `centos:centos7`
 
 ```console
-$ docker pull centos@sha256:8d487d68857f5bc9595793279b33d082b03713341ddec91054382641d14db861
+$ docker pull centos@sha256:b5e66c4651870a1ad435cd75922fe2cb943c9e973a9673822d1414824a1d0475
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1175,7 +1175,7 @@ CMD ["/bin/bash"]
 ## `centos:centos7.0.1406`
 
 ```console
-$ docker pull centos@sha256:85fc7d1ac8dcefe6567c5b86e6420c6110e416733fb44748948f201626f7241d
+$ docker pull centos@sha256:182394d34a0d73e987ffacf6d0e0caa3a0fe7bc1738798872b41e6245e0ee99d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1210,7 +1210,7 @@ ADD file:caf0c5a82b42cdeb369ddb2b3d88a27198b9379d4c201626b26125422e3f1841 in /
 ## `centos:centos7.1.1503`
 
 ```console
-$ docker pull centos@sha256:4fcae4523cf9034611b50173b2a9b578e38e82c403f924c00c87daf319606dc7
+$ docker pull centos@sha256:713cbede4acabfe33b7901645d254dd0109cc7045dd00a6527e5391fbf72857a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1248,7 +1248,7 @@ CMD ["/bin/bash"]
 ## `centos:centos7.2.1511`
 
 ```console
-$ docker pull centos@sha256:28f14903e337f2c897aa74e8c3c5ff38086849866a1a88b6554632e7d68c7c21
+$ docker pull centos@sha256:50cca1e74da4b6a4eb4ade029c8fdd4ee8564776801914d9bd89df8c6344add0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1292,7 +1292,7 @@ CMD ["/bin/bash"]
 ## `centos:centos7.3.1611`
 
 ```console
-$ docker pull centos@sha256:a8007e12819a8a2b2d203542e65befe81cc8ab11fd49209769d3e0019a9343e9
+$ docker pull centos@sha256:8cc318f64d59d20035d7979824ced1c2aa01c8b2b5ab60b82044a43989262cfe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1332,7 +1332,7 @@ CMD ["/bin/bash"]
 ## `centos:centos7.4.1708`
 
 ```console
-$ docker pull centos@sha256:6c6df0a69b2244369ffb893c1d3feb617d16d0f1a208a0d46b76f8f73b0cc989
+$ docker pull centos@sha256:8906d699cbd9406b07a105bedebc14a5945c200971b0a3a067aa245badc545b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1370,7 +1370,7 @@ CMD ["/bin/bash"]
 ## `centos:centos7.5.1804`
 
 ```console
-$ docker pull centos@sha256:c777d447a06ac17206510fdbbafe1a9ae49c26684c01c7663a1214a1a476bbdf
+$ docker pull centos@sha256:7a45e4a1efbaafc1d9aa89925b6fdb33288a96d35ea0581412316e2f0ad3720a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1408,7 +1408,7 @@ CMD ["/bin/bash"]
 ## `centos:centos7.6.1810`
 
 ```console
-$ docker pull centos@sha256:6ae4cddb2b37f889afd576a17a5286b311dcbf10a904409670827f6f9b50065e
+$ docker pull centos@sha256:0baec775bbf3e01cc770d5823c285b291b44ca05bb7c31b8674db5dae1d2aea9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1475,7 +1475,7 @@ CMD ["/bin/bash"]
 ## `centos:latest`
 
 ```console
-$ docker pull centos@sha256:8d487d68857f5bc9595793279b33d082b03713341ddec91054382641d14db861
+$ docker pull centos@sha256:b5e66c4651870a1ad435cd75922fe2cb943c9e973a9673822d1414824a1d0475
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

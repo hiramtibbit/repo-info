@@ -1,7 +1,7 @@
 ## `centos:centos7.1.1503`
 
 ```console
-$ docker pull centos@sha256:4fcae4523cf9034611b50173b2a9b578e38e82c403f924c00c87daf319606dc7
+$ docker pull centos@sha256:713cbede4acabfe33b7901645d254dd0109cc7045dd00a6527e5391fbf72857a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
