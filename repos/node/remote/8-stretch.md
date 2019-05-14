@@ -1,7 +1,7 @@
 ## `node:8-stretch`
 
 ```console
-$ docker pull node@sha256:d16c9fcf0b4f219aad05d74ffeeed7a56874c2737b19c06887771634204224c4
+$ docker pull node@sha256:b5484d1eece03b69a2222c8444ac32730e7d0ed6be8af7304d9d0b5fd691a950
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

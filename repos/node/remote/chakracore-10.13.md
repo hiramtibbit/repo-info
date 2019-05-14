@@ -1,7 +1,7 @@
 ## `node:chakracore-10.13`
 
 ```console
-$ docker pull node@sha256:30c39cff392df9b91d5a822636a79ef464d802f079def2896bd71d49de261f16
+$ docker pull node@sha256:95dc18f8dcb10600ef5eaa5d90ffd79872b039cde23e3652f4e583f6638df688
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

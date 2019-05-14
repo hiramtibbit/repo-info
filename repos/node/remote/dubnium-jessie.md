@@ -1,7 +1,7 @@
 ## `node:dubnium-jessie`
 
 ```console
-$ docker pull node@sha256:3568bb4a1ad1797c9a3b371626265f0cfe18c9539f0afaa7467dfb67deaaf434
+$ docker pull node@sha256:ab1dc93500c1bc99849838065a131001e51345ccb8c1ee889095b39e027feec8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

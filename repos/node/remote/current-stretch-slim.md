@@ -1,7 +1,7 @@
 ## `node:current-stretch-slim`
 
 ```console
-$ docker pull node@sha256:aa3567df12a0f781c72e837d499b8d7d9079d8d1912a7f4db3223eba56187bd9
+$ docker pull node@sha256:65142740ff7461aed0a83b1a903c73017667bcff3b32277735e2d26db0a440bc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
