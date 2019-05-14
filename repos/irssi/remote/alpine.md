@@ -1,7 +1,7 @@
 ## `irssi:alpine`
 
 ```console
-$ docker pull irssi@sha256:596407b0c6e22685a234f2d6ad1fff7e83fa00b3ba516d2cd1ac6e06b1a7d1d5
+$ docker pull irssi@sha256:d0bca8e87c0759b9464b8669e74cab160f3d51c267f1fbfdeffede1a327544e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

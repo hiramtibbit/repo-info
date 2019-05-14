@@ -14,7 +14,7 @@
 ## `irssi:1`
 
 ```console
-$ docker pull irssi@sha256:7a1c7988a538c1e847219b2ce6cf35388e43d4863d562917be116946e783ce77
+$ docker pull irssi@sha256:b146977aaa148cd2999bb843674fe8f36ff5a48345b4f17fa6ce6ca8bcdf3f22
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -422,7 +422,7 @@ CMD ["irssi"]
 ## `irssi:1.2`
 
 ```console
-$ docker pull irssi@sha256:7a1c7988a538c1e847219b2ce6cf35388e43d4863d562917be116946e783ce77
+$ docker pull irssi@sha256:b146977aaa148cd2999bb843674fe8f36ff5a48345b4f17fa6ce6ca8bcdf3f22
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -830,7 +830,7 @@ CMD ["irssi"]
 ## `irssi:1.2.0`
 
 ```console
-$ docker pull irssi@sha256:7a1c7988a538c1e847219b2ce6cf35388e43d4863d562917be116946e783ce77
+$ docker pull irssi@sha256:b146977aaa148cd2999bb843674fe8f36ff5a48345b4f17fa6ce6ca8bcdf3f22
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1238,7 +1238,7 @@ CMD ["irssi"]
 ## `irssi:1.2.0-alpine`
 
 ```console
-$ docker pull irssi@sha256:596407b0c6e22685a234f2d6ad1fff7e83fa00b3ba516d2cd1ac6e06b1a7d1d5
+$ docker pull irssi@sha256:d0bca8e87c0759b9464b8669e74cab160f3d51c267f1fbfdeffede1a327544e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1589,7 +1589,7 @@ CMD ["irssi"]
 ## `irssi:1.2-alpine`
 
 ```console
-$ docker pull irssi@sha256:596407b0c6e22685a234f2d6ad1fff7e83fa00b3ba516d2cd1ac6e06b1a7d1d5
+$ docker pull irssi@sha256:93e3b7ba3fa63d405f1154672905ac7c23e8ef52599c85d28f1b5aee62cb626f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1828,14 +1828,14 @@ CMD ["irssi"]
 ### `irssi:1.2-alpine` - linux; ppc64le
 
 ```console
-$ docker pull irssi@sha256:633534d1e9ae0833744a02dcbd2097da548021ca229d1bf82826f42b38b1ce6b
+$ docker pull irssi@sha256:eac3ec40fbebe7cede7df232f6123d9633cdcc407782f4cc447eb7b171d02ac4
 ```
 
 -	Docker Version: 18.06.1-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.9 MB (18881039 bytes)**  
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
+-	Total Size: **18.9 MB (18881071 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9404ddb6e0136ec360eb7bfc3032a94c59f9ad078cf14e4aa71511984003b0ea`
+-	Image ID: `a55fe4d2de9322c54c1daa11041662d6a9b85e9777384486cc186730a3bac468`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
@@ -1860,26 +1860,30 @@ WORKDIR /home/user
 # Fri, 08 Mar 2019 06:12:35 GMT
 USER user
 # Fri, 08 Mar 2019 06:12:40 GMT
-CMD ["irssi"]
+RUN ["\/bin\/sh","-c","#(nop) ","CMD [\"irssi\"]"]
 ```
 
 -	Layers:
-	-	`sha256:f4c3542ff81d415a34c73cfb323605bb8faf0062bb1ba117e2bd1370b734b441`  
-		Last Modified: Fri, 08 Mar 2019 03:38:54 GMT  
-		Size: 2.1 MB (2098856 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b8f911b60a9b8a3978862449cf7a77b41def43c50957a732c391264715318174`  
-		Last Modified: Fri, 08 Mar 2019 06:13:06 GMT  
-		Size: 311.0 KB (311033 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d1ccfb0f7383ca80b9485003e16e3d324d495832ecad3b5a1a3c9c523d7f45b`  
-		Last Modified: Fri, 08 Mar 2019 06:13:06 GMT  
-		Size: 1.3 KB (1300 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B  
+		MIME: application/octet-stream
 	-	`sha256:5545ba4ce116ffd5d99a1f6a8d1033c8f9cfe749515ed0ed15efd324c6134885`  
 		Last Modified: Fri, 08 Mar 2019 06:13:10 GMT  
 		Size: 16.5 MB (16469850 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/octet-stream
+	-	`sha256:5d1ccfb0f7383ca80b9485003e16e3d324d495832ecad3b5a1a3c9c523d7f45b`  
+		Last Modified: Fri, 08 Mar 2019 06:13:06 GMT  
+		Size: 1.3 KB (1300 bytes)  
+		MIME: application/octet-stream
+	-	`sha256:b8f911b60a9b8a3978862449cf7a77b41def43c50957a732c391264715318174`  
+		Last Modified: Fri, 08 Mar 2019 06:13:06 GMT  
+		Size: 311.0 KB (311033 bytes)  
+		MIME: application/octet-stream
+	-	`sha256:f4c3542ff81d415a34c73cfb323605bb8faf0062bb1ba117e2bd1370b734b441`  
+		Last Modified: Fri, 08 Mar 2019 03:38:54 GMT  
+		Size: 2.1 MB (2098856 bytes)  
+		MIME: application/octet-stream
 
 ### `irssi:1.2-alpine` - linux; s390x
 
@@ -1940,7 +1944,7 @@ CMD ["irssi"]
 ## `irssi:1-alpine`
 
 ```console
-$ docker pull irssi@sha256:596407b0c6e22685a234f2d6ad1fff7e83fa00b3ba516d2cd1ac6e06b1a7d1d5
+$ docker pull irssi@sha256:d0bca8e87c0759b9464b8669e74cab160f3d51c267f1fbfdeffede1a327544e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2291,7 +2295,7 @@ CMD ["irssi"]
 ## `irssi:alpine`
 
 ```console
-$ docker pull irssi@sha256:596407b0c6e22685a234f2d6ad1fff7e83fa00b3ba516d2cd1ac6e06b1a7d1d5
+$ docker pull irssi@sha256:d0bca8e87c0759b9464b8669e74cab160f3d51c267f1fbfdeffede1a327544e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2642,7 +2646,7 @@ CMD ["irssi"]
 ## `irssi:latest`
 
 ```console
-$ docker pull irssi@sha256:7a1c7988a538c1e847219b2ce6cf35388e43d4863d562917be116946e783ce77
+$ docker pull irssi@sha256:b146977aaa148cd2999bb843674fe8f36ff5a48345b4f17fa6ce6ca8bcdf3f22
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
