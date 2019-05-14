@@ -1,7 +1,7 @@
 ## `silverpeas:latest`
 
 ```console
-$ docker pull silverpeas@sha256:967d173e4825c01839a69cdc0ab1033a085870b5a2f76dc0f8fd8ea4db2f93d3
+$ docker pull silverpeas@sha256:bb7262f9d7c3521af9e0dded1c09d80f40431c0fbc752556c0edacc452ceec9a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
