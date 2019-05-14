@@ -9,7 +9,7 @@
 ## `crux:3.2`
 
 ```console
-$ docker pull crux@sha256:575b2271b6418f3c57aeda379284a76edae0787bfb70b8295d48d4e2da410db9
+$ docker pull crux@sha256:68386041abd860cbaaf8498ab4b220fa6c95b1051153aa6de83553cfbafe0ace
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -76,7 +76,7 @@ CMD ["/bin/bash"]
 ## `crux:3.4`
 
 ```console
-$ docker pull crux@sha256:ad1d53c032dc247b8519feca1a3d41d33ff25f4bd227659f7bae9d793f5a8014
+$ docker pull crux@sha256:5ab3fe9d6588dc95a394fef715a33af5c13c49e64460dace0cfc9abe3841901e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -143,7 +143,7 @@ CMD ["/bin/bash"]
 ## `crux:latest`
 
 ```console
-$ docker pull crux@sha256:ad1d53c032dc247b8519feca1a3d41d33ff25f4bd227659f7bae9d793f5a8014
+$ docker pull crux@sha256:5ab3fe9d6588dc95a394fef715a33af5c13c49e64460dace0cfc9abe3841901e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

@@ -1,7 +1,7 @@
 ## `crux:latest`
 
 ```console
-$ docker pull crux@sha256:ad1d53c032dc247b8519feca1a3d41d33ff25f4bd227659f7bae9d793f5a8014
+$ docker pull crux@sha256:5ab3fe9d6588dc95a394fef715a33af5c13c49e64460dace0cfc9abe3841901e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
