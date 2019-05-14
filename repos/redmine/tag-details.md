@@ -20,7 +20,7 @@
 ## `redmine:3`
 
 ```console
-$ docker pull redmine@sha256:2cb86407ac63592327d922453c3eae949cef5355dc81c3b182520e8906fcf6e4
+$ docker pull redmine@sha256:845fd5dead022982673005401aeb12ed4644e3ad897facb9b5f54873109f6d85
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -953,7 +953,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:3.4`
 
 ```console
-$ docker pull redmine@sha256:2cb86407ac63592327d922453c3eae949cef5355dc81c3b182520e8906fcf6e4
+$ docker pull redmine@sha256:845fd5dead022982673005401aeb12ed4644e3ad897facb9b5f54873109f6d85
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1886,7 +1886,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:3.4.10`
 
 ```console
-$ docker pull redmine@sha256:2cb86407ac63592327d922453c3eae949cef5355dc81c3b182520e8906fcf6e4
+$ docker pull redmine@sha256:845fd5dead022982673005401aeb12ed4644e3ad897facb9b5f54873109f6d85
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2819,7 +2819,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:3.4.10-passenger`
 
 ```console
-$ docker pull redmine@sha256:0560552412b9fcc6f82cdcb9b64dd7ad1eb0482ab2161da0fd936e3620bd9ffc
+$ docker pull redmine@sha256:dccefd8123f9267e34c47a60334407da8ebb74a6eef7816a1c4577c56855dcca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2978,7 +2978,7 @@ CMD ["passenger" "start"]
 ## `redmine:3.4-passenger`
 
 ```console
-$ docker pull redmine@sha256:0560552412b9fcc6f82cdcb9b64dd7ad1eb0482ab2161da0fd936e3620bd9ffc
+$ docker pull redmine@sha256:dccefd8123f9267e34c47a60334407da8ebb74a6eef7816a1c4577c56855dcca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3137,7 +3137,7 @@ CMD ["passenger" "start"]
 ## `redmine:3-passenger`
 
 ```console
-$ docker pull redmine@sha256:0560552412b9fcc6f82cdcb9b64dd7ad1eb0482ab2161da0fd936e3620bd9ffc
+$ docker pull redmine@sha256:dccefd8123f9267e34c47a60334407da8ebb74a6eef7816a1c4577c56855dcca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3296,7 +3296,7 @@ CMD ["passenger" "start"]
 ## `redmine:4`
 
 ```console
-$ docker pull redmine@sha256:15f819a9745ddd4fa577525bfe5b795472daa1870153e7272a96f41908cee752
+$ docker pull redmine@sha256:b01e4fb99f36ceb86c0de6d2d3943840e3e5108c70edea24bf050ad9ee15b232
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4215,7 +4215,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:4.0`
 
 ```console
-$ docker pull redmine@sha256:15f819a9745ddd4fa577525bfe5b795472daa1870153e7272a96f41908cee752
+$ docker pull redmine@sha256:b01e4fb99f36ceb86c0de6d2d3943840e3e5108c70edea24bf050ad9ee15b232
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5134,7 +5134,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:4.0.3`
 
 ```console
-$ docker pull redmine@sha256:15f819a9745ddd4fa577525bfe5b795472daa1870153e7272a96f41908cee752
+$ docker pull redmine@sha256:b01e4fb99f36ceb86c0de6d2d3943840e3e5108c70edea24bf050ad9ee15b232
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6053,7 +6053,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:4.0.3-passenger`
 
 ```console
-$ docker pull redmine@sha256:af6a56ec16b4e97bbbac7a9ce79eb1447c5f4dcd1f9a9ead8717cd8403f2a4a2
+$ docker pull redmine@sha256:f4517dfd4ab18820c231f0ce21f4b6cfd96d97c48cb645043958a6eb3dd0aeca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6210,7 +6210,7 @@ CMD ["passenger" "start"]
 ## `redmine:4.0-passenger`
 
 ```console
-$ docker pull redmine@sha256:af6a56ec16b4e97bbbac7a9ce79eb1447c5f4dcd1f9a9ead8717cd8403f2a4a2
+$ docker pull redmine@sha256:f4517dfd4ab18820c231f0ce21f4b6cfd96d97c48cb645043958a6eb3dd0aeca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6367,7 +6367,7 @@ CMD ["passenger" "start"]
 ## `redmine:4-passenger`
 
 ```console
-$ docker pull redmine@sha256:af6a56ec16b4e97bbbac7a9ce79eb1447c5f4dcd1f9a9ead8717cd8403f2a4a2
+$ docker pull redmine@sha256:f4517dfd4ab18820c231f0ce21f4b6cfd96d97c48cb645043958a6eb3dd0aeca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6524,7 +6524,7 @@ CMD ["passenger" "start"]
 ## `redmine:latest`
 
 ```console
-$ docker pull redmine@sha256:15f819a9745ddd4fa577525bfe5b795472daa1870153e7272a96f41908cee752
+$ docker pull redmine@sha256:b01e4fb99f36ceb86c0de6d2d3943840e3e5108c70edea24bf050ad9ee15b232
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7443,7 +7443,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:passenger`
 
 ```console
-$ docker pull redmine@sha256:af6a56ec16b4e97bbbac7a9ce79eb1447c5f4dcd1f9a9ead8717cd8403f2a4a2
+$ docker pull redmine@sha256:f4517dfd4ab18820c231f0ce21f4b6cfd96d97c48cb645043958a6eb3dd0aeca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
