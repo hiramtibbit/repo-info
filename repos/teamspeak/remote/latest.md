@@ -1,7 +1,7 @@
 ## `teamspeak:latest`
 
 ```console
-$ docker pull teamspeak@sha256:d46b989ff1e4da55c1fe2fa5acf668d9f736c24f7f31a7f3085007c836eb76fe
+$ docker pull teamspeak@sha256:32846652f83b68fe779da104bb8a076ee830a03d4e881f7dde0b4ec3ca0d1544
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
