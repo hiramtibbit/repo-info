@@ -8,7 +8,7 @@
 ## `rakudo-star:2019.03`
 
 ```console
-$ docker pull rakudo-star@sha256:19a137d15134dc3ecd2c67018fe7e83d9dfa01f91839ac60f19d3ad54e07c377
+$ docker pull rakudo-star@sha256:537af87bdc0b61e938c50b99d1f81ef1c8ca07f27e3eafc6cd177b344d293285
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -151,7 +151,7 @@ CMD ["perl6"]
 ## `rakudo-star:latest`
 
 ```console
-$ docker pull rakudo-star@sha256:19a137d15134dc3ecd2c67018fe7e83d9dfa01f91839ac60f19d3ad54e07c377
+$ docker pull rakudo-star@sha256:537af87bdc0b61e938c50b99d1f81ef1c8ca07f27e3eafc6cd177b344d293285
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
