@@ -1,7 +1,7 @@
 ## `plone:4-alpine`
 
 ```console
-$ docker pull plone@sha256:1c9bc0271829cdfafa74ec965c6cee15b9cce541acaf357113d0d2443af1fa08
+$ docker pull plone@sha256:d0bac602809d1f1648989ea2c508f9a1e30c453d30a129b2adf12b1a16a488ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

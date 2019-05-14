@@ -20,7 +20,7 @@
 ## `plone:4`
 
 ```console
-$ docker pull plone@sha256:237483699bef9243bb726aab2d747249c04de8bbafa8543bac97e562d1f35aae
+$ docker pull plone@sha256:465b7a27034fe115a891f3f554034bdcf16b4bf3e79b21280db6710fc6a6572b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -629,7 +629,7 @@ CMD ["start"]
 ## `plone:4.3`
 
 ```console
-$ docker pull plone@sha256:237483699bef9243bb726aab2d747249c04de8bbafa8543bac97e562d1f35aae
+$ docker pull plone@sha256:465b7a27034fe115a891f3f554034bdcf16b4bf3e79b21280db6710fc6a6572b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1238,7 +1238,7 @@ CMD ["start"]
 ## `plone:4.3.18`
 
 ```console
-$ docker pull plone@sha256:237483699bef9243bb726aab2d747249c04de8bbafa8543bac97e562d1f35aae
+$ docker pull plone@sha256:465b7a27034fe115a891f3f554034bdcf16b4bf3e79b21280db6710fc6a6572b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1847,7 +1847,7 @@ CMD ["start"]
 ## `plone:4.3.18-alpine`
 
 ```console
-$ docker pull plone@sha256:1c9bc0271829cdfafa74ec965c6cee15b9cce541acaf357113d0d2443af1fa08
+$ docker pull plone@sha256:d0bac602809d1f1648989ea2c508f9a1e30c453d30a129b2adf12b1a16a488ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2486,7 +2486,7 @@ CMD ["start"]
 ## `plone:4.3-alpine`
 
 ```console
-$ docker pull plone@sha256:1c9bc0271829cdfafa74ec965c6cee15b9cce541acaf357113d0d2443af1fa08
+$ docker pull plone@sha256:d0bac602809d1f1648989ea2c508f9a1e30c453d30a129b2adf12b1a16a488ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3125,7 +3125,7 @@ CMD ["start"]
 ## `plone:4-alpine`
 
 ```console
-$ docker pull plone@sha256:1c9bc0271829cdfafa74ec965c6cee15b9cce541acaf357113d0d2443af1fa08
+$ docker pull plone@sha256:d0bac602809d1f1648989ea2c508f9a1e30c453d30a129b2adf12b1a16a488ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3764,7 +3764,7 @@ CMD ["start"]
 ## `plone:5`
 
 ```console
-$ docker pull plone@sha256:03e7423e4cbf8fc68643ee39c0951861920d8b58333724cb81b637f24abf4a73
+$ docker pull plone@sha256:f0044790ce3ce73ff3060561c58451c899877b1605a2165159e87887526ba7c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4373,7 +4373,7 @@ CMD ["start"]
 ## `plone:5.1`
 
 ```console
-$ docker pull plone@sha256:03e7423e4cbf8fc68643ee39c0951861920d8b58333724cb81b637f24abf4a73
+$ docker pull plone@sha256:f0044790ce3ce73ff3060561c58451c899877b1605a2165159e87887526ba7c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4982,7 +4982,7 @@ CMD ["start"]
 ## `plone:5.1.5`
 
 ```console
-$ docker pull plone@sha256:03e7423e4cbf8fc68643ee39c0951861920d8b58333724cb81b637f24abf4a73
+$ docker pull plone@sha256:f0044790ce3ce73ff3060561c58451c899877b1605a2165159e87887526ba7c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5591,7 +5591,7 @@ CMD ["start"]
 ## `plone:5.1.5-alpine`
 
 ```console
-$ docker pull plone@sha256:031e5c134b67d7f9ec9ab84fe41ff88f636c79a3f5e1470f8a2b1ddc05f91713
+$ docker pull plone@sha256:112825ec8e8555c72036b8d2a06077b56f55a3b2d61493f23fd80e79ac6a2638
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6230,7 +6230,7 @@ CMD ["start"]
 ## `plone:5.1-alpine`
 
 ```console
-$ docker pull plone@sha256:031e5c134b67d7f9ec9ab84fe41ff88f636c79a3f5e1470f8a2b1ddc05f91713
+$ docker pull plone@sha256:112825ec8e8555c72036b8d2a06077b56f55a3b2d61493f23fd80e79ac6a2638
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6869,7 +6869,7 @@ CMD ["start"]
 ## `plone:5-alpine`
 
 ```console
-$ docker pull plone@sha256:031e5c134b67d7f9ec9ab84fe41ff88f636c79a3f5e1470f8a2b1ddc05f91713
+$ docker pull plone@sha256:112825ec8e8555c72036b8d2a06077b56f55a3b2d61493f23fd80e79ac6a2638
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7508,7 +7508,7 @@ CMD ["start"]
 ## `plone:alpine`
 
 ```console
-$ docker pull plone@sha256:031e5c134b67d7f9ec9ab84fe41ff88f636c79a3f5e1470f8a2b1ddc05f91713
+$ docker pull plone@sha256:112825ec8e8555c72036b8d2a06077b56f55a3b2d61493f23fd80e79ac6a2638
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8147,7 +8147,7 @@ CMD ["start"]
 ## `plone:latest`
 
 ```console
-$ docker pull plone@sha256:03e7423e4cbf8fc68643ee39c0951861920d8b58333724cb81b637f24abf4a73
+$ docker pull plone@sha256:f0044790ce3ce73ff3060561c58451c899877b1605a2165159e87887526ba7c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
