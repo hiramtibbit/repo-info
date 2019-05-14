@@ -36,7 +36,7 @@
 ## `percona:5`
 
 ```console
-$ docker pull percona@sha256:3a5b2e2f52b444ac4449e469b957348a8953b5b372bd15e1c740eb5e8c01177b
+$ docker pull percona@sha256:744769bb87ea11ceeb9efe7cb04cc49a86db88a6b6449c19f743161be5f6f51a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -125,7 +125,7 @@ CMD ["mysqld"]
 ## `percona:5.6`
 
 ```console
-$ docker pull percona@sha256:813a6becbe41044e14f67ef0c02d039f87b0275fae5adc6940b2758c8c0cfac7
+$ docker pull percona@sha256:b95c2a5c88818aa864f455e530c1443274b4e288fa052fcb1afc05e52643deaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -214,7 +214,7 @@ CMD ["mysqld"]
 ## `percona:5.6.43`
 
 ```console
-$ docker pull percona@sha256:813a6becbe41044e14f67ef0c02d039f87b0275fae5adc6940b2758c8c0cfac7
+$ docker pull percona@sha256:b95c2a5c88818aa864f455e530c1443274b4e288fa052fcb1afc05e52643deaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -303,7 +303,7 @@ CMD ["mysqld"]
 ## `percona:5.6.43-centos`
 
 ```console
-$ docker pull percona@sha256:813a6becbe41044e14f67ef0c02d039f87b0275fae5adc6940b2758c8c0cfac7
+$ docker pull percona@sha256:b95c2a5c88818aa864f455e530c1443274b4e288fa052fcb1afc05e52643deaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -392,7 +392,7 @@ CMD ["mysqld"]
 ## `percona:5.6-centos`
 
 ```console
-$ docker pull percona@sha256:813a6becbe41044e14f67ef0c02d039f87b0275fae5adc6940b2758c8c0cfac7
+$ docker pull percona@sha256:b95c2a5c88818aa864f455e530c1443274b4e288fa052fcb1afc05e52643deaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -481,7 +481,7 @@ CMD ["mysqld"]
 ## `percona:5.7`
 
 ```console
-$ docker pull percona@sha256:3a5b2e2f52b444ac4449e469b957348a8953b5b372bd15e1c740eb5e8c01177b
+$ docker pull percona@sha256:744769bb87ea11ceeb9efe7cb04cc49a86db88a6b6449c19f743161be5f6f51a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -570,7 +570,7 @@ CMD ["mysqld"]
 ## `percona:5.7.25`
 
 ```console
-$ docker pull percona@sha256:3a5b2e2f52b444ac4449e469b957348a8953b5b372bd15e1c740eb5e8c01177b
+$ docker pull percona@sha256:744769bb87ea11ceeb9efe7cb04cc49a86db88a6b6449c19f743161be5f6f51a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -659,7 +659,7 @@ CMD ["mysqld"]
 ## `percona:5.7.25-centos`
 
 ```console
-$ docker pull percona@sha256:3a5b2e2f52b444ac4449e469b957348a8953b5b372bd15e1c740eb5e8c01177b
+$ docker pull percona@sha256:744769bb87ea11ceeb9efe7cb04cc49a86db88a6b6449c19f743161be5f6f51a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -748,7 +748,7 @@ CMD ["mysqld"]
 ## `percona:5.7-centos`
 
 ```console
-$ docker pull percona@sha256:3a5b2e2f52b444ac4449e469b957348a8953b5b372bd15e1c740eb5e8c01177b
+$ docker pull percona@sha256:744769bb87ea11ceeb9efe7cb04cc49a86db88a6b6449c19f743161be5f6f51a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -837,7 +837,7 @@ CMD ["mysqld"]
 ## `percona:5-centos`
 
 ```console
-$ docker pull percona@sha256:3a5b2e2f52b444ac4449e469b957348a8953b5b372bd15e1c740eb5e8c01177b
+$ docker pull percona@sha256:744769bb87ea11ceeb9efe7cb04cc49a86db88a6b6449c19f743161be5f6f51a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -926,7 +926,7 @@ CMD ["mysqld"]
 ## `percona:8`
 
 ```console
-$ docker pull percona@sha256:54cdccbc48889607c925a038eee995840f78f910858cd52bd4934682d9f0ecd4
+$ docker pull percona@sha256:6bbb0e2830793107bae90569f34e59d4b442b250703b5d4b1e8a8996f61c8f2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1015,7 +1015,7 @@ CMD ["mysqld"]
 ## `percona:8.0`
 
 ```console
-$ docker pull percona@sha256:54cdccbc48889607c925a038eee995840f78f910858cd52bd4934682d9f0ecd4
+$ docker pull percona@sha256:6bbb0e2830793107bae90569f34e59d4b442b250703b5d4b1e8a8996f61c8f2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1104,7 +1104,7 @@ CMD ["mysqld"]
 ## `percona:8.0.15-6`
 
 ```console
-$ docker pull percona@sha256:54cdccbc48889607c925a038eee995840f78f910858cd52bd4934682d9f0ecd4
+$ docker pull percona@sha256:6bbb0e2830793107bae90569f34e59d4b442b250703b5d4b1e8a8996f61c8f2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1193,7 +1193,7 @@ CMD ["mysqld"]
 ## `percona:8.0.15-6-centos`
 
 ```console
-$ docker pull percona@sha256:54cdccbc48889607c925a038eee995840f78f910858cd52bd4934682d9f0ecd4
+$ docker pull percona@sha256:6bbb0e2830793107bae90569f34e59d4b442b250703b5d4b1e8a8996f61c8f2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1282,7 +1282,7 @@ CMD ["mysqld"]
 ## `percona:8.0-centos`
 
 ```console
-$ docker pull percona@sha256:54cdccbc48889607c925a038eee995840f78f910858cd52bd4934682d9f0ecd4
+$ docker pull percona@sha256:6bbb0e2830793107bae90569f34e59d4b442b250703b5d4b1e8a8996f61c8f2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1371,7 +1371,7 @@ CMD ["mysqld"]
 ## `percona:8-centos`
 
 ```console
-$ docker pull percona@sha256:54cdccbc48889607c925a038eee995840f78f910858cd52bd4934682d9f0ecd4
+$ docker pull percona@sha256:6bbb0e2830793107bae90569f34e59d4b442b250703b5d4b1e8a8996f61c8f2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1460,7 +1460,7 @@ CMD ["mysqld"]
 ## `percona:centos`
 
 ```console
-$ docker pull percona@sha256:3a5b2e2f52b444ac4449e469b957348a8953b5b372bd15e1c740eb5e8c01177b
+$ docker pull percona@sha256:744769bb87ea11ceeb9efe7cb04cc49a86db88a6b6449c19f743161be5f6f51a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1549,7 +1549,7 @@ CMD ["mysqld"]
 ## `percona:latest`
 
 ```console
-$ docker pull percona@sha256:3a5b2e2f52b444ac4449e469b957348a8953b5b372bd15e1c740eb5e8c01177b
+$ docker pull percona@sha256:744769bb87ea11ceeb9efe7cb04cc49a86db88a6b6449c19f743161be5f6f51a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1638,7 +1638,7 @@ CMD ["mysqld"]
 ## `percona:ps-5`
 
 ```console
-$ docker pull percona@sha256:3a5b2e2f52b444ac4449e469b957348a8953b5b372bd15e1c740eb5e8c01177b
+$ docker pull percona@sha256:744769bb87ea11ceeb9efe7cb04cc49a86db88a6b6449c19f743161be5f6f51a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1727,7 +1727,7 @@ CMD ["mysqld"]
 ## `percona:ps-5.6`
 
 ```console
-$ docker pull percona@sha256:813a6becbe41044e14f67ef0c02d039f87b0275fae5adc6940b2758c8c0cfac7
+$ docker pull percona@sha256:b95c2a5c88818aa864f455e530c1443274b4e288fa052fcb1afc05e52643deaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1816,7 +1816,7 @@ CMD ["mysqld"]
 ## `percona:ps-5.6.43`
 
 ```console
-$ docker pull percona@sha256:813a6becbe41044e14f67ef0c02d039f87b0275fae5adc6940b2758c8c0cfac7
+$ docker pull percona@sha256:b95c2a5c88818aa864f455e530c1443274b4e288fa052fcb1afc05e52643deaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1905,7 +1905,7 @@ CMD ["mysqld"]
 ## `percona:ps-5.7`
 
 ```console
-$ docker pull percona@sha256:3a5b2e2f52b444ac4449e469b957348a8953b5b372bd15e1c740eb5e8c01177b
+$ docker pull percona@sha256:744769bb87ea11ceeb9efe7cb04cc49a86db88a6b6449c19f743161be5f6f51a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1994,7 +1994,7 @@ CMD ["mysqld"]
 ## `percona:ps-5.7.25`
 
 ```console
-$ docker pull percona@sha256:3a5b2e2f52b444ac4449e469b957348a8953b5b372bd15e1c740eb5e8c01177b
+$ docker pull percona@sha256:744769bb87ea11ceeb9efe7cb04cc49a86db88a6b6449c19f743161be5f6f51a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2083,7 +2083,7 @@ CMD ["mysqld"]
 ## `percona:ps-8`
 
 ```console
-$ docker pull percona@sha256:54cdccbc48889607c925a038eee995840f78f910858cd52bd4934682d9f0ecd4
+$ docker pull percona@sha256:6bbb0e2830793107bae90569f34e59d4b442b250703b5d4b1e8a8996f61c8f2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2172,7 +2172,7 @@ CMD ["mysqld"]
 ## `percona:ps-8.0`
 
 ```console
-$ docker pull percona@sha256:54cdccbc48889607c925a038eee995840f78f910858cd52bd4934682d9f0ecd4
+$ docker pull percona@sha256:6bbb0e2830793107bae90569f34e59d4b442b250703b5d4b1e8a8996f61c8f2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2261,7 +2261,7 @@ CMD ["mysqld"]
 ## `percona:ps-8.0.15-6`
 
 ```console
-$ docker pull percona@sha256:54cdccbc48889607c925a038eee995840f78f910858cd52bd4934682d9f0ecd4
+$ docker pull percona@sha256:6bbb0e2830793107bae90569f34e59d4b442b250703b5d4b1e8a8996f61c8f2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2350,7 +2350,7 @@ CMD ["mysqld"]
 ## `percona:psmdb-3.6`
 
 ```console
-$ docker pull percona@sha256:201b11e507b9cd515985b47fe101e7c522fd2406673c7ae7cf42e7bb065524d9
+$ docker pull percona@sha256:d55df98395d470c27235f670d5e4d0e7ed971fcdb3c3b7b070c0ec3c1d7d6859
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2437,7 +2437,7 @@ CMD ["mongod"]
 ## `percona:psmdb-3.6.12`
 
 ```console
-$ docker pull percona@sha256:201b11e507b9cd515985b47fe101e7c522fd2406673c7ae7cf42e7bb065524d9
+$ docker pull percona@sha256:d55df98395d470c27235f670d5e4d0e7ed971fcdb3c3b7b070c0ec3c1d7d6859
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2524,7 +2524,7 @@ CMD ["mongod"]
 ## `percona:psmdb-4.0`
 
 ```console
-$ docker pull percona@sha256:6c5245f5cb50acca1e95283a9b847b8cf7b70b35dd080a653d99d4f12c247342
+$ docker pull percona@sha256:3100119070a0dcafd77eea9d58730cc78227a345f85996b4757cabf3e6223bd2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2611,7 +2611,7 @@ CMD ["mongod"]
 ## `percona:psmdb-4.0.9`
 
 ```console
-$ docker pull percona@sha256:6c5245f5cb50acca1e95283a9b847b8cf7b70b35dd080a653d99d4f12c247342
+$ docker pull percona@sha256:3100119070a0dcafd77eea9d58730cc78227a345f85996b4757cabf3e6223bd2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

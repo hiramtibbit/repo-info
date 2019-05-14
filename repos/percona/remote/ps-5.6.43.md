@@ -1,7 +1,7 @@
 ## `percona:ps-5.6.43`
 
 ```console
-$ docker pull percona@sha256:813a6becbe41044e14f67ef0c02d039f87b0275fae5adc6940b2758c8c0cfac7
+$ docker pull percona@sha256:b95c2a5c88818aa864f455e530c1443274b4e288fa052fcb1afc05e52643deaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
