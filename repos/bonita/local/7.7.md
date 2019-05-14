@@ -2086,14 +2086,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-8=8u191-b12-2ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u191-b12-2ubuntu0.16.04.1.dsc' openjdk-8_8u191-b12-2ubuntu0.16.04.1.dsc 4710 SHA256:3095b64e459d94365c12f43f1a6efc28c57ab9c5b98050afabc1bc269c9b1cd1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u191-b12.orig.tar.xz' openjdk-8_8u191-b12.orig.tar.xz 70611972 SHA256:48f302bcc59b9b239e23dc9da7518b8d716b2f43bf58212eda48c14e556d3864
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u191-b12-2ubuntu0.16.04.1.debian.tar.xz' openjdk-8_8u191-b12-2ubuntu0.16.04.1.debian.tar.xz 260116 SHA256:ecbff9a1e3c8279aa11fc0192d5e562e03bf1d0b622f0718232cee7910ac946e
-```
 
 ### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu3.4`
 
@@ -2276,14 +2271,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 - `Tcl`
 - `almost exclusively BSD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.5=9.5.16-0ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.16-0ubuntu0.16.04.1.dsc' postgresql-9.5_9.5.16-0ubuntu0.16.04.1.dsc 3774 SHA256:878bfd2ff9aa4f1db0f9df418e02e871a93963022d49324bf000d3a2fe4a8d60
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.16.orig.tar.gz' postgresql-9.5_9.5.16.orig.tar.gz 22691858 SHA256:ee1ca08c69a2e3a2097c78ef252c65eb5f8a6e88ba3928e276410d059877c340
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.16-0ubuntu0.16.04.1.debian.tar.xz' postgresql-9.5_9.5.16-0ubuntu0.16.04.1.debian.tar.xz 26976 SHA256:c9dc33cacc945e3c38f3b50c5cb70a5a86db359f8261aaac8ff216a7efa5b241
-```
 
 ### `dpkg` source package: `postgresql-common=173ubuntu0.2`
 
