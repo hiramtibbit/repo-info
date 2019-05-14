@@ -1,7 +1,7 @@
 ## `haproxy:latest`
 
 ```console
-$ docker pull haproxy@sha256:797890a0c392ffa75bcc28fb89fcdb2d0fc6605f12285ade52a638d882417d45
+$ docker pull haproxy@sha256:c981755f5e7d720c9cc4f43b97760db10c934c81bcf21bde5d0ec387a7775aa5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
