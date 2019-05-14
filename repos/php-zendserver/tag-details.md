@@ -12,7 +12,7 @@
 ## `php-zendserver:2018.0`
 
 ```console
-$ docker pull php-zendserver@sha256:dd5e2074dbb7df3802b20f03782bc515486f417992c94acca9a2a04ba537017c
+$ docker pull php-zendserver@sha256:ce19a40d57cef00987fb67dfcb610d6ad5b2d67a07b47f14c6df55cc92127acf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -162,7 +162,7 @@ CMD ["/usr/local/bin/run"]
 ## `php-zendserver:5.6`
 
 ```console
-$ docker pull php-zendserver@sha256:0e04c5258a513fee3beec875a0d7285f709e45fc41d13b8a3ff853f5e761327d
+$ docker pull php-zendserver@sha256:6a987ba4cdb52ad4ae8027766fda983b34222f916051fd629a32a6fd2ccb5cd5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -312,7 +312,7 @@ CMD ["/usr/local/bin/run"]
 ## `php-zendserver:8.5`
 
 ```console
-$ docker pull php-zendserver@sha256:0e04c5258a513fee3beec875a0d7285f709e45fc41d13b8a3ff853f5e761327d
+$ docker pull php-zendserver@sha256:6a987ba4cdb52ad4ae8027766fda983b34222f916051fd629a32a6fd2ccb5cd5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -462,7 +462,7 @@ CMD ["/usr/local/bin/run"]
 ## `php-zendserver:8.5-php5.6`
 
 ```console
-$ docker pull php-zendserver@sha256:0e04c5258a513fee3beec875a0d7285f709e45fc41d13b8a3ff853f5e761327d
+$ docker pull php-zendserver@sha256:6a987ba4cdb52ad4ae8027766fda983b34222f916051fd629a32a6fd2ccb5cd5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -612,7 +612,7 @@ CMD ["/usr/local/bin/run"]
 ## `php-zendserver:9.1`
 
 ```console
-$ docker pull php-zendserver@sha256:df09bb55776f507b1d1860a75e47418a8a2acbff0dcd75555c46934bcb658234
+$ docker pull php-zendserver@sha256:82efe15f8656c0d22cab2afcc0b81385605f957989e5ab0148aad37c13f5db3c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -762,7 +762,7 @@ CMD ["/usr/local/bin/run"]
 ## `php-zendserver:latest`
 
 ```console
-$ docker pull php-zendserver@sha256:dd5e2074dbb7df3802b20f03782bc515486f417992c94acca9a2a04ba537017c
+$ docker pull php-zendserver@sha256:ce19a40d57cef00987fb67dfcb610d6ad5b2d67a07b47f14c6df55cc92127acf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

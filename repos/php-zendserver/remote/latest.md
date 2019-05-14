@@ -1,7 +1,7 @@
 ## `php-zendserver:latest`
 
 ```console
-$ docker pull php-zendserver@sha256:dd5e2074dbb7df3802b20f03782bc515486f417992c94acca9a2a04ba537017c
+$ docker pull php-zendserver@sha256:ce19a40d57cef00987fb67dfcb610d6ad5b2d67a07b47f14c6df55cc92127acf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
