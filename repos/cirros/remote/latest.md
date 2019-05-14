@@ -1,7 +1,7 @@
 ## `cirros:latest`
 
 ```console
-$ docker pull cirros@sha256:41a81052cc2617045c62b8f083890cf3177f377f9e40c12d60e3d9cc161b8d8e
+$ docker pull cirros@sha256:8654d33ecbcdc8fd65c80325c3ec3b1bc938dfad9f20d1a2e3cf21e521ab70e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
