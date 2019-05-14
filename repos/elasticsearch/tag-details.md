@@ -8,7 +8,7 @@
 ## `elasticsearch:6.7.2`
 
 ```console
-$ docker pull elasticsearch@sha256:6564f12e6432c2a41ac394952c80de6cae6ac2571dde9913641a637177288bf4
+$ docker pull elasticsearch@sha256:59144dbc396225d13980bb801eac65c83f9862ea08a3c5bef932ca91e0eda84e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -99,7 +99,7 @@ CMD ["eswrapper"]
 ## `elasticsearch:7.0.1`
 
 ```console
-$ docker pull elasticsearch@sha256:b22709ede2fa20d6758802b47e88940312cf3c58ba31714fe062b5561dc3efd2
+$ docker pull elasticsearch@sha256:6dc77ee54c158808718a769fdfbbadc37578541a87c7f99fc65a8f809183f074
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
