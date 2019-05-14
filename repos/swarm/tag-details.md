@@ -8,7 +8,7 @@
 ## `swarm:1.2.9`
 
 ```console
-$ docker pull swarm@sha256:406022f04a3d0c5ce4dbdb60422f24052c20ab7e6d41ebe5723aa649c3833975
+$ docker pull swarm@sha256:b866583a3b8791bcd705b7bc0fd94c66b695a1a2dbaeb5f59ed29940e5015dc8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -65,7 +65,7 @@ CMD ["--help"]
 ## `swarm:latest`
 
 ```console
-$ docker pull swarm@sha256:406022f04a3d0c5ce4dbdb60422f24052c20ab7e6d41ebe5723aa649c3833975
+$ docker pull swarm@sha256:b866583a3b8791bcd705b7bc0fd94c66b695a1a2dbaeb5f59ed29940e5015dc8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
