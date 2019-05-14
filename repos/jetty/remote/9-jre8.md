@@ -1,7 +1,7 @@
 ## `jetty:9-jre8`
 
 ```console
-$ docker pull jetty@sha256:7f4442432e9ebd0a1ea78f56beaac1574e38abc371c65587ebb48b1694c81dc3
+$ docker pull jetty@sha256:e8483feca4c7a67e853f99d1f5d8e7a2678b9f67365b2b66344e3cbbb5d61fa3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
