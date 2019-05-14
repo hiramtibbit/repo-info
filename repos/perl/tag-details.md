@@ -38,7 +38,7 @@
 ## `perl:5`
 
 ```console
-$ docker pull perl@sha256:14f0910a20df24355b2eb9a52fd48c6f2bb12a222485b203874a6d8d7f3d3bc5
+$ docker pull perl@sha256:268e7af9853bcc6d2100e2ad76e928c2ca861518217c269b8a762849a8617c12
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -473,7 +473,7 @@ CMD ["perl5.28.2" "-de0"]
 ## `perl:5.24`
 
 ```console
-$ docker pull perl@sha256:b4a6ec86be3fe69a634f775ef843d7ebc8dce88f05876481334506bc8c1d25a5
+$ docker pull perl@sha256:ba684dacb39a922febd9677e609320f6753790c1ed2bbfeadc10a59b75ac61cf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -908,7 +908,7 @@ CMD ["perl5.24.4" "-de0"]
 ## `perl:5.24.4`
 
 ```console
-$ docker pull perl@sha256:b4a6ec86be3fe69a634f775ef843d7ebc8dce88f05876481334506bc8c1d25a5
+$ docker pull perl@sha256:ba684dacb39a922febd9677e609320f6753790c1ed2bbfeadc10a59b75ac61cf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1343,7 +1343,7 @@ CMD ["perl5.24.4" "-de0"]
 ## `perl:5.24.4-slim`
 
 ```console
-$ docker pull perl@sha256:f985ae8ba9936247a59933f8ffd5f9a917676f67de8095884d89f14212c09137
+$ docker pull perl@sha256:f6c3c1c17f0c5fec566ebd49dcc32e474f52af7d5cd89bd0407fea8dfb92f657
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1634,7 +1634,7 @@ CMD ["perl5.24.4" "-de0"]
 ## `perl:5.24.4-slim-threaded`
 
 ```console
-$ docker pull perl@sha256:9f1d6c74ddca7e686e37375a849bae052e5908e8ed189e86fe91bf04b0dcddcb
+$ docker pull perl@sha256:52fd909291e86e7cc97d4c53a2546795b49aeed1da41ca557f0f1f3f983fc116
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1925,7 +1925,7 @@ CMD ["perl5.24.4" "-de0"]
 ## `perl:5.24.4-threaded`
 
 ```console
-$ docker pull perl@sha256:66d4fb6f062684fb95acf525cd0b84388c3c9b35d5401e8467b8ee9b8d9e7f51
+$ docker pull perl@sha256:fb41eabb7c81bd216e37e8b35b4ba463f3f55fe3a411c36018e5209a0e993a70
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2360,7 +2360,7 @@ CMD ["perl5.24.4" "-de0"]
 ## `perl:5.24-slim`
 
 ```console
-$ docker pull perl@sha256:f985ae8ba9936247a59933f8ffd5f9a917676f67de8095884d89f14212c09137
+$ docker pull perl@sha256:f6c3c1c17f0c5fec566ebd49dcc32e474f52af7d5cd89bd0407fea8dfb92f657
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2651,7 +2651,7 @@ CMD ["perl5.24.4" "-de0"]
 ## `perl:5.24-slim-threaded`
 
 ```console
-$ docker pull perl@sha256:9f1d6c74ddca7e686e37375a849bae052e5908e8ed189e86fe91bf04b0dcddcb
+$ docker pull perl@sha256:52fd909291e86e7cc97d4c53a2546795b49aeed1da41ca557f0f1f3f983fc116
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2942,7 +2942,7 @@ CMD ["perl5.24.4" "-de0"]
 ## `perl:5.24-threaded`
 
 ```console
-$ docker pull perl@sha256:66d4fb6f062684fb95acf525cd0b84388c3c9b35d5401e8467b8ee9b8d9e7f51
+$ docker pull perl@sha256:fb41eabb7c81bd216e37e8b35b4ba463f3f55fe3a411c36018e5209a0e993a70
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3377,7 +3377,7 @@ CMD ["perl5.24.4" "-de0"]
 ## `perl:5.26`
 
 ```console
-$ docker pull perl@sha256:b3b19c593f8981ab9effaa4ca4402cc0c63161f682136345fd8abb95b4a10cbc
+$ docker pull perl@sha256:c0f2d0b4475b71b63194e671531fb81c1926b8b1c715712a86e11f8a446adc7e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3812,7 +3812,7 @@ CMD ["perl5.26.3" "-de0"]
 ## `perl:5.26.3`
 
 ```console
-$ docker pull perl@sha256:b3b19c593f8981ab9effaa4ca4402cc0c63161f682136345fd8abb95b4a10cbc
+$ docker pull perl@sha256:c0f2d0b4475b71b63194e671531fb81c1926b8b1c715712a86e11f8a446adc7e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4247,7 +4247,7 @@ CMD ["perl5.26.3" "-de0"]
 ## `perl:5.26.3-slim`
 
 ```console
-$ docker pull perl@sha256:202bbd0aecff17f2faece3349ecf4a68d97ef42a796106daba2271c962be97a2
+$ docker pull perl@sha256:9d6d12be51188ca25809f96c737bd1a0d756285edb522d52cf3095da794c20ff
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4538,7 +4538,7 @@ CMD ["perl5.26.3" "-de0"]
 ## `perl:5.26.3-slim-threaded`
 
 ```console
-$ docker pull perl@sha256:f740ede95e282ef87451b4c34649668c7a38fdad2d60628466186052dae88e56
+$ docker pull perl@sha256:26a0c93f8ff98e7d23735dd4ccd5b894bd2c4ec1325ed85e3ae1ca29374c9afc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4829,7 +4829,7 @@ CMD ["perl5.26.3" "-de0"]
 ## `perl:5.26.3-threaded`
 
 ```console
-$ docker pull perl@sha256:f3cd202793ac2a0019d42f9ae874afd66d176e53a5ec973b1fbd51ff03db3cc6
+$ docker pull perl@sha256:73353cc73042757eade4111832558175d185e24bcf018a414de65d72f0b69141
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5264,7 +5264,7 @@ CMD ["perl5.26.3" "-de0"]
 ## `perl:5.26-slim`
 
 ```console
-$ docker pull perl@sha256:202bbd0aecff17f2faece3349ecf4a68d97ef42a796106daba2271c962be97a2
+$ docker pull perl@sha256:9d6d12be51188ca25809f96c737bd1a0d756285edb522d52cf3095da794c20ff
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5555,7 +5555,7 @@ CMD ["perl5.26.3" "-de0"]
 ## `perl:5.26-slim-threaded`
 
 ```console
-$ docker pull perl@sha256:f740ede95e282ef87451b4c34649668c7a38fdad2d60628466186052dae88e56
+$ docker pull perl@sha256:26a0c93f8ff98e7d23735dd4ccd5b894bd2c4ec1325ed85e3ae1ca29374c9afc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5846,7 +5846,7 @@ CMD ["perl5.26.3" "-de0"]
 ## `perl:5.26-threaded`
 
 ```console
-$ docker pull perl@sha256:f3cd202793ac2a0019d42f9ae874afd66d176e53a5ec973b1fbd51ff03db3cc6
+$ docker pull perl@sha256:73353cc73042757eade4111832558175d185e24bcf018a414de65d72f0b69141
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6281,7 +6281,7 @@ CMD ["perl5.26.3" "-de0"]
 ## `perl:5.28`
 
 ```console
-$ docker pull perl@sha256:14f0910a20df24355b2eb9a52fd48c6f2bb12a222485b203874a6d8d7f3d3bc5
+$ docker pull perl@sha256:268e7af9853bcc6d2100e2ad76e928c2ca861518217c269b8a762849a8617c12
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6716,7 +6716,7 @@ CMD ["perl5.28.2" "-de0"]
 ## `perl:5.28.2`
 
 ```console
-$ docker pull perl@sha256:14f0910a20df24355b2eb9a52fd48c6f2bb12a222485b203874a6d8d7f3d3bc5
+$ docker pull perl@sha256:268e7af9853bcc6d2100e2ad76e928c2ca861518217c269b8a762849a8617c12
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7151,7 +7151,7 @@ CMD ["perl5.28.2" "-de0"]
 ## `perl:5.28.2-slim`
 
 ```console
-$ docker pull perl@sha256:805b28b969a62c62180e33ec662f1ae6bda90ef0226eddc2322dc0c6e4a4e201
+$ docker pull perl@sha256:0d334d8d05e0e50fea30e0e9dfe74bb097d5b5861ba3a7b0d61a5db424071fd4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7442,7 +7442,7 @@ CMD ["perl5.28.2" "-de0"]
 ## `perl:5.28.2-slim-threaded`
 
 ```console
-$ docker pull perl@sha256:8617456f20e580a1e6204f51369e175e8cb3f0ef452ebbf8d6c530ff95208fc6
+$ docker pull perl@sha256:86bc231042af01146b57299ad3181b8821d2238b8046f1797289edbfa6a37065
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7733,7 +7733,7 @@ CMD ["perl5.28.2" "-de0"]
 ## `perl:5.28.2-threaded`
 
 ```console
-$ docker pull perl@sha256:aeeb9187a48c9ab4b163ee7bed8aea06aeebcdbe0095e1cd3e00efcdfceb47d3
+$ docker pull perl@sha256:fd63c81481b54e23aa876c33a108f646211132bc9972107d1245612be8779b29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8168,7 +8168,7 @@ CMD ["perl5.28.2" "-de0"]
 ## `perl:5.28-slim`
 
 ```console
-$ docker pull perl@sha256:805b28b969a62c62180e33ec662f1ae6bda90ef0226eddc2322dc0c6e4a4e201
+$ docker pull perl@sha256:0d334d8d05e0e50fea30e0e9dfe74bb097d5b5861ba3a7b0d61a5db424071fd4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8459,7 +8459,7 @@ CMD ["perl5.28.2" "-de0"]
 ## `perl:5.28-slim-threaded`
 
 ```console
-$ docker pull perl@sha256:8617456f20e580a1e6204f51369e175e8cb3f0ef452ebbf8d6c530ff95208fc6
+$ docker pull perl@sha256:86bc231042af01146b57299ad3181b8821d2238b8046f1797289edbfa6a37065
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8750,7 +8750,7 @@ CMD ["perl5.28.2" "-de0"]
 ## `perl:5.28-threaded`
 
 ```console
-$ docker pull perl@sha256:aeeb9187a48c9ab4b163ee7bed8aea06aeebcdbe0095e1cd3e00efcdfceb47d3
+$ docker pull perl@sha256:fd63c81481b54e23aa876c33a108f646211132bc9972107d1245612be8779b29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9185,7 +9185,7 @@ CMD ["perl5.28.2" "-de0"]
 ## `perl:5-slim`
 
 ```console
-$ docker pull perl@sha256:805b28b969a62c62180e33ec662f1ae6bda90ef0226eddc2322dc0c6e4a4e201
+$ docker pull perl@sha256:0d334d8d05e0e50fea30e0e9dfe74bb097d5b5861ba3a7b0d61a5db424071fd4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9476,7 +9476,7 @@ CMD ["perl5.28.2" "-de0"]
 ## `perl:5-slim-threaded`
 
 ```console
-$ docker pull perl@sha256:8617456f20e580a1e6204f51369e175e8cb3f0ef452ebbf8d6c530ff95208fc6
+$ docker pull perl@sha256:86bc231042af01146b57299ad3181b8821d2238b8046f1797289edbfa6a37065
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9767,7 +9767,7 @@ CMD ["perl5.28.2" "-de0"]
 ## `perl:5-threaded`
 
 ```console
-$ docker pull perl@sha256:aeeb9187a48c9ab4b163ee7bed8aea06aeebcdbe0095e1cd3e00efcdfceb47d3
+$ docker pull perl@sha256:fd63c81481b54e23aa876c33a108f646211132bc9972107d1245612be8779b29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10202,7 +10202,7 @@ CMD ["perl5.28.2" "-de0"]
 ## `perl:latest`
 
 ```console
-$ docker pull perl@sha256:14f0910a20df24355b2eb9a52fd48c6f2bb12a222485b203874a6d8d7f3d3bc5
+$ docker pull perl@sha256:268e7af9853bcc6d2100e2ad76e928c2ca861518217c269b8a762849a8617c12
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10637,7 +10637,7 @@ CMD ["perl5.28.2" "-de0"]
 ## `perl:slim`
 
 ```console
-$ docker pull perl@sha256:805b28b969a62c62180e33ec662f1ae6bda90ef0226eddc2322dc0c6e4a4e201
+$ docker pull perl@sha256:0d334d8d05e0e50fea30e0e9dfe74bb097d5b5861ba3a7b0d61a5db424071fd4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10928,7 +10928,7 @@ CMD ["perl5.28.2" "-de0"]
 ## `perl:slim-threaded`
 
 ```console
-$ docker pull perl@sha256:8617456f20e580a1e6204f51369e175e8cb3f0ef452ebbf8d6c530ff95208fc6
+$ docker pull perl@sha256:86bc231042af01146b57299ad3181b8821d2238b8046f1797289edbfa6a37065
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11219,7 +11219,7 @@ CMD ["perl5.28.2" "-de0"]
 ## `perl:threaded`
 
 ```console
-$ docker pull perl@sha256:aeeb9187a48c9ab4b163ee7bed8aea06aeebcdbe0095e1cd3e00efcdfceb47d3
+$ docker pull perl@sha256:fd63c81481b54e23aa876c33a108f646211132bc9972107d1245612be8779b29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

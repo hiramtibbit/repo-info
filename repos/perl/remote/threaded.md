@@ -1,7 +1,7 @@
 ## `perl:threaded`
 
 ```console
-$ docker pull perl@sha256:aeeb9187a48c9ab4b163ee7bed8aea06aeebcdbe0095e1cd3e00efcdfceb47d3
+$ docker pull perl@sha256:fd63c81481b54e23aa876c33a108f646211132bc9972107d1245612be8779b29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
