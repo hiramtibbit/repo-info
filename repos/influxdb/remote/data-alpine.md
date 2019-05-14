@@ -1,7 +1,7 @@
 ## `influxdb:data-alpine`
 
 ```console
-$ docker pull influxdb@sha256:3195105f427df5b657c2767e9cf77dc53abeb8b0879489d53e7760d3a755d490
+$ docker pull influxdb@sha256:b69aebdb2b462c277705518ddf6a29e6da7310e1a4201cf6b07e7278cea100b4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

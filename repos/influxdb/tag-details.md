@@ -48,7 +48,7 @@
 ## `influxdb:1.5`
 
 ```console
-$ docker pull influxdb@sha256:f7929609ab249c913139aa19ab65d40c96d0c4de552780fe5626271289447b0c
+$ docker pull influxdb@sha256:998f4a5e4aeb933aebbf40fe8912e056ccf5dea176fdaff736883a586ad4ab98
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -297,7 +297,7 @@ CMD ["influxd"]
 ## `influxdb:1.5.4`
 
 ```console
-$ docker pull influxdb@sha256:f7929609ab249c913139aa19ab65d40c96d0c4de552780fe5626271289447b0c
+$ docker pull influxdb@sha256:998f4a5e4aeb933aebbf40fe8912e056ccf5dea176fdaff736883a586ad4ab98
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -546,7 +546,7 @@ CMD ["influxd"]
 ## `influxdb:1.5.4-alpine`
 
 ```console
-$ docker pull influxdb@sha256:6081419b42850c1b09f7beb06324aad3de577c30eb02ef7919d7dc05a25b498b
+$ docker pull influxdb@sha256:85c3c927d2a0a3cb43aba03e3721e58add25a54a6d16fa333a5c349ff8264f25
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -629,7 +629,7 @@ CMD ["influxd"]
 ## `influxdb:1.5.4-data`
 
 ```console
-$ docker pull influxdb@sha256:6bc8cd0413b22be328600c42aaf4563f3d5eae80218f19801ce60e6c7bae836f
+$ docker pull influxdb@sha256:f84dcf10e268859cadc450fed5e36b7c1fb3dfba60d96e37d50f9897e7e02498
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -718,7 +718,7 @@ CMD ["influxd"]
 ## `influxdb:1.5.4-data-alpine`
 
 ```console
-$ docker pull influxdb@sha256:d1404c20d3545794aa896cead2e8c921a5117e424dc880a74c8a0c3e15d9ca67
+$ docker pull influxdb@sha256:5a61cc26ea626d051c42b870b445349d426c7fec4b5c18a3cd70e6eb2b5ec276
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -801,7 +801,7 @@ CMD ["influxd"]
 ## `influxdb:1.5.4-meta`
 
 ```console
-$ docker pull influxdb@sha256:2cce42c274fa3815813d3a9c1ce9b03b6a2418aa76a661e11218b859c064d975
+$ docker pull influxdb@sha256:99a9fee5461098281082ce2f8ab07b54f812317b57270b5027e021ec01afc10f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -884,7 +884,7 @@ CMD ["influxd-meta"]
 ## `influxdb:1.5.4-meta-alpine`
 
 ```console
-$ docker pull influxdb@sha256:cc8a747544147cc7fe81a10ed29b7050185f12ee90617d5d27b5a94fea7dff1e
+$ docker pull influxdb@sha256:6accf4497ad63855f33488b969b8a96ee0f1fa35a9c1fe542eea39853d54479c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -961,7 +961,7 @@ CMD ["influxd-meta"]
 ## `influxdb:1.5-alpine`
 
 ```console
-$ docker pull influxdb@sha256:6081419b42850c1b09f7beb06324aad3de577c30eb02ef7919d7dc05a25b498b
+$ docker pull influxdb@sha256:85c3c927d2a0a3cb43aba03e3721e58add25a54a6d16fa333a5c349ff8264f25
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1044,7 +1044,7 @@ CMD ["influxd"]
 ## `influxdb:1.5-data`
 
 ```console
-$ docker pull influxdb@sha256:6bc8cd0413b22be328600c42aaf4563f3d5eae80218f19801ce60e6c7bae836f
+$ docker pull influxdb@sha256:f84dcf10e268859cadc450fed5e36b7c1fb3dfba60d96e37d50f9897e7e02498
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1133,7 +1133,7 @@ CMD ["influxd"]
 ## `influxdb:1.5-data-alpine`
 
 ```console
-$ docker pull influxdb@sha256:d1404c20d3545794aa896cead2e8c921a5117e424dc880a74c8a0c3e15d9ca67
+$ docker pull influxdb@sha256:5a61cc26ea626d051c42b870b445349d426c7fec4b5c18a3cd70e6eb2b5ec276
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1216,7 +1216,7 @@ CMD ["influxd"]
 ## `influxdb:1.5-meta`
 
 ```console
-$ docker pull influxdb@sha256:2cce42c274fa3815813d3a9c1ce9b03b6a2418aa76a661e11218b859c064d975
+$ docker pull influxdb@sha256:99a9fee5461098281082ce2f8ab07b54f812317b57270b5027e021ec01afc10f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1299,7 +1299,7 @@ CMD ["influxd-meta"]
 ## `influxdb:1.5-meta-alpine`
 
 ```console
-$ docker pull influxdb@sha256:cc8a747544147cc7fe81a10ed29b7050185f12ee90617d5d27b5a94fea7dff1e
+$ docker pull influxdb@sha256:6accf4497ad63855f33488b969b8a96ee0f1fa35a9c1fe542eea39853d54479c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1376,7 +1376,7 @@ CMD ["influxd-meta"]
 ## `influxdb:1.6`
 
 ```console
-$ docker pull influxdb@sha256:8dc535e3243186283fa2f6ad16bca4b483e79a0c3e1cc3313ccee00630527667
+$ docker pull influxdb@sha256:298931e47e4098261b1d172336fb79107bb520405d73377204275db2e4b7e348
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1625,7 +1625,7 @@ CMD ["influxd"]
 ## `influxdb:1.6.6`
 
 ```console
-$ docker pull influxdb@sha256:8dc535e3243186283fa2f6ad16bca4b483e79a0c3e1cc3313ccee00630527667
+$ docker pull influxdb@sha256:298931e47e4098261b1d172336fb79107bb520405d73377204275db2e4b7e348
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1874,7 +1874,7 @@ CMD ["influxd"]
 ## `influxdb:1.6.6-alpine`
 
 ```console
-$ docker pull influxdb@sha256:2ec8fe2fd37830a024193d2f2fafb7afd95f81dc812a851f07037ec866f8f027
+$ docker pull influxdb@sha256:da44c75552cdf9afbd1ac791b27ae64c70ade22b1e84768bf339b5a16a36f69a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1957,7 +1957,7 @@ CMD ["influxd"]
 ## `influxdb:1.6.6-data`
 
 ```console
-$ docker pull influxdb@sha256:7fb72edd70333014d71f75d1c99a2efb4825937ad7d704c003bb901205d1f539
+$ docker pull influxdb@sha256:13b3e389c3cc9e41753d9f278df927c0655d3555cef4055c4bb37e3fe5f17867
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2046,7 +2046,7 @@ CMD ["influxd"]
 ## `influxdb:1.6.6-data-alpine`
 
 ```console
-$ docker pull influxdb@sha256:5b0188ad851b49dc900dcbc48c13576a5a8a0fba540e17b22a1d03f35dd31871
+$ docker pull influxdb@sha256:9a92d277870a75b1d414e8bc1e879b40456ee8e0b9656e3f0fae9350dfc9e393
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2129,7 +2129,7 @@ CMD ["influxd"]
 ## `influxdb:1.6.6-meta`
 
 ```console
-$ docker pull influxdb@sha256:36efbe7165981bf3a8893652133e0b468564959f8aca652db0bc0d1eb204eced
+$ docker pull influxdb@sha256:34e9d923d36a1feba2dfc5aeb5508cc6a819147cbdbfeaa3dbbf105c297939ce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2212,7 +2212,7 @@ CMD ["influxd-meta"]
 ## `influxdb:1.6.6-meta-alpine`
 
 ```console
-$ docker pull influxdb@sha256:402e7b76f936441606d18a2b09ddf2454800fd037f90cf14cd14ca41793231ee
+$ docker pull influxdb@sha256:2cb38d291ca4f36517823a6b34519245e7820dc96fd5d3b845a8f367802a183a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2289,7 +2289,7 @@ CMD ["influxd-meta"]
 ## `influxdb:1.6-alpine`
 
 ```console
-$ docker pull influxdb@sha256:2ec8fe2fd37830a024193d2f2fafb7afd95f81dc812a851f07037ec866f8f027
+$ docker pull influxdb@sha256:da44c75552cdf9afbd1ac791b27ae64c70ade22b1e84768bf339b5a16a36f69a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2372,7 +2372,7 @@ CMD ["influxd"]
 ## `influxdb:1.6-data`
 
 ```console
-$ docker pull influxdb@sha256:7fb72edd70333014d71f75d1c99a2efb4825937ad7d704c003bb901205d1f539
+$ docker pull influxdb@sha256:13b3e389c3cc9e41753d9f278df927c0655d3555cef4055c4bb37e3fe5f17867
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2461,7 +2461,7 @@ CMD ["influxd"]
 ## `influxdb:1.6-data-alpine`
 
 ```console
-$ docker pull influxdb@sha256:5b0188ad851b49dc900dcbc48c13576a5a8a0fba540e17b22a1d03f35dd31871
+$ docker pull influxdb@sha256:9a92d277870a75b1d414e8bc1e879b40456ee8e0b9656e3f0fae9350dfc9e393
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2544,7 +2544,7 @@ CMD ["influxd"]
 ## `influxdb:1.6-meta`
 
 ```console
-$ docker pull influxdb@sha256:36efbe7165981bf3a8893652133e0b468564959f8aca652db0bc0d1eb204eced
+$ docker pull influxdb@sha256:34e9d923d36a1feba2dfc5aeb5508cc6a819147cbdbfeaa3dbbf105c297939ce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2627,7 +2627,7 @@ CMD ["influxd-meta"]
 ## `influxdb:1.6-meta-alpine`
 
 ```console
-$ docker pull influxdb@sha256:402e7b76f936441606d18a2b09ddf2454800fd037f90cf14cd14ca41793231ee
+$ docker pull influxdb@sha256:2cb38d291ca4f36517823a6b34519245e7820dc96fd5d3b845a8f367802a183a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2704,7 +2704,7 @@ CMD ["influxd-meta"]
 ## `influxdb:1.7`
 
 ```console
-$ docker pull influxdb@sha256:ef932d6cc0a4e72a797088aca126fcac6d8416c308dc9138188a439377e19dbe
+$ docker pull influxdb@sha256:c6689db9f46a87b0a3b517e6e3314a5ee191a250cc9b8f2176c820a0198777f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2953,7 +2953,7 @@ CMD ["influxd"]
 ## `influxdb:1.7.5-data`
 
 ```console
-$ docker pull influxdb@sha256:bbc92fd309e3b3a856169f57d230bf073f8b9f4366a42c8c0236d7476e44d778
+$ docker pull influxdb@sha256:cd9d028692a3d70ebad635d86577dc5e23d7a66f7073bf890bb7e5e9941619c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3042,7 +3042,7 @@ CMD ["influxd"]
 ## `influxdb:1.7.5-data-alpine`
 
 ```console
-$ docker pull influxdb@sha256:3195105f427df5b657c2767e9cf77dc53abeb8b0879489d53e7760d3a755d490
+$ docker pull influxdb@sha256:b69aebdb2b462c277705518ddf6a29e6da7310e1a4201cf6b07e7278cea100b4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3125,7 +3125,7 @@ CMD ["influxd"]
 ## `influxdb:1.7.5-meta`
 
 ```console
-$ docker pull influxdb@sha256:e5859752cae146ffbb59ffc594b2e34105981383ae4cbd0a19c10d34143e8123
+$ docker pull influxdb@sha256:e6cf683b780a73df7a3e308c93a5c6609dab05a0db02e56e8d0327dcad987946
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3208,7 +3208,7 @@ CMD ["influxd-meta"]
 ## `influxdb:1.7.5-meta-alpine`
 
 ```console
-$ docker pull influxdb@sha256:62711557a0845be478ea22ceecbc22c7d550be6548189f688b1b7287650f321a
+$ docker pull influxdb@sha256:a65377e3236e855ff0c4ca5ee6ddf28d2d242b985c27081bf4acceb13fa6702c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3285,7 +3285,7 @@ CMD ["influxd-meta"]
 ## `influxdb:1.7.6`
 
 ```console
-$ docker pull influxdb@sha256:ef932d6cc0a4e72a797088aca126fcac6d8416c308dc9138188a439377e19dbe
+$ docker pull influxdb@sha256:c6689db9f46a87b0a3b517e6e3314a5ee191a250cc9b8f2176c820a0198777f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3534,7 +3534,7 @@ CMD ["influxd"]
 ## `influxdb:1.7.6-alpine`
 
 ```console
-$ docker pull influxdb@sha256:c4b1f09f8a31a21acf104752fec7706a1895c00a50b3a1ad9b2ce18d7d34944f
+$ docker pull influxdb@sha256:05b17d3d6e6bc1bf2f406a0dc1e54925b5fe67df2e586d3c106d531cc04e49f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3617,7 +3617,7 @@ CMD ["influxd"]
 ## `influxdb:1.7-alpine`
 
 ```console
-$ docker pull influxdb@sha256:c4b1f09f8a31a21acf104752fec7706a1895c00a50b3a1ad9b2ce18d7d34944f
+$ docker pull influxdb@sha256:05b17d3d6e6bc1bf2f406a0dc1e54925b5fe67df2e586d3c106d531cc04e49f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3700,7 +3700,7 @@ CMD ["influxd"]
 ## `influxdb:1.7-data`
 
 ```console
-$ docker pull influxdb@sha256:bbc92fd309e3b3a856169f57d230bf073f8b9f4366a42c8c0236d7476e44d778
+$ docker pull influxdb@sha256:cd9d028692a3d70ebad635d86577dc5e23d7a66f7073bf890bb7e5e9941619c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3789,7 +3789,7 @@ CMD ["influxd"]
 ## `influxdb:1.7-data-alpine`
 
 ```console
-$ docker pull influxdb@sha256:3195105f427df5b657c2767e9cf77dc53abeb8b0879489d53e7760d3a755d490
+$ docker pull influxdb@sha256:b69aebdb2b462c277705518ddf6a29e6da7310e1a4201cf6b07e7278cea100b4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3872,7 +3872,7 @@ CMD ["influxd"]
 ## `influxdb:1.7-meta`
 
 ```console
-$ docker pull influxdb@sha256:e5859752cae146ffbb59ffc594b2e34105981383ae4cbd0a19c10d34143e8123
+$ docker pull influxdb@sha256:e6cf683b780a73df7a3e308c93a5c6609dab05a0db02e56e8d0327dcad987946
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3955,7 +3955,7 @@ CMD ["influxd-meta"]
 ## `influxdb:1.7-meta-alpine`
 
 ```console
-$ docker pull influxdb@sha256:62711557a0845be478ea22ceecbc22c7d550be6548189f688b1b7287650f321a
+$ docker pull influxdb@sha256:a65377e3236e855ff0c4ca5ee6ddf28d2d242b985c27081bf4acceb13fa6702c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4032,7 +4032,7 @@ CMD ["influxd-meta"]
 ## `influxdb:alpine`
 
 ```console
-$ docker pull influxdb@sha256:c4b1f09f8a31a21acf104752fec7706a1895c00a50b3a1ad9b2ce18d7d34944f
+$ docker pull influxdb@sha256:05b17d3d6e6bc1bf2f406a0dc1e54925b5fe67df2e586d3c106d531cc04e49f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4115,7 +4115,7 @@ CMD ["influxd"]
 ## `influxdb:data`
 
 ```console
-$ docker pull influxdb@sha256:bbc92fd309e3b3a856169f57d230bf073f8b9f4366a42c8c0236d7476e44d778
+$ docker pull influxdb@sha256:cd9d028692a3d70ebad635d86577dc5e23d7a66f7073bf890bb7e5e9941619c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4204,7 +4204,7 @@ CMD ["influxd"]
 ## `influxdb:data-alpine`
 
 ```console
-$ docker pull influxdb@sha256:3195105f427df5b657c2767e9cf77dc53abeb8b0879489d53e7760d3a755d490
+$ docker pull influxdb@sha256:b69aebdb2b462c277705518ddf6a29e6da7310e1a4201cf6b07e7278cea100b4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4287,7 +4287,7 @@ CMD ["influxd"]
 ## `influxdb:latest`
 
 ```console
-$ docker pull influxdb@sha256:ef932d6cc0a4e72a797088aca126fcac6d8416c308dc9138188a439377e19dbe
+$ docker pull influxdb@sha256:c6689db9f46a87b0a3b517e6e3314a5ee191a250cc9b8f2176c820a0198777f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4536,7 +4536,7 @@ CMD ["influxd"]
 ## `influxdb:meta`
 
 ```console
-$ docker pull influxdb@sha256:e5859752cae146ffbb59ffc594b2e34105981383ae4cbd0a19c10d34143e8123
+$ docker pull influxdb@sha256:e6cf683b780a73df7a3e308c93a5c6609dab05a0db02e56e8d0327dcad987946
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4619,7 +4619,7 @@ CMD ["influxd-meta"]
 ## `influxdb:meta-alpine`
 
 ```console
-$ docker pull influxdb@sha256:62711557a0845be478ea22ceecbc22c7d550be6548189f688b1b7287650f321a
+$ docker pull influxdb@sha256:a65377e3236e855ff0c4ca5ee6ddf28d2d242b985c27081bf4acceb13fa6702c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

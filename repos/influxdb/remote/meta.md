@@ -1,7 +1,7 @@
 ## `influxdb:meta`
 
 ```console
-$ docker pull influxdb@sha256:e5859752cae146ffbb59ffc594b2e34105981383ae4cbd0a19c10d34143e8123
+$ docker pull influxdb@sha256:e6cf683b780a73df7a3e308c93a5c6609dab05a0db02e56e8d0327dcad987946
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
