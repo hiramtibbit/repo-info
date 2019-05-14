@@ -10,7 +10,7 @@
 ## `rapidoid:5`
 
 ```console
-$ docker pull rapidoid@sha256:e2420735b2573d3975efb9cb6c4b78be9bff71b9641d2f795ef8de80e21d428f
+$ docker pull rapidoid@sha256:325cb3252d69687d65707394e81c730c9b5dff7755b5cf30e6d6c2a890e1d4d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -201,7 +201,7 @@ ENTRYPOINT ["/opt/entrypoint.sh"]
 ## `rapidoid:5.4`
 
 ```console
-$ docker pull rapidoid@sha256:e2420735b2573d3975efb9cb6c4b78be9bff71b9641d2f795ef8de80e21d428f
+$ docker pull rapidoid@sha256:325cb3252d69687d65707394e81c730c9b5dff7755b5cf30e6d6c2a890e1d4d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -392,7 +392,7 @@ ENTRYPOINT ["/opt/entrypoint.sh"]
 ## `rapidoid:5.4.6`
 
 ```console
-$ docker pull rapidoid@sha256:e2420735b2573d3975efb9cb6c4b78be9bff71b9641d2f795ef8de80e21d428f
+$ docker pull rapidoid@sha256:325cb3252d69687d65707394e81c730c9b5dff7755b5cf30e6d6c2a890e1d4d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -583,7 +583,7 @@ ENTRYPOINT ["/opt/entrypoint.sh"]
 ## `rapidoid:latest`
 
 ```console
-$ docker pull rapidoid@sha256:e2420735b2573d3975efb9cb6c4b78be9bff71b9641d2f795ef8de80e21d428f
+$ docker pull rapidoid@sha256:325cb3252d69687d65707394e81c730c9b5dff7755b5cf30e6d6c2a890e1d4d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
