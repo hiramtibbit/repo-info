@@ -10,7 +10,7 @@
 ## `rethinkdb:2`
 
 ```console
-$ docker pull rethinkdb@sha256:7589bf5dc276997925867237f6d961cd9a0f9bf00dc4daaf44746d74c9afc5e5
+$ docker pull rethinkdb@sha256:bf5919a0f1c4cee374f8ed69a25789b3e3d0bac7eb5f981b2d72910983401dfa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -80,7 +80,7 @@ EXPOSE 28015 29015 8080
 ## `rethinkdb:2.3`
 
 ```console
-$ docker pull rethinkdb@sha256:7589bf5dc276997925867237f6d961cd9a0f9bf00dc4daaf44746d74c9afc5e5
+$ docker pull rethinkdb@sha256:bf5919a0f1c4cee374f8ed69a25789b3e3d0bac7eb5f981b2d72910983401dfa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -150,7 +150,7 @@ EXPOSE 28015 29015 8080
 ## `rethinkdb:2.3.6`
 
 ```console
-$ docker pull rethinkdb@sha256:7589bf5dc276997925867237f6d961cd9a0f9bf00dc4daaf44746d74c9afc5e5
+$ docker pull rethinkdb@sha256:bf5919a0f1c4cee374f8ed69a25789b3e3d0bac7eb5f981b2d72910983401dfa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -220,7 +220,7 @@ EXPOSE 28015 29015 8080
 ## `rethinkdb:latest`
 
 ```console
-$ docker pull rethinkdb@sha256:7589bf5dc276997925867237f6d961cd9a0f9bf00dc4daaf44746d74c9afc5e5
+$ docker pull rethinkdb@sha256:bf5919a0f1c4cee374f8ed69a25789b3e3d0bac7eb5f981b2d72910983401dfa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
