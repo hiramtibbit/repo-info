@@ -1,7 +1,7 @@
 ## `php:fpm-alpine3.8`
 
 ```console
-$ docker pull php@sha256:90744eefe9eec49021ee6ae0bf32fe59d5dc95622b2c048e553c4c4da5a1ad63
+$ docker pull php@sha256:2f51d8f1703e04ac55bde450474938cd43837fdb3d6431187b4ac9d9f39054bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

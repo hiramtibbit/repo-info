@@ -1,7 +1,7 @@
 ## `php:apache-stretch`
 
 ```console
-$ docker pull php@sha256:add3f34a0746641027050755af4b3e443108b24ccd1a351b99807d1ec0ef924a
+$ docker pull php@sha256:49cbfea8288ae1096ad65c70ae23d97f5df1635af66e59c3e4a3e465e63a971e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
