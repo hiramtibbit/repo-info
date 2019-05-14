@@ -1,7 +1,7 @@
 ## `nginx:1-perl`
 
 ```console
-$ docker pull nginx@sha256:f21207bcf10ec72a1e2bbe31a5320db5da77133943a67941e1986c5e263ef2d9
+$ docker pull nginx@sha256:774eac364f3161b4ffff7b7bc5c2d7e3af1349fdf1afb8140dfd61dd1d4323d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
