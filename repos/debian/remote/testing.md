@@ -1,7 +1,7 @@
 ## `debian:testing`
 
 ```console
-$ docker pull debian@sha256:369ecec8ec44f91d5f0acf586ff2cc66c1b9183177fcae4bcda50648af2c41eb
+$ docker pull debian@sha256:41e334090638a6f09d9d1f49df4908267fc8fefba20c7bbcfb4570e9a0304264
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

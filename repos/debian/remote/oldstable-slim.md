@@ -1,7 +1,7 @@
 ## `debian:oldstable-slim`
 
 ```console
-$ docker pull debian@sha256:ef8f66726179e3c21dae8a293e968ac67207dc991918a271ae4ebf5895dfbad0
+$ docker pull debian@sha256:3141af44bc0241e4965b9984808321d5424f5f7618071d8d3eee2b37e7c3b3d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

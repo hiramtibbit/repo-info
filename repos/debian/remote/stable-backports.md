@@ -1,7 +1,7 @@
 ## `debian:stable-backports`
 
 ```console
-$ docker pull debian@sha256:344d17997f94c34f3e09c9fca495a67c901573ea8d1ec14389ed66751f95cb7e
+$ docker pull debian@sha256:e31441119f8d502e758cd703bfd282c68ce2079c2611baf2812ecca39ba9a587
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

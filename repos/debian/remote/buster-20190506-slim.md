@@ -1,7 +1,7 @@
 ## `debian:buster-20190506-slim`
 
 ```console
-$ docker pull debian@sha256:e391d6df8607b377da65124a475f0957db10b76c67f1399335e1c34018793e4e
+$ docker pull debian@sha256:d9a5afa8778294b110b789964beb3fffa1f87a84aa8d1bd633f10e120813e067
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

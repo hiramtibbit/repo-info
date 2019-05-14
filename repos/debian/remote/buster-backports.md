@@ -1,7 +1,7 @@
 ## `debian:buster-backports`
 
 ```console
-$ docker pull debian@sha256:7be237833ada035a72eccc76c024007b911258fefd496700035116f5618dc27a
+$ docker pull debian@sha256:f3d9bded4f1eeff9623abc176ec71386ca2b585b82f4967560f5ee0ee7b793a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

@@ -1,7 +1,7 @@
 ## `debian:stable-20190506-slim`
 
 ```console
-$ docker pull debian@sha256:6657ae6b0959f549b6fffd5328ba550bb8a8e6685d23e9f8b491fec3de9e8dd3
+$ docker pull debian@sha256:a02ca7e73e03d13a57e47ad6bd5cf77a15384f46637cdf1d3a6fda48619a46a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

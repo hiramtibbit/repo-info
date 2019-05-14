@@ -1,7 +1,7 @@
 ## `debian:unstable-slim`
 
 ```console
-$ docker pull debian@sha256:8d89738668766b255c75346133f3c35567c46f3f74f6341bd83efa7ec26bc2c0
+$ docker pull debian@sha256:d58e259ebdb8d709db3a732eeb6d74972bdb6eb89dd40236b1b906727762eae8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

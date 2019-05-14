@@ -1,7 +1,7 @@
 ## `debian:sid-slim`
 
 ```console
-$ docker pull debian@sha256:c66b0bdd64e312c15ccad5505e5996f6a1f4f6c97d2de10eda567371f9eb4ff1
+$ docker pull debian@sha256:e89dbac0b17b283ed88f28143688b4800ccdfaaab9f66ab7c747f56fd1a754ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

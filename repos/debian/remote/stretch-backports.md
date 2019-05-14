@@ -1,7 +1,7 @@
 ## `debian:stretch-backports`
 
 ```console
-$ docker pull debian@sha256:64f7b05043b7992aeb431cc71538e2ddb242f99332c2fe0ea549b0a0f781ca1a
+$ docker pull debian@sha256:f93916f276773992be6e487fe945fb70d8ca8391f810b66c59f2b1a79e6e8625
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

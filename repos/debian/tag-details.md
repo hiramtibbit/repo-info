@@ -54,7 +54,7 @@
 ## `debian:8`
 
 ```console
-$ docker pull debian@sha256:532b1ad8968b78035e8c22891088711bd1cdbca06d517881aaa205f753dfeefd
+$ docker pull debian@sha256:2ed9cfd2541c103f81ba4ba78c2cf1e2ea69f4ce2bd9886637a5b3506aa4fce9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -171,7 +171,7 @@ CMD ["bash"]
 ## `debian:8.11`
 
 ```console
-$ docker pull debian@sha256:532b1ad8968b78035e8c22891088711bd1cdbca06d517881aaa205f753dfeefd
+$ docker pull debian@sha256:2ed9cfd2541c103f81ba4ba78c2cf1e2ea69f4ce2bd9886637a5b3506aa4fce9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -288,7 +288,7 @@ CMD ["bash"]
 ## `debian:8.11-slim`
 
 ```console
-$ docker pull debian@sha256:26e0cdb965642bb867ba565316cf8d50c1d782574b54d46f06ea7b90039fc7b5
+$ docker pull debian@sha256:58fe82eb0932d1af35341ef8dfea6a397237cdd6e85b732f981041939e72d484
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -405,7 +405,7 @@ CMD ["bash"]
 ## `debian:8-slim`
 
 ```console
-$ docker pull debian@sha256:26e0cdb965642bb867ba565316cf8d50c1d782574b54d46f06ea7b90039fc7b5
+$ docker pull debian@sha256:58fe82eb0932d1af35341ef8dfea6a397237cdd6e85b732f981041939e72d484
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -522,7 +522,7 @@ CMD ["bash"]
 ## `debian:9`
 
 ```console
-$ docker pull debian@sha256:1fa4996cbe5ba05347c0c3c42eefe558624e6dc16eb37bf3b5c90185abd7db34
+$ docker pull debian@sha256:75f7d0590b45561bfa443abad0b3e0f86e2811b1fc176f786cd30eb078d1846f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -720,7 +720,7 @@ CMD ["bash"]
 ## `debian:9.9`
 
 ```console
-$ docker pull debian@sha256:1fa4996cbe5ba05347c0c3c42eefe558624e6dc16eb37bf3b5c90185abd7db34
+$ docker pull debian@sha256:75f7d0590b45561bfa443abad0b3e0f86e2811b1fc176f786cd30eb078d1846f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -918,7 +918,7 @@ CMD ["bash"]
 ## `debian:9.9-slim`
 
 ```console
-$ docker pull debian@sha256:515f78ca65a8d5897717c2905991de33910e0cdc0d9e7952c65006d7690dca58
+$ docker pull debian@sha256:105032f50e173e95a84b86a5864ddc0c26c22ce3324b3dab98741601af79aaa4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1116,7 +1116,7 @@ CMD ["bash"]
 ## `debian:9-slim`
 
 ```console
-$ docker pull debian@sha256:515f78ca65a8d5897717c2905991de33910e0cdc0d9e7952c65006d7690dca58
+$ docker pull debian@sha256:105032f50e173e95a84b86a5864ddc0c26c22ce3324b3dab98741601af79aaa4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1314,7 +1314,7 @@ CMD ["bash"]
 ## `debian:buster`
 
 ```console
-$ docker pull debian@sha256:29d409eeb81f0583326205d0a65eb386df4b71efbf60e322ce9353ed90f749ad
+$ docker pull debian@sha256:25f6e7edb40e012c95324d70e1eda39cbe026113eb9ebd6a0742a8b6f0c44c21
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1512,7 +1512,7 @@ CMD ["bash"]
 ## `debian:buster-20190506`
 
 ```console
-$ docker pull debian@sha256:29d409eeb81f0583326205d0a65eb386df4b71efbf60e322ce9353ed90f749ad
+$ docker pull debian@sha256:25f6e7edb40e012c95324d70e1eda39cbe026113eb9ebd6a0742a8b6f0c44c21
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1710,7 +1710,7 @@ CMD ["bash"]
 ## `debian:buster-20190506-slim`
 
 ```console
-$ docker pull debian@sha256:e391d6df8607b377da65124a475f0957db10b76c67f1399335e1c34018793e4e
+$ docker pull debian@sha256:d9a5afa8778294b110b789964beb3fffa1f87a84aa8d1bd633f10e120813e067
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1908,7 +1908,7 @@ CMD ["bash"]
 ## `debian:buster-backports`
 
 ```console
-$ docker pull debian@sha256:7be237833ada035a72eccc76c024007b911258fefd496700035116f5618dc27a
+$ docker pull debian@sha256:f3d9bded4f1eeff9623abc176ec71386ca2b585b82f4967560f5ee0ee7b793a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2148,7 +2148,7 @@ RUN echo 'deb http://deb.debian.org/debian buster-backports main' > /etc/apt/sou
 ## `debian:buster-slim`
 
 ```console
-$ docker pull debian@sha256:e391d6df8607b377da65124a475f0957db10b76c67f1399335e1c34018793e4e
+$ docker pull debian@sha256:d9a5afa8778294b110b789964beb3fffa1f87a84aa8d1bd633f10e120813e067
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2346,7 +2346,7 @@ CMD ["bash"]
 ## `debian:experimental`
 
 ```console
-$ docker pull debian@sha256:dc8cf834d85cb0c7c7ec6cc430b176509a11dc87da3146a2f1fd29711a7a4b05
+$ docker pull debian@sha256:3b783b8c64de751ffcc0aa0c1481613c696d3bd9384592605f88955700b7328e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2586,7 +2586,7 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 ## `debian:experimental-20190506`
 
 ```console
-$ docker pull debian@sha256:dc8cf834d85cb0c7c7ec6cc430b176509a11dc87da3146a2f1fd29711a7a4b05
+$ docker pull debian@sha256:3b783b8c64de751ffcc0aa0c1481613c696d3bd9384592605f88955700b7328e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2826,7 +2826,7 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 ## `debian:jessie`
 
 ```console
-$ docker pull debian@sha256:532b1ad8968b78035e8c22891088711bd1cdbca06d517881aaa205f753dfeefd
+$ docker pull debian@sha256:2ed9cfd2541c103f81ba4ba78c2cf1e2ea69f4ce2bd9886637a5b3506aa4fce9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2943,7 +2943,7 @@ CMD ["bash"]
 ## `debian:jessie-20190506`
 
 ```console
-$ docker pull debian@sha256:532b1ad8968b78035e8c22891088711bd1cdbca06d517881aaa205f753dfeefd
+$ docker pull debian@sha256:2ed9cfd2541c103f81ba4ba78c2cf1e2ea69f4ce2bd9886637a5b3506aa4fce9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3060,7 +3060,7 @@ CMD ["bash"]
 ## `debian:jessie-20190506-slim`
 
 ```console
-$ docker pull debian@sha256:26e0cdb965642bb867ba565316cf8d50c1d782574b54d46f06ea7b90039fc7b5
+$ docker pull debian@sha256:58fe82eb0932d1af35341ef8dfea6a397237cdd6e85b732f981041939e72d484
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3177,7 +3177,7 @@ CMD ["bash"]
 ## `debian:jessie-slim`
 
 ```console
-$ docker pull debian@sha256:26e0cdb965642bb867ba565316cf8d50c1d782574b54d46f06ea7b90039fc7b5
+$ docker pull debian@sha256:58fe82eb0932d1af35341ef8dfea6a397237cdd6e85b732f981041939e72d484
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3294,7 +3294,7 @@ CMD ["bash"]
 ## `debian:latest`
 
 ```console
-$ docker pull debian@sha256:1fa4996cbe5ba05347c0c3c42eefe558624e6dc16eb37bf3b5c90185abd7db34
+$ docker pull debian@sha256:75f7d0590b45561bfa443abad0b3e0f86e2811b1fc176f786cd30eb078d1846f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3492,7 +3492,7 @@ CMD ["bash"]
 ## `debian:oldstable`
 
 ```console
-$ docker pull debian@sha256:996bfc385a87e430806126f66dfa3e896053c38a459cae1177387c380de7d6c1
+$ docker pull debian@sha256:8828d74ce5843f37e08db3ebfa20702e2a3cf3a40ad16258098cdc234efb0cc0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3609,7 +3609,7 @@ CMD ["bash"]
 ## `debian:oldstable-20190506`
 
 ```console
-$ docker pull debian@sha256:996bfc385a87e430806126f66dfa3e896053c38a459cae1177387c380de7d6c1
+$ docker pull debian@sha256:8828d74ce5843f37e08db3ebfa20702e2a3cf3a40ad16258098cdc234efb0cc0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3726,7 +3726,7 @@ CMD ["bash"]
 ## `debian:oldstable-20190506-slim`
 
 ```console
-$ docker pull debian@sha256:ef8f66726179e3c21dae8a293e968ac67207dc991918a271ae4ebf5895dfbad0
+$ docker pull debian@sha256:3141af44bc0241e4965b9984808321d5424f5f7618071d8d3eee2b37e7c3b3d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3843,7 +3843,7 @@ CMD ["bash"]
 ## `debian:oldstable-slim`
 
 ```console
-$ docker pull debian@sha256:ef8f66726179e3c21dae8a293e968ac67207dc991918a271ae4ebf5895dfbad0
+$ docker pull debian@sha256:3141af44bc0241e4965b9984808321d5424f5f7618071d8d3eee2b37e7c3b3d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3960,7 +3960,7 @@ CMD ["bash"]
 ## `debian:rc-buggy`
 
 ```console
-$ docker pull debian@sha256:6c662631296d4acfa5ee8f71bd6938511a462be5b8b0b2cb310e415f603a6c89
+$ docker pull debian@sha256:24ec790951648f90755edeef32df723eb09bf6c7b0bbb32aea37954cc0fa82e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4200,7 +4200,7 @@ RUN echo 'deb http://deb.debian.org/debian rc-buggy main' > /etc/apt/sources.lis
 ## `debian:rc-buggy-20190506`
 
 ```console
-$ docker pull debian@sha256:6c662631296d4acfa5ee8f71bd6938511a462be5b8b0b2cb310e415f603a6c89
+$ docker pull debian@sha256:24ec790951648f90755edeef32df723eb09bf6c7b0bbb32aea37954cc0fa82e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4440,7 +4440,7 @@ RUN echo 'deb http://deb.debian.org/debian rc-buggy main' > /etc/apt/sources.lis
 ## `debian:sid`
 
 ```console
-$ docker pull debian@sha256:d17815bcab11d12d594983b6549ac7f009acaf7bb937fa398421496ddc3c2fee
+$ docker pull debian@sha256:68959fc2fa84a19e229b728db713e0f504c1cf81004890581ed6dcd6904b9357
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4638,7 +4638,7 @@ CMD ["bash"]
 ## `debian:sid-20190506`
 
 ```console
-$ docker pull debian@sha256:d17815bcab11d12d594983b6549ac7f009acaf7bb937fa398421496ddc3c2fee
+$ docker pull debian@sha256:68959fc2fa84a19e229b728db713e0f504c1cf81004890581ed6dcd6904b9357
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4836,7 +4836,7 @@ CMD ["bash"]
 ## `debian:sid-20190506-slim`
 
 ```console
-$ docker pull debian@sha256:c66b0bdd64e312c15ccad5505e5996f6a1f4f6c97d2de10eda567371f9eb4ff1
+$ docker pull debian@sha256:e89dbac0b17b283ed88f28143688b4800ccdfaaab9f66ab7c747f56fd1a754ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5034,7 +5034,7 @@ CMD ["bash"]
 ## `debian:sid-slim`
 
 ```console
-$ docker pull debian@sha256:c66b0bdd64e312c15ccad5505e5996f6a1f4f6c97d2de10eda567371f9eb4ff1
+$ docker pull debian@sha256:e89dbac0b17b283ed88f28143688b4800ccdfaaab9f66ab7c747f56fd1a754ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5232,7 +5232,7 @@ CMD ["bash"]
 ## `debian:stable`
 
 ```console
-$ docker pull debian@sha256:7e28d6a23bbf55243a751444d17c472c754a2d05b7573bd049452bdb9bb1d71e
+$ docker pull debian@sha256:fae40824341d13faea59067469883ff87382c1eeb850a37269d4e9d71bc17919
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5430,7 +5430,7 @@ CMD ["bash"]
 ## `debian:stable-20190506`
 
 ```console
-$ docker pull debian@sha256:7e28d6a23bbf55243a751444d17c472c754a2d05b7573bd049452bdb9bb1d71e
+$ docker pull debian@sha256:fae40824341d13faea59067469883ff87382c1eeb850a37269d4e9d71bc17919
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5628,7 +5628,7 @@ CMD ["bash"]
 ## `debian:stable-20190506-slim`
 
 ```console
-$ docker pull debian@sha256:6657ae6b0959f549b6fffd5328ba550bb8a8e6685d23e9f8b491fec3de9e8dd3
+$ docker pull debian@sha256:a02ca7e73e03d13a57e47ad6bd5cf77a15384f46637cdf1d3a6fda48619a46a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5826,7 +5826,7 @@ CMD ["bash"]
 ## `debian:stable-backports`
 
 ```console
-$ docker pull debian@sha256:344d17997f94c34f3e09c9fca495a67c901573ea8d1ec14389ed66751f95cb7e
+$ docker pull debian@sha256:e31441119f8d502e758cd703bfd282c68ce2079c2611baf2812ecca39ba9a587
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6066,7 +6066,7 @@ RUN echo 'deb http://deb.debian.org/debian stable-backports main' > /etc/apt/sou
 ## `debian:stable-slim`
 
 ```console
-$ docker pull debian@sha256:6657ae6b0959f549b6fffd5328ba550bb8a8e6685d23e9f8b491fec3de9e8dd3
+$ docker pull debian@sha256:a02ca7e73e03d13a57e47ad6bd5cf77a15384f46637cdf1d3a6fda48619a46a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6264,7 +6264,7 @@ CMD ["bash"]
 ## `debian:stretch`
 
 ```console
-$ docker pull debian@sha256:1fa4996cbe5ba05347c0c3c42eefe558624e6dc16eb37bf3b5c90185abd7db34
+$ docker pull debian@sha256:75f7d0590b45561bfa443abad0b3e0f86e2811b1fc176f786cd30eb078d1846f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6462,7 +6462,7 @@ CMD ["bash"]
 ## `debian:stretch-20190506`
 
 ```console
-$ docker pull debian@sha256:1fa4996cbe5ba05347c0c3c42eefe558624e6dc16eb37bf3b5c90185abd7db34
+$ docker pull debian@sha256:75f7d0590b45561bfa443abad0b3e0f86e2811b1fc176f786cd30eb078d1846f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6660,7 +6660,7 @@ CMD ["bash"]
 ## `debian:stretch-20190506-slim`
 
 ```console
-$ docker pull debian@sha256:515f78ca65a8d5897717c2905991de33910e0cdc0d9e7952c65006d7690dca58
+$ docker pull debian@sha256:105032f50e173e95a84b86a5864ddc0c26c22ce3324b3dab98741601af79aaa4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6858,7 +6858,7 @@ CMD ["bash"]
 ## `debian:stretch-backports`
 
 ```console
-$ docker pull debian@sha256:64f7b05043b7992aeb431cc71538e2ddb242f99332c2fe0ea549b0a0f781ca1a
+$ docker pull debian@sha256:f93916f276773992be6e487fe945fb70d8ca8391f810b66c59f2b1a79e6e8625
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7098,7 +7098,7 @@ RUN echo 'deb http://deb.debian.org/debian stretch-backports main' > /etc/apt/so
 ## `debian:stretch-slim`
 
 ```console
-$ docker pull debian@sha256:515f78ca65a8d5897717c2905991de33910e0cdc0d9e7952c65006d7690dca58
+$ docker pull debian@sha256:105032f50e173e95a84b86a5864ddc0c26c22ce3324b3dab98741601af79aaa4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7296,7 +7296,7 @@ CMD ["bash"]
 ## `debian:testing`
 
 ```console
-$ docker pull debian@sha256:369ecec8ec44f91d5f0acf586ff2cc66c1b9183177fcae4bcda50648af2c41eb
+$ docker pull debian@sha256:41e334090638a6f09d9d1f49df4908267fc8fefba20c7bbcfb4570e9a0304264
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7494,7 +7494,7 @@ CMD ["bash"]
 ## `debian:testing-20190506`
 
 ```console
-$ docker pull debian@sha256:369ecec8ec44f91d5f0acf586ff2cc66c1b9183177fcae4bcda50648af2c41eb
+$ docker pull debian@sha256:41e334090638a6f09d9d1f49df4908267fc8fefba20c7bbcfb4570e9a0304264
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7692,7 +7692,7 @@ CMD ["bash"]
 ## `debian:testing-20190506-slim`
 
 ```console
-$ docker pull debian@sha256:b86f8805a63f4f62695478b569f48df71f5fbe963168cb7510e112e0e10860e9
+$ docker pull debian@sha256:366e1b8360c479bc1cb04ec3a528d6b615c583b093f123733aa39aee635fab57
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7890,7 +7890,7 @@ CMD ["bash"]
 ## `debian:testing-slim`
 
 ```console
-$ docker pull debian@sha256:b86f8805a63f4f62695478b569f48df71f5fbe963168cb7510e112e0e10860e9
+$ docker pull debian@sha256:366e1b8360c479bc1cb04ec3a528d6b615c583b093f123733aa39aee635fab57
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8088,7 +8088,7 @@ CMD ["bash"]
 ## `debian:unstable`
 
 ```console
-$ docker pull debian@sha256:3fb3b43701dc70a7be024e0dedd0390e9c69b20aeef5dc77b3cf20f2d6036cc9
+$ docker pull debian@sha256:e1e1362e452f3f79a048edbb43037a3efd9493ecffc90296547008d63170f4fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8286,7 +8286,7 @@ CMD ["bash"]
 ## `debian:unstable-20190506`
 
 ```console
-$ docker pull debian@sha256:3fb3b43701dc70a7be024e0dedd0390e9c69b20aeef5dc77b3cf20f2d6036cc9
+$ docker pull debian@sha256:e1e1362e452f3f79a048edbb43037a3efd9493ecffc90296547008d63170f4fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8484,7 +8484,7 @@ CMD ["bash"]
 ## `debian:unstable-20190506-slim`
 
 ```console
-$ docker pull debian@sha256:8d89738668766b255c75346133f3c35567c46f3f74f6341bd83efa7ec26bc2c0
+$ docker pull debian@sha256:d58e259ebdb8d709db3a732eeb6d74972bdb6eb89dd40236b1b906727762eae8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8682,7 +8682,7 @@ CMD ["bash"]
 ## `debian:unstable-slim`
 
 ```console
-$ docker pull debian@sha256:8d89738668766b255c75346133f3c35567c46f3f74f6341bd83efa7ec26bc2c0
+$ docker pull debian@sha256:d58e259ebdb8d709db3a732eeb6d74972bdb6eb89dd40236b1b906727762eae8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

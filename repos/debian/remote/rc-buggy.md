@@ -1,7 +1,7 @@
 ## `debian:rc-buggy`
 
 ```console
-$ docker pull debian@sha256:6c662631296d4acfa5ee8f71bd6938511a462be5b8b0b2cb310e415f603a6c89
+$ docker pull debian@sha256:24ec790951648f90755edeef32df723eb09bf6c7b0bbb32aea37954cc0fa82e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
