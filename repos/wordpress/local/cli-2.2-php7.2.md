@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c8bc9dfc66beb58218805f871400da9441894d0fddcbf50bbf1f6e6ff8a8dddf`
-- Created: `2019-05-04T06:45:57.914448466Z`
+- Image ID: `sha256:fe852dd70da7495ddf63937ae1480c96dca3d3cbe0654779c0eb9bb3973ef033`
+- Created: `2019-05-11T05:06:21.79580465Z`
 - Virtual Size: ~ 122.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -303,16 +303,16 @@ IJG
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.35-r0 description:
+libpng-1.6.37-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.35-r0 webpage:
+libpng-1.6.37-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.35-r0 installed size:
+libpng-1.6.37-r0 installed size:
 204800
 
-libpng-1.6.35-r0 license:
+libpng-1.6.37-r0 license:
 Libpng
 
 ```
@@ -422,16 +422,16 @@ MIT
 ### `apk` package: `mariadb-client`
 
 ```console
-mariadb-client-10.3.13-r0 description:
+mariadb-client-10.3.13-r1 description:
 Client for the MariaDB database
 
-mariadb-client-10.3.13-r0 webpage:
+mariadb-client-10.3.13-r1 webpage:
 https://www.mariadb.org
 
-mariadb-client-10.3.13-r0 installed size:
+mariadb-client-10.3.13-r1 installed size:
 29347840
 
-mariadb-client-10.3.13-r0 license:
+mariadb-client-10.3.13-r1 license:
 GPL-2.0-or-later
 
 ```
@@ -439,16 +439,16 @@ GPL-2.0-or-later
 ### `apk` package: `mariadb-common`
 
 ```console
-mariadb-common-10.3.13-r0 description:
+mariadb-common-10.3.13-r1 description:
 MariaDB common files for both server and client
 
-mariadb-common-10.3.13-r0 webpage:
+mariadb-common-10.3.13-r1 webpage:
 https://www.mariadb.org
 
-mariadb-common-10.3.13-r0 installed size:
+mariadb-common-10.3.13-r1 installed size:
 2240512
 
-mariadb-common-10.3.13-r0 license:
+mariadb-common-10.3.13-r1 license:
 GPL-2.0-or-later
 
 ```
@@ -490,16 +490,16 @@ MIT BSD GPL2+
 ### `apk` package: `mysql-client`
 
 ```console
-mysql-client-10.3.13-r0 description:
+mysql-client-10.3.13-r1 description:
 Dummy package for mysql-client migration
 
-mysql-client-10.3.13-r0 webpage:
+mysql-client-10.3.13-r1 webpage:
 https://www.mariadb.org
 
-mysql-client-10.3.13-r0 installed size:
+mysql-client-10.3.13-r1 installed size:
 4096
 
-mysql-client-10.3.13-r0 license:
+mysql-client-10.3.13-r1 license:
 GPL-2.0-or-later
 
 ```
