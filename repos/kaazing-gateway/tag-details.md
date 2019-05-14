@@ -10,7 +10,7 @@
 ## `kaazing-gateway:5`
 
 ```console
-$ docker pull kaazing-gateway@sha256:0691b690e8f63691d91c8b4106199cf15374e8258d274bb7298ae5e4972a0ef4
+$ docker pull kaazing-gateway@sha256:2b358f500c09871eeb13dfb68d47c52bccb4b23046de577b43533692cf1c96ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -225,7 +225,7 @@ CMD ["gateway.start"]
 ## `kaazing-gateway:5.6`
 
 ```console
-$ docker pull kaazing-gateway@sha256:0691b690e8f63691d91c8b4106199cf15374e8258d274bb7298ae5e4972a0ef4
+$ docker pull kaazing-gateway@sha256:2b358f500c09871eeb13dfb68d47c52bccb4b23046de577b43533692cf1c96ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -440,7 +440,7 @@ CMD ["gateway.start"]
 ## `kaazing-gateway:5.6.0`
 
 ```console
-$ docker pull kaazing-gateway@sha256:0691b690e8f63691d91c8b4106199cf15374e8258d274bb7298ae5e4972a0ef4
+$ docker pull kaazing-gateway@sha256:2b358f500c09871eeb13dfb68d47c52bccb4b23046de577b43533692cf1c96ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -655,7 +655,7 @@ CMD ["gateway.start"]
 ## `kaazing-gateway:latest`
 
 ```console
-$ docker pull kaazing-gateway@sha256:0691b690e8f63691d91c8b4106199cf15374e8258d274bb7298ae5e4972a0ef4
+$ docker pull kaazing-gateway@sha256:2b358f500c09871eeb13dfb68d47c52bccb4b23046de577b43533692cf1c96ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
