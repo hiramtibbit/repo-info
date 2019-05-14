@@ -1,7 +1,7 @@
 ## `hylang:latest`
 
 ```console
-$ docker pull hylang@sha256:bb8e2aa1bcede6a852389032e7665f00e0f1e6797ec536b099f12dece2ea2209
+$ docker pull hylang@sha256:2e86bb4b09303c70ab60c4151029ca0cfe179eb190ce1bbbf98b37e771c21c39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
