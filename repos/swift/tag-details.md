@@ -25,7 +25,7 @@
 ## `swift:3`
 
 ```console
-$ docker pull swift@sha256:8e8e52f9f5a54f1deb1ab2e5a38194a0175494c90d0f958af10ba1c4400f90b3
+$ docker pull swift@sha256:aa476064b6b416806c1a6dcde10a6ffe0f6a2c4d406da4f55ae21abe4a478112
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -105,7 +105,7 @@ RUN swift --version
 ## `swift:3.1`
 
 ```console
-$ docker pull swift@sha256:8e8e52f9f5a54f1deb1ab2e5a38194a0175494c90d0f958af10ba1c4400f90b3
+$ docker pull swift@sha256:aa476064b6b416806c1a6dcde10a6ffe0f6a2c4d406da4f55ae21abe4a478112
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -185,7 +185,7 @@ RUN swift --version
 ## `swift:3.1.1`
 
 ```console
-$ docker pull swift@sha256:8e8e52f9f5a54f1deb1ab2e5a38194a0175494c90d0f958af10ba1c4400f90b3
+$ docker pull swift@sha256:aa476064b6b416806c1a6dcde10a6ffe0f6a2c4d406da4f55ae21abe4a478112
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -265,7 +265,7 @@ RUN swift --version
 ## `swift:4`
 
 ```console
-$ docker pull swift@sha256:132f447ffafd0731d210acd70069faae7deeee31e0720bc198e28451a0c65ad8
+$ docker pull swift@sha256:230073bd57301cbeab2a03477e0cb52d61310db983541f47c558b2ceaabebe36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -345,7 +345,7 @@ RUN swift --version
 ## `swift:4.0`
 
 ```console
-$ docker pull swift@sha256:d2f29d84a27533226f026ef5799692e48829df37700b1bebbde044afab81f6ac
+$ docker pull swift@sha256:b1e2e63add4506cc09ff1b0eb5d1f30fec0426d8e0a9fc53755a1b7138d2c841
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -425,7 +425,7 @@ RUN swift --version
 ## `swift:4.0.3`
 
 ```console
-$ docker pull swift@sha256:d2f29d84a27533226f026ef5799692e48829df37700b1bebbde044afab81f6ac
+$ docker pull swift@sha256:b1e2e63add4506cc09ff1b0eb5d1f30fec0426d8e0a9fc53755a1b7138d2c841
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -505,7 +505,7 @@ RUN swift --version
 ## `swift:4.1`
 
 ```console
-$ docker pull swift@sha256:1197e47cbe9f602bf56d3230ac093b0bbd6637a1c2c49ee4d1d77ed256253373
+$ docker pull swift@sha256:aed32a2b46210b1c26d3d5dcf8c1a0152aff0853db0f6e7791cdd8b64a7ae4fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -585,7 +585,7 @@ RUN swift --version
 ## `swift:4.1.3`
 
 ```console
-$ docker pull swift@sha256:1197e47cbe9f602bf56d3230ac093b0bbd6637a1c2c49ee4d1d77ed256253373
+$ docker pull swift@sha256:aed32a2b46210b1c26d3d5dcf8c1a0152aff0853db0f6e7791cdd8b64a7ae4fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -665,7 +665,7 @@ RUN swift --version
 ## `swift:4.2`
 
 ```console
-$ docker pull swift@sha256:132f447ffafd0731d210acd70069faae7deeee31e0720bc198e28451a0c65ad8
+$ docker pull swift@sha256:230073bd57301cbeab2a03477e0cb52d61310db983541f47c558b2ceaabebe36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -745,7 +745,7 @@ RUN swift --version
 ## `swift:4.2.4`
 
 ```console
-$ docker pull swift@sha256:132f447ffafd0731d210acd70069faae7deeee31e0720bc198e28451a0c65ad8
+$ docker pull swift@sha256:230073bd57301cbeab2a03477e0cb52d61310db983541f47c558b2ceaabebe36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -825,7 +825,7 @@ RUN swift --version
 ## `swift:5.0`
 
 ```console
-$ docker pull swift@sha256:dc9d8cb34457f9d10035caaefc465812ed387e8dfca506eb49bb5533fd137f0d
+$ docker pull swift@sha256:6b85beec4ef69d2d520e84c053ae7c745193ee3bbf328f4692dd238dd63f924e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -905,7 +905,7 @@ RUN swift --version
 ## `swift:5.0.1`
 
 ```console
-$ docker pull swift@sha256:dc9d8cb34457f9d10035caaefc465812ed387e8dfca506eb49bb5533fd137f0d
+$ docker pull swift@sha256:6b85beec4ef69d2d520e84c053ae7c745193ee3bbf328f4692dd238dd63f924e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -985,7 +985,7 @@ RUN swift --version
 ## `swift:5.0.1-bionic`
 
 ```console
-$ docker pull swift@sha256:dc9d8cb34457f9d10035caaefc465812ed387e8dfca506eb49bb5533fd137f0d
+$ docker pull swift@sha256:6b85beec4ef69d2d520e84c053ae7c745193ee3bbf328f4692dd238dd63f924e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1065,7 +1065,7 @@ RUN swift --version
 ## `swift:5.0.1-xenial`
 
 ```console
-$ docker pull swift@sha256:4961314ee5450e3d098abd82d43a4d836e4ca268b8efc288a9b458262a1a9f5b
+$ docker pull swift@sha256:96a2560429d8f1e9c350ec940506ced9183a690707893dc8b66303984af99628
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1145,7 +1145,7 @@ RUN swift --version
 ## `swift:5.0-bionic`
 
 ```console
-$ docker pull swift@sha256:dc9d8cb34457f9d10035caaefc465812ed387e8dfca506eb49bb5533fd137f0d
+$ docker pull swift@sha256:6b85beec4ef69d2d520e84c053ae7c745193ee3bbf328f4692dd238dd63f924e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1225,7 +1225,7 @@ RUN swift --version
 ## `swift:5.0-xenial`
 
 ```console
-$ docker pull swift@sha256:4961314ee5450e3d098abd82d43a4d836e4ca268b8efc288a9b458262a1a9f5b
+$ docker pull swift@sha256:96a2560429d8f1e9c350ec940506ced9183a690707893dc8b66303984af99628
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1305,7 +1305,7 @@ RUN swift --version
 ## `swift:bionic`
 
 ```console
-$ docker pull swift@sha256:dc9d8cb34457f9d10035caaefc465812ed387e8dfca506eb49bb5533fd137f0d
+$ docker pull swift@sha256:6b85beec4ef69d2d520e84c053ae7c745193ee3bbf328f4692dd238dd63f924e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1385,7 +1385,7 @@ RUN swift --version
 ## `swift:latest`
 
 ```console
-$ docker pull swift@sha256:dc9d8cb34457f9d10035caaefc465812ed387e8dfca506eb49bb5533fd137f0d
+$ docker pull swift@sha256:6b85beec4ef69d2d520e84c053ae7c745193ee3bbf328f4692dd238dd63f924e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1465,7 +1465,7 @@ RUN swift --version
 ## `swift:xenial`
 
 ```console
-$ docker pull swift@sha256:4961314ee5450e3d098abd82d43a4d836e4ca268b8efc288a9b458262a1a9f5b
+$ docker pull swift@sha256:96a2560429d8f1e9c350ec940506ced9183a690707893dc8b66303984af99628
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

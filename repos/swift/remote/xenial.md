@@ -1,7 +1,7 @@
 ## `swift:xenial`
 
 ```console
-$ docker pull swift@sha256:4961314ee5450e3d098abd82d43a4d836e4ca268b8efc288a9b458262a1a9f5b
+$ docker pull swift@sha256:96a2560429d8f1e9c350ec940506ced9183a690707893dc8b66303984af99628
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

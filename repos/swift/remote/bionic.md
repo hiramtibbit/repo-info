@@ -1,7 +1,7 @@
 ## `swift:bionic`
 
 ```console
-$ docker pull swift@sha256:dc9d8cb34457f9d10035caaefc465812ed387e8dfca506eb49bb5533fd137f0d
+$ docker pull swift@sha256:6b85beec4ef69d2d520e84c053ae7c745193ee3bbf328f4692dd238dd63f924e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
