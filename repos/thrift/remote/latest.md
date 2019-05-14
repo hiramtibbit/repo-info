@@ -1,7 +1,7 @@
 ## `thrift:latest`
 
 ```console
-$ docker pull thrift@sha256:4837c74c194164b739c98b0fd99c1760b4130a74c6a90e82d14a4515dfb1ba86
+$ docker pull thrift@sha256:c3f91653a5a2f2a7de0e50c177e150338efead5ea0a84d0c5345c978b76351fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

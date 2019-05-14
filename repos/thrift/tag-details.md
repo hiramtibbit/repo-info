@@ -15,7 +15,7 @@
 ## `thrift:0.10`
 
 ```console
-$ docker pull thrift@sha256:cef418469407461aa581b30078cf03727c2622e40e952906263f5d9fa1c57635
+$ docker pull thrift@sha256:d64f9113aa9e9f2aef76d549706a7225582fb67d5135011291ee61b9d2b80549
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -63,7 +63,7 @@ CMD ["thrift"]
 ## `thrift:0.10.0`
 
 ```console
-$ docker pull thrift@sha256:cef418469407461aa581b30078cf03727c2622e40e952906263f5d9fa1c57635
+$ docker pull thrift@sha256:d64f9113aa9e9f2aef76d549706a7225582fb67d5135011291ee61b9d2b80549
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -111,7 +111,7 @@ CMD ["thrift"]
 ## `thrift:0.11`
 
 ```console
-$ docker pull thrift@sha256:35524d679939d8e8f78720749bbdea22d2fb816ffcba46edf75921cb4d1e34f5
+$ docker pull thrift@sha256:91f11a3b96b5dff6777206e851b12ec22493cf3d1ecc395817da15b204912b75
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -159,7 +159,7 @@ CMD ["thrift"]
 ## `thrift:0.11.0`
 
 ```console
-$ docker pull thrift@sha256:35524d679939d8e8f78720749bbdea22d2fb816ffcba46edf75921cb4d1e34f5
+$ docker pull thrift@sha256:91f11a3b96b5dff6777206e851b12ec22493cf3d1ecc395817da15b204912b75
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -207,7 +207,7 @@ CMD ["thrift"]
 ## `thrift:0.12`
 
 ```console
-$ docker pull thrift@sha256:4837c74c194164b739c98b0fd99c1760b4130a74c6a90e82d14a4515dfb1ba86
+$ docker pull thrift@sha256:c3f91653a5a2f2a7de0e50c177e150338efead5ea0a84d0c5345c978b76351fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -271,7 +271,7 @@ CMD ["thrift"]
 ## `thrift:0.12.0`
 
 ```console
-$ docker pull thrift@sha256:4837c74c194164b739c98b0fd99c1760b4130a74c6a90e82d14a4515dfb1ba86
+$ docker pull thrift@sha256:c3f91653a5a2f2a7de0e50c177e150338efead5ea0a84d0c5345c978b76351fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -335,7 +335,7 @@ CMD ["thrift"]
 ## `thrift:0.9`
 
 ```console
-$ docker pull thrift@sha256:b998d74e1fa7f05994ae5fed48ab7cb6df352f99a131b878ac0314f83ac849b3
+$ docker pull thrift@sha256:965273845365074a76e03c28b6864dae3095db3d5391ec6165f20285eb71848b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -383,7 +383,7 @@ CMD ["thrift"]
 ## `thrift:0.9.3`
 
 ```console
-$ docker pull thrift@sha256:b998d74e1fa7f05994ae5fed48ab7cb6df352f99a131b878ac0314f83ac849b3
+$ docker pull thrift@sha256:965273845365074a76e03c28b6864dae3095db3d5391ec6165f20285eb71848b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -431,7 +431,7 @@ CMD ["thrift"]
 ## `thrift:latest`
 
 ```console
-$ docker pull thrift@sha256:4837c74c194164b739c98b0fd99c1760b4130a74c6a90e82d14a4515dfb1ba86
+$ docker pull thrift@sha256:c3f91653a5a2f2a7de0e50c177e150338efead5ea0a84d0c5345c978b76351fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
