@@ -1,7 +1,7 @@
 ## `postgres:latest`
 
 ```console
-$ docker pull postgres@sha256:cac198bf8b34aec6db64ad5771ae8918e4e16124488d8bd08533164e92d360af
+$ docker pull postgres@sha256:d61e82a1316928e732fc885b11e57de95efe018651a4ee5640b32cfe5a928d8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
