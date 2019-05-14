@@ -1,7 +1,7 @@
 ## `traefik:latest`
 
 ```console
-$ docker pull traefik@sha256:5aa12e89928ce0eafe09a212de4a8d57174aa2f6e6115e4bfb2bb6740cf91b37
+$ docker pull traefik@sha256:d590b5ef1278809b8809025eba2bd67afc2fdfe1926d87e67fcada14deb38652
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
