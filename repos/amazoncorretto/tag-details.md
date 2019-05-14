@@ -13,7 +13,7 @@
 ## `amazoncorretto:11`
 
 ```console
-$ docker pull amazoncorretto@sha256:35eef32fc2a5d417d2c72bdffe2aee3d46d0be8aafdd0368d9aff95910bfb610
+$ docker pull amazoncorretto@sha256:ab5e77e032486feabaf63418dbee66ad294d5967f93b3ba7020ca373773447b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -64,7 +64,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
 ## `amazoncorretto:11.0.3`
 
 ```console
-$ docker pull amazoncorretto@sha256:35eef32fc2a5d417d2c72bdffe2aee3d46d0be8aafdd0368d9aff95910bfb610
+$ docker pull amazoncorretto@sha256:ab5e77e032486feabaf63418dbee66ad294d5967f93b3ba7020ca373773447b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -115,7 +115,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
 ## `amazoncorretto:11-al2-full`
 
 ```console
-$ docker pull amazoncorretto@sha256:35eef32fc2a5d417d2c72bdffe2aee3d46d0be8aafdd0368d9aff95910bfb610
+$ docker pull amazoncorretto@sha256:ab5e77e032486feabaf63418dbee66ad294d5967f93b3ba7020ca373773447b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -166,7 +166,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
 ## `amazoncorretto:8`
 
 ```console
-$ docker pull amazoncorretto@sha256:25af5f2354cd06b9303b5f2574a235038a8f9d585f5e89cca6386ff7bfb2c358
+$ docker pull amazoncorretto@sha256:127eb91fd535eb4c9341578a36b47f9f8c13978fe32cc0c09e52a1c9e775ce49
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -217,7 +217,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto
 ## `amazoncorretto:8-al2-full`
 
 ```console
-$ docker pull amazoncorretto@sha256:25af5f2354cd06b9303b5f2574a235038a8f9d585f5e89cca6386ff7bfb2c358
+$ docker pull amazoncorretto@sha256:127eb91fd535eb4c9341578a36b47f9f8c13978fe32cc0c09e52a1c9e775ce49
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -268,7 +268,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto
 ## `amazoncorretto:8u212`
 
 ```console
-$ docker pull amazoncorretto@sha256:25af5f2354cd06b9303b5f2574a235038a8f9d585f5e89cca6386ff7bfb2c358
+$ docker pull amazoncorretto@sha256:127eb91fd535eb4c9341578a36b47f9f8c13978fe32cc0c09e52a1c9e775ce49
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -319,7 +319,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto
 ## `amazoncorretto:latest`
 
 ```console
-$ docker pull amazoncorretto@sha256:25af5f2354cd06b9303b5f2574a235038a8f9d585f5e89cca6386ff7bfb2c358
+$ docker pull amazoncorretto@sha256:127eb91fd535eb4c9341578a36b47f9f8c13978fe32cc0c09e52a1c9e775ce49
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
