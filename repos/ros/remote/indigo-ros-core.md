@@ -1,7 +1,7 @@
 ## `ros:indigo-ros-core`
 
 ```console
-$ docker pull ros@sha256:dd5c3d837b31c4cb150184a9846d0d1eb304954ddc15dc37abae58a7451951a4
+$ docker pull ros@sha256:375f2f012bdf0233221e43f06689889b086f9a4986c038554524231a32500d92
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

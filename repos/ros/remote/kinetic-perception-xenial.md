@@ -1,7 +1,7 @@
 ## `ros:kinetic-perception-xenial`
 
 ```console
-$ docker pull ros@sha256:a4c62bc285c785c87e0fe5476d294a34b08155e3dc7f8e9449fc315895a15aec
+$ docker pull ros@sha256:b53d550ac52b883a58bfb155c63e17bf6c70ac035a03696e92a0dd2f11c901fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

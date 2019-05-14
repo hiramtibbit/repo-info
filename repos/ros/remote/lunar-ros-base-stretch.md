@@ -1,7 +1,7 @@
 ## `ros:lunar-ros-base-stretch`
 
 ```console
-$ docker pull ros@sha256:1a8b57fc3b0284f69edb457231e54229dda8b0a56fee15d611265da60f8693d5
+$ docker pull ros@sha256:0f684fc8d8ee84be9966a3bce2d66cb2ca47f83657196d71cf469cec847fdaa9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

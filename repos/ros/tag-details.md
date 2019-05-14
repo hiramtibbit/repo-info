@@ -61,7 +61,7 @@
 ## `ros:bouncy`
 
 ```console
-$ docker pull ros@sha256:163406e94aea2794e3fd8dc26094d5ba0a6782702792c85c61fff2a9ac485239
+$ docker pull ros@sha256:5a132a58db84aba141e086786b7e55a7e87fc590ef03fe26ac73368856be65d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -302,7 +302,7 @@ RUN apt-get update && apt-get install -y     ros-bouncy-ros-base=0.5.1-0*     &&
 ## `ros:bouncy-ros-base`
 
 ```console
-$ docker pull ros@sha256:163406e94aea2794e3fd8dc26094d5ba0a6782702792c85c61fff2a9ac485239
+$ docker pull ros@sha256:5a132a58db84aba141e086786b7e55a7e87fc590ef03fe26ac73368856be65d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -543,7 +543,7 @@ RUN apt-get update && apt-get install -y     ros-bouncy-ros-base=0.5.1-0*     &&
 ## `ros:bouncy-ros-base-bionic`
 
 ```console
-$ docker pull ros@sha256:163406e94aea2794e3fd8dc26094d5ba0a6782702792c85c61fff2a9ac485239
+$ docker pull ros@sha256:5a132a58db84aba141e086786b7e55a7e87fc590ef03fe26ac73368856be65d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -784,7 +784,7 @@ RUN apt-get update && apt-get install -y     ros-bouncy-ros-base=0.5.1-0*     &&
 ## `ros:bouncy-ros-core`
 
 ```console
-$ docker pull ros@sha256:8a08b6d44ed1864b2fa046749fa71bd4b399e281affaa750550471a20319370f
+$ docker pull ros@sha256:520fae59c3969206d5248bdbf3a26e2d7e8e415731655f43e2ee3be95e5e8d4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1013,7 +1013,7 @@ CMD ["bash"]
 ## `ros:bouncy-ros-core-bionic`
 
 ```console
-$ docker pull ros@sha256:8a08b6d44ed1864b2fa046749fa71bd4b399e281affaa750550471a20319370f
+$ docker pull ros@sha256:520fae59c3969206d5248bdbf3a26e2d7e8e415731655f43e2ee3be95e5e8d4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1242,7 +1242,7 @@ CMD ["bash"]
 ## `ros:crystal`
 
 ```console
-$ docker pull ros@sha256:67e0d7529d80681dc0f41b0a28bb437eebae2b5e19799ef6ec5456b6138ae1d5
+$ docker pull ros@sha256:bbe519bf412b63745cc14f587c0cec3816d90b88a24daca010216831125591f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1483,7 +1483,7 @@ RUN apt-get update && apt-get install -y     ros-crystal-ros-base=0.6.1-0*     &
 ## `ros:crystal-ros-base`
 
 ```console
-$ docker pull ros@sha256:67e0d7529d80681dc0f41b0a28bb437eebae2b5e19799ef6ec5456b6138ae1d5
+$ docker pull ros@sha256:bbe519bf412b63745cc14f587c0cec3816d90b88a24daca010216831125591f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1724,7 +1724,7 @@ RUN apt-get update && apt-get install -y     ros-crystal-ros-base=0.6.1-0*     &
 ## `ros:crystal-ros-base-bionic`
 
 ```console
-$ docker pull ros@sha256:67e0d7529d80681dc0f41b0a28bb437eebae2b5e19799ef6ec5456b6138ae1d5
+$ docker pull ros@sha256:bbe519bf412b63745cc14f587c0cec3816d90b88a24daca010216831125591f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1965,7 +1965,7 @@ RUN apt-get update && apt-get install -y     ros-crystal-ros-base=0.6.1-0*     &
 ## `ros:crystal-ros-core`
 
 ```console
-$ docker pull ros@sha256:e3c9bd312183d566ca8c2b732dc72efcb82312e74969f57e24c0e8c07c2f69a2
+$ docker pull ros@sha256:9487542ac5fbfe9c36c2961dbcde91f71125902cca3ea6ef62d3461715ce54bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2194,7 +2194,7 @@ CMD ["bash"]
 ## `ros:crystal-ros-core-bionic`
 
 ```console
-$ docker pull ros@sha256:e3c9bd312183d566ca8c2b732dc72efcb82312e74969f57e24c0e8c07c2f69a2
+$ docker pull ros@sha256:9487542ac5fbfe9c36c2961dbcde91f71125902cca3ea6ef62d3461715ce54bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2423,7 +2423,7 @@ CMD ["bash"]
 ## `ros:indigo`
 
 ```console
-$ docker pull ros@sha256:2c805e5ca217ca21c82c90203e282cbd2e4d9afa4bb3605718943a6bd91e9bfc
+$ docker pull ros@sha256:4ad81a68c1fe4a0df20accbf5a81c8ce9b967c41743dad3a669e908dd60869d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2640,7 +2640,7 @@ RUN apt-get update && apt-get install -y     ros-indigo-ros-base=1.1.6-0*     &&
 ## `ros:indigo-perception`
 
 ```console
-$ docker pull ros@sha256:e8ed71bf055e0e64a0951de7ec3793036d6739baaf0baaebe797eb43088ade80
+$ docker pull ros@sha256:a0804a0b9c14c6cbe922b4d2ec09a13b21149ca2791279d5112b6740958a8346
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2869,7 +2869,7 @@ RUN apt-get update && apt-get install -y     ros-indigo-perception=1.1.6-0*     
 ## `ros:indigo-perception-trusty`
 
 ```console
-$ docker pull ros@sha256:e8ed71bf055e0e64a0951de7ec3793036d6739baaf0baaebe797eb43088ade80
+$ docker pull ros@sha256:a0804a0b9c14c6cbe922b4d2ec09a13b21149ca2791279d5112b6740958a8346
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3098,7 +3098,7 @@ RUN apt-get update && apt-get install -y     ros-indigo-perception=1.1.6-0*     
 ## `ros:indigo-robot`
 
 ```console
-$ docker pull ros@sha256:0e1ad653f4e20b462c3efa49281d34201559d748a920c645a8422c09b9150188
+$ docker pull ros@sha256:172476500d5b2a8cca88a69a7aa846bd85fa16326eef24e3fc7eb50a9ee41950
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3327,7 +3327,7 @@ RUN apt-get update && apt-get install -y     ros-indigo-robot=1.1.6-0*     && rm
 ## `ros:indigo-robot-trusty`
 
 ```console
-$ docker pull ros@sha256:0e1ad653f4e20b462c3efa49281d34201559d748a920c645a8422c09b9150188
+$ docker pull ros@sha256:172476500d5b2a8cca88a69a7aa846bd85fa16326eef24e3fc7eb50a9ee41950
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3556,7 +3556,7 @@ RUN apt-get update && apt-get install -y     ros-indigo-robot=1.1.6-0*     && rm
 ## `ros:indigo-ros-base`
 
 ```console
-$ docker pull ros@sha256:2c805e5ca217ca21c82c90203e282cbd2e4d9afa4bb3605718943a6bd91e9bfc
+$ docker pull ros@sha256:4ad81a68c1fe4a0df20accbf5a81c8ce9b967c41743dad3a669e908dd60869d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3773,7 +3773,7 @@ RUN apt-get update && apt-get install -y     ros-indigo-ros-base=1.1.6-0*     &&
 ## `ros:indigo-ros-base-trusty`
 
 ```console
-$ docker pull ros@sha256:2c805e5ca217ca21c82c90203e282cbd2e4d9afa4bb3605718943a6bd91e9bfc
+$ docker pull ros@sha256:4ad81a68c1fe4a0df20accbf5a81c8ce9b967c41743dad3a669e908dd60869d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3990,7 +3990,7 @@ RUN apt-get update && apt-get install -y     ros-indigo-ros-base=1.1.6-0*     &&
 ## `ros:indigo-ros-core`
 
 ```console
-$ docker pull ros@sha256:dd5c3d837b31c4cb150184a9846d0d1eb304954ddc15dc37abae58a7451951a4
+$ docker pull ros@sha256:375f2f012bdf0233221e43f06689889b086f9a4986c038554524231a32500d92
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4195,7 +4195,7 @@ CMD ["bash"]
 ## `ros:indigo-ros-core-trusty`
 
 ```console
-$ docker pull ros@sha256:dd5c3d837b31c4cb150184a9846d0d1eb304954ddc15dc37abae58a7451951a4
+$ docker pull ros@sha256:375f2f012bdf0233221e43f06689889b086f9a4986c038554524231a32500d92
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4400,7 +4400,7 @@ CMD ["bash"]
 ## `ros:kinetic`
 
 ```console
-$ docker pull ros@sha256:d89d5d8ff735822133ce919115fca0c1ba5dbf902b265bfbbc2a18ba4191271a
+$ docker pull ros@sha256:f355807e17eadfa37192cee09cfa00faa7c7bd7ae460c4048cf6abf15601a522
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4721,7 +4721,7 @@ RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.2-0*     &
 ## `ros:kinetic-perception`
 
 ```console
-$ docker pull ros@sha256:a4c62bc285c785c87e0fe5476d294a34b08155e3dc7f8e9449fc315895a15aec
+$ docker pull ros@sha256:b53d550ac52b883a58bfb155c63e17bf6c70ac035a03696e92a0dd2f11c901fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5060,7 +5060,7 @@ RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.2-0*    
 ## `ros:kinetic-perception-xenial`
 
 ```console
-$ docker pull ros@sha256:a4c62bc285c785c87e0fe5476d294a34b08155e3dc7f8e9449fc315895a15aec
+$ docker pull ros@sha256:b53d550ac52b883a58bfb155c63e17bf6c70ac035a03696e92a0dd2f11c901fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5399,7 +5399,7 @@ RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.2-0*    
 ## `ros:kinetic-robot`
 
 ```console
-$ docker pull ros@sha256:5088b556862fb20fc20096b14db5f9250fff4bcec5f4cbb87f0801255e69e95e
+$ docker pull ros@sha256:3af2ce803f35a7a65666c8abd01905982e64fef632c87e80c7ac11a1d4a85219
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5738,7 +5738,7 @@ RUN apt-get update && apt-get install -y     ros-kinetic-robot=1.3.2-0*     && r
 ## `ros:kinetic-robot-xenial`
 
 ```console
-$ docker pull ros@sha256:5088b556862fb20fc20096b14db5f9250fff4bcec5f4cbb87f0801255e69e95e
+$ docker pull ros@sha256:3af2ce803f35a7a65666c8abd01905982e64fef632c87e80c7ac11a1d4a85219
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6077,7 +6077,7 @@ RUN apt-get update && apt-get install -y     ros-kinetic-robot=1.3.2-0*     && r
 ## `ros:kinetic-ros-base`
 
 ```console
-$ docker pull ros@sha256:d89d5d8ff735822133ce919115fca0c1ba5dbf902b265bfbbc2a18ba4191271a
+$ docker pull ros@sha256:f355807e17eadfa37192cee09cfa00faa7c7bd7ae460c4048cf6abf15601a522
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6398,7 +6398,7 @@ RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.2-0*     &
 ## `ros:kinetic-ros-base-xenial`
 
 ```console
-$ docker pull ros@sha256:d89d5d8ff735822133ce919115fca0c1ba5dbf902b265bfbbc2a18ba4191271a
+$ docker pull ros@sha256:f355807e17eadfa37192cee09cfa00faa7c7bd7ae460c4048cf6abf15601a522
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6719,7 +6719,7 @@ RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.2-0*     &
 ## `ros:kinetic-ros-core`
 
 ```console
-$ docker pull ros@sha256:2472d8df105bd5cacf0864bebb12a0796af4d0dcf94c7e7e23cebbefe111a462
+$ docker pull ros@sha256:af76b039e32f14d5ff03176f2e335a357d09defc78bfd096701be2903eb1dfb9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7022,7 +7022,7 @@ CMD ["bash"]
 ## `ros:kinetic-ros-core-xenial`
 
 ```console
-$ docker pull ros@sha256:2472d8df105bd5cacf0864bebb12a0796af4d0dcf94c7e7e23cebbefe111a462
+$ docker pull ros@sha256:af76b039e32f14d5ff03176f2e335a357d09defc78bfd096701be2903eb1dfb9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7325,7 +7325,7 @@ CMD ["bash"]
 ## `ros:latest`
 
 ```console
-$ docker pull ros@sha256:1fd644d53aa29bbbe72ed80a1472db7cc7aef47509f6e9965f4e69a274257850
+$ docker pull ros@sha256:e1b49387e2d078792c20fad21f13d738134d73b9bec7e2cead689d3b98a20117
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7664,7 +7664,7 @@ RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.1-0*     &
 ## `ros:lunar`
 
 ```console
-$ docker pull ros@sha256:c49d937b35fc512cc087ac6f5a2cc60bc98e94f20ac7c38b4fbe764d40362215
+$ docker pull ros@sha256:825ddcf8e1ee29b088c4db7124860873499674a2c4c6c32534d5b6822255a185
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7985,7 +7985,7 @@ RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.2-0*     && 
 ## `ros:lunar-perception`
 
 ```console
-$ docker pull ros@sha256:9dd6b6938c216151b635e60227410a012f4a88525b905923b6ad799c9df7238b
+$ docker pull ros@sha256:017110740648371ed9153ccc7cd32285b0d9969614a4810deba8e81b9353acea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8324,7 +8324,7 @@ RUN apt-get update && apt-get install -y     ros-lunar-perception=1.3.2-0*     &
 ## `ros:lunar-perception-stretch`
 
 ```console
-$ docker pull ros@sha256:c211062262fd6d72b1f1628b0eed9d89c69c5da2114de5cc2721babb68b37c97
+$ docker pull ros@sha256:35586a92a408743d55703298fbad2b52254f4fee352cc2d8694530340b03455d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8517,7 +8517,7 @@ RUN apt-get update && apt-get install -y     ros-lunar-perception=1.3.2-0*     &
 ## `ros:lunar-perception-xenial`
 
 ```console
-$ docker pull ros@sha256:9dd6b6938c216151b635e60227410a012f4a88525b905923b6ad799c9df7238b
+$ docker pull ros@sha256:017110740648371ed9153ccc7cd32285b0d9969614a4810deba8e81b9353acea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8856,7 +8856,7 @@ RUN apt-get update && apt-get install -y     ros-lunar-perception=1.3.2-0*     &
 ## `ros:lunar-robot`
 
 ```console
-$ docker pull ros@sha256:24c79391315bc1951794dfab4770a2d2e7fef3098a0f89f2c8b447f314c2e1dc
+$ docker pull ros@sha256:58f97aa6f14bf93118dea5eb06a0990d36754f8db2e4a9de62b4d1cae337baf6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9195,7 +9195,7 @@ RUN apt-get update && apt-get install -y     ros-lunar-robot=1.3.2-0*     && rm 
 ## `ros:lunar-robot-stretch`
 
 ```console
-$ docker pull ros@sha256:c51818294b3689dff94b709d0f6d30af3426eea65989941aa67487b7e08d11a1
+$ docker pull ros@sha256:2496075f91f26924230a6b45bc080dd342b8caf808923c580140c84a6d3b718a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9388,7 +9388,7 @@ RUN apt-get update && apt-get install -y     ros-lunar-robot=1.3.2-0*     && rm 
 ## `ros:lunar-robot-xenial`
 
 ```console
-$ docker pull ros@sha256:24c79391315bc1951794dfab4770a2d2e7fef3098a0f89f2c8b447f314c2e1dc
+$ docker pull ros@sha256:58f97aa6f14bf93118dea5eb06a0990d36754f8db2e4a9de62b4d1cae337baf6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9727,7 +9727,7 @@ RUN apt-get update && apt-get install -y     ros-lunar-robot=1.3.2-0*     && rm 
 ## `ros:lunar-ros-base`
 
 ```console
-$ docker pull ros@sha256:c49d937b35fc512cc087ac6f5a2cc60bc98e94f20ac7c38b4fbe764d40362215
+$ docker pull ros@sha256:825ddcf8e1ee29b088c4db7124860873499674a2c4c6c32534d5b6822255a185
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10048,7 +10048,7 @@ RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.2-0*     && 
 ## `ros:lunar-ros-base-stretch`
 
 ```console
-$ docker pull ros@sha256:1a8b57fc3b0284f69edb457231e54229dda8b0a56fee15d611265da60f8693d5
+$ docker pull ros@sha256:0f684fc8d8ee84be9966a3bce2d66cb2ca47f83657196d71cf469cec847fdaa9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10229,7 +10229,7 @@ RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.2-0*     && 
 ## `ros:lunar-ros-base-xenial`
 
 ```console
-$ docker pull ros@sha256:c49d937b35fc512cc087ac6f5a2cc60bc98e94f20ac7c38b4fbe764d40362215
+$ docker pull ros@sha256:825ddcf8e1ee29b088c4db7124860873499674a2c4c6c32534d5b6822255a185
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10550,7 +10550,7 @@ RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.2-0*     && 
 ## `ros:lunar-ros-core`
 
 ```console
-$ docker pull ros@sha256:4c09335d5efeb25a1b721d3815446f4cd6f6787e34c98c9d36336b0d703b2227
+$ docker pull ros@sha256:3f0b27ba080105094ed16694dd4847717ae7b664de4cd35eb7022e0ab9ca24e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10853,7 +10853,7 @@ CMD ["bash"]
 ## `ros:lunar-ros-core-stretch`
 
 ```console
-$ docker pull ros@sha256:977da8c0e06ab6131a76a9472e817a0dc2efceeac3eec3afeecaa68d13af3807
+$ docker pull ros@sha256:956483afa68eeea6d382f9e656e2a8e2f6d2d8a95b69c56cdeff0d2a73293f7f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11022,7 +11022,7 @@ CMD ["bash"]
 ## `ros:lunar-ros-core-xenial`
 
 ```console
-$ docker pull ros@sha256:4c09335d5efeb25a1b721d3815446f4cd6f6787e34c98c9d36336b0d703b2227
+$ docker pull ros@sha256:3f0b27ba080105094ed16694dd4847717ae7b664de4cd35eb7022e0ab9ca24e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11325,7 +11325,7 @@ CMD ["bash"]
 ## `ros:melodic`
 
 ```console
-$ docker pull ros@sha256:1fd644d53aa29bbbe72ed80a1472db7cc7aef47509f6e9965f4e69a274257850
+$ docker pull ros@sha256:e1b49387e2d078792c20fad21f13d738134d73b9bec7e2cead689d3b98a20117
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11664,7 +11664,7 @@ RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.1-0*     &
 ## `ros:melodic-perception`
 
 ```console
-$ docker pull ros@sha256:f3d717d895ebae831d6166bc53077b6e3fb90480eabb3f3152173180d0637e0a
+$ docker pull ros@sha256:b05b829ad6e7448f2258a58c8ea2d0db4b66bee595570619c7526136be925e57
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12021,7 +12021,7 @@ RUN apt-get update && apt-get install -y     ros-melodic-perception=1.4.1-0*    
 ## `ros:melodic-perception-bionic`
 
 ```console
-$ docker pull ros@sha256:f3d717d895ebae831d6166bc53077b6e3fb90480eabb3f3152173180d0637e0a
+$ docker pull ros@sha256:b05b829ad6e7448f2258a58c8ea2d0db4b66bee595570619c7526136be925e57
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12378,7 +12378,7 @@ RUN apt-get update && apt-get install -y     ros-melodic-perception=1.4.1-0*    
 ## `ros:melodic-perception-stretch`
 
 ```console
-$ docker pull ros@sha256:09ef36028dda40bf487933f22460283d591a8bb01b54fdadfc901769d9c92339
+$ docker pull ros@sha256:9b10e6c315b528e9373158934a1a054d688c24a3ebe91f258d458a58564fbbfa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12571,7 +12571,7 @@ RUN apt-get update && apt-get install -y     ros-melodic-perception=1.4.1-0*    
 ## `ros:melodic-robot`
 
 ```console
-$ docker pull ros@sha256:4912702534914f0cd17edaa8710c281029210bc2bc3ccdca19245709b5422d1c
+$ docker pull ros@sha256:b786a44b827341366984846a74b6b0355cf5e0234e063fa706a571754423fdc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12928,7 +12928,7 @@ RUN apt-get update && apt-get install -y     ros-melodic-robot=1.4.1-0*     && r
 ## `ros:melodic-robot-bionic`
 
 ```console
-$ docker pull ros@sha256:4912702534914f0cd17edaa8710c281029210bc2bc3ccdca19245709b5422d1c
+$ docker pull ros@sha256:b786a44b827341366984846a74b6b0355cf5e0234e063fa706a571754423fdc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13285,7 +13285,7 @@ RUN apt-get update && apt-get install -y     ros-melodic-robot=1.4.1-0*     && r
 ## `ros:melodic-robot-stretch`
 
 ```console
-$ docker pull ros@sha256:7c1a508d22ce78b40ad49c7563975564765af3ef4cac02224360ba5ee7961e1d
+$ docker pull ros@sha256:1b6a1495080861bd47e7f66609d3ca0da6ee4db98b4399f19619d238dee12985
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13478,7 +13478,7 @@ RUN apt-get update && apt-get install -y     ros-melodic-robot=1.4.1-0*     && r
 ## `ros:melodic-ros-base`
 
 ```console
-$ docker pull ros@sha256:1fd644d53aa29bbbe72ed80a1472db7cc7aef47509f6e9965f4e69a274257850
+$ docker pull ros@sha256:e1b49387e2d078792c20fad21f13d738134d73b9bec7e2cead689d3b98a20117
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13817,7 +13817,7 @@ RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.1-0*     &
 ## `ros:melodic-ros-base-bionic`
 
 ```console
-$ docker pull ros@sha256:1fd644d53aa29bbbe72ed80a1472db7cc7aef47509f6e9965f4e69a274257850
+$ docker pull ros@sha256:e1b49387e2d078792c20fad21f13d738134d73b9bec7e2cead689d3b98a20117
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14156,7 +14156,7 @@ RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.1-0*     &
 ## `ros:melodic-ros-base-stretch`
 
 ```console
-$ docker pull ros@sha256:17ad81b612596f1b8fb9cb2ef46bb1e3ec2510e91261bf251d0c6dadf73f9b5b
+$ docker pull ros@sha256:0150fa2f03710dd3169e62b83217dd9f09144d537f674590c90cf521879bb553
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14337,7 +14337,7 @@ RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.1-0*     &
 ## `ros:melodic-ros-core`
 
 ```console
-$ docker pull ros@sha256:c929470016b917dd8ac9eda16745b2331b1c81c0993fa7cc3c3138e0207c1981
+$ docker pull ros@sha256:b945dea16db7ce996e1d8ad7e17a1173296446474d05893ba496e565546dc5f0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14658,7 +14658,7 @@ CMD ["bash"]
 ## `ros:melodic-ros-core-bionic`
 
 ```console
-$ docker pull ros@sha256:c929470016b917dd8ac9eda16745b2331b1c81c0993fa7cc3c3138e0207c1981
+$ docker pull ros@sha256:b945dea16db7ce996e1d8ad7e17a1173296446474d05893ba496e565546dc5f0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14979,7 +14979,7 @@ CMD ["bash"]
 ## `ros:melodic-ros-core-stretch`
 
 ```console
-$ docker pull ros@sha256:d4b3de4eed08af508ac4a18dc3ec59174f3c874002379508711805f77e199e2a
+$ docker pull ros@sha256:c3fcc27ae5441c88ed248143e6be24a3029cac378bf825648b4b74702d67bccc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

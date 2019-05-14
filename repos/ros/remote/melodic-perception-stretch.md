@@ -1,7 +1,7 @@
 ## `ros:melodic-perception-stretch`
 
 ```console
-$ docker pull ros@sha256:09ef36028dda40bf487933f22460283d591a8bb01b54fdadfc901769d9c92339
+$ docker pull ros@sha256:9b10e6c315b528e9373158934a1a054d688c24a3ebe91f258d458a58564fbbfa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

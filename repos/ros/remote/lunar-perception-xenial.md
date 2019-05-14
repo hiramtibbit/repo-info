@@ -1,7 +1,7 @@
 ## `ros:lunar-perception-xenial`
 
 ```console
-$ docker pull ros@sha256:9dd6b6938c216151b635e60227410a012f4a88525b905923b6ad799c9df7238b
+$ docker pull ros@sha256:017110740648371ed9153ccc7cd32285b0d9969614a4810deba8e81b9353acea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

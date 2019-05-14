@@ -1,7 +1,7 @@
 ## `ros:crystal-ros-base-bionic`
 
 ```console
-$ docker pull ros@sha256:67e0d7529d80681dc0f41b0a28bb437eebae2b5e19799ef6ec5456b6138ae1d5
+$ docker pull ros@sha256:bbe519bf412b63745cc14f587c0cec3816d90b88a24daca010216831125591f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

@@ -1,7 +1,7 @@
 ## `ros:bouncy-ros-core`
 
 ```console
-$ docker pull ros@sha256:8a08b6d44ed1864b2fa046749fa71bd4b399e281affaa750550471a20319370f
+$ docker pull ros@sha256:520fae59c3969206d5248bdbf3a26e2d7e8e415731655f43e2ee3be95e5e8d4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

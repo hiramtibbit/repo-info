@@ -1,7 +1,7 @@
 ## `ros:melodic-ros-base-stretch`
 
 ```console
-$ docker pull ros@sha256:17ad81b612596f1b8fb9cb2ef46bb1e3ec2510e91261bf251d0c6dadf73f9b5b
+$ docker pull ros@sha256:0150fa2f03710dd3169e62b83217dd9f09144d537f674590c90cf521879bb553
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

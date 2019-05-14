@@ -1,7 +1,7 @@
 ## `ros:melodic-robot-stretch`
 
 ```console
-$ docker pull ros@sha256:7c1a508d22ce78b40ad49c7563975564765af3ef4cac02224360ba5ee7961e1d
+$ docker pull ros@sha256:1b6a1495080861bd47e7f66609d3ca0da6ee4db98b4399f19619d238dee12985
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

@@ -1,7 +1,7 @@
 ## `ros:indigo-robot`
 
 ```console
-$ docker pull ros@sha256:0e1ad653f4e20b462c3efa49281d34201559d748a920c645a8422c09b9150188
+$ docker pull ros@sha256:172476500d5b2a8cca88a69a7aa846bd85fa16326eef24e3fc7eb50a9ee41950
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

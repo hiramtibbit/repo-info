@@ -1,7 +1,7 @@
 ## `ros:kinetic`
 
 ```console
-$ docker pull ros@sha256:d89d5d8ff735822133ce919115fca0c1ba5dbf902b265bfbbc2a18ba4191271a
+$ docker pull ros@sha256:f355807e17eadfa37192cee09cfa00faa7c7bd7ae460c4048cf6abf15601a522
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

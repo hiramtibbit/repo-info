@@ -1,7 +1,7 @@
 ## `ros:bouncy-ros-base-bionic`
 
 ```console
-$ docker pull ros@sha256:163406e94aea2794e3fd8dc26094d5ba0a6782702792c85c61fff2a9ac485239
+$ docker pull ros@sha256:5a132a58db84aba141e086786b7e55a7e87fc590ef03fe26ac73368856be65d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

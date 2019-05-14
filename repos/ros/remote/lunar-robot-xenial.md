@@ -1,7 +1,7 @@
 ## `ros:lunar-robot-xenial`
 
 ```console
-$ docker pull ros@sha256:24c79391315bc1951794dfab4770a2d2e7fef3098a0f89f2c8b447f314c2e1dc
+$ docker pull ros@sha256:58f97aa6f14bf93118dea5eb06a0990d36754f8db2e4a9de62b4d1cae337baf6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

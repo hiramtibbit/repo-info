@@ -1,7 +1,7 @@
 ## `ros:kinetic-robot-xenial`
 
 ```console
-$ docker pull ros@sha256:5088b556862fb20fc20096b14db5f9250fff4bcec5f4cbb87f0801255e69e95e
+$ docker pull ros@sha256:3af2ce803f35a7a65666c8abd01905982e64fef632c87e80c7ac11a1d4a85219
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

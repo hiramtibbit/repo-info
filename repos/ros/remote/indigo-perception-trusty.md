@@ -1,7 +1,7 @@
 ## `ros:indigo-perception-trusty`
 
 ```console
-$ docker pull ros@sha256:e8ed71bf055e0e64a0951de7ec3793036d6739baaf0baaebe797eb43088ade80
+$ docker pull ros@sha256:a0804a0b9c14c6cbe922b4d2ec09a13b21149ca2791279d5112b6740958a8346
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

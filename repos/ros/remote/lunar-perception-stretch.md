@@ -1,7 +1,7 @@
 ## `ros:lunar-perception-stretch`
 
 ```console
-$ docker pull ros@sha256:c211062262fd6d72b1f1628b0eed9d89c69c5da2114de5cc2721babb68b37c97
+$ docker pull ros@sha256:35586a92a408743d55703298fbad2b52254f4fee352cc2d8694530340b03455d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

@@ -1,7 +1,7 @@
 ## `ros:melodic-robot-bionic`
 
 ```console
-$ docker pull ros@sha256:4912702534914f0cd17edaa8710c281029210bc2bc3ccdca19245709b5422d1c
+$ docker pull ros@sha256:b786a44b827341366984846a74b6b0355cf5e0234e063fa706a571754423fdc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
