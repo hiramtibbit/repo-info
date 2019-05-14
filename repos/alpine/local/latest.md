@@ -1,9 +1,9 @@
-# `alpine:3.9.3`
+# `alpine:3.9.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cdf98d1859c1beb33ec70507249d34bacf888d59c24df3204057f9a6c758dddb`
-- Created: `2019-04-09T23:20:18.391201481Z`
+- Image ID: `sha256:055936d3920576da37aa9bc460d70c5f212028bda1c08c0879aedf03d7a66ea1`
+- Created: `2019-05-11T00:07:03.510395965Z`
 - Virtual Size: ~ 5.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`

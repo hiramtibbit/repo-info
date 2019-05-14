@@ -1,9 +1,9 @@
-# `alpine:20190408`
+# `alpine:20190508`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3e8d7a5561f04987c8cf4e25f8138f60889ba1a0e5ec2b2e7469be88e237695b`
-- Created: `2019-04-09T23:20:00.726573147Z`
+- Image ID: `sha256:43cffc6f84a4a299bfe5e1482ad01bee362415a09d96b979a270e381104bbd5a`
+- Created: `2019-05-11T00:06:57.782454109Z`
 - Virtual Size: ~ 5.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -67,16 +67,16 @@ GPL2
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.30.1-r0 description:
+busybox-1.30.1-r1 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.30.1-r0 webpage:
-http://busybox.net
+busybox-1.30.1-r1 webpage:
+https://busybox.net/
 
-busybox-1.30.1-r0 installed size:
+busybox-1.30.1-r1 installed size:
 942080
 
-busybox-1.30.1-r0 license:
+busybox-1.30.1-r1 license:
 GPL-2.0
 
 ```
@@ -152,16 +152,16 @@ OpenSSL
 ### `apk` package: `libtls-standalone`
 
 ```console
-libtls-standalone-2.7.4-r6 description:
+libtls-standalone-2.9.1-r0 description:
 libtls extricated from libressl sources
 
-libtls-standalone-2.7.4-r6 webpage:
-http://www.libressl.org/
+libtls-standalone-2.9.1-r0 webpage:
+https://www.libressl.org/
 
-libtls-standalone-2.7.4-r6 installed size:
+libtls-standalone-2.9.1-r0 installed size:
 110592
 
-libtls-standalone-2.7.4-r6 license:
+libtls-standalone-2.9.1-r0 license:
 ISC
 
 ```
@@ -169,16 +169,16 @@ ISC
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.21-r2 description:
+musl-1.1.22-r0 description:
 the musl c library (libc) implementation
 
-musl-1.1.21-r2 webpage:
+musl-1.1.22-r0 webpage:
 http://www.musl-libc.org/
 
-musl-1.1.21-r2 installed size:
+musl-1.1.22-r0 installed size:
 598016
 
-musl-1.1.21-r2 license:
+musl-1.1.22-r0 license:
 MIT
 
 ```
@@ -186,16 +186,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.1.21-r2 description:
+musl-utils-1.1.22-r0 description:
 the musl c library (libc) implementation
 
-musl-utils-1.1.21-r2 webpage:
+musl-utils-1.1.22-r0 webpage:
 http://www.musl-libc.org/
 
-musl-utils-1.1.21-r2 installed size:
+musl-utils-1.1.22-r0 installed size:
 143360
 
-musl-utils-1.1.21-r2 license:
+musl-utils-1.1.22-r0 license:
 MIT BSD GPL2+
 
 ```
@@ -220,16 +220,16 @@ GPL-2.0
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.30.1-r0 description:
+ssl_client-1.30.1-r1 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.30.1-r0 webpage:
-http://busybox.net
+ssl_client-1.30.1-r1 webpage:
+https://busybox.net/
 
-ssl_client-1.30.1-r0 installed size:
+ssl_client-1.30.1-r1 installed size:
 28672
 
-ssl_client-1.30.1-r0 license:
+ssl_client-1.30.1-r1 license:
 GPL-2.0
 
 ```
