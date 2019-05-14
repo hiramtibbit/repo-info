@@ -13,7 +13,7 @@
 ## `odoo:10`
 
 ```console
-$ docker pull odoo@sha256:1c1b827b9f1e27a1b4f882b0b0dd12e0917158dc807b052e42aeba5ea314cdc9
+$ docker pull odoo@sha256:18b04936554094ced3fdab1c7d3b635aed8f17ce62eae63f416c54ec1cc61f61
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -115,7 +115,7 @@ CMD ["odoo"]
 ## `odoo:10.0`
 
 ```console
-$ docker pull odoo@sha256:1c1b827b9f1e27a1b4f882b0b0dd12e0917158dc807b052e42aeba5ea314cdc9
+$ docker pull odoo@sha256:18b04936554094ced3fdab1c7d3b635aed8f17ce62eae63f416c54ec1cc61f61
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -217,7 +217,7 @@ CMD ["odoo"]
 ## `odoo:11`
 
 ```console
-$ docker pull odoo@sha256:4d06ac2e995302c25183c5d89c2228651b8db0206f6c729f46af91ef126ac074
+$ docker pull odoo@sha256:d2de4ae5dcce9b923d3299c00152d7e81bd4fe53fa4def96a5bfecd69a2fe73f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -418,7 +418,7 @@ CMD ["odoo"]
 ## `odoo:11.0`
 
 ```console
-$ docker pull odoo@sha256:4d06ac2e995302c25183c5d89c2228651b8db0206f6c729f46af91ef126ac074
+$ docker pull odoo@sha256:d2de4ae5dcce9b923d3299c00152d7e81bd4fe53fa4def96a5bfecd69a2fe73f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -619,7 +619,7 @@ CMD ["odoo"]
 ## `odoo:12`
 
 ```console
-$ docker pull odoo@sha256:0ab3df4d7ff15d25234748043d3818dddcc9711010f22562bf42a445611f752b
+$ docker pull odoo@sha256:117b2b93049b15b3a29878ac8098374de0f78aa7db36eb4c20407f4a75c9cd2a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -826,7 +826,7 @@ CMD ["odoo"]
 ## `odoo:12.0`
 
 ```console
-$ docker pull odoo@sha256:0ab3df4d7ff15d25234748043d3818dddcc9711010f22562bf42a445611f752b
+$ docker pull odoo@sha256:117b2b93049b15b3a29878ac8098374de0f78aa7db36eb4c20407f4a75c9cd2a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1033,7 +1033,7 @@ CMD ["odoo"]
 ## `odoo:latest`
 
 ```console
-$ docker pull odoo@sha256:0ab3df4d7ff15d25234748043d3818dddcc9711010f22562bf42a445611f752b
+$ docker pull odoo@sha256:117b2b93049b15b3a29878ac8098374de0f78aa7db36eb4c20407f4a75c9cd2a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
