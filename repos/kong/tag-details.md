@@ -45,7 +45,7 @@
 ## `kong:0.11`
 
 ```console
-$ docker pull kong@sha256:13832485697b6226c3ad529c50432d345caa80f97a7e19d88b246c7c86ce6bd2
+$ docker pull kong@sha256:62b1e86bc6ab7cf7ea6ccdd24faf06a44134769263d6788d47684b172969cade
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -108,7 +108,7 @@ CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "
 ## `kong:0.11.2`
 
 ```console
-$ docker pull kong@sha256:13832485697b6226c3ad529c50432d345caa80f97a7e19d88b246c7c86ce6bd2
+$ docker pull kong@sha256:62b1e86bc6ab7cf7ea6ccdd24faf06a44134769263d6788d47684b172969cade
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -171,7 +171,7 @@ CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "
 ## `kong:0.11.2-alpine`
 
 ```console
-$ docker pull kong@sha256:cc19965290c2ac64668be55dac645144aad7d8fbf1eb8b0805293e5f7084ab11
+$ docker pull kong@sha256:893e39a9faa49069704771442c9ebb0d6b05d68875c581c1fe2f3acdc22c5ade
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -234,7 +234,7 @@ CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "
 ## `kong:0.11-alpine`
 
 ```console
-$ docker pull kong@sha256:cc19965290c2ac64668be55dac645144aad7d8fbf1eb8b0805293e5f7084ab11
+$ docker pull kong@sha256:893e39a9faa49069704771442c9ebb0d6b05d68875c581c1fe2f3acdc22c5ade
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -297,7 +297,7 @@ CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "
 ## `kong:0.12`
 
 ```console
-$ docker pull kong@sha256:b9b75d92345ae50d45d0983a38f342fd8a14006f3c53d81018d12eb9dee94551
+$ docker pull kong@sha256:26c65ae282bde2dfc2097f7339c15b212e71b6e913b6fbb6a5c59ba5c5d525aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -360,7 +360,7 @@ CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "
 ## `kong:0.12.3`
 
 ```console
-$ docker pull kong@sha256:b9b75d92345ae50d45d0983a38f342fd8a14006f3c53d81018d12eb9dee94551
+$ docker pull kong@sha256:26c65ae282bde2dfc2097f7339c15b212e71b6e913b6fbb6a5c59ba5c5d525aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -423,7 +423,7 @@ CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "
 ## `kong:0.12.3-alpine`
 
 ```console
-$ docker pull kong@sha256:ddbd58c2eeff6386a5df65c4f2db3ec8a5c508bfbb5dc1c843c3fdabcbed0480
+$ docker pull kong@sha256:e6d259951526683cf75737469b6856989404f26d8e2bc4d1e37bb3d74905cedf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -486,7 +486,7 @@ CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "
 ## `kong:0.12.3-centos`
 
 ```console
-$ docker pull kong@sha256:b9b75d92345ae50d45d0983a38f342fd8a14006f3c53d81018d12eb9dee94551
+$ docker pull kong@sha256:26c65ae282bde2dfc2097f7339c15b212e71b6e913b6fbb6a5c59ba5c5d525aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -549,7 +549,7 @@ CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "
 ## `kong:0.12-alpine`
 
 ```console
-$ docker pull kong@sha256:ddbd58c2eeff6386a5df65c4f2db3ec8a5c508bfbb5dc1c843c3fdabcbed0480
+$ docker pull kong@sha256:e6d259951526683cf75737469b6856989404f26d8e2bc4d1e37bb3d74905cedf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -612,7 +612,7 @@ CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "
 ## `kong:0.12-centos`
 
 ```console
-$ docker pull kong@sha256:b9b75d92345ae50d45d0983a38f342fd8a14006f3c53d81018d12eb9dee94551
+$ docker pull kong@sha256:26c65ae282bde2dfc2097f7339c15b212e71b6e913b6fbb6a5c59ba5c5d525aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -675,7 +675,7 @@ CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "
 ## `kong:0.13`
 
 ```console
-$ docker pull kong@sha256:21c04dbe595fcc0d117aba8664a08f1056d356c95908cf58c61f2941af466376
+$ docker pull kong@sha256:69391d3cc48997ed796ef3e96761aeaed206a473f025ea4595c2d28272e1186e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -738,7 +738,7 @@ CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "
 ## `kong:0.13.1`
 
 ```console
-$ docker pull kong@sha256:21c04dbe595fcc0d117aba8664a08f1056d356c95908cf58c61f2941af466376
+$ docker pull kong@sha256:69391d3cc48997ed796ef3e96761aeaed206a473f025ea4595c2d28272e1186e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -801,7 +801,7 @@ CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "
 ## `kong:0.13.1-alpine`
 
 ```console
-$ docker pull kong@sha256:21c04dbe595fcc0d117aba8664a08f1056d356c95908cf58c61f2941af466376
+$ docker pull kong@sha256:69391d3cc48997ed796ef3e96761aeaed206a473f025ea4595c2d28272e1186e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -864,7 +864,7 @@ CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "
 ## `kong:0.13.1-centos`
 
 ```console
-$ docker pull kong@sha256:c67f02f316fa902054ff02ea0580cbb89c910ed115eeac39e003ba98c9ef41df
+$ docker pull kong@sha256:3a2d43963669cbac2f09700e45ba070240038f3b2f8dc72e12c0daa11fb566dc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -927,7 +927,7 @@ CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "
 ## `kong:0.13-alpine`
 
 ```console
-$ docker pull kong@sha256:21c04dbe595fcc0d117aba8664a08f1056d356c95908cf58c61f2941af466376
+$ docker pull kong@sha256:69391d3cc48997ed796ef3e96761aeaed206a473f025ea4595c2d28272e1186e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -990,7 +990,7 @@ CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "
 ## `kong:0.13-centos`
 
 ```console
-$ docker pull kong@sha256:c67f02f316fa902054ff02ea0580cbb89c910ed115eeac39e003ba98c9ef41df
+$ docker pull kong@sha256:3a2d43963669cbac2f09700e45ba070240038f3b2f8dc72e12c0daa11fb566dc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1053,7 +1053,7 @@ CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "
 ## `kong:0.14`
 
 ```console
-$ docker pull kong@sha256:a3ed07b0934defcabc77e1cd65701803f94610e5cb460060814249fbba28362c
+$ docker pull kong@sha256:5ca1f841ec88cc18ac955c0d834f6523847e04f3756ba207ec037be0a1e18161
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1116,7 +1116,7 @@ CMD ["kong" "docker-start"]
 ## `kong:0.14.1`
 
 ```console
-$ docker pull kong@sha256:a3ed07b0934defcabc77e1cd65701803f94610e5cb460060814249fbba28362c
+$ docker pull kong@sha256:5ca1f841ec88cc18ac955c0d834f6523847e04f3756ba207ec037be0a1e18161
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1179,7 +1179,7 @@ CMD ["kong" "docker-start"]
 ## `kong:0.14.1-alpine`
 
 ```console
-$ docker pull kong@sha256:a3ed07b0934defcabc77e1cd65701803f94610e5cb460060814249fbba28362c
+$ docker pull kong@sha256:5ca1f841ec88cc18ac955c0d834f6523847e04f3756ba207ec037be0a1e18161
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1242,7 +1242,7 @@ CMD ["kong" "docker-start"]
 ## `kong:0.14.1-centos`
 
 ```console
-$ docker pull kong@sha256:5ccfc38f2ebda5edb529c256d7d4e10109d4864f436d91e5dd43498d96e3a226
+$ docker pull kong@sha256:439e0ed529c0423ca2d41d6c38e6e3df791265118fb26f54dbf960946183ed2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1305,7 +1305,7 @@ CMD ["kong" "docker-start"]
 ## `kong:0.14-alpine`
 
 ```console
-$ docker pull kong@sha256:a3ed07b0934defcabc77e1cd65701803f94610e5cb460060814249fbba28362c
+$ docker pull kong@sha256:5ca1f841ec88cc18ac955c0d834f6523847e04f3756ba207ec037be0a1e18161
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1368,7 +1368,7 @@ CMD ["kong" "docker-start"]
 ## `kong:0.14-centos`
 
 ```console
-$ docker pull kong@sha256:5ccfc38f2ebda5edb529c256d7d4e10109d4864f436d91e5dd43498d96e3a226
+$ docker pull kong@sha256:439e0ed529c0423ca2d41d6c38e6e3df791265118fb26f54dbf960946183ed2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1431,7 +1431,7 @@ CMD ["kong" "docker-start"]
 ## `kong:0.15`
 
 ```console
-$ docker pull kong@sha256:3b8aceaa99a0e6c9a3721e7cc82731e4b64ff0c42147b8a11e605ae22e4c53c2
+$ docker pull kong@sha256:04e996c95f7cf96dddb94fa51c0a68baa46c7a81c737bc20befe58a439d6d90a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1494,7 +1494,7 @@ CMD ["kong" "docker-start"]
 ## `kong:0.15.0`
 
 ```console
-$ docker pull kong@sha256:3b8aceaa99a0e6c9a3721e7cc82731e4b64ff0c42147b8a11e605ae22e4c53c2
+$ docker pull kong@sha256:04e996c95f7cf96dddb94fa51c0a68baa46c7a81c737bc20befe58a439d6d90a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1557,7 +1557,7 @@ CMD ["kong" "docker-start"]
 ## `kong:0.15.0-alpine`
 
 ```console
-$ docker pull kong@sha256:3b8aceaa99a0e6c9a3721e7cc82731e4b64ff0c42147b8a11e605ae22e4c53c2
+$ docker pull kong@sha256:04e996c95f7cf96dddb94fa51c0a68baa46c7a81c737bc20befe58a439d6d90a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1620,7 +1620,7 @@ CMD ["kong" "docker-start"]
 ## `kong:0.15.0-centos`
 
 ```console
-$ docker pull kong@sha256:8f8227d680a429db4594fe436dae58f347f65c0238e07171713735ec970defb9
+$ docker pull kong@sha256:94e9521909aef4ac82661cd341efb91a66b35ec4d8c040d2de67016a934ac046
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1695,7 +1695,7 @@ CMD ["kong" "docker-start"]
 ## `kong:0.15-alpine`
 
 ```console
-$ docker pull kong@sha256:3b8aceaa99a0e6c9a3721e7cc82731e4b64ff0c42147b8a11e605ae22e4c53c2
+$ docker pull kong@sha256:04e996c95f7cf96dddb94fa51c0a68baa46c7a81c737bc20befe58a439d6d90a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1758,7 +1758,7 @@ CMD ["kong" "docker-start"]
 ## `kong:0.15-centos`
 
 ```console
-$ docker pull kong@sha256:8f8227d680a429db4594fe436dae58f347f65c0238e07171713735ec970defb9
+$ docker pull kong@sha256:94e9521909aef4ac82661cd341efb91a66b35ec4d8c040d2de67016a934ac046
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1833,7 +1833,7 @@ CMD ["kong" "docker-start"]
 ## `kong:1.0`
 
 ```console
-$ docker pull kong@sha256:c0427cf6bb766ad02eda2f1878352ef89c17519d1bab7b4b160ff74f9e0f8d4f
+$ docker pull kong@sha256:9a856ee1beef62e69d511f0fd18a074436ec51d3668863920a9de5db9e3f3491
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1896,7 +1896,7 @@ CMD ["kong" "docker-start"]
 ## `kong:1.0.3`
 
 ```console
-$ docker pull kong@sha256:c0427cf6bb766ad02eda2f1878352ef89c17519d1bab7b4b160ff74f9e0f8d4f
+$ docker pull kong@sha256:9a856ee1beef62e69d511f0fd18a074436ec51d3668863920a9de5db9e3f3491
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1959,7 +1959,7 @@ CMD ["kong" "docker-start"]
 ## `kong:1.0.3-alpine`
 
 ```console
-$ docker pull kong@sha256:c0427cf6bb766ad02eda2f1878352ef89c17519d1bab7b4b160ff74f9e0f8d4f
+$ docker pull kong@sha256:9a856ee1beef62e69d511f0fd18a074436ec51d3668863920a9de5db9e3f3491
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2022,7 +2022,7 @@ CMD ["kong" "docker-start"]
 ## `kong:1.0.3-centos`
 
 ```console
-$ docker pull kong@sha256:f6b29a3fe282ea9b990d37f91d688c14e6b730acec7e2cf345de09d5ea5cd592
+$ docker pull kong@sha256:33e8c2f347e0b6a0e60aa81e298f256b592a906cd43c17799cbcac007176721c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2097,7 +2097,7 @@ CMD ["kong" "docker-start"]
 ## `kong:1.0-centos`
 
 ```console
-$ docker pull kong@sha256:f6b29a3fe282ea9b990d37f91d688c14e6b730acec7e2cf345de09d5ea5cd592
+$ docker pull kong@sha256:33e8c2f347e0b6a0e60aa81e298f256b592a906cd43c17799cbcac007176721c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2172,7 +2172,7 @@ CMD ["kong" "docker-start"]
 ## `kong:1.1`
 
 ```console
-$ docker pull kong@sha256:550eaa94080dec3dd0c369d124a1e5d1e8cc70b10584d230d377eaeddc91d048
+$ docker pull kong@sha256:488c2bfcc390aa8d461494deaf2438839be1090ea52dd12a4395f15391529463
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2235,7 +2235,7 @@ CMD ["kong" "docker-start"]
 ## `kong:1.1.2`
 
 ```console
-$ docker pull kong@sha256:550eaa94080dec3dd0c369d124a1e5d1e8cc70b10584d230d377eaeddc91d048
+$ docker pull kong@sha256:488c2bfcc390aa8d461494deaf2438839be1090ea52dd12a4395f15391529463
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2298,7 +2298,7 @@ CMD ["kong" "docker-start"]
 ## `kong:1.1.2-alpine`
 
 ```console
-$ docker pull kong@sha256:550eaa94080dec3dd0c369d124a1e5d1e8cc70b10584d230d377eaeddc91d048
+$ docker pull kong@sha256:488c2bfcc390aa8d461494deaf2438839be1090ea52dd12a4395f15391529463
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2361,7 +2361,7 @@ CMD ["kong" "docker-start"]
 ## `kong:1.1.2-centos`
 
 ```console
-$ docker pull kong@sha256:9ac9fc21005bb338362bc8079ad5cd8981b89a24898e921dd2dff9757ae42755
+$ docker pull kong@sha256:c79b473005bbe3a94c9e69edbc636cd18ec4b82aee3c352adb49f826bbb43960
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2436,7 +2436,7 @@ CMD ["kong" "docker-start"]
 ## `kong:1.1-centos`
 
 ```console
-$ docker pull kong@sha256:9ac9fc21005bb338362bc8079ad5cd8981b89a24898e921dd2dff9757ae42755
+$ docker pull kong@sha256:c79b473005bbe3a94c9e69edbc636cd18ec4b82aee3c352adb49f826bbb43960
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2511,7 +2511,7 @@ CMD ["kong" "docker-start"]
 ## `kong:latest`
 
 ```console
-$ docker pull kong@sha256:550eaa94080dec3dd0c369d124a1e5d1e8cc70b10584d230d377eaeddc91d048
+$ docker pull kong@sha256:488c2bfcc390aa8d461494deaf2438839be1090ea52dd12a4395f15391529463
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
