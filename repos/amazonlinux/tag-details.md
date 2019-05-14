@@ -18,7 +18,7 @@
 ## `amazonlinux:1`
 
 ```console
-$ docker pull amazonlinux@sha256:6f641aaae094efad1df7a9d120cfa69f6e9c8a38b9ab985b34767138aad801d6
+$ docker pull amazonlinux@sha256:4d7a1c40820c8afd1cae40f6715cc62d0a6de310b208ea0bdff85538a8f0f356
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -54,7 +54,7 @@ CMD ["/bin/bash"]
 ## `amazonlinux:1-with-sources`
 
 ```console
-$ docker pull amazonlinux@sha256:ab0cc66c6e01adb4174851c89e2c09bf2ca5f2e0c03dc436cb386fa230d7c8e2
+$ docker pull amazonlinux@sha256:08cb2ad9f3898a5cc937b5f546d8da4a23fb2e8a04027bbfb8676da9e2d3128e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -96,7 +96,7 @@ RUN mkdir /usr/src/srpm  && curl -o /usr/src/srpm/srpm-bundle.tar.gz "https://am
 ## `amazonlinux:2`
 
 ```console
-$ docker pull amazonlinux@sha256:d4a4328d679534af47c7a765d62a9195eb27f9a95c03213fca0a18f95aa112cd
+$ docker pull amazonlinux@sha256:2a6e194ea0e495b7cb65528a9772e8af113f31c46a140a91a15eaa22fd9e9627
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -159,7 +159,7 @@ CMD ["/bin/bash"]
 ## `amazonlinux:2018.03`
 
 ```console
-$ docker pull amazonlinux@sha256:6f641aaae094efad1df7a9d120cfa69f6e9c8a38b9ab985b34767138aad801d6
+$ docker pull amazonlinux@sha256:4d7a1c40820c8afd1cae40f6715cc62d0a6de310b208ea0bdff85538a8f0f356
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -195,7 +195,7 @@ CMD ["/bin/bash"]
 ## `amazonlinux:2018.03.0.20190212`
 
 ```console
-$ docker pull amazonlinux@sha256:6f641aaae094efad1df7a9d120cfa69f6e9c8a38b9ab985b34767138aad801d6
+$ docker pull amazonlinux@sha256:4d7a1c40820c8afd1cae40f6715cc62d0a6de310b208ea0bdff85538a8f0f356
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -231,7 +231,7 @@ CMD ["/bin/bash"]
 ## `amazonlinux:2018.03.0.20190212-with-sources`
 
 ```console
-$ docker pull amazonlinux@sha256:ab0cc66c6e01adb4174851c89e2c09bf2ca5f2e0c03dc436cb386fa230d7c8e2
+$ docker pull amazonlinux@sha256:08cb2ad9f3898a5cc937b5f546d8da4a23fb2e8a04027bbfb8676da9e2d3128e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -273,7 +273,7 @@ RUN mkdir /usr/src/srpm  && curl -o /usr/src/srpm/srpm-bundle.tar.gz "https://am
 ## `amazonlinux:2018.03-with-sources`
 
 ```console
-$ docker pull amazonlinux@sha256:ab0cc66c6e01adb4174851c89e2c09bf2ca5f2e0c03dc436cb386fa230d7c8e2
+$ docker pull amazonlinux@sha256:08cb2ad9f3898a5cc937b5f546d8da4a23fb2e8a04027bbfb8676da9e2d3128e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -315,7 +315,7 @@ RUN mkdir /usr/src/srpm  && curl -o /usr/src/srpm/srpm-bundle.tar.gz "https://am
 ## `amazonlinux:2.0.20190228`
 
 ```console
-$ docker pull amazonlinux@sha256:d4a4328d679534af47c7a765d62a9195eb27f9a95c03213fca0a18f95aa112cd
+$ docker pull amazonlinux@sha256:2a6e194ea0e495b7cb65528a9772e8af113f31c46a140a91a15eaa22fd9e9627
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -378,7 +378,7 @@ CMD ["/bin/bash"]
 ## `amazonlinux:2.0.20190228-with-sources`
 
 ```console
-$ docker pull amazonlinux@sha256:8262bdbdfb2ef1ffb7ab93956fdccc7566df5815363bec259bf2d83a2ad860ab
+$ docker pull amazonlinux@sha256:351207045f4e159a63350e68c76b355199ef1fd3f270ec96a232eebd5b43e053
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -453,7 +453,7 @@ RUN mkdir /usr/src/srpm  && curl -o /usr/src/srpm/srpm-bundle.tar.gz "https://am
 ## `amazonlinux:2-with-sources`
 
 ```console
-$ docker pull amazonlinux@sha256:8262bdbdfb2ef1ffb7ab93956fdccc7566df5815363bec259bf2d83a2ad860ab
+$ docker pull amazonlinux@sha256:351207045f4e159a63350e68c76b355199ef1fd3f270ec96a232eebd5b43e053
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -528,7 +528,7 @@ RUN mkdir /usr/src/srpm  && curl -o /usr/src/srpm/srpm-bundle.tar.gz "https://am
 ## `amazonlinux:latest`
 
 ```console
-$ docker pull amazonlinux@sha256:d4a4328d679534af47c7a765d62a9195eb27f9a95c03213fca0a18f95aa112cd
+$ docker pull amazonlinux@sha256:2a6e194ea0e495b7cb65528a9772e8af113f31c46a140a91a15eaa22fd9e9627
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -591,7 +591,7 @@ CMD ["/bin/bash"]
 ## `amazonlinux:with-sources`
 
 ```console
-$ docker pull amazonlinux@sha256:8262bdbdfb2ef1ffb7ab93956fdccc7566df5815363bec259bf2d83a2ad860ab
+$ docker pull amazonlinux@sha256:351207045f4e159a63350e68c76b355199ef1fd3f270ec96a232eebd5b43e053
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

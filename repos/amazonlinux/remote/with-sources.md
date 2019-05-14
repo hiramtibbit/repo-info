@@ -1,7 +1,7 @@
 ## `amazonlinux:with-sources`
 
 ```console
-$ docker pull amazonlinux@sha256:8262bdbdfb2ef1ffb7ab93956fdccc7566df5815363bec259bf2d83a2ad860ab
+$ docker pull amazonlinux@sha256:351207045f4e159a63350e68c76b355199ef1fd3f270ec96a232eebd5b43e053
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
