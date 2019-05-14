@@ -1,7 +1,7 @@
 ## `yourls:1-fpm`
 
 ```console
-$ docker pull yourls@sha256:ad7f806e4d35d43fa2dcca3f4bb1af097053a34df4d7f09057f80a5219973239
+$ docker pull yourls@sha256:337a1874d79d3a7eea6eed8c1d8bebc07717cb2578b6da6379714d1055b7ca32
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

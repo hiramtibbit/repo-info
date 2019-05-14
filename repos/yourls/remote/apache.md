@@ -1,7 +1,7 @@
 ## `yourls:apache`
 
 ```console
-$ docker pull yourls@sha256:99880d3e52b373b8738c6c4f0a53e3d72a193ffb22b4f3de4dd0f4e206c83d86
+$ docker pull yourls@sha256:ccd3373857edbaddaae53d6cef462df45738b6f0b9c54f106663ac66e26678d0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
