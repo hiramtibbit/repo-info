@@ -1,7 +1,7 @@
 ## `rabbitmq:3-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:17b92b90a05d4ffa325f0b9aa3da383af0c89cc30ead5962037ee49750cac270
+$ docker pull rabbitmq@sha256:8beee8ac0cad2b3815092ac8ff2cccc13c2da233fbe1c42488b981f1d953f385
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
