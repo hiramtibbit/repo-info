@@ -11,7 +11,7 @@
 ## `eclipse-mosquitto:1.5`
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:6f7d30568f8a7e6b9c6daea5479820682ddfeb3e93f93297bdaf9427f8b54b75
+$ docker pull eclipse-mosquitto@sha256:31db4a10f18f1f0d793084abbd55d4580f6b3758fc73c40f5dd3f396e686663b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -320,7 +320,7 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 ## `eclipse-mosquitto:1.5.8`
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:6f7d30568f8a7e6b9c6daea5479820682ddfeb3e93f93297bdaf9427f8b54b75
+$ docker pull eclipse-mosquitto@sha256:31db4a10f18f1f0d793084abbd55d4580f6b3758fc73c40f5dd3f396e686663b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -629,7 +629,7 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 ## `eclipse-mosquitto:1.6`
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:eb3909d822bc05b6dc5954befacd80a1e9579fd350e817c2d3be53dece135d42
+$ docker pull eclipse-mosquitto@sha256:db39a861d74aab313f4a2c0237b2afb8b146e256ac69e7493f8f0fac8e535fb0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -938,7 +938,7 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 ## `eclipse-mosquitto:1.6.2`
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:eb3909d822bc05b6dc5954befacd80a1e9579fd350e817c2d3be53dece135d42
+$ docker pull eclipse-mosquitto@sha256:db39a861d74aab313f4a2c0237b2afb8b146e256ac69e7493f8f0fac8e535fb0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1247,7 +1247,7 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 ## `eclipse-mosquitto:latest`
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:eb3909d822bc05b6dc5954befacd80a1e9579fd350e817c2d3be53dece135d42
+$ docker pull eclipse-mosquitto@sha256:db39a861d74aab313f4a2c0237b2afb8b146e256ac69e7493f8f0fac8e535fb0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
