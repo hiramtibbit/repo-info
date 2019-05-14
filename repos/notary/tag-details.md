@@ -10,7 +10,7 @@
 ## `notary:server`
 
 ```console
-$ docker pull notary@sha256:69505509862e4de7986086eca67fb8b7c65d913f5e768349fd13a42b574d8d4b
+$ docker pull notary@sha256:94d5a8bf827563335ca3ba4f1c4dfadc42a9bdb08b32197d2f1fc208feba5278
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -493,7 +493,7 @@ CMD ["notary-server" "--help"]
 ## `notary:server-0.6.1-1`
 
 ```console
-$ docker pull notary@sha256:69505509862e4de7986086eca67fb8b7c65d913f5e768349fd13a42b574d8d4b
+$ docker pull notary@sha256:94d5a8bf827563335ca3ba4f1c4dfadc42a9bdb08b32197d2f1fc208feba5278
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -976,7 +976,7 @@ CMD ["notary-server" "--help"]
 ## `notary:signer`
 
 ```console
-$ docker pull notary@sha256:2b699412160ea66eb7b4345a0cac1fba61418cdfe7263142a07ae0156d67c034
+$ docker pull notary@sha256:a5959d752621d74b8cc46b922252a844d4002398e472e3778dc9151f9c0d503a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1471,7 +1471,7 @@ CMD ["notary-signer" "--help"]
 ## `notary:signer-0.6.1-1`
 
 ```console
-$ docker pull notary@sha256:2b699412160ea66eb7b4345a0cac1fba61418cdfe7263142a07ae0156d67c034
+$ docker pull notary@sha256:a5959d752621d74b8cc46b922252a844d4002398e472e3778dc9151f9c0d503a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

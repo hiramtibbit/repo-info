@@ -1,7 +1,7 @@
 ## `notary:server`
 
 ```console
-$ docker pull notary@sha256:69505509862e4de7986086eca67fb8b7c65d913f5e768349fd13a42b574d8d4b
+$ docker pull notary@sha256:94d5a8bf827563335ca3ba4f1c4dfadc42a9bdb08b32197d2f1fc208feba5278
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
