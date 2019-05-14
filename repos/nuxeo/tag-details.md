@@ -21,7 +21,7 @@
 ## `nuxeo:10`
 
 ```console
-$ docker pull nuxeo@sha256:325bc06df994a5c26ddff1e91401e94b9f33b80ae4883e7af843806ec58f7bc2
+$ docker pull nuxeo@sha256:7172f38260e5f56447e45f273f5ab470662a1e001fb67d53d243d511ce13b91d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -336,7 +336,7 @@ USER 1000
 ## `nuxeo:10.10`
 
 ```console
-$ docker pull nuxeo@sha256:325bc06df994a5c26ddff1e91401e94b9f33b80ae4883e7af843806ec58f7bc2
+$ docker pull nuxeo@sha256:7172f38260e5f56447e45f273f5ab470662a1e001fb67d53d243d511ce13b91d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -651,7 +651,7 @@ USER 1000
 ## `nuxeo:7`
 
 ```console
-$ docker pull nuxeo@sha256:52748cac01e4c59736bac9336308961f46ea23bd8c790c7e8ee8e63bfa2939a3
+$ docker pull nuxeo@sha256:bbf101dbf0942a818e84e2e442ab4f6f75901cf026d5ade119b781001d5fd125
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -808,7 +808,7 @@ USER 1000
 ## `nuxeo:7.10`
 
 ```console
-$ docker pull nuxeo@sha256:52748cac01e4c59736bac9336308961f46ea23bd8c790c7e8ee8e63bfa2939a3
+$ docker pull nuxeo@sha256:bbf101dbf0942a818e84e2e442ab4f6f75901cf026d5ade119b781001d5fd125
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -965,7 +965,7 @@ USER 1000
 ## `nuxeo:8`
 
 ```console
-$ docker pull nuxeo@sha256:b53055696fa13a4929fb911fbd97af88a9f1af6555ccdbfad912809e1be5ef09
+$ docker pull nuxeo@sha256:42ae26bcae05c9b35098d8d6e22f85bde9a19fa6b184177ec37a79e5c113816c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1113,7 +1113,7 @@ USER 1000
 ## `nuxeo:8.10`
 
 ```console
-$ docker pull nuxeo@sha256:b53055696fa13a4929fb911fbd97af88a9f1af6555ccdbfad912809e1be5ef09
+$ docker pull nuxeo@sha256:42ae26bcae05c9b35098d8d6e22f85bde9a19fa6b184177ec37a79e5c113816c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1261,7 +1261,7 @@ USER 1000
 ## `nuxeo:9`
 
 ```console
-$ docker pull nuxeo@sha256:ecceb9ff9c5aeb7530810406131708bf6b9f31bf888e67caaf30287b85ef59b8
+$ docker pull nuxeo@sha256:77da3a0b4c55d1fdc52f5572a4b4b7d7d9f51ce298a8ed5718142a739473c54c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1423,7 +1423,7 @@ USER 1000
 ## `nuxeo:9.10`
 
 ```console
-$ docker pull nuxeo@sha256:ecceb9ff9c5aeb7530810406131708bf6b9f31bf888e67caaf30287b85ef59b8
+$ docker pull nuxeo@sha256:77da3a0b4c55d1fdc52f5572a4b4b7d7d9f51ce298a8ed5718142a739473c54c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1585,7 +1585,7 @@ USER 1000
 ## `nuxeo:FT`
 
 ```console
-$ docker pull nuxeo@sha256:325bc06df994a5c26ddff1e91401e94b9f33b80ae4883e7af843806ec58f7bc2
+$ docker pull nuxeo@sha256:7172f38260e5f56447e45f273f5ab470662a1e001fb67d53d243d511ce13b91d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1900,7 +1900,7 @@ USER 1000
 ## `nuxeo:latest`
 
 ```console
-$ docker pull nuxeo@sha256:325bc06df994a5c26ddff1e91401e94b9f33b80ae4883e7af843806ec58f7bc2
+$ docker pull nuxeo@sha256:7172f38260e5f56447e45f273f5ab470662a1e001fb67d53d243d511ce13b91d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2215,7 +2215,7 @@ USER 1000
 ## `nuxeo:LTS`
 
 ```console
-$ docker pull nuxeo@sha256:325bc06df994a5c26ddff1e91401e94b9f33b80ae4883e7af843806ec58f7bc2
+$ docker pull nuxeo@sha256:7172f38260e5f56447e45f273f5ab470662a1e001fb67d53d243d511ce13b91d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2530,7 +2530,7 @@ USER 1000
 ## `nuxeo:LTS-2015`
 
 ```console
-$ docker pull nuxeo@sha256:52748cac01e4c59736bac9336308961f46ea23bd8c790c7e8ee8e63bfa2939a3
+$ docker pull nuxeo@sha256:bbf101dbf0942a818e84e2e442ab4f6f75901cf026d5ade119b781001d5fd125
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2687,7 +2687,7 @@ USER 1000
 ## `nuxeo:LTS-2016`
 
 ```console
-$ docker pull nuxeo@sha256:b53055696fa13a4929fb911fbd97af88a9f1af6555ccdbfad912809e1be5ef09
+$ docker pull nuxeo@sha256:42ae26bcae05c9b35098d8d6e22f85bde9a19fa6b184177ec37a79e5c113816c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2835,7 +2835,7 @@ USER 1000
 ## `nuxeo:LTS-2017`
 
 ```console
-$ docker pull nuxeo@sha256:ecceb9ff9c5aeb7530810406131708bf6b9f31bf888e67caaf30287b85ef59b8
+$ docker pull nuxeo@sha256:77da3a0b4c55d1fdc52f5572a4b4b7d7d9f51ce298a8ed5718142a739473c54c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2997,7 +2997,7 @@ USER 1000
 ## `nuxeo:LTS-2019`
 
 ```console
-$ docker pull nuxeo@sha256:325bc06df994a5c26ddff1e91401e94b9f33b80ae4883e7af843806ec58f7bc2
+$ docker pull nuxeo@sha256:7172f38260e5f56447e45f273f5ab470662a1e001fb67d53d243d511ce13b91d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
