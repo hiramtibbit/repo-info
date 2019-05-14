@@ -16,7 +16,7 @@
 ## `kapacitor:1.4`
 
 ```console
-$ docker pull kapacitor@sha256:380228b318af33e6b283936e9ba2963d379d69408fb12e7c2b20143bb65ee6f8
+$ docker pull kapacitor@sha256:c059b0d89121f4ce7a6eb60ebc4d96aff49e7f0d66952f5ad12fe86188af2080
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -265,7 +265,7 @@ CMD ["kapacitord"]
 ## `kapacitor:1.4.1`
 
 ```console
-$ docker pull kapacitor@sha256:380228b318af33e6b283936e9ba2963d379d69408fb12e7c2b20143bb65ee6f8
+$ docker pull kapacitor@sha256:c059b0d89121f4ce7a6eb60ebc4d96aff49e7f0d66952f5ad12fe86188af2080
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -514,7 +514,7 @@ CMD ["kapacitord"]
 ## `kapacitor:1.4.1-alpine`
 
 ```console
-$ docker pull kapacitor@sha256:62b936f1aa16a793907deca3b3cad0fe3d11bda5803b40372a186ce7774abab9
+$ docker pull kapacitor@sha256:5bb057cd948fbc48cdb27e742373c40c4c81216b77201644af5099818aa7bcdd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -591,7 +591,7 @@ CMD ["kapacitord"]
 ## `kapacitor:1.4-alpine`
 
 ```console
-$ docker pull kapacitor@sha256:62b936f1aa16a793907deca3b3cad0fe3d11bda5803b40372a186ce7774abab9
+$ docker pull kapacitor@sha256:5bb057cd948fbc48cdb27e742373c40c4c81216b77201644af5099818aa7bcdd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -668,7 +668,7 @@ CMD ["kapacitord"]
 ## `kapacitor:1.5`
 
 ```console
-$ docker pull kapacitor@sha256:cfeccbd3dcb2a60203af725f7f6ab567736845622c99014a17c156f6e6729e6e
+$ docker pull kapacitor@sha256:3db666bd84e60d2486fd96e38df5777188a118a78ea81aeaeee5b8e24fb9804b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -917,7 +917,7 @@ CMD ["kapacitord"]
 ## `kapacitor:1.5.2`
 
 ```console
-$ docker pull kapacitor@sha256:cfeccbd3dcb2a60203af725f7f6ab567736845622c99014a17c156f6e6729e6e
+$ docker pull kapacitor@sha256:3db666bd84e60d2486fd96e38df5777188a118a78ea81aeaeee5b8e24fb9804b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1166,7 +1166,7 @@ CMD ["kapacitord"]
 ## `kapacitor:1.5.2-alpine`
 
 ```console
-$ docker pull kapacitor@sha256:fc8780c74f2403ac8da23d1db1ab6335f7bdb951285d8ddf5888ade8c4af3ffb
+$ docker pull kapacitor@sha256:0c28750a60cb0391356a717524030e0b30c4d19c660802fcc0fb21fc3549aaa6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1243,7 +1243,7 @@ CMD ["kapacitord"]
 ## `kapacitor:1.5-alpine`
 
 ```console
-$ docker pull kapacitor@sha256:fc8780c74f2403ac8da23d1db1ab6335f7bdb951285d8ddf5888ade8c4af3ffb
+$ docker pull kapacitor@sha256:0c28750a60cb0391356a717524030e0b30c4d19c660802fcc0fb21fc3549aaa6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1320,7 +1320,7 @@ CMD ["kapacitord"]
 ## `kapacitor:alpine`
 
 ```console
-$ docker pull kapacitor@sha256:fc8780c74f2403ac8da23d1db1ab6335f7bdb951285d8ddf5888ade8c4af3ffb
+$ docker pull kapacitor@sha256:0c28750a60cb0391356a717524030e0b30c4d19c660802fcc0fb21fc3549aaa6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1397,7 +1397,7 @@ CMD ["kapacitord"]
 ## `kapacitor:latest`
 
 ```console
-$ docker pull kapacitor@sha256:cfeccbd3dcb2a60203af725f7f6ab567736845622c99014a17c156f6e6729e6e
+$ docker pull kapacitor@sha256:3db666bd84e60d2486fd96e38df5777188a118a78ea81aeaeee5b8e24fb9804b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
