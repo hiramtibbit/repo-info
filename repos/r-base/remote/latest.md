@@ -1,7 +1,7 @@
 ## `r-base:latest`
 
 ```console
-$ docker pull r-base@sha256:d0e69d45a36a60dfc7fd972f68fcbc154071018c79b7f44c28fe0e6032f94233
+$ docker pull r-base@sha256:302874713b0a8b9d11b5811f9b57b1e4d96c4f03c258a34c5978f14783b2814f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
