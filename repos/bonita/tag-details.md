@@ -11,7 +11,7 @@
 ## `bonita:7.7`
 
 ```console
-$ docker pull bonita@sha256:1fb41f87a953e786c880e2217addd91ecd66982792855484be4b50c02ad916b3
+$ docker pull bonita@sha256:dc11ec3eb6b4b3ab801b92f6714f6b0fa8df6110b49ddd77d86b5d14c1357f82
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -383,7 +383,7 @@ CMD ["/opt/files/startup.sh"]
 ## `bonita:7.7.5`
 
 ```console
-$ docker pull bonita@sha256:1fb41f87a953e786c880e2217addd91ecd66982792855484be4b50c02ad916b3
+$ docker pull bonita@sha256:dc11ec3eb6b4b3ab801b92f6714f6b0fa8df6110b49ddd77d86b5d14c1357f82
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -755,7 +755,7 @@ CMD ["/opt/files/startup.sh"]
 ## `bonita:7.8`
 
 ```console
-$ docker pull bonita@sha256:264cac3cedb9057c32a4b359b0a91dc1a12fbe3750b9979772cc228545e07ec2
+$ docker pull bonita@sha256:65b7b9af9c9060a043d533c175a785fed3f7c5f765c7736e3f03125585fe1243
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1127,7 +1127,7 @@ CMD ["/opt/files/startup.sh"]
 ## `bonita:7.8.4`
 
 ```console
-$ docker pull bonita@sha256:264cac3cedb9057c32a4b359b0a91dc1a12fbe3750b9979772cc228545e07ec2
+$ docker pull bonita@sha256:65b7b9af9c9060a043d533c175a785fed3f7c5f765c7736e3f03125585fe1243
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1499,7 +1499,7 @@ CMD ["/opt/files/startup.sh"]
 ## `bonita:latest`
 
 ```console
-$ docker pull bonita@sha256:264cac3cedb9057c32a4b359b0a91dc1a12fbe3750b9979772cc228545e07ec2
+$ docker pull bonita@sha256:65b7b9af9c9060a043d533c175a785fed3f7c5f765c7736e3f03125585fe1243
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
