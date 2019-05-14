@@ -8,7 +8,7 @@
 ## `kibana:6.7.2`
 
 ```console
-$ docker pull kibana@sha256:a0b028be28b41d195b9d924eb61f86e81b7ef22c06d296d25c2fdec31c0dad59
+$ docker pull kibana@sha256:95c340f98d2e625beee4a6d5dccec18b6c7f05677ab33955654db862e71e2134
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -102,7 +102,7 @@ CMD ["/usr/local/bin/kibana-docker"]
 ## `kibana:7.0.1`
 
 ```console
-$ docker pull kibana@sha256:841dbcc0a7feb4319648a06d43f66e1b4297ad8278f428361a090808591115e5
+$ docker pull kibana@sha256:71f776596244877597fd679b2fa6fb0f1fa9c5b11388199997781d1ce77b73b1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
