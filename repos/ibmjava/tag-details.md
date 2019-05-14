@@ -20,7 +20,7 @@
 ## `ibmjava:8`
 
 ```console
-$ docker pull ibmjava@sha256:5742f35b1c769a05743f3f136f0bf31e4c173cea19ef6d31600f863efca1d3d6
+$ docker pull ibmjava@sha256:06ff057c573ec52ddada943120f7b57afd671f4318fec677291233b40f0c02a5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -281,7 +281,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ## `ibmjava:8-jre`
 
 ```console
-$ docker pull ibmjava@sha256:5742f35b1c769a05743f3f136f0bf31e4c173cea19ef6d31600f863efca1d3d6
+$ docker pull ibmjava@sha256:06ff057c573ec52ddada943120f7b57afd671f4318fec677291233b40f0c02a5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -542,7 +542,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ## `ibmjava:8-jre-alpine`
 
 ```console
-$ docker pull ibmjava@sha256:2d6b1a155f0431bf8dd080123544802dd038b87d9136de7983f8fb94ca7976cf
+$ docker pull ibmjava@sha256:a71cdc3f9d1f365107ed24f0d0a19d139ad1b9be89ca8e82a550056fe258147e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -602,7 +602,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ## `ibmjava:8-sdk`
 
 ```console
-$ docker pull ibmjava@sha256:5c13d4b6be64f0b417facd3d94091e1c3a4162040f285a3bf9802370ce7b9d46
+$ docker pull ibmjava@sha256:9d60921beb688de4148becdd464ca6259111354b08332ec3af76a00c9d9d7787
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -863,7 +863,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/loca
 ## `ibmjava:8-sdk-alpine`
 
 ```console
-$ docker pull ibmjava@sha256:9c7c2e2194268b7c6ad9f416b3c77d94ddcdfc926449f5977b0c2e16ffedd127
+$ docker pull ibmjava@sha256:83c9ef99e183e2f35ec40f3a3643decd49b0df1a0b3ce859c3abf2fc7af63a8e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -923,7 +923,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/loca
 ## `ibmjava:8-sfj`
 
 ```console
-$ docker pull ibmjava@sha256:858aa2ca4235ad763db10e76611b20f689c3f10f7f8954610e016eea4befc82e
+$ docker pull ibmjava@sha256:2906262e7d17880ebf8aa92b7f1ee371adcf5d9d0212fd90775ae3eca13edd67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1184,7 +1184,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ## `ibmjava:8-sfj-alpine`
 
 ```console
-$ docker pull ibmjava@sha256:3da570e307191ff99716b7e8a63cffa309815a0d1f5c4b7634a812e7b9eb0459
+$ docker pull ibmjava@sha256:1780b816fc89897d6ea6293f30576a2db03992fd25c120e6dbc9c56ce0499101
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1244,7 +1244,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ## `ibmjava:jre`
 
 ```console
-$ docker pull ibmjava@sha256:5742f35b1c769a05743f3f136f0bf31e4c173cea19ef6d31600f863efca1d3d6
+$ docker pull ibmjava@sha256:06ff057c573ec52ddada943120f7b57afd671f4318fec677291233b40f0c02a5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1505,7 +1505,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ## `ibmjava:jre-alpine`
 
 ```console
-$ docker pull ibmjava@sha256:2d6b1a155f0431bf8dd080123544802dd038b87d9136de7983f8fb94ca7976cf
+$ docker pull ibmjava@sha256:a71cdc3f9d1f365107ed24f0d0a19d139ad1b9be89ca8e82a550056fe258147e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1565,7 +1565,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ## `ibmjava:latest`
 
 ```console
-$ docker pull ibmjava@sha256:5742f35b1c769a05743f3f136f0bf31e4c173cea19ef6d31600f863efca1d3d6
+$ docker pull ibmjava@sha256:06ff057c573ec52ddada943120f7b57afd671f4318fec677291233b40f0c02a5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1826,7 +1826,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ## `ibmjava:sdk`
 
 ```console
-$ docker pull ibmjava@sha256:5c13d4b6be64f0b417facd3d94091e1c3a4162040f285a3bf9802370ce7b9d46
+$ docker pull ibmjava@sha256:9d60921beb688de4148becdd464ca6259111354b08332ec3af76a00c9d9d7787
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2087,7 +2087,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/loca
 ## `ibmjava:sdk-alpine`
 
 ```console
-$ docker pull ibmjava@sha256:9c7c2e2194268b7c6ad9f416b3c77d94ddcdfc926449f5977b0c2e16ffedd127
+$ docker pull ibmjava@sha256:83c9ef99e183e2f35ec40f3a3643decd49b0df1a0b3ce859c3abf2fc7af63a8e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2147,7 +2147,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/loca
 ## `ibmjava:sfj`
 
 ```console
-$ docker pull ibmjava@sha256:858aa2ca4235ad763db10e76611b20f689c3f10f7f8954610e016eea4befc82e
+$ docker pull ibmjava@sha256:2906262e7d17880ebf8aa92b7f1ee371adcf5d9d0212fd90775ae3eca13edd67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2408,7 +2408,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ## `ibmjava:sfj-alpine`
 
 ```console
-$ docker pull ibmjava@sha256:3da570e307191ff99716b7e8a63cffa309815a0d1f5c4b7634a812e7b9eb0459
+$ docker pull ibmjava@sha256:1780b816fc89897d6ea6293f30576a2db03992fd25c120e6dbc9c56ce0499101
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

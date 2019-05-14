@@ -1,7 +1,7 @@
 ## `ibmjava:8-sdk`
 
 ```console
-$ docker pull ibmjava@sha256:5c13d4b6be64f0b417facd3d94091e1c3a4162040f285a3bf9802370ce7b9d46
+$ docker pull ibmjava@sha256:9d60921beb688de4148becdd464ca6259111354b08332ec3af76a00c9d9d7787
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

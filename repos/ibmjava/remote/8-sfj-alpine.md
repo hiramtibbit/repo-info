@@ -1,7 +1,7 @@
 ## `ibmjava:8-sfj-alpine`
 
 ```console
-$ docker pull ibmjava@sha256:3da570e307191ff99716b7e8a63cffa309815a0d1f5c4b7634a812e7b9eb0459
+$ docker pull ibmjava@sha256:1780b816fc89897d6ea6293f30576a2db03992fd25c120e6dbc9c56ce0499101
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
