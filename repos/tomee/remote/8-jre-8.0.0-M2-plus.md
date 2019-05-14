@@ -1,7 +1,7 @@
 ## `tomee:8-jre-8.0.0-M2-plus`
 
 ```console
-$ docker pull tomee@sha256:8762f47bdf545671ef2afe0dd26c0b5f2f927760b8df20dde9fe760c79681d4d
+$ docker pull tomee@sha256:c2ea217156f1265a6213438c4322539ec50aaf20fd93c7f5ef4637c3adcdccac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

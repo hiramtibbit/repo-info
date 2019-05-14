@@ -25,7 +25,7 @@
 ## `tomee:8-jre-1.7.5-jaxrs`
 
 ```console
-$ docker pull tomee@sha256:fa40a42a3d499f22c5deb5e04db5fee10e1c8f19a0aee885f1cd85b9ddc0bd42
+$ docker pull tomee@sha256:5c9d46f1504961d02ba828700132bb6d6f66b6df7601c9748c05f8f2cc070736
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -727,7 +727,7 @@ CMD ["catalina.sh" "run"]
 ## `tomee:8-jre-1.7.5-plume`
 
 ```console
-$ docker pull tomee@sha256:4cda40cfb14c20950ff4cc43888f38e4254ef1d2a7c59d7cb7fc04508b08a0f8
+$ docker pull tomee@sha256:ee981fcca47e38956c56e9143483f1868f3836ef16e03ec07bef681154460696
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1429,7 +1429,7 @@ CMD ["catalina.sh" "run"]
 ## `tomee:8-jre-1.7.5-plus`
 
 ```console
-$ docker pull tomee@sha256:7ee1c8465e9238ce9c4089552e4073024ff79007a7ae03b992b861801742e9a5
+$ docker pull tomee@sha256:6ac6142ef6fe66c1d177e40f594e1cb23d3633cf0b5443e55a37c75cde858317
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2131,7 +2131,7 @@ CMD ["catalina.sh" "run"]
 ## `tomee:8-jre-1.7.5-webprofile`
 
 ```console
-$ docker pull tomee@sha256:dcb36062680470c6829b816c7b9fd79a16ac5114cace60eb76a1d4c9bf7e2d1f
+$ docker pull tomee@sha256:7319b7d35fde5ddd3bef7be69705a9ef8a0bd6bf0a37c2909f2b41dc3959e133
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2833,7 +2833,7 @@ CMD ["catalina.sh" "run"]
 ## `tomee:8-jre-7.0.4-plume`
 
 ```console
-$ docker pull tomee@sha256:038795fef0cac4be5d1321fcb689d9eabcdc7298b9d7e368510e14a33e88d670
+$ docker pull tomee@sha256:ea42cb4b655c22dfba2ede1c3955b53f946d41a6daad28081f2c4caf70df48c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3535,7 +3535,7 @@ CMD ["catalina.sh" "run"]
 ## `tomee:8-jre-7.0.4-plus`
 
 ```console
-$ docker pull tomee@sha256:cff218932f3aa83366e47b37f428fbdc24bca3ca9b2723ac578dc0d0f8d25c53
+$ docker pull tomee@sha256:66b66c64db22ab8958470e28745b74c6e459403f0370a5aba61184c542f595cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4237,7 +4237,7 @@ CMD ["catalina.sh" "run"]
 ## `tomee:8-jre-7.0.4-webprofile`
 
 ```console
-$ docker pull tomee@sha256:569bf39342cd73d99008beb5c8d91ae4e7dcdf4936c4ed9b9acc2c01556666ab
+$ docker pull tomee@sha256:a74bf9a0b00121d2823bd307d26702a16b1b5f46f301913a1ba7a0c48f6df898
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4939,7 +4939,7 @@ CMD ["catalina.sh" "run"]
 ## `tomee:8-jre-7.0.5-plume`
 
 ```console
-$ docker pull tomee@sha256:4186c7ee4d8e0aff91ef6ffecfb8d3a0786c4b50f385ecf3f7406b3463f0139f
+$ docker pull tomee@sha256:5a1d5188e03f96b0df783934b91ffb8a485ebc23e207690fc9d44c0d6531ad8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5641,7 +5641,7 @@ CMD ["catalina.sh" "run"]
 ## `tomee:8-jre-7.0.5-plus`
 
 ```console
-$ docker pull tomee@sha256:0d46c994b9f772dfc6e9cdd3b0072c26a4932e0821ec131104a4b365f4ed28b7
+$ docker pull tomee@sha256:b7536bb894838a88187575178a32c86f21be92b4f57c730c288c1f850b2ef28d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6343,7 +6343,7 @@ CMD ["catalina.sh" "run"]
 ## `tomee:8-jre-7.0.5-webprofile`
 
 ```console
-$ docker pull tomee@sha256:6ef069b5e4923aef9d7416c0b69ec8077fdd667d69ca7181dbd8587e40749a79
+$ docker pull tomee@sha256:c646094249786b37e3d959a96007f28de600dc6530be66b296db69cc805311b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7045,7 +7045,7 @@ CMD ["catalina.sh" "run"]
 ## `tomee:8-jre-7.1.0-microprofile`
 
 ```console
-$ docker pull tomee@sha256:2b9c8f6008417d083e3b1ba52c0769d0239000bbd19e2c5a715e098f6eae61ac
+$ docker pull tomee@sha256:b9497ebbda886773e0387ced1bd8a11ac45639d00f15d4ce0b269e07a4a687d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7747,7 +7747,7 @@ CMD ["catalina.sh" "run"]
 ## `tomee:8-jre-7.1.0-plume`
 
 ```console
-$ docker pull tomee@sha256:170cdb6e5a90bd22456907c785c60b9af4e2789bee4376a86fbaec09d4516e13
+$ docker pull tomee@sha256:0823a8c64f1105b2c16e8e3dd16e0d290bc73230ca2c6ba7c9cc421334087830
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8449,7 +8449,7 @@ CMD ["catalina.sh" "run"]
 ## `tomee:8-jre-7.1.0-plus`
 
 ```console
-$ docker pull tomee@sha256:508972d10f71c7dabca41dfa5742732edcd1262565857b18be12f1f65e6d7a03
+$ docker pull tomee@sha256:f5b2d9ed1712257d475983027f0b234dec83013d2252fef9cbc10e8c36c4df93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9151,7 +9151,7 @@ CMD ["catalina.sh" "run"]
 ## `tomee:8-jre-7.1.0-webprofile`
 
 ```console
-$ docker pull tomee@sha256:bb60b02ea85e19fde3dbf444caf5ab39875b4a3fb32568cc7435aaaa462bca0b
+$ docker pull tomee@sha256:ace8b64744ed2384a2708cc43e98cdb2702ac9b4cedf4427f00fd86d357f5370
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9853,7 +9853,7 @@ CMD ["catalina.sh" "run"]
 ## `tomee:8-jre-8.0.0-M2-microprofile`
 
 ```console
-$ docker pull tomee@sha256:5687c0c750f5ae190079a21f76f9d0aacc10996ffbd4c5190d3b8fc0e6eafce2
+$ docker pull tomee@sha256:801d048c2d7d45a7ad7ab6601659d1da2b9a74116dc50ac2a5eb44b299760964
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10555,7 +10555,7 @@ CMD ["catalina.sh" "run"]
 ## `tomee:8-jre-8.0.0-M2-plume`
 
 ```console
-$ docker pull tomee@sha256:2fc13006fa8d2b5948eb52d88ccf77cca03e8fb544b9bd3039341c3cb02bb621
+$ docker pull tomee@sha256:36cf4a278a7794985ce4780c17342d64bfa87ce8643d86ccd0f3cc861e16fa57
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11257,7 +11257,7 @@ CMD ["catalina.sh" "run"]
 ## `tomee:8-jre-8.0.0-M2-plus`
 
 ```console
-$ docker pull tomee@sha256:8762f47bdf545671ef2afe0dd26c0b5f2f927760b8df20dde9fe760c79681d4d
+$ docker pull tomee@sha256:c2ea217156f1265a6213438c4322539ec50aaf20fd93c7f5ef4637c3adcdccac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11959,7 +11959,7 @@ CMD ["catalina.sh" "run"]
 ## `tomee:8-jre-8.0.0-M2-webprofile`
 
 ```console
-$ docker pull tomee@sha256:df3473a8eb324165c78e7bf99b689da9db225d5217c81303e242ec77599b137a
+$ docker pull tomee@sha256:71e2eaba0ca7a30c5a7287885b81baa604d3595576585d8fd03190d9c3cbd303
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12661,7 +12661,7 @@ CMD ["catalina.sh" "run"]
 ## `tomee:latest`
 
 ```console
-$ docker pull tomee@sha256:df3473a8eb324165c78e7bf99b689da9db225d5217c81303e242ec77599b137a
+$ docker pull tomee@sha256:71e2eaba0ca7a30c5a7287885b81baa604d3595576585d8fd03190d9c3cbd303
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
