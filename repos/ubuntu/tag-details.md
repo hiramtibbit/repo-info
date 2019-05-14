@@ -23,7 +23,7 @@
 ## `ubuntu:14.04`
 
 ```console
-$ docker pull ubuntu@sha256:b04dc5313878a8b74808d104a510e50505c79c9c11725bfdaf286f7cedb9295c
+$ docker pull ubuntu@sha256:41291fdea86cfd65df839fec6185a2529cd79725e7612d7c0f22a5a8802a1e03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -257,7 +257,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:16.04`
 
 ```console
-$ docker pull ubuntu@sha256:6aa6090ee9c1a525cbad1bb6c2ec9278914db754a3a3c5dc9e7d8daa5ee40dce
+$ docker pull ubuntu@sha256:599b12ff9760b68095db78eaf1260e53c8839ca5ff590fb4a3d2f79c8d459b2b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -536,7 +536,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:18.04`
 
 ```console
-$ docker pull ubuntu@sha256:d26d529daa4d8567167181d9d569f2a85da3c5ecaf539cace2c6223355d69981
+$ docker pull ubuntu@sha256:70fc21e832af32eeec9b0161a805c08f6dddf64d341748379de9a527c01b6ca1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -815,7 +815,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:18.10`
 
 ```console
-$ docker pull ubuntu@sha256:f7c9bfca653799156a4b900e7f5b84bea56fbc53aa563bd1b8ea4abb74826c21
+$ docker pull ubuntu@sha256:d490a1967857dd77e84d4171ad72b569807a6a83407d88aa2afd311b96814ece
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1094,7 +1094,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:19.04`
 
 ```console
-$ docker pull ubuntu@sha256:4319d5df5619d6e2e4c94158eb9929bf2f59ce217aa8fed72fb6e1b57757c859
+$ docker pull ubuntu@sha256:57e5924bd2d688577bf13e71ca5c395defe74db0b6f0b16647d7569a5ca40791
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1373,7 +1373,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:bionic`
 
 ```console
-$ docker pull ubuntu@sha256:d26d529daa4d8567167181d9d569f2a85da3c5ecaf539cace2c6223355d69981
+$ docker pull ubuntu@sha256:70fc21e832af32eeec9b0161a805c08f6dddf64d341748379de9a527c01b6ca1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1652,7 +1652,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:bionic-20190424`
 
 ```console
-$ docker pull ubuntu@sha256:d26d529daa4d8567167181d9d569f2a85da3c5ecaf539cace2c6223355d69981
+$ docker pull ubuntu@sha256:70fc21e832af32eeec9b0161a805c08f6dddf64d341748379de9a527c01b6ca1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1931,7 +1931,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:cosmic`
 
 ```console
-$ docker pull ubuntu@sha256:f7c9bfca653799156a4b900e7f5b84bea56fbc53aa563bd1b8ea4abb74826c21
+$ docker pull ubuntu@sha256:d490a1967857dd77e84d4171ad72b569807a6a83407d88aa2afd311b96814ece
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2210,7 +2210,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:cosmic-20190418`
 
 ```console
-$ docker pull ubuntu@sha256:f7c9bfca653799156a4b900e7f5b84bea56fbc53aa563bd1b8ea4abb74826c21
+$ docker pull ubuntu@sha256:d490a1967857dd77e84d4171ad72b569807a6a83407d88aa2afd311b96814ece
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2489,7 +2489,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:disco`
 
 ```console
-$ docker pull ubuntu@sha256:4319d5df5619d6e2e4c94158eb9929bf2f59ce217aa8fed72fb6e1b57757c859
+$ docker pull ubuntu@sha256:57e5924bd2d688577bf13e71ca5c395defe74db0b6f0b16647d7569a5ca40791
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2768,7 +2768,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:disco-20190423`
 
 ```console
-$ docker pull ubuntu@sha256:4319d5df5619d6e2e4c94158eb9929bf2f59ce217aa8fed72fb6e1b57757c859
+$ docker pull ubuntu@sha256:57e5924bd2d688577bf13e71ca5c395defe74db0b6f0b16647d7569a5ca40791
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3047,7 +3047,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:latest`
 
 ```console
-$ docker pull ubuntu@sha256:d26d529daa4d8567167181d9d569f2a85da3c5ecaf539cace2c6223355d69981
+$ docker pull ubuntu@sha256:70fc21e832af32eeec9b0161a805c08f6dddf64d341748379de9a527c01b6ca1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3326,7 +3326,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:rolling`
 
 ```console
-$ docker pull ubuntu@sha256:4319d5df5619d6e2e4c94158eb9929bf2f59ce217aa8fed72fb6e1b57757c859
+$ docker pull ubuntu@sha256:57e5924bd2d688577bf13e71ca5c395defe74db0b6f0b16647d7569a5ca40791
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3605,7 +3605,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:trusty`
 
 ```console
-$ docker pull ubuntu@sha256:b04dc5313878a8b74808d104a510e50505c79c9c11725bfdaf286f7cedb9295c
+$ docker pull ubuntu@sha256:41291fdea86cfd65df839fec6185a2529cd79725e7612d7c0f22a5a8802a1e03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3839,7 +3839,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:trusty-20190425`
 
 ```console
-$ docker pull ubuntu@sha256:b04dc5313878a8b74808d104a510e50505c79c9c11725bfdaf286f7cedb9295c
+$ docker pull ubuntu@sha256:41291fdea86cfd65df839fec6185a2529cd79725e7612d7c0f22a5a8802a1e03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4073,7 +4073,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:xenial`
 
 ```console
-$ docker pull ubuntu@sha256:6aa6090ee9c1a525cbad1bb6c2ec9278914db754a3a3c5dc9e7d8daa5ee40dce
+$ docker pull ubuntu@sha256:599b12ff9760b68095db78eaf1260e53c8839ca5ff590fb4a3d2f79c8d459b2b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4352,7 +4352,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:xenial-20190425`
 
 ```console
-$ docker pull ubuntu@sha256:6aa6090ee9c1a525cbad1bb6c2ec9278914db754a3a3c5dc9e7d8daa5ee40dce
+$ docker pull ubuntu@sha256:599b12ff9760b68095db78eaf1260e53c8839ca5ff590fb4a3d2f79c8d459b2b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
