@@ -1,7 +1,7 @@
 ## `opensuse:leap`
 
 ```console
-$ docker pull opensuse@sha256:81451bd26b48a2521db953e6376aebb5e0f55d429627017ba728219d48112f40
+$ docker pull opensuse@sha256:f4cbb6addd48e2b74e29f3a754aabc10f247d2ac14387a2ee9780a4f0967766a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
