@@ -17,7 +17,7 @@
 ## `mysql:5`
 
 ```console
-$ docker pull mysql@sha256:204f5c77fe589c202e2ebc8b6b7dcdc442d67c07168916a302ede26b3e9ab168
+$ docker pull mysql@sha256:196fe3e00d68b2417a8cf13482bdab1fcc2b32cf7c7575d0906c700688b352b4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -128,7 +128,7 @@ CMD ["mysqld"]
 ## `mysql:5.5`
 
 ```console
-$ docker pull mysql@sha256:e3a7b2dd5ea78bcdf80ee2846ff5c60dbdd5b07b138a7e0abdeaa3c0f958bbdb
+$ docker pull mysql@sha256:12da85ab88aedfdf39455872fb044f607c32fdc233cd59f1d26769fbf439b045
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -241,7 +241,7 @@ CMD ["mysqld"]
 ## `mysql:5.5.62`
 
 ```console
-$ docker pull mysql@sha256:e3a7b2dd5ea78bcdf80ee2846ff5c60dbdd5b07b138a7e0abdeaa3c0f958bbdb
+$ docker pull mysql@sha256:12da85ab88aedfdf39455872fb044f607c32fdc233cd59f1d26769fbf439b045
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -354,7 +354,7 @@ CMD ["mysqld"]
 ## `mysql:5.6`
 
 ```console
-$ docker pull mysql@sha256:8547945d0e59b747c768e9d2bec3629ee2699837705457c3350709219b8c6ff4
+$ docker pull mysql@sha256:31b964a5d6a498fd7bae1c89e3c913b365c449f70706b075c65dbea405ff6db2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -465,7 +465,7 @@ CMD ["mysqld"]
 ## `mysql:5.6.44`
 
 ```console
-$ docker pull mysql@sha256:8547945d0e59b747c768e9d2bec3629ee2699837705457c3350709219b8c6ff4
+$ docker pull mysql@sha256:31b964a5d6a498fd7bae1c89e3c913b365c449f70706b075c65dbea405ff6db2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -576,7 +576,7 @@ CMD ["mysqld"]
 ## `mysql:5.7`
 
 ```console
-$ docker pull mysql@sha256:204f5c77fe589c202e2ebc8b6b7dcdc442d67c07168916a302ede26b3e9ab168
+$ docker pull mysql@sha256:196fe3e00d68b2417a8cf13482bdab1fcc2b32cf7c7575d0906c700688b352b4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -687,7 +687,7 @@ CMD ["mysqld"]
 ## `mysql:5.7.26`
 
 ```console
-$ docker pull mysql@sha256:204f5c77fe589c202e2ebc8b6b7dcdc442d67c07168916a302ede26b3e9ab168
+$ docker pull mysql@sha256:196fe3e00d68b2417a8cf13482bdab1fcc2b32cf7c7575d0906c700688b352b4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -798,7 +798,7 @@ CMD ["mysqld"]
 ## `mysql:8`
 
 ```console
-$ docker pull mysql@sha256:95a1d2fd105e3d635a7f7b0f282831a3ce4960bdf0d10085ca3c6a1c538988f9
+$ docker pull mysql@sha256:711df5b93720801b3a727864aba18c2ae46c07f9fe33d5ce9c1f5cbc2c035101
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -915,7 +915,7 @@ CMD ["mysqld"]
 ## `mysql:8.0`
 
 ```console
-$ docker pull mysql@sha256:95a1d2fd105e3d635a7f7b0f282831a3ce4960bdf0d10085ca3c6a1c538988f9
+$ docker pull mysql@sha256:711df5b93720801b3a727864aba18c2ae46c07f9fe33d5ce9c1f5cbc2c035101
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1032,7 +1032,7 @@ CMD ["mysqld"]
 ## `mysql:8.0.16`
 
 ```console
-$ docker pull mysql@sha256:95a1d2fd105e3d635a7f7b0f282831a3ce4960bdf0d10085ca3c6a1c538988f9
+$ docker pull mysql@sha256:711df5b93720801b3a727864aba18c2ae46c07f9fe33d5ce9c1f5cbc2c035101
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1149,7 +1149,7 @@ CMD ["mysqld"]
 ## `mysql:latest`
 
 ```console
-$ docker pull mysql@sha256:95a1d2fd105e3d635a7f7b0f282831a3ce4960bdf0d10085ca3c6a1c538988f9
+$ docker pull mysql@sha256:711df5b93720801b3a727864aba18c2ae46c07f9fe33d5ce9c1f5cbc2c035101
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
