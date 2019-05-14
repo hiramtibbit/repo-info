@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9453d0f6871faca4b847f813693c6b72ea98f81c5bac684add57b35bd84c5b49`
-- Created: `2019-04-25T23:23:11.854263278Z`
-- Virtual Size: ~ 21.08 Mb  
+- Image ID: `sha256:df212fdbf175389ec86aa924d6fc36f3fcc2800d590a7950bc4c0b881f9e8e82`
+- Created: `2019-05-11T02:23:17.862856602Z`
+- Virtual Size: ~ 21.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -173,16 +173,16 @@ ISC
 ### `apk` package: `lua5.3-libs`
 
 ```console
-lua5.3-libs-5.3.5-r1 description:
+lua5.3-libs-5.3.5-r2 description:
 Lua dynamic library runtime
 
-lua5.3-libs-5.3.5-r1 webpage:
+lua5.3-libs-5.3.5-r2 webpage:
 https://www.lua.org/
 
-lua5.3-libs-5.3.5-r1 installed size:
+lua5.3-libs-5.3.5-r2 installed size:
 221184
 
-lua5.3-libs-5.3.5-r1 license:
+lua5.3-libs-5.3.5-r2 license:
 MIT
 
 ```
