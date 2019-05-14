@@ -1,7 +1,7 @@
 ## `eggdrop:stable`
 
 ```console
-$ docker pull eggdrop@sha256:f139577b24c7b58b4fded1099574c654d671ee32bf0722dd3d550b8447e98e11
+$ docker pull eggdrop@sha256:ca7d75fd4592063fff276a9b83ed6cd78a4138d3186b2af7d77471c423ed61ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

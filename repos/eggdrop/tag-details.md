@@ -11,7 +11,7 @@
 ## `eggdrop:1.8`
 
 ```console
-$ docker pull eggdrop@sha256:f139577b24c7b58b4fded1099574c654d671ee32bf0722dd3d550b8447e98e11
+$ docker pull eggdrop@sha256:ca7d75fd4592063fff276a9b83ed6cd78a4138d3186b2af7d77471c423ed61ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -106,7 +106,7 @@ CMD ["eggdrop.conf"]
 ## `eggdrop:1.8.4`
 
 ```console
-$ docker pull eggdrop@sha256:f139577b24c7b58b4fded1099574c654d671ee32bf0722dd3d550b8447e98e11
+$ docker pull eggdrop@sha256:ca7d75fd4592063fff276a9b83ed6cd78a4138d3186b2af7d77471c423ed61ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -201,7 +201,7 @@ CMD ["eggdrop.conf"]
 ## `eggdrop:develop`
 
 ```console
-$ docker pull eggdrop@sha256:3e83df816c914f190809721597bdf8a85eb8bebf870f88923ed9c7875b355fb0
+$ docker pull eggdrop@sha256:fd9424a9b670e73ea1932b118ce1a5d71bb9c3c37fabe5c9f8e05c6b8ef4738a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -480,7 +480,7 @@ CMD ["eggdrop.conf"]
 ## `eggdrop:latest`
 
 ```console
-$ docker pull eggdrop@sha256:f139577b24c7b58b4fded1099574c654d671ee32bf0722dd3d550b8447e98e11
+$ docker pull eggdrop@sha256:ca7d75fd4592063fff276a9b83ed6cd78a4138d3186b2af7d77471c423ed61ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -575,7 +575,7 @@ CMD ["eggdrop.conf"]
 ## `eggdrop:stable`
 
 ```console
-$ docker pull eggdrop@sha256:f139577b24c7b58b4fded1099574c654d671ee32bf0722dd3d550b8447e98e11
+$ docker pull eggdrop@sha256:ca7d75fd4592063fff276a9b83ed6cd78a4138d3186b2af7d77471c423ed61ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
