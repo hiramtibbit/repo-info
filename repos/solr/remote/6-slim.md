@@ -1,7 +1,7 @@
 ## `solr:6-slim`
 
 ```console
-$ docker pull solr@sha256:e980fe6e4e44413f46672296a774b1e2b42965a403c5a6c54548d81d3b9e3b72
+$ docker pull solr@sha256:86647c44991ebc306fdfed2646aa40d37b70d57b47e3fd33858f678c1c0263af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
