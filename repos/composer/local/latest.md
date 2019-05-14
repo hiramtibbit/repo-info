@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7590e34d037bd8b6c830e55effb9aff7861d68498a55dbb0dd3d06f602cdf835`
-- Created: `2019-05-04T06:13:19.034507405Z`
-- Virtual Size: ~ 160.30 Mb  
+- Image ID: `sha256:b03f47d34ad4178f8c0b6035bbdc42525887bfbd0aceb948643a505c472101c5`
+- Created: `2019-05-11T05:10:15.196636919Z`
+- Virtual Size: ~ 160.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/bin/sh","/docker-entrypoint.sh"]`
@@ -609,16 +609,16 @@ GPL-3.0-or-later
 ### `apk` package: `mercurial`
 
 ```console
-mercurial-4.8.2-r0 description:
+mercurial-4.9.1-r0 description:
 Scalable distributed SCM tool
 
-mercurial-4.8.2-r0 webpage:
+mercurial-4.9.1-r0 webpage:
 https://www.mercurial-scm.org
 
-mercurial-4.8.2-r0 installed size:
-16220160
+mercurial-4.9.1-r0 installed size:
+16994304
 
-mercurial-4.8.2-r0 license:
+mercurial-4.9.1-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -881,16 +881,16 @@ BSD-3-Clause
 ### `apk` package: `python2`
 
 ```console
-python2-2.7.15-r3 description:
+python2-2.7.16-r1 description:
 A high-level scripting language
 
-python2-2.7.15-r3 webpage:
+python2-2.7.16-r1 webpage:
 https://www.python.org
 
-python2-2.7.15-r3 installed size:
-39890944
+python2-2.7.16-r1 installed size:
+39825408
 
-python2-2.7.15-r3 license:
+python2-2.7.16-r1 license:
 custom
 
 ```
