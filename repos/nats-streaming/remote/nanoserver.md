@@ -1,7 +1,7 @@
 ## `nats-streaming:nanoserver`
 
 ```console
-$ docker pull nats-streaming@sha256:671f8a0dbead88552d74c2692a96b403478b9886a9600c65cb23ab78e2f72528
+$ docker pull nats-streaming@sha256:bb804148a38bd6b5e272ddc5f3c072aaf95438ff52aa62c3adb10ba6582030ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

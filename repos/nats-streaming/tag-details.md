@@ -14,7 +14,7 @@
 ## `nats-streaming:0.14.1`
 
 ```console
-$ docker pull nats-streaming@sha256:c47c0dda2a218df0a99deb8d0d9ff93cefd5f86bc20aee1ee5525da600b6b5b9
+$ docker pull nats-streaming@sha256:7fd164a5da4025ae97f07731e3a15025ab87062928e9379fc247e32cf55a66d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -212,7 +212,7 @@ RUN cmd /S /C #(nop)  CMD ["nats-streaming-server" "-m" "8222"]
 ## `nats-streaming:0.14.1-linux`
 
 ```console
-$ docker pull nats-streaming@sha256:c5a796ba3078129ee08f3f9b02d44f841bb65b534155eefd5ca58676abf062c0
+$ docker pull nats-streaming@sha256:9618676a58799613dc518b1f452a06d18ba1509c3ad16b59b1c62bb4a25f1dde
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -349,7 +349,7 @@ CMD ["-m" "8222"]
 ## `nats-streaming:0.14.1-nanoserver`
 
 ```console
-$ docker pull nats-streaming@sha256:671f8a0dbead88552d74c2692a96b403478b9886a9600c65cb23ab78e2f72528
+$ docker pull nats-streaming@sha256:bb804148a38bd6b5e272ddc5f3c072aaf95438ff52aa62c3adb10ba6582030ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -419,7 +419,7 @@ RUN cmd /S /C #(nop)  CMD ["nats-streaming-server" "-m" "8222"]
 ## `nats-streaming:0.14.1-windowsservercore`
 
 ```console
-$ docker pull nats-streaming@sha256:76772c554cf66c4b83a21a74ad075c1e233fb735a036e71e767f731bf78a3a2f
+$ docker pull nats-streaming@sha256:52b4fe965957a8509154c9d651730a6c6b15b7cc00af28e5790804a90d645a03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -489,7 +489,7 @@ RUN cmd /S /C #(nop)  CMD ["nats-streaming-server" "-m" "8222"]
 ## `nats-streaming:latest`
 
 ```console
-$ docker pull nats-streaming@sha256:c47c0dda2a218df0a99deb8d0d9ff93cefd5f86bc20aee1ee5525da600b6b5b9
+$ docker pull nats-streaming@sha256:7fd164a5da4025ae97f07731e3a15025ab87062928e9379fc247e32cf55a66d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -687,7 +687,7 @@ RUN cmd /S /C #(nop)  CMD ["nats-streaming-server" "-m" "8222"]
 ## `nats-streaming:linux`
 
 ```console
-$ docker pull nats-streaming@sha256:c5a796ba3078129ee08f3f9b02d44f841bb65b534155eefd5ca58676abf062c0
+$ docker pull nats-streaming@sha256:9618676a58799613dc518b1f452a06d18ba1509c3ad16b59b1c62bb4a25f1dde
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -824,7 +824,7 @@ CMD ["-m" "8222"]
 ## `nats-streaming:nanoserver`
 
 ```console
-$ docker pull nats-streaming@sha256:671f8a0dbead88552d74c2692a96b403478b9886a9600c65cb23ab78e2f72528
+$ docker pull nats-streaming@sha256:bb804148a38bd6b5e272ddc5f3c072aaf95438ff52aa62c3adb10ba6582030ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -894,7 +894,7 @@ RUN cmd /S /C #(nop)  CMD ["nats-streaming-server" "-m" "8222"]
 ## `nats-streaming:windowsservercore`
 
 ```console
-$ docker pull nats-streaming@sha256:76772c554cf66c4b83a21a74ad075c1e233fb735a036e71e767f731bf78a3a2f
+$ docker pull nats-streaming@sha256:52b4fe965957a8509154c9d651730a6c6b15b7cc00af28e5790804a90d645a03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
