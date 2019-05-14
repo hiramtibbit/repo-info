@@ -22,7 +22,7 @@
 ## `mono:5`
 
 ```console
-$ docker pull mono@sha256:0d64aff201bd1b24f4e26aac3f11000006e6657b9c031bda8b60d5b7f3ed36a7
+$ docker pull mono@sha256:d0ff7611da2f0ea59779ea6d91363b8d0e39ce6ea01b049fc31bc1d65a8b233a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -313,7 +313,7 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 ## `mono:5.18`
 
 ```console
-$ docker pull mono@sha256:01f091182abc72949592e377ca0ed979b08a43ccf15fd9c8bb4fb9d94c2b0fe9
+$ docker pull mono@sha256:99fd0eed862dfefe5384de9b9ee0edd467bcc109714d13ef75051fc631c32d63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -604,7 +604,7 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 ## `mono:5.18.1`
 
 ```console
-$ docker pull mono@sha256:01f091182abc72949592e377ca0ed979b08a43ccf15fd9c8bb4fb9d94c2b0fe9
+$ docker pull mono@sha256:99fd0eed862dfefe5384de9b9ee0edd467bcc109714d13ef75051fc631c32d63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -895,7 +895,7 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 ## `mono:5.18.1.3`
 
 ```console
-$ docker pull mono@sha256:01f091182abc72949592e377ca0ed979b08a43ccf15fd9c8bb4fb9d94c2b0fe9
+$ docker pull mono@sha256:99fd0eed862dfefe5384de9b9ee0edd467bcc109714d13ef75051fc631c32d63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1186,7 +1186,7 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 ## `mono:5.18.1.3-slim`
 
 ```console
-$ docker pull mono@sha256:2da7218cf8552674d306551340469841f9979b7a1e2006d851091bcd10cd4a04
+$ docker pull mono@sha256:6e7d7ce011d0b83e6f19d95b0e3171be1cb4bdae4499d229aeac019d946f468b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1441,7 +1441,7 @@ RUN echo "deb http://download.mono-project.com/repo/debian stable-stretch/snapsh
 ## `mono:5.18.1-slim`
 
 ```console
-$ docker pull mono@sha256:2da7218cf8552674d306551340469841f9979b7a1e2006d851091bcd10cd4a04
+$ docker pull mono@sha256:6e7d7ce011d0b83e6f19d95b0e3171be1cb4bdae4499d229aeac019d946f468b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1696,7 +1696,7 @@ RUN echo "deb http://download.mono-project.com/repo/debian stable-stretch/snapsh
 ## `mono:5.18-slim`
 
 ```console
-$ docker pull mono@sha256:2da7218cf8552674d306551340469841f9979b7a1e2006d851091bcd10cd4a04
+$ docker pull mono@sha256:6e7d7ce011d0b83e6f19d95b0e3171be1cb4bdae4499d229aeac019d946f468b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1951,7 +1951,7 @@ RUN echo "deb http://download.mono-project.com/repo/debian stable-stretch/snapsh
 ## `mono:5.20`
 
 ```console
-$ docker pull mono@sha256:0d64aff201bd1b24f4e26aac3f11000006e6657b9c031bda8b60d5b7f3ed36a7
+$ docker pull mono@sha256:d0ff7611da2f0ea59779ea6d91363b8d0e39ce6ea01b049fc31bc1d65a8b233a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2242,7 +2242,7 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 ## `mono:5.20.1`
 
 ```console
-$ docker pull mono@sha256:0d64aff201bd1b24f4e26aac3f11000006e6657b9c031bda8b60d5b7f3ed36a7
+$ docker pull mono@sha256:d0ff7611da2f0ea59779ea6d91363b8d0e39ce6ea01b049fc31bc1d65a8b233a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2533,7 +2533,7 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 ## `mono:5.20.1.19`
 
 ```console
-$ docker pull mono@sha256:0d64aff201bd1b24f4e26aac3f11000006e6657b9c031bda8b60d5b7f3ed36a7
+$ docker pull mono@sha256:d0ff7611da2f0ea59779ea6d91363b8d0e39ce6ea01b049fc31bc1d65a8b233a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2824,7 +2824,7 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 ## `mono:5.20.1.19-slim`
 
 ```console
-$ docker pull mono@sha256:73706fc98adaabce87099057589bf0075ea65cc49be559d0cd9d2e6887028a03
+$ docker pull mono@sha256:bcd0bd9e6dfcbe87a59c34678cb53ec01c83e6657b619320eb720f6dcb5e8116
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3079,7 +3079,7 @@ RUN echo "deb http://download.mono-project.com/repo/debian stable-stretch/snapsh
 ## `mono:5.20.1-slim`
 
 ```console
-$ docker pull mono@sha256:73706fc98adaabce87099057589bf0075ea65cc49be559d0cd9d2e6887028a03
+$ docker pull mono@sha256:bcd0bd9e6dfcbe87a59c34678cb53ec01c83e6657b619320eb720f6dcb5e8116
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3334,7 +3334,7 @@ RUN echo "deb http://download.mono-project.com/repo/debian stable-stretch/snapsh
 ## `mono:5.20-slim`
 
 ```console
-$ docker pull mono@sha256:73706fc98adaabce87099057589bf0075ea65cc49be559d0cd9d2e6887028a03
+$ docker pull mono@sha256:bcd0bd9e6dfcbe87a59c34678cb53ec01c83e6657b619320eb720f6dcb5e8116
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3589,7 +3589,7 @@ RUN echo "deb http://download.mono-project.com/repo/debian stable-stretch/snapsh
 ## `mono:5-slim`
 
 ```console
-$ docker pull mono@sha256:73706fc98adaabce87099057589bf0075ea65cc49be559d0cd9d2e6887028a03
+$ docker pull mono@sha256:bcd0bd9e6dfcbe87a59c34678cb53ec01c83e6657b619320eb720f6dcb5e8116
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3844,7 +3844,7 @@ RUN echo "deb http://download.mono-project.com/repo/debian stable-stretch/snapsh
 ## `mono:latest`
 
 ```console
-$ docker pull mono@sha256:0d64aff201bd1b24f4e26aac3f11000006e6657b9c031bda8b60d5b7f3ed36a7
+$ docker pull mono@sha256:d0ff7611da2f0ea59779ea6d91363b8d0e39ce6ea01b049fc31bc1d65a8b233a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4135,7 +4135,7 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 ## `mono:slim`
 
 ```console
-$ docker pull mono@sha256:73706fc98adaabce87099057589bf0075ea65cc49be559d0cd9d2e6887028a03
+$ docker pull mono@sha256:bcd0bd9e6dfcbe87a59c34678cb53ec01c83e6657b619320eb720f6dcb5e8116
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
