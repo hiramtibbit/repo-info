@@ -22,7 +22,7 @@
 ## `rust:1`
 
 ```console
-$ docker pull rust@sha256:e3180bcdfb9f9b81ec44074d1a1279b7948e49fc9d74b8656a91dd79bb457c7f
+$ docker pull rust@sha256:be0df108dc0672b7510b7bc405b1b27b11963d3c8db10146033f18bbd61aa3ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -267,7 +267,7 @@ RUN set -eux;     dpkgArch="$(dpkg --print-architecture)";     case "${dpkgArch#
 ## `rust:1.34`
 
 ```console
-$ docker pull rust@sha256:e3180bcdfb9f9b81ec44074d1a1279b7948e49fc9d74b8656a91dd79bb457c7f
+$ docker pull rust@sha256:be0df108dc0672b7510b7bc405b1b27b11963d3c8db10146033f18bbd61aa3ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -512,7 +512,7 @@ RUN set -eux;     dpkgArch="$(dpkg --print-architecture)";     case "${dpkgArch#
 ## `rust:1.34.1`
 
 ```console
-$ docker pull rust@sha256:e3180bcdfb9f9b81ec44074d1a1279b7948e49fc9d74b8656a91dd79bb457c7f
+$ docker pull rust@sha256:be0df108dc0672b7510b7bc405b1b27b11963d3c8db10146033f18bbd61aa3ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -757,7 +757,7 @@ RUN set -eux;     dpkgArch="$(dpkg --print-architecture)";     case "${dpkgArch#
 ## `rust:1.34.1-slim`
 
 ```console
-$ docker pull rust@sha256:4691d309a1a30c9a3f82925db3fdce1f43ec37bf503f0155e83c926bb06aafdb
+$ docker pull rust@sha256:19e6df3d882ab8312028d331e5d2f650205859b279ed62fdb5848b0e1a8b6071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -906,7 +906,7 @@ RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends
 ## `rust:1.34.1-slim-stretch`
 
 ```console
-$ docker pull rust@sha256:4691d309a1a30c9a3f82925db3fdce1f43ec37bf503f0155e83c926bb06aafdb
+$ docker pull rust@sha256:19e6df3d882ab8312028d331e5d2f650205859b279ed62fdb5848b0e1a8b6071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1055,7 +1055,7 @@ RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends
 ## `rust:1.34.1-stretch`
 
 ```console
-$ docker pull rust@sha256:e3180bcdfb9f9b81ec44074d1a1279b7948e49fc9d74b8656a91dd79bb457c7f
+$ docker pull rust@sha256:be0df108dc0672b7510b7bc405b1b27b11963d3c8db10146033f18bbd61aa3ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1300,7 +1300,7 @@ RUN set -eux;     dpkgArch="$(dpkg --print-architecture)";     case "${dpkgArch#
 ## `rust:1.34-slim`
 
 ```console
-$ docker pull rust@sha256:4691d309a1a30c9a3f82925db3fdce1f43ec37bf503f0155e83c926bb06aafdb
+$ docker pull rust@sha256:19e6df3d882ab8312028d331e5d2f650205859b279ed62fdb5848b0e1a8b6071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1449,7 +1449,7 @@ RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends
 ## `rust:1.34-slim-stretch`
 
 ```console
-$ docker pull rust@sha256:4691d309a1a30c9a3f82925db3fdce1f43ec37bf503f0155e83c926bb06aafdb
+$ docker pull rust@sha256:19e6df3d882ab8312028d331e5d2f650205859b279ed62fdb5848b0e1a8b6071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1598,7 +1598,7 @@ RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends
 ## `rust:1.34-stretch`
 
 ```console
-$ docker pull rust@sha256:e3180bcdfb9f9b81ec44074d1a1279b7948e49fc9d74b8656a91dd79bb457c7f
+$ docker pull rust@sha256:be0df108dc0672b7510b7bc405b1b27b11963d3c8db10146033f18bbd61aa3ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1843,7 +1843,7 @@ RUN set -eux;     dpkgArch="$(dpkg --print-architecture)";     case "${dpkgArch#
 ## `rust:1-slim`
 
 ```console
-$ docker pull rust@sha256:4691d309a1a30c9a3f82925db3fdce1f43ec37bf503f0155e83c926bb06aafdb
+$ docker pull rust@sha256:19e6df3d882ab8312028d331e5d2f650205859b279ed62fdb5848b0e1a8b6071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1992,7 +1992,7 @@ RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends
 ## `rust:1-slim-stretch`
 
 ```console
-$ docker pull rust@sha256:4691d309a1a30c9a3f82925db3fdce1f43ec37bf503f0155e83c926bb06aafdb
+$ docker pull rust@sha256:19e6df3d882ab8312028d331e5d2f650205859b279ed62fdb5848b0e1a8b6071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2141,7 +2141,7 @@ RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends
 ## `rust:1-stretch`
 
 ```console
-$ docker pull rust@sha256:e3180bcdfb9f9b81ec44074d1a1279b7948e49fc9d74b8656a91dd79bb457c7f
+$ docker pull rust@sha256:be0df108dc0672b7510b7bc405b1b27b11963d3c8db10146033f18bbd61aa3ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2386,7 +2386,7 @@ RUN set -eux;     dpkgArch="$(dpkg --print-architecture)";     case "${dpkgArch#
 ## `rust:latest`
 
 ```console
-$ docker pull rust@sha256:e3180bcdfb9f9b81ec44074d1a1279b7948e49fc9d74b8656a91dd79bb457c7f
+$ docker pull rust@sha256:be0df108dc0672b7510b7bc405b1b27b11963d3c8db10146033f18bbd61aa3ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2631,7 +2631,7 @@ RUN set -eux;     dpkgArch="$(dpkg --print-architecture)";     case "${dpkgArch#
 ## `rust:slim`
 
 ```console
-$ docker pull rust@sha256:4691d309a1a30c9a3f82925db3fdce1f43ec37bf503f0155e83c926bb06aafdb
+$ docker pull rust@sha256:19e6df3d882ab8312028d331e5d2f650205859b279ed62fdb5848b0e1a8b6071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2780,7 +2780,7 @@ RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends
 ## `rust:slim-stretch`
 
 ```console
-$ docker pull rust@sha256:4691d309a1a30c9a3f82925db3fdce1f43ec37bf503f0155e83c926bb06aafdb
+$ docker pull rust@sha256:19e6df3d882ab8312028d331e5d2f650205859b279ed62fdb5848b0e1a8b6071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2929,7 +2929,7 @@ RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends
 ## `rust:stretch`
 
 ```console
-$ docker pull rust@sha256:e3180bcdfb9f9b81ec44074d1a1279b7948e49fc9d74b8656a91dd79bb457c7f
+$ docker pull rust@sha256:be0df108dc0672b7510b7bc405b1b27b11963d3c8db10146033f18bbd61aa3ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
