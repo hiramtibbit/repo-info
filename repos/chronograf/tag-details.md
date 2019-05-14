@@ -22,7 +22,7 @@
 ## `chronograf:1.5`
 
 ```console
-$ docker pull chronograf@sha256:04b4f9dba533a34aa68866fb6d1c40c674112f373bb4db4941d3d02370474845
+$ docker pull chronograf@sha256:5e72bd457ff4c811fa896bd5d552d0b75a1df69302c23095fe7fba57415ae3e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -235,7 +235,7 @@ CMD ["chronograf"]
 ## `chronograf:1.5.0`
 
 ```console
-$ docker pull chronograf@sha256:04b4f9dba533a34aa68866fb6d1c40c674112f373bb4db4941d3d02370474845
+$ docker pull chronograf@sha256:5e72bd457ff4c811fa896bd5d552d0b75a1df69302c23095fe7fba57415ae3e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -448,7 +448,7 @@ CMD ["chronograf"]
 ## `chronograf:1.5.0.1`
 
 ```console
-$ docker pull chronograf@sha256:04b4f9dba533a34aa68866fb6d1c40c674112f373bb4db4941d3d02370474845
+$ docker pull chronograf@sha256:5e72bd457ff4c811fa896bd5d552d0b75a1df69302c23095fe7fba57415ae3e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -661,7 +661,7 @@ CMD ["chronograf"]
 ## `chronograf:1.5.0.1-alpine`
 
 ```console
-$ docker pull chronograf@sha256:d4240b9f178ea6d18b14ab9548337261e090a4381385ae2ceab032a7f38c4e70
+$ docker pull chronograf@sha256:e22488f9b5c4517a09b8a58b9f9575d39ba58c0e11f0f244b18bd4f401bfdb75
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -744,7 +744,7 @@ CMD ["chronograf"]
 ## `chronograf:1.5.0-alpine`
 
 ```console
-$ docker pull chronograf@sha256:d4240b9f178ea6d18b14ab9548337261e090a4381385ae2ceab032a7f38c4e70
+$ docker pull chronograf@sha256:e22488f9b5c4517a09b8a58b9f9575d39ba58c0e11f0f244b18bd4f401bfdb75
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -827,7 +827,7 @@ CMD ["chronograf"]
 ## `chronograf:1.5-alpine`
 
 ```console
-$ docker pull chronograf@sha256:d4240b9f178ea6d18b14ab9548337261e090a4381385ae2ceab032a7f38c4e70
+$ docker pull chronograf@sha256:e22488f9b5c4517a09b8a58b9f9575d39ba58c0e11f0f244b18bd4f401bfdb75
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -910,7 +910,7 @@ CMD ["chronograf"]
 ## `chronograf:1.6`
 
 ```console
-$ docker pull chronograf@sha256:c7b5b8852e3e298005a7432710f9e8133aa296e0db8cc272e16e82cc32755375
+$ docker pull chronograf@sha256:7dce86b450971069edfd916cd7467704a33e9459b507e5e7203e6931a0df241b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1123,7 +1123,7 @@ CMD ["chronograf"]
 ## `chronograf:1.6.2`
 
 ```console
-$ docker pull chronograf@sha256:c7b5b8852e3e298005a7432710f9e8133aa296e0db8cc272e16e82cc32755375
+$ docker pull chronograf@sha256:7dce86b450971069edfd916cd7467704a33e9459b507e5e7203e6931a0df241b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1336,7 +1336,7 @@ CMD ["chronograf"]
 ## `chronograf:1.6.2-alpine`
 
 ```console
-$ docker pull chronograf@sha256:12af06023306d9859ac48ceb8e1f68a10d0ab69e10d7eac40ee603e9ede34bba
+$ docker pull chronograf@sha256:023942d923d12e56c190622b489dd6f4abbfbe811e86294b63515182a249083e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1419,7 +1419,7 @@ CMD ["chronograf"]
 ## `chronograf:1.6-alpine`
 
 ```console
-$ docker pull chronograf@sha256:12af06023306d9859ac48ceb8e1f68a10d0ab69e10d7eac40ee603e9ede34bba
+$ docker pull chronograf@sha256:023942d923d12e56c190622b489dd6f4abbfbe811e86294b63515182a249083e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1502,7 +1502,7 @@ CMD ["chronograf"]
 ## `chronograf:1.7`
 
 ```console
-$ docker pull chronograf@sha256:1c18d89b15ccb47df84090fdb6248360e387e4ed9eea0c9700d69a9f7310bda9
+$ docker pull chronograf@sha256:d4beca320a9a3c65325ffe925e1730e8baaa824af86a4f21a54596b81c7337cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1715,7 +1715,7 @@ CMD ["chronograf"]
 ## `chronograf:1.7.11`
 
 ```console
-$ docker pull chronograf@sha256:1c18d89b15ccb47df84090fdb6248360e387e4ed9eea0c9700d69a9f7310bda9
+$ docker pull chronograf@sha256:d4beca320a9a3c65325ffe925e1730e8baaa824af86a4f21a54596b81c7337cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1928,7 +1928,7 @@ CMD ["chronograf"]
 ## `chronograf:1.7.11-alpine`
 
 ```console
-$ docker pull chronograf@sha256:348049cfa1c9d1564bd6ce0cf4300cd2cd35008922c66a98d9dbfa9a4c8c55b1
+$ docker pull chronograf@sha256:96f0dc6670aa072c271a0abf42941822b66c1eafadb856667f4153a1d7fc8bcd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2011,7 +2011,7 @@ CMD ["chronograf"]
 ## `chronograf:1.7-alpine`
 
 ```console
-$ docker pull chronograf@sha256:348049cfa1c9d1564bd6ce0cf4300cd2cd35008922c66a98d9dbfa9a4c8c55b1
+$ docker pull chronograf@sha256:96f0dc6670aa072c271a0abf42941822b66c1eafadb856667f4153a1d7fc8bcd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2094,7 +2094,7 @@ CMD ["chronograf"]
 ## `chronograf:alpine`
 
 ```console
-$ docker pull chronograf@sha256:348049cfa1c9d1564bd6ce0cf4300cd2cd35008922c66a98d9dbfa9a4c8c55b1
+$ docker pull chronograf@sha256:96f0dc6670aa072c271a0abf42941822b66c1eafadb856667f4153a1d7fc8bcd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2177,7 +2177,7 @@ CMD ["chronograf"]
 ## `chronograf:latest`
 
 ```console
-$ docker pull chronograf@sha256:1c18d89b15ccb47df84090fdb6248360e387e4ed9eea0c9700d69a9f7310bda9
+$ docker pull chronograf@sha256:d4beca320a9a3c65325ffe925e1730e8baaa824af86a4f21a54596b81c7337cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
