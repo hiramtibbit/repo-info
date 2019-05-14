@@ -1,7 +1,7 @@
 ## `matomo:apache`
 
 ```console
-$ docker pull matomo@sha256:22cbf66e1fb50b15459277dd7747259ca11c37b510713c18daa8b55013081def
+$ docker pull matomo@sha256:2fda4caef69e7b02e8a9ceef5c18c29fd9ca222c1bf327e62aa7df78efc007fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
