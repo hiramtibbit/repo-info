@@ -23,7 +23,7 @@
 ## `gazebo:gzserver10`
 
 ```console
-$ docker pull gazebo@sha256:650a782f1240ec4d497deedb1e2f5de1f8ef92e84355b49bf5170623fcf4491e
+$ docker pull gazebo@sha256:f627c9649f18f7f84c6d7ddba52733b5cf39466f206712d528711e1ca4d26b6d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -296,7 +296,7 @@ CMD ["gzserver"]
 ## `gazebo:gzserver10-bionic`
 
 ```console
-$ docker pull gazebo@sha256:650a782f1240ec4d497deedb1e2f5de1f8ef92e84355b49bf5170623fcf4491e
+$ docker pull gazebo@sha256:f627c9649f18f7f84c6d7ddba52733b5cf39466f206712d528711e1ca4d26b6d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -569,7 +569,7 @@ CMD ["gzserver"]
 ## `gazebo:gzserver7`
 
 ```console
-$ docker pull gazebo@sha256:5af1812b6a364bea2becaccc1557b9fad08e41d027e2eb8f4ecc0b23d56c283b
+$ docker pull gazebo@sha256:228a4d4c3f03559729b511fed92339e19ae2c29a1e987b449df0e97ef7f06de1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -660,7 +660,7 @@ CMD ["gzserver"]
 ## `gazebo:gzserver7-xenial`
 
 ```console
-$ docker pull gazebo@sha256:5af1812b6a364bea2becaccc1557b9fad08e41d027e2eb8f4ecc0b23d56c283b
+$ docker pull gazebo@sha256:228a4d4c3f03559729b511fed92339e19ae2c29a1e987b449df0e97ef7f06de1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -751,7 +751,7 @@ CMD ["gzserver"]
 ## `gazebo:gzserver9`
 
 ```console
-$ docker pull gazebo@sha256:b116de3ef53d51c495c05eca898e3a8bfc30194e94bf2c6ce8631e8ec3dc50b5
+$ docker pull gazebo@sha256:b4110940569f3d2296bbe0f74d6488a2d87b93149cddab3ae1d9131553a13e23
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1024,7 +1024,7 @@ CMD ["gzserver"]
 ## `gazebo:gzserver9-bionic`
 
 ```console
-$ docker pull gazebo@sha256:b116de3ef53d51c495c05eca898e3a8bfc30194e94bf2c6ce8631e8ec3dc50b5
+$ docker pull gazebo@sha256:b4110940569f3d2296bbe0f74d6488a2d87b93149cddab3ae1d9131553a13e23
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1297,7 +1297,7 @@ CMD ["gzserver"]
 ## `gazebo:gzserver9-stretch`
 
 ```console
-$ docker pull gazebo@sha256:1e1a8dd91572935514862cf8f313aaf5d7fc84d6ddf7dd2fe88ec3003b685981
+$ docker pull gazebo@sha256:962e6aafe9a7397bba5099fc1d54276ebe1a72cb3f2001ae9e8043e4e042f03a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1498,7 +1498,7 @@ CMD ["gzserver"]
 ## `gazebo:gzserver9-xenial`
 
 ```console
-$ docker pull gazebo@sha256:3f3c785c65103a5c0f5c875b9cbfc0d28ea4e84413d88aeffdc26fe5b46e49f6
+$ docker pull gazebo@sha256:4af700434a0ac73ae90651dcb497b6606f4646d952f464104b1c6cc0274719bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1589,7 +1589,7 @@ CMD ["gzserver"]
 ## `gazebo:latest`
 
 ```console
-$ docker pull gazebo@sha256:10ae93ece849f001b45bdcf428592724dc2a861baff95a147927f391ef4c8cb1
+$ docker pull gazebo@sha256:29dc3a11ba50b92d04713298436ed6fb1ee2920f987ae1ba1b77c69f90ae89a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1880,7 +1880,7 @@ RUN apt-get update && apt-get install -q -y     libgazebo10-dev=10.1.0-1*     &&
 ## `gazebo:libgazebo10`
 
 ```console
-$ docker pull gazebo@sha256:10ae93ece849f001b45bdcf428592724dc2a861baff95a147927f391ef4c8cb1
+$ docker pull gazebo@sha256:29dc3a11ba50b92d04713298436ed6fb1ee2920f987ae1ba1b77c69f90ae89a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2171,7 +2171,7 @@ RUN apt-get update && apt-get install -q -y     libgazebo10-dev=10.1.0-1*     &&
 ## `gazebo:libgazebo10-bionic`
 
 ```console
-$ docker pull gazebo@sha256:10ae93ece849f001b45bdcf428592724dc2a861baff95a147927f391ef4c8cb1
+$ docker pull gazebo@sha256:29dc3a11ba50b92d04713298436ed6fb1ee2920f987ae1ba1b77c69f90ae89a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2462,7 +2462,7 @@ RUN apt-get update && apt-get install -q -y     libgazebo10-dev=10.1.0-1*     &&
 ## `gazebo:libgazebo7`
 
 ```console
-$ docker pull gazebo@sha256:0f6b0c3b6a9b34084a1d5d3a0e37d8e79e55e099f6deea32c84a7a05b3e0ba4b
+$ docker pull gazebo@sha256:5c91de60520e64cf7d9987f26b25215317904d16e2ca301366ebceb8728c9c45
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2559,7 +2559,7 @@ RUN apt-get update && apt-get install -q -y     libgazebo7-dev=7.15.0-1*     && 
 ## `gazebo:libgazebo7-xenial`
 
 ```console
-$ docker pull gazebo@sha256:0f6b0c3b6a9b34084a1d5d3a0e37d8e79e55e099f6deea32c84a7a05b3e0ba4b
+$ docker pull gazebo@sha256:5c91de60520e64cf7d9987f26b25215317904d16e2ca301366ebceb8728c9c45
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2656,7 +2656,7 @@ RUN apt-get update && apt-get install -q -y     libgazebo7-dev=7.15.0-1*     && 
 ## `gazebo:libgazebo9`
 
 ```console
-$ docker pull gazebo@sha256:ef1d524209b28444388d45ea86f251711f5c1cc9d522f9b72204df9c386bd9ce
+$ docker pull gazebo@sha256:865d61e0032b64806f6bdb856ff986a050cc0feb552299f1fa33fc4edaa4e2c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2947,7 +2947,7 @@ RUN apt-get update && apt-get install -q -y     libgazebo9-dev=9.8.0-1*     && r
 ## `gazebo:libgazebo9-bionic`
 
 ```console
-$ docker pull gazebo@sha256:ef1d524209b28444388d45ea86f251711f5c1cc9d522f9b72204df9c386bd9ce
+$ docker pull gazebo@sha256:865d61e0032b64806f6bdb856ff986a050cc0feb552299f1fa33fc4edaa4e2c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3238,7 +3238,7 @@ RUN apt-get update && apt-get install -q -y     libgazebo9-dev=9.8.0-1*     && r
 ## `gazebo:libgazebo9-stretch`
 
 ```console
-$ docker pull gazebo@sha256:a2d839f03dd97298a1123697b17c920d119cfc72625b5309758b08b4ba6d1edb
+$ docker pull gazebo@sha256:1bc42be0215694c318528ce0cef9070b2077cf4c88b958a001568a3546193668
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3457,7 +3457,7 @@ RUN apt-get update && apt-get install -q -y     libgazebo9-dev=9.8.0-1*     && r
 ## `gazebo:libgazebo9-xenial`
 
 ```console
-$ docker pull gazebo@sha256:f63c778a4427a0672d686e92d4134cb4d450deafae5f5c395f202dad376283c0
+$ docker pull gazebo@sha256:a9a7c14a9f7842896de01490fed13e91fcbf0b246179f70b6466210643f9d3f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

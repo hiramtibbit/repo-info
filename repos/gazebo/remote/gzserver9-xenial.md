@@ -1,7 +1,7 @@
 ## `gazebo:gzserver9-xenial`
 
 ```console
-$ docker pull gazebo@sha256:3f3c785c65103a5c0f5c875b9cbfc0d28ea4e84413d88aeffdc26fe5b46e49f6
+$ docker pull gazebo@sha256:4af700434a0ac73ae90651dcb497b6606f4646d952f464104b1c6cc0274719bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

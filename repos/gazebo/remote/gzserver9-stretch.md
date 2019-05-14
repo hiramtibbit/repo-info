@@ -1,7 +1,7 @@
 ## `gazebo:gzserver9-stretch`
 
 ```console
-$ docker pull gazebo@sha256:1e1a8dd91572935514862cf8f313aaf5d7fc84d6ddf7dd2fe88ec3003b685981
+$ docker pull gazebo@sha256:962e6aafe9a7397bba5099fc1d54276ebe1a72cb3f2001ae9e8043e4e042f03a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

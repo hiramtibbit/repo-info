@@ -1,7 +1,7 @@
 ## `gazebo:gzserver9-bionic`
 
 ```console
-$ docker pull gazebo@sha256:b116de3ef53d51c495c05eca898e3a8bfc30194e94bf2c6ce8631e8ec3dc50b5
+$ docker pull gazebo@sha256:b4110940569f3d2296bbe0f74d6488a2d87b93149cddab3ae1d9131553a13e23
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

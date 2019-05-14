@@ -1,7 +1,7 @@
 ## `gazebo:libgazebo9`
 
 ```console
-$ docker pull gazebo@sha256:ef1d524209b28444388d45ea86f251711f5c1cc9d522f9b72204df9c386bd9ce
+$ docker pull gazebo@sha256:865d61e0032b64806f6bdb856ff986a050cc0feb552299f1fa33fc4edaa4e2c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
