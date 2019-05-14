@@ -1,7 +1,7 @@
 ## `joomla:php7.3-fpm`
 
 ```console
-$ docker pull joomla@sha256:e40399107c0a956461d9feaee1921629054b8a035cc1762dc692b73e4395cd44
+$ docker pull joomla@sha256:384cfdc52ae180dfd408fdbe5978923054d335dd3d824c526b8f645bacc975ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

@@ -1,7 +1,7 @@
 ## `joomla:apache`
 
 ```console
-$ docker pull joomla@sha256:533df4c805570976a9fb6f7ae52c547e3d545359606500b1e3bb3ae82004a597
+$ docker pull joomla@sha256:af1d9aeaf4645face0a4559a178c455169e226b206605fabee449f3c3db7fbb0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
