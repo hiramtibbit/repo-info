@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0be75340bd9bc5c3b9476910537275090a9181838415b558d3a16e8155a69860`
-- Created: `2019-04-16T21:22:25.035537959Z`
+- Image ID: `sha256:dd025cdfe837e1c6395365870a491cf16bae668218edb07d85c626928a60e478`
+- Created: `2019-05-11T00:35:56.19040132Z`
 - Virtual Size: ~ 16.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -274,16 +274,16 @@ IJG
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.35-r0 description:
+libpng-1.6.37-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.35-r0 webpage:
+libpng-1.6.37-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.35-r0 installed size:
+libpng-1.6.37-r0 installed size:
 204800
 
-libpng-1.6.35-r0 license:
+libpng-1.6.37-r0 license:
 Libpng
 
 ```
@@ -359,16 +359,16 @@ MIT
 ### `apk` package: `libxslt`
 
 ```console
-libxslt-1.1.32-r0 description:
+libxslt-1.1.33-r1 description:
 XML stylesheet transformation library
 
-libxslt-1.1.32-r0 webpage:
+libxslt-1.1.33-r1 webpage:
 http://xmlsoft.org/XSLT/
 
-libxslt-1.1.32-r0 installed size:
+libxslt-1.1.33-r1 installed size:
 368640
 
-libxslt-1.1.32-r0 license:
+libxslt-1.1.33-r1 license:
 custom
 
 ```
