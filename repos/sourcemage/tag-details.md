@@ -8,7 +8,7 @@
 ## `sourcemage:0.62`
 
 ```console
-$ docker pull sourcemage@sha256:406a3a4c3ab2a983f8a7bc8d159b51246f64f9f32ba98fd8feb5bb5ccee539ca
+$ docker pull sourcemage@sha256:6527aa5400708d34691cd9e8c0b6c0f1aad8c6844d978cc90304e5e460a084ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -46,7 +46,7 @@ CMD ["/bin/bash"]
 ## `sourcemage:latest`
 
 ```console
-$ docker pull sourcemage@sha256:406a3a4c3ab2a983f8a7bc8d159b51246f64f9f32ba98fd8feb5bb5ccee539ca
+$ docker pull sourcemage@sha256:6527aa5400708d34691cd9e8c0b6c0f1aad8c6844d978cc90304e5e460a084ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
