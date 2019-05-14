@@ -1,7 +1,7 @@
 ## `maven:latest`
 
 ```console
-$ docker pull maven@sha256:8db2b7e77289432e4e89fde5acf5137b96a239a712ac46bf8e1cb321e0af9edc
+$ docker pull maven@sha256:33d849bf2304284953ae6a559791f54e9c56ab3aa6607570d4edd2075ea3dca2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

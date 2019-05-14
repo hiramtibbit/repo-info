@@ -1,7 +1,7 @@
 ## `maven:3-amazoncorretto-8`
 
 ```console
-$ docker pull maven@sha256:5f7a1531ff03f67fbb8e4020ed97ab10b5089209efd7bb1b9e177eaca88331ea
+$ docker pull maven@sha256:6dfa592037279268d64aa7f539ea997732c57283308095488f4e8ef8fe6dc71b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

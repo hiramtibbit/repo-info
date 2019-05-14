@@ -1,7 +1,7 @@
 ## `maven:3-jdk-11-slim`
 
 ```console
-$ docker pull maven@sha256:0058efa2d82120a4de9a0186565e7b0dc3410287b4706a4883c2165ba8e6aedc
+$ docker pull maven@sha256:90c2ae011d8aa268e737039d8710b034ed10882fecaa9f8a5e2172b591bc9a6c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
