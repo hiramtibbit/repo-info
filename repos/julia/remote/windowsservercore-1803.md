@@ -1,7 +1,7 @@
 ## `julia:windowsservercore-1803`
 
 ```console
-$ docker pull julia@sha256:75460e211b7515f7f8f514e39186146a2cac7c7f1aa869d3ec84056b3ee256f1
+$ docker pull julia@sha256:ca212f71246de12d9f73210d1021530c0b1d42e6d8e98e026349846f35ba35da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

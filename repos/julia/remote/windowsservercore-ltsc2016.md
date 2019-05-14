@@ -1,7 +1,7 @@
 ## `julia:windowsservercore-ltsc2016`
 
 ```console
-$ docker pull julia@sha256:a756287e1cd3eb5330d832a0cf166a49b78a0bac4445894d2bdfea3ec0ac0803
+$ docker pull julia@sha256:6f1c436004496ca5bcda46b9c536aa91f065038a394fd4c08ae4673b7cd2a7b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
