@@ -12,7 +12,7 @@
 ## `znc:1.7`
 
 ```console
-$ docker pull znc@sha256:2b27bfc9eaa83f5a6a825d4eea5f3061423bf00519bee03a024d2b5c38d87c67
+$ docker pull znc@sha256:0bb05444c78346b05e496917e42369ffe5798858e29c43ae1e3280e621d58bf0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -285,7 +285,7 @@ COPY file:765473e154cb7674cba99ed8ee42b51feda01581be870e3d1e7e4930b82a0f37 in /s
 ## `znc:1.7.3`
 
 ```console
-$ docker pull znc@sha256:2b27bfc9eaa83f5a6a825d4eea5f3061423bf00519bee03a024d2b5c38d87c67
+$ docker pull znc@sha256:0bb05444c78346b05e496917e42369ffe5798858e29c43ae1e3280e621d58bf0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -558,7 +558,7 @@ COPY file:765473e154cb7674cba99ed8ee42b51feda01581be870e3d1e7e4930b82a0f37 in /s
 ## `znc:1.7.3-slim`
 
 ```console
-$ docker pull znc@sha256:bae70b1d04fbf8bf28008f540cabe2823414da39b66cb708fda5490c5e980d99
+$ docker pull znc@sha256:80dd6b1ee6a535baa5f0b732f511d9edc72f6ccf3652ae9909855f262064b540
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -795,7 +795,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 ## `znc:1.7-slim`
 
 ```console
-$ docker pull znc@sha256:bae70b1d04fbf8bf28008f540cabe2823414da39b66cb708fda5490c5e980d99
+$ docker pull znc@sha256:80dd6b1ee6a535baa5f0b732f511d9edc72f6ccf3652ae9909855f262064b540
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1032,7 +1032,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 ## `znc:latest`
 
 ```console
-$ docker pull znc@sha256:2b27bfc9eaa83f5a6a825d4eea5f3061423bf00519bee03a024d2b5c38d87c67
+$ docker pull znc@sha256:0bb05444c78346b05e496917e42369ffe5798858e29c43ae1e3280e621d58bf0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1305,7 +1305,7 @@ COPY file:765473e154cb7674cba99ed8ee42b51feda01581be870e3d1e7e4930b82a0f37 in /s
 ## `znc:slim`
 
 ```console
-$ docker pull znc@sha256:bae70b1d04fbf8bf28008f540cabe2823414da39b66cb708fda5490c5e980d99
+$ docker pull znc@sha256:80dd6b1ee6a535baa5f0b732f511d9edc72f6ccf3652ae9909855f262064b540
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
