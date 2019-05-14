@@ -1,7 +1,7 @@
 ## `alt:latest`
 
 ```console
-$ docker pull alt@sha256:5e5be2b678e2fd7f3fb55c6815ff6e0c1c22d505d0af48cfe113f4bc1dd83bcf
+$ docker pull alt@sha256:90996841220bbe2fd1ff6d3ded2155173db5ac341bcdbf5b8d25cd51313878ab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

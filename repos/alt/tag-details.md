@@ -9,7 +9,7 @@
 ## `alt:latest`
 
 ```console
-$ docker pull alt@sha256:5e5be2b678e2fd7f3fb55c6815ff6e0c1c22d505d0af48cfe113f4bc1dd83bcf
+$ docker pull alt@sha256:90996841220bbe2fd1ff6d3ded2155173db5ac341bcdbf5b8d25cd51313878ab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -76,7 +76,7 @@ CMD ["/bin/bash"]
 ## `alt:p8`
 
 ```console
-$ docker pull alt@sha256:5e5be2b678e2fd7f3fb55c6815ff6e0c1c22d505d0af48cfe113f4bc1dd83bcf
+$ docker pull alt@sha256:90996841220bbe2fd1ff6d3ded2155173db5ac341bcdbf5b8d25cd51313878ab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -143,7 +143,7 @@ CMD ["/bin/bash"]
 ## `alt:sisyphus`
 
 ```console
-$ docker pull alt@sha256:da9280b68673e9661a6b5a9a851ec093e01d7c3cd2d97f23b29f84b88b09d3eb
+$ docker pull alt@sha256:c646327b29c7d22740654ecb0a87803256485fd89b84d0bb657f28169d375395
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

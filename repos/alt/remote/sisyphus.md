@@ -1,7 +1,7 @@
 ## `alt:sisyphus`
 
 ```console
-$ docker pull alt@sha256:da9280b68673e9661a6b5a9a851ec093e01d7c3cd2d97f23b29f84b88b09d3eb
+$ docker pull alt@sha256:c646327b29c7d22740654ecb0a87803256485fd89b84d0bb657f28169d375395
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
