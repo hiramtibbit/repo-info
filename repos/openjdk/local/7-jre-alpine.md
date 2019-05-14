@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:38f5e6c61e2c6448b7acf098696e2f76cbba880eefb2bed568b866ccf9ad767e`
-- Created: `2019-04-12T00:32:28.368797339Z`
-- Virtual Size: ~ 125.22 Mb  
+- Image ID: `sha256:41a8f96503096b3842cecdf6e7583844d7420ac17707afbf8828b4546533f21a`
+- Created: `2019-05-11T01:33:26.296044973Z`
+- Virtual Size: ~ 125.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -360,16 +360,16 @@ LGPL-3.0
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.6.4-r0 description:
+gnutls-3.6.7-r0 description:
 A TLS protocol implementation
 
-gnutls-3.6.4-r0 webpage:
+gnutls-3.6.7-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.6.4-r0 installed size:
-1531904
+gnutls-3.6.7-r0 installed size:
+1572864
 
-gnutls-3.6.4-r0 license:
+gnutls-3.6.7-r0 license:
 GPL
 
 ```
@@ -751,16 +751,16 @@ GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.35-r0 description:
+libpng-1.6.37-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.35-r0 webpage:
+libpng-1.6.37-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.35-r0 installed size:
+libpng-1.6.37-r0 installed size:
 204800
 
-libpng-1.6.35-r0 license:
+libpng-1.6.37-r0 license:
 Libpng
 
 ```
