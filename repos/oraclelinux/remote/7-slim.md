@@ -1,7 +1,7 @@
 ## `oraclelinux:7-slim`
 
 ```console
-$ docker pull oraclelinux@sha256:42b6b9c1a363ae9115e72011d8fa78475fa703d1fbfb254bf77931ebdd8802d2
+$ docker pull oraclelinux@sha256:65671425ca59e022362e1b1eb0d816c5e961aae97608c4594ae8db001dc38d4e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

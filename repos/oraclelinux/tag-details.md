@@ -13,7 +13,7 @@
 ## `oraclelinux:6`
 
 ```console
-$ docker pull oraclelinux@sha256:f2b7a1692fcff4247d3440d4f38703aa505e48f2667484d0b336775c25af598e
+$ docker pull oraclelinux@sha256:ca9857905cbb6b74cdbd74b90d5bc1f9155a0dbb79cf67fe21dc8777b8a5ddd4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -51,7 +51,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:6.10`
 
 ```console
-$ docker pull oraclelinux@sha256:f2b7a1692fcff4247d3440d4f38703aa505e48f2667484d0b336775c25af598e
+$ docker pull oraclelinux@sha256:ca9857905cbb6b74cdbd74b90d5bc1f9155a0dbb79cf67fe21dc8777b8a5ddd4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -89,7 +89,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:6-slim`
 
 ```console
-$ docker pull oraclelinux@sha256:77b2f06d9ac49e9ed8cec666bb9c79a8e3fa8084283a10c7393123da36fd288c
+$ docker pull oraclelinux@sha256:dab3d020772dd8916892c814931df438f5afe6b06ca72d66d279bd58d52f6116
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -127,7 +127,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:7`
 
 ```console
-$ docker pull oraclelinux@sha256:474aa304d6bd0ea4d34d7cb6cc3e9849be676d9c988ae4ed4b5f4e7d09be2c4f
+$ docker pull oraclelinux@sha256:15626e4e41d02c514b03740a35c09f68e3f55e9d44fbbbbebe4431bc0c017d48
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -194,7 +194,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:7.6`
 
 ```console
-$ docker pull oraclelinux@sha256:474aa304d6bd0ea4d34d7cb6cc3e9849be676d9c988ae4ed4b5f4e7d09be2c4f
+$ docker pull oraclelinux@sha256:15626e4e41d02c514b03740a35c09f68e3f55e9d44fbbbbebe4431bc0c017d48
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -261,7 +261,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:7-slim`
 
 ```console
-$ docker pull oraclelinux@sha256:42b6b9c1a363ae9115e72011d8fa78475fa703d1fbfb254bf77931ebdd8802d2
+$ docker pull oraclelinux@sha256:65671425ca59e022362e1b1eb0d816c5e961aae97608c4594ae8db001dc38d4e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -328,7 +328,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:latest`
 
 ```console
-$ docker pull oraclelinux@sha256:474aa304d6bd0ea4d34d7cb6cc3e9849be676d9c988ae4ed4b5f4e7d09be2c4f
+$ docker pull oraclelinux@sha256:15626e4e41d02c514b03740a35c09f68e3f55e9d44fbbbbebe4431bc0c017d48
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
