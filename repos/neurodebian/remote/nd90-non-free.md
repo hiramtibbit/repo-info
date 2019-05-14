@@ -1,7 +1,7 @@
 ## `neurodebian:nd90-non-free`
 
 ```console
-$ docker pull neurodebian@sha256:4d305b73ceecf1393eab31ec0a327a786c61fac841ca15b23cf5d3b6b3ae7793
+$ docker pull neurodebian@sha256:1bd0034ce4e57aa56e97af964bee78411e1215988d270972e0f33f66c64464ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

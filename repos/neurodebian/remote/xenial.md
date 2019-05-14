@@ -1,7 +1,7 @@
 ## `neurodebian:xenial`
 
 ```console
-$ docker pull neurodebian@sha256:677fb9e4d77aa5d486884dd88c8c4b6d05366ffc407933d8b4d73f0573ade829
+$ docker pull neurodebian@sha256:7c62b44637767af089a25bcc19bc098e0c7721b5a8200bd9c1be8a3a89e5576a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

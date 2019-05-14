@@ -1,7 +1,7 @@
 ## `neurodebian:buster-non-free`
 
 ```console
-$ docker pull neurodebian@sha256:fcc78adbcdf8b929b8683d376bed7bf79f361b93d5e1cdca8f9d5c03448c67f0
+$ docker pull neurodebian@sha256:6a8977b6209e0b00ca6760384821c748c44ab1dcc5b37d058bc7e9b1a8aaac58
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

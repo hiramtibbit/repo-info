@@ -1,7 +1,7 @@
 ## `neurodebian:trusty`
 
 ```console
-$ docker pull neurodebian@sha256:2eb4fef2d8cc867dc3c036bd47d4f11106de4f2bf69619d6c9c1e52e8c18b808
+$ docker pull neurodebian@sha256:429892b89fa25a441bdf5af643c4d7e8aa01abefdc6e782a81c9658669f1049b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

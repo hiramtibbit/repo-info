@@ -1,7 +1,7 @@
 ## `neurodebian:cosmic`
 
 ```console
-$ docker pull neurodebian@sha256:130923a38152582315b8af9d40e6c3a2fd4c8437712cabac29be70e74ae80da6
+$ docker pull neurodebian@sha256:f67f7fd16eab55e20fb91caa9164957c36ecf04183708430487f1574890771ea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

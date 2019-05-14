@@ -1,7 +1,7 @@
 ## `neurodebian:stretch`
 
 ```console
-$ docker pull neurodebian@sha256:99149f2270fa07f7de22a7ca56d7d6028adff3f8bb25fc5a2dad63c11fd30ebe
+$ docker pull neurodebian@sha256:1e9e473aa43293d940e6df582c64ff15a6583c0f764c65cb0d6eacd6d5654b13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
