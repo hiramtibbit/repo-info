@@ -17,7 +17,7 @@
 ## `cassandra:2`
 
 ```console
-$ docker pull cassandra@sha256:400d147309d62dfa9790e88111fe63f47bb91c3840f8b8980d113e88544c161c
+$ docker pull cassandra@sha256:763d4c0c9ee230f17483f11196d35a55fafdded22805e7704a43deff0e778a1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -222,7 +222,7 @@ CMD ["cassandra" "-f"]
 ## `cassandra:2.1`
 
 ```console
-$ docker pull cassandra@sha256:659b897a10d0f16fd79782732b03aa598bace4c613dab895e9c00386bc32d407
+$ docker pull cassandra@sha256:4c16b7bee0849970947d220ce7f26336f7440884a43b2bda0649626c8739feb1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -525,7 +525,7 @@ CMD ["cassandra" "-f"]
 ## `cassandra:2.1.21`
 
 ```console
-$ docker pull cassandra@sha256:659b897a10d0f16fd79782732b03aa598bace4c613dab895e9c00386bc32d407
+$ docker pull cassandra@sha256:4c16b7bee0849970947d220ce7f26336f7440884a43b2bda0649626c8739feb1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -828,7 +828,7 @@ CMD ["cassandra" "-f"]
 ## `cassandra:2.2`
 
 ```console
-$ docker pull cassandra@sha256:400d147309d62dfa9790e88111fe63f47bb91c3840f8b8980d113e88544c161c
+$ docker pull cassandra@sha256:763d4c0c9ee230f17483f11196d35a55fafdded22805e7704a43deff0e778a1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1033,7 +1033,7 @@ CMD ["cassandra" "-f"]
 ## `cassandra:2.2.14`
 
 ```console
-$ docker pull cassandra@sha256:400d147309d62dfa9790e88111fe63f47bb91c3840f8b8980d113e88544c161c
+$ docker pull cassandra@sha256:763d4c0c9ee230f17483f11196d35a55fafdded22805e7704a43deff0e778a1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1238,7 +1238,7 @@ CMD ["cassandra" "-f"]
 ## `cassandra:3`
 
 ```console
-$ docker pull cassandra@sha256:7c0b7c2583955ad0ca2ca58a5c2de5871524fc885f0c0e4bea3bbf25fa974e2f
+$ docker pull cassandra@sha256:56b085130069466acbaf35d7329600bf540ca764ed089c3b8557a5a14100c4b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1639,7 +1639,7 @@ CMD ["cassandra" "-f"]
 ## `cassandra:3.0`
 
 ```console
-$ docker pull cassandra@sha256:d5e312bed3217bd70fce18f6444a09328af5fba4273ac80f67e8af05ccb673f6
+$ docker pull cassandra@sha256:36309e0d0269637a4e46eae7845a57a3f13102816ae446cee8a0df5fefe14606
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2040,7 +2040,7 @@ CMD ["cassandra" "-f"]
 ## `cassandra:3.0.18`
 
 ```console
-$ docker pull cassandra@sha256:d5e312bed3217bd70fce18f6444a09328af5fba4273ac80f67e8af05ccb673f6
+$ docker pull cassandra@sha256:36309e0d0269637a4e46eae7845a57a3f13102816ae446cee8a0df5fefe14606
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2441,7 +2441,7 @@ CMD ["cassandra" "-f"]
 ## `cassandra:3.11`
 
 ```console
-$ docker pull cassandra@sha256:7c0b7c2583955ad0ca2ca58a5c2de5871524fc885f0c0e4bea3bbf25fa974e2f
+$ docker pull cassandra@sha256:56b085130069466acbaf35d7329600bf540ca764ed089c3b8557a5a14100c4b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2842,7 +2842,7 @@ CMD ["cassandra" "-f"]
 ## `cassandra:3.11.4`
 
 ```console
-$ docker pull cassandra@sha256:7c0b7c2583955ad0ca2ca58a5c2de5871524fc885f0c0e4bea3bbf25fa974e2f
+$ docker pull cassandra@sha256:56b085130069466acbaf35d7329600bf540ca764ed089c3b8557a5a14100c4b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3243,7 +3243,7 @@ CMD ["cassandra" "-f"]
 ## `cassandra:latest`
 
 ```console
-$ docker pull cassandra@sha256:7c0b7c2583955ad0ca2ca58a5c2de5871524fc885f0c0e4bea3bbf25fa974e2f
+$ docker pull cassandra@sha256:56b085130069466acbaf35d7329600bf540ca764ed089c3b8557a5a14100c4b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
