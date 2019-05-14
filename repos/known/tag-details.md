@@ -10,7 +10,7 @@
 ## `known:0`
 
 ```console
-$ docker pull known@sha256:fc1b0c40e1617286fd430b7417975f9f9049ceba65d158894c273dae8a146366
+$ docker pull known@sha256:6dcc4dbcc2f2050442315cdbb6dd1fe854cc3d47730c6b6b9d8c5c69d1886628
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -315,7 +315,7 @@ CMD ["php-fpm"]
 ## `known:0.9`
 
 ```console
-$ docker pull known@sha256:fc1b0c40e1617286fd430b7417975f9f9049ceba65d158894c273dae8a146366
+$ docker pull known@sha256:6dcc4dbcc2f2050442315cdbb6dd1fe854cc3d47730c6b6b9d8c5c69d1886628
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -620,7 +620,7 @@ CMD ["php-fpm"]
 ## `known:0.9.9`
 
 ```console
-$ docker pull known@sha256:fc1b0c40e1617286fd430b7417975f9f9049ceba65d158894c273dae8a146366
+$ docker pull known@sha256:6dcc4dbcc2f2050442315cdbb6dd1fe854cc3d47730c6b6b9d8c5c69d1886628
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -925,7 +925,7 @@ CMD ["php-fpm"]
 ## `known:latest`
 
 ```console
-$ docker pull known@sha256:fc1b0c40e1617286fd430b7417975f9f9049ceba65d158894c273dae8a146366
+$ docker pull known@sha256:6dcc4dbcc2f2050442315cdbb6dd1fe854cc3d47730c6b6b9d8c5c69d1886628
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
