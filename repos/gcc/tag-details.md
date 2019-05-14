@@ -19,7 +19,7 @@
 ## `gcc:6`
 
 ```console
-$ docker pull gcc@sha256:2263aa50096fe691071ca38a94a96b0fb3c23f4737797cd575f977fd88ac9762
+$ docker pull gcc@sha256:a1ce484d0b3e4dbc4a2b616dd1dd0538cfb1e98f44f432cbde5afa0d8a1aea7c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -265,7 +265,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ## `gcc:6.5`
 
 ```console
-$ docker pull gcc@sha256:2263aa50096fe691071ca38a94a96b0fb3c23f4737797cd575f977fd88ac9762
+$ docker pull gcc@sha256:a1ce484d0b3e4dbc4a2b616dd1dd0538cfb1e98f44f432cbde5afa0d8a1aea7c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -511,7 +511,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ## `gcc:6.5.0`
 
 ```console
-$ docker pull gcc@sha256:2263aa50096fe691071ca38a94a96b0fb3c23f4737797cd575f977fd88ac9762
+$ docker pull gcc@sha256:a1ce484d0b3e4dbc4a2b616dd1dd0538cfb1e98f44f432cbde5afa0d8a1aea7c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -757,7 +757,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ## `gcc:7`
 
 ```console
-$ docker pull gcc@sha256:caf6057d22de8a29877768be863978878fc93135439aa48910931b3c8426c782
+$ docker pull gcc@sha256:a25fe2d75352ae8f9fe2860032ebade89d8a217f46c2b6e9f33596e0623853bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1264,7 +1264,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ## `gcc:7.4`
 
 ```console
-$ docker pull gcc@sha256:caf6057d22de8a29877768be863978878fc93135439aa48910931b3c8426c782
+$ docker pull gcc@sha256:a25fe2d75352ae8f9fe2860032ebade89d8a217f46c2b6e9f33596e0623853bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1771,7 +1771,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ## `gcc:7.4.0`
 
 ```console
-$ docker pull gcc@sha256:caf6057d22de8a29877768be863978878fc93135439aa48910931b3c8426c782
+$ docker pull gcc@sha256:a25fe2d75352ae8f9fe2860032ebade89d8a217f46c2b6e9f33596e0623853bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2278,7 +2278,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ## `gcc:8`
 
 ```console
-$ docker pull gcc@sha256:4550c1f1348eec85c1ec78eabe9b7d5b87c6b6c7aad05e40b743bf69a0bae0db
+$ docker pull gcc@sha256:677605b3a3f3245cf8f5a14a64b29add4b369a787b90923092a1434e84106c32
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2785,7 +2785,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ## `gcc:8.3`
 
 ```console
-$ docker pull gcc@sha256:4550c1f1348eec85c1ec78eabe9b7d5b87c6b6c7aad05e40b743bf69a0bae0db
+$ docker pull gcc@sha256:677605b3a3f3245cf8f5a14a64b29add4b369a787b90923092a1434e84106c32
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3292,7 +3292,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ## `gcc:8.3.0`
 
 ```console
-$ docker pull gcc@sha256:4550c1f1348eec85c1ec78eabe9b7d5b87c6b6c7aad05e40b743bf69a0bae0db
+$ docker pull gcc@sha256:677605b3a3f3245cf8f5a14a64b29add4b369a787b90923092a1434e84106c32
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3799,7 +3799,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ## `gcc:9`
 
 ```console
-$ docker pull gcc@sha256:a8cd047d78b254d69cf25cbc0dfb7450038f8b8993303a8d43e4a9f1e1178805
+$ docker pull gcc@sha256:c52e72a3afd339258e0acf57f5f74a61a67979bc768384dc9b753d5c4125782a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4306,7 +4306,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ## `gcc:9.1`
 
 ```console
-$ docker pull gcc@sha256:a8cd047d78b254d69cf25cbc0dfb7450038f8b8993303a8d43e4a9f1e1178805
+$ docker pull gcc@sha256:c52e72a3afd339258e0acf57f5f74a61a67979bc768384dc9b753d5c4125782a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4813,7 +4813,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ## `gcc:9.1.0`
 
 ```console
-$ docker pull gcc@sha256:a8cd047d78b254d69cf25cbc0dfb7450038f8b8993303a8d43e4a9f1e1178805
+$ docker pull gcc@sha256:c52e72a3afd339258e0acf57f5f74a61a67979bc768384dc9b753d5c4125782a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5320,7 +5320,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ## `gcc:latest`
 
 ```console
-$ docker pull gcc@sha256:a8cd047d78b254d69cf25cbc0dfb7450038f8b8993303a8d43e4a9f1e1178805
+$ docker pull gcc@sha256:c52e72a3afd339258e0acf57f5f74a61a67979bc768384dc9b753d5c4125782a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
