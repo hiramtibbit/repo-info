@@ -1,7 +1,7 @@
 ## `ruby:2-slim`
 
 ```console
-$ docker pull ruby@sha256:0daa46d726fc7ba406f8894f7abc87dbeeb5433989853f2f987c9b50492feed2
+$ docker pull ruby@sha256:f6d4f62f72d921383dc10cddb8af1de875300ff99f8c27cba16641cb30bd1be9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

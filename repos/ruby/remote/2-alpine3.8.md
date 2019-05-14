@@ -1,7 +1,7 @@
 ## `ruby:2-alpine3.8`
 
 ```console
-$ docker pull ruby@sha256:deba82bd72c2f2f9d4ff33d87b51968eda77ebf580a43900a3fad82ea8105f75
+$ docker pull ruby@sha256:0140cf6c345a2aad979180c82f31e48ccbb8e1978beb36fc2057feac65e04b31
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
