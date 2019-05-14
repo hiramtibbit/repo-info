@@ -18,7 +18,7 @@
 ## `sentry:9`
 
 ```console
-$ docker pull sentry@sha256:d93d3076ba95c9c2058e6d97c0a03d024a4218eadad8f21dee3688e1e58051dc
+$ docker pull sentry@sha256:e4d8d1ffa8b527c1e33b95be6a7d5eddc1f572de0b1820f7343f44a851ccacb9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -163,7 +163,7 @@ CMD ["run" "web"]
 ## `sentry:9.0`
 
 ```console
-$ docker pull sentry@sha256:2bf09ba88b8d030cef1c1f0707ad5c3c53b2b939debac857720e7fcbd4a0a619
+$ docker pull sentry@sha256:27bfbd88d796644c16da6a4ca2b9d53f80bf8a87326385125c32bcca97170344
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -310,7 +310,7 @@ CMD ["run" "web"]
 ## `sentry:9.0.0`
 
 ```console
-$ docker pull sentry@sha256:2bf09ba88b8d030cef1c1f0707ad5c3c53b2b939debac857720e7fcbd4a0a619
+$ docker pull sentry@sha256:27bfbd88d796644c16da6a4ca2b9d53f80bf8a87326385125c32bcca97170344
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -457,7 +457,7 @@ CMD ["run" "web"]
 ## `sentry:9.0.0-onbuild`
 
 ```console
-$ docker pull sentry@sha256:17dbca5334a6f8431de857979618b9897d317aa24d9b74cc20a96c7e6794bf6e
+$ docker pull sentry@sha256:03b069b24023aea51cfb7617a424566390ff8ab404097f6ab20b82d1309f6509
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -620,7 +620,7 @@ ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	
 ## `sentry:9.0-onbuild`
 
 ```console
-$ docker pull sentry@sha256:17dbca5334a6f8431de857979618b9897d317aa24d9b74cc20a96c7e6794bf6e
+$ docker pull sentry@sha256:03b069b24023aea51cfb7617a424566390ff8ab404097f6ab20b82d1309f6509
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -783,7 +783,7 @@ ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	
 ## `sentry:9.1`
 
 ```console
-$ docker pull sentry@sha256:d93d3076ba95c9c2058e6d97c0a03d024a4218eadad8f21dee3688e1e58051dc
+$ docker pull sentry@sha256:e4d8d1ffa8b527c1e33b95be6a7d5eddc1f572de0b1820f7343f44a851ccacb9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -928,7 +928,7 @@ CMD ["run" "web"]
 ## `sentry:9.1.1`
 
 ```console
-$ docker pull sentry@sha256:d93d3076ba95c9c2058e6d97c0a03d024a4218eadad8f21dee3688e1e58051dc
+$ docker pull sentry@sha256:e4d8d1ffa8b527c1e33b95be6a7d5eddc1f572de0b1820f7343f44a851ccacb9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1073,7 +1073,7 @@ CMD ["run" "web"]
 ## `sentry:9.1.1-onbuild`
 
 ```console
-$ docker pull sentry@sha256:30bc04433916a38dfd7f227d25c731baafd333ba93132dbc60768c3552a1584c
+$ docker pull sentry@sha256:c9663ae85e10a48060e02ab2227f8c42a4e57da18f9ee252e01613c0fb5e8bbe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1234,7 +1234,7 @@ ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	
 ## `sentry:9.1-onbuild`
 
 ```console
-$ docker pull sentry@sha256:30bc04433916a38dfd7f227d25c731baafd333ba93132dbc60768c3552a1584c
+$ docker pull sentry@sha256:c9663ae85e10a48060e02ab2227f8c42a4e57da18f9ee252e01613c0fb5e8bbe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1395,7 +1395,7 @@ ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	
 ## `sentry:9-onbuild`
 
 ```console
-$ docker pull sentry@sha256:30bc04433916a38dfd7f227d25c731baafd333ba93132dbc60768c3552a1584c
+$ docker pull sentry@sha256:c9663ae85e10a48060e02ab2227f8c42a4e57da18f9ee252e01613c0fb5e8bbe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1556,7 +1556,7 @@ ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	
 ## `sentry:latest`
 
 ```console
-$ docker pull sentry@sha256:d93d3076ba95c9c2058e6d97c0a03d024a4218eadad8f21dee3688e1e58051dc
+$ docker pull sentry@sha256:e4d8d1ffa8b527c1e33b95be6a7d5eddc1f572de0b1820f7343f44a851ccacb9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1701,7 +1701,7 @@ CMD ["run" "web"]
 ## `sentry:onbuild`
 
 ```console
-$ docker pull sentry@sha256:30bc04433916a38dfd7f227d25c731baafd333ba93132dbc60768c3552a1584c
+$ docker pull sentry@sha256:c9663ae85e10a48060e02ab2227f8c42a4e57da18f9ee252e01613c0fb5e8bbe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
