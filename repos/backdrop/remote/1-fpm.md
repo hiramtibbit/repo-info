@@ -1,7 +1,7 @@
 ## `backdrop:1-fpm`
 
 ```console
-$ docker pull backdrop@sha256:5b80908eab45e4e480a8deacbc6469bfd8f8a8c6b0379a34400b44b2570d1a1d
+$ docker pull backdrop@sha256:81b5828d766d5598431de9b17b25665c7c939c76500a32b0f77f4b2346e86fd0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

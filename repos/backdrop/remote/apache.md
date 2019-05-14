@@ -1,7 +1,7 @@
 ## `backdrop:apache`
 
 ```console
-$ docker pull backdrop@sha256:136d034db7d70f21070c65f8d25c0eebabf12cbc05b89ebc8821ca593230101d
+$ docker pull backdrop@sha256:1ab9f81853e584ebb7c0ec6a5f180d700e0987bf971d182d1811da7363f117a3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

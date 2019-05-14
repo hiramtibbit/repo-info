@@ -18,7 +18,7 @@
 ## `backdrop:1`
 
 ```console
-$ docker pull backdrop@sha256:136d034db7d70f21070c65f8d25c0eebabf12cbc05b89ebc8821ca593230101d
+$ docker pull backdrop@sha256:1ab9f81853e584ebb7c0ec6a5f180d700e0987bf971d182d1811da7363f117a3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -363,7 +363,7 @@ CMD ["apache2-foreground"]
 ## `backdrop:1.10`
 
 ```console
-$ docker pull backdrop@sha256:136d034db7d70f21070c65f8d25c0eebabf12cbc05b89ebc8821ca593230101d
+$ docker pull backdrop@sha256:1ab9f81853e584ebb7c0ec6a5f180d700e0987bf971d182d1811da7363f117a3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -708,7 +708,7 @@ CMD ["apache2-foreground"]
 ## `backdrop:1.10.1`
 
 ```console
-$ docker pull backdrop@sha256:136d034db7d70f21070c65f8d25c0eebabf12cbc05b89ebc8821ca593230101d
+$ docker pull backdrop@sha256:1ab9f81853e584ebb7c0ec6a5f180d700e0987bf971d182d1811da7363f117a3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1053,7 +1053,7 @@ CMD ["apache2-foreground"]
 ## `backdrop:1.10.1-apache`
 
 ```console
-$ docker pull backdrop@sha256:136d034db7d70f21070c65f8d25c0eebabf12cbc05b89ebc8821ca593230101d
+$ docker pull backdrop@sha256:1ab9f81853e584ebb7c0ec6a5f180d700e0987bf971d182d1811da7363f117a3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1398,7 +1398,7 @@ CMD ["apache2-foreground"]
 ## `backdrop:1.10.1-fpm`
 
 ```console
-$ docker pull backdrop@sha256:5b80908eab45e4e480a8deacbc6469bfd8f8a8c6b0379a34400b44b2570d1a1d
+$ docker pull backdrop@sha256:81b5828d766d5598431de9b17b25665c7c939c76500a32b0f77f4b2346e86fd0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1687,7 +1687,7 @@ CMD ["php-fpm"]
 ## `backdrop:1.10-apache`
 
 ```console
-$ docker pull backdrop@sha256:136d034db7d70f21070c65f8d25c0eebabf12cbc05b89ebc8821ca593230101d
+$ docker pull backdrop@sha256:1ab9f81853e584ebb7c0ec6a5f180d700e0987bf971d182d1811da7363f117a3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2032,7 +2032,7 @@ CMD ["apache2-foreground"]
 ## `backdrop:1.10-fpm`
 
 ```console
-$ docker pull backdrop@sha256:5b80908eab45e4e480a8deacbc6469bfd8f8a8c6b0379a34400b44b2570d1a1d
+$ docker pull backdrop@sha256:81b5828d766d5598431de9b17b25665c7c939c76500a32b0f77f4b2346e86fd0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2321,7 +2321,7 @@ CMD ["php-fpm"]
 ## `backdrop:1-apache`
 
 ```console
-$ docker pull backdrop@sha256:136d034db7d70f21070c65f8d25c0eebabf12cbc05b89ebc8821ca593230101d
+$ docker pull backdrop@sha256:1ab9f81853e584ebb7c0ec6a5f180d700e0987bf971d182d1811da7363f117a3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2666,7 +2666,7 @@ CMD ["apache2-foreground"]
 ## `backdrop:1-fpm`
 
 ```console
-$ docker pull backdrop@sha256:5b80908eab45e4e480a8deacbc6469bfd8f8a8c6b0379a34400b44b2570d1a1d
+$ docker pull backdrop@sha256:81b5828d766d5598431de9b17b25665c7c939c76500a32b0f77f4b2346e86fd0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2955,7 +2955,7 @@ CMD ["php-fpm"]
 ## `backdrop:apache`
 
 ```console
-$ docker pull backdrop@sha256:136d034db7d70f21070c65f8d25c0eebabf12cbc05b89ebc8821ca593230101d
+$ docker pull backdrop@sha256:1ab9f81853e584ebb7c0ec6a5f180d700e0987bf971d182d1811da7363f117a3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3300,7 +3300,7 @@ CMD ["apache2-foreground"]
 ## `backdrop:fpm`
 
 ```console
-$ docker pull backdrop@sha256:5b80908eab45e4e480a8deacbc6469bfd8f8a8c6b0379a34400b44b2570d1a1d
+$ docker pull backdrop@sha256:81b5828d766d5598431de9b17b25665c7c939c76500a32b0f77f4b2346e86fd0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3589,7 +3589,7 @@ CMD ["php-fpm"]
 ## `backdrop:latest`
 
 ```console
-$ docker pull backdrop@sha256:136d034db7d70f21070c65f8d25c0eebabf12cbc05b89ebc8821ca593230101d
+$ docker pull backdrop@sha256:1ab9f81853e584ebb7c0ec6a5f180d700e0987bf971d182d1811da7363f117a3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
