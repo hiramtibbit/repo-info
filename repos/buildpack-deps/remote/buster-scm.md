@@ -1,7 +1,7 @@
 ## `buildpack-deps:buster-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:ce27e9835d373d070f126dfe72895a64c64d2aa147ca204b45efaff6827b1b8a
+$ docker pull buildpack-deps@sha256:4b3f14ac7813067de6913c8f42b8675d83003fff92d9db724bacf591e7d6def1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

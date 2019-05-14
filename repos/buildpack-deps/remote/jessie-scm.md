@@ -1,7 +1,7 @@
 ## `buildpack-deps:jessie-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:ea74acba9055ef713b0d1c47402a212b53679cfa94705ca69540fcda1389f099
+$ docker pull buildpack-deps@sha256:ba1fc4a1cdefc466773cbcf57e80fe342bae84c266322e28460f5c480f00d413
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

@@ -1,7 +1,7 @@
 ## `buildpack-deps:disco-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:ac464dc51dd4341ddf3a0cb64a2eb6465d5518ccdb59a670ab43cb40b09df97f
+$ docker pull buildpack-deps@sha256:455e024459927859de5adaeb0551e73ed33c92ad6f4ca30ec2c53501032502f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

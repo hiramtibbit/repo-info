@@ -1,7 +1,7 @@
 ## `buildpack-deps:buster-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:6ac2568b5994879f5a4fab7ed78b66fc7a176261954fcaa186038d93975325a1
+$ docker pull buildpack-deps@sha256:178f5420bd4a3966bfc2361899d66b22fe75ec65608e14645d192daa48fc7667
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

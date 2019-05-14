@@ -1,7 +1,7 @@
 ## `buildpack-deps:stable`
 
 ```console
-$ docker pull buildpack-deps@sha256:e041a42c6042f8ec58d0ef5619112e03ceaccde549f9a2aabf9c69614162b04a
+$ docker pull buildpack-deps@sha256:478e6d16879101071c85aaca07b0ad6bbcda9afea5bb9f892a557eaae451b7f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

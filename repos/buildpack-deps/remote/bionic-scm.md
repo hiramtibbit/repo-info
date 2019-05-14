@@ -1,7 +1,7 @@
 ## `buildpack-deps:bionic-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:faa7b86b356debd401a823ba9295e1de3eabdedba6aba28851846428fe06dfc0
+$ docker pull buildpack-deps@sha256:2f0d8d965af7638fba0b5a24a4523fa5dee9b571cd5ee2442581e422162c5c79
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

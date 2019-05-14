@@ -1,7 +1,7 @@
 ## `buildpack-deps:sid-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:1d1c6e01dcfd60ec1f91d3adfc546213a775eb2b979236451d039da3d7ea175d
+$ docker pull buildpack-deps@sha256:b9e0d6c8c99e0d26137db7f3c9b51dfc70aa0f3e99816219c5859b778c7e8945
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

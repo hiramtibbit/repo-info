@@ -1,7 +1,7 @@
 ## `buildpack-deps:xenial`
 
 ```console
-$ docker pull buildpack-deps@sha256:536ecc1ff4904af95eb000e6e85e86531caeb0de8ae5827a0ac4ec607efefcd8
+$ docker pull buildpack-deps@sha256:45e033990804508018c6d93d63a9701040cfe14cb08eb1ba598bfa3222de0478
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

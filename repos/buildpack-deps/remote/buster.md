@@ -1,7 +1,7 @@
 ## `buildpack-deps:buster`
 
 ```console
-$ docker pull buildpack-deps@sha256:8538036f22b6d2de26ca75524e7ece5dccaf523cb54bb47b2daad351cb313dc3
+$ docker pull buildpack-deps@sha256:7be43d06707c2e5a4d722788cde737876490988ad4f669207033b1fd63c79d3e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

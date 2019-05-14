@@ -1,7 +1,7 @@
 ## `buildpack-deps:sid-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:62661f970fd0de4f2052627124a92ae49ceebe2eda011ddda009b4a511656ef8
+$ docker pull buildpack-deps@sha256:68ab4b5e01b56cad504ca484da915b7cb8e512696666de63008425ab35d157a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

@@ -1,7 +1,7 @@
 ## `buildpack-deps:stretch-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:7748aec632d63ea9eb58e6dcd469f1029d3a9080e67fbf9b13f4c0709711ed45
+$ docker pull buildpack-deps@sha256:fe41cf0126bfd2c876171952f25e8cd80a9107f61c58f532817e52503c024941
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

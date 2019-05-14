@@ -1,7 +1,7 @@
 ## `buildpack-deps:cosmic-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:1c4e3742e0f68a46d12d50061a37aaa71d72ccb14a9d316da9cfbc225904656a
+$ docker pull buildpack-deps@sha256:aca807a17c1343e431dd04f339accb9abbd2eada7fdebb2d82428569b95f89bc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

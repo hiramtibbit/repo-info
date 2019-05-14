@@ -1,7 +1,7 @@
 ## `buildpack-deps:cosmic-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:a2e349334fc1343bf887eaef8635957f0ec7dd5a1ccacae42c40b06b750b1c07
+$ docker pull buildpack-deps@sha256:211ce3bdf6c8cf9575c6a110fe961c55dfa84459d3f15575d4e17e57b84bb322
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
