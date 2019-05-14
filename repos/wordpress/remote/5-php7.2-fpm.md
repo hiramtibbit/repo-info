@@ -1,7 +1,7 @@
 ## `wordpress:5-php7.2-fpm`
 
 ```console
-$ docker pull wordpress@sha256:9fb733034b06a8fd164f0473bbe1de1c7ea1f9f9916dcd582b6f41d958245cfe
+$ docker pull wordpress@sha256:f4e59a24af7627204a1af44605f5de4acea5826a4ad8e3910edd017a2c98b880
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
