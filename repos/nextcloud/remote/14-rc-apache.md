@@ -1,7 +1,7 @@
 ## `nextcloud:14-rc-apache`
 
 ```console
-$ docker pull nextcloud@sha256:0d9dcfc2994684200821fedb2c8959a6bfb1513c37c4e3728631b43288ec174b
+$ docker pull nextcloud@sha256:62da34293643542779c35037782a86fed04ca83c09ba5fd458391330ce9e0766
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
