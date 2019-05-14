@@ -1,7 +1,7 @@
 ## `erlang:19-slim`
 
 ```console
-$ docker pull erlang@sha256:d7968a552dc15510a8ec116257d069f0481f8f22e5aacdde19a2c545be3d39a5
+$ docker pull erlang@sha256:fdcaca621d2f0cdf814976288e3b3fb614b24ed493443e9eab5d05c601600607
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
