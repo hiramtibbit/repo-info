@@ -14,7 +14,7 @@
 ## `registry:2`
 
 ```console
-$ docker pull registry@sha256:3b00e5438ebd8835bcfa7bf5246445a6b57b9a50473e89c02ecc8e575be3ebb5
+$ docker pull registry@sha256:77a8fb00c00b99568772a70f0863f6192ff2635e4af4e22e4d9c622edeb5f2de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -144,14 +144,14 @@ CMD ["/etc/docker/registry/config.yml"]
 ### `registry:2` - linux; arm64 variant v8
 
 ```console
-$ docker pull registry@sha256:f1526551942801a8192a9107259670a489f8fe257f4427f47126076145ca7af1
+$ docker pull registry@sha256:8b5098fddcb409b064f5491cead510b46627d38b60337d58e8d145ae049e2c00
 ```
 
 -	Docker Version: 18.06.1-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.9 MB (8944264 bytes)**  
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
+-	Total Size: **8.9 MB (8944296 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d837957d0a2c4cb65b3385bb46015af8d0860e081bd8f563193482179b24f0b6`
+-	Image ID: `a51cc197823ea7282bba3b919476072a9c18d1abe3609fa92b51f02a5f7601ab`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["\/etc\/docker\/registry\/config.yml"]`
 
@@ -175,35 +175,39 @@ COPY file:507caa54f88c1f3862e5876e09a108b2083630ba24c57ad124e356a2de861d62 in /e
 # Fri, 08 Mar 2019 12:08:07 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 # Fri, 08 Mar 2019 12:08:07 GMT
-CMD ["/etc/docker/registry/config.yml"]
+RUN ["\/bin\/sh","-c","#(nop) ","CMD [\"\/etc\/docker\/registry\/config.yml\"]"]
 ```
 
 -	Layers:
-	-	`sha256:5011838a0b2d66c2c804ad057403a19bac7e263f0748579857f3ce4c0cbfc08c`  
-		Last Modified: Fri, 08 Mar 2019 03:38:05 GMT  
-		Size: 2.1 MB (2099962 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5a72f929f87479c7ff943ad697d41ca6c33c6d31c66d6fe8eaede7eb13420db`  
-		Last Modified: Fri, 08 Mar 2019 12:08:30 GMT  
-		Size: 603.5 KB (603518 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90096488cdb5b294fcfb79d614255a9396aa6578afb59d7d23766d8aab096eb6`  
-		Last Modified: Fri, 08 Mar 2019 12:08:32 GMT  
-		Size: 6.2 MB (6240199 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5057afd3edbb5f8c1add69a5b3d6830637a32afa0d4d76caabd859514b0ecc8`  
-		Last Modified: Fri, 08 Mar 2019 12:08:29 GMT  
-		Size: 371.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B  
+		MIME: application/octet-stream
 	-	`sha256:7b05dee0bff2f9eb8be078d2d0be1d890076046eb71368030c03d422d94608ab`  
 		Last Modified: Fri, 08 Mar 2019 12:08:29 GMT  
 		Size: 214.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/octet-stream
+	-	`sha256:f5057afd3edbb5f8c1add69a5b3d6830637a32afa0d4d76caabd859514b0ecc8`  
+		Last Modified: Fri, 08 Mar 2019 12:08:29 GMT  
+		Size: 371.0 B  
+		MIME: application/octet-stream
+	-	`sha256:90096488cdb5b294fcfb79d614255a9396aa6578afb59d7d23766d8aab096eb6`  
+		Last Modified: Fri, 08 Mar 2019 12:08:32 GMT  
+		Size: 6.2 MB (6240199 bytes)  
+		MIME: application/octet-stream
+	-	`sha256:d5a72f929f87479c7ff943ad697d41ca6c33c6d31c66d6fe8eaede7eb13420db`  
+		Last Modified: Fri, 08 Mar 2019 12:08:30 GMT  
+		Size: 603.5 KB (603518 bytes)  
+		MIME: application/octet-stream
+	-	`sha256:5011838a0b2d66c2c804ad057403a19bac7e263f0748579857f3ce4c0cbfc08c`  
+		Last Modified: Fri, 08 Mar 2019 03:38:05 GMT  
+		Size: 2.1 MB (2099962 bytes)  
+		MIME: application/octet-stream
 
 ## `registry:2.5`
 
 ```console
-$ docker pull registry@sha256:0e24817489e4c7ab947f017cd234eee90c140a110d4c1dee368333ee1228bce9
+$ docker pull registry@sha256:1a741bd1ad954fe4d7109cfdeabdf65f72c9b51b198f41f67ca1f86582bbbca8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -272,7 +276,7 @@ CMD ["/etc/docker/registry/config.yml"]
 ## `registry:2.5.2`
 
 ```console
-$ docker pull registry@sha256:0e24817489e4c7ab947f017cd234eee90c140a110d4c1dee368333ee1228bce9
+$ docker pull registry@sha256:1a741bd1ad954fe4d7109cfdeabdf65f72c9b51b198f41f67ca1f86582bbbca8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -341,7 +345,7 @@ CMD ["/etc/docker/registry/config.yml"]
 ## `registry:2.6`
 
 ```console
-$ docker pull registry@sha256:8d976a50343facb261532f9ef1c249af923923062157d2f36d496387f181e1b9
+$ docker pull registry@sha256:ab6985c07744c69c4d4197cf73f5049f9c4c91c49c866c459efdf44d952a0438
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -530,7 +534,7 @@ CMD ["/etc/docker/registry/config.yml"]
 ## `registry:2.6.2`
 
 ```console
-$ docker pull registry@sha256:8d976a50343facb261532f9ef1c249af923923062157d2f36d496387f181e1b9
+$ docker pull registry@sha256:ab6985c07744c69c4d4197cf73f5049f9c4c91c49c866c459efdf44d952a0438
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -719,7 +723,7 @@ CMD ["/etc/docker/registry/config.yml"]
 ## `registry:2.7`
 
 ```console
-$ docker pull registry@sha256:3b00e5438ebd8835bcfa7bf5246445a6b57b9a50473e89c02ecc8e575be3ebb5
+$ docker pull registry@sha256:b6c53edef58d188e5a82a679c1ea9c839db866f03ab199c604ec276dd3a30af6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -908,7 +912,7 @@ CMD ["/etc/docker/registry/config.yml"]
 ## `registry:2.7.1`
 
 ```console
-$ docker pull registry@sha256:3b00e5438ebd8835bcfa7bf5246445a6b57b9a50473e89c02ecc8e575be3ebb5
+$ docker pull registry@sha256:b6c53edef58d188e5a82a679c1ea9c839db866f03ab199c604ec276dd3a30af6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1097,7 +1101,7 @@ CMD ["/etc/docker/registry/config.yml"]
 ## `registry:latest`
 
 ```console
-$ docker pull registry@sha256:3b00e5438ebd8835bcfa7bf5246445a6b57b9a50473e89c02ecc8e575be3ebb5
+$ docker pull registry@sha256:f87f2b82b4873e0651f928dcde9556008314543bd863b3f7e5e8d03b04e117f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1227,14 +1231,14 @@ CMD ["/etc/docker/registry/config.yml"]
 ### `registry:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull registry@sha256:f1526551942801a8192a9107259670a489f8fe257f4427f47126076145ca7af1
+$ docker pull registry@sha256:adc614a1cebc0e29f094b87ac90626c2e3887ad2761e4cf5be6ce4a5c52648a4
 ```
 
 -	Docker Version: 18.06.1-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.9 MB (8944264 bytes)**  
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
+-	Total Size: **8.9 MB (8944296 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d837957d0a2c4cb65b3385bb46015af8d0860e081bd8f563193482179b24f0b6`
+-	Image ID: `a51cc197823ea7282bba3b919476072a9c18d1abe3609fa92b51f02a5f7601ab`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["\/etc\/docker\/registry\/config.yml"]`
 
@@ -1258,27 +1262,31 @@ COPY file:507caa54f88c1f3862e5876e09a108b2083630ba24c57ad124e356a2de861d62 in /e
 # Fri, 08 Mar 2019 12:08:07 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 # Fri, 08 Mar 2019 12:08:07 GMT
-CMD ["/etc/docker/registry/config.yml"]
+RUN ["\/bin\/sh","-c","#(nop) ","CMD [\"\/etc\/docker\/registry\/config.yml\"]"]
 ```
 
 -	Layers:
-	-	`sha256:5011838a0b2d66c2c804ad057403a19bac7e263f0748579857f3ce4c0cbfc08c`  
-		Last Modified: Fri, 08 Mar 2019 03:38:05 GMT  
-		Size: 2.1 MB (2099962 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5a72f929f87479c7ff943ad697d41ca6c33c6d31c66d6fe8eaede7eb13420db`  
-		Last Modified: Fri, 08 Mar 2019 12:08:30 GMT  
-		Size: 603.5 KB (603518 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90096488cdb5b294fcfb79d614255a9396aa6578afb59d7d23766d8aab096eb6`  
-		Last Modified: Fri, 08 Mar 2019 12:08:32 GMT  
-		Size: 6.2 MB (6240199 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5057afd3edbb5f8c1add69a5b3d6830637a32afa0d4d76caabd859514b0ecc8`  
-		Last Modified: Fri, 08 Mar 2019 12:08:29 GMT  
-		Size: 371.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
+		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
+		Size: 32.0 B  
+		MIME: application/octet-stream
 	-	`sha256:7b05dee0bff2f9eb8be078d2d0be1d890076046eb71368030c03d422d94608ab`  
 		Last Modified: Fri, 08 Mar 2019 12:08:29 GMT  
 		Size: 214.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/octet-stream
+	-	`sha256:f5057afd3edbb5f8c1add69a5b3d6830637a32afa0d4d76caabd859514b0ecc8`  
+		Last Modified: Fri, 08 Mar 2019 12:08:29 GMT  
+		Size: 371.0 B  
+		MIME: application/octet-stream
+	-	`sha256:90096488cdb5b294fcfb79d614255a9396aa6578afb59d7d23766d8aab096eb6`  
+		Last Modified: Fri, 08 Mar 2019 12:08:32 GMT  
+		Size: 6.2 MB (6240199 bytes)  
+		MIME: application/octet-stream
+	-	`sha256:d5a72f929f87479c7ff943ad697d41ca6c33c6d31c66d6fe8eaede7eb13420db`  
+		Last Modified: Fri, 08 Mar 2019 12:08:30 GMT  
+		Size: 603.5 KB (603518 bytes)  
+		MIME: application/octet-stream
+	-	`sha256:5011838a0b2d66c2c804ad057403a19bac7e263f0748579857f3ce4c0cbfc08c`  
+		Last Modified: Fri, 08 Mar 2019 03:38:05 GMT  
+		Size: 2.1 MB (2099962 bytes)  
+		MIME: application/octet-stream
