@@ -1,7 +1,7 @@
 ## `clojure:openjdk-11-tools-deps-1.10.0.442`
 
 ```console
-$ docker pull clojure@sha256:8b12a6b700aa03c7dd056a9c758384d44714dde018cf6e18499d19def3847be4
+$ docker pull clojure@sha256:0071da4bfa350fd32b8551cd149ed8b4a91889210e18104e4879cd4b13a951a5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

@@ -1,7 +1,7 @@
 ## `clojure:openjdk-11-boot`
 
 ```console
-$ docker pull clojure@sha256:02251941525ce16faac686599bb6830694337350a09d25dbb9742afba0204635
+$ docker pull clojure@sha256:e2cb1029aff06c9b4a1baae02f6948a253b4733abea0fdda5e7759942b0d935a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

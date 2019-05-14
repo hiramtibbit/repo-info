@@ -1,7 +1,7 @@
 ## `clojure:tools-deps`
 
 ```console
-$ docker pull clojure@sha256:10acc776261c63bf2d37c1a2a3362597e32ccfd6ba3f63a1866e4fdad4700d77
+$ docker pull clojure@sha256:26ab985793fa9e9a1b2fd0d64f4b13f39486e3689a42e56eee4d5302f90a08e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
