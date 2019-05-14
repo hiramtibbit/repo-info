@@ -1,7 +1,7 @@
 ## `redis:5-stretch`
 
 ```console
-$ docker pull redis@sha256:cac4e16f45aa3b315ec3ed9c2167ec8ad58fa717136fa6992c1062c384e18a36
+$ docker pull redis@sha256:2dfa6432744659268d001d16c39f7be52ee73ef7e1001ff80643f0f7bdee117e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
