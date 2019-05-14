@@ -9,7 +9,7 @@
 ## `sl:6`
 
 ```console
-$ docker pull sl@sha256:3941cdd98fef12a696ee703dfed6e0ca5a52c28722da75a35030a5320a0f2bf9
+$ docker pull sl@sha256:c4909f06f06ff52432257afcde0076d3efdc46c146848f1fbfbe6ad40d77d4cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -47,7 +47,7 @@ CMD ["/bin/bash"]
 ## `sl:7`
 
 ```console
-$ docker pull sl@sha256:efca0873bffa7ffbc7ffeadf03a79cb54e754a921366c06a76396c0d9ecf7474
+$ docker pull sl@sha256:e1012d098fde4ebb36b0478e385df56f94e1e2ed7afc7f07c69c2f48782778e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -85,7 +85,7 @@ CMD ["/bin/bash"]
 ## `sl:latest`
 
 ```console
-$ docker pull sl@sha256:efca0873bffa7ffbc7ffeadf03a79cb54e754a921366c06a76396c0d9ecf7474
+$ docker pull sl@sha256:e1012d098fde4ebb36b0478e385df56f94e1e2ed7afc7f07c69c2f48782778e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

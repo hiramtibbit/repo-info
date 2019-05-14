@@ -1,7 +1,7 @@
 ## `sl:latest`
 
 ```console
-$ docker pull sl@sha256:efca0873bffa7ffbc7ffeadf03a79cb54e754a921366c06a76396c0d9ecf7474
+$ docker pull sl@sha256:e1012d098fde4ebb36b0478e385df56f94e1e2ed7afc7f07c69c2f48782778e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
