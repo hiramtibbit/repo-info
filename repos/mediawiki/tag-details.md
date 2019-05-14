@@ -17,7 +17,7 @@
 ## `mediawiki:1.27`
 
 ```console
-$ docker pull mediawiki@sha256:1ca3f07f0d9c2193f39b706eb9244a0ec34b730a7ffc53a58174070d9c052a04
+$ docker pull mediawiki@sha256:2962e0c4c6b27cb4331fbc7a8274474bc7ac7336e2bb3bf12ee290732e482aa5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1022,7 +1022,7 @@ RUN curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSIO
 ## `mediawiki:1.27.5`
 
 ```console
-$ docker pull mediawiki@sha256:1ca3f07f0d9c2193f39b706eb9244a0ec34b730a7ffc53a58174070d9c052a04
+$ docker pull mediawiki@sha256:2962e0c4c6b27cb4331fbc7a8274474bc7ac7336e2bb3bf12ee290732e482aa5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2027,7 +2027,7 @@ RUN curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSIO
 ## `mediawiki:1.31`
 
 ```console
-$ docker pull mediawiki@sha256:fedcec0c007138b4e910059619fda2711df79c375ea54fbe1f16ffafc5eeb7b3
+$ docker pull mediawiki@sha256:8be0d10dddb77a7915a6c68ebd0048cfe354cca0ed881d643fd72b366f799fbc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3068,7 +3068,7 @@ RUN curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSIO
 ## `mediawiki:1.31.1`
 
 ```console
-$ docker pull mediawiki@sha256:fedcec0c007138b4e910059619fda2711df79c375ea54fbe1f16ffafc5eeb7b3
+$ docker pull mediawiki@sha256:8be0d10dddb77a7915a6c68ebd0048cfe354cca0ed881d643fd72b366f799fbc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4109,7 +4109,7 @@ RUN curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSIO
 ## `mediawiki:1.32`
 
 ```console
-$ docker pull mediawiki@sha256:d1322c6945ef008d4c2e6aac1ec0acc420352c7d79e2c90f3f2620dbb9febfdf
+$ docker pull mediawiki@sha256:2663e369119932a28967d27e8ba38623b08decc12e9b1cc801272d2d887eb368
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5186,7 +5186,7 @@ RUN curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSIO
 ## `mediawiki:1.32.1`
 
 ```console
-$ docker pull mediawiki@sha256:d1322c6945ef008d4c2e6aac1ec0acc420352c7d79e2c90f3f2620dbb9febfdf
+$ docker pull mediawiki@sha256:2663e369119932a28967d27e8ba38623b08decc12e9b1cc801272d2d887eb368
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6263,7 +6263,7 @@ RUN curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSIO
 ## `mediawiki:latest`
 
 ```console
-$ docker pull mediawiki@sha256:d1322c6945ef008d4c2e6aac1ec0acc420352c7d79e2c90f3f2620dbb9febfdf
+$ docker pull mediawiki@sha256:2663e369119932a28967d27e8ba38623b08decc12e9b1cc801272d2d887eb368
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7340,7 +7340,7 @@ RUN curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSIO
 ## `mediawiki:legacy`
 
 ```console
-$ docker pull mediawiki@sha256:fedcec0c007138b4e910059619fda2711df79c375ea54fbe1f16ffafc5eeb7b3
+$ docker pull mediawiki@sha256:8be0d10dddb77a7915a6c68ebd0048cfe354cca0ed881d643fd72b366f799fbc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8381,7 +8381,7 @@ RUN curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSIO
 ## `mediawiki:legacylts`
 
 ```console
-$ docker pull mediawiki@sha256:1ca3f07f0d9c2193f39b706eb9244a0ec34b730a7ffc53a58174070d9c052a04
+$ docker pull mediawiki@sha256:2962e0c4c6b27cb4331fbc7a8274474bc7ac7336e2bb3bf12ee290732e482aa5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9386,7 +9386,7 @@ RUN curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSIO
 ## `mediawiki:lts`
 
 ```console
-$ docker pull mediawiki@sha256:fedcec0c007138b4e910059619fda2711df79c375ea54fbe1f16ffafc5eeb7b3
+$ docker pull mediawiki@sha256:8be0d10dddb77a7915a6c68ebd0048cfe354cca0ed881d643fd72b366f799fbc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10427,7 +10427,7 @@ RUN curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSIO
 ## `mediawiki:stable`
 
 ```console
-$ docker pull mediawiki@sha256:d1322c6945ef008d4c2e6aac1ec0acc420352c7d79e2c90f3f2620dbb9febfdf
+$ docker pull mediawiki@sha256:2663e369119932a28967d27e8ba38623b08decc12e9b1cc801272d2d887eb368
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

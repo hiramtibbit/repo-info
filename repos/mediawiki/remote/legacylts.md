@@ -1,7 +1,7 @@
 ## `mediawiki:legacylts`
 
 ```console
-$ docker pull mediawiki@sha256:1ca3f07f0d9c2193f39b706eb9244a0ec34b730a7ffc53a58174070d9c052a04
+$ docker pull mediawiki@sha256:2962e0c4c6b27cb4331fbc7a8274474bc7ac7336e2bb3bf12ee290732e482aa5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
