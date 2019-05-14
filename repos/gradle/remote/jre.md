@@ -1,7 +1,7 @@
 ## `gradle:jre`
 
 ```console
-$ docker pull gradle@sha256:28da333bc936f76352ca8421a362676bf6e9a32c67bd021e47f3379835c0676e
+$ docker pull gradle@sha256:7c0581cd50a6d20a5d85632124412546808f3190a57ac69a68637459e6ffa7e7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

@@ -1,7 +1,7 @@
 ## `gradle:jre11-slim`
 
 ```console
-$ docker pull gradle@sha256:fb4038db24fa18b5ef7e79ad4d5ea0e7aeab3a6ca4063a2ccbe8ad6c004f8f8a
+$ docker pull gradle@sha256:a46bc1557bdfb12f9a521a75322f70f96704651e32726f1afd6ae702687f6d12
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
