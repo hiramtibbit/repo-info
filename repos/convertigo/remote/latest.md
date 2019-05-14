@@ -1,7 +1,7 @@
 ## `convertigo:latest`
 
 ```console
-$ docker pull convertigo@sha256:a6c25dd47fdae72f92e6822af73e0824e1b970e193ecbfef140a16f2869077d5
+$ docker pull convertigo@sha256:d3c2c0af3af3288f503cc07c34129f28872777395d142783789ed371fe2c768f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
