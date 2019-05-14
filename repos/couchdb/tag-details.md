@@ -11,7 +11,7 @@
 ## `couchdb:2`
 
 ```console
-$ docker pull couchdb@sha256:d8ba44adca0c08ea0bdc9718f12bdd2e77062c1b62b6e28720c262ec43465e50
+$ docker pull couchdb@sha256:dbcb1b32f356aca9415ade8eccaca7c925c3ed4c2c52f113f9b3753994eee226
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -132,7 +132,7 @@ CMD ["/opt/couchdb/bin/couchdb"]
 ## `couchdb:2.3`
 
 ```console
-$ docker pull couchdb@sha256:d8ba44adca0c08ea0bdc9718f12bdd2e77062c1b62b6e28720c262ec43465e50
+$ docker pull couchdb@sha256:dbcb1b32f356aca9415ade8eccaca7c925c3ed4c2c52f113f9b3753994eee226
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -253,7 +253,7 @@ CMD ["/opt/couchdb/bin/couchdb"]
 ## `couchdb:2.3.0`
 
 ```console
-$ docker pull couchdb@sha256:9048d7f1747ab6c84d80c2e418de32a3dd3ef4ead01580c5a2d9ef7f43430b0d
+$ docker pull couchdb@sha256:8529c4972c0269f6134c467049010dcf38a8b1b89d35d984118ead560da8639b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -374,7 +374,7 @@ CMD ["/opt/couchdb/bin/couchdb"]
 ## `couchdb:2.3.1`
 
 ```console
-$ docker pull couchdb@sha256:d8ba44adca0c08ea0bdc9718f12bdd2e77062c1b62b6e28720c262ec43465e50
+$ docker pull couchdb@sha256:dbcb1b32f356aca9415ade8eccaca7c925c3ed4c2c52f113f9b3753994eee226
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -495,7 +495,7 @@ CMD ["/opt/couchdb/bin/couchdb"]
 ## `couchdb:latest`
 
 ```console
-$ docker pull couchdb@sha256:d8ba44adca0c08ea0bdc9718f12bdd2e77062c1b62b6e28720c262ec43465e50
+$ docker pull couchdb@sha256:dbcb1b32f356aca9415ade8eccaca7c925c3ed4c2c52f113f9b3753994eee226
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
