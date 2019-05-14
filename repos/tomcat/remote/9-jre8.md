@@ -1,7 +1,7 @@
 ## `tomcat:9-jre8`
 
 ```console
-$ docker pull tomcat@sha256:ab63670d38decb8a985fda7892c7e6577dd50d68739366831018f64613f772bd
+$ docker pull tomcat@sha256:2b0b1ec2da608591a565084254aab51dcd131c69cc2ac7944d981a6d98f04d3f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

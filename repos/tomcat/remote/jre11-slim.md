@@ -1,7 +1,7 @@
 ## `tomcat:jre11-slim`
 
 ```console
-$ docker pull tomcat@sha256:36c6a7da2c98c1fda51e5f6fba827e51e4a7c63bb136782de5c596701a8522a8
+$ docker pull tomcat@sha256:bedfbce1e90a7a5478a167e5eb576affe00db5f84189f88ef812806c8181eb9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

@@ -1,7 +1,7 @@
 ## `tomcat:latest`
 
 ```console
-$ docker pull tomcat@sha256:f3b20816a85e9323d845d36eba60933a34333fcdc1784a0a886f3edc8e91bceb
+$ docker pull tomcat@sha256:6c48a608fc6fd7f3c5b6ad58ebac76646d19e42653b7302c1d597c8eb40e9ec0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
