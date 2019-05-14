@@ -12,7 +12,7 @@
 ## `geonetwork:3.6`
 
 ```console
-$ docker pull geonetwork@sha256:226626951515399da301c6e306c5dc5d90914e564680065b1cd74008155d5a42
+$ docker pull geonetwork@sha256:8bfd055d62ff05a4e9c5f1c17150c36b449a9c599de3d4272e3da584657d7240
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1099,7 +1099,7 @@ CMD ["catalina.sh" "run"]
 ## `geonetwork:3.6.0`
 
 ```console
-$ docker pull geonetwork@sha256:226626951515399da301c6e306c5dc5d90914e564680065b1cd74008155d5a42
+$ docker pull geonetwork@sha256:8bfd055d62ff05a4e9c5f1c17150c36b449a9c599de3d4272e3da584657d7240
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2186,7 +2186,7 @@ CMD ["catalina.sh" "run"]
 ## `geonetwork:3.6.0-postgres`
 
 ```console
-$ docker pull geonetwork@sha256:4ebcc0d0114ca3e1c9fe5db6604db38973167cfd029fdeda6fee62cb34625b94
+$ docker pull geonetwork@sha256:534a0e917bb7a7e2eae005a947c99b15873469d11bd334f06dc113b01254e58e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3469,7 +3469,7 @@ CMD ["catalina.sh" "run"]
 ## `geonetwork:3.6-postgres`
 
 ```console
-$ docker pull geonetwork@sha256:4ebcc0d0114ca3e1c9fe5db6604db38973167cfd029fdeda6fee62cb34625b94
+$ docker pull geonetwork@sha256:534a0e917bb7a7e2eae005a947c99b15873469d11bd334f06dc113b01254e58e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4752,7 +4752,7 @@ CMD ["catalina.sh" "run"]
 ## `geonetwork:latest`
 
 ```console
-$ docker pull geonetwork@sha256:226626951515399da301c6e306c5dc5d90914e564680065b1cd74008155d5a42
+$ docker pull geonetwork@sha256:8bfd055d62ff05a4e9c5f1c17150c36b449a9c599de3d4272e3da584657d7240
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5839,7 +5839,7 @@ CMD ["catalina.sh" "run"]
 ## `geonetwork:postgres`
 
 ```console
-$ docker pull geonetwork@sha256:4ebcc0d0114ca3e1c9fe5db6604db38973167cfd029fdeda6fee62cb34625b94
+$ docker pull geonetwork@sha256:534a0e917bb7a7e2eae005a947c99b15873469d11bd334f06dc113b01254e58e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
