@@ -1,7 +1,7 @@
 ## `xwiki:11-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:92756d685e5bea5c57c39e2c44704276fd76b7b684d8f76d557e11a2e9fa6308
+$ docker pull xwiki@sha256:f6494fa87e156e0a4cf31e2ce25c639793d58673388d7f0ed2f2f1f37fb55fbb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

@@ -1,7 +1,7 @@
 ## `xwiki:postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:69688daf62dab8c14cc8a1666a176aaaa78eb8ceed1ad7f7f5f8c8f6c317d7e6
+$ docker pull xwiki@sha256:3628a8ab5a22e5165c66a08abdc933c661de00febcbd6a16c5651a23d23abf72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

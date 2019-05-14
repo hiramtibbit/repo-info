@@ -32,7 +32,7 @@
 ## `xwiki:10`
 
 ```console
-$ docker pull xwiki@sha256:a98708699032805fd7b4065c9cbe766a2d1a5c46a25362de510ac48914469451
+$ docker pull xwiki@sha256:4b12f17eb1e605f1016358fcdce1a79b17492fc14bb0d88465669fcda09fa696
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -211,7 +211,7 @@ CMD ["xwiki"]
 ## `xwiki:10.11`
 
 ```console
-$ docker pull xwiki@sha256:a98708699032805fd7b4065c9cbe766a2d1a5c46a25362de510ac48914469451
+$ docker pull xwiki@sha256:4b12f17eb1e605f1016358fcdce1a79b17492fc14bb0d88465669fcda09fa696
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -390,7 +390,7 @@ CMD ["xwiki"]
 ## `xwiki:10.11.8`
 
 ```console
-$ docker pull xwiki@sha256:a98708699032805fd7b4065c9cbe766a2d1a5c46a25362de510ac48914469451
+$ docker pull xwiki@sha256:4b12f17eb1e605f1016358fcdce1a79b17492fc14bb0d88465669fcda09fa696
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -569,7 +569,7 @@ CMD ["xwiki"]
 ## `xwiki:10.11.8-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:69688daf62dab8c14cc8a1666a176aaaa78eb8ceed1ad7f7f5f8c8f6c317d7e6
+$ docker pull xwiki@sha256:3628a8ab5a22e5165c66a08abdc933c661de00febcbd6a16c5651a23d23abf72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -918,7 +918,7 @@ CMD ["xwiki"]
 ## `xwiki:10.11-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:69688daf62dab8c14cc8a1666a176aaaa78eb8ceed1ad7f7f5f8c8f6c317d7e6
+$ docker pull xwiki@sha256:3628a8ab5a22e5165c66a08abdc933c661de00febcbd6a16c5651a23d23abf72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1267,7 +1267,7 @@ CMD ["xwiki"]
 ## `xwiki:10-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:a98708699032805fd7b4065c9cbe766a2d1a5c46a25362de510ac48914469451
+$ docker pull xwiki@sha256:4b12f17eb1e605f1016358fcdce1a79b17492fc14bb0d88465669fcda09fa696
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1446,7 +1446,7 @@ CMD ["xwiki"]
 ## `xwiki:10-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:69688daf62dab8c14cc8a1666a176aaaa78eb8ceed1ad7f7f5f8c8f6c317d7e6
+$ docker pull xwiki@sha256:3628a8ab5a22e5165c66a08abdc933c661de00febcbd6a16c5651a23d23abf72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1795,7 +1795,7 @@ CMD ["xwiki"]
 ## `xwiki:11`
 
 ```console
-$ docker pull xwiki@sha256:92756d685e5bea5c57c39e2c44704276fd76b7b684d8f76d557e11a2e9fa6308
+$ docker pull xwiki@sha256:f6494fa87e156e0a4cf31e2ce25c639793d58673388d7f0ed2f2f1f37fb55fbb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1974,7 +1974,7 @@ CMD ["xwiki"]
 ## `xwiki:11.3`
 
 ```console
-$ docker pull xwiki@sha256:92756d685e5bea5c57c39e2c44704276fd76b7b684d8f76d557e11a2e9fa6308
+$ docker pull xwiki@sha256:f6494fa87e156e0a4cf31e2ce25c639793d58673388d7f0ed2f2f1f37fb55fbb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2153,7 +2153,7 @@ CMD ["xwiki"]
 ## `xwiki:11.3-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:92756d685e5bea5c57c39e2c44704276fd76b7b684d8f76d557e11a2e9fa6308
+$ docker pull xwiki@sha256:f6494fa87e156e0a4cf31e2ce25c639793d58673388d7f0ed2f2f1f37fb55fbb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2332,7 +2332,7 @@ CMD ["xwiki"]
 ## `xwiki:11.3-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:ad88440444ba214729404810419ffc400f9e50cf8cf450f48ec3780dae7e9665
+$ docker pull xwiki@sha256:52912138d5a32000ddd766e39f187462b0cb92c06f4d5a2e84e2c9ed87a2bfb8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2681,7 +2681,7 @@ CMD ["xwiki"]
 ## `xwiki:11-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:92756d685e5bea5c57c39e2c44704276fd76b7b684d8f76d557e11a2e9fa6308
+$ docker pull xwiki@sha256:f6494fa87e156e0a4cf31e2ce25c639793d58673388d7f0ed2f2f1f37fb55fbb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2860,7 +2860,7 @@ CMD ["xwiki"]
 ## `xwiki:11-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:ad88440444ba214729404810419ffc400f9e50cf8cf450f48ec3780dae7e9665
+$ docker pull xwiki@sha256:52912138d5a32000ddd766e39f187462b0cb92c06f4d5a2e84e2c9ed87a2bfb8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3209,7 +3209,7 @@ CMD ["xwiki"]
 ## `xwiki:latest`
 
 ```console
-$ docker pull xwiki@sha256:92756d685e5bea5c57c39e2c44704276fd76b7b684d8f76d557e11a2e9fa6308
+$ docker pull xwiki@sha256:f6494fa87e156e0a4cf31e2ce25c639793d58673388d7f0ed2f2f1f37fb55fbb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3388,7 +3388,7 @@ CMD ["xwiki"]
 ## `xwiki:lts`
 
 ```console
-$ docker pull xwiki@sha256:a98708699032805fd7b4065c9cbe766a2d1a5c46a25362de510ac48914469451
+$ docker pull xwiki@sha256:4b12f17eb1e605f1016358fcdce1a79b17492fc14bb0d88465669fcda09fa696
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3567,7 +3567,7 @@ CMD ["xwiki"]
 ## `xwiki:lts-mysql`
 
 ```console
-$ docker pull xwiki@sha256:a98708699032805fd7b4065c9cbe766a2d1a5c46a25362de510ac48914469451
+$ docker pull xwiki@sha256:4b12f17eb1e605f1016358fcdce1a79b17492fc14bb0d88465669fcda09fa696
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3746,7 +3746,7 @@ CMD ["xwiki"]
 ## `xwiki:lts-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:a98708699032805fd7b4065c9cbe766a2d1a5c46a25362de510ac48914469451
+$ docker pull xwiki@sha256:4b12f17eb1e605f1016358fcdce1a79b17492fc14bb0d88465669fcda09fa696
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3925,7 +3925,7 @@ CMD ["xwiki"]
 ## `xwiki:lts-postgres`
 
 ```console
-$ docker pull xwiki@sha256:69688daf62dab8c14cc8a1666a176aaaa78eb8ceed1ad7f7f5f8c8f6c317d7e6
+$ docker pull xwiki@sha256:3628a8ab5a22e5165c66a08abdc933c661de00febcbd6a16c5651a23d23abf72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4274,7 +4274,7 @@ CMD ["xwiki"]
 ## `xwiki:lts-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:69688daf62dab8c14cc8a1666a176aaaa78eb8ceed1ad7f7f5f8c8f6c317d7e6
+$ docker pull xwiki@sha256:3628a8ab5a22e5165c66a08abdc933c661de00febcbd6a16c5651a23d23abf72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4623,7 +4623,7 @@ CMD ["xwiki"]
 ## `xwiki:mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:a98708699032805fd7b4065c9cbe766a2d1a5c46a25362de510ac48914469451
+$ docker pull xwiki@sha256:4b12f17eb1e605f1016358fcdce1a79b17492fc14bb0d88465669fcda09fa696
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4802,7 +4802,7 @@ CMD ["xwiki"]
 ## `xwiki:postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:69688daf62dab8c14cc8a1666a176aaaa78eb8ceed1ad7f7f5f8c8f6c317d7e6
+$ docker pull xwiki@sha256:3628a8ab5a22e5165c66a08abdc933c661de00febcbd6a16c5651a23d23abf72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5151,7 +5151,7 @@ CMD ["xwiki"]
 ## `xwiki:stable`
 
 ```console
-$ docker pull xwiki@sha256:92756d685e5bea5c57c39e2c44704276fd76b7b684d8f76d557e11a2e9fa6308
+$ docker pull xwiki@sha256:f6494fa87e156e0a4cf31e2ce25c639793d58673388d7f0ed2f2f1f37fb55fbb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5330,7 +5330,7 @@ CMD ["xwiki"]
 ## `xwiki:stable-mysql`
 
 ```console
-$ docker pull xwiki@sha256:92756d685e5bea5c57c39e2c44704276fd76b7b684d8f76d557e11a2e9fa6308
+$ docker pull xwiki@sha256:f6494fa87e156e0a4cf31e2ce25c639793d58673388d7f0ed2f2f1f37fb55fbb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5509,7 +5509,7 @@ CMD ["xwiki"]
 ## `xwiki:stable-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:92756d685e5bea5c57c39e2c44704276fd76b7b684d8f76d557e11a2e9fa6308
+$ docker pull xwiki@sha256:f6494fa87e156e0a4cf31e2ce25c639793d58673388d7f0ed2f2f1f37fb55fbb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5688,7 +5688,7 @@ CMD ["xwiki"]
 ## `xwiki:stable-postgres`
 
 ```console
-$ docker pull xwiki@sha256:ad88440444ba214729404810419ffc400f9e50cf8cf450f48ec3780dae7e9665
+$ docker pull xwiki@sha256:52912138d5a32000ddd766e39f187462b0cb92c06f4d5a2e84e2c9ed87a2bfb8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6037,7 +6037,7 @@ CMD ["xwiki"]
 ## `xwiki:stable-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:ad88440444ba214729404810419ffc400f9e50cf8cf450f48ec3780dae7e9665
+$ docker pull xwiki@sha256:52912138d5a32000ddd766e39f187462b0cb92c06f4d5a2e84e2c9ed87a2bfb8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
