@@ -12,7 +12,7 @@
 ## `haskell:8`
 
 ```console
-$ docker pull haskell@sha256:a36a3d40ce1f035c7a105f492ccee3dcedbd45d4cb055afc35ad667a9a888a7c
+$ docker pull haskell@sha256:be2ccb291ea66aa516bf1e05b79cb29d8e6e5cdc010c93f67e93d7d9be3fa353
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -60,7 +60,7 @@ CMD ["ghci"]
 ## `haskell:8.4`
 
 ```console
-$ docker pull haskell@sha256:ab2eaf1f55be30a05fbb384b8c6c10316458a2460c9a79d3611ccd98d1c74218
+$ docker pull haskell@sha256:36d644c277fce8da3af753b6776de7802b2d65a8e90efac51de6849896005841
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -108,7 +108,7 @@ CMD ["ghci"]
 ## `haskell:8.4.4`
 
 ```console
-$ docker pull haskell@sha256:ab2eaf1f55be30a05fbb384b8c6c10316458a2460c9a79d3611ccd98d1c74218
+$ docker pull haskell@sha256:36d644c277fce8da3af753b6776de7802b2d65a8e90efac51de6849896005841
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -156,7 +156,7 @@ CMD ["ghci"]
 ## `haskell:8.6`
 
 ```console
-$ docker pull haskell@sha256:a36a3d40ce1f035c7a105f492ccee3dcedbd45d4cb055afc35ad667a9a888a7c
+$ docker pull haskell@sha256:be2ccb291ea66aa516bf1e05b79cb29d8e6e5cdc010c93f67e93d7d9be3fa353
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -204,7 +204,7 @@ CMD ["ghci"]
 ## `haskell:8.6.3`
 
 ```console
-$ docker pull haskell@sha256:a36a3d40ce1f035c7a105f492ccee3dcedbd45d4cb055afc35ad667a9a888a7c
+$ docker pull haskell@sha256:be2ccb291ea66aa516bf1e05b79cb29d8e6e5cdc010c93f67e93d7d9be3fa353
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -252,7 +252,7 @@ CMD ["ghci"]
 ## `haskell:latest`
 
 ```console
-$ docker pull haskell@sha256:a36a3d40ce1f035c7a105f492ccee3dcedbd45d4cb055afc35ad667a9a888a7c
+$ docker pull haskell@sha256:be2ccb291ea66aa516bf1e05b79cb29d8e6e5cdc010c93f67e93d7d9be3fa353
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

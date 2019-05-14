@@ -1,7 +1,7 @@
 ## `haskell:latest`
 
 ```console
-$ docker pull haskell@sha256:a36a3d40ce1f035c7a105f492ccee3dcedbd45d4cb055afc35ad667a9a888a7c
+$ docker pull haskell@sha256:be2ccb291ea66aa516bf1e05b79cb29d8e6e5cdc010c93f67e93d7d9be3fa353
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
