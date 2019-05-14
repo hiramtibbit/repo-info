@@ -8,7 +8,7 @@
 ## `logstash:6.7.2`
 
 ```console
-$ docker pull logstash@sha256:46eaff19af5e14edd9b78e1d5bf16f6abcd9ad50e0338cbaf3024f2aadb2903b
+$ docker pull logstash@sha256:76484e1e79b74c5a067cfdf6e9b44ba9c7ba36b1873fc18be56283a9cc256088
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -128,7 +128,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 ## `logstash:7.0.1`
 
 ```console
-$ docker pull logstash@sha256:c4137fbbf56dd15dcf83e55240a631f9f7eaaf25133e9ffef5b2fabcbe0238e4
+$ docker pull logstash@sha256:00b0d908e775b7d25b3d4d56e6018536cb6a8d2e018228c1fa9596b7e371a1cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
