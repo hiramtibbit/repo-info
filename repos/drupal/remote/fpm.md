@@ -1,7 +1,7 @@
 ## `drupal:fpm`
 
 ```console
-$ docker pull drupal@sha256:0bdd7390334e4ca559e804dfdff894ee5e04e8f5f1a895be37119d2ad059c5f0
+$ docker pull drupal@sha256:1989e96ede615e1d360f596e059e7faa7753a495c1469aaa9f566bc2a702c053
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

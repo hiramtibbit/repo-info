@@ -1,7 +1,7 @@
 ## `drupal:7-apache`
 
 ```console
-$ docker pull drupal@sha256:fc9bd61d0a2f6cafa610b4ea17432d26c335d19861690bda8042a050716e923d
+$ docker pull drupal@sha256:210e3b8cda9f7ecb4e68bf03ce393abb76ef81764f434de803676b4b76281640
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
