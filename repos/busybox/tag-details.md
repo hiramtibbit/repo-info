@@ -22,7 +22,7 @@
 ## `busybox:1`
 
 ```console
-$ docker pull busybox@sha256:32f65f5aae307c171fc69ce52be3c8b09675164a610a88efa607449311186378
+$ docker pull busybox@sha256:4b6ad3a68d34da29bf7c8ccb5d355ba8b4babcad1f99798204e7abb43e54ee3d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -247,7 +247,7 @@ CMD ["sh"]
 ## `busybox:1.30`
 
 ```console
-$ docker pull busybox@sha256:32f65f5aae307c171fc69ce52be3c8b09675164a610a88efa607449311186378
+$ docker pull busybox@sha256:4b6ad3a68d34da29bf7c8ccb5d355ba8b4babcad1f99798204e7abb43e54ee3d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -472,7 +472,7 @@ CMD ["sh"]
 ## `busybox:1.30.1`
 
 ```console
-$ docker pull busybox@sha256:32f65f5aae307c171fc69ce52be3c8b09675164a610a88efa607449311186378
+$ docker pull busybox@sha256:4b6ad3a68d34da29bf7c8ccb5d355ba8b4babcad1f99798204e7abb43e54ee3d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -697,7 +697,7 @@ CMD ["sh"]
 ## `busybox:1.30.1-glibc`
 
 ```console
-$ docker pull busybox@sha256:f58291b47ce0c3e2cfb43d9b57599870299e29d9ee95e170e750d8cc9b8c1155
+$ docker pull busybox@sha256:e91a298492a2e0c119df3b3b64db61d309272586c79b7434d516b20ac30b6bc7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -895,7 +895,7 @@ CMD ["sh"]
 ## `busybox:1.30.1-musl`
 
 ```console
-$ docker pull busybox@sha256:191260fa1e34d53a6a9597c8388d4a49c93007f8583acb0604b7ba9d9a45abac
+$ docker pull busybox@sha256:428c6dc4a8ebc8b4da6b1a4acce420e1d73ab6433aa550a76e177c39569a3726
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1093,7 +1093,7 @@ CMD ["sh"]
 ## `busybox:1.30.1-uclibc`
 
 ```console
-$ docker pull busybox@sha256:fee118c315527845a8706dfb79601e5b67b4ef31ac8811e0dd5ee05f838c3d6c
+$ docker pull busybox@sha256:442c9d8c2c01192d7f7a05a1b02ba0f4509d9bd28d4d40d67e8f7800740f1483
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1237,7 +1237,7 @@ CMD ["sh"]
 ## `busybox:1.30-glibc`
 
 ```console
-$ docker pull busybox@sha256:f58291b47ce0c3e2cfb43d9b57599870299e29d9ee95e170e750d8cc9b8c1155
+$ docker pull busybox@sha256:e91a298492a2e0c119df3b3b64db61d309272586c79b7434d516b20ac30b6bc7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1435,7 +1435,7 @@ CMD ["sh"]
 ## `busybox:1.30-musl`
 
 ```console
-$ docker pull busybox@sha256:191260fa1e34d53a6a9597c8388d4a49c93007f8583acb0604b7ba9d9a45abac
+$ docker pull busybox@sha256:428c6dc4a8ebc8b4da6b1a4acce420e1d73ab6433aa550a76e177c39569a3726
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1633,7 +1633,7 @@ CMD ["sh"]
 ## `busybox:1.30-uclibc`
 
 ```console
-$ docker pull busybox@sha256:fee118c315527845a8706dfb79601e5b67b4ef31ac8811e0dd5ee05f838c3d6c
+$ docker pull busybox@sha256:442c9d8c2c01192d7f7a05a1b02ba0f4509d9bd28d4d40d67e8f7800740f1483
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1777,7 +1777,7 @@ CMD ["sh"]
 ## `busybox:1-glibc`
 
 ```console
-$ docker pull busybox@sha256:f58291b47ce0c3e2cfb43d9b57599870299e29d9ee95e170e750d8cc9b8c1155
+$ docker pull busybox@sha256:e91a298492a2e0c119df3b3b64db61d309272586c79b7434d516b20ac30b6bc7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1975,7 +1975,7 @@ CMD ["sh"]
 ## `busybox:1-musl`
 
 ```console
-$ docker pull busybox@sha256:191260fa1e34d53a6a9597c8388d4a49c93007f8583acb0604b7ba9d9a45abac
+$ docker pull busybox@sha256:428c6dc4a8ebc8b4da6b1a4acce420e1d73ab6433aa550a76e177c39569a3726
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2173,7 +2173,7 @@ CMD ["sh"]
 ## `busybox:1-uclibc`
 
 ```console
-$ docker pull busybox@sha256:fee118c315527845a8706dfb79601e5b67b4ef31ac8811e0dd5ee05f838c3d6c
+$ docker pull busybox@sha256:442c9d8c2c01192d7f7a05a1b02ba0f4509d9bd28d4d40d67e8f7800740f1483
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2317,7 +2317,7 @@ CMD ["sh"]
 ## `busybox:glibc`
 
 ```console
-$ docker pull busybox@sha256:f58291b47ce0c3e2cfb43d9b57599870299e29d9ee95e170e750d8cc9b8c1155
+$ docker pull busybox@sha256:e91a298492a2e0c119df3b3b64db61d309272586c79b7434d516b20ac30b6bc7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2515,7 +2515,7 @@ CMD ["sh"]
 ## `busybox:latest`
 
 ```console
-$ docker pull busybox@sha256:32f65f5aae307c171fc69ce52be3c8b09675164a610a88efa607449311186378
+$ docker pull busybox@sha256:4b6ad3a68d34da29bf7c8ccb5d355ba8b4babcad1f99798204e7abb43e54ee3d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2740,7 +2740,7 @@ CMD ["sh"]
 ## `busybox:musl`
 
 ```console
-$ docker pull busybox@sha256:191260fa1e34d53a6a9597c8388d4a49c93007f8583acb0604b7ba9d9a45abac
+$ docker pull busybox@sha256:428c6dc4a8ebc8b4da6b1a4acce420e1d73ab6433aa550a76e177c39569a3726
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2938,7 +2938,7 @@ CMD ["sh"]
 ## `busybox:uclibc`
 
 ```console
-$ docker pull busybox@sha256:fee118c315527845a8706dfb79601e5b67b4ef31ac8811e0dd5ee05f838c3d6c
+$ docker pull busybox@sha256:442c9d8c2c01192d7f7a05a1b02ba0f4509d9bd28d4d40d67e8f7800740f1483
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

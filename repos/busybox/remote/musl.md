@@ -1,7 +1,7 @@
 ## `busybox:musl`
 
 ```console
-$ docker pull busybox@sha256:191260fa1e34d53a6a9597c8388d4a49c93007f8583acb0604b7ba9d9a45abac
+$ docker pull busybox@sha256:428c6dc4a8ebc8b4da6b1a4acce420e1d73ab6433aa550a76e177c39569a3726
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

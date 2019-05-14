@@ -1,7 +1,7 @@
 ## `busybox:1-uclibc`
 
 ```console
-$ docker pull busybox@sha256:fee118c315527845a8706dfb79601e5b67b4ef31ac8811e0dd5ee05f838c3d6c
+$ docker pull busybox@sha256:442c9d8c2c01192d7f7a05a1b02ba0f4509d9bd28d4d40d67e8f7800740f1483
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
