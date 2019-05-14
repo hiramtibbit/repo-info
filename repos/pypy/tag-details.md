@@ -90,12 +90,13 @@
 ## `pypy:2`
 
 ```console
-$ docker pull pypy@sha256:2c16f626efa632e560d4d04396268d186570c6aa0c62442377879782d7a5d647
+$ docker pull pypy@sha256:b456cb244efa4181d0bf990ce7ab791da46a56d2ba5860f5e398cebd37a86a23
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; 386
 
 ### `pypy:2` - linux; amd64
 
@@ -171,10 +172,84 @@ CMD ["pypy"]
 		Size: 4.0 MB (4031018 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `pypy:2` - linux; 386
+
+```console
+$ docker pull pypy@sha256:c9197d5d6cbd1b97349842f07730cbbe77a68e9b259d5924fc7a0ba7fd4caa26
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **284.4 MB (284401929 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:9977f2477f68fda291c937878ffec9af84ee0bd859e75a68c52449507ad3c650`
+-	Default Command: `["pypy"]`
+
+```dockerfile
+# Wed, 06 Feb 2019 11:58:36 GMT
+ADD file:7ee301fb17cb469725296eb34fd4c88b06658dab08befc626157c94e1b1264ae in / 
+# Wed, 06 Feb 2019 11:58:37 GMT
+CMD ["bash"]
+# Thu, 07 Feb 2019 01:37:15 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 07 Feb 2019 01:37:17 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Thu, 07 Feb 2019 01:41:10 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 07 Feb 2019 01:46:11 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 07 Feb 2019 04:00:44 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Thu, 07 Feb 2019 04:00:44 GMT
+ENV LANG=C.UTF-8
+# Thu, 07 Feb 2019 04:03:28 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 07 Feb 2019 04:03:28 GMT
+ENV PYPY_VERSION=6.0.0
+# Wed, 13 Feb 2019 12:01:54 GMT
+ENV PYTHON_PIP_VERSION=19.0.2
+# Wed, 13 Feb 2019 12:02:02 GMT
+RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) pypyArch='linux64'; sha256='6cbf942ba7c90f504d8d6a2e45d4244e3bf146c8722d64e9410b85eac6b5af67' ;; 		armel) pypyArch='linux-armel'; sha256='924ca3f90aa28e8961859508c25752c95253b842318a0f267267ffe90f56a916' ;; 		i386) pypyArch='linux32'; sha256='ad1082d4328ae8f32617b14628648583b82b6d29df3aa42b97bd1853c08c4bc8' ;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-${pypyArch}.tar.bz2"; 	echo "$sha256 *pypy.tar.bz2" | sha256sum -c; 	tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2; 	find /usr/local/lib-python -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		pypy --version
+# Wed, 13 Feb 2019 12:02:11 GMT
+RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		pypy get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		rm -f get-pip.py
+# Wed, 13 Feb 2019 12:02:11 GMT
+CMD ["pypy"]
+```
+
+-	Layers:
+	-	`sha256:0d2c60a99fbfd5389008365663b1914f58c65ad5174908669d2fd547813d4df9`  
+		Last Modified: Wed, 06 Feb 2019 12:04:25 GMT  
+		Size: 54.6 MB (54599595 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e2f8a1642cca50fb512e186f15c61d2abd8bcf91ea3f8de5b6f58faa9de847ac`  
+		Last Modified: Thu, 07 Feb 2019 02:00:51 GMT  
+		Size: 19.8 MB (19846893 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5080d1b2ea8bf5eca40266f2495503d0e2f3c12389fed01088be0cef360df689`  
+		Last Modified: Thu, 07 Feb 2019 02:01:08 GMT  
+		Size: 44.0 MB (43951959 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:77aa6a7000ceb3f5e76f036302cc6eb5fc145fde811032b2f78e10e67bf8eaee`  
+		Last Modified: Thu, 07 Feb 2019 02:01:42 GMT  
+		Size: 135.4 MB (135399152 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b44cdc8bb6f36291e853eb14a97ac3281fe6fafe14386a04ad9214915e9d79d0`  
+		Last Modified: Thu, 07 Feb 2019 04:15:36 GMT  
+		Size: 3.3 MB (3272301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:89f3a6072a6d21407fdee2e1b4bb3a085c3ebe2c326a603c73bb06eca7409a0e`  
+		Last Modified: Wed, 13 Feb 2019 12:11:00 GMT  
+		Size: 23.3 MB (23250702 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fce1d89930b92607c7cbccf74e49d6be3628b738febbca421c82974606d2c0ff`  
+		Last Modified: Wed, 13 Feb 2019 12:10:53 GMT  
+		Size: 4.1 MB (4081327 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `pypy:2-7`
 
 ```console
-$ docker pull pypy@sha256:2c16f626efa632e560d4d04396268d186570c6aa0c62442377879782d7a5d647
+$ docker pull pypy@sha256:6b59cc77f9fd16a3b98ca04ee9e659ddaa7d3fde9f706db9372da403fdf9ad9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -258,7 +333,7 @@ CMD ["pypy"]
 ## `pypy:2.7`
 
 ```console
-$ docker pull pypy@sha256:2c16f626efa632e560d4d04396268d186570c6aa0c62442377879782d7a5d647
+$ docker pull pypy@sha256:6b59cc77f9fd16a3b98ca04ee9e659ddaa7d3fde9f706db9372da403fdf9ad9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -342,7 +417,7 @@ CMD ["pypy"]
 ## `pypy:2-7.1`
 
 ```console
-$ docker pull pypy@sha256:2c16f626efa632e560d4d04396268d186570c6aa0c62442377879782d7a5d647
+$ docker pull pypy@sha256:6b59cc77f9fd16a3b98ca04ee9e659ddaa7d3fde9f706db9372da403fdf9ad9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -426,7 +501,7 @@ CMD ["pypy"]
 ## `pypy:2-7.1.1`
 
 ```console
-$ docker pull pypy@sha256:2c16f626efa632e560d4d04396268d186570c6aa0c62442377879782d7a5d647
+$ docker pull pypy@sha256:6b59cc77f9fd16a3b98ca04ee9e659ddaa7d3fde9f706db9372da403fdf9ad9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -510,7 +585,7 @@ CMD ["pypy"]
 ## `pypy:2-7.1.1-jessie`
 
 ```console
-$ docker pull pypy@sha256:2c16f626efa632e560d4d04396268d186570c6aa0c62442377879782d7a5d647
+$ docker pull pypy@sha256:6b59cc77f9fd16a3b98ca04ee9e659ddaa7d3fde9f706db9372da403fdf9ad9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -594,7 +669,7 @@ CMD ["pypy"]
 ## `pypy:2-7.1.1-slim`
 
 ```console
-$ docker pull pypy@sha256:19bf19a9c95d7f0d5b5aa29818de567af188600d0efd3fa46030f811d3e3a6ff
+$ docker pull pypy@sha256:887c025eca2958e0758260f0ab3428948240fe9a54eea9c857aa1b68fb19b7ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -652,7 +727,7 @@ CMD ["pypy"]
 ## `pypy:2-7.1.1-slim-jessie`
 
 ```console
-$ docker pull pypy@sha256:19bf19a9c95d7f0d5b5aa29818de567af188600d0efd3fa46030f811d3e3a6ff
+$ docker pull pypy@sha256:887c025eca2958e0758260f0ab3428948240fe9a54eea9c857aa1b68fb19b7ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -710,7 +785,7 @@ CMD ["pypy"]
 ## `pypy:2-7.1-jessie`
 
 ```console
-$ docker pull pypy@sha256:2c16f626efa632e560d4d04396268d186570c6aa0c62442377879782d7a5d647
+$ docker pull pypy@sha256:6b59cc77f9fd16a3b98ca04ee9e659ddaa7d3fde9f706db9372da403fdf9ad9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -794,7 +869,7 @@ CMD ["pypy"]
 ## `pypy:2-7.1-slim`
 
 ```console
-$ docker pull pypy@sha256:19bf19a9c95d7f0d5b5aa29818de567af188600d0efd3fa46030f811d3e3a6ff
+$ docker pull pypy@sha256:887c025eca2958e0758260f0ab3428948240fe9a54eea9c857aa1b68fb19b7ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -852,7 +927,7 @@ CMD ["pypy"]
 ## `pypy:2-7.1-slim-jessie`
 
 ```console
-$ docker pull pypy@sha256:19bf19a9c95d7f0d5b5aa29818de567af188600d0efd3fa46030f811d3e3a6ff
+$ docker pull pypy@sha256:887c025eca2958e0758260f0ab3428948240fe9a54eea9c857aa1b68fb19b7ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -910,7 +985,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7`
 
 ```console
-$ docker pull pypy@sha256:2c16f626efa632e560d4d04396268d186570c6aa0c62442377879782d7a5d647
+$ docker pull pypy@sha256:6b59cc77f9fd16a3b98ca04ee9e659ddaa7d3fde9f706db9372da403fdf9ad9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -994,7 +1069,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7.1`
 
 ```console
-$ docker pull pypy@sha256:2c16f626efa632e560d4d04396268d186570c6aa0c62442377879782d7a5d647
+$ docker pull pypy@sha256:6b59cc77f9fd16a3b98ca04ee9e659ddaa7d3fde9f706db9372da403fdf9ad9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1078,7 +1153,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7.1.1`
 
 ```console
-$ docker pull pypy@sha256:2c16f626efa632e560d4d04396268d186570c6aa0c62442377879782d7a5d647
+$ docker pull pypy@sha256:6b59cc77f9fd16a3b98ca04ee9e659ddaa7d3fde9f706db9372da403fdf9ad9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1162,7 +1237,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7.1.1-jessie`
 
 ```console
-$ docker pull pypy@sha256:2c16f626efa632e560d4d04396268d186570c6aa0c62442377879782d7a5d647
+$ docker pull pypy@sha256:6b59cc77f9fd16a3b98ca04ee9e659ddaa7d3fde9f706db9372da403fdf9ad9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1246,7 +1321,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7.1.1-slim`
 
 ```console
-$ docker pull pypy@sha256:19bf19a9c95d7f0d5b5aa29818de567af188600d0efd3fa46030f811d3e3a6ff
+$ docker pull pypy@sha256:887c025eca2958e0758260f0ab3428948240fe9a54eea9c857aa1b68fb19b7ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1304,7 +1379,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7.1.1-slim-jessie`
 
 ```console
-$ docker pull pypy@sha256:19bf19a9c95d7f0d5b5aa29818de567af188600d0efd3fa46030f811d3e3a6ff
+$ docker pull pypy@sha256:887c025eca2958e0758260f0ab3428948240fe9a54eea9c857aa1b68fb19b7ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1362,7 +1437,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7.1-jessie`
 
 ```console
-$ docker pull pypy@sha256:2c16f626efa632e560d4d04396268d186570c6aa0c62442377879782d7a5d647
+$ docker pull pypy@sha256:6b59cc77f9fd16a3b98ca04ee9e659ddaa7d3fde9f706db9372da403fdf9ad9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1446,7 +1521,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7.1-slim`
 
 ```console
-$ docker pull pypy@sha256:19bf19a9c95d7f0d5b5aa29818de567af188600d0efd3fa46030f811d3e3a6ff
+$ docker pull pypy@sha256:887c025eca2958e0758260f0ab3428948240fe9a54eea9c857aa1b68fb19b7ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1504,7 +1579,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7.1-slim-jessie`
 
 ```console
-$ docker pull pypy@sha256:19bf19a9c95d7f0d5b5aa29818de567af188600d0efd3fa46030f811d3e3a6ff
+$ docker pull pypy@sha256:887c025eca2958e0758260f0ab3428948240fe9a54eea9c857aa1b68fb19b7ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1562,7 +1637,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7-jessie`
 
 ```console
-$ docker pull pypy@sha256:2c16f626efa632e560d4d04396268d186570c6aa0c62442377879782d7a5d647
+$ docker pull pypy@sha256:6b59cc77f9fd16a3b98ca04ee9e659ddaa7d3fde9f706db9372da403fdf9ad9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1646,7 +1721,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7-slim`
 
 ```console
-$ docker pull pypy@sha256:19bf19a9c95d7f0d5b5aa29818de567af188600d0efd3fa46030f811d3e3a6ff
+$ docker pull pypy@sha256:887c025eca2958e0758260f0ab3428948240fe9a54eea9c857aa1b68fb19b7ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1704,7 +1779,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7-slim-jessie`
 
 ```console
-$ docker pull pypy@sha256:19bf19a9c95d7f0d5b5aa29818de567af188600d0efd3fa46030f811d3e3a6ff
+$ docker pull pypy@sha256:887c025eca2958e0758260f0ab3428948240fe9a54eea9c857aa1b68fb19b7ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1762,7 +1837,7 @@ CMD ["pypy"]
 ## `pypy:2-7-jessie`
 
 ```console
-$ docker pull pypy@sha256:2c16f626efa632e560d4d04396268d186570c6aa0c62442377879782d7a5d647
+$ docker pull pypy@sha256:6b59cc77f9fd16a3b98ca04ee9e659ddaa7d3fde9f706db9372da403fdf9ad9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1846,7 +1921,7 @@ CMD ["pypy"]
 ## `pypy:2.7-jessie`
 
 ```console
-$ docker pull pypy@sha256:2c16f626efa632e560d4d04396268d186570c6aa0c62442377879782d7a5d647
+$ docker pull pypy@sha256:6b59cc77f9fd16a3b98ca04ee9e659ddaa7d3fde9f706db9372da403fdf9ad9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1930,7 +2005,7 @@ CMD ["pypy"]
 ## `pypy:2-7-slim`
 
 ```console
-$ docker pull pypy@sha256:19bf19a9c95d7f0d5b5aa29818de567af188600d0efd3fa46030f811d3e3a6ff
+$ docker pull pypy@sha256:887c025eca2958e0758260f0ab3428948240fe9a54eea9c857aa1b68fb19b7ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1988,7 +2063,7 @@ CMD ["pypy"]
 ## `pypy:2.7-slim`
 
 ```console
-$ docker pull pypy@sha256:19bf19a9c95d7f0d5b5aa29818de567af188600d0efd3fa46030f811d3e3a6ff
+$ docker pull pypy@sha256:887c025eca2958e0758260f0ab3428948240fe9a54eea9c857aa1b68fb19b7ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2046,7 +2121,7 @@ CMD ["pypy"]
 ## `pypy:2-7-slim-jessie`
 
 ```console
-$ docker pull pypy@sha256:19bf19a9c95d7f0d5b5aa29818de567af188600d0efd3fa46030f811d3e3a6ff
+$ docker pull pypy@sha256:887c025eca2958e0758260f0ab3428948240fe9a54eea9c857aa1b68fb19b7ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2104,7 +2179,7 @@ CMD ["pypy"]
 ## `pypy:2.7-slim-jessie`
 
 ```console
-$ docker pull pypy@sha256:19bf19a9c95d7f0d5b5aa29818de567af188600d0efd3fa46030f811d3e3a6ff
+$ docker pull pypy@sha256:887c025eca2958e0758260f0ab3428948240fe9a54eea9c857aa1b68fb19b7ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2162,12 +2237,13 @@ CMD ["pypy"]
 ## `pypy:2-jessie`
 
 ```console
-$ docker pull pypy@sha256:2c16f626efa632e560d4d04396268d186570c6aa0c62442377879782d7a5d647
+$ docker pull pypy@sha256:b456cb244efa4181d0bf990ce7ab791da46a56d2ba5860f5e398cebd37a86a23
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; 386
 
 ### `pypy:2-jessie` - linux; amd64
 
@@ -2243,15 +2319,90 @@ CMD ["pypy"]
 		Size: 4.0 MB (4031018 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `pypy:2-jessie` - linux; 386
+
+```console
+$ docker pull pypy@sha256:c9197d5d6cbd1b97349842f07730cbbe77a68e9b259d5924fc7a0ba7fd4caa26
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **284.4 MB (284401929 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:9977f2477f68fda291c937878ffec9af84ee0bd859e75a68c52449507ad3c650`
+-	Default Command: `["pypy"]`
+
+```dockerfile
+# Wed, 06 Feb 2019 11:58:36 GMT
+ADD file:7ee301fb17cb469725296eb34fd4c88b06658dab08befc626157c94e1b1264ae in / 
+# Wed, 06 Feb 2019 11:58:37 GMT
+CMD ["bash"]
+# Thu, 07 Feb 2019 01:37:15 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 07 Feb 2019 01:37:17 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Thu, 07 Feb 2019 01:41:10 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 07 Feb 2019 01:46:11 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 07 Feb 2019 04:00:44 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Thu, 07 Feb 2019 04:00:44 GMT
+ENV LANG=C.UTF-8
+# Thu, 07 Feb 2019 04:03:28 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 07 Feb 2019 04:03:28 GMT
+ENV PYPY_VERSION=6.0.0
+# Wed, 13 Feb 2019 12:01:54 GMT
+ENV PYTHON_PIP_VERSION=19.0.2
+# Wed, 13 Feb 2019 12:02:02 GMT
+RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) pypyArch='linux64'; sha256='6cbf942ba7c90f504d8d6a2e45d4244e3bf146c8722d64e9410b85eac6b5af67' ;; 		armel) pypyArch='linux-armel'; sha256='924ca3f90aa28e8961859508c25752c95253b842318a0f267267ffe90f56a916' ;; 		i386) pypyArch='linux32'; sha256='ad1082d4328ae8f32617b14628648583b82b6d29df3aa42b97bd1853c08c4bc8' ;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-${pypyArch}.tar.bz2"; 	echo "$sha256 *pypy.tar.bz2" | sha256sum -c; 	tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2; 	find /usr/local/lib-python -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		pypy --version
+# Wed, 13 Feb 2019 12:02:11 GMT
+RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		pypy get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		rm -f get-pip.py
+# Wed, 13 Feb 2019 12:02:11 GMT
+CMD ["pypy"]
+```
+
+-	Layers:
+	-	`sha256:0d2c60a99fbfd5389008365663b1914f58c65ad5174908669d2fd547813d4df9`  
+		Last Modified: Wed, 06 Feb 2019 12:04:25 GMT  
+		Size: 54.6 MB (54599595 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e2f8a1642cca50fb512e186f15c61d2abd8bcf91ea3f8de5b6f58faa9de847ac`  
+		Last Modified: Thu, 07 Feb 2019 02:00:51 GMT  
+		Size: 19.8 MB (19846893 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5080d1b2ea8bf5eca40266f2495503d0e2f3c12389fed01088be0cef360df689`  
+		Last Modified: Thu, 07 Feb 2019 02:01:08 GMT  
+		Size: 44.0 MB (43951959 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:77aa6a7000ceb3f5e76f036302cc6eb5fc145fde811032b2f78e10e67bf8eaee`  
+		Last Modified: Thu, 07 Feb 2019 02:01:42 GMT  
+		Size: 135.4 MB (135399152 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b44cdc8bb6f36291e853eb14a97ac3281fe6fafe14386a04ad9214915e9d79d0`  
+		Last Modified: Thu, 07 Feb 2019 04:15:36 GMT  
+		Size: 3.3 MB (3272301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:89f3a6072a6d21407fdee2e1b4bb3a085c3ebe2c326a603c73bb06eca7409a0e`  
+		Last Modified: Wed, 13 Feb 2019 12:11:00 GMT  
+		Size: 23.3 MB (23250702 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fce1d89930b92607c7cbccf74e49d6be3628b738febbca421c82974606d2c0ff`  
+		Last Modified: Wed, 13 Feb 2019 12:10:53 GMT  
+		Size: 4.1 MB (4081327 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `pypy:2-slim`
 
 ```console
-$ docker pull pypy@sha256:19bf19a9c95d7f0d5b5aa29818de567af188600d0efd3fa46030f811d3e3a6ff
+$ docker pull pypy@sha256:977bc43215920bd1b3c4ae9abff4ca82ffd06953bee42e08eea92c68c6934cec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; 386
 
 ### `pypy:2-slim` - linux; amd64
 
@@ -2301,15 +2452,64 @@ CMD ["pypy"]
 		Size: 30.8 MB (30787761 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `pypy:2-slim` - linux; 386
+
+```console
+$ docker pull pypy@sha256:4c873f46be5f3e32f76f25317c74d1e02c799a1c99828ec49fa9d7c08c48c3a2
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **62.8 MB (62784125 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:cae3cf5bd40d90d35bcf6b854ddd24f5b6213f6523e3b1864336c5b2221f06f6`
+-	Default Command: `["pypy"]`
+
+```dockerfile
+# Wed, 06 Feb 2019 11:58:59 GMT
+ADD file:0f5ce19a631296a55839476a8427a6bb92538d0d63d89f0dfbeb8a1c8b0df1ff in / 
+# Wed, 06 Feb 2019 11:59:00 GMT
+CMD ["bash"]
+# Wed, 06 Feb 2019 22:09:48 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 06 Feb 2019 22:09:48 GMT
+ENV LANG=C.UTF-8
+# Thu, 07 Feb 2019 04:06:54 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libffi6 		libgdbm3 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 07 Feb 2019 04:06:54 GMT
+ENV PYPY_VERSION=6.0.0
+# Wed, 13 Feb 2019 12:02:17 GMT
+ENV PYTHON_PIP_VERSION=19.0.2
+# Wed, 13 Feb 2019 12:06:11 GMT
+RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) pypyArch='linux64'; sha256='6cbf942ba7c90f504d8d6a2e45d4244e3bf146c8722d64e9410b85eac6b5af67' ;; 		armel) pypyArch='linux-armel'; sha256='924ca3f90aa28e8961859508c25752c95253b842318a0f267267ffe90f56a916' ;; 		i386) pypyArch='linux32'; sha256='ad1082d4328ae8f32617b14628648583b82b6d29df3aa42b97bd1853c08c4bc8' ;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		fetchDeps=' 		bzip2 		wget 	'; 	apt-get update && apt-get install -y $fetchDeps --no-install-recommends && rm -rf /var/lib/apt/lists/*; 		wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-${pypyArch}.tar.bz2"; 	echo "$sha256 *pypy.tar.bz2" | sha256sum -c; 	tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2; 	find /usr/local/lib-python -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		pypy --version; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		pypy get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		rm -f get-pip.py; 		apt-get purge -y --auto-remove $fetchDeps
+# Wed, 13 Feb 2019 12:06:11 GMT
+CMD ["pypy"]
+```
+
+-	Layers:
+	-	`sha256:c4ddbb4ee60739923db706a335f6f79e8a70a6a62aa8917fc9cc3b04b936afe5`  
+		Last Modified: Wed, 06 Feb 2019 12:04:43 GMT  
+		Size: 30.3 MB (30293283 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4868eb61a19a1f0f6933a6ba3f7e222e50f3d6eb740cbac951af9b5c556f94a4`  
+		Last Modified: Thu, 07 Feb 2019 04:15:56 GMT  
+		Size: 4.9 MB (4918289 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:963a7f3a1441ad53557c1ba716cd3e610964934b558eec3bb5406d8ff4cb5093`  
+		Last Modified: Wed, 13 Feb 2019 12:11:20 GMT  
+		Size: 27.6 MB (27572553 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `pypy:2-slim-jessie`
 
 ```console
-$ docker pull pypy@sha256:19bf19a9c95d7f0d5b5aa29818de567af188600d0efd3fa46030f811d3e3a6ff
+$ docker pull pypy@sha256:977bc43215920bd1b3c4ae9abff4ca82ffd06953bee42e08eea92c68c6934cec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; 386
 
 ### `pypy:2-slim-jessie` - linux; amd64
 
@@ -2359,10 +2559,58 @@ CMD ["pypy"]
 		Size: 30.8 MB (30787761 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `pypy:2-slim-jessie` - linux; 386
+
+```console
+$ docker pull pypy@sha256:4c873f46be5f3e32f76f25317c74d1e02c799a1c99828ec49fa9d7c08c48c3a2
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **62.8 MB (62784125 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:cae3cf5bd40d90d35bcf6b854ddd24f5b6213f6523e3b1864336c5b2221f06f6`
+-	Default Command: `["pypy"]`
+
+```dockerfile
+# Wed, 06 Feb 2019 11:58:59 GMT
+ADD file:0f5ce19a631296a55839476a8427a6bb92538d0d63d89f0dfbeb8a1c8b0df1ff in / 
+# Wed, 06 Feb 2019 11:59:00 GMT
+CMD ["bash"]
+# Wed, 06 Feb 2019 22:09:48 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 06 Feb 2019 22:09:48 GMT
+ENV LANG=C.UTF-8
+# Thu, 07 Feb 2019 04:06:54 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libffi6 		libgdbm3 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 07 Feb 2019 04:06:54 GMT
+ENV PYPY_VERSION=6.0.0
+# Wed, 13 Feb 2019 12:02:17 GMT
+ENV PYTHON_PIP_VERSION=19.0.2
+# Wed, 13 Feb 2019 12:06:11 GMT
+RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) pypyArch='linux64'; sha256='6cbf942ba7c90f504d8d6a2e45d4244e3bf146c8722d64e9410b85eac6b5af67' ;; 		armel) pypyArch='linux-armel'; sha256='924ca3f90aa28e8961859508c25752c95253b842318a0f267267ffe90f56a916' ;; 		i386) pypyArch='linux32'; sha256='ad1082d4328ae8f32617b14628648583b82b6d29df3aa42b97bd1853c08c4bc8' ;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		fetchDeps=' 		bzip2 		wget 	'; 	apt-get update && apt-get install -y $fetchDeps --no-install-recommends && rm -rf /var/lib/apt/lists/*; 		wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-${pypyArch}.tar.bz2"; 	echo "$sha256 *pypy.tar.bz2" | sha256sum -c; 	tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2; 	find /usr/local/lib-python -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		pypy --version; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		pypy get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		rm -f get-pip.py; 		apt-get purge -y --auto-remove $fetchDeps
+# Wed, 13 Feb 2019 12:06:11 GMT
+CMD ["pypy"]
+```
+
+-	Layers:
+	-	`sha256:c4ddbb4ee60739923db706a335f6f79e8a70a6a62aa8917fc9cc3b04b936afe5`  
+		Last Modified: Wed, 06 Feb 2019 12:04:43 GMT  
+		Size: 30.3 MB (30293283 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4868eb61a19a1f0f6933a6ba3f7e222e50f3d6eb740cbac951af9b5c556f94a4`  
+		Last Modified: Thu, 07 Feb 2019 04:15:56 GMT  
+		Size: 4.9 MB (4918289 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:963a7f3a1441ad53557c1ba716cd3e610964934b558eec3bb5406d8ff4cb5093`  
+		Last Modified: Wed, 13 Feb 2019 12:11:20 GMT  
+		Size: 27.6 MB (27572553 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `pypy:3`
 
 ```console
-$ docker pull pypy@sha256:172a3b074a9d8eab3500dd9b96c2b78b37b497f51e050e4367c3e13bb06d2583
+$ docker pull pypy@sha256:03daffe9c294572bb3dab49ae02f89ca186d3f96ed7eee2ec856deb5e29eb4fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2687,7 +2935,7 @@ CMD ["pypy3"]
 ## `pypy:3.5`
 
 ```console
-$ docker pull pypy@sha256:172a3b074a9d8eab3500dd9b96c2b78b37b497f51e050e4367c3e13bb06d2583
+$ docker pull pypy@sha256:03daffe9c294572bb3dab49ae02f89ca186d3f96ed7eee2ec856deb5e29eb4fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3012,7 +3260,7 @@ CMD ["pypy3"]
 ## `pypy:3.5-7`
 
 ```console
-$ docker pull pypy@sha256:172a3b074a9d8eab3500dd9b96c2b78b37b497f51e050e4367c3e13bb06d2583
+$ docker pull pypy@sha256:03daffe9c294572bb3dab49ae02f89ca186d3f96ed7eee2ec856deb5e29eb4fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3337,7 +3585,7 @@ CMD ["pypy3"]
 ## `pypy:3.5-7.0`
 
 ```console
-$ docker pull pypy@sha256:172a3b074a9d8eab3500dd9b96c2b78b37b497f51e050e4367c3e13bb06d2583
+$ docker pull pypy@sha256:03daffe9c294572bb3dab49ae02f89ca186d3f96ed7eee2ec856deb5e29eb4fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3662,7 +3910,7 @@ CMD ["pypy3"]
 ## `pypy:3.5-7.0.0`
 
 ```console
-$ docker pull pypy@sha256:172a3b074a9d8eab3500dd9b96c2b78b37b497f51e050e4367c3e13bb06d2583
+$ docker pull pypy@sha256:03daffe9c294572bb3dab49ae02f89ca186d3f96ed7eee2ec856deb5e29eb4fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3987,7 +4235,7 @@ CMD ["pypy3"]
 ## `pypy:3.5-7.0.0-slim`
 
 ```console
-$ docker pull pypy@sha256:3e0b7ebcae9a28b9d88c0c6afcdc2595b87a2aa152d0d8e150a03f872df5ab2a
+$ docker pull pypy@sha256:27112b3df7137103ccf9e30cb0244f86f1a4a4688146966ddb50eea63d3177f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4192,7 +4440,7 @@ CMD ["pypy3"]
 ## `pypy:3.5-7.0.0-slim-stretch`
 
 ```console
-$ docker pull pypy@sha256:3e0b7ebcae9a28b9d88c0c6afcdc2595b87a2aa152d0d8e150a03f872df5ab2a
+$ docker pull pypy@sha256:27112b3df7137103ccf9e30cb0244f86f1a4a4688146966ddb50eea63d3177f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4397,7 +4645,7 @@ CMD ["pypy3"]
 ## `pypy:3.5-7.0.0-stretch`
 
 ```console
-$ docker pull pypy@sha256:172a3b074a9d8eab3500dd9b96c2b78b37b497f51e050e4367c3e13bb06d2583
+$ docker pull pypy@sha256:03daffe9c294572bb3dab49ae02f89ca186d3f96ed7eee2ec856deb5e29eb4fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4722,7 +4970,7 @@ CMD ["pypy3"]
 ## `pypy:3.5-7.0-slim`
 
 ```console
-$ docker pull pypy@sha256:3e0b7ebcae9a28b9d88c0c6afcdc2595b87a2aa152d0d8e150a03f872df5ab2a
+$ docker pull pypy@sha256:27112b3df7137103ccf9e30cb0244f86f1a4a4688146966ddb50eea63d3177f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4927,7 +5175,7 @@ CMD ["pypy3"]
 ## `pypy:3.5-7.0-slim-stretch`
 
 ```console
-$ docker pull pypy@sha256:3e0b7ebcae9a28b9d88c0c6afcdc2595b87a2aa152d0d8e150a03f872df5ab2a
+$ docker pull pypy@sha256:27112b3df7137103ccf9e30cb0244f86f1a4a4688146966ddb50eea63d3177f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5132,7 +5380,7 @@ CMD ["pypy3"]
 ## `pypy:3.5-7.0-stretch`
 
 ```console
-$ docker pull pypy@sha256:172a3b074a9d8eab3500dd9b96c2b78b37b497f51e050e4367c3e13bb06d2583
+$ docker pull pypy@sha256:03daffe9c294572bb3dab49ae02f89ca186d3f96ed7eee2ec856deb5e29eb4fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5457,7 +5705,7 @@ CMD ["pypy3"]
 ## `pypy:3.5-7-slim`
 
 ```console
-$ docker pull pypy@sha256:3e0b7ebcae9a28b9d88c0c6afcdc2595b87a2aa152d0d8e150a03f872df5ab2a
+$ docker pull pypy@sha256:27112b3df7137103ccf9e30cb0244f86f1a4a4688146966ddb50eea63d3177f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5662,7 +5910,7 @@ CMD ["pypy3"]
 ## `pypy:3.5-7-slim-stretch`
 
 ```console
-$ docker pull pypy@sha256:3e0b7ebcae9a28b9d88c0c6afcdc2595b87a2aa152d0d8e150a03f872df5ab2a
+$ docker pull pypy@sha256:27112b3df7137103ccf9e30cb0244f86f1a4a4688146966ddb50eea63d3177f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5867,7 +6115,7 @@ CMD ["pypy3"]
 ## `pypy:3.5-7-stretch`
 
 ```console
-$ docker pull pypy@sha256:172a3b074a9d8eab3500dd9b96c2b78b37b497f51e050e4367c3e13bb06d2583
+$ docker pull pypy@sha256:03daffe9c294572bb3dab49ae02f89ca186d3f96ed7eee2ec856deb5e29eb4fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6192,7 +6440,7 @@ CMD ["pypy3"]
 ## `pypy:3.5-slim`
 
 ```console
-$ docker pull pypy@sha256:3e0b7ebcae9a28b9d88c0c6afcdc2595b87a2aa152d0d8e150a03f872df5ab2a
+$ docker pull pypy@sha256:27112b3df7137103ccf9e30cb0244f86f1a4a4688146966ddb50eea63d3177f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6397,7 +6645,7 @@ CMD ["pypy3"]
 ## `pypy:3.5-slim-stretch`
 
 ```console
-$ docker pull pypy@sha256:3e0b7ebcae9a28b9d88c0c6afcdc2595b87a2aa152d0d8e150a03f872df5ab2a
+$ docker pull pypy@sha256:27112b3df7137103ccf9e30cb0244f86f1a4a4688146966ddb50eea63d3177f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6602,7 +6850,7 @@ CMD ["pypy3"]
 ## `pypy:3.5-stretch`
 
 ```console
-$ docker pull pypy@sha256:172a3b074a9d8eab3500dd9b96c2b78b37b497f51e050e4367c3e13bb06d2583
+$ docker pull pypy@sha256:03daffe9c294572bb3dab49ae02f89ca186d3f96ed7eee2ec856deb5e29eb4fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6927,7 +7175,7 @@ CMD ["pypy3"]
 ## `pypy:3.6`
 
 ```console
-$ docker pull pypy@sha256:41196626119ba52e6b3e14bb6b05f73afa205477319cc0f02466ece62ebc39d6
+$ docker pull pypy@sha256:ec5f7dd918adbf30752feb18f2304e7e5810bab113206877d6b62d48ded10e39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7173,7 +7421,7 @@ CMD ["pypy3"]
 ## `pypy:3.6-7`
 
 ```console
-$ docker pull pypy@sha256:41196626119ba52e6b3e14bb6b05f73afa205477319cc0f02466ece62ebc39d6
+$ docker pull pypy@sha256:ec5f7dd918adbf30752feb18f2304e7e5810bab113206877d6b62d48ded10e39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7419,7 +7667,7 @@ CMD ["pypy3"]
 ## `pypy:3.6-7.1`
 
 ```console
-$ docker pull pypy@sha256:41196626119ba52e6b3e14bb6b05f73afa205477319cc0f02466ece62ebc39d6
+$ docker pull pypy@sha256:ec5f7dd918adbf30752feb18f2304e7e5810bab113206877d6b62d48ded10e39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7665,7 +7913,7 @@ CMD ["pypy3"]
 ## `pypy:3.6-7.1.1`
 
 ```console
-$ docker pull pypy@sha256:41196626119ba52e6b3e14bb6b05f73afa205477319cc0f02466ece62ebc39d6
+$ docker pull pypy@sha256:ec5f7dd918adbf30752feb18f2304e7e5810bab113206877d6b62d48ded10e39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7911,7 +8159,7 @@ CMD ["pypy3"]
 ## `pypy:3.6-7.1.1-slim`
 
 ```console
-$ docker pull pypy@sha256:cacf24a3c0141968514ac2fb09cd03b920178d765dc14b5f864ac5ad0378098a
+$ docker pull pypy@sha256:72f6d05003e0782c7eec5e84240a04b50425e77c72bae996840ed9783b53aae6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8067,7 +8315,7 @@ CMD ["pypy3"]
 ## `pypy:3.6-7.1.1-slim-stretch`
 
 ```console
-$ docker pull pypy@sha256:cacf24a3c0141968514ac2fb09cd03b920178d765dc14b5f864ac5ad0378098a
+$ docker pull pypy@sha256:72f6d05003e0782c7eec5e84240a04b50425e77c72bae996840ed9783b53aae6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8223,7 +8471,7 @@ CMD ["pypy3"]
 ## `pypy:3.6-7.1.1-stretch`
 
 ```console
-$ docker pull pypy@sha256:41196626119ba52e6b3e14bb6b05f73afa205477319cc0f02466ece62ebc39d6
+$ docker pull pypy@sha256:ec5f7dd918adbf30752feb18f2304e7e5810bab113206877d6b62d48ded10e39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8469,7 +8717,7 @@ CMD ["pypy3"]
 ## `pypy:3.6-7.1-slim`
 
 ```console
-$ docker pull pypy@sha256:cacf24a3c0141968514ac2fb09cd03b920178d765dc14b5f864ac5ad0378098a
+$ docker pull pypy@sha256:72f6d05003e0782c7eec5e84240a04b50425e77c72bae996840ed9783b53aae6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8625,7 +8873,7 @@ CMD ["pypy3"]
 ## `pypy:3.6-7.1-slim-stretch`
 
 ```console
-$ docker pull pypy@sha256:cacf24a3c0141968514ac2fb09cd03b920178d765dc14b5f864ac5ad0378098a
+$ docker pull pypy@sha256:72f6d05003e0782c7eec5e84240a04b50425e77c72bae996840ed9783b53aae6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8781,7 +9029,7 @@ CMD ["pypy3"]
 ## `pypy:3.6-7.1-stretch`
 
 ```console
-$ docker pull pypy@sha256:41196626119ba52e6b3e14bb6b05f73afa205477319cc0f02466ece62ebc39d6
+$ docker pull pypy@sha256:ec5f7dd918adbf30752feb18f2304e7e5810bab113206877d6b62d48ded10e39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9027,7 +9275,7 @@ CMD ["pypy3"]
 ## `pypy:3.6-7-slim`
 
 ```console
-$ docker pull pypy@sha256:cacf24a3c0141968514ac2fb09cd03b920178d765dc14b5f864ac5ad0378098a
+$ docker pull pypy@sha256:72f6d05003e0782c7eec5e84240a04b50425e77c72bae996840ed9783b53aae6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9183,7 +9431,7 @@ CMD ["pypy3"]
 ## `pypy:3.6-7-slim-stretch`
 
 ```console
-$ docker pull pypy@sha256:cacf24a3c0141968514ac2fb09cd03b920178d765dc14b5f864ac5ad0378098a
+$ docker pull pypy@sha256:72f6d05003e0782c7eec5e84240a04b50425e77c72bae996840ed9783b53aae6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9339,7 +9587,7 @@ CMD ["pypy3"]
 ## `pypy:3.6-7-stretch`
 
 ```console
-$ docker pull pypy@sha256:41196626119ba52e6b3e14bb6b05f73afa205477319cc0f02466ece62ebc39d6
+$ docker pull pypy@sha256:ec5f7dd918adbf30752feb18f2304e7e5810bab113206877d6b62d48ded10e39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9585,7 +9833,7 @@ CMD ["pypy3"]
 ## `pypy:3.6-slim`
 
 ```console
-$ docker pull pypy@sha256:cacf24a3c0141968514ac2fb09cd03b920178d765dc14b5f864ac5ad0378098a
+$ docker pull pypy@sha256:72f6d05003e0782c7eec5e84240a04b50425e77c72bae996840ed9783b53aae6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9741,7 +9989,7 @@ CMD ["pypy3"]
 ## `pypy:3.6-slim-stretch`
 
 ```console
-$ docker pull pypy@sha256:cacf24a3c0141968514ac2fb09cd03b920178d765dc14b5f864ac5ad0378098a
+$ docker pull pypy@sha256:72f6d05003e0782c7eec5e84240a04b50425e77c72bae996840ed9783b53aae6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9897,7 +10145,7 @@ CMD ["pypy3"]
 ## `pypy:3.6-stretch`
 
 ```console
-$ docker pull pypy@sha256:41196626119ba52e6b3e14bb6b05f73afa205477319cc0f02466ece62ebc39d6
+$ docker pull pypy@sha256:ec5f7dd918adbf30752feb18f2304e7e5810bab113206877d6b62d48ded10e39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10143,7 +10391,7 @@ CMD ["pypy3"]
 ## `pypy:3-7`
 
 ```console
-$ docker pull pypy@sha256:172a3b074a9d8eab3500dd9b96c2b78b37b497f51e050e4367c3e13bb06d2583
+$ docker pull pypy@sha256:03daffe9c294572bb3dab49ae02f89ca186d3f96ed7eee2ec856deb5e29eb4fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10468,7 +10716,7 @@ CMD ["pypy3"]
 ## `pypy:3-7.0`
 
 ```console
-$ docker pull pypy@sha256:172a3b074a9d8eab3500dd9b96c2b78b37b497f51e050e4367c3e13bb06d2583
+$ docker pull pypy@sha256:03daffe9c294572bb3dab49ae02f89ca186d3f96ed7eee2ec856deb5e29eb4fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10793,7 +11041,7 @@ CMD ["pypy3"]
 ## `pypy:3-7.0.0`
 
 ```console
-$ docker pull pypy@sha256:172a3b074a9d8eab3500dd9b96c2b78b37b497f51e050e4367c3e13bb06d2583
+$ docker pull pypy@sha256:03daffe9c294572bb3dab49ae02f89ca186d3f96ed7eee2ec856deb5e29eb4fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11118,7 +11366,7 @@ CMD ["pypy3"]
 ## `pypy:3-7.0.0-slim`
 
 ```console
-$ docker pull pypy@sha256:3e0b7ebcae9a28b9d88c0c6afcdc2595b87a2aa152d0d8e150a03f872df5ab2a
+$ docker pull pypy@sha256:27112b3df7137103ccf9e30cb0244f86f1a4a4688146966ddb50eea63d3177f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11323,7 +11571,7 @@ CMD ["pypy3"]
 ## `pypy:3-7.0.0-slim-stretch`
 
 ```console
-$ docker pull pypy@sha256:3e0b7ebcae9a28b9d88c0c6afcdc2595b87a2aa152d0d8e150a03f872df5ab2a
+$ docker pull pypy@sha256:27112b3df7137103ccf9e30cb0244f86f1a4a4688146966ddb50eea63d3177f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11528,7 +11776,7 @@ CMD ["pypy3"]
 ## `pypy:3-7.0.0-stretch`
 
 ```console
-$ docker pull pypy@sha256:172a3b074a9d8eab3500dd9b96c2b78b37b497f51e050e4367c3e13bb06d2583
+$ docker pull pypy@sha256:03daffe9c294572bb3dab49ae02f89ca186d3f96ed7eee2ec856deb5e29eb4fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11853,7 +12101,7 @@ CMD ["pypy3"]
 ## `pypy:3-7.0-slim`
 
 ```console
-$ docker pull pypy@sha256:3e0b7ebcae9a28b9d88c0c6afcdc2595b87a2aa152d0d8e150a03f872df5ab2a
+$ docker pull pypy@sha256:27112b3df7137103ccf9e30cb0244f86f1a4a4688146966ddb50eea63d3177f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12058,7 +12306,7 @@ CMD ["pypy3"]
 ## `pypy:3-7.0-slim-stretch`
 
 ```console
-$ docker pull pypy@sha256:3e0b7ebcae9a28b9d88c0c6afcdc2595b87a2aa152d0d8e150a03f872df5ab2a
+$ docker pull pypy@sha256:27112b3df7137103ccf9e30cb0244f86f1a4a4688146966ddb50eea63d3177f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12263,7 +12511,7 @@ CMD ["pypy3"]
 ## `pypy:3-7.0-stretch`
 
 ```console
-$ docker pull pypy@sha256:172a3b074a9d8eab3500dd9b96c2b78b37b497f51e050e4367c3e13bb06d2583
+$ docker pull pypy@sha256:03daffe9c294572bb3dab49ae02f89ca186d3f96ed7eee2ec856deb5e29eb4fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12588,7 +12836,7 @@ CMD ["pypy3"]
 ## `pypy:3-7-slim`
 
 ```console
-$ docker pull pypy@sha256:3e0b7ebcae9a28b9d88c0c6afcdc2595b87a2aa152d0d8e150a03f872df5ab2a
+$ docker pull pypy@sha256:27112b3df7137103ccf9e30cb0244f86f1a4a4688146966ddb50eea63d3177f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12793,7 +13041,7 @@ CMD ["pypy3"]
 ## `pypy:3-7-slim-stretch`
 
 ```console
-$ docker pull pypy@sha256:3e0b7ebcae9a28b9d88c0c6afcdc2595b87a2aa152d0d8e150a03f872df5ab2a
+$ docker pull pypy@sha256:27112b3df7137103ccf9e30cb0244f86f1a4a4688146966ddb50eea63d3177f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12998,7 +13246,7 @@ CMD ["pypy3"]
 ## `pypy:3-7-stretch`
 
 ```console
-$ docker pull pypy@sha256:172a3b074a9d8eab3500dd9b96c2b78b37b497f51e050e4367c3e13bb06d2583
+$ docker pull pypy@sha256:03daffe9c294572bb3dab49ae02f89ca186d3f96ed7eee2ec856deb5e29eb4fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13323,7 +13571,7 @@ CMD ["pypy3"]
 ## `pypy:3-slim`
 
 ```console
-$ docker pull pypy@sha256:3e0b7ebcae9a28b9d88c0c6afcdc2595b87a2aa152d0d8e150a03f872df5ab2a
+$ docker pull pypy@sha256:27112b3df7137103ccf9e30cb0244f86f1a4a4688146966ddb50eea63d3177f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13528,7 +13776,7 @@ CMD ["pypy3"]
 ## `pypy:3-slim-stretch`
 
 ```console
-$ docker pull pypy@sha256:3e0b7ebcae9a28b9d88c0c6afcdc2595b87a2aa152d0d8e150a03f872df5ab2a
+$ docker pull pypy@sha256:27112b3df7137103ccf9e30cb0244f86f1a4a4688146966ddb50eea63d3177f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13733,7 +13981,7 @@ CMD ["pypy3"]
 ## `pypy:3-stretch`
 
 ```console
-$ docker pull pypy@sha256:172a3b074a9d8eab3500dd9b96c2b78b37b497f51e050e4367c3e13bb06d2583
+$ docker pull pypy@sha256:03daffe9c294572bb3dab49ae02f89ca186d3f96ed7eee2ec856deb5e29eb4fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14058,7 +14306,7 @@ CMD ["pypy3"]
 ## `pypy:latest`
 
 ```console
-$ docker pull pypy@sha256:172a3b074a9d8eab3500dd9b96c2b78b37b497f51e050e4367c3e13bb06d2583
+$ docker pull pypy@sha256:03daffe9c294572bb3dab49ae02f89ca186d3f96ed7eee2ec856deb5e29eb4fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14383,7 +14631,7 @@ CMD ["pypy3"]
 ## `pypy:slim`
 
 ```console
-$ docker pull pypy@sha256:3e0b7ebcae9a28b9d88c0c6afcdc2595b87a2aa152d0d8e150a03f872df5ab2a
+$ docker pull pypy@sha256:27112b3df7137103ccf9e30cb0244f86f1a4a4688146966ddb50eea63d3177f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14588,7 +14836,7 @@ CMD ["pypy3"]
 ## `pypy:slim-stretch`
 
 ```console
-$ docker pull pypy@sha256:3e0b7ebcae9a28b9d88c0c6afcdc2595b87a2aa152d0d8e150a03f872df5ab2a
+$ docker pull pypy@sha256:27112b3df7137103ccf9e30cb0244f86f1a4a4688146966ddb50eea63d3177f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14793,7 +15041,7 @@ CMD ["pypy3"]
 ## `pypy:stretch`
 
 ```console
-$ docker pull pypy@sha256:172a3b074a9d8eab3500dd9b96c2b78b37b497f51e050e4367c3e13bb06d2583
+$ docker pull pypy@sha256:03daffe9c294572bb3dab49ae02f89ca186d3f96ed7eee2ec856deb5e29eb4fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
