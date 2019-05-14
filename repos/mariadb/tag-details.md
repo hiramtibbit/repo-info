@@ -38,7 +38,7 @@
 ## `mariadb:10`
 
 ```console
-$ docker pull mariadb@sha256:182b47379bf7c746ad990e48ef2496e2c84477bd3a74dcb164b4244bec934926
+$ docker pull mariadb@sha256:47e675de3bf9c05a0ad4d5cdb0174d0da293f4027cdad35b68b6e03571ce5c84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -413,7 +413,7 @@ CMD ["mysqld"]
 ## `mariadb:10.0`
 
 ```console
-$ docker pull mariadb@sha256:4aefc3d60345873505967491f9d3bc7a42339c9d0ea8ced284bc154c41450f33
+$ docker pull mariadb@sha256:08f04d8835ad1a22e34415b4765eb57f044a4b32ab8ccf0dacc19c5dd879fb12
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -910,7 +910,7 @@ CMD ["mysqld"]
 ## `mariadb:10.0.38`
 
 ```console
-$ docker pull mariadb@sha256:4aefc3d60345873505967491f9d3bc7a42339c9d0ea8ced284bc154c41450f33
+$ docker pull mariadb@sha256:08f04d8835ad1a22e34415b4765eb57f044a4b32ab8ccf0dacc19c5dd879fb12
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1407,7 +1407,7 @@ CMD ["mysqld"]
 ## `mariadb:10.0.38-xenial`
 
 ```console
-$ docker pull mariadb@sha256:4aefc3d60345873505967491f9d3bc7a42339c9d0ea8ced284bc154c41450f33
+$ docker pull mariadb@sha256:08f04d8835ad1a22e34415b4765eb57f044a4b32ab8ccf0dacc19c5dd879fb12
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1904,7 +1904,7 @@ CMD ["mysqld"]
 ## `mariadb:10.0-xenial`
 
 ```console
-$ docker pull mariadb@sha256:4aefc3d60345873505967491f9d3bc7a42339c9d0ea8ced284bc154c41450f33
+$ docker pull mariadb@sha256:08f04d8835ad1a22e34415b4765eb57f044a4b32ab8ccf0dacc19c5dd879fb12
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2401,7 +2401,7 @@ CMD ["mysqld"]
 ## `mariadb:10.1`
 
 ```console
-$ docker pull mariadb@sha256:bf224e22bfc3d7325ec4aac7487079924a7de930481aa7211e2270a1ad814d3c
+$ docker pull mariadb@sha256:21cbe446fb4ffd490d7c00482128cbdca683616c96c37236eb432d8d62bbe72d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2776,7 +2776,7 @@ CMD ["mysqld"]
 ## `mariadb:10.1.40`
 
 ```console
-$ docker pull mariadb@sha256:bf224e22bfc3d7325ec4aac7487079924a7de930481aa7211e2270a1ad814d3c
+$ docker pull mariadb@sha256:21cbe446fb4ffd490d7c00482128cbdca683616c96c37236eb432d8d62bbe72d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3151,7 +3151,7 @@ CMD ["mysqld"]
 ## `mariadb:10.1.40-bionic`
 
 ```console
-$ docker pull mariadb@sha256:bf224e22bfc3d7325ec4aac7487079924a7de930481aa7211e2270a1ad814d3c
+$ docker pull mariadb@sha256:21cbe446fb4ffd490d7c00482128cbdca683616c96c37236eb432d8d62bbe72d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3526,7 +3526,7 @@ CMD ["mysqld"]
 ## `mariadb:10.1-bionic`
 
 ```console
-$ docker pull mariadb@sha256:bf224e22bfc3d7325ec4aac7487079924a7de930481aa7211e2270a1ad814d3c
+$ docker pull mariadb@sha256:21cbe446fb4ffd490d7c00482128cbdca683616c96c37236eb432d8d62bbe72d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3901,7 +3901,7 @@ CMD ["mysqld"]
 ## `mariadb:10.2`
 
 ```console
-$ docker pull mariadb@sha256:98d57094745d2d3550087fed9540422d30a2c009c3fcabe090212507fafdaf2e
+$ docker pull mariadb@sha256:5643227eff158f01c3197e59b3bc2b3208ade2f5265058c1315d1e0437fb0c09
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4276,7 +4276,7 @@ CMD ["mysqld"]
 ## `mariadb:10.2.24`
 
 ```console
-$ docker pull mariadb@sha256:98d57094745d2d3550087fed9540422d30a2c009c3fcabe090212507fafdaf2e
+$ docker pull mariadb@sha256:5643227eff158f01c3197e59b3bc2b3208ade2f5265058c1315d1e0437fb0c09
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4651,7 +4651,7 @@ CMD ["mysqld"]
 ## `mariadb:10.2.24-bionic`
 
 ```console
-$ docker pull mariadb@sha256:98d57094745d2d3550087fed9540422d30a2c009c3fcabe090212507fafdaf2e
+$ docker pull mariadb@sha256:5643227eff158f01c3197e59b3bc2b3208ade2f5265058c1315d1e0437fb0c09
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5026,7 +5026,7 @@ CMD ["mysqld"]
 ## `mariadb:10.2-bionic`
 
 ```console
-$ docker pull mariadb@sha256:98d57094745d2d3550087fed9540422d30a2c009c3fcabe090212507fafdaf2e
+$ docker pull mariadb@sha256:5643227eff158f01c3197e59b3bc2b3208ade2f5265058c1315d1e0437fb0c09
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5401,7 +5401,7 @@ CMD ["mysqld"]
 ## `mariadb:10.3`
 
 ```console
-$ docker pull mariadb@sha256:182b47379bf7c746ad990e48ef2496e2c84477bd3a74dcb164b4244bec934926
+$ docker pull mariadb@sha256:47e675de3bf9c05a0ad4d5cdb0174d0da293f4027cdad35b68b6e03571ce5c84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5776,7 +5776,7 @@ CMD ["mysqld"]
 ## `mariadb:10.3.14`
 
 ```console
-$ docker pull mariadb@sha256:182b47379bf7c746ad990e48ef2496e2c84477bd3a74dcb164b4244bec934926
+$ docker pull mariadb@sha256:47e675de3bf9c05a0ad4d5cdb0174d0da293f4027cdad35b68b6e03571ce5c84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6151,7 +6151,7 @@ CMD ["mysqld"]
 ## `mariadb:10.3.14-bionic`
 
 ```console
-$ docker pull mariadb@sha256:182b47379bf7c746ad990e48ef2496e2c84477bd3a74dcb164b4244bec934926
+$ docker pull mariadb@sha256:47e675de3bf9c05a0ad4d5cdb0174d0da293f4027cdad35b68b6e03571ce5c84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6526,7 +6526,7 @@ CMD ["mysqld"]
 ## `mariadb:10.3-bionic`
 
 ```console
-$ docker pull mariadb@sha256:182b47379bf7c746ad990e48ef2496e2c84477bd3a74dcb164b4244bec934926
+$ docker pull mariadb@sha256:47e675de3bf9c05a0ad4d5cdb0174d0da293f4027cdad35b68b6e03571ce5c84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6901,7 +6901,7 @@ CMD ["mysqld"]
 ## `mariadb:10.4`
 
 ```console
-$ docker pull mariadb@sha256:31d1e225f3f261038e3ba718a236e2e0ef0c7ddfd0d5c8a992a3791d4b6e4b99
+$ docker pull mariadb@sha256:8ace8e02fb15734d7f9529b7e0dc764b22c413d1281b499ea1396053c7daecfd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7276,7 +7276,7 @@ CMD ["mysqld"]
 ## `mariadb:10.4.4`
 
 ```console
-$ docker pull mariadb@sha256:31d1e225f3f261038e3ba718a236e2e0ef0c7ddfd0d5c8a992a3791d4b6e4b99
+$ docker pull mariadb@sha256:8ace8e02fb15734d7f9529b7e0dc764b22c413d1281b499ea1396053c7daecfd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7651,7 +7651,7 @@ CMD ["mysqld"]
 ## `mariadb:10.4.4-bionic`
 
 ```console
-$ docker pull mariadb@sha256:31d1e225f3f261038e3ba718a236e2e0ef0c7ddfd0d5c8a992a3791d4b6e4b99
+$ docker pull mariadb@sha256:8ace8e02fb15734d7f9529b7e0dc764b22c413d1281b499ea1396053c7daecfd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8026,7 +8026,7 @@ CMD ["mysqld"]
 ## `mariadb:10.4-bionic`
 
 ```console
-$ docker pull mariadb@sha256:31d1e225f3f261038e3ba718a236e2e0ef0c7ddfd0d5c8a992a3791d4b6e4b99
+$ docker pull mariadb@sha256:8ace8e02fb15734d7f9529b7e0dc764b22c413d1281b499ea1396053c7daecfd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8401,7 +8401,7 @@ CMD ["mysqld"]
 ## `mariadb:10-bionic`
 
 ```console
-$ docker pull mariadb@sha256:182b47379bf7c746ad990e48ef2496e2c84477bd3a74dcb164b4244bec934926
+$ docker pull mariadb@sha256:47e675de3bf9c05a0ad4d5cdb0174d0da293f4027cdad35b68b6e03571ce5c84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8776,7 +8776,7 @@ CMD ["mysqld"]
 ## `mariadb:5`
 
 ```console
-$ docker pull mariadb@sha256:bcc9adea9b4447fa97f264b7ea0c153bed71d05069c6bab85e4ecb3803f2bf46
+$ docker pull mariadb@sha256:a51c8d7bf02653be0b4b435d58392df11373ebb3e20c1db22d55b0277f1045be
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9151,7 +9151,7 @@ CMD ["mysqld"]
 ## `mariadb:5.5`
 
 ```console
-$ docker pull mariadb@sha256:bcc9adea9b4447fa97f264b7ea0c153bed71d05069c6bab85e4ecb3803f2bf46
+$ docker pull mariadb@sha256:a51c8d7bf02653be0b4b435d58392df11373ebb3e20c1db22d55b0277f1045be
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9526,7 +9526,7 @@ CMD ["mysqld"]
 ## `mariadb:5.5.64`
 
 ```console
-$ docker pull mariadb@sha256:bcc9adea9b4447fa97f264b7ea0c153bed71d05069c6bab85e4ecb3803f2bf46
+$ docker pull mariadb@sha256:a51c8d7bf02653be0b4b435d58392df11373ebb3e20c1db22d55b0277f1045be
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9901,7 +9901,7 @@ CMD ["mysqld"]
 ## `mariadb:5.5.64-trusty`
 
 ```console
-$ docker pull mariadb@sha256:bcc9adea9b4447fa97f264b7ea0c153bed71d05069c6bab85e4ecb3803f2bf46
+$ docker pull mariadb@sha256:a51c8d7bf02653be0b4b435d58392df11373ebb3e20c1db22d55b0277f1045be
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10276,7 +10276,7 @@ CMD ["mysqld"]
 ## `mariadb:5.5-trusty`
 
 ```console
-$ docker pull mariadb@sha256:bcc9adea9b4447fa97f264b7ea0c153bed71d05069c6bab85e4ecb3803f2bf46
+$ docker pull mariadb@sha256:a51c8d7bf02653be0b4b435d58392df11373ebb3e20c1db22d55b0277f1045be
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10651,7 +10651,7 @@ CMD ["mysqld"]
 ## `mariadb:5-trusty`
 
 ```console
-$ docker pull mariadb@sha256:bcc9adea9b4447fa97f264b7ea0c153bed71d05069c6bab85e4ecb3803f2bf46
+$ docker pull mariadb@sha256:a51c8d7bf02653be0b4b435d58392df11373ebb3e20c1db22d55b0277f1045be
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11026,7 +11026,7 @@ CMD ["mysqld"]
 ## `mariadb:bionic`
 
 ```console
-$ docker pull mariadb@sha256:182b47379bf7c746ad990e48ef2496e2c84477bd3a74dcb164b4244bec934926
+$ docker pull mariadb@sha256:47e675de3bf9c05a0ad4d5cdb0174d0da293f4027cdad35b68b6e03571ce5c84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11401,7 +11401,7 @@ CMD ["mysqld"]
 ## `mariadb:latest`
 
 ```console
-$ docker pull mariadb@sha256:182b47379bf7c746ad990e48ef2496e2c84477bd3a74dcb164b4244bec934926
+$ docker pull mariadb@sha256:47e675de3bf9c05a0ad4d5cdb0174d0da293f4027cdad35b68b6e03571ce5c84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11776,7 +11776,7 @@ CMD ["mysqld"]
 ## `mariadb:rc`
 
 ```console
-$ docker pull mariadb@sha256:31d1e225f3f261038e3ba718a236e2e0ef0c7ddfd0d5c8a992a3791d4b6e4b99
+$ docker pull mariadb@sha256:8ace8e02fb15734d7f9529b7e0dc764b22c413d1281b499ea1396053c7daecfd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12151,7 +12151,7 @@ CMD ["mysqld"]
 ## `mariadb:rc-bionic`
 
 ```console
-$ docker pull mariadb@sha256:31d1e225f3f261038e3ba718a236e2e0ef0c7ddfd0d5c8a992a3791d4b6e4b99
+$ docker pull mariadb@sha256:8ace8e02fb15734d7f9529b7e0dc764b22c413d1281b499ea1396053c7daecfd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

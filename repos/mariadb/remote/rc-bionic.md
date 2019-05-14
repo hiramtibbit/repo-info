@@ -1,7 +1,7 @@
 ## `mariadb:rc-bionic`
 
 ```console
-$ docker pull mariadb@sha256:31d1e225f3f261038e3ba718a236e2e0ef0c7ddfd0d5c8a992a3791d4b6e4b99
+$ docker pull mariadb@sha256:8ace8e02fb15734d7f9529b7e0dc764b22c413d1281b499ea1396053c7daecfd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
