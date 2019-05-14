@@ -10,7 +10,7 @@
 ## `swipl:8.0.0`
 
 ```console
-$ docker pull swipl@sha256:72ba30c4fb82c252301855eb2e1d66245818a0a151fa87992adc962b28b6a6e3
+$ docker pull swipl@sha256:70531b5fda1285728d92a8bd83193d76eca0c558f1a83932999a83ad8e5009ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -64,7 +64,7 @@ CMD ["swipl"]
 ## `swipl:8.1.5`
 
 ```console
-$ docker pull swipl@sha256:43f77043053f6a32c6bc3c24f53b0c12b5c4f8186f988a0e158ca9ce4691b185
+$ docker pull swipl@sha256:fe5c443779213b987aaed6a5f2882aeccd1116c9e8a7919a3f45d13efe17c51b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -208,7 +208,7 @@ CMD ["swipl"]
 ## `swipl:latest`
 
 ```console
-$ docker pull swipl@sha256:43f77043053f6a32c6bc3c24f53b0c12b5c4f8186f988a0e158ca9ce4691b185
+$ docker pull swipl@sha256:fe5c443779213b987aaed6a5f2882aeccd1116c9e8a7919a3f45d13efe17c51b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -352,7 +352,7 @@ CMD ["swipl"]
 ## `swipl:stable`
 
 ```console
-$ docker pull swipl@sha256:72ba30c4fb82c252301855eb2e1d66245818a0a151fa87992adc962b28b6a6e3
+$ docker pull swipl@sha256:70531b5fda1285728d92a8bd83193d76eca0c558f1a83932999a83ad8e5009ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

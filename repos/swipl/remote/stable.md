@@ -1,7 +1,7 @@
 ## `swipl:stable`
 
 ```console
-$ docker pull swipl@sha256:72ba30c4fb82c252301855eb2e1d66245818a0a151fa87992adc962b28b6a6e3
+$ docker pull swipl@sha256:70531b5fda1285728d92a8bd83193d76eca0c558f1a83932999a83ad8e5009ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
