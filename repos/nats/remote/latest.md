@@ -1,7 +1,7 @@
 ## `nats:latest`
 
 ```console
-$ docker pull nats@sha256:73a6681afc85b8b9d88d96eecb1f189fa1e3600ea8b35a2a809af341156ed7c8
+$ docker pull nats@sha256:0c98cdfc4332c0de539a064bfab502a24aae18ef7475ddcc7081331502327354
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

@@ -14,7 +14,7 @@
 ## `nats:1.4.1`
 
 ```console
-$ docker pull nats@sha256:73a6681afc85b8b9d88d96eecb1f189fa1e3600ea8b35a2a809af341156ed7c8
+$ docker pull nats@sha256:0c98cdfc4332c0de539a064bfab502a24aae18ef7475ddcc7081331502327354
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -249,7 +249,7 @@ RUN cmd /S /C #(nop)  CMD ["-c" "gnatsd.conf"]
 ## `nats:1.4.1-linux`
 
 ```console
-$ docker pull nats@sha256:fb50f175649445c21b41811ee832193013487d5388019c7e6d0b51a251bcad7a
+$ docker pull nats@sha256:1065f8bd5e8736db1c424b218e5007003af6253454a32e72dd9951e70eee7d81
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -410,7 +410,7 @@ CMD ["-c" "gnatsd.conf"]
 ## `nats:1.4.1-nanoserver`
 
 ```console
-$ docker pull nats@sha256:41397b8aac229201dbe56182e82b5d58b1d5fc5b3007869d013501e76b7c0f32
+$ docker pull nats@sha256:179efe60b3a343ed51dfe982a882f758039227ef0c6f5c0da894a3b58df6831f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -493,7 +493,7 @@ RUN cmd /S /C #(nop)  CMD ["-c" "gnatsd.conf"]
 ## `nats:1.4.1-windowsservercore`
 
 ```console
-$ docker pull nats@sha256:82033e5d1713608a9ce48e8e5e34caa0970d767854626926e8ede3910f2737a7
+$ docker pull nats@sha256:ec49de864d641aebf0b560071aa8dd296a29fcfaca9d3f49d5140984379495fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -576,7 +576,7 @@ RUN cmd /S /C #(nop)  CMD ["-c" "gnatsd.conf"]
 ## `nats:latest`
 
 ```console
-$ docker pull nats@sha256:73a6681afc85b8b9d88d96eecb1f189fa1e3600ea8b35a2a809af341156ed7c8
+$ docker pull nats@sha256:0c98cdfc4332c0de539a064bfab502a24aae18ef7475ddcc7081331502327354
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -811,7 +811,7 @@ RUN cmd /S /C #(nop)  CMD ["-c" "gnatsd.conf"]
 ## `nats:linux`
 
 ```console
-$ docker pull nats@sha256:fb50f175649445c21b41811ee832193013487d5388019c7e6d0b51a251bcad7a
+$ docker pull nats@sha256:1065f8bd5e8736db1c424b218e5007003af6253454a32e72dd9951e70eee7d81
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -972,7 +972,7 @@ CMD ["-c" "gnatsd.conf"]
 ## `nats:nanoserver`
 
 ```console
-$ docker pull nats@sha256:41397b8aac229201dbe56182e82b5d58b1d5fc5b3007869d013501e76b7c0f32
+$ docker pull nats@sha256:179efe60b3a343ed51dfe982a882f758039227ef0c6f5c0da894a3b58df6831f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1055,7 +1055,7 @@ RUN cmd /S /C #(nop)  CMD ["-c" "gnatsd.conf"]
 ## `nats:windowsservercore`
 
 ```console
-$ docker pull nats@sha256:82033e5d1713608a9ce48e8e5e34caa0970d767854626926e8ede3910f2737a7
+$ docker pull nats@sha256:ec49de864d641aebf0b560071aa8dd296a29fcfaca9d3f49d5140984379495fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
