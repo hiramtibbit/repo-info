@@ -1,7 +1,7 @@
 ## `hello-world:latest`
 
 ```console
-$ docker pull hello-world@sha256:92695bc579f31df7a63da6922075d0666e565ceccad16b59c3374d2cf4e8e50e
+$ docker pull hello-world@sha256:5f179596a7335398b805f036f7e8561b6f0e32cd30a32f5e19d17a3cda6cc33d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,6 +13,8 @@ $ docker pull hello-world@sha256:92695bc579f31df7a63da6922075d0666e565ceccad16b5
 	-	linux; 386
 	-	linux; ppc64le
 	-	linux; s390x
+	-	windows version 10.0.14393.2551; amd64
+	-	windows version 10.0.16299.1087; amd64
 	-	windows version 10.0.17134.706; amd64
 	-	windows version 10.0.17763.437; amd64
 
@@ -123,27 +125,27 @@ CMD ["/hello"]
 ### `hello-world:latest` - linux; 386
 
 ```console
-$ docker pull hello-world@sha256:85dc5fbe16214366748ebe9d7cc73bc42d61d19d61fe05f01e317d278c2287ed
+$ docker pull hello-world@sha256:5a4bdadd9acd8779ed6fcf007a4e7ed7f919056a92c3c67824b4fded06ef0a6e
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **312.1 KB (312071 bytes)**  
+-	Total Size: **312.1 KB (312093 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:30e96422ae9233507974681c3ff2634588223a12d2528cd7c5291e67ad5d52df`
+-	Image ID: `sha256:df8c1d4877c5b7c3bb398e41d24224693be78303942d6750020c29d63abe7401`
 -	Default Command: `["\/hello"]`
 
 ```dockerfile
-# Fri, 12 Apr 2019 21:39:44 GMT
-COPY file:e60a27f8f1ffeb289616699cef71b626931f754cdb17e53163701927f6fd7c53 in / 
-# Fri, 12 Apr 2019 21:39:44 GMT
+# Tue, 01 Jan 2019 13:01:05 GMT
+COPY file:82bd57491645f8a9b4e7407d6f1b61cb948afecbb3eecf25ec467d7b3b02b0df in / 
+# Tue, 01 Jan 2019 13:01:05 GMT
 CMD ["/hello"]
 ```
 
 -	Layers:
-	-	`sha256:895e610a6b079a7f729a3d26ae6186a7b967bd6561ca011f043afa5fed03118a`  
-		Last Modified: Sat, 13 Apr 2019 11:19:18 GMT  
-		Size: 312.1 KB (312071 bytes)  
+	-	`sha256:d8aec4eeb95f50a6bb92e676e9cbd4ae700faf31be657cfe2216bc0491c50afe`  
+		Last Modified: Tue, 01 Jan 2019 13:01:12 GMT  
+		Size: 312.1 KB (312093 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hello-world:latest` - linux; ppc64le
@@ -196,6 +198,90 @@ CMD ["/hello"]
 	-	`sha256:d39d9a31884d8a8934ef7790f6278c224de873743af587e4a9ad810f885a17c2`  
 		Last Modified: Tue, 01 Jan 2019 13:02:56 GMT  
 		Size: 1.1 KB (1095 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `hello-world:latest` - windows version 10.0.14393.2551; amd64
+
+```console
+$ docker pull hello-world@sha256:c1be6e1468485757698af528fff774d474e69f448eef43c368fa2f2be1288b4d
+```
+
+-	Docker Version: 18.03.1-ee-4
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **435.4 MB (435399440 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2c911f8d79dba2c870d4b99746cd3571f647375bcbebbc10adc9ca378302e0d5`
+-	Default Command: `["cmd","\/C","type C:\\hello.txt"]`
+
+```dockerfile
+# Mon, 17 Sep 2018 20:04:15 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 09 Oct 2018 18:02:39 GMT
+RUN Install update 10.0.14393.2551
+# Tue, 01 Jan 2019 10:20:14 GMT
+RUN cmd /S /C #(nop) COPY file:5d663ccbfe061954e576992403c9920ed47d659acd70d3093fbce20e12273acb in C: 
+# Tue, 01 Jan 2019 10:20:16 GMT
+RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
+```
+
+-	Layers:
+	-	`sha256:bce2fbc256ea437a87dadac2f69aabd25bed4f56255549090056c1131fad0277`  
+		Last Modified: Mon, 17 Sep 2018 20:04:15 GMT  
+		Size: 252.7 MB (252691002 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:6f2071dcd7294537bba55b3061704ef1370748e91982193b9e0fa4ebc114589b`  
+		Last Modified: Tue, 09 Oct 2018 18:02:39 GMT  
+		Size: 182.7 MB (182705816 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:909cdbafc9e10d7e00b283cf6433d989a797898c33142863f66f2ae380db5e18`  
+		Last Modified: Tue, 01 Jan 2019 10:20:47 GMT  
+		Size: 1.7 KB (1671 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a43e426cc5c9d179fbd310ddac734cf9ae634c737c5554c76c190030aaf47529`  
+		Last Modified: Tue, 01 Jan 2019 10:20:47 GMT  
+		Size: 951.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `hello-world:latest` - windows version 10.0.16299.1087; amd64
+
+```console
+$ docker pull hello-world@sha256:08ca4f2c45316cb0b79faf8f07625046dbbc16f6f140b0c59da03f1323ada8a4
+```
+
+-	Docker Version: 18.03.1-ee-4
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **138.6 MB (138618530 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:dca7ef8e4f3abd70d44739c9379b20802236badde01170716080e819ceb3dfd0`
+-	Default Command: `["cmd","\/C","type C:\\hello.txt"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 09:50:38 GMT
+RUN Apply image 1709-RTM-amd64
+# Wed, 03 Apr 2019 23:55:33 GMT
+RUN Install update 1709-amd64
+# Fri, 12 Apr 2019 05:20:48 GMT
+RUN cmd /S /C #(nop) COPY file:415eb109aac20c548c615bac3dfa9d6152d0a1ed3b56ea5739eb1b60accd8075 in C: 
+# Fri, 12 Apr 2019 05:20:49 GMT
+RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
+```
+
+-	Layers:
+	-	`sha256:407ada6e90de9752a53cb9f52b7947a0e38a9b21a349970ace15c68890d72511`  
+		Last Modified: Mon, 17 Sep 2018 20:22:04 GMT  
+		Size: 81.0 MB (81039739 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:9ef95ce817eca24d68624fa7da4a7f807a2a26d58d490396c60139752def5f1a`  
+		Last Modified: Tue, 09 Apr 2019 18:39:36 GMT  
+		Size: 57.6 MB (57576174 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:16563ad15fce31a47e0814a34ad88369f6db790b0c127bb83e71c5a882dce8e8`  
+		Last Modified: Fri, 12 Apr 2019 05:21:19 GMT  
+		Size: 1.7 KB (1668 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:236c8deeb295bd19a088730be7c5e27b33ecd85cdd9de400d1403ef62f09fc3c`  
+		Last Modified: Fri, 12 Apr 2019 05:21:19 GMT  
+		Size: 949.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hello-world:latest` - windows version 10.0.17134.706; amd64

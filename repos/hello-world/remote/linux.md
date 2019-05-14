@@ -1,7 +1,7 @@
 ## `hello-world:linux`
 
 ```console
-$ docker pull hello-world@sha256:1a67c1115b199aa9d964d5da5646917cbac2d5450c71a1deed7b1bfb79c2c82d
+$ docker pull hello-world@sha256:31ab99b55a32ab6dd0dea8044dc26f89e3c854bf07e47e021bdb69f5c8a918b3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
