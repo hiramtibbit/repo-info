@@ -1,7 +1,7 @@
 ## `openjdk:11-jre-slim`
 
 ```console
-$ docker pull openjdk@sha256:3e8d988c67ffe67735939129395ab375862d84d40097b11c7cbada4215704eeb
+$ docker pull openjdk@sha256:0b2367603240556ee569304bb50946bfd376537f4e7354c60ecf6ba9d243eb9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

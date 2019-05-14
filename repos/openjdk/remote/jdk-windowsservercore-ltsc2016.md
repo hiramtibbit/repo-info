@@ -1,7 +1,7 @@
 ## `openjdk:jdk-windowsservercore-ltsc2016`
 
 ```console
-$ docker pull openjdk@sha256:fe3316304494f12382cfbeeccd789a94ca7778c159a9f33f99ec389d1cd0c863
+$ docker pull openjdk@sha256:97c621bc65895d555401870394542f02e962930ec0b2d4ad0102c38810a3c304
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

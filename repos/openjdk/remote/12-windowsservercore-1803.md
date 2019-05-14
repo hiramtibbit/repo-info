@@ -1,7 +1,7 @@
 ## `openjdk:12-windowsservercore-1803`
 
 ```console
-$ docker pull openjdk@sha256:5396edb997a4ddceb4fee6bedbf3317638e6ac64b091b7d810ca634657602f55
+$ docker pull openjdk@sha256:de8a37598862aa213d19c1b860052a6adcc41ad65abfb17576ff02e60e62308b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

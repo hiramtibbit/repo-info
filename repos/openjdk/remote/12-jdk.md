@@ -1,7 +1,7 @@
 ## `openjdk:12-jdk`
 
 ```console
-$ docker pull openjdk@sha256:f0de92462537be994d15bbd6423e432caa699c61c131d3351ee10eb279dcb5f4
+$ docker pull openjdk@sha256:4ad8e467fbe824af5140441479b2a559b9c6cb8cc6489098577910c0d4c9e84f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

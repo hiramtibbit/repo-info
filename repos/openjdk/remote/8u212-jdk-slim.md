@@ -1,7 +1,7 @@
 ## `openjdk:8u212-jdk-slim`
 
 ```console
-$ docker pull openjdk@sha256:e49f6d7fd72bc2b9b05734adf142dadaecb04cf5d8e49d9176814a82f062c681
+$ docker pull openjdk@sha256:a18e18727ede7b57cabb8c91e32342043f9f6ed9da8d7d4f64d183cd64b5e31a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
