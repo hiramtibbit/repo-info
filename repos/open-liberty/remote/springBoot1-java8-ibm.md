@@ -1,7 +1,7 @@
 ## `open-liberty:springBoot1-java8-ibm`
 
 ```console
-$ docker pull open-liberty@sha256:1d74ae0d86f4ca2772d9497329d98ecb88c31c3f7e6185610cb5b332ccc24a5d
+$ docker pull open-liberty@sha256:b14a70c5b50ada048108b20cfbd39b151a73b02e38e46e03a0052e432d9cad0a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

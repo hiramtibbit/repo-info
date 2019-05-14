@@ -1,7 +1,7 @@
 ## `open-liberty:microProfile1`
 
 ```console
-$ docker pull open-liberty@sha256:164a1d664483cfb43d03200d3d90d0e57a6838050520aa2e38fc8e0b85e4f324
+$ docker pull open-liberty@sha256:d511eb0c5b4f26faea1cd0ab2f687d4c110ce6c53b694d6f4c9d1cc1c0c5bc4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

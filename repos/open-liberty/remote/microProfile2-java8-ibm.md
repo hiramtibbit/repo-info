@@ -1,7 +1,7 @@
 ## `open-liberty:microProfile2-java8-ibm`
 
 ```console
-$ docker pull open-liberty@sha256:dd6902c643ebb5dcb60642b3002746ddeb8b824ce9428a1885375aec0336325e
+$ docker pull open-liberty@sha256:68433c0ef1d2821e420f98b24ca66a90f0be10439c49745905e16cf6fb21ea08
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

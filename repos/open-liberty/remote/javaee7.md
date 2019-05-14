@@ -1,7 +1,7 @@
 ## `open-liberty:javaee7`
 
 ```console
-$ docker pull open-liberty@sha256:d6bf50fdd83312acccfb5f2581347c4b9755e8d64abdaca876ffb4deff52da92
+$ docker pull open-liberty@sha256:d00c1aa93438c547eaa4bedd377607d1f0dc5c7d746f6d5d489ec7da5722e2b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

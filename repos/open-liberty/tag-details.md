@@ -34,7 +34,7 @@
 ## `open-liberty:javaee7`
 
 ```console
-$ docker pull open-liberty@sha256:d6bf50fdd83312acccfb5f2581347c4b9755e8d64abdaca876ffb4deff52da92
+$ docker pull open-liberty@sha256:d00c1aa93438c547eaa4bedd377607d1f0dc5c7d746f6d5d489ec7da5722e2b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -543,7 +543,7 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 ## `open-liberty:javaee7-java8-ibm`
 
 ```console
-$ docker pull open-liberty@sha256:d6bf50fdd83312acccfb5f2581347c4b9755e8d64abdaca876ffb4deff52da92
+$ docker pull open-liberty@sha256:d00c1aa93438c547eaa4bedd377607d1f0dc5c7d746f6d5d489ec7da5722e2b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1052,7 +1052,7 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 ## `open-liberty:javaee7-java8-ibmsfj`
 
 ```console
-$ docker pull open-liberty@sha256:66586cadffa02816c741ae64c2a6add755ef71220969a2fc2322f7c844cb0bf9
+$ docker pull open-liberty@sha256:0083ace2f5695625499b08b1c00e93bcc4f8b2b75d4d7681e48d4c40256d4b33
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1176,7 +1176,7 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 ## `open-liberty:javaee8`
 
 ```console
-$ docker pull open-liberty@sha256:d43a0a7752f77055e5f34a850872f8e5efd32ba57fc303ad910442aaf1067c0d
+$ docker pull open-liberty@sha256:7464156e5d3b6bb74b7b439fa35a0230c9960aada7f9a6ff82d75daed965a07a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1637,7 +1637,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 ## `open-liberty:javaee8-java8-ibm`
 
 ```console
-$ docker pull open-liberty@sha256:d43a0a7752f77055e5f34a850872f8e5efd32ba57fc303ad910442aaf1067c0d
+$ docker pull open-liberty@sha256:7464156e5d3b6bb74b7b439fa35a0230c9960aada7f9a6ff82d75daed965a07a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2098,7 +2098,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 ## `open-liberty:javaee8-java8-ibmsfj`
 
 ```console
-$ docker pull open-liberty@sha256:d72606fedb57167ba9a105235e09f31353547b3825e416a79c79131d12f7d50c
+$ docker pull open-liberty@sha256:c4252883aee02cdecdacc828ae0db4ece34688823e3a846dcc9488c385585bf5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2208,7 +2208,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 ## `open-liberty:kernel`
 
 ```console
-$ docker pull open-liberty@sha256:97ddc0c014487c77e74ec3121c4907a6b53e3c41cb9753c1de9c0134040e83ed
+$ docker pull open-liberty@sha256:1a2b642dac2e24978498cb1b95db8e4e3f7d0342686a4191bee86d5427f2a8c5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2661,7 +2661,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 ## `open-liberty:kernel-java8-ibm`
 
 ```console
-$ docker pull open-liberty@sha256:97ddc0c014487c77e74ec3121c4907a6b53e3c41cb9753c1de9c0134040e83ed
+$ docker pull open-liberty@sha256:1a2b642dac2e24978498cb1b95db8e4e3f7d0342686a4191bee86d5427f2a8c5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3114,7 +3114,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 ## `open-liberty:kernel-java8-ibmsfj`
 
 ```console
-$ docker pull open-liberty@sha256:828e73c1925e4af7eb2fb87ba830e5fed70b01cea39002097b473607335ebc7f
+$ docker pull open-liberty@sha256:e68fd8b9b3b9364ff73cc5e9900b3763f2dac7a414c1c4fd5c93d2b2f1a20c7c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3224,7 +3224,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 ## `open-liberty:latest`
 
 ```console
-$ docker pull open-liberty@sha256:d43a0a7752f77055e5f34a850872f8e5efd32ba57fc303ad910442aaf1067c0d
+$ docker pull open-liberty@sha256:7464156e5d3b6bb74b7b439fa35a0230c9960aada7f9a6ff82d75daed965a07a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3685,7 +3685,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 ## `open-liberty:microProfile1`
 
 ```console
-$ docker pull open-liberty@sha256:164a1d664483cfb43d03200d3d90d0e57a6838050520aa2e38fc8e0b85e4f324
+$ docker pull open-liberty@sha256:d511eb0c5b4f26faea1cd0ab2f687d4c110ce6c53b694d6f4c9d1cc1c0c5bc4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4186,7 +4186,7 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 ## `open-liberty:microProfile1-java8-ibm`
 
 ```console
-$ docker pull open-liberty@sha256:164a1d664483cfb43d03200d3d90d0e57a6838050520aa2e38fc8e0b85e4f324
+$ docker pull open-liberty@sha256:d511eb0c5b4f26faea1cd0ab2f687d4c110ce6c53b694d6f4c9d1cc1c0c5bc4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4687,7 +4687,7 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 ## `open-liberty:microProfile1-java8-ibmsfj`
 
 ```console
-$ docker pull open-liberty@sha256:17616b70c816d75123a88932da8d80187b85142bf3b083871cb007e14ac419ed
+$ docker pull open-liberty@sha256:4db97db68975571c3da5356649f07a4f02057ebae8c6ca6e449062907bd132c7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4809,7 +4809,7 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 ## `open-liberty:microProfile2`
 
 ```console
-$ docker pull open-liberty@sha256:dd6902c643ebb5dcb60642b3002746ddeb8b824ce9428a1885375aec0336325e
+$ docker pull open-liberty@sha256:68433c0ef1d2821e420f98b24ca66a90f0be10439c49745905e16cf6fb21ea08
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5310,7 +5310,7 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 ## `open-liberty:microProfile2-java8-ibm`
 
 ```console
-$ docker pull open-liberty@sha256:dd6902c643ebb5dcb60642b3002746ddeb8b824ce9428a1885375aec0336325e
+$ docker pull open-liberty@sha256:68433c0ef1d2821e420f98b24ca66a90f0be10439c49745905e16cf6fb21ea08
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5811,7 +5811,7 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 ## `open-liberty:microProfile2-java8-ibmsfj`
 
 ```console
-$ docker pull open-liberty@sha256:41d573d1e3d98184355b1078e02d844f37dc993ddf0677bab758050bb22ffb4b
+$ docker pull open-liberty@sha256:b6b4188f2d2654ef81e9cbe50602b9e9a48eef3ed8cb27018edabb7840b065f0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5933,7 +5933,7 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 ## `open-liberty:springBoot1`
 
 ```console
-$ docker pull open-liberty@sha256:1d74ae0d86f4ca2772d9497329d98ecb88c31c3f7e6185610cb5b332ccc24a5d
+$ docker pull open-liberty@sha256:b14a70c5b50ada048108b20cfbd39b151a73b02e38e46e03a0052e432d9cad0a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6434,7 +6434,7 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 ## `open-liberty:springBoot1-java8-ibm`
 
 ```console
-$ docker pull open-liberty@sha256:1d74ae0d86f4ca2772d9497329d98ecb88c31c3f7e6185610cb5b332ccc24a5d
+$ docker pull open-liberty@sha256:b14a70c5b50ada048108b20cfbd39b151a73b02e38e46e03a0052e432d9cad0a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6935,7 +6935,7 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 ## `open-liberty:springBoot1-java8-ibmsfj`
 
 ```console
-$ docker pull open-liberty@sha256:2ed1dc1d4f3b6cbc6ec1d8e34dd11afa58706ef800d75ea7c506f23765327de8
+$ docker pull open-liberty@sha256:e324522826e7b9987ffe72efef9ebd107b15d998b93a6a5bb14d946367a654c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7057,7 +7057,7 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 ## `open-liberty:springBoot2`
 
 ```console
-$ docker pull open-liberty@sha256:5314f1672842354365c07379bcfe795d3c0825dd8e148e4a0a3a89e650536591
+$ docker pull open-liberty@sha256:689ba706f2b9bad3d15fcf20405f3225e2f2fd3354c8f4d37ecf195fcd7183de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7558,7 +7558,7 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 ## `open-liberty:springBoot2-java8-ibm`
 
 ```console
-$ docker pull open-liberty@sha256:5314f1672842354365c07379bcfe795d3c0825dd8e148e4a0a3a89e650536591
+$ docker pull open-liberty@sha256:689ba706f2b9bad3d15fcf20405f3225e2f2fd3354c8f4d37ecf195fcd7183de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8059,7 +8059,7 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 ## `open-liberty:springBoot2-java8-ibmsfj`
 
 ```console
-$ docker pull open-liberty@sha256:bbe3c54d5c024814d5bc26320ea9e9bf99468db302e9cf40a0ad10a8d73e2be3
+$ docker pull open-liberty@sha256:32a3691d1885953d9b6460b608acaadc72d58513de6ac56588ad12ff419ee503
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8181,7 +8181,7 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 ## `open-liberty:webProfile7`
 
 ```console
-$ docker pull open-liberty@sha256:c56b42a1bed7a5968094afe6d1500a0cad59b1ec84a12184f2eb753c56aa3e85
+$ docker pull open-liberty@sha256:5c536c8a1113870b444245bf8a26e2b0bdd4730739889dbf327aa90807e9b635
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8682,7 +8682,7 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 ## `open-liberty:webProfile7-java8-ibm`
 
 ```console
-$ docker pull open-liberty@sha256:c56b42a1bed7a5968094afe6d1500a0cad59b1ec84a12184f2eb753c56aa3e85
+$ docker pull open-liberty@sha256:5c536c8a1113870b444245bf8a26e2b0bdd4730739889dbf327aa90807e9b635
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9183,7 +9183,7 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 ## `open-liberty:webProfile7-java8-ibmsfj`
 
 ```console
-$ docker pull open-liberty@sha256:cd9644e2c18edfb262228b707b7964c880266541ec80085d04e129fd2e3db8ca
+$ docker pull open-liberty@sha256:5cb82db01db8b1ec16b801b61bf52eb4fb20c7f6342a740501ffcb6761678f0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9305,7 +9305,7 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 ## `open-liberty:webProfile8`
 
 ```console
-$ docker pull open-liberty@sha256:91a8b0862fc5fa333754337177475299ceddef1798d67be7c01211306bf19f69
+$ docker pull open-liberty@sha256:dc900c632807574a2f46575a55bbdccfddc934508b3bd3bcfb1b183f94252790
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9766,7 +9766,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 ## `open-liberty:webProfile8-java8-ibm`
 
 ```console
-$ docker pull open-liberty@sha256:91a8b0862fc5fa333754337177475299ceddef1798d67be7c01211306bf19f69
+$ docker pull open-liberty@sha256:dc900c632807574a2f46575a55bbdccfddc934508b3bd3bcfb1b183f94252790
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10227,7 +10227,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 ## `open-liberty:webProfile8-java8-ibmsfj`
 
 ```console
-$ docker pull open-liberty@sha256:232e8513bc20a24810e5a92d72e2967981b3cba79346ecdb3cc3365bbf962703
+$ docker pull open-liberty@sha256:92746377e3dc93af085e12da4753985a4b84b2e1038ab2145990d159545b25f4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

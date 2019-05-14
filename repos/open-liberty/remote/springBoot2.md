@@ -1,7 +1,7 @@
 ## `open-liberty:springBoot2`
 
 ```console
-$ docker pull open-liberty@sha256:5314f1672842354365c07379bcfe795d3c0825dd8e148e4a0a3a89e650536591
+$ docker pull open-liberty@sha256:689ba706f2b9bad3d15fcf20405f3225e2f2fd3354c8f4d37ecf195fcd7183de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

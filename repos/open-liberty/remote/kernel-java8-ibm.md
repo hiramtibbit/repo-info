@@ -1,7 +1,7 @@
 ## `open-liberty:kernel-java8-ibm`
 
 ```console
-$ docker pull open-liberty@sha256:97ddc0c014487c77e74ec3121c4907a6b53e3c41cb9753c1de9c0134040e83ed
+$ docker pull open-liberty@sha256:1a2b642dac2e24978498cb1b95db8e4e3f7d0342686a4191bee86d5427f2a8c5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

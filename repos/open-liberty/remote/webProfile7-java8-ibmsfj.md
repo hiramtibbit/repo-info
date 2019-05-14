@@ -1,7 +1,7 @@
 ## `open-liberty:webProfile7-java8-ibmsfj`
 
 ```console
-$ docker pull open-liberty@sha256:cd9644e2c18edfb262228b707b7964c880266541ec80085d04e129fd2e3db8ca
+$ docker pull open-liberty@sha256:5cb82db01db8b1ec16b801b61bf52eb4fb20c7f6342a740501ffcb6761678f0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
