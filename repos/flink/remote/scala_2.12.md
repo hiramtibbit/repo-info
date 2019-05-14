@@ -1,7 +1,7 @@
 ## `flink:scala_2.12`
 
 ```console
-$ docker pull flink@sha256:8284c42f44cbcd864868f62e8ffd738b27d03f833581a222dce1710c78ff6824
+$ docker pull flink@sha256:9bb7d4489c1886bcf2a13a7a745d4384a16f2d4618888ea2ebb807e79440e664
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
