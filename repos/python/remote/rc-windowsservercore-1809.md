@@ -1,7 +1,7 @@
 ## `python:rc-windowsservercore-1809`
 
 ```console
-$ docker pull python@sha256:f8d223f6df0f1f7915bd2e122ebdadeb89fe8fe94325bcdf796bb9aaa34e0080
+$ docker pull python@sha256:660c920e79df6db83288bc9b1dbf3e30fa3bd775974d60c24f0d0f1fb3a4b8c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

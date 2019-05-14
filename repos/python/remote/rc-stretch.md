@@ -1,7 +1,7 @@
 ## `python:rc-stretch`
 
 ```console
-$ docker pull python@sha256:8f93e745162a75def8e70ecf4b17d93e8ee5093ce02fcfc1a00eeb0d5bbd82d8
+$ docker pull python@sha256:3d45963d57d16f60c43dffb10094577b1c7e9f21b2a27bded784dcd66134ebb6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

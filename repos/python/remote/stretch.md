@@ -1,7 +1,7 @@
 ## `python:stretch`
 
 ```console
-$ docker pull python@sha256:80ce485f520405fab25ce42b8b10b15af6f05d8b17838f4a7a48b8ecf3baaa46
+$ docker pull python@sha256:3ea11dd6936c216b262a30e49374bd8ad6911d2b428d788c661b41d2a81b4822
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

@@ -1,7 +1,7 @@
 ## `python:3-windowsservercore-ltsc2016`
 
 ```console
-$ docker pull python@sha256:64b4c6339000755b85b5a286cc71a04c2fcef29fdc193912c9295190a88899f5
+$ docker pull python@sha256:a7188c63be9d02b69b3c09c543fe88536fbc6b61574a54846a129cbc706f3cb5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

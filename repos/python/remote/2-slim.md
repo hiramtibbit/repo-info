@@ -1,7 +1,7 @@
 ## `python:2-slim`
 
 ```console
-$ docker pull python@sha256:d37b00a3bf8ec027c3858a6a637e158cd30bb0d367b8eff467b2cd30c440ea1d
+$ docker pull python@sha256:686bc67cbebf4c4fb0d96d55650d8704d00ccb6b9c6bdd0bee5fad48b827a6cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
