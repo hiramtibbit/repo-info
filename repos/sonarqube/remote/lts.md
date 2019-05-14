@@ -1,7 +1,7 @@
 ## `sonarqube:lts`
 
 ```console
-$ docker pull sonarqube@sha256:9e11b2caf8129240fef2a0140a9caffdbf3495cea2855a089fa34948219d18ec
+$ docker pull sonarqube@sha256:028234bc0e63d1526e7177df064c64cdd5850db966860249cd0ff7fa931b3486
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

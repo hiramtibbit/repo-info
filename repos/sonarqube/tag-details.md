@@ -11,7 +11,7 @@
 ## `sonarqube:6.7.7-community`
 
 ```console
-$ docker pull sonarqube@sha256:9e11b2caf8129240fef2a0140a9caffdbf3495cea2855a089fa34948219d18ec
+$ docker pull sonarqube@sha256:028234bc0e63d1526e7177df064c64cdd5850db966860249cd0ff7fa931b3486
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -133,7 +133,7 @@ ENTRYPOINT ["./bin/run.sh"]
 ## `sonarqube:6.7-community`
 
 ```console
-$ docker pull sonarqube@sha256:9e11b2caf8129240fef2a0140a9caffdbf3495cea2855a089fa34948219d18ec
+$ docker pull sonarqube@sha256:028234bc0e63d1526e7177df064c64cdd5850db966860249cd0ff7fa931b3486
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -255,7 +255,7 @@ ENTRYPOINT ["./bin/run.sh"]
 ## `sonarqube:7.7-community`
 
 ```console
-$ docker pull sonarqube@sha256:b219c84adc8261f082f0febebd6622f7835f4098d50b038715a99ba4af61770a
+$ docker pull sonarqube@sha256:9301ab5fbb93c624fa2e96c2c47287d0beef11729e99b2804e501c831a90447e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -377,7 +377,7 @@ ENTRYPOINT ["./bin/run.sh"]
 ## `sonarqube:latest`
 
 ```console
-$ docker pull sonarqube@sha256:b219c84adc8261f082f0febebd6622f7835f4098d50b038715a99ba4af61770a
+$ docker pull sonarqube@sha256:9301ab5fbb93c624fa2e96c2c47287d0beef11729e99b2804e501c831a90447e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -499,7 +499,7 @@ ENTRYPOINT ["./bin/run.sh"]
 ## `sonarqube:lts`
 
 ```console
-$ docker pull sonarqube@sha256:9e11b2caf8129240fef2a0140a9caffdbf3495cea2855a089fa34948219d18ec
+$ docker pull sonarqube@sha256:028234bc0e63d1526e7177df064c64cdd5850db966860249cd0ff7fa931b3486
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

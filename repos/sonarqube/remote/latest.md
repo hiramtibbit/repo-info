@@ -1,7 +1,7 @@
 ## `sonarqube:latest`
 
 ```console
-$ docker pull sonarqube@sha256:b219c84adc8261f082f0febebd6622f7835f4098d50b038715a99ba4af61770a
+$ docker pull sonarqube@sha256:9301ab5fbb93c624fa2e96c2c47287d0beef11729e99b2804e501c831a90447e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
