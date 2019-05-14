@@ -17,7 +17,7 @@
 ## `fsharp:10`
 
 ```console
-$ docker pull fsharp@sha256:aaf78af829bd07b0d9ded597650125040fb9a908c68e7a0beae0bfd1163e489d
+$ docker pull fsharp@sha256:6f8606a7685fc1a98b8ab62efb229a85b74003d175cb4818da880cc065a7e7bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -108,7 +108,7 @@ CMD ["fsharpi"]
 ## `fsharp:10.2`
 
 ```console
-$ docker pull fsharp@sha256:aaf78af829bd07b0d9ded597650125040fb9a908c68e7a0beae0bfd1163e489d
+$ docker pull fsharp@sha256:6f8606a7685fc1a98b8ab62efb229a85b74003d175cb4818da880cc065a7e7bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -199,7 +199,7 @@ CMD ["fsharpi"]
 ## `fsharp:10.2.3`
 
 ```console
-$ docker pull fsharp@sha256:aaf78af829bd07b0d9ded597650125040fb9a908c68e7a0beae0bfd1163e489d
+$ docker pull fsharp@sha256:6f8606a7685fc1a98b8ab62efb229a85b74003d175cb4818da880cc065a7e7bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -290,7 +290,7 @@ CMD ["fsharpi"]
 ## `fsharp:10.2.3-netcore`
 
 ```console
-$ docker pull fsharp@sha256:fdaf88590624bd53f0ef53a1c6a9f768879178e5169824dc5ba9fab496ebe001
+$ docker pull fsharp@sha256:bcae9f2e91392bdd6cdc65696e1717707500faa2060ff080422ab0d930049795
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -368,7 +368,7 @@ WORKDIR /root
 ## `fsharp:10.2-netcore`
 
 ```console
-$ docker pull fsharp@sha256:fdaf88590624bd53f0ef53a1c6a9f768879178e5169824dc5ba9fab496ebe001
+$ docker pull fsharp@sha256:bcae9f2e91392bdd6cdc65696e1717707500faa2060ff080422ab0d930049795
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -446,7 +446,7 @@ WORKDIR /root
 ## `fsharp:10-netcore`
 
 ```console
-$ docker pull fsharp@sha256:fdaf88590624bd53f0ef53a1c6a9f768879178e5169824dc5ba9fab496ebe001
+$ docker pull fsharp@sha256:bcae9f2e91392bdd6cdc65696e1717707500faa2060ff080422ab0d930049795
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -524,7 +524,7 @@ WORKDIR /root
 ## `fsharp:4`
 
 ```console
-$ docker pull fsharp@sha256:695423945a0c1be13c13f0d7c87f19c7a0c63696576eb94c3d77106b29924ce9
+$ docker pull fsharp@sha256:e3f52961c7fa774c2d57d1b592c022f2945312dd357e95c46f5541111c6bb037
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -574,7 +574,7 @@ CMD ["fsharpi"]
 ## `fsharp:4.1`
 
 ```console
-$ docker pull fsharp@sha256:695423945a0c1be13c13f0d7c87f19c7a0c63696576eb94c3d77106b29924ce9
+$ docker pull fsharp@sha256:e3f52961c7fa774c2d57d1b592c022f2945312dd357e95c46f5541111c6bb037
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -624,7 +624,7 @@ CMD ["fsharpi"]
 ## `fsharp:4.1.34`
 
 ```console
-$ docker pull fsharp@sha256:695423945a0c1be13c13f0d7c87f19c7a0c63696576eb94c3d77106b29924ce9
+$ docker pull fsharp@sha256:e3f52961c7fa774c2d57d1b592c022f2945312dd357e95c46f5541111c6bb037
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -674,7 +674,7 @@ CMD ["fsharpi"]
 ## `fsharp:latest`
 
 ```console
-$ docker pull fsharp@sha256:aaf78af829bd07b0d9ded597650125040fb9a908c68e7a0beae0bfd1163e489d
+$ docker pull fsharp@sha256:6f8606a7685fc1a98b8ab62efb229a85b74003d175cb4818da880cc065a7e7bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -765,7 +765,7 @@ CMD ["fsharpi"]
 ## `fsharp:netcore`
 
 ```console
-$ docker pull fsharp@sha256:fdaf88590624bd53f0ef53a1c6a9f768879178e5169824dc5ba9fab496ebe001
+$ docker pull fsharp@sha256:bcae9f2e91392bdd6cdc65696e1717707500faa2060ff080422ab0d930049795
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
