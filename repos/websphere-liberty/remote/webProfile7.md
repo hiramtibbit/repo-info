@@ -1,7 +1,7 @@
 ## `websphere-liberty:webProfile7`
 
 ```console
-$ docker pull websphere-liberty@sha256:e9463817be0d5866ab1be2cf64d27f8b88c7ba151b6786696052317cd271a4a0
+$ docker pull websphere-liberty@sha256:b66071f62695a257c3c8ede0d631269f4ebad58cbae536904b307e4d2defa033
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

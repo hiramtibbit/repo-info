@@ -1,7 +1,7 @@
 ## `websphere-liberty:beta`
 
 ```console
-$ docker pull websphere-liberty@sha256:79e891d019168eb931aa580271139053232eb0ed2f52d6497cd58448f7741938
+$ docker pull websphere-liberty@sha256:edef653a9ccf57c03d1a494f4f5f048cbc573e668510c037d43897df13b50606
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

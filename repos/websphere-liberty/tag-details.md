@@ -44,7 +44,7 @@
 ## `websphere-liberty:18.0.0.4-javaee7`
 
 ```console
-$ docker pull websphere-liberty@sha256:d22055675ba56f4d8f0d6e878e4a2587175414df6798a26fb6be17008f2568fe
+$ docker pull websphere-liberty@sha256:7cf991f4eb4f7e5130eb6117205aa926e026b1e5a373ea36969a7b595fe51dd5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -657,7 +657,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:18.0.0.4-javaee8`
 
 ```console
-$ docker pull websphere-liberty@sha256:2aff4aedb5503e7055f07ca6d58e05c52b7c3d1d61182539804da7031697e86a
+$ docker pull websphere-liberty@sha256:4de9fa1b97b8302e1304adbfe858fc80adc92c9e09d9def2a446b50bc7a6526a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1270,7 +1270,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:18.0.0.4-kernel`
 
 ```console
-$ docker pull websphere-liberty@sha256:5bd1f9aee01f412b6c45db26609a01aa635a31e32c8955105123c08a4379aed7
+$ docker pull websphere-liberty@sha256:50336691eaf8f2b72aa75132dd0d50b54d9e660ed721a7eaa0de1f6835d89355
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1795,7 +1795,7 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 ## `websphere-liberty:18.0.0.4-microProfile1`
 
 ```console
-$ docker pull websphere-liberty@sha256:5418f95d04cefca86689245c8bd724a34da5df99304b429399eef22e26b389be
+$ docker pull websphere-liberty@sha256:cae0ca37052ace1e824a2d2797bfe2682592c34093e5e9fc095c4e810a0b9cfc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2408,7 +2408,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:18.0.0.4-microProfile2`
 
 ```console
-$ docker pull websphere-liberty@sha256:9a8ba8f0f9b7e6444647e56df03a05959a793c1c4156bab3e122347b6923263a
+$ docker pull websphere-liberty@sha256:92c1d9727e92b23fa8e42eaf0c069611a5ad578a5b5d5e0bb59682e165769c89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3021,7 +3021,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:18.0.0.4-springBoot1`
 
 ```console
-$ docker pull websphere-liberty@sha256:c22c2c061cef3c91e74235e62e41a4e33c8a4f034dd41cd5117e7b57547c56d1
+$ docker pull websphere-liberty@sha256:51720b6616b3516002a1242e67428ffc83b7dcb4dad18e776e3a96931e1688b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3634,7 +3634,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:18.0.0.4-springBoot2`
 
 ```console
-$ docker pull websphere-liberty@sha256:e881f206fde446e93d221b64606303116e3b3a4f0b6839eafa2b75eeea2c997d
+$ docker pull websphere-liberty@sha256:fc765c04d96d8a1f06638451506b11478a75c6c4c7b265cba2a0421528d9183a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4247,7 +4247,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:18.0.0.4-webProfile7`
 
 ```console
-$ docker pull websphere-liberty@sha256:0b27e652652d03d4efe8c931cac9e5a747c3fa70d7f6ee314460cd2fea439398
+$ docker pull websphere-liberty@sha256:89343637fc1b686d75a2a7a8bd43761926e25154fdd7743befc3c14167a89c05
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4860,7 +4860,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:18.0.0.4-webProfile8`
 
 ```console
-$ docker pull websphere-liberty@sha256:0241b365468729aabaebda578dccbbfaf8bc354615a49f31fa53596dd89af18d
+$ docker pull websphere-liberty@sha256:46cb65da5c5d2babfd07dfdfcd9a2164be89c24f7db029cbe972d4ce4dd1735b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5473,7 +5473,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:19.0.0.3-javaee7`
 
 ```console
-$ docker pull websphere-liberty@sha256:dddd0a50dcb1ae76470c016a8a00013fd936172fe58a7dd2be348ddc016c2a66
+$ docker pull websphere-liberty@sha256:8c9310f09c96471c89640a160e40c690b3eb6e917d12c2f7c0c8bb8b6c8fd394
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6086,7 +6086,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:19.0.0.3-javaee8`
 
 ```console
-$ docker pull websphere-liberty@sha256:86e03475741c4885ca39ea74a2d517189c5ecd7591781bf48265f8931b48fcc1
+$ docker pull websphere-liberty@sha256:75d682a43790e41217b1dced275b4f14f0a8e295ddeeb42d2e233ef4873d5af9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6699,7 +6699,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:19.0.0.3-kernel`
 
 ```console
-$ docker pull websphere-liberty@sha256:7aa4d2af5613498795b9e26449238521def710fae2bcb513870b8cca3745fe15
+$ docker pull websphere-liberty@sha256:9376a81a0034d83ebf76036f43d5f40a60c98ff29c49b8dde4cf1ed8c5dd8797
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7224,7 +7224,7 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 ## `websphere-liberty:19.0.0.3-microProfile1`
 
 ```console
-$ docker pull websphere-liberty@sha256:6ba042de3cf263811c2ba87fb5ba4d54026ea7dd9c5c8800d6b75956904982e0
+$ docker pull websphere-liberty@sha256:a64d5cd694a657eebb689c652215a369f5b24d2b1e7773c5b75ab0c684b60f24
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7837,7 +7837,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:19.0.0.3-microProfile2`
 
 ```console
-$ docker pull websphere-liberty@sha256:f43fdcd3b6137649f003842454296f315a0e521dcfe1ef2e4da2b4f0dd73f41e
+$ docker pull websphere-liberty@sha256:06554dd08ddaf60b984310e80482a760b891069607c436404ae516ff4a90c848
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8450,7 +8450,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:19.0.0.3-springBoot1`
 
 ```console
-$ docker pull websphere-liberty@sha256:cbefd3b92ef0a79f8c48aad18fac65a9bb49c98db1ad86776ce989226405fe2d
+$ docker pull websphere-liberty@sha256:643b3c7da3e63efb005f1aad9b5d00e08b77a8c8ef8bdbe0d1ff2949b270b5df
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9063,7 +9063,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:19.0.0.3-springBoot2`
 
 ```console
-$ docker pull websphere-liberty@sha256:630ed560df26a013004bc6c48f3c89b8846925513b368de664fe578a40644e1c
+$ docker pull websphere-liberty@sha256:ac80b9ed051bf545c8803377846306c92a9828a6a3599c68cb11279bb3e61127
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9676,7 +9676,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:19.0.0.3-webProfile7`
 
 ```console
-$ docker pull websphere-liberty@sha256:6b538bfbd335e975dd9db2375c51bc5fb48fa584f7b4d0377a8a519dad7e6422
+$ docker pull websphere-liberty@sha256:18c16b0fe31fee362bfb3b818150a61f762b81291586f5f219b4e1e981d77da4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10289,7 +10289,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:19.0.0.3-webProfile8`
 
 ```console
-$ docker pull websphere-liberty@sha256:84608809fcb232e463cd1a287f8789f4c10bcb0071993be42a2e4520be4fbd90
+$ docker pull websphere-liberty@sha256:14a8b7202811a19d2b0ffb286449bc8f66990e18030352542326a1ab99004317
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10902,7 +10902,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:19.0.0.4-javaee7`
 
 ```console
-$ docker pull websphere-liberty@sha256:92c20e9f6638181b154a9257f8f69e01b692517c4714229585ed98d5430adaf9
+$ docker pull websphere-liberty@sha256:5c24ab160af63006749d873c82de532505a0c417fac991ca9a1cc5799ef86ed1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11515,7 +11515,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:19.0.0.4-javaee8`
 
 ```console
-$ docker pull websphere-liberty@sha256:a036d35ee2f50f451ebcfa473c198d4f47a71cf49251366ec1cbe330ece2867a
+$ docker pull websphere-liberty@sha256:e77184dcc5d72c78fa23539a14ad393640c1da75f60a82cd25ae115b297a79c7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12128,7 +12128,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:19.0.0.4-kernel`
 
 ```console
-$ docker pull websphere-liberty@sha256:e0d175f0ba20e191ffa6b3de84d0466d2edccf7131ab125d771e331b20b11806
+$ docker pull websphere-liberty@sha256:52f4218538d6e7221a11662bd1727cccfab88d54e04bfe7e61ca036d91e2e77a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12653,7 +12653,7 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 ## `websphere-liberty:19.0.0.4-microProfile1`
 
 ```console
-$ docker pull websphere-liberty@sha256:3ea662d98bb76e29cc2d3461e43dbbb762647ab788b9fdbd0199b235bc59410d
+$ docker pull websphere-liberty@sha256:eccd5d79e23f326aad6a06c6452cff662d5074e35e56dedad1ca401ae0a45af6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13266,7 +13266,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:19.0.0.4-microProfile2`
 
 ```console
-$ docker pull websphere-liberty@sha256:6fafc54f19ae0f09345d8b840f90add667ddf32f1d3174087d0578ca8de0798a
+$ docker pull websphere-liberty@sha256:7d3f34d67c7dc38dadaae8f7c12a15149dbdec1078e643ce51fcc34eeaf54adc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13879,7 +13879,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:19.0.0.4-springBoot1`
 
 ```console
-$ docker pull websphere-liberty@sha256:fe0b9452f29732194e2c7be8802e376b77c996cf1a3497cb2747873a107d1bb9
+$ docker pull websphere-liberty@sha256:ede390d4f2ae0a224fbe9af6d7c850391644b1d846dc620255dc559ce1b73f26
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14492,7 +14492,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:19.0.0.4-springBoot2`
 
 ```console
-$ docker pull websphere-liberty@sha256:e71683f9e7a3da2fab85cd5eedaf65c905d822f88da9872cd9f53bb427c6c82d
+$ docker pull websphere-liberty@sha256:a67b72abc753fefcac0768cdd2303df884ac9fc8c47d9bb8f6aa636988c6d606
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15105,7 +15105,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:19.0.0.4-webProfile7`
 
 ```console
-$ docker pull websphere-liberty@sha256:e9463817be0d5866ab1be2cf64d27f8b88c7ba151b6786696052317cd271a4a0
+$ docker pull websphere-liberty@sha256:b66071f62695a257c3c8ede0d631269f4ebad58cbae536904b307e4d2defa033
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15718,7 +15718,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:19.0.0.4-webProfile8`
 
 ```console
-$ docker pull websphere-liberty@sha256:24557c805966d0995dcfece0e00e709d6c58742f3905c14f08502fae85d1d530
+$ docker pull websphere-liberty@sha256:6db0eb4f6e34a1b00dd25621b875e290e96e725764f2d47af3bd7e43dca8e5d7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16331,7 +16331,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:beta`
 
 ```console
-$ docker pull websphere-liberty@sha256:79e891d019168eb931aa580271139053232eb0ed2f52d6497cd58448f7741938
+$ docker pull websphere-liberty@sha256:edef653a9ccf57c03d1a494f4f5f048cbc573e668510c037d43897df13b50606
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16768,7 +16768,7 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 ## `websphere-liberty:javaee7`
 
 ```console
-$ docker pull websphere-liberty@sha256:92c20e9f6638181b154a9257f8f69e01b692517c4714229585ed98d5430adaf9
+$ docker pull websphere-liberty@sha256:5c24ab160af63006749d873c82de532505a0c417fac991ca9a1cc5799ef86ed1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17381,7 +17381,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:javaee8`
 
 ```console
-$ docker pull websphere-liberty@sha256:a036d35ee2f50f451ebcfa473c198d4f47a71cf49251366ec1cbe330ece2867a
+$ docker pull websphere-liberty@sha256:e77184dcc5d72c78fa23539a14ad393640c1da75f60a82cd25ae115b297a79c7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17994,7 +17994,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:kernel`
 
 ```console
-$ docker pull websphere-liberty@sha256:e0d175f0ba20e191ffa6b3de84d0466d2edccf7131ab125d771e331b20b11806
+$ docker pull websphere-liberty@sha256:52f4218538d6e7221a11662bd1727cccfab88d54e04bfe7e61ca036d91e2e77a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18519,7 +18519,7 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 ## `websphere-liberty:latest`
 
 ```console
-$ docker pull websphere-liberty@sha256:a036d35ee2f50f451ebcfa473c198d4f47a71cf49251366ec1cbe330ece2867a
+$ docker pull websphere-liberty@sha256:e77184dcc5d72c78fa23539a14ad393640c1da75f60a82cd25ae115b297a79c7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -19132,7 +19132,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:microProfile1`
 
 ```console
-$ docker pull websphere-liberty@sha256:3ea662d98bb76e29cc2d3461e43dbbb762647ab788b9fdbd0199b235bc59410d
+$ docker pull websphere-liberty@sha256:eccd5d79e23f326aad6a06c6452cff662d5074e35e56dedad1ca401ae0a45af6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -19745,7 +19745,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:microProfile2`
 
 ```console
-$ docker pull websphere-liberty@sha256:6fafc54f19ae0f09345d8b840f90add667ddf32f1d3174087d0578ca8de0798a
+$ docker pull websphere-liberty@sha256:7d3f34d67c7dc38dadaae8f7c12a15149dbdec1078e643ce51fcc34eeaf54adc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -20358,7 +20358,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:springBoot1`
 
 ```console
-$ docker pull websphere-liberty@sha256:fe0b9452f29732194e2c7be8802e376b77c996cf1a3497cb2747873a107d1bb9
+$ docker pull websphere-liberty@sha256:ede390d4f2ae0a224fbe9af6d7c850391644b1d846dc620255dc559ce1b73f26
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -20971,7 +20971,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:springBoot2`
 
 ```console
-$ docker pull websphere-liberty@sha256:e71683f9e7a3da2fab85cd5eedaf65c905d822f88da9872cd9f53bb427c6c82d
+$ docker pull websphere-liberty@sha256:a67b72abc753fefcac0768cdd2303df884ac9fc8c47d9bb8f6aa636988c6d606
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -21584,7 +21584,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:webProfile7`
 
 ```console
-$ docker pull websphere-liberty@sha256:e9463817be0d5866ab1be2cf64d27f8b88c7ba151b6786696052317cd271a4a0
+$ docker pull websphere-liberty@sha256:b66071f62695a257c3c8ede0d631269f4ebad58cbae536904b307e4d2defa033
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -22197,7 +22197,7 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ## `websphere-liberty:webProfile8`
 
 ```console
-$ docker pull websphere-liberty@sha256:24557c805966d0995dcfece0e00e709d6c58742f3905c14f08502fae85d1d530
+$ docker pull websphere-liberty@sha256:6db0eb4f6e34a1b00dd25621b875e290e96e725764f2d47af3bd7e43dca8e5d7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

@@ -1,7 +1,7 @@
 ## `websphere-liberty:kernel`
 
 ```console
-$ docker pull websphere-liberty@sha256:e0d175f0ba20e191ffa6b3de84d0466d2edccf7131ab125d771e331b20b11806
+$ docker pull websphere-liberty@sha256:52f4218538d6e7221a11662bd1727cccfab88d54e04bfe7e61ca036d91e2e77a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
