@@ -33,6 +33,9 @@
 -	[`erlang:21`](#erlang21)
 -	[`erlang:21.3`](#erlang213)
 -	[`erlang:21.3.8`](#erlang2138)
+-	[`erlang:21.3.8.1`](#erlang21381)
+-	[`erlang:21.3.8.1-alpine`](#erlang21381-alpine)
+-	[`erlang:21.3.8.1-slim`](#erlang21381-slim)
 -	[`erlang:21.3.8-alpine`](#erlang2138-alpine)
 -	[`erlang:21.3.8-slim`](#erlang2138-slim)
 -	[`erlang:21.3-alpine`](#erlang213-alpine)
@@ -9897,6 +9900,18 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Last Modified: Wed, 08 May 2019 21:25:50 GMT  
 		Size: 828.6 KB (828566 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `erlang:21.3.8.1`
+
+**does not exist** (yet?)
+
+## `erlang:21.3.8.1-alpine`
+
+**does not exist** (yet?)
+
+## `erlang:21.3.8.1-slim`
+
+**does not exist** (yet?)
 
 ## `erlang:21.3.8-alpine`
 
