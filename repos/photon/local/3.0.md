@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5f40db8468c8a7c9dcd8ab7b6eb935ba0bb09e0dfae09bfc8cb507bc2dda3c65`
-- Created: `2019-04-30T22:18:46.070229769Z`
+- Image ID: `sha256:4f80c3500cd31bd4989c9cbe85efa16960de49671c3714236ab99a6bfc3bcf16`
+- Created: `2019-05-14T00:28:19.742153061Z`
 - Virtual Size: ~ 33.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `build-date=20190430`
+  - `build-date=20190512`
   - `name=Photon OS x86_64/3.0 Base Image`
   - `vendor=VMware`
 
@@ -71,7 +71,7 @@ Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `filesystem-1.1-2.ph3.x86_64`
+### `rpm` package: `filesystem-1.1-4.ph3.x86_64`
 
 Licenses (from `rpm --query`): GPLv3
 
@@ -149,13 +149,13 @@ Licenses (from `rpm --query`): OpenSSL
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `photon-release-3.0-2.ph3.noarch`
+### `rpm` package: `photon-release-3.0-3.ph3.noarch`
 
 Licenses (from `rpm --query`): Apache License
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `photon-repos-3.0-2.ph3.noarch`
+### `rpm` package: `photon-repos-3.0-3.ph3.noarch`
 
 Licenses (from `rpm --query`): Apache License
 
@@ -179,7 +179,7 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `sqlite-libs-3.27.2-1.ph3.x86_64`
+### `rpm` package: `sqlite-libs-3.27.2-2.ph3.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
