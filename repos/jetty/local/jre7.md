@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9f8ad34ac0388267af2366349d36698a5fbb2c7a5e50d13dc30edd36aef3ca26`
-- Created: `2019-05-08T12:04:35.522065875Z`
-- Virtual Size: ~ 343.39 Mb  
+- Image ID: `sha256:00659b0295385e477a75db0c645a362aa56a429dade512df9939b5341ff72e9b`
+- Created: `2019-05-14T00:58:14.98267366Z`
+- Virtual Size: ~ 343.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -13,8 +13,8 @@
   - `PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home/jre`
-  - `JAVA_VERSION=7u211`
-  - `JAVA_DEBIAN_VERSION=7u211-2.6.17-1~deb8u1`
+  - `JAVA_VERSION=7u221`
+  - `JAVA_DEBIAN_VERSION=7u221-2.6.18-1~deb8u1`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_VERSION=9.2.28.v20190418`
   - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.28.v20190418/jetty-distribution-9.2.28.v20190418.tar.gz`
@@ -3172,12 +3172,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.26-1+debu8u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.26-1+debu8u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-7=7u211-2.6.17-1~deb8u1`
+### `dpkg` source package: `openjdk-7=7u221-2.6.18-1~deb8u1`
 
 Binary Packages:
 
-- `openjdk-7-jre:amd64=7u211-2.6.17-1~deb8u1`
-- `openjdk-7-jre-headless:amd64=7u211-2.6.17-1~deb8u1`
+- `openjdk-7-jre:amd64=7u221-2.6.18-1~deb8u1`
+- `openjdk-7-jre-headless:amd64=7u221-2.6.18-1~deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-7-jre/copyright`, `/usr/share/doc/openjdk-7-jre-headless/copyright`)
 
@@ -3185,13 +3185,20 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-7-jre/copyright`, `/usr/share/do
 - `GPL-2`
 - `LGPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openjdk-7=7u221-2.6.18-1~deb8u1
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-7/openjdk-7_7u221-2.6.18-1~deb8u1.dsc' openjdk-7_7u221-2.6.18-1~deb8u1.dsc 4677 SHA256:3dd30747294e7b2552fe1555ee44c0d703077da8b379c11068001956fcf52934
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-7/openjdk-7_7u221-2.6.18.orig.tar.gz' openjdk-7_7u221-2.6.18.orig.tar.gz 54309555 SHA256:c1c85e5535abc02eda7adf2c8fa0d2f955e192fed9885c3115ea02faba645327
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-7/openjdk-7_7u221-2.6.18-1~deb8u1.debian.tar.xz' openjdk-7_7u221-2.6.18-1~deb8u1.debian.tar.xz 173448 SHA256:56af7fb821af766869f386d5f3a87a2f72dc51ab9d416dae6aca3ab7e42c8468
+```
 
-- http://snapshot.debian.org/package/openjdk-7/7u211-2.6.17-1~deb8u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openjdk-7/7u221-2.6.18-1~deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-7/7u221-2.6.18-1~deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-7/7u221-2.6.18-1~deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.40+dfsg-1+deb8u4`
 
