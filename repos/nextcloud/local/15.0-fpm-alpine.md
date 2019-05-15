@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fe0e978cf2e0ce08f9d1d489b1960d9b96a355a3459edd3e88f04c3a1ae45f0d`
-- Created: `2019-05-04T06:21:32.390873708Z`
-- Virtual Size: ~ 319.40 Mb  
+- Image ID: `sha256:c4d8f14f16fd56b61740ee25488389b36399711f6fd7de7bac806ca3b1d7259d`
+- Created: `2019-05-11T05:06:49.516805354Z`
+- Virtual Size: ~ 319.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -251,16 +251,16 @@ MIT ICU Unicode-TOU
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.0.8.38-r0 description:
+imagemagick-libs-7.0.8.44-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.0.8.38-r0 webpage:
+imagemagick-libs-7.0.8.44-r0 webpage:
 https://www.imagemagick.org
 
-imagemagick-libs-7.0.8.38-r0 installed size:
-3289088
+imagemagick-libs-7.0.8.44-r0 installed size:
+3252224
 
-imagemagick-libs-7.0.8.38-r0 license:
+imagemagick-libs-7.0.8.44-r0 license:
 ImageMagick
 
 ```
@@ -506,16 +506,16 @@ BSD
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.35-r0 description:
+libpng-1.6.37-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.35-r0 webpage:
+libpng-1.6.37-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.35-r0 installed size:
+libpng-1.6.37-r0 installed size:
 204800
 
-libpng-1.6.35-r0 license:
+libpng-1.6.37-r0 license:
 Libpng
 
 ```
