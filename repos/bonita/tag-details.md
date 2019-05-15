@@ -11,7 +11,7 @@
 ## `bonita:7.7`
 
 ```console
-$ docker pull bonita@sha256:dc11ec3eb6b4b3ab801b92f6714f6b0fa8df6110b49ddd77d86b5d14c1357f82
+$ docker pull bonita@sha256:8a0866f971b046828ad62a35b8817c73960cb78202e3f8ed25244322843e3020
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -23,120 +23,120 @@ $ docker pull bonita@sha256:dc11ec3eb6b4b3ab801b92f6714f6b0fa8df6110b49ddd77d86b
 ### `bonita:7.7` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:720d4ec5f9ce82948cdfd23b77a8cba1bdd86c69815d29199e1770df0075d3eb
+$ docker pull bonita@sha256:8d2db4d9adc73f11bb7d22a812d1c90e8242441651b6989788ec44ee8a8900c1
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **215.0 MB (215045683 bytes)**  
+-	Total Size: **215.1 MB (215065747 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ba0d60a82e602ddb1b19ef13a10ca8d144f946450385b05d63d88fadd49e479`
+-	Image ID: `sha256:c1156a6450a8853ac37f3dcf916c8c43ecc6c655393ab3563f0f5250a1b401d9`
 -	Default Command: `["\/opt\/files\/startup.sh"]`
 
 ```dockerfile
-# Fri, 26 Apr 2019 22:22:27 GMT
-ADD file:eb81ec6d9e1940968c44e3fe988a8d07474c05b5b0ea60ace0bd2e4fbf180f3b in / 
-# Fri, 26 Apr 2019 22:22:28 GMT
+# Wed, 15 May 2019 21:21:22 GMT
+ADD file:a65e0467dbedc0992151651c136374c16f65d9905eac9d04d0925039ada64e4c in / 
+# Wed, 15 May 2019 21:21:23 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 26 Apr 2019 22:22:28 GMT
+# Wed, 15 May 2019 21:21:24 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 26 Apr 2019 22:22:29 GMT
+# Wed, 15 May 2019 21:21:24 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 26 Apr 2019 22:22:29 GMT
+# Wed, 15 May 2019 21:21:24 GMT
 CMD ["/bin/bash"]
-# Sat, 27 Apr 2019 00:22:17 GMT
+# Wed, 15 May 2019 21:38:06 GMT
 MAINTAINER Jérémy Jacquier-Roux <jeremy.jacquier-roux@bonitasoft.org>
-# Sat, 27 Apr 2019 00:22:59 GMT
+# Wed, 15 May 2019 21:39:09 GMT
 RUN apt-get update && apt-get install -y   mysql-client-core-5.7   openjdk-8-jre-headless   postgresql-client   unzip   curl   zip   && rm -rf /var/lib/apt/lists/*
-# Sat, 27 Apr 2019 00:23:00 GMT
+# Wed, 15 May 2019 21:39:12 GMT
 RUN mkdir /opt/custom-init.d/
-# Sat, 27 Apr 2019 00:23:01 GMT
+# Wed, 15 May 2019 21:39:13 GMT
 RUN groupadd -r bonita -g 1000   && useradd -u 1000 -r -g bonita -d /opt/bonita/ -s /sbin/nologin -c "Bonita User" bonita
-# Sat, 27 Apr 2019 00:23:02 GMT
+# Wed, 15 May 2019 21:39:14 GMT
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
-# Sat, 27 Apr 2019 00:23:03 GMT
+# Wed, 15 May 2019 21:39:16 GMT
 RUN curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture)" -o /usr/local/bin/gosu   && curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture).asc" -o /usr/local/bin/gosu.asc   && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu
-# Sat, 27 Apr 2019 00:23:03 GMT
+# Wed, 15 May 2019 21:39:16 GMT
 ARG BONITA_VERSION
-# Sat, 27 Apr 2019 00:23:03 GMT
+# Wed, 15 May 2019 21:39:16 GMT
 ARG TOMCAT_VERSION
-# Sat, 27 Apr 2019 00:23:04 GMT
+# Wed, 15 May 2019 21:39:16 GMT
 ARG BONITA_SHA256
-# Sat, 27 Apr 2019 00:23:04 GMT
+# Wed, 15 May 2019 21:39:17 GMT
 ARG BONITA_URL
-# Sat, 27 Apr 2019 00:23:04 GMT
+# Wed, 15 May 2019 21:39:17 GMT
 ENV BONITA_VERSION=7.7.5
-# Sat, 27 Apr 2019 00:23:04 GMT
+# Wed, 15 May 2019 21:39:17 GMT
 ENV TOMCAT_VERSION=8.5.31
-# Sat, 27 Apr 2019 00:23:04 GMT
+# Wed, 15 May 2019 21:39:17 GMT
 ENV BONITA_SHA256=cbed7de66b763683e1edad0aa374f234e6b7c4bebaf5dd31925125196fceab81
-# Sat, 27 Apr 2019 00:23:05 GMT
+# Wed, 15 May 2019 21:39:17 GMT
 ENV BONITA_URL=https://release.ow2.org/bonita/BonitaCommunity-7.7.5-Tomcat-8.5.31.zip
-# Sat, 27 Apr 2019 00:23:12 GMT
+# Wed, 15 May 2019 21:39:25 GMT
 RUN mkdir /opt/files   && curl -fsSL ${BONITA_URL} -o /opt/files/BonitaCommunity-${BONITA_VERSION}-Tomcat-${TOMCAT_VERSION}.zip
-# Sat, 27 Apr 2019 00:23:13 GMT
+# Wed, 15 May 2019 21:39:27 GMT
 RUN sha256sum /opt/files/BonitaCommunity-${BONITA_VERSION}-Tomcat-${TOMCAT_VERSION}.zip
-# Sat, 27 Apr 2019 00:23:14 GMT
+# Wed, 15 May 2019 21:39:28 GMT
 RUN echo "$BONITA_SHA256" /opt/files/BonitaCommunity-${BONITA_VERSION}-Tomcat-${TOMCAT_VERSION}.zip | sha256sum -c -
-# Sat, 27 Apr 2019 00:23:14 GMT
+# Wed, 15 May 2019 21:39:29 GMT
 VOLUME [/opt/bonita]
-# Sat, 27 Apr 2019 00:23:15 GMT
+# Wed, 15 May 2019 21:39:29 GMT
 COPY dir:218b54db7fe23f6e7d786ad3d05252e5a170aa9f0bc4f4daab27f269f2f972cb in /opt/files 
-# Sat, 27 Apr 2019 00:23:15 GMT
+# Wed, 15 May 2019 21:39:30 GMT
 COPY dir:6d3e15de1cb4f57dbe1c443d37e47f4fd23de68060b4a003d8918618cf14d1cd in /opt/templates 
-# Sat, 27 Apr 2019 00:23:15 GMT
+# Wed, 15 May 2019 21:39:30 GMT
 EXPOSE 8080
-# Sat, 27 Apr 2019 00:23:15 GMT
+# Wed, 15 May 2019 21:39:30 GMT
 CMD ["/opt/files/startup.sh"]
 ```
 
 -	Layers:
-	-	`sha256:7e65918542624be36faca5e547a5b84c4eca21dd4e979c9309f4ad79b95d00ce`  
-		Last Modified: Fri, 26 Apr 2019 00:24:56 GMT  
-		Size: 43.8 MB (43752517 bytes)  
+	-	`sha256:9ff7e2e5f967fb9c4e8099e63508ab0dddebe3f820d08ca7fd568431b0d10c0e`  
+		Last Modified: Wed, 15 May 2019 21:22:41 GMT  
+		Size: 43.8 MB (43767987 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:089d60cb4e0a6a5f884454ad8f9ea43021ac8c4a8584698f8751fab2437450e3`  
-		Last Modified: Fri, 26 Apr 2019 22:23:35 GMT  
-		Size: 847.0 B  
+	-	`sha256:59856638ac9f32d4caa0f5761b2597fe251642786fdfe1b917ddbb074b890c29`  
+		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
+		Size: 848.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c461696bc0925124c5fe76298c2590a4d4b4009eab16a2346c0010269007f74`  
-		Last Modified: Fri, 26 Apr 2019 22:23:35 GMT  
-		Size: 525.0 B  
+	-	`sha256:6f317d6d954b9a59c54b2cb09e1f30cd3e872796e431cd2ceac5ed570beb2939`  
+		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
+		Size: 526.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45085432511a479b977e19d3334f4948200141d06802c222e743e3d3bafabd05`  
-		Last Modified: Fri, 26 Apr 2019 22:23:35 GMT  
-		Size: 166.0 B  
+	-	`sha256:a9dde5e2a643eca8fde0eed52f4aed31f3ecd9c1b2f24d5e3729cd8d2ae68177`  
+		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
+		Size: 168.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e3d372b5b1e0f15513f309f795bce52c03bd236afa8b07fd1925ace324ce3d9`  
-		Last Modified: Sat, 27 Apr 2019 00:23:54 GMT  
-		Size: 82.8 MB (82821283 bytes)  
+	-	`sha256:2054ffe6918ee14a5656783f4e7e00c518a854c42d68ab4438d102178c7e2460`  
+		Last Modified: Wed, 15 May 2019 21:40:16 GMT  
+		Size: 82.8 MB (82825868 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:357abc1d0a4de0ab0ec75b6240b2cc41faa561a8f4d0ebd575fbe2be9048d1b1`  
-		Last Modified: Sat, 27 Apr 2019 00:23:40 GMT  
-		Size: 122.0 B  
+	-	`sha256:93b0e75dcea0a1bfb203f09f320478f14ab32887119659c45593af54edd49356`  
+		Last Modified: Wed, 15 May 2019 21:39:59 GMT  
+		Size: 119.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed50e9b451808694c428ab22be4b506562f3068ec0b15e214c417b4529b160f2`  
-		Last Modified: Sat, 27 Apr 2019 00:23:39 GMT  
-		Size: 2.0 KB (2041 bytes)  
+	-	`sha256:c8f4a16446c587dfada2a11484f9c2ade5e35899b44fd8a2ff8af99ab8872923`  
+		Last Modified: Wed, 15 May 2019 21:39:59 GMT  
+		Size: 2.0 KB (2046 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d6fddeacdbebac494de0c931dec77b42a42ec8c2e27760c2bb2c617f3a4b911`  
-		Last Modified: Sat, 27 Apr 2019 00:23:38 GMT  
-		Size: 140.6 KB (140585 bytes)  
+	-	`sha256:126df4570c8d50706efbba124d49d85c50c8040ae85ecfd95525b5cb9fad419f`  
+		Last Modified: Wed, 15 May 2019 21:39:58 GMT  
+		Size: 140.6 KB (140590 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16a5901022eb25651cb5845ce3c07f402d1b7f08efbd58b42a131e0f800a5076`  
-		Last Modified: Sat, 27 Apr 2019 00:23:38 GMT  
+	-	`sha256:4300c7e85d000ec3bab408f31ae4e2327eaf58e1e6ba74cb476cfa02df4deab2`  
+		Last Modified: Wed, 15 May 2019 21:39:58 GMT  
 		Size: 500.7 KB (500738 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b8aaca82a4d1267e7840e00b0833db5b8fae7603454eb2ee196ccb54ca9fa5e`  
-		Last Modified: Sat, 27 Apr 2019 00:23:44 GMT  
-		Size: 87.8 MB (87818775 bytes)  
+	-	`sha256:092601d5bb4b5fc77860025774d14f024b12be3430a449ee038c6f2ca764b8ad`  
+		Last Modified: Wed, 15 May 2019 21:40:05 GMT  
+		Size: 87.8 MB (87818774 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:917b3c96d61862e954c75b740caac1143d5d59e44b84cf091632b28c4464c739`  
-		Last Modified: Sat, 27 Apr 2019 00:23:38 GMT  
-		Size: 6.4 KB (6400 bytes)  
+	-	`sha256:68dc2fc066852b9b81a44e6e66a6c41d1a4a13c4b8d139c80e3c430b34d8a2d0`  
+		Last Modified: Wed, 15 May 2019 21:39:58 GMT  
+		Size: 6.4 KB (6399 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7dbc54c9083a9dae1bd0aad85a2f5fc5b486145c69245648cd0809b25f493d8a`  
-		Last Modified: Sat, 27 Apr 2019 00:23:38 GMT  
+	-	`sha256:0cfc6eac0afaaa8ffd90f851782aa14f8919d78333df9a95834c09d1512acf1f`  
+		Last Modified: Wed, 15 May 2019 21:39:58 GMT  
 		Size: 1.7 KB (1684 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -383,7 +383,7 @@ CMD ["/opt/files/startup.sh"]
 ## `bonita:7.7.5`
 
 ```console
-$ docker pull bonita@sha256:dc11ec3eb6b4b3ab801b92f6714f6b0fa8df6110b49ddd77d86b5d14c1357f82
+$ docker pull bonita@sha256:8a0866f971b046828ad62a35b8817c73960cb78202e3f8ed25244322843e3020
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -395,120 +395,120 @@ $ docker pull bonita@sha256:dc11ec3eb6b4b3ab801b92f6714f6b0fa8df6110b49ddd77d86b
 ### `bonita:7.7.5` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:720d4ec5f9ce82948cdfd23b77a8cba1bdd86c69815d29199e1770df0075d3eb
+$ docker pull bonita@sha256:8d2db4d9adc73f11bb7d22a812d1c90e8242441651b6989788ec44ee8a8900c1
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **215.0 MB (215045683 bytes)**  
+-	Total Size: **215.1 MB (215065747 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ba0d60a82e602ddb1b19ef13a10ca8d144f946450385b05d63d88fadd49e479`
+-	Image ID: `sha256:c1156a6450a8853ac37f3dcf916c8c43ecc6c655393ab3563f0f5250a1b401d9`
 -	Default Command: `["\/opt\/files\/startup.sh"]`
 
 ```dockerfile
-# Fri, 26 Apr 2019 22:22:27 GMT
-ADD file:eb81ec6d9e1940968c44e3fe988a8d07474c05b5b0ea60ace0bd2e4fbf180f3b in / 
-# Fri, 26 Apr 2019 22:22:28 GMT
+# Wed, 15 May 2019 21:21:22 GMT
+ADD file:a65e0467dbedc0992151651c136374c16f65d9905eac9d04d0925039ada64e4c in / 
+# Wed, 15 May 2019 21:21:23 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 26 Apr 2019 22:22:28 GMT
+# Wed, 15 May 2019 21:21:24 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 26 Apr 2019 22:22:29 GMT
+# Wed, 15 May 2019 21:21:24 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 26 Apr 2019 22:22:29 GMT
+# Wed, 15 May 2019 21:21:24 GMT
 CMD ["/bin/bash"]
-# Sat, 27 Apr 2019 00:22:17 GMT
+# Wed, 15 May 2019 21:38:06 GMT
 MAINTAINER Jérémy Jacquier-Roux <jeremy.jacquier-roux@bonitasoft.org>
-# Sat, 27 Apr 2019 00:22:59 GMT
+# Wed, 15 May 2019 21:39:09 GMT
 RUN apt-get update && apt-get install -y   mysql-client-core-5.7   openjdk-8-jre-headless   postgresql-client   unzip   curl   zip   && rm -rf /var/lib/apt/lists/*
-# Sat, 27 Apr 2019 00:23:00 GMT
+# Wed, 15 May 2019 21:39:12 GMT
 RUN mkdir /opt/custom-init.d/
-# Sat, 27 Apr 2019 00:23:01 GMT
+# Wed, 15 May 2019 21:39:13 GMT
 RUN groupadd -r bonita -g 1000   && useradd -u 1000 -r -g bonita -d /opt/bonita/ -s /sbin/nologin -c "Bonita User" bonita
-# Sat, 27 Apr 2019 00:23:02 GMT
+# Wed, 15 May 2019 21:39:14 GMT
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
-# Sat, 27 Apr 2019 00:23:03 GMT
+# Wed, 15 May 2019 21:39:16 GMT
 RUN curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture)" -o /usr/local/bin/gosu   && curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture).asc" -o /usr/local/bin/gosu.asc   && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu
-# Sat, 27 Apr 2019 00:23:03 GMT
+# Wed, 15 May 2019 21:39:16 GMT
 ARG BONITA_VERSION
-# Sat, 27 Apr 2019 00:23:03 GMT
+# Wed, 15 May 2019 21:39:16 GMT
 ARG TOMCAT_VERSION
-# Sat, 27 Apr 2019 00:23:04 GMT
+# Wed, 15 May 2019 21:39:16 GMT
 ARG BONITA_SHA256
-# Sat, 27 Apr 2019 00:23:04 GMT
+# Wed, 15 May 2019 21:39:17 GMT
 ARG BONITA_URL
-# Sat, 27 Apr 2019 00:23:04 GMT
+# Wed, 15 May 2019 21:39:17 GMT
 ENV BONITA_VERSION=7.7.5
-# Sat, 27 Apr 2019 00:23:04 GMT
+# Wed, 15 May 2019 21:39:17 GMT
 ENV TOMCAT_VERSION=8.5.31
-# Sat, 27 Apr 2019 00:23:04 GMT
+# Wed, 15 May 2019 21:39:17 GMT
 ENV BONITA_SHA256=cbed7de66b763683e1edad0aa374f234e6b7c4bebaf5dd31925125196fceab81
-# Sat, 27 Apr 2019 00:23:05 GMT
+# Wed, 15 May 2019 21:39:17 GMT
 ENV BONITA_URL=https://release.ow2.org/bonita/BonitaCommunity-7.7.5-Tomcat-8.5.31.zip
-# Sat, 27 Apr 2019 00:23:12 GMT
+# Wed, 15 May 2019 21:39:25 GMT
 RUN mkdir /opt/files   && curl -fsSL ${BONITA_URL} -o /opt/files/BonitaCommunity-${BONITA_VERSION}-Tomcat-${TOMCAT_VERSION}.zip
-# Sat, 27 Apr 2019 00:23:13 GMT
+# Wed, 15 May 2019 21:39:27 GMT
 RUN sha256sum /opt/files/BonitaCommunity-${BONITA_VERSION}-Tomcat-${TOMCAT_VERSION}.zip
-# Sat, 27 Apr 2019 00:23:14 GMT
+# Wed, 15 May 2019 21:39:28 GMT
 RUN echo "$BONITA_SHA256" /opt/files/BonitaCommunity-${BONITA_VERSION}-Tomcat-${TOMCAT_VERSION}.zip | sha256sum -c -
-# Sat, 27 Apr 2019 00:23:14 GMT
+# Wed, 15 May 2019 21:39:29 GMT
 VOLUME [/opt/bonita]
-# Sat, 27 Apr 2019 00:23:15 GMT
+# Wed, 15 May 2019 21:39:29 GMT
 COPY dir:218b54db7fe23f6e7d786ad3d05252e5a170aa9f0bc4f4daab27f269f2f972cb in /opt/files 
-# Sat, 27 Apr 2019 00:23:15 GMT
+# Wed, 15 May 2019 21:39:30 GMT
 COPY dir:6d3e15de1cb4f57dbe1c443d37e47f4fd23de68060b4a003d8918618cf14d1cd in /opt/templates 
-# Sat, 27 Apr 2019 00:23:15 GMT
+# Wed, 15 May 2019 21:39:30 GMT
 EXPOSE 8080
-# Sat, 27 Apr 2019 00:23:15 GMT
+# Wed, 15 May 2019 21:39:30 GMT
 CMD ["/opt/files/startup.sh"]
 ```
 
 -	Layers:
-	-	`sha256:7e65918542624be36faca5e547a5b84c4eca21dd4e979c9309f4ad79b95d00ce`  
-		Last Modified: Fri, 26 Apr 2019 00:24:56 GMT  
-		Size: 43.8 MB (43752517 bytes)  
+	-	`sha256:9ff7e2e5f967fb9c4e8099e63508ab0dddebe3f820d08ca7fd568431b0d10c0e`  
+		Last Modified: Wed, 15 May 2019 21:22:41 GMT  
+		Size: 43.8 MB (43767987 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:089d60cb4e0a6a5f884454ad8f9ea43021ac8c4a8584698f8751fab2437450e3`  
-		Last Modified: Fri, 26 Apr 2019 22:23:35 GMT  
-		Size: 847.0 B  
+	-	`sha256:59856638ac9f32d4caa0f5761b2597fe251642786fdfe1b917ddbb074b890c29`  
+		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
+		Size: 848.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c461696bc0925124c5fe76298c2590a4d4b4009eab16a2346c0010269007f74`  
-		Last Modified: Fri, 26 Apr 2019 22:23:35 GMT  
-		Size: 525.0 B  
+	-	`sha256:6f317d6d954b9a59c54b2cb09e1f30cd3e872796e431cd2ceac5ed570beb2939`  
+		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
+		Size: 526.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45085432511a479b977e19d3334f4948200141d06802c222e743e3d3bafabd05`  
-		Last Modified: Fri, 26 Apr 2019 22:23:35 GMT  
-		Size: 166.0 B  
+	-	`sha256:a9dde5e2a643eca8fde0eed52f4aed31f3ecd9c1b2f24d5e3729cd8d2ae68177`  
+		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
+		Size: 168.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e3d372b5b1e0f15513f309f795bce52c03bd236afa8b07fd1925ace324ce3d9`  
-		Last Modified: Sat, 27 Apr 2019 00:23:54 GMT  
-		Size: 82.8 MB (82821283 bytes)  
+	-	`sha256:2054ffe6918ee14a5656783f4e7e00c518a854c42d68ab4438d102178c7e2460`  
+		Last Modified: Wed, 15 May 2019 21:40:16 GMT  
+		Size: 82.8 MB (82825868 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:357abc1d0a4de0ab0ec75b6240b2cc41faa561a8f4d0ebd575fbe2be9048d1b1`  
-		Last Modified: Sat, 27 Apr 2019 00:23:40 GMT  
-		Size: 122.0 B  
+	-	`sha256:93b0e75dcea0a1bfb203f09f320478f14ab32887119659c45593af54edd49356`  
+		Last Modified: Wed, 15 May 2019 21:39:59 GMT  
+		Size: 119.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed50e9b451808694c428ab22be4b506562f3068ec0b15e214c417b4529b160f2`  
-		Last Modified: Sat, 27 Apr 2019 00:23:39 GMT  
-		Size: 2.0 KB (2041 bytes)  
+	-	`sha256:c8f4a16446c587dfada2a11484f9c2ade5e35899b44fd8a2ff8af99ab8872923`  
+		Last Modified: Wed, 15 May 2019 21:39:59 GMT  
+		Size: 2.0 KB (2046 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d6fddeacdbebac494de0c931dec77b42a42ec8c2e27760c2bb2c617f3a4b911`  
-		Last Modified: Sat, 27 Apr 2019 00:23:38 GMT  
-		Size: 140.6 KB (140585 bytes)  
+	-	`sha256:126df4570c8d50706efbba124d49d85c50c8040ae85ecfd95525b5cb9fad419f`  
+		Last Modified: Wed, 15 May 2019 21:39:58 GMT  
+		Size: 140.6 KB (140590 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16a5901022eb25651cb5845ce3c07f402d1b7f08efbd58b42a131e0f800a5076`  
-		Last Modified: Sat, 27 Apr 2019 00:23:38 GMT  
+	-	`sha256:4300c7e85d000ec3bab408f31ae4e2327eaf58e1e6ba74cb476cfa02df4deab2`  
+		Last Modified: Wed, 15 May 2019 21:39:58 GMT  
 		Size: 500.7 KB (500738 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b8aaca82a4d1267e7840e00b0833db5b8fae7603454eb2ee196ccb54ca9fa5e`  
-		Last Modified: Sat, 27 Apr 2019 00:23:44 GMT  
-		Size: 87.8 MB (87818775 bytes)  
+	-	`sha256:092601d5bb4b5fc77860025774d14f024b12be3430a449ee038c6f2ca764b8ad`  
+		Last Modified: Wed, 15 May 2019 21:40:05 GMT  
+		Size: 87.8 MB (87818774 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:917b3c96d61862e954c75b740caac1143d5d59e44b84cf091632b28c4464c739`  
-		Last Modified: Sat, 27 Apr 2019 00:23:38 GMT  
-		Size: 6.4 KB (6400 bytes)  
+	-	`sha256:68dc2fc066852b9b81a44e6e66a6c41d1a4a13c4b8d139c80e3c430b34d8a2d0`  
+		Last Modified: Wed, 15 May 2019 21:39:58 GMT  
+		Size: 6.4 KB (6399 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7dbc54c9083a9dae1bd0aad85a2f5fc5b486145c69245648cd0809b25f493d8a`  
-		Last Modified: Sat, 27 Apr 2019 00:23:38 GMT  
+	-	`sha256:0cfc6eac0afaaa8ffd90f851782aa14f8919d78333df9a95834c09d1512acf1f`  
+		Last Modified: Wed, 15 May 2019 21:39:58 GMT  
 		Size: 1.7 KB (1684 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -755,7 +755,7 @@ CMD ["/opt/files/startup.sh"]
 ## `bonita:7.8`
 
 ```console
-$ docker pull bonita@sha256:65b7b9af9c9060a043d533c175a785fed3f7c5f765c7736e3f03125585fe1243
+$ docker pull bonita@sha256:e3a836673dedc0cecb8e2563bd980c171566c385800c0ecbaefee91c134672bc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -767,121 +767,121 @@ $ docker pull bonita@sha256:65b7b9af9c9060a043d533c175a785fed3f7c5f765c7736e3f03
 ### `bonita:7.8` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:ee6e4df4ac708fc0b4fc15e7e6f39917d290ebe52060f1cc04e027d006a0e1db
+$ docker pull bonita@sha256:0f352d6462d28b375bf58e7672e82403f64fdb8454e5aae6b1da44b0510f01a7
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.3 MB (221255517 bytes)**  
+-	Total Size: **221.3 MB (221275581 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9b635711eba332f05ce04b26a5a195e2fc7ee69d93d78a34a2239087375b82e7`
+-	Image ID: `sha256:c762ca5db48df9165e2c3af93c288e96c4b83760cc2c2ac86ad637b0eb354d0c`
 -	Default Command: `["\/opt\/files\/startup.sh"]`
 
 ```dockerfile
-# Fri, 26 Apr 2019 22:22:27 GMT
-ADD file:eb81ec6d9e1940968c44e3fe988a8d07474c05b5b0ea60ace0bd2e4fbf180f3b in / 
-# Fri, 26 Apr 2019 22:22:28 GMT
+# Wed, 15 May 2019 21:21:22 GMT
+ADD file:a65e0467dbedc0992151651c136374c16f65d9905eac9d04d0925039ada64e4c in / 
+# Wed, 15 May 2019 21:21:23 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 26 Apr 2019 22:22:28 GMT
+# Wed, 15 May 2019 21:21:24 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 26 Apr 2019 22:22:29 GMT
+# Wed, 15 May 2019 21:21:24 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 26 Apr 2019 22:22:29 GMT
+# Wed, 15 May 2019 21:21:24 GMT
 CMD ["/bin/bash"]
-# Sat, 27 Apr 2019 00:22:17 GMT
+# Wed, 15 May 2019 21:38:06 GMT
 MAINTAINER Jérémy Jacquier-Roux <jeremy.jacquier-roux@bonitasoft.org>
-# Sat, 27 Apr 2019 00:22:59 GMT
+# Wed, 15 May 2019 21:39:09 GMT
 RUN apt-get update && apt-get install -y   mysql-client-core-5.7   openjdk-8-jre-headless   postgresql-client   unzip   curl   zip   && rm -rf /var/lib/apt/lists/*
-# Sat, 27 Apr 2019 00:23:00 GMT
+# Wed, 15 May 2019 21:39:12 GMT
 RUN mkdir /opt/custom-init.d/
-# Sat, 27 Apr 2019 00:23:01 GMT
+# Wed, 15 May 2019 21:39:13 GMT
 RUN groupadd -r bonita -g 1000   && useradd -u 1000 -r -g bonita -d /opt/bonita/ -s /sbin/nologin -c "Bonita User" bonita
-# Sat, 27 Apr 2019 00:23:02 GMT
+# Wed, 15 May 2019 21:39:14 GMT
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
-# Sat, 27 Apr 2019 00:23:03 GMT
+# Wed, 15 May 2019 21:39:16 GMT
 RUN curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture)" -o /usr/local/bin/gosu   && curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture).asc" -o /usr/local/bin/gosu.asc   && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu
-# Sat, 27 Apr 2019 00:23:03 GMT
+# Wed, 15 May 2019 21:39:16 GMT
 ARG BONITA_VERSION
-# Sat, 27 Apr 2019 00:23:03 GMT
+# Wed, 15 May 2019 21:39:16 GMT
 ARG TOMCAT_VERSION
-# Sat, 27 Apr 2019 00:23:04 GMT
+# Wed, 15 May 2019 21:39:16 GMT
 ARG BONITA_SHA256
-# Sat, 27 Apr 2019 00:23:04 GMT
+# Wed, 15 May 2019 21:39:17 GMT
 ARG BONITA_URL
-# Thu, 09 May 2019 21:19:56 GMT
+# Wed, 15 May 2019 21:39:33 GMT
 ENV BONITA_VERSION=7.8.4
-# Thu, 09 May 2019 21:19:58 GMT
+# Wed, 15 May 2019 21:39:34 GMT
 ENV TOMCAT_VERSION=8.5.34
-# Thu, 09 May 2019 21:19:58 GMT
+# Wed, 15 May 2019 21:39:34 GMT
 ENV BONITA_SHA256=f7a838c7ae4a6c3e1945b1fb9739ebc0fd75b208309409e1fc5cd582f63f8d62
-# Thu, 09 May 2019 21:19:58 GMT
+# Wed, 15 May 2019 21:39:34 GMT
 ENV BONITA_URL=https://release.ow2.org/bonita/BonitaCommunity-7.8.4-Tomcat-8.5.34.zip
-# Thu, 09 May 2019 21:20:31 GMT
+# Wed, 15 May 2019 21:39:42 GMT
 RUN mkdir /opt/files   && curl -fsSL ${BONITA_URL} -o /opt/files/BonitaCommunity-${BONITA_VERSION}-Tomcat-${TOMCAT_VERSION}.zip
-# Thu, 09 May 2019 21:20:34 GMT
+# Wed, 15 May 2019 21:39:46 GMT
 RUN sha256sum /opt/files/BonitaCommunity-${BONITA_VERSION}-Tomcat-${TOMCAT_VERSION}.zip
-# Thu, 09 May 2019 21:20:52 GMT
+# Wed, 15 May 2019 21:39:48 GMT
 RUN echo "$BONITA_SHA256" /opt/files/BonitaCommunity-${BONITA_VERSION}-Tomcat-${TOMCAT_VERSION}.zip | sha256sum -c -
-# Thu, 09 May 2019 21:20:52 GMT
+# Wed, 15 May 2019 21:39:48 GMT
 VOLUME [/opt/bonita]
-# Thu, 09 May 2019 21:20:53 GMT
+# Wed, 15 May 2019 21:39:48 GMT
 COPY dir:c6d7e9629a42c861bb0856b3a1835982731a180d7086c81fa15a9be006778db5 in /opt/files 
-# Thu, 09 May 2019 21:20:54 GMT
+# Wed, 15 May 2019 21:39:48 GMT
 COPY dir:f57d2aaca06a0902547835779dc4dcfee6861e7250f9cec6d0d5c032f6bf35d5 in /opt/templates 
-# Thu, 09 May 2019 21:20:54 GMT
+# Wed, 15 May 2019 21:39:48 GMT
 EXPOSE 8080
-# Thu, 09 May 2019 21:20:55 GMT
+# Wed, 15 May 2019 21:39:49 GMT
 CMD ["/opt/files/startup.sh"]
 ```
 
 -	Layers:
-	-	`sha256:7e65918542624be36faca5e547a5b84c4eca21dd4e979c9309f4ad79b95d00ce`  
-		Last Modified: Fri, 26 Apr 2019 00:24:56 GMT  
-		Size: 43.8 MB (43752517 bytes)  
+	-	`sha256:9ff7e2e5f967fb9c4e8099e63508ab0dddebe3f820d08ca7fd568431b0d10c0e`  
+		Last Modified: Wed, 15 May 2019 21:22:41 GMT  
+		Size: 43.8 MB (43767987 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:089d60cb4e0a6a5f884454ad8f9ea43021ac8c4a8584698f8751fab2437450e3`  
-		Last Modified: Fri, 26 Apr 2019 22:23:35 GMT  
-		Size: 847.0 B  
+	-	`sha256:59856638ac9f32d4caa0f5761b2597fe251642786fdfe1b917ddbb074b890c29`  
+		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
+		Size: 848.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c461696bc0925124c5fe76298c2590a4d4b4009eab16a2346c0010269007f74`  
-		Last Modified: Fri, 26 Apr 2019 22:23:35 GMT  
-		Size: 525.0 B  
+	-	`sha256:6f317d6d954b9a59c54b2cb09e1f30cd3e872796e431cd2ceac5ed570beb2939`  
+		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
+		Size: 526.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45085432511a479b977e19d3334f4948200141d06802c222e743e3d3bafabd05`  
-		Last Modified: Fri, 26 Apr 2019 22:23:35 GMT  
-		Size: 166.0 B  
+	-	`sha256:a9dde5e2a643eca8fde0eed52f4aed31f3ecd9c1b2f24d5e3729cd8d2ae68177`  
+		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
+		Size: 168.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e3d372b5b1e0f15513f309f795bce52c03bd236afa8b07fd1925ace324ce3d9`  
-		Last Modified: Sat, 27 Apr 2019 00:23:54 GMT  
-		Size: 82.8 MB (82821283 bytes)  
+	-	`sha256:2054ffe6918ee14a5656783f4e7e00c518a854c42d68ab4438d102178c7e2460`  
+		Last Modified: Wed, 15 May 2019 21:40:16 GMT  
+		Size: 82.8 MB (82825868 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:357abc1d0a4de0ab0ec75b6240b2cc41faa561a8f4d0ebd575fbe2be9048d1b1`  
-		Last Modified: Sat, 27 Apr 2019 00:23:40 GMT  
-		Size: 122.0 B  
+	-	`sha256:93b0e75dcea0a1bfb203f09f320478f14ab32887119659c45593af54edd49356`  
+		Last Modified: Wed, 15 May 2019 21:39:59 GMT  
+		Size: 119.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed50e9b451808694c428ab22be4b506562f3068ec0b15e214c417b4529b160f2`  
-		Last Modified: Sat, 27 Apr 2019 00:23:39 GMT  
-		Size: 2.0 KB (2041 bytes)  
+	-	`sha256:c8f4a16446c587dfada2a11484f9c2ade5e35899b44fd8a2ff8af99ab8872923`  
+		Last Modified: Wed, 15 May 2019 21:39:59 GMT  
+		Size: 2.0 KB (2046 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d6fddeacdbebac494de0c931dec77b42a42ec8c2e27760c2bb2c617f3a4b911`  
-		Last Modified: Sat, 27 Apr 2019 00:23:38 GMT  
-		Size: 140.6 KB (140585 bytes)  
+	-	`sha256:126df4570c8d50706efbba124d49d85c50c8040ae85ecfd95525b5cb9fad419f`  
+		Last Modified: Wed, 15 May 2019 21:39:58 GMT  
+		Size: 140.6 KB (140590 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16a5901022eb25651cb5845ce3c07f402d1b7f08efbd58b42a131e0f800a5076`  
-		Last Modified: Sat, 27 Apr 2019 00:23:38 GMT  
+	-	`sha256:4300c7e85d000ec3bab408f31ae4e2327eaf58e1e6ba74cb476cfa02df4deab2`  
+		Last Modified: Wed, 15 May 2019 21:39:58 GMT  
 		Size: 500.7 KB (500738 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a14f644bbda278fdadc53746e61dee9bb52c1dc701fd7da8ae426f32c0a98e8`  
-		Last Modified: Thu, 09 May 2019 21:21:24 GMT  
+	-	`sha256:863aa9f50ae09160103f2b69489313fce9b26e2ec67b2ff2ddc9790b097533a8`  
+		Last Modified: Wed, 15 May 2019 21:40:28 GMT  
 		Size: 94.0 MB (94028631 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:585eebbf85321ad94bc0d23b560caa408190549b6f5186349becda105ec06286`  
-		Last Modified: Thu, 09 May 2019 21:21:16 GMT  
+	-	`sha256:5290f11ca4c3cd1b18d7e98c72e07d8b9868165666b1db3d8d55ca8cbc4e6ebb`  
+		Last Modified: Wed, 15 May 2019 21:40:23 GMT  
 		Size: 6.4 KB (6398 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:77e83f64de14f330ed58972b57baa72d9db9564eb4152a6d3ce9b122cf352433`  
-		Last Modified: Thu, 09 May 2019 21:21:16 GMT  
-		Size: 1.7 KB (1664 bytes)  
+	-	`sha256:7f5f18745fc4ec1fcc83a8bfe21ba7062c4cd80d9ef5eb3a74520cc3cfe0ce2b`  
+		Last Modified: Wed, 15 May 2019 21:40:23 GMT  
+		Size: 1.7 KB (1662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `bonita:7.8` - linux; arm64 variant v8
@@ -1127,7 +1127,7 @@ CMD ["/opt/files/startup.sh"]
 ## `bonita:7.8.4`
 
 ```console
-$ docker pull bonita@sha256:65b7b9af9c9060a043d533c175a785fed3f7c5f765c7736e3f03125585fe1243
+$ docker pull bonita@sha256:e3a836673dedc0cecb8e2563bd980c171566c385800c0ecbaefee91c134672bc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1139,121 +1139,121 @@ $ docker pull bonita@sha256:65b7b9af9c9060a043d533c175a785fed3f7c5f765c7736e3f03
 ### `bonita:7.8.4` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:ee6e4df4ac708fc0b4fc15e7e6f39917d290ebe52060f1cc04e027d006a0e1db
+$ docker pull bonita@sha256:0f352d6462d28b375bf58e7672e82403f64fdb8454e5aae6b1da44b0510f01a7
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.3 MB (221255517 bytes)**  
+-	Total Size: **221.3 MB (221275581 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9b635711eba332f05ce04b26a5a195e2fc7ee69d93d78a34a2239087375b82e7`
+-	Image ID: `sha256:c762ca5db48df9165e2c3af93c288e96c4b83760cc2c2ac86ad637b0eb354d0c`
 -	Default Command: `["\/opt\/files\/startup.sh"]`
 
 ```dockerfile
-# Fri, 26 Apr 2019 22:22:27 GMT
-ADD file:eb81ec6d9e1940968c44e3fe988a8d07474c05b5b0ea60ace0bd2e4fbf180f3b in / 
-# Fri, 26 Apr 2019 22:22:28 GMT
+# Wed, 15 May 2019 21:21:22 GMT
+ADD file:a65e0467dbedc0992151651c136374c16f65d9905eac9d04d0925039ada64e4c in / 
+# Wed, 15 May 2019 21:21:23 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 26 Apr 2019 22:22:28 GMT
+# Wed, 15 May 2019 21:21:24 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 26 Apr 2019 22:22:29 GMT
+# Wed, 15 May 2019 21:21:24 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 26 Apr 2019 22:22:29 GMT
+# Wed, 15 May 2019 21:21:24 GMT
 CMD ["/bin/bash"]
-# Sat, 27 Apr 2019 00:22:17 GMT
+# Wed, 15 May 2019 21:38:06 GMT
 MAINTAINER Jérémy Jacquier-Roux <jeremy.jacquier-roux@bonitasoft.org>
-# Sat, 27 Apr 2019 00:22:59 GMT
+# Wed, 15 May 2019 21:39:09 GMT
 RUN apt-get update && apt-get install -y   mysql-client-core-5.7   openjdk-8-jre-headless   postgresql-client   unzip   curl   zip   && rm -rf /var/lib/apt/lists/*
-# Sat, 27 Apr 2019 00:23:00 GMT
+# Wed, 15 May 2019 21:39:12 GMT
 RUN mkdir /opt/custom-init.d/
-# Sat, 27 Apr 2019 00:23:01 GMT
+# Wed, 15 May 2019 21:39:13 GMT
 RUN groupadd -r bonita -g 1000   && useradd -u 1000 -r -g bonita -d /opt/bonita/ -s /sbin/nologin -c "Bonita User" bonita
-# Sat, 27 Apr 2019 00:23:02 GMT
+# Wed, 15 May 2019 21:39:14 GMT
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
-# Sat, 27 Apr 2019 00:23:03 GMT
+# Wed, 15 May 2019 21:39:16 GMT
 RUN curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture)" -o /usr/local/bin/gosu   && curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture).asc" -o /usr/local/bin/gosu.asc   && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu
-# Sat, 27 Apr 2019 00:23:03 GMT
+# Wed, 15 May 2019 21:39:16 GMT
 ARG BONITA_VERSION
-# Sat, 27 Apr 2019 00:23:03 GMT
+# Wed, 15 May 2019 21:39:16 GMT
 ARG TOMCAT_VERSION
-# Sat, 27 Apr 2019 00:23:04 GMT
+# Wed, 15 May 2019 21:39:16 GMT
 ARG BONITA_SHA256
-# Sat, 27 Apr 2019 00:23:04 GMT
+# Wed, 15 May 2019 21:39:17 GMT
 ARG BONITA_URL
-# Thu, 09 May 2019 21:19:56 GMT
+# Wed, 15 May 2019 21:39:33 GMT
 ENV BONITA_VERSION=7.8.4
-# Thu, 09 May 2019 21:19:58 GMT
+# Wed, 15 May 2019 21:39:34 GMT
 ENV TOMCAT_VERSION=8.5.34
-# Thu, 09 May 2019 21:19:58 GMT
+# Wed, 15 May 2019 21:39:34 GMT
 ENV BONITA_SHA256=f7a838c7ae4a6c3e1945b1fb9739ebc0fd75b208309409e1fc5cd582f63f8d62
-# Thu, 09 May 2019 21:19:58 GMT
+# Wed, 15 May 2019 21:39:34 GMT
 ENV BONITA_URL=https://release.ow2.org/bonita/BonitaCommunity-7.8.4-Tomcat-8.5.34.zip
-# Thu, 09 May 2019 21:20:31 GMT
+# Wed, 15 May 2019 21:39:42 GMT
 RUN mkdir /opt/files   && curl -fsSL ${BONITA_URL} -o /opt/files/BonitaCommunity-${BONITA_VERSION}-Tomcat-${TOMCAT_VERSION}.zip
-# Thu, 09 May 2019 21:20:34 GMT
+# Wed, 15 May 2019 21:39:46 GMT
 RUN sha256sum /opt/files/BonitaCommunity-${BONITA_VERSION}-Tomcat-${TOMCAT_VERSION}.zip
-# Thu, 09 May 2019 21:20:52 GMT
+# Wed, 15 May 2019 21:39:48 GMT
 RUN echo "$BONITA_SHA256" /opt/files/BonitaCommunity-${BONITA_VERSION}-Tomcat-${TOMCAT_VERSION}.zip | sha256sum -c -
-# Thu, 09 May 2019 21:20:52 GMT
+# Wed, 15 May 2019 21:39:48 GMT
 VOLUME [/opt/bonita]
-# Thu, 09 May 2019 21:20:53 GMT
+# Wed, 15 May 2019 21:39:48 GMT
 COPY dir:c6d7e9629a42c861bb0856b3a1835982731a180d7086c81fa15a9be006778db5 in /opt/files 
-# Thu, 09 May 2019 21:20:54 GMT
+# Wed, 15 May 2019 21:39:48 GMT
 COPY dir:f57d2aaca06a0902547835779dc4dcfee6861e7250f9cec6d0d5c032f6bf35d5 in /opt/templates 
-# Thu, 09 May 2019 21:20:54 GMT
+# Wed, 15 May 2019 21:39:48 GMT
 EXPOSE 8080
-# Thu, 09 May 2019 21:20:55 GMT
+# Wed, 15 May 2019 21:39:49 GMT
 CMD ["/opt/files/startup.sh"]
 ```
 
 -	Layers:
-	-	`sha256:7e65918542624be36faca5e547a5b84c4eca21dd4e979c9309f4ad79b95d00ce`  
-		Last Modified: Fri, 26 Apr 2019 00:24:56 GMT  
-		Size: 43.8 MB (43752517 bytes)  
+	-	`sha256:9ff7e2e5f967fb9c4e8099e63508ab0dddebe3f820d08ca7fd568431b0d10c0e`  
+		Last Modified: Wed, 15 May 2019 21:22:41 GMT  
+		Size: 43.8 MB (43767987 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:089d60cb4e0a6a5f884454ad8f9ea43021ac8c4a8584698f8751fab2437450e3`  
-		Last Modified: Fri, 26 Apr 2019 22:23:35 GMT  
-		Size: 847.0 B  
+	-	`sha256:59856638ac9f32d4caa0f5761b2597fe251642786fdfe1b917ddbb074b890c29`  
+		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
+		Size: 848.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c461696bc0925124c5fe76298c2590a4d4b4009eab16a2346c0010269007f74`  
-		Last Modified: Fri, 26 Apr 2019 22:23:35 GMT  
-		Size: 525.0 B  
+	-	`sha256:6f317d6d954b9a59c54b2cb09e1f30cd3e872796e431cd2ceac5ed570beb2939`  
+		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
+		Size: 526.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45085432511a479b977e19d3334f4948200141d06802c222e743e3d3bafabd05`  
-		Last Modified: Fri, 26 Apr 2019 22:23:35 GMT  
-		Size: 166.0 B  
+	-	`sha256:a9dde5e2a643eca8fde0eed52f4aed31f3ecd9c1b2f24d5e3729cd8d2ae68177`  
+		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
+		Size: 168.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e3d372b5b1e0f15513f309f795bce52c03bd236afa8b07fd1925ace324ce3d9`  
-		Last Modified: Sat, 27 Apr 2019 00:23:54 GMT  
-		Size: 82.8 MB (82821283 bytes)  
+	-	`sha256:2054ffe6918ee14a5656783f4e7e00c518a854c42d68ab4438d102178c7e2460`  
+		Last Modified: Wed, 15 May 2019 21:40:16 GMT  
+		Size: 82.8 MB (82825868 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:357abc1d0a4de0ab0ec75b6240b2cc41faa561a8f4d0ebd575fbe2be9048d1b1`  
-		Last Modified: Sat, 27 Apr 2019 00:23:40 GMT  
-		Size: 122.0 B  
+	-	`sha256:93b0e75dcea0a1bfb203f09f320478f14ab32887119659c45593af54edd49356`  
+		Last Modified: Wed, 15 May 2019 21:39:59 GMT  
+		Size: 119.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed50e9b451808694c428ab22be4b506562f3068ec0b15e214c417b4529b160f2`  
-		Last Modified: Sat, 27 Apr 2019 00:23:39 GMT  
-		Size: 2.0 KB (2041 bytes)  
+	-	`sha256:c8f4a16446c587dfada2a11484f9c2ade5e35899b44fd8a2ff8af99ab8872923`  
+		Last Modified: Wed, 15 May 2019 21:39:59 GMT  
+		Size: 2.0 KB (2046 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d6fddeacdbebac494de0c931dec77b42a42ec8c2e27760c2bb2c617f3a4b911`  
-		Last Modified: Sat, 27 Apr 2019 00:23:38 GMT  
-		Size: 140.6 KB (140585 bytes)  
+	-	`sha256:126df4570c8d50706efbba124d49d85c50c8040ae85ecfd95525b5cb9fad419f`  
+		Last Modified: Wed, 15 May 2019 21:39:58 GMT  
+		Size: 140.6 KB (140590 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16a5901022eb25651cb5845ce3c07f402d1b7f08efbd58b42a131e0f800a5076`  
-		Last Modified: Sat, 27 Apr 2019 00:23:38 GMT  
+	-	`sha256:4300c7e85d000ec3bab408f31ae4e2327eaf58e1e6ba74cb476cfa02df4deab2`  
+		Last Modified: Wed, 15 May 2019 21:39:58 GMT  
 		Size: 500.7 KB (500738 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a14f644bbda278fdadc53746e61dee9bb52c1dc701fd7da8ae426f32c0a98e8`  
-		Last Modified: Thu, 09 May 2019 21:21:24 GMT  
+	-	`sha256:863aa9f50ae09160103f2b69489313fce9b26e2ec67b2ff2ddc9790b097533a8`  
+		Last Modified: Wed, 15 May 2019 21:40:28 GMT  
 		Size: 94.0 MB (94028631 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:585eebbf85321ad94bc0d23b560caa408190549b6f5186349becda105ec06286`  
-		Last Modified: Thu, 09 May 2019 21:21:16 GMT  
+	-	`sha256:5290f11ca4c3cd1b18d7e98c72e07d8b9868165666b1db3d8d55ca8cbc4e6ebb`  
+		Last Modified: Wed, 15 May 2019 21:40:23 GMT  
 		Size: 6.4 KB (6398 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:77e83f64de14f330ed58972b57baa72d9db9564eb4152a6d3ce9b122cf352433`  
-		Last Modified: Thu, 09 May 2019 21:21:16 GMT  
-		Size: 1.7 KB (1664 bytes)  
+	-	`sha256:7f5f18745fc4ec1fcc83a8bfe21ba7062c4cd80d9ef5eb3a74520cc3cfe0ce2b`  
+		Last Modified: Wed, 15 May 2019 21:40:23 GMT  
+		Size: 1.7 KB (1662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `bonita:7.8.4` - linux; arm64 variant v8
@@ -1499,7 +1499,7 @@ CMD ["/opt/files/startup.sh"]
 ## `bonita:latest`
 
 ```console
-$ docker pull bonita@sha256:65b7b9af9c9060a043d533c175a785fed3f7c5f765c7736e3f03125585fe1243
+$ docker pull bonita@sha256:e3a836673dedc0cecb8e2563bd980c171566c385800c0ecbaefee91c134672bc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1511,121 +1511,121 @@ $ docker pull bonita@sha256:65b7b9af9c9060a043d533c175a785fed3f7c5f765c7736e3f03
 ### `bonita:latest` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:ee6e4df4ac708fc0b4fc15e7e6f39917d290ebe52060f1cc04e027d006a0e1db
+$ docker pull bonita@sha256:0f352d6462d28b375bf58e7672e82403f64fdb8454e5aae6b1da44b0510f01a7
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.3 MB (221255517 bytes)**  
+-	Total Size: **221.3 MB (221275581 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9b635711eba332f05ce04b26a5a195e2fc7ee69d93d78a34a2239087375b82e7`
+-	Image ID: `sha256:c762ca5db48df9165e2c3af93c288e96c4b83760cc2c2ac86ad637b0eb354d0c`
 -	Default Command: `["\/opt\/files\/startup.sh"]`
 
 ```dockerfile
-# Fri, 26 Apr 2019 22:22:27 GMT
-ADD file:eb81ec6d9e1940968c44e3fe988a8d07474c05b5b0ea60ace0bd2e4fbf180f3b in / 
-# Fri, 26 Apr 2019 22:22:28 GMT
+# Wed, 15 May 2019 21:21:22 GMT
+ADD file:a65e0467dbedc0992151651c136374c16f65d9905eac9d04d0925039ada64e4c in / 
+# Wed, 15 May 2019 21:21:23 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 26 Apr 2019 22:22:28 GMT
+# Wed, 15 May 2019 21:21:24 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 26 Apr 2019 22:22:29 GMT
+# Wed, 15 May 2019 21:21:24 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 26 Apr 2019 22:22:29 GMT
+# Wed, 15 May 2019 21:21:24 GMT
 CMD ["/bin/bash"]
-# Sat, 27 Apr 2019 00:22:17 GMT
+# Wed, 15 May 2019 21:38:06 GMT
 MAINTAINER Jérémy Jacquier-Roux <jeremy.jacquier-roux@bonitasoft.org>
-# Sat, 27 Apr 2019 00:22:59 GMT
+# Wed, 15 May 2019 21:39:09 GMT
 RUN apt-get update && apt-get install -y   mysql-client-core-5.7   openjdk-8-jre-headless   postgresql-client   unzip   curl   zip   && rm -rf /var/lib/apt/lists/*
-# Sat, 27 Apr 2019 00:23:00 GMT
+# Wed, 15 May 2019 21:39:12 GMT
 RUN mkdir /opt/custom-init.d/
-# Sat, 27 Apr 2019 00:23:01 GMT
+# Wed, 15 May 2019 21:39:13 GMT
 RUN groupadd -r bonita -g 1000   && useradd -u 1000 -r -g bonita -d /opt/bonita/ -s /sbin/nologin -c "Bonita User" bonita
-# Sat, 27 Apr 2019 00:23:02 GMT
+# Wed, 15 May 2019 21:39:14 GMT
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
-# Sat, 27 Apr 2019 00:23:03 GMT
+# Wed, 15 May 2019 21:39:16 GMT
 RUN curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture)" -o /usr/local/bin/gosu   && curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture).asc" -o /usr/local/bin/gosu.asc   && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu
-# Sat, 27 Apr 2019 00:23:03 GMT
+# Wed, 15 May 2019 21:39:16 GMT
 ARG BONITA_VERSION
-# Sat, 27 Apr 2019 00:23:03 GMT
+# Wed, 15 May 2019 21:39:16 GMT
 ARG TOMCAT_VERSION
-# Sat, 27 Apr 2019 00:23:04 GMT
+# Wed, 15 May 2019 21:39:16 GMT
 ARG BONITA_SHA256
-# Sat, 27 Apr 2019 00:23:04 GMT
+# Wed, 15 May 2019 21:39:17 GMT
 ARG BONITA_URL
-# Thu, 09 May 2019 21:19:56 GMT
+# Wed, 15 May 2019 21:39:33 GMT
 ENV BONITA_VERSION=7.8.4
-# Thu, 09 May 2019 21:19:58 GMT
+# Wed, 15 May 2019 21:39:34 GMT
 ENV TOMCAT_VERSION=8.5.34
-# Thu, 09 May 2019 21:19:58 GMT
+# Wed, 15 May 2019 21:39:34 GMT
 ENV BONITA_SHA256=f7a838c7ae4a6c3e1945b1fb9739ebc0fd75b208309409e1fc5cd582f63f8d62
-# Thu, 09 May 2019 21:19:58 GMT
+# Wed, 15 May 2019 21:39:34 GMT
 ENV BONITA_URL=https://release.ow2.org/bonita/BonitaCommunity-7.8.4-Tomcat-8.5.34.zip
-# Thu, 09 May 2019 21:20:31 GMT
+# Wed, 15 May 2019 21:39:42 GMT
 RUN mkdir /opt/files   && curl -fsSL ${BONITA_URL} -o /opt/files/BonitaCommunity-${BONITA_VERSION}-Tomcat-${TOMCAT_VERSION}.zip
-# Thu, 09 May 2019 21:20:34 GMT
+# Wed, 15 May 2019 21:39:46 GMT
 RUN sha256sum /opt/files/BonitaCommunity-${BONITA_VERSION}-Tomcat-${TOMCAT_VERSION}.zip
-# Thu, 09 May 2019 21:20:52 GMT
+# Wed, 15 May 2019 21:39:48 GMT
 RUN echo "$BONITA_SHA256" /opt/files/BonitaCommunity-${BONITA_VERSION}-Tomcat-${TOMCAT_VERSION}.zip | sha256sum -c -
-# Thu, 09 May 2019 21:20:52 GMT
+# Wed, 15 May 2019 21:39:48 GMT
 VOLUME [/opt/bonita]
-# Thu, 09 May 2019 21:20:53 GMT
+# Wed, 15 May 2019 21:39:48 GMT
 COPY dir:c6d7e9629a42c861bb0856b3a1835982731a180d7086c81fa15a9be006778db5 in /opt/files 
-# Thu, 09 May 2019 21:20:54 GMT
+# Wed, 15 May 2019 21:39:48 GMT
 COPY dir:f57d2aaca06a0902547835779dc4dcfee6861e7250f9cec6d0d5c032f6bf35d5 in /opt/templates 
-# Thu, 09 May 2019 21:20:54 GMT
+# Wed, 15 May 2019 21:39:48 GMT
 EXPOSE 8080
-# Thu, 09 May 2019 21:20:55 GMT
+# Wed, 15 May 2019 21:39:49 GMT
 CMD ["/opt/files/startup.sh"]
 ```
 
 -	Layers:
-	-	`sha256:7e65918542624be36faca5e547a5b84c4eca21dd4e979c9309f4ad79b95d00ce`  
-		Last Modified: Fri, 26 Apr 2019 00:24:56 GMT  
-		Size: 43.8 MB (43752517 bytes)  
+	-	`sha256:9ff7e2e5f967fb9c4e8099e63508ab0dddebe3f820d08ca7fd568431b0d10c0e`  
+		Last Modified: Wed, 15 May 2019 21:22:41 GMT  
+		Size: 43.8 MB (43767987 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:089d60cb4e0a6a5f884454ad8f9ea43021ac8c4a8584698f8751fab2437450e3`  
-		Last Modified: Fri, 26 Apr 2019 22:23:35 GMT  
-		Size: 847.0 B  
+	-	`sha256:59856638ac9f32d4caa0f5761b2597fe251642786fdfe1b917ddbb074b890c29`  
+		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
+		Size: 848.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c461696bc0925124c5fe76298c2590a4d4b4009eab16a2346c0010269007f74`  
-		Last Modified: Fri, 26 Apr 2019 22:23:35 GMT  
-		Size: 525.0 B  
+	-	`sha256:6f317d6d954b9a59c54b2cb09e1f30cd3e872796e431cd2ceac5ed570beb2939`  
+		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
+		Size: 526.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45085432511a479b977e19d3334f4948200141d06802c222e743e3d3bafabd05`  
-		Last Modified: Fri, 26 Apr 2019 22:23:35 GMT  
-		Size: 166.0 B  
+	-	`sha256:a9dde5e2a643eca8fde0eed52f4aed31f3ecd9c1b2f24d5e3729cd8d2ae68177`  
+		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
+		Size: 168.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e3d372b5b1e0f15513f309f795bce52c03bd236afa8b07fd1925ace324ce3d9`  
-		Last Modified: Sat, 27 Apr 2019 00:23:54 GMT  
-		Size: 82.8 MB (82821283 bytes)  
+	-	`sha256:2054ffe6918ee14a5656783f4e7e00c518a854c42d68ab4438d102178c7e2460`  
+		Last Modified: Wed, 15 May 2019 21:40:16 GMT  
+		Size: 82.8 MB (82825868 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:357abc1d0a4de0ab0ec75b6240b2cc41faa561a8f4d0ebd575fbe2be9048d1b1`  
-		Last Modified: Sat, 27 Apr 2019 00:23:40 GMT  
-		Size: 122.0 B  
+	-	`sha256:93b0e75dcea0a1bfb203f09f320478f14ab32887119659c45593af54edd49356`  
+		Last Modified: Wed, 15 May 2019 21:39:59 GMT  
+		Size: 119.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed50e9b451808694c428ab22be4b506562f3068ec0b15e214c417b4529b160f2`  
-		Last Modified: Sat, 27 Apr 2019 00:23:39 GMT  
-		Size: 2.0 KB (2041 bytes)  
+	-	`sha256:c8f4a16446c587dfada2a11484f9c2ade5e35899b44fd8a2ff8af99ab8872923`  
+		Last Modified: Wed, 15 May 2019 21:39:59 GMT  
+		Size: 2.0 KB (2046 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d6fddeacdbebac494de0c931dec77b42a42ec8c2e27760c2bb2c617f3a4b911`  
-		Last Modified: Sat, 27 Apr 2019 00:23:38 GMT  
-		Size: 140.6 KB (140585 bytes)  
+	-	`sha256:126df4570c8d50706efbba124d49d85c50c8040ae85ecfd95525b5cb9fad419f`  
+		Last Modified: Wed, 15 May 2019 21:39:58 GMT  
+		Size: 140.6 KB (140590 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16a5901022eb25651cb5845ce3c07f402d1b7f08efbd58b42a131e0f800a5076`  
-		Last Modified: Sat, 27 Apr 2019 00:23:38 GMT  
+	-	`sha256:4300c7e85d000ec3bab408f31ae4e2327eaf58e1e6ba74cb476cfa02df4deab2`  
+		Last Modified: Wed, 15 May 2019 21:39:58 GMT  
 		Size: 500.7 KB (500738 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a14f644bbda278fdadc53746e61dee9bb52c1dc701fd7da8ae426f32c0a98e8`  
-		Last Modified: Thu, 09 May 2019 21:21:24 GMT  
+	-	`sha256:863aa9f50ae09160103f2b69489313fce9b26e2ec67b2ff2ddc9790b097533a8`  
+		Last Modified: Wed, 15 May 2019 21:40:28 GMT  
 		Size: 94.0 MB (94028631 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:585eebbf85321ad94bc0d23b560caa408190549b6f5186349becda105ec06286`  
-		Last Modified: Thu, 09 May 2019 21:21:16 GMT  
+	-	`sha256:5290f11ca4c3cd1b18d7e98c72e07d8b9868165666b1db3d8d55ca8cbc4e6ebb`  
+		Last Modified: Wed, 15 May 2019 21:40:23 GMT  
 		Size: 6.4 KB (6398 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:77e83f64de14f330ed58972b57baa72d9db9564eb4152a6d3ce9b122cf352433`  
-		Last Modified: Thu, 09 May 2019 21:21:16 GMT  
-		Size: 1.7 KB (1664 bytes)  
+	-	`sha256:7f5f18745fc4ec1fcc83a8bfe21ba7062c4cd80d9ef5eb3a74520cc3cfe0ce2b`  
+		Last Modified: Wed, 15 May 2019 21:40:23 GMT  
+		Size: 1.7 KB (1662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `bonita:latest` - linux; arm64 variant v8
