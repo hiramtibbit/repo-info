@@ -1,7 +1,7 @@
 ## `erlang:22-alpine`
 
 ```console
-$ docker pull erlang@sha256:e96e7c76329969051a0d317df02cd7941ef4ded11851b8053e1adf1e76155830
+$ docker pull erlang@sha256:b924c50deee851e449eba96cf0f0fcc48179cc742d9a01cfaf4d152b166e5cf7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10,6 +10,7 @@ $ docker pull erlang@sha256:e96e7c76329969051a0d317df02cd7941ef4ded11851b8053e1a
 	-	linux; arm variant v7
 	-	linux; 386
 	-	linux; ppc64le
+	-	linux; s390x
 
 ### `erlang:22-alpine` - linux; amd64
 
@@ -153,4 +154,40 @@ CMD ["erl"]
 	-	`sha256:c62acbc51a9233dc3499b195542e67222b414330999f970c605bc308d436768e`  
 		Last Modified: Wed, 15 May 2019 01:09:47 GMT  
 		Size: 41.1 MB (41050461 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `erlang:22-alpine` - linux; s390x
+
+```console
+$ docker pull erlang@sha256:5f038253c260ae6022fac695a978aeb3ddc22e60b5de8138d9b9c7ad66cf539a
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **42.9 MB (42946174 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:3b280dcf0a84ec43dbf30ee96befcefe8b75528c64eeca8f98c5578de7b61788`
+-	Default Command: `["erl"]`
+
+```dockerfile
+# Sat, 11 May 2019 11:41:43 GMT
+ADD file:6b519ed40566a3088c7bf57b3f1624dadc83f9e56839d5cde42489b54a0a1e90 in / 
+# Sat, 11 May 2019 11:41:43 GMT
+CMD ["/bin/sh"]
+# Wed, 15 May 2019 01:29:51 GMT
+ENV OTP_VERSION=22.0 REBAR3_VERSION=3.10.0
+# Wed, 15 May 2019 01:48:21 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="7efb93a542d66137ba4f38f9734ee7b03adc17d949fac561cca3b2d8f6fafcd2" 	&& REBAR3_DOWNLOAD_SHA256="656b4a0bd75f340173e67a33c92e4d422b5ccf054f93ba35a9d780b545ee827e" 	&& apk add --no-cache --virtual .fetch-deps 		curl 		ca-certificates 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& apk add --no-cache --virtual .build-deps 		dpkg-dev dpkg 		gcc 		g++ 		libc-dev 		linux-headers 		make 		autoconf 		ncurses-dev 		openssl-dev 		unixodbc-dev 		lksctp-tools-dev 		tar 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(getconf _NPROCESSORS_ONLN) 	  && make install ) 	&& rm -rf $ERL_TOP 	&& find /usr/local -regex '/usr/local/lib/erlang/\(lib/\|erts-\).*/\(man\|doc\|obj\|c_src\|emacs\|info\|examples\)' | xargs rm -rf 	&& find /usr/local -name src | xargs -r find | grep -v '\.hrl$' | xargs rm -v || true 	&& find /usr/local -name src | xargs -r find | xargs rmdir -vp || true 	&& scanelf --nobanner -E ET_EXEC -BF '%F' --recursive /usr/local | xargs -r strip --strip-all 	&& scanelf --nobanner -E ET_DYN -BF '%F' --recursive /usr/local | xargs -r strip --strip-unneeded 	&& runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "${REBAR3_DOWNLOAD_SHA256}  rebar3-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/rebar3-src 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src 	&& apk add --virtual .erlang-rundeps 		$runDeps 		lksctp-tools 		ca-certificates 	&& apk del .fetch-deps .build-deps
+# Wed, 15 May 2019 01:48:22 GMT
+CMD ["erl"]
+```
+
+-	Layers:
+	-	`sha256:bea4f04d8b33c5bd68ccb34849e615333c5ef00958b400841a03970dd2d5e9ae`  
+		Last Modified: Sat, 11 May 2019 11:42:13 GMT  
+		Size: 2.5 MB (2543331 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:51eb1365aaf3d0221ce4004bfc88e80ab74a70303b6484f63bc00a7e02be538f`  
+		Last Modified: Wed, 15 May 2019 01:52:34 GMT  
+		Size: 40.4 MB (40402843 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
