@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:629a9db90e39004afc37099cbf35b4b01ff9e70d47c2bc47d0bc1864abd10f02`
-- Created: `2019-04-26T22:40:40.601793087Z`
-- Virtual Size: ~ 941.28 Mb  
+- Image ID: `sha256:38d900bfd0b9204c87e73714b8b8633553311d8a3bea8708d651d641c25c8a73`
+- Created: `2019-05-15T21:39:33.928168758Z`
+- Virtual Size: ~ 941.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -1045,11 +1045,11 @@ $ apt-get source -qq --print-uris lsb=9.20160110ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lsb/lsb_9.20160110ubuntu0.2.tar.xz' lsb_9.20160110ubuntu0.2.tar.xz 57832 SHA256:deb95383b904e6014bfa1efca7700b0a9a6596f2b9afbcdd52de8b75d64e2d3a
 ```
 
-### `dpkg` source package: `lshw=02.17-1.1ubuntu3.5`
+### `dpkg` source package: `lshw=02.17-1.1ubuntu3.6`
 
 Binary Packages:
 
-- `lshw=02.17-1.1ubuntu3.5`
+- `lshw=02.17-1.1ubuntu3.6`
 
 Licenses: (parsed from: `/usr/share/doc/lshw/copyright`)
 
@@ -1058,10 +1058,10 @@ Licenses: (parsed from: `/usr/share/doc/lshw/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris lshw=02.17-1.1ubuntu3.5
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lshw/lshw_02.17-1.1ubuntu3.5.dsc' lshw_02.17-1.1ubuntu3.5.dsc 1838 SHA256:20784044a162751b238078fc8762754935486e1f5537fa9480c179b1fb85b751
+$ apt-get source -qq --print-uris lshw=02.17-1.1ubuntu3.6
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lshw/lshw_02.17-1.1ubuntu3.6.dsc' lshw_02.17-1.1ubuntu3.6.dsc 1468 SHA256:fb6816dd46ad17ceb4cf35564f63ffbb255ee09c4dae5253b0dfc0b8a235db59
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lshw/lshw_02.17.orig.tar.gz' lshw_02.17.orig.tar.gz 2005737 SHA256:eb9cc053fa0f1e78685cb695596e73931bfb55d2377e3bc3b8b94aff4c5a489c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lshw/lshw_02.17-1.1ubuntu3.5.diff.gz' lshw_02.17-1.1ubuntu3.5.diff.gz 26182 SHA256:293513662083cf2a2df2d321a3dae904414b777f4afada58a1697e418bef4705
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lshw/lshw_02.17-1.1ubuntu3.6.diff.gz' lshw_02.17-1.1ubuntu3.6.diff.gz 26772 SHA256:622a4c0ac88311e1455540c5692fc127992afb3ffafdd534913a8abe28acbc08
 ```
 
 ### `dpkg` source package: `lsof=4.89+dfsg-0.1`
