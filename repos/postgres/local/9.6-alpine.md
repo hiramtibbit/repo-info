@@ -1,10 +1,10 @@
-# `postgres:9.6.12-alpine`
+# `postgres:9.6.13-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:45fefe5e5044cd292ff8fa5f861668012201b6843f91d73d73cddd656a7b8780`
-- Created: `2019-04-25T00:28:20.641238436Z`
-- Virtual Size: ~ 37.72 Mb  
+- Image ID: `sha256:228bb6a10076dd8c0e8071c10ffff863d40854b7e1cf3a4ef19ff75a2b494111`
+- Created: `2019-05-11T03:01:04.211906014Z`
+- Virtual Size: ~ 37.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,8 +13,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=9.6`
-  - `PG_VERSION=9.6.12`
-  - `PG_SHA256=2e8c8446ba94767bda8a26cf5a2152bf0ae68a86aaebf894132a763084579d84`
+  - `PG_VERSION=9.6.13`
+  - `PG_SHA256=ecbed20056296a65b6a4f5526c477e3ae5cc284cb01a15507785ddb23831e9a4`
   - `PGDATA=/var/lib/postgresql/data`
 
 ## `apk` (`.apk`-based packages)
@@ -277,16 +277,16 @@ MIT
 ### `apk` package: `libxslt`
 
 ```console
-libxslt-1.1.32-r0 description:
+libxslt-1.1.33-r1 description:
 XML stylesheet transformation library
 
-libxslt-1.1.32-r0 webpage:
+libxslt-1.1.33-r1 webpage:
 http://xmlsoft.org/XSLT/
 
-libxslt-1.1.32-r0 installed size:
+libxslt-1.1.33-r1 installed size:
 368640
 
-libxslt-1.1.32-r0 license:
+libxslt-1.1.33-r1 license:
 custom
 
 ```
@@ -447,16 +447,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2018i-r0 description:
+tzdata-2019a-r0 description:
 Timezone data
 
-tzdata-2018i-r0 webpage:
+tzdata-2019a-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2018i-r0 installed size:
-3547136
+tzdata-2019a-r0 installed size:
+3538944
 
-tzdata-2018i-r0 license:
+tzdata-2019a-r0 license:
 Public-Domain
 
 ```
