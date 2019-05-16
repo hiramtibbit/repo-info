@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d98005b752b4d29ecce38d9373dd11cc84b941c3a49e6d49d97a2cea022fcb34`
-- Created: `2019-05-07T00:19:57.43357329Z`
-- Virtual Size: ~ 410.98 Mb  
+- Image ID: `sha256:5976dac61f4fb85c1a2d1f7c717600f9c78fb02badba6b3c5961a4091ef75905`
+- Created: `2019-05-15T23:11:37.931366174Z`
+- Virtual Size: ~ 411.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -1304,19 +1304,24 @@ $ apt-get source -qq --print-uris numactl=2.0.11-1ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/numactl/numactl_2.0.11-1ubuntu1.1.diff.gz' numactl_2.0.11-1ubuntu1.1.diff.gz 7106 SHA256:555a31c7676e117867a8ab2a0218f4c5581d8059547425c9b54e28edc5401a23
 ```
 
-### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu3.4`
+### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu3.5`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.42+dfsg-2ubuntu3.4`
+- `libldap-2.4-2:amd64=2.4.42+dfsg-2ubuntu3.5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openldap=2.4.42+dfsg-2ubuntu3.5
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.5.dsc' openldap_2.4.42+dfsg-2ubuntu3.5.dsc 3054 SHA256:b81c8c0b6bc0587d8cbc8e6358f18d157e9c573ec255c90373a873b679d3ccde
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg.orig.tar.gz' openldap_2.4.42+dfsg.orig.tar.gz 4813173 SHA256:5f56e4e3584f7a4b4c8437a2c985b2f519836946be77ef1aa43a5d20c02ea97b
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.5.debian.tar.xz' openldap_2.4.42+dfsg-2ubuntu3.5.debian.tar.xz 178024 SHA256:ab46b7537f188b408e0aa8ebc1446221f369df075f082f8f779059dd7181b2b7
+```
 
 ### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.15`
 
