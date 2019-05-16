@@ -1,17 +1,17 @@
-# `docker:19.03.0-beta3-dind`
+# `docker:19.03.0-beta4-dind`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1539fd48868ca51d7a0172d7b8c275a53933af810aa24a226182c9832e0dc303`
-- Created: `2019-04-25T23:19:54.583252173Z`
-- Virtual Size: ~ 225.76 Mb  
+- Image ID: `sha256:57075d58f56a09ee9b96f5f15e84f571e039c04a7ce210ad44c04f6c075a6c59`
+- Created: `2019-05-16T00:34:50.856622066Z`
+- Virtual Size: ~ 227.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_CHANNEL=test`
-  - `DOCKER_VERSION=19.03.0-beta3`
+  - `DOCKER_VERSION=19.03.0-beta4`
   - `DIND_COMMIT=37498f009d8bf25fbb6199e8ccd34bed84f2874b`
 
 ## `apk` (`.apk`-based packages)
