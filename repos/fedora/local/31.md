@@ -74,14 +74,7 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Every
 
 Licenses (from `rpm --query`): GPLv3+
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls bash-5.0.2-1.fc30
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/b/bash-5.0.2-1.fc30.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `brotli-1.0.7-3.fc30.x86_64`
 
@@ -267,27 +260,13 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Every
 
 Licenses (from `rpm --query`): GPLv2
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls device-mapper-1.02.156-1.fc31
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/l/lvm2-2.02.184-1.fc31.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `device-mapper-libs-1.02.156-1.fc31.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls device-mapper-libs-1.02.156-1.fc31
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/l/lvm2-2.02.184-1.fc31.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `diffutils-3.7-2.fc30.x86_64`
 
@@ -1679,14 +1658,7 @@ Licenses (from `rpm --query`): BSD and GPLv2+
 
 Licenses (from `rpm --query`): Public Domain
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls sqlite-libs-3.27.2-3.fc31
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/s/sqlite-3.27.2-3.fc31.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `sssd-client-2.1.0-2.fc31.x86_64`
 
