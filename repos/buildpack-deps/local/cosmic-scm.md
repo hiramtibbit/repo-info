@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:997cac58a008f48e3966a37d5d15c336dd19cd289afbbd389fc67ad16e0acb80`
-- Created: `2019-04-26T22:48:17.295628954Z`
-- Virtual Size: ~ 238.63 Mb  
+- Image ID: `sha256:0edc243faaaccf2efec90915a35b2ed67eb88be5b39136c3039f7a35b610f6c0`
+- Created: `2019-05-15T21:45:38.408104199Z`
+- Virtual Size: ~ 237.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -554,13 +554,13 @@ $ apt-get source -qq --print-uris findutils=4.6.0+git+20180808-2
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.6.0+git+20180808-2.debian.tar.xz' findutils_4.6.0+git+20180808-2.debian.tar.xz 26224 SHA256:6dfede94f210c40c46900262a0174c7fecaa79f675b738096543a054802cffdd
 ```
 
-### `dpkg` source package: `gcc-8=8.2.0-7ubuntu1`
+### `dpkg` source package: `gcc-8=8.3.0-6ubuntu1~18.10`
 
 Binary Packages:
 
-- `gcc-8-base:amd64=8.2.0-7ubuntu1`
-- `libgcc1:amd64=1:8.2.0-7ubuntu1`
-- `libstdc++6:amd64=8.2.0-7ubuntu1`
+- `gcc-8-base:amd64=8.3.0-6ubuntu1~18.10`
+- `libgcc1:amd64=1:8.3.0-6ubuntu1~18.10`
+- `libstdc++6:amd64=8.3.0-6ubuntu1~18.10`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -574,10 +574,10 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-8=8.2.0-7ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0-7ubuntu1.dsc' gcc-8_8.2.0-7ubuntu1.dsc 36362 SHA256:810851e5e48efa4988211dcc97ca258aefbb8457c50cdd703db20ffe66f4d2ba
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0.orig.tar.gz' gcc-8_8.2.0.orig.tar.gz 75164400 SHA256:e1009caeec1d024f278de02238d3a558bc23b0cd3ae08c885c36fe5a44b3269d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0-7ubuntu1.diff.gz' gcc-8_8.2.0-7ubuntu1.diff.gz 4032662 SHA256:b5ad08a54882c6e36d1f30a48a0acab3fc9349b42b13d9cd4469d39bed8b3c70
+$ apt-get source -qq --print-uris gcc-8=8.3.0-6ubuntu1~18.10
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-6ubuntu1~18.10.dsc' gcc-8_8.3.0-6ubuntu1~18.10.dsc 36123 SHA256:5ad1396b85a14b25eabff08b8d94e19b7b7502a72c99044c5820574db61f3716
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0.orig.tar.gz' gcc-8_8.3.0.orig.tar.gz 85259886 SHA256:561c1bc647ade738c14efe5a298fc0cee2e2efd3dec9fefb66b724dbd50437e6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-6ubuntu1~18.10.diff.gz' gcc-8_8.3.0-6ubuntu1~18.10.diff.gz 566478 SHA256:f9997b84134fd8b7b2418f33193d35ee211969dd4456efdd6076cf4365bac4a6
 ```
 
 ### `dpkg` source package: `gdbm=1.14.1-6`
@@ -1634,11 +1634,11 @@ $ apt-get source -qq --print-uris pam=1.1.8-3.6ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.6ubuntu3.tar.gz' pam_1.1.8-3.6ubuntu3.tar.gz 1990527 SHA256:d10638f04812293cdccb9a2069eda41b7c08e90851412908025ebcd876dc3a68
 ```
 
-### `dpkg` source package: `pcre3=2:8.39-11`
+### `dpkg` source package: `pcre3=2:8.39-12~18.10`
 
 Binary Packages:
 
-- `libpcre3:amd64=2:8.39-11`
+- `libpcre3:amd64=2:8.39-12~18.10`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1647,10 +1647,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pcre3=2:8.39-11
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-11.dsc' pcre3_8.39-11.dsc 2226 SHA256:50738a8e55d4bdc10fd6eecc623170d0657bd15805e630d82bc90d722fcbc435
+$ apt-get source -qq --print-uris pcre3=2:8.39-12~18.10
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-12~18.10.dsc' pcre3_8.39-12~18.10.dsc 2133 SHA256:c7b0105852951e97146552b94415558d3bff3f49eb9b6115fd4f158e71cd5728
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39.orig.tar.bz2' pcre3_8.39.orig.tar.bz2 1560758 SHA256:b858099f82483031ee02092711689e7245586ada49e534a06e678b8ea9549e8b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-11.debian.tar.gz' pcre3_8.39-11.debian.tar.gz 26414 SHA256:de1f66246fe7b4e85fba0f9e3bac69bdf3271a9c5c6b7ac0661b20051c012883
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-12~18.10.debian.tar.gz' pcre3_8.39-12~18.10.debian.tar.gz 26490 SHA256:a8f2932f70e621be538d7e024f6a4e8dc2219e0b8e65aa499862507057816bf1
 ```
 
 ### `dpkg` source package: `perl=5.26.2-7ubuntu0.1`
@@ -1775,14 +1775,14 @@ $ apt-get source -qq --print-uris python-defaults=2.7.15-3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-defaults/python-defaults_2.7.15-3.tar.gz' python-defaults_2.7.15-3.tar.gz 1398803 SHA256:beb52f958d2a17056e145083715fdb9ed4b3422051d9692243cdbb26798a0c8a
 ```
 
-### `dpkg` source package: `python2.7=2.7.15-4ubuntu4`
+### `dpkg` source package: `python2.7=2.7.16-2~18.10`
 
 Binary Packages:
 
-- `libpython2.7-minimal:amd64=2.7.15-4ubuntu4`
-- `libpython2.7-stdlib:amd64=2.7.15-4ubuntu4`
-- `python2.7=2.7.15-4ubuntu4`
-- `python2.7-minimal=2.7.15-4ubuntu4`
+- `libpython2.7-minimal:amd64=2.7.16-2~18.10`
+- `libpython2.7-stdlib:amd64=2.7.16-2~18.10`
+- `python2.7=2.7.16-2~18.10`
+- `python2.7-minimal=2.7.16-2~18.10`
 
 Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/share/doc/libpython2.7-stdlib/copyright`, `/usr/share/doc/python2.7/copyright`, `/usr/share/doc/python2.7-minimal/copyright`)
 
@@ -1806,10 +1806,10 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python2.7=2.7.15-4ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.15-4ubuntu4.dsc' python2.7_2.7.15-4ubuntu4.dsc 3119 SHA256:76a1a1c3c4f7270b298547132a60952592ef0c505eb80aae9c4f9457dd8f6bcb
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.15.orig.tar.gz' python2.7_2.7.15.orig.tar.gz 17496336 SHA256:18617d1f15a380a919d517630a9cd85ce17ea602f9bbdc58ddc672df4b0239db
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.15-4ubuntu4.diff.gz' python2.7_2.7.15-4ubuntu4.diff.gz 543257 SHA256:593114acf12a397515b34d9016e8af6b9fbce593e61aaf683dab177a57bcc97e
+$ apt-get source -qq --print-uris python2.7=2.7.16-2~18.10
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.16-2~18.10.dsc' python2.7_2.7.16-2~18.10.dsc 3379 SHA256:87f5bf23fe2d98c758d320fbc9480e3fb73338994ec56b0c72e72da6b8060f07
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.16.orig.tar.gz' python2.7_2.7.16.orig.tar.gz 17431748 SHA256:01da813a3600876f03f46db11cc5c408175e99f03af2ba942ef324389a83bad5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.16-2~18.10.diff.gz' python2.7_2.7.16-2~18.10.diff.gz 288185 SHA256:15de57aee4aa5c6ac74667e95d185c6723188e119b6f510d94431e3e9608127c
 ```
 
 ### `dpkg` source package: `readline=7.0-5`
