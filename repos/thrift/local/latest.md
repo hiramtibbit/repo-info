@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:88bb25cbaf682a89065791fe1c52b0029cf39fd33cdf8d999aaf031fde01defc`
-- Created: `2019-04-26T22:57:40.418898685Z`
-- Virtual Size: ~ 162.84 Mb  
+- Image ID: `sha256:70e455d86783c7b9e50fb5080d241797acd4c109708b65dbab484aac0c7ed9dd`
+- Created: `2019-05-15T22:22:18.72884229Z`
+- Virtual Size: ~ 130.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["thrift"]`
@@ -388,11 +388,11 @@ $ apt-get source -qq --print-uris findutils=4.6.0+git+20170828-2
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.6.0+git+20170828-2.debian.tar.xz' findutils_4.6.0+git+20170828-2.debian.tar.xz 26532 SHA256:5b13792a14edec982fddcf74fe01b4380b909703d76aaba2860da51c6248de73
 ```
 
-### `dpkg` source package: `gcc-7=7.3.0-27ubuntu1~18.04`
+### `dpkg` source package: `gcc-7=7.4.0-1ubuntu1~18.04`
 
 Binary Packages:
 
-- `gcc-7-base:amd64=7.3.0-27ubuntu1~18.04`
+- `gcc-7-base:amd64=7.4.0-1ubuntu1~18.04`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`)
 
@@ -403,17 +403,22 @@ Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`)
 - `GPL-3`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gcc-7=7.4.0-1ubuntu1~18.04
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.4.0-1ubuntu1~18.04.dsc' gcc-7_7.4.0-1ubuntu1~18.04.dsc 28375 SHA256:f8782639aa4fb91b6b93ef285e3fa2dc2c9e13d1719948bb06c5d186efd81a29
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.4.0.orig.tar.gz' gcc-7_7.4.0.orig.tar.gz 73695608 SHA256:5b4807f26217a79529db1e4f786ac1771b2caee5c7ff487bb72c1f633c29a705
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.4.0-1ubuntu1~18.04.diff.gz' gcc-7_7.4.0-1ubuntu1~18.04.diff.gz 569258 SHA256:d87ae43d939cf83805e8f1fb14e21cf4ad82e6219dcd32a516a3d65dda6be0de
+```
 
-### `dpkg` source package: `gcc-8=8.2.0-1ubuntu2~18.04`
+### `dpkg` source package: `gcc-8=8.3.0-6ubuntu1~18.04`
 
 Binary Packages:
 
-- `gcc-8-base:amd64=8.2.0-1ubuntu2~18.04`
-- `libgcc1:amd64=1:8.2.0-1ubuntu2~18.04`
-- `libstdc++6:amd64=8.2.0-1ubuntu2~18.04`
+- `gcc-8-base:amd64=8.3.0-6ubuntu1~18.04`
+- `libgcc1:amd64=1:8.3.0-6ubuntu1~18.04`
+- `libstdc++6:amd64=8.3.0-6ubuntu1~18.04`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -424,9 +429,14 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gcc-8=8.3.0-6ubuntu1~18.04
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-6ubuntu1~18.04.dsc' gcc-8_8.3.0-6ubuntu1~18.04.dsc 36113 SHA256:e6ffbcf6156da2872efe051618819f9759506f5da386ee1d41145ee833686f20
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0.orig.tar.gz' gcc-8_8.3.0.orig.tar.gz 85259886 SHA256:561c1bc647ade738c14efe5a298fc0cee2e2efd3dec9fefb66b724dbd50437e6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-6ubuntu1~18.04.diff.gz' gcc-8_8.3.0-6ubuntu1~18.04.diff.gz 566469 SHA256:3df57692065eddd3637d029a1806c2defea6cebfaf7428e95338573f91e386b0
+```
 
 ### `dpkg` source package: `glibc=2.27-3ubuntu1`
 
@@ -1163,12 +1173,12 @@ $ apt-get source -qq --print-uris sensible-utils=0.0.12
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.12.tar.xz' sensible-utils_0.0.12.tar.xz 62152 SHA256:99ba2ebf8c57447c69d426b99b84ff9dc817be0bc4988ec6890a14558c529e2e
 ```
 
-### `dpkg` source package: `shadow=1:4.5-1ubuntu1`
+### `dpkg` source package: `shadow=1:4.5-1ubuntu2`
 
 Binary Packages:
 
-- `login=1:4.5-1ubuntu1`
-- `passwd=1:4.5-1ubuntu1`
+- `login=1:4.5-1ubuntu2`
+- `passwd=1:4.5-1ubuntu2`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
@@ -1177,10 +1187,10 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 Source:
 
 ```console
-$ apt-get source -qq --print-uris shadow=1:4.5-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5-1ubuntu1.dsc' shadow_4.5-1ubuntu1.dsc 2389 SHA256:0b49e04e8e85866adec2196c299b393883f5cf40358bb92f5168cfa941de4dd0
+$ apt-get source -qq --print-uris shadow=1:4.5-1ubuntu2
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5-1ubuntu2.dsc' shadow_4.5-1ubuntu2.dsc 2426 SHA256:34cc68fd24c6376c16311720f20dcb345e5da19adbe39edae249a49e45cee9e1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5.orig.tar.xz' shadow_4.5.orig.tar.xz 1344524 SHA256:22b0952dc944b163e2370bb911b11ca275fc80ad024267cf21e496b28c23d500
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5-1ubuntu1.debian.tar.xz' shadow_4.5-1ubuntu1.debian.tar.xz 470524 SHA256:51e534983f0500229b51b3f3ccbee3b041e48d3ea6e5f64c914351a0e996dc05
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5-1ubuntu2.debian.tar.xz' shadow_4.5-1ubuntu2.debian.tar.xz 471472 SHA256:0025e344b478aae6e2d9ad7657b5e1fd0ebd1fda7a55e7fc144840f75b92d358
 ```
 
 ### `dpkg` source package: `systemd=237-3ubuntu10.21`
