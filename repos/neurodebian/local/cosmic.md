@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a78eeb03d4e4d00f86df34c8a938e2715747db6cf146686369124891b097ec1e`
-- Created: `2019-04-26T22:50:54.142319849Z`
-- Virtual Size: ~ 85.85 Mb  
+- Image ID: `sha256:a15c110bbab473ba635f0b3373a7a5befdf19a307b775bd6336288077b87982f`
+- Created: `2019-05-15T22:02:55.492408129Z`
+- Virtual Size: ~ 84.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -409,13 +409,13 @@ $ apt-get source -qq --print-uris findutils=4.6.0+git+20180808-2
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.6.0+git+20180808-2.debian.tar.xz' findutils_4.6.0+git+20180808-2.debian.tar.xz 26224 SHA256:6dfede94f210c40c46900262a0174c7fecaa79f675b738096543a054802cffdd
 ```
 
-### `dpkg` source package: `gcc-8=8.2.0-7ubuntu1`
+### `dpkg` source package: `gcc-8=8.3.0-6ubuntu1~18.10`
 
 Binary Packages:
 
-- `gcc-8-base:amd64=8.2.0-7ubuntu1`
-- `libgcc1:amd64=1:8.2.0-7ubuntu1`
-- `libstdc++6:amd64=8.2.0-7ubuntu1`
+- `gcc-8-base:amd64=8.3.0-6ubuntu1~18.10`
+- `libgcc1:amd64=1:8.3.0-6ubuntu1~18.10`
+- `libstdc++6:amd64=8.3.0-6ubuntu1~18.10`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -429,10 +429,10 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-8=8.2.0-7ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0-7ubuntu1.dsc' gcc-8_8.2.0-7ubuntu1.dsc 36362 SHA256:810851e5e48efa4988211dcc97ca258aefbb8457c50cdd703db20ffe66f4d2ba
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0.orig.tar.gz' gcc-8_8.2.0.orig.tar.gz 75164400 SHA256:e1009caeec1d024f278de02238d3a558bc23b0cd3ae08c885c36fe5a44b3269d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0-7ubuntu1.diff.gz' gcc-8_8.2.0-7ubuntu1.diff.gz 4032662 SHA256:b5ad08a54882c6e36d1f30a48a0acab3fc9349b42b13d9cd4469d39bed8b3c70
+$ apt-get source -qq --print-uris gcc-8=8.3.0-6ubuntu1~18.10
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-6ubuntu1~18.10.dsc' gcc-8_8.3.0-6ubuntu1~18.10.dsc 36123 SHA256:5ad1396b85a14b25eabff08b8d94e19b7b7502a72c99044c5820574db61f3716
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0.orig.tar.gz' gcc-8_8.3.0.orig.tar.gz 85259886 SHA256:561c1bc647ade738c14efe5a298fc0cee2e2efd3dec9fefb66b724dbd50437e6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-6ubuntu1~18.10.diff.gz' gcc-8_8.3.0-6ubuntu1~18.10.diff.gz 566478 SHA256:f9997b84134fd8b7b2418f33193d35ee211969dd4456efdd6076cf4365bac4a6
 ```
 
 ### `dpkg` source package: `glibc=2.28-0ubuntu1`
@@ -1214,11 +1214,11 @@ $ apt-get source -qq --print-uris pam=1.1.8-3.6ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.6ubuntu3.tar.gz' pam_1.1.8-3.6ubuntu3.tar.gz 1990527 SHA256:d10638f04812293cdccb9a2069eda41b7c08e90851412908025ebcd876dc3a68
 ```
 
-### `dpkg` source package: `pcre3=2:8.39-11`
+### `dpkg` source package: `pcre3=2:8.39-12~18.10`
 
 Binary Packages:
 
-- `libpcre3:amd64=2:8.39-11`
+- `libpcre3:amd64=2:8.39-12~18.10`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1227,10 +1227,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pcre3=2:8.39-11
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-11.dsc' pcre3_8.39-11.dsc 2226 SHA256:50738a8e55d4bdc10fd6eecc623170d0657bd15805e630d82bc90d722fcbc435
+$ apt-get source -qq --print-uris pcre3=2:8.39-12~18.10
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-12~18.10.dsc' pcre3_8.39-12~18.10.dsc 2133 SHA256:c7b0105852951e97146552b94415558d3bff3f49eb9b6115fd4f158e71cd5728
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39.orig.tar.bz2' pcre3_8.39.orig.tar.bz2 1560758 SHA256:b858099f82483031ee02092711689e7245586ada49e534a06e678b8ea9549e8b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-11.debian.tar.gz' pcre3_8.39-11.debian.tar.gz 26414 SHA256:de1f66246fe7b4e85fba0f9e3bac69bdf3271a9c5c6b7ac0661b20051c012883
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-12~18.10.debian.tar.gz' pcre3_8.39-12~18.10.debian.tar.gz 26490 SHA256:a8f2932f70e621be538d7e024f6a4e8dc2219e0b8e65aa499862507057816bf1
 ```
 
 ### `dpkg` source package: `perl=5.26.2-7ubuntu0.1`
