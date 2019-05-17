@@ -2,20 +2,20 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b511850759aaf68034d7fc726cb68c0e4cd7c291c52b1d945d911ecd2a84de13`
-- Created: `2019-03-14T16:19:56.146380821Z`
-- Virtual Size: ~ 288.35 Mb  
+- Image ID: `sha256:fc0e205ec96ff74589f9811f111374f2bbf25a96edfcf35e772362ee4d83aeb9`
+- Created: `2019-05-15T03:20:41.766003925Z`
+- Virtual Size: ~ 290.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["arangod"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `ARANGO_VERSION=3.4.4`
+  - `ARANGO_VERSION=3.4.5`
   - `ARANGO_URL=https://download.arangodb.com/arangodb34/DEBIAN/amd64`
-  - `ARANGO_PACKAGE=arangodb3_3.4.4-1_amd64.deb`
-  - `ARANGO_PACKAGE_URL=https://download.arangodb.com/arangodb34/DEBIAN/amd64/arangodb3_3.4.4-1_amd64.deb`
-  - `ARANGO_SIGNATURE_URL=https://download.arangodb.com/arangodb34/DEBIAN/amd64/arangodb3_3.4.4-1_amd64.deb.asc`
+  - `ARANGO_PACKAGE=arangodb3_3.4.5-1_amd64.deb`
+  - `ARANGO_PACKAGE_URL=https://download.arangodb.com/arangodb34/DEBIAN/amd64/arangodb3_3.4.5-1_amd64.deb`
+  - `ARANGO_SIGNATURE_URL=https://download.arangodb.com/arangodb34/DEBIAN/amd64/arangodb3_3.4.5-1_amd64.deb.asc`
 
 ## `apk` (`.apk`-based packages)
 
@@ -192,16 +192,16 @@ GPL
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.6.2-r0 description:
+gnutls-3.6.7-r0 description:
 A TLS protocol implementation
 
-gnutls-3.6.2-r0 webpage:
-http://www.gnutls.org/
+gnutls-3.6.7-r0 webpage:
+https://www.gnutls.org/
 
-gnutls-3.6.2-r0 installed size:
-1282048
+gnutls-3.6.7-r0 installed size:
+1576960
 
-gnutls-3.6.2-r0 license:
+gnutls-3.6.7-r0 license:
 GPL
 
 ```
@@ -651,16 +651,16 @@ MIT
 ### `apk` package: `nettle`
 
 ```console
-nettle-3.4-r1 description:
+nettle-3.4.1-r0 description:
 A low-level cryptographic library
 
-nettle-3.4-r1 webpage:
+nettle-3.4.1-r0 webpage:
 http://www.lysator.liu.se/~nisse/nettle/
 
-nettle-3.4-r1 installed size:
-442368
+nettle-3.4.1-r0 installed size:
+450560
 
-nettle-3.4-r1 license:
+nettle-3.4.1-r0 license:
 LGPL-2.0-or-later
 
 ```
@@ -713,6 +713,40 @@ npth-1.5-r1 installed size:
 
 npth-1.5-r1 license:
 LGPL-3.0-or-later or GPL-2.0-or-later or (LGPL-3.0-or-later and GPL-2.0-or-later)
+
+```
+
+### `apk` package: `numactl`
+
+```console
+numactl-2.0.12-r2 description:
+Simple NUMA policy support
+
+numactl-2.0.12-r2 webpage:
+https://github.com/numactl/numactl
+
+numactl-2.0.12-r2 installed size:
+61440
+
+numactl-2.0.12-r2 license:
+GPL-2.0 LGPL-2.0
+
+```
+
+### `apk` package: `numactl-tools`
+
+```console
+numactl-tools-2.0.12-r2 description:
+NUMA policy control tools
+
+numactl-tools-2.0.12-r2 webpage:
+https://github.com/numactl/numactl
+
+numactl-tools-2.0.12-r2 installed size:
+167936
+
+numactl-tools-2.0.12-r2 license:
+GPL-2.0 LGPL-2.0
 
 ```
 
