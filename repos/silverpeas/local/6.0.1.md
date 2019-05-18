@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:57cf095039e16beaa94452f6c691e5d1fd0196532da982804f44e0979ca4293f`
-- Created: `2019-04-26T23:33:38.690715481Z`
+- Image ID: `sha256:2e93037abd2cc384e7cc7d0d51a62b4c63f9bfc8df07a0debfac50da5bc6940d`
+- Created: `2019-05-15T22:26:53.70274618Z`
 - Virtual Size: ~ 1.53 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -264,9 +264,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris bash=4.3-14ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-14ubuntu1.2.dsc' bash_4.3-14ubuntu1.2.dsc 2309 SHA256:859994a2e6bda95ac88478e70af6aaa4a489c96e1ff6ee245d63f7baacb6fdff
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3.orig.tar.gz' bash_4.3.orig.tar.gz 7516231 SHA256:b2fe79ddf9e7abdb4695e3070afa866d2a94a58d1cc9d731585330c753815491
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-14ubuntu1.2.debian.tar.xz' bash_4.3-14ubuntu1.2.debian.tar.xz 93220 SHA256:5a48a09909595cf4f88634ff54bf3bde0eaf9cfc980fd2e3637c3406d2a4d14d
+'http://security.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-14ubuntu1.2.dsc' bash_4.3-14ubuntu1.2.dsc 2309 SHA256:859994a2e6bda95ac88478e70af6aaa4a489c96e1ff6ee245d63f7baacb6fdff
+'http://security.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3.orig.tar.gz' bash_4.3.orig.tar.gz 7516231 SHA256:b2fe79ddf9e7abdb4695e3070afa866d2a94a58d1cc9d731585330c753815491
+'http://security.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-14ubuntu1.2.debian.tar.xz' bash_4.3-14ubuntu1.2.debian.tar.xz 93220 SHA256:5a48a09909595cf4f88634ff54bf3bde0eaf9cfc980fd2e3637c3406d2a4d14d
 ```
 
 ### `dpkg` source package: `bzip2=1.0.6-8`
@@ -422,11 +422,11 @@ $ apt-get source -qq --print-uris crystalhd=1:0.0~git20110715.fdd2f19-11build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/c/crystalhd/crystalhd_0.0~git20110715.fdd2f19-11build1.debian.tar.xz' crystalhd_0.0~git20110715.fdd2f19-11build1.debian.tar.xz 15240 SHA256:646168058a9a41b20a392fe20f7a2a88caaa1a42fc3e002635c33f0cf129ed0f
 ```
 
-### `dpkg` source package: `cups-filters=1.8.3-2ubuntu3.4`
+### `dpkg` source package: `cups-filters=1.8.3-2ubuntu3.5`
 
 Binary Packages:
 
-- `libcupsfilters1:amd64=1.8.3-2ubuntu3.4`
+- `libcupsfilters1:amd64=1.8.3-2ubuntu3.5`
 
 Licenses: (parsed from: `/usr/share/doc/libcupsfilters1/copyright`)
 
@@ -440,9 +440,14 @@ Licenses: (parsed from: `/usr/share/doc/libcupsfilters1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris cups-filters=1.8.3-2ubuntu3.5
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups-filters/cups-filters_1.8.3-2ubuntu3.5.dsc' cups-filters_1.8.3-2ubuntu3.5.dsc 3029 SHA256:0f3a9bc4cfa1409d46ca2e62d86629b8a9c3a99bc6b8620cfb06c879c687fc2f
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups-filters/cups-filters_1.8.3.orig.tar.xz' cups-filters_1.8.3.orig.tar.xz 1373028 SHA256:e1e786f1fbcd3a203d87ebb4106a0ba8d579953cbe22056d12d4ee8143f5341a
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups-filters/cups-filters_1.8.3-2ubuntu3.5.debian.tar.xz' cups-filters_1.8.3-2ubuntu3.5.debian.tar.xz 71656 SHA256:7b85746df6e7caf21cf344ffe3afeb3171b5d199dbf90811c8ed86e17564f64d
+```
 
 ### `dpkg` source package: `cups=2.1.3-4ubuntu0.7`
 
@@ -460,14 +465,9 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`, `/usr/share/doc/lib
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.1.3-4ubuntu0.7
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.7.dsc' cups_2.1.3-4ubuntu0.7.dsc 3111 SHA256:b6a1c3717f88ec74dd3512e5beb98c0530a36a97b4c7eaa11a73f0691ba77660
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3.orig.tar.bz2' cups_2.1.3.orig.tar.bz2 8832400 SHA256:36a70d43584aea2617da914b9331e23341c3501a8254c4d2eae9c11ec01fd4d3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.7.debian.tar.xz' cups_2.1.3-4ubuntu0.7.debian.tar.xz 351104 SHA256:fa9be8d8a38a0e8235a4d75e547e19e77e60ba8c1e5727a4445a5405f0bac23c
-```
 
 ### `dpkg` source package: `dash=0.5.8-2.1ubuntu2`
 
@@ -1004,13 +1004,13 @@ $ apt-get source -qq --print-uris gdk-pixbuf=2.32.2-1ubuntu1.6
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.6.debian.tar.xz' gdk-pixbuf_2.32.2-1ubuntu1.6.debian.tar.xz 19956 SHA256:89b307e6007e8acec4038bdc994c81d36f3371d3ea5ccc2877d697cb0a6c445b
 ```
 
-### `dpkg` source package: `ghostscript=9.26~dfsg+0-0ubuntu0.16.04.8`
+### `dpkg` source package: `ghostscript=9.26~dfsg+0-0ubuntu0.16.04.9`
 
 Binary Packages:
 
-- `ghostscript=9.26~dfsg+0-0ubuntu0.16.04.8`
-- `libgs9:amd64=9.26~dfsg+0-0ubuntu0.16.04.8`
-- `libgs9-common=9.26~dfsg+0-0ubuntu0.16.04.8`
+- `ghostscript=9.26~dfsg+0-0ubuntu0.16.04.9`
+- `libgs9:amd64=9.26~dfsg+0-0ubuntu0.16.04.9`
+- `libgs9-common=9.26~dfsg+0-0ubuntu0.16.04.9`
 
 Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/libgs9/copyright`, `/usr/share/doc/libgs9-common/copyright`)
 
@@ -1041,9 +1041,14 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ghostscript=9.26~dfsg+0-0ubuntu0.16.04.9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.26~dfsg+0-0ubuntu0.16.04.9.dsc' ghostscript_9.26~dfsg+0-0ubuntu0.16.04.9.dsc 2926 SHA256:3d248ead8d67836c055878df4f068d6dee95792a4abdf110ea922018aa0e7a0f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.26~dfsg+0.orig.tar.xz' ghostscript_9.26~dfsg+0.orig.tar.xz 27040868 SHA256:f13dd2be0499ae47f508d66be4f7a61056674c2ee6ff53d954e84bc634986bd7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.26~dfsg+0-0ubuntu0.16.04.9.debian.tar.xz' ghostscript_9.26~dfsg+0-0ubuntu0.16.04.9.debian.tar.xz 146448 SHA256:2531289d5f088847fbc1538c8eba3983e9339d751bf2b27d95f212437ae8aa1d
+```
 
 ### `dpkg` source package: `giflib=5.1.4-0.3~16.04`
 
@@ -3784,14 +3789,14 @@ $ apt-get source -qq --print-uris openexr=2.2.0-10ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openexr/openexr_2.2.0-10ubuntu2.debian.tar.xz' openexr_2.2.0-10ubuntu2.debian.tar.xz 31344 SHA256:69ce99ec15dc21e76c688d59f02cb540a3075f7b65704bcca7fd7c7e059afa99
 ```
 
-### `dpkg` source package: `openjdk-8=8u191-b12-2ubuntu0.16.04.1`
+### `dpkg` source package: `openjdk-8=8u212-b03-0ubuntu1.16.04.1`
 
 Binary Packages:
 
-- `openjdk-8-jdk:amd64=8u191-b12-2ubuntu0.16.04.1`
-- `openjdk-8-jdk-headless:amd64=8u191-b12-2ubuntu0.16.04.1`
-- `openjdk-8-jre:amd64=8u191-b12-2ubuntu0.16.04.1`
-- `openjdk-8-jre-headless:amd64=8u191-b12-2ubuntu0.16.04.1`
+- `openjdk-8-jdk:amd64=8u212-b03-0ubuntu1.16.04.1`
+- `openjdk-8-jdk-headless:amd64=8u212-b03-0ubuntu1.16.04.1`
+- `openjdk-8-jre:amd64=8u212-b03-0ubuntu1.16.04.1`
+- `openjdk-8-jre-headless:amd64=8u212-b03-0ubuntu1.16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-8-jdk/copyright`, `/usr/share/doc/openjdk-8-jdk-headless/copyright`, `/usr/share/doc/openjdk-8-jre/copyright`, `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 
@@ -3800,9 +3805,14 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jdk/copyright`, `/usr/share/do
 - `LGPL-2`
 - `LGPL-2-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openjdk-8=8u212-b03-0ubuntu1.16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u212-b03-0ubuntu1.16.04.1.dsc' openjdk-8_8u212-b03-0ubuntu1.16.04.1.dsc 4718 SHA256:ff277f83b2433dfe1a72059ff2b6fa500172418451f5c6f316818150faa344b7
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u212-b03.orig.tar.xz' openjdk-8_8u212-b03.orig.tar.xz 70845512 SHA256:5d632686ff7c52ff4399866971f864485755e5a5058e3123b8a36adc4170d6f2
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u212-b03-0ubuntu1.16.04.1.debian.tar.xz' openjdk-8_8u212-b03-0ubuntu1.16.04.1.debian.tar.xz 240708 SHA256:d6fc34eedf598fc7ab3ff2d18dc68162fdadefe315d8be3fc9dc128203b1e23e
+```
 
 ### `dpkg` source package: `openjpeg=1:1.5.2-3.1`
 
