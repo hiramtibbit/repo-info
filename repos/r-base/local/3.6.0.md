@@ -490,16 +490,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris curl=7.64.0-2
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.64.0-2.dsc' curl_7.64.0-2.dsc 2687 SHA256:6997fa959166f0fdf5545313d307b453970c271df3d135accbbe08773fa3cbc2
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.64.0.orig.tar.gz' curl_7.64.0.orig.tar.gz 4032645 SHA256:cb90d2eb74d4e358c1ed1489f8e3af96b50ea4374ad71f143fa4595e998d81b5
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.64.0-2.debian.tar.xz' curl_7.64.0-2.debian.tar.xz 29696 SHA256:6173fb436e8bcea616e9bfc29eaddb25498b3a95cd5451d4cef83d957217fabe
+'http://http.debian.net/debian/pool/main/c/curl/curl_7.64.0-2.dsc' curl_7.64.0-2.dsc 2687 SHA256:6997fa959166f0fdf5545313d307b453970c271df3d135accbbe08773fa3cbc2
+'http://http.debian.net/debian/pool/main/c/curl/curl_7.64.0.orig.tar.gz' curl_7.64.0.orig.tar.gz 4032645 SHA256:cb90d2eb74d4e358c1ed1489f8e3af96b50ea4374ad71f143fa4595e998d81b5
+'http://http.debian.net/debian/pool/main/c/curl/curl_7.64.0-2.debian.tar.xz' curl_7.64.0-2.debian.tar.xz 29696 SHA256:6173fb436e8bcea616e9bfc29eaddb25498b3a95cd5451d4cef83d957217fabe
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/curl/7.64.0-2/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.64.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.64.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-1`
 
@@ -2687,14 +2681,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `X11`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.19.37-1
-'http://http.debian.net/debian/pool/main/l/linux/linux_4.19.37-1.dsc' linux_4.19.37-1.dsc 189124 SHA256:9c5669e4bad68247a5d98e4cc1998cb851925f960497795149e45bf7b586faff
-'http://http.debian.net/debian/pool/main/l/linux/linux_4.19.37.orig.tar.xz' linux_4.19.37.orig.tar.xz 107198588 SHA256:04be08391496ff96f52459f9992e36eeb8c5edc2980e43a08c20b68d945a3af1
-'http://http.debian.net/debian/pool/main/l/linux/linux_4.19.37-1.debian.tar.xz' linux_4.19.37-1.debian.tar.xz 1196488 SHA256:239e2359ef25d1e31d048b291ea9b6e2180f69b727003758964e8cdf4f32061d
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/linux/4.19.37-1/
+
 
 ### `dpkg` source package: `littler=0.3.7-2`
 
