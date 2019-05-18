@@ -1,7 +1,7 @@
 ## `openjdk:7u211-jdk-alpine`
 
 ```console
-$ docker pull openjdk@sha256:a069e34e1837f964370bb97ced137496759e65d6413bd086f52878176e7ba6e4
+$ docker pull openjdk@sha256:4bec1e2239aed1894ab9d8eea1b202f400356a59d07b0f31f936fb262b3dc2f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -161,14 +161,14 @@ RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 ### `openjdk:7u211-jdk-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull openjdk@sha256:6e48538525e0fe3363b461e5ad321d96ad59494ce96071b61e25f2bf8bc1c39d
+$ docker pull openjdk@sha256:1959137c3c6582bb12dedd0fd272e9f91a92c33238515da89cac536a6751c274
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.9 MB (80901500 bytes)**  
+-	Total Size: **80.9 MB (80901533 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c547b4ec27b524514515389c3cfbaf70d9b5921f0c816a7a48965133770b7c98`
+-	Image ID: `sha256:2686f09cbbf5a0cba4b00906c9b1186013e5ab4c192c92c3517b6ff792a87f3c`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -176,19 +176,19 @@ $ docker pull openjdk@sha256:6e48538525e0fe3363b461e5ad321d96ad59494ce96071b61e2
 ADD file:66f49017dd7ba295602526dbf210046e47fd097298c17a3f268a47487b5b6379 in / 
 # Sat, 11 May 2019 08:43:25 GMT
 CMD ["/bin/sh"]
-# Sat, 11 May 2019 09:18:27 GMT
+# Fri, 17 May 2019 22:50:23 GMT
 ENV LANG=C.UTF-8
-# Sat, 11 May 2019 09:18:29 GMT
+# Fri, 17 May 2019 22:50:24 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Sat, 11 May 2019 09:19:09 GMT
+# Fri, 17 May 2019 22:52:44 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.7-openjdk
-# Sat, 11 May 2019 09:19:10 GMT
+# Fri, 17 May 2019 22:52:45 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.7-openjdk/jre/bin:/usr/lib/jvm/java-1.7-openjdk/bin
-# Sat, 11 May 2019 09:19:11 GMT
+# Fri, 17 May 2019 22:52:45 GMT
 ENV JAVA_VERSION=7u211
-# Sat, 11 May 2019 09:19:12 GMT
+# Fri, 17 May 2019 22:52:45 GMT
 ENV JAVA_ALPINE_VERSION=7.211.2.6.17-r0
-# Sat, 11 May 2019 09:19:29 GMT
+# Fri, 17 May 2019 22:52:52 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
@@ -197,13 +197,13 @@ RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 		Last Modified: Sat, 11 May 2019 08:44:25 GMT  
 		Size: 2.7 MB (2688779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ca2cc770c6ebbe90978672d360accf2434f83f9f0339ecd592224d794d5e35e`  
-		Last Modified: Sat, 11 May 2019 09:21:04 GMT  
-		Size: 237.0 B  
+	-	`sha256:571218f61883d9b38dc66005a4777e0cf86a05d2a7c570efe58f952c28f6737a`  
+		Last Modified: Fri, 17 May 2019 22:59:21 GMT  
+		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:766b9da0247eccf351064a4a4c555f605427261bf327756f71cd133d088444ea`  
-		Last Modified: Sat, 11 May 2019 09:22:25 GMT  
-		Size: 78.2 MB (78212484 bytes)  
+	-	`sha256:b94a320aeef5f7caa82c524cb00c20348d35d9d1335aceee76cfa2c96f203bbc`  
+		Last Modified: Fri, 17 May 2019 23:01:24 GMT  
+		Size: 78.2 MB (78212515 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:7u211-jdk-alpine` - linux; 386
