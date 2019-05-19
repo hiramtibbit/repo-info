@@ -26,6 +26,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls acl-2.2.53-3.fc30
+http://mirror.stavlor.net/pub/fedora/linux/development/rawhide/Everything/x86_64/os/repodata/repomd.xml: [Errno -1] repomd.xml does not match metalink for rawhide
+Trying other mirror.
 Enabling rawhide-source repository
 Enabling rawhide-modular-source repository
 https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/a/acl-2.2.53-3.fc30.src.rpm
@@ -341,27 +343,13 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Every
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls fedora-release-common-31-0.5.noarch
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/f/fedora-release-31-0.5.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `fedora-release-container-31-0.5.noarch`
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls fedora-release-container-31-0.5.noarch
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/f/fedora-release-31-0.5.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `fedora-repos-31-0.2.noarch`
 

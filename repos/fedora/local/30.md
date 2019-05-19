@@ -30,8 +30,6 @@ Enabling fedora-modular-source repository
 Enabling updates-source repository
 Enabling updates-modular-source repository
 Enabling fedora-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/releases/30/Everything/source/tree/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
-Trying other mirror.
 https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/releases/30/Everything/source/tree//Packages/a/acl-2.2.53-3.fc30.src.rpm
 ```
 
