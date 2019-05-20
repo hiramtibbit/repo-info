@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3bb3876ea238ca08885caf0d8f8e0a4e9fbc65b7568ee6985fef34a18934c746`
-- Created: `2019-05-11T04:47:25.790619021Z`
-- Virtual Size: ~ 90.05 Mb  
+- Image ID: `sha256:f979cb65f069ab286dc8a8a13081fa11c37c69ab0da118a0b48a74fa50493a33`
+- Created: `2019-05-17T01:25:47.238042916Z`
+- Virtual Size: ~ 98.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,11 +17,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
-  - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 1729F83938DA44E27BA0F4D3DBDB397470D12172`
-  - `PHP_VERSION=7.1.29`
-  - `PHP_URL=https://www.php.net/get/php-7.1.29.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://www.php.net/get/php-7.1.29.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=b9a9b094687edc2d9c9553d5531e38e249b569127cf3b32fe1c84280509746fb`
+  - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
+  - `PHP_VERSION=7.2.18`
+  - `PHP_URL=https://www.php.net/get/php-7.2.18.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://www.php.net/get/php-7.2.18.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=9970dbb3ab1298c9e6aac54bebfa841c8ad14b18eead65594a68fa841364cb8d`
   - `PHP_MD5=`
   - `DRUPAL_VERSION=7.67`
   - `DRUPAL_MD5=78b1814e55fdaf40e753fd523d059f8d`
@@ -76,6 +76,23 @@ apk-tools-2.10.3-r1 installed size:
 
 apk-tools-2.10.3-r1 license:
 GPL2
+
+```
+
+### `apk` package: `argon2-libs`
+
+```console
+argon2-libs-20171227-r1 description:
+The password hash Argon2, winner of PHC (libraries)
+
+argon2-libs-20171227-r1 webpage:
+https://github.com/P-H-C/phc-winner-argon2
+
+argon2-libs-20171227-r1 installed size:
+49152
+
+argon2-libs-20171227-r1 license:
+Apache-2.0 CC0-1.0
 
 ```
 
@@ -320,16 +337,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-11.2-r0 description:
+libpq-11.3-r0 description:
 PostgreSQL libraries
 
-libpq-11.2-r0 webpage:
+libpq-11.3-r0 webpage:
 https://www.postgresql.org/
 
-libpq-11.2-r0 installed size:
+libpq-11.3-r0 installed size:
 315392
 
-libpq-11.2-r0 license:
+libpq-11.3-r0 license:
 PostgreSQL
 
 ```
@@ -348,6 +365,23 @@ libsasl-2.1.27-r1 installed size:
 
 libsasl-2.1.27-r1 license:
 custom
+
+```
+
+### `apk` package: `libsodium`
+
+```console
+libsodium-1.0.16-r0 description:
+P(ortable|ackageable) NaCl-based crypto library
+
+libsodium-1.0.16-r0 webpage:
+https://github.com/jedisct1/libsodium
+
+libsodium-1.0.16-r0 installed size:
+327680
+
+libsodium-1.0.16-r0 license:
+ISC
 
 ```
 
