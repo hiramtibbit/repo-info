@@ -1,15 +1,15 @@
-# `haskell:8.6.3`
+# `haskell:8.6.5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8a48a6792e8a1069ea27336040306ba4f7f7cc8ffa19648c31932af5b22780b5`
-- Created: `2019-05-08T02:20:34.07853183Z`
+- Image ID: `sha256:59a6b912e8731ac7b7a895a335d81bc19dc1a9fdbff211ae8d39a9711ceb021f`
+- Created: `2019-05-20T21:20:39.355874867Z`
 - Virtual Size: ~ 1.26 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["ghci"]`
 - Environment:
-  - `PATH=/root/.cabal/bin:/root/.local/bin:/opt/cabal/2.4/bin:/opt/ghc/8.6.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/root/.cabal/bin:/root/.local/bin:/opt/cabal/2.4/bin:/opt/ghc/8.6.5/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
 
 ## `dpkg` (`.deb`-based packages)
@@ -806,23 +806,23 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.8.3-14/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.8.3-14/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ghc-8.6.3=8.6.3-9~deb9`
+### `dpkg` source package: `ghc-8.6.5=8.6.5-9~deb9`
 
 Binary Packages:
 
-- `ghc-8.6.3=8.6.3-9~deb9`
+- `ghc-8.6.5=8.6.5-9~deb9`
 
-Licenses: (parsed from: `/usr/share/doc/ghc-8.6.3/copyright`)
+Licenses: (parsed from: `/usr/share/doc/ghc-8.6.5/copyright`)
 
 - `BSD-3-Clause`
 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ghc-8.6.3=8.6.3-9~deb9
-'http://downloads.haskell.org/debian/pool/main/g/ghc-8.6.3/ghc-8.6.3_8.6.3-9~deb9.dsc' ghc-8.6.3_8.6.3-9~deb9.dsc 2084 SHA256:c02824af39a3463684f458afbf1e824249d45552c8525b84e5bdc97b07f8bd44
-'http://downloads.haskell.org/debian/pool/main/g/ghc-8.6.3/ghc-8.6.3_8.6.3.orig.tar.xz' ghc-8.6.3_8.6.3.orig.tar.xz 19138116 SHA256:9f9e37b7971935d88ba80426c36af14b1e0b3ec1d9c860f44a4391771bc07f23
-'http://downloads.haskell.org/debian/pool/main/g/ghc-8.6.3/ghc-8.6.3_8.6.3-9~deb9.debian.tar.xz' ghc-8.6.3_8.6.3-9~deb9.debian.tar.xz 6096 SHA256:7131a6667fe7f88fc3720cf7fa3b429e4bf3673b6ac3751fd76bff5c42675b30
+$ apt-get source -qq --print-uris ghc-8.6.5=8.6.5-9~deb9
+'http://downloads.haskell.org/debian/pool/main/g/ghc-8.6.5/ghc-8.6.5_8.6.5-9~deb9.dsc' ghc-8.6.5_8.6.5-9~deb9.dsc 2100 SHA256:eda45f7b7e7f7cc35d3ce7e63baf6c086c27487b11837304d6bb7825f4c06634
+'http://downloads.haskell.org/debian/pool/main/g/ghc-8.6.5/ghc-8.6.5_8.6.5.orig.tar.xz' ghc-8.6.5_8.6.5.orig.tar.xz 18957948 SHA256:f8e51d0651717fe00567b808f0b03aaf86720699f3d975a220a51101acb13390
+'http://downloads.haskell.org/debian/pool/main/g/ghc-8.6.5/ghc-8.6.5_8.6.5-9~deb9.debian.tar.xz' ghc-8.6.5_8.6.5-9~deb9.debian.tar.xz 6504 SHA256:1e18330251f18cea44d273e8ab3a7a3f319f8f1c6116e10adfbb7667c8f7ea08
 ```
 
 ### `dpkg` source package: `git=1:2.11.0-3+deb9u4`
@@ -1764,11 +1764,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libunistring/0.9.6+really0.9.3-0.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libunistring/0.9.6+really0.9.3-0.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=4.9.168-1`
+### `dpkg` source package: `linux=4.9.168-1+deb9u2`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.9.168-1`
+- `linux-libc-dev:amd64=4.9.168-1+deb9u2`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1781,17 +1781,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.9.168-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.168-1.dsc' linux_4.9.168-1.dsc 123355 SHA256:de77aa221fa4c7db1cf995cb6a5b25784489ddcbba98d82b55fa24fadd4f0969
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.168.orig.tar.xz' linux_4.9.168.orig.tar.xz 94774584 SHA256:8a2c04045b47472584fc8e72d8663b5c720b8ba5efba878f48ddba93bac29a7f
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.168-1.debian.tar.xz' linux_4.9.168-1.debian.tar.xz 2670296 SHA256:b0cd27aaf68066b9594e31dea165ba885b7b6ef238416084215a57c03e07fa4a
+$ apt-get source -qq --print-uris linux=4.9.168-1+deb9u2
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.168-1+deb9u2.dsc' linux_4.9.168-1+deb9u2.dsc 123228 SHA256:9ff4ff71bc5a3f087fef7e4201a8448040f84035a1298ad01a8f5d6fe5192795
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.168.orig.tar.xz' linux_4.9.168.orig.tar.xz 94774584 SHA256:8a2c04045b47472584fc8e72d8663b5c720b8ba5efba878f48ddba93bac29a7f
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.168-1+deb9u2.debian.tar.xz' linux_4.9.168-1+deb9u2.debian.tar.xz 2732028 SHA256:b909b4c1feb633d1d458d0fd80b96698d97d12fc790fa56a1398a951585d631a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/4.9.168-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.9.168-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.9.168-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/4.9.168-1+deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.9.168-1+deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.9.168-1+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=9.20161125`
 
