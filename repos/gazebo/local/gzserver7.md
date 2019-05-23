@@ -481,14 +481,9 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/lib
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.12
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.12.dsc' curl_7.47.0-1ubuntu2.12.dsc 2733 SHA256:b8116f68c766cb9a26c6569d728105257eef413d68b0357e5817ccabc57adaaa
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0.orig.tar.gz' curl_7.47.0.orig.tar.gz 4563163 SHA256:df01bd42af361978d9de7de8529718bcafe01897a544a7650139a1954c55bdfe
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.12.debian.tar.xz' curl_7.47.0-1ubuntu2.12.debian.tar.xz 54708 SHA256:cb2eed19893dc48fa320216160b0fceba2488a6052d9c50f532feb3d26544946
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-14ubuntu0.1`
 
@@ -2366,14 +2361,9 @@ Licenses: (parsed from: `/usr/share/doc/libraw15/copyright`)
 - `LibRaw`
 - `dcraw`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libraw=0.17.1-1ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.17.1-1ubuntu0.4.dsc' libraw_0.17.1-1ubuntu0.4.dsc 1984 SHA256:6b472b35dcd265de011d2249acad643e7afde4db088aa757fa6cbac193779152
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.17.1.orig.tar.gz' libraw_0.17.1.orig.tar.gz 689407 SHA256:dd07861ea3b9739c61c50d5e8a5dfedd738f4765962104c120dd8ea2dc2e3491
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.17.1-1ubuntu0.4.debian.tar.xz' libraw_0.17.1-1ubuntu0.4.debian.tar.xz 37088 SHA256:167ae3ba8734877049ad57e6107a29f9b4e143de935ae3771fd6befac9e31781
-```
 
 ### `dpkg` source package: `libseccomp=2.3.1-2.1ubuntu2~16.04.1`
 

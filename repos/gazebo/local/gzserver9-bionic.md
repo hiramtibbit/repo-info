@@ -628,14 +628,9 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.58.0-2ubuntu3.6
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.6.dsc' curl_7.58.0-2ubuntu3.6.dsc 2777 SHA256:3d8a674d0cc808754fe21084111f1d3a6e5b7367af1ac28187732d51932b6903
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0.orig.tar.gz' curl_7.58.0.orig.tar.gz 3879728 SHA256:cc245bf9a1a42a45df491501d97d5593392a03f7b4f07b952793518d97666115
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.6.debian.tar.xz' curl_7.58.0-2ubuntu3.6.debian.tar.xz 39016 SHA256:2a3f6c3b67ec81beed238db2e20a6a70d0b02987c35d5e51bde43ea1830a243c
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2`
 
@@ -3415,14 +3410,9 @@ Licenses: (parsed from: `/usr/share/doc/libraw16/copyright`)
 - `LGPL-2.1`
 - `dcraw`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libraw=0.18.8-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.18.8-1ubuntu0.2.dsc' libraw_0.18.8-1ubuntu0.2.dsc 1986 SHA256:824667a6ae1923101674ab42881ab08550b627d98ed92cb3eb35a80a0dea788e
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.18.8.orig.tar.gz' libraw_0.18.8.orig.tar.gz 519442 SHA256:5edf25d32c300a1081fba8b6ded9e47cbb8a8330dde4a23806f64884a1e46d64
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.18.8-1ubuntu0.2.debian.tar.xz' libraw_0.18.8-1ubuntu0.2.debian.tar.xz 26172 SHA256:9ae55780b37412eb7093fa517061b2836413aad2fcef3faae294520e0e28300a
-```
 
 ### `dpkg` source package: `librest=0.8.0-2`
 
