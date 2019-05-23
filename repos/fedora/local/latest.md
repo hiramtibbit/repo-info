@@ -141,31 +141,13 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/releases/29/Everything/so
 
 Licenses (from `rpm --query`): GPLv3+
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls coreutils-8.30-6.fc29
-Enabling fedora-modular-source repository
-Enabling updates-source repository
-Enabling updates-modular-source repository
-Enabling fedora-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/SRPMS//Packages/c/coreutils-8.30-6.fc29.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `coreutils-common-8.30-6.fc29.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls coreutils-common-8.30-6.fc29
-Enabling fedora-modular-source repository
-Enabling updates-source repository
-Enabling updates-modular-source repository
-Enabling fedora-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/SRPMS//Packages/c/coreutils-8.30-6.fc29.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `cracklib-2.9.6-15.fc29.x86_64`
 

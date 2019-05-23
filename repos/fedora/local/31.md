@@ -26,6 +26,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls acl-2.2.53-3.fc30
+http://mirror.stavlor.net/pub/fedora/linux/development/rawhide/Everything/x86_64/os/repodata/repomd.xml: [Errno -1] repomd.xml does not match metalink for rawhide
+Trying other mirror.
 Enabling rawhide-source repository
 Enabling rawhide-modular-source repository
 https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/a/acl-2.2.53-3.fc30.src.rpm
@@ -202,14 +204,7 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Every
 
 Licenses (from `rpm --query`): (GPLv2+ or AFL) and GPLv2+
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls dbus-1.12.12-7.fc31
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/d/dbus-1.12.12-7.fc31.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `dbus-broker-20-4.fc31.x86_64`
 
@@ -221,27 +216,13 @@ Licenses (from `rpm --query`): ASL 2.0
 
 Licenses (from `rpm --query`): (GPLv2+ or AFL) and GPLv2+
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls dbus-common-1.12.12-7.fc31.noarch
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/d/dbus-1.12.12-7.fc31.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `dbus-libs-1.12.12-7.fc31.x86_64`
 
 Licenses (from `rpm --query`): (GPLv2+ or AFL) and GPLv2+
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls dbus-libs-1.12.12-7.fc31
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/d/dbus-1.12.12-7.fc31.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `deltarpm-3.6-30.fc31.x86_64`
 
@@ -379,14 +360,7 @@ https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Every
 
 Licenses (from `rpm --query`): BSD
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls file-libs-5.36-2.fc31
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/f/file-5.36-2.fc31.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `filesystem-3.10-1.fc30.x86_64`
 
@@ -1770,14 +1744,7 @@ Licenses (from `rpm --query`): GPLv2+ and GPLv2 and GPL
 
 Licenses (from `rpm --query`): BSD and MIT
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls zchunk-libs-1.1.1-3.fc31
-Enabling rawhide-source repository
-Enabling rawhide-modular-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/development/rawhide/Everything/source/tree//Packages/z/zchunk-1.1.1-3.fc31.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `zlib-1.2.11-15.fc30.x86_64`
 
