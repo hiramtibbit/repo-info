@@ -484,14 +484,9 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.58.0-2ubuntu3.6
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.6.dsc' curl_7.58.0-2ubuntu3.6.dsc 2777 SHA256:3d8a674d0cc808754fe21084111f1d3a6e5b7367af1ac28187732d51932b6903
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0.orig.tar.gz' curl_7.58.0.orig.tar.gz 3879728 SHA256:cc245bf9a1a42a45df491501d97d5593392a03f7b4f07b952793518d97666115
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.6.debian.tar.xz' curl_7.58.0-2ubuntu3.6.debian.tar.xz 39016 SHA256:2a3f6c3b67ec81beed238db2e20a6a70d0b02987c35d5e51bde43ea1830a243c
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2`
 
@@ -3228,14 +3223,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-catkin-pkg-modules=0.4.11-1
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.4.11-1.debian.tar.xz' python3-catkin-pkg-modules_0.4.11-1.debian.tar.xz 1916 SHA512:da8c31f3ce7fe38434d7a215ff0cd42e8126023c37f7e2c6957e551c202b1158aa42f2b00b5a4676337ebd4c6c62fc671b62b28835a0836a324e843fe87daf41
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.4.11-1.dsc' python3-catkin-pkg-modules_0.4.11-1.dsc 1037 SHA512:65de0bcb01ad3f953e1b330cdb0582c59e3027caa7f4aca2152afe80c87dcfadfc5e16c831deb2b4b3d15d308a033577673dabbc519a2dbcdc4ac5fcfbb45f56
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.4.11.orig.tar.gz' python3-catkin-pkg-modules_0.4.11.orig.tar.gz 58831 SHA512:544baca1b97211dfc5ce0fa90124a7a89921c7adf06fe227991df6290260fef9c6b621bb700ed99601f0710ab4c858c9b152d8323abc9390b63709a29ff3e26e
-```
 
 ### `dpkg` source package: `python3-catkin-pkg=0.4.11-100`
 
@@ -3247,14 +3237,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-catkin-pkg=0.4.11-100
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg/python3-catkin-pkg_0.4.11-100.debian.tar.xz' python3-catkin-pkg_0.4.11-100.debian.tar.xz 1900 SHA512:f556f017bcfa3c69b9b62629fbc549bed70f836fefb3bd566e30728c6a7728bb50b607e3d464b70be2a174d3c4eb4f1c4eaab474d0b1aba096f2f8b842d5d650
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg/python3-catkin-pkg_0.4.11-100.dsc' python3-catkin-pkg_0.4.11-100.dsc 973 SHA512:1a49b7ea28685a8ae8451d6987fce1b0713a69cf2421e62f7a41807a4b0bf09cd7deb5c0abc64e01388e8f5a69828dd895295088a204fb7bbc3c54a70c35e85e
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg/python3-catkin-pkg_0.4.11.orig.tar.gz' python3-catkin-pkg_0.4.11.orig.tar.gz 13295 SHA512:cfd1ea3b9096636e266c809c4ba717e79d59576733fc828213e833c857f736adf7d0f44323f2b8a16e8b12e93da211cfb8e89d3c0a9bda752294e42d645180bc
-```
 
 ### `dpkg` source package: `python3-defaults=3.6.7-1~18.04`
 
@@ -3288,14 +3273,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-rosdep=0.15.1-1
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdep/python3-rosdep_0.15.1-1.debian.tar.xz' python3-rosdep_0.15.1-1.debian.tar.xz 1972 SHA512:def98b060d649a17f4ffbc063efb10d9467c78a2dbe5d83813126265223d98ee05513bfa1fdb9b08398add01188700fad3f3f711407d770d2666076b17c5c08c
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdep/python3-rosdep_0.15.1-1.dsc' python3-rosdep_0.15.1-1.dsc 892 SHA512:d1c2b9a6e27fadfd979288b3443a3c9cc8e682545cf561123695ffc015e85dc4c65df6a53504f91701bd52067d2d20baafdebfc24f8432af93f6691784f191a5
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdep/python3-rosdep_0.15.1.orig.tar.gz' python3-rosdep_0.15.1.orig.tar.gz 80364 SHA512:d6e5611abb80a65b223515612d9796bbd892d6bdc24ad1423be82feb0f08dd40aea341ab846d8fa7ef0355dcedb41c0067aed7a04d8969e7a4d3e0006ecd1a22
-```
 
 ### `dpkg` source package: `python3-rosdistro-modules=0.7.3-1`
 
@@ -3307,14 +3287,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-rosdistro-modules=0.7.3-1
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdistro-modules/python3-rosdistro-modules_0.7.3-1.debian.tar.xz' python3-rosdistro-modules_0.7.3-1.debian.tar.xz 1892 SHA512:b4ae01880e5e1a52f8579cef08c22f9930dac42adc1edb24b61f677dda0726a28615f799a8aa80e78d138c7ebe4915e61a5c19cd0174163e2b88997eb78ba737
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdistro-modules/python3-rosdistro-modules_0.7.3-1.dsc' python3-rosdistro-modules_0.7.3-1.dsc 1020 SHA512:a10319069e139f1b2448ad78aa77e839c2218ce4e730db70ba590afa3684313d48a3bb9aa3f10fc59a90de45951a2a0715d274b5b8f7b86f95a7d56ad9487db7
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdistro-modules/python3-rosdistro-modules_0.7.3.orig.tar.gz' python3-rosdistro-modules_0.7.3.orig.tar.gz 41784 SHA512:441cc8e127e4380b54cf0ddfbdbfcce5746a765bf517584ba93f297edcc2699c8e143498e0a789782398152c772b12a3e74690723087c6752719e8b2d716ddd7
-```
 
 ### `dpkg` source package: `python3-rosdistro=0.7.3-100`
 
@@ -3326,14 +3301,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-rosdistro=0.7.3-100
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdistro/python3-rosdistro_0.7.3-100.debian.tar.xz' python3-rosdistro_0.7.3-100.debian.tar.xz 1868 SHA512:72025ba73b5d9ac6a80940532f1d26536d133ee7e3324a746dcad83a83baa0a43978e33d20b4f5cebf8bd30f46dfed69edac8c8dec15a65a3f15c58a631b3c66
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdistro/python3-rosdistro_0.7.3-100.dsc' python3-rosdistro_0.7.3-100.dsc 956 SHA512:26aca0655678982bc820e22adc16fa52edfa1cbc0013ada57de9fc8abab3b18070b39e0b3f8aeaa90928bfbf7045ef65027d5e791a87c509bb6fb2ee979bf715
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdistro/python3-rosdistro_0.7.3.orig.tar.gz' python3-rosdistro_0.7.3.orig.tar.gz 10100 SHA512:a15022e379eafdee8ca674fd11389a4c094501ead98e8c02dbbf58665b27af73cc1b81be181e46dacec9e949f10a06b39b71cbbf7ab1786578fb28b8d2397b20
-```
 
 ### `dpkg` source package: `python3-rosinstall=0.7.8-1`
 
