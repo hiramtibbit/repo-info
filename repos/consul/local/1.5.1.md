@@ -1,17 +1,17 @@
-# `consul:1.5.0`
+# `consul:1.5.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cda2583339c953f14b810f55a46486332cae334db4e30a667668e9b2dfc42b5e`
-- Created: `2019-05-11T01:39:44.208231966Z`
-- Virtual Size: ~ 112.51 Mb  
+- Image ID: `sha256:f136343b75e00664a7aa4c477a6d1e7b40a9708610fb6e483e884e0cce691599`
+- Created: `2019-05-23T22:20:02.379676749Z`
+- Virtual Size: ~ 112.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["agent","-dev","-client","0.0.0.0"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `CONSUL_VERSION=1.5.0`
+  - `CONSUL_VERSION=1.5.1`
   - `HASHICORP_RELEASES=https://releases.hashicorp.com`
 
 ## `apk` (`.apk`-based packages)
