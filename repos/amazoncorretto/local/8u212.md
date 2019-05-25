@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:68fe666c02f585e287fb583e38667aab6d830fb49319ff7b2a0b27c06ecda55d`
-- Created: `2019-04-22T22:24:37.32379224Z`
-- Virtual Size: ~ 389.02 Mb  
+- Image ID: `sha256:d228f0cf0d7c1607630a7ee9a4bad477e1c10b2fe6c61857e2afe16063cd897d`
+- Created: `2019-05-23T22:40:06.050546016Z`
+- Virtual Size: ~ 388.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -182,16 +182,16 @@ Enabling amzn2-core-source repository
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff87665a62cc5948a1cd4053f53cb5b8ead32d2723500a76158e979785f0bb2e//../../../../../blobstore/30e81d08a981ae5caa8ccc5271ffe5f181b70fbf4286fe3c5adf24e81a52d5b9/file-5.11-33.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `filesystem-3.2-25.amzn2.x86_64`
+### `rpm` package: `filesystem-3.2-25.amzn2.0.4.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls filesystem-3.2-25.amzn2
+$ yumdownloader --quiet --source --urls filesystem-3.2-25.amzn2.0.4
 Enabling amzn2-core-source repository
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff87665a62cc5948a1cd4053f53cb5b8ead32d2723500a76158e979785f0bb2e//../../../../../blobstore/4c05706dde1068d3ce1b1b8f04a081004d99fe71846b7afc5b42f320fa6215f5/filesystem-3.2-25.amzn2.src.rpm
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff87665a62cc5948a1cd4053f53cb5b8ead32d2723500a76158e979785f0bb2e//../../../../../blobstore/c1bdb520a838326c15c1c86b0a1314c9e44f7689de956010d7a8e4bfda7d34e4/filesystem-3.2-25.amzn2.0.4.src.rpm
 ```
 
 ### `rpm` package: `findutils-4.5.11-5.amzn2.0.2.x86_64`
@@ -338,16 +338,16 @@ Enabling amzn2-core-source repository
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff87665a62cc5948a1cd4053f53cb5b8ead32d2723500a76158e979785f0bb2e//../../../../../blobstore/712fffd161eb394310f7fe5f7d41ae2aae07cdcce27ca119bf04c6f056eb2b4d/gmp-6.0.0-15.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `gnupg2-2.0.22-5.amzn2.0.2.x86_64`
+### `rpm` package: `gnupg2-2.0.22-5.amzn2.0.3.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls gnupg2-2.0.22-5.amzn2.0.2
+$ yumdownloader --quiet --source --urls gnupg2-2.0.22-5.amzn2.0.3
 Enabling amzn2-core-source repository
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff87665a62cc5948a1cd4053f53cb5b8ead32d2723500a76158e979785f0bb2e//../../../../../blobstore/acecef76ff4bca479390747cc9ea36ec3a6c855ac89951228f4183d2dea1fb31/gnupg2-2.0.22-5.amzn2.0.2.src.rpm
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff87665a62cc5948a1cd4053f53cb5b8ead32d2723500a76158e979785f0bb2e//../../../../../blobstore/1462513d101ab1acbeb7c849948ebaeaa282316958d94c0bb97b5fbcdd752199/gnupg2-2.0.22-5.amzn2.0.3.src.rpm
 ```
 
 ### `rpm` package: `gpg-pubkey-c87f5b1a-593863f8`
@@ -668,16 +668,16 @@ Enabling amzn2-core-source repository
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff87665a62cc5948a1cd4053f53cb5b8ead32d2723500a76158e979785f0bb2e//../../../../../blobstore/c5597168fd76decdd14b8c307ea2ab87a22f7e2236cf9c2ff4cf438c0e6d4120/libsepol-2.5-8.1.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `libssh2-1.4.3-10.amzn2.1.2.x86_64`
+### `rpm` package: `libssh2-1.4.3-12.amzn2.2.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls libssh2-1.4.3-10.amzn2.1.2
+$ yumdownloader --quiet --source --urls libssh2-1.4.3-12.amzn2.2
 Enabling amzn2-core-source repository
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff87665a62cc5948a1cd4053f53cb5b8ead32d2723500a76158e979785f0bb2e//../../../../../blobstore/2acabb68634ef834bedc5ee164e97ddaa34b63b40465aada989934d8c4785cf1/libssh2-1.4.3-10.amzn2.1.2.src.rpm
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff87665a62cc5948a1cd4053f53cb5b8ead32d2723500a76158e979785f0bb2e//../../../../../blobstore/3a86a173497e04526f9194ee921635e477aae7945e16e5b612e5a22c70f3dc92/libssh2-1.4.3-12.amzn2.2.src.rpm
 ```
 
 ### `rpm` package: `libstdc++-7.3.1-5.amzn2.0.2.x86_64`
@@ -908,16 +908,16 @@ Enabling amzn2-core-source repository
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff87665a62cc5948a1cd4053f53cb5b8ead32d2723500a76158e979785f0bb2e//../../../../../blobstore/bb1f52cc8ca35d8145c9e154219a62a0a2c8c02f3252917b27c8ab176f7e368a/openldap-2.4.44-15.amzn2.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-1.0.2k-16.amzn2.0.3.x86_64`
+### `rpm` package: `openssl-libs-1.0.2k-16.amzn2.1.1.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls openssl-libs-1.0.2k-16.amzn2.0.3
+$ yumdownloader --quiet --source --urls openssl-libs-1.0.2k-16.amzn2.1.1
 Enabling amzn2-core-source repository
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff87665a62cc5948a1cd4053f53cb5b8ead32d2723500a76158e979785f0bb2e//../../../../../blobstore/149928a265d4b8f95367268a0b41265e1c0fe09016cdf0a77e0978d2c32e7763/openssl-1.0.2k-16.amzn2.0.3.src.rpm
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff87665a62cc5948a1cd4053f53cb5b8ead32d2723500a76158e979785f0bb2e//../../../../../blobstore/b0bffb0cde10d8215b67a0d4f1a67684cf205c2187583909a8fd6434a4fcced8/openssl-1.0.2k-16.amzn2.1.1.src.rpm
 ```
 
 ### `rpm` package: `p11-kit-0.23.5-3.amzn2.0.2.x86_64`
@@ -1208,16 +1208,16 @@ Enabling amzn2-core-source repository
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff87665a62cc5948a1cd4053f53cb5b8ead32d2723500a76158e979785f0bb2e//../../../../../blobstore/72039a43e5d5bd5baf823298b26ccbb71e5e29a12c135010c2c11e4ed99daa13/stix-fonts-1.1.0-5.amzn2.src.rpm
 ```
 
-### `rpm` package: `system-release-2-7.amzn2.x86_64`
+### `rpm` package: `system-release-2-10.amzn2.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls system-release-2-7.amzn2
+$ yumdownloader --quiet --source --urls system-release-2-10.amzn2
 Enabling amzn2-core-source repository
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff87665a62cc5948a1cd4053f53cb5b8ead32d2723500a76158e979785f0bb2e//../../../../../blobstore/55e7487047365eac29d01ca03f2d0f5177872ea20348db8b1d69ef0b7c1f88e5/system-release-2-7.amzn2.src.rpm
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff87665a62cc5948a1cd4053f53cb5b8ead32d2723500a76158e979785f0bb2e//../../../../../blobstore/7f90b1b3cf49935cdf415c8d59278d5b1e74d4a1215e0f643c621aa845acf59a/system-release-2-10.amzn2.src.rpm
 ```
 
 ### `rpm` package: `tzdata-2018i-1.amzn2.noarch`
