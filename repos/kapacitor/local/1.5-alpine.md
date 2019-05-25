@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5e313de93f58fb667c7dd3d1c5e049b10ca05976e2d5c3deebb225b983937fbf`
-- Created: `2019-03-08T00:47:16.019941165Z`
-- Virtual Size: ~ 72.46 Mb  
+- Image ID: `sha256:7e4bfe3ffd9c4c28b05f5f0323af74261a33e98f142a1ea30b850a4ecb07da38`
+- Created: `2019-05-24T22:32:04.734338841Z`
+- Virtual Size: ~ 73.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -18,16 +18,16 @@
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.1.0-r0 description:
+alpine-baselayout-3.1.0-r3 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.1.0-r0 webpage:
+alpine-baselayout-3.1.0-r3 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.1.0-r0 installed size:
-397312
+alpine-baselayout-3.1.0-r3 installed size:
+409600
 
-alpine-baselayout-3.1.0-r0 license:
+alpine-baselayout-3.1.0-r3 license:
 GPL-2.0
 
 ```
@@ -52,16 +52,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.10.1-r0 description:
+apk-tools-2.10.3-r1 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.10.1-r0 webpage:
+apk-tools-2.10.3-r1 webpage:
 https://git.alpinelinux.org/cgit/apk-tools/
 
-apk-tools-2.10.1-r0 installed size:
+apk-tools-2.10.3-r1 installed size:
 262144
 
-apk-tools-2.10.1-r0 license:
+apk-tools-2.10.3-r1 license:
 GPL2
 
 ```
@@ -69,16 +69,16 @@ GPL2
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.28.4-r3 description:
+busybox-1.29.3-r10 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.28.4-r3 webpage:
+busybox-1.29.3-r10 webpage:
 http://busybox.net
 
-busybox-1.28.4-r3 installed size:
+busybox-1.29.3-r10 installed size:
 905216
 
-busybox-1.28.4-r3 license:
+busybox-1.29.3-r10 license:
 GPL-2.0
 
 ```
@@ -86,16 +86,33 @@ GPL-2.0
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20171114-r3 description:
+ca-certificates-20190108-r0 description:
 Common CA certificates PEM files
 
-ca-certificates-20171114-r3 webpage:
+ca-certificates-20190108-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20171114-r3 installed size:
-741376
+ca-certificates-20190108-r0 installed size:
+737280
 
-ca-certificates-20171114-r3 license:
+ca-certificates-20190108-r0 license:
+MPL-2.0 GPL-2.0-or-later
+
+```
+
+### `apk` package: `ca-certificates-cacert`
+
+```console
+ca-certificates-cacert-20190108-r0 description:
+Mozilla bundled certificates
+
+ca-certificates-cacert-20190108-r0 webpage:
+https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
+
+ca-certificates-cacert-20190108-r0 installed size:
+245760
+
+ca-certificates-cacert-20190108-r0 license:
 MPL-2.0 GPL-2.0-or-later
 
 ```
@@ -117,70 +134,70 @@ BSD
 
 ```
 
-### `apk` package: `libressl2.7-libcrypto`
+### `apk` package: `libcrypto1.1`
 
 ```console
-libressl2.7-libcrypto-2.7.5-r0 description:
-libressl libcrypto library
+libcrypto1.1-1.1.1b-r1 description:
+Crypto library from openssl
 
-libressl2.7-libcrypto-2.7.5-r0 webpage:
-https://www.libressl.org/
+libcrypto1.1-1.1.1b-r1 webpage:
+https://www.openssl.org
 
-libressl2.7-libcrypto-2.7.5-r0 installed size:
-2125824
+libcrypto1.1-1.1.1b-r1 installed size:
+2748416
 
-libressl2.7-libcrypto-2.7.5-r0 license:
-custom
+libcrypto1.1-1.1.1b-r1 license:
+OpenSSL
 
 ```
 
-### `apk` package: `libressl2.7-libssl`
+### `apk` package: `libssl1.1`
 
 ```console
-libressl2.7-libssl-2.7.5-r0 description:
-libressl libssl library
+libssl1.1-1.1.1b-r1 description:
+SSL shared libraries
 
-libressl2.7-libssl-2.7.5-r0 webpage:
-https://www.libressl.org/
+libssl1.1-1.1.1b-r1 webpage:
+https://www.openssl.org
 
-libressl2.7-libssl-2.7.5-r0 installed size:
-327680
+libssl1.1-1.1.1b-r1 installed size:
+536576
 
-libressl2.7-libssl-2.7.5-r0 license:
-custom
+libssl1.1-1.1.1b-r1 license:
+OpenSSL
 
 ```
 
-### `apk` package: `libressl2.7-libtls`
+### `apk` package: `libtls-standalone`
 
 ```console
-libressl2.7-libtls-2.7.5-r0 description:
-libressl libtls library
+libtls-standalone-2.7.4-r6 description:
+libtls extricated from libressl sources
 
-libressl2.7-libtls-2.7.5-r0 webpage:
-https://www.libressl.org/
+libtls-standalone-2.7.4-r6 webpage:
+http://www.libressl.org/
 
-libressl2.7-libtls-2.7.5-r0 installed size:
-77824
+libtls-standalone-2.7.4-r6 installed size:
+110592
 
-libressl2.7-libtls-2.7.5-r0 license:
-custom
+libtls-standalone-2.7.4-r6 license:
+ISC
 
 ```
 
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.19-r10 description:
+musl-1.1.20-r4 description:
 the musl c library (libc) implementation
 
-musl-1.1.19-r10 webpage:
+musl-1.1.20-r4 webpage:
 http://www.musl-libc.org/
 
-musl-1.1.19-r10 installed size:
+musl-1.1.20-r4 installed size:
 602112
 
-musl-1.1.19-r10 license:
+musl-1.1.20-r4 license:
 MIT
 
 ```
@@ -188,16 +205,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.1.19-r10 description:
+musl-utils-1.1.20-r4 description:
 the musl c library (libc) implementation
 
-musl-utils-1.1.19-r10 webpage:
+musl-utils-1.1.20-r4 webpage:
 http://www.musl-libc.org/
 
-musl-utils-1.1.19-r10 installed size:
-122880
+musl-utils-1.1.20-r4 installed size:
+139264
 
-musl-utils-1.1.19-r10 license:
+musl-utils-1.1.20-r4 license:
 MIT BSD GPL2+
 
 ```
@@ -212,7 +229,7 @@ scanelf-1.2.3-r0 webpage:
 https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities
 
 scanelf-1.2.3-r0 installed size:
-94208
+98304
 
 scanelf-1.2.3-r0 license:
 GPL-2.0
@@ -222,16 +239,16 @@ GPL-2.0
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.28.4-r3 description:
+ssl_client-1.29.3-r10 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.28.4-r3 webpage:
+ssl_client-1.29.3-r10 webpage:
 http://busybox.net
 
-ssl_client-1.28.4-r3 installed size:
-24576
+ssl_client-1.29.3-r10 installed size:
+28672
 
-ssl_client-1.28.4-r3 license:
+ssl_client-1.29.3-r10 license:
 GPL-2.0
 
 ```
@@ -246,7 +263,7 @@ zlib-1.2.11-r1 webpage:
 http://zlib.net
 
 zlib-1.2.11-r1 installed size:
-102400
+110592
 
 zlib-1.2.11-r1 license:
 zlib
