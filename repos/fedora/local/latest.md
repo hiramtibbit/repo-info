@@ -26,6 +26,10 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls acl-2.2.53-2.fc29
+https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Everything/x86_64/repodata/repomd.xml: [Errno -1] repomd.xml does not match metalink for updates
+Trying other mirror.
+https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/29/Modular/x86_64/repodata/repomd.xml: [Errno -1] repomd.xml does not match metalink for updates-modular
+Trying other mirror.
 Enabling fedora-modular-source repository
 https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/releases/29/Modular/source/tree/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
 Trying other mirror.
