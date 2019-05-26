@@ -1,10 +1,10 @@
-# `mariadb:10.4.4-bionic`
+# `mariadb:10.4.5-bionic`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a4839a39245aa496790ca4540d6136504b55919f2ea6b35ce4b9f0a7ffdf34ba`
-- Created: `2019-05-15T22:43:07.510672489Z`
-- Virtual Size: ~ 359.66 Mb  
+- Image ID: `sha256:c9d3edbb60f1111f79c2552e6da9e7403954fd9d042f7fd30df9220b2f7c3516`
+- Created: `2019-05-23T21:20:28.250728699Z`
+- Virtual Size: ~ 360.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.10`
   - `GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	177F4010FE56CA3336300305F1656F24C74CD1D8 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
   - `MARIADB_MAJOR=10.4`
-  - `MARIADB_VERSION=1:10.4.4+maria~bionic`
+  - `MARIADB_VERSION=1:10.4.5+maria~bionic`
 
 ## `dpkg` (`.deb`-based packages)
 
