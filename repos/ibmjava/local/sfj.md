@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d2506b25cfdecfbaea6462b9cc892b6a5223588469207a96a09913f68acbce0d`
-- Created: `2019-05-15T21:44:06.408170972Z`
-- Virtual Size: ~ 221.72 Mb  
+- Image ID: `sha256:613e355d91ef6a849964a1d9a8bb5edb28827f139505b8ee2b4226cf63b410c5`
+- Created: `2019-05-24T22:23:59.841642526Z`
+- Virtual Size: ~ 221.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr5fp35`
+  - `JAVA_VERSION=1.8.0_sr5fp36`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
 
@@ -1321,14 +1321,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.6
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.6.dsc' util-linux_2.27.1-6ubuntu3.6.dsc 3960 SHA256:a435d426cc471afdd66a7943444055cbb20ec7932a62076c8b5295ee55d7ba55
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1.orig.tar.xz' util-linux_2.27.1.orig.tar.xz 3964512 SHA256:0a818fcdede99aec43ffe6ca5b5388bff80d162f2f7bd4541dca94fecb87a290
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.6.debian.tar.xz' util-linux_2.27.1-6ubuntu3.6.debian.tar.xz 86092 SHA256:e5fdc30a0e8a920286c42d0f8acb86d8c80866676cf5b6d8474b838283d9d705
-```
 
 ### `dpkg` source package: `wget=1.17.1-1ubuntu1.5`
 
