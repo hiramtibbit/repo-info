@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fb60dd72b89df37f0f442de05995985a68ddff6acf2fc0c38963e0c928afdfe0`
-- Created: `2019-05-17T23:22:22.134682405Z`
+- Image ID: `sha256:7197498867b32e057c825519489005e02e1626c2dacc28356c15e866571cef1e`
+- Created: `2019-05-24T22:34:19.626909944Z`
 - Virtual Size: ~ 420.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["mysqld"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PERCONA_VERSION=5.6.44-rel85.0.el7`
+  - `PERCONA_VERSION=5.6.44-rel86.0.el7`
 - Labels:
   - `org.label-schema.build-date=20190305`
   - `org.label-schema.license=GPLv2`
@@ -21,25 +21,25 @@
 
 ## `rpm` (`.rpm`-based packages)
 
-### `rpm` package: `Percona-Server-client-56-5.6.44-rel85.0.el7.x86_64`
+### `rpm` package: `Percona-Server-client-56-5.6.44-rel86.0.el7.x86_64`
 
 Licenses (from `rpm --query`): Copyright (c) 2000, 2010, Oracle and/or its affiliates.  All rights reserved.  Use is subject to license terms. Under the GNU General Public License (http://www.gnu.org/licenses/).
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `Percona-Server-server-56-5.6.44-rel85.0.el7.x86_64`
+### `rpm` package: `Percona-Server-server-56-5.6.44-rel86.0.el7.x86_64`
 
 Licenses (from `rpm --query`): Copyright (c) 2000, 2010, Oracle and/or its affiliates.  All rights reserved.  Use is subject to license terms. Under the GNU General Public License (http://www.gnu.org/licenses/).
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `Percona-Server-shared-56-5.6.44-rel85.0.el7.x86_64`
+### `rpm` package: `Percona-Server-shared-56-5.6.44-rel86.0.el7.x86_64`
 
 Licenses (from `rpm --query`): Copyright (c) 2000, 2010, Oracle and/or its affiliates.  All rights reserved.  Use is subject to license terms. Under the GNU General Public License (http://www.gnu.org/licenses/).
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `Percona-Server-tokudb-56-5.6.44-rel85.0.el7.x86_64`
+### `rpm` package: `Percona-Server-tokudb-56-5.6.44-rel86.0.el7.x86_64`
 
 Licenses (from `rpm --query`): Copyright (c) 2000, 2010, Oracle and/or its affiliates.  All rights reserved.  Use is subject to license terms. Under the GNU General Public License (http://www.gnu.org/licenses/).
 
