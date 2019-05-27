@@ -1,12 +1,13 @@
 ## `adoptopenjdk:8u212-b03-jre-hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:10b78d12fa6d0ead3f6e2245076baeff9487d3e93c7fa6326b0dc674224ee846
+$ docker pull adoptopenjdk@sha256:4306846a7dd96b60b61df7d150aaf7dcedbd9f6ce0af7f6047a52c65cde123c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; ppc64le
 	-	linux; s390x
 
 ### `adoptopenjdk:8u212-b03-jre-hotspot` - linux; amd64
@@ -65,6 +66,64 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 	-	`sha256:7f59159ff9330c5820261d93f232a3f04b8401f07b0ea73bbc7fb6f0e29f90ef`  
 		Last Modified: Fri, 24 May 2019 23:47:21 GMT  
 		Size: 41.2 MB (41213147 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `adoptopenjdk:8u212-b03-jre-hotspot` - linux; ppc64le
+
+```console
+$ docker pull adoptopenjdk@sha256:3e6ab0bb707577f6287ddd796a2b6f25bfce4fd790463db34fe50ae7f3777014
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **83.6 MB (83624094 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2ee8f3ce8af8a5829c54324953a680f63db8225e1d5c07605e88b9a163664214`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Wed, 15 May 2019 22:22:53 GMT
+ADD file:f41b697e1dfb953c707b36804e362c7f39555ea72e42f91accbc2d003eb7a8e4 in / 
+# Wed, 15 May 2019 22:23:04 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Wed, 15 May 2019 22:23:12 GMT
+RUN rm -rf /var/lib/apt/lists/*
+# Wed, 15 May 2019 22:23:19 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Wed, 15 May 2019 22:23:21 GMT
+CMD ["/bin/bash"]
+# Sat, 25 May 2019 16:16:39 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Sat, 25 May 2019 16:18:23 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates locales     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Sat, 25 May 2019 16:18:29 GMT
+ENV JAVA_VERSION=jdk8u212-b03
+# Sun, 26 May 2019 03:19:59 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='2de019954c0898c1798ed30ed55314534423b853bfb373806b6a6224dc98fa6d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b03/OpenJDK8U-jre_ppc64le_linux_hotspot_8u212b03.tar.gz';          ;;        s390x)          ESUM='269a6a3735d12438866754a28d89180d39819aea70e0023b90ca31e15a69e1b0';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b03/OpenJDK8U-jre_s390x_linux_hotspot_8u212b03.tar.gz';          ;;        amd64|x86_64)          ESUM='74daf0b77a7fd679cbb3a6228e0efa8c4a90b7664aa057f211e34bbfb38640fb';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b03/OpenJDK8U-jre_x64_linux_hotspot_8u212b03.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Sun, 26 May 2019 03:20:01 GMT
+ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+```
+
+-	Layers:
+	-	`sha256:fe2c0e1c2ef60bdf8f65a2f45d232bd20d20e2a49d4bdd0ccf1a6e7e20184510`  
+		Last Modified: Wed, 15 May 2019 22:28:38 GMT  
+		Size: 32.6 MB (32559272 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7264fbd1cbb08d35dad634c7997b32f338a35c83bf1e04f29deb15c521dc5093`  
+		Last Modified: Wed, 15 May 2019 22:28:11 GMT  
+		Size: 851.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d069807fa449f2b2cfa8520cbd8a4f0cbffaf3445664f4f000df1bb4e4207fc0`  
+		Last Modified: Wed, 15 May 2019 22:28:10 GMT  
+		Size: 187.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c26a8b458e6d6455dcf28f4d32b6c5dfc01b4cd688c8764387e268dd4f3d21b5`  
+		Last Modified: Mon, 27 May 2019 15:19:44 GMT  
+		Size: 10.8 MB (10766423 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f6c0d10b9cb6cdf2278b753b4d424e419d9cec5cbf9b9ef923fa345541b47ea7`  
+		Last Modified: Mon, 27 May 2019 15:20:29 GMT  
+		Size: 40.3 MB (40297361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8u212-b03-jre-hotspot` - linux; s390x
