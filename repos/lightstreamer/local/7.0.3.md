@@ -3433,20 +3433,13 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jre/copyright`, `/usr/share/d
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-11=11.0.3+1-1~bpo9+1
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11.0.3+1-1~bpo9+1.dsc' openjdk-11_11.0.3+1-1~bpo9+1.dsc 4697 SHA256:d817d5be11710fe5bfa1ba1ddfebc383611abdfff3a56dc0573932530a270635
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11.0.3+1.orig.tar.xz' openjdk-11_11.0.3+1.orig.tar.xz 75328140 SHA256:ba8d1549eb8f4e1339abdda2c3d9eea72fcf2edb8102332c569503b1583f2cf5
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11.0.3+1-1~bpo9+1.debian.tar.xz' openjdk-11_11.0.3+1-1~bpo9+1.debian.tar.xz 166532 SHA256:34b1e36bec3f4cd05cf912cf2243a6ce96a3ae91bc6d8eb64100ae724ebbf9e6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openjdk-11/11.0.3+1-1~bpo9+1/
 
-- https://sources.debian.net/src/openjdk-11/11.0.3+1-1~bpo9+1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-11/11.0.3+1-1~bpo9+1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-11/11.0.3+1-1~bpo9+1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-5+deb9u2`
 
