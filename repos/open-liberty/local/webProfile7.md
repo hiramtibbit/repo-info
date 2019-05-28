@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1f2210c12d29bd8143c77d4e7f1252c7d53fc7644df2c48f3c252e1272819b8f`
-- Created: `2019-05-15T23:26:57.529827268Z`
-- Virtual Size: ~ 556.26 Mb  
+- Image ID: `sha256:409b895819da76c66431f843355e1c698c2a65f5d46e60c23582fdafb2dad1b6`
+- Created: `2019-05-24T22:55:00.333453575Z`
+- Virtual Size: ~ 489.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ol/helpers/runtime/docker-server.sh"]`
 - Command: `["/opt/ol/wlp/bin/server","run","defaultServer"]`
 - Environment:
   - `PATH=/opt/ol/wlp/bin:/opt/ol/docker/:/opt/ol/helpers/build:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr5fp35`
+  - `JAVA_VERSION=1.8.0_sr5fp36`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/ -XX:+UseContainerSupport`
   - `LOG_DIR=/logs`
@@ -1331,14 +1331,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.6
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.6.dsc' util-linux_2.27.1-6ubuntu3.6.dsc 3960 SHA256:a435d426cc471afdd66a7943444055cbb20ec7932a62076c8b5295ee55d7ba55
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1.orig.tar.xz' util-linux_2.27.1.orig.tar.xz 3964512 SHA256:0a818fcdede99aec43ffe6ca5b5388bff80d162f2f7bd4541dca94fecb87a290
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.6.debian.tar.xz' util-linux_2.27.1-6ubuntu3.6.debian.tar.xz 86092 SHA256:e5fdc30a0e8a920286c42d0f8acb86d8c80866676cf5b6d8474b838283d9d705
-```
 
 ### `dpkg` source package: `wget=1.17.1-1ubuntu1.5`
 

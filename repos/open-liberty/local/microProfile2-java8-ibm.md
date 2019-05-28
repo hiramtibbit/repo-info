@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f7c9d53350c3265d10fa863a2cf8f073ba64e9e0a22df2b52cababbfb90d8b70`
-- Created: `2019-05-15T23:24:54.81512168Z`
-- Virtual Size: ~ 489.01 Mb  
+- Image ID: `sha256:af13d3976eab2e44dd5daeb193c844c5134c2c3266c5ef8f998df5fffe5a8d0a`
+- Created: `2019-05-24T22:52:42.066696183Z`
+- Virtual Size: ~ 489.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ol/helpers/runtime/docker-server.sh"]`
 - Command: `["/opt/ol/wlp/bin/server","run","defaultServer"]`
 - Environment:
   - `PATH=/opt/ol/wlp/bin:/opt/ol/docker/:/opt/ol/helpers/build:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr5fp35`
+  - `JAVA_VERSION=1.8.0_sr5fp36`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/ -XX:+UseContainerSupport`
   - `LOG_DIR=/logs`
@@ -1331,14 +1331,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.6
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.6.dsc' util-linux_2.27.1-6ubuntu3.6.dsc 3960 SHA256:a435d426cc471afdd66a7943444055cbb20ec7932a62076c8b5295ee55d7ba55
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1.orig.tar.xz' util-linux_2.27.1.orig.tar.xz 3964512 SHA256:0a818fcdede99aec43ffe6ca5b5388bff80d162f2f7bd4541dca94fecb87a290
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.6.debian.tar.xz' util-linux_2.27.1-6ubuntu3.6.debian.tar.xz 86092 SHA256:e5fdc30a0e8a920286c42d0f8acb86d8c80866676cf5b6d8474b838283d9d705
-```
 
 ### `dpkg` source package: `wget=1.17.1-1ubuntu1.5`
 
