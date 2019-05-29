@@ -1,4 +1,4 @@
-## `tomcat:slim`
+## `tomcat:8-jdk8-slim`
 
 ```console
 $ docker pull tomcat@sha256:5254a2208732c80d22222e408a95838e118074f7b90c46ce51b7d17d2af6c14c
@@ -8,7 +8,7 @@ $ docker pull tomcat@sha256:5254a2208732c80d22222e408a95838e118074f7b90c46ce51b7
 -	Platforms:
 	-	linux; amd64
 
-### `tomcat:slim` - linux; amd64
+### `tomcat:8-jdk8-slim` - linux; amd64
 
 ```console
 $ docker pull tomcat@sha256:8a887c23a425070355cc2139a132ad8ff7c02a23d75bd0c280586b4a9cceb13b
