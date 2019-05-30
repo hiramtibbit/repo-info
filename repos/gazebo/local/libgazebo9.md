@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5b52ca7c24efb890a47e39e612d62d64fabb692729159358a35d39d2949ee931`
-- Created: `2019-05-15T22:00:31.133330189Z`
+- Image ID: `sha256:208c7e560b286c84111749a9a71503a1f8c0d8c6d855cd8fb39183a6c29bf5b2`
+- Created: `2019-05-29T22:56:10.116506237Z`
 - Virtual Size: ~ 1.61 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -794,11 +794,11 @@ $ apt-get source -qq --print-uris crystalhd=1:0.0~git20110715.fdd2f19-12
 'http://archive.ubuntu.com/ubuntu/pool/universe/c/crystalhd/crystalhd_0.0~git20110715.fdd2f19-12.debian.tar.xz' crystalhd_0.0~git20110715.fdd2f19-12.debian.tar.xz 15260 SHA256:b634af1ff394c6e44445e29e7e6b27648d35f58e475ed1749eeaf3dc80ca15a1
 ```
 
-### `dpkg` source package: `cups=2.2.7-1ubuntu2.4`
+### `dpkg` source package: `cups=2.2.7-1ubuntu2.5`
 
 Binary Packages:
 
-- `libcups2:amd64=2.2.7-1ubuntu2.4`
+- `libcups2:amd64=2.2.7-1ubuntu2.5`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -809,17 +809,23 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris cups=2.2.7-1ubuntu2.5
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7-1ubuntu2.5.dsc' cups_2.2.7-1ubuntu2.5.dsc 3302 SHA256:dca04a1c676a0ef408e9ce3cbf9e879c16676e8d8931af8608cc61cd246db32b
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7.orig.tar.gz' cups_2.2.7.orig.tar.gz 10330296 SHA256:3c4b637b737077565ccdfbd5f61785d03f49461ae736fcc2c0ffaf41d2c6ea6a
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7.orig.tar.gz.asc' cups_2.2.7.orig.tar.gz.asc 872 SHA256:2b17bef166e1f8a0dece544c0e4f0d847f6d2c8e784298898966352f4e47581a
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7-1ubuntu2.5.debian.tar.xz' cups_2.2.7-1ubuntu2.5.debian.tar.xz 359948 SHA256:c558e6320863be53059d78967501b9d6c474d48eb956386b45ded0e2497a1db5
+```
 
-### `dpkg` source package: `curl=7.58.0-2ubuntu3.6`
+### `dpkg` source package: `curl=7.58.0-2ubuntu3.7`
 
 Binary Packages:
 
-- `libcurl3-gnutls:amd64=7.58.0-2ubuntu3.6`
-- `libcurl4:amd64=7.58.0-2ubuntu3.6`
-- `libcurl4-openssl-dev:amd64=7.58.0-2ubuntu3.6`
+- `libcurl3-gnutls:amd64=7.58.0-2ubuntu3.7`
+- `libcurl4:amd64=7.58.0-2ubuntu3.7`
+- `libcurl4-openssl-dev:amd64=7.58.0-2ubuntu3.7`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -830,9 +836,14 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.58.0-2ubuntu3.7
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.7.dsc' curl_7.58.0-2ubuntu3.7.dsc 2777 SHA256:67aef5e2460caaa322b71c80b63969e7f758f6a0e9732a640bd62d9ce84de0d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0.orig.tar.gz' curl_7.58.0.orig.tar.gz 3879728 SHA256:cc245bf9a1a42a45df491501d97d5593392a03f7b4f07b952793518d97666115
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.7.debian.tar.xz' curl_7.58.0-2ubuntu3.7.debian.tar.xz 39320 SHA256:bb67dc7f8dc7e9ec52eb3cc9ece4d47f861006452ee01446d7bac27754724c86
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2`
 
@@ -1542,15 +1553,15 @@ $ apt-get source -qq --print-uris game-music-emu=0.6.2-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/game-music-emu/game-music-emu_0.6.2-1.debian.tar.xz' game-music-emu_0.6.2-1.debian.tar.xz 4412 SHA256:8ea69035bd72261ec85e5f0486707d448f7491733ae055040a9995cebb0ea820
 ```
 
-### `dpkg` source package: `gazebo9=9.8.0-1~bionic`
+### `dpkg` source package: `gazebo9=9.9.0-1~bionic`
 
 Binary Packages:
 
-- `gazebo9=9.8.0-1~bionic`
-- `gazebo9-common=9.8.0-1~bionic`
-- `gazebo9-plugin-base=9.8.0-1~bionic`
-- `libgazebo9:amd64=9.8.0-1~bionic`
-- `libgazebo9-dev:amd64=9.8.0-1~bionic`
+- `gazebo9=9.9.0-1~bionic`
+- `gazebo9-common=9.9.0-1~bionic`
+- `gazebo9-plugin-base=9.9.0-1~bionic`
+- `libgazebo9:amd64=9.9.0-1~bionic`
+- `libgazebo9-dev:amd64=9.9.0-1~bionic`
 
 Licenses: (parsed from: `/usr/share/doc/gazebo9/copyright`, `/usr/share/doc/gazebo9-common/copyright`, `/usr/share/doc/gazebo9-plugin-base/copyright`, `/usr/share/doc/libgazebo9/copyright`, `/usr/share/doc/libgazebo9-dev/copyright`)
 
@@ -4100,11 +4111,11 @@ $ apt-get source -qq --print-uris libraw1394=2.1.2-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw1394/libraw1394_2.1.2-1.debian.tar.xz' libraw1394_2.1.2-1.debian.tar.xz 8760 SHA256:5cee0e0049d820a8e4e5d3dbd94fb2c3d7b782ec09134c6c714ed523829dc1c3
 ```
 
-### `dpkg` source package: `libraw=0.18.8-1ubuntu0.2`
+### `dpkg` source package: `libraw=0.18.8-1ubuntu0.3`
 
 Binary Packages:
 
-- `libraw16:amd64=0.18.8-1ubuntu0.2`
+- `libraw16:amd64=0.18.8-1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libraw16/copyright`)
 
@@ -4116,9 +4127,14 @@ Licenses: (parsed from: `/usr/share/doc/libraw16/copyright`)
 - `LGPL-2.1`
 - `dcraw`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libraw=0.18.8-1ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.18.8-1ubuntu0.3.dsc' libraw_0.18.8-1ubuntu0.3.dsc 2294 SHA256:a99cd042af8af3ff5b8dc073cc3d9f01f94e3ea8f9a6d3bdfad29ba1ffcbf700
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.18.8.orig.tar.gz' libraw_0.18.8.orig.tar.gz 519442 SHA256:5edf25d32c300a1081fba8b6ded9e47cbb8a8330dde4a23806f64884a1e46d64
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.18.8-1ubuntu0.3.debian.tar.xz' libraw_0.18.8-1ubuntu0.3.debian.tar.xz 27956 SHA256:130c101f9fde61a47ee023631c095e3410630161201fdc70f69fe77565223c0a
+```
 
 ### `dpkg` source package: `librest=0.8.0-2`
 

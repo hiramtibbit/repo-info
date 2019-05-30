@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1a4b2f6ddb6aea1739ac0e720c8ddc203acbff89b1890d82cd1c16f5c2a5996a`
-- Created: `2019-05-15T21:54:12.983525565Z`
+- Image ID: `sha256:8ba9d32d85019911b17f15d6957e94a22fb7606d976f45387b7598cb6b4fb52f`
+- Created: `2019-05-29T22:49:31.015498351Z`
 - Virtual Size: ~ 1.49 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -669,11 +669,11 @@ $ apt-get source -qq --print-uris crystalhd=1:0.0~git20110715.fdd2f19-11build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/c/crystalhd/crystalhd_0.0~git20110715.fdd2f19-11build1.debian.tar.xz' crystalhd_0.0~git20110715.fdd2f19-11build1.debian.tar.xz 15240 SHA256:646168058a9a41b20a392fe20f7a2a88caaa1a42fc3e002635c33f0cf129ed0f
 ```
 
-### `dpkg` source package: `cups=2.1.3-4ubuntu0.7`
+### `dpkg` source package: `cups=2.1.3-4ubuntu0.8`
 
 Binary Packages:
 
-- `libcups2:amd64=2.1.3-4ubuntu0.7`
+- `libcups2:amd64=2.1.3-4ubuntu0.8`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -684,17 +684,22 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris cups=2.1.3-4ubuntu0.8
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.8.dsc' cups_2.1.3-4ubuntu0.8.dsc 3406 SHA256:c12c005ab37f51755a24dc5fb71ffaf04c7d42acdba0201050391d7f5c141893
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3.orig.tar.bz2' cups_2.1.3.orig.tar.bz2 8832400 SHA256:36a70d43584aea2617da914b9331e23341c3501a8254c4d2eae9c11ec01fd4d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.8.debian.tar.xz' cups_2.1.3-4ubuntu0.8.debian.tar.xz 352024 SHA256:c51a772a8df316b60dfa68d486bf287736994510f3976ef274bd8cd06e718c03
+```
 
-### `dpkg` source package: `curl=7.47.0-1ubuntu2.12`
+### `dpkg` source package: `curl=7.47.0-1ubuntu2.13`
 
 Binary Packages:
 
-- `libcurl3:amd64=7.47.0-1ubuntu2.12`
-- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.12`
-- `libcurl4-openssl-dev:amd64=7.47.0-1ubuntu2.12`
+- `libcurl3:amd64=7.47.0-1ubuntu2.13`
+- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.13`
+- `libcurl4-openssl-dev:amd64=7.47.0-1ubuntu2.13`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -705,9 +710,14 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/lib
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.13
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.13.dsc' curl_7.47.0-1ubuntu2.13.dsc 2733 SHA256:7d7fbdf870d4a1d9d8e80bc8bf6a1b28fe900461039434f410717f9a39293ff0
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0.orig.tar.gz' curl_7.47.0.orig.tar.gz 4563163 SHA256:df01bd42af361978d9de7de8529718bcafe01897a544a7650139a1954c55bdfe
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.13.debian.tar.xz' curl_7.47.0-1ubuntu2.13.debian.tar.xz 55044 SHA256:768b9334bb8505de0cc1a6aaf5147162c09385ff77faf8fd939536a14d8d341e
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-14ubuntu0.1`
 
@@ -1330,15 +1340,15 @@ $ apt-get source -qq --print-uris game-music-emu=0.6.0-3ubuntu0.16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/game-music-emu/game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz' game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz 5592 SHA256:a4d7a4f5d9df23098abc4c1fe82696ed8f93d893c50bb8fc14a4de84e705810d
 ```
 
-### `dpkg` source package: `gazebo9=9.8.0-1~xenial`
+### `dpkg` source package: `gazebo9=9.9.0-1~xenial`
 
 Binary Packages:
 
-- `gazebo9=9.8.0-1~xenial`
-- `gazebo9-common=9.8.0-1~xenial`
-- `gazebo9-plugin-base=9.8.0-1~xenial`
-- `libgazebo9:amd64=9.8.0-1~xenial`
-- `libgazebo9-dev:amd64=9.8.0-1~xenial`
+- `gazebo9=9.9.0-1~xenial`
+- `gazebo9-common=9.9.0-1~xenial`
+- `gazebo9-plugin-base=9.9.0-1~xenial`
+- `libgazebo9:amd64=9.9.0-1~xenial`
+- `libgazebo9-dev:amd64=9.9.0-1~xenial`
 
 Licenses: (parsed from: `/usr/share/doc/gazebo9/copyright`, `/usr/share/doc/gazebo9-common/copyright`, `/usr/share/doc/gazebo9-plugin-base/copyright`, `/usr/share/doc/libgazebo9/copyright`, `/usr/share/doc/libgazebo9-dev/copyright`)
 
@@ -3532,11 +3542,11 @@ $ apt-get source -qq --print-uris libraw1394=2.1.1-2
 'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw1394/libraw1394_2.1.1-2.debian.tar.xz' libraw1394_2.1.1-2.debian.tar.xz 8752 SHA256:b043b7a3cd17ca4122c63cb8c129ec06890106074aa4a54f939bc32c7e6ed05e
 ```
 
-### `dpkg` source package: `libraw=0.17.1-1ubuntu0.4`
+### `dpkg` source package: `libraw=0.17.1-1ubuntu0.5`
 
 Binary Packages:
 
-- `libraw15:amd64=0.17.1-1ubuntu0.4`
+- `libraw15:amd64=0.17.1-1ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/libraw15/copyright`)
 
@@ -3549,9 +3559,14 @@ Licenses: (parsed from: `/usr/share/doc/libraw15/copyright`)
 - `LibRaw`
 - `dcraw`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libraw=0.17.1-1ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.17.1-1ubuntu0.5.dsc' libraw_0.17.1-1ubuntu0.5.dsc 2292 SHA256:06dea361c4d07d8242f1168600119eba20449927080be5fac3b167e04ce7c8eb
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.17.1.orig.tar.gz' libraw_0.17.1.orig.tar.gz 689407 SHA256:dd07861ea3b9739c61c50d5e8a5dfedd738f4765962104c120dd8ea2dc2e3491
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.17.1-1ubuntu0.5.debian.tar.xz' libraw_0.17.1-1ubuntu0.5.debian.tar.xz 38364 SHA256:9524aa8fe1fdecfaadcaf0579f07a37c71049b21ae1787a59c47e165b5b38045
+```
 
 ### `dpkg` source package: `libsamplerate=0.1.8-8`
 
@@ -6747,12 +6762,40 @@ Binary Packages:
 - `libfdisk1:amd64=2.27.1-6ubuntu3.6`
 - `libmount1:amd64=2.27.1-6ubuntu3.6`
 - `libsmartcols1:amd64=2.27.1-6ubuntu3.6`
-- `libuuid1:amd64=2.27.1-6ubuntu3.6`
 - `mount=2.27.1-6ubuntu3.6`
 - `util-linux=2.27.1-6ubuntu3.6`
-- `uuid-dev:amd64=2.27.1-6ubuntu3.6`
 
-Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`, `/usr/share/doc/uuid-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
+
+- `BSD-2-clause`
+- `BSD-3-clause`
+- `BSD-4-clause`
+- `GPL-2`
+- `GPL-2+`
+- `GPL-3`
+- `GPL-3+`
+- `LGPL`
+- `LGPL-2`
+- `LGPL-2+`
+- `LGPL-2.1`
+- `LGPL-2.1+`
+- `LGPL-3`
+- `LGPL-3+`
+- `MIT`
+- `public-domain`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `util-linux=2.27.1-6ubuntu3.7`
+
+Binary Packages:
+
+- `libuuid1:amd64=2.27.1-6ubuntu3.7`
+- `uuid-dev:amd64=2.27.1-6ubuntu3.7`
+
+Licenses: (parsed from: `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/uuid-dev/copyright`)
 
 - `BSD-2-clause`
 - `BSD-3-clause`
@@ -6774,10 +6817,10 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.6
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.6.dsc' util-linux_2.27.1-6ubuntu3.6.dsc 3960 SHA256:a435d426cc471afdd66a7943444055cbb20ec7932a62076c8b5295ee55d7ba55
+$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.7
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.7.dsc' util-linux_2.27.1-6ubuntu3.7.dsc 3956 SHA256:36e1049312f83310cd76d7bd0007a196e51b61876df2945bd4026f881e5c6d0c
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1.orig.tar.xz' util-linux_2.27.1.orig.tar.xz 3964512 SHA256:0a818fcdede99aec43ffe6ca5b5388bff80d162f2f7bd4541dca94fecb87a290
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.6.debian.tar.xz' util-linux_2.27.1-6ubuntu3.6.debian.tar.xz 86092 SHA256:e5fdc30a0e8a920286c42d0f8acb86d8c80866676cf5b6d8474b838283d9d705
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.7.debian.tar.xz' util-linux_2.27.1-6ubuntu3.7.debian.tar.xz 86812 SHA256:113075f3d3a78bad69adbbf6e54409bfc457ef5b6a04e7a4b7bc9d1c94930b30
 ```
 
 ### `dpkg` source package: `wavpack=4.75.2-2ubuntu0.2`
