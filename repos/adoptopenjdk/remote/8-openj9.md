@@ -1,7 +1,7 @@
 ## `adoptopenjdk:8-openj9`
 
 ```console
-$ docker pull adoptopenjdk@sha256:df01784c2bfd9883d06e61591e1fecda93e01b824ccc7255306edd017aa66787
+$ docker pull adoptopenjdk@sha256:b4109148f96b11f1f2ef4b3a4475d07470811d6a87fa9d6b2e6fc343dbf40767
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -73,14 +73,14 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ### `adoptopenjdk:8-openj9` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:c0e816c82f3f090d57f517858b8f7f9510f200c209aeb9b0369141056b8db0a8
+$ docker pull adoptopenjdk@sha256:e83b5907e679e1f43f66d451b22406659ca484b5e2db0f54c332d40032a6c08a
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.9 MB (159889029 bytes)**  
+-	Total Size: **159.9 MB (159889053 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9affdb464b89f26a95aad94c7d29a32e41ee4122250bcf5e578ce327ed79b605`
+-	Image ID: `sha256:6eb94633058abda0dda9471afdbbdf5403c088827127c3a74e778daa1b842386`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -94,17 +94,17 @@ RUN rm -rf /var/lib/apt/lists/*
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 # Wed, 15 May 2019 22:23:21 GMT
 CMD ["/bin/bash"]
-# Sat, 25 May 2019 16:16:39 GMT
+# Thu, 30 May 2019 14:48:54 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 25 May 2019 16:18:23 GMT
+# Thu, 30 May 2019 14:51:03 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates locales     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Sun, 26 May 2019 04:17:33 GMT
+# Thu, 30 May 2019 14:55:15 GMT
 ENV JAVA_VERSION=jdk8u212-b03_openj9-0.14.0
-# Sun, 26 May 2019 04:18:01 GMT
+# Thu, 30 May 2019 14:55:39 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='6e6a2c1a848ae051e5dcf16a02371204ac42a78fd5e31099bfdd10011ca86e96';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b03_openj9-0.14.0/OpenJDK8U-jdk_ppc64le_linux_openj9_8u212b03_openj9-0.14.0.tar.gz';          ;;        s390x)          ESUM='13821a8f09f2c0df1bd5fb80c4b9be2b31b35f1190e4baf8d9b2c22997216f71';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b03_openj9-0.14.0/OpenJDK8U-jdk_s390x_linux_openj9_8u212b03_openj9-0.14.0.tar.gz';          ;;        amd64|x86_64)          ESUM='4aa8fdb3916816788c516423236bef68a05a694cbd44fa14c4f8f5b76891aa4c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b03_openj9-0.14.0/OpenJDK8U-jdk_x64_linux_openj9_8u212b03_openj9-0.14.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Sun, 26 May 2019 04:18:05 GMT
+# Thu, 30 May 2019 14:55:44 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sun, 26 May 2019 04:18:06 GMT
+# Thu, 30 May 2019 14:55:48 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
 ```
 
@@ -121,13 +121,13 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 		Last Modified: Wed, 15 May 2019 22:28:10 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c26a8b458e6d6455dcf28f4d32b6c5dfc01b4cd688c8764387e268dd4f3d21b5`  
-		Last Modified: Mon, 27 May 2019 15:19:44 GMT  
-		Size: 10.8 MB (10766423 bytes)  
+	-	`sha256:0f881526d0bf00c39d3fc4f84468a362f978becb3cb7aee869157d1d64738511`  
+		Last Modified: Thu, 30 May 2019 15:01:41 GMT  
+		Size: 10.8 MB (10766465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a06d7c54d26ec3c8cba36cdf66381b3c7abde44f1a3b308fae88fa2ff050b6b`  
-		Last Modified: Mon, 27 May 2019 15:23:47 GMT  
-		Size: 116.6 MB (116562296 bytes)  
+	-	`sha256:fad28c4f3d8e7635f8d7d1f482a646e793e77769b20bc90fc490ab2d0109bb3a`  
+		Last Modified: Thu, 30 May 2019 15:05:20 GMT  
+		Size: 116.6 MB (116562278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8-openj9` - linux; s390x
