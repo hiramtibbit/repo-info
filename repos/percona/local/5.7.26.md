@@ -1,17 +1,17 @@
-# `percona:5.7.25-centos`
+# `percona:5.7.26-centos`
 
 ## Docker Metadata
 
-- Image ID: `sha256:69377a52e49adc78d8ef9cfe04f68a61c2fc8c17e8d7987db5045688be2a32a5`
-- Created: `2019-03-14T22:14:47.830701098Z`
-- Virtual Size: ~ 582.91 Mb  
+- Image ID: `sha256:89deb48c8b7005ca323a7e758c78c3eff03235385a6b4bcb96eaabe34d4d6cdb`
+- Created: `2019-05-28T23:20:43.21468356Z`
+- Virtual Size: ~ 583.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["mysqld"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PERCONA_VERSION=5.7.25-28.1.el7`
+  - `PERCONA_VERSION=5.7.26-29.1.el7`
 - Labels:
   - `org.label-schema.build-date=20190305`
   - `org.label-schema.license=GPLv2`
@@ -21,37 +21,37 @@
 
 ## `rpm` (`.rpm`-based packages)
 
-### `rpm` package: `Percona-Server-client-57-5.7.25-28.1.el7.x86_64`
+### `rpm` package: `Percona-Server-client-57-5.7.26-29.1.el7.x86_64`
 
 Licenses (from `rpm --query`): Copyright (c) 2000, 2015, Oracle and/or its affiliates. All rights reserved. Under the GNU General Public License (http://www.gnu.org/licenses/).
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `Percona-Server-rocksdb-57-5.7.25-28.1.el7.x86_64`
+### `rpm` package: `Percona-Server-rocksdb-57-5.7.26-29.1.el7.x86_64`
 
 Licenses (from `rpm --query`): Copyright (c) 2000, 2015, Oracle and/or its affiliates. All rights reserved. Under the GNU General Public License (http://www.gnu.org/licenses/).
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `Percona-Server-server-57-5.7.25-28.1.el7.x86_64`
+### `rpm` package: `Percona-Server-server-57-5.7.26-29.1.el7.x86_64`
 
 Licenses (from `rpm --query`): Copyright (c) 2000, 2015, Oracle and/or its affiliates. All rights reserved. Under the GNU General Public License (http://www.gnu.org/licenses/).
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `Percona-Server-shared-57-5.7.25-28.1.el7.x86_64`
+### `rpm` package: `Percona-Server-shared-57-5.7.26-29.1.el7.x86_64`
 
 Licenses (from `rpm --query`): Copyright (c) 2000, 2015, Oracle and/or its affiliates. All rights reserved. Under the GNU General Public License (http://www.gnu.org/licenses/).
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `Percona-Server-shared-compat-57-5.7.25-28.1.el7.x86_64`
+### `rpm` package: `Percona-Server-shared-compat-57-5.7.26-29.1.el7.x86_64`
 
 Licenses (from `rpm --query`): Copyright (c) 2000, 2015, Oracle and/or its affiliates. All rights reserved. Under the GNU General Public License (http://www.gnu.org/licenses/).
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `Percona-Server-tokudb-57-5.7.25-28.1.el7.x86_64`
+### `rpm` package: `Percona-Server-tokudb-57-5.7.26-29.1.el7.x86_64`
 
 Licenses (from `rpm --query`): Copyright (c) 2000, 2015, Oracle and/or its affiliates. All rights reserved. Under the GNU General Public License (http://www.gnu.org/licenses/).
 
@@ -2829,21 +2829,21 @@ Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/sed-4.2.2-5.el7.src.rpm
 ```
 
-### `rpm` package: `selinux-policy-3.13.1-229.el7_6.9.noarch`
+### `rpm` package: `selinux-policy-3.13.1-229.el7_6.12.noarch`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls selinux-policy-3.13.1-229.el7_6.9.noarch
+$ yumdownloader --quiet --source --urls selinux-policy-3.13.1-229.el7_6.12.noarch
 Repository percona-release-x86_64 is listed more than once in the configuration
 Repository percona-release-noarch is listed more than once in the configuration
 Repository percona-release-sources is listed more than once in the configuration
 Enabling updates-source repository
 Enabling base-source repository
 Enabling extras-source repository
-http://vault.centos.org/centos/7/updates/Source//SPackages/selinux-policy-3.13.1-229.el7_6.9.src.rpm
+http://vault.centos.org/centos/7/updates/Source//SPackages/selinux-policy-3.13.1-229.el7_6.12.src.rpm
 ```
 
 ### `rpm` package: `setup-2.8.71-10.el7.noarch`

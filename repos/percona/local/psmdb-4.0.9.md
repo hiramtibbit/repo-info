@@ -31,9 +31,9 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls acl-2.2.51-14.el7
-Enabling epel-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/7/SRPMS/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
+https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/7/x86_64/repodata/repomd.xml: [Errno -1] repomd.xml does not match metalink for epel
 Trying other mirror.
+Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
 Enabling extras-source repository
