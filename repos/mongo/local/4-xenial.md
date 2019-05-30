@@ -1,10 +1,10 @@
-# `mongo:4.0.9-xenial`
+# `mongo:4.0.10-xenial`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5976dac61f4fb85c1a2d1f7c717600f9c78fb02badba6b3c5961a4091ef75905`
-- Created: `2019-05-15T23:11:37.931366174Z`
-- Virtual Size: ~ 411.15 Mb  
+- Image ID: `sha256:0fb47b43df1987480928787d3907f3be50941506ede82298b920df07011b8d94`
+- Created: `2019-05-29T20:27:02.334426612Z`
+- Virtual Size: ~ 411.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=4.0`
-  - `MONGO_VERSION=4.0.9`
+  - `MONGO_VERSION=4.0.10`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -295,11 +295,11 @@ $ apt-get source -qq --print-uris cryptsetup=2:1.6.6-5ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_1.6.6-5ubuntu2.1.debian.tar.xz' cryptsetup_1.6.6-5ubuntu2.1.debian.tar.xz 91808 SHA256:0979ff24a2c4ecc5471a017b286cd7a4ccc497e72854b02aadc21465dcce96e4
 ```
 
-### `dpkg` source package: `curl=7.47.0-1ubuntu2.12`
+### `dpkg` source package: `curl=7.47.0-1ubuntu2.13`
 
 Binary Packages:
 
-- `libcurl3:amd64=7.47.0-1ubuntu2.12`
+- `libcurl3:amd64=7.47.0-1ubuntu2.13`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`)
 
@@ -310,9 +310,14 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`)
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.13
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.13.dsc' curl_7.47.0-1ubuntu2.13.dsc 2733 SHA256:7d7fbdf870d4a1d9d8e80bc8bf6a1b28fe900461039434f410717f9a39293ff0
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0.orig.tar.gz' curl_7.47.0.orig.tar.gz 4563163 SHA256:df01bd42af361978d9de7de8529718bcafe01897a544a7650139a1954c55bdfe
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.13.debian.tar.xz' curl_7.47.0-1ubuntu2.13.debian.tar.xz 55044 SHA256:768b9334bb8505de0cc1a6aaf5147162c09385ff77faf8fd939536a14d8d341e
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-14ubuntu0.1`
 
@@ -1207,15 +1212,15 @@ $ apt-get source -qq --print-uris mawk=1.3.3-17ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.3-17ubuntu2.diff.gz' mawk_1.3.3-17ubuntu2.diff.gz 63882 SHA256:670103046767474be29e80f2143dc67e3d0b958972f5942c3df94883f978eded
 ```
 
-### `dpkg` source package: `mongodb-org=4.0.9`
+### `dpkg` source package: `mongodb-org=4.0.10`
 
 Binary Packages:
 
-- `mongodb-org=4.0.9`
-- `mongodb-org-mongos=4.0.9`
-- `mongodb-org-server=4.0.9`
-- `mongodb-org-shell=4.0.9`
-- `mongodb-org-tools=4.0.9`
+- `mongodb-org=4.0.10`
+- `mongodb-org-mongos=4.0.10`
+- `mongodb-org-server=4.0.10`
+- `mongodb-org-shell=4.0.10`
+- `mongodb-org-tools=4.0.10`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1752,14 +1757,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.6
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.6.dsc' util-linux_2.27.1-6ubuntu3.6.dsc 3960 SHA256:a435d426cc471afdd66a7943444055cbb20ec7932a62076c8b5295ee55d7ba55
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1.orig.tar.xz' util-linux_2.27.1.orig.tar.xz 3964512 SHA256:0a818fcdede99aec43ffe6ca5b5388bff80d162f2f7bd4541dca94fecb87a290
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.6.debian.tar.xz' util-linux_2.27.1-6ubuntu3.6.debian.tar.xz 86092 SHA256:e5fdc30a0e8a920286c42d0f8acb86d8c80866676cf5b6d8474b838283d9d705
-```
 
 ### `dpkg` source package: `xz-utils=5.1.1alpha+20120614-2ubuntu2`
 
