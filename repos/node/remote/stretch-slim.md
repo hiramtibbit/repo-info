@@ -1,7 +1,7 @@
 ## `node:stretch-slim`
 
 ```console
-$ docker pull node@sha256:27632ad2313c749e0faa02f1ce8bb1e5cb691fd607899c90eeb0477a52e94330
+$ docker pull node@sha256:5b05acd2512bb1848a6353d6763c88147ec84e4ccd592703c0eb6dbc50ab9b1a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -165,14 +165,14 @@ CMD ["node"]
 ### `node:stretch-slim` - linux; ppc64le
 
 ```console
-$ docker pull node@sha256:a19207bf4d7feed985aea9b5235e94d5a7543ab3d3db9dad4dd0cc3f4b5cab58
+$ docker pull node@sha256:f7d8cf96874c15babaeca395e3a3341fae506f18fefb867c928b91605092ab63
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.1 MB (55071023 bytes)**  
+-	Total Size: **55.2 MB (55180957 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc54aa85a8d4a0be6d89df461ca465e54cec68eaf17c174c5b55f901df06043d`
+-	Image ID: `sha256:cb58e6626fad8f05b8bfac51171e8c84eef10774bd31c0e6bcf2320ba89d5fb8`
 -	Default Command: `["node"]`
 
 ```dockerfile
@@ -180,17 +180,17 @@ $ docker pull node@sha256:a19207bf4d7feed985aea9b5235e94d5a7543ab3d3db9dad4dd0cc
 ADD file:fa23694e2ef3b1ff3ac824d7d18d6951725f7f1ebfd5350392edd91f6b90d89e in / 
 # Wed, 08 May 2019 09:05:50 GMT
 CMD ["bash"]
-# Wed, 08 May 2019 14:14:01 GMT
+# Thu, 30 May 2019 19:19:31 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
-# Thu, 09 May 2019 00:17:53 GMT
-ENV NODE_VERSION=12.2.0
-# Thu, 09 May 2019 00:19:36 GMT
+# Thu, 30 May 2019 19:40:11 GMT
+ENV NODE_VERSION=12.3.1
+# Thu, 30 May 2019 19:41:14 GMT
 RUN buildDeps='xz-utils'     && ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64';;       ppc64el) ARCH='ppc64le';;       s390x) ARCH='s390x';;       arm64) ARCH='arm64';;       armhf) ARCH='armv7l';;       i386) ARCH='x86';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr $buildDeps --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && for key in       94AE36675C464D64BAFA68DD7434390BDBE9B9C5       FD3A5288F042B6850C66B31F09FE44734EB7990E       71DCFD284A79C3B38668286BC97EC7A07EDE3FC1       DD8F2338BAE7501E3DD5AC78C273792F7D83545D       C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8       B9AE9905FFD7803F25714661B63B535A4C206CA9       77984A986EBC2AA786BC0F66B01FBB92821C587A       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       4ED778F539E3634C779C87C6D7062848A1AB005C       A48C2BEE680E841632CD4E44F07496B3EB3C1762       B9E2F5981AA6E0CD28160D9FF13993A75599653C     ; do       gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||       gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||       gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && apt-get purge -y --auto-remove $buildDeps     && ln -s /usr/local/bin/node /usr/local/bin/nodejs
-# Thu, 09 May 2019 00:19:42 GMT
-ENV YARN_VERSION=1.15.2
-# Thu, 09 May 2019 00:19:54 GMT
+# Thu, 30 May 2019 19:41:19 GMT
+ENV YARN_VERSION=1.16.0
+# Thu, 30 May 2019 19:41:30 GMT
 RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz
-# Thu, 09 May 2019 00:19:57 GMT
+# Thu, 30 May 2019 19:41:33 GMT
 CMD ["node"]
 ```
 
@@ -199,17 +199,17 @@ CMD ["node"]
 		Last Modified: Wed, 08 May 2019 09:26:17 GMT  
 		Size: 22.7 MB (22744914 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8942858951da9975540fe5101d6b94c8f553ebbd9fe8614a4dcfd9ec1d21e5c`  
-		Last Modified: Wed, 08 May 2019 14:59:21 GMT  
-		Size: 4.2 KB (4185 bytes)  
+	-	`sha256:1731a3590c4918a1aa9896862042f09bd0fa20af4e4580153724b905038152dc`  
+		Last Modified: Thu, 30 May 2019 20:20:57 GMT  
+		Size: 4.2 KB (4179 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:767045a017bd4b904be1fd06e35143b576a63e36478a01b58f569b1c54d478af`  
-		Last Modified: Thu, 09 May 2019 00:23:40 GMT  
-		Size: 31.0 MB (30997127 bytes)  
+	-	`sha256:1de36db42e5755559d528f47a0d4ce0dec11ef9e3be523b7f767ec2f670c494e`  
+		Last Modified: Thu, 30 May 2019 20:23:51 GMT  
+		Size: 31.1 MB (31106329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:73f2a65b80e455e53c2da8c75c6abad3f79910dc30df4268b1ec182d0a6e6c85`  
-		Last Modified: Thu, 09 May 2019 00:23:32 GMT  
-		Size: 1.3 MB (1324797 bytes)  
+	-	`sha256:03acb11d3f8e1a7885bf82e07ece4f815c7516bac22b7a33e0571fde0d95f417`  
+		Last Modified: Thu, 30 May 2019 20:23:36 GMT  
+		Size: 1.3 MB (1325535 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `node:stretch-slim` - linux; s390x
