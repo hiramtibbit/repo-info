@@ -1,7 +1,7 @@
 ## `opensuse:latest`
 
 ```console
-$ docker pull opensuse@sha256:03869e0631a7b9b8daecdc3d2defa61e25098a76d9f6069f7453950d9f661f6b
+$ docker pull opensuse@sha256:0460dd92f97c35cd0875e9cd14b02321002fac14631ea682a0c9f31c4998844d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -69,24 +69,27 @@ CMD ["/bin/bash"]
 ### `opensuse:latest` - linux; ppc64le
 
 ```console
-$ docker pull opensuse@sha256:ee80a6862a87378d5c07358c862530609eb36fece4804efeca9a8b7778afa88f
+$ docker pull opensuse@sha256:883c426f2e6efd49b9abb61ad7e9adc6cce195bf7b49c7045c26230fb69a274f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.4 MB (47394227 bytes)**  
+-	Total Size: **47.5 MB (47521374 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0882c722001425b9991ef2df1a3bed55a47af8b5f5ac896c3043f251d75bdafa`
+-	Image ID: `sha256:7e2e91f264fc34c2fa1b1b9416272d6d2c8a4f1a1c23066be7d745edfaaf4e6a`
+-	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 21 Apr 2018 09:11:24 GMT
+# Thu, 30 May 2019 20:28:52 GMT
 MAINTAINER Fabian Vogt <fvogt@suse.com>
-# Thu, 28 Feb 2019 10:13:05 GMT
-ADD file:bc11859cb9736d2856d0875c6bccd23c7c2b24cdbafc7e4f4a57ff03260ffdd4 in / 
+# Thu, 30 May 2019 20:29:00 GMT
+ADD file:6382e975e9b867fcf491b41d865d96f19193603680f862bae2a5502e75aed6c5 in / 
+# Thu, 30 May 2019 20:29:06 GMT
+CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:4900c82ab46271dc8e7675a19c2a2d15c2cbc5b3e5674e86941b60e6db01aa00`  
-		Last Modified: Thu, 28 Feb 2019 10:13:36 GMT  
-		Size: 47.4 MB (47394227 bytes)  
+	-	`sha256:eb43c67f09f141adf260e7fbd68ca32d0f8a1ca1f3491b1dfde165d980eb8eb9`  
+		Last Modified: Thu, 30 May 2019 20:29:44 GMT  
+		Size: 47.5 MB (47521374 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
