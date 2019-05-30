@@ -1,13 +1,14 @@
 ## `hylang:pypy3.5`
 
 ```console
-$ docker pull hylang@sha256:cae4329ab4ecde51574cd178f3c4184f3e08710907bcd62353dfc635f6ce9807
+$ docker pull hylang@sha256:0a66d4c9327f3c4ae8616e5e7e3f021af50c4b406811ecd7b118977e92c66a12
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; 386
+	-	linux; ppc64le
 	-	linux; s390x
 
 ### `hylang:pypy3.5` - linux; amd64
@@ -124,6 +125,64 @@ CMD ["hy"]
 	-	`sha256:4e8c8f49d46674baa29b888995174af14b2c9ac60a101ac0a280b180dc35aecd`  
 		Last Modified: Wed, 22 May 2019 22:44:41 GMT  
 		Size: 498.6 KB (498619 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `hylang:pypy3.5` - linux; ppc64le
+
+```console
+$ docker pull hylang@sha256:174423634c6fb34af3c5ccc4a1e94c12a4a524146f4fd507113d8c44dc0e7686
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **60.9 MB (60881704 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1c86a33c82e576041d77b1b409113cd275d02140527333305fabd0828681c9d5`
+-	Default Command: `["hy"]`
+
+```dockerfile
+# Wed, 08 May 2019 09:05:46 GMT
+ADD file:fa23694e2ef3b1ff3ac824d7d18d6951725f7f1ebfd5350392edd91f6b90d89e in / 
+# Wed, 08 May 2019 09:05:50 GMT
+CMD ["bash"]
+# Wed, 08 May 2019 09:52:27 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 08 May 2019 09:52:29 GMT
+ENV LANG=C.UTF-8
+# Wed, 08 May 2019 11:15:09 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libffi6 		libgdbm3 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 08 May 2019 11:15:18 GMT
+ENV PYPY_VERSION=7.0.0
+# Wed, 08 May 2019 11:15:23 GMT
+ENV PYTHON_PIP_VERSION=19.1.1
+# Wed, 08 May 2019 11:17:26 GMT
+RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) pypyArch='linux64'; sha256='729e3c54325969c98bd3658c6342b9f5987b96bad1d6def04250a08401b54c4b' ;; 		i386) pypyArch='linux32'; sha256='b8db8fbca9621de8ea8cd7184b322f2dddb2f385e8e5a63dfb75bb3fea4b2e3f' ;; 		ppc64el) pypyArch='ppc64le'; sha256='2912884da05abc2cdf71dd337c3f280095351312c1a1732a52b6878174a0fd02' ;; 		s390x) pypyArch='s390x'; sha256='d588b045cc0d3a75c31fce54c1d181b1206ad9a5dd272fe79160a6268401605f' ;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		wget 		libncurses5 	; 		wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3.5-v${PYPY_VERSION}-${pypyArch}.tar.bz2" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum -c; 	tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2; 	find /usr/local/lib-python -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		pypy3 --version; 		if [ -f /usr/local/lib_pypy/_ssl_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libssl-dev; 		cd /usr/local/lib_pypy; 		pypy3 _ssl_build.py; 	fi; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		pypy3 get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		rm -f get-pip.py; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 	pip --version
+# Wed, 08 May 2019 11:17:30 GMT
+CMD ["pypy3"]
+# Thu, 30 May 2019 18:31:47 GMT
+ENV HY_VERSION=0.17.0
+# Thu, 30 May 2019 18:32:15 GMT
+RUN pip install --no-cache-dir "hy == $HY_VERSION"
+# Thu, 30 May 2019 18:32:18 GMT
+CMD ["hy"]
+```
+
+-	Layers:
+	-	`sha256:64bfe8794b280a764f2e07634dce2977621d140ae17fb34a03635710e84c3dfb`  
+		Last Modified: Wed, 08 May 2019 09:26:17 GMT  
+		Size: 22.7 MB (22744914 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a2a2cf7d4b4da76c9118013c907318b3675d77f5cc8f460793eefa261a70f9ce`  
+		Last Modified: Wed, 08 May 2019 11:19:37 GMT  
+		Size: 2.9 MB (2934074 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7f3ff412d6aa11797049236ef2893316458931cdd6972ea5310f07797d3a4847`  
+		Last Modified: Wed, 08 May 2019 11:19:47 GMT  
+		Size: 34.7 MB (34703582 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:63cd150f83b1943480acc80f92be35fb90d14489c989a32172ddbda5528c1c5e`  
+		Last Modified: Thu, 30 May 2019 18:39:34 GMT  
+		Size: 499.1 KB (499134 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:pypy3.5` - linux; s390x
