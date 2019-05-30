@@ -1,7 +1,7 @@
 ## `wordpress:5-php7.1-fpm`
 
 ```console
-$ docker pull wordpress@sha256:878eab6d8debec8c363fee1acc81f8c738a2fc2a41dd1304e503cf1571d9d04a
+$ docker pull wordpress@sha256:9fcd6b02b25a667fd0b2c465f3ba76eae813b10509b9dcde429574c0f0d703ee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -742,14 +742,14 @@ CMD ["php-fpm"]
 ### `wordpress:5-php7.1-fpm` - linux; ppc64le
 
 ```console
-$ docker pull wordpress@sha256:2ff3583cfc8ac21d205023339273a80262fd591453ca9b815a4cb28aeb36741e
+$ docker pull wordpress@sha256:0591cc77c57c52d63b93e3eeb8a1ff781a9864d68fd37bb76efd2176f33575fe
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.5 MB (136526069 bytes)**  
+-	Total Size: **144.9 MB (144876042 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88db06c3996f34814957a97d02d650998dbdd7709a918a403f5a7ecbf55e234a`
+-	Image ID: `sha256:e7f782f62ccd9cc5d70700f40ecd13167b254a6baca708aee10569285f49f0b3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -804,25 +804,25 @@ STOPSIGNAL SIGQUIT
 EXPOSE 9000
 # Wed, 08 May 2019 18:19:11 GMT
 CMD ["php-fpm"]
-# Thu, 09 May 2019 02:22:24 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libjpeg-dev 		libpng-dev 	; 		docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr; 	docker-php-ext-install gd mysqli opcache zip; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
-# Thu, 09 May 2019 02:22:33 GMT
+# Thu, 30 May 2019 20:53:58 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libjpeg-dev 		libmagickwand-dev 		libpng-dev 	; 		docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr; 	docker-php-ext-install 		bcmath 		exif 		gd 		mysqli 		opcache 		zip 	; 	pecl install imagick-3.4.4; 	docker-php-ext-enable imagick; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
+# Thu, 30 May 2019 20:54:04 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Thu, 09 May 2019 02:22:40 GMT
+# Thu, 30 May 2019 20:54:08 GMT
 RUN { 		echo 'error_reporting = 4339'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini
-# Thu, 09 May 2019 02:22:42 GMT
+# Thu, 30 May 2019 20:54:09 GMT
 VOLUME [/var/www/html]
-# Fri, 10 May 2019 10:25:58 GMT
-ENV WORDPRESS_VERSION=5.2
-# Fri, 10 May 2019 10:26:06 GMT
-ENV WORDPRESS_SHA1=36459a4621b9e1909c606a98d08625b9e0e25bbc
-# Fri, 10 May 2019 10:26:27 GMT
+# Thu, 30 May 2019 20:54:11 GMT
+ENV WORDPRESS_VERSION=5.2.1
+# Thu, 30 May 2019 20:54:13 GMT
+ENV WORDPRESS_SHA1=65913a39b2e8990ece54efbfa8966fc175085794
+# Thu, 30 May 2019 20:54:22 GMT
 RUN set -ex; 	curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; 	echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c -; 	tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 	chown -R www-data:www-data /usr/src/wordpress
-# Fri, 10 May 2019 10:26:31 GMT
+# Thu, 30 May 2019 20:54:23 GMT
 COPY file:2413d0c63f9d7b1d114697b18317719a02eadaaa61fc5d0c1edd96c027bc57a4 in /usr/local/bin/ 
-# Fri, 10 May 2019 10:26:39 GMT
+# Thu, 30 May 2019 20:54:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 10 May 2019 10:26:43 GMT
+# Thu, 30 May 2019 20:54:27 GMT
 CMD ["php-fpm"]
 ```
 
@@ -863,25 +863,25 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 08 May 2019 18:41:09 GMT  
 		Size: 7.8 KB (7773 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:953e06a0dccb06449c74262ec33ed5056fcb4d2d8139dea36f6ff1ec73593ba8`  
-		Last Modified: Thu, 09 May 2019 02:39:55 GMT  
-		Size: 1.1 MB (1064213 bytes)  
+	-	`sha256:be2d59cda0e4de2f491e76abf9ebde88101d26c78127540065dd3af10f01629e`  
+		Last Modified: Thu, 30 May 2019 21:51:43 GMT  
+		Size: 9.4 MB (9411143 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61b435b413ff1446207c432b61c4302e07b92700ac7764e651fe2df5589ee716`  
-		Last Modified: Thu, 09 May 2019 02:39:55 GMT  
+	-	`sha256:ba5004759bc466a301c2d8bcc70cef9bc814834aa77101e328886aec8a90c737`  
+		Last Modified: Thu, 30 May 2019 21:51:35 GMT  
 		Size: 349.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec5159c5bbebd06eee3b4c0e9728d9c9975b168dafc1e863d829d4fa05d233eb`  
-		Last Modified: Thu, 09 May 2019 02:39:55 GMT  
-		Size: 345.0 B  
+	-	`sha256:4055b22cb5128ec5bceb7974f5b078a10b807f804f0f043f7655226bb8653787`  
+		Last Modified: Thu, 30 May 2019 21:51:35 GMT  
+		Size: 347.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea6d972b79f40b75f091e3a132cf0f02a59208fbeb7c2f10e4f0a0092bf6b64f`  
-		Last Modified: Fri, 10 May 2019 10:34:02 GMT  
-		Size: 11.0 MB (11041374 bytes)  
+	-	`sha256:b2cb964337a6aa04567f096cdad41b5f48c14def9d7ca6a70032b089c12742b5`  
+		Last Modified: Thu, 30 May 2019 21:51:45 GMT  
+		Size: 11.0 MB (11044413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8fa87b3d4977fecba1a7f26cb346380a92ab305fbc1a227ed345cd6a779bea7`  
-		Last Modified: Fri, 10 May 2019 10:33:57 GMT  
-		Size: 3.9 KB (3906 bytes)  
+	-	`sha256:a5041fd22b3a9aa38e34123aaa3bad826c3bc548fb2efd870f67d7361564219a`  
+		Last Modified: Thu, 30 May 2019 21:51:35 GMT  
+		Size: 3.9 KB (3908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:5-php7.1-fpm` - linux; s390x
