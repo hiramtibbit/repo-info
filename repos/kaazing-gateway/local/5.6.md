@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:26804ec9c6fea7b3ce550d432865683ee4d2e11a98f87dbc29901b1acbbf810d`
-- Created: `2019-05-24T23:35:00.169526064Z`
-- Virtual Size: ~ 265.52 Mb  
+- Image ID: `sha256:55af0eb9000de6b449e1b65fac790ef49df7b8b86b667d2df4a24574ed852a51`
+- Created: `2019-05-29T22:06:57.176564869Z`
+- Virtual Size: ~ 266.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gateway.start"]`
@@ -1934,8 +1934,10 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libp11-kit0:amd64=0.23.3-2`
+- `p11-kit=0.23.3-2`
+- `p11-kit-modules:amd64=0.23.3-2`
 
-Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`, `/usr/share/doc/p11-kit/copyright`, `/usr/share/doc/p11-kit-modules/copyright`)
 
 - `BSD-3-Clause`
 - `ISC`
