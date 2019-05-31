@@ -1,10 +1,10 @@
-# `crate:3.3.2`
+# `crate:3.3.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1c0582e5af4129c78da4941e7a672a45142dfcc2d6c06039dec30894a26d5006`
-- Created: `2019-04-25T23:20:19.46364474Z`
-- Virtual Size: ~ 650.09 Mb  
+- Image ID: `sha256:84016f89bc83ee98ae06f2bc0d04f7096abe4bf3bd503a1f9751027254e99347`
+- Created: `2019-05-28T22:20:07.139348046Z`
+- Virtual Size: ~ 650.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `CRATE_HEAP_SIZE=512M`
 - Labels:
   - `maintainer=Crate.io <office@crate.io>`
-  - `org.label-schema.build-date=2019-04-18T12:45:50.167245069+00:00`
+  - `org.label-schema.build-date=2019-05-23T12:13:14.395117312+00:00`
   - `org.label-schema.description=CrateDB is a distributed SQL database handles massive amounts of machine data in real-time.`
   - `org.label-schema.license=GPLv2`
   - `org.label-schema.name=crate`
@@ -23,7 +23,7 @@
   - `org.label-schema.url=https://crate.io/products/cratedb/`
   - `org.label-schema.vcs-url=https://github.com/crate/docker-crate`
   - `org.label-schema.vendor=Crate.io`
-  - `org.label-schema.version=3.3.2`
+  - `org.label-schema.version=3.3.3`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -36,6 +36,8 @@ Source:
 ```console
 $ yumdownloader --quiet --source --urls acl-2.2.51-14.el7
 Enabling epel-source repository
+https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/7/SRPMS/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
+Trying other mirror.
 Enabling updates-source repository
 Enabling base-source repository
 Enabling ius-source repository
@@ -683,7 +685,7 @@ Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/gobject-introspection-1.56.1-1.el7.src.rpm
 ```
 
-### `rpm` package: `gpg-pubkey-9cd4953f-4a9da118`
+### `rpm` package: `gpg-pubkey-4b274df2-5c17ce56`
 
 Licenses (from `rpm --query`): pubkey
 
@@ -807,20 +809,20 @@ Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/iputils-20160308-10.el7.src.rpm
 ```
 
-### `rpm` package: `ius-release-1.0-15.ius.centos7.noarch`
+### `rpm` package: `ius-release-2-1.el7.ius.noarch`
 
-Licenses (from `rpm --query`): IUS Community Project End User Agreement
+Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls ius-release-1.0-15.ius.centos7.noarch
+$ yumdownloader --quiet --source --urls ius-release-2-1.el7.ius.noarch
 Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
 Enabling ius-source repository
 Enabling extras-source repository
-http://mirrors.kernel.org/ius/stable/CentOS/7/SRPMS//ius-release-1.0-15.ius.centos7.src.rpm
+https://repo.ius.io/7/src//packages/i/ius-release-2-1.el7.ius.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.11-4.el7_0.x86_64`
@@ -1991,36 +1993,36 @@ Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/python-urlgrabber-3.10-9.el7.src.rpm
 ```
 
-### `rpm` package: `python36u-3.6.7-1.ius.centos7.x86_64`
+### `rpm` package: `python36u-3.6.8-1.el7.ius.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls python36u-3.6.7-1.ius.centos7
+$ yumdownloader --quiet --source --urls python36u-3.6.8-1.el7.ius
 Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
 Enabling ius-source repository
 Enabling extras-source repository
-http://mirrors.kernel.org/ius/stable/CentOS/7/SRPMS//python36u-3.6.7-1.ius.centos7.src.rpm
+https://repo.ius.io/7/src//packages/p/python36u-3.6.8-1.el7.ius.src.rpm
 ```
 
-### `rpm` package: `python36u-libs-3.6.7-1.ius.centos7.x86_64`
+### `rpm` package: `python36u-libs-3.6.8-1.el7.ius.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls python36u-libs-3.6.7-1.ius.centos7
+$ yumdownloader --quiet --source --urls python36u-libs-3.6.8-1.el7.ius
 Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
 Enabling ius-source repository
 Enabling extras-source repository
-http://mirrors.kernel.org/ius/stable/CentOS/7/SRPMS//python36u-3.6.7-1.ius.centos7.src.rpm
+https://repo.ius.io/7/src//packages/p/python36u-3.6.8-1.el7.ius.src.rpm
 ```
 
 ### `rpm` package: `pyxattr-0.5.1-5.el7.x86_64`
