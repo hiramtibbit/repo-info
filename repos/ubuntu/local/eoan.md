@@ -66,13 +66,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.8.1+19.10
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.8.1+19.10.dsc' apt_1.8.1+19.10.dsc 2798 SHA256:f84740cc858a43436fd17bf3f7221e85dbed8c9343a570ea74a182fe541c0db4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.8.1+19.10.tar.xz' apt_1.8.1+19.10.tar.xz 2172124 SHA256:3a534f5c18bfbbebe8710437873efd47b4b02927a9ca54085fdbaabc22a6ca84
-```
 
 ### `dpkg` source package: `attr=1:2.4.48-4`
 
@@ -363,15 +359,13 @@ Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/li
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.45.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.45.0-1.dsc' e2fsprogs_1.45.0-1.dsc 2769 SHA256:452ee6c6035d4563342052834d36d9bf97673ae0cf85eee9268819e2d54fbb9f
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.45.0.orig.tar.gz' e2fsprogs_1.45.0.orig.tar.gz 7820148 SHA256:73a3d04e7717bf47b2e7920285847e1f6efcb369ace080fa5c48e9e9b292ece9
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.45.0.orig.tar.gz.asc' e2fsprogs_1.45.0.orig.tar.gz.asc 488 SHA256:44ec7209be97e312c8938e762e0cb84a28a9638344c33fa78adfa6c740b42951
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.45.0-1.debian.tar.xz' e2fsprogs_1.45.0-1.debian.tar.xz 79220 SHA256:6d3db8fa190ebd6efbe4171f1e051c379229223d71b1f8af0264353180f4d133
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/e2fsprogs/1.45.0-1/
+
 
 ### `dpkg` source package: `findutils=4.6.0+git+20190209-2`
 
@@ -508,15 +502,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.6.7-2ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.7-2ubuntu3.dsc' gnutls28_3.6.7-2ubuntu3.dsc 3464 SHA256:1adc1d8fe974a6f18d1a1172b88addf4a6ec464b6c7620088d0d129408917003
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.7.orig.tar.xz' gnutls28_3.6.7.orig.tar.xz 8153728 SHA256:5b3409ad5aaf239808730d1ee12fdcd148c0be00262c7edf157af655a8a188e2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.7.orig.tar.xz.asc' gnutls28_3.6.7.orig.tar.xz.asc 534 SHA256:a14d0a7b9295b65ae797a70f8e765024a2e363dca03d008bfce0aec2b3f292b0
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.7-2ubuntu3.debian.tar.xz' gnutls28_3.6.7-2ubuntu3.debian.tar.xz 68852 SHA256:1eab18739e7134c7fe93fa908f12353560956f2b3f06ffd223366cec08b4e380
-```
 
 ### `dpkg` source package: `grep=3.3-1`
 
