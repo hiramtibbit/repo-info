@@ -2,12 +2,12 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:79398858543ceb6be18e9af05452f2a95df2d9dac563ec50acaa8cd50ca3d051`
-- Created: `2019-05-08T03:45:05.70036899Z`
-- Virtual Size: ~ 112.09 Mb  
+- Image ID: `sha256:c31c829fd3bd5f0d296253a654e5e3b6f5df6a1a13cfd6546d622e44279548b4`
+- Created: `2019-05-28T23:36:58.658346729Z`
+- Virtual Size: ~ 110.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["perl5.28.2","-de0"]`
+- Command: `["perl5.30.0","-de0"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
