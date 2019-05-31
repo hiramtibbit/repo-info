@@ -2,20 +2,20 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fc0e205ec96ff74589f9811f111374f2bbf25a96edfcf35e772362ee4d83aeb9`
-- Created: `2019-05-15T03:20:41.766003925Z`
-- Virtual Size: ~ 290.66 Mb  
+- Image ID: `sha256:a76e424cf7b14330b7b0b9d246c9b5a1624b1bf704a2666a4c38d2295ac54e9a`
+- Created: `2019-05-29T16:20:05.632095529Z`
+- Virtual Size: ~ 291.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["arangod"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `ARANGO_VERSION=3.4.5`
+  - `ARANGO_VERSION=3.4.6`
   - `ARANGO_URL=https://download.arangodb.com/arangodb34/DEBIAN/amd64`
-  - `ARANGO_PACKAGE=arangodb3_3.4.5-1_amd64.deb`
-  - `ARANGO_PACKAGE_URL=https://download.arangodb.com/arangodb34/DEBIAN/amd64/arangodb3_3.4.5-1_amd64.deb`
-  - `ARANGO_SIGNATURE_URL=https://download.arangodb.com/arangodb34/DEBIAN/amd64/arangodb3_3.4.5-1_amd64.deb.asc`
+  - `ARANGO_PACKAGE=arangodb3_3.4.6-1_amd64.deb`
+  - `ARANGO_PACKAGE_URL=https://download.arangodb.com/arangodb34/DEBIAN/amd64/arangodb3_3.4.6-1_amd64.deb`
+  - `ARANGO_SIGNATURE_URL=https://download.arangodb.com/arangodb34/DEBIAN/amd64/arangodb3_3.4.6-1_amd64.deb.asc`
 
 ## `apk` (`.apk`-based packages)
 
@@ -124,16 +124,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20171114-r3 description:
+ca-certificates-20190108-r0 description:
 Common CA certificates PEM files
 
-ca-certificates-20171114-r3 webpage:
+ca-certificates-20190108-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20171114-r3 installed size:
-741376
+ca-certificates-20190108-r0 installed size:
+733184
 
-ca-certificates-20171114-r3 license:
+ca-certificates-20190108-r0 license:
 MPL-2.0 GPL-2.0-or-later
 
 ```
