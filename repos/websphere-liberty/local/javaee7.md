@@ -1,30 +1,35 @@
-# `websphere-liberty:19.0.0.4-javaee7`
+# `websphere-liberty:19.0.0.5-javaee7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b2e378a6e47bcf4c825335ffeae7f5e94e4110bd40e09e21a397a12b5e4c4fb2`
-- Created: `2019-05-15T23:48:22.327335978Z`
-- Virtual Size: ~ 500.88 Mb  
+- Image ID: `sha256:d488df2ec8c4d3cecaa2a4f2b01da44914431676df11dfbcd726a18b396b7342`
+- Created: `2019-05-28T22:38:22.320301189Z`
+- Virtual Size: ~ 481.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/helpers/runtime/docker-server.sh"]`
 - Command: `["/opt/ibm/wlp/bin/server","run","defaultServer"]`
 - Environment:
   - `PATH=/opt/ibm/wlp/bin:/opt/ibm/helpers/build:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr5fp35`
+  - `JAVA_VERSION=1.8.0_sr5fp36`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/ -XX:+UseContainerSupport`
-  - `LIBERTY_VERSION=19.0.0_04`
+  - `LIBERTY_VERSION=19.0.0_05`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ibm/wlp/output`
   - `RANDFILE=/tmp/.rnd`
   - `KEYSTORE_REQUIRED=true`
 - Labels:
-  - `BuildLabel=cl190420190419-0642`
+  - `BuildLabel=cl190520190522-2227`
   - `ProductID=fbf6a96d49214c0abc6a3bc5da6e48cd`
   - `ProductName=WebSphere Application Server Liberty`
-  - `ProductVersion=19.0.0.4`
-  - `maintainer=Arthur De Magalhaes <arthurdm@ca.ibm.com> (@arthurdm)`
+  - `ProductVersion=19.0.0.5`
+  - `org.opencontainers.image.authors=Arthur De Magalhaes, Andy Naumann`
+  - `org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html`
+  - `org.opencontainers.image.revision=cl190520190522-2227`
+  - `org.opencontainers.image.url=http://wasdev.net`
+  - `org.opencontainers.image.vendor=IBM`
+  - `org.opencontainers.image.version=19.0.0.5`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -743,14 +748,9 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 - `LGPL-2`
 - `LGPL-2.0+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.3.1-2.1ubuntu2~16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1ubuntu2~16.04.1.dsc' libseccomp_2.3.1-2.1ubuntu2~16.04.1.dsc 2262 SHA256:72ce2268693b51af6a4eaf164ebe1521feecb856a42e4e25eae598957f1ca6f7
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1.orig.tar.gz' libseccomp_2.3.1.orig.tar.gz 552299 SHA256:ff5bdd2168790f1979e24eaa498f8606c2f2d96f08a8dc4006a2e88affa4562b
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1ubuntu2~16.04.1.debian.tar.xz' libseccomp_2.3.1-2.1ubuntu2~16.04.1.debian.tar.xz 17400 SHA256:53bfdab8af41e45fbd041194abf92866b69b29d9cbfb7c1577a2c34be509fabe
-```
 
 ### `dpkg` source package: `libselinux=2.4-3build2`
 

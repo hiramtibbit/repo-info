@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8e44775f3f3854443f04914d05fd5182a0022dca27dea19414dd8785cbede2e3`
-- Created: `2019-05-24T22:45:16.092797545Z`
+- Image ID: `sha256:ed4b28386dadc5ddbdfaf4c8e1421075f49ae3c0f36d627b5e46202f288a1ee8`
+- Created: `2019-05-28T22:28:53.270856448Z`
 - Virtual Size: ~ 445.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,7 +17,11 @@
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ibm/wlp/output`
 - Labels:
-  - `maintainer=Arthur De Magalhaes <arthurdm@ca.ibm.com> (@arthurdm)`
+  - `org.opencontainers.image.authors=Arthur De Magalhaes, Andy Naumann`
+  - `org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html`
+  - `org.opencontainers.image.revision=cl190520190522-2227`
+  - `org.opencontainers.image.url=http://wasdev.net`
+  - `org.opencontainers.image.vendor=IBM`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -766,14 +770,9 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 - `LGPL-2`
 - `LGPL-2.0+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.3.1-2.1ubuntu2~16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1ubuntu2~16.04.1.dsc' libseccomp_2.3.1-2.1ubuntu2~16.04.1.dsc 2262 SHA256:72ce2268693b51af6a4eaf164ebe1521feecb856a42e4e25eae598957f1ca6f7
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1.orig.tar.gz' libseccomp_2.3.1.orig.tar.gz 552299 SHA256:ff5bdd2168790f1979e24eaa498f8606c2f2d96f08a8dc4006a2e88affa4562b
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1ubuntu2~16.04.1.debian.tar.xz' libseccomp_2.3.1-2.1ubuntu2~16.04.1.debian.tar.xz 17400 SHA256:53bfdab8af41e45fbd041194abf92866b69b29d9cbfb7c1577a2c34be509fabe
-```
 
 ### `dpkg` source package: `libselinux=2.4-3build2`
 
