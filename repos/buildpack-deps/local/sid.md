@@ -864,10 +864,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris elfutils=0.176-1
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.176-1.dsc' elfutils_0.176-1.dsc 2568 SHA256:04188a6d3e83332d462a6b8f5add8fc5f37e4f95cf5d602ad74b574b6f61fc4f
+'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.176-1.1.dsc' elfutils_0.176-1.1.dsc 2584 SHA256:6d9fa4741e921f58a3e291def1f92a87bed888db15e73d6e29d46fc48b5f615a
 'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.176.orig.tar.bz2' elfutils_0.176.orig.tar.bz2 8646075 SHA256:eb5747c371b0af0f71e86215a5ebb88728533c3a104a43d4231963f308cd1023
 'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.176.orig.tar.bz2.asc' elfutils_0.176.orig.tar.bz2.asc 455 SHA256:51474b579b25fc799de0777e241c83605427d2903f8d28524ef6af42f75931fd
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.176-1.debian.tar.xz' elfutils_0.176-1.debian.tar.xz 31492 SHA256:f19d4982d9c98be2effac6846db55b67d99f152d52babb83592355e497f7dc71
+'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.176-1.1.debian.tar.xz' elfutils_0.176-1.1.debian.tar.xz 31644 SHA256:06d7057e744d3a6138cf43d30237e2b327b6bfe3041a9a4b210414429c1267f1
 ```
 
 Other potentially useful URLs:

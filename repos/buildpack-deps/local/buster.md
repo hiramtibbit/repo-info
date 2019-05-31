@@ -3618,21 +3618,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb-10.3=1:10.3.14-1
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.14-1.dsc' mariadb-10.3_10.3.14-1.dsc 4699 SHA256:50f1b396eba727b41c3a22d4b4a349926cbe5896d39bdfc16e1c45535c22cbd7
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.14.orig.tar.gz' mariadb-10.3_10.3.14.orig.tar.gz 70771337 SHA256:ba1c94d92fc8ebdf9b8a1d1b93ed6aeeead33da507efbbd4afcf49f32023e054
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.14.orig.tar.gz.asc' mariadb-10.3_10.3.14.orig.tar.gz.asc 181 SHA256:c86944ca87b09d782ee11031848115c6e01a1d2dac3e2cd3dfcdc1103756d83b
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.14-1.debian.tar.xz' mariadb-10.3_10.3.14-1.debian.tar.xz 223020 SHA256:5b1c3380cf6d3f3008bdc29d94afeb92e795494c9bfc5940a0e224ae4d17f315
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb-10.3/1:10.3.14-1/
 
-- https://sources.debian.net/src/mariadb-10.3/1:10.3.14-1/ (for browsing the source)
-- https://sources.debian.net/src/mariadb-10.3/1:10.3.14-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb-10.3/1:10.3.14-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
@@ -3673,21 +3665,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=4.8.2-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.8.2-1.dsc' mercurial_4.8.2-1.dsc 2677 SHA256:b7e2e1e8f371a45c88b57dd3bdd491545fcb8c21b0500ec9c74915527f0126b7
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.8.2.orig.tar.gz' mercurial_4.8.2.orig.tar.gz 6870985 SHA256:6c202cb9cf05e63b86477ebf84d6475eb10b4022ac2cd3a7481fb36d9c45fdb2
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.8.2.orig.tar.gz.asc' mercurial_4.8.2.orig.tar.gz.asc 833 SHA256:ceaf75242740acfd06a96aae53d8a40f3b3f3c4a7119bb53224d0bf6efa65254
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.8.2-1.debian.tar.xz' mercurial_4.8.2-1.debian.tar.xz 61976 SHA256:61dd7862baed3dce448a43252cd1f55fb7de48361699d76fe85d17727fc55909
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/4.8.2-1/
 
-- https://sources.debian.net/src/mercurial/4.8.2-1/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/4.8.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/4.8.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.62`
 
@@ -4597,19 +4581,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.7.2-1
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.7.2-1.dsc' python3-defaults_3.7.2-1.dsc 2797 SHA256:90893b4e8b6835fa2d551886fcc4a78ad07f8296fc613ca6f69cd3c6f9425049
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.7.2-1.tar.gz' python3-defaults_3.7.2-1.tar.gz 137610 SHA256:f9cc67d4567362fee0241be187f33a0f463e78da76ff6ecf0fe14a3d674f59ec
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-defaults/3.7.2-1/
 
-- https://sources.debian.net/src/python3-defaults/3.7.2-1/ (for browsing the source)
-- https://sources.debian.net/src/python3-defaults/3.7.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-defaults/3.7.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-stdlib-extensions=3.7.3~rc1-1`
 
@@ -4622,20 +4600,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-stdlib-extensions=3.7.3~rc1-1
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.7.3~rc1-1.dsc' python3-stdlib-extensions_3.7.3~rc1-1.dsc 2477 SHA256:a59925456d5396ad7a32202dd1e65ebfa7eb9d4aa70bbf6d9cd2bcf46fbf541e
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.7.3~rc1.orig.tar.xz' python3-stdlib-extensions_3.7.3~rc1.orig.tar.xz 1038292 SHA256:a3c3f115b354ce2007306c7c37f9a9254a0250912f153faf759ea2dad5ed5c42
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.7.3~rc1-1.debian.tar.xz' python3-stdlib-extensions_3.7.3~rc1-1.debian.tar.xz 16256 SHA256:336e57856d64d3fac1401fe00ccc614c2c5df480c7906c78a827e5a075e1a152
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-stdlib-extensions/3.7.3~rc1-1/
 
-- https://sources.debian.net/src/python3-stdlib-extensions/3.7.3~rc1-1/ (for browsing the source)
-- https://sources.debian.net/src/python3-stdlib-extensions/3.7.3~rc1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-stdlib-extensions/3.7.3~rc1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3.7=3.7.3~rc1-1`
 
@@ -4666,20 +4637,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.7-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.7=3.7.3~rc1-1
-'http://deb.debian.org/debian/pool/main/p/python3.7/python3.7_3.7.3~rc1-1.dsc' python3.7_3.7.3~rc1-1.dsc 3464 SHA256:025f09abc026f1d6a6e4524b5926a39e41cf2c9a1e931999655fedc4c793c67d
-'http://deb.debian.org/debian/pool/main/p/python3.7/python3.7_3.7.3~rc1.orig.tar.xz' python3.7_3.7.3~rc1.orig.tar.xz 17106464 SHA256:d184af1fc8a1559f5cea0ea99bbfa5b34ce410033775eeacd9b90cd1eb756f72
-'http://deb.debian.org/debian/pool/main/p/python3.7/python3.7_3.7.3~rc1-1.debian.tar.xz' python3.7_3.7.3~rc1-1.debian.tar.xz 209784 SHA256:7e014c5f6c1c7116663494e71e2ea389cd3ec2cee73ddf19cf0940b381dd09ca
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.7/3.7.3~rc1-1/
 
-- https://sources.debian.net/src/python3.7/3.7.3~rc1-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.7/3.7.3~rc1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.7/3.7.3~rc1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=7.0-5`
 

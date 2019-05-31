@@ -1868,21 +1868,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=4.8.2-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.8.2-1.dsc' mercurial_4.8.2-1.dsc 2677 SHA256:b7e2e1e8f371a45c88b57dd3bdd491545fcb8c21b0500ec9c74915527f0126b7
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.8.2.orig.tar.gz' mercurial_4.8.2.orig.tar.gz 6870985 SHA256:6c202cb9cf05e63b86477ebf84d6475eb10b4022ac2cd3a7481fb36d9c45fdb2
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.8.2.orig.tar.gz.asc' mercurial_4.8.2.orig.tar.gz.asc 833 SHA256:ceaf75242740acfd06a96aae53d8a40f3b3f3c4a7119bb53224d0bf6efa65254
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.8.2-1.debian.tar.xz' mercurial_4.8.2-1.debian.tar.xz 61976 SHA256:61dd7862baed3dce448a43252cd1f55fb7de48361699d76fe85d17727fc55909
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/4.8.2-1/
 
-- https://sources.debian.net/src/mercurial/4.8.2-1/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/4.8.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/4.8.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.62`
 
