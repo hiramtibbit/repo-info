@@ -1,10 +1,10 @@
-# `wordpress:5.2.1-php7.3-fpm-alpine`
+# `wordpress:5.2.1-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bc00fb398a50531775196de21b391256872704b9ef28d49fe09d99842c6c3abb`
-- Created: `2019-05-23T21:56:23.463113996Z`
-- Virtual Size: ~ 127.58 Mb  
+- Image ID: `sha256:afc41552b62a1354bbfc00bbcd7b5d021619bd3033f7f698fa56062721a5053e`
+- Created: `2019-05-29T22:11:11.73696335Z`
+- Virtual Size: ~ 138.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -181,6 +181,125 @@ MIT
 
 ```
 
+### `apk` package: `expat`
+
+```console
+expat-2.2.6-r0 description:
+An XML Parser library written in C
+
+expat-2.2.6-r0 webpage:
+http://www.libexpat.org/
+
+expat-2.2.6-r0 installed size:
+188416
+
+expat-2.2.6-r0 license:
+MIT
+
+```
+
+### `apk` package: `fontconfig`
+
+```console
+fontconfig-2.13.1-r0 description:
+Library for configuring and customizing font access
+
+fontconfig-2.13.1-r0 webpage:
+http://fontconfig.org
+
+fontconfig-2.13.1-r0 installed size:
+643072
+
+fontconfig-2.13.1-r0 license:
+GPL
+
+```
+
+### `apk` package: `freetype`
+
+```console
+freetype-2.9.1-r2 description:
+TrueType font rendering library
+
+freetype-2.9.1-r2 webpage:
+https://www.freetype.org/
+
+freetype-2.9.1-r2 installed size:
+733184
+
+freetype-2.9.1-r2 license:
+FTL GPL-2.0-or-later
+
+```
+
+### `apk` package: `imagemagick-libs`
+
+```console
+imagemagick-libs-7.0.8.44-r0 description:
+Collection of tools and libraries for many image formats (libraries)
+
+imagemagick-libs-7.0.8.44-r0 webpage:
+https://www.imagemagick.org
+
+imagemagick-libs-7.0.8.44-r0 installed size:
+3252224
+
+imagemagick-libs-7.0.8.44-r0 license:
+ImageMagick
+
+```
+
+### `apk` package: `lcms2`
+
+```console
+lcms2-2.9-r1 description:
+Color Management Engine
+
+lcms2-2.9-r1 webpage:
+http://www.littlecms.com
+
+lcms2-2.9-r1 installed size:
+335872
+
+lcms2-2.9-r1 license:
+MIT
+
+```
+
+### `apk` package: `libbsd`
+
+```console
+libbsd-0.8.6-r2 description:
+commonly-used BSD functions not implemented by all libcs
+
+libbsd-0.8.6-r2 webpage:
+https://libbsd.freedesktop.org/
+
+libbsd-0.8.6-r2 installed size:
+86016
+
+libbsd-0.8.6-r2 license:
+BSD
+
+```
+
+### `apk` package: `libbz2`
+
+```console
+libbz2-1.0.6-r6 description:
+Shared library for bz2
+
+libbz2-1.0.6-r6 webpage:
+http://sources.redhat.com/bzip2
+
+libbz2-1.0.6-r6 installed size:
+73728
+
+libbz2-1.0.6-r6 license:
+BSD
+
+```
+
 ### `apk` package: `libc-utils`
 
 ```console
@@ -266,6 +385,23 @@ IJG
 
 ```
 
+### `apk` package: `libltdl`
+
+```console
+libltdl-2.4.6-r5 description:
+Runtime libraries for GNU Libtool Dynamic Module Loader
+
+libltdl-2.4.6-r5 webpage:
+https://www.gnu.org/software/libtool
+
+libltdl-2.4.6-r5 installed size:
+53248
+
+libltdl-2.4.6-r5 license:
+LGPL-2.0+
+
+```
+
 ### `apk` package: `libpng`
 
 ```console
@@ -348,6 +484,108 @@ libtls-standalone-2.7.4-r6 installed size:
 
 libtls-standalone-2.7.4-r6 license:
 ISC
+
+```
+
+### `apk` package: `libuuid`
+
+```console
+libuuid-2.33-r0 description:
+DCE compatible Universally Unique Identifier library
+
+libuuid-2.33-r0 webpage:
+http://git.kernel.org/cgit/utils/util-linux/util-linux.git
+
+libuuid-2.33-r0 installed size:
+40960
+
+libuuid-2.33-r0 license:
+GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
+
+```
+
+### `apk` package: `libx11`
+
+```console
+libx11-1.6.7-r0 description:
+X11 client-side library
+
+libx11-1.6.7-r0 webpage:
+http://xorg.freedesktop.org/
+
+libx11-1.6.7-r0 installed size:
+3383296
+
+libx11-1.6.7-r0 license:
+custom:XFREE86
+
+```
+
+### `apk` package: `libxau`
+
+```console
+libxau-1.0.8-r3 description:
+X11 authorisation library
+
+libxau-1.0.8-r3 webpage:
+http://xorg.freedesktop.org/
+
+libxau-1.0.8-r3 installed size:
+28672
+
+libxau-1.0.8-r3 license:
+custom
+
+```
+
+### `apk` package: `libxcb`
+
+```console
+libxcb-1.13-r2 description:
+X11 client-side library
+
+libxcb-1.13-r2 webpage:
+https://xcb.freedesktop.org
+
+libxcb-1.13-r2 installed size:
+1028096
+
+libxcb-1.13-r2 license:
+MIT
+
+```
+
+### `apk` package: `libxdmcp`
+
+```console
+libxdmcp-1.1.2-r5 description:
+X11 Display Manager Control Protocol library
+
+libxdmcp-1.1.2-r5 webpage:
+http://xorg.freedesktop.org/
+
+libxdmcp-1.1.2-r5 installed size:
+40960
+
+libxdmcp-1.1.2-r5 license:
+MIT
+
+```
+
+### `apk` package: `libxext`
+
+```console
+libxext-1.3.3-r3 description:
+X11 miscellaneous extensions library
+
+libxext-1.3.3-r3 webpage:
+http://xorg.freedesktop.org/
+
+libxext-1.3.3-r3 installed size:
+81920
+
+libxext-1.3.3-r3 license:
+custom
 
 ```
 

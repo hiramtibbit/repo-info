@@ -1,10 +1,10 @@
-# `wordpress:cli-2.2.0`
+# `wordpress:cli-2.2.0-php7.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fe852dd70da7495ddf63937ae1480c96dca3d3cbe0654779c0eb9bb3973ef033`
-- Created: `2019-05-11T05:06:21.79580465Z`
-- Virtual Size: ~ 122.74 Mb  
+- Image ID: `sha256:25938f5f69286b28722643122fdf3971b3fb906ca1bb88342e2b4c9250e86ef8`
+- Created: `2019-05-29T22:15:06.418592512Z`
+- Virtual Size: ~ 134.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -181,6 +181,91 @@ MIT
 
 ```
 
+### `apk` package: `expat`
+
+```console
+expat-2.2.6-r0 description:
+An XML Parser library written in C
+
+expat-2.2.6-r0 webpage:
+http://www.libexpat.org/
+
+expat-2.2.6-r0 installed size:
+188416
+
+expat-2.2.6-r0 license:
+MIT
+
+```
+
+### `apk` package: `fontconfig`
+
+```console
+fontconfig-2.13.1-r0 description:
+Library for configuring and customizing font access
+
+fontconfig-2.13.1-r0 webpage:
+http://fontconfig.org
+
+fontconfig-2.13.1-r0 installed size:
+643072
+
+fontconfig-2.13.1-r0 license:
+GPL
+
+```
+
+### `apk` package: `freetype`
+
+```console
+freetype-2.9.1-r2 description:
+TrueType font rendering library
+
+freetype-2.9.1-r2 webpage:
+https://www.freetype.org/
+
+freetype-2.9.1-r2 installed size:
+733184
+
+freetype-2.9.1-r2 license:
+FTL GPL-2.0-or-later
+
+```
+
+### `apk` package: `imagemagick-libs`
+
+```console
+imagemagick-libs-7.0.8.44-r0 description:
+Collection of tools and libraries for many image formats (libraries)
+
+imagemagick-libs-7.0.8.44-r0 webpage:
+https://www.imagemagick.org
+
+imagemagick-libs-7.0.8.44-r0 installed size:
+3252224
+
+imagemagick-libs-7.0.8.44-r0 license:
+ImageMagick
+
+```
+
+### `apk` package: `lcms2`
+
+```console
+lcms2-2.9-r1 description:
+Color Management Engine
+
+lcms2-2.9-r1 webpage:
+http://www.littlecms.com
+
+lcms2-2.9-r1 installed size:
+335872
+
+lcms2-2.9-r1 license:
+MIT
+
+```
+
 ### `apk` package: `less`
 
 ```console
@@ -195,6 +280,40 @@ less-530-r0 installed size:
 
 less-530-r0 license:
 GPL
+
+```
+
+### `apk` package: `libbsd`
+
+```console
+libbsd-0.8.6-r2 description:
+commonly-used BSD functions not implemented by all libcs
+
+libbsd-0.8.6-r2 webpage:
+https://libbsd.freedesktop.org/
+
+libbsd-0.8.6-r2 installed size:
+86016
+
+libbsd-0.8.6-r2 license:
+BSD
+
+```
+
+### `apk` package: `libbz2`
+
+```console
+libbz2-1.0.6-r6 description:
+Shared library for bz2
+
+libbz2-1.0.6-r6 webpage:
+http://sources.redhat.com/bzip2
+
+libbz2-1.0.6-r6 installed size:
+73728
+
+libbz2-1.0.6-r6 license:
+BSD
 
 ```
 
@@ -300,6 +419,23 @@ IJG
 
 ```
 
+### `apk` package: `libltdl`
+
+```console
+libltdl-2.4.6-r5 description:
+Runtime libraries for GNU Libtool Dynamic Module Loader
+
+libltdl-2.4.6-r5 webpage:
+https://www.gnu.org/software/libtool
+
+libltdl-2.4.6-r5 installed size:
+53248
+
+libltdl-2.4.6-r5 license:
+LGPL-2.0+
+
+```
+
 ### `apk` package: `libpng`
 
 ```console
@@ -402,6 +538,108 @@ ISC
 
 ```
 
+### `apk` package: `libuuid`
+
+```console
+libuuid-2.33-r0 description:
+DCE compatible Universally Unique Identifier library
+
+libuuid-2.33-r0 webpage:
+http://git.kernel.org/cgit/utils/util-linux/util-linux.git
+
+libuuid-2.33-r0 installed size:
+40960
+
+libuuid-2.33-r0 license:
+GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
+
+```
+
+### `apk` package: `libx11`
+
+```console
+libx11-1.6.7-r0 description:
+X11 client-side library
+
+libx11-1.6.7-r0 webpage:
+http://xorg.freedesktop.org/
+
+libx11-1.6.7-r0 installed size:
+3383296
+
+libx11-1.6.7-r0 license:
+custom:XFREE86
+
+```
+
+### `apk` package: `libxau`
+
+```console
+libxau-1.0.8-r3 description:
+X11 authorisation library
+
+libxau-1.0.8-r3 webpage:
+http://xorg.freedesktop.org/
+
+libxau-1.0.8-r3 installed size:
+28672
+
+libxau-1.0.8-r3 license:
+custom
+
+```
+
+### `apk` package: `libxcb`
+
+```console
+libxcb-1.13-r2 description:
+X11 client-side library
+
+libxcb-1.13-r2 webpage:
+https://xcb.freedesktop.org
+
+libxcb-1.13-r2 installed size:
+1028096
+
+libxcb-1.13-r2 license:
+MIT
+
+```
+
+### `apk` package: `libxdmcp`
+
+```console
+libxdmcp-1.1.2-r5 description:
+X11 Display Manager Control Protocol library
+
+libxdmcp-1.1.2-r5 webpage:
+http://xorg.freedesktop.org/
+
+libxdmcp-1.1.2-r5 installed size:
+40960
+
+libxdmcp-1.1.2-r5 license:
+MIT
+
+```
+
+### `apk` package: `libxext`
+
+```console
+libxext-1.3.3-r3 description:
+X11 miscellaneous extensions library
+
+libxext-1.3.3-r3 webpage:
+http://xorg.freedesktop.org/
+
+libxext-1.3.3-r3 installed size:
+81920
+
+libxext-1.3.3-r3 license:
+custom
+
+```
+
 ### `apk` package: `libxml2`
 
 ```console
@@ -422,16 +660,16 @@ MIT
 ### `apk` package: `mariadb-client`
 
 ```console
-mariadb-client-10.3.13-r1 description:
+mariadb-client-10.3.15-r0 description:
 Client for the MariaDB database
 
-mariadb-client-10.3.13-r1 webpage:
+mariadb-client-10.3.15-r0 webpage:
 https://www.mariadb.org
 
-mariadb-client-10.3.13-r1 installed size:
-29347840
+mariadb-client-10.3.15-r0 installed size:
+29360128
 
-mariadb-client-10.3.13-r1 license:
+mariadb-client-10.3.15-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -439,16 +677,16 @@ GPL-2.0-or-later
 ### `apk` package: `mariadb-common`
 
 ```console
-mariadb-common-10.3.13-r1 description:
+mariadb-common-10.3.15-r0 description:
 MariaDB common files for both server and client
 
-mariadb-common-10.3.13-r1 webpage:
+mariadb-common-10.3.15-r0 webpage:
 https://www.mariadb.org
 
-mariadb-common-10.3.13-r1 installed size:
+mariadb-common-10.3.15-r0 installed size:
 2240512
 
-mariadb-common-10.3.13-r1 license:
+mariadb-common-10.3.15-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -490,16 +728,16 @@ MIT BSD GPL2+
 ### `apk` package: `mysql-client`
 
 ```console
-mysql-client-10.3.13-r1 description:
+mysql-client-10.3.15-r0 description:
 Dummy package for mysql-client migration
 
-mysql-client-10.3.13-r1 webpage:
+mysql-client-10.3.15-r0 webpage:
 https://www.mariadb.org
 
-mysql-client-10.3.13-r1 installed size:
+mysql-client-10.3.15-r0 installed size:
 4096
 
-mysql-client-10.3.13-r1 license:
+mysql-client-10.3.15-r0 license:
 GPL-2.0-or-later
 
 ```
