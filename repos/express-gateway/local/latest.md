@@ -2,17 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4ff92d724f3ad244e4310fad2bf3c178dade8eed6fc766a3a201fe90c936c30e`
-- Created: `2019-05-11T04:38:42.762513041Z`
-- Virtual Size: ~ 109.36 Mb  
+- Image ID: `sha256:c4bc6d0529646a482a35f6590bf8a4bf90045fd038169a2ad87bcd6dc60a516e`
+- Created: `2019-05-29T17:39:21.377638586Z`
+- Virtual Size: ~ 112.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node","-e","require('express-gateway')().run();"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=10.15.3`
-  - `YARN_VERSION=1.13.0`
+  - `NODE_VERSION=10.16.0`
+  - `YARN_VERSION=1.16.0`
   - `NODE_ENV=production`
   - `NODE_PATH=/usr/local/share/.config/yarn/global/node_modules/`
   - `EG_CONFIG_DIR=/var/lib/eg`
