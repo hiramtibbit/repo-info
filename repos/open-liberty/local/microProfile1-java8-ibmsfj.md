@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fcd0f30df249383beede2de6fc5fa3c05ce11e7ebac3eff573f7275723debc8b`
-- Created: `2019-05-24T22:51:46.739153202Z`
-- Virtual Size: ~ 343.13 Mb  
+- Image ID: `sha256:428863620c6899f1caca723e2ee8aa01fa31dae60bb886e860a02b6512e8466b`
+- Created: `2019-05-29T16:44:14.414664508Z`
+- Virtual Size: ~ 257.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ol/helpers/runtime/docker-server.sh"]`
@@ -13,18 +13,18 @@
   - `PATH=/opt/ol/wlp/bin:/opt/ol/docker/:/opt/ol/helpers/build:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_VERSION=1.8.0_sr5fp36`
   - `JAVA_HOME=/opt/ibm/java/jre`
-  - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
+  - `IBM_JAVA_OPTIONS=-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/ -XX:+UseContainerSupport`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ol/wlp/output`
   - `WLP_SKIP_MAXPERMSIZE=true`
   - `RANDFILE=/tmp/.rnd`
-  - `JVM_ARGS=-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/ -XX:+UseContainerSupport`
   - `KEYSTORE_REQUIRED=true`
 - Labels:
-  - `github=https://github.com/OpenLiberty/ci.docker`
-  - `maintainer=Arthur De Magalhaes`
-  - `url=https://openliberty.io/`
-  - `vendor=Open Liberty`
+  - `org.opencontainers.image.authors=Arthur De Magalhaes, Andy Naumann`
+  - `org.opencontainers.image.revision=cl190520190522-2227`
+  - `org.opencontainers.image.source=https://github.com/OpenLiberty/ci.docker`
+  - `org.opencontainers.image.url=https://openliberty.io/`
+  - `org.opencontainers.image.vendor=Open Liberty`
 
 ## `apk` (`.apk`-based packages)
 
@@ -314,23 +314,6 @@ ssl_client-1.27.2-r11 installed size:
 
 ssl_client-1.27.2-r11 license:
 GPL2
-
-```
-
-### `apk` package: `wget`
-
-```console
-wget-1.20.3-r0 description:
-A network utility to retrieve files from the Web
-
-wget-1.20.3-r0 webpage:
-https://www.gnu.org/software/wget/wget.html
-
-wget-1.20.3-r0 installed size:
-479232
-
-wget-1.20.3-r0 license:
-GPL3+
 
 ```
 

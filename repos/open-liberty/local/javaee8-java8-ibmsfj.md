@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a36d761c02e29ebf9dc5b8a1d729135e5bbb8610f43133303f4c432d5754e066`
-- Created: `2019-05-24T22:50:22.451932337Z`
-- Virtual Size: ~ 257.28 Mb  
+- Image ID: `sha256:62533f8247fa43ca8fc72835bd11d669f6c6f5e48a1be812bbb617d5f4a1ad1c`
+- Created: `2019-05-29T16:44:00.840161345Z`
+- Virtual Size: ~ 237.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ol/helpers/runtime/docker-server.sh"]`
@@ -20,10 +20,11 @@
   - `RANDFILE=/tmp/.rnd`
   - `KEYSTORE_REQUIRED=true`
 - Labels:
-  - `github=https://github.com/OpenLiberty/ci.docker`
-  - `maintainer=Arthur De Magalhaes`
-  - `url=https://openliberty.io/`
-  - `vendor=Open Liberty`
+  - `org.opencontainers.image.authors=Arthur De Magalhaes, Andy Naumann`
+  - `org.opencontainers.image.revision=cl190520190522-2227`
+  - `org.opencontainers.image.source=https://github.com/OpenLiberty/ci.docker`
+  - `org.opencontainers.image.url=https://openliberty.io/`
+  - `org.opencontainers.image.vendor=Open Liberty`
 
 ## `apk` (`.apk`-based packages)
 
@@ -313,23 +314,6 @@ ssl_client-1.27.2-r11 installed size:
 
 ssl_client-1.27.2-r11 license:
 GPL2
-
-```
-
-### `apk` package: `wget`
-
-```console
-wget-1.20.3-r0 description:
-A network utility to retrieve files from the Web
-
-wget-1.20.3-r0 webpage:
-https://www.gnu.org/software/wget/wget.html
-
-wget-1.20.3-r0 installed size:
-479232
-
-wget-1.20.3-r0 license:
-GPL3+
 
 ```
 
