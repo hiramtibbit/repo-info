@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b8d715cbc272f89bcae13dc1429df22b6f35febc9ff0869cffddd5cc4cdcc8fe`
-- Created: `2019-05-24T23:07:02.906499758Z`
-- Virtual Size: ~ 702.57 Mb  
+- Image ID: `sha256:51bc2dddab63eb69f1f85bf965c8f1c7c6fb628392edf984b4ef1ea26a6f7295`
+- Created: `2019-05-29T22:08:49.929156417Z`
+- Virtual Size: ~ 703.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -2309,8 +2309,10 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libp11-kit0:amd64=0.23.3-2`
+- `p11-kit=0.23.3-2`
+- `p11-kit-modules:amd64=0.23.3-2`
 
-Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`, `/usr/share/doc/p11-kit/copyright`, `/usr/share/doc/p11-kit-modules/copyright`)
 
 - `BSD-3-Clause`
 - `ISC`
