@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5ce76642a8bc4649b9fbaf42098721a5caf9f7cbf4b980a289dfd2eeff46cfe6`
-- Created: `2019-05-24T23:44:01.814654587Z`
-- Virtual Size: ~ 283.00 Mb  
+- Image ID: `sha256:f92378e69cf3cd420d0b6f3d7c84a9d01120af843267f43b7f265d17b7b2f320`
+- Created: `2019-05-29T22:27:52.632649068Z`
+- Virtual Size: ~ 283.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -1932,8 +1932,10 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libp11-kit0:amd64=0.23.3-2`
+- `p11-kit=0.23.3-2`
+- `p11-kit-modules:amd64=0.23.3-2`
 
-Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`, `/usr/share/doc/p11-kit/copyright`, `/usr/share/doc/p11-kit-modules/copyright`)
 
 - `BSD-3-Clause`
 - `ISC`
