@@ -1,7 +1,7 @@
 ## `websphere-liberty:springBoot2`
 
 ```console
-$ docker pull websphere-liberty@sha256:3dbd22ad4a13ac132226283a9ae6dcd34e6dc310b7edb4de8bcd44a61e3f68ef
+$ docker pull websphere-liberty@sha256:221f06b43d190f332f5aa13c4d742e6b95670219c621231e81ce3bfadd65e59c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,14 +14,14 @@ $ docker pull websphere-liberty@sha256:3dbd22ad4a13ac132226283a9ae6dcd34e6dc310b
 ### `websphere-liberty:springBoot2` - linux; amd64
 
 ```console
-$ docker pull websphere-liberty@sha256:cdfd4884d7a942655e11ed0a7c4e9aed30cbed7fdd2c7286ffad574a0bea173a
+$ docker pull websphere-liberty@sha256:62ed8ed8726c6eb5929efdd5f42c4b1eb67a1d2a6b11f092e75279206aada01b
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **216.7 MB (216746618 bytes)**  
+-	Total Size: **216.8 MB (216768041 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3694d2737f69e2d15ccd30825818ea0c2a55ec71b5e306c6a24fd2d8bb164bb9`
+-	Image ID: `sha256:125d17b86ebb82b260fa1bcde8df299fbc157d6331aab24aeeea2310fb223768`
 -	Entrypoint: `["\/opt\/ibm\/helpers\/runtime\/docker-server.sh"]`
 -	Default Command: `["\/opt\/ibm\/wlp\/bin\/server","run","defaultServer"]`
 
@@ -89,10 +89,10 @@ ENTRYPOINT ["/opt/ibm/helpers/runtime/docker-server.sh"]
 CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 # Tue, 28 May 2019 22:29:13 GMT
 ARG REPOSITORIES_PROPERTIES=
-# Tue, 28 May 2019 22:35:14 GMT
+# Sat, 01 Jun 2019 00:56:52 GMT
 # ARGS: REPOSITORIES_PROPERTIES=
-RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then mkdir /opt/ibm/wlp/etc/   && echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties; fi   && installUtility install --acceptLicense     jsp-2.3 servlet-4.0 springBoot-2.0 transportSecurity-1.0 webSocket-1.1   && if [ ! -z $REPOSITORIES_PROPERTIES ]; then rm /opt/ibm/wlp/etc/repositories.properties; fi   && rm -rf /output/workarea /output/logs
-# Tue, 28 May 2019 22:35:15 GMT
+RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then mkdir /opt/ibm/wlp/etc/   && echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties; fi   && installUtility install --acceptLicense     jsp-2.3 servlet-4.0 springBoot-2.0 transportSecurity-1.0 webSocket-1.1   && if [ ! -z $REPOSITORIES_PROPERTIES ]; then rm /opt/ibm/wlp/etc/repositories.properties; fi   && rm -rf /output/workarea /output/logs   && chmod -R g+rwx /opt/ibm/wlp/output/*
+# Sat, 01 Jun 2019 00:56:53 GMT
 COPY --chown=1001:0file:3dbc7012596d01298b61adec3a50686ea3c8a1d1ac8b3161e2ede589a9f1c2c0 in /config/ 
 ```
 
@@ -145,13 +145,13 @@ COPY --chown=1001:0file:3dbc7012596d01298b61adec3a50686ea3c8a1d1ac8b3161e2ede589
 		Last Modified: Tue, 28 May 2019 22:59:26 GMT  
 		Size: 4.1 KB (4062 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3480b573c65b96b34945dc16e1692ea1c78eddf6bb6efdb0aa0c88825feea13`  
-		Last Modified: Tue, 28 May 2019 23:00:36 GMT  
-		Size: 26.8 MB (26847309 bytes)  
+	-	`sha256:e56d2e4eb9d4a7048f535bfa7a882725cbe8e9248503409f5a2357738d84379d`  
+		Last Modified: Sat, 01 Jun 2019 01:31:30 GMT  
+		Size: 26.9 MB (26868730 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ed80e2ad192984df09ae7dff2df98768adf20b31c77788484a1cc1864ad89d3`  
-		Last Modified: Tue, 28 May 2019 23:00:33 GMT  
-		Size: 554.0 B  
+	-	`sha256:daee3c6418a5e09cd08c91654258af98b9dbf5933a5431ca70a83bf2f6b21aef`  
+		Last Modified: Sat, 01 Jun 2019 01:31:24 GMT  
+		Size: 556.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `websphere-liberty:springBoot2` - linux; 386
@@ -300,14 +300,14 @@ COPY --chown=1001:0file:3dbc7012596d01298b61adec3a50686ea3c8a1d1ac8b3161e2ede589
 ### `websphere-liberty:springBoot2` - linux; ppc64le
 
 ```console
-$ docker pull websphere-liberty@sha256:6f9eeb539938186d1e253de0f2c390ac537aced95e4899f22848139042d34c74
+$ docker pull websphere-liberty@sha256:ccc3d42aac797058feac4cbb7f602a00993e0f08acbf419f23b1380915af6e27
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **230.3 MB (230313319 bytes)**  
+-	Total Size: **230.4 MB (230379966 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ae9e9311569961de952fc2842cd721c59a75255f9e8589c6ca0b3ad8b8c18e45`
+-	Image ID: `sha256:e812ac4a2be6ccf71dc532f7f413402a7dd96c6aef4df9c31633d4e0e501cb86`
 -	Entrypoint: `["\/opt\/ibm\/helpers\/runtime\/docker-server.sh"]`
 -	Default Command: `["\/opt\/ibm\/wlp\/bin\/server","run","defaultServer"]`
 
@@ -375,10 +375,10 @@ ENTRYPOINT ["/opt/ibm/helpers/runtime/docker-server.sh"]
 CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 # Thu, 30 May 2019 15:20:01 GMT
 ARG REPOSITORIES_PROPERTIES=
-# Thu, 30 May 2019 15:31:57 GMT
+# Sat, 01 Jun 2019 01:03:51 GMT
 # ARGS: REPOSITORIES_PROPERTIES=
-RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then mkdir /opt/ibm/wlp/etc/   && echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties; fi   && installUtility install --acceptLicense     jsp-2.3 servlet-4.0 springBoot-2.0 transportSecurity-1.0 webSocket-1.1   && if [ ! -z $REPOSITORIES_PROPERTIES ]; then rm /opt/ibm/wlp/etc/repositories.properties; fi   && rm -rf /output/workarea /output/logs
-# Thu, 30 May 2019 15:32:02 GMT
+RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then mkdir /opt/ibm/wlp/etc/   && echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties; fi   && installUtility install --acceptLicense     jsp-2.3 servlet-4.0 springBoot-2.0 transportSecurity-1.0 webSocket-1.1   && if [ ! -z $REPOSITORIES_PROPERTIES ]; then rm /opt/ibm/wlp/etc/repositories.properties; fi   && rm -rf /output/workarea /output/logs   && chmod -R g+rwx /opt/ibm/wlp/output/*
+# Sat, 01 Jun 2019 01:03:54 GMT
 COPY --chown=1001:0file:3dbc7012596d01298b61adec3a50686ea3c8a1d1ac8b3161e2ede589a9f1c2c0 in /config/ 
 ```
 
@@ -431,26 +431,26 @@ COPY --chown=1001:0file:3dbc7012596d01298b61adec3a50686ea3c8a1d1ac8b3161e2ede589
 		Last Modified: Thu, 30 May 2019 16:20:30 GMT  
 		Size: 4.2 KB (4173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75dd2982e89c948a821af569c6a05333bd8d29602319c1ce1423e22b5044e323`  
-		Last Modified: Thu, 30 May 2019 16:23:17 GMT  
-		Size: 25.6 MB (25628682 bytes)  
+	-	`sha256:a6d3ceaa9a384ddd7a32b33c80198fc4e790e30a442cccb9a9f6654cdf6b7032`  
+		Last Modified: Sat, 01 Jun 2019 01:45:11 GMT  
+		Size: 25.7 MB (25695329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a574ac6aa8cae8145fa7f6127d4dde06e432a388a06cc6498f802ee8d84ebd0`  
-		Last Modified: Thu, 30 May 2019 16:23:10 GMT  
+	-	`sha256:a70fde13f668c20582fa801faef100de6346d5402ebcb15a70f5280b28012c29`  
+		Last Modified: Sat, 01 Jun 2019 01:45:03 GMT  
 		Size: 555.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `websphere-liberty:springBoot2` - linux; s390x
 
 ```console
-$ docker pull websphere-liberty@sha256:38f2161848a101482f8d20e1de517c9bb0f936fdc4cce3896c743635bbf8ac9e
+$ docker pull websphere-liberty@sha256:1628d5d3f9bfea4d96d7ee1f745ad105e7ab8f4639283ef1e8c14b3356e65572
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.3 MB (212325225 bytes)**  
+-	Total Size: **212.4 MB (212353236 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e650bd37028566f86c2d24334491b2b6792833554e6dd45996f4acb4c025c81`
+-	Image ID: `sha256:7b0a53de480863f89d3c2773787ed9554b7b718ee801ba88a547cf0aa4e402e8`
 -	Entrypoint: `["\/opt\/ibm\/helpers\/runtime\/docker-server.sh"]`
 -	Default Command: `["\/opt\/ibm\/wlp\/bin\/server","run","defaultServer"]`
 
@@ -518,10 +518,10 @@ ENTRYPOINT ["/opt/ibm/helpers/runtime/docker-server.sh"]
 CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 # Tue, 28 May 2019 22:42:49 GMT
 ARG REPOSITORIES_PROPERTIES=
-# Tue, 28 May 2019 22:49:03 GMT
+# Sat, 01 Jun 2019 00:55:23 GMT
 # ARGS: REPOSITORIES_PROPERTIES=
-RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then mkdir /opt/ibm/wlp/etc/   && echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties; fi   && installUtility install --acceptLicense     jsp-2.3 servlet-4.0 springBoot-2.0 transportSecurity-1.0 webSocket-1.1   && if [ ! -z $REPOSITORIES_PROPERTIES ]; then rm /opt/ibm/wlp/etc/repositories.properties; fi   && rm -rf /output/workarea /output/logs
-# Tue, 28 May 2019 22:49:03 GMT
+RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then mkdir /opt/ibm/wlp/etc/   && echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties; fi   && installUtility install --acceptLicense     jsp-2.3 servlet-4.0 springBoot-2.0 transportSecurity-1.0 webSocket-1.1   && if [ ! -z $REPOSITORIES_PROPERTIES ]; then rm /opt/ibm/wlp/etc/repositories.properties; fi   && rm -rf /output/workarea /output/logs   && chmod -R g+rwx /opt/ibm/wlp/output/*
+# Sat, 01 Jun 2019 00:55:24 GMT
 COPY --chown=1001:0file:3dbc7012596d01298b61adec3a50686ea3c8a1d1ac8b3161e2ede589a9f1c2c0 in /config/ 
 ```
 
@@ -574,11 +574,11 @@ COPY --chown=1001:0file:3dbc7012596d01298b61adec3a50686ea3c8a1d1ac8b3161e2ede589
 		Last Modified: Tue, 28 May 2019 23:12:55 GMT  
 		Size: 4.1 KB (4068 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be2d1d9042fa32f6d8d5f165af1d3f3109221173365109b54eff75dc39ae2083`  
-		Last Modified: Tue, 28 May 2019 23:14:21 GMT  
-		Size: 26.6 MB (26564862 bytes)  
+	-	`sha256:d070a8b9a87faf053eb59cec7b1863dba06fe5eabbb67a194aaa5010bd7767d2`  
+		Last Modified: Sat, 01 Jun 2019 01:20:16 GMT  
+		Size: 26.6 MB (26592872 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4f88c765988989b3195f753726238944b65efabec76644cb2d458fc3408db5b`  
-		Last Modified: Tue, 28 May 2019 23:14:18 GMT  
-		Size: 555.0 B  
+	-	`sha256:c789f5003cdbe4f8e10e6f0d137dba48bdc76ee118428e907bd4b926b72ed8b5`  
+		Last Modified: Sat, 01 Jun 2019 01:20:13 GMT  
+		Size: 556.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
