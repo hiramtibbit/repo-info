@@ -1,10 +1,10 @@
-# `traefik:v1.7.11-alpine`
+# `traefik:v1.7.12-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e9b5d6f8e6c9802e8006a1249b77d0fc6d7458d7003b7645554ba80d870ed83e`
-- Created: `2019-05-11T03:12:23.636028035Z`
-- Virtual Size: ~ 78.78 Mb  
+- Image ID: `sha256:11f1b77e546ac35a5d14230c5c2014ee45d4e2d5ffc634927bda6481192b8874`
+- Created: `2019-05-29T22:48:55.978963185Z`
+- Virtual Size: ~ 78.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `org.opencontainers.image.title=Traefik`
   - `org.opencontainers.image.url=https://traefik.io`
   - `org.opencontainers.image.vendor=Containous`
-  - `org.opencontainers.image.version=v1.7.11`
+  - `org.opencontainers.image.version=v1.7.12`
 
 ## `apk` (`.apk`-based packages)
 
