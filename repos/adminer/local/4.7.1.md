@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0efd92e87a0eb4715c172bb6e08634bc7bdd6668916e9fc15a3517543fcfe014`
-- Created: `2019-05-11T05:13:04.966581208Z`
-- Virtual Size: ~ 83.20 Mb  
+- Image ID: `sha256:c3145dd24c6ea95cb134a7770bea2a6328a50b73c14e499c28abaef39de0eaed`
+- Created: `2019-06-01T05:00:46.015360803Z`
+- Virtual Size: ~ 83.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.5`
-  - `PHP_URL=https://www.php.net/get/php-7.3.5.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://www.php.net/get/php-7.3.5.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=e1011838a46fd4a195c8453b333916622d7ff5bce4aca2d9d99afac142db2472`
+  - `PHP_VERSION=7.3.6`
+  - `PHP_URL=https://www.php.net/get/php-7.3.6.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://www.php.net/get/php-7.3.6.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=fefc8967daa30ebc375b2ab2857f97da94ca81921b722ddac86b29e15c54a164`
   - `PHP_MD5=`
   - `ADMINER_VERSION=4.7.1`
   - `ADMINER_DOWNLOAD_SHA256=166e9b4db43647e35a5e93cad793e1ba6d695425101e07a3619c90b6d364f601`
@@ -269,16 +269,16 @@ custom
 ### `apk` package: `libpq`
 
 ```console
-libpq-11.2-r0 description:
+libpq-11.3-r0 description:
 PostgreSQL libraries
 
-libpq-11.2-r0 webpage:
+libpq-11.3-r0 webpage:
 https://www.postgresql.org/
 
-libpq-11.2-r0 installed size:
+libpq-11.3-r0 installed size:
 315392
 
-libpq-11.2-r0 license:
+libpq-11.3-r0 license:
 PostgreSQL
 
 ```
