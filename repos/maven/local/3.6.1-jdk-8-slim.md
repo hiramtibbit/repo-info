@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:20e0785810d02264931ee03c33c05c4c1f71ca7bc18075ce11d51e6c9bffdfd8`
-- Created: `2019-05-24T23:03:19.509365109Z`
-- Virtual Size: ~ 292.66 Mb  
+- Image ID: `sha256:f24b6ae50e249ed5d6af82954572f7e658c2f2d9e3cfcd04448e418dad642873`
+- Created: `2019-05-29T22:22:19.822225859Z`
+- Virtual Size: ~ 294.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -1573,8 +1573,10 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libp11-kit0:amd64=0.23.3-2`
+- `p11-kit=0.23.3-2`
+- `p11-kit-modules:amd64=0.23.3-2`
 
-Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`, `/usr/share/doc/p11-kit/copyright`, `/usr/share/doc/p11-kit-modules/copyright`)
 
 - `BSD-3-Clause`
 - `ISC`
