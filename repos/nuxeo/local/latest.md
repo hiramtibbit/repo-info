@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2b13156de95b48fff0af30dcafb06a68cd4de665661cc7cd407ab2ce5f0bc9b0`
-- Created: `2019-05-24T23:24:35.152789093Z`
+- Image ID: `sha256:f886775abd6d8431b7cd73f2e7abcfdf66e8a8a497711fe592cd9c6c8bfe9dcd`
+- Created: `2019-05-29T22:20:53.659525661Z`
 - Virtual Size: ~ 1.67 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -7192,8 +7192,10 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libp11-kit0:amd64=0.23.3-2`
+- `p11-kit=0.23.3-2`
+- `p11-kit-modules:amd64=0.23.3-2`
 
-Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`, `/usr/share/doc/p11-kit/copyright`, `/usr/share/doc/p11-kit-modules/copyright`)
 
 - `BSD-3-Clause`
 - `ISC`
