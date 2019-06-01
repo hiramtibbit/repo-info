@@ -1,20 +1,20 @@
-# `tomcat:8.5.41-jdk8`
+# `tomcat:8.5.41-jdk11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:894b39cf2fa19836108efcaef41875c446c65a7f2f8a8b4284a013d84838774e`
-- Created: `2019-05-29T21:30:44.231083118Z`
-- Virtual Size: ~ 522.17 Mb  
+- Image ID: `sha256:a40c3694c4e7b8cd2f59199dfca64859fc49dd306fc08b19bcdb857a76261e49`
+- Created: `2019-05-29T21:32:45.816525011Z`
+- Virtual Size: ~ 637.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
 - Environment:
-  - `PATH=/usr/local/tomcat/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `JAVA_HOME=/usr/local/openjdk-8`
-  - `JAVA_VERSION=8u212-b04`
-  - `JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u212-b04/OpenJDK8U-`
-  - `JAVA_URL_VERSION=8u212b04`
+  - `JAVA_HOME=/usr/local/openjdk-11`
+  - `JAVA_VERSION=11.0.3`
+  - `JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.3%2B7/OpenJDK11U-`
+  - `JAVA_URL_VERSION=11.0.3_7`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
