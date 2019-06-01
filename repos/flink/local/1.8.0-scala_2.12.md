@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:58d5068d93cae390cfbfb953f84428975bdd233f3844b1638cb13fd1442e2675`
-- Created: `2019-05-24T23:27:50.448003745Z`
-- Virtual Size: ~ 573.59 Mb  
+- Image ID: `sha256:ceccf39b77916c4d55042cb4ae8cbbc2160ea40dd219f89ceeef17a6babb42c6`
+- Created: `2019-05-29T22:35:01.235880076Z`
+- Virtual Size: ~ 573.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -16,9 +16,10 @@
   - `JAVA_VERSION=8u212-b04`
   - `JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u212-b04/OpenJDK8U-jre_`
   - `JAVA_URL_VERSION=8u212b04`
-  - `GOSU_VERSION=1.7`
+  - `GOSU_VERSION=1.11`
   - `FLINK_VERSION=1.8.0`
   - `HADOOP_SCALA_VARIANT=scala_2.12`
+  - `GPG_KEY=F2A67A8047499BBB3908D17AA8F4FD97121D7293`
   - `FLINK_HOME=/opt/flink`
   - `FLINK_URL_FILE_PATH=flink/flink-1.8.0/flink-1.8.0-bin-scala_2.12.tgz`
   - `FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.8.0/flink-1.8.0-bin-scala_2.12.tgz`
@@ -1939,8 +1940,10 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libp11-kit0:amd64=0.23.3-2`
+- `p11-kit=0.23.3-2`
+- `p11-kit-modules:amd64=0.23.3-2`
 
-Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`, `/usr/share/doc/p11-kit/copyright`, `/usr/share/doc/p11-kit-modules/copyright`)
 
 - `BSD-3-Clause`
 - `ISC`
