@@ -1,10 +1,10 @@
-# `mongo:4.1.12-bionic`
+# `mongo:4.1.13-bionic`
 
 ## Docker Metadata
 
-- Image ID: `sha256:be945be05053751347453a706796f794fb35e184ee55e8563d066f4f583e766c`
-- Created: `2019-05-29T20:27:31.523884828Z`
-- Virtual Size: ~ 364.68 Mb  
+- Image ID: `sha256:70ce1153b5d7461c983c23fa61b71dcf214d536a265d1a79280b10d1ccaeb6eb`
+- Created: `2019-05-30T21:22:14.318109217Z`
+- Virtual Size: ~ 364.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org-unstable`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=4.1`
-  - `MONGO_VERSION=4.1.12`
+  - `MONGO_VERSION=4.1.13`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -987,14 +987,9 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 - `LGPL-2`
 - `LGPL-2.0+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.3.1-2.1ubuntu4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1ubuntu4.1.dsc' libseccomp_2.3.1-2.1ubuntu4.1.dsc 2270 SHA256:1f6e43a20c88c60ef306367ead0b7521ae29cfab6ec144f720221f08266495fb
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1.orig.tar.gz' libseccomp_2.3.1.orig.tar.gz 552299 SHA256:ff5bdd2168790f1979e24eaa498f8606c2f2d96f08a8dc4006a2e88affa4562b
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1ubuntu4.1.debian.tar.xz' libseccomp_2.3.1-2.1ubuntu4.1.debian.tar.xz 22068 SHA256:c3f4bb21e442f2856b9c8240cbfe7322bb79507bf1ea4955e3db99dd3fa39fe0
-```
 
 ### `dpkg` source package: `libselinux=2.7-2build2`
 
@@ -1191,15 +1186,15 @@ $ apt-get source -qq --print-uris mawk=1.3.3-17ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.3-17ubuntu3.diff.gz' mawk_1.3.3-17ubuntu3.diff.gz 64052 SHA256:d1be148525885cb1869e35514f55005b5043f3310b08c444625005a3e14c81fc
 ```
 
-### `dpkg` source package: `mongodb-org-unstable=4.1.12`
+### `dpkg` source package: `mongodb-org-unstable=4.1.13`
 
 Binary Packages:
 
-- `mongodb-org-unstable=4.1.12`
-- `mongodb-org-unstable-mongos=4.1.12`
-- `mongodb-org-unstable-server=4.1.12`
-- `mongodb-org-unstable-shell=4.1.12`
-- `mongodb-org-unstable-tools=4.1.12`
+- `mongodb-org-unstable=4.1.13`
+- `mongodb-org-unstable-mongos=4.1.13`
+- `mongodb-org-unstable-server=4.1.13`
+- `mongodb-org-unstable-shell=4.1.13`
+- `mongodb-org-unstable-tools=4.1.13`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
