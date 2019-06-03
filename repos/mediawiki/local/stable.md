@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a3b378ef05a9b065e2f1bc42cd71570391c7684c8cc53f09153ce4401bfdf7da`
-- Created: `2019-05-08T10:17:47.159536196Z`
+- Image ID: `sha256:60d4114f4264ac18cb45b29c4678125fa5c7811e1ca6808bff38997418ee82d2`
+- Created: `2019-06-01T05:07:07.509398057Z`
 - Virtual Size: ~ 599.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -21,10 +21,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.18`
-  - `PHP_URL=https://www.php.net/get/php-7.2.18.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://www.php.net/get/php-7.2.18.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=9970dbb3ab1298c9e6aac54bebfa841c8ad14b18eead65594a68fa841364cb8d`
+  - `PHP_VERSION=7.2.19`
+  - `PHP_URL=https://www.php.net/get/php-7.2.19.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://www.php.net/get/php-7.2.19.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=4ffa2404a88d60e993a9fe69f829ebec3eb1e006de41b6048ce5e91bbeaa9282`
   - `PHP_MD5=`
   - `MEDIAWIKI_MAJOR_VERSION=1.32`
   - `MEDIAWIKI_BRANCH=REL1_32`
