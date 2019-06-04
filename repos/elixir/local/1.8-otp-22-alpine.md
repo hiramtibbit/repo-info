@@ -1,17 +1,17 @@
-# `elixir:1.8.2-alpine`
+# `elixir:1.8.2-otp-22-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0396c8348e9c152a718741351ce416201256c3d425c14f2b849d3de690d0eca3`
-- Created: `2019-05-28T22:24:21.571404123Z`
-- Virtual Size: ~ 87.25 Mb  
+- Image ID: `sha256:da483937b4051e99f2b594bd62a48332d5f750f3445e97ab5a8d98d58bc042b2`
+- Created: `2019-06-03T21:36:20.455509645Z`
+- Virtual Size: ~ 87.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=21.3.8.2`
-  - `REBAR3_VERSION=3.10.0`
+  - `OTP_VERSION=22.0.2`
+  - `REBAR3_VERSION=3.11.1`
   - `ELIXIR_VERSION=v1.8.2`
   - `LANG=C.UTF-8`
 
