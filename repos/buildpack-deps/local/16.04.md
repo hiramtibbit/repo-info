@@ -2902,9 +2902,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=4.4.0-148.174
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-148.174.dsc' linux_4.4.0-148.174.dsc 11909 SHA256:14dcac1a2ffed655b313ef37e24b120bf75762d1d5d0db3d014438ccaeb6b1f5
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-148.174.diff.gz' linux_4.4.0-148.174.diff.gz 15432759 SHA256:fd839af9867c68f5708e0b2b68c6c88496770bdeb2bd2bdf23a06bfac0317e24
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-148.174.dsc' linux_4.4.0-148.174.dsc 11909 SHA256:14dcac1a2ffed655b313ef37e24b120bf75762d1d5d0db3d014438ccaeb6b1f5
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-148.174.diff.gz' linux_4.4.0-148.174.diff.gz 15432759 SHA256:fd839af9867c68f5708e0b2b68c6c88496770bdeb2bd2bdf23a06bfac0317e24
 ```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu0.2`

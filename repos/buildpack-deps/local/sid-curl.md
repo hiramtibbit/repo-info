@@ -78,19 +78,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.8.0
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.8.0.dsc' apt_1.8.0.dsc 2738 SHA256:e89f17d37395b03e576260709b808702a7172255688e5b8d5d2640e3839585b5
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.8.0.tar.xz' apt_1.8.0.tar.xz 2171520 SHA256:9c56ae7ad58e21aa692a4118a676e2c5f366168a2275e6be104e4ed3cb00086b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/1.8.0/
 
-- https://sources.debian.net/src/apt/1.8.0/ (for browsing the source)
-- https://sources.debian.net/src/apt/1.8.0/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/1.8.0/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.48-4`
 
@@ -159,19 +153,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=10.2
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_10.2.dsc' base-files_10.2.dsc 1071 SHA256:376f8d595f294b9746078d220eb2f81a45b1f0f81250ad89dbfb552823734154
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_10.2.tar.xz' base-files_10.2.tar.xz 65224 SHA256:b8e6658af42c3114154b412337858f5633d5651601e3cbf633024153e57dedde
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/10.2/
 
-- https://sources.debian.net/src/base-files/10.2/ (for browsing the source)
-- https://sources.debian.net/src/base-files/10.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/10.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.46`
 
@@ -340,20 +328,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.64.0-2
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.64.0-2.dsc' curl_7.64.0-2.dsc 2687 SHA256:6997fa959166f0fdf5545313d307b453970c271df3d135accbbe08773fa3cbc2
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.64.0.orig.tar.gz' curl_7.64.0.orig.tar.gz 4032645 SHA256:cb90d2eb74d4e358c1ed1489f8e3af96b50ea4374ad71f143fa4595e998d81b5
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.64.0-2.debian.tar.xz' curl_7.64.0-2.debian.tar.xz 29696 SHA256:6173fb436e8bcea616e9bfc29eaddb25498b3a95cd5451d4cef83d957217fabe
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.64.0-2/
 
-- https://sources.debian.net/src/curl/7.64.0-2/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.64.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.64.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-1`
 
@@ -539,19 +520,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.19.6
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.19.6.dsc' dpkg_1.19.6.dsc 2103 SHA256:c602dd234e810c066fb9c8ae265b4e3115b2f76dfe2c666a4f6b2fc3f036c472
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.19.6.tar.xz' dpkg_1.19.6.tar.xz 4802832 SHA256:4eb1a12d1f5bd55478d2eab530dd188733e425f301e3b8c030f645f48ef43768
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dpkg/1.19.6/
 
-- https://sources.debian.net/src/dpkg/1.19.6/ (for browsing the source)
-- https://sources.debian.net/src/dpkg/1.19.6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dpkg/1.19.6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.45.0-1`
 
@@ -791,21 +766,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.6.7-2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.7-2.dsc' gnutls28_3.6.7-2.dsc 3328 SHA256:984e5806df061ee31d0bdef246a48771f58af332f86cdf762559f10e865b1a61
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.7.orig.tar.xz' gnutls28_3.6.7.orig.tar.xz 8153728 SHA256:5b3409ad5aaf239808730d1ee12fdcd148c0be00262c7edf157af655a8a188e2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.7.orig.tar.xz.asc' gnutls28_3.6.7.orig.tar.xz.asc 534 SHA256:a14d0a7b9295b65ae797a70f8e765024a2e363dca03d008bfce0aec2b3f292b0
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.7-2.debian.tar.xz' gnutls28_3.6.7-2.debian.tar.xz 66964 SHA256:42f8167abea78856ebaa754e537fdf8eb080c581915064cac857f41a3610660d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.6.7-2/
 
-- https://sources.debian.net/src/gnutls28/3.6.7-2/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.6.7-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.6.7-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.3-1`
 
@@ -1804,21 +1771,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1b-2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1b-2.dsc' openssl_1.1.1b-2.dsc 2614 SHA256:4596cc5147ce07cc9504c2ed65076f1556ced9b31c3d035b049035af0e72f6b4
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1b.orig.tar.gz' openssl_1.1.1b.orig.tar.gz 8213737 SHA256:5c557b023230413dfb0756f3137a13e6d726838ccd1430888ad15bfb2b43ea4b
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1b.orig.tar.gz.asc' openssl_1.1.1b.orig.tar.gz.asc 488 SHA256:eba898c33e1580089f8179edacd033beac01626c8a82adc701a2f964d0da0e8d
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1b-2.debian.tar.xz' openssl_1.1.1b-2.debian.tar.xz 87392 SHA256:2f29be77334f597dd0ffc59be036fe5ae9e01c760b38e1fbe92197eae6d90752
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/1.1.1b-2/
 
-- https://sources.debian.net/src/openssl/1.1.1b-2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.1b-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.1b-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.15-2`
 

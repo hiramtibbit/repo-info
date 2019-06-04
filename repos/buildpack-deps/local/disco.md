@@ -2700,9 +2700,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=5.0.0-15.16
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.0.0-15.16.dsc' linux_5.0.0-15.16.dsc 7198 SHA256:ccc40e2897ba7dc9efca239e0e6f076af68c351ee1d938abab2f567c512d51b4
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.0.0.orig.tar.gz' linux_5.0.0.orig.tar.gz 162593848 SHA256:d9dcf8bafdd5778274c3f9d2634500d4cc186f3ba80fc71ea1a1a100aa65ad6f
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.0.0-15.16.diff.gz' linux_5.0.0-15.16.diff.gz 4132597 SHA256:5321a44a9745d2bc82ae76a5f4f478917bee381b351065d3cdc00ff9880ceb33
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.0.0-15.16.dsc' linux_5.0.0-15.16.dsc 7198 SHA256:ccc40e2897ba7dc9efca239e0e6f076af68c351ee1d938abab2f567c512d51b4
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.0.0.orig.tar.gz' linux_5.0.0.orig.tar.gz 162593848 SHA256:d9dcf8bafdd5778274c3f9d2634500d4cc186f3ba80fc71ea1a1a100aa65ad6f
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.0.0-15.16.diff.gz' linux_5.0.0-15.16.diff.gz 4132597 SHA256:5321a44a9745d2bc82ae76a5f4f478917bee381b351065d3cdc00ff9880ceb33
 ```
 
 ### `dpkg` source package: `lsb=10.2019031300ubuntu1`

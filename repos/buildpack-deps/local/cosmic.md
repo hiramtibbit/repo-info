@@ -2637,9 +2637,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=4.18.0-20.21
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.18.0-20.21.dsc' linux_4.18.0-20.21.dsc 8333 SHA256:a3b44066dc85fb7b2460038d275dfb3a6537c4bdff5acd0d7ffc1415768b5007
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.18.0.orig.tar.gz' linux_4.18.0.orig.tar.gz 157099820 SHA256:fd5c4f5ab07d6dccf7ef79317e36c2754438fb3d79d750df1d9868bab0de9573
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.18.0-20.21.diff.gz' linux_4.18.0-20.21.diff.gz 7582915 SHA256:7e30d472870cf303ef9b9c8bdd93cf9551e184622a72a7ac12854120059b11ec
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.18.0-20.21.dsc' linux_4.18.0-20.21.dsc 8333 SHA256:a3b44066dc85fb7b2460038d275dfb3a6537c4bdff5acd0d7ffc1415768b5007
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.18.0.orig.tar.gz' linux_4.18.0.orig.tar.gz 157099820 SHA256:fd5c4f5ab07d6dccf7ef79317e36c2754438fb3d79d750df1d9868bab0de9573
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.18.0-20.21.diff.gz' linux_4.18.0-20.21.diff.gz 7582915 SHA256:7e30d472870cf303ef9b9c8bdd93cf9551e184622a72a7ac12854120059b11ec
 ```
 
 ### `dpkg` source package: `lsb=9.20170808ubuntu1`
@@ -3138,10 +3138,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssl=1.1.1-1ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1.dsc' openssl_1.1.1-1ubuntu2.1.dsc 2719 SHA256:64c5d3688e63bded6a00018a19d5947a7f53dee01bb6edb90310a3ec5c979674
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz' openssl_1.1.1.orig.tar.gz 8337920 SHA256:2836875a0f89c03d0fdf483941512613a50cfb421d6fd94b9f41d7279d586a3d
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz.asc' openssl_1.1.1.orig.tar.gz.asc 488 SHA256:f3296150114069ea73a72eafbfdcbb295b770e7cbf3266f9590f3d0932498b3e
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1.debian.tar.xz' openssl_1.1.1-1ubuntu2.1.debian.tar.xz 86872 SHA256:b4f545cac59220e73c5c2148b622e9239bd2c39a48cf0d98b0e316840c53ca86
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1.dsc' openssl_1.1.1-1ubuntu2.1.dsc 2719 SHA256:64c5d3688e63bded6a00018a19d5947a7f53dee01bb6edb90310a3ec5c979674
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz' openssl_1.1.1.orig.tar.gz 8337920 SHA256:2836875a0f89c03d0fdf483941512613a50cfb421d6fd94b9f41d7279d586a3d
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz.asc' openssl_1.1.1.orig.tar.gz.asc 488 SHA256:f3296150114069ea73a72eafbfdcbb295b770e7cbf3266f9590f3d0932498b3e
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1.debian.tar.xz' openssl_1.1.1-1ubuntu2.1.debian.tar.xz 86872 SHA256:b4f545cac59220e73c5c2148b622e9239bd2c39a48cf0d98b0e316840c53ca86
 ```
 
 ### `dpkg` source package: `p11-kit=0.23.14-2`
