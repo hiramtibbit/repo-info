@@ -1,7 +1,7 @@
 ## `node:8-onbuild`
 
 ```console
-$ docker pull node@sha256:c82287222c12245026f179c3318033cf4ac150667c6973b133fa8fa9902e3ed4
+$ docker pull node@sha256:a09e9f10a64e04630debb07a1e95f2b2f58cf434c8bf06920ad7091c426578dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -110,14 +110,15 @@ CMD ["npm" "start"]
 ### `node:8-onbuild` - linux; arm variant v7
 
 ```console
-$ docker pull node@sha256:16cbe1ebb1eec3dc210180d6a346c87c409666a82cec994b94ecd63629c364a7
+$ docker pull node@sha256:50594595f6ffa2ddcf1271b71568926781b8d9af4846f6850e134d77070e1297
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **315.9 MB (315908791 bytes)**  
+-	Total Size: **315.9 MB (315909088 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c1b83b2a8aceef0a2a4f56f16e0a2070124708e3c613e2fb9b58db95c82df079`
+-	Image ID: `sha256:812308082063349ee1fab8d7381b2505a79ea9bb67b7122af46dceb1c4353179`
+-	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["npm","start"]`
 
 ```dockerfile
@@ -143,23 +144,27 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}"
 ENV YARN_VERSION=1.15.2
 # Wed, 08 May 2019 15:13:06 GMT
 RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz
-# Wed, 08 May 2019 15:13:06 GMT
+# Tue, 04 Jun 2019 21:59:56 GMT
+COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ 
+# Tue, 04 Jun 2019 21:59:57 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 04 Jun 2019 21:59:57 GMT
 CMD ["node"]
-# Wed, 08 May 2019 15:23:43 GMT
+# Tue, 04 Jun 2019 22:02:26 GMT
 RUN mkdir -p /usr/src/app
-# Wed, 08 May 2019 15:23:44 GMT
+# Tue, 04 Jun 2019 22:02:27 GMT
 WORKDIR /usr/src/app
-# Wed, 08 May 2019 15:23:44 GMT
+# Tue, 04 Jun 2019 22:02:27 GMT
 ONBUILD ARG NODE_ENV
-# Wed, 08 May 2019 15:23:45 GMT
+# Tue, 04 Jun 2019 22:02:29 GMT
 ONBUILD ENV NODE_ENV $NODE_ENV
-# Wed, 08 May 2019 15:23:45 GMT
+# Tue, 04 Jun 2019 22:02:31 GMT
 ONBUILD COPY package.json /usr/src/app/
-# Wed, 08 May 2019 15:23:46 GMT
+# Tue, 04 Jun 2019 22:02:31 GMT
 ONBUILD RUN npm install && npm cache clean --force
-# Wed, 08 May 2019 15:23:46 GMT
+# Tue, 04 Jun 2019 22:02:32 GMT
 ONBUILD COPY . /usr/src/app
-# Wed, 08 May 2019 15:23:47 GMT
+# Tue, 04 Jun 2019 22:02:33 GMT
 CMD ["npm" "start"]
 ```
 
@@ -196,22 +201,27 @@ CMD ["npm" "start"]
 		Last Modified: Wed, 08 May 2019 15:25:41 GMT  
 		Size: 1.3 MB (1324816 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5b08b7792e6a5746580d6a453a15b575a6ea0446d8cf41d3ddc75b54bab1f80`  
-		Last Modified: Wed, 08 May 2019 15:31:24 GMT  
+	-	`sha256:e10ffcd4cd06335bb2f12ece5db57cd65c34812522d08b2dbc71e9160c7204e7`  
+		Last Modified: Tue, 04 Jun 2019 22:03:48 GMT  
+		Size: 297.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2a5b9d9ce330b449bea15335e5ad95af843bcfd1587ea4431f0c610fdb49e591`  
+		Last Modified: Tue, 04 Jun 2019 22:06:55 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `node:8-onbuild` - linux; arm64 variant v8
 
 ```console
-$ docker pull node@sha256:2b8921767df24a6c1d482c8955da03ec1e5365cee80577c9db08c9ef66a5e5b1
+$ docker pull node@sha256:f85333ad405275d45dc4bf7266b826282e57021ea7a366f2d9ded63248a7711b
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **326.5 MB (326518157 bytes)**  
+-	Total Size: **326.5 MB (326518451 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a49eb82e3188059a2ab0741a96037be9f8772ae5b51bd851b57af4b83ad77f01`
+-	Image ID: `sha256:852a2775ed1f331a6921111100701ce668f316aeaa67da1e04f8dc7e7fdefc1b`
+-	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["npm","start"]`
 
 ```dockerfile
@@ -237,23 +247,27 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}"
 ENV YARN_VERSION=1.15.2
 # Wed, 22 May 2019 23:44:48 GMT
 RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz
-# Wed, 22 May 2019 23:44:49 GMT
+# Tue, 04 Jun 2019 22:06:53 GMT
+COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ 
+# Tue, 04 Jun 2019 22:06:54 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 04 Jun 2019 22:06:54 GMT
 CMD ["node"]
-# Thu, 23 May 2019 00:07:25 GMT
+# Tue, 04 Jun 2019 22:16:32 GMT
 RUN mkdir -p /usr/src/app
-# Thu, 23 May 2019 00:07:25 GMT
+# Tue, 04 Jun 2019 22:16:33 GMT
 WORKDIR /usr/src/app
-# Thu, 23 May 2019 00:07:25 GMT
+# Tue, 04 Jun 2019 22:16:33 GMT
 ONBUILD ARG NODE_ENV
-# Thu, 23 May 2019 00:07:26 GMT
+# Tue, 04 Jun 2019 22:16:34 GMT
 ONBUILD ENV NODE_ENV $NODE_ENV
-# Thu, 23 May 2019 00:07:26 GMT
+# Tue, 04 Jun 2019 22:16:34 GMT
 ONBUILD COPY package.json /usr/src/app/
-# Thu, 23 May 2019 00:07:26 GMT
+# Tue, 04 Jun 2019 22:16:35 GMT
 ONBUILD RUN npm install && npm cache clean --force
-# Thu, 23 May 2019 00:07:27 GMT
+# Tue, 04 Jun 2019 22:16:35 GMT
 ONBUILD COPY . /usr/src/app
-# Thu, 23 May 2019 00:07:27 GMT
+# Tue, 04 Jun 2019 22:16:36 GMT
 CMD ["npm" "start"]
 ```
 
@@ -290,9 +304,13 @@ CMD ["npm" "start"]
 		Last Modified: Thu, 23 May 2019 00:08:29 GMT  
 		Size: 1.3 MB (1324788 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e67634de72e4c25a6ba7ac46276ffdc4eba1f11e981320e5b12e6220e558d998`  
-		Last Modified: Thu, 23 May 2019 00:12:43 GMT  
-		Size: 167.0 B  
+	-	`sha256:e7e09438004c8f81a981682bafadc2e81734160078e2fe803d2e10168599d43c`  
+		Last Modified: Tue, 04 Jun 2019 22:17:34 GMT  
+		Size: 296.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:52f89555508635119245cc1598ad049e908a1bd977f07a24d5d24054b808c574`  
+		Last Modified: Tue, 04 Jun 2019 22:21:14 GMT  
+		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `node:8-onbuild` - linux; 386
@@ -486,14 +504,15 @@ CMD ["npm" "start"]
 ### `node:8-onbuild` - linux; s390x
 
 ```console
-$ docker pull node@sha256:b1177bcfb5b33be48b82ca7dceafc513e932d2cb70d43fd1424ee34be9555bc6
+$ docker pull node@sha256:da1d99a73e422fd866482c3fbe99a0ca95f5652755509dc57428b3e927b98066
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **336.9 MB (336854751 bytes)**  
+-	Total Size: **336.9 MB (336855045 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:761ca4df2aff253655648b75d3310411ec8b69dabb833e46e75a96d4715ccae4`
+-	Image ID: `sha256:9331162a572074d7dd6e4ce45dbc523d7e7fe2e311b4c8bb2311aaaa1b802a6c`
+-	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["npm","start"]`
 
 ```dockerfile
@@ -519,23 +538,27 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}"
 ENV YARN_VERSION=1.15.2
 # Wed, 08 May 2019 14:12:03 GMT
 RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz
-# Wed, 08 May 2019 14:12:04 GMT
+# Tue, 04 Jun 2019 22:08:25 GMT
+COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ 
+# Tue, 04 Jun 2019 22:08:25 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 04 Jun 2019 22:08:26 GMT
 CMD ["node"]
-# Wed, 08 May 2019 14:23:11 GMT
+# Tue, 04 Jun 2019 22:31:10 GMT
 RUN mkdir -p /usr/src/app
-# Wed, 08 May 2019 14:23:12 GMT
+# Tue, 04 Jun 2019 22:31:10 GMT
 WORKDIR /usr/src/app
-# Wed, 08 May 2019 14:23:13 GMT
+# Tue, 04 Jun 2019 22:31:11 GMT
 ONBUILD ARG NODE_ENV
-# Wed, 08 May 2019 14:23:13 GMT
+# Tue, 04 Jun 2019 22:31:11 GMT
 ONBUILD ENV NODE_ENV $NODE_ENV
-# Wed, 08 May 2019 14:23:14 GMT
+# Tue, 04 Jun 2019 22:31:11 GMT
 ONBUILD COPY package.json /usr/src/app/
-# Wed, 08 May 2019 14:23:16 GMT
+# Tue, 04 Jun 2019 22:31:11 GMT
 ONBUILD RUN npm install && npm cache clean --force
-# Wed, 08 May 2019 14:23:17 GMT
+# Tue, 04 Jun 2019 22:31:12 GMT
 ONBUILD COPY . /usr/src/app
-# Wed, 08 May 2019 14:23:18 GMT
+# Tue, 04 Jun 2019 22:31:12 GMT
 CMD ["npm" "start"]
 ```
 
@@ -572,7 +595,11 @@ CMD ["npm" "start"]
 		Last Modified: Wed, 08 May 2019 14:26:58 GMT  
 		Size: 1.3 MB (1324779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c609c0a8c6acc925ffbf828bc740a8f1998f5358570141586c19824008002f8`  
-		Last Modified: Wed, 08 May 2019 14:33:59 GMT  
+	-	`sha256:30f1868760a1397c1a7865ec153b3b89527a6ef504036fcb11e65062b1d0e557`  
+		Last Modified: Tue, 04 Jun 2019 22:32:04 GMT  
+		Size: 294.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7780c868ee9e98954520d9ab456893edc5c3429d31eaf19c4de1d1857b30d965`  
+		Last Modified: Tue, 04 Jun 2019 22:34:11 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
