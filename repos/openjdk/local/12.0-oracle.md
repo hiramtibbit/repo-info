@@ -2,14 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:831a029b6add43a7e2f88608a75bf1c924656d9622609fb96898b1f323002ad7`
-- Created: `2019-04-17T23:27:47.214825315Z`
-- Virtual Size: ~ 469.71 Mb  
+- Image ID: `sha256:ef36deb98f03436feb5ed0eaa505613e915f916bff9d3cb966409f007ca55774`
+- Created: `2019-05-29T20:33:59.690356131Z`
+- Virtual Size: ~ 469.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
 - Environment:
   - `PATH=/usr/java/openjdk-12/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `LANG=en_US.UTF-8`
   - `JAVA_HOME=/usr/java/openjdk-12`
   - `JAVA_VERSION=12.0.1`
   - `JAVA_URL=https://download.java.net/java/GA/jdk12.0.1/69cfe15208a647278a19ef0990eea691/12/GPL/openjdk-12.0.1_linux-x64_bin.tar.gz`
