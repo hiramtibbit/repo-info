@@ -1,10 +1,10 @@
-# `ros:bouncy-ros-core`
+# `ros:dashing-ros-core`
 
 ## Docker Metadata
 
-- Image ID: `sha256:169ca835e65a136e32fe3d25402a8b82d30771faa660febfa0a5eec969d8a153`
-- Created: `2019-06-01T00:42:59.434745746Z`
-- Virtual Size: ~ 723.76 Mb  
+- Image ID: `sha256:9292093483e849712fe6104b965e30ddc74835db5d0632803cf8260866fb30ab`
+- Created: `2019-06-03T20:25:49.607169633Z`
+- Virtual Size: ~ 840.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `LC_ALL=C.UTF-8`
-  - `ROS_DISTRO=bouncy`
+  - `ROS_DISTRO=dashing`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -215,6 +215,26 @@ $ apt-get source -qq --print-uris bash=4.4.18-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.4.18-2ubuntu1.debian.tar.xz' bash_4.4.18-2ubuntu1.debian.tar.xz 63912 SHA256:0f9a072b7a892c8ed388dac71783f8c4547c3b9737efa5ccb28bf243ab77ef10
 ```
 
+### `dpkg` source package: `beautifulsoup4=4.6.0-1`
+
+Binary Packages:
+
+- `python3-bs4=4.6.0-1`
+
+Licenses: (parsed from: `/usr/share/doc/python3-bs4/copyright`)
+
+- `Expat`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris beautifulsoup4=4.6.0-1
+'http://archive.ubuntu.com/ubuntu/pool/main/b/beautifulsoup4/beautifulsoup4_4.6.0-1.dsc' beautifulsoup4_4.6.0-1.dsc 2165 SHA256:96780b8b29bbbe87fdfde9bc32a3fdece9066e007a956a6401e693bad8e9cd19
+'http://archive.ubuntu.com/ubuntu/pool/main/b/beautifulsoup4/beautifulsoup4_4.6.0.orig.tar.gz' beautifulsoup4_4.6.0.orig.tar.gz 160846 SHA256:808b6ac932dccb0a4126558f7dfdcf41710dd44a4ef497a0bb59a77f9f078e89
+'http://archive.ubuntu.com/ubuntu/pool/main/b/beautifulsoup4/beautifulsoup4_4.6.0-1.debian.tar.xz' beautifulsoup4_4.6.0-1.debian.tar.xz 5600 SHA256:6edb0772c0282e398f6208512ab611c78d0073b0c0e283ce5675729d2fef59d1
+```
+
 ### `dpkg` source package: `binutils=2.30-21ubuntu1~18.04.1`
 
 Binary Packages:
@@ -315,6 +335,26 @@ $ apt-get source -qq --print-uris cdebconf=0.213ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.213ubuntu1.tar.xz' cdebconf_0.213ubuntu1.tar.xz 272596 SHA256:624feaf9e7e5f407271f99e06e54d5002fcce51345553a626caf7b4a65f0afd1
 ```
 
+### `dpkg` source package: `chardet=3.0.4-1`
+
+Binary Packages:
+
+- `python3-chardet=3.0.4-1`
+
+Licenses: (parsed from: `/usr/share/doc/python3-chardet/copyright`)
+
+- `LGPL-2.1`
+- `LGPL-2.1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris chardet=3.0.4-1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/chardet/chardet_3.0.4-1.dsc' chardet_3.0.4-1.dsc 2266 SHA256:3817cc4873a006437de6f13ae4c8e6149f8f527e81918b1a1e8b8c1d64f70354
+'http://archive.ubuntu.com/ubuntu/pool/main/c/chardet/chardet_3.0.4.orig.tar.gz' chardet_3.0.4.orig.tar.gz 1868453 SHA256:84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae
+'http://archive.ubuntu.com/ubuntu/pool/main/c/chardet/chardet_3.0.4-1.debian.tar.xz' chardet_3.0.4-1.debian.tar.xz 4180 SHA256:955bb5b9680e74f61d704ef0f5968182f0af5b262c287687d573e8a57c91bbc8
+```
+
 ### `dpkg` source package: `cmake=3.10.2-1ubuntu2`
 
 Binary Packages:
@@ -343,6 +383,26 @@ $ apt-get source -qq --print-uris cmake=3.10.2-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cmake/cmake_3.10.2-1ubuntu2.dsc' cmake_3.10.2-1ubuntu2.dsc 3064 SHA256:7be9f9d50948156490a438988b504e51863229b0af2272c6d9617042f9f40dfe
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cmake/cmake_3.10.2.orig.tar.gz' cmake_3.10.2.orig.tar.gz 7824452 SHA256:80d0faad4ab56de07aa21a7fc692c88c4ce6156d42b0579c6962004a70a3218b
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cmake/cmake_3.10.2-1ubuntu2.debian.tar.xz' cmake_3.10.2-1ubuntu2.debian.tar.xz 29008 SHA256:c8b5e980882128f085757500c109865773e9145ac7d9bf01abe91f50f8b24fe1
+```
+
+### `dpkg` source package: `console-bridge=0.4.0+dfsg-2`
+
+Binary Packages:
+
+- `libconsole-bridge-dev:amd64=0.4.0+dfsg-2`
+- `libconsole-bridge0.4:amd64=0.4.0+dfsg-2`
+
+Licenses: (parsed from: `/usr/share/doc/libconsole-bridge-dev/copyright`, `/usr/share/doc/libconsole-bridge0.4/copyright`)
+
+- `BSD-3-clause`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris console-bridge=0.4.0+dfsg-2
+'http://archive.ubuntu.com/ubuntu/pool/universe/c/console-bridge/console-bridge_0.4.0+dfsg-2.dsc' console-bridge_0.4.0+dfsg-2.dsc 1949 SHA256:5cfb1b8f43d210c5c1c72bdccb909092b40f361759372211331f75859f29ff91
+'http://archive.ubuntu.com/ubuntu/pool/universe/c/console-bridge/console-bridge_0.4.0+dfsg.orig.tar.gz' console-bridge_0.4.0+dfsg.orig.tar.gz 6042 SHA256:172eecc6c185de2f6d43aed10c3110b8573e53a49f77c48c3f81a83e0e6e63c2
+'http://archive.ubuntu.com/ubuntu/pool/universe/c/console-bridge/console-bridge_0.4.0+dfsg-2.debian.tar.xz' console-bridge_0.4.0+dfsg-2.debian.tar.xz 3628 SHA256:56bdfbf50a6e7a83c1f4d1f9052b5b605b8f61846cce7042af0bb6ab661707f7
 ```
 
 ### `dpkg` source package: `coreutils=8.28-1ubuntu1`
@@ -822,10 +882,11 @@ Binary Packages:
 - `libasan4:amd64=7.4.0-1ubuntu1~18.04`
 - `libcilkrts5:amd64=7.4.0-1ubuntu1~18.04`
 - `libgcc-7-dev:amd64=7.4.0-1ubuntu1~18.04`
+- `libgfortran4:amd64=7.4.0-1ubuntu1~18.04`
 - `libstdc++-7-dev:amd64=7.4.0-1ubuntu1~18.04`
 - `libubsan0:amd64=7.4.0-1ubuntu1~18.04`
 
-Licenses: (parsed from: `/usr/share/doc/cpp-7/copyright`, `/usr/share/doc/g++-7/copyright`, `/usr/share/doc/gcc-7/copyright`, `/usr/share/doc/gcc-7-base/copyright`, `/usr/share/doc/libasan4/copyright`, `/usr/share/doc/libcilkrts5/copyright`, `/usr/share/doc/libgcc-7-dev/copyright`, `/usr/share/doc/libstdc++-7-dev/copyright`, `/usr/share/doc/libubsan0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/cpp-7/copyright`, `/usr/share/doc/g++-7/copyright`, `/usr/share/doc/gcc-7/copyright`, `/usr/share/doc/gcc-7-base/copyright`, `/usr/share/doc/libasan4/copyright`, `/usr/share/doc/libcilkrts5/copyright`, `/usr/share/doc/libgcc-7-dev/copyright`, `/usr/share/doc/libgfortran4/copyright`, `/usr/share/doc/libstdc++-7-dev/copyright`, `/usr/share/doc/libubsan0/copyright`)
 
 - `Artistic`
 - `GFDL-1.2`
@@ -1227,6 +1288,25 @@ $ apt-get source -qq --print-uris hostname=3.20
 'http://archive.ubuntu.com/ubuntu/pool/main/h/hostname/hostname_3.20.tar.gz' hostname_3.20.tar.gz 13336 SHA256:e7ed56f8c532573ff34d9bd6e7a10d04fbbb2c7fae187898805868e5fed24ab0
 ```
 
+### `dpkg` source package: `html5lib=0.999999999-1`
+
+Binary Packages:
+
+- `python3-html5lib=0.999999999-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris html5lib=0.999999999-1
+'http://archive.ubuntu.com/ubuntu/pool/main/h/html5lib/html5lib_0.999999999-1.dsc' html5lib_0.999999999-1.dsc 2429 SHA256:ce1d03c7be296c17dab5d1bc5db69165855ac619503dc4f1467c7abc057b5029
+'http://archive.ubuntu.com/ubuntu/pool/main/h/html5lib/html5lib_0.999999999.orig.tar.gz' html5lib_0.999999999.orig.tar.gz 245488 SHA256:ee747c0ffd3028d2722061936b5c65ee4fe13c8e4613519b4447123fc4546298
+'http://archive.ubuntu.com/ubuntu/pool/main/h/html5lib/html5lib_0.999999999-1.debian.tar.xz' html5lib_0.999999999-1.debian.tar.xz 4900 SHA256:b2afc587d0cd64f6b70d1d55cff9bed78787c7d4501a43f4352a4b4c0a41966f
+```
+
 ### `dpkg` source package: `icu=60.2-3ubuntu3`
 
 Binary Packages:
@@ -1439,6 +1519,41 @@ $ apt-get source -qq --print-uris krb5=1.16-2ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.16.orig.tar.gz' krb5_1.16.orig.tar.gz 9474479 SHA256:faeb125f83b0fb4cdb2f99f088140631bb47d975982de0956d18c85842969e08
 'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.16-2ubuntu0.1.debian.tar.xz' krb5_1.16-2ubuntu0.1.debian.tar.xz 99820 SHA256:9e3a973805af340fab23cd28737187567214adb98452d1564ada05652036fc0c
 ```
+
+### `dpkg` source package: `lapack=3.7.1-4ubuntu1`
+
+Binary Packages:
+
+- `libblas3:amd64=3.7.1-4ubuntu1`
+- `liblapack3:amd64=3.7.1-4ubuntu1`
+
+Licenses: (parsed from: `/usr/share/doc/libblas3/copyright`, `/usr/share/doc/liblapack3/copyright`)
+
+- `BSD-3-clause`
+- `BSD-3-clause-intel`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris lapack=3.7.1-4ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lapack/lapack_3.7.1-4ubuntu1.dsc' lapack_3.7.1-4ubuntu1.dsc 2920 SHA256:e33bcdea935109083a85442f1826cb4fef865c7e56fb5b38e75a08a8defc3fcd
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lapack/lapack_3.7.1.orig.tar.gz' lapack_3.7.1.orig.tar.gz 9137261 SHA256:f6c53fd9f56932f3ddb3d5e24c1c07e4cd9b3b08e7f89de9c867125eecc9a1c8
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lapack/lapack_3.7.1-4ubuntu1.debian.tar.xz' lapack_3.7.1-4ubuntu1.debian.tar.xz 20956 SHA256:0b981a911d7a8cde6b1addd3d823be88d29807f50c19e71e1a8a233e469c3a6d
+```
+
+### `dpkg` source package: `lark-parser=0.7.0-1osrf~bionic`
+
+Binary Packages:
+
+- `python3-lark-parser=0.7.0-1osrf~bionic`
+
+Licenses: (parsed from: `/usr/share/doc/python3-lark-parser/copyright`)
+
+- `MIT`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
 
 ### `dpkg` source package: `libalgorithm-diff-perl=1.19.03-1`
 
@@ -1813,6 +1928,21 @@ $ apt-get source -qq --print-uris liblocale-gettext-perl=1.07-3build2
 'http://archive.ubuntu.com/ubuntu/pool/main/libl/liblocale-gettext-perl/liblocale-gettext-perl_1.07-3build2.debian.tar.xz' liblocale-gettext-perl_1.07-3build2.debian.tar.xz 5648 SHA256:6f6dbd0989c29f6d8bb47d157f4e0a9f8f700c71bbb859cdd512d8dd425d38b5
 ```
 
+### `dpkg` source package: `libopensplice69=6.9.190403+osrf1-1~bionic`
+
+Binary Packages:
+
+- `libopensplice69:amd64=6.9.190403+osrf1-1~bionic`
+
+Licenses: (parsed from: `/usr/share/doc/libopensplice69/copyright`)
+
+- `LGPL-3`
+- `LGPL3`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
 ### `dpkg` source package: `libpsl=0.19.1-5build1`
 
 Binary Packages:
@@ -2010,8 +2140,9 @@ $ apt-get source -qq --print-uris libuv1=1.18.0-3
 Binary Packages:
 
 - `libxml2:amd64=2.9.4+dfsg1-6.1ubuntu1.2`
+- `libxml2-utils=2.9.4+dfsg1-6.1ubuntu1.2`
 
-Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libxml2-utils/copyright`)
 
 - `ISC`
 - `MIT-1`
@@ -2023,6 +2154,25 @@ $ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-6.1ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-6.1ubuntu1.2.dsc' libxml2_2.9.4+dfsg1-6.1ubuntu1.2.dsc 3151 SHA256:65ab821da16cb5b2b2e89675364b3023fc14a34585d080e96220aba66b57024b
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-6.1ubuntu1.2.debian.tar.xz' libxml2_2.9.4+dfsg1-6.1ubuntu1.2.debian.tar.xz 39036 SHA256:10680785de98ddac3ca7152851b8d6a5222e8d7eeb1f051b69e59e8455318487
+```
+
+### `dpkg` source package: `libxslt=1.1.29-5ubuntu0.1`
+
+Binary Packages:
+
+- `libxslt1.1:amd64=1.1.29-5ubuntu0.1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libxslt=1.1.29-5ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.29-5ubuntu0.1.dsc' libxslt_1.1.29-5ubuntu0.1.dsc 2502 SHA256:571281e974f7cdf0d27174b4354d9ce462e3537acc98ccea6cf719d279566469
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.29.orig.tar.gz' libxslt_1.1.29.orig.tar.gz 3428524 SHA256:b5976e3857837e7617b29f2249ebb5eeac34e249208d31f1fbf7a6ba7a4090ce
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.29-5ubuntu0.1.debian.tar.xz' libxslt_1.1.29-5ubuntu0.1.debian.tar.xz 35396 SHA256:8fc21c9c4e04f7e5773aa41972986e5b62e08fe364f1fdc5f85938d9e4d2c28e
 ```
 
 ### `dpkg` source package: `libyaml=0.1.7-2ubuntu3`
@@ -2106,6 +2256,27 @@ Source:
 $ apt-get source -qq --print-uris lsb=9.20170808ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lsb/lsb_9.20170808ubuntu1.dsc' lsb_9.20170808ubuntu1.dsc 2126 SHA256:9b98df7b442472d172612bf6855b4dbc3cd6d5892d8073605dda786fec94af5f
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lsb/lsb_9.20170808ubuntu1.tar.xz' lsb_9.20170808ubuntu1.tar.xz 45492 SHA256:b26bcb746e0bff05ad3e15dfbeb0ba7ea2a8d031f765a6cfa568c57d14c522c4
+```
+
+### `dpkg` source package: `lxml=4.2.1-1ubuntu0.1`
+
+Binary Packages:
+
+- `python3-lxml:amd64=4.2.1-1ubuntu0.1`
+
+Licenses: (parsed from: `/usr/share/doc/python3-lxml/copyright`)
+
+- `GPL`
+- `GPL2`
+- `later`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris lxml=4.2.1-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lxml/lxml_4.2.1-1ubuntu0.1.dsc' lxml_4.2.1-1ubuntu0.1.dsc 2336 SHA256:3c8f63ad63a0f96fbf10dcc80606955cd784775c7a97138bc8875c791718bf49
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lxml/lxml_4.2.1.orig.tar.gz' lxml_4.2.1.orig.tar.gz 4284267 SHA256:e2629cdbcad82b83922a3488937632a4983ecc0fed3e5cfbf430d069382eeb9b
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lxml/lxml_4.2.1-1ubuntu0.1.debian.tar.xz' lxml_4.2.1-1ubuntu0.1.debian.tar.xz 8320 SHA256:9e95f418a40e4e3c1d713a9aca776a0eef4fca08a43595c1183fd5eb5bee124a
 ```
 
 ### `dpkg` source package: `lz4=0.0~r131-2ubuntu3`
@@ -2689,6 +2860,25 @@ $ apt-get source -qq --print-uris pinentry=1.1.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.1.0-1.debian.tar.xz' pinentry_1.1.0-1.debian.tar.xz 15408 SHA256:ddee92638e762f125ac09b86b4f3b31e2d240e8d2dcce940302293bb2ea0873e
 ```
 
+### `dpkg` source package: `pkg-config=0.29.1-0ubuntu2`
+
+Binary Packages:
+
+- `pkg-config=0.29.1-0ubuntu2`
+
+Licenses: (parsed from: `/usr/share/doc/pkg-config/copyright`)
+
+- `GPL`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris pkg-config=0.29.1-0ubuntu2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pkg-config/pkg-config_0.29.1-0ubuntu2.dsc' pkg-config_0.29.1-0ubuntu2.dsc 1824 SHA256:91f07d5a80083fbe86c93d9f107890920f4740df8f3d1e6b162a5d703afc3b89
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pkg-config/pkg-config_0.29.1.orig.tar.gz' pkg-config_0.29.1.orig.tar.gz 2013454 SHA256:beb43c9e064555469bd4390dcfd8030b1536e0aa103f08d7abf7ae8cac0cb001
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pkg-config/pkg-config_0.29.1-0ubuntu2.diff.gz' pkg-config_0.29.1-0ubuntu2.diff.gz 12715 SHA256:8d5645ccad7bdbcaf3bd83b1b18c7f7d0e2a813e9813b5d4603aa646fc5ff5ea
+```
+
 ### `dpkg` source package: `poco=1.8.0.1-1ubuntu4`
 
 Binary Packages:
@@ -3207,6 +3397,25 @@ $ apt-get source -qq --print-uris python-notify2=0.3-3
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-notify2/python-notify2_0.3-3.debian.tar.xz' python-notify2_0.3-3.debian.tar.xz 3260 SHA256:0a127940fc81420d388d9c99d4902b57a4ad7e367edc6fcd797ee312c635b9f8
 ```
 
+### `dpkg` source package: `python-numpy=1:1.13.3-2ubuntu1`
+
+Binary Packages:
+
+- `python3-numpy=1:1.13.3-2ubuntu1`
+
+Licenses: (parsed from: `/usr/share/doc/python3-numpy/copyright`)
+
+- `PSF`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python-numpy=1:1.13.3-2ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-numpy/python-numpy_1.13.3-2ubuntu1.dsc' python-numpy_1.13.3-2ubuntu1.dsc 3000 SHA256:5cbbdaa075dc0a5732bf4dc703a49c5c4f0a4c3c0af2616e773be339fa5cdca3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-numpy/python-numpy_1.13.3.orig.tar.gz' python-numpy_1.13.3.orig.tar.gz 4520295 SHA256:5e3cb4c3797a4f0da082cab65ab00fa4a9d7552391876e2bb53f39a35bdc78cf
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-numpy/python-numpy_1.13.3-2ubuntu1.debian.tar.xz' python-numpy_1.13.3-2ubuntu1.debian.tar.xz 144196 SHA256:7dc98e90991b19f413137e8289a81ec2a9bfc7679719235d914af98d96dea33f
+```
+
 ### `dpkg` source package: `python-pip=9.0.1-2.3~ubuntu1`
 
 Binary Packages:
@@ -3363,6 +3572,26 @@ $ apt-get source -qq --print-uris python-snowballstemmer=1.2.1-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-snowballstemmer/python-snowballstemmer_1.2.1-1.dsc' python-snowballstemmer_1.2.1-1.dsc 2165 SHA256:efd11cc1667d71771243599e442f8a75ca23d40092ac18172a2242b7b2a80151
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-snowballstemmer/python-snowballstemmer_1.2.1.orig.tar.gz' python-snowballstemmer_1.2.1.orig.tar.gz 49626 SHA256:919f26a68b2c17a7634da993d91339e288964f93c274f1343e3bbbe2096e1128
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-snowballstemmer/python-snowballstemmer_1.2.1-1.debian.tar.xz' python-snowballstemmer_1.2.1-1.debian.tar.xz 1976 SHA256:d5f3115a2b43b9462a1c0a963a9489e42bfa1ded461ed947ae4f94de79f34d91
+```
+
+### `dpkg` source package: `python-webencodings=0.5-2`
+
+Binary Packages:
+
+- `python3-webencodings=0.5-2`
+
+Licenses: (parsed from: `/usr/share/doc/python3-webencodings/copyright`)
+
+- `BSD-3-clause`
+- `Expat`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python-webencodings=0.5-2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-webencodings/python-webencodings_0.5-2.dsc' python-webencodings_0.5-2.dsc 2264 SHA256:83d6d98cb7a8b1b59c84ad37d9ebe0ba76256088c245afe3a5a2428bd37c424e
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-webencodings/python-webencodings_0.5.orig.tar.gz' python-webencodings_0.5.orig.tar.gz 9479 SHA256:a5c55ee93b24e740fe951c37b5c228dccc1f171450e188555a775261cce1b904
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-webencodings/python-webencodings_0.5-2.debian.tar.xz' python-webencodings_0.5-2.debian.tar.xz 2844 SHA256:9d39a6538fa498b01e04e5f8ba526f1803c5d5f370053a71b6f4e96ebd998678
 ```
 
 ### `dpkg` source package: `python2.7=2.7.15~rc1-1ubuntu0.1`
@@ -4109,11 +4338,11 @@ $ apt-get source -qq --print-uris rhash=1.3.6-2
 'http://archive.ubuntu.com/ubuntu/pool/main/r/rhash/rhash_1.3.6-2.debian.tar.xz' rhash_1.3.6-2.debian.tar.xz 9672 SHA256:fcccfa3d3a5a7ac16395ec54fcfb4217a5ccf5718e762f3670276366061e5638
 ```
 
-### `dpkg` source package: `ros-bouncy-actionlib-msgs=0.5.1-0bionic.20180823.020237`
+### `dpkg` source package: `ros-dashing-action-msgs=0.7.4-1bionic.20190531.011639`
 
 Binary Packages:
 
-- `ros-bouncy-actionlib-msgs=0.5.1-0bionic.20180823.020237`
+- `ros-dashing-action-msgs=0.7.4-1bionic.20190531.011639`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4123,11 +4352,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake-auto=0.5.1-0bionic.20180719.225409`
+### `dpkg` source package: `ros-dashing-actionlib-msgs=0.7.0-1bionic.20190531.013618`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake-auto=0.5.1-0bionic.20180719.225409`
+- `ros-dashing-actionlib-msgs=0.7.0-1bionic.20190531.013618`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4137,11 +4366,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake-copyright=0.5.2-0bionic.20180719.223953`
+### `dpkg` source package: `ros-dashing-ament-cmake-auto=0.7.3-1bionic.20190530.060900`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake-copyright=0.5.2-0bionic.20180719.223953`
+- `ros-dashing-ament-cmake-auto=0.7.3-1bionic.20190530.060900`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4151,11 +4380,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake-core=0.5.1-0bionic.20180719.222055`
+### `dpkg` source package: `ros-dashing-ament-cmake-copyright=0.7.3-1bionic.20190530.061541`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake-core=0.5.1-0bionic.20180719.222055`
+- `ros-dashing-ament-cmake-copyright=0.7.3-1bionic.20190530.061541`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4165,11 +4394,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake-cppcheck=0.5.2-0bionic.20180719.224031`
+### `dpkg` source package: `ros-dashing-ament-cmake-core=0.7.3-1bionic.20190530.050205`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake-cppcheck=0.5.2-0bionic.20180719.224031`
+- `ros-dashing-ament-cmake-core=0.7.3-1bionic.20190530.050205`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4179,11 +4408,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake-cpplint=0.5.2-0bionic.20180719.224032`
+### `dpkg` source package: `ros-dashing-ament-cmake-cppcheck=0.7.3-1bionic.20190530.061739`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake-cpplint=0.5.2-0bionic.20180719.224032`
+- `ros-dashing-ament-cmake-cppcheck=0.7.3-1bionic.20190530.061739`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4193,11 +4422,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake-export-definitions=0.5.1-0bionic.20180719.225127`
+### `dpkg` source package: `ros-dashing-ament-cmake-cpplint=0.7.3-1bionic.20190530.061738`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake-export-definitions=0.5.1-0bionic.20180719.225127`
+- `ros-dashing-ament-cmake-cpplint=0.7.3-1bionic.20190530.061738`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4207,11 +4436,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake-export-dependencies=0.5.1-0bionic.20180719.222816`
+### `dpkg` source package: `ros-dashing-ament-cmake-export-definitions=0.7.3-1bionic.20190530.055658`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake-export-dependencies=0.5.1-0bionic.20180719.222816`
+- `ros-dashing-ament-cmake-export-definitions=0.7.3-1bionic.20190530.055658`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4221,11 +4450,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake-export-include-directories=0.5.1-0bionic.20180719.222536`
+### `dpkg` source package: `ros-dashing-ament-cmake-export-dependencies=0.7.3-1bionic.20190530.060347`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake-export-include-directories=0.5.1-0bionic.20180719.222536`
+- `ros-dashing-ament-cmake-export-dependencies=0.7.3-1bionic.20190530.060347`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4235,11 +4464,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake-export-interfaces=0.5.1-0bionic.20180719.225206`
+### `dpkg` source package: `ros-dashing-ament-cmake-export-include-directories=0.7.3-1bionic.20190530.055658`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake-export-interfaces=0.5.1-0bionic.20180719.225206`
+- `ros-dashing-ament-cmake-export-include-directories=0.7.3-1bionic.20190530.055658`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4249,11 +4478,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake-export-libraries=0.5.1-0bionic.20180719.225122`
+### `dpkg` source package: `ros-dashing-ament-cmake-export-interfaces=0.7.3-1bionic.20190530.060322`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake-export-libraries=0.5.1-0bionic.20180719.225122`
+- `ros-dashing-ament-cmake-export-interfaces=0.7.3-1bionic.20190530.060322`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4263,11 +4492,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake-export-link-flags=0.5.1-0bionic.20180719.222510`
+### `dpkg` source package: `ros-dashing-ament-cmake-export-libraries=0.7.3-1bionic.20190530.060014`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake-export-link-flags=0.5.1-0bionic.20180719.222510`
+- `ros-dashing-ament-cmake-export-libraries=0.7.3-1bionic.20190530.060014`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4277,11 +4506,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake-flake8=0.5.2-0bionic.20180719.224032`
+### `dpkg` source package: `ros-dashing-ament-cmake-export-link-flags=0.7.3-1bionic.20190530.060015`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake-flake8=0.5.2-0bionic.20180719.224032`
+- `ros-dashing-ament-cmake-export-link-flags=0.7.3-1bionic.20190530.060015`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4291,11 +4520,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake-gmock=0.5.1-0bionic.20180719.223225`
+### `dpkg` source package: `ros-dashing-ament-cmake-flake8=0.7.3-1bionic.20190530.061739`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake-gmock=0.5.1-0bionic.20180719.223225`
+- `ros-dashing-ament-cmake-flake8=0.7.3-1bionic.20190530.061739`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4305,11 +4534,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake-gtest=0.5.1-0bionic.20180719.223004`
+### `dpkg` source package: `ros-dashing-ament-cmake-gmock=0.7.3-1bionic.20190530.060907`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake-gtest=0.5.1-0bionic.20180719.223004`
+- `ros-dashing-ament-cmake-gmock=0.7.3-1bionic.20190530.060907`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4319,11 +4548,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake-include-directories=0.5.1-0bionic.20180719.225123`
+### `dpkg` source package: `ros-dashing-ament-cmake-gtest=0.7.3-1bionic.20190530.060428`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake-include-directories=0.5.1-0bionic.20180719.225123`
+- `ros-dashing-ament-cmake-gtest=0.7.3-1bionic.20190530.060428`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4333,11 +4562,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake-libraries=0.5.1-0bionic.20180719.222535`
+### `dpkg` source package: `ros-dashing-ament-cmake-include-directories=0.7.3-1bionic.20190530.060015`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake-libraries=0.5.1-0bionic.20180719.222535`
+- `ros-dashing-ament-cmake-include-directories=0.7.3-1bionic.20190530.060015`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4347,11 +4576,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake-lint-cmake=0.5.2-0bionic.20180719.223654`
+### `dpkg` source package: `ros-dashing-ament-cmake-libraries=0.7.3-1bionic.20190530.060015`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake-lint-cmake=0.5.2-0bionic.20180719.223654`
+- `ros-dashing-ament-cmake-libraries=0.7.3-1bionic.20190530.060015`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4361,11 +4590,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake-pep257=0.5.2-0bionic.20180719.224030`
+### `dpkg` source package: `ros-dashing-ament-cmake-lint-cmake=0.7.3-1bionic.20190530.061412`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake-pep257=0.5.2-0bionic.20180719.224030`
+- `ros-dashing-ament-cmake-lint-cmake=0.7.3-1bionic.20190530.061412`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4375,11 +4604,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake-pytest=0.5.1-0bionic.20180719.222710`
+### `dpkg` source package: `ros-dashing-ament-cmake-pep257=0.7.3-1bionic.20190530.061816`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake-pytest=0.5.1-0bionic.20180719.222710`
+- `ros-dashing-ament-cmake-pep257=0.7.3-1bionic.20190530.061816`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4389,11 +4618,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake-python=0.5.1-0bionic.20180719.225123`
+### `dpkg` source package: `ros-dashing-ament-cmake-pytest=0.7.3-1bionic.20190530.060429`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake-python=0.5.1-0bionic.20180719.225123`
+- `ros-dashing-ament-cmake-pytest=0.7.3-1bionic.20190530.060429`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4403,11 +4632,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake-ros=0.5.0-0bionic.20180719.225407`
+### `dpkg` source package: `ros-dashing-ament-cmake-python=0.7.3-1bionic.20190530.060038`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake-ros=0.5.0-0bionic.20180719.225407`
+- `ros-dashing-ament-cmake-python=0.7.3-1bionic.20190530.060038`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4417,11 +4646,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake-target-dependencies=0.5.1-0bionic.20180719.225212`
+### `dpkg` source package: `ros-dashing-ament-cmake-ros=0.7.0-1bionic.20190530.062147`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake-target-dependencies=0.5.1-0bionic.20180719.225212`
+- `ros-dashing-ament-cmake-ros=0.7.0-1bionic.20190530.062147`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4431,11 +4660,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake-test=0.5.1-0bionic.20180719.222503`
+### `dpkg` source package: `ros-dashing-ament-cmake-target-dependencies=0.7.3-1bionic.20190530.060345`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake-test=0.5.1-0bionic.20180719.222503`
+- `ros-dashing-ament-cmake-target-dependencies=0.7.3-1bionic.20190530.060345`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4445,11 +4674,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake-uncrustify=0.5.2-0bionic.20180719.224309`
+### `dpkg` source package: `ros-dashing-ament-cmake-test=0.7.3-1bionic.20190530.060038`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake-uncrustify=0.5.2-0bionic.20180719.224309`
+- `ros-dashing-ament-cmake-test=0.7.3-1bionic.20190530.060038`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4459,11 +4688,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cmake=0.5.1-0bionic.20180719.225243`
+### `dpkg` source package: `ros-dashing-ament-cmake-uncrustify=0.7.3-1bionic.20190530.061846`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cmake=0.5.1-0bionic.20180719.225243`
+- `ros-dashing-ament-cmake-uncrustify=0.7.3-1bionic.20190530.061846`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4473,11 +4702,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-copyright=0.5.2-0bionic.20180719.223209`
+### `dpkg` source package: `ros-dashing-ament-cmake-xmllint=0.7.3-1bionic.20190530.061853`
 
 Binary Packages:
 
-- `ros-bouncy-ament-copyright=0.5.2-0bionic.20180719.223209`
+- `ros-dashing-ament-cmake-xmllint=0.7.3-1bionic.20190530.061853`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4487,11 +4716,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cppcheck=0.5.2-0bionic.20180719.222546`
+### `dpkg` source package: `ros-dashing-ament-cmake=0.7.3-1bionic.20190530.060457`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cppcheck=0.5.2-0bionic.20180719.222546`
+- `ros-dashing-ament-cmake=0.7.3-1bionic.20190530.060457`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4501,11 +4730,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-cpplint=0.5.2-0bionic.20180719.223428`
+### `dpkg` source package: `ros-dashing-ament-copyright=0.7.3-1bionic.20190530.060914`
 
 Binary Packages:
 
-- `ros-bouncy-ament-cpplint=0.5.2-0bionic.20180719.223428`
+- `ros-dashing-ament-copyright=0.7.3-1bionic.20190530.060914`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4515,11 +4744,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-flake8=0.5.2-0bionic.20180719.222637`
+### `dpkg` source package: `ros-dashing-ament-cppcheck=0.7.3-1bionic.20190530.060038`
 
 Binary Packages:
 
-- `ros-bouncy-ament-flake8=0.5.2-0bionic.20180719.222637`
+- `ros-dashing-ament-cppcheck=0.7.3-1bionic.20190530.060038`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4529,11 +4758,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-index-cpp=0.5.1-0bionic.20180719.225407`
+### `dpkg` source package: `ros-dashing-ament-cpplint=0.7.3-1bionic.20190530.061124`
 
 Binary Packages:
 
-- `ros-bouncy-ament-index-cpp=0.5.1-0bionic.20180719.225407`
+- `ros-dashing-ament-cpplint=0.7.3-1bionic.20190530.061124`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4543,11 +4772,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-index-python=0.5.1-0bionic.20180719.223216`
+### `dpkg` source package: `ros-dashing-ament-flake8=0.7.3-1bionic.20190530.060038`
 
 Binary Packages:
 
-- `ros-bouncy-ament-index-python=0.5.1-0bionic.20180719.223216`
+- `ros-dashing-ament-flake8=0.7.3-1bionic.20190530.060038`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4557,11 +4786,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-lint-auto=0.5.2-0bionic.20180719.222746`
+### `dpkg` source package: `ros-dashing-ament-index-cpp=0.7.0-1bionic.20190530.062149`
 
 Binary Packages:
 
-- `ros-bouncy-ament-lint-auto=0.5.2-0bionic.20180719.222746`
+- `ros-dashing-ament-index-cpp=0.7.0-1bionic.20190530.062149`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4571,11 +4800,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-lint-cmake=0.5.2-0bionic.20180719.223425`
+### `dpkg` source package: `ros-dashing-ament-index-python=0.7.0-1bionic.20190530.060922`
 
 Binary Packages:
 
-- `ros-bouncy-ament-lint-cmake=0.5.2-0bionic.20180719.223425`
+- `ros-dashing-ament-index-python=0.7.0-1bionic.20190530.060922`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4585,11 +4814,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-lint-common=0.5.2-0bionic.20180719.224359`
+### `dpkg` source package: `ros-dashing-ament-lint-auto=0.7.3-1bionic.20190530.060428`
 
 Binary Packages:
 
-- `ros-bouncy-ament-lint-common=0.5.2-0bionic.20180719.224359`
+- `ros-dashing-ament-lint-auto=0.7.3-1bionic.20190530.060428`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4599,11 +4828,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-package=0.5.2-0bionic.20180719.221910`
+### `dpkg` source package: `ros-dashing-ament-lint-cmake=0.7.3-1bionic.20190530.061126`
 
 Binary Packages:
 
-- `ros-bouncy-ament-package=0.5.2-0bionic.20180719.221910`
+- `ros-dashing-ament-lint-cmake=0.7.3-1bionic.20190530.061126`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4613,11 +4842,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-pep257=0.5.2-0bionic.20180719.223010`
+### `dpkg` source package: `ros-dashing-ament-lint-common=0.7.3-1bionic.20190530.062041`
 
 Binary Packages:
 
-- `ros-bouncy-ament-pep257=0.5.2-0bionic.20180719.223010`
+- `ros-dashing-ament-lint-common=0.7.3-1bionic.20190530.062041`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4627,11 +4856,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ament-uncrustify=0.5.2-0bionic.20180719.223231`
+### `dpkg` source package: `ros-dashing-ament-package=0.7.0-0bionic.20190530.045544`
 
 Binary Packages:
 
-- `ros-bouncy-ament-uncrustify=0.5.2-0bionic.20180719.223231`
+- `ros-dashing-ament-package=0.7.0-0bionic.20190530.045544`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4641,11 +4870,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-builtin-interfaces=0.5.0-3bionic.20180823.013833`
+### `dpkg` source package: `ros-dashing-ament-pep257=0.7.3-1bionic.20190530.060328`
 
 Binary Packages:
 
-- `ros-bouncy-builtin-interfaces=0.5.0-3bionic.20180823.013833`
+- `ros-dashing-ament-pep257=0.7.3-1bionic.20190530.060328`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4655,11 +4884,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-class-loader=1.1.0-0bionic.20180719.225410`
+### `dpkg` source package: `ros-dashing-ament-uncrustify=0.7.3-1bionic.20190530.061228`
 
 Binary Packages:
 
-- `ros-bouncy-class-loader=1.1.0-0bionic.20180719.225410`
+- `ros-dashing-ament-uncrustify=0.7.3-1bionic.20190530.061228`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4669,11 +4898,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-common-interfaces=0.5.1-0bionic.20180823.060629`
+### `dpkg` source package: `ros-dashing-ament-xmllint=0.7.3-1bionic.20190530.061142`
 
 Binary Packages:
 
-- `ros-bouncy-common-interfaces=0.5.1-0bionic.20180823.060629`
+- `ros-dashing-ament-xmllint=0.7.3-1bionic.20190530.061142`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4683,11 +4912,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-console-bridge=0.4.0-0bionic.20180719.222807`
+### `dpkg` source package: `ros-dashing-builtin-interfaces=0.7.4-1bionic.20190531.011331`
 
 Binary Packages:
 
-- `ros-bouncy-console-bridge=0.4.0-0bionic.20180719.222807`
+- `ros-dashing-builtin-interfaces=0.7.4-1bionic.20190531.011331`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4697,11 +4926,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-diagnostic-msgs=0.5.1-0bionic.20180823.022115`
+### `dpkg` source package: `ros-dashing-class-loader=1.3.1-1bionic.20190530.062149`
 
 Binary Packages:
 
-- `ros-bouncy-diagnostic-msgs=0.5.1-0bionic.20180823.022115`
+- `ros-dashing-class-loader=1.3.1-1bionic.20190530.062149`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4711,11 +4940,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-fastcdr=1.0.7-0bionic.20180719.222809`
+### `dpkg` source package: `ros-dashing-common-interfaces=0.7.0-1bionic.20190531.022205`
 
 Binary Packages:
 
-- `ros-bouncy-fastcdr=1.0.7-0bionic.20180719.222809`
+- `ros-dashing-common-interfaces=0.7.0-1bionic.20190531.022205`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4725,11 +4954,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-fastrtps-cmake-module=0.5.1-0bionic.20180719.225408`
+### `dpkg` source package: `ros-dashing-composition-interfaces=0.7.4-1bionic.20190531.013609`
 
 Binary Packages:
 
-- `ros-bouncy-fastrtps-cmake-module=0.5.1-0bionic.20180719.225408`
+- `ros-dashing-composition-interfaces=0.7.4-1bionic.20190531.013609`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4739,11 +4968,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-fastrtps=1.6.0-5bionic.20180719.223049`
+### `dpkg` source package: `ros-dashing-console-bridge-vendor=1.2.0-1bionic.20190530.061026`
 
 Binary Packages:
 
-- `ros-bouncy-fastrtps=1.6.0-5bionic.20180719.223049`
+- `ros-dashing-console-bridge-vendor=1.2.0-1bionic.20190530.061026`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4753,11 +4982,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-geometry-msgs=0.5.1-0bionic.20180823.020236`
+### `dpkg` source package: `ros-dashing-diagnostic-msgs=0.7.0-1bionic.20190531.015425`
 
 Binary Packages:
 
-- `ros-bouncy-geometry-msgs=0.5.1-0bionic.20180823.020236`
+- `ros-dashing-diagnostic-msgs=0.7.0-1bionic.20190531.015425`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4767,11 +4996,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-gmock-vendor=1.8.0-0bionic.20180719.223136`
+### `dpkg` source package: `ros-dashing-fastcdr=1.0.9-2bionic.20190530.060032`
 
 Binary Packages:
 
-- `ros-bouncy-gmock-vendor=1.8.0-0bionic.20180719.223136`
+- `ros-dashing-fastcdr=1.0.9-2bionic.20190530.060032`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4781,11 +5010,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-gtest-vendor=1.8.0-0bionic.20180719.222830`
+### `dpkg` source package: `ros-dashing-fastrtps-cmake-module=0.7.1-1bionic.20190530.062148`
 
 Binary Packages:
 
-- `ros-bouncy-gtest-vendor=1.8.0-0bionic.20180719.222830`
+- `ros-dashing-fastrtps-cmake-module=0.7.1-1bionic.20190530.062148`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4795,11 +5024,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-launch-ros=0.6.0-0bionic.20180823.142326`
+### `dpkg` source package: `ros-dashing-fastrtps=1.8.0-2bionic.20190530.060413`
 
 Binary Packages:
 
-- `ros-bouncy-launch-ros=0.6.0-0bionic.20180823.142326`
+- `ros-dashing-fastrtps=1.8.0-2bionic.20190530.060413`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4809,11 +5038,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-launch=0.6.0-0bionic.20180823.011059`
+### `dpkg` source package: `ros-dashing-geometry-msgs=0.7.0-1bionic.20190531.013619`
 
 Binary Packages:
 
-- `ros-bouncy-launch=0.6.0-0bionic.20180823.011059`
+- `ros-dashing-geometry-msgs=0.7.0-1bionic.20190531.013619`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4823,11 +5052,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-libyaml-vendor=1.0.0-0bionic.20180719.225708`
+### `dpkg` source package: `ros-dashing-gmock-vendor=1.8.9000-1bionic.20190530.060030`
 
 Binary Packages:
 
-- `ros-bouncy-libyaml-vendor=1.0.0-0bionic.20180719.225708`
+- `ros-dashing-gmock-vendor=1.8.9000-1bionic.20190530.060030`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4837,11 +5066,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-lifecycle-msgs=0.5.0-3bionic.20180823.060126`
+### `dpkg` source package: `ros-dashing-gtest-vendor=1.8.9000-1bionic.20190530.055849`
 
 Binary Packages:
 
-- `ros-bouncy-lifecycle-msgs=0.5.0-3bionic.20180823.060126`
+- `ros-dashing-gtest-vendor=1.8.9000-1bionic.20190530.055849`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4851,11 +5080,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-nav-msgs=0.5.1-0bionic.20180823.060128`
+### `dpkg` source package: `ros-dashing-launch-ros=0.8.4-1bionic.20190531.015303`
 
 Binary Packages:
 
-- `ros-bouncy-nav-msgs=0.5.1-0bionic.20180823.060128`
+- `ros-dashing-launch-ros=0.8.4-1bionic.20190531.015303`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4865,11 +5094,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-osrf-pycommon=0.1.5-0bionic.20180719.222852`
+### `dpkg` source package: `ros-dashing-launch=0.8.3-1bionic.20190530.061149`
 
 Binary Packages:
 
-- `ros-bouncy-osrf-pycommon=0.1.5-0bionic.20180719.222852`
+- `ros-dashing-launch=0.8.3-1bionic.20190530.061149`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4879,11 +5108,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-pluginlib=2.1.1-0bionic.20180823.011819`
+### `dpkg` source package: `ros-dashing-libyaml-vendor=1.0.0-1bionic.20190530.061110`
 
 Binary Packages:
 
-- `ros-bouncy-pluginlib=2.1.1-0bionic.20180823.011819`
+- `ros-dashing-libyaml-vendor=1.0.0-1bionic.20190530.061110`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4893,11 +5122,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-poco-vendor=1.1.1-0bionic.20180719.222911`
+### `dpkg` source package: `ros-dashing-lifecycle-msgs=0.7.4-1bionic.20190531.011332`
 
 Binary Packages:
 
-- `ros-bouncy-poco-vendor=1.1.1-0bionic.20180719.222911`
+- `ros-dashing-lifecycle-msgs=0.7.4-1bionic.20190531.011332`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4907,11 +5136,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-python-cmake-module=0.5.2-0bionic.20180719.225731`
+### `dpkg` source package: `ros-dashing-nav-msgs=0.7.0-1bionic.20190531.015421`
 
 Binary Packages:
 
-- `ros-bouncy-python-cmake-module=0.5.2-0bionic.20180719.225731`
+- `ros-dashing-nav-msgs=0.7.0-1bionic.20190531.015421`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4921,11 +5150,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rcl-interfaces=0.5.0-3bionic.20180823.140212`
+### `dpkg` source package: `ros-dashing-opensplice-cmake-module=0.7.1-1bionic.20190530.062148`
 
 Binary Packages:
 
-- `ros-bouncy-rcl-interfaces=0.5.0-3bionic.20180823.140212`
+- `ros-dashing-opensplice-cmake-module=0.7.1-1bionic.20190530.062148`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4935,11 +5164,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rcl-lifecycle=0.5.1-0bionic.20180823.141621`
+### `dpkg` source package: `ros-dashing-osrf-pycommon=0.1.7-1bionic.20190530.055911`
 
 Binary Packages:
 
-- `ros-bouncy-rcl-lifecycle=0.5.1-0bionic.20180823.141621`
+- `ros-dashing-osrf-pycommon=0.1.7-1bionic.20190530.055911`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4949,11 +5178,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rcl-yaml-param-parser=0.5.1-0bionic.20180823.141823`
+### `dpkg` source package: `ros-dashing-pluginlib=2.3.1-1bionic.20190531.005319`
 
 Binary Packages:
 
-- `ros-bouncy-rcl-yaml-param-parser=0.5.1-0bionic.20180823.141823`
+- `ros-dashing-pluginlib=2.3.1-1bionic.20190531.005319`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4963,11 +5192,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rcl=0.5.1-0bionic.20180823.141233`
+### `dpkg` source package: `ros-dashing-poco-vendor=1.2.0-1bionic.20190530.060052`
 
 Binary Packages:
 
-- `ros-bouncy-rcl=0.5.1-0bionic.20180823.141233`
+- `ros-dashing-poco-vendor=1.2.0-1bionic.20190530.060052`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4977,11 +5206,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rclcpp-lifecycle=0.5.1-0bionic.20180823.142736`
+### `dpkg` source package: `ros-dashing-python-cmake-module=0.7.6-1bionic.20190531.004733`
 
 Binary Packages:
 
-- `ros-bouncy-rclcpp-lifecycle=0.5.1-0bionic.20180823.142736`
+- `ros-dashing-python-cmake-module=0.7.6-1bionic.20190531.004733`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4991,11 +5220,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rclcpp=0.5.1-0bionic.20180823.142109`
+### `dpkg` source package: `ros-dashing-rcl-action=0.7.4-1bionic.20190531.014643`
 
 Binary Packages:
 
-- `ros-bouncy-rclcpp=0.5.1-0bionic.20180823.142109`
+- `ros-dashing-rcl-action=0.7.4-1bionic.20190531.014643`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5005,11 +5234,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rclpy=0.5.4-0bionic.20180823.142114`
+### `dpkg` source package: `ros-dashing-rcl-interfaces=0.7.4-1bionic.20190531.012733`
 
 Binary Packages:
 
-- `ros-bouncy-rclpy=0.5.4-0bionic.20180823.142114`
+- `ros-dashing-rcl-interfaces=0.7.4-1bionic.20190531.012733`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5019,11 +5248,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rcutils=0.5.1-0bionic.20180823.011544`
+### `dpkg` source package: `ros-dashing-rcl-lifecycle=0.7.4-1bionic.20190531.014644`
 
 Binary Packages:
 
-- `ros-bouncy-rcutils=0.5.1-0bionic.20180823.011544`
+- `ros-dashing-rcl-lifecycle=0.7.4-1bionic.20190531.014644`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5033,11 +5262,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rmw-fastrtps-cpp=0.5.1-0bionic.20180823.012349`
+### `dpkg` source package: `ros-dashing-rcl-logging-noop=0.2.1-1bionic.20190531.005319`
 
 Binary Packages:
 
-- `ros-bouncy-rmw-fastrtps-cpp=0.5.1-0bionic.20180823.012349`
+- `ros-dashing-rcl-logging-noop=0.2.1-1bionic.20190531.005319`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5047,11 +5276,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rmw-implementation-cmake=0.5.0-0bionic.20180719.225739`
+### `dpkg` source package: `ros-dashing-rcl-yaml-param-parser=0.7.4-1bionic.20190531.014643`
 
 Binary Packages:
 
-- `ros-bouncy-rmw-implementation-cmake=0.5.0-0bionic.20180719.225739`
+- `ros-dashing-rcl-yaml-param-parser=0.7.4-1bionic.20190531.014643`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5061,11 +5290,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rmw-implementation=0.5.1-0bionic.20180823.012842`
+### `dpkg` source package: `ros-dashing-rcl=0.7.4-1bionic.20190531.014449`
 
 Binary Packages:
 
-- `ros-bouncy-rmw-implementation=0.5.1-0bionic.20180823.012842`
+- `ros-dashing-rcl=0.7.4-1bionic.20190531.014449`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5075,11 +5304,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rmw=0.5.0-0bionic.20180823.011820`
+### `dpkg` source package: `ros-dashing-rclcpp-lifecycle=0.7.5-1bionic.20190531.015821`
 
 Binary Packages:
 
-- `ros-bouncy-rmw=0.5.0-0bionic.20180823.011820`
+- `ros-dashing-rclcpp-lifecycle=0.7.5-1bionic.20190531.015821`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5089,11 +5318,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ros-core=0.5.1-0bionic.20180823.145134`
+### `dpkg` source package: `ros-dashing-rclcpp=0.7.5-1bionic.20190531.014927`
 
 Binary Packages:
 
-- `ros-bouncy-ros-core=0.5.1-0bionic.20180823.145134`
+- `ros-dashing-rclcpp=0.7.5-1bionic.20190531.014927`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5103,11 +5332,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ros-environment=2.1.1-0bionic.20180719.222536`
+### `dpkg` source package: `ros-dashing-rclpy=0.7.3-1bionic.20190531.015040`
 
 Binary Packages:
 
-- `ros-bouncy-ros-environment=2.1.1-0bionic.20180719.222536`
+- `ros-dashing-rclpy=0.7.3-1bionic.20190531.015040`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5117,11 +5346,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ros-workspace=0.5.1-0bionic.20180719.222440`
+### `dpkg` source package: `ros-dashing-rcpputils=0.1.0-1bionic.20190530.062148`
 
 Binary Packages:
 
-- `ros-bouncy-ros-workspace=0.5.1-0bionic.20180719.222440`
+- `ros-dashing-rcpputils=0.1.0-1bionic.20190530.062148`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5131,11 +5360,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ros2cli=0.5.4-0bionic.20180823.142539`
+### `dpkg` source package: `ros-dashing-rcutils=0.7.3-1bionic.20190531.005017`
 
 Binary Packages:
 
-- `ros-bouncy-ros2cli=0.5.4-0bionic.20180823.142539`
+- `ros-dashing-rcutils=0.7.3-1bionic.20190531.005017`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5145,11 +5374,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ros2launch=0.6.0-0bionic.20180823.144727`
+### `dpkg` source package: `ros-dashing-rmw-fastrtps-cpp=0.7.3-1bionic.20190531.010026`
 
 Binary Packages:
 
-- `ros-bouncy-ros2launch=0.6.0-0bionic.20180823.144727`
+- `ros-dashing-rmw-fastrtps-cpp=0.7.3-1bionic.20190531.010026`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5159,11 +5388,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ros2lifecycle=0.5.4-0bionic.20180823.143630`
+### `dpkg` source package: `ros-dashing-rmw-fastrtps-shared-cpp=0.7.3-1bionic.20190531.005757`
 
 Binary Packages:
 
-- `ros-bouncy-ros2lifecycle=0.5.4-0bionic.20180823.143630`
+- `ros-dashing-rmw-fastrtps-shared-cpp=0.7.3-1bionic.20190531.005757`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5173,11 +5402,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ros2msg=0.5.4-0bionic.20180823.142633`
+### `dpkg` source package: `ros-dashing-rmw-implementation-cmake=0.7.1-1bionic.20190530.062148`
 
 Binary Packages:
 
-- `ros-bouncy-ros2msg=0.5.4-0bionic.20180823.142633`
+- `ros-dashing-rmw-implementation-cmake=0.7.1-1bionic.20190530.062148`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5187,11 +5416,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ros2node=0.5.4-0bionic.20180823.142632`
+### `dpkg` source package: `ros-dashing-rmw-implementation=0.7.1-1bionic.20190531.010415`
 
 Binary Packages:
 
-- `ros-bouncy-ros2node=0.5.4-0bionic.20180823.142632`
+- `ros-dashing-rmw-implementation=0.7.1-1bionic.20190531.010415`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5201,11 +5430,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ros2param=0.5.4-0bionic.20180823.143026`
+### `dpkg` source package: `ros-dashing-rmw-opensplice-cpp=0.7.1-1bionic.20190531.005938`
 
 Binary Packages:
 
-- `ros-bouncy-ros2param=0.5.4-0bionic.20180823.143026`
+- `ros-dashing-rmw-opensplice-cpp=0.7.1-1bionic.20190531.005938`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5215,11 +5444,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ros2pkg=0.5.4-0bionic.20180823.142632`
+### `dpkg` source package: `ros-dashing-rmw=0.7.1-1bionic.20190531.005318`
 
 Binary Packages:
 
-- `ros-bouncy-ros2pkg=0.5.4-0bionic.20180823.142632`
+- `ros-dashing-rmw=0.7.1-1bionic.20190531.005318`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5229,11 +5458,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ros2run=0.5.4-0bionic.20180823.143053`
+### `dpkg` source package: `ros-dashing-ros-core=0.7.0-1bionic.20190531.022235`
 
 Binary Packages:
 
-- `ros-bouncy-ros2run=0.5.4-0bionic.20180823.143053`
+- `ros-dashing-ros-core=0.7.0-1bionic.20190531.022235`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5243,11 +5472,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ros2service=0.5.4-0bionic.20180823.143354`
+### `dpkg` source package: `ros-dashing-ros-environment=2.3.0-1bionic.20190530.060103`
 
 Binary Packages:
 
-- `ros-bouncy-ros2service=0.5.4-0bionic.20180823.143354`
+- `ros-dashing-ros-environment=2.3.0-1bionic.20190530.060103`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5257,11 +5486,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ros2srv=0.5.4-0bionic.20180823.142632`
+### `dpkg` source package: `ros-dashing-ros-workspace=0.7.1-1bionic.20190530.050351`
 
 Binary Packages:
 
-- `ros-bouncy-ros2srv=0.5.4-0bionic.20180823.142632`
+- `ros-dashing-ros-workspace=0.7.1-1bionic.20190530.050351`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5271,11 +5500,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-ros2topic=0.5.4-0bionic.20180823.143053`
+### `dpkg` source package: `ros-dashing-ros2cli=0.7.4-1bionic.20190531.015427`
 
 Binary Packages:
 
-- `ros-bouncy-ros2topic=0.5.4-0bionic.20180823.143053`
+- `ros-dashing-ros2cli=0.7.4-1bionic.20190531.015427`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5285,11 +5514,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rosgraph-msgs=0.5.0-3bionic.20180823.014536`
+### `dpkg` source package: `ros-dashing-ros2launch=0.8.4-1bionic.20190531.020710`
 
 Binary Packages:
 
-- `ros-bouncy-rosgraph-msgs=0.5.0-3bionic.20180823.014536`
+- `ros-dashing-ros2launch=0.8.4-1bionic.20190531.020710`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5299,11 +5528,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rosidl-cmake=0.5.1-0bionic.20180719.225727`
+### `dpkg` source package: `ros-dashing-ros2lifecycle=0.7.4-1bionic.20190531.020603`
 
 Binary Packages:
 
-- `ros-bouncy-rosidl-cmake=0.5.1-0bionic.20180719.225727`
+- `ros-dashing-ros2lifecycle=0.7.4-1bionic.20190531.020603`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5313,11 +5542,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rosidl-default-generators=0.5.0-0bionic.20180823.013633`
+### `dpkg` source package: `ros-dashing-ros2msg=0.7.4-1bionic.20190531.015520`
 
 Binary Packages:
 
-- `ros-bouncy-rosidl-default-generators=0.5.0-0bionic.20180823.013633`
+- `ros-dashing-ros2msg=0.7.4-1bionic.20190531.015520`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5327,11 +5556,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rosidl-default-runtime=0.5.0-0bionic.20180823.013633`
+### `dpkg` source package: `ros-dashing-ros2multicast=0.7.4-1bionic.20190531.015528`
 
 Binary Packages:
 
-- `ros-bouncy-rosidl-default-runtime=0.5.0-0bionic.20180823.013633`
+- `ros-dashing-ros2multicast=0.7.4-1bionic.20190531.015528`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5341,11 +5570,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rosidl-generator-c=0.5.1-0bionic.20180719.225946`
+### `dpkg` source package: `ros-dashing-ros2node=0.7.4-1bionic.20190531.015549`
 
 Binary Packages:
 
-- `ros-bouncy-rosidl-generator-c=0.5.1-0bionic.20180719.225946`
+- `ros-dashing-ros2node=0.7.4-1bionic.20190531.015549`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5355,11 +5584,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rosidl-generator-cpp=0.5.1-0bionic.20180719.230222`
+### `dpkg` source package: `ros-dashing-ros2param=0.7.4-1bionic.20190531.020609`
 
 Binary Packages:
 
-- `ros-bouncy-rosidl-generator-cpp=0.5.1-0bionic.20180719.230222`
+- `ros-dashing-ros2param=0.7.4-1bionic.20190531.020609`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5369,11 +5598,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rosidl-generator-py=0.5.2-0bionic.20180823.013410`
+### `dpkg` source package: `ros-dashing-ros2pkg=0.7.4-1bionic.20190531.020634`
 
 Binary Packages:
 
-- `ros-bouncy-rosidl-generator-py=0.5.2-0bionic.20180823.013410`
+- `ros-dashing-ros2pkg=0.7.4-1bionic.20190531.020634`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5383,11 +5612,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rosidl-parser=0.5.1-0bionic.20180719.225410`
+### `dpkg` source package: `ros-dashing-ros2run=0.7.4-1bionic.20190531.020725`
 
 Binary Packages:
 
-- `ros-bouncy-rosidl-parser=0.5.1-0bionic.20180719.225410`
+- `ros-dashing-ros2run=0.7.4-1bionic.20190531.020725`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5397,11 +5626,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rosidl-typesupport-c=0.5.0-2bionic.20180823.013331`
+### `dpkg` source package: `ros-dashing-ros2service=0.7.4-1bionic.20190531.020248`
 
 Binary Packages:
 
-- `ros-bouncy-rosidl-typesupport-c=0.5.0-2bionic.20180823.013331`
+- `ros-dashing-ros2service=0.7.4-1bionic.20190531.020248`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5411,11 +5640,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rosidl-typesupport-cpp=0.5.0-2bionic.20180823.013410`
+### `dpkg` source package: `ros-dashing-ros2srv=0.7.4-1bionic.20190531.015525`
 
 Binary Packages:
 
-- `ros-bouncy-rosidl-typesupport-cpp=0.5.0-2bionic.20180823.013410`
+- `ros-dashing-ros2srv=0.7.4-1bionic.20190531.015525`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5425,11 +5654,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rosidl-typesupport-interface=0.5.1-0bionic.20180719.225745`
+### `dpkg` source package: `ros-dashing-ros2topic=0.7.4-1bionic.20190531.020238`
 
 Binary Packages:
 
-- `ros-bouncy-rosidl-typesupport-interface=0.5.1-0bionic.20180719.225745`
+- `ros-dashing-ros2topic=0.7.4-1bionic.20190531.020238`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5439,11 +5668,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rosidl-typesupport-introspection-c=0.5.1-0bionic.20180719.230220`
+### `dpkg` source package: `ros-dashing-rosgraph-msgs=0.7.4-1bionic.20190531.011855`
 
 Binary Packages:
 
-- `ros-bouncy-rosidl-typesupport-introspection-c=0.5.1-0bionic.20180719.230220`
+- `ros-dashing-rosgraph-msgs=0.7.4-1bionic.20190531.011855`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5453,11 +5682,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-rosidl-typesupport-introspection-cpp=0.5.1-0bionic.20180719.230507`
+### `dpkg` source package: `ros-dashing-rosidl-adapter=0.7.3-1bionic.20190530.062148`
 
 Binary Packages:
 
-- `ros-bouncy-rosidl-typesupport-introspection-cpp=0.5.1-0bionic.20180719.230507`
+- `ros-dashing-rosidl-adapter=0.7.3-1bionic.20190530.062148`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5467,11 +5696,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-sensor-msgs=0.5.1-0bionic.20180823.022135`
+### `dpkg` source package: `ros-dashing-rosidl-cmake=0.7.3-1bionic.20190530.062701`
 
 Binary Packages:
 
-- `ros-bouncy-sensor-msgs=0.5.1-0bionic.20180823.022135`
+- `ros-dashing-rosidl-cmake=0.7.3-1bionic.20190530.062701`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5481,11 +5710,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-shape-msgs=0.5.1-0bionic.20180823.021925`
+### `dpkg` source package: `ros-dashing-rosidl-default-generators=0.7.0-1bionic.20190531.011145`
 
 Binary Packages:
 
-- `ros-bouncy-shape-msgs=0.5.1-0bionic.20180823.021925`
+- `ros-dashing-rosidl-default-generators=0.7.0-1bionic.20190531.011145`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5495,11 +5724,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-std-msgs=0.5.1-0bionic.20180823.015434`
+### `dpkg` source package: `ros-dashing-rosidl-default-runtime=0.7.0-1bionic.20190531.011145`
 
 Binary Packages:
 
-- `ros-bouncy-std-msgs=0.5.1-0bionic.20180823.015434`
+- `ros-dashing-rosidl-default-runtime=0.7.0-1bionic.20190531.011145`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5509,11 +5738,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-std-srvs=0.5.1-0bionic.20180823.060126`
+### `dpkg` source package: `ros-dashing-rosidl-generator-c=0.7.3-1bionic.20190530.062905`
 
 Binary Packages:
 
-- `ros-bouncy-std-srvs=0.5.1-0bionic.20180823.060126`
+- `ros-dashing-rosidl-generator-c=0.7.3-1bionic.20190530.062905`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5523,11 +5752,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-stereo-msgs=0.5.1-0bionic.20180823.023355`
+### `dpkg` source package: `ros-dashing-rosidl-generator-cpp=0.7.3-1bionic.20190530.063144`
 
 Binary Packages:
 
-- `ros-bouncy-stereo-msgs=0.5.1-0bionic.20180823.023355`
+- `ros-dashing-rosidl-generator-cpp=0.7.3-1bionic.20190530.063144`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5537,11 +5766,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-tinyxml2-vendor=0.4.0-0bionic.20180719.222937`
+### `dpkg` source package: `ros-dashing-rosidl-generator-dds-idl=0.7.1-1bionic.20190530.062911`
 
 Binary Packages:
 
-- `ros-bouncy-tinyxml2-vendor=0.4.0-0bionic.20180719.222937`
+- `ros-dashing-rosidl-generator-dds-idl=0.7.1-1bionic.20190530.062911`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5551,11 +5780,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-trajectory-msgs=0.5.1-0bionic.20180823.022009`
+### `dpkg` source package: `ros-dashing-rosidl-generator-py=0.7.6-1bionic.20190531.010817`
 
 Binary Packages:
 
-- `ros-bouncy-trajectory-msgs=0.5.1-0bionic.20180823.022009`
+- `ros-dashing-rosidl-generator-py=0.7.6-1bionic.20190531.010817`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5565,11 +5794,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-uncrustify-vendor=0.66.1-1bionic.20180719.222525`
+### `dpkg` source package: `ros-dashing-rosidl-parser=0.7.3-1bionic.20190530.062518`
 
 Binary Packages:
 
-- `ros-bouncy-uncrustify-vendor=0.66.1-1bionic.20180719.222525`
+- `ros-dashing-rosidl-parser=0.7.3-1bionic.20190530.062518`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5579,11 +5808,305 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-bouncy-visualization-msgs=0.5.1-0bionic.20180823.021926`
+### `dpkg` source package: `ros-dashing-rosidl-runtime-py=0.7.6-1bionic.20190531.014450`
 
 Binary Packages:
 
-- `ros-bouncy-visualization-msgs=0.5.1-0bionic.20180823.021926`
+- `ros-dashing-rosidl-runtime-py=0.7.6-1bionic.20190531.014450`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-dashing-rosidl-typesupport-c=0.7.1-1bionic.20190531.010736`
+
+Binary Packages:
+
+- `ros-dashing-rosidl-typesupport-c=0.7.1-1bionic.20190531.010736`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-dashing-rosidl-typesupport-cpp=0.7.1-1bionic.20190531.010813`
+
+Binary Packages:
+
+- `ros-dashing-rosidl-typesupport-cpp=0.7.1-1bionic.20190531.010813`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-dashing-rosidl-typesupport-fastrtps-c=0.7.1-1bionic.20190531.005727`
+
+Binary Packages:
+
+- `ros-dashing-rosidl-typesupport-fastrtps-c=0.7.1-1bionic.20190531.005727`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-dashing-rosidl-typesupport-fastrtps-cpp=0.7.1-1bionic.20190531.005540`
+
+Binary Packages:
+
+- `ros-dashing-rosidl-typesupport-fastrtps-cpp=0.7.1-1bionic.20190531.005540`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-dashing-rosidl-typesupport-interface=0.7.3-1bionic.20190530.062148`
+
+Binary Packages:
+
+- `ros-dashing-rosidl-typesupport-interface=0.7.3-1bionic.20190530.062148`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-dashing-rosidl-typesupport-introspection-c=0.7.3-1bionic.20190530.063144`
+
+Binary Packages:
+
+- `ros-dashing-rosidl-typesupport-introspection-c=0.7.3-1bionic.20190530.063144`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-dashing-rosidl-typesupport-introspection-cpp=0.7.3-1bionic.20190530.063508`
+
+Binary Packages:
+
+- `ros-dashing-rosidl-typesupport-introspection-cpp=0.7.3-1bionic.20190530.063508`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-dashing-rosidl-typesupport-opensplice-c=0.7.1-1bionic.20190531.005903`
+
+Binary Packages:
+
+- `ros-dashing-rosidl-typesupport-opensplice-c=0.7.1-1bionic.20190531.005903`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-dashing-rosidl-typesupport-opensplice-cpp=0.7.1-1bionic.20190531.005541`
+
+Binary Packages:
+
+- `ros-dashing-rosidl-typesupport-opensplice-cpp=0.7.1-1bionic.20190531.005541`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-dashing-sensor-msgs=0.7.0-1bionic.20190531.020539`
+
+Binary Packages:
+
+- `ros-dashing-sensor-msgs=0.7.0-1bionic.20190531.020539`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-dashing-shape-msgs=0.7.0-1bionic.20190531.015459`
+
+Binary Packages:
+
+- `ros-dashing-shape-msgs=0.7.0-1bionic.20190531.015459`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-dashing-sros2=0.7.0-1bionic.20190531.020644`
+
+Binary Packages:
+
+- `ros-dashing-sros2=0.7.0-1bionic.20190531.020644`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-dashing-std-msgs=0.7.0-1bionic.20190531.012738`
+
+Binary Packages:
+
+- `ros-dashing-std-msgs=0.7.0-1bionic.20190531.012738`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-dashing-std-srvs=0.7.0-1bionic.20190531.012007`
+
+Binary Packages:
+
+- `ros-dashing-std-srvs=0.7.0-1bionic.20190531.012007`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-dashing-stereo-msgs=0.7.0-1bionic.20190531.021746`
+
+Binary Packages:
+
+- `ros-dashing-stereo-msgs=0.7.0-1bionic.20190531.021746`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-dashing-tinydir-vendor=1.1.0-1bionic.20190530.060221`
+
+Binary Packages:
+
+- `ros-dashing-tinydir-vendor=1.1.0-1bionic.20190530.060221`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-dashing-tinyxml2-vendor=0.6.1-1bionic.20190530.060238`
+
+Binary Packages:
+
+- `ros-dashing-tinyxml2-vendor=0.6.1-1bionic.20190530.060238`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-dashing-trajectory-msgs=0.7.0-1bionic.20190531.015513`
+
+Binary Packages:
+
+- `ros-dashing-trajectory-msgs=0.7.0-1bionic.20190531.015513`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-dashing-uncrustify-vendor=1.2.0-1bionic.20190530.061007`
+
+Binary Packages:
+
+- `ros-dashing-uncrustify-vendor=1.2.0-1bionic.20190530.061007`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-dashing-unique-identifier-msgs=2.1.0-1bionic.20190531.011331`
+
+Binary Packages:
+
+- `ros-dashing-unique-identifier-msgs=2.1.0-1bionic.20190531.011331`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-dashing-visualization-msgs=0.7.0-1bionic.20190531.020257`
+
+Binary Packages:
+
+- `ros-dashing-visualization-msgs=0.7.0-1bionic.20190531.020257`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5876,6 +6399,27 @@ Source:
 $ apt-get source -qq --print-uris ubuntu-keyring=2018.09.18.1~18.04.0
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2018.09.18.1~18.04.0.dsc' ubuntu-keyring_2018.09.18.1~18.04.0.dsc 1503 SHA256:1c9a599b6b3c98fdc920756c8031678d2556b6267eb55f057d0369cfc64e0263
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2018.09.18.1~18.04.0.tar.gz' ubuntu-keyring_2018.09.18.1~18.04.0.tar.gz 34238 SHA256:7095b786c02816bb6933b3a73ed6c9e302542e8fc1edb8346f7ddab49e95b3bd
+```
+
+### `dpkg` source package: `uncrustify=0.66.1+dfsg1-1`
+
+Binary Packages:
+
+- `uncrustify=0.66.1+dfsg1-1`
+
+Licenses: (parsed from: `/usr/share/doc/uncrustify/copyright`)
+
+- `Artistic`
+- `GPL`
+- `GPL-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris uncrustify=0.66.1+dfsg1-1
+'http://archive.ubuntu.com/ubuntu/pool/universe/u/uncrustify/uncrustify_0.66.1+dfsg1-1.dsc' uncrustify_0.66.1+dfsg1-1.dsc 1632 SHA256:225931ff5f0398061b8b6f8e9950e71658b067c352e78ea8e7ba36f69fd001d5
+'http://archive.ubuntu.com/ubuntu/pool/universe/u/uncrustify/uncrustify_0.66.1+dfsg1.orig.tar.xz' uncrustify_0.66.1+dfsg1.orig.tar.xz 700912 SHA256:f2599bee3ab0c529042742125e2d6325cd39ed8e2821c7dcff51405186ce02bc
+'http://archive.ubuntu.com/ubuntu/pool/universe/u/uncrustify/uncrustify_0.66.1+dfsg1-1.debian.tar.xz' uncrustify_0.66.1+dfsg1-1.debian.tar.xz 4480 SHA256:e7e2101198f0250470f0b6d0b5ffe6f8cd02ebc475dfe1fa88dd341de2dacd09
 ```
 
 ### `dpkg` source package: `unixodbc=2.3.4-1.1ubuntu3`

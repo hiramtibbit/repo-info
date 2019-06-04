@@ -1856,14 +1856,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The main library is licensed under GNU Lesser`
 - `nonstandard, see below`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.4.10-4ubuntu1.4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.4.dsc' gnutls28_3.4.10-4ubuntu1.4.dsc 3076 SHA256:48a249686197b4548b2ef1cef1cb71a2ed7c662b2a449fed0987e53c44afc610
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10.orig.tar.xz' gnutls28_3.4.10.orig.tar.xz 6645892 SHA256:6a32c2b4acbd33ff7eefcbd1357009da04c94c60146ef61320b6c076b1bdf59f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.4.debian.tar.xz' gnutls28_3.4.10-4ubuntu1.4.debian.tar.xz 96568 SHA256:b32bfc6bd9b4c54c83de5ea318e76e5d5e5bfcbd3311179cb472680a7209d880
-```
 
 ### `dpkg` source package: `google-mock=1.7.0-18092013-1`
 
@@ -3496,14 +3491,9 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 - `LGPL-2`
 - `LGPL-2.0+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.3.1-2.1ubuntu2~16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1ubuntu2~16.04.1.dsc' libseccomp_2.3.1-2.1ubuntu2~16.04.1.dsc 2262 SHA256:72ce2268693b51af6a4eaf164ebe1521feecb856a42e4e25eae598957f1ca6f7
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1.orig.tar.gz' libseccomp_2.3.1.orig.tar.gz 552299 SHA256:ff5bdd2168790f1979e24eaa498f8606c2f2d96f08a8dc4006a2e88affa4562b
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1ubuntu2~16.04.1.debian.tar.xz' libseccomp_2.3.1-2.1ubuntu2~16.04.1.debian.tar.xz 17400 SHA256:53bfdab8af41e45fbd041194abf92866b69b29d9cbfb7c1577a2c34be509fabe
-```
 
 ### `dpkg` source package: `libselinux=2.4-3build2`
 
@@ -6157,14 +6147,9 @@ Licenses: (parsed from: `/usr/share/doc/libqt5concurrent5/copyright`, `/usr/shar
 - `public-domain`
 - `wintab`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris qtbase-opensource-src=5.5.1+dfsg-16ubuntu7.5
-'http://archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/qtbase-opensource-src_5.5.1+dfsg-16ubuntu7.5.dsc' qtbase-opensource-src_5.5.1+dfsg-16ubuntu7.5.dsc 5092 SHA256:ee74b9418b14e996fd10849bcd3694d287036a550ab69455e2689a22a872f3a6
-'http://archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/qtbase-opensource-src_5.5.1+dfsg.orig.tar.xz' qtbase-opensource-src_5.5.1+dfsg.orig.tar.xz 47205972 SHA256:a090ba17b91531a2d95a2ae43bd226a36f254378fdc311e81273cdc1d1cedb43
-'http://archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/qtbase-opensource-src_5.5.1+dfsg-16ubuntu7.5.debian.tar.xz' qtbase-opensource-src_5.5.1+dfsg-16ubuntu7.5.debian.tar.xz 273792 SHA256:7020eb09218845bd2f650891c40792b3bea3909de4ba627948c4d8c5749700a9
-```
 
 ### `dpkg` source package: `qtchooser=52-gae5eeef-2build1~gcc5.2`
 

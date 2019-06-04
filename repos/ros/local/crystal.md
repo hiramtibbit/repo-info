@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:57b2822743aa75c9e51b29ea85f6bfcc27bd88f6042d0d4179b7d564cfc59d7f`
-- Created: `2019-05-15T23:20:01.009330433Z`
-- Virtual Size: ~ 788.71 Mb  
+- Image ID: `sha256:d9c94bf8de2386aa1c7c22cb24e62d6d7abb1c88140282d9b6366545558e6016`
+- Created: `2019-06-01T00:44:56.938853329Z`
+- Virtual Size: ~ 753.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -76,46 +76,6 @@ $ apt-get source -qq --print-uris apparmor=2.12-4ubuntu5.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.12-4ubuntu5.1.dsc' apparmor_2.12-4ubuntu5.1.dsc 3181 SHA256:89317e316d9f361e9852721cdab972bcba7bd0e1ee980dfbd9cb34bca2830f37
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.12.orig.tar.gz' apparmor_2.12.orig.tar.gz 7258450 SHA256:8a2b0cd083faa4d0640f579024be3a629faa7db3b99540798a1a050e2eaba056
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.12-4ubuntu5.1.debian.tar.xz' apparmor_2.12-4ubuntu5.1.debian.tar.xz 89084 SHA256:12371db4ceca11ba27a3fd6ac129dbeeb0566c30bee53d1a2c1619e5d83b0225
-```
-
-### `dpkg` source package: `apr-util=1.6.1-2`
-
-Binary Packages:
-
-- `libaprutil1:amd64=1.6.1-2`
-
-Licenses: (parsed from: `/usr/share/doc/libaprutil1/copyright`)
-
-- `Apache-2.0`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris apr-util=1.6.1-2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr-util/apr-util_1.6.1-2.dsc' apr-util_1.6.1-2.dsc 2851 SHA256:7a3a7d0dccc0d89ad751988163cb57d34b32094893d08c4d0ac79e9bfee6d8f4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr-util/apr-util_1.6.1.orig.tar.bz2' apr-util_1.6.1.orig.tar.bz2 428595 SHA256:d3e12f7b6ad12687572a3a39475545a072608f4ba03a6ce8a3778f607dd0035b
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr-util/apr-util_1.6.1.orig.tar.bz2.asc' apr-util_1.6.1.orig.tar.bz2.asc 801 SHA256:47837b605290c0d7659b73734e4a9d5e6c0c24c13185cd4d91837afe63c07ca4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr-util/apr-util_1.6.1-2.debian.tar.xz' apr-util_1.6.1-2.debian.tar.xz 211832 SHA256:e30e919e7e049a8a7056b7184e77d69b82660d71a4bf9654d1c9bfccf2fcde30
-```
-
-### `dpkg` source package: `apr=1.6.3-2`
-
-Binary Packages:
-
-- `libapr1:amd64=1.6.3-2`
-
-Licenses: (parsed from: `/usr/share/doc/libapr1/copyright`)
-
-- `Apache-2.0`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris apr=1.6.3-2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.3-2.dsc' apr_1.6.3-2.dsc 2305 SHA256:0597703f9ea3bc3b30fcd7e055c67c2113e5c4255df5ff42738ce6a396bf5afc
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.3.orig.tar.bz2' apr_1.6.3.orig.tar.bz2 854100 SHA256:131f06d16d7aabd097fa992a33eec2b6af3962f93e6d570a9bd4d85e95993172
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.3.orig.tar.bz2.asc' apr_1.6.3.orig.tar.bz2.asc 801 SHA256:33db39162f7ca9acdccaa4f19630a67045542791b262116d3512c8b5d7c3fca1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.3-2.debian.tar.xz' apr_1.6.3-2.debian.tar.xz 213068 SHA256:ac515f888f7157586631e3de9792ee01d239f9cbf1e768be31ee6daac61f2597
 ```
 
 ### `dpkg` source package: `apt=1.6.10`
@@ -317,27 +277,6 @@ $ apt-get source -qq --print-uris bzip2=1.0.6-8.1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6-8.1.debian.tar.bz2' bzip2_1.0.6-8.1.debian.tar.bz2 59875 SHA256:bdbe7bf29e014e44d79bb7c733fe63cae990ab50882a4a07867cf69c61ad72b7
 ```
 
-### `dpkg` source package: `bzr=2.7.0+bzr6622-10`
-
-Binary Packages:
-
-- `bzr=2.7.0+bzr6622-10`
-- `python-bzrlib=2.7.0+bzr6622-10`
-
-Licenses: (parsed from: `/usr/share/doc/bzr/copyright`, `/usr/share/doc/python-bzrlib/copyright`)
-
-- `GPL-2`
-- `GPL-2+`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris bzr=2.7.0+bzr6622-10
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0+bzr6622-10.dsc' bzr_2.7.0+bzr6622-10.dsc 2521 SHA256:658f59aaaa101288369e96ab766f5344e31eaa835fa008ad56df2ed65d11903e
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0+bzr6622.orig.tar.gz' bzr_2.7.0+bzr6622.orig.tar.gz 10948360 SHA256:08bba3e76cba9beb6b686e71253045beeab9db94753ddbcafa0f8ed1cba377ff
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0+bzr6622-10.debian.tar.xz' bzr_2.7.0+bzr6622-10.debian.tar.xz 92572 SHA256:0e35de0eea3cb6910e3dfef330502afd01be60c4cd0b9ca3d5f77e9bb0f406aa
-```
-
 ### `dpkg` source package: `ca-certificates=20180409`
 
 Binary Packages:
@@ -406,25 +345,6 @@ $ apt-get source -qq --print-uris cmake=3.10.2-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cmake/cmake_3.10.2-1ubuntu2.debian.tar.xz' cmake_3.10.2-1ubuntu2.debian.tar.xz 29008 SHA256:c8b5e980882128f085757500c109865773e9145ac7d9bf01abe91f50f8b24fe1
 ```
 
-### `dpkg` source package: `configobj=5.0.6-2`
-
-Binary Packages:
-
-- `python-configobj=5.0.6-2`
-
-Licenses: (parsed from: `/usr/share/doc/python-configobj/copyright`)
-
-- `BSD-3-clause`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris configobj=5.0.6-2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6-2.dsc' configobj_5.0.6-2.dsc 2381 SHA256:9bb8577128460ff33326d3d90b8454376c83f4d41b1da61aeabdbfcbfb5e0087
-'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6.orig.tar.gz' configobj_5.0.6.orig.tar.gz 143664 SHA256:2e140354efcca6f558ff9ee941b435ae09a617bc071797bef62c8d6ed2033d5e
-'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6-2.debian.tar.xz' configobj_5.0.6-2.debian.tar.xz 7436 SHA256:dc677cd329b4a3aacebe10c5a169d9d092cc27888c3f3f9203930cacd6a0eab8
-```
-
 ### `dpkg` source package: `console-bridge=0.4.0+dfsg-2`
 
 Binary Packages:
@@ -465,6 +385,26 @@ $ apt-get source -qq --print-uris coreutils=8.28-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.28-1ubuntu1.debian.tar.xz' coreutils_8.28-1ubuntu1.debian.tar.xz 37940 SHA256:71ba2e83edc675a79e1e0556aff326ab2ae812332692e3db29615e8ed1b427f4
 ```
 
+### `dpkg` source package: `cov-core=1.15.0-2`
+
+Binary Packages:
+
+- `python3-cov-core=1.15.0-2`
+
+Licenses: (parsed from: `/usr/share/doc/python3-cov-core/copyright`)
+
+- `Expat/MIT`
+- `GPL-3`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris cov-core=1.15.0-2
+'http://archive.ubuntu.com/ubuntu/pool/universe/c/cov-core/cov-core_1.15.0-2.dsc' cov-core_1.15.0-2.dsc 2143 SHA256:d9cda18b39093d558319afc2b73222e06ac1a984d2ac233c715c5208862bd32f
+'http://archive.ubuntu.com/ubuntu/pool/universe/c/cov-core/cov-core_1.15.0.orig.tar.gz' cov-core_1.15.0.orig.tar.gz 5890 SHA256:4a14c67d520fda9d42b0da6134638578caae1d374b9bb462d8de00587dba764c
+'http://archive.ubuntu.com/ubuntu/pool/universe/c/cov-core/cov-core_1.15.0-2.debian.tar.xz' cov-core_1.15.0-2.debian.tar.xz 3944 SHA256:2871a8ff57db7a6ed51bff48222e061c4a23cb7f21bcbb55d1afbdc7d4a47471
+```
+
 ### `dpkg` source package: `cppcheck=1.82-1`
 
 Binary Packages:
@@ -488,12 +428,12 @@ $ apt-get source -qq --print-uris cppcheck=1.82-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/c/cppcheck/cppcheck_1.82-1.debian.tar.xz' cppcheck_1.82-1.debian.tar.xz 368008 SHA256:905c4e2449308660437ade973f1567dcd57381705144a7710a36eabc46024059
 ```
 
-### `dpkg` source package: `curl=7.58.0-2ubuntu3.6`
+### `dpkg` source package: `curl=7.58.0-2ubuntu3.7`
 
 Binary Packages:
 
-- `libcurl3-gnutls:amd64=7.58.0-2ubuntu3.6`
-- `libcurl4:amd64=7.58.0-2ubuntu3.6`
+- `libcurl3-gnutls:amd64=7.58.0-2ubuntu3.7`
+- `libcurl4:amd64=7.58.0-2ubuntu3.7`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -504,9 +444,14 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.58.0-2ubuntu3.7
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.7.dsc' curl_7.58.0-2ubuntu3.7.dsc 2777 SHA256:67aef5e2460caaa322b71c80b63969e7f758f6a0e9732a640bd62d9ce84de0d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0.orig.tar.gz' curl_7.58.0.orig.tar.gz 3879728 SHA256:cc245bf9a1a42a45df491501d97d5593392a03f7b4f07b952793518d97666115
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.7.debian.tar.xz' curl_7.58.0-2ubuntu3.7.debian.tar.xz 39320 SHA256:bb67dc7f8dc7e9ec52eb3cc9ece4d47f861006452ee01446d7bac27754724c86
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2`
 
@@ -692,6 +637,26 @@ $ apt-get source -qq --print-uris diffutils=1:3.6-1
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.6-1.dsc' diffutils_3.6-1.dsc 1453 SHA256:26fe7690b45748dc92cee6af224192e78db2ac574e16ae0aeb8ed6a472c883cd
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.6.orig.tar.xz' diffutils_3.6.orig.tar.xz 1398296 SHA256:d621e8bdd4b573918c8145f7ae61817d1be9deb4c8d2328a65cea8e11d783bd6
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.6-1.debian.tar.xz' diffutils_3.6-1.debian.tar.xz 10808 SHA256:f6ab546a134bde18a87ca8e3c98919680e79d81a65a24801ae06ef69b33f24d8
+```
+
+### `dpkg` source package: `distlib=0.2.6-1`
+
+Binary Packages:
+
+- `python3-distlib=0.2.6-1`
+
+Licenses: (parsed from: `/usr/share/doc/python3-distlib/copyright`)
+
+- `BSD-3-clause`
+- `Python`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris distlib=0.2.6-1
+'http://archive.ubuntu.com/ubuntu/pool/universe/d/distlib/distlib_0.2.6-1.dsc' distlib_0.2.6-1.dsc 2032 SHA256:cda699817dbd5b2dfbaa0a6bc9c31cbe9807b01d5990727aea8f0b4cc7b3e9d2
+'http://archive.ubuntu.com/ubuntu/pool/universe/d/distlib/distlib_0.2.6.orig.tar.xz' distlib_0.2.6.orig.tar.xz 338504 SHA256:f73a12598ca5c739f5761e0d707d5c707f4640b158a4d61b9cb90b747c5e2fef
+'http://archive.ubuntu.com/ubuntu/pool/universe/d/distlib/distlib_0.2.6-1.debian.tar.xz' distlib_0.2.6-1.debian.tar.xz 6340 SHA256:49ff764447c3268455f57d4f33d81b7549adf72ba6fb9c722772c156cb5b71e9
 ```
 
 ### `dpkg` source package: `distro-info-data=0.37ubuntu0.5`
@@ -1365,6 +1330,95 @@ $ apt-get source -qq --print-uris isl=0.19-1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/isl/isl_0.19-1.debian.tar.xz' isl_0.19-1.debian.tar.xz 22388 SHA256:aa034a5700c63867aae836a1f985fccc50ccacd1abe57a2a016e076fa745feb0
 ```
 
+### `dpkg` source package: `jquery-goodies=12-1`
+
+Binary Packages:
+
+- `libjs-jquery-metadata=12-1`
+
+Licenses: (parsed from: `/usr/share/doc/libjs-jquery-metadata/copyright`)
+
+- `Apache-2.0`
+- `BSD-3-clause`
+- `GPL`
+- `GPL-2`
+- `GPL-2+`
+- `MIT`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris jquery-goodies=12-1
+'http://archive.ubuntu.com/ubuntu/pool/universe/j/jquery-goodies/jquery-goodies_12-1.dsc' jquery-goodies_12-1.dsc 3270 SHA256:0e1f2f4667a5a615b8d6ba6671554d634ede413e71e3d1ebea272593c6e096d2
+'http://archive.ubuntu.com/ubuntu/pool/universe/j/jquery-goodies/jquery-goodies_12.orig.tar.xz' jquery-goodies_12.orig.tar.xz 1238604 SHA256:d9d986d075e2b2d534b713433f2c0ab47ffb0c3a1ce12ebea4c9e40aecd1bcbf
+'http://archive.ubuntu.com/ubuntu/pool/universe/j/jquery-goodies/jquery-goodies_12-1.debian.tar.xz' jquery-goodies_12-1.debian.tar.xz 12604 SHA256:347e65a996b8fe60015e34a86000ba544926054478b64bbf93deeb09f89dbf33
+```
+
+### `dpkg` source package: `jquery-tablesorter=1:2.29.5+dfsg1-1`
+
+Binary Packages:
+
+- `libjs-jquery-tablesorter=1:2.29.5+dfsg1-1`
+
+Licenses: (parsed from: `/usr/share/doc/libjs-jquery-tablesorter/copyright`)
+
+- `Apache-2.0`
+- `GPL-2`
+- `GPL-2+`
+- `expat`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris jquery-tablesorter=1:2.29.5+dfsg1-1
+'http://archive.ubuntu.com/ubuntu/pool/universe/j/jquery-tablesorter/jquery-tablesorter_2.29.5+dfsg1-1.dsc' jquery-tablesorter_2.29.5+dfsg1-1.dsc 1870 SHA256:e42d559c920996804b4ca797de9f13fb07b06ea3dd8f304c42f61b31d9401b99
+'http://archive.ubuntu.com/ubuntu/pool/universe/j/jquery-tablesorter/jquery-tablesorter_2.29.5+dfsg1.orig.tar.gz' jquery-tablesorter_2.29.5+dfsg1.orig.tar.gz 957573 SHA256:b37805b85bac328a5d45a57f55e1a6e3923ce20cefdb42620304e8aab3242c20
+'http://archive.ubuntu.com/ubuntu/pool/universe/j/jquery-tablesorter/jquery-tablesorter_2.29.5+dfsg1-1.debian.tar.xz' jquery-tablesorter_2.29.5+dfsg1-1.debian.tar.xz 4396 SHA256:2fa0cee31ccf525abd94af77c9c2d682a5587efeaabe7226c49e79dee3b45ffd
+```
+
+### `dpkg` source package: `jquery-throttle-debounce=1.1+dfsg.1-1`
+
+Binary Packages:
+
+- `libjs-jquery-throttle-debounce=1.1+dfsg.1-1`
+
+Licenses: (parsed from: `/usr/share/doc/libjs-jquery-throttle-debounce/copyright`)
+
+- `Expat`
+- `GPL`
+- `GPL-3`
+- `GPL-3+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris jquery-throttle-debounce=1.1+dfsg.1-1
+'http://archive.ubuntu.com/ubuntu/pool/universe/j/jquery-throttle-debounce/jquery-throttle-debounce_1.1+dfsg.1-1.dsc' jquery-throttle-debounce_1.1+dfsg.1-1.dsc 2073 SHA256:b758eb8a8e5d4ade98bef3ed697b488653b197e3817b02f8b2a6ee908f954018
+'http://archive.ubuntu.com/ubuntu/pool/universe/j/jquery-throttle-debounce/jquery-throttle-debounce_1.1+dfsg.1.orig.tar.gz' jquery-throttle-debounce_1.1+dfsg.1.orig.tar.gz 16990 SHA256:8e8e935ca82eb33d0ca1956a989bd5c0a789c9715ee700aeba80c4dc952a8665
+'http://archive.ubuntu.com/ubuntu/pool/universe/j/jquery-throttle-debounce/jquery-throttle-debounce_1.1+dfsg.1-1.debian.tar.xz' jquery-throttle-debounce_1.1+dfsg.1-1.debian.tar.xz 4476 SHA256:9c5031db2d1d60df7b14cf0a3e5fd235e092169768a69070b0ea6fec02943894
+```
+
+### `dpkg` source package: `jquery=3.2.1-1`
+
+Binary Packages:
+
+- `libjs-jquery=3.2.1-1`
+
+Licenses: (parsed from: `/usr/share/doc/libjs-jquery/copyright`)
+
+- `BSD-3-clause`
+- `GPL-2`
+- `MIT`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris jquery=3.2.1-1
+'http://archive.ubuntu.com/ubuntu/pool/main/j/jquery/jquery_3.2.1-1.dsc' jquery_3.2.1-1.dsc 2066 SHA256:b529818a547bc3f1ca70743b75e4772199e1ef61f3cc67366de25cc4e112410a
+'http://archive.ubuntu.com/ubuntu/pool/main/j/jquery/jquery_3.2.1.orig.tar.xz' jquery_3.2.1.orig.tar.xz 298688 SHA256:3b645c4dcea9b22ee7ed09c6f391a1b5d23f7556cf0ae8f3afd43002491a597d
+'http://archive.ubuntu.com/ubuntu/pool/main/j/jquery/jquery_3.2.1-1.debian.tar.xz' jquery_3.2.1-1.debian.tar.xz 9068 SHA256:f4c84ab960c21ecd46aa694a5abc397e84178e7185e78a1f546d064ed65d9ab5
+```
+
 ### `dpkg` source package: `keyrings.alt=3.0-1`
 
 Binary Packages:
@@ -1713,6 +1767,46 @@ $ apt-get source -qq --print-uris libidn2=2.0.4-1.1build2
 'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn2/libidn2_2.0.4-1.1build2.debian.tar.xz' libidn2_2.0.4-1.1build2.debian.tar.xz 10285784 SHA256:fd3d28167dba38fcfd2951f09a6dc5408fa0a62c68597e743bb20e6b0a0367d1
 ```
 
+### `dpkg` source package: `libjs-jquery-hotkeys=0~20130707+git2d51e3a9+dfsg-2ubuntu1`
+
+Binary Packages:
+
+- `libjs-jquery-hotkeys=0~20130707+git2d51e3a9+dfsg-2ubuntu1`
+
+Licenses: (parsed from: `/usr/share/doc/libjs-jquery-hotkeys/copyright`)
+
+- `GPL-2`
+- `MIT-or-GPL-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libjs-jquery-hotkeys=0~20130707+git2d51e3a9+dfsg-2ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/universe/libj/libjs-jquery-hotkeys/libjs-jquery-hotkeys_0~20130707+git2d51e3a9+dfsg-2ubuntu1.dsc' libjs-jquery-hotkeys_0~20130707+git2d51e3a9+dfsg-2ubuntu1.dsc 1658 SHA256:067bec0c8b142a5ccd85993be6eed75b3a3b8270caf60cf99bde9463c94bc158
+'http://archive.ubuntu.com/ubuntu/pool/universe/libj/libjs-jquery-hotkeys/libjs-jquery-hotkeys_0~20130707+git2d51e3a9+dfsg.orig.tar.xz' libjs-jquery-hotkeys_0~20130707+git2d51e3a9+dfsg.orig.tar.xz 8604 SHA256:d4821b5255baf3156f0affaf7b37eb4d7ffded0cad8addcdb4805f73df6e6e26
+'http://archive.ubuntu.com/ubuntu/pool/universe/libj/libjs-jquery-hotkeys/libjs-jquery-hotkeys_0~20130707+git2d51e3a9+dfsg-2ubuntu1.debian.tar.gz' libjs-jquery-hotkeys_0~20130707+git2d51e3a9+dfsg-2ubuntu1.debian.tar.gz 4768 SHA256:4967ea87d31b6d83486aaf27708c45665ba6cc99158af0bb202593e4da5fd38c
+```
+
+### `dpkg` source package: `libjs-jquery-isonscreen=1.2.0-1`
+
+Binary Packages:
+
+- `libjs-jquery-isonscreen=1.2.0-1`
+
+Licenses: (parsed from: `/usr/share/doc/libjs-jquery-isonscreen/copyright`)
+
+- `GPL-2`
+- `MIT-or-GPL`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libjs-jquery-isonscreen=1.2.0-1
+'http://archive.ubuntu.com/ubuntu/pool/universe/libj/libjs-jquery-isonscreen/libjs-jquery-isonscreen_1.2.0-1.dsc' libjs-jquery-isonscreen_1.2.0-1.dsc 1460 SHA256:ac0729c251147f96d9899105fe1bbfcc796e0b95df166cd2d09b3596d0f24d1e
+'http://archive.ubuntu.com/ubuntu/pool/universe/libj/libjs-jquery-isonscreen/libjs-jquery-isonscreen_1.2.0.orig.tar.gz' libjs-jquery-isonscreen_1.2.0.orig.tar.gz 727 SHA256:5c0a3ff8d813baa78ac0ef3ccc5cba83001cbbcf9a610324b9af5624e1d19091
+'http://archive.ubuntu.com/ubuntu/pool/universe/libj/libjs-jquery-isonscreen/libjs-jquery-isonscreen_1.2.0-1.debian.tar.gz' libjs-jquery-isonscreen_1.2.0-1.debian.tar.gz 2107 SHA256:ce19ecb03d97223a3c30413529af73d24c6c089327614613ba81b859267d1de6
+```
+
 ### `dpkg` source package: `libjsoncpp=1.7.4-3`
 
 Binary Packages:
@@ -1806,14 +1900,9 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 - `LGPL-2`
 - `LGPL-2.0+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.3.1-2.1ubuntu4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1ubuntu4.1.dsc' libseccomp_2.3.1-2.1ubuntu4.1.dsc 2270 SHA256:1f6e43a20c88c60ef306367ead0b7521ae29cfab6ec144f720221f08266495fb
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1.orig.tar.gz' libseccomp_2.3.1.orig.tar.gz 552299 SHA256:ff5bdd2168790f1979e24eaa498f8606c2f2d96f08a8dc4006a2e88affa4562b
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1ubuntu4.1.debian.tar.xz' libseccomp_2.3.1-2.1ubuntu4.1.debian.tar.xz 22068 SHA256:c3f4bb21e442f2856b9c8240cbfe7322bb79507bf1ea4955e3db99dd3fa39fe0
-```
 
 ### `dpkg` source package: `libselinux=2.7-2build2`
 
@@ -2184,28 +2273,6 @@ $ apt-get source -qq --print-uris mawk=1.3.3-17ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.3-17ubuntu3.diff.gz' mawk_1.3.3-17ubuntu3.diff.gz 64052 SHA256:d1be148525885cb1869e35514f55005b5043f3310b08c444625005a3e14c81fc
 ```
 
-### `dpkg` source package: `mercurial=4.5.3-1ubuntu2.1`
-
-Binary Packages:
-
-- `mercurial=4.5.3-1ubuntu2.1`
-- `mercurial-common=4.5.3-1ubuntu2.1`
-
-Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/mercurial-common/copyright`)
-
-- `GPL-2`
-- `GPL-2+`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris mercurial=4.5.3-1ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_4.5.3-1ubuntu2.1.dsc' mercurial_4.5.3-1ubuntu2.1.dsc 2760 SHA256:b2acaf07c4ef5aa7c3d347fcf880089821dc13e7e35ed2bf6f61fddefb5b6e34
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_4.5.3.orig.tar.gz' mercurial_4.5.3.orig.tar.gz 5884837 SHA256:9c4cb257ef1e59e9aba693cc285a6136f7bb4e8300f598ff50ff8b6fc77808fc
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_4.5.3.orig.tar.gz.asc' mercurial_4.5.3.orig.tar.gz.asc 833 SHA256:578a21314a0ab790777c88ae4af6bab66f8cf72e94f2d09580f9dfa3197ce326
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_4.5.3-1ubuntu2.1.debian.tar.xz' mercurial_4.5.3-1ubuntu2.1.debian.tar.xz 61912 SHA256:d6026337786d4ee3e94a2f91312444e2a6668d6606c1a721f20ec177d0e1891b
-```
-
 ### `dpkg` source package: `mime-support=3.60ubuntu1`
 
 Binary Packages:
@@ -2433,6 +2500,26 @@ $ apt-get source -qq --print-uris nghttp2=1.30.0-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.30.0-1ubuntu1.dsc' nghttp2_1.30.0-1ubuntu1.dsc 2674 SHA256:1848fdc28933b7ee23dbebe3c9dcd0ca9182f95a278d627758d5ccfa2e0b44ad
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.30.0.orig.tar.bz2' nghttp2_1.30.0.orig.tar.bz2 1839714 SHA256:f66918dd03773f4847da1d069295c758ce478cbd1fe58298a37d65e1dce056d8
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.30.0-1ubuntu1.debian.tar.xz' nghttp2_1.30.0-1ubuntu1.debian.tar.xz 13244 SHA256:eb99f2c10cd872ce750964fc59734aa70b89ad04179291a23bfbee0e1a2903d3
+```
+
+### `dpkg` source package: `nose2=0.7.4-1`
+
+Binary Packages:
+
+- `python3-nose2=0.7.4-1`
+
+Licenses: (parsed from: `/usr/share/doc/python3-nose2/copyright`)
+
+- `BSD-2-clause`
+- `Python`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris nose2=0.7.4-1
+'http://archive.ubuntu.com/ubuntu/pool/universe/n/nose2/nose2_0.7.4-1.dsc' nose2_0.7.4-1.dsc 2344 SHA256:7dcef699568ce5a67a6c98b7e7aadcd9232d2ccfd076fab98d57557036eed999
+'http://archive.ubuntu.com/ubuntu/pool/universe/n/nose2/nose2_0.7.4.orig.tar.gz' nose2_0.7.4.orig.tar.gz 141719 SHA256:954a62cfb2d2ac06dad32995cbc822bf00cc11e20d543963515932fd4eff33fa
+'http://archive.ubuntu.com/ubuntu/pool/universe/n/nose2/nose2_0.7.4-1.debian.tar.xz' nose2_0.7.4-1.debian.tar.xz 7428 SHA256:976994933f573c25f856054b921f4837e0fdf93ffd29ab2a2c35b47d4b50b04d
 ```
 
 ### `dpkg` source package: `npth=1.5-3`
@@ -2868,6 +2955,25 @@ $ apt-get source -qq --print-uris pyparsing=2.2.0+dfsg1-2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pyparsing/pyparsing_2.2.0+dfsg1-2.debian.tar.xz' pyparsing_2.2.0+dfsg1-2.debian.tar.xz 7984 SHA256:f968a17566c942a919fe7024a15bbbb2f1cce5af9c50e01e57ad9580b1e12591
 ```
 
+### `dpkg` source package: `pytest-runner=2.11.1-1`
+
+Binary Packages:
+
+- `python3-pytest-runner=2.11.1-1`
+
+Licenses: (parsed from: `/usr/share/doc/python3-pytest-runner/copyright`)
+
+- `Expat`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris pytest-runner=2.11.1-1
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/pytest-runner/pytest-runner_2.11.1-1.dsc' pytest-runner_2.11.1-1.dsc 2269 SHA256:b444a7a21dc709a01b42ae169f7585b8fa92e3934372605dbda858d6d71dfb61
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/pytest-runner/pytest-runner_2.11.1.orig.tar.gz' pytest-runner_2.11.1.orig.tar.gz 9661 SHA256:983a31eab45e375240e250161a556163bc8d250edaba97960909338c273a89b3
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/pytest-runner/pytest-runner_2.11.1-1.debian.tar.xz' pytest-runner_2.11.1-1.debian.tar.xz 2292 SHA256:bb220e20885dbf3950cc3f724aad5be36c9166e64bca339c4f468d1052d317b9
+```
+
 ### `dpkg` source package: `pytest=3.3.2-2`
 
 Binary Packages:
@@ -2886,6 +2992,25 @@ $ apt-get source -qq --print-uris pytest=3.3.2-2
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/pytest/pytest_3.3.2-2.dsc' pytest_3.3.2-2.dsc 2928 SHA256:469a97b5e4989b494856e635f315d0588fcc607dd1027e0ac5d3b9c38ea1cd69
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/pytest/pytest_3.3.2.orig.tar.gz' pytest_3.3.2.orig.tar.gz 800095 SHA256:53548280ede7818f4dc2ad96608b9f08ae2cc2ca3874f2ceb6f97e3583f25bc4
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/pytest/pytest_3.3.2-2.debian.tar.xz' pytest_3.3.2-2.debian.tar.xz 10000 SHA256:f05a67e9424de4df27e0ab5ccba988b14f419e8a09c9bcaf91b448ae6be29430
+```
+
+### `dpkg` source package: `python-argcomplete=1.8.1-1ubuntu1`
+
+Binary Packages:
+
+- `python3-argcomplete=1.8.1-1ubuntu1`
+
+Licenses: (parsed from: `/usr/share/doc/python3-argcomplete/copyright`)
+
+- `Apache-2.0`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python-argcomplete=1.8.1-1ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-argcomplete/python-argcomplete_1.8.1-1ubuntu1.dsc' python-argcomplete_1.8.1-1ubuntu1.dsc 2310 SHA256:3d333ad4515e799337309c8c63d45f4134d5513235c4eb64446b9c096729dc15
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-argcomplete/python-argcomplete_1.8.1.orig.tar.gz' python-argcomplete_1.8.1.orig.tar.gz 53282 SHA256:2997cc0e17d8a2db4789dc84cfe02a0b1579f1f17d79b0b993e722d0acee0649
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-argcomplete/python-argcomplete_1.8.1-1ubuntu1.debian.tar.xz' python-argcomplete_1.8.1-1ubuntu1.debian.tar.xz 6584 SHA256:09435564b8da869a16c672af024d99213e9af80e406617c191ecbb717bcc6d7f
 ```
 
 ### `dpkg` source package: `python-attrs=17.4.0-2`
@@ -2924,6 +3049,30 @@ $ apt-get source -qq --print-uris python-cffi=1.11.5-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cffi/python-cffi_1.11.5-1.dsc' python-cffi_1.11.5-1.dsc 2566 SHA256:ea78c9d66e5e6f567e96e7ce940766234efb60b9acfc58b1e144ae8ab6c541c2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cffi/python-cffi_1.11.5.orig.tar.gz' python-cffi_1.11.5.orig.tar.gz 438498 SHA256:e90f17980e6ab0f3c2f3730e56d1fe9bcba1891eeea58966e89d352492cc74f4
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cffi/python-cffi_1.11.5-1.debian.tar.xz' python-cffi_1.11.5-1.debian.tar.xz 5692 SHA256:e4771d799b765f449ce46bc20e671b771bfcc7b5e4d829ffb26280e6de215648
+```
+
+### `dpkg` source package: `python-coverage=4.5+dfsg.1-3`
+
+Binary Packages:
+
+- `python3-coverage=4.5+dfsg.1-3`
+
+Licenses: (parsed from: `/usr/share/doc/python3-coverage/copyright`)
+
+- `Apache-2`
+- `Apache-2.0`
+- `Expat`
+- `GPL-2`
+- `GPL-3`
+- `GPL-3+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python-coverage=4.5+dfsg.1-3
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-coverage/python-coverage_4.5+dfsg.1-3.dsc' python-coverage_4.5+dfsg.1-3.dsc 2554 SHA256:674c3ecb4328b1ec57f46ddaf30e9ae6b2d5defc46c09521c79409f77f8e9071
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-coverage/python-coverage_4.5+dfsg.1.orig.tar.gz' python-coverage_4.5+dfsg.1.orig.tar.gz 340322 SHA256:11f0384cbd8b06b84e96ce4a1860fa698297623a5444a4b63ce686a067753fbc
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-coverage/python-coverage_4.5+dfsg.1-3.debian.tar.xz' python-coverage_4.5+dfsg.1-3.debian.tar.xz 21196 SHA256:bc969efe651fb9a83754d4644d0cd49de4f652310ce64a727ee30bb598bfd3db
 ```
 
 ### `dpkg` source package: `python-crypto=2.6.1-8ubuntu2`
@@ -3153,6 +3302,27 @@ $ apt-get source -qq --print-uris python-mock=2.0.0-3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-mock/python-mock_2.0.0-3.debian.tar.xz' python-mock_2.0.0-3.debian.tar.xz 16008 SHA256:03ddc534c620681c7a0870917b84ab20869722e255a5912080846b35f4e0f7f3
 ```
 
+### `dpkg` source package: `python-notify2=0.3-3`
+
+Binary Packages:
+
+- `python3-notify2=0.3-3`
+
+Licenses: (parsed from: `/usr/share/doc/python3-notify2/copyright`)
+
+- `BSD-3-Clause`
+- `LGPL-2.1`
+- `LGPL-2.1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python-notify2=0.3-3
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-notify2/python-notify2_0.3-3.dsc' python-notify2_0.3-3.dsc 2210 SHA256:71f75c5e80171e0320ddf1792d71c0f9c0a0ef35f8807bec105baedb56bc40f8
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-notify2/python-notify2_0.3.orig.tar.gz' python-notify2_0.3.orig.tar.gz 8798 SHA256:684281f91c51fc60bc7909a35bd21d043a2a421f4e269de1ed1f13845d1d6321
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-notify2/python-notify2_0.3-3.debian.tar.xz' python-notify2_0.3-3.debian.tar.xz 3260 SHA256:0a127940fc81420d388d9c99d4902b57a4ad7e367edc6fcd797ee312c635b9f8
+```
+
 ### `dpkg` source package: `python-pbr=3.1.1-3ubuntu3`
 
 Binary Packages:
@@ -3234,6 +3404,25 @@ $ apt-get source -qq --print-uris python-py=1.5.2-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-py/python-py_1.5.2-1.dsc' python-py_1.5.2-1.dsc 2267 SHA256:fb37869e73c13ff1b73e6ac11db524c90b5da73f74b3e59151ae69c4c3fd5f7e
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-py/python-py_1.5.2.orig.tar.gz' python-py_1.5.2.orig.tar.gz 189542 SHA256:ca18943e28235417756316bfada6cd96b23ce60dd532642690dcfdaba988a76d
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-py/python-py_1.5.2-1.debian.tar.xz' python-py_1.5.2-1.debian.tar.xz 6972 SHA256:95134eff689e0537255f73e222c7b82b832fbeabef7beaeae7fbc218e723beb0
+```
+
+### `dpkg` source package: `python-pytest-cov=2.5.1-1`
+
+Binary Packages:
+
+- `python3-pytest-cov=2.5.1-1`
+
+Licenses: (parsed from: `/usr/share/doc/python3-pytest-cov/copyright`)
+
+- `MIT`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python-pytest-cov=2.5.1-1
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-pytest-cov/python-pytest-cov_2.5.1-1.dsc' python-pytest-cov_2.5.1-1.dsc 2164 SHA256:d1aa2b0d3c866e38335f27940fd186e36c9508463d5421f17d7959babba2c4e7
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-pytest-cov/python-pytest-cov_2.5.1.orig.tar.gz' python-pytest-cov_2.5.1.orig.tar.gz 28668 SHA256:a2a52fa5a893e6192dd4801f5598e6affffe1b6f4142ade2345f2455e6a75b91
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-pytest-cov/python-pytest-cov_2.5.1-1.debian.tar.xz' python-pytest-cov_2.5.1-1.debian.tar.xz 2252 SHA256:a0b1dfb7bcdba83a3fde89817024976f6630b04ca56a259bba24218f263789b1
 ```
 
 ### `dpkg` source package: `python-roman=2.0.0-3`
@@ -3352,11 +3541,106 @@ $ apt-get source -qq --print-uris python2.7=2.7.15~rc1-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.15~rc1-1ubuntu0.1.diff.gz' python2.7_2.7.15~rc1-1ubuntu0.1.diff.gz 286551 SHA256:5759321345df298f17dbb5405a22929ac6d33eb3646fe6516027bf43893e6973
 ```
 
-### `dpkg` source package: `python3-catkin-pkg-modules=0.4.11-1`
+### `dpkg` source package: `python3-catkin-pkg-modules=0.4.12-1`
 
 Binary Packages:
 
-- `python3-catkin-pkg-modules=0.4.11-1`
+- `python3-catkin-pkg-modules=0.4.12-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python3-catkin-pkg-modules=0.4.12-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.4.12-1.debian.tar.xz' python3-catkin-pkg-modules_0.4.12-1.debian.tar.xz 1920 SHA512:97809d6cd0c39967e718d578a79266343d437d7e8df23ced348d21c6bdf9eb499bb1bfdd7be99a35986dbdfb17db3060470a525420bd30569d95cb68d72e42e9
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.4.12-1.dsc' python3-catkin-pkg-modules_0.4.12-1.dsc 1037 SHA512:76866884f3be4989d8966e2268d46748b18046ab37dc9c82931bcc911e4af272105f9fcad9820ad92b95ed14b14c373af0b6fd0a5266ca07789ba4d50be2d2e7
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.4.12.orig.tar.gz' python3-catkin-pkg-modules_0.4.12.orig.tar.gz 58938 SHA512:ce04475b9d974cf08e1bd9f1cce9e476975d6d8162d00d856c3fa0e3155b95b1a5d68f1992d5be2ccd8cb7b9c5eba7a62b85062537e30368708ee4f2c8d7fe5f
+```
+
+### `dpkg` source package: `python3-catkin-pkg=0.4.12-100`
+
+Binary Packages:
+
+- `python3-catkin-pkg=0.4.12-100`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python3-catkin-pkg=0.4.12-100
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg/python3-catkin-pkg_0.4.12-100.debian.tar.xz' python3-catkin-pkg_0.4.12-100.debian.tar.xz 1900 SHA512:8e0de853ba5acc30bf20e014d54c831d4ac3b3b599e28e3b715838b2b9229c40779d569d2bf398178928d6859034da67c318219c403ea5d3081c9f0e83d6245a
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg/python3-catkin-pkg_0.4.12-100.dsc' python3-catkin-pkg_0.4.12-100.dsc 973 SHA512:2cec77fe7834448036e2975e22269d38165bd202cb66d7c8bc63caec404cdf090aa9f1d7efcd6086d4d1178fcd465a7c7df200a16519a69d6604237dc950d97c
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg/python3-catkin-pkg_0.4.12.orig.tar.gz' python3-catkin-pkg_0.4.12.orig.tar.gz 13296 SHA512:714be5f2e1d5d9c6bce67a171f9a066ec3da6a8554b83bc26f23fd20d06cf4394b470dd2097fb10044ee120747bfae0028693d55142c57d41e549883246a9c39
+```
+
+### `dpkg` source package: `python3-colcon-argcomplete=0.3.2-1`
+
+Binary Packages:
+
+- `python3-colcon-argcomplete=0.3.2-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python3-colcon-argcomplete=0.3.2-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-argcomplete/python3-colcon-argcomplete_0.3.2-1.debian.tar.xz' python3-colcon-argcomplete_0.3.2-1.debian.tar.xz 1600 SHA512:e2f4f5752363ba6291e52e0b0952a0add03216388b5d3ec861fe5d82d8709db6acb03cdf08c253623325f6b4dfa1610430af0d9df9d48897b346d8af5e9e5332
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-argcomplete/python3-colcon-argcomplete_0.3.2-1.dsc' python3-colcon-argcomplete_0.3.2-1.dsc 969 SHA512:ff95657b46fb852f86126cd1c0525d3d0e4ec2ea4838454174beab00f0876c887291e4c96d272d0656e0acc39302de7e2fef7eef481f1ecbf55edc57e665d5a5
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-argcomplete/python3-colcon-argcomplete_0.3.2.orig.tar.gz' python3-colcon-argcomplete_0.3.2.orig.tar.gz 7373 SHA512:420be8300a8845292b2fcfc1771c555370e8e718f576df69afcab6c1f2a0e78d8cb46f7cac216036eb907e350f5483711df6173165679b6d36714ff3c290f60b
+```
+
+### `dpkg` source package: `python3-colcon-bash=0.3.2-1`
+
+Binary Packages:
+
+- `python3-colcon-bash=0.3.2-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python3-colcon-bash=0.3.2-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-bash/python3-colcon-bash_0.3.2-1.debian.tar.xz' python3-colcon-bash_0.3.2-1.debian.tar.xz 992 SHA512:56320edf9d1ec2f6afb2a5925ec01a906b629c0993713129160375ad2b3bded55c5179c12ce7297fcc0046082e64df4c392a54cca64e3f03c053f2c947ee527c
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-bash/python3-colcon-bash_0.3.2-1.dsc' python3-colcon-bash_0.3.2-1.dsc 954 SHA512:9f6a6268d4b546c78bdb2858ad6bb60efe39616daa067e1afa366334c988a00cd680c910e940417bce17de76e5762432fc84a0c76037cccbc2cc44790664b06b
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-bash/python3-colcon-bash_0.3.2.orig.tar.gz' python3-colcon-bash_0.3.2.orig.tar.gz 5556 SHA512:8fbb7a29a7af2b1c17b4d94bcd5917cad86b69197259117ef787b4623034ec240ae341410ace2f8d54db6b2605b3c0ae92b90afc00c4a34a5dfdb8c291ca504e
+```
+
+### `dpkg` source package: `python3-colcon-cmake=0.2.11-1`
+
+Binary Packages:
+
+- `python3-colcon-cmake=0.2.11-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python3-colcon-cmake=0.2.11-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-cmake/python3-colcon-cmake_0.2.11-1.debian.tar.xz' python3-colcon-cmake_0.2.11-1.debian.tar.xz 1096 SHA512:eafd989ee79859afeb6908916db1c28c313fddea4befa14a46a60527d239207e783c6a80390605713ea1575ee428a2e7fe49a9e7d34e767962b98cff2e16ca22
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-cmake/python3-colcon-cmake_0.2.11-1.dsc' python3-colcon-cmake_0.2.11-1.dsc 925 SHA512:12b49ae6a2b03f307d7651cba4ace28398aa7c09eed27de3ddb0ce97c722480ee9c9f391b2f5550fa7ea392e2a1625d295864b8c5e22b7f1b5d56cc845f1453a
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-cmake/python3-colcon-cmake_0.2.11.orig.tar.gz' python3-colcon-cmake_0.2.11.orig.tar.gz 13567 SHA512:b244be43180387f5804a2f5b1b225e433b2a48d5a89732608bd102e537a316900a3012a4a59790f091ac0e534ec45097becd62bdc6abc4639e9acf7d21b4389d
+```
+
+### `dpkg` source package: `python3-colcon-common-extensions=0.2.0-2`
+
+Binary Packages:
+
+- `python3-colcon-common-extensions=0.2.0-2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3366,19 +3650,328 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3-catkin-pkg=0.4.11-100`
+### `dpkg` source package: `python3-colcon-core=0.3.22-1`
 
 Binary Packages:
 
-- `python3-catkin-pkg=0.4.11-100`
+- `python3-colcon-core=0.3.22-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3-colcon-core=0.3.22-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-core/python3-colcon-core_0.3.22-1.debian.tar.xz' python3-colcon-core_0.3.22-1.debian.tar.xz 1464 SHA512:410bb8e4cf7a0f90eb9c6454cd3fcef455e6d79a2768c89ee403120f65e9a826a9cd2d4842a13d88d0ad32c5dfaf812c30964a642b6abbe84c211aa83764059a
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-core/python3-colcon-core_0.3.22-1.dsc' python3-colcon-core_0.3.22-1.dsc 967 SHA512:4162314a6abf768b5383233370cae24751bb2face85c3d3593344bd8283740eb3c82c4518fb280f8b9a29086636cba57fdfea7a74138eb41de082ec8bf6e6cbd
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-core/python3-colcon-core_0.3.22.orig.tar.gz' python3-colcon-core_0.3.22.orig.tar.gz 91173 SHA512:4a2cf67349af22683f63181ae99521634f8d6f3234c1bb56f0d8be20fe132dff66c2df2f4d87037179328b5bc9c474733cd01af2c751aa5ddc92145090355a4d
+```
+
+### `dpkg` source package: `python3-colcon-defaults=0.2.2-1`
+
+Binary Packages:
+
+- `python3-colcon-defaults=0.2.2-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python3-colcon-defaults=0.2.2-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-defaults/python3-colcon-defaults_0.2.2-1.debian.tar.xz' python3-colcon-defaults_0.2.2-1.debian.tar.xz 1184 SHA512:470701b36a36c215fbf0fe9a5fff607721c0c8e9c8f36e39e99530fc2272f7ff23d27f11f0b205a42cb95966447d3fb5285058d6a93406ce8e48a472c8b6f5ec
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-defaults/python3-colcon-defaults_0.2.2-1.dsc' python3-colcon-defaults_0.2.2-1.dsc 942 SHA512:51164e4a7e0ddb059627f570da9b9d8a43c5f69f45b026b93865191580b36a7f83827d5aae6f0300f742de74a7df4d1cef859706ce0347aefe51bd1e022f38fa
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-defaults/python3-colcon-defaults_0.2.2.orig.tar.gz' python3-colcon-defaults_0.2.2.orig.tar.gz 4728 SHA512:312bca0187d2110aef9f32d5fb3d262620821d91579bc3914aab44907bc508d7a7d27cbb5c42c36b08f25d14cb0a9475dd41ea5de8f2d5d4fbc10c55c5f521fd
+```
+
+### `dpkg` source package: `python3-colcon-devtools=0.2.1-1`
+
+Binary Packages:
+
+- `python3-colcon-devtools=0.2.1-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python3-colcon-devtools=0.2.1-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-devtools/python3-colcon-devtools_0.2.1-1.dsc' python3-colcon-devtools_0.2.1-1.dsc 990 SHA256:501b2fdffa80c5d6370f6bf6dbf12891d4ee4e7afb8d1b769a554d9c11eec885
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-devtools/python3-colcon-devtools_0.2.1.orig.tar.gz' python3-colcon-devtools_0.2.1.orig.tar.gz 4549 SHA256:69cc82a71bdf9e45c688ac68bcfccefbb9a7255064871dc279132a4cbd33f925
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-devtools/python3-colcon-devtools_0.2.1-1.debian.tar.xz' python3-colcon-devtools_0.2.1-1.debian.tar.xz 980 SHA256:2fca1330a162ede4014e682928a3a7972673b2faa84df7e9e123f6304efeb9d4
+```
+
+### `dpkg` source package: `python3-colcon-library-path=0.2.1-1`
+
+Binary Packages:
+
+- `python3-colcon-library-path=0.2.1-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python3-colcon-library-path=0.2.1-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-library-path/python3-colcon-library-path_0.2.1-1.debian.tar.xz' python3-colcon-library-path_0.2.1-1.debian.tar.xz 1000 SHA512:f0e4df16b6139d403f5fad5f581632eb5cd31df8ebc648c705d4da7c9eefdf6a005095e4301322cba03780114baff6d58e49f884cec6ac3ba2959ed4d638b292
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-library-path/python3-colcon-library-path_0.2.1-1.dsc' python3-colcon-library-path_0.2.1-1.dsc 1029 SHA512:3672203f9f0f35df233df0c54ac056fb37744be7ac56eab1d325d6b575b381b4816d07b59c4def12687dcc2e64ff627a4c012df3a9f23f7a031c6ec19f7b297d
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-library-path/python3-colcon-library-path_0.2.1.orig.tar.gz' python3-colcon-library-path_0.2.1.orig.tar.gz 3783 SHA512:60922210d6184263705493bd6764df4c3c7c07da3676217267452a339da35bece4ff308d2bd8db0446f363e53b54ddd068272f47fa99414bdccffef0c5cb36c6
+```
+
+### `dpkg` source package: `python3-colcon-metadata=0.2.2-1`
+
+Binary Packages:
+
+- `python3-colcon-metadata=0.2.2-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python3-colcon-metadata=0.2.2-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-metadata/python3-colcon-metadata_0.2.2-1.debian.tar.xz' python3-colcon-metadata_0.2.2-1.debian.tar.xz 1116 SHA512:9bba47eaeee845a2f63a726677f556548ea05848729240c19646109f465b5031c7bda90b6d4dfbddfc13404f863c895f2aa85bbb885faccdf9c5d29c2ab07eba
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-metadata/python3-colcon-metadata_0.2.2-1.dsc' python3-colcon-metadata_0.2.2-1.dsc 942 SHA512:c4cd732a1a72acd2eb52429f6d792bd91ce49fdc1256367aef6638da7fb5c509e74460f11e5e07bead1a3352f9fbaf785d400056ba71a496650c846040af340e
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-metadata/python3-colcon-metadata_0.2.2.orig.tar.gz' python3-colcon-metadata_0.2.2.orig.tar.gz 9098 SHA512:10010ee42ce28e8c21c8e4cbde7d0dfcbc4ecde83a99dec3d737a05160dba695ba9c9178591705caf85a0477e4f774ab3a81927e2cb2dcf5b2b3f3aa4b0d76a0
+```
+
+### `dpkg` source package: `python3-colcon-notification=0.2.7-1`
+
+Binary Packages:
+
+- `python3-colcon-notification=0.2.7-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python3-colcon-notification=0.2.7-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-notification/python3-colcon-notification_0.2.7-1.debian.tar.xz' python3-colcon-notification_0.2.7-1.debian.tar.xz 1060 SHA512:5c53f1d5b5ce45a405d0dbc0b561ab5d5005391a0a352d6fc82653063bd01d0d0962eba9b7d19cd09096c4c9a37766b3a0f89e9733c524f67fba8c2713b3bbe2
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-notification/python3-colcon-notification_0.2.7-1.dsc' python3-colcon-notification_0.2.7-1.dsc 981 SHA512:e68e8f774b5b5fae71f69f6c9d68ba69915108195cb36d3dbc595c2bdbccc260fe6b70eac5e58fcaba66f4437cb603532eb6973beaabd0e5de7b67e94187a9ff
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-notification/python3-colcon-notification_0.2.7.orig.tar.gz' python3-colcon-notification_0.2.7.orig.tar.gz 14581 SHA512:470605cdb82be6d0f4cc3c7ef7883e9b69c92e462c70d3e46480897ccd623cae9524fa57f87d83efbe621c45834d57add02567d2b166ba67c0783196f3f215a7
+```
+
+### `dpkg` source package: `python3-colcon-output=0.2.3-1`
+
+Binary Packages:
+
+- `python3-colcon-output=0.2.3-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python3-colcon-output=0.2.3-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-output/python3-colcon-output_0.2.3-1.dsc' python3-colcon-output_0.2.3-1.dsc 972 SHA256:d8b52efb6556a176a08943b91a4cf35995dc4b998db170d85cfe392463f9998a
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-output/python3-colcon-output_0.2.3.orig.tar.gz' python3-colcon-output_0.2.3.orig.tar.gz 6330 SHA256:3888f55356d1c108479779f7ae5a5b396dd3ab3f988c9baab1641446e0dbf8d4
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-output/python3-colcon-output_0.2.3-1.debian.tar.xz' python3-colcon-output_0.2.3-1.debian.tar.xz 972 SHA256:6f18d720d083bf02d9b7a53ee6700f9ee84966fb616a75290596d3a14348ddbd
+```
+
+### `dpkg` source package: `python3-colcon-package-information=0.2.2-1`
+
+Binary Packages:
+
+- `python3-colcon-package-information=0.2.2-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python3-colcon-package-information=0.2.2-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-package-information/python3-colcon-package-information_0.2.2-1.debian.tar.xz' python3-colcon-package-information_0.2.2-1.debian.tar.xz 980 SHA512:4e4509c1e954b5921335d8874f0234e9be6e780ce157618499d1cb4e8e91e8f31bec1b7964d3d8b39a29a31ee503a14bd55fea4f6133c197a459936a3ce8a155
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-package-information/python3-colcon-package-information_0.2.2-1.dsc' python3-colcon-package-information_0.2.2-1.dsc 1089 SHA512:ce0866c3d34a7e4369be27a6de5a8d8a4332fcc83d9913c4a84e5197025d36bcd83334d6eac9579d1e2f314518892ba8e56792017f820b0c7595ef626c8fd891
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-package-information/python3-colcon-package-information_0.2.2.orig.tar.gz' python3-colcon-package-information_0.2.2.orig.tar.gz 6477 SHA512:65eedb6d73b6cd5d29117699d364efb14916ca5fc66642c3e999202c4d0adbc63152cfd7682c1cc5ed6e09855e1accf322588ea33045c0e703d865b087b312df
+```
+
+### `dpkg` source package: `python3-colcon-package-selection=0.2.4-1`
+
+Binary Packages:
+
+- `python3-colcon-package-selection=0.2.4-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python3-colcon-package-selection=0.2.4-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-package-selection/python3-colcon-package-selection_0.2.4-1.debian.tar.xz' python3-colcon-package-selection_0.2.4-1.debian.tar.xz 1076 SHA512:5d5465a92f139cded61e3ffa24b22582395492089d7f25b1c66f2851af7fd1280dddd142054cdaba9e220b98d0c20796d999dac3fa8088063a32949d7e4f6db6
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-package-selection/python3-colcon-package-selection_0.2.4-1.dsc' python3-colcon-package-selection_0.2.4-1.dsc 1023 SHA512:e28ce2eb87066cfa6c983931d9d5f968e03890f1c3afa853d332020ef70da99cc999bc70fb03a1a75902eed3eb46dba40d529c56e0d0292e382722cf1c1e64c1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-package-selection/python3-colcon-package-selection_0.2.4.orig.tar.gz' python3-colcon-package-selection_0.2.4.orig.tar.gz 7799 SHA512:f510136a8bbd866a7219079cd7415f36f077a1d0356c691bb93bcc612fc502763650ea791df80d389bdb9ce3547a74530ad254f55fb9fa9f77b56396d5a5ed7e
+```
+
+### `dpkg` source package: `python3-colcon-parallel-executor=0.2.4-1`
+
+Binary Packages:
+
+- `python3-colcon-parallel-executor=0.2.4-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python3-colcon-parallel-executor=0.2.4-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-parallel-executor/python3-colcon-parallel-executor_0.2.4-1.debian.tar.xz' python3-colcon-parallel-executor_0.2.4-1.debian.tar.xz 1068 SHA512:98570b66c1fedf3cb7ad95135d2968b86e5e0f680b7b150423d26ab403082a9c7772e7b33656fe59be947aea877c07e404e222e59ee6487106b6a8e7b7b6c599
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-parallel-executor/python3-colcon-parallel-executor_0.2.4-1.dsc' python3-colcon-parallel-executor_0.2.4-1.dsc 1023 SHA512:499b154e09e32168cf6d67fd0eb8f740e2f59b5852f3a76fcfeb6b72b42a82f4c2698bddfe9f0aa0e5fe3c73695d0f1c5ecc84f15273f830c4146f05f4c74f09
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-parallel-executor/python3-colcon-parallel-executor_0.2.4.orig.tar.gz' python3-colcon-parallel-executor_0.2.4.orig.tar.gz 5647 SHA512:a1e05a52e110485bfbfea6e27270dec5f735e7318c24615db8ca8468569cff26af27188b171c86458bd1e58da578b05828a2a5b614961e43097445a94fb67fed
+```
+
+### `dpkg` source package: `python3-colcon-pkg-config=0.1.0-1`
+
+Binary Packages:
+
+- `python3-colcon-pkg-config=0.1.0-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python3-colcon-pkg-config=0.1.0-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-pkg-config/python3-colcon-pkg-config_0.1.0-1.dsc' python3-colcon-pkg-config_0.1.0-1.dsc 1008 SHA256:e83f8012e53b266bb5d410779121d63cec276333206eb1433b76ee08d772b337
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-pkg-config/python3-colcon-pkg-config_0.1.0.orig.tar.gz' python3-colcon-pkg-config_0.1.0.orig.tar.gz 3408 SHA256:881c9c2c32183b4214f191fd548bcba8475567d16b9aae07f930441d3e01ac6b
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-pkg-config/python3-colcon-pkg-config_0.1.0-1.debian.tar.xz' python3-colcon-pkg-config_0.1.0-1.debian.tar.xz 984 SHA256:4a70cbac20d5ac48ce00353dd5ff038ec93259f5f26a0d995139bfb8d71e133f
+```
+
+### `dpkg` source package: `python3-colcon-powershell=0.3.4-1`
+
+Binary Packages:
+
+- `python3-colcon-powershell=0.3.4-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python3-colcon-powershell=0.3.4-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-powershell/python3-colcon-powershell_0.3.4-1.debian.tar.xz' python3-colcon-powershell_0.3.4-1.debian.tar.xz 984 SHA512:531ff2e5f68da3e33cf5591b775656e67b35ffb707420453f8abc5473bced2f278a7f6e15a1019f57c6ed792adc6b75e303ac08ad97555bbda6f08c8ba5d34cb
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-powershell/python3-colcon-powershell_0.3.4-1.dsc' python3-colcon-powershell_0.3.4-1.dsc 1008 SHA512:2b654356b38a191d83cce2e90d7e7cbdd1485f0ca38ae41817f2c6cbb8466841d7138cc17ef1cdc20cfad06482420e7802369a55395345dc630059290a2ffd4a
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-powershell/python3-colcon-powershell_0.3.4.orig.tar.gz' python3-colcon-powershell_0.3.4.orig.tar.gz 7044 SHA512:01d636538debc0b5941afdc18bc94faf1219d4f91a3e12ef040e79b3cd6d3b46836732440b87332e2136e4c2d6457b8463e56f3ce109464b564b9652100bacac
+```
+
+### `dpkg` source package: `python3-colcon-python-setup-py=0.2.1-1`
+
+Binary Packages:
+
+- `python3-colcon-python-setup-py=0.2.1-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python3-colcon-python-setup-py=0.2.1-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-python-setup-py/python3-colcon-python-setup-py_0.2.1-1.debian.tar.xz' python3-colcon-python-setup-py_0.2.1-1.debian.tar.xz 1148 SHA512:70521d8b23336ed303b3099a0761f84abb15bc05219a3e3ca2a57e0dbfbec0c4c87121c8efaa15f9280b4be73c80ba1571399566a8dac427ed9f6dc94437e724
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-python-setup-py/python3-colcon-python-setup-py_0.2.1-1.dsc' python3-colcon-python-setup-py_0.2.1-1.dsc 1005 SHA512:e4e7648d6e6ff445387d4fd9268c39c285f0668ef59a9b2659ea971ad2820fcf05ef113bb7d4ea51c3bec355ec7f9c4020d2ee1d63fdf9680df7ea798c610047
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-python-setup-py/python3-colcon-python-setup-py_0.2.1.orig.tar.gz' python3-colcon-python-setup-py_0.2.1.orig.tar.gz 5225 SHA512:da5e0c78b76c3c6fabd8bc719c1f07befb0f100728d4e8341f2f9cd21c4e195d817c2743891c253d79cd0034dee99845adb5ca11e115efca1f3ac86035167af0
+```
+
+### `dpkg` source package: `python3-colcon-recursive-crawl=0.2.0-1`
+
+Binary Packages:
+
+- `python3-colcon-recursive-crawl=0.2.0-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python3-colcon-recursive-crawl=0.2.0-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-recursive-crawl/python3-colcon-recursive-crawl_0.2.0-1.dsc' python3-colcon-recursive-crawl_0.2.0-1.dsc 1005 SHA256:31d6e4ef110aef1ceda42db3371c72c4b6e1e1212ccd9636886ee8a2d780e736
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-recursive-crawl/python3-colcon-recursive-crawl_0.2.0.orig.tar.gz' python3-colcon-recursive-crawl_0.2.0.orig.tar.gz 3807 SHA256:5da9462beb169671f38d245b01220d778fc237ebfbb2a46f09eeff6dc0f46923
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-recursive-crawl/python3-colcon-recursive-crawl_0.2.0-1.debian.tar.xz' python3-colcon-recursive-crawl_0.2.0-1.debian.tar.xz 1056 SHA256:57bd6404b9df14ed063602455077d0ebfb7ac65b9d413274a8feb8465366a06e
+```
+
+### `dpkg` source package: `python3-colcon-ros=0.3.10-1`
+
+Binary Packages:
+
+- `python3-colcon-ros=0.3.10-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python3-colcon-ros=0.3.10-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-ros/python3-colcon-ros_0.3.10-1.debian.tar.xz' python3-colcon-ros_0.3.10-1.debian.tar.xz 1564 SHA512:499adfc5e8e699fdbd44e42bc1361960982dbf5e433985cf99cb13cd20f9eef5b0801a028245250afa07029073c3c08a2039745a3abc1af881ec790150b54740
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-ros/python3-colcon-ros_0.3.10-1.dsc' python3-colcon-ros_0.3.10-1.dsc 907 SHA512:8cb149dc92c26904fc0469b0a6e9786f1032dc5750c71269d2832e95095608d65c3719acd44113cf2394646990916eb8637d8540751124430f11a1dbd4d268e2
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-ros/python3-colcon-ros_0.3.10.orig.tar.gz' python3-colcon-ros_0.3.10.orig.tar.gz 11729 SHA512:92b50cd29f0a03ea0a2b80eef1fdecd2df6be566f2a28262371a48be4ba50e892e76a73cd48292f709d9a90588cdd5425d7d5778f31eaeb6e16b78320cd0b0bd
+```
+
+### `dpkg` source package: `python3-colcon-test-result=0.3.3-1`
+
+Binary Packages:
+
+- `python3-colcon-test-result=0.3.3-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python3-colcon-test-result=0.3.3-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-test-result/python3-colcon-test-result_0.3.3-1.debian.tar.xz' python3-colcon-test-result_0.3.3-1.debian.tar.xz 1076 SHA512:befb06aa1787528e70bdc2dee59f44b46ed5123f4739fac432ce631576d53eb32116a32f946c159b8f641f82fe7a54aa3051618253dc376ba3e37326a69b4a40
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-test-result/python3-colcon-test-result_0.3.3-1.dsc' python3-colcon-test-result_0.3.3-1.dsc 969 SHA512:efee7424bdba58bd8e5e98aa5baefff0fc22e8ce26420362097fd20a29b93fbf7bbdd7656ee705d443ddf57fd0ebb0dd9fc84dc39a6123fc7af419a969b5325d
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-test-result/python3-colcon-test-result_0.3.3.orig.tar.gz' python3-colcon-test-result_0.3.3.orig.tar.gz 7062 SHA512:2ea912b402f944bddceb6e1d9951df43c8c4b172245728728b904da436bbbc9362935cda9c902cbcf3f3cd6f8fcf8ae979730294520b2ff13c4c909c53d16648
+```
+
+### `dpkg` source package: `python3-colcon-zsh=0.3.2-1`
+
+Binary Packages:
+
+- `python3-colcon-zsh=0.3.2-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python3-colcon-zsh=0.3.2-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-zsh/python3-colcon-zsh_0.3.2-1.debian.tar.xz' python3-colcon-zsh_0.3.2-1.debian.tar.xz 984 SHA512:fe7ef2d324d0ba028995ce2ec534d7e14713307c5a62f347b0ef447a78ad32f2055dc28320322d16decac0e9e6ceaf3b058b0ab98f588bb34a2cd1fdbca50b0d
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-zsh/python3-colcon-zsh_0.3.2-1.dsc' python3-colcon-zsh_0.3.2-1.dsc 945 SHA512:6a91025fd0a6a4aa4f9843b883f7e1d7c7d9936e7f5a644a0c8ce9c80e64591afc514dfc43b3510675884fc324ce49b90af08e1c46bdcd9f6b0ec5c2a21252ba
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-zsh/python3-colcon-zsh_0.3.2.orig.tar.gz' python3-colcon-zsh_0.3.2.orig.tar.gz 5698 SHA512:0fe720b3972764fc6b46c5062788d5b204e90d7cdc159dfc2a619f0793924bccae9ecc1bb00672cc9726f940f22f2a5de3c9e30fa432cbf2885fd962098a2782
+```
 
 ### `dpkg` source package: `python3-defaults=3.6.7-1~18.04`
 
@@ -3402,53 +3995,11 @@ $ apt-get source -qq --print-uris python3-defaults=3.6.7-1~18.04
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.6.7-1~18.04.tar.gz' python3-defaults_3.6.7-1~18.04.tar.gz 137600 SHA256:df14f4993ac87537415f1abaa69d80790fb01e51033416bc123038f731286ed4
 ```
 
-### `dpkg` source package: `python3-rosdep=0.15.1-1`
+### `dpkg` source package: `python3-rosdep=0.15.2-1`
 
 Binary Packages:
 
-- `python3-rosdep=0.15.1-1`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `python3-rosdistro-modules=0.7.3-1`
-
-Binary Packages:
-
-- `python3-rosdistro-modules=0.7.3-1`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `python3-rosdistro=0.7.3-100`
-
-Binary Packages:
-
-- `python3-rosdistro=0.7.3-100`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `python3-rosinstall=0.7.8-1`
-
-Binary Packages:
-
-- `python3-rosinstall=0.7.8-1`
+- `python3-rosdep=0.15.2-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3457,10 +4008,48 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3-rosinstall=0.7.8-1
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosinstall/python3-rosinstall_0.7.8-1.dsc' python3-rosinstall_0.7.8-1.dsc 904 SHA256:c167b9d98618e5966cebad3eeeb6c2289a474e776f2d8d3b3db3e6c7dafccf8c
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosinstall/python3-rosinstall_0.7.8.orig.tar.gz' python3-rosinstall_0.7.8.orig.tar.gz 26420 SHA256:78089f46355914c02eaa9cbd2f74010d2888ad5999dd762fe55b032083e56e0f
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosinstall/python3-rosinstall_0.7.8-1.debian.tar.gz' python3-rosinstall_0.7.8-1.debian.tar.gz 1058 SHA256:2692ef4963475ec337b92d99273aeb3791238b3c684cdac402dd2a74860d44fb
+$ apt-get source -qq --print-uris python3-rosdep=0.15.2-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdep/python3-rosdep_0.15.2-1.debian.tar.xz' python3-rosdep_0.15.2-1.debian.tar.xz 1984 SHA512:d75b58bd133a81a4e811e10c547ef0702c460966152dc7aaf1c810cbfab3f9f608bc640a33bbc342ec05d48b35bc433695d24c0eb28cf8c78ddd1ae60dff0d7f
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdep/python3-rosdep_0.15.2-1.dsc' python3-rosdep_0.15.2-1.dsc 892 SHA512:6f3b62f1a953b717c9a59a813f962476de84e0b548e89f152d922a86ae0a06f0620f17e6d5bb65d8f5ae43710b7c2f8075f3ec7f7b637e3d21ba4276a53e906e
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdep/python3-rosdep_0.15.2.orig.tar.gz' python3-rosdep_0.15.2.orig.tar.gz 82742 SHA512:6f6c12223f273bfead5927133ebf5b77e769b36c0427c1af8fbf297a1f8566837a28085a249d817182bacfb118b825073b23345388d89c273c2144df5cdfa5a5
+```
+
+### `dpkg` source package: `python3-rosdistro-modules=0.7.4-1`
+
+Binary Packages:
+
+- `python3-rosdistro-modules=0.7.4-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python3-rosdistro-modules=0.7.4-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdistro-modules/python3-rosdistro-modules_0.7.4-1.debian.tar.xz' python3-rosdistro-modules_0.7.4-1.debian.tar.xz 1892 SHA512:22d63f9b990e6664be68166aaccf6713ada56c02cdeb664ec5278544ded3adf6fe277aee99791975ac7d93ff181d447c8b6fb8b46dd6f1227efc26462c341b99
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdistro-modules/python3-rosdistro-modules_0.7.4-1.dsc' python3-rosdistro-modules_0.7.4-1.dsc 1020 SHA512:ac3e440d5ab3bd7aa015ffa9178047c53dd469510fc8e2c1c4002861d51734a4dbf257f2a4a49352bf034f1eab4e443bc0275bdaacdc445f79f63e5440eb3bd8
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdistro-modules/python3-rosdistro-modules_0.7.4.orig.tar.gz' python3-rosdistro-modules_0.7.4.orig.tar.gz 41869 SHA512:286d4c75365ef41a46263e29bafca8881cf16f17f993972c607c54608ff19397197b9c50a84f5fcf7ce9632ce9c5442f0e0db29db8bad16fbb8ef76b40c62d04
+```
+
+### `dpkg` source package: `python3-rosdistro=0.7.4-100`
+
+Binary Packages:
+
+- `python3-rosdistro=0.7.4-100`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python3-rosdistro=0.7.4-100
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdistro/python3-rosdistro_0.7.4-100.debian.tar.xz' python3-rosdistro_0.7.4-100.debian.tar.xz 1868 SHA512:abdade9d51fc421ca9659d81a41fd6d588fcb1ab5a70fbf58d2070249e9251bc36a3d82fd2b539d3c9517fdc743716a22c8e4ff6818166a6a6e21d882461e3fb
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdistro/python3-rosdistro_0.7.4-100.dsc' python3-rosdistro_0.7.4-100.dsc 956 SHA512:6d6c834a516d16fb4a5e49e5e2c7fc95d47dec2a699c17216a1dc50f08a94c0875cc02fca9617dfc110c26b4aece011617b5e34e0c2eac192ea818beb583ce4b
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdistro/python3-rosdistro_0.7.4.orig.tar.gz' python3-rosdistro_0.7.4.orig.tar.gz 10101 SHA512:eb00a7c73784ce11c30edb6fc47fa3b80e690ff2bf51257433530e037f2777a2685bf23d8af455b2d3c203ac55a4113ef7fcf2de1e1ae8374718f5b247a8688e
 ```
 
 ### `dpkg` source package: `python3-rospkg-modules=1.1.9-1`
@@ -3521,11 +4110,11 @@ $ apt-get source -qq --print-uris python3-stdlib-extensions=3.6.7-1~18.04
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.6.7-1~18.04.debian.tar.xz' python3-stdlib-extensions_3.6.7-1~18.04.debian.tar.xz 15924 SHA256:ba6c0cd9a5f92042032b30ce10a887f08a15db0029909bfc430ab21cd56f5646
 ```
 
-### `dpkg` source package: `python3-vcstools=0.1.40-1`
+### `dpkg` source package: `python3-vcstool=0.1.40-1`
 
 Binary Packages:
 
-- `python3-vcstools=0.1.40-1`
+- `python3-vcstool=0.1.40-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3534,29 +4123,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3-vcstools=0.1.40-1
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-vcstools/python3-vcstools_0.1.40-1.dsc' python3-vcstools_0.1.40-1.dsc 917 SHA256:61d45b8576faa07c1e4609d8928ef98920783cca75cc9c4e81c0c100363255d7
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-vcstools/python3-vcstools_0.1.40.orig.tar.gz' python3-vcstools_0.1.40.orig.tar.gz 51281 SHA256:9f83dd5653362b46ba945c9b32e46887c8bbd1dd9477b92840e089773137599c
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-vcstools/python3-vcstools_0.1.40-1.debian.tar.gz' python3-vcstools_0.1.40-1.debian.tar.gz 1112 SHA256:17ccc648d06f35b796440d447079ec43f5f503a47c0c861d4e69d485ae4e1609
-```
-
-### `dpkg` source package: `python3-wstool=0.1.17-1`
-
-Binary Packages:
-
-- `python3-wstool=0.1.17-1`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris python3-wstool=0.1.17-1
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-wstool/python3-wstool_0.1.17-1.dsc' python3-wstool_0.1.17-1.dsc 875 SHA256:abc441162140650beb451ebdd007f969683d05a2780b7dea2d734c00cdd2af1c
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-wstool/python3-wstool_0.1.17.orig.tar.gz' python3-wstool_0.1.17.orig.tar.gz 53321 SHA256:fdb8c8c43fe8b78b87a225758f6a9c67ed09746fa0dd9547aabaa59f578d731e
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-wstool/python3-wstool_0.1.17-1.debian.tar.gz' python3-wstool_0.1.17-1.debian.tar.gz 1086 SHA256:5819bee4ca39418434485ef421f7dc5338a279983ddb21f3407335ea22ea213f
+$ apt-get source -qq --print-uris python3-vcstool=0.1.40-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-vcstool/python3-vcstool_0.1.40-1.debian.tar.xz' python3-vcstool_0.1.40-1.debian.tar.xz 1036 SHA512:4dda75419efadd3351eca17ae6ef70f299f8bee77d60521a77cee2cd01809ad48be1e9dccc8f6061d18e36fed67729cfdfcdf6e61c1a31e265e2f8c1f3526414
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-vcstool/python3-vcstool_0.1.40-1.dsc' python3-vcstool_0.1.40-1.dsc 946 SHA512:f6de5b5d01e96e043d4406b66e31e2061ba9b6fe7547d72fee7dc68258e97217346d64535c8b8d3c8cb0d69a8fabf9afa628530178583710713c7d6c25819ada
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-vcstool/python3-vcstool_0.1.40.orig.tar.gz' python3-vcstool_0.1.40.orig.tar.gz 24589 SHA512:ff80ceb811cdc8c4db11593b38c272d0e9b1d505f21741096f379c50b6e2517798e65ac520fdb0d26a11424a51fb5c8cfb9ef22c74c9ad89a85d6524f067cbda
 ```
 
 ### `dpkg` source package: `python3.6=3.6.7-1~18.04`
@@ -5587,26 +6157,6 @@ $ apt-get source -qq --print-uris sensible-utils=0.0.12
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.12.tar.xz' sensible-utils_0.0.12.tar.xz 62152 SHA256:99ba2ebf8c57447c69d426b99b84ff9dc817be0bc4988ec6890a14558c529e2e
 ```
 
-### `dpkg` source package: `serf=1.3.9-6`
-
-Binary Packages:
-
-- `libserf-1-1:amd64=1.3.9-6`
-
-Licenses: (parsed from: `/usr/share/doc/libserf-1-1/copyright`)
-
-- `Apache`
-- `Apache-2.0`
-- `Zlib`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/serf/1.3.9-6/
-
-
 ### `dpkg` source package: `sgml-base=1.29`
 
 Binary Packages:
@@ -5706,28 +6256,6 @@ $ apt-get source -qq --print-uris sqlite3=3.22.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0.orig-www.tar.xz' sqlite3_3.22.0.orig-www.tar.xz 3564688 SHA256:a61a14d6f457bb31ca32f4844398140050597fe4403dc0ee19576111f407e231
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0.orig.tar.xz' sqlite3_3.22.0.orig.tar.xz 6019648 SHA256:f973ba63b5a1ea1d72e80c585bfb945e71d3f8b74fbecccdf345a84f8c91e5d1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0-1.debian.tar.xz' sqlite3_3.22.0-1.debian.tar.xz 17312 SHA256:7fcce88ce9c8fe517fb9fc5b9d67daf14e48da678496fede4b27cbd3ddcbd453
-```
-
-### `dpkg` source package: `subversion=1.9.7-4ubuntu1`
-
-Binary Packages:
-
-- `libsvn1:amd64=1.9.7-4ubuntu1`
-- `subversion=1.9.7-4ubuntu1`
-
-Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subversion/copyright`)
-
-- `Apache-2.0`
-- `GPL-2`
-- `GPL-3`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris subversion=1.9.7-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.9.7-4ubuntu1.dsc' subversion_1.9.7-4ubuntu1.dsc 3118 SHA256:13e18929d55c09986a758d3245ff246996d7f75f9d6f7313c394ba4d0a73b5ed
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.9.7.orig.tar.gz' subversion_1.9.7.orig.tar.gz 10643686 SHA256:c72a209c883e20245f14c4e644803f50ae83ae24652e385ff5e82300a0d06c3c
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.9.7-4ubuntu1.debian.tar.xz' subversion_1.9.7-4ubuntu1.debian.tar.xz 2270568 SHA256:67ea7ddc37e697340eaa9f8fea08980ba01b529f3ab6487eeb8726bc9ae77f29
 ```
 
 ### `dpkg` source package: `systemd=237-3ubuntu10.21`
@@ -5872,24 +6400,6 @@ Source:
 $ apt-get source -qq --print-uris ubuntu-keyring=2018.09.18.1~18.04.0
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2018.09.18.1~18.04.0.dsc' ubuntu-keyring_2018.09.18.1~18.04.0.dsc 1503 SHA256:1c9a599b6b3c98fdc920756c8031678d2556b6267eb55f057d0369cfc64e0263
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2018.09.18.1~18.04.0.tar.gz' ubuntu-keyring_2018.09.18.1~18.04.0.tar.gz 34238 SHA256:7095b786c02816bb6933b3a73ed6c9e302542e8fc1edb8346f7ddab49e95b3bd
-```
-
-### `dpkg` source package: `ucf=3.0038`
-
-Binary Packages:
-
-- `ucf=3.0038`
-
-Licenses: (parsed from: `/usr/share/doc/ucf/copyright`)
-
-- `GPL-2`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris ucf=3.0038
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ucf/ucf_3.0038.dsc' ucf_3.0038.dsc 1445 SHA256:5fab6d0af664eac92b3404c6bb62d0a3ceb88cd21a1462b9a262d1292c77328f
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ucf/ucf_3.0038.tar.xz' ucf_3.0038.tar.xz 65416 SHA256:262ccd52637c869ac851838a176d76e90db8d3f12373e3b62eb89e217f93fe7e
 ```
 
 ### `dpkg` source package: `uncrustify=0.66.1+dfsg1-1`
