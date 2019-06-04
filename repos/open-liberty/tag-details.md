@@ -2,43 +2,412 @@
 
 # Tags of `open-liberty`
 
+-	[`open-liberty:18.0.0.4-javaee7`](#open-liberty18004-javaee7)
+-	[`open-liberty:18.0.0.4-javaee7-java8-ibm`](#open-liberty18004-javaee7-java8-ibm)
+-	[`open-liberty:18.0.0.4-javaee7-java8-ibmsfj`](#open-liberty18004-javaee7-java8-ibmsfj)
+-	[`open-liberty:18.0.0.4-javaee7-java8-openj9`](#open-liberty18004-javaee7-java8-openj9)
+-	[`open-liberty:18.0.0.4-javaee8`](#open-liberty18004-javaee8)
+-	[`open-liberty:18.0.0.4-javaee8-java8-ibm`](#open-liberty18004-javaee8-java8-ibm)
+-	[`open-liberty:18.0.0.4-javaee8-java8-ibmsfj`](#open-liberty18004-javaee8-java8-ibmsfj)
+-	[`open-liberty:18.0.0.4-javaee8-java8-openj9`](#open-liberty18004-javaee8-java8-openj9)
+-	[`open-liberty:18.0.0.4-kernel`](#open-liberty18004-kernel)
+-	[`open-liberty:18.0.0.4-kernel-java8-ibm`](#open-liberty18004-kernel-java8-ibm)
+-	[`open-liberty:18.0.0.4-kernel-java8-ibmsfj`](#open-liberty18004-kernel-java8-ibmsfj)
+-	[`open-liberty:18.0.0.4-kernel-java8-openj9`](#open-liberty18004-kernel-java8-openj9)
+-	[`open-liberty:18.0.0.4-microProfile1`](#open-liberty18004-microprofile1)
+-	[`open-liberty:18.0.0.4-microProfile1-java8-ibm`](#open-liberty18004-microprofile1-java8-ibm)
+-	[`open-liberty:18.0.0.4-microProfile1-java8-ibmsfj`](#open-liberty18004-microprofile1-java8-ibmsfj)
+-	[`open-liberty:18.0.0.4-microProfile1-java8-openj9`](#open-liberty18004-microprofile1-java8-openj9)
+-	[`open-liberty:18.0.0.4-microProfile2`](#open-liberty18004-microprofile2)
+-	[`open-liberty:18.0.0.4-microProfile2-java8-ibm`](#open-liberty18004-microprofile2-java8-ibm)
+-	[`open-liberty:18.0.0.4-microProfile2-java8-ibmsfj`](#open-liberty18004-microprofile2-java8-ibmsfj)
+-	[`open-liberty:18.0.0.4-microProfile2-java8-openj9`](#open-liberty18004-microprofile2-java8-openj9)
+-	[`open-liberty:18.0.0.4-springBoot1`](#open-liberty18004-springboot1)
+-	[`open-liberty:18.0.0.4-springBoot1-java8-ibm`](#open-liberty18004-springboot1-java8-ibm)
+-	[`open-liberty:18.0.0.4-springBoot1-java8-ibmsfj`](#open-liberty18004-springboot1-java8-ibmsfj)
+-	[`open-liberty:18.0.0.4-springBoot1-java8-openj9`](#open-liberty18004-springboot1-java8-openj9)
+-	[`open-liberty:18.0.0.4-springBoot2`](#open-liberty18004-springboot2)
+-	[`open-liberty:18.0.0.4-springBoot2-java8-ibm`](#open-liberty18004-springboot2-java8-ibm)
+-	[`open-liberty:18.0.0.4-springBoot2-java8-ibmsfj`](#open-liberty18004-springboot2-java8-ibmsfj)
+-	[`open-liberty:18.0.0.4-springBoot2-java8-openj9`](#open-liberty18004-springboot2-java8-openj9)
+-	[`open-liberty:18.0.0.4-webProfile7`](#open-liberty18004-webprofile7)
+-	[`open-liberty:18.0.0.4-webProfile7-java8-ibm`](#open-liberty18004-webprofile7-java8-ibm)
+-	[`open-liberty:18.0.0.4-webProfile7-java8-ibmsfj`](#open-liberty18004-webprofile7-java8-ibmsfj)
+-	[`open-liberty:18.0.0.4-webProfile7-java8-openj9`](#open-liberty18004-webprofile7-java8-openj9)
+-	[`open-liberty:18.0.0.4-webProfile8`](#open-liberty18004-webprofile8)
+-	[`open-liberty:18.0.0.4-webProfile8-java8-ibm`](#open-liberty18004-webprofile8-java8-ibm)
+-	[`open-liberty:18.0.0.4-webProfile8-java8-ibmsfj`](#open-liberty18004-webprofile8-java8-ibmsfj)
+-	[`open-liberty:18.0.0.4-webProfile8-java8-openj9`](#open-liberty18004-webprofile8-java8-openj9)
+-	[`open-liberty:19.0.0.3-javaee7`](#open-liberty19003-javaee7)
+-	[`open-liberty:19.0.0.3-javaee7-java8-ibm`](#open-liberty19003-javaee7-java8-ibm)
+-	[`open-liberty:19.0.0.3-javaee7-java8-ibmsfj`](#open-liberty19003-javaee7-java8-ibmsfj)
+-	[`open-liberty:19.0.0.3-javaee7-java8-openj9`](#open-liberty19003-javaee7-java8-openj9)
+-	[`open-liberty:19.0.0.3-javaee8`](#open-liberty19003-javaee8)
+-	[`open-liberty:19.0.0.3-javaee8-java8-ibm`](#open-liberty19003-javaee8-java8-ibm)
+-	[`open-liberty:19.0.0.3-javaee8-java8-ibmsfj`](#open-liberty19003-javaee8-java8-ibmsfj)
+-	[`open-liberty:19.0.0.3-javaee8-java8-openj9`](#open-liberty19003-javaee8-java8-openj9)
+-	[`open-liberty:19.0.0.3-kernel`](#open-liberty19003-kernel)
+-	[`open-liberty:19.0.0.3-kernel-java8-ibm`](#open-liberty19003-kernel-java8-ibm)
+-	[`open-liberty:19.0.0.3-kernel-java8-ibmsfj`](#open-liberty19003-kernel-java8-ibmsfj)
+-	[`open-liberty:19.0.0.3-kernel-java8-openj9`](#open-liberty19003-kernel-java8-openj9)
+-	[`open-liberty:19.0.0.3-microProfile1`](#open-liberty19003-microprofile1)
+-	[`open-liberty:19.0.0.3-microProfile1-java8-ibm`](#open-liberty19003-microprofile1-java8-ibm)
+-	[`open-liberty:19.0.0.3-microProfile1-java8-ibmsfj`](#open-liberty19003-microprofile1-java8-ibmsfj)
+-	[`open-liberty:19.0.0.3-microProfile1-java8-openj9`](#open-liberty19003-microprofile1-java8-openj9)
+-	[`open-liberty:19.0.0.3-microProfile2`](#open-liberty19003-microprofile2)
+-	[`open-liberty:19.0.0.3-microProfile2-java8-ibm`](#open-liberty19003-microprofile2-java8-ibm)
+-	[`open-liberty:19.0.0.3-microProfile2-java8-ibmsfj`](#open-liberty19003-microprofile2-java8-ibmsfj)
+-	[`open-liberty:19.0.0.3-microProfile2-java8-openj9`](#open-liberty19003-microprofile2-java8-openj9)
+-	[`open-liberty:19.0.0.3-springBoot1`](#open-liberty19003-springboot1)
+-	[`open-liberty:19.0.0.3-springBoot1-java8-ibm`](#open-liberty19003-springboot1-java8-ibm)
+-	[`open-liberty:19.0.0.3-springBoot1-java8-ibmsfj`](#open-liberty19003-springboot1-java8-ibmsfj)
+-	[`open-liberty:19.0.0.3-springBoot1-java8-openj9`](#open-liberty19003-springboot1-java8-openj9)
+-	[`open-liberty:19.0.0.3-springBoot2`](#open-liberty19003-springboot2)
+-	[`open-liberty:19.0.0.3-springBoot2-java8-ibm`](#open-liberty19003-springboot2-java8-ibm)
+-	[`open-liberty:19.0.0.3-springBoot2-java8-ibmsfj`](#open-liberty19003-springboot2-java8-ibmsfj)
+-	[`open-liberty:19.0.0.3-springBoot2-java8-openj9`](#open-liberty19003-springboot2-java8-openj9)
+-	[`open-liberty:19.0.0.3-webProfile7`](#open-liberty19003-webprofile7)
+-	[`open-liberty:19.0.0.3-webProfile7-java8-ibm`](#open-liberty19003-webprofile7-java8-ibm)
+-	[`open-liberty:19.0.0.3-webProfile7-java8-ibmsfj`](#open-liberty19003-webprofile7-java8-ibmsfj)
+-	[`open-liberty:19.0.0.3-webProfile7-java8-openj9`](#open-liberty19003-webprofile7-java8-openj9)
+-	[`open-liberty:19.0.0.3-webProfile8`](#open-liberty19003-webprofile8)
+-	[`open-liberty:19.0.0.3-webProfile8-java8-ibm`](#open-liberty19003-webprofile8-java8-ibm)
+-	[`open-liberty:19.0.0.3-webProfile8-java8-ibmsfj`](#open-liberty19003-webprofile8-java8-ibmsfj)
+-	[`open-liberty:19.0.0.3-webProfile8-java8-openj9`](#open-liberty19003-webprofile8-java8-openj9)
 -	[`open-liberty:javaee7`](#open-libertyjavaee7)
 -	[`open-liberty:javaee7-java11`](#open-libertyjavaee7-java11)
 -	[`open-liberty:javaee7-java8-ibm`](#open-libertyjavaee7-java8-ibm)
 -	[`open-liberty:javaee7-java8-ibmsfj`](#open-libertyjavaee7-java8-ibmsfj)
+-	[`open-liberty:javaee7-java8-openj9`](#open-libertyjavaee7-java8-openj9)
 -	[`open-liberty:javaee8`](#open-libertyjavaee8)
 -	[`open-liberty:javaee8-java11`](#open-libertyjavaee8-java11)
 -	[`open-liberty:javaee8-java8-ibm`](#open-libertyjavaee8-java8-ibm)
 -	[`open-liberty:javaee8-java8-ibmsfj`](#open-libertyjavaee8-java8-ibmsfj)
+-	[`open-liberty:javaee8-java8-openj9`](#open-libertyjavaee8-java8-openj9)
 -	[`open-liberty:kernel`](#open-libertykernel)
 -	[`open-liberty:kernel-java11`](#open-libertykernel-java11)
 -	[`open-liberty:kernel-java8-ibm`](#open-libertykernel-java8-ibm)
 -	[`open-liberty:kernel-java8-ibmsfj`](#open-libertykernel-java8-ibmsfj)
+-	[`open-liberty:kernel-java8-openj9`](#open-libertykernel-java8-openj9)
 -	[`open-liberty:latest`](#open-libertylatest)
 -	[`open-liberty:microProfile1`](#open-libertymicroprofile1)
 -	[`open-liberty:microProfile1-java11`](#open-libertymicroprofile1-java11)
 -	[`open-liberty:microProfile1-java8-ibm`](#open-libertymicroprofile1-java8-ibm)
 -	[`open-liberty:microProfile1-java8-ibmsfj`](#open-libertymicroprofile1-java8-ibmsfj)
+-	[`open-liberty:microProfile1-java8-openj9`](#open-libertymicroprofile1-java8-openj9)
 -	[`open-liberty:microProfile2`](#open-libertymicroprofile2)
 -	[`open-liberty:microProfile2-java11`](#open-libertymicroprofile2-java11)
 -	[`open-liberty:microProfile2-java8-ibm`](#open-libertymicroprofile2-java8-ibm)
 -	[`open-liberty:microProfile2-java8-ibmsfj`](#open-libertymicroprofile2-java8-ibmsfj)
+-	[`open-liberty:microProfile2-java8-openj9`](#open-libertymicroprofile2-java8-openj9)
 -	[`open-liberty:springBoot1`](#open-libertyspringboot1)
 -	[`open-liberty:springBoot1-java11`](#open-libertyspringboot1-java11)
 -	[`open-liberty:springBoot1-java8-ibm`](#open-libertyspringboot1-java8-ibm)
 -	[`open-liberty:springBoot1-java8-ibmsfj`](#open-libertyspringboot1-java8-ibmsfj)
+-	[`open-liberty:springBoot1-java8-openj9`](#open-libertyspringboot1-java8-openj9)
 -	[`open-liberty:springBoot2`](#open-libertyspringboot2)
 -	[`open-liberty:springBoot2-java11`](#open-libertyspringboot2-java11)
 -	[`open-liberty:springBoot2-java8-ibm`](#open-libertyspringboot2-java8-ibm)
 -	[`open-liberty:springBoot2-java8-ibmsfj`](#open-libertyspringboot2-java8-ibmsfj)
+-	[`open-liberty:springBoot2-java8-openj9`](#open-libertyspringboot2-java8-openj9)
 -	[`open-liberty:webProfile7`](#open-libertywebprofile7)
 -	[`open-liberty:webProfile7-java11`](#open-libertywebprofile7-java11)
 -	[`open-liberty:webProfile7-java8-ibm`](#open-libertywebprofile7-java8-ibm)
 -	[`open-liberty:webProfile7-java8-ibmsfj`](#open-libertywebprofile7-java8-ibmsfj)
+-	[`open-liberty:webProfile7-java8-openj9`](#open-libertywebprofile7-java8-openj9)
 -	[`open-liberty:webProfile8`](#open-libertywebprofile8)
 -	[`open-liberty:webProfile8-java11`](#open-libertywebprofile8-java11)
 -	[`open-liberty:webProfile8-java8-ibm`](#open-libertywebprofile8-java8-ibm)
 -	[`open-liberty:webProfile8-java8-ibmsfj`](#open-libertywebprofile8-java8-ibmsfj)
+-	[`open-liberty:webProfile8-java8-openj9`](#open-libertywebprofile8-java8-openj9)
+
+## `open-liberty:18.0.0.4-javaee7`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-javaee7-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-javaee7-java8-ibmsfj`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-javaee7-java8-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-javaee8`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-javaee8-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-javaee8-java8-ibmsfj`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-javaee8-java8-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-kernel`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-kernel-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-kernel-java8-ibmsfj`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-kernel-java8-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-microProfile1`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-microProfile1-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-microProfile1-java8-ibmsfj`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-microProfile1-java8-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-microProfile2`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-microProfile2-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-microProfile2-java8-ibmsfj`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-microProfile2-java8-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-springBoot1`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-springBoot1-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-springBoot1-java8-ibmsfj`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-springBoot1-java8-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-springBoot2`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-springBoot2-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-springBoot2-java8-ibmsfj`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-springBoot2-java8-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-webProfile7`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-webProfile7-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-webProfile7-java8-ibmsfj`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-webProfile7-java8-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-webProfile8`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-webProfile8-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-webProfile8-java8-ibmsfj`
+
+**does not exist** (yet?)
+
+## `open-liberty:18.0.0.4-webProfile8-java8-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-javaee7`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-javaee7-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-javaee7-java8-ibmsfj`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-javaee7-java8-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-javaee8`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-javaee8-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-javaee8-java8-ibmsfj`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-javaee8-java8-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-kernel`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-kernel-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-kernel-java8-ibmsfj`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-kernel-java8-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-microProfile1`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-microProfile1-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-microProfile1-java8-ibmsfj`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-microProfile1-java8-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-microProfile2`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-microProfile2-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-microProfile2-java8-ibmsfj`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-microProfile2-java8-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-springBoot1`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-springBoot1-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-springBoot1-java8-ibmsfj`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-springBoot1-java8-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-springBoot2`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-springBoot2-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-springBoot2-java8-ibmsfj`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-springBoot2-java8-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-webProfile7`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-webProfile7-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-webProfile7-java8-ibmsfj`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-webProfile7-java8-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-webProfile8`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-webProfile8-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-webProfile8-java8-ibmsfj`
+
+**does not exist** (yet?)
+
+## `open-liberty:19.0.0.3-webProfile8-java8-openj9`
+
+**does not exist** (yet?)
 
 ## `open-liberty:javaee7`
 
@@ -1530,6 +1899,10 @@ RUN cp /opt/ol/wlp/templates/servers/javaee7/server.xml /config/server.xml
 		Size: 902.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `open-liberty:javaee7-java8-openj9`
+
+**does not exist** (yet?)
+
 ## `open-liberty:javaee8`
 
 ```console
@@ -2946,6 +3319,10 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Size: 3.4 KB (3425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `open-liberty:javaee8-java8-openj9`
+
+**does not exist** (yet?)
+
 ## `open-liberty:kernel`
 
 ```console
@@ -4339,6 +4716,10 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Last Modified: Wed, 29 May 2019 16:46:03 GMT  
 		Size: 3.2 KB (3152 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `open-liberty:kernel-java8-openj9`
+
+**does not exist** (yet?)
 
 ## `open-liberty:latest`
 
@@ -6275,6 +6656,10 @@ RUN cp /opt/ol/wlp/templates/servers/microProfile1/server.xml /config/server.xml
 		Size: 548.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `open-liberty:microProfile1-java8-openj9`
+
+**does not exist** (yet?)
+
 ## `open-liberty:microProfile2`
 
 ```console
@@ -7740,6 +8125,10 @@ RUN cp /opt/ol/wlp/templates/servers/microProfile2/server.xml /config/server.xml
 		Last Modified: Wed, 29 May 2019 16:47:51 GMT  
 		Size: 549.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `open-liberty:microProfile2-java8-openj9`
+
+**does not exist** (yet?)
 
 ## `open-liberty:springBoot1`
 
@@ -9207,6 +9596,10 @@ RUN cp /opt/ol/wlp/templates/servers/springBoot1/server.xml /config/server.xml
 		Size: 538.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `open-liberty:springBoot1-java8-openj9`
+
+**does not exist** (yet?)
+
 ## `open-liberty:springBoot2`
 
 ```console
@@ -10672,6 +11065,10 @@ RUN cp /opt/ol/wlp/templates/servers/springBoot2/server.xml /config/server.xml
 		Last Modified: Wed, 29 May 2019 16:47:58 GMT  
 		Size: 537.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `open-liberty:springBoot2-java8-openj9`
+
+**does not exist** (yet?)
 
 ## `open-liberty:webProfile7`
 
@@ -12139,6 +12536,10 @@ RUN cp /opt/ol/wlp/templates/servers/webProfile7/server.xml /config/server.xml
 		Size: 547.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `open-liberty:webProfile7-java8-openj9`
+
+**does not exist** (yet?)
+
 ## `open-liberty:webProfile8`
 
 ```console
@@ -13554,3 +13955,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Last Modified: Wed, 29 May 2019 16:46:40 GMT  
 		Size: 3.1 KB (3062 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `open-liberty:webProfile8-java8-openj9`
+
+**does not exist** (yet?)
