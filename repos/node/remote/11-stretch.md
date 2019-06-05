@@ -1,7 +1,7 @@
 ## `node:11-stretch`
 
 ```console
-$ docker pull node@sha256:b70907c664ca253e9672e438f01ab95e5f188af6efd9ad5baeb7f1b084992866
+$ docker pull node@sha256:7a8a6421b44d7ab465078b3608bcf1a8ac9b9c69472d9e308595ce50152851a3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15,14 +15,15 @@ $ docker pull node@sha256:b70907c664ca253e9672e438f01ab95e5f188af6efd9ad5baeb7f1
 ### `node:11-stretch` - linux; amd64
 
 ```console
-$ docker pull node@sha256:0eed99d427fe5568d6dacecac1b437fb5b37345fd62cdacf1bead63d828a43b8
+$ docker pull node@sha256:80acf6a8adc8c2c2c8f0c9beccd1abb7b755773f15f55f2cbf0e40e099d5c80f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **347.9 MB (347858557 bytes)**  
+-	Total Size: **347.9 MB (347858852 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:318a716852239f348d63e5c9abea26d37a5bcf0182fe705f7b9c59937ffe808a`
+-	Image ID: `sha256:58d70293b90018444a96aaa31ec0192b1e40f243effa266bdc231e55d879b777`
+-	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
@@ -48,7 +49,11 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}"
 ENV YARN_VERSION=1.15.2
 # Wed, 08 May 2019 02:19:21 GMT
 RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz
-# Wed, 08 May 2019 02:19:21 GMT
+# Tue, 04 Jun 2019 23:34:11 GMT
+COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ 
+# Tue, 04 Jun 2019 23:34:11 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 04 Jun 2019 23:34:11 GMT
 CMD ["node"]
 ```
 
@@ -84,6 +89,10 @@ CMD ["node"]
 	-	`sha256:0d05c41cf454d02741ebeeef34bf7338068e0024510d557e7f6fdd12bdc30a44`  
 		Last Modified: Wed, 08 May 2019 02:27:39 GMT  
 		Size: 1.3 MB (1324744 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0216687410835dddff6a35ad6fa7d94c9d5287946a4d51381e9ce76ef08046c1`  
+		Last Modified: Tue, 04 Jun 2019 23:38:56 GMT  
+		Size: 295.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `node:11-stretch` - linux; arm variant v7
@@ -255,14 +264,15 @@ CMD ["node"]
 ### `node:11-stretch` - linux; ppc64le
 
 ```console
-$ docker pull node@sha256:8d58f3d780c609ab28a606f4e3c0110f40fb92815bf3c26f2fbaeba910db5327
+$ docker pull node@sha256:91b77d8e2be89a4a214564f2a59ef04e027d10beeddf761dfcc6bb3f50cda10e
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **343.0 MB (343049606 bytes)**  
+-	Total Size: **343.0 MB (343049902 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0278bffb59c2d4a4ddfa3cf351f36401dc23c76e53b0e13a7c47caba5a314713`
+-	Image ID: `sha256:63f09d330f3d534c6fc17ac20c098e058655b45faf3afd797d27e32a45120d3e`
+-	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
@@ -288,7 +298,11 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}"
 ENV YARN_VERSION=1.15.2
 # Thu, 30 May 2019 19:56:24 GMT
 RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz
-# Thu, 30 May 2019 19:56:26 GMT
+# Tue, 04 Jun 2019 22:56:11 GMT
+COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ 
+# Tue, 04 Jun 2019 22:56:15 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 04 Jun 2019 22:56:19 GMT
 CMD ["node"]
 ```
 
@@ -324,6 +338,10 @@ CMD ["node"]
 	-	`sha256:cb797d016f808af8f16c6a11887e8a4c62dd72121ed930da9c1a1d1c517028fc`  
 		Last Modified: Thu, 30 May 2019 20:24:45 GMT  
 		Size: 1.3 MB (1324803 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:244ebe1da89f9ac5773050721c8b055053867dbc19d036ae604cac77d67da0d0`  
+		Last Modified: Tue, 04 Jun 2019 23:02:36 GMT  
+		Size: 296.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `node:11-stretch` - linux; s390x
