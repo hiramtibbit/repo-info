@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6d5a80517f9bba3aae706b763492b7f9d96d60e67338aff45e37e91984ed7d04`
-- Created: `2019-05-11T04:53:12.794382361Z`
-- Virtual Size: ~ 131.68 Mb  
+- Image ID: `sha256:91d04348319ca2b0cfa9be89559c0f3cc9e3ca8604aa38796bd014ec540e67ed`
+- Created: `2019-06-01T05:24:56.155722013Z`
+- Virtual Size: ~ 131.69 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.18`
-  - `PHP_URL=https://www.php.net/get/php-7.2.18.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://www.php.net/get/php-7.2.18.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=9970dbb3ab1298c9e6aac54bebfa841c8ad14b18eead65594a68fa841364cb8d`
+  - `PHP_VERSION=7.2.19`
+  - `PHP_URL=https://www.php.net/get/php-7.2.19.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://www.php.net/get/php-7.2.19.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=4ffa2404a88d60e993a9fe69f829ebec3eb1e006de41b6048ce5e91bbeaa9282`
   - `PHP_MD5=`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
   - `JOOMLA_VERSION=3.9.6`
@@ -374,16 +374,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-11.2-r0 description:
+libpq-11.3-r0 description:
 PostgreSQL libraries
 
-libpq-11.2-r0 webpage:
+libpq-11.3-r0 webpage:
 https://www.postgresql.org/
 
-libpq-11.2-r0 installed size:
+libpq-11.3-r0 installed size:
 315392
 
-libpq-11.2-r0 license:
+libpq-11.3-r0 license:
 PostgreSQL
 
 ```
