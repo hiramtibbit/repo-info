@@ -86,13 +86,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.8.0
-'http://http.debian.net/debian/pool/main/a/apt/apt_1.8.0.dsc' apt_1.8.0.dsc 2738 SHA256:e89f17d37395b03e576260709b808702a7172255688e5b8d5d2640e3839585b5
-'http://http.debian.net/debian/pool/main/a/apt/apt_1.8.0.tar.xz' apt_1.8.0.tar.xz 2171520 SHA256:9c56ae7ad58e21aa692a4118a676e2c5f366168a2275e6be104e4ed3cb00086b
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/1.8.0/
+
 
 ### `dpkg` source package: `attr=1:2.4.48-4`
 
@@ -480,14 +480,13 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.64.0-2
-'http://http.debian.net/debian/pool/main/c/curl/curl_7.64.0-2.dsc' curl_7.64.0-2.dsc 2687 SHA256:6997fa959166f0fdf5545313d307b453970c271df3d135accbbe08773fa3cbc2
-'http://http.debian.net/debian/pool/main/c/curl/curl_7.64.0.orig.tar.gz' curl_7.64.0.orig.tar.gz 4032645 SHA256:cb90d2eb74d4e358c1ed1489f8e3af96b50ea4374ad71f143fa4595e998d81b5
-'http://http.debian.net/debian/pool/main/c/curl/curl_7.64.0-2.debian.tar.xz' curl_7.64.0-2.debian.tar.xz 29696 SHA256:6173fb436e8bcea616e9bfc29eaddb25498b3a95cd5451d4cef83d957217fabe
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/curl/7.64.0-2/
+
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-1`
 
@@ -775,10 +774,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris elfutils=0.176-1
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.176-1.dsc' elfutils_0.176-1.dsc 2568 SHA256:04188a6d3e83332d462a6b8f5add8fc5f37e4f95cf5d602ad74b574b6f61fc4f
+'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.176-1.1.dsc' elfutils_0.176-1.1.dsc 2584 SHA256:6d9fa4741e921f58a3e291def1f92a87bed888db15e73d6e29d46fc48b5f615a
 'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.176.orig.tar.bz2' elfutils_0.176.orig.tar.bz2 8646075 SHA256:eb5747c371b0af0f71e86215a5ebb88728533c3a104a43d4231963f308cd1023
 'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.176.orig.tar.bz2.asc' elfutils_0.176.orig.tar.bz2.asc 455 SHA256:51474b579b25fc799de0777e241c83605427d2903f8d28524ef6af42f75931fd
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.176-1.debian.tar.xz' elfutils_0.176-1.debian.tar.xz 31492 SHA256:f19d4982d9c98be2effac6846db55b67d99f152d52babb83592355e497f7dc71
+'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.176-1.1.debian.tar.xz' elfutils_0.176-1.1.debian.tar.xz 31644 SHA256:06d7057e744d3a6138cf43d30237e2b327b6bfe3041a9a4b210414429c1267f1
 ```
 
 Other potentially useful URLs:
@@ -1233,21 +1232,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.6.6-2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.6-2.dsc' gnutls28_3.6.6-2.dsc 3322 SHA256:1645cf20c290fac811d0d3eaad7f90bff53510f4b338825ae355955757f85bc8
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.6.orig.tar.xz' gnutls28_3.6.6.orig.tar.xz 8257612 SHA256:bb9acab8af2ac430edf45faaaa4ed2c51f86e57cb57689be6701aceef4732ca7
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.6.orig.tar.xz.asc' gnutls28_3.6.6.orig.tar.xz.asc 534 SHA256:58b6c181e5a51b8021fb5177eed0dd2e867b638921cb0a20fb5972db6c50acc4
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.6-2.debian.tar.xz' gnutls28_3.6.6-2.debian.tar.xz 66604 SHA256:ea71f2911fa6d745888ffa48a158b1220f0687b3bb9ce161714c23c64d3e0035
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.6.6-2/
 
-- https://sources.debian.net/src/gnutls28/3.6.6-2/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.6.6-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.6.6-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.13-7`
 
@@ -2096,10 +2087,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libpng1.6=1.6.36-6
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.36-6.dsc' libpng1.6_1.6.36-6.dsc 2219 SHA256:54400844c4631a09ee96f3d3cd1907da7fd4ba053b5d66dc93d9c334d520bc16
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.36.orig.tar.xz' libpng1.6_1.6.36.orig.tar.xz 1012544 SHA256:eceb924c1fa6b79172fdfd008d335f0e59172a86a66481e09d4089df872aa319
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.36-6.debian.tar.xz' libpng1.6_1.6.36-6.debian.tar.xz 38376 SHA256:69751c1d45b319237144f536385a6cc05c8d852d83170d7f7f322474e04b94b0
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.36-6.dsc' libpng1.6_1.6.36-6.dsc 2219 SHA256:54400844c4631a09ee96f3d3cd1907da7fd4ba053b5d66dc93d9c334d520bc16
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.36.orig.tar.xz' libpng1.6_1.6.36.orig.tar.xz 1012544 SHA256:eceb924c1fa6b79172fdfd008d335f0e59172a86a66481e09d4089df872aa319
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.36-6.debian.tar.xz' libpng1.6_1.6.36-6.debian.tar.xz 38376 SHA256:69751c1d45b319237144f536385a6cc05c8d852d83170d7f7f322474e04b94b0
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libpng1.6/1.6.36-6/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.36-6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.36-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.20.2-2`
 
@@ -2975,14 +2972,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-nlme/copyright`)
 - `GPL`
 - `GPL `
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nlme=3.1.139-1
-'http://http.debian.net/debian/pool/main/n/nlme/nlme_3.1.139-1.dsc' nlme_3.1.139-1.dsc 1837 SHA256:099cf407bcd281f0ff5bcb166922856d44d924f61ec05fb27e539c2a3ca0b22d
-'http://http.debian.net/debian/pool/main/n/nlme/nlme_3.1.139.orig.tar.gz' nlme_3.1.139.orig.tar.gz 793473 SHA256:0460fc69d85122177e7ef01bad665d56bcaf63d31bdbfdbdfdcba2c082085739
-'http://http.debian.net/debian/pool/main/n/nlme/nlme_3.1.139-1.debian.tar.xz' nlme_3.1.139-1.debian.tar.xz 7004 SHA256:1f19309f581671dd13678ce7446684443d412848123a69534aa9da595b4a3837
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/nlme/3.1.139-1/
+
 
 ### `dpkg` source package: `openldap=2.4.47+dfsg-3`
 
@@ -3874,20 +3870,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris unzip=6.0-22
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-22.dsc' unzip_6.0-22.dsc 1344 SHA256:22cf3115ada5ad5e9c232d8bc39e4452a1891f75e64e95053f696e80938e94c7
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-22.debian.tar.xz' unzip_6.0-22.debian.tar.xz 18212 SHA256:f3c80c1e3917d59cb2fe72f0431159c919f2df7fc96f5b539c91cc96fc02ecfa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/unzip/6.0-22/
 
-- https://sources.debian.net/src/unzip/6.0-22/ (for browsing the source)
-- https://sources.debian.net/src/unzip/6.0-22/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/unzip/6.0-22/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.33.1-0.1`
 
