@@ -1,10 +1,10 @@
-# `postgres:9.6.13-alpine`
+# `postgres:12-beta1-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3a287cde9b3b861c0ac623408c122178eaed1560b3ce3a1ba645345f0e349c61`
-- Created: `2019-06-04T20:44:13.195256414Z`
-- Virtual Size: ~ 37.74 Mb  
+- Image ID: `sha256:cbdae8604e42f75ea999f1ae1c53bcaa76de6c00cbe7cb7004c34346e4602910`
+- Created: `2019-06-04T20:27:56.947115738Z`
+- Virtual Size: ~ 71.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=en_US.utf8`
-  - `PG_MAJOR=9.6`
-  - `PG_VERSION=9.6.13`
-  - `PG_SHA256=ecbed20056296a65b6a4f5526c477e3ae5cc284cb01a15507785ddb23831e9a4`
+  - `PG_MAJOR=12`
+  - `PG_VERSION=12beta1`
+  - `PG_SHA256=203e2d0151d75e3328a6b6b85eae88e50168ae27423b39787cea595365da9fad`
   - `PGDATA=/var/lib/postgresql/data`
 
 ## `apk` (`.apk`-based packages)
@@ -121,6 +121,23 @@ MPL-2.0 GPL-2.0-or-later
 
 ```
 
+### `apk` package: `icu-libs`
+
+```console
+icu-libs-62.1-r0 description:
+International Components for Unicode library (libraries)
+
+icu-libs-62.1-r0 webpage:
+http://www.icu-project.org/
+
+icu-libs-62.1-r0 installed size:
+31264768
+
+icu-libs-62.1-r0 license:
+MIT ICU Unicode-TOU
+
+```
+
 ### `apk` package: `libc-utils`
 
 ```console
@@ -172,6 +189,23 @@ BSD-3-Clause
 
 ```
 
+### `apk` package: `libgcc`
+
+```console
+libgcc-8.3.0-r0 description:
+GNU C compiler runtime libraries
+
+libgcc-8.3.0-r0 webpage:
+http://gcc.gnu.org
+
+libgcc-8.3.0-r0 installed size:
+90112
+
+libgcc-8.3.0-r0 license:
+GPL LGPL
+
+```
+
 ### `apk` package: `libgcrypt`
 
 ```console
@@ -220,6 +254,23 @@ libssl1.1-1.1.1b-r1 installed size:
 
 libssl1.1-1.1.1b-r1 license:
 OpenSSL
+
+```
+
+### `apk` package: `libstdc++`
+
+```console
+libstdc++-8.3.0-r0 description:
+GNU C++ standard runtime library
+
+libstdc++-8.3.0-r0 webpage:
+http://gcc.gnu.org
+
+libstdc++-8.3.0-r0 installed size:
+1392640
+
+libstdc++-8.3.0-r0 license:
+GPL LGPL
 
 ```
 
