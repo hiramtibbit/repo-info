@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fc74b885f4a994427bf4df8bfda572d51cdf133faf13a631bab1a568814ea853`
-- Created: `2019-05-03T21:23:02.291997355Z`
+- Image ID: `sha256:0cf68220b6ff7c406ba96b05ceaa81df6323851e4a67a74e79a7ff54367cef2e`
+- Created: `2019-06-05T22:25:34.296664151Z`
 - Virtual Size: ~ 170.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `build-date=20190501`
+  - `build-date=20190603`
   - `name=SL7 Base Image`
   - `vendor=Scientific Linux`
 
@@ -69,17 +69,17 @@ Enabling repos-source repository
 http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/bash-4.2.46-31.el7.src.rpm
 ```
 
-### `rpm` package: `bind-license-9.9.4-73.el7_6.noarch`
+### `rpm` package: `bind-license-9.9.4-74.el7_6.1.noarch`
 
 Licenses (from `rpm --query`): ISC
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls bind-license-9.9.4-73.el7_6.noarch
+$ yumdownloader --quiet --source --urls bind-license-9.9.4-74.el7_6.1.noarch
 Enabling sl-source repository
 Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/bind-9.9.4-73.el7_6.src.rpm
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/bind-9.9.4-74.el7_6.1.src.rpm
 ```
 
 ### `rpm` package: `binutils-2.27-34.base.el7.x86_64`
@@ -459,30 +459,30 @@ Enabling repos-source repository
 http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/glib2-2.56.1-2.el7.src.rpm
 ```
 
-### `rpm` package: `glibc-2.17-260.el7_6.4.x86_64`
+### `rpm` package: `glibc-2.17-260.el7_6.5.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls glibc-2.17-260.el7_6.4
+$ yumdownloader --quiet --source --urls glibc-2.17-260.el7_6.5
 Enabling sl-source repository
 Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/glibc-2.17-260.el7_6.4.src.rpm
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/glibc-2.17-260.el7_6.5.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.17-260.el7_6.4.x86_64`
+### `rpm` package: `glibc-common-2.17-260.el7_6.5.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls glibc-common-2.17-260.el7_6.4
+$ yumdownloader --quiet --source --urls glibc-common-2.17-260.el7_6.5
 Enabling sl-source repository
 Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/glibc-2.17-260.el7_6.4.src.rpm
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/glibc-2.17-260.el7_6.5.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.0.0-15.el7.x86_64`
