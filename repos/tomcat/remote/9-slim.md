@@ -1,7 +1,7 @@
 ## `tomcat:9-slim`
 
 ```console
-$ docker pull tomcat@sha256:698573d8557681f1bc2653b7347d600fd021495b488c6412309d699092b20222
+$ docker pull tomcat@sha256:2a678e9324d85c0bf871f346dfa332928b334154bdcf03882eee33100c4b8974
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -128,14 +128,14 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:9-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull tomcat@sha256:86d5424b95aa8baf6a6925c4e27fca534c666d0eb475e263a33118baea6c6eab
+$ docker pull tomcat@sha256:191dc129012fd22c1dc80ff1b76d74bc42d346cddc7d08ea69db07054e707426
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **240.0 MB (239994360 bytes)**  
+-	Total Size: **240.0 MB (239997816 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cacdfb6150c2f127d5a4966483038577718eec9d6285444d567b3509b2ebfbb0`
+-	Image ID: `sha256:a1d2e963712985b5b0f4f95c99b2c3f83810ae1dfaf6eaaa7d8abcc09d4774de`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -159,47 +159,47 @@ ENV JAVA_VERSION=11.0.3
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.3%2B7/OpenJDK11U-
 # Wed, 29 May 2019 20:51:24 GMT
 ENV JAVA_URL_VERSION=11.0.3_7
-# Wed, 29 May 2019 20:51:58 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F | grep '0xA5CD6035332FA671' | grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract --file openjdk.tgz --directory "$JAVA_HOME" --strip-components 1; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		javac --version; 	java --version
-# Wed, 29 May 2019 20:51:59 GMT
+# Wed, 05 Jun 2019 22:56:22 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F | grep '0xA5CD6035332FA671' | grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac --version; 	java --version
+# Wed, 05 Jun 2019 22:56:23 GMT
 CMD ["jshell"]
-# Wed, 29 May 2019 21:47:17 GMT
+# Wed, 05 Jun 2019 23:50:41 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Wed, 29 May 2019 21:47:18 GMT
+# Wed, 05 Jun 2019 23:50:42 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 May 2019 21:47:19 GMT
+# Wed, 05 Jun 2019 23:50:43 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Wed, 29 May 2019 21:47:20 GMT
+# Wed, 05 Jun 2019 23:50:44 GMT
 WORKDIR /usr/local/tomcat
-# Wed, 29 May 2019 21:47:20 GMT
+# Wed, 05 Jun 2019 23:50:44 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Wed, 29 May 2019 21:47:20 GMT
+# Wed, 05 Jun 2019 23:50:44 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Wed, 29 May 2019 21:47:21 GMT
+# Wed, 05 Jun 2019 23:50:45 GMT
 ENV OPENSSL_VERSION=1.1.0j-1~deb9u1
-# Wed, 29 May 2019 21:47:27 GMT
+# Wed, 05 Jun 2019 23:50:51 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends openssl; 	currentVersion="$(dpkg-query --show --showformat '${Version}\n' openssl)"; 	if dpkg --compare-versions "$currentVersion" '<<' "$OPENSSL_VERSION"; then 		if ! grep -q stretch /etc/apt/sources.list; then 			{ 				echo 'deb http://deb.debian.org/debian stretch main'; 				echo 'deb http://security.debian.org stretch/updates main'; 				echo 'deb http://deb.debian.org/debian stretch-updates main'; 			} > /etc/apt/sources.list.d/stretch.list; 			{ 				echo 'Package: *'; 				echo 'Pin: release n=stretch*'; 				echo 'Pin-Priority: -10'; 				echo; 				echo 'Package: openssl libssl*'; 				echo "Pin: version $OPENSSL_VERSION"; 				echo 'Pin-Priority: 990'; 			} > /etc/apt/preferences.d/stretch-openssl; 		fi; 		apt-get update; 		apt-get install -y --no-install-recommends openssl="$OPENSSL_VERSION"; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 29 May 2019 21:47:33 GMT
+# Wed, 05 Jun 2019 23:50:56 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libapr1 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 29 May 2019 21:49:26 GMT
+# Wed, 05 Jun 2019 23:52:50 GMT
 ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23
-# Wed, 29 May 2019 21:49:27 GMT
+# Wed, 05 Jun 2019 23:52:50 GMT
 ENV TOMCAT_MAJOR=9
-# Wed, 29 May 2019 21:49:27 GMT
+# Wed, 05 Jun 2019 23:52:51 GMT
 ENV TOMCAT_VERSION=9.0.20
-# Wed, 29 May 2019 21:49:28 GMT
+# Wed, 05 Jun 2019 23:52:51 GMT
 ENV TOMCAT_SHA512=6d2df51f0bfc6a90cfca61c86473b8843da4162c430ab06b8f66f364931f3d8a3ad399703acdd600ff4f633d7d6725edf05d5d5d19534716a2f3f9f5238a32a0
-# Wed, 29 May 2019 21:49:28 GMT
+# Wed, 05 Jun 2019 23:52:51 GMT
 ENV TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-9/v9.0.20/bin/apache-tomcat-9.0.20.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.20/bin/apache-tomcat-9.0.20.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-9/v9.0.20/bin/apache-tomcat-9.0.20.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.20/bin/apache-tomcat-9.0.20.tar.gz
-# Wed, 29 May 2019 21:49:29 GMT
+# Wed, 05 Jun 2019 23:52:52 GMT
 ENV TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-9/v9.0.20/bin/apache-tomcat-9.0.20.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.20/bin/apache-tomcat-9.0.20.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-9/v9.0.20/bin/apache-tomcat-9.0.20.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.20/bin/apache-tomcat-9.0.20.tar.gz.asc
-# Wed, 29 May 2019 21:50:14 GMT
+# Wed, 05 Jun 2019 23:53:33 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 		apt-get install -y --no-install-recommends gnupg dirmngr; 		export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 		apt-get install -y --no-install-recommends wget ca-certificates; 		success=; 	for url in $TOMCAT_TGZ_URLS; do 		if wget -O tomcat.tar.gz "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum -c -; 		success=; 	for url in $TOMCAT_ASC_URLS; do 		if wget -O tomcat.tar.gz.asc "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xvf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		nativeBuildDir="$(mktemp -d)"; 	tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes; 		make -j "$(nproc)"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs work
-# Wed, 29 May 2019 21:50:18 GMT
+# Wed, 05 Jun 2019 23:53:36 GMT
 RUN set -e 	&& nativeLines="$(catalina.sh configtest 2>&1)" 	&& nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')" 	&& nativeLines="$(echo "$nativeLines" | sort -u)" 	&& if ! echo "$nativeLines" | grep 'INFO: Loaded APR based Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Wed, 29 May 2019 21:50:18 GMT
+# Wed, 05 Jun 2019 23:53:37 GMT
 EXPOSE 8080
-# Wed, 29 May 2019 21:50:18 GMT
+# Wed, 05 Jun 2019 23:53:37 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -216,27 +216,27 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Wed, 29 May 2019 20:53:19 GMT  
 		Size: 221.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16d5f5190341016a9cea1cd2c99e339b9d747cc2e9419115776472dd9c97ccb5`  
-		Last Modified: Wed, 29 May 2019 20:53:52 GMT  
-		Size: 192.8 MB (192801709 bytes)  
+	-	`sha256:c5c29f924bc487d950cc9493517228f85aea32ccbb5a3cb6fc9305d0e8dc09c5`  
+		Last Modified: Wed, 05 Jun 2019 22:58:05 GMT  
+		Size: 192.8 MB (192802055 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4e744fff3733669f48329f80599b5f0c6ccd27ce4d14a8cda89c5d70eb7984e`  
-		Last Modified: Wed, 29 May 2019 21:50:53 GMT  
-		Size: 183.0 B  
+	-	`sha256:77ef62c5b388105b08b7940a4dd33087596b7cd224ab7604b5e8596431560c7c`  
+		Last Modified: Wed, 05 Jun 2019 23:54:12 GMT  
+		Size: 182.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21629d6b7897b49a27a5fc0684b34afdad60d148b6fda841bc35ca02f8b26e7c`  
-		Last Modified: Wed, 29 May 2019 21:50:55 GMT  
-		Size: 12.2 MB (12237783 bytes)  
+	-	`sha256:3c8fd2ee8e74978318637a49a3f2b30cbcf12425f5590188335a99a3fb408b17`  
+		Last Modified: Wed, 05 Jun 2019 23:54:14 GMT  
+		Size: 12.2 MB (12238025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3baab06e590119897f3c033d8eb0d42ce64ebbe69d82aef597e80131b67211e3`  
-		Last Modified: Wed, 29 May 2019 21:50:54 GMT  
-		Size: 356.7 KB (356682 bytes)  
+	-	`sha256:986cdf8ffd6e048bf4f396a958bf7a27fe0736bb2a4c7cb68bd0706d92b8d404`  
+		Last Modified: Wed, 05 Jun 2019 23:54:12 GMT  
+		Size: 358.2 KB (358198 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f5735761ce656adb348c430ba0aec23b1b8f9a4d5d2a94875b0117dc68a13d9`  
-		Last Modified: Wed, 29 May 2019 21:51:24 GMT  
-		Size: 11.7 MB (11688381 bytes)  
+	-	`sha256:cbfb80147291ca1f5721ec1dfedac8a5dae78bb41b64f616bac8d8b00bb1fa17`  
+		Last Modified: Wed, 05 Jun 2019 23:54:44 GMT  
+		Size: 11.7 MB (11689732 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f383d86ae824bdcf85d1b05995b5ab991d78f7427b71b63017a7e4302d0857d9`  
-		Last Modified: Wed, 29 May 2019 21:51:22 GMT  
-		Size: 130.0 B  
+	-	`sha256:79fb6b87514bce80c182aa1d17efc7830e8594e86bad98534655af05b410836c`  
+		Last Modified: Wed, 05 Jun 2019 23:54:42 GMT  
+		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
