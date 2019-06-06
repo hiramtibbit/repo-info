@@ -5783,14 +5783,9 @@ Licenses: (parsed from: `/usr/share/doc/libqt5core5a/copyright`, `/usr/share/doc
 - `public-domain`
 - `wintab`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris qtbase-opensource-src=5.9.5+dfsg-0ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/qtbase-opensource-src_5.9.5+dfsg-0ubuntu2.dsc' qtbase-opensource-src_5.9.5+dfsg-0ubuntu2.dsc 5109 SHA256:3923e4f753299e3d93524a1f66359b8e9cde031d6c1fb9a7b7c4bfeaed826cb7
-'http://archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/qtbase-opensource-src_5.9.5+dfsg.orig.tar.xz' qtbase-opensource-src_5.9.5+dfsg.orig.tar.xz 44935364 SHA256:09dd1f0b484b6b521181774de0fd13e179dce4614fb5e308f1c9435082750e59
-'http://archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/qtbase-opensource-src_5.9.5+dfsg-0ubuntu2.debian.tar.xz' qtbase-opensource-src_5.9.5+dfsg-0ubuntu2.debian.tar.xz 255332 SHA256:81a6521d56983f1f1a9271f257829bac1061fb137aae771df274c96609bf36f2
-```
 
 ### `dpkg` source package: `qtsvg-opensource-src=5.9.5-0ubuntu1`
 

@@ -5359,14 +5359,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.15.0-50.54
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-50.54.dsc' linux_4.15.0-50.54.dsc 8333 SHA256:945f172172369ba0d8f0850d2d4839b0dde067830600239cd99670233f430028
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-50.54.diff.gz' linux_4.15.0-50.54.diff.gz 8793314 SHA256:3618e96f5f68d5063d80052e56c562c4c25e5d429dc2320678ddb3fbe6b11d76
-```
 
 ### `dpkg` source package: `llvm-toolchain-7=1:7-3~ubuntu0.18.04.1`
 
@@ -6917,14 +6912,9 @@ Licenses: (parsed from: `/usr/share/doc/libqt5concurrent5/copyright`, `/usr/shar
 - `public-domain`
 - `wintab`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris qtbase-opensource-src=5.9.5+dfsg-0ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/qtbase-opensource-src_5.9.5+dfsg-0ubuntu2.dsc' qtbase-opensource-src_5.9.5+dfsg-0ubuntu2.dsc 5109 SHA256:3923e4f753299e3d93524a1f66359b8e9cde031d6c1fb9a7b7c4bfeaed826cb7
-'http://archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/qtbase-opensource-src_5.9.5+dfsg.orig.tar.xz' qtbase-opensource-src_5.9.5+dfsg.orig.tar.xz 44935364 SHA256:09dd1f0b484b6b521181774de0fd13e179dce4614fb5e308f1c9435082750e59
-'http://archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/qtbase-opensource-src_5.9.5+dfsg-0ubuntu2.debian.tar.xz' qtbase-opensource-src_5.9.5+dfsg-0ubuntu2.debian.tar.xz 255332 SHA256:81a6521d56983f1f1a9271f257829bac1061fb137aae771df274c96609bf36f2
-```
 
 ### `dpkg` source package: `qtchooser=64-ga1b6736-5`
 
