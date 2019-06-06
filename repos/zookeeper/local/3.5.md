@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:55c28ddb9786d3660761bb5b7044d8ae035a22e9bfd4c138552b955218f471ce`
-- Created: `2019-05-29T22:42:42.450204146Z`
-- Virtual Size: ~ 210.95 Mb  
+- Image ID: `sha256:9cca1dec9915a08b898c2e061e167dc7912f0746a87405d1863a9670e25dc0b5`
+- Created: `2019-06-05T23:21:56.077962996Z`
+- Virtual Size: ~ 211.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -1383,6 +1383,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ncurses/6.0+20161126-1+deb9u2/ (for browsing the source)
 - https://sources.debian.net/src/ncurses/6.0+20161126-1+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ncurses/6.0+20161126-1+deb9u2/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `netcat=1.10-41`
+
+Binary Packages:
+
+- `netcat=1.10-41`
+- `netcat-traditional=1.10-41+b1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris netcat=1.10-41
+'http://deb.debian.org/debian/pool/main/n/netcat/netcat_1.10-41.dsc' netcat_1.10-41.dsc 1779 SHA256:1b0c719a9da9d63698c8bf60c1121780b2c2d383a4e69f1e336a7f0937b3bfff
+'http://deb.debian.org/debian/pool/main/n/netcat/netcat_1.10.orig.tar.bz2' netcat_1.10.orig.tar.bz2 64363 SHA256:64913dc3f0b4a96c3ab04d062d84f28ba6854152c94344e3985458b2aebca3d5
+'http://deb.debian.org/debian/pool/main/n/netcat/netcat_1.10-41.debian.tar.xz' netcat_1.10-41.debian.tar.xz 20760 SHA256:ae34f23a53e17bc4543b815435ecb1a4515777e989b0ed12b2e3765a7da8eba5
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/netcat/1.10-41/ (for browsing the source)
+- https://sources.debian.net/src/netcat/1.10-41/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/netcat/1.10-41/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nettle=3.3-1`
 
