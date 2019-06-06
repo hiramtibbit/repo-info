@@ -1,7 +1,7 @@
 ## `hylang:0-alpine3.9`
 
 ```console
-$ docker pull hylang@sha256:f2f8e315b5da9274eb6d3c2b6d4b2d3193c15bf3188cdc7207619c4d333893f1
+$ docker pull hylang@sha256:e80bf56ff6c3b5147fb36c6d2fc180c9cd7983a650154ab35d8e8e63346e6247
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -377,14 +377,14 @@ CMD ["hy"]
 ### `hylang:0-alpine3.9` - linux; ppc64le
 
 ```console
-$ docker pull hylang@sha256:4c5b7f76effe9676c3f2db7f7cf58be1f86ed7018f007f2cff808e02de8b56c4
+$ docker pull hylang@sha256:487d6d678f28e8787f2116373c040d0de55f235e9b1816ca79b574bce53373f7
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **34.8 MB (34797284 bytes)**  
+-	Total Size: **34.8 MB (34809076 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69d787a0a7d7aa6cda47340e8af33e7c1ef3293f5452577e79781feb7291f032`
+-	Image ID: `sha256:8847f18e408baa985087304a542e130c3ec403ea9a811d3b6cf39706487d7083`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -392,31 +392,31 @@ $ docker pull hylang@sha256:4c5b7f76effe9676c3f2db7f7cf58be1f86ed7018f007f2cff80
 ADD file:109b3a992e029fdd5c3d6b378474c32a2c36cc5e549c83c3df3330dbc4eb7dd7 in / 
 # Sat, 11 May 2019 08:29:34 GMT
 CMD ["/bin/sh"]
-# Thu, 16 May 2019 02:00:03 GMT
+# Wed, 05 Jun 2019 23:49:48 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 May 2019 02:00:07 GMT
+# Wed, 05 Jun 2019 23:49:49 GMT
 ENV LANG=C.UTF-8
-# Thu, 16 May 2019 02:00:21 GMT
+# Wed, 05 Jun 2019 23:49:53 GMT
 RUN apk add --no-cache ca-certificates
-# Thu, 16 May 2019 02:06:21 GMT
+# Thu, 06 Jun 2019 00:05:07 GMT
 ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Thu, 16 May 2019 02:06:23 GMT
+# Thu, 06 Jun 2019 00:05:08 GMT
 ENV PYTHON_VERSION=3.7.3
-# Thu, 16 May 2019 02:10:40 GMT
+# Thu, 06 Jun 2019 00:08:42 GMT
 RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		gnupg 		tar 		xz 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& { command -v gpgconf > /dev/null && gpgconf --kill all || :; } 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& apk add --no-cache --virtual .build-deps  		bzip2-dev 		coreutils 		dpkg-dev dpkg 		expat-dev 		findutils 		gcc 		gdbm-dev 		libc-dev 		libffi-dev 		libnsl-dev 		libtirpc-dev 		linux-headers 		make 		ncurses-dev 		openssl-dev 		pax-utils 		readline-dev 		sqlite-dev 		tcl-dev 		tk 		tk-dev 		util-linux-dev 		xz-dev 		zlib-dev 	&& apk del .fetch-deps 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 		EXTRA_CFLAGS="-DTHREAD_STACK_SIZE=0x100000" 	&& make install 		&& find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec scanelf --needed --nobanner --format '%n#p' '{}' ';' 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 		| xargs -rt apk add --no-cache --virtual .python-rundeps 	&& apk del .build-deps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python 		&& python3 --version
-# Thu, 16 May 2019 02:10:46 GMT
+# Thu, 06 Jun 2019 00:08:46 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Thu, 16 May 2019 02:10:47 GMT
+# Thu, 06 Jun 2019 00:08:48 GMT
 ENV PYTHON_PIP_VERSION=19.1.1
-# Thu, 16 May 2019 02:11:04 GMT
+# Thu, 06 Jun 2019 00:09:03 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Thu, 16 May 2019 02:11:06 GMT
+# Thu, 06 Jun 2019 00:09:04 GMT
 CMD ["python3"]
-# Thu, 30 May 2019 18:26:18 GMT
+# Thu, 06 Jun 2019 01:30:32 GMT
 ENV HY_VERSION=0.17.0
-# Thu, 30 May 2019 18:26:35 GMT
+# Thu, 06 Jun 2019 01:30:52 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION"
-# Thu, 30 May 2019 18:26:39 GMT
+# Thu, 06 Jun 2019 01:30:57 GMT
 CMD ["hy"]
 ```
 
@@ -425,25 +425,25 @@ CMD ["hy"]
 		Last Modified: Sat, 11 May 2019 08:30:16 GMT  
 		Size: 2.8 MB (2781019 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5cfb0b2f8c2ee540b50a6f767be48326455e27830a146d633275f0147c416a25`  
-		Last Modified: Thu, 16 May 2019 02:25:22 GMT  
-		Size: 304.5 KB (304530 bytes)  
+	-	`sha256:a466be471cd58459c2482f52e5c106a3b8dcd6820049627eb0921020e6d35079`  
+		Last Modified: Thu, 06 Jun 2019 01:07:04 GMT  
+		Size: 304.5 KB (304537 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da8fd7d5aafe60c2ec7ece52211e07528f1afdf64162e32ab8bfefea3a8977b4`  
-		Last Modified: Thu, 16 May 2019 02:26:26 GMT  
-		Size: 27.2 MB (27192633 bytes)  
+	-	`sha256:e9013c5d90894f716fbfd3ddf2e58ccfa5db79f1494768f7a3ae11f0cb084419`  
+		Last Modified: Thu, 06 Jun 2019 01:08:44 GMT  
+		Size: 27.2 MB (27204556 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51753203cb16132d2e83c087383ad1d752fc0f3e1c8e0131f9e0a17d09d5fe0c`  
-		Last Modified: Thu, 16 May 2019 02:26:03 GMT  
-		Size: 232.0 B  
+	-	`sha256:31c19b3b369c34f7e8d477160713a73c4ad3bf15d775e46f03445a12045e378e`  
+		Last Modified: Thu, 06 Jun 2019 01:08:34 GMT  
+		Size: 229.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:626f990007928ec49258dec2b5cf159a6ce3495e3c865e25a364b92663150a9a`  
-		Last Modified: Thu, 16 May 2019 02:26:05 GMT  
-		Size: 1.8 MB (1820661 bytes)  
+	-	`sha256:4197d4071f60c2ab1dfa500889c07ab020f019c5b3695b3dd27b7d6df0c3147a`  
+		Last Modified: Thu, 06 Jun 2019 01:08:34 GMT  
+		Size: 1.8 MB (1820682 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb758f1f9c6463750925d0617c36ac87c4a50e9c104ec59477a902d77fdbd23c`  
-		Last Modified: Thu, 30 May 2019 18:34:50 GMT  
-		Size: 2.7 MB (2698209 bytes)  
+	-	`sha256:5b573f82e80d9141353975a02901d3d8634946f5fc79f9fbe72ea554fd2f11e7`  
+		Last Modified: Thu, 06 Jun 2019 01:37:18 GMT  
+		Size: 2.7 MB (2698053 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:0-alpine3.9` - linux; s390x
