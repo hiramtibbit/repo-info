@@ -1,7 +1,7 @@
 ## `tomee:8-jre-8.0.0-M2-microprofile`
 
 ```console
-$ docker pull tomee@sha256:c1adc42fcd032959261ebeba8d56c3dbd18b8163c593a6f3ae6e5f7c7145cb69
+$ docker pull tomee@sha256:472a3be126947041df3d8a0e4369fc4b6c713dd4f4563b4a684761853f65e97b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,14 +17,14 @@ $ docker pull tomee@sha256:c1adc42fcd032959261ebeba8d56c3dbd18b8163c593a6f3ae6e5
 ### `tomee:8-jre-8.0.0-M2-microprofile` - linux; amd64
 
 ```console
-$ docker pull tomee@sha256:caa655f7f1d763e11c8c9b5980e8e64bfb87cd706a692afc3946a239284c7f01
+$ docker pull tomee@sha256:1a1ab8ec1af78b22ceca8d8b1888af683e6f7f7339dff9e52e38647cb80b75f3
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **150.5 MB (150467942 bytes)**  
+-	Total Size: **150.5 MB (150473128 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:de7cc7549fb7c7ef0d64c2a4ee7798e2d8e5d9217f06142bfe763b5bbd34a5e3`
+-	Image ID: `sha256:b149eba7ac4670da06b5d36657029903db1bdda0cc4318a3c21abf5160e24559`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -52,23 +52,23 @@ ENV JAVA_VERSION=8u212-b04
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u212-b04/OpenJDK8U-jre_
 # Wed, 29 May 2019 21:22:27 GMT
 ENV JAVA_URL_VERSION=8u212b04
-# Wed, 29 May 2019 21:22:34 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F | grep '0xA5CD6035332FA671' | grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract --file openjdk.tgz --directory "$JAVA_HOME" --strip-components 1; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		java -version
-# Wed, 29 May 2019 22:27:13 GMT
+# Wed, 05 Jun 2019 22:26:18 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F | grep '0xA5CD6035332FA671' | grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
+# Wed, 05 Jun 2019 23:08:25 GMT
 ENV PATH=/usr/local/tomee/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 May 2019 22:27:13 GMT
+# Wed, 05 Jun 2019 23:08:26 GMT
 RUN mkdir -p /usr/local/tomee
-# Wed, 29 May 2019 22:27:14 GMT
+# Wed, 05 Jun 2019 23:08:26 GMT
 WORKDIR /usr/local/tomee
-# Wed, 29 May 2019 22:29:19 GMT
+# Wed, 05 Jun 2019 23:10:47 GMT
 ENV GPG_KEYS=223D3A74B068ECA354DC385CE126833F9CF64915     7A2744A8A9AAF063C23EB7868EBE7DBE8D050EEF     82D8419BA697F0E7FB85916EE91287822FDB81B1     9056B710F1E332780DE7AF34CBAEBE39A46C4CA1     A57DAF81C1B69921F4BA8723A8DE0A4DB863A7C1     B7574789F5018690043E6DD9C212662E12F3E1DD     B8B301E6105DF628076BD92C5483E55897ABD9B9     DBCCD103B8B24F86FFAAB025C8BB472CD297D428     F067B8140F5DD80E1D3B5D92318242FE9A0B1183     FAA603D58B1BA4EDF65896D0ED340E0E6D545F97     C92604B0DEC5C62CFF5801E73D4683C24EDC64D1
-# Wed, 29 May 2019 22:30:47 GMT
+# Wed, 05 Jun 2019 23:11:22 GMT
 RUN set -xe     && for key in $GPG_KEYS; do         gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||         gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;     done
-# Wed, 29 May 2019 22:31:07 GMT
+# Wed, 05 Jun 2019 23:11:29 GMT
 RUN set -x 	&& curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-8.0.0-M2/apache-tomee-8.0.0-M2-microprofile.tar.gz.asc -o tomee.tar.gz.asc 	&& curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-8.0.0-M2/apache-tomee-8.0.0-M2-microprofile.tar.gz -o tomee.tar.gz 	&& gpg --batch --verify tomee.tar.gz.asc tomee.tar.gz 	&& tar -zxf tomee.tar.gz 	&& mv apache-tomee-microprofile-8.0.0-M2/* /usr/local/tomee 	&& rm -Rf apache-tomee-microprofile-8.0.0-M2 	&& rm bin/*.bat 	&& rm tomee.tar.gz*
-# Wed, 29 May 2019 22:31:07 GMT
+# Wed, 05 Jun 2019 23:11:29 GMT
 EXPOSE 8080
-# Wed, 29 May 2019 22:31:07 GMT
+# Wed, 05 Jun 2019 23:11:29 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -93,20 +93,20 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Wed, 29 May 2019 21:26:39 GMT  
 		Size: 222.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c42e41a6a4599295875dafff11761707eb31f324c014a3598c02c086e06c297b`  
-		Last Modified: Wed, 29 May 2019 21:26:44 GMT  
-		Size: 40.1 MB (40107929 bytes)  
+	-	`sha256:26161197356e5acc9f03bd438a4a5f497fd9a7f9879f88485c01a484988363e0`  
+		Last Modified: Wed, 05 Jun 2019 22:28:57 GMT  
+		Size: 40.1 MB (40113119 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9c3ba5216d153c7a4c0103d61b63bf12c13c17a386ac4c51d3943d41be41137`  
-		Last Modified: Wed, 29 May 2019 22:31:35 GMT  
-		Size: 150.0 B  
+	-	`sha256:0076ffe90a4c0088b427acc2adb24debbc283b8ea1221af94fd7ad8f1b333978`  
+		Last Modified: Wed, 05 Jun 2019 23:11:58 GMT  
+		Size: 151.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58c0532311d446d1f5079b8deb29c67690018b8176b504802696cc965c151b40`  
-		Last Modified: Wed, 29 May 2019 22:34:00 GMT  
-		Size: 27.3 KB (27327 bytes)  
+	-	`sha256:b1d62cf9197bd82d5cd331d7cb5d0d55b49dfd810f44281348cdca12f1af4cc5`  
+		Last Modified: Wed, 05 Jun 2019 23:14:52 GMT  
+		Size: 27.3 KB (27322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:804aa93fd51223ac964e7b694012563a66d75aecb22bc27445b55a6f27a92e20`  
-		Last Modified: Wed, 29 May 2019 22:34:03 GMT  
+	-	`sha256:a318029334129e4641bdda33e961bf77fee46669f61312b75069407861466bc9`  
+		Last Modified: Wed, 05 Jun 2019 23:14:56 GMT  
 		Size: 44.7 MB (44744818 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
