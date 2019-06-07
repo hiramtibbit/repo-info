@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:55af0eb9000de6b449e1b65fac790ef49df7b8b86b667d2df4a24574ed852a51`
-- Created: `2019-05-29T22:06:57.176564869Z`
-- Virtual Size: ~ 266.34 Mb  
+- Image ID: `sha256:5af22b8858eeaa77dafe681a77891bcee486b491b2f20bde6fac43b15f14731d`
+- Created: `2019-06-05T22:48:33.475383292Z`
+- Virtual Size: ~ 266.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gateway.start"]`
