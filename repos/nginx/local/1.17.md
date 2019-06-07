@@ -1,17 +1,18 @@
-# `nginx:1.15.12`
+# `nginx:1.17.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:53f3fd8007f76bd23bf663ad5f5009c8941f63828ae458cef584b5f85dc0a7bf`
-- Created: `2019-05-08T03:01:41.947151778Z`
-- Virtual Size: ~ 109.33 Mb  
+- Image ID: `sha256:62c261073ecffe22a28f2ba67760a9320bc4bfe8136a83ba9b579983346564be`
+- Created: `2019-06-04T22:29:15.22271163Z`
+- Virtual Size: ~ 109.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.15.12-1~stretch`
-  - `NJS_VERSION=1.15.12.0.3.1-1~stretch`
+  - `NGINX_VERSION=1.17.0`
+  - `NJS_VERSION=0.3.2`
+  - `PKG_RELEASE=1~stretch`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
 
@@ -1004,31 +1005,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libcap-ng/0.7.7-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libcap-ng/0.7.7-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libedit=3.1-20160903-3`
-
-Binary Packages:
-
-- `libedit2:amd64=3.1-20160903-3`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris libedit=3.1-20160903-3
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20160903-3.dsc' libedit_3.1-20160903-3.dsc 2240 SHA256:d143cac52af230cce5ee3d8f181f5b496da675dd6abc1d30a14d5bbb0926a71a
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20160903.orig.tar.gz' libedit_3.1-20160903.orig.tar.gz 508108 SHA256:0ccbd2e7d46097f136fcb1aaa0d5bc24e23bb73f57d25bee5a852a683eaa7567
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20160903-3.debian.tar.bz2' libedit_3.1-20160903-3.debian.tar.bz2 11290 SHA256:6508b14c90bd756b6a5b3d3e7183b167276958e445a78ca753e460482da774f4
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/libedit/3.1-20160903-3/ (for browsing the source)
-- https://sources.debian.net/src/libedit/3.1-20160903-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libedit/3.1-20160903-3/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `libgcrypt20=1.7.6-2+deb9u3`
 
 Binary Packages:
@@ -1533,7 +1509,6 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libncurses5:amd64=6.0+20161126-1+deb9u2`
 - `libncursesw5:amd64=6.0+20161126-1+deb9u2`
 - `libtinfo5:amd64=6.0+20161126-1+deb9u2`
 - `ncurses-base=6.0+20161126-1+deb9u2`
@@ -1558,11 +1533,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ncurses/6.0+20161126-1+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ncurses/6.0+20161126-1+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nginx-module-geoip=1.15.12-1~stretch`
+### `dpkg` source package: `nginx-module-geoip=1.17.0-1~stretch`
 
 Binary Packages:
 
-- `nginx-module-geoip=1.15.12-1~stretch`
+- `nginx-module-geoip=1.17.0-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1572,11 +1547,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-image-filter=1.15.12-1~stretch`
+### `dpkg` source package: `nginx-module-image-filter=1.17.0-1~stretch`
 
 Binary Packages:
 
-- `nginx-module-image-filter=1.15.12-1~stretch`
+- `nginx-module-image-filter=1.17.0-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1586,11 +1561,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-njs=1.15.12.0.3.1-1~stretch`
+### `dpkg` source package: `nginx-module-njs=1.17.0.0.3.2-1~stretch`
 
 Binary Packages:
 
-- `nginx-module-njs=1.15.12.0.3.1-1~stretch`
+- `nginx-module-njs=1.17.0.0.3.2-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1600,11 +1575,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-xslt=1.15.12-1~stretch`
+### `dpkg` source package: `nginx-module-xslt=1.17.0-1~stretch`
 
 Binary Packages:
 
-- `nginx-module-xslt=1.15.12-1~stretch`
+- `nginx-module-xslt=1.17.0-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1614,11 +1589,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx=1.15.12-1~stretch`
+### `dpkg` source package: `nginx=1.17.0-1~stretch`
 
 Binary Packages:
 
-- `nginx=1.15.12-1~stretch`
+- `nginx=1.17.0-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1757,6 +1732,33 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/perl/5.24.1-3+deb9u5/ (for browsing the source)
 - https://sources.debian.net/src/perl/5.24.1-3+deb9u5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/perl/5.24.1-3+deb9u5/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `readline=7.0-3`
+
+Binary Packages:
+
+- `libreadline7:amd64=7.0-3`
+- `readline-common=7.0-3`
+
+Licenses: (parsed from: `/usr/share/doc/libreadline7/copyright`, `/usr/share/doc/readline-common/copyright`)
+
+- `GFDL`
+- `GPL-3`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris readline=7.0-3
+'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0-3.dsc' readline_7.0-3.dsc 2538 SHA256:f27a5dc9053b88641e3effc6c03b7840cbbbd887e8dcaf05d9e336c7bc7c6a53
+'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0.orig.tar.gz' readline_7.0.orig.tar.gz 2910016 SHA256:750d437185286f40a369e1e4f4764eda932b9459b5ec9a731628393dd3d32334
+'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0-3.debian.tar.xz' readline_7.0-3.debian.tar.xz 30012 SHA256:bf166310d6ca7716f2bd0e9e06cee2458b0157f7989d028730fc305643560175
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/readline/7.0-3/ (for browsing the source)
+- https://sources.debian.net/src/readline/7.0-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/readline/7.0-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.4-1`
 
