@@ -90,13 +90,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.6.10
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.10.dsc' apt_1.6.10.dsc 2768 SHA256:d420ec284effadf6df0492246bb4abdf66c867d82fe7a24375dad1fbe1abd9bf
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.10.tar.xz' apt_1.6.10.tar.xz 2156180 SHA256:eea7420e33976526d6d05d2f5045cab706df7a18bbd763aa284390b5d6ccc6e3
-```
 
 ### `dpkg` source package: `asn1crypto=0.24.0-1`
 
@@ -2079,14 +2075,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.15.0-50.54
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-50.54.dsc' linux_4.15.0-50.54.dsc 8333 SHA256:945f172172369ba0d8f0850d2d4839b0dde067830600239cd99670233f430028
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-50.54.diff.gz' linux_4.15.0-50.54.diff.gz 8793314 SHA256:3618e96f5f68d5063d80052e56c562c4c25e5d429dc2320678ddb3fbe6b11d76
-```
 
 ### `dpkg` source package: `lsb=9.20170808ubuntu1`
 
