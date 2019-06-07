@@ -1,10 +1,10 @@
-# `python:3.8.0a4-stretch`
+# `python:3.8.0b1-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:56ff6e6d3ddd02990dfd905768ae5bdaec8dc93668204dc0f275f06538cc4b69`
-- Created: `2019-05-08T05:23:23.891041522Z`
-- Virtual Size: ~ 935.64 Mb  
+- Image ID: `sha256:b3c17008f159c83600e0cb8f645ca4cebd53a94ea070b3f11d597f9c0f7927c5`
+- Created: `2019-06-05T23:29:55.718190956Z`
+- Virtual Size: ~ 936.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568`
-  - `PYTHON_VERSION=3.8.0a4`
+  - `PYTHON_VERSION=3.8.0b1`
   - `PYTHON_PIP_VERSION=19.1.1`
 
 ## `dpkg` (`.deb`-based packages)
