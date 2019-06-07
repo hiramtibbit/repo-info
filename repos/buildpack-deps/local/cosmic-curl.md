@@ -63,13 +63,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.7.4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.7.4.dsc' apt_1.7.4.dsc 2780 SHA256:8f6f72b4201609332f490431688af2a84dfd8cca52153d49949c3f7bd0b3dc7d
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.7.4.tar.xz' apt_1.7.4.tar.xz 2158732 SHA256:cde8af81f971d7d376ace9b861fa859bfff75d7f91e3b33563d1654671e083a7
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 

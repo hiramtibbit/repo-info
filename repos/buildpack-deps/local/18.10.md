@@ -103,13 +103,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.7.4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.7.4.dsc' apt_1.7.4.dsc 2780 SHA256:8f6f72b4201609332f490431688af2a84dfd8cca52153d49949c3f7bd0b3dc7d
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.7.4.tar.xz' apt_1.7.4.tar.xz 2158732 SHA256:cde8af81f971d7d376ace9b861fa859bfff75d7f91e3b33563d1654671e083a7
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
@@ -2633,14 +2629,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.18.0-20.21
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.18.0-20.21.dsc' linux_4.18.0-20.21.dsc 8333 SHA256:a3b44066dc85fb7b2460038d275dfb3a6537c4bdff5acd0d7ffc1415768b5007
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.18.0.orig.tar.gz' linux_4.18.0.orig.tar.gz 157099820 SHA256:fd5c4f5ab07d6dccf7ef79317e36c2754438fb3d79d750df1d9868bab0de9573
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.18.0-20.21.diff.gz' linux_4.18.0-20.21.diff.gz 7582915 SHA256:7e30d472870cf303ef9b9c8bdd93cf9551e184622a72a7ac12854120059b11ec
-```
 
 ### `dpkg` source package: `lsb=9.20170808ubuntu1`
 
