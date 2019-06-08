@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:324a76ee954f0aba6f41c742d4ebf131bd6a2559b34dd6883ba1bd49a1a2df64`
-- Created: `2019-05-11T02:38:37.967657917Z`
-- Virtual Size: ~ 123.87 Mb  
+- Image ID: `sha256:48dffa369547ae08c6c2edfa10919578e56b52225abe2fd71f165081c8c9fddc`
+- Created: `2019-06-05T22:23:12.850699832Z`
+- Virtual Size: ~ 125.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
@@ -188,6 +188,23 @@ GPL-2.0
 
 ```
 
+### `apk` package: `ca-certificates`
+
+```console
+ca-certificates-20190108-r0 description:
+Common CA certificates PEM files
+
+ca-certificates-20190108-r0 webpage:
+https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
+
+ca-certificates-20190108-r0 installed size:
+737280
+
+ca-certificates-20190108-r0 license:
+MPL-2.0 GPL-2.0-or-later
+
+```
+
 ### `apk` package: `ca-certificates-cacert`
 
 ```console
@@ -307,6 +324,23 @@ MIT
 
 ```
 
+### `apk` package: `jansson`
+
+```console
+jansson-2.11-r0 description:
+lightweight JSON library
+
+jansson-2.11-r0 webpage:
+http://www.digip.org/jansson/
+
+jansson-2.11-r0 installed size:
+65536
+
+jansson-2.11-r0 license:
+MIT
+
+```
+
 ### `apk` package: `libaio`
 
 ```console
@@ -392,6 +426,23 @@ OpenSSL
 
 ```
 
+### `apk` package: `libcurl`
+
+```console
+libcurl-7.64.0-r2 description:
+The multiprotocol file transfer library
+
+libcurl-7.64.0-r2 webpage:
+https://curl.haxx.se
+
+libcurl-7.64.0-r2 installed size:
+487424
+
+libcurl-7.64.0-r2 license:
+MIT
+
+```
+
 ### `apk` package: `libfdisk`
 
 ```console
@@ -463,16 +514,16 @@ GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
 ### `apk` package: `libpq`
 
 ```console
-libpq-11.2-r0 description:
+libpq-11.3-r0 description:
 PostgreSQL libraries
 
-libpq-11.2-r0 webpage:
+libpq-11.3-r0 webpage:
 https://www.postgresql.org/
 
-libpq-11.2-r0 installed size:
+libpq-11.3-r0 installed size:
 315392
 
-libpq-11.2-r0 license:
+libpq-11.3-r0 license:
 PostgreSQL
 
 ```
@@ -508,6 +559,23 @@ libsmartcols-2.33-r0 installed size:
 
 libsmartcols-2.33-r0 license:
 GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
+
+```
+
+### `apk` package: `libssh2`
+
+```console
+libssh2-1.8.2-r0 description:
+library for accessing ssh1/ssh2 protocol servers
+
+libssh2-1.8.2-r0 webpage:
+https://libssh2.org/
+
+libssh2-1.8.2-r0 installed size:
+180224
+
+libssh2-1.8.2-r0 license:
+BSD
 
 ```
 
@@ -616,16 +684,16 @@ MIT
 ### `apk` package: `mariadb-common`
 
 ```console
-mariadb-common-10.3.13-r1 description:
+mariadb-common-10.3.15-r0 description:
 MariaDB common files for both server and client
 
-mariadb-common-10.3.13-r1 webpage:
+mariadb-common-10.3.15-r0 webpage:
 https://www.mariadb.org
 
-mariadb-common-10.3.13-r1 installed size:
+mariadb-common-10.3.15-r0 installed size:
 2240512
 
-mariadb-common-10.3.13-r1 license:
+mariadb-common-10.3.15-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -667,16 +735,16 @@ LGPL-2.1-or-later
 ### `apk` package: `mariadb-dev`
 
 ```console
-mariadb-dev-10.3.13-r1 description:
+mariadb-dev-10.3.15-r0 description:
 A fast SQL database server (development files)
 
-mariadb-dev-10.3.13-r1 webpage:
+mariadb-dev-10.3.15-r0 webpage:
 https://www.mariadb.org
 
-mariadb-dev-10.3.13-r1 installed size:
-5779456
+mariadb-dev-10.3.15-r0 installed size:
+5791744
 
-mariadb-dev-10.3.13-r1 license:
+mariadb-dev-10.3.15-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -684,16 +752,16 @@ GPL-2.0-or-later
 ### `apk` package: `mariadb-embedded`
 
 ```console
-mariadb-embedded-10.3.13-r1 description:
+mariadb-embedded-10.3.15-r0 description:
 MariaDB as an embeddable library
 
-mariadb-embedded-10.3.13-r1 webpage:
+mariadb-embedded-10.3.15-r0 webpage:
 https://www.mariadb.org
 
-mariadb-embedded-10.3.13-r1 installed size:
-16871424
+mariadb-embedded-10.3.15-r0 installed size:
+16883712
 
-mariadb-embedded-10.3.13-r1 license:
+mariadb-embedded-10.3.15-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -888,16 +956,16 @@ ISC
 ### `apk` package: `postgresql-dev`
 
 ```console
-postgresql-dev-11.2-r0 description:
+postgresql-dev-11.3-r0 description:
 A sophisticated object-relational DBMS (development files)
 
-postgresql-dev-11.2-r0 webpage:
+postgresql-dev-11.3-r0 webpage:
 https://www.postgresql.org/
 
-postgresql-dev-11.2-r0 installed size:
-8560640
+postgresql-dev-11.3-r0 installed size:
+8564736
 
-postgresql-dev-11.2-r0 license:
+postgresql-dev-11.3-r0 license:
 PostgreSQL
 
 ```
@@ -905,16 +973,16 @@ PostgreSQL
 ### `apk` package: `postgresql-libs`
 
 ```console
-postgresql-libs-11.2-r0 description:
+postgresql-libs-11.3-r0 description:
 A sophisticated object-relational DBMS (libraries)
 
-postgresql-libs-11.2-r0 webpage:
+postgresql-libs-11.3-r0 webpage:
 https://www.postgresql.org/
 
-postgresql-libs-11.2-r0 installed size:
+postgresql-libs-11.3-r0 installed size:
 200704
 
-postgresql-libs-11.2-r0 license:
+postgresql-libs-11.3-r0 license:
 PostgreSQL
 
 ```
@@ -956,16 +1024,16 @@ GPL-2.0
 ### `apk` package: `sqlite-dev`
 
 ```console
-sqlite-dev-3.26.0-r3 description:
+sqlite-dev-3.28.0-r0 description:
 C library that implements an SQL database engine (development files)
 
-sqlite-dev-3.26.0-r3 webpage:
-http://www.sqlite.org
+sqlite-dev-3.28.0-r0 webpage:
+https://www.sqlite.org/
 
-sqlite-dev-3.26.0-r3 installed size:
-618496
+sqlite-dev-3.28.0-r0 installed size:
+622592
 
-sqlite-dev-3.26.0-r3 license:
+sqlite-dev-3.28.0-r0 license:
 Public-Domain
 
 ```
@@ -973,16 +1041,16 @@ Public-Domain
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.26.0-r3 description:
+sqlite-libs-3.28.0-r0 description:
 Sqlite3 library
 
-sqlite-libs-3.26.0-r3 webpage:
-http://www.sqlite.org
+sqlite-libs-3.28.0-r0 webpage:
+https://www.sqlite.org/
 
-sqlite-libs-3.26.0-r3 installed size:
-917504
+sqlite-libs-3.28.0-r0 installed size:
+933888
 
-sqlite-libs-3.26.0-r3 license:
+sqlite-libs-3.28.0-r0 license:
 Public-Domain
 
 ```
