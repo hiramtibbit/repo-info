@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:903dcaaead549d6aa2b619f1f87c07f64f01e6bf5cd46685c26c14afbc949c7e`
-- Created: `2019-05-29T20:36:55.828264439Z`
-- Virtual Size: ~ 10.25 Mb  
+- Image ID: `sha256:b818d42f06c9ed270e741296347b6d06516093a13666fc44f62e7802eff2fbf3`
+- Created: `2019-06-05T23:38:10.018573612Z`
+- Virtual Size: ~ 10.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -98,6 +98,23 @@ ca-certificates-cacert-20190108-r0 installed size:
 
 ca-certificates-cacert-20190108-r0 license:
 MPL-2.0 GPL-2.0-or-later
+
+```
+
+### `apk` package: `cyrus-sasl-plain`
+
+```console
+cyrus-sasl-plain-2.1.27-r1 description:
+Cyrus SASL plugin for plain
+
+cyrus-sasl-plain-2.1.27-r1 webpage:
+https://cyrusimap.org/
+
+cyrus-sasl-plain-2.1.27-r1 installed size:
+36864
+
+cyrus-sasl-plain-2.1.27-r1 license:
+custom
 
 ```
 
