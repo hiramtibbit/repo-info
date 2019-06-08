@@ -1,10 +1,10 @@
-# `solr:7.7.1-slim`
+# `solr:7.7.2-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fd35ce79ea79616d9c188535a0e9b10b49be378dd1f1de71c41f4e4d009ce460`
-- Created: `2019-05-29T22:38:34.584132427Z`
-- Virtual Size: ~ 597.46 Mb  
+- Image ID: `sha256:554c026558817fddaa6b78a38e204576dc5fad9eddace2bd60b2f3dd03a37f62`
+- Created: `2019-06-06T22:25:54.898488168Z`
+- Virtual Size: ~ 597.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -20,10 +20,10 @@
   - `SOLR_UID=8983`
   - `SOLR_GROUP=solr`
   - `SOLR_GID=8983`
-  - `SOLR_VERSION=7.7.1`
-  - `SOLR_URL=https://archive.apache.org/dist/lucene/solr/7.7.1/solr-7.7.1.tgz`
-  - `SOLR_SHA256=4fb85f12af045b28f6cb935b2f3739d59ec61ad1288ffe44c7ede64e614f28c4`
-  - `SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C`
+  - `SOLR_VERSION=7.7.2`
+  - `SOLR_URL=https://archive.apache.org/dist/lucene/solr/7.7.2/solr-7.7.2.tgz`
+  - `SOLR_SHA256=eb8ee4038f25364328355de3338e46961093e39166c9bcc28b5915ae491320df`
+  - `SOLR_KEYS=2CECBFBA181601547B654B9FFA81AC8A490F538E`
   - `GOSU_VERSION=1.11`
   - `GOSU_KEY=B42F6819007F00F88E364FD4036A9C25BF357DD4`
 - Labels:
