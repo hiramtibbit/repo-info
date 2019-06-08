@@ -100,14 +100,9 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.10
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.10.dsc' apparmor_2.10.95-0ubuntu2.10.dsc 3270 SHA256:be1f3548638cbd44113ad2c463554c679e8376bdbd4a8c947ca65b454cca346c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.10.debian.tar.xz' apparmor_2.10.95-0ubuntu2.10.debian.tar.xz 98036 SHA256:7d901aaf5deedb5ca0575994b02e0d9d60d6f0ee93fb974b46699f5ab4c82764
-```
 
 ### `dpkg` source package: `apt=1.2.31`
 
@@ -121,13 +116,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.2.31
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.31.dsc' apt_1.2.31.dsc 2392 SHA256:3b666447f59fd770319a996c9782fd78aee87a5f9100f1b6b88b21aaaceaf0c8
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.31.tar.xz' apt_1.2.31.tar.xz 2080660 SHA256:03ded4f5e9b8d43ecec083704b2dcabf20c182ed382db9ac7251da0b0b038059
-```
 
 ### `dpkg` source package: `atk1.0=2.18.0-1`
 
