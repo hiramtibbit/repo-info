@@ -1,10 +1,10 @@
-# `mongo:3.6.12-xenial`
+# `mongo:3.6.13-xenial`
 
 ## Docker Metadata
 
-- Image ID: `sha256:09f8dcf185a688e255c4949c0ddeb15d5b9343970b83eb721a61bc21947de759`
-- Created: `2019-05-15T23:11:03.08557192Z`
-- Virtual Size: ~ 431.68 Mb  
+- Image ID: `sha256:99f2b1a58251b6fa606592026fd70a88b895b8f72cb4bb9cebe455efe17e0ec5`
+- Created: `2019-06-07T21:23:53.783140925Z`
+- Virtual Size: ~ 431.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=3.6`
-  - `MONGO_VERSION=3.6.12`
+  - `MONGO_VERSION=3.6.13`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -89,13 +89,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.2.31
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.31.dsc' apt_1.2.31.dsc 2392 SHA256:3b666447f59fd770319a996c9782fd78aee87a5f9100f1b6b88b21aaaceaf0c8
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.31.tar.xz' apt_1.2.31.tar.xz 2080660 SHA256:03ded4f5e9b8d43ecec083704b2dcabf20c182ed382db9ac7251da0b0b038059
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -954,15 +950,15 @@ $ apt-get source -qq --print-uris mawk=1.3.3-17ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.3-17ubuntu2.diff.gz' mawk_1.3.3-17ubuntu2.diff.gz 63882 SHA256:670103046767474be29e80f2143dc67e3d0b958972f5942c3df94883f978eded
 ```
 
-### `dpkg` source package: `mongodb-org=3.6.12`
+### `dpkg` source package: `mongodb-org=3.6.13`
 
 Binary Packages:
 
-- `mongodb-org=3.6.12`
-- `mongodb-org-mongos=3.6.12`
-- `mongodb-org-server=3.6.12`
-- `mongodb-org-shell=3.6.12`
-- `mongodb-org-tools=3.6.12`
+- `mongodb-org=3.6.13`
+- `mongodb-org-mongos=3.6.13`
+- `mongodb-org-server=3.6.13`
+- `mongodb-org-shell=3.6.13`
+- `mongodb-org-tools=3.6.13`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
