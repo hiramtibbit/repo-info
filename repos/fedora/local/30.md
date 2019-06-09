@@ -26,12 +26,10 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls acl-2.2.53-3.fc30
+https://muug.ca/mirror/fedora/linux/updates/30/Modular/x86_64/repodata/repomd.xml: [Errno -1] repomd.xml does not match metalink for updates-modular
+Trying other mirror.
 Enabling fedora-modular-source repository
 Enabling updates-source repository
-https://pubmirror1.math.uh.edu/fedora-buffet/fedora/linux/updates/30/Everything/SRPMS/repodata/repomd.xml: [Errno -1] repomd.xml does not match metalink for updates-source
-Trying other mirror.
-http://mirror.math.princeton.edu/pub/fedora/linux/updates/30/Everything/SRPMS/repodata/repomd.xml: [Errno -1] repomd.xml does not match metalink for updates-source
-Trying other mirror.
 Enabling updates-modular-source repository
 Enabling fedora-source repository
 https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/releases/30/Everything/source/tree//Packages/a/acl-2.2.53-3.fc30.src.rpm
