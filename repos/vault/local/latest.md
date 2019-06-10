@@ -1,10 +1,10 @@
-# `vault:1.1.2`
+# `vault:1.1.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8a23297b2305aee7e6259b2d9ae5e67745cae3c4b695d7858260cd69e1f96ef7`
-- Created: `2019-04-23T21:20:15.335244277Z`
-- Virtual Size: ~ 108.04 Mb  
+- Image ID: `sha256:f0d440bc4abb177d972755563cba67860f2d513246bfd03caf11ee7465732db0`
+- Created: `2019-06-07T20:20:26.37502136Z`
+- Virtual Size: ~ 108.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -85,16 +85,16 @@ GPL-2.0
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20171114-r3 description:
+ca-certificates-20190108-r0 description:
 Common CA certificates PEM files
 
-ca-certificates-20171114-r3 webpage:
+ca-certificates-20190108-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20171114-r3 installed size:
-741376
+ca-certificates-20190108-r0 installed size:
+733184
 
-ca-certificates-20171114-r3 license:
+ca-certificates-20190108-r0 license:
 MPL-2.0 GPL-2.0-or-later
 
 ```
@@ -289,16 +289,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2018i-r0 description:
+tzdata-2019a-r0 description:
 Timezone data
 
-tzdata-2018i-r0 webpage:
+tzdata-2019a-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2018i-r0 installed size:
-3526656
+tzdata-2019a-r0 installed size:
+3518464
 
-tzdata-2018i-r0 license:
+tzdata-2019a-r0 license:
 Public-Domain
 
 ```
