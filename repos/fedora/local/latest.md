@@ -26,8 +26,6 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls acl-2.2.53-3.fc30
-https://muug.ca/mirror/fedora/linux/updates/30/Modular/x86_64/repodata/repomd.xml: [Errno -1] repomd.xml does not match metalink for updates-modular
-Trying other mirror.
 Enabling fedora-modular-source repository
 Enabling updates-source repository
 Enabling updates-modular-source repository
