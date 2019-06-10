@@ -137,13 +137,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.6.10
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.10.dsc' apt_1.6.10.dsc 2768 SHA256:d420ec284effadf6df0492246bb4abdf66c867d82fe7a24375dad1fbe1abd9bf
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.10.tar.xz' apt_1.6.10.tar.xz 2156180 SHA256:eea7420e33976526d6d05d2f5045cab706df7a18bbd763aa284390b5d6ccc6e3
-```
 
 ### `dpkg` source package: `armadillo=1:8.400.0+dfsg-2`
 
@@ -2910,14 +2906,9 @@ Licenses: (parsed from: `/usr/share/doc/libegl1/copyright`, `/usr/share/doc/libg
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libglvnd=1.0.0-2ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libglvnd/libglvnd_1.0.0-2ubuntu2.2.dsc' libglvnd_1.0.0-2ubuntu2.2.dsc 2435 SHA256:2c009014177905e98de33f6aa67ff5e4f4faa71732c1893c63dc69b8a8506e61
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libglvnd/libglvnd_1.0.0.orig.tar.gz' libglvnd_1.0.0.orig.tar.gz 795552 SHA256:d1cb238081f8fc708178f21e7e6b33a009c0807eae7a11b790146043f6e8eea5
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libglvnd/libglvnd_1.0.0-2ubuntu2.2.debian.tar.xz' libglvnd_1.0.0-2ubuntu2.2.debian.tar.xz 21048 SHA256:be975fd04b74904ed4cf0d878f811030f3f1ecc1e19cefd9f6c2d2e88b08c776
-```
 
 ### `dpkg` source package: `libgpg-error=1.27-6`
 
