@@ -691,9 +691,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris elfutils=0.170-0.5.0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.170-0.5.0ubuntu1.dsc' elfutils_0.170-0.5.0ubuntu1.dsc 2441 SHA256:bdf525d82bc069ee8e59b4e077b602b15b819546c563bf49ce01026b86760081
+'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.170-0.5.0ubuntu1.1.dsc' elfutils_0.170-0.5.0ubuntu1.1.dsc 2449 SHA256:b527a406aace6cb7dceadd49d54d993b9cd2f010534f1253f603bc3aea1d8ea5
 'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.170.orig.tar.bz2' elfutils_0.170.orig.tar.bz2 8358001 SHA256:1f844775576b79bdc9f9c717a50058d08620323c1e935458223a12f249c9e066
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.170-0.5.0ubuntu1.debian.tar.xz' elfutils_0.170-0.5.0ubuntu1.debian.tar.xz 45844 SHA256:59fd33a596e0c41a564673f5e6657e711e1f66a92c6b01953eeaf0309fa67557
+'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.170-0.5.0ubuntu1.1.debian.tar.xz' elfutils_0.170-0.5.0ubuntu1.1.debian.tar.xz 52288 SHA256:3118892ca38ccbe207007e3f9cca3eace29446b78a5d3021d995c823afe948d2
 ```
 
 ### `dpkg` source package: `expat=2.2.6-1`
@@ -3782,14 +3782,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=239-7ubuntu10.13
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239-7ubuntu10.13.dsc' systemd_239-7ubuntu10.13.dsc 5163 SHA256:43002a53f86e798738ebf93964d36ed6ea864e63b6046ad0894d0ec3f01994a7
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239.orig.tar.gz' systemd_239.orig.tar.gz 7157293 SHA256:8a11b1b07d620f4c06a16e95bba4dd2a97e90efdf2a5ba47ed0a935085787a14
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239-7ubuntu10.13.debian.tar.xz' systemd_239-7ubuntu10.13.debian.tar.xz 206892 SHA256:69ab97464aa0e48daa02f7ef219346379cf823591f0d0c030382a4f6f3b3dcb9
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu2`
 
