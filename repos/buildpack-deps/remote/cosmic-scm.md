@@ -1,7 +1,7 @@
 ## `buildpack-deps:cosmic-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:70137f7bba2e4ff642ac2039df0e97e7e699a68487594d25e6afdfb5ac66dbf1
+$ docker pull buildpack-deps@sha256:f3d1192640600895a0687c9214332ec139a81dd1b19968bd3ea3bb1fbfdd55a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -132,63 +132,59 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 ### `buildpack-deps:cosmic-scm` - linux; arm64 variant v8
 
 ```console
-$ docker pull buildpack-deps@sha256:7863975fd2d5825b8699c5bc6a0e9ddd27cae4517a3f6d80313f490d81a28598
+$ docker pull buildpack-deps@sha256:7262ee9e81a80f4ec3f97a8d5fb01d150e38481fd3a7de62a23c6b7834329473
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.7 MB (84664107 bytes)**  
+-	Total Size: **84.7 MB (84654906 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88aee67c7a808e7ac40dcf734af3b11d950f395930472f9447e0f18babb63e63`
+-	Image ID: `sha256:24510536c43a8c2a94c97e3cfe118637b111db7247316644052f510804c1eb93`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 27 Apr 2019 09:36:20 GMT
-ADD file:553fca2155f2b626dbc844a86d150a795f7596945a028911e9e65b52a75fab62 in / 
-# Sat, 27 Apr 2019 09:36:22 GMT
+# Wed, 15 May 2019 22:00:46 GMT
+ADD file:a870edb9cbae8114f5a0722abceb583b6807da037ec6343b9960f6433962292a in / 
+# Wed, 15 May 2019 22:00:48 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Sat, 27 Apr 2019 09:36:26 GMT
+# Wed, 15 May 2019 22:00:50 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Sat, 27 Apr 2019 09:36:28 GMT
+# Wed, 15 May 2019 22:00:51 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Sat, 27 Apr 2019 09:36:29 GMT
+# Wed, 15 May 2019 22:00:52 GMT
 CMD ["/bin/bash"]
-# Sat, 27 Apr 2019 11:54:46 GMT
+# Tue, 11 Jun 2019 00:09:22 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 27 Apr 2019 11:55:40 GMT
+# Tue, 11 Jun 2019 00:09:38 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 27 Apr 2019 11:57:51 GMT
+# Tue, 11 Jun 2019 00:10:24 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:c894f8296d41be2ffaca8f8ef57181f09265114d21ab969299e8616eab1e5dc0`  
-		Last Modified: Mon, 22 Apr 2019 15:16:14 GMT  
-		Size: 27.6 MB (27579200 bytes)  
+	-	`sha256:c0a8c32d56402d56b4d7ac18667e0b1a03f35bbb247e949d51ccc6c0049d2890`  
+		Last Modified: Wed, 15 May 2019 22:03:06 GMT  
+		Size: 27.5 MB (27542802 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1827f8d6d7d5322a3e5de6f09f63edaff2d90dd69a64a52646e5ec7f6e437bab`  
-		Last Modified: Sat, 27 Apr 2019 09:39:48 GMT  
-		Size: 866.0 B  
+	-	`sha256:18f85ffdbf153a53833d701c0151d79b805639f882563db8376eee43fe582466`  
+		Last Modified: Wed, 15 May 2019 22:02:58 GMT  
+		Size: 870.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dcd1f0c92a0a7f7dbfe035edc2df6b5cd3d5e22d8c554ebcf3c496911f6cbd23`  
-		Last Modified: Sat, 27 Apr 2019 09:39:48 GMT  
-		Size: 214.0 B  
+	-	`sha256:ee4a174428e9de59c63d358909089655ebb2064cfd2871f703bd6322c2dd1f15`  
+		Last Modified: Wed, 15 May 2019 22:02:58 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6f5293ca941f33109b4f3d981f6783a90c18688058e9426bab434b086639f10`  
-		Last Modified: Sat, 27 Apr 2019 09:39:48 GMT  
-		Size: 163.0 B  
+	-	`sha256:1fc886cf671ca3ce141d618b5776ce9a6f0b2b790ad6635d5fe15c0dbfd29df2`  
+		Last Modified: Tue, 11 Jun 2019 00:32:17 GMT  
+		Size: 5.8 MB (5829750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4a3b225d0d559a33106d239ef814e7a71ce3fe91fb63eb2aee2d4839decbe60`  
-		Last Modified: Sat, 27 Apr 2019 12:46:59 GMT  
-		Size: 5.8 MB (5829344 bytes)  
+	-	`sha256:9edf452fa496b0e770b963559b64f232dea0d3eac0f4add4e9bf19e8a19bc29d`  
+		Last Modified: Tue, 11 Jun 2019 00:32:17 GMT  
+		Size: 2.9 MB (2944117 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bf9fcb206f75c73aaf0571c9de01becd022bcdd46102c057245109fded40c4`  
-		Last Modified: Sat, 27 Apr 2019 12:46:58 GMT  
-		Size: 2.9 MB (2944006 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d892428689ce502820810d26bcadb4a9005209b54c0b1384f7268f3afaf0d26b`  
-		Last Modified: Sat, 27 Apr 2019 12:47:27 GMT  
-		Size: 48.3 MB (48310314 bytes)  
+	-	`sha256:c3061ff46265bb3a92d45c54bb5c1976b99395f7232ddd305e09e78194dc13c8`  
+		Last Modified: Tue, 11 Jun 2019 00:32:42 GMT  
+		Size: 48.3 MB (48337178 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:cosmic-scm` - linux; 386
