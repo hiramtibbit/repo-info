@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:aa0b1142e13746edd715afe27eb461e22a7f4252ade3768d5be76947a7023e19`
-- Created: `2019-05-08T01:58:34.20930796Z`
+- Image ID: `sha256:d925ec118a65211eef63e13c432a1176ed47601a7787d4a1eda6245d21d0871c`
+- Created: `2019-06-08T00:02:31.514223606Z`
 - Virtual Size: ~ 1.55 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -5177,11 +5177,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libyaml/0.1.7-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libyaml/0.1.7-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=4.9.168-1`
+### `dpkg` source package: `linux=4.9.168-1+deb9u2`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.9.168-1`
+- `linux-libc-dev:amd64=4.9.168-1+deb9u2`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -5194,17 +5194,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.9.168-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.168-1.dsc' linux_4.9.168-1.dsc 123355 SHA256:de77aa221fa4c7db1cf995cb6a5b25784489ddcbba98d82b55fa24fadd4f0969
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.168.orig.tar.xz' linux_4.9.168.orig.tar.xz 94774584 SHA256:8a2c04045b47472584fc8e72d8663b5c720b8ba5efba878f48ddba93bac29a7f
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.168-1.debian.tar.xz' linux_4.9.168-1.debian.tar.xz 2670296 SHA256:b0cd27aaf68066b9594e31dea165ba885b7b6ef238416084215a57c03e07fa4a
+$ apt-get source -qq --print-uris linux=4.9.168-1+deb9u2
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.168-1+deb9u2.dsc' linux_4.9.168-1+deb9u2.dsc 123228 SHA256:9ff4ff71bc5a3f087fef7e4201a8448040f84035a1298ad01a8f5d6fe5192795
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.168.orig.tar.xz' linux_4.9.168.orig.tar.xz 94774584 SHA256:8a2c04045b47472584fc8e72d8663b5c720b8ba5efba878f48ddba93bac29a7f
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.168-1+deb9u2.debian.tar.xz' linux_4.9.168-1+deb9u2.debian.tar.xz 2732028 SHA256:b909b4c1feb633d1d458d0fd80b96698d97d12fc790fa56a1398a951585d631a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/4.9.168-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.9.168-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.9.168-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/4.9.168-1+deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.9.168-1+deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.9.168-1+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-1`
 
@@ -7020,19 +7020,24 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python-roman/2.0.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python-roman/2.0.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python-rosdep=0.15.1-1`
+### `dpkg` source package: `python-rosdep=0.15.2-1`
 
 Binary Packages:
 
-- `python-rosdep=0.15.1-1`
+- `python-rosdep=0.15.2-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rosdep=0.15.2-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.15.2-1.debian.tar.xz' python-rosdep_0.15.2-1.debian.tar.xz 1932 SHA512:0a57d366c06b64c29831f0d7765d7ac88431c73472d9ef7a7e7e8cfc27972d3a3faaa8b337fc639d8d348a202227968916d50e7dd17021de4b63cb0a7d9dee2f
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.15.2-1.dsc' python-rosdep_0.15.2-1.dsc 905 SHA512:f12fbb3e85204a40b302352f7911e78f2b38dc1635d368298550cc426538864bbe8664fb6892cf028a455c2a2fda5b0eef5074cd88668992cdcbe41839d1eaa0
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.15.2.orig.tar.gz' python-rosdep_0.15.2.orig.tar.gz 82303 SHA512:166e4d81774d88700ee317f4fe1c6432fba1c56ef16ad91762dac2b884e372f08f6fb065d19f114fb8a5093904494b99428831019170f4436b1632dfa8787936
+```
 
 ### `dpkg` source package: `python-rosdistro-modules=0.7.4-1`
 
@@ -7086,9 +7091,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris python-rosinstall=0.7.8-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosinstall/python-rosinstall_0.7.8-1.dsc' python-rosinstall_0.7.8-1.dsc 917 SHA256:19d6b7db1cb3a2a6a34d6a2b86562982e2934f2f5bd0adcd73813f9b2644c906
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosinstall/python-rosinstall_0.7.8.orig.tar.gz' python-rosinstall_0.7.8.orig.tar.gz 26425 SHA256:bc278e72a6c8aef5df8b04c565d54c6e452caad4fc7ead5d8cea1b4db2926ec4
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosinstall/python-rosinstall_0.7.8-1.debian.tar.gz' python-rosinstall_0.7.8-1.debian.tar.gz 1008 SHA256:218375984f09c4fcfd9febfa9d08af30706a37c83e0c88925e682d84b6d44c7d
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosinstall/python-rosinstall_0.7.8-1.debian.tar.gz' python-rosinstall_0.7.8-1.debian.tar.gz 1008 SHA512:44bebf6ed0d14fa358e766096319cc304e70cd370c2f4ae13befdb5db0cbda1a4bda03d96b5ce57c0b0b4a7a82e96aa0ba280a9714c35460de6b59548a6a098d
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosinstall/python-rosinstall_0.7.8-1.dsc' python-rosinstall_0.7.8-1.dsc 917 SHA512:cadb27334167a8b5bbee35303642f09dbbb5d6cf827852400146d14f400d1a2dc5ce8e880889141cadfd072518541e9004af8458114a713eee63866b15288ebd
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosinstall/python-rosinstall_0.7.8.orig.tar.gz' python-rosinstall_0.7.8.orig.tar.gz 26425 SHA512:013b313b9e442e9b68f7aad0a372d2c1dfb9efeb66b9f20d01943bf58808e0e0bc69db848ba1c2460f0ecfaba89d385e987ccb574a7139b6500d5f958eda4d1b
 ```
 
 ### `dpkg` source package: `python-rospkg-modules=1.1.9-1`
@@ -7169,9 +7174,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris python-vcstools=0.1.40-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-vcstools/python-vcstools_0.1.40-1.dsc' python-vcstools_0.1.40-1.dsc 930 SHA256:c5031c0eb7a4f413c2903c1f7289f511293b5d18ecac2e58fa6b1cc6b962765e
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-vcstools/python-vcstools_0.1.40.orig.tar.gz' python-vcstools_0.1.40.orig.tar.gz 51298 SHA256:57f41f0f360d581a90f1511ef9aab62aa324e7cd251d9fd40f2275d13a8fd488
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-vcstools/python-vcstools_0.1.40-1.debian.tar.gz' python-vcstools_0.1.40-1.debian.tar.gz 1076 SHA256:5c27c1b6d815faa645f6557d40b6d5d406d1dd82b8fa1d7b6481852b40b8f325
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-vcstools/python-vcstools_0.1.40-1.debian.tar.gz' python-vcstools_0.1.40-1.debian.tar.gz 1076 SHA512:1c0ece44e778d43eabaf8ba4ecb331c6f31d80f85657c95e0d96bd6c83a344fd1258d6c060fae3fe974bad5b8a61c6803cd02679d05bc71765aed16a8d184134
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-vcstools/python-vcstools_0.1.40-1.dsc' python-vcstools_0.1.40-1.dsc 930 SHA512:7fdfa9752e185abc5b76a6e1087fd27b3afe1a86cfd14df209b8fb826b675e7f225938ca7fd036d2a53cc8c08fa048b0d25962418b0a83b09e7471d3fcd4c4d3
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-vcstools/python-vcstools_0.1.40.orig.tar.gz' python-vcstools_0.1.40.orig.tar.gz 51298 SHA512:0a3ce9cc251473ccde43c36aa1fb91068388d3b52ffbd1cae749c415f849344e18bf39514a1e5eee73b20efcc6fec6fa70a2fd3abdbaa21bfb79393e1bc2e8cc
 ```
 
 ### `dpkg` source package: `python-webencodings=0.5-2`
@@ -7214,9 +7219,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris python-wstool=0.1.17-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-wstool/python-wstool_0.1.17-1.dsc' python-wstool_0.1.17-1.dsc 888 SHA256:3c443f7f043ee81732917ed67496035cb4dc4e529231ccd05fc3421c7d900821
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-wstool/python-wstool_0.1.17.orig.tar.gz' python-wstool_0.1.17.orig.tar.gz 53327 SHA256:c7e2b5933e6a17063c5c6f12ba8419a1d8289fbdba3d12b8319f4202ce3c2562
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-wstool/python-wstool_0.1.17-1.debian.tar.gz' python-wstool_0.1.17-1.debian.tar.gz 1045 SHA256:bc632485fb7b1694cfc8e894f1d4c5dc779e23e4034b484e866546cc8d750dfe
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-wstool/python-wstool_0.1.17-1.debian.tar.gz' python-wstool_0.1.17-1.debian.tar.gz 1045 SHA512:aba9c213555c16dbcc326422f14fcf76ab2ddf943d5fe38f4fe75f30cb885b14b4008a0e21029091be6030fa2eb1a0e6a35403aed84a6dfb0ef862025bdaacd8
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-wstool/python-wstool_0.1.17-1.dsc' python-wstool_0.1.17-1.dsc 888 SHA512:41d47d5a14b274454c2f8e01d3e429b8ae8e61da66c3bb6442ceba232645cec4a7efb13848de16c21ca5f8fee7a312ac0628a812800aaf9b41fa54b5b3b75547
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-wstool/python-wstool_0.1.17.orig.tar.gz' python-wstool_0.1.17.orig.tar.gz 53327 SHA512:e2512ac47376c409e49c3b2ad88f696335509f2b7d8b934d6e730208bf6a47f821f5ce65e153dea50b8fe3554af228e356df5ee54e90a708f8eda5f5b5fee9c1
 ```
 
 ### `dpkg` source package: `python2.7=2.7.13-2+deb9u3`
@@ -7589,11 +7594,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/readline/7.0-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/readline/7.0-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ros-melodic-actionlib-msgs=1.12.7-0stretch.20190318.194500`
+### `dpkg` source package: `ros-melodic-actionlib-msgs=1.12.7-0stretch.20190606.041151`
 
 Binary Packages:
 
-- `ros-melodic-actionlib-msgs=1.12.7-0stretch.20190318.194500`
+- `ros-melodic-actionlib-msgs=1.12.7-0stretch.20190606.041151`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7603,11 +7608,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-actionlib=1.11.13-0stretch.20190320.074207`
+### `dpkg` source package: `ros-melodic-actionlib=1.11.13-0stretch.20190606.072225`
 
 Binary Packages:
 
-- `ros-melodic-actionlib=1.11.13-0stretch.20190320.074207`
+- `ros-melodic-actionlib=1.11.13-0stretch.20190606.072225`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7617,11 +7622,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-angles=1.9.11-0stretch.20190320.034545`
+### `dpkg` source package: `ros-melodic-angles=1.9.11-0stretch.20190606.040713`
 
 Binary Packages:
 
-- `ros-melodic-angles=1.9.11-0stretch.20190320.034545`
+- `ros-melodic-angles=1.9.11-0stretch.20190606.040713`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7631,11 +7636,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-bond-core=1.8.3-0stretch.20190320.052821`
+### `dpkg` source package: `ros-melodic-bond-core=1.8.3-0stretch.20190606.061610`
 
 Binary Packages:
 
-- `ros-melodic-bond-core=1.8.3-0stretch.20190320.052821`
+- `ros-melodic-bond-core=1.8.3-0stretch.20190606.061610`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7645,11 +7650,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-bond=1.8.3-0stretch.20190318.194755`
+### `dpkg` source package: `ros-melodic-bond=1.8.3-0stretch.20190606.041353`
 
 Binary Packages:
 
-- `ros-melodic-bond=1.8.3-0stretch.20190318.194755`
+- `ros-melodic-bond=1.8.3-0stretch.20190606.041353`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7659,11 +7664,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-bondcpp=1.8.3-0stretch.20190320.043944`
+### `dpkg` source package: `ros-melodic-bondcpp=1.8.3-0stretch.20190606.055651`
 
 Binary Packages:
 
-- `ros-melodic-bondcpp=1.8.3-0stretch.20190320.043944`
+- `ros-melodic-bondcpp=1.8.3-0stretch.20190606.055651`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7673,11 +7678,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-bondpy=1.8.3-0stretch.20190320.052255`
+### `dpkg` source package: `ros-melodic-bondpy=1.8.3-0stretch.20190606.060909`
 
 Binary Packages:
 
-- `ros-melodic-bondpy=1.8.3-0stretch.20190320.052255`
+- `ros-melodic-bondpy=1.8.3-0stretch.20190606.060909`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7687,11 +7692,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-catkin=0.7.17-0stretch.20190318.174735`
+### `dpkg` source package: `ros-melodic-catkin=0.7.17-0stretch.20190605.193841`
 
 Binary Packages:
 
-- `ros-melodic-catkin=0.7.17-0stretch.20190318.174735`
+- `ros-melodic-catkin=0.7.17-0stretch.20190605.193841`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7701,11 +7706,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-class-loader=0.4.1-0stretch.20190320.021807`
+### `dpkg` source package: `ros-melodic-class-loader=0.4.1-0stretch.20190605.204736`
 
 Binary Packages:
 
-- `ros-melodic-class-loader=0.4.1-0stretch.20190320.021807`
+- `ros-melodic-class-loader=0.4.1-0stretch.20190605.204736`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7715,11 +7720,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-cmake-modules=0.4.2-0stretch.20190320.015719`
+### `dpkg` source package: `ros-melodic-cmake-modules=0.4.2-0stretch.20190605.204259`
 
 Binary Packages:
 
-- `ros-melodic-cmake-modules=0.4.2-0stretch.20190320.015719`
+- `ros-melodic-cmake-modules=0.4.2-0stretch.20190605.204259`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7729,11 +7734,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-common-msgs=1.12.7-0stretch.20190320.130801`
+### `dpkg` source package: `ros-melodic-common-msgs=1.12.7-0stretch.20190606.075508`
 
 Binary Packages:
 
-- `ros-melodic-common-msgs=1.12.7-0stretch.20190320.130801`
+- `ros-melodic-common-msgs=1.12.7-0stretch.20190606.075508`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7743,11 +7748,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-control-msgs=1.5.0-0stretch.20190318.204207`
+### `dpkg` source package: `ros-melodic-control-msgs=1.5.0-0stretch.20190606.053110`
 
 Binary Packages:
 
-- `ros-melodic-control-msgs=1.5.0-0stretch.20190318.204207`
+- `ros-melodic-control-msgs=1.5.0-0stretch.20190606.053110`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7757,11 +7762,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-cpp-common=0.6.12-0stretch.20190318.191941`
+### `dpkg` source package: `ros-melodic-cpp-common=0.6.12-0stretch.20190605.204413`
 
 Binary Packages:
 
-- `ros-melodic-cpp-common=0.6.12-0stretch.20190318.191941`
+- `ros-melodic-cpp-common=0.6.12-0stretch.20190605.204413`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7771,11 +7776,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-diagnostic-aggregator=1.9.3-0stretch.20190320.054621`
+### `dpkg` source package: `ros-melodic-diagnostic-aggregator=1.9.3-0stretch.20190606.062130`
 
 Binary Packages:
 
-- `ros-melodic-diagnostic-aggregator=1.9.3-0stretch.20190320.054621`
+- `ros-melodic-diagnostic-aggregator=1.9.3-0stretch.20190606.062130`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7785,11 +7790,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-diagnostic-analysis=1.9.3-0stretch.20190320.060242`
+### `dpkg` source package: `ros-melodic-diagnostic-analysis=1.9.3-0stretch.20190606.081437`
 
 Binary Packages:
 
-- `ros-melodic-diagnostic-analysis=1.9.3-0stretch.20190320.060242`
+- `ros-melodic-diagnostic-analysis=1.9.3-0stretch.20190606.081437`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7799,11 +7804,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-diagnostic-common-diagnostics=1.9.3-0stretch.20190320.104620`
+### `dpkg` source package: `ros-melodic-diagnostic-common-diagnostics=1.9.3-0stretch.20190606.084523`
 
 Binary Packages:
 
-- `ros-melodic-diagnostic-common-diagnostics=1.9.3-0stretch.20190320.104620`
+- `ros-melodic-diagnostic-common-diagnostics=1.9.3-0stretch.20190606.084523`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7813,11 +7818,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-diagnostic-msgs=1.12.7-0stretch.20190318.195152`
+### `dpkg` source package: `ros-melodic-diagnostic-msgs=1.12.7-0stretch.20190606.042623`
 
 Binary Packages:
 
-- `ros-melodic-diagnostic-msgs=1.12.7-0stretch.20190318.195152`
+- `ros-melodic-diagnostic-msgs=1.12.7-0stretch.20190606.042623`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7827,11 +7832,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-diagnostic-updater=1.9.3-0stretch.20190320.055647`
+### `dpkg` source package: `ros-melodic-diagnostic-updater=1.9.3-0stretch.20190606.062140`
 
 Binary Packages:
 
-- `ros-melodic-diagnostic-updater=1.9.3-0stretch.20190320.055647`
+- `ros-melodic-diagnostic-updater=1.9.3-0stretch.20190606.062140`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7841,11 +7846,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-diagnostics=1.9.3-0stretch.20190320.111012`
+### `dpkg` source package: `ros-melodic-diagnostics=1.9.3-0stretch.20190606.085310`
 
 Binary Packages:
 
-- `ros-melodic-diagnostics=1.9.3-0stretch.20190320.111012`
+- `ros-melodic-diagnostics=1.9.3-0stretch.20190606.085310`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7855,11 +7860,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-dynamic-reconfigure=1.6.0-0stretch.20190320.060835`
+### `dpkg` source package: `ros-melodic-dynamic-reconfigure=1.6.0-0stretch.20190606.213233`
 
 Binary Packages:
 
-- `ros-melodic-dynamic-reconfigure=1.6.0-0stretch.20190320.060835`
+- `ros-melodic-dynamic-reconfigure=1.6.0-0stretch.20190606.213233`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7869,11 +7874,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-eigen-conversions=1.12.0-0stretch.20190318.202312`
+### `dpkg` source package: `ros-melodic-eigen-conversions=1.12.0-0stretch.20190606.045721`
 
 Binary Packages:
 
-- `ros-melodic-eigen-conversions=1.12.0-0stretch.20190318.202312`
+- `ros-melodic-eigen-conversions=1.12.0-0stretch.20190606.045721`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7883,11 +7888,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-executive-smach=2.0.1-0stretch.20190320.150945`
+### `dpkg` source package: `ros-melodic-executive-smach=2.0.1-0stretch.20190606.074221`
 
 Binary Packages:
 
-- `ros-melodic-executive-smach=2.0.1-0stretch.20190320.150945`
+- `ros-melodic-executive-smach=2.0.1-0stretch.20190606.074221`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7897,11 +7902,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-filters=1.8.1-0stretch.20190320.053652`
+### `dpkg` source package: `ros-melodic-filters=1.8.1-0stretch.20190606.062433`
 
 Binary Packages:
 
-- `ros-melodic-filters=1.8.1-0stretch.20190320.053652`
+- `ros-melodic-filters=1.8.1-0stretch.20190606.062433`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7911,11 +7916,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-gencpp=0.6.2-0stretch.20190318.191653`
+### `dpkg` source package: `ros-melodic-gencpp=0.6.2-0stretch.20190605.205608`
 
 Binary Packages:
 
-- `ros-melodic-gencpp=0.6.2-0stretch.20190318.191653`
+- `ros-melodic-gencpp=0.6.2-0stretch.20190605.205608`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7925,11 +7930,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-geneus=2.2.6-0stretch.20190318.191836`
+### `dpkg` source package: `ros-melodic-geneus=2.2.6-0stretch.20190605.205537`
 
 Binary Packages:
 
-- `ros-melodic-geneus=2.2.6-0stretch.20190318.191836`
+- `ros-melodic-geneus=2.2.6-0stretch.20190605.205537`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7939,11 +7944,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-genlisp=0.4.16-0stretch.20190318.191758`
+### `dpkg` source package: `ros-melodic-genlisp=0.4.16-0stretch.20190605.205546`
 
 Binary Packages:
 
-- `ros-melodic-genlisp=0.4.16-0stretch.20190318.191758`
+- `ros-melodic-genlisp=0.4.16-0stretch.20190605.205546`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7953,11 +7958,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-genmsg=0.5.12-0stretch.20190318.191556`
+### `dpkg` source package: `ros-melodic-genmsg=0.5.12-0stretch.20190605.204911`
 
 Binary Packages:
 
-- `ros-melodic-genmsg=0.5.12-0stretch.20190318.191556`
+- `ros-melodic-genmsg=0.5.12-0stretch.20190605.204911`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7967,11 +7972,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-gennodejs=2.0.1-0stretch.20190318.191841`
+### `dpkg` source package: `ros-melodic-gennodejs=2.0.1-0stretch.20190605.205603`
 
 Binary Packages:
 
-- `ros-melodic-gennodejs=2.0.1-0stretch.20190318.191841`
+- `ros-melodic-gennodejs=2.0.1-0stretch.20190605.205603`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7981,11 +7986,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-genpy=0.6.8-0stretch.20190318.191917`
+### `dpkg` source package: `ros-melodic-genpy=0.6.8-0stretch.20190605.205607`
 
 Binary Packages:
 
-- `ros-melodic-genpy=0.6.8-0stretch.20190318.191917`
+- `ros-melodic-genpy=0.6.8-0stretch.20190605.205607`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7995,11 +8000,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-geometry-msgs=1.12.7-0stretch.20190318.195212`
+### `dpkg` source package: `ros-melodic-geometry-msgs=1.12.7-0stretch.20190606.044809`
 
 Binary Packages:
 
-- `ros-melodic-geometry-msgs=1.12.7-0stretch.20190318.195212`
+- `ros-melodic-geometry-msgs=1.12.7-0stretch.20190606.044809`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8009,11 +8014,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-geometry=1.12.0-0stretch.20190320.150839`
+### `dpkg` source package: `ros-melodic-geometry=1.12.0-0stretch.20190606.090231`
 
 Binary Packages:
 
-- `ros-melodic-geometry=1.12.0-0stretch.20190320.150839`
+- `ros-melodic-geometry=1.12.0-0stretch.20190606.090231`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8023,11 +8028,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-joint-state-publisher=1.12.13-0stretch.20190320.071944`
+### `dpkg` source package: `ros-melodic-joint-state-publisher=1.12.13-0stretch.20190606.072400`
 
 Binary Packages:
 
-- `ros-melodic-joint-state-publisher=1.12.13-0stretch.20190320.071944`
+- `ros-melodic-joint-state-publisher=1.12.13-0stretch.20190606.072400`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8037,11 +8042,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-kdl-conversions=1.12.0-0stretch.20190318.202330`
+### `dpkg` source package: `ros-melodic-kdl-conversions=1.12.0-0stretch.20190606.045827`
 
 Binary Packages:
 
-- `ros-melodic-kdl-conversions=1.12.0-0stretch.20190318.202330`
+- `ros-melodic-kdl-conversions=1.12.0-0stretch.20190606.045827`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8051,11 +8056,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-kdl-parser-py=1.13.1-0stretch.20190320.073350`
+### `dpkg` source package: `ros-melodic-kdl-parser-py=1.13.1-0stretch.20190606.070442`
 
 Binary Packages:
 
-- `ros-melodic-kdl-parser-py=1.13.1-0stretch.20190320.073350`
+- `ros-melodic-kdl-parser-py=1.13.1-0stretch.20190606.070442`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8065,11 +8070,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-kdl-parser=1.13.1-0stretch.20190320.054113`
+### `dpkg` source package: `ros-melodic-kdl-parser=1.13.1-0stretch.20190606.070434`
 
 Binary Packages:
 
-- `ros-melodic-kdl-parser=1.13.1-0stretch.20190320.054113`
+- `ros-melodic-kdl-parser=1.13.1-0stretch.20190606.070434`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8079,11 +8084,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-message-filters=1.14.3-0stretch.20190320.054242`
+### `dpkg` source package: `ros-melodic-message-filters=1.14.3-0stretch.20190606.062817`
 
 Binary Packages:
 
-- `ros-melodic-message-filters=1.14.3-0stretch.20190320.054242`
+- `ros-melodic-message-filters=1.14.3-0stretch.20190606.062817`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8093,11 +8098,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-message-generation=0.4.0-0stretch.20190318.192045`
+### `dpkg` source package: `ros-melodic-message-generation=0.4.0-0stretch.20190605.210803`
 
 Binary Packages:
 
-- `ros-melodic-message-generation=0.4.0-0stretch.20190318.192045`
+- `ros-melodic-message-generation=0.4.0-0stretch.20190605.210803`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8107,11 +8112,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-message-runtime=0.4.12-0stretch.20190318.193317`
+### `dpkg` source package: `ros-melodic-message-runtime=0.4.12-0stretch.20190606.035425`
 
 Binary Packages:
 
-- `ros-melodic-message-runtime=0.4.12-0stretch.20190318.193317`
+- `ros-melodic-message-runtime=0.4.12-0stretch.20190606.035425`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8121,11 +8126,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-mk=1.14.6-0stretch.20190320.023842`
+### `dpkg` source package: `ros-melodic-mk=1.14.6-0stretch.20190606.041032`
 
 Binary Packages:
 
-- `ros-melodic-mk=1.14.6-0stretch.20190320.023842`
+- `ros-melodic-mk=1.14.6-0stretch.20190606.041032`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8135,11 +8140,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-nav-msgs=1.12.7-0stretch.20190318.195404`
+### `dpkg` source package: `ros-melodic-nav-msgs=1.12.7-0stretch.20190606.045905`
 
 Binary Packages:
 
-- `ros-melodic-nav-msgs=1.12.7-0stretch.20190318.195404`
+- `ros-melodic-nav-msgs=1.12.7-0stretch.20190606.045905`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8149,11 +8154,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-nodelet-core=1.9.16-0stretch.20190320.072949`
+### `dpkg` source package: `ros-melodic-nodelet-core=1.9.16-0stretch.20190606.214752`
 
 Binary Packages:
 
-- `ros-melodic-nodelet-core=1.9.16-0stretch.20190320.072949`
+- `ros-melodic-nodelet-core=1.9.16-0stretch.20190606.214752`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8163,11 +8168,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-nodelet-topic-tools=1.9.16-0stretch.20190320.062052`
+### `dpkg` source package: `ros-melodic-nodelet-topic-tools=1.9.16-0stretch.20190606.213931`
 
 Binary Packages:
 
-- `ros-melodic-nodelet-topic-tools=1.9.16-0stretch.20190320.062052`
+- `ros-melodic-nodelet-topic-tools=1.9.16-0stretch.20190606.213931`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8177,11 +8182,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-nodelet=1.9.16-0stretch.20190320.044951`
+### `dpkg` source package: `ros-melodic-nodelet=1.9.16-0stretch.20190606.061210`
 
 Binary Packages:
 
-- `ros-melodic-nodelet=1.9.16-0stretch.20190320.044951`
+- `ros-melodic-nodelet=1.9.16-0stretch.20190606.061210`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8191,11 +8196,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-orocos-kdl=1.4.0-0stretch.20190318.201912`
+### `dpkg` source package: `ros-melodic-orocos-kdl=1.4.0-0stretch.20190605.211230`
 
 Binary Packages:
 
-- `ros-melodic-orocos-kdl=1.4.0-0stretch.20190318.201912`
+- `ros-melodic-orocos-kdl=1.4.0-0stretch.20190605.211230`
 
 Licenses: (parsed from: `/usr/share/doc/ros-melodic-orocos-kdl/copyright`)
 
@@ -8205,11 +8210,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-melodic-orocos-kdl/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-pluginlib=1.12.1-0stretch.20190320.035519`
+### `dpkg` source package: `ros-melodic-pluginlib=1.12.1-0stretch.20190606.054046`
 
 Binary Packages:
 
-- `ros-melodic-pluginlib=1.12.1-0stretch.20190320.035519`
+- `ros-melodic-pluginlib=1.12.1-0stretch.20190606.054046`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8219,11 +8224,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-python-orocos-kdl=1.4.0-0stretch.20190318.202538`
+### `dpkg` source package: `ros-melodic-python-orocos-kdl=1.4.0-0stretch.20190606.030440`
 
 Binary Packages:
 
-- `ros-melodic-python-orocos-kdl=1.4.0-0stretch.20190318.202538`
+- `ros-melodic-python-orocos-kdl=1.4.0-0stretch.20190606.030440`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8233,11 +8238,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-python-qt-binding=0.3.5-0stretch.20190318.194036`
+### `dpkg` source package: `ros-melodic-python-qt-binding=0.3.5-0stretch.20190606.041109`
 
 Binary Packages:
 
-- `ros-melodic-python-qt-binding=0.3.5-0stretch.20190318.194036`
+- `ros-melodic-python-qt-binding=0.3.5-0stretch.20190606.041109`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8247,11 +8252,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-robot-state-publisher=1.13.6-0stretch.20190320.100532`
+### `dpkg` source package: `ros-melodic-robot-state-publisher=1.13.6-0stretch.20190606.085122`
 
 Binary Packages:
 
-- `ros-melodic-robot-state-publisher=1.13.6-0stretch.20190320.100532`
+- `ros-melodic-robot-state-publisher=1.13.6-0stretch.20190606.085122`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8261,11 +8266,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-robot=1.4.1-0stretch.20190320.151308`
+### `dpkg` source package: `ros-melodic-robot=1.4.1-0stretch.20190606.215225`
 
 Binary Packages:
 
-- `ros-melodic-robot=1.4.1-0stretch.20190320.151308`
+- `ros-melodic-robot=1.4.1-0stretch.20190606.215225`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8275,11 +8280,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-ros-base=1.4.1-0stretch.20190320.130944`
+### `dpkg` source package: `ros-melodic-ros-base=1.4.1-0stretch.20190606.215006`
 
 Binary Packages:
 
-- `ros-melodic-ros-base=1.4.1-0stretch.20190320.130944`
+- `ros-melodic-ros-base=1.4.1-0stretch.20190606.215006`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8289,11 +8294,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-ros-comm=1.14.3-0stretch.20190320.075201`
+### `dpkg` source package: `ros-melodic-ros-comm=1.14.3-0stretch.20190606.083340`
 
 Binary Packages:
 
-- `ros-melodic-ros-comm=1.14.3-0stretch.20190320.075201`
+- `ros-melodic-ros-comm=1.14.3-0stretch.20190606.083340`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8303,11 +8308,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-ros-core=1.4.1-0stretch.20190320.130855`
+### `dpkg` source package: `ros-melodic-ros-core=1.4.1-0stretch.20190606.083553`
 
 Binary Packages:
 
-- `ros-melodic-ros-core=1.4.1-0stretch.20190320.130855`
+- `ros-melodic-ros-core=1.4.1-0stretch.20190606.083553`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8317,11 +8322,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-ros-environment=1.2.1-0stretch.20190318.203841`
+### `dpkg` source package: `ros-melodic-ros-environment=1.2.1-0stretch.20190606.030649`
 
 Binary Packages:
 
-- `ros-melodic-ros-environment=1.2.1-0stretch.20190318.203841`
+- `ros-melodic-ros-environment=1.2.1-0stretch.20190606.030649`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8331,11 +8336,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-ros=1.14.6-0stretch.20190320.033713`
+### `dpkg` source package: `ros-melodic-ros=1.14.6-0stretch.20190606.053945`
 
 Binary Packages:
 
-- `ros-melodic-ros=1.14.6-0stretch.20190320.033713`
+- `ros-melodic-ros=1.14.6-0stretch.20190606.053945`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8345,11 +8350,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosbag-migration-rule=1.0.0-0stretch.20190318.203852`
+### `dpkg` source package: `ros-melodic-rosbag-migration-rule=1.0.0-0stretch.20190606.035816`
 
 Binary Packages:
 
-- `ros-melodic-rosbag-migration-rule=1.0.0-0stretch.20190318.203852`
+- `ros-melodic-rosbag-migration-rule=1.0.0-0stretch.20190606.035816`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8359,11 +8364,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosbag-storage=1.14.3-0stretch.20190320.054501`
+### `dpkg` source package: `ros-melodic-rosbag-storage=1.14.3-0stretch.20190606.063153`
 
 Binary Packages:
 
-- `ros-melodic-rosbag-storage=1.14.3-0stretch.20190320.054501`
+- `ros-melodic-rosbag-storage=1.14.3-0stretch.20190606.063153`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8373,11 +8378,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosbag=1.14.3-0stretch.20190320.055303`
+### `dpkg` source package: `ros-melodic-rosbag=1.14.3-0stretch.20190606.070335`
 
 Binary Packages:
 
-- `ros-melodic-rosbag=1.14.3-0stretch.20190320.055303`
+- `ros-melodic-rosbag=1.14.3-0stretch.20190606.070335`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8387,11 +8392,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosbash=1.14.6-0stretch.20190320.023933`
+### `dpkg` source package: `ros-melodic-rosbash=1.14.6-0stretch.20190606.034953`
 
 Binary Packages:
 
-- `ros-melodic-rosbash=1.14.6-0stretch.20190320.023933`
+- `ros-melodic-rosbash=1.14.6-0stretch.20190606.034953`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8401,11 +8406,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosboost-cfg=1.14.6-0stretch.20190318.175647`
+### `dpkg` source package: `ros-melodic-rosboost-cfg=1.14.6-0stretch.20190606.035822`
 
 Binary Packages:
 
-- `ros-melodic-rosboost-cfg=1.14.6-0stretch.20190318.175647`
+- `ros-melodic-rosboost-cfg=1.14.6-0stretch.20190606.035822`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8415,11 +8420,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosbuild=1.14.6-0stretch.20190318.193400`
+### `dpkg` source package: `ros-melodic-rosbuild=1.14.6-0stretch.20190606.040235`
 
 Binary Packages:
 
-- `ros-melodic-rosbuild=1.14.6-0stretch.20190318.193400`
+- `ros-melodic-rosbuild=1.14.6-0stretch.20190606.040235`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8429,11 +8434,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosclean=1.14.6-0stretch.20190318.175404`
+### `dpkg` source package: `ros-melodic-rosclean=1.14.6-0stretch.20190606.035939`
 
 Binary Packages:
 
-- `ros-melodic-rosclean=1.14.6-0stretch.20190318.175404`
+- `ros-melodic-rosclean=1.14.6-0stretch.20190606.035939`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8443,11 +8448,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosconsole-bridge=0.5.3-0stretch.20190320.042547`
+### `dpkg` source package: `ros-melodic-rosconsole-bridge=0.5.3-0stretch.20190606.054110`
 
 Binary Packages:
 
-- `ros-melodic-rosconsole-bridge=0.5.3-0stretch.20190320.042547`
+- `ros-melodic-rosconsole-bridge=0.5.3-0stretch.20190606.054110`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8457,11 +8462,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosconsole=1.13.10-0stretch.20190320.034545`
+### `dpkg` source package: `ros-melodic-rosconsole=1.13.10-0stretch.20190606.041110`
 
 Binary Packages:
 
-- `ros-melodic-rosconsole=1.13.10-0stretch.20190320.034545`
+- `ros-melodic-rosconsole=1.13.10-0stretch.20190606.041110`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8471,11 +8476,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-roscpp-core=0.6.12-0stretch.20190318.193337`
+### `dpkg` source package: `ros-melodic-roscpp-core=0.6.12-0stretch.20190606.035703`
 
 Binary Packages:
 
-- `ros-melodic-roscpp-core=0.6.12-0stretch.20190318.193337`
+- `ros-melodic-roscpp-core=0.6.12-0stretch.20190606.035703`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8485,11 +8490,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-roscpp-serialization=0.6.12-0stretch.20190318.192703`
+### `dpkg` source package: `ros-melodic-roscpp-serialization=0.6.12-0stretch.20190606.034756`
 
 Binary Packages:
 
-- `ros-melodic-roscpp-serialization=0.6.12-0stretch.20190318.192703`
+- `ros-melodic-roscpp-serialization=0.6.12-0stretch.20190606.034756`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8499,11 +8504,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-roscpp-traits=0.6.12-0stretch.20190318.192613`
+### `dpkg` source package: `ros-melodic-roscpp-traits=0.6.12-0stretch.20190606.033947`
 
 Binary Packages:
 
-- `ros-melodic-roscpp-traits=0.6.12-0stretch.20190318.192613`
+- `ros-melodic-roscpp-traits=0.6.12-0stretch.20190606.033947`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8513,11 +8518,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-roscpp=1.14.3-0stretch.20190320.042548`
+### `dpkg` source package: `ros-melodic-roscpp=1.14.3-0stretch.20190606.054549`
 
 Binary Packages:
 
-- `ros-melodic-roscpp=1.14.3-0stretch.20190320.042548`
+- `ros-melodic-roscpp=1.14.3-0stretch.20190606.054549`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8527,11 +8532,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-roscreate=1.14.6-0stretch.20190320.033334`
+### `dpkg` source package: `ros-melodic-roscreate=1.14.6-0stretch.20190606.035908`
 
 Binary Packages:
 
-- `ros-melodic-roscreate=1.14.6-0stretch.20190320.033334`
+- `ros-melodic-roscreate=1.14.6-0stretch.20190606.035908`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8541,11 +8546,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosgraph-msgs=1.11.2-0stretch.20190318.200804`
+### `dpkg` source package: `ros-melodic-rosgraph-msgs=1.11.2-0stretch.20190606.054153`
 
 Binary Packages:
 
-- `ros-melodic-rosgraph-msgs=1.11.2-0stretch.20190318.200804`
+- `ros-melodic-rosgraph-msgs=1.11.2-0stretch.20190606.054153`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8555,11 +8560,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosgraph=1.14.3-0stretch.20190318.203913`
+### `dpkg` source package: `ros-melodic-rosgraph=1.14.3-0stretch.20190606.035952`
 
 Binary Packages:
 
-- `ros-melodic-rosgraph=1.14.3-0stretch.20190318.203913`
+- `ros-melodic-rosgraph=1.14.3-0stretch.20190606.035952`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8569,11 +8574,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-roslang=1.14.6-0stretch.20190318.191704`
+### `dpkg` source package: `ros-melodic-roslang=1.14.6-0stretch.20190606.030623`
 
 Binary Packages:
 
-- `ros-melodic-roslang=1.14.6-0stretch.20190318.191704`
+- `ros-melodic-roslang=1.14.6-0stretch.20190606.030623`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8583,11 +8588,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-roslaunch=1.14.3-0stretch.20190320.052543`
+### `dpkg` source package: `ros-melodic-roslaunch=1.14.3-0stretch.20190606.060703`
 
 Binary Packages:
 
-- `ros-melodic-roslaunch=1.14.3-0stretch.20190320.052543`
+- `ros-melodic-roslaunch=1.14.3-0stretch.20190606.060703`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8597,11 +8602,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-roslib=1.14.6-0stretch.20190320.031708`
+### `dpkg` source package: `ros-melodic-roslib=1.14.6-0stretch.20190606.034945`
 
 Binary Packages:
 
-- `ros-melodic-roslib=1.14.6-0stretch.20190320.031708`
+- `ros-melodic-roslib=1.14.6-0stretch.20190606.034945`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8611,11 +8616,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-roslisp=1.9.22-0stretch.20190320.023851`
+### `dpkg` source package: `ros-melodic-roslisp=1.9.22-0stretch.20190606.054549`
 
 Binary Packages:
 
-- `ros-melodic-roslisp=1.9.22-0stretch.20190320.023851`
+- `ros-melodic-roslisp=1.9.22-0stretch.20190606.054549`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8625,11 +8630,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-roslz4=1.14.3-0stretch.20190320.040427`
+### `dpkg` source package: `ros-melodic-roslz4=1.14.3-0stretch.20190606.040837`
 
 Binary Packages:
 
-- `ros-melodic-roslz4=1.14.3-0stretch.20190320.040427`
+- `ros-melodic-roslz4=1.14.3-0stretch.20190606.040837`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8639,11 +8644,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosmake=1.14.6-0stretch.20190318.175138`
+### `dpkg` source package: `ros-melodic-rosmake=1.14.6-0stretch.20190606.030454`
 
 Binary Packages:
 
-- `ros-melodic-rosmake=1.14.6-0stretch.20190318.175138`
+- `ros-melodic-rosmake=1.14.6-0stretch.20190606.030454`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8653,11 +8658,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosmaster=1.14.3-0stretch.20190318.204147`
+### `dpkg` source package: `ros-melodic-rosmaster=1.14.3-0stretch.20190606.040848`
 
 Binary Packages:
 
-- `ros-melodic-rosmaster=1.14.3-0stretch.20190318.204147`
+- `ros-melodic-rosmaster=1.14.3-0stretch.20190606.040848`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8667,11 +8672,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosmsg=1.14.3-0stretch.20190320.060252`
+### `dpkg` source package: `ros-melodic-rosmsg=1.14.3-0stretch.20190606.081634`
 
 Binary Packages:
 
-- `ros-melodic-rosmsg=1.14.3-0stretch.20190320.060252`
+- `ros-melodic-rosmsg=1.14.3-0stretch.20190606.081634`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8681,11 +8686,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosnode=1.14.3-0stretch.20190320.073323`
+### `dpkg` source package: `ros-melodic-rosnode=1.14.3-0stretch.20190606.071503`
 
 Binary Packages:
 
-- `ros-melodic-rosnode=1.14.3-0stretch.20190320.073323`
+- `ros-melodic-rosnode=1.14.3-0stretch.20190606.071503`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8695,11 +8700,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosout=1.14.3-0stretch.20190320.051911`
+### `dpkg` source package: `ros-melodic-rosout=1.14.3-0stretch.20190606.060024`
 
 Binary Packages:
 
-- `ros-melodic-rosout=1.14.3-0stretch.20190320.051911`
+- `ros-melodic-rosout=1.14.3-0stretch.20190606.060024`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8709,11 +8714,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rospack=2.5.3-0stretch.20190320.022543`
+### `dpkg` source package: `ros-melodic-rospack=2.5.3-0stretch.20190606.033940`
 
 Binary Packages:
 
-- `ros-melodic-rospack=2.5.3-0stretch.20190320.022543`
+- `ros-melodic-rospack=2.5.3-0stretch.20190606.033940`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8723,11 +8728,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosparam=1.14.3-0stretch.20190318.204156`
+### `dpkg` source package: `ros-melodic-rosparam=1.14.3-0stretch.20190606.040840`
 
 Binary Packages:
 
-- `ros-melodic-rosparam=1.14.3-0stretch.20190318.204156`
+- `ros-melodic-rosparam=1.14.3-0stretch.20190606.040840`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8737,11 +8742,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rospy=1.14.3-0stretch.20190320.044812`
+### `dpkg` source package: `ros-melodic-rospy=1.14.3-0stretch.20190606.060341`
 
 Binary Packages:
 
-- `ros-melodic-rospy=1.14.3-0stretch.20190320.044812`
+- `ros-melodic-rospy=1.14.3-0stretch.20190606.060341`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8751,11 +8756,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosservice=1.14.3-0stretch.20190320.060745`
+### `dpkg` source package: `ros-melodic-rosservice=1.14.3-0stretch.20190606.082055`
 
 Binary Packages:
 
-- `ros-melodic-rosservice=1.14.3-0stretch.20190320.060745`
+- `ros-melodic-rosservice=1.14.3-0stretch.20190606.082055`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8765,11 +8770,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rostest=1.14.3-0stretch.20190320.053348`
+### `dpkg` source package: `ros-melodic-rostest=1.14.3-0stretch.20190606.061425`
 
 Binary Packages:
 
-- `ros-melodic-rostest=1.14.3-0stretch.20190320.053348`
+- `ros-melodic-rostest=1.14.3-0stretch.20190606.061425`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8779,11 +8784,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rostime=0.6.12-0stretch.20190318.192237`
+### `dpkg` source package: `ros-melodic-rostime=0.6.12-0stretch.20190606.030555`
 
 Binary Packages:
 
-- `ros-melodic-rostime=0.6.12-0stretch.20190318.192237`
+- `ros-melodic-rostime=0.6.12-0stretch.20190606.030555`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8793,11 +8798,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rostopic=1.14.3-0stretch.20190320.071853`
+### `dpkg` source package: `ros-melodic-rostopic=1.14.3-0stretch.20190606.070858`
 
 Binary Packages:
 
-- `ros-melodic-rostopic=1.14.3-0stretch.20190320.071853`
+- `ros-melodic-rostopic=1.14.3-0stretch.20190606.070858`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8807,11 +8812,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosunit=1.14.6-0stretch.20190320.033351`
+### `dpkg` source package: `ros-melodic-rosunit=1.14.6-0stretch.20190606.035922`
 
 Binary Packages:
 
-- `ros-melodic-rosunit=1.14.6-0stretch.20190320.033351`
+- `ros-melodic-rosunit=1.14.6-0stretch.20190606.035922`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8821,11 +8826,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-roswtf=1.14.3-0stretch.20190320.074159`
+### `dpkg` source package: `ros-melodic-roswtf=1.14.3-0stretch.20190606.082921`
 
 Binary Packages:
 
-- `ros-melodic-roswtf=1.14.3-0stretch.20190320.074159`
+- `ros-melodic-roswtf=1.14.3-0stretch.20190606.082921`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8835,11 +8840,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-self-test=1.9.3-0stretch.20190320.070943`
+### `dpkg` source package: `ros-melodic-self-test=1.9.3-0stretch.20190606.063051`
 
 Binary Packages:
 
-- `ros-melodic-self-test=1.9.3-0stretch.20190320.070943`
+- `ros-melodic-self-test=1.9.3-0stretch.20190606.063051`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8849,11 +8854,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-sensor-msgs=1.12.7-0stretch.20190320.060448`
+### `dpkg` source package: `ros-melodic-sensor-msgs=1.12.7-0stretch.20190606.070918`
 
 Binary Packages:
 
-- `ros-melodic-sensor-msgs=1.12.7-0stretch.20190320.060448`
+- `ros-melodic-sensor-msgs=1.12.7-0stretch.20190606.070918`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8863,11 +8868,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-shape-msgs=1.12.7-0stretch.20190318.200312`
+### `dpkg` source package: `ros-melodic-shape-msgs=1.12.7-0stretch.20190606.050115`
 
 Binary Packages:
 
-- `ros-melodic-shape-msgs=1.12.7-0stretch.20190318.200312`
+- `ros-melodic-shape-msgs=1.12.7-0stretch.20190606.050115`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8877,11 +8882,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-smach-msgs=2.0.1-0stretch.20190318.200835`
+### `dpkg` source package: `ros-melodic-smach-msgs=2.0.1-0stretch.20190606.054206`
 
 Binary Packages:
 
-- `ros-melodic-smach-msgs=2.0.1-0stretch.20190318.200835`
+- `ros-melodic-smach-msgs=2.0.1-0stretch.20190606.054206`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8891,11 +8896,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-smach-ros=2.0.1-0stretch.20190320.105905`
+### `dpkg` source package: `ros-melodic-smach-ros=2.0.1-0stretch.20190606.073619`
 
 Binary Packages:
 
-- `ros-melodic-smach-ros=2.0.1-0stretch.20190320.105905`
+- `ros-melodic-smach-ros=2.0.1-0stretch.20190606.073619`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8905,11 +8910,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-smach=2.0.1-0stretch.20190318.204110`
+### `dpkg` source package: `ros-melodic-smach=2.0.1-0stretch.20190606.030608`
 
 Binary Packages:
 
-- `ros-melodic-smach=2.0.1-0stretch.20190318.204110`
+- `ros-melodic-smach=2.0.1-0stretch.20190606.030608`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8919,11 +8924,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-smclib=1.8.3-0stretch.20190318.191056`
+### `dpkg` source package: `ros-melodic-smclib=1.8.3-0stretch.20190606.040057`
 
 Binary Packages:
 
-- `ros-melodic-smclib=1.8.3-0stretch.20190318.191056`
+- `ros-melodic-smclib=1.8.3-0stretch.20190606.040057`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8933,11 +8938,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-std-msgs=0.5.12-0stretch.20190318.194242`
+### `dpkg` source package: `ros-melodic-std-msgs=0.5.12-0stretch.20190606.040316`
 
 Binary Packages:
 
-- `ros-melodic-std-msgs=0.5.12-0stretch.20190318.194242`
+- `ros-melodic-std-msgs=0.5.12-0stretch.20190606.040316`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8947,11 +8952,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-std-srvs=1.11.2-0stretch.20190318.194257`
+### `dpkg` source package: `ros-melodic-std-srvs=1.11.2-0stretch.20190606.040334`
 
 Binary Packages:
 
-- `ros-melodic-std-srvs=1.11.2-0stretch.20190318.194257`
+- `ros-melodic-std-srvs=1.11.2-0stretch.20190606.040334`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8961,11 +8966,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-stereo-msgs=1.12.7-0stretch.20190320.125342`
+### `dpkg` source package: `ros-melodic-stereo-msgs=1.12.7-0stretch.20190606.074603`
 
 Binary Packages:
 
-- `ros-melodic-stereo-msgs=1.12.7-0stretch.20190320.125342`
+- `ros-melodic-stereo-msgs=1.12.7-0stretch.20190606.074603`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8975,11 +8980,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-tf-conversions=1.12.0-0stretch.20190320.145810`
+### `dpkg` source package: `ros-melodic-tf-conversions=1.12.0-0stretch.20190606.085439`
 
 Binary Packages:
 
-- `ros-melodic-tf-conversions=1.12.0-0stretch.20190320.145810`
+- `ros-melodic-tf-conversions=1.12.0-0stretch.20190606.085439`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8989,11 +8994,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-tf2-kdl=0.6.5-0stretch.20190320.082450`
+### `dpkg` source package: `ros-melodic-tf2-kdl=0.6.5-0stretch.20190606.074853`
 
 Binary Packages:
 
-- `ros-melodic-tf2-kdl=0.6.5-0stretch.20190320.082450`
+- `ros-melodic-tf2-kdl=0.6.5-0stretch.20190606.074853`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9003,11 +9008,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-tf2-msgs=0.6.5-0stretch.20190318.195406`
+### `dpkg` source package: `ros-melodic-tf2-msgs=0.6.5-0stretch.20190606.045917`
 
 Binary Packages:
 
-- `ros-melodic-tf2-msgs=0.6.5-0stretch.20190318.195406`
+- `ros-melodic-tf2-msgs=0.6.5-0stretch.20190606.045917`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9017,11 +9022,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-tf2-py=0.6.5-0stretch.20190320.052238`
+### `dpkg` source package: `ros-melodic-tf2-py=0.6.5-0stretch.20190606.061203`
 
 Binary Packages:
 
-- `ros-melodic-tf2-py=0.6.5-0stretch.20190320.052238`
+- `ros-melodic-tf2-py=0.6.5-0stretch.20190606.061203`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9031,11 +9036,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-tf2-ros=0.6.5-0stretch.20190320.081117`
+### `dpkg` source package: `ros-melodic-tf2-ros=0.6.5-0stretch.20190606.073625`
 
 Binary Packages:
 
-- `ros-melodic-tf2-ros=0.6.5-0stretch.20190320.081117`
+- `ros-melodic-tf2-ros=0.6.5-0stretch.20190606.073625`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9045,11 +9050,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-tf2=0.6.5-0stretch.20190318.195812`
+### `dpkg` source package: `ros-melodic-tf2=0.6.5-0stretch.20190606.053341`
 
 Binary Packages:
 
-- `ros-melodic-tf2=0.6.5-0stretch.20190318.195812`
+- `ros-melodic-tf2=0.6.5-0stretch.20190606.053341`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9059,11 +9064,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-tf=1.12.0-0stretch.20190320.090527`
+### `dpkg` source package: `ros-melodic-tf=1.12.0-0stretch.20190606.083510`
 
 Binary Packages:
 
-- `ros-melodic-tf=1.12.0-0stretch.20190320.090527`
+- `ros-melodic-tf=1.12.0-0stretch.20190606.083510`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9073,11 +9078,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-topic-tools=1.14.3-0stretch.20190320.053731`
+### `dpkg` source package: `ros-melodic-topic-tools=1.14.3-0stretch.20190606.063841`
 
 Binary Packages:
 
-- `ros-melodic-topic-tools=1.14.3-0stretch.20190320.053731`
+- `ros-melodic-topic-tools=1.14.3-0stretch.20190606.063841`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9087,11 +9092,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-trajectory-msgs=1.12.7-0stretch.20190318.204047`
+### `dpkg` source package: `ros-melodic-trajectory-msgs=1.12.7-0stretch.20190606.050137`
 
 Binary Packages:
 
-- `ros-melodic-trajectory-msgs=1.12.7-0stretch.20190318.204047`
+- `ros-melodic-trajectory-msgs=1.12.7-0stretch.20190606.050137`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9101,11 +9106,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-urdf-parser-plugin=1.13.1-0stretch.20190318.204734`
+### `dpkg` source package: `ros-melodic-urdf-parser-plugin=1.13.1-0stretch.20190606.040638`
 
 Binary Packages:
 
-- `ros-melodic-urdf-parser-plugin=1.13.1-0stretch.20190318.204734`
+- `ros-melodic-urdf-parser-plugin=1.13.1-0stretch.20190606.040638`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9115,11 +9120,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-urdf=1.13.1-0stretch.20190320.053503`
+### `dpkg` source package: `ros-melodic-urdf=1.13.1-0stretch.20190606.063852`
 
 Binary Packages:
 
-- `ros-melodic-urdf=1.13.1-0stretch.20190320.053503`
+- `ros-melodic-urdf=1.13.1-0stretch.20190606.063852`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9129,11 +9134,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-urdfdom-py=0.4.0-0stretch.20190318.210054`
+### `dpkg` source package: `ros-melodic-urdfdom-py=0.4.0-0stretch.20190606.040707`
 
 Binary Packages:
 
-- `ros-melodic-urdfdom-py=0.4.0-0stretch.20190318.210054`
+- `ros-melodic-urdfdom-py=0.4.0-0stretch.20190606.040707`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9143,11 +9148,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-visualization-msgs=1.12.7-0stretch.20190318.200538`
+### `dpkg` source package: `ros-melodic-visualization-msgs=1.12.7-0stretch.20190606.053349`
 
 Binary Packages:
 
-- `ros-melodic-visualization-msgs=1.12.7-0stretch.20190318.200538`
+- `ros-melodic-visualization-msgs=1.12.7-0stretch.20190606.053349`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9157,11 +9162,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-xacro=1.13.3-0stretch.20190320.073311`
+### `dpkg` source package: `ros-melodic-xacro=1.13.3-0stretch.20190606.062859`
 
 Binary Packages:
 
-- `ros-melodic-xacro=1.13.3-0stretch.20190320.073311`
+- `ros-melodic-xacro=1.13.3-0stretch.20190606.062859`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9171,11 +9176,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-xmlrpcpp=1.14.3-0stretch.20190318.192657`
+### `dpkg` source package: `ros-melodic-xmlrpcpp=1.14.3-0stretch.20190606.033950`
 
 Binary Packages:
 
-- `ros-melodic-xmlrpcpp=1.14.3-0stretch.20190318.192657`
+- `ros-melodic-xmlrpcpp=1.14.3-0stretch.20190606.033950`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
