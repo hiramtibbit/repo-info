@@ -1,10 +1,10 @@
-# `composer:1.8.5`
+# `composer:1.8.6`
 
 ## Docker Metadata
 
-- Image ID: `sha256:78e8c9802c21560ffc145decce5d2a4dcb64b5500de78b7f063f96ce24f25033`
-- Created: `2019-06-01T05:36:08.370841775Z`
-- Virtual Size: ~ 160.98 Mb  
+- Image ID: `sha256:b387fd5f9589a6329a694cedab308b25903d9292e510d49127b01db21eecf7c2`
+- Created: `2019-06-11T21:19:57.637799825Z`
+- Virtual Size: ~ 159.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/bin/sh","/docker-entrypoint.sh"]`
@@ -24,7 +24,7 @@
   - `PHP_MD5=`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
-  - `COMPOSER_VERSION=1.8.5`
+  - `COMPOSER_VERSION=1.8.6`
 
 ## `apk` (`.apk`-based packages)
 
@@ -725,23 +725,6 @@ MIT
 
 ```
 
-### `apk` package: `openssh`
-
-```console
-openssh-7.9_p1-r5 description:
-Port of OpenBSD's free SSH release
-
-openssh-7.9_p1-r5 webpage:
-https://www.openssh.org/portable.html
-
-openssh-7.9_p1-r5 installed size:
-327680
-
-openssh-7.9_p1-r5 license:
-BSD
-
-```
-
 ### `apk` package: `openssh-client`
 
 ```console
@@ -772,57 +755,6 @@ openssh-keygen-7.9_p1-r5 installed size:
 380928
 
 openssh-keygen-7.9_p1-r5 license:
-BSD
-
-```
-
-### `apk` package: `openssh-server`
-
-```console
-openssh-server-7.9_p1-r5 description:
-OpenSSH server
-
-openssh-server-7.9_p1-r5 webpage:
-https://www.openssh.org/portable.html
-
-openssh-server-7.9_p1-r5 installed size:
-663552
-
-openssh-server-7.9_p1-r5 license:
-BSD
-
-```
-
-### `apk` package: `openssh-server-common`
-
-```console
-openssh-server-common-7.9_p1-r5 description:
-OpenSSH server configuration files
-
-openssh-server-common-7.9_p1-r5 webpage:
-https://www.openssh.org/portable.html
-
-openssh-server-common-7.9_p1-r5 installed size:
-32768
-
-openssh-server-common-7.9_p1-r5 license:
-BSD
-
-```
-
-### `apk` package: `openssh-sftp-server`
-
-```console
-openssh-sftp-server-7.9_p1-r5 description:
-ssh sftp server module
-
-openssh-sftp-server-7.9_p1-r5 webpage:
-https://www.openssh.org/portable.html
-
-openssh-sftp-server-7.9_p1-r5 installed size:
-106496
-
-openssh-sftp-server-7.9_p1-r5 license:
 BSD
 
 ```
@@ -949,16 +881,16 @@ Apache-2.0
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.26.0-r3 description:
+sqlite-libs-3.28.0-r0 description:
 Sqlite3 library
 
-sqlite-libs-3.26.0-r3 webpage:
-http://www.sqlite.org
+sqlite-libs-3.28.0-r0 webpage:
+https://www.sqlite.org/
 
-sqlite-libs-3.26.0-r3 installed size:
-917504
+sqlite-libs-3.28.0-r0 installed size:
+933888
 
-sqlite-libs-3.26.0-r3 license:
+sqlite-libs-3.28.0-r0 license:
 Public-Domain
 
 ```
