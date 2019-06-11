@@ -567,14 +567,9 @@ Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.165-3ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.165-3ubuntu1.1.dsc' elfutils_0.165-3ubuntu1.1.dsc 2379 SHA256:7a5fdcf2a4787423435f40cbfc5c98978f55faab530a4eec2f00913af8103ec9
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.165.orig.tar.bz2' elfutils_0.165.orig.tar.bz2 6481128 SHA256:a7fc9277192caaa5f30b47e8c0518dbcfd8c4a19c6493a63d511d804290ce972
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.165-3ubuntu1.1.debian.tar.xz' elfutils_0.165-3ubuntu1.1.debian.tar.xz 45776 SHA256:d4b0840dab750dc258d09c4b37d8ab1180d1ef818e617d641897660de004d648
-```
 
 ### `dpkg` source package: `expat=2.1.0-7ubuntu0.16.04.3`
 
