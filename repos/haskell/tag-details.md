@@ -12,7 +12,7 @@
 ## `haskell:8`
 
 ```console
-$ docker pull haskell@sha256:f0c3cf01c53bbe7cddd1794437e701b2d448d8b0ddf5c5037e5d46b5a34cc8da
+$ docker pull haskell@sha256:a242e9eb11bdecf0f30dfd4d82627d77ddab45cba5a87d7783102f3cc5d50afb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -22,45 +22,45 @@ $ docker pull haskell@sha256:f0c3cf01c53bbe7cddd1794437e701b2d448d8b0ddf5c5037e5
 ### `haskell:8` - linux; amd64
 
 ```console
-$ docker pull haskell@sha256:99197a63b9a2a354e988c069527dcd14d813fc9d951d88e002b43fdb16e6b03f
+$ docker pull haskell@sha256:c1cd1fb4e1351634af54c481ea0b16ea5c55a7aa17b23f75d1eb6d7e3faf7050
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **301.5 MB (301471114 bytes)**  
+-	Total Size: **301.5 MB (301471955 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:59a6b912e8731ac7b7a895a335d81bc19dc1a9fdbff211ae8d39a9711ceb021f`
+-	Image ID: `sha256:4223a63d996912976ba2b2f6f9e974d7debf7514c7281c1ea6520caae46a77fa`
 -	Default Command: `["ghci"]`
 
 ```dockerfile
-# Wed, 08 May 2019 00:33:09 GMT
-ADD file:caf91edab64f988bc24766c58ee66c00311c7c921296b8e5b51d7023422a1485 in / 
-# Wed, 08 May 2019 00:33:10 GMT
+# Mon, 10 Jun 2019 23:24:07 GMT
+ADD file:6e8620824300ccf3754fb5d8644a1dc7c69431d4cd1ef9d28d73f39260f96020 in / 
+# Mon, 10 Jun 2019 23:24:07 GMT
 CMD ["bash"]
-# Wed, 08 May 2019 02:19:32 GMT
+# Mon, 10 Jun 2019 23:56:50 GMT
 ENV LANG=C.UTF-8
-# Mon, 20 May 2019 21:20:38 GMT
+# Mon, 10 Jun 2019 23:57:46 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends gnupg ca-certificates dirmngr curl git &&     echo 'deb http://downloads.haskell.org/debian stretch main' > /etc/apt/sources.list.d/ghc.list &&     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA3CBA3FFE22B574 &&     apt-get update &&     apt-get install -y --no-install-recommends ghc-8.6.5 cabal-install-2.4         zlib1g-dev libtinfo-dev libsqlite3-dev g++ netbase xz-utils make &&     curl -fSL https://github.com/commercialhaskell/stack/releases/download/v1.9.3/stack-1.9.3-linux-x86_64.tar.gz -o stack.tar.gz &&     curl -fSL https://github.com/commercialhaskell/stack/releases/download/v1.9.3/stack-1.9.3-linux-x86_64.tar.gz.asc -o stack.tar.gz.asc &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys C5705533DA4F78D8664B5DC0575159689BEFB442 &&     gpg --batch --verify stack.tar.gz.asc stack.tar.gz &&     tar -xf stack.tar.gz -C /usr/local/bin --strip-components=1 &&     /usr/local/bin/stack config set system-ghc --global true &&     /usr/local/bin/stack config set install-ghc --global false &&     rm -rf "$GNUPGHOME" /var/lib/apt/lists/* /stack.tar.gz.asc /stack.tar.gz
-# Mon, 20 May 2019 21:20:39 GMT
+# Mon, 10 Jun 2019 23:57:47 GMT
 ENV PATH=/root/.cabal/bin:/root/.local/bin:/opt/cabal/2.4/bin:/opt/ghc/8.6.5/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 20 May 2019 21:20:39 GMT
+# Mon, 10 Jun 2019 23:57:47 GMT
 CMD ["ghci"]
 ```
 
 -	Layers:
-	-	`sha256:c5e155d5a1d130a7f8a3e24cee0d9e1349bff13f90ec6a941478e558fde53c14`  
-		Last Modified: Wed, 08 May 2019 00:37:42 GMT  
-		Size: 45.3 MB (45339314 bytes)  
+	-	`sha256:6f2f362378c5a6fd915d96d11dda1e0223ccf213bf121ace56ae0f6616ea1dc8`  
+		Last Modified: Mon, 10 Jun 2019 23:27:55 GMT  
+		Size: 45.3 MB (45339350 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e301be12a0a22a7830440b2d31a8ef3912fc71714aea920f6ffd2e6deb306c8`  
-		Last Modified: Mon, 20 May 2019 21:21:55 GMT  
-		Size: 256.1 MB (256131800 bytes)  
+	-	`sha256:bc796d06dca0238d5da672a1dc2a5bffdfc7dde8d83935cc6388c5248b2b5830`  
+		Last Modified: Tue, 11 Jun 2019 00:00:46 GMT  
+		Size: 256.1 MB (256132605 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haskell:8.4`
 
 ```console
-$ docker pull haskell@sha256:36d644c277fce8da3af753b6776de7802b2d65a8e90efac51de6849896005841
+$ docker pull haskell@sha256:d3151ef7ede16735666e43c3b8cd65971883312b79d6886feb6b764d3197f56a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -70,45 +70,45 @@ $ docker pull haskell@sha256:36d644c277fce8da3af753b6776de7802b2d65a8e90efac51de
 ### `haskell:8.4` - linux; amd64
 
 ```console
-$ docker pull haskell@sha256:a3c517913060273cef45c2eb7d096b48460cce56c9806e858cbb4bd11eee878c
+$ docker pull haskell@sha256:51c3b4c2a85595dc1046dbfc6a5beb35eccc74f9ad10a708e47caa0d0c53dd41
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **296.0 MB (296000931 bytes)**  
+-	Total Size: **296.0 MB (296007141 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:de7150ef0edb19c8dac8adfc00f51bb31ae1bd912f6d9cade8511341ea3f2ff1`
+-	Image ID: `sha256:cad8c8d1d4e95f1cc3581b3cb09ce4235a4ffe96388c9faf01d3102db9496b11`
 -	Default Command: `["ghci"]`
 
 ```dockerfile
-# Wed, 08 May 2019 00:33:09 GMT
-ADD file:caf91edab64f988bc24766c58ee66c00311c7c921296b8e5b51d7023422a1485 in / 
-# Wed, 08 May 2019 00:33:10 GMT
+# Mon, 10 Jun 2019 23:24:07 GMT
+ADD file:6e8620824300ccf3754fb5d8644a1dc7c69431d4cd1ef9d28d73f39260f96020 in / 
+# Mon, 10 Jun 2019 23:24:07 GMT
 CMD ["bash"]
-# Wed, 08 May 2019 02:19:32 GMT
+# Mon, 10 Jun 2019 23:56:50 GMT
 ENV LANG=C.UTF-8
-# Wed, 08 May 2019 02:21:41 GMT
+# Mon, 10 Jun 2019 23:59:19 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends gnupg ca-certificates dirmngr curl git &&     echo 'deb http://downloads.haskell.org/debian stretch main' > /etc/apt/sources.list.d/ghc.list &&     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA3CBA3FFE22B574 &&     apt-get update &&     apt-get install -y --no-install-recommends ghc-8.4.4 cabal-install-2.4         zlib1g-dev libtinfo-dev libsqlite3-dev g++ netbase xz-utils make &&     curl -fSL https://github.com/commercialhaskell/stack/releases/download/v1.9.1/stack-1.9.1-linux-x86_64.tar.gz -o stack.tar.gz &&     curl -fSL https://github.com/commercialhaskell/stack/releases/download/v1.9.1/stack-1.9.1-linux-x86_64.tar.gz.asc -o stack.tar.gz.asc &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys C5705533DA4F78D8664B5DC0575159689BEFB442 &&     gpg --batch --verify stack.tar.gz.asc stack.tar.gz &&     tar -xf stack.tar.gz -C /usr/local/bin --strip-components=1 &&     /usr/local/bin/stack config set system-ghc --global true &&     /usr/local/bin/stack config set install-ghc --global false &&     rm -rf "$GNUPGHOME" /var/lib/apt/lists/* /stack.tar.gz.asc /stack.tar.gz
-# Wed, 08 May 2019 02:21:42 GMT
+# Mon, 10 Jun 2019 23:59:19 GMT
 ENV PATH=/root/.cabal/bin:/root/.local/bin:/opt/cabal/2.4/bin:/opt/ghc/8.4.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 08 May 2019 02:21:42 GMT
+# Mon, 10 Jun 2019 23:59:20 GMT
 CMD ["ghci"]
 ```
 
 -	Layers:
-	-	`sha256:c5e155d5a1d130a7f8a3e24cee0d9e1349bff13f90ec6a941478e558fde53c14`  
-		Last Modified: Wed, 08 May 2019 00:37:42 GMT  
-		Size: 45.3 MB (45339314 bytes)  
+	-	`sha256:6f2f362378c5a6fd915d96d11dda1e0223ccf213bf121ace56ae0f6616ea1dc8`  
+		Last Modified: Mon, 10 Jun 2019 23:27:55 GMT  
+		Size: 45.3 MB (45339350 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:53ed58265c8780c59a4444f3118e4bdd538ed1224c20ca18db716109d210665a`  
-		Last Modified: Wed, 08 May 2019 02:24:16 GMT  
-		Size: 250.7 MB (250661617 bytes)  
+	-	`sha256:ba5598489044d378c1c428193a7dec5f030b80d4e19a5939bfe6e1e6842124bb`  
+		Last Modified: Tue, 11 Jun 2019 00:01:57 GMT  
+		Size: 250.7 MB (250667791 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haskell:8.4.4`
 
 ```console
-$ docker pull haskell@sha256:36d644c277fce8da3af753b6776de7802b2d65a8e90efac51de6849896005841
+$ docker pull haskell@sha256:d3151ef7ede16735666e43c3b8cd65971883312b79d6886feb6b764d3197f56a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -118,45 +118,45 @@ $ docker pull haskell@sha256:36d644c277fce8da3af753b6776de7802b2d65a8e90efac51de
 ### `haskell:8.4.4` - linux; amd64
 
 ```console
-$ docker pull haskell@sha256:a3c517913060273cef45c2eb7d096b48460cce56c9806e858cbb4bd11eee878c
+$ docker pull haskell@sha256:51c3b4c2a85595dc1046dbfc6a5beb35eccc74f9ad10a708e47caa0d0c53dd41
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **296.0 MB (296000931 bytes)**  
+-	Total Size: **296.0 MB (296007141 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:de7150ef0edb19c8dac8adfc00f51bb31ae1bd912f6d9cade8511341ea3f2ff1`
+-	Image ID: `sha256:cad8c8d1d4e95f1cc3581b3cb09ce4235a4ffe96388c9faf01d3102db9496b11`
 -	Default Command: `["ghci"]`
 
 ```dockerfile
-# Wed, 08 May 2019 00:33:09 GMT
-ADD file:caf91edab64f988bc24766c58ee66c00311c7c921296b8e5b51d7023422a1485 in / 
-# Wed, 08 May 2019 00:33:10 GMT
+# Mon, 10 Jun 2019 23:24:07 GMT
+ADD file:6e8620824300ccf3754fb5d8644a1dc7c69431d4cd1ef9d28d73f39260f96020 in / 
+# Mon, 10 Jun 2019 23:24:07 GMT
 CMD ["bash"]
-# Wed, 08 May 2019 02:19:32 GMT
+# Mon, 10 Jun 2019 23:56:50 GMT
 ENV LANG=C.UTF-8
-# Wed, 08 May 2019 02:21:41 GMT
+# Mon, 10 Jun 2019 23:59:19 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends gnupg ca-certificates dirmngr curl git &&     echo 'deb http://downloads.haskell.org/debian stretch main' > /etc/apt/sources.list.d/ghc.list &&     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA3CBA3FFE22B574 &&     apt-get update &&     apt-get install -y --no-install-recommends ghc-8.4.4 cabal-install-2.4         zlib1g-dev libtinfo-dev libsqlite3-dev g++ netbase xz-utils make &&     curl -fSL https://github.com/commercialhaskell/stack/releases/download/v1.9.1/stack-1.9.1-linux-x86_64.tar.gz -o stack.tar.gz &&     curl -fSL https://github.com/commercialhaskell/stack/releases/download/v1.9.1/stack-1.9.1-linux-x86_64.tar.gz.asc -o stack.tar.gz.asc &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys C5705533DA4F78D8664B5DC0575159689BEFB442 &&     gpg --batch --verify stack.tar.gz.asc stack.tar.gz &&     tar -xf stack.tar.gz -C /usr/local/bin --strip-components=1 &&     /usr/local/bin/stack config set system-ghc --global true &&     /usr/local/bin/stack config set install-ghc --global false &&     rm -rf "$GNUPGHOME" /var/lib/apt/lists/* /stack.tar.gz.asc /stack.tar.gz
-# Wed, 08 May 2019 02:21:42 GMT
+# Mon, 10 Jun 2019 23:59:19 GMT
 ENV PATH=/root/.cabal/bin:/root/.local/bin:/opt/cabal/2.4/bin:/opt/ghc/8.4.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 08 May 2019 02:21:42 GMT
+# Mon, 10 Jun 2019 23:59:20 GMT
 CMD ["ghci"]
 ```
 
 -	Layers:
-	-	`sha256:c5e155d5a1d130a7f8a3e24cee0d9e1349bff13f90ec6a941478e558fde53c14`  
-		Last Modified: Wed, 08 May 2019 00:37:42 GMT  
-		Size: 45.3 MB (45339314 bytes)  
+	-	`sha256:6f2f362378c5a6fd915d96d11dda1e0223ccf213bf121ace56ae0f6616ea1dc8`  
+		Last Modified: Mon, 10 Jun 2019 23:27:55 GMT  
+		Size: 45.3 MB (45339350 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:53ed58265c8780c59a4444f3118e4bdd538ed1224c20ca18db716109d210665a`  
-		Last Modified: Wed, 08 May 2019 02:24:16 GMT  
-		Size: 250.7 MB (250661617 bytes)  
+	-	`sha256:ba5598489044d378c1c428193a7dec5f030b80d4e19a5939bfe6e1e6842124bb`  
+		Last Modified: Tue, 11 Jun 2019 00:01:57 GMT  
+		Size: 250.7 MB (250667791 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haskell:8.6`
 
 ```console
-$ docker pull haskell@sha256:f0c3cf01c53bbe7cddd1794437e701b2d448d8b0ddf5c5037e5d46b5a34cc8da
+$ docker pull haskell@sha256:a242e9eb11bdecf0f30dfd4d82627d77ddab45cba5a87d7783102f3cc5d50afb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -166,45 +166,45 @@ $ docker pull haskell@sha256:f0c3cf01c53bbe7cddd1794437e701b2d448d8b0ddf5c5037e5
 ### `haskell:8.6` - linux; amd64
 
 ```console
-$ docker pull haskell@sha256:99197a63b9a2a354e988c069527dcd14d813fc9d951d88e002b43fdb16e6b03f
+$ docker pull haskell@sha256:c1cd1fb4e1351634af54c481ea0b16ea5c55a7aa17b23f75d1eb6d7e3faf7050
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **301.5 MB (301471114 bytes)**  
+-	Total Size: **301.5 MB (301471955 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:59a6b912e8731ac7b7a895a335d81bc19dc1a9fdbff211ae8d39a9711ceb021f`
+-	Image ID: `sha256:4223a63d996912976ba2b2f6f9e974d7debf7514c7281c1ea6520caae46a77fa`
 -	Default Command: `["ghci"]`
 
 ```dockerfile
-# Wed, 08 May 2019 00:33:09 GMT
-ADD file:caf91edab64f988bc24766c58ee66c00311c7c921296b8e5b51d7023422a1485 in / 
-# Wed, 08 May 2019 00:33:10 GMT
+# Mon, 10 Jun 2019 23:24:07 GMT
+ADD file:6e8620824300ccf3754fb5d8644a1dc7c69431d4cd1ef9d28d73f39260f96020 in / 
+# Mon, 10 Jun 2019 23:24:07 GMT
 CMD ["bash"]
-# Wed, 08 May 2019 02:19:32 GMT
+# Mon, 10 Jun 2019 23:56:50 GMT
 ENV LANG=C.UTF-8
-# Mon, 20 May 2019 21:20:38 GMT
+# Mon, 10 Jun 2019 23:57:46 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends gnupg ca-certificates dirmngr curl git &&     echo 'deb http://downloads.haskell.org/debian stretch main' > /etc/apt/sources.list.d/ghc.list &&     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA3CBA3FFE22B574 &&     apt-get update &&     apt-get install -y --no-install-recommends ghc-8.6.5 cabal-install-2.4         zlib1g-dev libtinfo-dev libsqlite3-dev g++ netbase xz-utils make &&     curl -fSL https://github.com/commercialhaskell/stack/releases/download/v1.9.3/stack-1.9.3-linux-x86_64.tar.gz -o stack.tar.gz &&     curl -fSL https://github.com/commercialhaskell/stack/releases/download/v1.9.3/stack-1.9.3-linux-x86_64.tar.gz.asc -o stack.tar.gz.asc &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys C5705533DA4F78D8664B5DC0575159689BEFB442 &&     gpg --batch --verify stack.tar.gz.asc stack.tar.gz &&     tar -xf stack.tar.gz -C /usr/local/bin --strip-components=1 &&     /usr/local/bin/stack config set system-ghc --global true &&     /usr/local/bin/stack config set install-ghc --global false &&     rm -rf "$GNUPGHOME" /var/lib/apt/lists/* /stack.tar.gz.asc /stack.tar.gz
-# Mon, 20 May 2019 21:20:39 GMT
+# Mon, 10 Jun 2019 23:57:47 GMT
 ENV PATH=/root/.cabal/bin:/root/.local/bin:/opt/cabal/2.4/bin:/opt/ghc/8.6.5/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 20 May 2019 21:20:39 GMT
+# Mon, 10 Jun 2019 23:57:47 GMT
 CMD ["ghci"]
 ```
 
 -	Layers:
-	-	`sha256:c5e155d5a1d130a7f8a3e24cee0d9e1349bff13f90ec6a941478e558fde53c14`  
-		Last Modified: Wed, 08 May 2019 00:37:42 GMT  
-		Size: 45.3 MB (45339314 bytes)  
+	-	`sha256:6f2f362378c5a6fd915d96d11dda1e0223ccf213bf121ace56ae0f6616ea1dc8`  
+		Last Modified: Mon, 10 Jun 2019 23:27:55 GMT  
+		Size: 45.3 MB (45339350 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e301be12a0a22a7830440b2d31a8ef3912fc71714aea920f6ffd2e6deb306c8`  
-		Last Modified: Mon, 20 May 2019 21:21:55 GMT  
-		Size: 256.1 MB (256131800 bytes)  
+	-	`sha256:bc796d06dca0238d5da672a1dc2a5bffdfc7dde8d83935cc6388c5248b2b5830`  
+		Last Modified: Tue, 11 Jun 2019 00:00:46 GMT  
+		Size: 256.1 MB (256132605 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haskell:8.6.5`
 
 ```console
-$ docker pull haskell@sha256:f0c3cf01c53bbe7cddd1794437e701b2d448d8b0ddf5c5037e5d46b5a34cc8da
+$ docker pull haskell@sha256:a242e9eb11bdecf0f30dfd4d82627d77ddab45cba5a87d7783102f3cc5d50afb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -214,45 +214,45 @@ $ docker pull haskell@sha256:f0c3cf01c53bbe7cddd1794437e701b2d448d8b0ddf5c5037e5
 ### `haskell:8.6.5` - linux; amd64
 
 ```console
-$ docker pull haskell@sha256:99197a63b9a2a354e988c069527dcd14d813fc9d951d88e002b43fdb16e6b03f
+$ docker pull haskell@sha256:c1cd1fb4e1351634af54c481ea0b16ea5c55a7aa17b23f75d1eb6d7e3faf7050
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **301.5 MB (301471114 bytes)**  
+-	Total Size: **301.5 MB (301471955 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:59a6b912e8731ac7b7a895a335d81bc19dc1a9fdbff211ae8d39a9711ceb021f`
+-	Image ID: `sha256:4223a63d996912976ba2b2f6f9e974d7debf7514c7281c1ea6520caae46a77fa`
 -	Default Command: `["ghci"]`
 
 ```dockerfile
-# Wed, 08 May 2019 00:33:09 GMT
-ADD file:caf91edab64f988bc24766c58ee66c00311c7c921296b8e5b51d7023422a1485 in / 
-# Wed, 08 May 2019 00:33:10 GMT
+# Mon, 10 Jun 2019 23:24:07 GMT
+ADD file:6e8620824300ccf3754fb5d8644a1dc7c69431d4cd1ef9d28d73f39260f96020 in / 
+# Mon, 10 Jun 2019 23:24:07 GMT
 CMD ["bash"]
-# Wed, 08 May 2019 02:19:32 GMT
+# Mon, 10 Jun 2019 23:56:50 GMT
 ENV LANG=C.UTF-8
-# Mon, 20 May 2019 21:20:38 GMT
+# Mon, 10 Jun 2019 23:57:46 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends gnupg ca-certificates dirmngr curl git &&     echo 'deb http://downloads.haskell.org/debian stretch main' > /etc/apt/sources.list.d/ghc.list &&     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA3CBA3FFE22B574 &&     apt-get update &&     apt-get install -y --no-install-recommends ghc-8.6.5 cabal-install-2.4         zlib1g-dev libtinfo-dev libsqlite3-dev g++ netbase xz-utils make &&     curl -fSL https://github.com/commercialhaskell/stack/releases/download/v1.9.3/stack-1.9.3-linux-x86_64.tar.gz -o stack.tar.gz &&     curl -fSL https://github.com/commercialhaskell/stack/releases/download/v1.9.3/stack-1.9.3-linux-x86_64.tar.gz.asc -o stack.tar.gz.asc &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys C5705533DA4F78D8664B5DC0575159689BEFB442 &&     gpg --batch --verify stack.tar.gz.asc stack.tar.gz &&     tar -xf stack.tar.gz -C /usr/local/bin --strip-components=1 &&     /usr/local/bin/stack config set system-ghc --global true &&     /usr/local/bin/stack config set install-ghc --global false &&     rm -rf "$GNUPGHOME" /var/lib/apt/lists/* /stack.tar.gz.asc /stack.tar.gz
-# Mon, 20 May 2019 21:20:39 GMT
+# Mon, 10 Jun 2019 23:57:47 GMT
 ENV PATH=/root/.cabal/bin:/root/.local/bin:/opt/cabal/2.4/bin:/opt/ghc/8.6.5/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 20 May 2019 21:20:39 GMT
+# Mon, 10 Jun 2019 23:57:47 GMT
 CMD ["ghci"]
 ```
 
 -	Layers:
-	-	`sha256:c5e155d5a1d130a7f8a3e24cee0d9e1349bff13f90ec6a941478e558fde53c14`  
-		Last Modified: Wed, 08 May 2019 00:37:42 GMT  
-		Size: 45.3 MB (45339314 bytes)  
+	-	`sha256:6f2f362378c5a6fd915d96d11dda1e0223ccf213bf121ace56ae0f6616ea1dc8`  
+		Last Modified: Mon, 10 Jun 2019 23:27:55 GMT  
+		Size: 45.3 MB (45339350 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e301be12a0a22a7830440b2d31a8ef3912fc71714aea920f6ffd2e6deb306c8`  
-		Last Modified: Mon, 20 May 2019 21:21:55 GMT  
-		Size: 256.1 MB (256131800 bytes)  
+	-	`sha256:bc796d06dca0238d5da672a1dc2a5bffdfc7dde8d83935cc6388c5248b2b5830`  
+		Last Modified: Tue, 11 Jun 2019 00:00:46 GMT  
+		Size: 256.1 MB (256132605 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haskell:latest`
 
 ```console
-$ docker pull haskell@sha256:f0c3cf01c53bbe7cddd1794437e701b2d448d8b0ddf5c5037e5d46b5a34cc8da
+$ docker pull haskell@sha256:a242e9eb11bdecf0f30dfd4d82627d77ddab45cba5a87d7783102f3cc5d50afb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -262,37 +262,37 @@ $ docker pull haskell@sha256:f0c3cf01c53bbe7cddd1794437e701b2d448d8b0ddf5c5037e5
 ### `haskell:latest` - linux; amd64
 
 ```console
-$ docker pull haskell@sha256:99197a63b9a2a354e988c069527dcd14d813fc9d951d88e002b43fdb16e6b03f
+$ docker pull haskell@sha256:c1cd1fb4e1351634af54c481ea0b16ea5c55a7aa17b23f75d1eb6d7e3faf7050
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **301.5 MB (301471114 bytes)**  
+-	Total Size: **301.5 MB (301471955 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:59a6b912e8731ac7b7a895a335d81bc19dc1a9fdbff211ae8d39a9711ceb021f`
+-	Image ID: `sha256:4223a63d996912976ba2b2f6f9e974d7debf7514c7281c1ea6520caae46a77fa`
 -	Default Command: `["ghci"]`
 
 ```dockerfile
-# Wed, 08 May 2019 00:33:09 GMT
-ADD file:caf91edab64f988bc24766c58ee66c00311c7c921296b8e5b51d7023422a1485 in / 
-# Wed, 08 May 2019 00:33:10 GMT
+# Mon, 10 Jun 2019 23:24:07 GMT
+ADD file:6e8620824300ccf3754fb5d8644a1dc7c69431d4cd1ef9d28d73f39260f96020 in / 
+# Mon, 10 Jun 2019 23:24:07 GMT
 CMD ["bash"]
-# Wed, 08 May 2019 02:19:32 GMT
+# Mon, 10 Jun 2019 23:56:50 GMT
 ENV LANG=C.UTF-8
-# Mon, 20 May 2019 21:20:38 GMT
+# Mon, 10 Jun 2019 23:57:46 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends gnupg ca-certificates dirmngr curl git &&     echo 'deb http://downloads.haskell.org/debian stretch main' > /etc/apt/sources.list.d/ghc.list &&     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA3CBA3FFE22B574 &&     apt-get update &&     apt-get install -y --no-install-recommends ghc-8.6.5 cabal-install-2.4         zlib1g-dev libtinfo-dev libsqlite3-dev g++ netbase xz-utils make &&     curl -fSL https://github.com/commercialhaskell/stack/releases/download/v1.9.3/stack-1.9.3-linux-x86_64.tar.gz -o stack.tar.gz &&     curl -fSL https://github.com/commercialhaskell/stack/releases/download/v1.9.3/stack-1.9.3-linux-x86_64.tar.gz.asc -o stack.tar.gz.asc &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys C5705533DA4F78D8664B5DC0575159689BEFB442 &&     gpg --batch --verify stack.tar.gz.asc stack.tar.gz &&     tar -xf stack.tar.gz -C /usr/local/bin --strip-components=1 &&     /usr/local/bin/stack config set system-ghc --global true &&     /usr/local/bin/stack config set install-ghc --global false &&     rm -rf "$GNUPGHOME" /var/lib/apt/lists/* /stack.tar.gz.asc /stack.tar.gz
-# Mon, 20 May 2019 21:20:39 GMT
+# Mon, 10 Jun 2019 23:57:47 GMT
 ENV PATH=/root/.cabal/bin:/root/.local/bin:/opt/cabal/2.4/bin:/opt/ghc/8.6.5/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 20 May 2019 21:20:39 GMT
+# Mon, 10 Jun 2019 23:57:47 GMT
 CMD ["ghci"]
 ```
 
 -	Layers:
-	-	`sha256:c5e155d5a1d130a7f8a3e24cee0d9e1349bff13f90ec6a941478e558fde53c14`  
-		Last Modified: Wed, 08 May 2019 00:37:42 GMT  
-		Size: 45.3 MB (45339314 bytes)  
+	-	`sha256:6f2f362378c5a6fd915d96d11dda1e0223ccf213bf121ace56ae0f6616ea1dc8`  
+		Last Modified: Mon, 10 Jun 2019 23:27:55 GMT  
+		Size: 45.3 MB (45339350 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e301be12a0a22a7830440b2d31a8ef3912fc71714aea920f6ffd2e6deb306c8`  
-		Last Modified: Mon, 20 May 2019 21:21:55 GMT  
-		Size: 256.1 MB (256131800 bytes)  
+	-	`sha256:bc796d06dca0238d5da672a1dc2a5bffdfc7dde8d83935cc6388c5248b2b5830`  
+		Last Modified: Tue, 11 Jun 2019 00:00:46 GMT  
+		Size: 256.1 MB (256132605 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
