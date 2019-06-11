@@ -1,7 +1,7 @@
 ## `buildpack-deps:disco-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:6a803d66dd52dcfbd022e475b099bccef3a132fdc6c7f83a8b72a9d4c584028e
+$ docker pull buildpack-deps@sha256:2aa88c87e5e2fd71cc09c0b7741bfaa81a581d3ca147dc0e85fde0777653cfa8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -224,14 +224,14 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 ### `buildpack-deps:disco-curl` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:4ea3b49e7b49c9db46073a4534cd94b067b11a2a656d2e0cf109d8bb54327824
+$ docker pull buildpack-deps@sha256:30d3adb83283a6301f57314dd1dd7ea43eaf79fc3fc02e7150fcaaae564c113b
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.2 MB (47197088 bytes)**  
+-	Total Size: **47.2 MB (47197887 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0fcc525d3335cbba722fa9cc69009dcb806873a9c61a4c6c7c665d682181ace6`
+-	Image ID: `sha256:222f659872425110886742e554dcdefcba7ed68e1285cccb030c163e866449da`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -245,9 +245,9 @@ RUN rm -rf /var/lib/apt/lists/*
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 # Wed, 15 May 2019 22:24:33 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2019 23:35:25 GMT
+# Tue, 11 Jun 2019 01:40:55 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 23:35:52 GMT
+# Tue, 11 Jun 2019 01:41:20 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
@@ -264,13 +264,13 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 		Last Modified: Wed, 15 May 2019 22:29:39 GMT  
 		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:54d87e0900b76c61efd506f599652025ef7949e3afa82ae902417e945086db5b`  
-		Last Modified: Thu, 16 May 2019 00:03:56 GMT  
-		Size: 7.7 MB (7741374 bytes)  
+	-	`sha256:5df4c1df24d71c03b4dd1c78b51fbbf4f13599d66706b52b6583979654d085b2`  
+		Last Modified: Tue, 11 Jun 2019 02:51:02 GMT  
+		Size: 7.7 MB (7742015 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d543454b9d024fd7555be9844a024690f3b97f3da0cf8c0510059fec9ab0481`  
-		Last Modified: Thu, 16 May 2019 00:03:55 GMT  
-		Size: 4.5 MB (4460957 bytes)  
+	-	`sha256:6764f2f625b21f04ab716732bf74b03959e5b291b044b4d133091224c14dc28c`  
+		Last Modified: Tue, 11 Jun 2019 02:51:01 GMT  
+		Size: 4.5 MB (4461115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:disco-curl` - linux; s390x
