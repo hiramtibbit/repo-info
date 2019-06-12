@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4f80c3500cd31bd4989c9cbe85efa16960de49671c3714236ab99a6bfc3bcf16`
-- Created: `2019-05-14T00:28:19.742153061Z`
-- Virtual Size: ~ 33.95 Mb  
+- Image ID: `sha256:9c92ca68053dc486a8fed0a8c6090f960c4de00b8a6b2119c8bc9b1ef62ebaf3`
+- Created: `2019-06-10T23:22:04.311880343Z`
+- Virtual Size: ~ 34.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `build-date=20190512`
+  - `build-date=20190610`
   - `name=Photon OS x86_64/3.0 Base Image`
   - `vendor=VMware`
 
@@ -29,25 +29,25 @@ Licenses (from `rpm --query`): BSD
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `ca-certificates-20180919-1.ph3.x86_64`
+### `rpm` package: `ca-certificates-20190521-1.ph3.x86_64`
 
 Licenses (from `rpm --query`): Custom
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `ca-certificates-pki-20180919-1.ph3.x86_64`
+### `rpm` package: `ca-certificates-pki-20190521-1.ph3.x86_64`
 
 Licenses (from `rpm --query`): Custom
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `curl-7.61.1-3.ph3.x86_64`
+### `rpm` package: `curl-7.61.1-4.ph3.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `curl-libs-7.61.1-3.ph3.x86_64`
+### `rpm` package: `curl-libs-7.61.1-4.ph3.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -59,7 +59,7 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `elfutils-libelf-0.174-2.ph3.x86_64`
+### `rpm` package: `elfutils-libelf-0.174-3.ph3.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ or LGPLv3+
 
