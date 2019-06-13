@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9cca1dec9915a08b898c2e061e167dc7912f0746a87405d1863a9670e25dc0b5`
-- Created: `2019-06-05T23:21:56.077962996Z`
+- Image ID: `sha256:215d317d188b9bf4ab04a5c9b180a035fc484e5474d3d2cbed389ed3a5094fd6`
+- Created: `2019-06-11T17:11:24.311166604Z`
 - Virtual Size: ~ 211.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,12 +16,10 @@
   - `JAVA_VERSION=8u212-b04`
   - `JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u212-b04/OpenJDK8U-jre_`
   - `JAVA_URL_VERSION=8u212b04`
-  - `ZOO_USER=zookeeper`
   - `ZOO_CONF_DIR=/conf`
   - `ZOO_DATA_DIR=/data`
   - `ZOO_DATA_LOG_DIR=/datalog`
   - `ZOO_LOG_DIR=/logs`
-  - `ZOO_PORT=2181`
   - `ZOO_TICK_TIME=2000`
   - `ZOO_INIT_LIMIT=5`
   - `ZOO_SYNC_LIMIT=2`
@@ -29,6 +27,7 @@
   - `ZOO_AUTOPURGE_SNAPRETAINCOUNT=3`
   - `ZOO_MAX_CLIENT_CNXNS=60`
   - `ZOO_STANDALONE_ENABLED=true`
+  - `ZOO_ADMINSERVER_ENABLED=true`
   - `ZOOCFGDIR=/conf`
 
 ## `dpkg` (`.deb`-based packages)
