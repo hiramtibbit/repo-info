@@ -10,7 +10,7 @@
 ## `express-gateway:1.16.4`
 
 ```console
-$ docker pull express-gateway@sha256:1e66471841a5127605fef5bf497129cb0f7b86c2d93b2cb35ea04ea3f924dbe9
+$ docker pull express-gateway@sha256:934ba02b4aadc401163380f80e5607fdf646dd7b336cc53789ecf6c2d3bb208a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -110,14 +110,14 @@ CMD ["node" "-e" "require('express-gateway')().run();"]
 ### `express-gateway:1.16.4` - linux; arm64 variant v8
 
 ```console
-$ docker pull express-gateway@sha256:fcfd72e2f67aa3c85ee60c8e4f441e78da8acbe20337d1f5c9c76abeedbc7669
+$ docker pull express-gateway@sha256:13b34da943dcb314742a6e876d174af5aa8ee9133b4f55f78b1f44f94190b7c1
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.3 MB (35270348 bytes)**  
+-	Total Size: **35.2 MB (35228124 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6b1cdeee7e09a5f7c24e88754e6b0dfd92dad43413310aa9cb90239ce15d00d`
+-	Image ID: `sha256:ade8616203f59ed696903e536e88db16390659002609d8eb478ea2ccf0d27aaf`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","-e","require('express-gateway')().run();"]`
 
@@ -134,32 +134,36 @@ RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     
 ENV YARN_VERSION=1.16.0
 # Wed, 29 May 2019 16:46:26 GMT
 RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn
-# Wed, 29 May 2019 16:46:27 GMT
+# Tue, 04 Jun 2019 22:16:08 GMT
+COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ 
+# Tue, 04 Jun 2019 22:16:09 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 04 Jun 2019 22:16:09 GMT
 CMD ["node"]
-# Mon, 03 Jun 2019 20:47:14 GMT
+# Thu, 13 Jun 2019 02:10:34 GMT
 LABEL maintainer=Vincenzo Chianese, vincenzo@express-gateway.io
-# Mon, 03 Jun 2019 20:47:14 GMT
+# Thu, 13 Jun 2019 02:10:34 GMT
 ARG EG_VERSION=1.16.4
-# Mon, 03 Jun 2019 20:47:38 GMT
+# Thu, 13 Jun 2019 02:11:03 GMT
 # ARGS: EG_VERSION=1.16.4
 RUN yarn global add express-gateway@$EG_VERSION && yarn cache clean
-# Mon, 03 Jun 2019 20:47:40 GMT
+# Thu, 13 Jun 2019 02:11:05 GMT
 ENV NODE_ENV=production
-# Mon, 03 Jun 2019 20:47:40 GMT
+# Thu, 13 Jun 2019 02:11:05 GMT
 ENV NODE_PATH=/usr/local/share/.config/yarn/global/node_modules/
-# Mon, 03 Jun 2019 20:47:40 GMT
+# Thu, 13 Jun 2019 02:11:05 GMT
 ENV EG_CONFIG_DIR=/var/lib/eg
-# Mon, 03 Jun 2019 20:47:41 GMT
+# Thu, 13 Jun 2019 02:11:06 GMT
 ENV CHOKIDAR_USEPOLLING=true
-# Mon, 03 Jun 2019 20:47:41 GMT
+# Thu, 13 Jun 2019 02:11:06 GMT
 VOLUME [/var/lib/eg]
-# Mon, 03 Jun 2019 20:47:41 GMT
+# Thu, 13 Jun 2019 02:11:07 GMT
 EXPOSE 8080 9876
-# Mon, 03 Jun 2019 20:47:42 GMT
+# Thu, 13 Jun 2019 02:11:07 GMT
 COPY file:9481e65ab3ccc3b910b8af90d3df04d9f70030b8f8a0cfcc390840936290aaab in /usr/local/bin/ 
-# Mon, 03 Jun 2019 20:47:42 GMT
+# Thu, 13 Jun 2019 02:11:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 03 Jun 2019 20:47:43 GMT
+# Thu, 13 Jun 2019 02:11:09 GMT
 CMD ["node" "-e" "require('express-gateway')().run();"]
 ```
 
@@ -176,13 +180,17 @@ CMD ["node" "-e" "require('express-gateway')().run();"]
 		Last Modified: Wed, 29 May 2019 16:48:28 GMT  
 		Size: 1.3 MB (1334722 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3de37a1228fe2becc8da2c09cd102e1d304a12608a8edf09debab049d4f23723`  
-		Last Modified: Mon, 03 Jun 2019 20:47:57 GMT  
-		Size: 9.7 MB (9671240 bytes)  
+	-	`sha256:55b35f2eb8c052ead370715610c8a3be85b76c9b6456654382e45e06439647c7`  
+		Last Modified: Tue, 04 Jun 2019 22:20:09 GMT  
+		Size: 279.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78f4c6041960aa7007e8aae3fd566870b41df5ac273f8d1a56e21d7552bad524`  
-		Last Modified: Mon, 03 Jun 2019 20:47:52 GMT  
-		Size: 496.0 B  
+	-	`sha256:690a1c93640aed19b2abaadc6bf37624d8429430a519720c676704f153e29eb4`  
+		Last Modified: Thu, 13 Jun 2019 02:11:25 GMT  
+		Size: 9.6 MB (9628736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:29a79a0cfdc71fbe2050eaf402ed051d4589004692bd7f79d5ec57654321d55f`  
+		Last Modified: Thu, 13 Jun 2019 02:11:20 GMT  
+		Size: 497.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `express-gateway:1.16.4` - linux; 386
@@ -446,7 +454,7 @@ CMD ["node" "-e" "require('express-gateway')().run();"]
 ## `express-gateway:1.16.x`
 
 ```console
-$ docker pull express-gateway@sha256:1e66471841a5127605fef5bf497129cb0f7b86c2d93b2cb35ea04ea3f924dbe9
+$ docker pull express-gateway@sha256:934ba02b4aadc401163380f80e5607fdf646dd7b336cc53789ecf6c2d3bb208a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -546,14 +554,14 @@ CMD ["node" "-e" "require('express-gateway')().run();"]
 ### `express-gateway:1.16.x` - linux; arm64 variant v8
 
 ```console
-$ docker pull express-gateway@sha256:fcfd72e2f67aa3c85ee60c8e4f441e78da8acbe20337d1f5c9c76abeedbc7669
+$ docker pull express-gateway@sha256:13b34da943dcb314742a6e876d174af5aa8ee9133b4f55f78b1f44f94190b7c1
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.3 MB (35270348 bytes)**  
+-	Total Size: **35.2 MB (35228124 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6b1cdeee7e09a5f7c24e88754e6b0dfd92dad43413310aa9cb90239ce15d00d`
+-	Image ID: `sha256:ade8616203f59ed696903e536e88db16390659002609d8eb478ea2ccf0d27aaf`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","-e","require('express-gateway')().run();"]`
 
@@ -570,32 +578,36 @@ RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     
 ENV YARN_VERSION=1.16.0
 # Wed, 29 May 2019 16:46:26 GMT
 RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn
-# Wed, 29 May 2019 16:46:27 GMT
+# Tue, 04 Jun 2019 22:16:08 GMT
+COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ 
+# Tue, 04 Jun 2019 22:16:09 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 04 Jun 2019 22:16:09 GMT
 CMD ["node"]
-# Mon, 03 Jun 2019 20:47:14 GMT
+# Thu, 13 Jun 2019 02:10:34 GMT
 LABEL maintainer=Vincenzo Chianese, vincenzo@express-gateway.io
-# Mon, 03 Jun 2019 20:47:14 GMT
+# Thu, 13 Jun 2019 02:10:34 GMT
 ARG EG_VERSION=1.16.4
-# Mon, 03 Jun 2019 20:47:38 GMT
+# Thu, 13 Jun 2019 02:11:03 GMT
 # ARGS: EG_VERSION=1.16.4
 RUN yarn global add express-gateway@$EG_VERSION && yarn cache clean
-# Mon, 03 Jun 2019 20:47:40 GMT
+# Thu, 13 Jun 2019 02:11:05 GMT
 ENV NODE_ENV=production
-# Mon, 03 Jun 2019 20:47:40 GMT
+# Thu, 13 Jun 2019 02:11:05 GMT
 ENV NODE_PATH=/usr/local/share/.config/yarn/global/node_modules/
-# Mon, 03 Jun 2019 20:47:40 GMT
+# Thu, 13 Jun 2019 02:11:05 GMT
 ENV EG_CONFIG_DIR=/var/lib/eg
-# Mon, 03 Jun 2019 20:47:41 GMT
+# Thu, 13 Jun 2019 02:11:06 GMT
 ENV CHOKIDAR_USEPOLLING=true
-# Mon, 03 Jun 2019 20:47:41 GMT
+# Thu, 13 Jun 2019 02:11:06 GMT
 VOLUME [/var/lib/eg]
-# Mon, 03 Jun 2019 20:47:41 GMT
+# Thu, 13 Jun 2019 02:11:07 GMT
 EXPOSE 8080 9876
-# Mon, 03 Jun 2019 20:47:42 GMT
+# Thu, 13 Jun 2019 02:11:07 GMT
 COPY file:9481e65ab3ccc3b910b8af90d3df04d9f70030b8f8a0cfcc390840936290aaab in /usr/local/bin/ 
-# Mon, 03 Jun 2019 20:47:42 GMT
+# Thu, 13 Jun 2019 02:11:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 03 Jun 2019 20:47:43 GMT
+# Thu, 13 Jun 2019 02:11:09 GMT
 CMD ["node" "-e" "require('express-gateway')().run();"]
 ```
 
@@ -612,13 +624,17 @@ CMD ["node" "-e" "require('express-gateway')().run();"]
 		Last Modified: Wed, 29 May 2019 16:48:28 GMT  
 		Size: 1.3 MB (1334722 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3de37a1228fe2becc8da2c09cd102e1d304a12608a8edf09debab049d4f23723`  
-		Last Modified: Mon, 03 Jun 2019 20:47:57 GMT  
-		Size: 9.7 MB (9671240 bytes)  
+	-	`sha256:55b35f2eb8c052ead370715610c8a3be85b76c9b6456654382e45e06439647c7`  
+		Last Modified: Tue, 04 Jun 2019 22:20:09 GMT  
+		Size: 279.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78f4c6041960aa7007e8aae3fd566870b41df5ac273f8d1a56e21d7552bad524`  
-		Last Modified: Mon, 03 Jun 2019 20:47:52 GMT  
-		Size: 496.0 B  
+	-	`sha256:690a1c93640aed19b2abaadc6bf37624d8429430a519720c676704f153e29eb4`  
+		Last Modified: Thu, 13 Jun 2019 02:11:25 GMT  
+		Size: 9.6 MB (9628736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:29a79a0cfdc71fbe2050eaf402ed051d4589004692bd7f79d5ec57654321d55f`  
+		Last Modified: Thu, 13 Jun 2019 02:11:20 GMT  
+		Size: 497.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `express-gateway:1.16.x` - linux; 386
@@ -882,7 +898,7 @@ CMD ["node" "-e" "require('express-gateway')().run();"]
 ## `express-gateway:1.x`
 
 ```console
-$ docker pull express-gateway@sha256:1e66471841a5127605fef5bf497129cb0f7b86c2d93b2cb35ea04ea3f924dbe9
+$ docker pull express-gateway@sha256:934ba02b4aadc401163380f80e5607fdf646dd7b336cc53789ecf6c2d3bb208a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -982,14 +998,14 @@ CMD ["node" "-e" "require('express-gateway')().run();"]
 ### `express-gateway:1.x` - linux; arm64 variant v8
 
 ```console
-$ docker pull express-gateway@sha256:fcfd72e2f67aa3c85ee60c8e4f441e78da8acbe20337d1f5c9c76abeedbc7669
+$ docker pull express-gateway@sha256:13b34da943dcb314742a6e876d174af5aa8ee9133b4f55f78b1f44f94190b7c1
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.3 MB (35270348 bytes)**  
+-	Total Size: **35.2 MB (35228124 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6b1cdeee7e09a5f7c24e88754e6b0dfd92dad43413310aa9cb90239ce15d00d`
+-	Image ID: `sha256:ade8616203f59ed696903e536e88db16390659002609d8eb478ea2ccf0d27aaf`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","-e","require('express-gateway')().run();"]`
 
@@ -1006,32 +1022,36 @@ RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     
 ENV YARN_VERSION=1.16.0
 # Wed, 29 May 2019 16:46:26 GMT
 RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn
-# Wed, 29 May 2019 16:46:27 GMT
+# Tue, 04 Jun 2019 22:16:08 GMT
+COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ 
+# Tue, 04 Jun 2019 22:16:09 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 04 Jun 2019 22:16:09 GMT
 CMD ["node"]
-# Mon, 03 Jun 2019 20:47:14 GMT
+# Thu, 13 Jun 2019 02:10:34 GMT
 LABEL maintainer=Vincenzo Chianese, vincenzo@express-gateway.io
-# Mon, 03 Jun 2019 20:47:14 GMT
+# Thu, 13 Jun 2019 02:10:34 GMT
 ARG EG_VERSION=1.16.4
-# Mon, 03 Jun 2019 20:47:38 GMT
+# Thu, 13 Jun 2019 02:11:03 GMT
 # ARGS: EG_VERSION=1.16.4
 RUN yarn global add express-gateway@$EG_VERSION && yarn cache clean
-# Mon, 03 Jun 2019 20:47:40 GMT
+# Thu, 13 Jun 2019 02:11:05 GMT
 ENV NODE_ENV=production
-# Mon, 03 Jun 2019 20:47:40 GMT
+# Thu, 13 Jun 2019 02:11:05 GMT
 ENV NODE_PATH=/usr/local/share/.config/yarn/global/node_modules/
-# Mon, 03 Jun 2019 20:47:40 GMT
+# Thu, 13 Jun 2019 02:11:05 GMT
 ENV EG_CONFIG_DIR=/var/lib/eg
-# Mon, 03 Jun 2019 20:47:41 GMT
+# Thu, 13 Jun 2019 02:11:06 GMT
 ENV CHOKIDAR_USEPOLLING=true
-# Mon, 03 Jun 2019 20:47:41 GMT
+# Thu, 13 Jun 2019 02:11:06 GMT
 VOLUME [/var/lib/eg]
-# Mon, 03 Jun 2019 20:47:41 GMT
+# Thu, 13 Jun 2019 02:11:07 GMT
 EXPOSE 8080 9876
-# Mon, 03 Jun 2019 20:47:42 GMT
+# Thu, 13 Jun 2019 02:11:07 GMT
 COPY file:9481e65ab3ccc3b910b8af90d3df04d9f70030b8f8a0cfcc390840936290aaab in /usr/local/bin/ 
-# Mon, 03 Jun 2019 20:47:42 GMT
+# Thu, 13 Jun 2019 02:11:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 03 Jun 2019 20:47:43 GMT
+# Thu, 13 Jun 2019 02:11:09 GMT
 CMD ["node" "-e" "require('express-gateway')().run();"]
 ```
 
@@ -1048,13 +1068,17 @@ CMD ["node" "-e" "require('express-gateway')().run();"]
 		Last Modified: Wed, 29 May 2019 16:48:28 GMT  
 		Size: 1.3 MB (1334722 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3de37a1228fe2becc8da2c09cd102e1d304a12608a8edf09debab049d4f23723`  
-		Last Modified: Mon, 03 Jun 2019 20:47:57 GMT  
-		Size: 9.7 MB (9671240 bytes)  
+	-	`sha256:55b35f2eb8c052ead370715610c8a3be85b76c9b6456654382e45e06439647c7`  
+		Last Modified: Tue, 04 Jun 2019 22:20:09 GMT  
+		Size: 279.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78f4c6041960aa7007e8aae3fd566870b41df5ac273f8d1a56e21d7552bad524`  
-		Last Modified: Mon, 03 Jun 2019 20:47:52 GMT  
-		Size: 496.0 B  
+	-	`sha256:690a1c93640aed19b2abaadc6bf37624d8429430a519720c676704f153e29eb4`  
+		Last Modified: Thu, 13 Jun 2019 02:11:25 GMT  
+		Size: 9.6 MB (9628736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:29a79a0cfdc71fbe2050eaf402ed051d4589004692bd7f79d5ec57654321d55f`  
+		Last Modified: Thu, 13 Jun 2019 02:11:20 GMT  
+		Size: 497.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `express-gateway:1.x` - linux; 386
@@ -1318,7 +1342,7 @@ CMD ["node" "-e" "require('express-gateway')().run();"]
 ## `express-gateway:latest`
 
 ```console
-$ docker pull express-gateway@sha256:1e66471841a5127605fef5bf497129cb0f7b86c2d93b2cb35ea04ea3f924dbe9
+$ docker pull express-gateway@sha256:934ba02b4aadc401163380f80e5607fdf646dd7b336cc53789ecf6c2d3bb208a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1418,14 +1442,14 @@ CMD ["node" "-e" "require('express-gateway')().run();"]
 ### `express-gateway:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull express-gateway@sha256:fcfd72e2f67aa3c85ee60c8e4f441e78da8acbe20337d1f5c9c76abeedbc7669
+$ docker pull express-gateway@sha256:13b34da943dcb314742a6e876d174af5aa8ee9133b4f55f78b1f44f94190b7c1
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.3 MB (35270348 bytes)**  
+-	Total Size: **35.2 MB (35228124 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6b1cdeee7e09a5f7c24e88754e6b0dfd92dad43413310aa9cb90239ce15d00d`
+-	Image ID: `sha256:ade8616203f59ed696903e536e88db16390659002609d8eb478ea2ccf0d27aaf`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","-e","require('express-gateway')().run();"]`
 
@@ -1442,32 +1466,36 @@ RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     
 ENV YARN_VERSION=1.16.0
 # Wed, 29 May 2019 16:46:26 GMT
 RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn
-# Wed, 29 May 2019 16:46:27 GMT
+# Tue, 04 Jun 2019 22:16:08 GMT
+COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ 
+# Tue, 04 Jun 2019 22:16:09 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 04 Jun 2019 22:16:09 GMT
 CMD ["node"]
-# Mon, 03 Jun 2019 20:47:14 GMT
+# Thu, 13 Jun 2019 02:10:34 GMT
 LABEL maintainer=Vincenzo Chianese, vincenzo@express-gateway.io
-# Mon, 03 Jun 2019 20:47:14 GMT
+# Thu, 13 Jun 2019 02:10:34 GMT
 ARG EG_VERSION=1.16.4
-# Mon, 03 Jun 2019 20:47:38 GMT
+# Thu, 13 Jun 2019 02:11:03 GMT
 # ARGS: EG_VERSION=1.16.4
 RUN yarn global add express-gateway@$EG_VERSION && yarn cache clean
-# Mon, 03 Jun 2019 20:47:40 GMT
+# Thu, 13 Jun 2019 02:11:05 GMT
 ENV NODE_ENV=production
-# Mon, 03 Jun 2019 20:47:40 GMT
+# Thu, 13 Jun 2019 02:11:05 GMT
 ENV NODE_PATH=/usr/local/share/.config/yarn/global/node_modules/
-# Mon, 03 Jun 2019 20:47:40 GMT
+# Thu, 13 Jun 2019 02:11:05 GMT
 ENV EG_CONFIG_DIR=/var/lib/eg
-# Mon, 03 Jun 2019 20:47:41 GMT
+# Thu, 13 Jun 2019 02:11:06 GMT
 ENV CHOKIDAR_USEPOLLING=true
-# Mon, 03 Jun 2019 20:47:41 GMT
+# Thu, 13 Jun 2019 02:11:06 GMT
 VOLUME [/var/lib/eg]
-# Mon, 03 Jun 2019 20:47:41 GMT
+# Thu, 13 Jun 2019 02:11:07 GMT
 EXPOSE 8080 9876
-# Mon, 03 Jun 2019 20:47:42 GMT
+# Thu, 13 Jun 2019 02:11:07 GMT
 COPY file:9481e65ab3ccc3b910b8af90d3df04d9f70030b8f8a0cfcc390840936290aaab in /usr/local/bin/ 
-# Mon, 03 Jun 2019 20:47:42 GMT
+# Thu, 13 Jun 2019 02:11:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 03 Jun 2019 20:47:43 GMT
+# Thu, 13 Jun 2019 02:11:09 GMT
 CMD ["node" "-e" "require('express-gateway')().run();"]
 ```
 
@@ -1484,13 +1512,17 @@ CMD ["node" "-e" "require('express-gateway')().run();"]
 		Last Modified: Wed, 29 May 2019 16:48:28 GMT  
 		Size: 1.3 MB (1334722 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3de37a1228fe2becc8da2c09cd102e1d304a12608a8edf09debab049d4f23723`  
-		Last Modified: Mon, 03 Jun 2019 20:47:57 GMT  
-		Size: 9.7 MB (9671240 bytes)  
+	-	`sha256:55b35f2eb8c052ead370715610c8a3be85b76c9b6456654382e45e06439647c7`  
+		Last Modified: Tue, 04 Jun 2019 22:20:09 GMT  
+		Size: 279.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78f4c6041960aa7007e8aae3fd566870b41df5ac273f8d1a56e21d7552bad524`  
-		Last Modified: Mon, 03 Jun 2019 20:47:52 GMT  
-		Size: 496.0 B  
+	-	`sha256:690a1c93640aed19b2abaadc6bf37624d8429430a519720c676704f153e29eb4`  
+		Last Modified: Thu, 13 Jun 2019 02:11:25 GMT  
+		Size: 9.6 MB (9628736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:29a79a0cfdc71fbe2050eaf402ed051d4589004692bd7f79d5ec57654321d55f`  
+		Last Modified: Thu, 13 Jun 2019 02:11:20 GMT  
+		Size: 497.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `express-gateway:latest` - linux; 386
