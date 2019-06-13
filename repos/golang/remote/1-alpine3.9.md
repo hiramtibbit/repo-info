@@ -1,7 +1,7 @@
 ## `golang:1-alpine3.9`
 
 ```console
-$ docker pull golang@sha256:cf6b54f230811f7bbc63dc786f01e93bc2a706ecb4c4b7bde96dfcc60e8ff919
+$ docker pull golang@sha256:cee6f4b901543e8e3f20da3a4f7caac6ea643fd5a46201c3c2387183a332d989
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -75,14 +75,14 @@ WORKDIR /go
 ### `golang:1-alpine3.9` - linux; arm variant v6
 
 ```console
-$ docker pull golang@sha256:17f085bd776499509679fac2f1c4e48220800233493ef030d87813f95949884b
+$ docker pull golang@sha256:b4c3cc9669f5984c3e807401d6f927dfe322e3916061cbb46aceafd638060254
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **124.2 MB (124200044 bytes)**  
+-	Total Size: **124.2 MB (124197615 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f055fa5d437f987e04199b02166c02a6cf8b39881bd562b4967d936c26353b94`
+-	Image ID: `sha256:99a24a43f1c4f2b2424348401199bd43e15242c451b545a8f50f58c1b84cb228`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -94,17 +94,17 @@ CMD ["/bin/sh"]
 RUN apk add --no-cache 		ca-certificates
 # Sat, 11 May 2019 09:14:33 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Sat, 11 May 2019 09:14:34 GMT
-ENV GOLANG_VERSION=1.12.5
-# Sat, 11 May 2019 09:17:00 GMT
-RUN set -eux; 	apk add --no-cache --virtual .build-deps 		bash 		gcc 		musl-dev 		openssl 		go 	; 	export 		GOROOT_BOOTSTRAP="$(go env GOROOT)" 		GOOS="$(go env GOOS)" 		GOARCH="$(go env GOARCH)" 		GOHOSTOS="$(go env GOHOSTOS)" 		GOHOSTARCH="$(go env GOHOSTARCH)" 	; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) export GOARM='6' ;; 		x86) export GO386='387' ;; 	esac; 		wget -O go.tgz "https://golang.org/dl/go$GOLANG_VERSION.src.tar.gz"; 	echo '2aa5f088cbb332e73fc3def546800616b38d3bfe6b8713b8a6404060f22503e8 *go.tgz' | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		cd /usr/local/go/src; 	./make.bash; 		rm -rf 		/usr/local/go/pkg/bootstrap 		/usr/local/go/pkg/obj 	; 	apk del .build-deps; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
-# Sat, 11 May 2019 09:17:02 GMT
+# Thu, 13 Jun 2019 00:52:13 GMT
+ENV GOLANG_VERSION=1.12.6
+# Thu, 13 Jun 2019 00:55:42 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		bash 		gcc 		musl-dev 		openssl 		go 	; 	export 		GOROOT_BOOTSTRAP="$(go env GOROOT)" 		GOOS="$(go env GOOS)" 		GOARCH="$(go env GOARCH)" 		GOHOSTOS="$(go env GOHOSTOS)" 		GOHOSTARCH="$(go env GOHOSTARCH)" 	; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) export GOARM='6' ;; 		x86) export GO386='387' ;; 	esac; 		wget -O go.tgz "https://golang.org/dl/go$GOLANG_VERSION.src.tar.gz"; 	echo 'c96c5ccc7455638ae1a8b7498a030fe653731c8391c5f8e79590bce72f92b4ca *go.tgz' | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		cd /usr/local/go/src; 	./make.bash; 		rm -rf 		/usr/local/go/pkg/bootstrap 		/usr/local/go/pkg/obj 	; 	apk del .build-deps; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
+# Thu, 13 Jun 2019 00:55:44 GMT
 ENV GOPATH=/go
-# Sat, 11 May 2019 09:17:03 GMT
+# Thu, 13 Jun 2019 00:55:45 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 11 May 2019 09:17:04 GMT
+# Thu, 13 Jun 2019 00:55:47 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Sat, 11 May 2019 09:17:05 GMT
+# Thu, 13 Jun 2019 00:55:48 GMT
 WORKDIR /go
 ```
 
@@ -121,13 +121,13 @@ WORKDIR /go
 		Last Modified: Sat, 11 May 2019 09:20:00 GMT  
 		Size: 153.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bdce29cc20ede36d7d8b757743be9de48ff7609ab4a71e0b69b5c26c30a29ddc`  
-		Last Modified: Sat, 11 May 2019 09:20:41 GMT  
-		Size: 121.4 MB (121354195 bytes)  
+	-	`sha256:097953e8a84b3e96ff6d79cbfbed73953a7326273e582d70db05596a563c7370`  
+		Last Modified: Thu, 13 Jun 2019 01:02:40 GMT  
+		Size: 121.4 MB (121351765 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da43e0350823aef0f22f2c3947fb401e0060c73f58002c66bef12a9cda077586`  
-		Last Modified: Sat, 11 May 2019 09:20:01 GMT  
-		Size: 155.0 B  
+	-	`sha256:bcf0ee21c8162af7779fef3c8925768fa118cdfad1e183f06058423807bd97fb`  
+		Last Modified: Thu, 13 Jun 2019 01:01:57 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `golang:1-alpine3.9` - linux; arm variant v7
