@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:af40b247c6993b4ff73d1e1ae4b4d702bcde7cdc1e137c0fb1858f7c2e578a6d`
-- Created: `2019-05-08T01:13:36.104132875Z`
-- Virtual Size: ~ 805.62 Mb  
+- Image ID: `sha256:4cb12baee767390f18dd86c51b4d09d8c82637051f026462c5a99f0144dff1a6`
+- Created: `2019-06-10T23:47:01.131042657Z`
+- Virtual Size: ~ 805.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -1240,19 +1240,19 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/expat/2.2.0-2+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/expat/2.2.0-2+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ffmpeg=7:3.2.12-1~deb9u1`
+### `dpkg` source package: `ffmpeg=7:3.2.14-1~deb9u1`
 
 Binary Packages:
 
-- `libavcodec57:amd64=7:3.2.12-1~deb9u1`
-- `libavdevice57:amd64=7:3.2.12-1~deb9u1`
-- `libavfilter6:amd64=7:3.2.12-1~deb9u1`
-- `libavformat57:amd64=7:3.2.12-1~deb9u1`
-- `libavresample3:amd64=7:3.2.12-1~deb9u1`
-- `libavutil55:amd64=7:3.2.12-1~deb9u1`
-- `libpostproc54:amd64=7:3.2.12-1~deb9u1`
-- `libswresample2:amd64=7:3.2.12-1~deb9u1`
-- `libswscale4:amd64=7:3.2.12-1~deb9u1`
+- `libavcodec57:amd64=7:3.2.14-1~deb9u1`
+- `libavdevice57:amd64=7:3.2.14-1~deb9u1`
+- `libavfilter6:amd64=7:3.2.14-1~deb9u1`
+- `libavformat57:amd64=7:3.2.14-1~deb9u1`
+- `libavresample3:amd64=7:3.2.14-1~deb9u1`
+- `libavutil55:amd64=7:3.2.14-1~deb9u1`
+- `libpostproc54:amd64=7:3.2.14-1~deb9u1`
+- `libswresample2:amd64=7:3.2.14-1~deb9u1`
+- `libswscale4:amd64=7:3.2.14-1~deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libavcodec57/copyright`, `/usr/share/doc/libavdevice57/copyright`, `/usr/share/doc/libavfilter6/copyright`, `/usr/share/doc/libavformat57/copyright`, `/usr/share/doc/libavresample3/copyright`, `/usr/share/doc/libavutil55/copyright`, `/usr/share/doc/libpostproc54/copyright`, `/usr/share/doc/libswresample2/copyright`, `/usr/share/doc/libswscale4/copyright`)
 
@@ -1280,18 +1280,17 @@ Licenses: (parsed from: `/usr/share/doc/libavcodec57/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ffmpeg=7:3.2.12-1~deb9u1
-'http://deb.debian.org/debian/pool/main/f/ffmpeg/ffmpeg_3.2.12-1~deb9u1.dsc' ffmpeg_3.2.12-1~deb9u1.dsc 5187 SHA256:081f5b48e5e3fb60618f49c976763f9b1f7dc8e339f2adabcd15744951410327
-'http://deb.debian.org/debian/pool/main/f/ffmpeg/ffmpeg_3.2.12.orig.tar.xz' ffmpeg_3.2.12.orig.tar.xz 8035844 SHA256:8985cea7b1b3b2e0e2b2a8ac6187a7fb022fe8aa9d35101760a000205c59c412
-'http://deb.debian.org/debian/pool/main/f/ffmpeg/ffmpeg_3.2.12.orig.tar.xz.asc' ffmpeg_3.2.12.orig.tar.xz.asc 473 SHA256:078f2c030b37e307a8d8b951c3491adb89b5ef363d3d1475e54dd89a9549c428
-'http://deb.debian.org/debian/pool/main/f/ffmpeg/ffmpeg_3.2.12-1~deb9u1.debian.tar.xz' ffmpeg_3.2.12-1~deb9u1.debian.tar.xz 39528 SHA256:6e3346336f6e0869db82353192edeb8490ae70515a0c16160038f0dc4555b223
+$ apt-get source -qq --print-uris ffmpeg=7:3.2.14-1~deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/f/ffmpeg/ffmpeg_3.2.14-1~deb9u1.dsc' ffmpeg_3.2.14-1~deb9u1.dsc 4914 SHA256:2cc4f796f8a8f1dcb17f0a33a0a93a3125802ba59cb4f26add74a3f3ea773bf0
+'http://security.debian.org/debian-security/pool/updates/main/f/ffmpeg/ffmpeg_3.2.14.orig.tar.xz' ffmpeg_3.2.14.orig.tar.xz 8039380 SHA256:a0047aa0215538a13d10da2fe48674af574e8e94b7ecf3071bdf1addb056be92
+'http://security.debian.org/debian-security/pool/updates/main/f/ffmpeg/ffmpeg_3.2.14-1~deb9u1.debian.tar.xz' ffmpeg_3.2.14-1~deb9u1.debian.tar.xz 39716 SHA256:1bc8465d4304e235f56eef92d84b8a320aecf81ff7c08dda4cf8daa3de52c5f5
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ffmpeg/7:3.2.12-1~deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/ffmpeg/7:3.2.12-1~deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ffmpeg/7:3.2.12-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ffmpeg/7:3.2.14-1~deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/ffmpeg/7:3.2.14-1~deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ffmpeg/7:3.2.14-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fftw3=3.3.5-3`
 
@@ -6906,11 +6905,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/popt/1.16-10/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/popt/1.16-10/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-9.6=9.6.12-0+deb9u1`
+### `dpkg` source package: `postgresql-9.6=9.6.13-0+deb9u1`
 
 Binary Packages:
 
-- `libpq5:amd64=9.6.12-0+deb9u1`
+- `libpq5:amd64=9.6.13-0+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -6932,17 +6931,17 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-9.6=9.6.12-0+deb9u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.12-0+deb9u1.dsc' postgresql-9.6_9.6.12-0+deb9u1.dsc 3709 SHA256:da76e8ac602ae5e8c054883159b3a15155167d94bc87f453daff68b7a961fa93
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.12.orig.tar.bz2' postgresql-9.6_9.6.12.orig.tar.bz2 18759442 SHA256:2e8c8446ba94767bda8a26cf5a2152bf0ae68a86aaebf894132a763084579d84
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.12-0+deb9u1.debian.tar.xz' postgresql-9.6_9.6.12-0+deb9u1.debian.tar.xz 26604 SHA256:7c78ec53c98d06af5098872725eae9cc9cbf0987a336621d190abff758366c92
+$ apt-get source -qq --print-uris postgresql-9.6=9.6.13-0+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.13-0+deb9u1.dsc' postgresql-9.6_9.6.13-0+deb9u1.dsc 3698 SHA256:f516ea1c82b220a523cf4bd753a60987a30e214a0f2486473e10f85953f25fe9
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.13.orig.tar.bz2' postgresql-9.6_9.6.13.orig.tar.bz2 18767279 SHA256:ecbed20056296a65b6a4f5526c477e3ae5cc284cb01a15507785ddb23831e9a4
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.13-0+deb9u1.debian.tar.xz' postgresql-9.6_9.6.13-0+deb9u1.debian.tar.xz 26952 SHA256:daa2a1cccd688a205734d0701a58deb2cfad940b3e57f858a44fde70805cd283
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/postgresql-9.6/9.6.12-0+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-9.6/9.6.12-0+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-9.6/9.6.12-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/postgresql-9.6/9.6.13-0+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-9.6/9.6.13-0+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-9.6/9.6.13-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `proj=4.9.3-1`
 

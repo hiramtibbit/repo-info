@@ -675,14 +675,9 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.1.3-4ubuntu0.8
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.8.dsc' cups_2.1.3-4ubuntu0.8.dsc 3406 SHA256:c12c005ab37f51755a24dc5fb71ffaf04c7d42acdba0201050391d7f5c141893
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3.orig.tar.bz2' cups_2.1.3.orig.tar.bz2 8832400 SHA256:36a70d43584aea2617da914b9331e23341c3501a8254c4d2eae9c11ec01fd4d3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.8.debian.tar.xz' cups_2.1.3-4ubuntu0.8.debian.tar.xz 352024 SHA256:c51a772a8df316b60dfa68d486bf287736994510f3976ef274bd8cd06e718c03
-```
 
 ### `dpkg` source package: `curl=7.47.0-1ubuntu2.13`
 
@@ -788,14 +783,9 @@ Licenses: (parsed from: `/usr/share/doc/dbus/copyright`, `/usr/share/doc/libdbus
 - `Tcl-BSDish`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dbus=1.10.6-1ubuntu3.3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.10.6-1ubuntu3.3.dsc' dbus_1.10.6-1ubuntu3.3.dsc 2728 SHA256:1320bb487e39b5f6c730796d3b8b2e492f86568b782c45ba719503902fc50fc3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.10.6.orig.tar.gz' dbus_1.10.6.orig.tar.gz 1952608 SHA256:b5fefa08a77edd76cd64d872db949eebc02cf6f3f8be82e4bbc641742af5d35f
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.10.6-1ubuntu3.3.debian.tar.xz' dbus_1.10.6-1ubuntu3.3.debian.tar.xz 56984 SHA256:71337521f73083398329f52386226ce155970e88ccc1f60c50a8a1ea5f507f95
-```
 
 ### `dpkg` source package: `debconf=1.5.58ubuntu1`
 
@@ -947,14 +937,9 @@ Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.165-3ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.165-3ubuntu1.1.dsc' elfutils_0.165-3ubuntu1.1.dsc 2379 SHA256:7a5fdcf2a4787423435f40cbfc5c98978f55faab530a4eec2f00913af8103ec9
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.165.orig.tar.bz2' elfutils_0.165.orig.tar.bz2 6481128 SHA256:a7fc9277192caaa5f30b47e8c0518dbcfd8c4a19c6493a63d511d804290ce972
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.165-3ubuntu1.1.debian.tar.xz' elfutils_0.165-3ubuntu1.1.debian.tar.xz 45776 SHA256:d4b0840dab750dc258d09c4b37d8ab1180d1ef818e617d641897660de004d648
-```
 
 ### `dpkg` source package: `expat=2.1.0-7ubuntu0.16.04.3`
 
@@ -1569,14 +1554,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.48.2-0ubuntu4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu4.1.dsc' glib2.0_2.48.2-0ubuntu4.1.dsc 3157 SHA256:9665fd4be0c6848584e830c240206ee3a3ca8f8297ef4106587597b818414552
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2.orig.tar.xz' glib2.0_2.48.2.orig.tar.xz 6408644 SHA256:f25e751589cb1a58826eac24fbd4186cda4518af772806b666a3f91f66e6d3f4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu4.1.debian.tar.xz' glib2.0_2.48.2-0ubuntu4.1.debian.tar.xz 71256 SHA256:280d06a688aef975b08dabb5420662761fe97869ce98afe1c22870cad080e196
-```
 
 ### `dpkg` source package: `glibc=2.23-0ubuntu11`
 
@@ -3693,14 +3673,9 @@ Licenses: (parsed from: `/usr/share/doc/libsndfile1/copyright`)
 
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsndfile=1.0.25-10ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsndfile/libsndfile_1.0.25-10ubuntu0.16.04.1.dsc' libsndfile_1.0.25-10ubuntu0.16.04.1.dsc 2246 SHA256:14fbb4b37b1ffbec7c0d194cc212219bed8739e4cfb537f5e116465a3c1c43ec
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsndfile/libsndfile_1.0.25.orig.tar.gz' libsndfile_1.0.25.orig.tar.gz 1060692 SHA256:59016dbd326abe7e2366ded5c344c853829bebfd1702ef26a07ef662d6aa4882
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsndfile/libsndfile_1.0.25-10ubuntu0.16.04.1.debian.tar.xz' libsndfile_1.0.25-10ubuntu0.16.04.1.debian.tar.xz 17308 SHA256:b930d5f96ddcd07bbf8bea1e61b6c3b836e6dbaa0271ab58742bdabf8600ba53
-```
 
 ### `dpkg` source package: `libsodium=1.0.8-5`
 
@@ -5280,14 +5255,9 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`)
 - `ZLIB`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjpeg2=2.1.2-1.1+deb9u2build0.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/openjpeg2/openjpeg2_2.1.2-1.1+deb9u2build0.1.dsc' openjpeg2_2.1.2-1.1+deb9u2build0.1.dsc 2829 SHA256:d33e00742b0fbc00a60417a402dae7a8a3f7b68e53fa34a95227be5d126fa6b0
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/openjpeg2/openjpeg2_2.1.2.orig.tar.gz' openjpeg2_2.1.2.orig.tar.gz 1987071 SHA256:4ce77b6ef538ef090d9bde1d5eeff8b3069ab56c4906f083475517c2c023dfa7
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/openjpeg2/openjpeg2_2.1.2-1.1+deb9u2build0.1.debian.tar.xz' openjpeg2_2.1.2-1.1+deb9u2build0.1.debian.tar.xz 23776 SHA256:bcb2aa5182cf3dc20ed0ad82603522e7e32aa1a6e95c953e3295b80dc0ac7ef6
-```
 
 ### `dpkg` source package: `openjpeg=1:1.5.2-3.1`
 
