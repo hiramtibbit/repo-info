@@ -1,7 +1,7 @@
 ## `php:7-zts-alpine`
 
 ```console
-$ docker pull php@sha256:9fef7bdccd83890859ee25918ac4b43548525ebabeb61c587dcb0453753450db
+$ docker pull php@sha256:50b16bebbaa5a3b1afe44e451df3be4a6778c3789d08a51f6be613190c007426
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -214,14 +214,14 @@ CMD ["php" "-a"]
 ### `php:7-zts-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull php@sha256:cdfb59c75f6440d34d557414c389c773dd2bbeee04d85b5f2a97f43567c65750
+$ docker pull php@sha256:ec7a38b0617dc74942d8fe6f855ecf74087a1ba695885f5bc4f05c4941d1ebce
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.2 MB (26188676 bytes)**  
+-	Total Size: **26.2 MB (26188717 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57d858564733b4094857c2c39f8199f3d159fbe70857271996ccd4100951bcb7`
+-	Image ID: `sha256:1bf765528900d36159bc60cc50426a88ef1a7a8aae88dc3216c829cca3b1518d`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -262,13 +262,13 @@ RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		wget 	; 		mkdi
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
 # Sat, 01 Jun 2019 00:29:32 GMT
 RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		libedit-dev 		libsodium-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& find -type f -name '*.a' -delete 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 		&& cp -v php.ini-* "$PHP_INI_DIR/" 		&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" 	&& apk add --no-cache $runDeps 		&& apk del --no-network .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Sat, 01 Jun 2019 00:29:34 GMT
-COPY multi:03970f7b3773444b9f7f244f89d3ceeb4253ac6599f0ba0a4c0306c5bf7d1b9b in /usr/local/bin/ 
-# Sat, 01 Jun 2019 00:29:38 GMT
+# Thu, 13 Jun 2019 03:19:24 GMT
+COPY multi:287fef6856464a54cd9ef266c5fea3bd820d4cf2e2666723e9d9ddd1afc6db67 in /usr/local/bin/ 
+# Thu, 13 Jun 2019 03:19:26 GMT
 RUN docker-php-ext-enable sodium
-# Sat, 01 Jun 2019 00:29:39 GMT
+# Thu, 13 Jun 2019 03:19:27 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 01 Jun 2019 00:29:40 GMT
+# Thu, 13 Jun 2019 03:19:27 GMT
 CMD ["php" "-a"]
 ```
 
@@ -301,13 +301,13 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 01 Jun 2019 01:55:35 GMT  
 		Size: 10.5 MB (10467736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12c37d31d8200094ed616585c9b26900b88291fbbf2c6e7186846270841e337b`  
-		Last Modified: Sat, 01 Jun 2019 01:55:30 GMT  
-		Size: 2.2 KB (2178 bytes)  
+	-	`sha256:c14077c88cd1aec79ce869cfa0773df4c27bd5d9fe9a131972372043fd645e61`  
+		Last Modified: Thu, 13 Jun 2019 03:26:06 GMT  
+		Size: 2.2 KB (2208 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7a6a21c468e97db7f4903c5801c45f4efec9bf1918058c287c4ed0d9ea3a95`  
-		Last Modified: Sat, 01 Jun 2019 01:55:30 GMT  
-		Size: 71.5 KB (71474 bytes)  
+	-	`sha256:4f0c7ab7cd114d8818b4e9e7a107b3693ab2ee6d277de12ff9c657ed926e43a4`  
+		Last Modified: Thu, 13 Jun 2019 03:26:06 GMT  
+		Size: 71.5 KB (71485 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `php:7-zts-alpine` - linux; arm64 variant v8
