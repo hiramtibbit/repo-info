@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1d995422713366e51b824eda0e809831c169750d1d766d3ca11bebb964013eaf`
-- Created: `2019-06-05T23:22:58.979611326Z`
+- Image ID: `sha256:05068dac89895e4333099a9991cbdbbc87f04716e3da48c0b514f90c67c6e2d0`
+- Created: `2019-06-13T01:30:31.492170556Z`
 - Virtual Size: ~ 439.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1799,11 +1799,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzip/1.1.2-1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzip/1.1.2-1.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=4.9.168-1`
+### `dpkg` source package: `linux=4.9.168-1+deb9u2`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.9.168-1`
+- `linux-libc-dev:amd64=4.9.168-1+deb9u2`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1816,17 +1816,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.9.168-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.168-1.dsc' linux_4.9.168-1.dsc 123355 SHA256:de77aa221fa4c7db1cf995cb6a5b25784489ddcbba98d82b55fa24fadd4f0969
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.168.orig.tar.xz' linux_4.9.168.orig.tar.xz 94774584 SHA256:8a2c04045b47472584fc8e72d8663b5c720b8ba5efba878f48ddba93bac29a7f
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.168-1.debian.tar.xz' linux_4.9.168-1.debian.tar.xz 2670296 SHA256:b0cd27aaf68066b9594e31dea165ba885b7b6ef238416084215a57c03e07fa4a
+$ apt-get source -qq --print-uris linux=4.9.168-1+deb9u2
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.168-1+deb9u2.dsc' linux_4.9.168-1+deb9u2.dsc 123228 SHA256:9ff4ff71bc5a3f087fef7e4201a8448040f84035a1298ad01a8f5d6fe5192795
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.168.orig.tar.xz' linux_4.9.168.orig.tar.xz 94774584 SHA256:8a2c04045b47472584fc8e72d8663b5c720b8ba5efba878f48ddba93bac29a7f
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.168-1+deb9u2.debian.tar.xz' linux_4.9.168-1+deb9u2.debian.tar.xz 2732028 SHA256:b909b4c1feb633d1d458d0fd80b96698d97d12fc790fa56a1398a951585d631a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/4.9.168-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.9.168-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.9.168-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/4.9.168-1+deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.9.168-1+deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.9.168-1+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=9.20161125`
 
