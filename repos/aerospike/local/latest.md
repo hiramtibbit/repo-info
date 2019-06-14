@@ -1,18 +1,18 @@
-# `aerospike:4.5.2.2`
+# `aerospike:4.5.3.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:dfe6668e2a096a642057a5b1a1bc7a3a4662ef7358dc48a97e0874321b1d6ff0`
-- Created: `2019-06-11T05:15:17.992247425Z`
-- Virtual Size: ~ 128.50 Mb  
+- Image ID: `sha256:92238a4015f327b1dd9e2ef82947030bccd80023e4484b0353459dda1b5bd6d3`
+- Created: `2019-06-13T21:19:45.790987679Z`
+- Virtual Size: ~ 131.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["asd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `AEROSPIKE_VERSION=4.5.2.2`
-  - `AEROSPIKE_SHA256=7bae8c7cdbb6604b841f9b7d27f4f8baf5ddc84378e0206e0feff545cd9b67f8`
+  - `AEROSPIKE_VERSION=4.5.3.3`
+  - `AEROSPIKE_SHA256=840eec1223319bc82b8f7db6a155631bc2f991b5de975c45042c90ce39b3d058`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -66,11 +66,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.115/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.115/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `aerospike-server-community=4.5.2.2-1`
+### `dpkg` source package: `aerospike-server-community=4.5.3.3-1`
 
 Binary Packages:
 
-- `aerospike-server-community=4.5.2.2-1`
+- `aerospike-server-community=4.5.3.3-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -80,11 +80,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `aerospike-tools=3.18.1`
+### `dpkg` source package: `aerospike-tools=3.19.0`
 
 Binary Packages:
 
-- `aerospike-tools=3.18.1`
+- `aerospike-tools=3.19.0`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
