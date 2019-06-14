@@ -1,7 +1,7 @@
 ## `aerospike:latest`
 
 ```console
-$ docker pull aerospike@sha256:f37fdce2227239295dce3ee0a66db8fb0c9cdd3a8dde0f23a7116026f31a25dc
+$ docker pull aerospike@sha256:f5913a53877f753e9f71ca56069f67a69f8027ac1fad6c7b3c74590ed5c01b9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull aerospike@sha256:f37fdce2227239295dce3ee0a66db8fb0c9cdd3a8dde0f23a
 ### `aerospike:latest` - linux; amd64
 
 ```console
-$ docker pull aerospike@sha256:2d3980034035d9d26b9f4ab111eba35857d8438e8ebc6be8cd2b5cd033c7a7b5
+$ docker pull aerospike@sha256:3da45520f9af2733257ab4828b6fbc04616eebd4348797c3331f64691e76a0dd
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.7 MB (48690669 bytes)**  
+-	Total Size: **51.4 MB (51370623 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dfe6668e2a096a642057a5b1a1bc7a3a4662ef7358dc48a97e0874321b1d6ff0`
+-	Image ID: `sha256:92238a4015f327b1dd9e2ef82947030bccd80023e4484b0353459dda1b5bd6d3`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["asd"]`
 
@@ -27,23 +27,23 @@ $ docker pull aerospike@sha256:2d3980034035d9d26b9f4ab111eba35857d8438e8ebc6be8c
 ADD file:5ffb798d64089418ef4d3a261df5ad7cfa038eb2ef778db2b92604ac87228d99 in / 
 # Mon, 10 Jun 2019 23:24:23 GMT
 CMD ["bash"]
-# Tue, 11 Jun 2019 05:14:46 GMT
-ENV AEROSPIKE_VERSION=4.5.2.2
-# Tue, 11 Jun 2019 05:14:46 GMT
-ENV AEROSPIKE_SHA256=7bae8c7cdbb6604b841f9b7d27f4f8baf5ddc84378e0206e0feff545cd9b67f8
-# Tue, 11 Jun 2019 05:15:16 GMT
+# Thu, 13 Jun 2019 21:19:23 GMT
+ENV AEROSPIKE_VERSION=4.5.3.3
+# Thu, 13 Jun 2019 21:19:23 GMT
+ENV AEROSPIKE_SHA256=840eec1223319bc82b8f7db6a155631bc2f991b5de975c45042c90ce39b3d058
+# Thu, 13 Jun 2019 21:19:44 GMT
 RUN apt-get update -y   && apt-get install -y wget python lua5.2 gettext-base   && wget "https://www.aerospike.com/artifacts/aerospike-server-community/${AEROSPIKE_VERSION}/aerospike-server-community-${AEROSPIKE_VERSION}-debian9.tgz" -O aerospike-server.tgz   && echo "$AEROSPIKE_SHA256 *aerospike-server.tgz" | sha256sum -c -   && mkdir aerospike   && tar xzf aerospike-server.tgz --strip-components=1 -C aerospike   && dpkg -i aerospike/aerospike-server-*.deb   && dpkg -i aerospike/aerospike-tools-*.deb   && mkdir -p /var/log/aerospike/   && mkdir -p /var/run/aerospike/   && rm -rf aerospike-server.tgz aerospike /var/lib/apt/lists/*   && rm -rf /opt/aerospike/lib/java   && dpkg -r wget ca-certificates openssl xz-utils  && dpkg --purge wget ca-certificates openssl xz-utils  && apt-get purge -y   && apt autoremove -y
-# Tue, 11 Jun 2019 05:15:16 GMT
+# Thu, 13 Jun 2019 21:19:45 GMT
 COPY file:8d3c7b634fe854c02711ded13d6741f28621ef3e5ae540ca3219ed7816a992ab in /etc/aerospike/aerospike.template.conf 
-# Tue, 11 Jun 2019 05:15:16 GMT
+# Thu, 13 Jun 2019 21:19:45 GMT
 COPY file:688bc1b7dea55c1dc5575a99640936049823d07bac5c920bbace2369fbb27428 in /entrypoint.sh 
-# Tue, 11 Jun 2019 05:15:17 GMT
+# Thu, 13 Jun 2019 21:19:45 GMT
 VOLUME [/opt/aerospike/data]
-# Tue, 11 Jun 2019 05:15:17 GMT
+# Thu, 13 Jun 2019 21:19:45 GMT
 EXPOSE 3000 3001 3002 3003
-# Tue, 11 Jun 2019 05:15:17 GMT
+# Thu, 13 Jun 2019 21:19:45 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 11 Jun 2019 05:15:17 GMT
+# Thu, 13 Jun 2019 21:19:45 GMT
 CMD ["asd"]
 ```
 
@@ -52,15 +52,15 @@ CMD ["asd"]
 		Last Modified: Mon, 10 Jun 2019 23:28:08 GMT  
 		Size: 22.5 MB (22489302 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:277b63d96e608c6a9d8cef63b84f99abda001eee5d7095f0f5e315bda56ef37d`  
-		Last Modified: Tue, 11 Jun 2019 05:16:52 GMT  
-		Size: 26.2 MB (26199372 bytes)  
+	-	`sha256:c1fd25d7682237e6fcb71bd9120ae412a15b4f2e9639440e3d0d2569f4390a0c`  
+		Last Modified: Thu, 13 Jun 2019 21:20:41 GMT  
+		Size: 28.9 MB (28879324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba99ea67f91d57b840fc46496edfea6bf113a2abfcf0bed2dc065b5609af33f0`  
-		Last Modified: Tue, 11 Jun 2019 05:16:46 GMT  
-		Size: 1.1 KB (1111 bytes)  
+	-	`sha256:357bbdf7da4fd7a8ff5c05471c90e41dcce4d7c65f1ee3b4d262c719aa45303b`  
+		Last Modified: Thu, 13 Jun 2019 21:20:36 GMT  
+		Size: 1.1 KB (1113 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdd80769d23ae9bb45c1c3f1b053045d2e49945c5789802880615b543c5b4d26`  
-		Last Modified: Tue, 11 Jun 2019 05:16:46 GMT  
+	-	`sha256:c81bd5cbe2e7e09a3d20a92857964a4e088a4e7a236ce824ba4b2c11816875df`  
+		Last Modified: Thu, 13 Jun 2019 21:20:36 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
