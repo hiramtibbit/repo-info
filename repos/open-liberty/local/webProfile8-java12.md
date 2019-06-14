@@ -1,10 +1,10 @@
-# `open-liberty:microProfile2-java11`
+# `open-liberty:webProfile8-java12`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0c20d92aae95492ab61c2a2a7fdca60ec005488005e00fb8b895d1751e9b7ed4`
-- Created: `2019-06-10T19:39:37.686845315Z`
-- Virtual Size: ~ 370.87 Mb  
+- Image ID: `sha256:43fec39a00c262f4549f7e162d3516b50d7f5e033cae0eda6293cbe52a8abed6`
+- Created: `2019-06-11T22:20:51.385796156Z`
+- Virtual Size: ~ 317.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ol/helpers/runtime/docker-server.sh"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.3+7_openj9-0.14.3`
+  - `JAVA_VERSION=jdk-12.0.1+12_openj9-0.14.1`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle`
   - `LOG_DIR=/logs`
@@ -22,6 +22,7 @@
   - `WLP_SKIP_MAXPERMSIZE=true`
   - `RANDFILE=/tmp/.rnd`
   - `IBM_JAVA_OPTIONS=-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/ `
+  - `KEYSTORE_REQUIRED=true`
 - Labels:
   - `org.opencontainers.image.authors=Arthur De Magalhaes, Andy Naumann`
   - `org.opencontainers.image.revision=cl190520190522-2227`

@@ -489,9 +489,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-8=8.3.0-6ubuntu1~18.04
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-6ubuntu1~18.04.dsc' gcc-8_8.3.0-6ubuntu1~18.04.dsc 36113 SHA256:e6ffbcf6156da2872efe051618819f9759506f5da386ee1d41145ee833686f20
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-6ubuntu1~18.04.1.dsc' gcc-8_8.3.0-6ubuntu1~18.04.1.dsc 35751 SHA256:6d73229917cfc03f826c967f61a065d1f8faba2faa20cdee8c130b3b97554bbc
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0.orig.tar.gz' gcc-8_8.3.0.orig.tar.gz 85259886 SHA256:561c1bc647ade738c14efe5a298fc0cee2e2efd3dec9fefb66b724dbd50437e6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-6ubuntu1~18.04.diff.gz' gcc-8_8.3.0-6ubuntu1~18.04.diff.gz 566469 SHA256:3df57692065eddd3637d029a1806c2defea6cebfaf7428e95338573f91e386b0
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-6ubuntu1~18.04.1.diff.gz' gcc-8_8.3.0-6ubuntu1~18.04.1.diff.gz 566564 SHA256:a3b1c9a26470622c308fa6f9194b87cc806fa4c7b58a63889c66553ae85719d7
 ```
 
 ### `dpkg` source package: `glibc=2.27-3ubuntu1`
@@ -1199,15 +1199,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1-1ubuntu2.1~18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1~18.04.1.dsc' openssl_1.1.1-1ubuntu2.1~18.04.1.dsc 2776 SHA256:a0e8de49e8e838fc9d1fd09d6006cf9a0d4fb48967e2fa2bbad350347a62fd63
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz' openssl_1.1.1.orig.tar.gz 8337920 SHA256:2836875a0f89c03d0fdf483941512613a50cfb421d6fd94b9f41d7279d586a3d
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz.asc' openssl_1.1.1.orig.tar.gz.asc 488 SHA256:f3296150114069ea73a72eafbfdcbb295b770e7cbf3266f9590f3d0932498b3e
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1~18.04.1.debian.tar.xz' openssl_1.1.1-1ubuntu2.1~18.04.1.debian.tar.xz 86712 SHA256:c7e8d10960a14dacccb26d8cedc2189df3aaed2e56fc831645f8963a92565247
-```
 
 ### `dpkg` source package: `p11-kit=0.23.9-2`
 
