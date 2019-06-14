@@ -471,14 +471,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.30-21ubuntu1~18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.30-21ubuntu1~18.04.1.dsc' binutils_2.30-21ubuntu1~18.04.1.dsc 11700 SHA256:17b3f21607816869735500b3913724a823fa5fd5fad19b1a2311052a0485e603
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.30.orig.tar.xz' binutils_2.30.orig.tar.xz 20286700 SHA256:6e46b8aeae2f727a36f0bd9505e405768a72218f1796f0d09757d45209871ae6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.30-21ubuntu1~18.04.1.debian.tar.xz' binutils_2.30-21ubuntu1~18.04.1.debian.tar.xz 559596 SHA256:96192021070d1390e141b8e2f92cb581d6bd3f9c85fff68f0c37ffe2aa60db0d
-```
 
 ### `dpkg` source package: `boost-defaults=1.65.1.0ubuntu1`
 
@@ -1503,14 +1498,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-7/copyright`, `/usr/share/doc/g++-7/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.4.0-1ubuntu1~18.04
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.4.0-1ubuntu1~18.04.dsc' gcc-7_7.4.0-1ubuntu1~18.04.dsc 28375 SHA256:f8782639aa4fb91b6b93ef285e3fa2dc2c9e13d1719948bb06c5d186efd81a29
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.4.0.orig.tar.gz' gcc-7_7.4.0.orig.tar.gz 73695608 SHA256:5b4807f26217a79529db1e4f786ac1771b2caee5c7ff487bb72c1f633c29a705
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.4.0-1ubuntu1~18.04.diff.gz' gcc-7_7.4.0-1ubuntu1~18.04.diff.gz 569258 SHA256:d87ae43d939cf83805e8f1fb14e21cf4ad82e6219dcd32a516a3d65dda6be0de
-```
 
 ### `dpkg` source package: `gcc-8=8.3.0-6ubuntu1~18.04`
 
@@ -1541,9 +1531,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-8=8.3.0-6ubuntu1~18.04
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-6ubuntu1~18.04.dsc' gcc-8_8.3.0-6ubuntu1~18.04.dsc 36113 SHA256:e6ffbcf6156da2872efe051618819f9759506f5da386ee1d41145ee833686f20
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-6ubuntu1~18.04.1.dsc' gcc-8_8.3.0-6ubuntu1~18.04.1.dsc 35751 SHA256:6d73229917cfc03f826c967f61a065d1f8faba2faa20cdee8c130b3b97554bbc
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0.orig.tar.gz' gcc-8_8.3.0.orig.tar.gz 85259886 SHA256:561c1bc647ade738c14efe5a298fc0cee2e2efd3dec9fefb66b724dbd50437e6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-6ubuntu1~18.04.diff.gz' gcc-8_8.3.0-6ubuntu1~18.04.diff.gz 566469 SHA256:3df57692065eddd3637d029a1806c2defea6cebfaf7428e95338573f91e386b0
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-6ubuntu1~18.04.1.diff.gz' gcc-8_8.3.0-6ubuntu1~18.04.1.diff.gz 566564 SHA256:a3b1c9a26470622c308fa6f9194b87cc806fa4c7b58a63889c66553ae85719d7
 ```
 
 ### `dpkg` source package: `gcc-defaults=1.176ubuntu2.2`
@@ -1558,13 +1548,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.176ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.176ubuntu2.2.dsc' gcc-defaults_1.176ubuntu2.2.dsc 15833 SHA256:22d1b372b4417d91527beabb31afd6eb3e6f8f2a23007937310d3972b9b14e15
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.176ubuntu2.2.tar.gz' gcc-defaults_1.176ubuntu2.2.tar.gz 208517 SHA256:dcc77e6da879203496c5ff9afa7315ae40033c68e08dc84c5d400e3b26e5cc75
-```
 
 ### `dpkg` source package: `gdbm=1.14.1-6`
 
