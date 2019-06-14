@@ -404,9 +404,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-8=8.3.0-6ubuntu1~18.10
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-6ubuntu1~18.10.dsc' gcc-8_8.3.0-6ubuntu1~18.10.dsc 36123 SHA256:5ad1396b85a14b25eabff08b8d94e19b7b7502a72c99044c5820574db61f3716
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-6ubuntu1~18.10.1.dsc' gcc-8_8.3.0-6ubuntu1~18.10.1.dsc 35761 SHA256:8b51ad1d23b71dffaf09ed71464ad053936ed4ca9d22fc23ce3fbb9942346423
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0.orig.tar.gz' gcc-8_8.3.0.orig.tar.gz 85259886 SHA256:561c1bc647ade738c14efe5a298fc0cee2e2efd3dec9fefb66b724dbd50437e6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-6ubuntu1~18.10.diff.gz' gcc-8_8.3.0-6ubuntu1~18.10.diff.gz 566478 SHA256:f9997b84134fd8b7b2418f33193d35ee211969dd4456efdd6076cf4365bac4a6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-6ubuntu1~18.10.1.diff.gz' gcc-8_8.3.0-6ubuntu1~18.10.1.diff.gz 566569 SHA256:dd3d3f2e8237900f0e4be66dd9ef4d0027bddfa1b72e6e63b484e427ce3aa0ea
 ```
 
 ### `dpkg` source package: `glibc=2.28-0ubuntu1`
