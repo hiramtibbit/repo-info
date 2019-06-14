@@ -298,14 +298,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.31.1-6ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.31.1-6ubuntu1.1.dsc' binutils_2.31.1-6ubuntu1.1.dsc 11841 SHA256:0fd2e8e30fcf7972b13af9fc20a43828efb82ce06047f5ab73273dc3df4cea11
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.31.1.orig.tar.xz' binutils_2.31.1.orig.tar.xz 20467996 SHA256:5d20086ecf5752cc7d9134246e9588fa201740d540f7eb84d795b1f7a93bca86
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.31.1-6ubuntu1.1.debian.tar.xz' binutils_2.31.1-6ubuntu1.1.debian.tar.xz 114864 SHA256:815eb29a0bdeae765269cdd23e9601f38d1314c2b15f5781b5cfa380776ffc5b
-```
 
 ### `dpkg` source package: `bzip2=1.0.6-9`
 
@@ -902,14 +897,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-8/copyright`, `/usr/share/doc/g++-8/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8.3.0-6ubuntu1~18.10
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-6ubuntu1~18.10.dsc' gcc-8_8.3.0-6ubuntu1~18.10.dsc 36123 SHA256:5ad1396b85a14b25eabff08b8d94e19b7b7502a72c99044c5820574db61f3716
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0.orig.tar.gz' gcc-8_8.3.0.orig.tar.gz 85259886 SHA256:561c1bc647ade738c14efe5a298fc0cee2e2efd3dec9fefb66b724dbd50437e6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-6ubuntu1~18.10.diff.gz' gcc-8_8.3.0-6ubuntu1~18.10.diff.gz 566478 SHA256:f9997b84134fd8b7b2418f33193d35ee211969dd4456efdd6076cf4365bac4a6
-```
 
 ### `dpkg` source package: `gcc-defaults=1.179ubuntu1.1`
 
@@ -923,13 +913,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.179ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.179ubuntu1.1.dsc' gcc-defaults_1.179ubuntu1.1.dsc 15808 SHA256:627452881864f142e1c9c96f50bf910bd53ce67bf61ecf1858a43d9615502134
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.179ubuntu1.1.tar.gz' gcc-defaults_1.179ubuntu1.1.tar.gz 208640 SHA256:17d17cd0b83980cde971e99b58c29028ddff8c346fa2f52f3d3dfd2b137451f0
-```
 
 ### `dpkg` source package: `gdbm=1.14.1-6`
 
