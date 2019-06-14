@@ -460,14 +460,9 @@ Licenses: (parsed from: `/usr/share/doc/dbus/copyright`, `/usr/share/doc/libdbus
 - `Tcl-BSDish`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dbus=1.10.6-1ubuntu3.3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.10.6-1ubuntu3.3.dsc' dbus_1.10.6-1ubuntu3.3.dsc 2728 SHA256:1320bb487e39b5f6c730796d3b8b2e492f86568b782c45ba719503902fc50fc3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.10.6.orig.tar.gz' dbus_1.10.6.orig.tar.gz 1952608 SHA256:b5fefa08a77edd76cd64d872db949eebc02cf6f3f8be82e4bbc641742af5d35f
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.10.6-1ubuntu3.3.debian.tar.xz' dbus_1.10.6-1ubuntu3.3.debian.tar.xz 56984 SHA256:71337521f73083398329f52386226ce155970e88ccc1f60c50a8a1ea5f507f95
-```
 
 ### `dpkg` source package: `debconf=1.5.58ubuntu1`
 
