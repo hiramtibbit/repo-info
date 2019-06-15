@@ -1,18 +1,18 @@
-# `kong:1.1.2-alpine`
+# `kong:1.2.0-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:20ba91a7b0e583b67e1e6388c38fbaca7ba30eb5508dac7b9b905d3edab87acb`
-- Created: `2019-04-25T00:19:53.658691375Z`
-- Virtual Size: ~ 98.49 Mb  
+- Image ID: `sha256:5bc6d096049b97a9ba8cd1b8cc7922e97b1bd49ad9d0e9b2671576307a94ba5d`
+- Created: `2019-06-10T19:20:05.351498529Z`
+- Virtual Size: ~ 98.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["kong","docker-start"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `KONG_VERSION=1.1.2`
-  - `KONG_SHA256=0d7509fa2ef653b4aba14a1a1fd20339bccb4f8d386429102c42b7af6d8b6bdb`
+  - `KONG_VERSION=1.2.0`
+  - `KONG_SHA256=049c63c930b14d8049ebd028794b690b52600c580be8fe129dac11062b8e2568`
 - Labels:
   - `maintainer=Kong Core Team <team-core@konghq.com>`
 
@@ -89,16 +89,16 @@ GPL2
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20161130-r2 description:
+ca-certificates-20161130-r3 description:
 Common CA certificates PEM files
 
-ca-certificates-20161130-r2 webpage:
-http://packages.debian.org/sid/ca-certificates
+ca-certificates-20161130-r3 webpage:
+https://packages.debian.org/sid/ca-certificates
 
-ca-certificates-20161130-r2 installed size:
-831488
+ca-certificates-20161130-r3 installed size:
+741376
 
-ca-certificates-20161130-r2 license:
+ca-certificates-20161130-r3 license:
 MPL 2.0 GPL2+
 
 ```
@@ -446,16 +446,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2017a-r0 description:
+tzdata-2019a-r0 description:
 Timezone data
 
-tzdata-2017a-r0 webpage:
+tzdata-2019a-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2017a-r0 installed size:
-3502080
+tzdata-2019a-r0 installed size:
+3518464
 
-tzdata-2017a-r0 license:
+tzdata-2019a-r0 license:
 Public Domain
 
 ```
