@@ -1,10 +1,10 @@
-# `nats-streaming:0.14.3-linux`
+# `nats-streaming:0.15.1-linux`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d07d3ae2ad78e5119943065342712f0aca80764ad8b6311badeb61984bb8ca76`
-- Created: `2019-05-31T21:20:26.423770923Z`
-- Virtual Size: ~ 12.89 Mb  
+- Image ID: `sha256:cda16c83dcc1185b2106a735ab128299b81e73fdcd342525e88c669b25c18432`
+- Created: `2019-06-13T20:20:38.094425113Z`
+- Virtual Size: ~ 14.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/nats-streaming-server"]`
