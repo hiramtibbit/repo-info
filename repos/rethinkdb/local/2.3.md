@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cc5badcd88e8d6197e3c3a39e4e54d5d4c9260f225ec6a3720da0ee4f9fa3228`
-- Created: `2019-05-08T04:48:37.142388617Z`
-- Virtual Size: ~ 184.49 Mb  
+- Image ID: `sha256:70e6e528a57e2bc326582d4c3dcfc6c0be640fb66b8c828a5b28a9442079b619`
+- Created: `2019-06-11T05:13:50.890788317Z`
+- Virtual Size: ~ 184.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["rethinkdb","--bind","all"]`
@@ -344,11 +344,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cryptsetup/2:1.6.6-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.38.0-4+deb8u14`
+### `dpkg` source package: `curl=7.38.0-4+deb8u15`
 
 Binary Packages:
 
-- `libcurl3:amd64=7.38.0-4+deb8u14`
+- `libcurl3:amd64=7.38.0-4+deb8u15`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`)
 
@@ -360,17 +360,17 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u14
-'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.38.0-4+deb8u14.dsc' curl_7.38.0-4+deb8u14.dsc 2673 SHA256:6faa32fb4ca89e2aa65c15f792c31087699a1b43f4296d8efcdfd5677c83a1c1
+$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u15
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.38.0-4+deb8u15.dsc' curl_7.38.0-4+deb8u15.dsc 2824 SHA256:974ceb515fefc87cb735252d84a406c0b330721ee1f895d935c69828cd1c958f
 'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
-'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.38.0-4+deb8u14.debian.tar.xz' curl_7.38.0-4+deb8u14.debian.tar.xz 57312 SHA256:81141deeed8741e4cf31ef240cd438ac8543114cf6fec5faaf2505374b6d8398
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.38.0-4+deb8u15.debian.tar.xz' curl_7.38.0-4+deb8u15.debian.tar.xz 57928 SHA256:8fa2d674b499046c23d418c8d0c8e5531f5943a626cedd663c446270399bb8fe
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u14/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u14/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u14/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u15/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u15/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u15/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
