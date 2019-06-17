@@ -520,19 +520,13 @@ Licenses: (parsed from: `/usr/share/doc/distro-info-data/copyright`)
 
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris distro-info-data=0.40
-'http://deb.debian.org/debian/pool/main/d/distro-info-data/distro-info-data_0.40.dsc' distro-info-data_0.40.dsc 1298 SHA256:56aa8b8f0660f49c3e25c1622823ba75e5c1284b97531e0a3b7b599955e4893f
-'http://deb.debian.org/debian/pool/main/d/distro-info-data/distro-info-data_0.40.tar.xz' distro-info-data_0.40.tar.xz 6780 SHA256:7faa69f1815e54b344c3631aa53b750d815ae670478c9d60a491c2c28c83b1b9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/distro-info-data/0.40/
 
-- https://sources.debian.net/src/distro-info-data/0.40/ (for browsing the source)
-- https://sources.debian.net/src/distro-info-data/0.40/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/distro-info-data/0.40/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dpkg=1.19.7`
 
@@ -885,21 +879,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls-dane0/copyright`, `/usr/share/
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.6.7-3
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.7-3.dsc' gnutls28_3.6.7-3.dsc 3322 SHA256:29e52308227ae5df0abb17bbfd76f043a8966c53dec5593cfbfc889066e9631f
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.7.orig.tar.xz' gnutls28_3.6.7.orig.tar.xz 8153728 SHA256:5b3409ad5aaf239808730d1ee12fdcd148c0be00262c7edf157af655a8a188e2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.7.orig.tar.xz.asc' gnutls28_3.6.7.orig.tar.xz.asc 534 SHA256:a14d0a7b9295b65ae797a70f8e765024a2e363dca03d008bfce0aec2b3f292b0
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.7-3.debian.tar.xz' gnutls28_3.6.7-3.debian.tar.xz 67028 SHA256:0bde68d313b730ff5030181bb320851bb52d37482ab691701f0a9ca448b32cc7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.6.7-3/
 
-- https://sources.debian.net/src/gnutls28/3.6.7-3/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.6.7-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.6.7-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gpm=1.20.7-5`
 
@@ -2386,21 +2372,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1b-2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1b-2.dsc' openssl_1.1.1b-2.dsc 2614 SHA256:4596cc5147ce07cc9504c2ed65076f1556ced9b31c3d035b049035af0e72f6b4
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1b.orig.tar.gz' openssl_1.1.1b.orig.tar.gz 8213737 SHA256:5c557b023230413dfb0756f3137a13e6d726838ccd1430888ad15bfb2b43ea4b
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1b.orig.tar.gz.asc' openssl_1.1.1b.orig.tar.gz.asc 488 SHA256:eba898c33e1580089f8179edacd033beac01626c8a82adc701a2f964d0da0e8d
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1b-2.debian.tar.xz' openssl_1.1.1b-2.debian.tar.xz 87392 SHA256:2f29be77334f597dd0ffc59be036fe5ae9e01c760b38e1fbe92197eae6d90752
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/1.1.1b-2/
 
-- https://sources.debian.net/src/openssl/1.1.1b-2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.1b-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.1b-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.15-2`
 
