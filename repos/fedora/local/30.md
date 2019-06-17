@@ -26,7 +26,7 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls acl-2.2.53-3.fc30
-http://repo.ialab.dsu.edu/fedora/linux/updates/30/Everything/x86_64/repodata/repomd.xml: [Errno -1] repomd.xml does not match metalink for updates
+http://mirror.cc.vt.edu/pub/fedora/linux/updates/30/Everything/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://mirror.cc.vt.edu/pub/fedora/linux/updates/30/Everything/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
 Trying other mirror.
 Enabling fedora-modular-source repository
 Enabling updates-source repository
