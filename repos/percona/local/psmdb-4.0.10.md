@@ -1,10 +1,10 @@
-# `percona:psmdb-4.0.9`
+# `percona:psmdb-4.0.10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3b782bc2abf13660a1eac1f7604458609243f2cb471323e02d1421061af5c7f9`
-- Created: `2019-04-17T23:25:54.823020543Z`
-- Virtual Size: ~ 505.21 Mb  
+- Image ID: `sha256:435027988bbbd4f4507d88d5117f73dac04f041291c7dda8c903690d170d1535`
+- Created: `2019-06-13T22:20:29.607176665Z`
+- Virtual Size: ~ 505.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `PERCONA_MAJOR=40`
-  - `PERCONA_VERSION=4.0.9-4.el7`
+  - `PERCONA_VERSION=4.0.10-5.el7`
   - `K8S_TOOLS_VERSION=0.4.1`
 - Labels:
   - `org.label-schema.build-date=20190305`
@@ -32,8 +32,6 @@ Source:
 ```console
 $ yumdownloader --quiet --source --urls acl-2.2.51-14.el7
 Enabling epel-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/7/SRPMS/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
-Trying other mirror.
 Enabling updates-source repository
 Enabling base-source repository
 Enabling extras-source repository
@@ -1675,25 +1673,25 @@ Licenses (from `rpm --query`): GPL-3.0+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-mongos-4.0.9-4.el7.x86_64`
+### `rpm` package: `percona-server-mongodb-mongos-4.0.10-5.el7.x86_64`
 
 Licenses (from `rpm --query`): AGPL 3.0
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-server-4.0.9-4.el7.x86_64`
+### `rpm` package: `percona-server-mongodb-server-4.0.10-5.el7.x86_64`
 
 Licenses (from `rpm --query`): AGPL 3.0
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-shell-4.0.9-4.el7.x86_64`
+### `rpm` package: `percona-server-mongodb-shell-4.0.10-5.el7.x86_64`
 
 Licenses (from `rpm --query`): AGPL 3.0
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-tools-4.0.9-4.el7.x86_64`
+### `rpm` package: `percona-server-mongodb-tools-4.0.10-5.el7.x86_64`
 
 Licenses (from `rpm --query`): AGPL 3.0
 
