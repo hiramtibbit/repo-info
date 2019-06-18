@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f446ab221c1461c69cc89cbb30732b013cd7c180b7cce13c42e642c08ef9faf6`
-- Created: `2019-06-06T22:20:57.316854516Z`
+- Image ID: `sha256:96864d5913bc010b9aa8a9fad5cc5d4714b6d8289c990c8e07112c90e345b375`
+- Created: `2019-06-18T01:27:12.394706385Z`
 - Virtual Size: ~ 451.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u212-b03`
+  - `JAVA_VERSION=jdk8u212-b04`
   - `JAVA_HOME=/opt/java/openjdk`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=5.4.1`
@@ -1775,14 +1775,14 @@ $ apt-get source -qq --print-uris python-defaults=2.7.15~rc1-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-defaults/python-defaults_2.7.15~rc1-1.tar.gz' python-defaults_2.7.15~rc1-1.tar.gz 1958015 SHA256:f3bed2b81091821d2e514c2e17c6846f7e744487fd15f7d3c48fa1c91b9cd49b
 ```
 
-### `dpkg` source package: `python2.7=2.7.15~rc1-1ubuntu0.1`
+### `dpkg` source package: `python2.7=2.7.15-4ubuntu4~18.04`
 
 Binary Packages:
 
-- `libpython2.7-minimal:amd64=2.7.15~rc1-1ubuntu0.1`
-- `libpython2.7-stdlib:amd64=2.7.15~rc1-1ubuntu0.1`
-- `python2.7=2.7.15~rc1-1ubuntu0.1`
-- `python2.7-minimal=2.7.15~rc1-1ubuntu0.1`
+- `libpython2.7-minimal:amd64=2.7.15-4ubuntu4~18.04`
+- `libpython2.7-stdlib:amd64=2.7.15-4ubuntu4~18.04`
+- `python2.7=2.7.15-4ubuntu4~18.04`
+- `python2.7-minimal=2.7.15-4ubuntu4~18.04`
 
 Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/share/doc/libpython2.7-stdlib/copyright`, `/usr/share/doc/python2.7/copyright`, `/usr/share/doc/python2.7-minimal/copyright`)
 
@@ -1806,10 +1806,10 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python2.7=2.7.15~rc1-1ubuntu0.1
-'http://security.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.15~rc1-1ubuntu0.1.dsc' python2.7_2.7.15~rc1-1ubuntu0.1.dsc 3480 SHA256:98f51fba2a970d76de4e52aacd682a7643b4b19082f860bb1af4f7aaf96effcc
-'http://security.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.15~rc1.orig.tar.gz' python2.7_2.7.15~rc1.orig.tar.gz 17496421 SHA256:8a0c4ce73d351d73dc105cb8dadd2b5b0aa91956353a558dff10962f543f5d8b
-'http://security.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.15~rc1-1ubuntu0.1.diff.gz' python2.7_2.7.15~rc1-1ubuntu0.1.diff.gz 286551 SHA256:5759321345df298f17dbb5405a22929ac6d33eb3646fe6516027bf43893e6973
+$ apt-get source -qq --print-uris python2.7=2.7.15-4ubuntu4~18.04
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.15-4ubuntu4~18.04.dsc' python2.7_2.7.15-4ubuntu4~18.04.dsc 3143 SHA256:9de61aa6573d57aac4e7fbc0c23730cd56400eb6f82341cea10960e4c0f15d3f
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.15.orig.tar.gz' python2.7_2.7.15.orig.tar.gz 17496336 SHA256:18617d1f15a380a919d517630a9cd85ce17ea602f9bbdc58ddc672df4b0239db
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.15-4ubuntu4~18.04.diff.gz' python2.7_2.7.15-4ubuntu4~18.04.diff.gz 543312 SHA256:88a11982a4a7b46aa93d62e27ecb327dea46930039238b7451b22273d240cf29
 ```
 
 ### `dpkg` source package: `readline=7.0-3`
