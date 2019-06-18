@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ba829c359c99f0209b64cf8d5a33f9a6ca5babff8433073e4ead0743ff6468f0`
-- Created: `2019-06-13T01:39:40.468513645Z`
-- Virtual Size: ~ 205.55 Mb  
+- Image ID: `sha256:d411b0b6e3d70d581dc81c1761fb357bf4343778562029a434c040b49c28418a`
+- Created: `2019-06-18T02:54:47.174945521Z`
+- Virtual Size: ~ 205.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -253,16 +253,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.64.0-r1 description:
+libcurl-7.64.0-r2 description:
 The multiprotocol file transfer library
 
-libcurl-7.64.0-r1 webpage:
+libcurl-7.64.0-r2 webpage:
 https://curl.haxx.se
 
-libcurl-7.64.0-r1 installed size:
+libcurl-7.64.0-r2 installed size:
 487424
 
-libcurl-7.64.0-r1 license:
+libcurl-7.64.0-r2 license:
 MIT
 
 ```
