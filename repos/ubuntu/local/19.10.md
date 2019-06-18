@@ -125,13 +125,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=10.2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.2ubuntu2.dsc' base-files_10.2ubuntu2.dsc 1612 SHA256:fa85beb4aa3b044ceb9e5f6540996b8f7b96e00a8463bbf6461fd8d5b0fc86b8
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.2ubuntu2.tar.xz' base-files_10.2ubuntu2.tar.xz 78368 SHA256:8405152ab3d65ebcbf9981a1e3380ebb80345692149d90762c4e6ea6c8e58e72
-```
 
 ### `dpkg` source package: `base-passwd=3.5.46`
 
@@ -860,13 +856,9 @@ Licenses: (parsed from: `/usr/share/doc/lsb-base/copyright`)
 - `BSD-3-clause`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lsb=10.2019031300ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lsb/lsb_10.2019031300ubuntu1.dsc' lsb_10.2019031300ubuntu1.dsc 2105 SHA256:eee423232d60e6b9bcc076756e41e03c0c280c18a1cc72cdb127038aabfe20b8
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lsb/lsb_10.2019031300ubuntu1.tar.xz' lsb_10.2019031300ubuntu1.tar.xz 45632 SHA256:553780b6810d7486039c0cd131ee259012b9b1c5245fb476750178d137db63cc
-```
 
 ### `dpkg` source package: `lz4=1.8.3-1ubuntu1`
 
