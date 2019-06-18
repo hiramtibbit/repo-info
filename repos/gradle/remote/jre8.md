@@ -1,7 +1,7 @@
 ## `gradle:jre8`
 
 ```console
-$ docker pull gradle@sha256:6d4cd8766299de52b4e6a09640e834989001757d96b9bfadcecb0140a556060b
+$ docker pull gradle@sha256:6ced7e1ef993006b8277d43132304f20e44794ff9ddb9fcdb90826a087990e43
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,14 +13,14 @@ $ docker pull gradle@sha256:6d4cd8766299de52b4e6a09640e834989001757d96b9bfadcecb
 ### `gradle:jre8` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:e02901ac78d0751bd7eec3c5851a260c4ec5f34b8bdf7f51e35c11343cfc45f7
+$ docker pull gradle@sha256:b01a1e8f634162d02e37dea5bbe4fe19f64dc5a32edb976a24240e6aac098d8e
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **218.8 MB (218792525 bytes)**  
+-	Total Size: **218.8 MB (218790402 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f446ab221c1461c69cc89cbb30732b013cd7c180b7cce13c42e642c08ef9faf6`
+-	Image ID: `sha256:96864d5913bc010b9aa8a9fad5cc5d4714b6d8289c990c8e07112c90e345b375`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -38,29 +38,29 @@ CMD ["/bin/bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 24 May 2019 23:44:14 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates locales     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 24 May 2019 23:44:14 GMT
-ENV JAVA_VERSION=jdk8u212-b03
-# Fri, 24 May 2019 23:44:31 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='2de019954c0898c1798ed30ed55314534423b853bfb373806b6a6224dc98fa6d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b03/OpenJDK8U-jre_ppc64le_linux_hotspot_8u212b03.tar.gz';          ;;        s390x)          ESUM='269a6a3735d12438866754a28d89180d39819aea70e0023b90ca31e15a69e1b0';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b03/OpenJDK8U-jre_s390x_linux_hotspot_8u212b03.tar.gz';          ;;        amd64|x86_64)          ESUM='74daf0b77a7fd679cbb3a6228e0efa8c4a90b7664aa057f211e34bbfb38640fb';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b03/OpenJDK8U-jre_x64_linux_hotspot_8u212b03.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 24 May 2019 23:44:31 GMT
+# Mon, 17 Jun 2019 22:19:28 GMT
+ENV JAVA_VERSION=jdk8u212-b04
+# Mon, 17 Jun 2019 22:19:52 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='7e09a9939c0baff8f24277df71844dc121f0bdfa855c2a02fb557e0d3438b9c5';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b04/OpenJDK8U-jre_ppc64le_linux_hotspot_8u212b04.tar.gz';          ;;        s390x)          ESUM='90554726525b4acb38dae6f1f958711476e5484ff593a0666f43f2a044bb070a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b04/OpenJDK8U-jre_s390x_linux_hotspot_8u212b04.tar.gz';          ;;        amd64|x86_64)          ESUM='96d24d94c022b3e414b612cae8829244329d71ad2cce790f099c020f33247e7e';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b04/OpenJDK8U-jre_x64_linux_hotspot_8u212b04.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Mon, 17 Jun 2019 22:19:53 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 01 Jun 2019 00:28:59 GMT
+# Tue, 18 Jun 2019 01:26:29 GMT
 CMD ["gradle"]
-# Sat, 01 Jun 2019 00:28:59 GMT
+# Tue, 18 Jun 2019 01:26:29 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Sat, 01 Jun 2019 00:29:01 GMT
+# Tue, 18 Jun 2019 01:26:30 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Sat, 01 Jun 2019 00:29:01 GMT
+# Tue, 18 Jun 2019 01:26:30 GMT
 VOLUME [/home/gradle/.gradle]
-# Sat, 01 Jun 2019 00:29:01 GMT
+# Tue, 18 Jun 2019 01:26:30 GMT
 WORKDIR /home/gradle
-# Thu, 06 Jun 2019 22:20:52 GMT
+# Tue, 18 Jun 2019 01:27:03 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jun 2019 22:20:52 GMT
+# Tue, 18 Jun 2019 01:27:04 GMT
 ENV GRADLE_VERSION=5.4.1
-# Thu, 06 Jun 2019 22:20:52 GMT
+# Tue, 18 Jun 2019 01:27:04 GMT
 ARG GRADLE_DOWNLOAD_SHA256=7bdbad1e4f54f13c8a78abc00c26d44dd8709d4aedb704d913fb1bb78ac025dc
-# Thu, 06 Jun 2019 22:20:57 GMT
+# Tue, 18 Jun 2019 01:27:12 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=7bdbad1e4f54f13c8a78abc00c26d44dd8709d4aedb704d913fb1bb78ac025dc
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -82,34 +82,34 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Fri, 24 May 2019 23:47:02 GMT  
 		Size: 10.6 MB (10595375 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f59159ff9330c5820261d93f232a3f04b8401f07b0ea73bbc7fb6f0e29f90ef`  
-		Last Modified: Fri, 24 May 2019 23:47:21 GMT  
-		Size: 41.2 MB (41213147 bytes)  
+	-	`sha256:7dceef744034b9c1ebda80f9bb8ac2328b67a3b5dd5bfd2b434270158a65c9da`  
+		Last Modified: Mon, 17 Jun 2019 22:21:39 GMT  
+		Size: 41.2 MB (41213310 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:119b424a4f4cf4c02767d6f17229009fbbda157266551782323ec7687449290b`  
-		Last Modified: Sat, 01 Jun 2019 00:31:31 GMT  
+	-	`sha256:5c1794aac93249393412d01decea0cfc967752e3a52648f44f4ddf5e881b649f`  
+		Last Modified: Tue, 18 Jun 2019 01:28:27 GMT  
 		Size: 4.5 KB (4487 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2fed1ec2a7b7c29de1d585172f0feed6cbd1ee6cbfbf18fee99f04fd2d4d0ac`  
-		Last Modified: Thu, 06 Jun 2019 22:23:22 GMT  
-		Size: 51.0 MB (51029712 bytes)  
+	-	`sha256:ecf534951ee0b1fb403a55a65591f724e91f17a287ed13328f35d6e74c3d8460`  
+		Last Modified: Tue, 18 Jun 2019 01:28:47 GMT  
+		Size: 51.0 MB (51027406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:430b98d462b058fcc2b0188e925adece4548cd57c9cdb5ab25ef4292208320af`  
-		Last Modified: Thu, 06 Jun 2019 22:23:16 GMT  
-		Size: 87.1 MB (87093728 bytes)  
+	-	`sha256:acf675532a693fab6ef14b2dabc2a567c28d5b977706f2352b3480c898472f38`  
+		Last Modified: Tue, 18 Jun 2019 01:28:38 GMT  
+		Size: 87.1 MB (87093748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:jre8` - linux; ppc64le
 
 ```console
-$ docker pull gradle@sha256:a370f5c4cc5a016ae5237f1aa520373b932e4d737e1a198869ca61a0d6157c94
+$ docker pull gradle@sha256:4e03cd0592d7c5b0e24164dc979a09497f1108969cb56f33c4e64c8bd3d86521
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **230.3 MB (230309558 bytes)**  
+-	Total Size: **230.3 MB (230300048 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6b5b2ef304f5a6fbbeb3c4f766400d0b0825e2951fd9ca3974a533cd521efd20`
+-	Image ID: `sha256:9613f2083df97c237a83e3d778f904c3b2f255a2113a5c6866e419730cee0021`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -127,29 +127,29 @@ CMD ["/bin/bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Thu, 30 May 2019 14:51:03 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates locales     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Thu, 30 May 2019 14:51:07 GMT
-ENV JAVA_VERSION=jdk8u212-b03
-# Thu, 30 May 2019 14:52:36 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='2de019954c0898c1798ed30ed55314534423b853bfb373806b6a6224dc98fa6d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b03/OpenJDK8U-jre_ppc64le_linux_hotspot_8u212b03.tar.gz';          ;;        s390x)          ESUM='269a6a3735d12438866754a28d89180d39819aea70e0023b90ca31e15a69e1b0';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b03/OpenJDK8U-jre_s390x_linux_hotspot_8u212b03.tar.gz';          ;;        amd64|x86_64)          ESUM='74daf0b77a7fd679cbb3a6228e0efa8c4a90b7664aa057f211e34bbfb38640fb';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b03/OpenJDK8U-jre_x64_linux_hotspot_8u212b03.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 30 May 2019 14:52:40 GMT
+# Mon, 17 Jun 2019 22:16:36 GMT
+ENV JAVA_VERSION=jdk8u212-b04
+# Mon, 17 Jun 2019 22:17:16 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='7e09a9939c0baff8f24277df71844dc121f0bdfa855c2a02fb557e0d3438b9c5';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b04/OpenJDK8U-jre_ppc64le_linux_hotspot_8u212b04.tar.gz';          ;;        s390x)          ESUM='90554726525b4acb38dae6f1f958711476e5484ff593a0666f43f2a044bb070a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b04/OpenJDK8U-jre_s390x_linux_hotspot_8u212b04.tar.gz';          ;;        amd64|x86_64)          ESUM='96d24d94c022b3e414b612cae8829244329d71ad2cce790f099c020f33247e7e';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b04/OpenJDK8U-jre_x64_linux_hotspot_8u212b04.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Mon, 17 Jun 2019 22:17:20 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 01 Jun 2019 00:43:41 GMT
+# Mon, 17 Jun 2019 23:23:24 GMT
 CMD ["gradle"]
-# Sat, 01 Jun 2019 00:43:44 GMT
+# Mon, 17 Jun 2019 23:23:26 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Sat, 01 Jun 2019 00:43:51 GMT
+# Mon, 17 Jun 2019 23:23:31 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Sat, 01 Jun 2019 00:43:54 GMT
+# Mon, 17 Jun 2019 23:23:33 GMT
 VOLUME [/home/gradle/.gradle]
-# Sat, 01 Jun 2019 00:44:00 GMT
+# Mon, 17 Jun 2019 23:23:35 GMT
 WORKDIR /home/gradle
-# Thu, 06 Jun 2019 22:27:37 GMT
+# Mon, 17 Jun 2019 23:25:24 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jun 2019 22:27:54 GMT
+# Mon, 17 Jun 2019 23:25:28 GMT
 ENV GRADLE_VERSION=5.4.1
-# Thu, 06 Jun 2019 22:28:12 GMT
+# Mon, 17 Jun 2019 23:25:30 GMT
 ARG GRADLE_DOWNLOAD_SHA256=7bdbad1e4f54f13c8a78abc00c26d44dd8709d4aedb704d913fb1bb78ac025dc
-# Thu, 06 Jun 2019 22:28:47 GMT
+# Mon, 17 Jun 2019 23:25:39 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=7bdbad1e4f54f13c8a78abc00c26d44dd8709d4aedb704d913fb1bb78ac025dc
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -171,34 +171,34 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Thu, 30 May 2019 15:01:41 GMT  
 		Size: 10.8 MB (10766465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:197dce828d6f5c449415989e7f4d00578b71b70165e9e9c8661171bf3d02005f`  
-		Last Modified: Thu, 30 May 2019 15:02:20 GMT  
-		Size: 40.3 MB (40297374 bytes)  
+	-	`sha256:e24ade711a95cc655ad5073d5a9804e3cb695359688f8eb07dba75e27a111a74`  
+		Last Modified: Mon, 17 Jun 2019 22:19:12 GMT  
+		Size: 40.3 MB (40274286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7404350438bad4cc95549ef293c3356060dc24ca169cb189fe4e8ece9737ddc5`  
-		Last Modified: Sat, 01 Jun 2019 00:49:59 GMT  
-		Size: 4.5 KB (4521 bytes)  
+	-	`sha256:b2862fe486cb5da6618d65f799f514e2e035d852a23e527a4f81b4e85307cf69`  
+		Last Modified: Mon, 17 Jun 2019 23:27:12 GMT  
+		Size: 4.5 KB (4520 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c96f26e628a0393f9a3df0aefce9933daa0a9965efea552513a420acd2245a33`  
-		Last Modified: Thu, 06 Jun 2019 22:43:42 GMT  
-		Size: 59.6 MB (59587014 bytes)  
+	-	`sha256:4dc5d8bf045a10eadff3cfb40939e9619a4fdeccf706a0cf778b3fdb69522eae`  
+		Last Modified: Mon, 17 Jun 2019 23:27:30 GMT  
+		Size: 59.6 MB (59600639 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1750795fe2c70dd2faf8890cafdba5ca0205b490ce75361f89428091d7ec075c`  
-		Last Modified: Thu, 06 Jun 2019 22:43:35 GMT  
-		Size: 87.1 MB (87093874 bytes)  
+	-	`sha256:ee796a68c96176ceaee374a02ffe27e25bb72516721d5837cf1959b8ff25daf8`  
+		Last Modified: Mon, 17 Jun 2019 23:27:22 GMT  
+		Size: 87.1 MB (87093828 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:jre8` - linux; s390x
 
 ```console
-$ docker pull gradle@sha256:4b25c41f330f67cd6573874d9f409e1004c7f2586cf3a37cffe823591843c976
+$ docker pull gradle@sha256:5116536036cd4f4445e77f038d2853b962510ca04c810c8c6836d6d8b692fac1
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **214.4 MB (214395867 bytes)**  
+-	Total Size: **214.4 MB (214406821 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9227c50803730d6148be03ea4d95936f9a62b31a72201bc58d82f096cd66aebb`
+-	Image ID: `sha256:57499856bcabda19d2e05939de5fc6340a6cd369f25e6fab3f72b58df5629be7`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -216,29 +216,29 @@ CMD ["/bin/bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 24 May 2019 23:40:10 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates locales     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 24 May 2019 23:40:10 GMT
-ENV JAVA_VERSION=jdk8u212-b03
-# Fri, 24 May 2019 23:40:22 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='2de019954c0898c1798ed30ed55314534423b853bfb373806b6a6224dc98fa6d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b03/OpenJDK8U-jre_ppc64le_linux_hotspot_8u212b03.tar.gz';          ;;        s390x)          ESUM='269a6a3735d12438866754a28d89180d39819aea70e0023b90ca31e15a69e1b0';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b03/OpenJDK8U-jre_s390x_linux_hotspot_8u212b03.tar.gz';          ;;        amd64|x86_64)          ESUM='74daf0b77a7fd679cbb3a6228e0efa8c4a90b7664aa057f211e34bbfb38640fb';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b03/OpenJDK8U-jre_x64_linux_hotspot_8u212b03.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 24 May 2019 23:40:22 GMT
+# Mon, 17 Jun 2019 21:42:09 GMT
+ENV JAVA_VERSION=jdk8u212-b04
+# Mon, 17 Jun 2019 21:42:27 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='7e09a9939c0baff8f24277df71844dc121f0bdfa855c2a02fb557e0d3438b9c5';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b04/OpenJDK8U-jre_ppc64le_linux_hotspot_8u212b04.tar.gz';          ;;        s390x)          ESUM='90554726525b4acb38dae6f1f958711476e5484ff593a0666f43f2a044bb070a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b04/OpenJDK8U-jre_s390x_linux_hotspot_8u212b04.tar.gz';          ;;        amd64|x86_64)          ESUM='96d24d94c022b3e414b612cae8829244329d71ad2cce790f099c020f33247e7e';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u212-b04/OpenJDK8U-jre_x64_linux_hotspot_8u212b04.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Mon, 17 Jun 2019 21:42:27 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 01 Jun 2019 00:41:54 GMT
+# Mon, 17 Jun 2019 22:17:59 GMT
 CMD ["gradle"]
-# Sat, 01 Jun 2019 00:41:54 GMT
+# Mon, 17 Jun 2019 22:17:59 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Sat, 01 Jun 2019 00:41:55 GMT
+# Mon, 17 Jun 2019 22:18:00 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Sat, 01 Jun 2019 00:41:55 GMT
+# Mon, 17 Jun 2019 22:18:00 GMT
 VOLUME [/home/gradle/.gradle]
-# Sat, 01 Jun 2019 00:41:56 GMT
+# Mon, 17 Jun 2019 22:18:01 GMT
 WORKDIR /home/gradle
-# Thu, 06 Jun 2019 22:43:03 GMT
+# Mon, 17 Jun 2019 22:18:30 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jun 2019 22:43:03 GMT
+# Mon, 17 Jun 2019 22:18:31 GMT
 ENV GRADLE_VERSION=5.4.1
-# Thu, 06 Jun 2019 22:43:04 GMT
+# Mon, 17 Jun 2019 22:18:31 GMT
 ARG GRADLE_DOWNLOAD_SHA256=7bdbad1e4f54f13c8a78abc00c26d44dd8709d4aedb704d913fb1bb78ac025dc
-# Thu, 06 Jun 2019 22:43:08 GMT
+# Mon, 17 Jun 2019 22:18:35 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=7bdbad1e4f54f13c8a78abc00c26d44dd8709d4aedb704d913fb1bb78ac025dc
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -260,19 +260,19 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Fri, 24 May 2019 23:42:19 GMT  
 		Size: 10.3 MB (10296273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01bddaf2d57ac084df1c9f4fe9ad976fd248eb0662c84400dbea6342c12f5fb1`  
-		Last Modified: Fri, 24 May 2019 23:42:40 GMT  
-		Size: 38.9 MB (38912243 bytes)  
+	-	`sha256:5e09b82e1f8177c05e0964c7fbea0ee237118720085a56e1a21ffd2fdba92482`  
+		Last Modified: Mon, 17 Jun 2019 21:44:23 GMT  
+		Size: 38.9 MB (38912389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c79ddb378013e4d9d915c16da1eead05eafb00bae995b299e360c565ce021c0a`  
-		Last Modified: Sat, 01 Jun 2019 00:43:35 GMT  
+	-	`sha256:863864003200ba226055e52a38179c50641ebafdc76debb10925293fca6a4b4d`  
+		Last Modified: Mon, 17 Jun 2019 22:19:38 GMT  
 		Size: 4.5 KB (4491 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:244bd7a708da42550726bdc10d84d47f85b420f9873839c72c18a035cb04c81f`  
-		Last Modified: Thu, 06 Jun 2019 22:47:28 GMT  
-		Size: 50.6 MB (50555490 bytes)  
+	-	`sha256:8ac04171c7edb7da1e4354ce47ba1c527fdbd6a7c2cbdbde80ae838de75c250f`  
+		Last Modified: Mon, 17 Jun 2019 22:19:48 GMT  
+		Size: 50.6 MB (50566295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5612ab9f3228d096fa41612bc336a117ac70a202cb883039abeac2f63c5b72e5`  
-		Last Modified: Thu, 06 Jun 2019 22:47:23 GMT  
-		Size: 87.1 MB (87093723 bytes)  
+	-	`sha256:2d1ecee28237d6120b6481066f57f51c96cc92794ece847f18ac3c2c0a17bc8a`  
+		Last Modified: Mon, 17 Jun 2019 22:19:46 GMT  
+		Size: 87.1 MB (87093726 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
