@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:392400e1199501f4eaace3c9e23ede7f9d8f22d55a1ac6d395030d982d367f01`
-- Created: `2019-06-04T20:52:45.531070949Z`
-- Virtual Size: ~ 159.52 Mb  
+- Image ID: `sha256:ffb7f4fa26576758cfb5cc3a324c7a403652402aea8deefb0e566890a40acf50`
+- Created: `2019-06-14T23:13:21.194807425Z`
+- Virtual Size: ~ 161.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,8 +14,8 @@
   - `OPENSSL_VERSION=1.1.1c`
   - `OPENSSL_SOURCE_SHA256=f6fb3079ad15076154eda9413fed42877d668e7069d9b87396d0804fdb3f4c90`
   - `OPENSSL_PGP_KEY_IDS=0x8657ABB260F056B1E5190839D9C4D26D0E604491 0x5B2545DAB21995F4088CEFAA36CEE4DEB00CFE33 0xED230BEC4D4F2518B9D7DF41F0DB4D21C1D35231 0xC1F33DD8CE1D4CC613AF14DA9195C48241FBF7DD 0x7953AC1FBC3DC8B3B292393ED5E9E43F7DF9EE8C 0xE5E52560DD91C556DDBDA5D02064C53641C25E5D`
-  - `OTP_VERSION=22.0.2`
-  - `OTP_SOURCE_SHA256=7a9869f5da85349ef21bd9fbc8feafe1a1f563504a65924ddb542deeb37af7cd`
+  - `OTP_VERSION=22.0.3`
+  - `OTP_SOURCE_SHA256=b8594588992ef44b141a17f7fe621872d211ce3c083dabfcc65eb4585d3dab38`
   - `RABBITMQ_DATA_DIR=/var/lib/rabbitmq`
   - `RABBITMQ_VERSION=3.7.15`
   - `RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA`
@@ -399,11 +399,11 @@ $ apt-get source -qq --print-uris findutils=4.6.0+git+20170828-2
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.6.0+git+20170828-2.debian.tar.xz' findutils_4.6.0+git+20170828-2.debian.tar.xz 26532 SHA256:5b13792a14edec982fddcf74fe01b4380b909703d76aaba2860da51c6248de73
 ```
 
-### `dpkg` source package: `gcc-7=7.4.0-1ubuntu1~18.04`
+### `dpkg` source package: `gcc-7=7.4.0-1ubuntu1~18.04.1`
 
 Binary Packages:
 
-- `gcc-7-base:amd64=7.4.0-1ubuntu1~18.04`
+- `gcc-7-base:amd64=7.4.0-1ubuntu1~18.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`)
 
@@ -417,19 +417,19 @@ Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-7=7.4.0-1ubuntu1~18.04
+$ apt-get source -qq --print-uris gcc-7=7.4.0-1ubuntu1~18.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.4.0-1ubuntu1~18.04.1.dsc' gcc-7_7.4.0-1ubuntu1~18.04.1.dsc 28013 SHA256:91aeb251b10c95ee63fffac161c4c2acbbda3cc4e84d8ca44b68fe2c78754409
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.4.0.orig.tar.gz' gcc-7_7.4.0.orig.tar.gz 73695608 SHA256:5b4807f26217a79529db1e4f786ac1771b2caee5c7ff487bb72c1f633c29a705
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.4.0-1ubuntu1~18.04.1.diff.gz' gcc-7_7.4.0-1ubuntu1~18.04.1.diff.gz 569357 SHA256:a3d368ba2c5f1355702879333031b08b3e9af524a102878c6c0e7fbeb0dfe909
 ```
 
-### `dpkg` source package: `gcc-8=8.3.0-6ubuntu1~18.04`
+### `dpkg` source package: `gcc-8=8.3.0-6ubuntu1~18.04.1`
 
 Binary Packages:
 
-- `gcc-8-base:amd64=8.3.0-6ubuntu1~18.04`
-- `libgcc1:amd64=1:8.3.0-6ubuntu1~18.04`
-- `libstdc++6:amd64=8.3.0-6ubuntu1~18.04`
+- `gcc-8-base:amd64=8.3.0-6ubuntu1~18.04.1`
+- `libgcc1:amd64=1:8.3.0-6ubuntu1~18.04.1`
+- `libstdc++6:amd64=8.3.0-6ubuntu1~18.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -443,7 +443,7 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-8=8.3.0-6ubuntu1~18.04
+$ apt-get source -qq --print-uris gcc-8=8.3.0-6ubuntu1~18.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-6ubuntu1~18.04.1.dsc' gcc-8_8.3.0-6ubuntu1~18.04.1.dsc 35751 SHA256:6d73229917cfc03f826c967f61a065d1f8faba2faa20cdee8c130b3b97554bbc
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0.orig.tar.gz' gcc-8_8.3.0.orig.tar.gz 85259886 SHA256:561c1bc647ade738c14efe5a298fc0cee2e2efd3dec9fefb66b724dbd50437e6
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-6ubuntu1~18.04.1.diff.gz' gcc-8_8.3.0-6ubuntu1~18.04.1.diff.gz 566564 SHA256:a3b1c9a26470622c308fa6f9194b87cc806fa4c7b58a63889c66553ae85719d7
