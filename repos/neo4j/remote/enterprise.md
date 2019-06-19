@@ -1,7 +1,7 @@
 ## `neo4j:enterprise`
 
 ```console
-$ docker pull neo4j@sha256:943d6ff7cc3148ebf1d770e89e20d34cff895de1ca2e4841c5b5a4ec1e15d6d9
+$ docker pull neo4j@sha256:f7f3b9ba5feb9803c1fff2e1091beea4034abfb3f3063d42a5aa047859906d28
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull neo4j@sha256:943d6ff7cc3148ebf1d770e89e20d34cff895de1ca2e4841c5b5a
 ### `neo4j:enterprise` - linux; amd64
 
 ```console
-$ docker pull neo4j@sha256:ebec70e385844d7a3842106d0b16d8ef2b15fc13aec7df61c2ad9325f1a814ca
+$ docker pull neo4j@sha256:ae63722a75a1af462f4fbd163a682a23d72e64340046a2fdbafcc9feee076b46
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **273.2 MB (273168921 bytes)**  
+-	Total Size: **273.2 MB (273169196 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3a90fd1da3fd44178b64a8d24a4bada5f9c599b25a50c2537cf672feb3f6ea5a`
+-	Image ID: `sha256:09ca4ee4961b526b5364bf2b5952ef6b7278e1eb3f4e831ff08d158414cc4194`
 -	Entrypoint: `["\/sbin\/tini","-g","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
@@ -63,13 +63,13 @@ ENV PATH=/var/lib/neo4j/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/
 WORKDIR /var/lib/neo4j
 # Wed, 12 Jun 2019 15:20:46 GMT
 VOLUME [/data /logs]
-# Wed, 12 Jun 2019 15:20:47 GMT
-COPY file:7f4c39909516983d076a286cb05295aebfbf16e3c631028821ded71cddb379c0 in /docker-entrypoint.sh 
-# Wed, 12 Jun 2019 15:20:47 GMT
+# Wed, 19 Jun 2019 20:24:15 GMT
+COPY file:a6df7d0365e68d6518a68c4e06867141cbce4a327fb803991d77cb4c971aed5d in /docker-entrypoint.sh 
+# Wed, 19 Jun 2019 20:24:16 GMT
 EXPOSE 7473 7474 7687
-# Wed, 12 Jun 2019 15:20:48 GMT
+# Wed, 19 Jun 2019 20:24:16 GMT
 ENTRYPOINT ["/sbin/tini" "-g" "--" "/docker-entrypoint.sh"]
-# Wed, 12 Jun 2019 15:20:48 GMT
+# Wed, 19 Jun 2019 20:24:16 GMT
 CMD ["neo4j"]
 ```
 
@@ -102,7 +102,7 @@ CMD ["neo4j"]
 		Last Modified: Wed, 12 Jun 2019 15:22:42 GMT  
 		Size: 207.4 MB (207390327 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d78261d3c4075541c392b0ac0fb7ad1a0a4f23f04f803c743148d913de47543`  
-		Last Modified: Wed, 12 Jun 2019 15:22:26 GMT  
-		Size: 4.1 KB (4112 bytes)  
+	-	`sha256:898d277f4b531524cd14727107b53413323e47f44b021b359f000a9f57f4aecf`  
+		Last Modified: Wed, 19 Jun 2019 20:24:35 GMT  
+		Size: 4.4 KB (4387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
