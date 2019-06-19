@@ -1,7 +1,7 @@
 ## `adoptopenjdk:12-jdk-openj9`
 
 ```console
-$ docker pull adoptopenjdk@sha256:47a8f6b77852a2b1af7f4503c7d8ead12abb281cb52b5c772e0845e00edad4dc
+$ docker pull adoptopenjdk@sha256:d13ee6869cb5b401bafd6475fa12c6ec8aeeb03ebd87ed70341303589bfe38ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -137,61 +137,65 @@ CMD ["jshell"]
 ### `adoptopenjdk:12-jdk-openj9` - linux; s390x
 
 ```console
-$ docker pull adoptopenjdk@sha256:08309bd00ee0eaf96277222d72e2afb204f533f7229933f7ba99446523de6485
+$ docker pull adoptopenjdk@sha256:8f38813068bf7e5687398768531638c20903c00205be79275e3086ec976786fa
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **240.3 MB (240269883 bytes)**  
+-	Total Size: **238.4 MB (238386154 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7119481b3a3eea5e31331813472b8c4576d6e81133b734106570c2b2a2f2c759`
+-	Image ID: `sha256:c8a9f9ef60f1835c16c178ca2e3ed1f99952dade2704f6c38a12b4d6e9f04bbc`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Wed, 15 May 2019 21:42:57 GMT
-ADD file:099f81542cb8e3e3e4fc2556d8067214392b39f0958e3452312495c98ae25e76 in / 
-# Wed, 15 May 2019 21:43:04 GMT
+# Tue, 18 Jun 2019 21:42:25 GMT
+ADD file:a2279da3a6bb25fe163ff2f525a032d1d3b872475150261b48a46805a1b871d9 in / 
+# Tue, 18 Jun 2019 21:42:26 GMT
+RUN [ -z "$(apt-get indextargets)" ]
+# Tue, 18 Jun 2019 21:42:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 15 May 2019 21:43:10 GMT
-RUN rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:43:13 GMT
+# Tue, 18 Jun 2019 21:42:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 15 May 2019 21:43:14 GMT
+# Tue, 18 Jun 2019 21:42:29 GMT
 CMD ["/bin/bash"]
-# Fri, 24 May 2019 23:39:58 GMT
+# Tue, 18 Jun 2019 22:02:24 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 24 May 2019 23:40:10 GMT
+# Tue, 18 Jun 2019 22:02:50 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates locales     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 24 May 2019 23:41:41 GMT
+# Tue, 18 Jun 2019 22:06:05 GMT
 ENV JAVA_VERSION=jdk-12.0.1+12_openj9-0.14.1
-# Fri, 24 May 2019 23:41:49 GMT
+# Tue, 18 Jun 2019 22:06:44 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='c4ead3ade9318a7fe08d1de6e5b79010aa60a5df3f431e6528d78d5c066f87fd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk12-binaries/releases/download/jdk-12.0.1%2B12_openj9-0.14.1/OpenJDK12U-jdk_ppc64le_linux_openj9_12.0.1_12_openj9-0.14.1.tar.gz';          ;;        s390x)          ESUM='54089efbf915e391cf1b5f413c464fbd623254d3d5c0b52189c5769952c742ef';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk12-binaries/releases/download/jdk-12.0.1%2B12_openj9-0.14.1/OpenJDK12U-jdk_s390x_linux_openj9_12.0.1_12_openj9-0.14.1.tar.gz';          ;;        amd64|x86_64)          ESUM='78091b44f3e2350888f0c73c9eb8f98dbc6fcb55b04692b067070c02bfeb4ec1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk12-binaries/releases/download/jdk-12.0.1%2B12_openj9-0.14.1/OpenJDK12U-jdk_x64_linux_openj9_12.0.1_12_openj9-0.14.1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 24 May 2019 23:41:49 GMT
+# Tue, 18 Jun 2019 22:06:46 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 24 May 2019 23:41:49 GMT
+# Tue, 18 Jun 2019 22:06:47 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Fri, 24 May 2019 23:41:50 GMT
+# Tue, 18 Jun 2019 22:06:47 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:a3ef07dd1fb74710cbd05c9bed2158fa7e005b766ac22ee052c37bc04215d25d`  
-		Last Modified: Wed, 15 May 2019 21:46:43 GMT  
-		Size: 27.5 MB (27532637 bytes)  
+	-	`sha256:3e0ab3b7390d02875ba6655704ba528f120405db6e19a6c8014bacd27a2a2b07`  
+		Last Modified: Tue, 18 Jun 2019 21:44:15 GMT  
+		Size: 25.4 MB (25364931 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd3f8f7d030578ebc1c4656ad55d61c81d712b0b43add1862837acf9d7365d67`  
-		Last Modified: Wed, 15 May 2019 21:46:29 GMT  
-		Size: 847.0 B  
+	-	`sha256:8641916778260cb4957d491680516450d36f7590247405e9657afbd7ab582a71`  
+		Last Modified: Tue, 18 Jun 2019 21:44:07 GMT  
+		Size: 36.2 KB (36171 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad4fa8d15db8edc923fd948fd13c76765471952cf1ac5df39c26f98250ab7944`  
-		Last Modified: Wed, 15 May 2019 21:46:29 GMT  
-		Size: 163.0 B  
+	-	`sha256:c9dae6e8c4d6bcdbd01ec8e9e91d209bc0d0fb0e392fdb4ef5075d1e322fd3ac`  
+		Last Modified: Tue, 18 Jun 2019 21:44:07 GMT  
+		Size: 844.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:edcfd4adbaabfd40280ed77016d1deae2607c55653ef1611185d350ac5a09042`  
-		Last Modified: Fri, 24 May 2019 23:42:19 GMT  
-		Size: 10.3 MB (10296273 bytes)  
+	-	`sha256:756f46ae05c783e37b80e6d459322ed9643102a8da1ca620233c21a601cce8e4`  
+		Last Modified: Tue, 18 Jun 2019 21:44:07 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afc8c53967c34c578e42fb2ae5c7d73d954fba8a5faa34d35448480f76d5c808`  
-		Last Modified: Fri, 24 May 2019 23:45:28 GMT  
-		Size: 202.4 MB (202439963 bytes)  
+	-	`sha256:5714d6b15c6e29d9bab4cd3f59c176cece01c1b7be8bceb2cf3e77699d57baad`  
+		Last Modified: Tue, 18 Jun 2019 22:07:37 GMT  
+		Size: 10.5 MB (10544056 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:51fc6f9ac04e221bcf44e56884eac5f2653eb13ee0f4246e5da091b785805f28`  
+		Last Modified: Tue, 18 Jun 2019 22:23:34 GMT  
+		Size: 202.4 MB (202439990 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
