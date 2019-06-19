@@ -561,7 +561,7 @@ CMD ["gzserver"]
 ## `gazebo:gzserver7`
 
 ```console
-$ docker pull gazebo@sha256:62390c2e7b69fd2d70c475e4aafd2fcb0980a862e2d6f79dfbfa1f307b8ff0b1
+$ docker pull gazebo@sha256:d191daf672985357844b0dec6fbb6a01183eaf9f1839ee5f081fdfcbda4cb10f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -571,88 +571,88 @@ $ docker pull gazebo@sha256:62390c2e7b69fd2d70c475e4aafd2fcb0980a862e2d6f79dfbfa
 ### `gazebo:gzserver7` - linux; amd64
 
 ```console
-$ docker pull gazebo@sha256:203f51533df0256733ff8bd2e262fee07c7017c58509ed6fb7cf3d9b3ecd8538
+$ docker pull gazebo@sha256:463bf2bc3d4d210f76d15b82f1a1e2bb510069cffd6cd716e2906c58b1c0299f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **250.4 MB (250364034 bytes)**  
+-	Total Size: **250.4 MB (250436037 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:231dd9674743838623d2abf9a896a6a5abce1548389aa0f2c72c7a435a989b8d`
+-	Image ID: `sha256:c391b865957f9713084ba605f88b7342abf6530a27688332826d7e04924cc29d`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
 ```dockerfile
-# Wed, 15 May 2019 21:21:22 GMT
-ADD file:a65e0467dbedc0992151651c136374c16f65d9905eac9d04d0925039ada64e4c in / 
-# Wed, 15 May 2019 21:21:23 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:31 GMT
+ADD file:24352f4a071cb97b3f111253f3db695ba473c5e7985544889af3e34408ce32ff in / 
+# Tue, 18 Jun 2019 22:53:33 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:35 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Tue, 18 Jun 2019 22:53:37 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:37 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2019 21:46:52 GMT
+# Wed, 19 Jun 2019 03:14:11 GMT
 RUN apt-get update && apt-get install -q -y     dirmngr     gnupg2     lsb-release     && rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:46:53 GMT
+# Wed, 19 Jun 2019 03:14:13 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
-# Wed, 15 May 2019 21:46:54 GMT
+# Wed, 19 Jun 2019 03:14:14 GMT
 RUN . /etc/os-release     && echo "deb http://packages.osrfoundation.org/gazebo/$ID-stable `lsb_release -sc` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Wed, 15 May 2019 21:48:35 GMT
+# Wed, 19 Jun 2019 03:15:50 GMT
 RUN apt-get update && apt-get install -q -y     gazebo7=7.15.0-1*     && rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:48:35 GMT
+# Wed, 19 Jun 2019 03:15:51 GMT
 EXPOSE 11345
-# Wed, 15 May 2019 21:48:36 GMT
+# Wed, 19 Jun 2019 03:15:51 GMT
 COPY file:b79966dec12c55a0a5c9e673326cc3faf9cbbeee0ea5f172e863df237eb8a601 in / 
-# Wed, 15 May 2019 21:48:36 GMT
+# Wed, 19 Jun 2019 03:15:51 GMT
 ENTRYPOINT ["/gzserver_entrypoint.sh"]
-# Wed, 15 May 2019 21:48:36 GMT
+# Wed, 19 Jun 2019 03:15:51 GMT
 CMD ["gzserver"]
 ```
 
 -	Layers:
-	-	`sha256:9ff7e2e5f967fb9c4e8099e63508ab0dddebe3f820d08ca7fd568431b0d10c0e`  
-		Last Modified: Wed, 15 May 2019 21:22:41 GMT  
-		Size: 43.8 MB (43767987 bytes)  
+	-	`sha256:35b42117c431dd1e13679a09c3c68bb983578a1cbe0a8d8980f507567ebce76c`  
+		Last Modified: Tue, 11 Jun 2019 13:20:32 GMT  
+		Size: 43.8 MB (43837758 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59856638ac9f32d4caa0f5761b2597fe251642786fdfe1b917ddbb074b890c29`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 848.0 B  
+	-	`sha256:ad9c569a8d989555892683a932df468cfe294859186790d3f2fb704c3a022e96`  
+		Last Modified: Tue, 18 Jun 2019 22:54:47 GMT  
+		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f317d6d954b9a59c54b2cb09e1f30cd3e872796e431cd2ceac5ed570beb2939`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 526.0 B  
+	-	`sha256:293b44f451623251bf75ce5a72d3cee63706972c88980232217a81026987f63e`  
+		Last Modified: Tue, 18 Jun 2019 22:54:47 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9dde5e2a643eca8fde0eed52f4aed31f3ecd9c1b2f24d5e3729cd8d2ae68177`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 168.0 B  
+	-	`sha256:0c175077525d1ddec01cb7cf003c2d8b4b6650ae15b504a64914f5eed8d28e50`  
+		Last Modified: Tue, 18 Jun 2019 22:54:46 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f2b688b7cfdef1ba2b0b16be39445cc1b3a127239113436022a6fc5c72748ff`  
-		Last Modified: Wed, 15 May 2019 22:04:16 GMT  
-		Size: 16.7 MB (16665409 bytes)  
+	-	`sha256:db657c3b5bd5511e54e704678e5601eb0ee2b1e94fb5b55a042a83cd9aa1404f`  
+		Last Modified: Wed, 19 Jun 2019 03:37:01 GMT  
+		Size: 16.7 MB (16666029 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9609323072a1139386e9f909bbba8fa689212fc4d7dfe0875381f178270ad9e5`  
-		Last Modified: Wed, 15 May 2019 22:04:10 GMT  
-		Size: 13.1 KB (13118 bytes)  
+	-	`sha256:194b719802451074f7dd9e75ae0e53d893eced59b120446b5df96259663d572f`  
+		Last Modified: Wed, 19 Jun 2019 03:36:52 GMT  
+		Size: 13.1 KB (13120 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ec2283943ef15331825c370d9980b1f5c9de860f05005eeb91ba8c64785ca4e`  
-		Last Modified: Wed, 15 May 2019 22:04:09 GMT  
-		Size: 5.5 KB (5523 bytes)  
+	-	`sha256:1177b8baac3e7674b50e14b818a18fc8d6f4dbaceace3bff594cdc3fdb1fae97`  
+		Last Modified: Wed, 19 Jun 2019 03:36:52 GMT  
+		Size: 5.5 KB (5525 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:383fd33fb101bdccf7b9efb169048a9a986c8be89f5e9eaf7da92de81675cf2d`  
-		Last Modified: Wed, 15 May 2019 22:04:42 GMT  
-		Size: 189.9 MB (189910268 bytes)  
+	-	`sha256:4f7005e81857d533b87784af1dcbb85d1cd57217ff98b2ef3cd6ddd6d709820c`  
+		Last Modified: Wed, 19 Jun 2019 03:37:44 GMT  
+		Size: 189.9 MB (189911868 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:507b2dbba1908c49d39b2475e20f9788d3ecd6e59ff078eb00a168111062c2b8`  
-		Last Modified: Wed, 15 May 2019 22:04:09 GMT  
-		Size: 187.0 B  
+	-	`sha256:6b9d90269652d877ed6ee9d5cd0ccb37a4578a728be4178aa8d12a159fcdd256`  
+		Last Modified: Wed, 19 Jun 2019 03:36:52 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `gazebo:gzserver7-xenial`
 
 ```console
-$ docker pull gazebo@sha256:62390c2e7b69fd2d70c475e4aafd2fcb0980a862e2d6f79dfbfa1f307b8ff0b1
+$ docker pull gazebo@sha256:d191daf672985357844b0dec6fbb6a01183eaf9f1839ee5f081fdfcbda4cb10f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -662,88 +662,88 @@ $ docker pull gazebo@sha256:62390c2e7b69fd2d70c475e4aafd2fcb0980a862e2d6f79dfbfa
 ### `gazebo:gzserver7-xenial` - linux; amd64
 
 ```console
-$ docker pull gazebo@sha256:203f51533df0256733ff8bd2e262fee07c7017c58509ed6fb7cf3d9b3ecd8538
+$ docker pull gazebo@sha256:463bf2bc3d4d210f76d15b82f1a1e2bb510069cffd6cd716e2906c58b1c0299f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **250.4 MB (250364034 bytes)**  
+-	Total Size: **250.4 MB (250436037 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:231dd9674743838623d2abf9a896a6a5abce1548389aa0f2c72c7a435a989b8d`
+-	Image ID: `sha256:c391b865957f9713084ba605f88b7342abf6530a27688332826d7e04924cc29d`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
 ```dockerfile
-# Wed, 15 May 2019 21:21:22 GMT
-ADD file:a65e0467dbedc0992151651c136374c16f65d9905eac9d04d0925039ada64e4c in / 
-# Wed, 15 May 2019 21:21:23 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:31 GMT
+ADD file:24352f4a071cb97b3f111253f3db695ba473c5e7985544889af3e34408ce32ff in / 
+# Tue, 18 Jun 2019 22:53:33 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:35 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Tue, 18 Jun 2019 22:53:37 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:37 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2019 21:46:52 GMT
+# Wed, 19 Jun 2019 03:14:11 GMT
 RUN apt-get update && apt-get install -q -y     dirmngr     gnupg2     lsb-release     && rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:46:53 GMT
+# Wed, 19 Jun 2019 03:14:13 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
-# Wed, 15 May 2019 21:46:54 GMT
+# Wed, 19 Jun 2019 03:14:14 GMT
 RUN . /etc/os-release     && echo "deb http://packages.osrfoundation.org/gazebo/$ID-stable `lsb_release -sc` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Wed, 15 May 2019 21:48:35 GMT
+# Wed, 19 Jun 2019 03:15:50 GMT
 RUN apt-get update && apt-get install -q -y     gazebo7=7.15.0-1*     && rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:48:35 GMT
+# Wed, 19 Jun 2019 03:15:51 GMT
 EXPOSE 11345
-# Wed, 15 May 2019 21:48:36 GMT
+# Wed, 19 Jun 2019 03:15:51 GMT
 COPY file:b79966dec12c55a0a5c9e673326cc3faf9cbbeee0ea5f172e863df237eb8a601 in / 
-# Wed, 15 May 2019 21:48:36 GMT
+# Wed, 19 Jun 2019 03:15:51 GMT
 ENTRYPOINT ["/gzserver_entrypoint.sh"]
-# Wed, 15 May 2019 21:48:36 GMT
+# Wed, 19 Jun 2019 03:15:51 GMT
 CMD ["gzserver"]
 ```
 
 -	Layers:
-	-	`sha256:9ff7e2e5f967fb9c4e8099e63508ab0dddebe3f820d08ca7fd568431b0d10c0e`  
-		Last Modified: Wed, 15 May 2019 21:22:41 GMT  
-		Size: 43.8 MB (43767987 bytes)  
+	-	`sha256:35b42117c431dd1e13679a09c3c68bb983578a1cbe0a8d8980f507567ebce76c`  
+		Last Modified: Tue, 11 Jun 2019 13:20:32 GMT  
+		Size: 43.8 MB (43837758 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59856638ac9f32d4caa0f5761b2597fe251642786fdfe1b917ddbb074b890c29`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 848.0 B  
+	-	`sha256:ad9c569a8d989555892683a932df468cfe294859186790d3f2fb704c3a022e96`  
+		Last Modified: Tue, 18 Jun 2019 22:54:47 GMT  
+		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f317d6d954b9a59c54b2cb09e1f30cd3e872796e431cd2ceac5ed570beb2939`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 526.0 B  
+	-	`sha256:293b44f451623251bf75ce5a72d3cee63706972c88980232217a81026987f63e`  
+		Last Modified: Tue, 18 Jun 2019 22:54:47 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9dde5e2a643eca8fde0eed52f4aed31f3ecd9c1b2f24d5e3729cd8d2ae68177`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 168.0 B  
+	-	`sha256:0c175077525d1ddec01cb7cf003c2d8b4b6650ae15b504a64914f5eed8d28e50`  
+		Last Modified: Tue, 18 Jun 2019 22:54:46 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f2b688b7cfdef1ba2b0b16be39445cc1b3a127239113436022a6fc5c72748ff`  
-		Last Modified: Wed, 15 May 2019 22:04:16 GMT  
-		Size: 16.7 MB (16665409 bytes)  
+	-	`sha256:db657c3b5bd5511e54e704678e5601eb0ee2b1e94fb5b55a042a83cd9aa1404f`  
+		Last Modified: Wed, 19 Jun 2019 03:37:01 GMT  
+		Size: 16.7 MB (16666029 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9609323072a1139386e9f909bbba8fa689212fc4d7dfe0875381f178270ad9e5`  
-		Last Modified: Wed, 15 May 2019 22:04:10 GMT  
-		Size: 13.1 KB (13118 bytes)  
+	-	`sha256:194b719802451074f7dd9e75ae0e53d893eced59b120446b5df96259663d572f`  
+		Last Modified: Wed, 19 Jun 2019 03:36:52 GMT  
+		Size: 13.1 KB (13120 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ec2283943ef15331825c370d9980b1f5c9de860f05005eeb91ba8c64785ca4e`  
-		Last Modified: Wed, 15 May 2019 22:04:09 GMT  
-		Size: 5.5 KB (5523 bytes)  
+	-	`sha256:1177b8baac3e7674b50e14b818a18fc8d6f4dbaceace3bff594cdc3fdb1fae97`  
+		Last Modified: Wed, 19 Jun 2019 03:36:52 GMT  
+		Size: 5.5 KB (5525 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:383fd33fb101bdccf7b9efb169048a9a986c8be89f5e9eaf7da92de81675cf2d`  
-		Last Modified: Wed, 15 May 2019 22:04:42 GMT  
-		Size: 189.9 MB (189910268 bytes)  
+	-	`sha256:4f7005e81857d533b87784af1dcbb85d1cd57217ff98b2ef3cd6ddd6d709820c`  
+		Last Modified: Wed, 19 Jun 2019 03:37:44 GMT  
+		Size: 189.9 MB (189911868 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:507b2dbba1908c49d39b2475e20f9788d3ecd6e59ff078eb00a168111062c2b8`  
-		Last Modified: Wed, 15 May 2019 22:04:09 GMT  
-		Size: 187.0 B  
+	-	`sha256:6b9d90269652d877ed6ee9d5cd0ccb37a4578a728be4178aa8d12a159fcdd256`  
+		Last Modified: Wed, 19 Jun 2019 03:36:52 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `gazebo:gzserver9`
 
 ```console
-$ docker pull gazebo@sha256:cd8670b63fae254d8fe557902b1c25e0cc120a9b94f82cf754a053d54567ba6c
+$ docker pull gazebo@sha256:f5280b7e96e2168926f68384f2404f8e9248ae8cd92f56dca2ee6012c9112936
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -755,84 +755,88 @@ $ docker pull gazebo@sha256:cd8670b63fae254d8fe557902b1c25e0cc120a9b94f82cf754a0
 ### `gazebo:gzserver9` - linux; amd64
 
 ```console
-$ docker pull gazebo@sha256:066df817744bc11770ced8c4cc22034a9ffb4371ea630bcc7121320609e59190
+$ docker pull gazebo@sha256:a7b2cf26b9d2e72dc95cdaf0f68fbea60ef2d2f065d77f82bc78344500029c44
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **297.3 MB (297341433 bytes)**  
+-	Total Size: **296.1 MB (296054989 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:420698dfd0d97ea5aa02225f531bf9484d1609f40c76c23672a43daac36969ff`
+-	Image ID: `sha256:b943513c0ff29788eb9db6dffcd0f3de03ee200b344e6f4787f11874dfab0bc6`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
 ```dockerfile
-# Wed, 15 May 2019 21:20:23 GMT
-ADD file:1f4fdc61e133d2f9019d8a06a8126fef0ed4339cb25fda73446393fe8da197c5 in / 
-# Wed, 15 May 2019 21:20:24 GMT
+# Tue, 18 Jun 2019 22:51:33 GMT
+ADD file:4e6b5d9ca371eb881c581574b8dc4f5391eff2872db364af0f8d9804e4890098 in / 
+# Tue, 18 Jun 2019 22:51:35 GMT
+RUN [ -z "$(apt-get indextargets)" ]
+# Tue, 18 Jun 2019 22:51:36 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 15 May 2019 21:20:25 GMT
-RUN rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:20:25 GMT
+# Tue, 18 Jun 2019 22:51:37 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 15 May 2019 21:20:25 GMT
+# Tue, 18 Jun 2019 22:51:38 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2019 21:54:26 GMT
+# Wed, 19 Jun 2019 03:23:24 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update && apt-get install -q -y tzdata && rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:54:50 GMT
+# Wed, 19 Jun 2019 03:23:48 GMT
 RUN apt-get update && apt-get install -q -y     dirmngr     gnupg2     lsb-release     && rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:54:51 GMT
+# Wed, 19 Jun 2019 03:23:50 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
-# Wed, 15 May 2019 21:54:52 GMT
+# Wed, 19 Jun 2019 03:23:51 GMT
 RUN . /etc/os-release     && echo "deb http://packages.osrfoundation.org/gazebo/$ID-stable `lsb_release -sc` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Wed, 29 May 2019 22:52:45 GMT
+# Wed, 19 Jun 2019 03:27:30 GMT
 RUN apt-get update && apt-get install -q -y     gazebo9=9.9.0-1*     && rm -rf /var/lib/apt/lists/*
-# Wed, 29 May 2019 22:52:46 GMT
+# Wed, 19 Jun 2019 03:27:31 GMT
 EXPOSE 11345
-# Wed, 29 May 2019 22:52:46 GMT
+# Wed, 19 Jun 2019 03:27:32 GMT
 COPY file:b79966dec12c55a0a5c9e673326cc3faf9cbbeee0ea5f172e863df237eb8a601 in / 
-# Wed, 29 May 2019 22:52:47 GMT
+# Wed, 19 Jun 2019 03:27:32 GMT
 ENTRYPOINT ["/gzserver_entrypoint.sh"]
-# Wed, 29 May 2019 22:52:47 GMT
+# Wed, 19 Jun 2019 03:27:32 GMT
 CMD ["gzserver"]
 ```
 
 -	Layers:
-	-	`sha256:6abc03819f3e00a67ed5adc1132cfec041d5f7ec3c29d5416ba0433877547b6f`  
-		Last Modified: Wed, 15 May 2019 21:21:40 GMT  
-		Size: 28.9 MB (28855068 bytes)  
+	-	`sha256:5b7339215d1d5f8e68622d584a224f60339f5bef41dbd74330d081e912f0cddd`  
+		Last Modified: Thu, 13 Jun 2019 00:24:57 GMT  
+		Size: 26.7 MB (26684508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05731e63f21105725a5c062a725b33a54ad8c697f9c810870c6aa3e3cd9fb6a2`  
-		Last Modified: Wed, 15 May 2019 21:21:36 GMT  
-		Size: 844.0 B  
+	-	`sha256:14ca88e9f6723ce82bc14b241cda8634f6d19677184691d086662641ab96fe68`  
+		Last Modified: Tue, 18 Jun 2019 22:53:58 GMT  
+		Size: 35.4 KB (35352 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0bd67c50d6beeb55108476f72bea3b4b29a9f48832d6e045ec66b7ac4bf712a0`  
-		Last Modified: Wed, 15 May 2019 21:21:35 GMT  
-		Size: 164.0 B  
+	-	`sha256:a31c3b1caad473a474d574283741f880e37c708cc06ee620d3e93fa602125ee0`  
+		Last Modified: Tue, 18 Jun 2019 22:53:57 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d04ea25188bb2da81ecdde129c333a396bf48f8caf8e85bb6be208850fee5c4d`  
-		Last Modified: Wed, 15 May 2019 22:08:29 GMT  
-		Size: 836.6 KB (836561 bytes)  
+	-	`sha256:b054a26005b7f3b032577f811421fab5ec3b42ce45a4012dfa00cf6ed6191b0f`  
+		Last Modified: Tue, 18 Jun 2019 22:53:57 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae984487af8bddc902fd21946f600720932c52b0c52d3bfd1e7378b94e0e3e4f`  
-		Last Modified: Wed, 15 May 2019 22:08:33 GMT  
-		Size: 14.9 MB (14912958 bytes)  
+	-	`sha256:2d951c0d117b5009d63ffbcb1a28ced8c945a03d1579dbab8d72a0647dd429a8`  
+		Last Modified: Wed, 19 Jun 2019 03:42:05 GMT  
+		Size: 836.8 KB (836815 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49861d4d443f5d9fa1f824fcfa340e021d35a2ba0657ffdc539aeb60d3acc93d`  
-		Last Modified: Wed, 15 May 2019 22:08:28 GMT  
+	-	`sha256:7a080df8aa2912a13fd492ffdf4a08c3827d9748cb36556213a9186b1ab4c469`  
+		Last Modified: Wed, 19 Jun 2019 03:42:14 GMT  
+		Size: 15.2 MB (15169270 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4ed8b5c66b9334352df7daf3166fb91f995424212b3bbd26a1d1870f44bc5909`  
+		Last Modified: Wed, 19 Jun 2019 03:42:02 GMT  
 		Size: 1.4 KB (1439 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b33a9b9737a51378ff0cda86fe979ec0b7c6697a3048fa6c4a146c12cc596e64`  
-		Last Modified: Wed, 15 May 2019 22:08:27 GMT  
-		Size: 5.4 KB (5428 bytes)  
+	-	`sha256:c1556ff55ac1e51cb9eb48ef7007bb442a7df8b956b7f67395774bb17a9be1c7`  
+		Last Modified: Wed, 19 Jun 2019 03:42:02 GMT  
+		Size: 5.4 KB (5432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95eb1318b80e96207690092d0b0b8d7b5410acedd61df7cedaf3fd32dc7efd29`  
-		Last Modified: Wed, 29 May 2019 22:59:13 GMT  
-		Size: 252.7 MB (252728782 bytes)  
+	-	`sha256:5c39511a4444c4b6c3ec3316b2131115d9d4c4d95f13ea47389555f1bb4a1a30`  
+		Last Modified: Wed, 19 Jun 2019 03:43:10 GMT  
+		Size: 253.3 MB (253320974 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d553bd273312ba2a56b329775c345b40fb6cf0a65679c7954a16e2a331a180c0`  
-		Last Modified: Wed, 29 May 2019 22:58:31 GMT  
-		Size: 189.0 B  
+	-	`sha256:1d4423d3e80b530bf019b9d650def12109b38b8cd58069c405b0324c2bdc6f34`  
+		Last Modified: Wed, 19 Jun 2019 03:42:02 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gazebo:gzserver9` - linux; arm variant v7
@@ -1012,7 +1016,7 @@ CMD ["gzserver"]
 ## `gazebo:gzserver9-bionic`
 
 ```console
-$ docker pull gazebo@sha256:cd8670b63fae254d8fe557902b1c25e0cc120a9b94f82cf754a053d54567ba6c
+$ docker pull gazebo@sha256:f5280b7e96e2168926f68384f2404f8e9248ae8cd92f56dca2ee6012c9112936
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1024,84 +1028,88 @@ $ docker pull gazebo@sha256:cd8670b63fae254d8fe557902b1c25e0cc120a9b94f82cf754a0
 ### `gazebo:gzserver9-bionic` - linux; amd64
 
 ```console
-$ docker pull gazebo@sha256:066df817744bc11770ced8c4cc22034a9ffb4371ea630bcc7121320609e59190
+$ docker pull gazebo@sha256:a7b2cf26b9d2e72dc95cdaf0f68fbea60ef2d2f065d77f82bc78344500029c44
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **297.3 MB (297341433 bytes)**  
+-	Total Size: **296.1 MB (296054989 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:420698dfd0d97ea5aa02225f531bf9484d1609f40c76c23672a43daac36969ff`
+-	Image ID: `sha256:b943513c0ff29788eb9db6dffcd0f3de03ee200b344e6f4787f11874dfab0bc6`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
 ```dockerfile
-# Wed, 15 May 2019 21:20:23 GMT
-ADD file:1f4fdc61e133d2f9019d8a06a8126fef0ed4339cb25fda73446393fe8da197c5 in / 
-# Wed, 15 May 2019 21:20:24 GMT
+# Tue, 18 Jun 2019 22:51:33 GMT
+ADD file:4e6b5d9ca371eb881c581574b8dc4f5391eff2872db364af0f8d9804e4890098 in / 
+# Tue, 18 Jun 2019 22:51:35 GMT
+RUN [ -z "$(apt-get indextargets)" ]
+# Tue, 18 Jun 2019 22:51:36 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 15 May 2019 21:20:25 GMT
-RUN rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:20:25 GMT
+# Tue, 18 Jun 2019 22:51:37 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 15 May 2019 21:20:25 GMT
+# Tue, 18 Jun 2019 22:51:38 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2019 21:54:26 GMT
+# Wed, 19 Jun 2019 03:23:24 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update && apt-get install -q -y tzdata && rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:54:50 GMT
+# Wed, 19 Jun 2019 03:23:48 GMT
 RUN apt-get update && apt-get install -q -y     dirmngr     gnupg2     lsb-release     && rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:54:51 GMT
+# Wed, 19 Jun 2019 03:23:50 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
-# Wed, 15 May 2019 21:54:52 GMT
+# Wed, 19 Jun 2019 03:23:51 GMT
 RUN . /etc/os-release     && echo "deb http://packages.osrfoundation.org/gazebo/$ID-stable `lsb_release -sc` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Wed, 29 May 2019 22:52:45 GMT
+# Wed, 19 Jun 2019 03:27:30 GMT
 RUN apt-get update && apt-get install -q -y     gazebo9=9.9.0-1*     && rm -rf /var/lib/apt/lists/*
-# Wed, 29 May 2019 22:52:46 GMT
+# Wed, 19 Jun 2019 03:27:31 GMT
 EXPOSE 11345
-# Wed, 29 May 2019 22:52:46 GMT
+# Wed, 19 Jun 2019 03:27:32 GMT
 COPY file:b79966dec12c55a0a5c9e673326cc3faf9cbbeee0ea5f172e863df237eb8a601 in / 
-# Wed, 29 May 2019 22:52:47 GMT
+# Wed, 19 Jun 2019 03:27:32 GMT
 ENTRYPOINT ["/gzserver_entrypoint.sh"]
-# Wed, 29 May 2019 22:52:47 GMT
+# Wed, 19 Jun 2019 03:27:32 GMT
 CMD ["gzserver"]
 ```
 
 -	Layers:
-	-	`sha256:6abc03819f3e00a67ed5adc1132cfec041d5f7ec3c29d5416ba0433877547b6f`  
-		Last Modified: Wed, 15 May 2019 21:21:40 GMT  
-		Size: 28.9 MB (28855068 bytes)  
+	-	`sha256:5b7339215d1d5f8e68622d584a224f60339f5bef41dbd74330d081e912f0cddd`  
+		Last Modified: Thu, 13 Jun 2019 00:24:57 GMT  
+		Size: 26.7 MB (26684508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05731e63f21105725a5c062a725b33a54ad8c697f9c810870c6aa3e3cd9fb6a2`  
-		Last Modified: Wed, 15 May 2019 21:21:36 GMT  
-		Size: 844.0 B  
+	-	`sha256:14ca88e9f6723ce82bc14b241cda8634f6d19677184691d086662641ab96fe68`  
+		Last Modified: Tue, 18 Jun 2019 22:53:58 GMT  
+		Size: 35.4 KB (35352 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0bd67c50d6beeb55108476f72bea3b4b29a9f48832d6e045ec66b7ac4bf712a0`  
-		Last Modified: Wed, 15 May 2019 21:21:35 GMT  
-		Size: 164.0 B  
+	-	`sha256:a31c3b1caad473a474d574283741f880e37c708cc06ee620d3e93fa602125ee0`  
+		Last Modified: Tue, 18 Jun 2019 22:53:57 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d04ea25188bb2da81ecdde129c333a396bf48f8caf8e85bb6be208850fee5c4d`  
-		Last Modified: Wed, 15 May 2019 22:08:29 GMT  
-		Size: 836.6 KB (836561 bytes)  
+	-	`sha256:b054a26005b7f3b032577f811421fab5ec3b42ce45a4012dfa00cf6ed6191b0f`  
+		Last Modified: Tue, 18 Jun 2019 22:53:57 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae984487af8bddc902fd21946f600720932c52b0c52d3bfd1e7378b94e0e3e4f`  
-		Last Modified: Wed, 15 May 2019 22:08:33 GMT  
-		Size: 14.9 MB (14912958 bytes)  
+	-	`sha256:2d951c0d117b5009d63ffbcb1a28ced8c945a03d1579dbab8d72a0647dd429a8`  
+		Last Modified: Wed, 19 Jun 2019 03:42:05 GMT  
+		Size: 836.8 KB (836815 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49861d4d443f5d9fa1f824fcfa340e021d35a2ba0657ffdc539aeb60d3acc93d`  
-		Last Modified: Wed, 15 May 2019 22:08:28 GMT  
+	-	`sha256:7a080df8aa2912a13fd492ffdf4a08c3827d9748cb36556213a9186b1ab4c469`  
+		Last Modified: Wed, 19 Jun 2019 03:42:14 GMT  
+		Size: 15.2 MB (15169270 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4ed8b5c66b9334352df7daf3166fb91f995424212b3bbd26a1d1870f44bc5909`  
+		Last Modified: Wed, 19 Jun 2019 03:42:02 GMT  
 		Size: 1.4 KB (1439 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b33a9b9737a51378ff0cda86fe979ec0b7c6697a3048fa6c4a146c12cc596e64`  
-		Last Modified: Wed, 15 May 2019 22:08:27 GMT  
-		Size: 5.4 KB (5428 bytes)  
+	-	`sha256:c1556ff55ac1e51cb9eb48ef7007bb442a7df8b956b7f67395774bb17a9be1c7`  
+		Last Modified: Wed, 19 Jun 2019 03:42:02 GMT  
+		Size: 5.4 KB (5432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95eb1318b80e96207690092d0b0b8d7b5410acedd61df7cedaf3fd32dc7efd29`  
-		Last Modified: Wed, 29 May 2019 22:59:13 GMT  
-		Size: 252.7 MB (252728782 bytes)  
+	-	`sha256:5c39511a4444c4b6c3ec3316b2131115d9d4c4d95f13ea47389555f1bb4a1a30`  
+		Last Modified: Wed, 19 Jun 2019 03:43:10 GMT  
+		Size: 253.3 MB (253320974 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d553bd273312ba2a56b329775c345b40fb6cf0a65679c7954a16e2a331a180c0`  
-		Last Modified: Wed, 29 May 2019 22:58:31 GMT  
-		Size: 189.0 B  
+	-	`sha256:1d4423d3e80b530bf019b9d650def12109b38b8cd58069c405b0324c2bdc6f34`  
+		Last Modified: Wed, 19 Jun 2019 03:42:02 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gazebo:gzserver9-bionic` - linux; arm variant v7
@@ -1482,7 +1490,7 @@ CMD ["gzserver"]
 ## `gazebo:gzserver9-xenial`
 
 ```console
-$ docker pull gazebo@sha256:deff82a2f14505bd4cd859107c94274b78c54bbdcfcd23bf7963a110a0bf6df8
+$ docker pull gazebo@sha256:c0b7da0eaac7f3a1d5205b3659dcccf36c06acff6f28eb30846a4f5fe4c92db7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1492,82 +1500,82 @@ $ docker pull gazebo@sha256:deff82a2f14505bd4cd859107c94274b78c54bbdcfcd23bf7963
 ### `gazebo:gzserver9-xenial` - linux; amd64
 
 ```console
-$ docker pull gazebo@sha256:a8312dbd384da0432ae386a4fcb79b1a79780b823fde526eeb13cb092a9746ed
+$ docker pull gazebo@sha256:67603f93ceaa2851ea6145b2a241aded9dc12016e8eb4ffe92fb800881d22010
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **279.9 MB (279892507 bytes)**  
+-	Total Size: **280.0 MB (279971034 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:257b2e38e7b4d4184df38de570bdb61946328eabe32dafbfc6df56cf52a49b9e`
+-	Image ID: `sha256:845ac76085ee425ef0bccdc16b3d3f0dc92eb22c883252b6b08346d1ec8b6030`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
 ```dockerfile
-# Wed, 15 May 2019 21:21:22 GMT
-ADD file:a65e0467dbedc0992151651c136374c16f65d9905eac9d04d0925039ada64e4c in / 
-# Wed, 15 May 2019 21:21:23 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:31 GMT
+ADD file:24352f4a071cb97b3f111253f3db695ba473c5e7985544889af3e34408ce32ff in / 
+# Tue, 18 Jun 2019 22:53:33 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:35 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Tue, 18 Jun 2019 22:53:37 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:37 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2019 21:46:52 GMT
+# Wed, 19 Jun 2019 03:14:11 GMT
 RUN apt-get update && apt-get install -q -y     dirmngr     gnupg2     lsb-release     && rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:46:53 GMT
+# Wed, 19 Jun 2019 03:14:13 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
-# Wed, 15 May 2019 21:46:54 GMT
+# Wed, 19 Jun 2019 03:14:14 GMT
 RUN . /etc/os-release     && echo "deb http://packages.osrfoundation.org/gazebo/$ID-stable `lsb_release -sc` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Wed, 29 May 2019 22:46:19 GMT
+# Wed, 19 Jun 2019 03:20:40 GMT
 RUN apt-get update && apt-get install -q -y     gazebo9=9.9.0-1*     && rm -rf /var/lib/apt/lists/*
-# Wed, 29 May 2019 22:46:19 GMT
+# Wed, 19 Jun 2019 03:20:41 GMT
 EXPOSE 11345
-# Wed, 29 May 2019 22:46:19 GMT
+# Wed, 19 Jun 2019 03:20:41 GMT
 COPY file:b79966dec12c55a0a5c9e673326cc3faf9cbbeee0ea5f172e863df237eb8a601 in / 
-# Wed, 29 May 2019 22:46:19 GMT
+# Wed, 19 Jun 2019 03:20:42 GMT
 ENTRYPOINT ["/gzserver_entrypoint.sh"]
-# Wed, 29 May 2019 22:46:20 GMT
+# Wed, 19 Jun 2019 03:20:42 GMT
 CMD ["gzserver"]
 ```
 
 -	Layers:
-	-	`sha256:9ff7e2e5f967fb9c4e8099e63508ab0dddebe3f820d08ca7fd568431b0d10c0e`  
-		Last Modified: Wed, 15 May 2019 21:22:41 GMT  
-		Size: 43.8 MB (43767987 bytes)  
+	-	`sha256:35b42117c431dd1e13679a09c3c68bb983578a1cbe0a8d8980f507567ebce76c`  
+		Last Modified: Tue, 11 Jun 2019 13:20:32 GMT  
+		Size: 43.8 MB (43837758 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59856638ac9f32d4caa0f5761b2597fe251642786fdfe1b917ddbb074b890c29`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 848.0 B  
+	-	`sha256:ad9c569a8d989555892683a932df468cfe294859186790d3f2fb704c3a022e96`  
+		Last Modified: Tue, 18 Jun 2019 22:54:47 GMT  
+		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f317d6d954b9a59c54b2cb09e1f30cd3e872796e431cd2ceac5ed570beb2939`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 526.0 B  
+	-	`sha256:293b44f451623251bf75ce5a72d3cee63706972c88980232217a81026987f63e`  
+		Last Modified: Tue, 18 Jun 2019 22:54:47 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9dde5e2a643eca8fde0eed52f4aed31f3ecd9c1b2f24d5e3729cd8d2ae68177`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 168.0 B  
+	-	`sha256:0c175077525d1ddec01cb7cf003c2d8b4b6650ae15b504a64914f5eed8d28e50`  
+		Last Modified: Tue, 18 Jun 2019 22:54:46 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f2b688b7cfdef1ba2b0b16be39445cc1b3a127239113436022a6fc5c72748ff`  
-		Last Modified: Wed, 15 May 2019 22:04:16 GMT  
-		Size: 16.7 MB (16665409 bytes)  
+	-	`sha256:db657c3b5bd5511e54e704678e5601eb0ee2b1e94fb5b55a042a83cd9aa1404f`  
+		Last Modified: Wed, 19 Jun 2019 03:37:01 GMT  
+		Size: 16.7 MB (16666029 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9609323072a1139386e9f909bbba8fa689212fc4d7dfe0875381f178270ad9e5`  
-		Last Modified: Wed, 15 May 2019 22:04:10 GMT  
-		Size: 13.1 KB (13118 bytes)  
+	-	`sha256:194b719802451074f7dd9e75ae0e53d893eced59b120446b5df96259663d572f`  
+		Last Modified: Wed, 19 Jun 2019 03:36:52 GMT  
+		Size: 13.1 KB (13120 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ec2283943ef15331825c370d9980b1f5c9de860f05005eeb91ba8c64785ca4e`  
-		Last Modified: Wed, 15 May 2019 22:04:09 GMT  
-		Size: 5.5 KB (5523 bytes)  
+	-	`sha256:1177b8baac3e7674b50e14b818a18fc8d6f4dbaceace3bff594cdc3fdb1fae97`  
+		Last Modified: Wed, 19 Jun 2019 03:36:52 GMT  
+		Size: 5.5 KB (5525 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b83a9e47788526b4a6e543ad8ee1f794017a37309c97fa72feb57c04889fa79`  
-		Last Modified: Wed, 29 May 2019 22:57:19 GMT  
-		Size: 219.4 MB (219438739 bytes)  
+	-	`sha256:649bcb780feefe2c622daceae5ab7c20c5996bf985f9ddbfab95d243b8e1e00d`  
+		Last Modified: Wed, 19 Jun 2019 03:40:19 GMT  
+		Size: 219.4 MB (219446866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68cdfc4fc546e174f8390302db07076c12d9121f396dd26dd2c2a848f6dfff61`  
-		Last Modified: Wed, 29 May 2019 22:56:46 GMT  
-		Size: 189.0 B  
+	-	`sha256:838e493c8205c2e6b9734e1b2754ae511a237b31f1fd13c612cc2de92f312409`  
+		Last Modified: Wed, 19 Jun 2019 03:39:27 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `gazebo:latest`
@@ -2434,7 +2442,7 @@ RUN apt-get update && apt-get install -q -y     libgazebo10-dev=10.1.0-1*     &&
 ## `gazebo:libgazebo7`
 
 ```console
-$ docker pull gazebo@sha256:05e0abd4a0b332d0a069792c7f0adb087fd148f62ef88f485ce36400035c75c0
+$ docker pull gazebo@sha256:734632eadc2a77d8981149b16f4e5859c4abd3e326b8d7aec46389130787fa17
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2444,94 +2452,94 @@ $ docker pull gazebo@sha256:05e0abd4a0b332d0a069792c7f0adb087fd148f62ef88f485ce3
 ### `gazebo:libgazebo7` - linux; amd64
 
 ```console
-$ docker pull gazebo@sha256:2954ba2d420d4c4e42c2d67dc48878ef36abab3d8dfc6d490b2e6b3d1e159740
+$ docker pull gazebo@sha256:eba0f494c8e31e463c6246a6115a784e3c180b0784d62066eaaf668be29a6a73
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **509.9 MB (509884558 bytes)**  
+-	Total Size: **510.0 MB (509960573 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e837f00714a26d02e3777142c3bc92f1205a5d3b5ba4e7a033bd2bfac1dc4dae`
+-	Image ID: `sha256:20280d180b7f06ff789f511074909d25411fb0658640670c10dd0dd7637097d4`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
 ```dockerfile
-# Wed, 15 May 2019 21:21:22 GMT
-ADD file:a65e0467dbedc0992151651c136374c16f65d9905eac9d04d0925039ada64e4c in / 
-# Wed, 15 May 2019 21:21:23 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:31 GMT
+ADD file:24352f4a071cb97b3f111253f3db695ba473c5e7985544889af3e34408ce32ff in / 
+# Tue, 18 Jun 2019 22:53:33 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:35 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Tue, 18 Jun 2019 22:53:37 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:37 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2019 21:46:52 GMT
+# Wed, 19 Jun 2019 03:14:11 GMT
 RUN apt-get update && apt-get install -q -y     dirmngr     gnupg2     lsb-release     && rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:46:53 GMT
+# Wed, 19 Jun 2019 03:14:13 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
-# Wed, 15 May 2019 21:46:54 GMT
+# Wed, 19 Jun 2019 03:14:14 GMT
 RUN . /etc/os-release     && echo "deb http://packages.osrfoundation.org/gazebo/$ID-stable `lsb_release -sc` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Wed, 15 May 2019 21:48:35 GMT
+# Wed, 19 Jun 2019 03:15:50 GMT
 RUN apt-get update && apt-get install -q -y     gazebo7=7.15.0-1*     && rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:48:35 GMT
+# Wed, 19 Jun 2019 03:15:51 GMT
 EXPOSE 11345
-# Wed, 15 May 2019 21:48:36 GMT
+# Wed, 19 Jun 2019 03:15:51 GMT
 COPY file:b79966dec12c55a0a5c9e673326cc3faf9cbbeee0ea5f172e863df237eb8a601 in / 
-# Wed, 15 May 2019 21:48:36 GMT
+# Wed, 19 Jun 2019 03:15:51 GMT
 ENTRYPOINT ["/gzserver_entrypoint.sh"]
-# Wed, 15 May 2019 21:48:36 GMT
+# Wed, 19 Jun 2019 03:15:51 GMT
 CMD ["gzserver"]
-# Wed, 15 May 2019 21:51:18 GMT
+# Wed, 19 Jun 2019 03:18:49 GMT
 RUN apt-get update && apt-get install -q -y     libgazebo7-dev=7.15.0-1*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:9ff7e2e5f967fb9c4e8099e63508ab0dddebe3f820d08ca7fd568431b0d10c0e`  
-		Last Modified: Wed, 15 May 2019 21:22:41 GMT  
-		Size: 43.8 MB (43767987 bytes)  
+	-	`sha256:35b42117c431dd1e13679a09c3c68bb983578a1cbe0a8d8980f507567ebce76c`  
+		Last Modified: Tue, 11 Jun 2019 13:20:32 GMT  
+		Size: 43.8 MB (43837758 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59856638ac9f32d4caa0f5761b2597fe251642786fdfe1b917ddbb074b890c29`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 848.0 B  
+	-	`sha256:ad9c569a8d989555892683a932df468cfe294859186790d3f2fb704c3a022e96`  
+		Last Modified: Tue, 18 Jun 2019 22:54:47 GMT  
+		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f317d6d954b9a59c54b2cb09e1f30cd3e872796e431cd2ceac5ed570beb2939`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 526.0 B  
+	-	`sha256:293b44f451623251bf75ce5a72d3cee63706972c88980232217a81026987f63e`  
+		Last Modified: Tue, 18 Jun 2019 22:54:47 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9dde5e2a643eca8fde0eed52f4aed31f3ecd9c1b2f24d5e3729cd8d2ae68177`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 168.0 B  
+	-	`sha256:0c175077525d1ddec01cb7cf003c2d8b4b6650ae15b504a64914f5eed8d28e50`  
+		Last Modified: Tue, 18 Jun 2019 22:54:46 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f2b688b7cfdef1ba2b0b16be39445cc1b3a127239113436022a6fc5c72748ff`  
-		Last Modified: Wed, 15 May 2019 22:04:16 GMT  
-		Size: 16.7 MB (16665409 bytes)  
+	-	`sha256:db657c3b5bd5511e54e704678e5601eb0ee2b1e94fb5b55a042a83cd9aa1404f`  
+		Last Modified: Wed, 19 Jun 2019 03:37:01 GMT  
+		Size: 16.7 MB (16666029 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9609323072a1139386e9f909bbba8fa689212fc4d7dfe0875381f178270ad9e5`  
-		Last Modified: Wed, 15 May 2019 22:04:10 GMT  
-		Size: 13.1 KB (13118 bytes)  
+	-	`sha256:194b719802451074f7dd9e75ae0e53d893eced59b120446b5df96259663d572f`  
+		Last Modified: Wed, 19 Jun 2019 03:36:52 GMT  
+		Size: 13.1 KB (13120 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ec2283943ef15331825c370d9980b1f5c9de860f05005eeb91ba8c64785ca4e`  
-		Last Modified: Wed, 15 May 2019 22:04:09 GMT  
-		Size: 5.5 KB (5523 bytes)  
+	-	`sha256:1177b8baac3e7674b50e14b818a18fc8d6f4dbaceace3bff594cdc3fdb1fae97`  
+		Last Modified: Wed, 19 Jun 2019 03:36:52 GMT  
+		Size: 5.5 KB (5525 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:383fd33fb101bdccf7b9efb169048a9a986c8be89f5e9eaf7da92de81675cf2d`  
-		Last Modified: Wed, 15 May 2019 22:04:42 GMT  
-		Size: 189.9 MB (189910268 bytes)  
+	-	`sha256:4f7005e81857d533b87784af1dcbb85d1cd57217ff98b2ef3cd6ddd6d709820c`  
+		Last Modified: Wed, 19 Jun 2019 03:37:44 GMT  
+		Size: 189.9 MB (189911868 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:507b2dbba1908c49d39b2475e20f9788d3ecd6e59ff078eb00a168111062c2b8`  
-		Last Modified: Wed, 15 May 2019 22:04:09 GMT  
-		Size: 187.0 B  
+	-	`sha256:6b9d90269652d877ed6ee9d5cd0ccb37a4578a728be4178aa8d12a159fcdd256`  
+		Last Modified: Wed, 19 Jun 2019 03:36:52 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2356442ab5992eeb7e71528a36a2087312ce2c9aab6658f08886647cbafab217`  
-		Last Modified: Wed, 15 May 2019 22:06:12 GMT  
-		Size: 259.5 MB (259520524 bytes)  
+	-	`sha256:7f04a095709afc91123428d07fa33f2652e1c04f247968fc3fa134283b8ea15d`  
+		Last Modified: Wed, 19 Jun 2019 03:39:20 GMT  
+		Size: 259.5 MB (259524536 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `gazebo:libgazebo7-xenial`
 
 ```console
-$ docker pull gazebo@sha256:05e0abd4a0b332d0a069792c7f0adb087fd148f62ef88f485ce36400035c75c0
+$ docker pull gazebo@sha256:734632eadc2a77d8981149b16f4e5859c4abd3e326b8d7aec46389130787fa17
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2541,94 +2549,94 @@ $ docker pull gazebo@sha256:05e0abd4a0b332d0a069792c7f0adb087fd148f62ef88f485ce3
 ### `gazebo:libgazebo7-xenial` - linux; amd64
 
 ```console
-$ docker pull gazebo@sha256:2954ba2d420d4c4e42c2d67dc48878ef36abab3d8dfc6d490b2e6b3d1e159740
+$ docker pull gazebo@sha256:eba0f494c8e31e463c6246a6115a784e3c180b0784d62066eaaf668be29a6a73
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **509.9 MB (509884558 bytes)**  
+-	Total Size: **510.0 MB (509960573 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e837f00714a26d02e3777142c3bc92f1205a5d3b5ba4e7a033bd2bfac1dc4dae`
+-	Image ID: `sha256:20280d180b7f06ff789f511074909d25411fb0658640670c10dd0dd7637097d4`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
 ```dockerfile
-# Wed, 15 May 2019 21:21:22 GMT
-ADD file:a65e0467dbedc0992151651c136374c16f65d9905eac9d04d0925039ada64e4c in / 
-# Wed, 15 May 2019 21:21:23 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:31 GMT
+ADD file:24352f4a071cb97b3f111253f3db695ba473c5e7985544889af3e34408ce32ff in / 
+# Tue, 18 Jun 2019 22:53:33 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:35 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Tue, 18 Jun 2019 22:53:37 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:37 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2019 21:46:52 GMT
+# Wed, 19 Jun 2019 03:14:11 GMT
 RUN apt-get update && apt-get install -q -y     dirmngr     gnupg2     lsb-release     && rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:46:53 GMT
+# Wed, 19 Jun 2019 03:14:13 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
-# Wed, 15 May 2019 21:46:54 GMT
+# Wed, 19 Jun 2019 03:14:14 GMT
 RUN . /etc/os-release     && echo "deb http://packages.osrfoundation.org/gazebo/$ID-stable `lsb_release -sc` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Wed, 15 May 2019 21:48:35 GMT
+# Wed, 19 Jun 2019 03:15:50 GMT
 RUN apt-get update && apt-get install -q -y     gazebo7=7.15.0-1*     && rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:48:35 GMT
+# Wed, 19 Jun 2019 03:15:51 GMT
 EXPOSE 11345
-# Wed, 15 May 2019 21:48:36 GMT
+# Wed, 19 Jun 2019 03:15:51 GMT
 COPY file:b79966dec12c55a0a5c9e673326cc3faf9cbbeee0ea5f172e863df237eb8a601 in / 
-# Wed, 15 May 2019 21:48:36 GMT
+# Wed, 19 Jun 2019 03:15:51 GMT
 ENTRYPOINT ["/gzserver_entrypoint.sh"]
-# Wed, 15 May 2019 21:48:36 GMT
+# Wed, 19 Jun 2019 03:15:51 GMT
 CMD ["gzserver"]
-# Wed, 15 May 2019 21:51:18 GMT
+# Wed, 19 Jun 2019 03:18:49 GMT
 RUN apt-get update && apt-get install -q -y     libgazebo7-dev=7.15.0-1*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:9ff7e2e5f967fb9c4e8099e63508ab0dddebe3f820d08ca7fd568431b0d10c0e`  
-		Last Modified: Wed, 15 May 2019 21:22:41 GMT  
-		Size: 43.8 MB (43767987 bytes)  
+	-	`sha256:35b42117c431dd1e13679a09c3c68bb983578a1cbe0a8d8980f507567ebce76c`  
+		Last Modified: Tue, 11 Jun 2019 13:20:32 GMT  
+		Size: 43.8 MB (43837758 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59856638ac9f32d4caa0f5761b2597fe251642786fdfe1b917ddbb074b890c29`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 848.0 B  
+	-	`sha256:ad9c569a8d989555892683a932df468cfe294859186790d3f2fb704c3a022e96`  
+		Last Modified: Tue, 18 Jun 2019 22:54:47 GMT  
+		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f317d6d954b9a59c54b2cb09e1f30cd3e872796e431cd2ceac5ed570beb2939`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 526.0 B  
+	-	`sha256:293b44f451623251bf75ce5a72d3cee63706972c88980232217a81026987f63e`  
+		Last Modified: Tue, 18 Jun 2019 22:54:47 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9dde5e2a643eca8fde0eed52f4aed31f3ecd9c1b2f24d5e3729cd8d2ae68177`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 168.0 B  
+	-	`sha256:0c175077525d1ddec01cb7cf003c2d8b4b6650ae15b504a64914f5eed8d28e50`  
+		Last Modified: Tue, 18 Jun 2019 22:54:46 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f2b688b7cfdef1ba2b0b16be39445cc1b3a127239113436022a6fc5c72748ff`  
-		Last Modified: Wed, 15 May 2019 22:04:16 GMT  
-		Size: 16.7 MB (16665409 bytes)  
+	-	`sha256:db657c3b5bd5511e54e704678e5601eb0ee2b1e94fb5b55a042a83cd9aa1404f`  
+		Last Modified: Wed, 19 Jun 2019 03:37:01 GMT  
+		Size: 16.7 MB (16666029 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9609323072a1139386e9f909bbba8fa689212fc4d7dfe0875381f178270ad9e5`  
-		Last Modified: Wed, 15 May 2019 22:04:10 GMT  
-		Size: 13.1 KB (13118 bytes)  
+	-	`sha256:194b719802451074f7dd9e75ae0e53d893eced59b120446b5df96259663d572f`  
+		Last Modified: Wed, 19 Jun 2019 03:36:52 GMT  
+		Size: 13.1 KB (13120 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ec2283943ef15331825c370d9980b1f5c9de860f05005eeb91ba8c64785ca4e`  
-		Last Modified: Wed, 15 May 2019 22:04:09 GMT  
-		Size: 5.5 KB (5523 bytes)  
+	-	`sha256:1177b8baac3e7674b50e14b818a18fc8d6f4dbaceace3bff594cdc3fdb1fae97`  
+		Last Modified: Wed, 19 Jun 2019 03:36:52 GMT  
+		Size: 5.5 KB (5525 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:383fd33fb101bdccf7b9efb169048a9a986c8be89f5e9eaf7da92de81675cf2d`  
-		Last Modified: Wed, 15 May 2019 22:04:42 GMT  
-		Size: 189.9 MB (189910268 bytes)  
+	-	`sha256:4f7005e81857d533b87784af1dcbb85d1cd57217ff98b2ef3cd6ddd6d709820c`  
+		Last Modified: Wed, 19 Jun 2019 03:37:44 GMT  
+		Size: 189.9 MB (189911868 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:507b2dbba1908c49d39b2475e20f9788d3ecd6e59ff078eb00a168111062c2b8`  
-		Last Modified: Wed, 15 May 2019 22:04:09 GMT  
-		Size: 187.0 B  
+	-	`sha256:6b9d90269652d877ed6ee9d5cd0ccb37a4578a728be4178aa8d12a159fcdd256`  
+		Last Modified: Wed, 19 Jun 2019 03:36:52 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2356442ab5992eeb7e71528a36a2087312ce2c9aab6658f08886647cbafab217`  
-		Last Modified: Wed, 15 May 2019 22:06:12 GMT  
-		Size: 259.5 MB (259520524 bytes)  
+	-	`sha256:7f04a095709afc91123428d07fa33f2652e1c04f247968fc3fa134283b8ea15d`  
+		Last Modified: Wed, 19 Jun 2019 03:39:20 GMT  
+		Size: 259.5 MB (259524536 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `gazebo:libgazebo9`
 
 ```console
-$ docker pull gazebo@sha256:265f675381cc02d4a397ca254a50463efd6cf357fede0abf49ed93c2abec10ed
+$ docker pull gazebo@sha256:0db2f7182bee1e96c9f7b659ae1945935da926678d608007645b30a5f3d6a5ab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2640,90 +2648,94 @@ $ docker pull gazebo@sha256:265f675381cc02d4a397ca254a50463efd6cf357fede0abf49ed
 ### `gazebo:libgazebo9` - linux; amd64
 
 ```console
-$ docker pull gazebo@sha256:fd780484bbdef76a2a46d29ad0e1691d8e661387aecdb233c9ea5c92f18c355d
+$ docker pull gazebo@sha256:0652e42a51e5eded49dbe875ab80353490909ed5ca2b939d74dd1b84f25138a0
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **576.6 MB (576610159 bytes)**  
+-	Total Size: **575.4 MB (575425550 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:208c7e560b286c84111749a9a71503a1f8c0d8c6d855cd8fb39183a6c29bf5b2`
+-	Image ID: `sha256:5d3f30936485553ce1f5800a481fa6ce1b6161f1935676f9397f57e78a5bccd7`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
 ```dockerfile
-# Wed, 15 May 2019 21:20:23 GMT
-ADD file:1f4fdc61e133d2f9019d8a06a8126fef0ed4339cb25fda73446393fe8da197c5 in / 
-# Wed, 15 May 2019 21:20:24 GMT
+# Tue, 18 Jun 2019 22:51:33 GMT
+ADD file:4e6b5d9ca371eb881c581574b8dc4f5391eff2872db364af0f8d9804e4890098 in / 
+# Tue, 18 Jun 2019 22:51:35 GMT
+RUN [ -z "$(apt-get indextargets)" ]
+# Tue, 18 Jun 2019 22:51:36 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 15 May 2019 21:20:25 GMT
-RUN rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:20:25 GMT
+# Tue, 18 Jun 2019 22:51:37 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 15 May 2019 21:20:25 GMT
+# Tue, 18 Jun 2019 22:51:38 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2019 21:54:26 GMT
+# Wed, 19 Jun 2019 03:23:24 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update && apt-get install -q -y tzdata && rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:54:50 GMT
+# Wed, 19 Jun 2019 03:23:48 GMT
 RUN apt-get update && apt-get install -q -y     dirmngr     gnupg2     lsb-release     && rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:54:51 GMT
+# Wed, 19 Jun 2019 03:23:50 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
-# Wed, 15 May 2019 21:54:52 GMT
+# Wed, 19 Jun 2019 03:23:51 GMT
 RUN . /etc/os-release     && echo "deb http://packages.osrfoundation.org/gazebo/$ID-stable `lsb_release -sc` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Wed, 29 May 2019 22:52:45 GMT
+# Wed, 19 Jun 2019 03:27:30 GMT
 RUN apt-get update && apt-get install -q -y     gazebo9=9.9.0-1*     && rm -rf /var/lib/apt/lists/*
-# Wed, 29 May 2019 22:52:46 GMT
+# Wed, 19 Jun 2019 03:27:31 GMT
 EXPOSE 11345
-# Wed, 29 May 2019 22:52:46 GMT
+# Wed, 19 Jun 2019 03:27:32 GMT
 COPY file:b79966dec12c55a0a5c9e673326cc3faf9cbbeee0ea5f172e863df237eb8a601 in / 
-# Wed, 29 May 2019 22:52:47 GMT
+# Wed, 19 Jun 2019 03:27:32 GMT
 ENTRYPOINT ["/gzserver_entrypoint.sh"]
-# Wed, 29 May 2019 22:52:47 GMT
+# Wed, 19 Jun 2019 03:27:32 GMT
 CMD ["gzserver"]
-# Wed, 29 May 2019 22:56:10 GMT
+# Wed, 19 Jun 2019 03:31:52 GMT
 RUN apt-get update && apt-get install -q -y     libgazebo9-dev=9.9.0-1*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:6abc03819f3e00a67ed5adc1132cfec041d5f7ec3c29d5416ba0433877547b6f`  
-		Last Modified: Wed, 15 May 2019 21:21:40 GMT  
-		Size: 28.9 MB (28855068 bytes)  
+	-	`sha256:5b7339215d1d5f8e68622d584a224f60339f5bef41dbd74330d081e912f0cddd`  
+		Last Modified: Thu, 13 Jun 2019 00:24:57 GMT  
+		Size: 26.7 MB (26684508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05731e63f21105725a5c062a725b33a54ad8c697f9c810870c6aa3e3cd9fb6a2`  
-		Last Modified: Wed, 15 May 2019 21:21:36 GMT  
-		Size: 844.0 B  
+	-	`sha256:14ca88e9f6723ce82bc14b241cda8634f6d19677184691d086662641ab96fe68`  
+		Last Modified: Tue, 18 Jun 2019 22:53:58 GMT  
+		Size: 35.4 KB (35352 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0bd67c50d6beeb55108476f72bea3b4b29a9f48832d6e045ec66b7ac4bf712a0`  
-		Last Modified: Wed, 15 May 2019 21:21:35 GMT  
-		Size: 164.0 B  
+	-	`sha256:a31c3b1caad473a474d574283741f880e37c708cc06ee620d3e93fa602125ee0`  
+		Last Modified: Tue, 18 Jun 2019 22:53:57 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d04ea25188bb2da81ecdde129c333a396bf48f8caf8e85bb6be208850fee5c4d`  
-		Last Modified: Wed, 15 May 2019 22:08:29 GMT  
-		Size: 836.6 KB (836561 bytes)  
+	-	`sha256:b054a26005b7f3b032577f811421fab5ec3b42ce45a4012dfa00cf6ed6191b0f`  
+		Last Modified: Tue, 18 Jun 2019 22:53:57 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae984487af8bddc902fd21946f600720932c52b0c52d3bfd1e7378b94e0e3e4f`  
-		Last Modified: Wed, 15 May 2019 22:08:33 GMT  
-		Size: 14.9 MB (14912958 bytes)  
+	-	`sha256:2d951c0d117b5009d63ffbcb1a28ced8c945a03d1579dbab8d72a0647dd429a8`  
+		Last Modified: Wed, 19 Jun 2019 03:42:05 GMT  
+		Size: 836.8 KB (836815 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49861d4d443f5d9fa1f824fcfa340e021d35a2ba0657ffdc539aeb60d3acc93d`  
-		Last Modified: Wed, 15 May 2019 22:08:28 GMT  
+	-	`sha256:7a080df8aa2912a13fd492ffdf4a08c3827d9748cb36556213a9186b1ab4c469`  
+		Last Modified: Wed, 19 Jun 2019 03:42:14 GMT  
+		Size: 15.2 MB (15169270 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4ed8b5c66b9334352df7daf3166fb91f995424212b3bbd26a1d1870f44bc5909`  
+		Last Modified: Wed, 19 Jun 2019 03:42:02 GMT  
 		Size: 1.4 KB (1439 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b33a9b9737a51378ff0cda86fe979ec0b7c6697a3048fa6c4a146c12cc596e64`  
-		Last Modified: Wed, 15 May 2019 22:08:27 GMT  
-		Size: 5.4 KB (5428 bytes)  
+	-	`sha256:c1556ff55ac1e51cb9eb48ef7007bb442a7df8b956b7f67395774bb17a9be1c7`  
+		Last Modified: Wed, 19 Jun 2019 03:42:02 GMT  
+		Size: 5.4 KB (5432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95eb1318b80e96207690092d0b0b8d7b5410acedd61df7cedaf3fd32dc7efd29`  
-		Last Modified: Wed, 29 May 2019 22:59:13 GMT  
-		Size: 252.7 MB (252728782 bytes)  
+	-	`sha256:5c39511a4444c4b6c3ec3316b2131115d9d4c4d95f13ea47389555f1bb4a1a30`  
+		Last Modified: Wed, 19 Jun 2019 03:43:10 GMT  
+		Size: 253.3 MB (253320974 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d553bd273312ba2a56b329775c345b40fb6cf0a65679c7954a16e2a331a180c0`  
-		Last Modified: Wed, 29 May 2019 22:58:31 GMT  
-		Size: 189.0 B  
+	-	`sha256:1d4423d3e80b530bf019b9d650def12109b38b8cd58069c405b0324c2bdc6f34`  
+		Last Modified: Wed, 19 Jun 2019 03:42:02 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:883a3bfbefe6b763d0df572dce01e8a5ee6b707296ab9236bd2dd7a40da1a7bd`  
-		Last Modified: Wed, 29 May 2019 23:00:44 GMT  
-		Size: 279.3 MB (279268726 bytes)  
+	-	`sha256:145d511e0bf314ccecc5dfb55f157eb51f620715cb22a41195c8ab5fb5a5d71b`  
+		Last Modified: Wed, 19 Jun 2019 03:44:46 GMT  
+		Size: 279.4 MB (279370561 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gazebo:libgazebo9` - linux; arm variant v7
@@ -2915,7 +2927,7 @@ RUN apt-get update && apt-get install -q -y     libgazebo9-dev=9.8.0-1*     && r
 ## `gazebo:libgazebo9-bionic`
 
 ```console
-$ docker pull gazebo@sha256:265f675381cc02d4a397ca254a50463efd6cf357fede0abf49ed93c2abec10ed
+$ docker pull gazebo@sha256:0db2f7182bee1e96c9f7b659ae1945935da926678d608007645b30a5f3d6a5ab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2927,90 +2939,94 @@ $ docker pull gazebo@sha256:265f675381cc02d4a397ca254a50463efd6cf357fede0abf49ed
 ### `gazebo:libgazebo9-bionic` - linux; amd64
 
 ```console
-$ docker pull gazebo@sha256:fd780484bbdef76a2a46d29ad0e1691d8e661387aecdb233c9ea5c92f18c355d
+$ docker pull gazebo@sha256:0652e42a51e5eded49dbe875ab80353490909ed5ca2b939d74dd1b84f25138a0
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **576.6 MB (576610159 bytes)**  
+-	Total Size: **575.4 MB (575425550 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:208c7e560b286c84111749a9a71503a1f8c0d8c6d855cd8fb39183a6c29bf5b2`
+-	Image ID: `sha256:5d3f30936485553ce1f5800a481fa6ce1b6161f1935676f9397f57e78a5bccd7`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
 ```dockerfile
-# Wed, 15 May 2019 21:20:23 GMT
-ADD file:1f4fdc61e133d2f9019d8a06a8126fef0ed4339cb25fda73446393fe8da197c5 in / 
-# Wed, 15 May 2019 21:20:24 GMT
+# Tue, 18 Jun 2019 22:51:33 GMT
+ADD file:4e6b5d9ca371eb881c581574b8dc4f5391eff2872db364af0f8d9804e4890098 in / 
+# Tue, 18 Jun 2019 22:51:35 GMT
+RUN [ -z "$(apt-get indextargets)" ]
+# Tue, 18 Jun 2019 22:51:36 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 15 May 2019 21:20:25 GMT
-RUN rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:20:25 GMT
+# Tue, 18 Jun 2019 22:51:37 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 15 May 2019 21:20:25 GMT
+# Tue, 18 Jun 2019 22:51:38 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2019 21:54:26 GMT
+# Wed, 19 Jun 2019 03:23:24 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update && apt-get install -q -y tzdata && rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:54:50 GMT
+# Wed, 19 Jun 2019 03:23:48 GMT
 RUN apt-get update && apt-get install -q -y     dirmngr     gnupg2     lsb-release     && rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:54:51 GMT
+# Wed, 19 Jun 2019 03:23:50 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
-# Wed, 15 May 2019 21:54:52 GMT
+# Wed, 19 Jun 2019 03:23:51 GMT
 RUN . /etc/os-release     && echo "deb http://packages.osrfoundation.org/gazebo/$ID-stable `lsb_release -sc` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Wed, 29 May 2019 22:52:45 GMT
+# Wed, 19 Jun 2019 03:27:30 GMT
 RUN apt-get update && apt-get install -q -y     gazebo9=9.9.0-1*     && rm -rf /var/lib/apt/lists/*
-# Wed, 29 May 2019 22:52:46 GMT
+# Wed, 19 Jun 2019 03:27:31 GMT
 EXPOSE 11345
-# Wed, 29 May 2019 22:52:46 GMT
+# Wed, 19 Jun 2019 03:27:32 GMT
 COPY file:b79966dec12c55a0a5c9e673326cc3faf9cbbeee0ea5f172e863df237eb8a601 in / 
-# Wed, 29 May 2019 22:52:47 GMT
+# Wed, 19 Jun 2019 03:27:32 GMT
 ENTRYPOINT ["/gzserver_entrypoint.sh"]
-# Wed, 29 May 2019 22:52:47 GMT
+# Wed, 19 Jun 2019 03:27:32 GMT
 CMD ["gzserver"]
-# Wed, 29 May 2019 22:56:10 GMT
+# Wed, 19 Jun 2019 03:31:52 GMT
 RUN apt-get update && apt-get install -q -y     libgazebo9-dev=9.9.0-1*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:6abc03819f3e00a67ed5adc1132cfec041d5f7ec3c29d5416ba0433877547b6f`  
-		Last Modified: Wed, 15 May 2019 21:21:40 GMT  
-		Size: 28.9 MB (28855068 bytes)  
+	-	`sha256:5b7339215d1d5f8e68622d584a224f60339f5bef41dbd74330d081e912f0cddd`  
+		Last Modified: Thu, 13 Jun 2019 00:24:57 GMT  
+		Size: 26.7 MB (26684508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05731e63f21105725a5c062a725b33a54ad8c697f9c810870c6aa3e3cd9fb6a2`  
-		Last Modified: Wed, 15 May 2019 21:21:36 GMT  
-		Size: 844.0 B  
+	-	`sha256:14ca88e9f6723ce82bc14b241cda8634f6d19677184691d086662641ab96fe68`  
+		Last Modified: Tue, 18 Jun 2019 22:53:58 GMT  
+		Size: 35.4 KB (35352 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0bd67c50d6beeb55108476f72bea3b4b29a9f48832d6e045ec66b7ac4bf712a0`  
-		Last Modified: Wed, 15 May 2019 21:21:35 GMT  
-		Size: 164.0 B  
+	-	`sha256:a31c3b1caad473a474d574283741f880e37c708cc06ee620d3e93fa602125ee0`  
+		Last Modified: Tue, 18 Jun 2019 22:53:57 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d04ea25188bb2da81ecdde129c333a396bf48f8caf8e85bb6be208850fee5c4d`  
-		Last Modified: Wed, 15 May 2019 22:08:29 GMT  
-		Size: 836.6 KB (836561 bytes)  
+	-	`sha256:b054a26005b7f3b032577f811421fab5ec3b42ce45a4012dfa00cf6ed6191b0f`  
+		Last Modified: Tue, 18 Jun 2019 22:53:57 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae984487af8bddc902fd21946f600720932c52b0c52d3bfd1e7378b94e0e3e4f`  
-		Last Modified: Wed, 15 May 2019 22:08:33 GMT  
-		Size: 14.9 MB (14912958 bytes)  
+	-	`sha256:2d951c0d117b5009d63ffbcb1a28ced8c945a03d1579dbab8d72a0647dd429a8`  
+		Last Modified: Wed, 19 Jun 2019 03:42:05 GMT  
+		Size: 836.8 KB (836815 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49861d4d443f5d9fa1f824fcfa340e021d35a2ba0657ffdc539aeb60d3acc93d`  
-		Last Modified: Wed, 15 May 2019 22:08:28 GMT  
+	-	`sha256:7a080df8aa2912a13fd492ffdf4a08c3827d9748cb36556213a9186b1ab4c469`  
+		Last Modified: Wed, 19 Jun 2019 03:42:14 GMT  
+		Size: 15.2 MB (15169270 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4ed8b5c66b9334352df7daf3166fb91f995424212b3bbd26a1d1870f44bc5909`  
+		Last Modified: Wed, 19 Jun 2019 03:42:02 GMT  
 		Size: 1.4 KB (1439 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b33a9b9737a51378ff0cda86fe979ec0b7c6697a3048fa6c4a146c12cc596e64`  
-		Last Modified: Wed, 15 May 2019 22:08:27 GMT  
-		Size: 5.4 KB (5428 bytes)  
+	-	`sha256:c1556ff55ac1e51cb9eb48ef7007bb442a7df8b956b7f67395774bb17a9be1c7`  
+		Last Modified: Wed, 19 Jun 2019 03:42:02 GMT  
+		Size: 5.4 KB (5432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95eb1318b80e96207690092d0b0b8d7b5410acedd61df7cedaf3fd32dc7efd29`  
-		Last Modified: Wed, 29 May 2019 22:59:13 GMT  
-		Size: 252.7 MB (252728782 bytes)  
+	-	`sha256:5c39511a4444c4b6c3ec3316b2131115d9d4c4d95f13ea47389555f1bb4a1a30`  
+		Last Modified: Wed, 19 Jun 2019 03:43:10 GMT  
+		Size: 253.3 MB (253320974 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d553bd273312ba2a56b329775c345b40fb6cf0a65679c7954a16e2a331a180c0`  
-		Last Modified: Wed, 29 May 2019 22:58:31 GMT  
-		Size: 189.0 B  
+	-	`sha256:1d4423d3e80b530bf019b9d650def12109b38b8cd58069c405b0324c2bdc6f34`  
+		Last Modified: Wed, 19 Jun 2019 03:42:02 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:883a3bfbefe6b763d0df572dce01e8a5ee6b707296ab9236bd2dd7a40da1a7bd`  
-		Last Modified: Wed, 29 May 2019 23:00:44 GMT  
-		Size: 279.3 MB (279268726 bytes)  
+	-	`sha256:145d511e0bf314ccecc5dfb55f157eb51f620715cb22a41195c8ab5fb5a5d71b`  
+		Last Modified: Wed, 19 Jun 2019 03:44:46 GMT  
+		Size: 279.4 MB (279370561 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gazebo:libgazebo9-bionic` - linux; arm variant v7
@@ -3421,7 +3437,7 @@ RUN apt-get update && apt-get install -q -y     libgazebo9-dev=9.8.0-1*     && r
 ## `gazebo:libgazebo9-xenial`
 
 ```console
-$ docker pull gazebo@sha256:5e94f95a3c2c0bdd8c815c8486647f8bc102cf81d51b58dafe3b8bdb427f873d
+$ docker pull gazebo@sha256:9dd61fc7bea5319a2b76b33634d501da798dfffa685aaef376f36c3f93a96f2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3431,86 +3447,86 @@ $ docker pull gazebo@sha256:5e94f95a3c2c0bdd8c815c8486647f8bc102cf81d51b58dafe3b
 ### `gazebo:libgazebo9-xenial` - linux; amd64
 
 ```console
-$ docker pull gazebo@sha256:76e5a20e72bb159d50a8b0a6de9d368e63dc222fc16c4fbf4933be63cef4d8fa
+$ docker pull gazebo@sha256:0a6d148f81b2410152da23bfd49fd2ec98af9b8a53346aa09b63c983394c8d46
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **522.1 MB (522096696 bytes)**  
+-	Total Size: **522.2 MB (522176887 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ba9d32d85019911b17f15d6957e94a22fb7606d976f45387b7598cb6b4fb52f`
+-	Image ID: `sha256:81bc2e782ad9cee2d9d8bdf55be75f2dfa97301a3909547c55e48594f18b583a`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
 ```dockerfile
-# Wed, 15 May 2019 21:21:22 GMT
-ADD file:a65e0467dbedc0992151651c136374c16f65d9905eac9d04d0925039ada64e4c in / 
-# Wed, 15 May 2019 21:21:23 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:31 GMT
+ADD file:24352f4a071cb97b3f111253f3db695ba473c5e7985544889af3e34408ce32ff in / 
+# Tue, 18 Jun 2019 22:53:33 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:35 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Tue, 18 Jun 2019 22:53:37 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:37 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2019 21:46:52 GMT
+# Wed, 19 Jun 2019 03:14:11 GMT
 RUN apt-get update && apt-get install -q -y     dirmngr     gnupg2     lsb-release     && rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:46:53 GMT
+# Wed, 19 Jun 2019 03:14:13 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
-# Wed, 15 May 2019 21:46:54 GMT
+# Wed, 19 Jun 2019 03:14:14 GMT
 RUN . /etc/os-release     && echo "deb http://packages.osrfoundation.org/gazebo/$ID-stable `lsb_release -sc` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Wed, 29 May 2019 22:46:19 GMT
+# Wed, 19 Jun 2019 03:20:40 GMT
 RUN apt-get update && apt-get install -q -y     gazebo9=9.9.0-1*     && rm -rf /var/lib/apt/lists/*
-# Wed, 29 May 2019 22:46:19 GMT
+# Wed, 19 Jun 2019 03:20:41 GMT
 EXPOSE 11345
-# Wed, 29 May 2019 22:46:19 GMT
+# Wed, 19 Jun 2019 03:20:41 GMT
 COPY file:b79966dec12c55a0a5c9e673326cc3faf9cbbeee0ea5f172e863df237eb8a601 in / 
-# Wed, 29 May 2019 22:46:19 GMT
+# Wed, 19 Jun 2019 03:20:42 GMT
 ENTRYPOINT ["/gzserver_entrypoint.sh"]
-# Wed, 29 May 2019 22:46:20 GMT
+# Wed, 19 Jun 2019 03:20:42 GMT
 CMD ["gzserver"]
-# Wed, 29 May 2019 22:49:31 GMT
+# Wed, 19 Jun 2019 03:22:59 GMT
 RUN apt-get update && apt-get install -q -y     libgazebo9-dev=9.9.0-1*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:9ff7e2e5f967fb9c4e8099e63508ab0dddebe3f820d08ca7fd568431b0d10c0e`  
-		Last Modified: Wed, 15 May 2019 21:22:41 GMT  
-		Size: 43.8 MB (43767987 bytes)  
+	-	`sha256:35b42117c431dd1e13679a09c3c68bb983578a1cbe0a8d8980f507567ebce76c`  
+		Last Modified: Tue, 11 Jun 2019 13:20:32 GMT  
+		Size: 43.8 MB (43837758 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59856638ac9f32d4caa0f5761b2597fe251642786fdfe1b917ddbb074b890c29`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 848.0 B  
+	-	`sha256:ad9c569a8d989555892683a932df468cfe294859186790d3f2fb704c3a022e96`  
+		Last Modified: Tue, 18 Jun 2019 22:54:47 GMT  
+		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f317d6d954b9a59c54b2cb09e1f30cd3e872796e431cd2ceac5ed570beb2939`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 526.0 B  
+	-	`sha256:293b44f451623251bf75ce5a72d3cee63706972c88980232217a81026987f63e`  
+		Last Modified: Tue, 18 Jun 2019 22:54:47 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9dde5e2a643eca8fde0eed52f4aed31f3ecd9c1b2f24d5e3729cd8d2ae68177`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 168.0 B  
+	-	`sha256:0c175077525d1ddec01cb7cf003c2d8b4b6650ae15b504a64914f5eed8d28e50`  
+		Last Modified: Tue, 18 Jun 2019 22:54:46 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f2b688b7cfdef1ba2b0b16be39445cc1b3a127239113436022a6fc5c72748ff`  
-		Last Modified: Wed, 15 May 2019 22:04:16 GMT  
-		Size: 16.7 MB (16665409 bytes)  
+	-	`sha256:db657c3b5bd5511e54e704678e5601eb0ee2b1e94fb5b55a042a83cd9aa1404f`  
+		Last Modified: Wed, 19 Jun 2019 03:37:01 GMT  
+		Size: 16.7 MB (16666029 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9609323072a1139386e9f909bbba8fa689212fc4d7dfe0875381f178270ad9e5`  
-		Last Modified: Wed, 15 May 2019 22:04:10 GMT  
-		Size: 13.1 KB (13118 bytes)  
+	-	`sha256:194b719802451074f7dd9e75ae0e53d893eced59b120446b5df96259663d572f`  
+		Last Modified: Wed, 19 Jun 2019 03:36:52 GMT  
+		Size: 13.1 KB (13120 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ec2283943ef15331825c370d9980b1f5c9de860f05005eeb91ba8c64785ca4e`  
-		Last Modified: Wed, 15 May 2019 22:04:09 GMT  
-		Size: 5.5 KB (5523 bytes)  
+	-	`sha256:1177b8baac3e7674b50e14b818a18fc8d6f4dbaceace3bff594cdc3fdb1fae97`  
+		Last Modified: Wed, 19 Jun 2019 03:36:52 GMT  
+		Size: 5.5 KB (5525 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b83a9e47788526b4a6e543ad8ee1f794017a37309c97fa72feb57c04889fa79`  
-		Last Modified: Wed, 29 May 2019 22:57:19 GMT  
-		Size: 219.4 MB (219438739 bytes)  
+	-	`sha256:649bcb780feefe2c622daceae5ab7c20c5996bf985f9ddbfab95d243b8e1e00d`  
+		Last Modified: Wed, 19 Jun 2019 03:40:19 GMT  
+		Size: 219.4 MB (219446866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68cdfc4fc546e174f8390302db07076c12d9121f396dd26dd2c2a848f6dfff61`  
-		Last Modified: Wed, 29 May 2019 22:56:46 GMT  
-		Size: 189.0 B  
+	-	`sha256:838e493c8205c2e6b9734e1b2754ae511a237b31f1fd13c612cc2de92f312409`  
+		Last Modified: Wed, 19 Jun 2019 03:39:27 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac8ba12750855d3aa0d87d4391a939b3a2a4d4dff10c27b7edd85275dd7bb79b`  
-		Last Modified: Wed, 29 May 2019 22:58:19 GMT  
-		Size: 242.2 MB (242204189 bytes)  
+	-	`sha256:4eb22d37961f30c4004e49378d8565ca32de84e5eeb4fdef71eee177794bfdd9`  
+		Last Modified: Wed, 19 Jun 2019 03:41:56 GMT  
+		Size: 242.2 MB (242205853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
