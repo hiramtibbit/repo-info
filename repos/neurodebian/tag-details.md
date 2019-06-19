@@ -40,7 +40,7 @@
 ## `neurodebian:bionic`
 
 ```console
-$ docker pull neurodebian@sha256:4744e75485f06f93df279e71882fa9d17566b65c78746f4276ac1843deaf0891
+$ docker pull neurodebian@sha256:8681070ab9f80db108e3f8c01e98842eb7e28b127c1214d5ea40b823b1a71f34
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -50,71 +50,75 @@ $ docker pull neurodebian@sha256:4744e75485f06f93df279e71882fa9d17566b65c78746f4
 ### `neurodebian:bionic` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:77df1f3f3c5715b31b301ad1ee82c24ec5664c1a53bc38b012e96aca80d7e634
+$ docker pull neurodebian@sha256:07bd0a1f03ffe51d03f4734d3362b8d91af722a00b4db9dc78d2cddc12c2d6b5
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.9 MB (33901557 bytes)**  
+-	Total Size: **31.8 MB (31766925 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88ca2eabc5d5578cf7ec1c3d668b33b35d7db133cde99a113d0b2e2d37695afe`
+-	Image ID: `sha256:c897dd8c50617b07bd6a98426c34bae3362554d7c227c13adb6f04810a44bb45`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 15 May 2019 21:20:23 GMT
-ADD file:1f4fdc61e133d2f9019d8a06a8126fef0ed4339cb25fda73446393fe8da197c5 in / 
-# Wed, 15 May 2019 21:20:24 GMT
+# Tue, 18 Jun 2019 22:51:33 GMT
+ADD file:4e6b5d9ca371eb881c581574b8dc4f5391eff2872db364af0f8d9804e4890098 in / 
+# Tue, 18 Jun 2019 22:51:35 GMT
+RUN [ -z "$(apt-get indextargets)" ]
+# Tue, 18 Jun 2019 22:51:36 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 15 May 2019 21:20:25 GMT
-RUN rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:20:25 GMT
+# Tue, 18 Jun 2019 22:51:37 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 15 May 2019 21:20:25 GMT
+# Tue, 18 Jun 2019 22:51:38 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2019 22:02:12 GMT
+# Wed, 19 Jun 2019 02:49:49 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 22:02:13 GMT
+# Wed, 19 Jun 2019 02:49:53 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --batch --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Wed, 15 May 2019 22:02:14 GMT
+# Wed, 19 Jun 2019 02:49:56 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian bionic main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel bionic main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Wed, 15 May 2019 22:02:19 GMT
+# Wed, 19 Jun 2019 02:50:02 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:6abc03819f3e00a67ed5adc1132cfec041d5f7ec3c29d5416ba0433877547b6f`  
-		Last Modified: Wed, 15 May 2019 21:21:40 GMT  
-		Size: 28.9 MB (28855068 bytes)  
+	-	`sha256:5b7339215d1d5f8e68622d584a224f60339f5bef41dbd74330d081e912f0cddd`  
+		Last Modified: Thu, 13 Jun 2019 00:24:57 GMT  
+		Size: 26.7 MB (26684508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05731e63f21105725a5c062a725b33a54ad8c697f9c810870c6aa3e3cd9fb6a2`  
-		Last Modified: Wed, 15 May 2019 21:21:36 GMT  
-		Size: 844.0 B  
+	-	`sha256:14ca88e9f6723ce82bc14b241cda8634f6d19677184691d086662641ab96fe68`  
+		Last Modified: Tue, 18 Jun 2019 22:53:58 GMT  
+		Size: 35.4 KB (35352 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0bd67c50d6beeb55108476f72bea3b4b29a9f48832d6e045ec66b7ac4bf712a0`  
-		Last Modified: Wed, 15 May 2019 21:21:35 GMT  
-		Size: 164.0 B  
+	-	`sha256:a31c3b1caad473a474d574283741f880e37c708cc06ee620d3e93fa602125ee0`  
+		Last Modified: Tue, 18 Jun 2019 22:53:57 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:784d9668e32bc802334e478da52db4b5da52e14600f3efb44863e4436da539fc`  
-		Last Modified: Wed, 15 May 2019 22:04:00 GMT  
-		Size: 4.8 MB (4804215 bytes)  
+	-	`sha256:b054a26005b7f3b032577f811421fab5ec3b42ce45a4012dfa00cf6ed6191b0f`  
+		Last Modified: Tue, 18 Jun 2019 22:53:57 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e76dd4344842efec1bae11b946e95df8f897235b6462f377f54859f96d87fdb`  
-		Last Modified: Wed, 15 May 2019 22:04:00 GMT  
-		Size: 3.1 KB (3145 bytes)  
+	-	`sha256:68611a98c342c85439facb508cf1dcaafa1dbc29bcefc765c5303480accec114`  
+		Last Modified: Wed, 19 Jun 2019 02:51:19 GMT  
+		Size: 4.8 MB (4804487 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4201d92efc29ec198928918e7d61634e5bd7c09d05fc14ccf415b07b0363bcf4`  
-		Last Modified: Wed, 15 May 2019 22:04:00 GMT  
-		Size: 244.0 B  
+	-	`sha256:3385330d0647b36ddb65ad4f27b9c60150c0bebd558d8293f04cc6e993488150`  
+		Last Modified: Wed, 19 Jun 2019 02:51:17 GMT  
+		Size: 3.2 KB (3152 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fabeacf2e593d4c1ac03b5e3eecd78f6ba2149c95fbc4adba2be222010966d0f`  
-		Last Modified: Wed, 15 May 2019 22:03:59 GMT  
-		Size: 237.9 KB (237877 bytes)  
+	-	`sha256:084239bb13bbaac581627eb75802a0622c65945bca23e6f9f99ada057c9cbd90`  
+		Last Modified: Wed, 19 Jun 2019 02:51:18 GMT  
+		Size: 246.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3fe8b02a0568ce299b80a8c5c044ff577ea39be858418e8a7f79ff50c7a3d472`  
+		Last Modified: Wed, 19 Jun 2019 02:51:18 GMT  
+		Size: 238.2 KB (238169 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:bionic-non-free`
 
 ```console
-$ docker pull neurodebian@sha256:b035a268a1dbb2d53d577ab13edb7a57235f2bbe13f609dafd32985f787fecd7
+$ docker pull neurodebian@sha256:d5d736d2aa78af1f91a069f016c3a914682588fab2579d517344f8e22ffa8d31
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -124,71 +128,75 @@ $ docker pull neurodebian@sha256:b035a268a1dbb2d53d577ab13edb7a57235f2bbe13f609d
 ### `neurodebian:bionic-non-free` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:cdbef53a94bb55e43a997212ee5600910556252348b2da24fb8f479c41b50374
+$ docker pull neurodebian@sha256:4087a797d8e9c7d7edb366e7a8ae44219c13a04e5d7ac8f7c2602ff84299de70
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.9 MB (33901812 bytes)**  
+-	Total Size: **31.8 MB (31767179 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea0385ede62aaf599b6b848458a5f72b541a4549a141812a267ddd30997ad524`
+-	Image ID: `sha256:6ed2f3ffe3a30bafb82cbdbbd385f48b192f90d0145e9b3a9b2d31b42042f7d4`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 15 May 2019 21:20:23 GMT
-ADD file:1f4fdc61e133d2f9019d8a06a8126fef0ed4339cb25fda73446393fe8da197c5 in / 
-# Wed, 15 May 2019 21:20:24 GMT
+# Tue, 18 Jun 2019 22:51:33 GMT
+ADD file:4e6b5d9ca371eb881c581574b8dc4f5391eff2872db364af0f8d9804e4890098 in / 
+# Tue, 18 Jun 2019 22:51:35 GMT
+RUN [ -z "$(apt-get indextargets)" ]
+# Tue, 18 Jun 2019 22:51:36 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 15 May 2019 21:20:25 GMT
-RUN rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:20:25 GMT
+# Tue, 18 Jun 2019 22:51:37 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 15 May 2019 21:20:25 GMT
+# Tue, 18 Jun 2019 22:51:38 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2019 22:02:12 GMT
+# Wed, 19 Jun 2019 02:49:49 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 22:02:13 GMT
+# Wed, 19 Jun 2019 02:49:53 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --batch --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Wed, 15 May 2019 22:02:14 GMT
+# Wed, 19 Jun 2019 02:49:56 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian bionic main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel bionic main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Wed, 15 May 2019 22:02:19 GMT
+# Wed, 19 Jun 2019 02:50:02 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 22:02:24 GMT
+# Wed, 19 Jun 2019 02:50:06 GMT
 RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list; grep -q 'deb .* multiverse$' /etc/apt/sources.list || sed -i -e 's,universe *$,universe multiverse,g' /etc/apt/sources.list
 ```
 
 -	Layers:
-	-	`sha256:6abc03819f3e00a67ed5adc1132cfec041d5f7ec3c29d5416ba0433877547b6f`  
-		Last Modified: Wed, 15 May 2019 21:21:40 GMT  
-		Size: 28.9 MB (28855068 bytes)  
+	-	`sha256:5b7339215d1d5f8e68622d584a224f60339f5bef41dbd74330d081e912f0cddd`  
+		Last Modified: Thu, 13 Jun 2019 00:24:57 GMT  
+		Size: 26.7 MB (26684508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05731e63f21105725a5c062a725b33a54ad8c697f9c810870c6aa3e3cd9fb6a2`  
-		Last Modified: Wed, 15 May 2019 21:21:36 GMT  
-		Size: 844.0 B  
+	-	`sha256:14ca88e9f6723ce82bc14b241cda8634f6d19677184691d086662641ab96fe68`  
+		Last Modified: Tue, 18 Jun 2019 22:53:58 GMT  
+		Size: 35.4 KB (35352 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0bd67c50d6beeb55108476f72bea3b4b29a9f48832d6e045ec66b7ac4bf712a0`  
-		Last Modified: Wed, 15 May 2019 21:21:35 GMT  
-		Size: 164.0 B  
+	-	`sha256:a31c3b1caad473a474d574283741f880e37c708cc06ee620d3e93fa602125ee0`  
+		Last Modified: Tue, 18 Jun 2019 22:53:57 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:784d9668e32bc802334e478da52db4b5da52e14600f3efb44863e4436da539fc`  
-		Last Modified: Wed, 15 May 2019 22:04:00 GMT  
-		Size: 4.8 MB (4804215 bytes)  
+	-	`sha256:b054a26005b7f3b032577f811421fab5ec3b42ce45a4012dfa00cf6ed6191b0f`  
+		Last Modified: Tue, 18 Jun 2019 22:53:57 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e76dd4344842efec1bae11b946e95df8f897235b6462f377f54859f96d87fdb`  
-		Last Modified: Wed, 15 May 2019 22:04:00 GMT  
-		Size: 3.1 KB (3145 bytes)  
+	-	`sha256:68611a98c342c85439facb508cf1dcaafa1dbc29bcefc765c5303480accec114`  
+		Last Modified: Wed, 19 Jun 2019 02:51:19 GMT  
+		Size: 4.8 MB (4804487 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4201d92efc29ec198928918e7d61634e5bd7c09d05fc14ccf415b07b0363bcf4`  
-		Last Modified: Wed, 15 May 2019 22:04:00 GMT  
-		Size: 244.0 B  
+	-	`sha256:3385330d0647b36ddb65ad4f27b9c60150c0bebd558d8293f04cc6e993488150`  
+		Last Modified: Wed, 19 Jun 2019 02:51:17 GMT  
+		Size: 3.2 KB (3152 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fabeacf2e593d4c1ac03b5e3eecd78f6ba2149c95fbc4adba2be222010966d0f`  
-		Last Modified: Wed, 15 May 2019 22:03:59 GMT  
-		Size: 237.9 KB (237877 bytes)  
+	-	`sha256:084239bb13bbaac581627eb75802a0622c65945bca23e6f9f99ada057c9cbd90`  
+		Last Modified: Wed, 19 Jun 2019 02:51:18 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe4ecb6e95467da7f4a512b89037f01602c6ac39e9b064d7f108a58fbdc76e61`  
-		Last Modified: Wed, 15 May 2019 22:04:04 GMT  
-		Size: 255.0 B  
+	-	`sha256:3fe8b02a0568ce299b80a8c5c044ff577ea39be858418e8a7f79ff50c7a3d472`  
+		Last Modified: Wed, 19 Jun 2019 02:51:18 GMT  
+		Size: 238.2 KB (238169 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:31f3a9ed43954fee33b8c14b64d5fd810de3c5aaeaf8b1f337da2f5b5efc75dc`  
+		Last Modified: Wed, 19 Jun 2019 02:51:23 GMT  
+		Size: 254.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:buster`
@@ -320,7 +328,7 @@ RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurod
 ## `neurodebian:cosmic`
 
 ```console
-$ docker pull neurodebian@sha256:a01af15420f24035fe03633c4f93673c9581a996f282a28aba1b50ae52a5c674
+$ docker pull neurodebian@sha256:1837da370f2fecac96313f81dc2880deec75f9e3886c50d122c98374f81d337a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -330,71 +338,75 @@ $ docker pull neurodebian@sha256:a01af15420f24035fe03633c4f93673c9581a996f282a28
 ### `neurodebian:cosmic` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:da7926afb564fc836545eb345f896a9731cee4e3c6f417d815148e2b1c2291ca
+$ docker pull neurodebian@sha256:c2514244ae071cb821e855d29a7f6cc62a01d9eb164afc72ed16410bcb5a1613
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **34.3 MB (34318796 bytes)**  
+-	Total Size: **32.2 MB (32186658 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a15c110bbab473ba635f0b3373a7a5befdf19a307b775bd6336288077b87982f`
+-	Image ID: `sha256:6049fbe868f22f7f478b4340fd5b3434ba674fde6647d9f7f19b4b2f07732e77`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 15 May 2019 21:20:35 GMT
-ADD file:648119e1829ef2c84efd62a492630de5a13ddaeb9735f798db942bec0f0e2426 in / 
-# Wed, 15 May 2019 21:20:36 GMT
+# Tue, 18 Jun 2019 22:52:07 GMT
+ADD file:57710235acd445085df388290be388b9b8a2edf8d7ddce2441dee90a64f2e606 in / 
+# Tue, 18 Jun 2019 22:52:08 GMT
+RUN [ -z "$(apt-get indextargets)" ]
+# Tue, 18 Jun 2019 22:52:10 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 15 May 2019 21:20:37 GMT
-RUN rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:20:38 GMT
+# Tue, 18 Jun 2019 22:52:11 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 15 May 2019 21:20:38 GMT
+# Tue, 18 Jun 2019 22:52:11 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2019 22:02:48 GMT
+# Wed, 19 Jun 2019 02:50:17 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 22:02:49 GMT
+# Wed, 19 Jun 2019 02:50:19 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --batch --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Wed, 15 May 2019 22:02:49 GMT
+# Wed, 19 Jun 2019 02:50:20 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian cosmic main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel cosmic main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Wed, 15 May 2019 22:02:55 GMT
+# Wed, 19 Jun 2019 02:50:25 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:89074f19944ee6c68e5da6dea5004e1339e4e8e9c54ea39641ad6e0bc0e4223b`  
-		Last Modified: Wed, 15 May 2019 21:21:54 GMT  
-		Size: 29.2 MB (29244906 bytes)  
+	-	`sha256:7ec6d2912f0a2b3b591d5231ebfa4c5f0729414df42cb550942eea07fee552e6`  
+		Last Modified: Fri, 14 Jun 2019 14:34:29 GMT  
+		Size: 27.1 MB (27078061 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cd3a42e50dfbbe2b8a505f7d3203c07e72aa23ce1bdc94c67221f7e72f9af6c`  
-		Last Modified: Wed, 15 May 2019 21:21:48 GMT  
-		Size: 865.0 B  
+	-	`sha256:85fae9a0cb8ab2b4f17affd557ab971e49b32aeadb040316e7d73b5a92a2785c`  
+		Last Modified: Tue, 18 Jun 2019 22:54:10 GMT  
+		Size: 35.1 KB (35145 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26b902a7bf04aa8d7c02fd742898dab4b6c791b8e363fddc06298191167d5fac`  
-		Last Modified: Wed, 15 May 2019 21:21:49 GMT  
-		Size: 162.0 B  
+	-	`sha256:44c3e823150a973b487c60711aaa4ac2a2b67d4216dc4360a72e7ef88519eddd`  
+		Last Modified: Tue, 18 Jun 2019 22:54:10 GMT  
+		Size: 860.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:948c07dcd585171a2643d304ad3739613f03631f2e2e76e25475ac628631a229`  
-		Last Modified: Wed, 15 May 2019 22:04:09 GMT  
-		Size: 4.8 MB (4832748 bytes)  
+	-	`sha256:54b1b19bb4500839e8d81d4a2a09b3c8eba8d5963218769bf2422cb4adb45ff6`  
+		Last Modified: Tue, 18 Jun 2019 22:54:10 GMT  
+		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35e54633279a39f9dca4e32cc882e383e72b2cfdd63a82e003ac7466f17f253e`  
-		Last Modified: Wed, 15 May 2019 22:04:08 GMT  
-		Size: 3.1 KB (3145 bytes)  
+	-	`sha256:83afd436bb332fb3eee3544a2ee3f348803a8e011095eb9341cef91d3f01f017`  
+		Last Modified: Wed, 19 Jun 2019 02:51:28 GMT  
+		Size: 4.8 MB (4832538 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abd3ae033b864a681d44548469f9a835b3a8c333b6b3f77e6ba8c1f261d6867b`  
-		Last Modified: Wed, 15 May 2019 22:04:07 GMT  
+	-	`sha256:6bfa8584ccc9740583063e632c8ed04891932570e5e0d0f1f7ef8995e3d97368`  
+		Last Modified: Wed, 19 Jun 2019 02:51:27 GMT  
+		Size: 3.1 KB (3148 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1a113223a70e4c15f2142bc25f37133692a85a0e9a9000e5ba7a5d226a66004d`  
+		Last Modified: Wed, 19 Jun 2019 02:51:26 GMT  
 		Size: 244.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80a252739f7907413d9edfe4d91d1142df7b976a0e52c4ae207729ba3b56d32d`  
-		Last Modified: Wed, 15 May 2019 22:04:08 GMT  
-		Size: 236.7 KB (236726 bytes)  
+	-	`sha256:3b46bb3f06da37d7cf9da53d3814bd1578202841df1c4f461ce53c1b1b6ede55`  
+		Last Modified: Wed, 19 Jun 2019 02:51:27 GMT  
+		Size: 236.5 KB (236498 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:cosmic-non-free`
 
 ```console
-$ docker pull neurodebian@sha256:3323dc1a3fa3140382982d20d5896d34bd40acd18be205691a939e415e8b4e37
+$ docker pull neurodebian@sha256:9ae53591a5be29fde29d7a778796078a07bdf908166d2c8406a0f11b0e5c0d5c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -404,71 +416,75 @@ $ docker pull neurodebian@sha256:3323dc1a3fa3140382982d20d5896d34bd40acd18be2056
 ### `neurodebian:cosmic-non-free` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:eca55899b64fcf2909742f1411f957f48a1ee78081066b249dc325a5adfd0292
+$ docker pull neurodebian@sha256:b96aaf545027c187ecef67071870ede95b8f30f1e0b071872955388ece190dbe
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **34.3 MB (34319048 bytes)**  
+-	Total Size: **32.2 MB (32186914 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c40d5a58a7ccc53a14a75f62d274474f539ce235bd9e2e279539dd1f9da71ce0`
+-	Image ID: `sha256:5d8338bbeeb702d07e4c8e2bee0c92addf80be5ebbe77424ee89dcdc34d964f9`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 15 May 2019 21:20:35 GMT
-ADD file:648119e1829ef2c84efd62a492630de5a13ddaeb9735f798db942bec0f0e2426 in / 
-# Wed, 15 May 2019 21:20:36 GMT
+# Tue, 18 Jun 2019 22:52:07 GMT
+ADD file:57710235acd445085df388290be388b9b8a2edf8d7ddce2441dee90a64f2e606 in / 
+# Tue, 18 Jun 2019 22:52:08 GMT
+RUN [ -z "$(apt-get indextargets)" ]
+# Tue, 18 Jun 2019 22:52:10 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 15 May 2019 21:20:37 GMT
-RUN rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:20:38 GMT
+# Tue, 18 Jun 2019 22:52:11 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 15 May 2019 21:20:38 GMT
+# Tue, 18 Jun 2019 22:52:11 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2019 22:02:48 GMT
+# Wed, 19 Jun 2019 02:50:17 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 22:02:49 GMT
+# Wed, 19 Jun 2019 02:50:19 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --batch --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Wed, 15 May 2019 22:02:49 GMT
+# Wed, 19 Jun 2019 02:50:20 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian cosmic main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel cosmic main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Wed, 15 May 2019 22:02:55 GMT
+# Wed, 19 Jun 2019 02:50:25 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 22:02:59 GMT
+# Wed, 19 Jun 2019 02:50:31 GMT
 RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list; grep -q 'deb .* multiverse$' /etc/apt/sources.list || sed -i -e 's,universe *$,universe multiverse,g' /etc/apt/sources.list
 ```
 
 -	Layers:
-	-	`sha256:89074f19944ee6c68e5da6dea5004e1339e4e8e9c54ea39641ad6e0bc0e4223b`  
-		Last Modified: Wed, 15 May 2019 21:21:54 GMT  
-		Size: 29.2 MB (29244906 bytes)  
+	-	`sha256:7ec6d2912f0a2b3b591d5231ebfa4c5f0729414df42cb550942eea07fee552e6`  
+		Last Modified: Fri, 14 Jun 2019 14:34:29 GMT  
+		Size: 27.1 MB (27078061 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cd3a42e50dfbbe2b8a505f7d3203c07e72aa23ce1bdc94c67221f7e72f9af6c`  
-		Last Modified: Wed, 15 May 2019 21:21:48 GMT  
-		Size: 865.0 B  
+	-	`sha256:85fae9a0cb8ab2b4f17affd557ab971e49b32aeadb040316e7d73b5a92a2785c`  
+		Last Modified: Tue, 18 Jun 2019 22:54:10 GMT  
+		Size: 35.1 KB (35145 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26b902a7bf04aa8d7c02fd742898dab4b6c791b8e363fddc06298191167d5fac`  
-		Last Modified: Wed, 15 May 2019 21:21:49 GMT  
-		Size: 162.0 B  
+	-	`sha256:44c3e823150a973b487c60711aaa4ac2a2b67d4216dc4360a72e7ef88519eddd`  
+		Last Modified: Tue, 18 Jun 2019 22:54:10 GMT  
+		Size: 860.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:948c07dcd585171a2643d304ad3739613f03631f2e2e76e25475ac628631a229`  
-		Last Modified: Wed, 15 May 2019 22:04:09 GMT  
-		Size: 4.8 MB (4832748 bytes)  
+	-	`sha256:54b1b19bb4500839e8d81d4a2a09b3c8eba8d5963218769bf2422cb4adb45ff6`  
+		Last Modified: Tue, 18 Jun 2019 22:54:10 GMT  
+		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35e54633279a39f9dca4e32cc882e383e72b2cfdd63a82e003ac7466f17f253e`  
-		Last Modified: Wed, 15 May 2019 22:04:08 GMT  
-		Size: 3.1 KB (3145 bytes)  
+	-	`sha256:83afd436bb332fb3eee3544a2ee3f348803a8e011095eb9341cef91d3f01f017`  
+		Last Modified: Wed, 19 Jun 2019 02:51:28 GMT  
+		Size: 4.8 MB (4832538 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abd3ae033b864a681d44548469f9a835b3a8c333b6b3f77e6ba8c1f261d6867b`  
-		Last Modified: Wed, 15 May 2019 22:04:07 GMT  
+	-	`sha256:6bfa8584ccc9740583063e632c8ed04891932570e5e0d0f1f7ef8995e3d97368`  
+		Last Modified: Wed, 19 Jun 2019 02:51:27 GMT  
+		Size: 3.1 KB (3148 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1a113223a70e4c15f2142bc25f37133692a85a0e9a9000e5ba7a5d226a66004d`  
+		Last Modified: Wed, 19 Jun 2019 02:51:26 GMT  
 		Size: 244.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80a252739f7907413d9edfe4d91d1142df7b976a0e52c4ae207729ba3b56d32d`  
-		Last Modified: Wed, 15 May 2019 22:04:08 GMT  
-		Size: 236.7 KB (236726 bytes)  
+	-	`sha256:3b46bb3f06da37d7cf9da53d3814bd1578202841df1c4f461ce53c1b1b6ede55`  
+		Last Modified: Wed, 19 Jun 2019 02:51:27 GMT  
+		Size: 236.5 KB (236498 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3edf0119f5d161f9b0e32e99f8961a247d70d3b0ba8f5f98d7ea7a827762ca06`  
-		Last Modified: Wed, 15 May 2019 22:04:13 GMT  
-		Size: 252.0 B  
+	-	`sha256:8c54eab68f589c71529d08df00a262823b62694bf9d3183864fda1164555a43c`  
+		Last Modified: Wed, 19 Jun 2019 02:51:32 GMT  
+		Size: 256.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:jessie`
@@ -1008,7 +1024,7 @@ RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurod
 ## `neurodebian:nd16.04`
 
 ```console
-$ docker pull neurodebian@sha256:ef01f8d2949ee636cb4f960c22407b64447d18382d59c1c8b550dc2fd83ab9f5
+$ docker pull neurodebian@sha256:4964210526741e404778f0470aedcfff2b8a0adef9917691e20f42354dc23e5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1018,75 +1034,75 @@ $ docker pull neurodebian@sha256:ef01f8d2949ee636cb4f960c22407b64447d18382d59c1c
 ### `neurodebian:nd16.04` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:7457ae031ed655c3d64e7279ffac801811476b62dd3aadc3fbc3217bf722c957
+$ docker pull neurodebian@sha256:1abe2dd36718a0cf903c331f2efcc351b3e42e535e29991114baa2663f5d9ea1
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.0 MB (43998123 bytes)**  
+-	Total Size: **44.1 MB (44067921 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:137dc10e1c76bd0dbb1519f460336fb8017336a10af6d690b08d5c7f8be4bd2a`
+-	Image ID: `sha256:46bcdb80225ee0f98a667b0bf9eb6ef8d9a0034c09aa2cdeee829f8f97b0560f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 15 May 2019 21:21:22 GMT
-ADD file:a65e0467dbedc0992151651c136374c16f65d9905eac9d04d0925039ada64e4c in / 
-# Wed, 15 May 2019 21:21:23 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:31 GMT
+ADD file:24352f4a071cb97b3f111253f3db695ba473c5e7985544889af3e34408ce32ff in / 
+# Tue, 18 Jun 2019 22:53:33 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:35 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Tue, 18 Jun 2019 22:53:37 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:37 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2019 22:01:45 GMT
+# Wed, 19 Jun 2019 02:49:27 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 22:01:46 GMT
+# Wed, 19 Jun 2019 02:49:28 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --batch --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Wed, 15 May 2019 22:01:47 GMT
+# Wed, 19 Jun 2019 02:49:29 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian xenial main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel xenial main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Wed, 15 May 2019 22:01:52 GMT
+# Wed, 19 Jun 2019 02:49:34 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:9ff7e2e5f967fb9c4e8099e63508ab0dddebe3f820d08ca7fd568431b0d10c0e`  
-		Last Modified: Wed, 15 May 2019 21:22:41 GMT  
-		Size: 43.8 MB (43767987 bytes)  
+	-	`sha256:35b42117c431dd1e13679a09c3c68bb983578a1cbe0a8d8980f507567ebce76c`  
+		Last Modified: Tue, 11 Jun 2019 13:20:32 GMT  
+		Size: 43.8 MB (43837758 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59856638ac9f32d4caa0f5761b2597fe251642786fdfe1b917ddbb074b890c29`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 848.0 B  
+	-	`sha256:ad9c569a8d989555892683a932df468cfe294859186790d3f2fb704c3a022e96`  
+		Last Modified: Tue, 18 Jun 2019 22:54:47 GMT  
+		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f317d6d954b9a59c54b2cb09e1f30cd3e872796e431cd2ceac5ed570beb2939`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 526.0 B  
+	-	`sha256:293b44f451623251bf75ce5a72d3cee63706972c88980232217a81026987f63e`  
+		Last Modified: Tue, 18 Jun 2019 22:54:47 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9dde5e2a643eca8fde0eed52f4aed31f3ecd9c1b2f24d5e3729cd8d2ae68177`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 168.0 B  
+	-	`sha256:0c175077525d1ddec01cb7cf003c2d8b4b6650ae15b504a64914f5eed8d28e50`  
+		Last Modified: Tue, 18 Jun 2019 22:54:46 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcceda028d95c3c882eeb142bffa8c89d0583baf0b155048f5f222b837252a4c`  
-		Last Modified: Wed, 15 May 2019 22:03:53 GMT  
-		Size: 174.0 B  
+	-	`sha256:9c4df95a37f501a71c18bd72c7b00ae9f343d829d1cb499bb2b663b3357d4a5a`  
+		Last Modified: Wed, 19 Jun 2019 02:51:09 GMT  
+		Size: 180.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:677f1de1da1757df4790b3dd7ab9ed52d7ba63762665130f0d8c0b765d32b40f`  
-		Last Modified: Wed, 15 May 2019 22:03:53 GMT  
-		Size: 3.1 KB (3144 bytes)  
+	-	`sha256:60f9d29370f32c2db88dad7289ae9496cff94b59de57c902e6085e60f204315d`  
+		Last Modified: Wed, 19 Jun 2019 02:51:09 GMT  
+		Size: 3.2 KB (3151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b440f23027ff537599d615c2ac5c91bbe23edf66d3295e1e85b2bd3823f528f`  
-		Last Modified: Wed, 15 May 2019 22:03:53 GMT  
-		Size: 244.0 B  
+	-	`sha256:a1ada151fb0b495c943e61ca5f4665405fbf096f3ad997d4a27b0712e2a751e6`  
+		Last Modified: Wed, 19 Jun 2019 02:51:09 GMT  
+		Size: 245.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46417350fc3e112e41541227692e61e64d9151b8f4f320aa3fcb45d12fc36765`  
-		Last Modified: Wed, 15 May 2019 22:03:53 GMT  
-		Size: 225.0 KB (225032 bytes)  
+	-	`sha256:b9a9d06c87343c6840ecf8fa4bb69e60d262418f6f9323c31e59d1522586bbdb`  
+		Last Modified: Wed, 19 Jun 2019 02:51:09 GMT  
+		Size: 225.0 KB (225039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:nd16.04-non-free`
 
 ```console
-$ docker pull neurodebian@sha256:d9c5b2aa252935eb7d8e0df3b472339f11710740227e5fd32807eba63360fdb6
+$ docker pull neurodebian@sha256:c2c182710573410d1f10cade573988683caf5218811676c0c93e895852e34702
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1096,81 +1112,81 @@ $ docker pull neurodebian@sha256:d9c5b2aa252935eb7d8e0df3b472339f11710740227e5fd
 ### `neurodebian:nd16.04-non-free` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:00abd4ffeae178d3be72142847e0b28f688514f5155543d80e4af88ef74767b0
+$ docker pull neurodebian@sha256:fa4060ab02ae0ac6b1efc1b097313d29d53df866b1883e71e241a47625f0e60c
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.0 MB (43998379 bytes)**  
+-	Total Size: **44.1 MB (44068179 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ce54d1109a30577568e4989e6c66aed7bdeb8e353a707a732ece192397c51182`
+-	Image ID: `sha256:f4bf4e59d318ffa1e95b617686e1c093d843216caed09273581da2c192a8c19e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 15 May 2019 21:21:22 GMT
-ADD file:a65e0467dbedc0992151651c136374c16f65d9905eac9d04d0925039ada64e4c in / 
-# Wed, 15 May 2019 21:21:23 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:31 GMT
+ADD file:24352f4a071cb97b3f111253f3db695ba473c5e7985544889af3e34408ce32ff in / 
+# Tue, 18 Jun 2019 22:53:33 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:35 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Tue, 18 Jun 2019 22:53:37 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:37 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2019 22:01:45 GMT
+# Wed, 19 Jun 2019 02:49:27 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 22:01:46 GMT
+# Wed, 19 Jun 2019 02:49:28 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --batch --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Wed, 15 May 2019 22:01:47 GMT
+# Wed, 19 Jun 2019 02:49:29 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian xenial main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel xenial main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Wed, 15 May 2019 22:01:52 GMT
+# Wed, 19 Jun 2019 02:49:34 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 22:01:58 GMT
+# Wed, 19 Jun 2019 02:49:38 GMT
 RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list; grep -q 'deb .* multiverse$' /etc/apt/sources.list || sed -i -e 's,universe *$,universe multiverse,g' /etc/apt/sources.list
 ```
 
 -	Layers:
-	-	`sha256:9ff7e2e5f967fb9c4e8099e63508ab0dddebe3f820d08ca7fd568431b0d10c0e`  
-		Last Modified: Wed, 15 May 2019 21:22:41 GMT  
-		Size: 43.8 MB (43767987 bytes)  
+	-	`sha256:35b42117c431dd1e13679a09c3c68bb983578a1cbe0a8d8980f507567ebce76c`  
+		Last Modified: Tue, 11 Jun 2019 13:20:32 GMT  
+		Size: 43.8 MB (43837758 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59856638ac9f32d4caa0f5761b2597fe251642786fdfe1b917ddbb074b890c29`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 848.0 B  
+	-	`sha256:ad9c569a8d989555892683a932df468cfe294859186790d3f2fb704c3a022e96`  
+		Last Modified: Tue, 18 Jun 2019 22:54:47 GMT  
+		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f317d6d954b9a59c54b2cb09e1f30cd3e872796e431cd2ceac5ed570beb2939`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 526.0 B  
+	-	`sha256:293b44f451623251bf75ce5a72d3cee63706972c88980232217a81026987f63e`  
+		Last Modified: Tue, 18 Jun 2019 22:54:47 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9dde5e2a643eca8fde0eed52f4aed31f3ecd9c1b2f24d5e3729cd8d2ae68177`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 168.0 B  
+	-	`sha256:0c175077525d1ddec01cb7cf003c2d8b4b6650ae15b504a64914f5eed8d28e50`  
+		Last Modified: Tue, 18 Jun 2019 22:54:46 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcceda028d95c3c882eeb142bffa8c89d0583baf0b155048f5f222b837252a4c`  
-		Last Modified: Wed, 15 May 2019 22:03:53 GMT  
-		Size: 174.0 B  
+	-	`sha256:9c4df95a37f501a71c18bd72c7b00ae9f343d829d1cb499bb2b663b3357d4a5a`  
+		Last Modified: Wed, 19 Jun 2019 02:51:09 GMT  
+		Size: 180.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:677f1de1da1757df4790b3dd7ab9ed52d7ba63762665130f0d8c0b765d32b40f`  
-		Last Modified: Wed, 15 May 2019 22:03:53 GMT  
-		Size: 3.1 KB (3144 bytes)  
+	-	`sha256:60f9d29370f32c2db88dad7289ae9496cff94b59de57c902e6085e60f204315d`  
+		Last Modified: Wed, 19 Jun 2019 02:51:09 GMT  
+		Size: 3.2 KB (3151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b440f23027ff537599d615c2ac5c91bbe23edf66d3295e1e85b2bd3823f528f`  
-		Last Modified: Wed, 15 May 2019 22:03:53 GMT  
-		Size: 244.0 B  
+	-	`sha256:a1ada151fb0b495c943e61ca5f4665405fbf096f3ad997d4a27b0712e2a751e6`  
+		Last Modified: Wed, 19 Jun 2019 02:51:09 GMT  
+		Size: 245.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46417350fc3e112e41541227692e61e64d9151b8f4f320aa3fcb45d12fc36765`  
-		Last Modified: Wed, 15 May 2019 22:03:53 GMT  
-		Size: 225.0 KB (225032 bytes)  
+	-	`sha256:b9a9d06c87343c6840ecf8fa4bb69e60d262418f6f9323c31e59d1522586bbdb`  
+		Last Modified: Wed, 19 Jun 2019 02:51:09 GMT  
+		Size: 225.0 KB (225039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c3c6b7f77e8bcbcbb51d28a93e808ccb8e1807d1dd27804470e393d2878b360`  
-		Last Modified: Wed, 15 May 2019 22:03:56 GMT  
-		Size: 256.0 B  
+	-	`sha256:dc9f938df82153838b50898ad55be7d71fc792e4920588cffa3d9d90270e90ed`  
+		Last Modified: Wed, 19 Jun 2019 02:51:13 GMT  
+		Size: 258.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:nd18.04`
 
 ```console
-$ docker pull neurodebian@sha256:4744e75485f06f93df279e71882fa9d17566b65c78746f4276ac1843deaf0891
+$ docker pull neurodebian@sha256:8681070ab9f80db108e3f8c01e98842eb7e28b127c1214d5ea40b823b1a71f34
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1180,71 +1196,75 @@ $ docker pull neurodebian@sha256:4744e75485f06f93df279e71882fa9d17566b65c78746f4
 ### `neurodebian:nd18.04` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:77df1f3f3c5715b31b301ad1ee82c24ec5664c1a53bc38b012e96aca80d7e634
+$ docker pull neurodebian@sha256:07bd0a1f03ffe51d03f4734d3362b8d91af722a00b4db9dc78d2cddc12c2d6b5
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.9 MB (33901557 bytes)**  
+-	Total Size: **31.8 MB (31766925 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88ca2eabc5d5578cf7ec1c3d668b33b35d7db133cde99a113d0b2e2d37695afe`
+-	Image ID: `sha256:c897dd8c50617b07bd6a98426c34bae3362554d7c227c13adb6f04810a44bb45`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 15 May 2019 21:20:23 GMT
-ADD file:1f4fdc61e133d2f9019d8a06a8126fef0ed4339cb25fda73446393fe8da197c5 in / 
-# Wed, 15 May 2019 21:20:24 GMT
+# Tue, 18 Jun 2019 22:51:33 GMT
+ADD file:4e6b5d9ca371eb881c581574b8dc4f5391eff2872db364af0f8d9804e4890098 in / 
+# Tue, 18 Jun 2019 22:51:35 GMT
+RUN [ -z "$(apt-get indextargets)" ]
+# Tue, 18 Jun 2019 22:51:36 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 15 May 2019 21:20:25 GMT
-RUN rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:20:25 GMT
+# Tue, 18 Jun 2019 22:51:37 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 15 May 2019 21:20:25 GMT
+# Tue, 18 Jun 2019 22:51:38 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2019 22:02:12 GMT
+# Wed, 19 Jun 2019 02:49:49 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 22:02:13 GMT
+# Wed, 19 Jun 2019 02:49:53 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --batch --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Wed, 15 May 2019 22:02:14 GMT
+# Wed, 19 Jun 2019 02:49:56 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian bionic main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel bionic main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Wed, 15 May 2019 22:02:19 GMT
+# Wed, 19 Jun 2019 02:50:02 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:6abc03819f3e00a67ed5adc1132cfec041d5f7ec3c29d5416ba0433877547b6f`  
-		Last Modified: Wed, 15 May 2019 21:21:40 GMT  
-		Size: 28.9 MB (28855068 bytes)  
+	-	`sha256:5b7339215d1d5f8e68622d584a224f60339f5bef41dbd74330d081e912f0cddd`  
+		Last Modified: Thu, 13 Jun 2019 00:24:57 GMT  
+		Size: 26.7 MB (26684508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05731e63f21105725a5c062a725b33a54ad8c697f9c810870c6aa3e3cd9fb6a2`  
-		Last Modified: Wed, 15 May 2019 21:21:36 GMT  
-		Size: 844.0 B  
+	-	`sha256:14ca88e9f6723ce82bc14b241cda8634f6d19677184691d086662641ab96fe68`  
+		Last Modified: Tue, 18 Jun 2019 22:53:58 GMT  
+		Size: 35.4 KB (35352 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0bd67c50d6beeb55108476f72bea3b4b29a9f48832d6e045ec66b7ac4bf712a0`  
-		Last Modified: Wed, 15 May 2019 21:21:35 GMT  
-		Size: 164.0 B  
+	-	`sha256:a31c3b1caad473a474d574283741f880e37c708cc06ee620d3e93fa602125ee0`  
+		Last Modified: Tue, 18 Jun 2019 22:53:57 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:784d9668e32bc802334e478da52db4b5da52e14600f3efb44863e4436da539fc`  
-		Last Modified: Wed, 15 May 2019 22:04:00 GMT  
-		Size: 4.8 MB (4804215 bytes)  
+	-	`sha256:b054a26005b7f3b032577f811421fab5ec3b42ce45a4012dfa00cf6ed6191b0f`  
+		Last Modified: Tue, 18 Jun 2019 22:53:57 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e76dd4344842efec1bae11b946e95df8f897235b6462f377f54859f96d87fdb`  
-		Last Modified: Wed, 15 May 2019 22:04:00 GMT  
-		Size: 3.1 KB (3145 bytes)  
+	-	`sha256:68611a98c342c85439facb508cf1dcaafa1dbc29bcefc765c5303480accec114`  
+		Last Modified: Wed, 19 Jun 2019 02:51:19 GMT  
+		Size: 4.8 MB (4804487 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4201d92efc29ec198928918e7d61634e5bd7c09d05fc14ccf415b07b0363bcf4`  
-		Last Modified: Wed, 15 May 2019 22:04:00 GMT  
-		Size: 244.0 B  
+	-	`sha256:3385330d0647b36ddb65ad4f27b9c60150c0bebd558d8293f04cc6e993488150`  
+		Last Modified: Wed, 19 Jun 2019 02:51:17 GMT  
+		Size: 3.2 KB (3152 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fabeacf2e593d4c1ac03b5e3eecd78f6ba2149c95fbc4adba2be222010966d0f`  
-		Last Modified: Wed, 15 May 2019 22:03:59 GMT  
-		Size: 237.9 KB (237877 bytes)  
+	-	`sha256:084239bb13bbaac581627eb75802a0622c65945bca23e6f9f99ada057c9cbd90`  
+		Last Modified: Wed, 19 Jun 2019 02:51:18 GMT  
+		Size: 246.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3fe8b02a0568ce299b80a8c5c044ff577ea39be858418e8a7f79ff50c7a3d472`  
+		Last Modified: Wed, 19 Jun 2019 02:51:18 GMT  
+		Size: 238.2 KB (238169 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:nd18.04-non-free`
 
 ```console
-$ docker pull neurodebian@sha256:b035a268a1dbb2d53d577ab13edb7a57235f2bbe13f609dafd32985f787fecd7
+$ docker pull neurodebian@sha256:d5d736d2aa78af1f91a069f016c3a914682588fab2579d517344f8e22ffa8d31
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1254,77 +1274,81 @@ $ docker pull neurodebian@sha256:b035a268a1dbb2d53d577ab13edb7a57235f2bbe13f609d
 ### `neurodebian:nd18.04-non-free` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:cdbef53a94bb55e43a997212ee5600910556252348b2da24fb8f479c41b50374
+$ docker pull neurodebian@sha256:4087a797d8e9c7d7edb366e7a8ae44219c13a04e5d7ac8f7c2602ff84299de70
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.9 MB (33901812 bytes)**  
+-	Total Size: **31.8 MB (31767179 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea0385ede62aaf599b6b848458a5f72b541a4549a141812a267ddd30997ad524`
+-	Image ID: `sha256:6ed2f3ffe3a30bafb82cbdbbd385f48b192f90d0145e9b3a9b2d31b42042f7d4`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 15 May 2019 21:20:23 GMT
-ADD file:1f4fdc61e133d2f9019d8a06a8126fef0ed4339cb25fda73446393fe8da197c5 in / 
-# Wed, 15 May 2019 21:20:24 GMT
+# Tue, 18 Jun 2019 22:51:33 GMT
+ADD file:4e6b5d9ca371eb881c581574b8dc4f5391eff2872db364af0f8d9804e4890098 in / 
+# Tue, 18 Jun 2019 22:51:35 GMT
+RUN [ -z "$(apt-get indextargets)" ]
+# Tue, 18 Jun 2019 22:51:36 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 15 May 2019 21:20:25 GMT
-RUN rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:20:25 GMT
+# Tue, 18 Jun 2019 22:51:37 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 15 May 2019 21:20:25 GMT
+# Tue, 18 Jun 2019 22:51:38 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2019 22:02:12 GMT
+# Wed, 19 Jun 2019 02:49:49 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 22:02:13 GMT
+# Wed, 19 Jun 2019 02:49:53 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --batch --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Wed, 15 May 2019 22:02:14 GMT
+# Wed, 19 Jun 2019 02:49:56 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian bionic main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel bionic main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Wed, 15 May 2019 22:02:19 GMT
+# Wed, 19 Jun 2019 02:50:02 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 22:02:24 GMT
+# Wed, 19 Jun 2019 02:50:06 GMT
 RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list; grep -q 'deb .* multiverse$' /etc/apt/sources.list || sed -i -e 's,universe *$,universe multiverse,g' /etc/apt/sources.list
 ```
 
 -	Layers:
-	-	`sha256:6abc03819f3e00a67ed5adc1132cfec041d5f7ec3c29d5416ba0433877547b6f`  
-		Last Modified: Wed, 15 May 2019 21:21:40 GMT  
-		Size: 28.9 MB (28855068 bytes)  
+	-	`sha256:5b7339215d1d5f8e68622d584a224f60339f5bef41dbd74330d081e912f0cddd`  
+		Last Modified: Thu, 13 Jun 2019 00:24:57 GMT  
+		Size: 26.7 MB (26684508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05731e63f21105725a5c062a725b33a54ad8c697f9c810870c6aa3e3cd9fb6a2`  
-		Last Modified: Wed, 15 May 2019 21:21:36 GMT  
-		Size: 844.0 B  
+	-	`sha256:14ca88e9f6723ce82bc14b241cda8634f6d19677184691d086662641ab96fe68`  
+		Last Modified: Tue, 18 Jun 2019 22:53:58 GMT  
+		Size: 35.4 KB (35352 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0bd67c50d6beeb55108476f72bea3b4b29a9f48832d6e045ec66b7ac4bf712a0`  
-		Last Modified: Wed, 15 May 2019 21:21:35 GMT  
-		Size: 164.0 B  
+	-	`sha256:a31c3b1caad473a474d574283741f880e37c708cc06ee620d3e93fa602125ee0`  
+		Last Modified: Tue, 18 Jun 2019 22:53:57 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:784d9668e32bc802334e478da52db4b5da52e14600f3efb44863e4436da539fc`  
-		Last Modified: Wed, 15 May 2019 22:04:00 GMT  
-		Size: 4.8 MB (4804215 bytes)  
+	-	`sha256:b054a26005b7f3b032577f811421fab5ec3b42ce45a4012dfa00cf6ed6191b0f`  
+		Last Modified: Tue, 18 Jun 2019 22:53:57 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e76dd4344842efec1bae11b946e95df8f897235b6462f377f54859f96d87fdb`  
-		Last Modified: Wed, 15 May 2019 22:04:00 GMT  
-		Size: 3.1 KB (3145 bytes)  
+	-	`sha256:68611a98c342c85439facb508cf1dcaafa1dbc29bcefc765c5303480accec114`  
+		Last Modified: Wed, 19 Jun 2019 02:51:19 GMT  
+		Size: 4.8 MB (4804487 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4201d92efc29ec198928918e7d61634e5bd7c09d05fc14ccf415b07b0363bcf4`  
-		Last Modified: Wed, 15 May 2019 22:04:00 GMT  
-		Size: 244.0 B  
+	-	`sha256:3385330d0647b36ddb65ad4f27b9c60150c0bebd558d8293f04cc6e993488150`  
+		Last Modified: Wed, 19 Jun 2019 02:51:17 GMT  
+		Size: 3.2 KB (3152 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fabeacf2e593d4c1ac03b5e3eecd78f6ba2149c95fbc4adba2be222010966d0f`  
-		Last Modified: Wed, 15 May 2019 22:03:59 GMT  
-		Size: 237.9 KB (237877 bytes)  
+	-	`sha256:084239bb13bbaac581627eb75802a0622c65945bca23e6f9f99ada057c9cbd90`  
+		Last Modified: Wed, 19 Jun 2019 02:51:18 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe4ecb6e95467da7f4a512b89037f01602c6ac39e9b064d7f108a58fbdc76e61`  
-		Last Modified: Wed, 15 May 2019 22:04:04 GMT  
-		Size: 255.0 B  
+	-	`sha256:3fe8b02a0568ce299b80a8c5c044ff577ea39be858418e8a7f79ff50c7a3d472`  
+		Last Modified: Wed, 19 Jun 2019 02:51:18 GMT  
+		Size: 238.2 KB (238169 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:31f3a9ed43954fee33b8c14b64d5fd810de3c5aaeaf8b1f337da2f5b5efc75dc`  
+		Last Modified: Wed, 19 Jun 2019 02:51:23 GMT  
+		Size: 254.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:nd18.10`
 
 ```console
-$ docker pull neurodebian@sha256:a01af15420f24035fe03633c4f93673c9581a996f282a28aba1b50ae52a5c674
+$ docker pull neurodebian@sha256:1837da370f2fecac96313f81dc2880deec75f9e3886c50d122c98374f81d337a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1334,71 +1358,75 @@ $ docker pull neurodebian@sha256:a01af15420f24035fe03633c4f93673c9581a996f282a28
 ### `neurodebian:nd18.10` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:da7926afb564fc836545eb345f896a9731cee4e3c6f417d815148e2b1c2291ca
+$ docker pull neurodebian@sha256:c2514244ae071cb821e855d29a7f6cc62a01d9eb164afc72ed16410bcb5a1613
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **34.3 MB (34318796 bytes)**  
+-	Total Size: **32.2 MB (32186658 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a15c110bbab473ba635f0b3373a7a5befdf19a307b775bd6336288077b87982f`
+-	Image ID: `sha256:6049fbe868f22f7f478b4340fd5b3434ba674fde6647d9f7f19b4b2f07732e77`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 15 May 2019 21:20:35 GMT
-ADD file:648119e1829ef2c84efd62a492630de5a13ddaeb9735f798db942bec0f0e2426 in / 
-# Wed, 15 May 2019 21:20:36 GMT
+# Tue, 18 Jun 2019 22:52:07 GMT
+ADD file:57710235acd445085df388290be388b9b8a2edf8d7ddce2441dee90a64f2e606 in / 
+# Tue, 18 Jun 2019 22:52:08 GMT
+RUN [ -z "$(apt-get indextargets)" ]
+# Tue, 18 Jun 2019 22:52:10 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 15 May 2019 21:20:37 GMT
-RUN rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:20:38 GMT
+# Tue, 18 Jun 2019 22:52:11 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 15 May 2019 21:20:38 GMT
+# Tue, 18 Jun 2019 22:52:11 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2019 22:02:48 GMT
+# Wed, 19 Jun 2019 02:50:17 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 22:02:49 GMT
+# Wed, 19 Jun 2019 02:50:19 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --batch --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Wed, 15 May 2019 22:02:49 GMT
+# Wed, 19 Jun 2019 02:50:20 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian cosmic main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel cosmic main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Wed, 15 May 2019 22:02:55 GMT
+# Wed, 19 Jun 2019 02:50:25 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:89074f19944ee6c68e5da6dea5004e1339e4e8e9c54ea39641ad6e0bc0e4223b`  
-		Last Modified: Wed, 15 May 2019 21:21:54 GMT  
-		Size: 29.2 MB (29244906 bytes)  
+	-	`sha256:7ec6d2912f0a2b3b591d5231ebfa4c5f0729414df42cb550942eea07fee552e6`  
+		Last Modified: Fri, 14 Jun 2019 14:34:29 GMT  
+		Size: 27.1 MB (27078061 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cd3a42e50dfbbe2b8a505f7d3203c07e72aa23ce1bdc94c67221f7e72f9af6c`  
-		Last Modified: Wed, 15 May 2019 21:21:48 GMT  
-		Size: 865.0 B  
+	-	`sha256:85fae9a0cb8ab2b4f17affd557ab971e49b32aeadb040316e7d73b5a92a2785c`  
+		Last Modified: Tue, 18 Jun 2019 22:54:10 GMT  
+		Size: 35.1 KB (35145 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26b902a7bf04aa8d7c02fd742898dab4b6c791b8e363fddc06298191167d5fac`  
-		Last Modified: Wed, 15 May 2019 21:21:49 GMT  
-		Size: 162.0 B  
+	-	`sha256:44c3e823150a973b487c60711aaa4ac2a2b67d4216dc4360a72e7ef88519eddd`  
+		Last Modified: Tue, 18 Jun 2019 22:54:10 GMT  
+		Size: 860.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:948c07dcd585171a2643d304ad3739613f03631f2e2e76e25475ac628631a229`  
-		Last Modified: Wed, 15 May 2019 22:04:09 GMT  
-		Size: 4.8 MB (4832748 bytes)  
+	-	`sha256:54b1b19bb4500839e8d81d4a2a09b3c8eba8d5963218769bf2422cb4adb45ff6`  
+		Last Modified: Tue, 18 Jun 2019 22:54:10 GMT  
+		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35e54633279a39f9dca4e32cc882e383e72b2cfdd63a82e003ac7466f17f253e`  
-		Last Modified: Wed, 15 May 2019 22:04:08 GMT  
-		Size: 3.1 KB (3145 bytes)  
+	-	`sha256:83afd436bb332fb3eee3544a2ee3f348803a8e011095eb9341cef91d3f01f017`  
+		Last Modified: Wed, 19 Jun 2019 02:51:28 GMT  
+		Size: 4.8 MB (4832538 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abd3ae033b864a681d44548469f9a835b3a8c333b6b3f77e6ba8c1f261d6867b`  
-		Last Modified: Wed, 15 May 2019 22:04:07 GMT  
+	-	`sha256:6bfa8584ccc9740583063e632c8ed04891932570e5e0d0f1f7ef8995e3d97368`  
+		Last Modified: Wed, 19 Jun 2019 02:51:27 GMT  
+		Size: 3.1 KB (3148 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1a113223a70e4c15f2142bc25f37133692a85a0e9a9000e5ba7a5d226a66004d`  
+		Last Modified: Wed, 19 Jun 2019 02:51:26 GMT  
 		Size: 244.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80a252739f7907413d9edfe4d91d1142df7b976a0e52c4ae207729ba3b56d32d`  
-		Last Modified: Wed, 15 May 2019 22:04:08 GMT  
-		Size: 236.7 KB (236726 bytes)  
+	-	`sha256:3b46bb3f06da37d7cf9da53d3814bd1578202841df1c4f461ce53c1b1b6ede55`  
+		Last Modified: Wed, 19 Jun 2019 02:51:27 GMT  
+		Size: 236.5 KB (236498 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:nd18.10-non-free`
 
 ```console
-$ docker pull neurodebian@sha256:3323dc1a3fa3140382982d20d5896d34bd40acd18be205691a939e415e8b4e37
+$ docker pull neurodebian@sha256:9ae53591a5be29fde29d7a778796078a07bdf908166d2c8406a0f11b0e5c0d5c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1408,71 +1436,75 @@ $ docker pull neurodebian@sha256:3323dc1a3fa3140382982d20d5896d34bd40acd18be2056
 ### `neurodebian:nd18.10-non-free` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:eca55899b64fcf2909742f1411f957f48a1ee78081066b249dc325a5adfd0292
+$ docker pull neurodebian@sha256:b96aaf545027c187ecef67071870ede95b8f30f1e0b071872955388ece190dbe
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **34.3 MB (34319048 bytes)**  
+-	Total Size: **32.2 MB (32186914 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c40d5a58a7ccc53a14a75f62d274474f539ce235bd9e2e279539dd1f9da71ce0`
+-	Image ID: `sha256:5d8338bbeeb702d07e4c8e2bee0c92addf80be5ebbe77424ee89dcdc34d964f9`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 15 May 2019 21:20:35 GMT
-ADD file:648119e1829ef2c84efd62a492630de5a13ddaeb9735f798db942bec0f0e2426 in / 
-# Wed, 15 May 2019 21:20:36 GMT
+# Tue, 18 Jun 2019 22:52:07 GMT
+ADD file:57710235acd445085df388290be388b9b8a2edf8d7ddce2441dee90a64f2e606 in / 
+# Tue, 18 Jun 2019 22:52:08 GMT
+RUN [ -z "$(apt-get indextargets)" ]
+# Tue, 18 Jun 2019 22:52:10 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 15 May 2019 21:20:37 GMT
-RUN rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:20:38 GMT
+# Tue, 18 Jun 2019 22:52:11 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 15 May 2019 21:20:38 GMT
+# Tue, 18 Jun 2019 22:52:11 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2019 22:02:48 GMT
+# Wed, 19 Jun 2019 02:50:17 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 22:02:49 GMT
+# Wed, 19 Jun 2019 02:50:19 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --batch --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Wed, 15 May 2019 22:02:49 GMT
+# Wed, 19 Jun 2019 02:50:20 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian cosmic main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel cosmic main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Wed, 15 May 2019 22:02:55 GMT
+# Wed, 19 Jun 2019 02:50:25 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 22:02:59 GMT
+# Wed, 19 Jun 2019 02:50:31 GMT
 RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list; grep -q 'deb .* multiverse$' /etc/apt/sources.list || sed -i -e 's,universe *$,universe multiverse,g' /etc/apt/sources.list
 ```
 
 -	Layers:
-	-	`sha256:89074f19944ee6c68e5da6dea5004e1339e4e8e9c54ea39641ad6e0bc0e4223b`  
-		Last Modified: Wed, 15 May 2019 21:21:54 GMT  
-		Size: 29.2 MB (29244906 bytes)  
+	-	`sha256:7ec6d2912f0a2b3b591d5231ebfa4c5f0729414df42cb550942eea07fee552e6`  
+		Last Modified: Fri, 14 Jun 2019 14:34:29 GMT  
+		Size: 27.1 MB (27078061 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cd3a42e50dfbbe2b8a505f7d3203c07e72aa23ce1bdc94c67221f7e72f9af6c`  
-		Last Modified: Wed, 15 May 2019 21:21:48 GMT  
-		Size: 865.0 B  
+	-	`sha256:85fae9a0cb8ab2b4f17affd557ab971e49b32aeadb040316e7d73b5a92a2785c`  
+		Last Modified: Tue, 18 Jun 2019 22:54:10 GMT  
+		Size: 35.1 KB (35145 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26b902a7bf04aa8d7c02fd742898dab4b6c791b8e363fddc06298191167d5fac`  
-		Last Modified: Wed, 15 May 2019 21:21:49 GMT  
-		Size: 162.0 B  
+	-	`sha256:44c3e823150a973b487c60711aaa4ac2a2b67d4216dc4360a72e7ef88519eddd`  
+		Last Modified: Tue, 18 Jun 2019 22:54:10 GMT  
+		Size: 860.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:948c07dcd585171a2643d304ad3739613f03631f2e2e76e25475ac628631a229`  
-		Last Modified: Wed, 15 May 2019 22:04:09 GMT  
-		Size: 4.8 MB (4832748 bytes)  
+	-	`sha256:54b1b19bb4500839e8d81d4a2a09b3c8eba8d5963218769bf2422cb4adb45ff6`  
+		Last Modified: Tue, 18 Jun 2019 22:54:10 GMT  
+		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35e54633279a39f9dca4e32cc882e383e72b2cfdd63a82e003ac7466f17f253e`  
-		Last Modified: Wed, 15 May 2019 22:04:08 GMT  
-		Size: 3.1 KB (3145 bytes)  
+	-	`sha256:83afd436bb332fb3eee3544a2ee3f348803a8e011095eb9341cef91d3f01f017`  
+		Last Modified: Wed, 19 Jun 2019 02:51:28 GMT  
+		Size: 4.8 MB (4832538 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abd3ae033b864a681d44548469f9a835b3a8c333b6b3f77e6ba8c1f261d6867b`  
-		Last Modified: Wed, 15 May 2019 22:04:07 GMT  
+	-	`sha256:6bfa8584ccc9740583063e632c8ed04891932570e5e0d0f1f7ef8995e3d97368`  
+		Last Modified: Wed, 19 Jun 2019 02:51:27 GMT  
+		Size: 3.1 KB (3148 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1a113223a70e4c15f2142bc25f37133692a85a0e9a9000e5ba7a5d226a66004d`  
+		Last Modified: Wed, 19 Jun 2019 02:51:26 GMT  
 		Size: 244.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80a252739f7907413d9edfe4d91d1142df7b976a0e52c4ae207729ba3b56d32d`  
-		Last Modified: Wed, 15 May 2019 22:04:08 GMT  
-		Size: 236.7 KB (236726 bytes)  
+	-	`sha256:3b46bb3f06da37d7cf9da53d3814bd1578202841df1c4f461ce53c1b1b6ede55`  
+		Last Modified: Wed, 19 Jun 2019 02:51:27 GMT  
+		Size: 236.5 KB (236498 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3edf0119f5d161f9b0e32e99f8961a247d70d3b0ba8f5f98d7ea7a827762ca06`  
-		Last Modified: Wed, 15 May 2019 22:04:13 GMT  
-		Size: 252.0 B  
+	-	`sha256:8c54eab68f589c71529d08df00a262823b62694bf9d3183864fda1164555a43c`  
+		Last Modified: Wed, 19 Jun 2019 02:51:32 GMT  
+		Size: 256.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:nd80`
@@ -2276,7 +2308,7 @@ RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurod
 ## `neurodebian:xenial`
 
 ```console
-$ docker pull neurodebian@sha256:ef01f8d2949ee636cb4f960c22407b64447d18382d59c1c8b550dc2fd83ab9f5
+$ docker pull neurodebian@sha256:4964210526741e404778f0470aedcfff2b8a0adef9917691e20f42354dc23e5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2286,75 +2318,75 @@ $ docker pull neurodebian@sha256:ef01f8d2949ee636cb4f960c22407b64447d18382d59c1c
 ### `neurodebian:xenial` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:7457ae031ed655c3d64e7279ffac801811476b62dd3aadc3fbc3217bf722c957
+$ docker pull neurodebian@sha256:1abe2dd36718a0cf903c331f2efcc351b3e42e535e29991114baa2663f5d9ea1
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.0 MB (43998123 bytes)**  
+-	Total Size: **44.1 MB (44067921 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:137dc10e1c76bd0dbb1519f460336fb8017336a10af6d690b08d5c7f8be4bd2a`
+-	Image ID: `sha256:46bcdb80225ee0f98a667b0bf9eb6ef8d9a0034c09aa2cdeee829f8f97b0560f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 15 May 2019 21:21:22 GMT
-ADD file:a65e0467dbedc0992151651c136374c16f65d9905eac9d04d0925039ada64e4c in / 
-# Wed, 15 May 2019 21:21:23 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:31 GMT
+ADD file:24352f4a071cb97b3f111253f3db695ba473c5e7985544889af3e34408ce32ff in / 
+# Tue, 18 Jun 2019 22:53:33 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:35 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Tue, 18 Jun 2019 22:53:37 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:37 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2019 22:01:45 GMT
+# Wed, 19 Jun 2019 02:49:27 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 22:01:46 GMT
+# Wed, 19 Jun 2019 02:49:28 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --batch --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Wed, 15 May 2019 22:01:47 GMT
+# Wed, 19 Jun 2019 02:49:29 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian xenial main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel xenial main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Wed, 15 May 2019 22:01:52 GMT
+# Wed, 19 Jun 2019 02:49:34 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:9ff7e2e5f967fb9c4e8099e63508ab0dddebe3f820d08ca7fd568431b0d10c0e`  
-		Last Modified: Wed, 15 May 2019 21:22:41 GMT  
-		Size: 43.8 MB (43767987 bytes)  
+	-	`sha256:35b42117c431dd1e13679a09c3c68bb983578a1cbe0a8d8980f507567ebce76c`  
+		Last Modified: Tue, 11 Jun 2019 13:20:32 GMT  
+		Size: 43.8 MB (43837758 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59856638ac9f32d4caa0f5761b2597fe251642786fdfe1b917ddbb074b890c29`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 848.0 B  
+	-	`sha256:ad9c569a8d989555892683a932df468cfe294859186790d3f2fb704c3a022e96`  
+		Last Modified: Tue, 18 Jun 2019 22:54:47 GMT  
+		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f317d6d954b9a59c54b2cb09e1f30cd3e872796e431cd2ceac5ed570beb2939`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 526.0 B  
+	-	`sha256:293b44f451623251bf75ce5a72d3cee63706972c88980232217a81026987f63e`  
+		Last Modified: Tue, 18 Jun 2019 22:54:47 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9dde5e2a643eca8fde0eed52f4aed31f3ecd9c1b2f24d5e3729cd8d2ae68177`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 168.0 B  
+	-	`sha256:0c175077525d1ddec01cb7cf003c2d8b4b6650ae15b504a64914f5eed8d28e50`  
+		Last Modified: Tue, 18 Jun 2019 22:54:46 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcceda028d95c3c882eeb142bffa8c89d0583baf0b155048f5f222b837252a4c`  
-		Last Modified: Wed, 15 May 2019 22:03:53 GMT  
-		Size: 174.0 B  
+	-	`sha256:9c4df95a37f501a71c18bd72c7b00ae9f343d829d1cb499bb2b663b3357d4a5a`  
+		Last Modified: Wed, 19 Jun 2019 02:51:09 GMT  
+		Size: 180.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:677f1de1da1757df4790b3dd7ab9ed52d7ba63762665130f0d8c0b765d32b40f`  
-		Last Modified: Wed, 15 May 2019 22:03:53 GMT  
-		Size: 3.1 KB (3144 bytes)  
+	-	`sha256:60f9d29370f32c2db88dad7289ae9496cff94b59de57c902e6085e60f204315d`  
+		Last Modified: Wed, 19 Jun 2019 02:51:09 GMT  
+		Size: 3.2 KB (3151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b440f23027ff537599d615c2ac5c91bbe23edf66d3295e1e85b2bd3823f528f`  
-		Last Modified: Wed, 15 May 2019 22:03:53 GMT  
-		Size: 244.0 B  
+	-	`sha256:a1ada151fb0b495c943e61ca5f4665405fbf096f3ad997d4a27b0712e2a751e6`  
+		Last Modified: Wed, 19 Jun 2019 02:51:09 GMT  
+		Size: 245.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46417350fc3e112e41541227692e61e64d9151b8f4f320aa3fcb45d12fc36765`  
-		Last Modified: Wed, 15 May 2019 22:03:53 GMT  
-		Size: 225.0 KB (225032 bytes)  
+	-	`sha256:b9a9d06c87343c6840ecf8fa4bb69e60d262418f6f9323c31e59d1522586bbdb`  
+		Last Modified: Wed, 19 Jun 2019 02:51:09 GMT  
+		Size: 225.0 KB (225039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:xenial-non-free`
 
 ```console
-$ docker pull neurodebian@sha256:d9c5b2aa252935eb7d8e0df3b472339f11710740227e5fd32807eba63360fdb6
+$ docker pull neurodebian@sha256:c2c182710573410d1f10cade573988683caf5218811676c0c93e895852e34702
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2364,73 +2396,73 @@ $ docker pull neurodebian@sha256:d9c5b2aa252935eb7d8e0df3b472339f11710740227e5fd
 ### `neurodebian:xenial-non-free` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:00abd4ffeae178d3be72142847e0b28f688514f5155543d80e4af88ef74767b0
+$ docker pull neurodebian@sha256:fa4060ab02ae0ac6b1efc1b097313d29d53df866b1883e71e241a47625f0e60c
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.0 MB (43998379 bytes)**  
+-	Total Size: **44.1 MB (44068179 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ce54d1109a30577568e4989e6c66aed7bdeb8e353a707a732ece192397c51182`
+-	Image ID: `sha256:f4bf4e59d318ffa1e95b617686e1c093d843216caed09273581da2c192a8c19e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 15 May 2019 21:21:22 GMT
-ADD file:a65e0467dbedc0992151651c136374c16f65d9905eac9d04d0925039ada64e4c in / 
-# Wed, 15 May 2019 21:21:23 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:31 GMT
+ADD file:24352f4a071cb97b3f111253f3db695ba473c5e7985544889af3e34408ce32ff in / 
+# Tue, 18 Jun 2019 22:53:33 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:35 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Tue, 18 Jun 2019 22:53:37 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 15 May 2019 21:21:24 GMT
+# Tue, 18 Jun 2019 22:53:37 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2019 22:01:45 GMT
+# Wed, 19 Jun 2019 02:49:27 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 22:01:46 GMT
+# Wed, 19 Jun 2019 02:49:28 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --batch --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Wed, 15 May 2019 22:01:47 GMT
+# Wed, 19 Jun 2019 02:49:29 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian xenial main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel xenial main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Wed, 15 May 2019 22:01:52 GMT
+# Wed, 19 Jun 2019 02:49:34 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 15 May 2019 22:01:58 GMT
+# Wed, 19 Jun 2019 02:49:38 GMT
 RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list; grep -q 'deb .* multiverse$' /etc/apt/sources.list || sed -i -e 's,universe *$,universe multiverse,g' /etc/apt/sources.list
 ```
 
 -	Layers:
-	-	`sha256:9ff7e2e5f967fb9c4e8099e63508ab0dddebe3f820d08ca7fd568431b0d10c0e`  
-		Last Modified: Wed, 15 May 2019 21:22:41 GMT  
-		Size: 43.8 MB (43767987 bytes)  
+	-	`sha256:35b42117c431dd1e13679a09c3c68bb983578a1cbe0a8d8980f507567ebce76c`  
+		Last Modified: Tue, 11 Jun 2019 13:20:32 GMT  
+		Size: 43.8 MB (43837758 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59856638ac9f32d4caa0f5761b2597fe251642786fdfe1b917ddbb074b890c29`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 848.0 B  
+	-	`sha256:ad9c569a8d989555892683a932df468cfe294859186790d3f2fb704c3a022e96`  
+		Last Modified: Tue, 18 Jun 2019 22:54:47 GMT  
+		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f317d6d954b9a59c54b2cb09e1f30cd3e872796e431cd2ceac5ed570beb2939`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 526.0 B  
+	-	`sha256:293b44f451623251bf75ce5a72d3cee63706972c88980232217a81026987f63e`  
+		Last Modified: Tue, 18 Jun 2019 22:54:47 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9dde5e2a643eca8fde0eed52f4aed31f3ecd9c1b2f24d5e3729cd8d2ae68177`  
-		Last Modified: Wed, 15 May 2019 21:22:34 GMT  
-		Size: 168.0 B  
+	-	`sha256:0c175077525d1ddec01cb7cf003c2d8b4b6650ae15b504a64914f5eed8d28e50`  
+		Last Modified: Tue, 18 Jun 2019 22:54:46 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcceda028d95c3c882eeb142bffa8c89d0583baf0b155048f5f222b837252a4c`  
-		Last Modified: Wed, 15 May 2019 22:03:53 GMT  
-		Size: 174.0 B  
+	-	`sha256:9c4df95a37f501a71c18bd72c7b00ae9f343d829d1cb499bb2b663b3357d4a5a`  
+		Last Modified: Wed, 19 Jun 2019 02:51:09 GMT  
+		Size: 180.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:677f1de1da1757df4790b3dd7ab9ed52d7ba63762665130f0d8c0b765d32b40f`  
-		Last Modified: Wed, 15 May 2019 22:03:53 GMT  
-		Size: 3.1 KB (3144 bytes)  
+	-	`sha256:60f9d29370f32c2db88dad7289ae9496cff94b59de57c902e6085e60f204315d`  
+		Last Modified: Wed, 19 Jun 2019 02:51:09 GMT  
+		Size: 3.2 KB (3151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b440f23027ff537599d615c2ac5c91bbe23edf66d3295e1e85b2bd3823f528f`  
-		Last Modified: Wed, 15 May 2019 22:03:53 GMT  
-		Size: 244.0 B  
+	-	`sha256:a1ada151fb0b495c943e61ca5f4665405fbf096f3ad997d4a27b0712e2a751e6`  
+		Last Modified: Wed, 19 Jun 2019 02:51:09 GMT  
+		Size: 245.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46417350fc3e112e41541227692e61e64d9151b8f4f320aa3fcb45d12fc36765`  
-		Last Modified: Wed, 15 May 2019 22:03:53 GMT  
-		Size: 225.0 KB (225032 bytes)  
+	-	`sha256:b9a9d06c87343c6840ecf8fa4bb69e60d262418f6f9323c31e59d1522586bbdb`  
+		Last Modified: Wed, 19 Jun 2019 02:51:09 GMT  
+		Size: 225.0 KB (225039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c3c6b7f77e8bcbcbb51d28a93e808ccb8e1807d1dd27804470e393d2878b360`  
-		Last Modified: Wed, 15 May 2019 22:03:56 GMT  
-		Size: 256.0 B  
+	-	`sha256:dc9f938df82153838b50898ad55be7d71fc792e4920588cffa3d9d90270e90ed`  
+		Last Modified: Wed, 19 Jun 2019 02:51:13 GMT  
+		Size: 258.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
