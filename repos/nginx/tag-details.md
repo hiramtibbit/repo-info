@@ -1019,7 +1019,7 @@ CMD ["nginx" "-g" "daemon off;"]
 ## `nginx:1.16.0-alpine`
 
 ```console
-$ docker pull nginx@sha256:04f8a19fce675089ee30c3058868e33a5ea113a011835b667062048a6e7109e0
+$ docker pull nginx@sha256:c0cf1ca85346cd6a802380938b6395a4b19b9ca1ad5950fe99760190b9d4eee8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1126,36 +1126,36 @@ CMD ["nginx" "-g" "daemon off;"]
 ### `nginx:1.16.0-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull nginx@sha256:dd16d33f22c20877b404e51b32041f2f6472fc98244ea7b9d12c7cfa6a806d0a
+$ docker pull nginx@sha256:758712cd6f0abe2b5f559a3a3d0ff88b09da69ecf846e6d5b0a3aa88c2fba3a5
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.4 MB (8431667 bytes)**  
+-	Total Size: **8.4 MB (8431752 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d754f2382896d61c1de468f795c7d97e65a24fbb961ae1050405c98dc85e3bcb`
+-	Image ID: `sha256:36b4d2fa2d8beb0edca2efde9fbf7e1de90eff77bae3a4ef78961b84bb51a081`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Sat, 11 May 2019 08:43:24 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 ADD file:66f49017dd7ba295602526dbf210046e47fd097298c17a3f268a47487b5b6379 in / 
-# Sat, 11 May 2019 08:43:25 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 CMD ["/bin/sh"]
-# Tue, 04 Jun 2019 22:33:35 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 04 Jun 2019 22:50:43 GMT
+# Wed, 19 Jun 2019 22:38:30 GMT
 ENV NGINX_VERSION=1.16.0
-# Tue, 04 Jun 2019 22:50:43 GMT
+# Wed, 19 Jun 2019 22:38:30 GMT
 ENV NJS_VERSION=0.3.1
-# Tue, 04 Jun 2019 22:50:44 GMT
+# Wed, 19 Jun 2019 22:38:30 GMT
 ENV PKG_RELEASE=1
-# Tue, 04 Jun 2019 22:53:57 GMT
+# Wed, 19 Jun 2019 22:41:40 GMT
 RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${PKG_RELEASE}     "     && case "$apkArch" in         x86_64)             set -x             && KEY_SHA512="e7fa8303923d9b95db37a77ad46c68fd4755ff935d0a534d26eba83de193c76166c68bfe7f65471bf8881004ef4aa6df3e34689c305662750c0172fca5d8552a *stdin"             && apk add --no-cache --virtual .cert-deps                 openssl curl ca-certificates             && curl -o /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if [ "$(openssl rsa -pubin -in /tmp/nginx_signing.rsa.pub -text -noout | openssl sha512 -r)" = "$KEY_SHA512" ]; then                  echo "key verification succeeded!";                  mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;                else                  echo "key verification failed!";                  exit 1;                fi             && printf "%s%s%s\n"                 "http://nginx.org/packages/alpine/v"                 `egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release`                 "/main"             | tee -a /etc/apk/repositories             && apk del .cert-deps             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 perl-dev                 libedit-dev                 mercurial                 bash                 alpine-sdk                 findutils             && su - nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && hg clone https://hg.nginx.org/pkg-oss                 && cd pkg-oss                 && hg up ${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make all                 && apk index -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && echo "${tempDir}/packages/alpine/" >> /etc/apk/repositories             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del .build-deps             ;;     esac     && apk add --no-cache $nginxPackages     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -n "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && if [ -n "/etc/apk/keys/nginx_signing.rsa.pub" ]; then rm -f /etc/apk/keys/nginx_signing.rsa.pub; fi     && sed -i '$ d' /etc/apk/repositories     && apk add --no-cache --virtual .gettext gettext     && mv /usr/bin/envsubst /tmp/         && runDeps="$(         scanelf --needed --nobanner /tmp/envsubst             | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )"     && apk add --no-cache $runDeps     && apk del .gettext     && mv /tmp/envsubst /usr/local/bin/     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log
-# Tue, 04 Jun 2019 22:53:58 GMT
+# Wed, 19 Jun 2019 22:41:41 GMT
 EXPOSE 80
-# Tue, 04 Jun 2019 22:53:58 GMT
+# Wed, 19 Jun 2019 22:41:41 GMT
 STOPSIGNAL SIGTERM
-# Tue, 04 Jun 2019 22:53:58 GMT
+# Wed, 19 Jun 2019 22:41:42 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
@@ -1164,9 +1164,9 @@ CMD ["nginx" "-g" "daemon off;"]
 		Last Modified: Sat, 11 May 2019 08:44:25 GMT  
 		Size: 2.7 MB (2688779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0b4e09c15f1135cde1a6aa6400fcce23fff449afb9c5bcee0ac58e0325a8790`  
-		Last Modified: Tue, 04 Jun 2019 22:59:31 GMT  
-		Size: 5.7 MB (5742888 bytes)  
+	-	`sha256:9af333ee6136727de78e785c6d6d6aba9ae74a102edb8a343ddb8d635a5755d6`  
+		Last Modified: Wed, 19 Jun 2019 22:45:53 GMT  
+		Size: 5.7 MB (5742973 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nginx:1.16.0-alpine` - linux; 386
@@ -1310,7 +1310,7 @@ CMD ["nginx" "-g" "daemon off;"]
 ## `nginx:1.16.0-alpine-perl`
 
 ```console
-$ docker pull nginx@sha256:f6c28bbd16c489f40875c6448a0ce4265ea445ad4acb69a0a44fc80b0e4ea33e
+$ docker pull nginx@sha256:cfc19cdbb39fd3c3c41cf847929ccaedafe1bb97b3a80ac719e122a63303e6ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1417,36 +1417,36 @@ CMD ["nginx" "-g" "daemon off;"]
 ### `nginx:1.16.0-alpine-perl` - linux; arm64 variant v8
 
 ```console
-$ docker pull nginx@sha256:acc61f1bfd134f3b542b1dfe6e53ba71308d1a8066124c6bacdf55040b1444b2
+$ docker pull nginx@sha256:5ca1533afa6776420c3d2f6d286ba17636e639acc1206bc8b410533d71c08d6f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.1 MB (17121008 bytes)**  
+-	Total Size: **17.1 MB (17121242 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e73f0e1487ff6c27189677d1e51f044618018f5ee99a03ed6f7236c052f2171`
+-	Image ID: `sha256:9f8be87cbb0349ed5b70d7fe23c995bc99f68f7d8c64e1cddce234f3ab83a7c6`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Sat, 11 May 2019 08:43:24 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 ADD file:66f49017dd7ba295602526dbf210046e47fd097298c17a3f268a47487b5b6379 in / 
-# Sat, 11 May 2019 08:43:25 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 CMD ["/bin/sh"]
-# Tue, 04 Jun 2019 22:33:35 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 04 Jun 2019 22:50:43 GMT
+# Wed, 19 Jun 2019 22:38:30 GMT
 ENV NGINX_VERSION=1.16.0
-# Tue, 04 Jun 2019 22:50:43 GMT
+# Wed, 19 Jun 2019 22:38:30 GMT
 ENV NJS_VERSION=0.3.1
-# Tue, 04 Jun 2019 22:50:44 GMT
+# Wed, 19 Jun 2019 22:38:30 GMT
 ENV PKG_RELEASE=1
-# Tue, 04 Jun 2019 22:57:23 GMT
+# Wed, 19 Jun 2019 22:44:43 GMT
 RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-perl=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${PKG_RELEASE}     "     && case "$apkArch" in         x86_64)             set -x             && KEY_SHA512="e7fa8303923d9b95db37a77ad46c68fd4755ff935d0a534d26eba83de193c76166c68bfe7f65471bf8881004ef4aa6df3e34689c305662750c0172fca5d8552a *stdin"             && apk add --no-cache --virtual .cert-deps                 openssl curl ca-certificates             && curl -o /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if [ "$(openssl rsa -pubin -in /tmp/nginx_signing.rsa.pub -text -noout | openssl sha512 -r)" = "$KEY_SHA512" ]; then                  echo "key verification succeeded!";                  mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;                else                  echo "key verification failed!";                  exit 1;                fi             && printf "%s%s%s\n"                 "http://nginx.org/packages/alpine/v"                 `egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release`                 "/main"             | tee -a /etc/apk/repositories             && apk del .cert-deps             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 perl-dev                 libedit-dev                 mercurial                 bash                 alpine-sdk                 findutils             && su - nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && hg clone https://hg.nginx.org/pkg-oss                 && cd pkg-oss                 && hg up ${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make all                 && apk index -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && echo "${tempDir}/packages/alpine/" >> /etc/apk/repositories             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del .build-deps             ;;     esac     && apk add --no-cache $nginxPackages     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -n "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && if [ -n "/etc/apk/keys/nginx_signing.rsa.pub" ]; then rm -f /etc/apk/keys/nginx_signing.rsa.pub; fi     && sed -i '$ d' /etc/apk/repositories     && apk add --no-cache --virtual .gettext gettext     && mv /usr/bin/envsubst /tmp/         && runDeps="$(         scanelf --needed --nobanner /tmp/envsubst             | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )"     && apk add --no-cache $runDeps     && apk del .gettext     && mv /tmp/envsubst /usr/local/bin/     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log
-# Tue, 04 Jun 2019 22:57:24 GMT
+# Wed, 19 Jun 2019 22:44:44 GMT
 EXPOSE 80
-# Tue, 04 Jun 2019 22:57:24 GMT
+# Wed, 19 Jun 2019 22:44:45 GMT
 STOPSIGNAL SIGTERM
-# Tue, 04 Jun 2019 22:57:25 GMT
+# Wed, 19 Jun 2019 22:44:45 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
@@ -1455,9 +1455,9 @@ CMD ["nginx" "-g" "daemon off;"]
 		Last Modified: Sat, 11 May 2019 08:44:25 GMT  
 		Size: 2.7 MB (2688779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0794e252500c4fe51e7b416deb1667e47aa4e0cf3dc9c9ef910ebafa428483e2`  
-		Last Modified: Tue, 04 Jun 2019 22:59:44 GMT  
-		Size: 14.4 MB (14432229 bytes)  
+	-	`sha256:f2ba613583e0994a200a6c33c711cb00b95a65b9ab6d2794edc5ee08931b66e8`  
+		Last Modified: Wed, 19 Jun 2019 22:46:08 GMT  
+		Size: 14.4 MB (14432463 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nginx:1.16.0-alpine-perl` - linux; 386
@@ -1928,7 +1928,7 @@ CMD ["nginx" "-g" "daemon off;"]
 ## `nginx:1.16-alpine`
 
 ```console
-$ docker pull nginx@sha256:04f8a19fce675089ee30c3058868e33a5ea113a011835b667062048a6e7109e0
+$ docker pull nginx@sha256:c0cf1ca85346cd6a802380938b6395a4b19b9ca1ad5950fe99760190b9d4eee8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2035,36 +2035,36 @@ CMD ["nginx" "-g" "daemon off;"]
 ### `nginx:1.16-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull nginx@sha256:dd16d33f22c20877b404e51b32041f2f6472fc98244ea7b9d12c7cfa6a806d0a
+$ docker pull nginx@sha256:758712cd6f0abe2b5f559a3a3d0ff88b09da69ecf846e6d5b0a3aa88c2fba3a5
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.4 MB (8431667 bytes)**  
+-	Total Size: **8.4 MB (8431752 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d754f2382896d61c1de468f795c7d97e65a24fbb961ae1050405c98dc85e3bcb`
+-	Image ID: `sha256:36b4d2fa2d8beb0edca2efde9fbf7e1de90eff77bae3a4ef78961b84bb51a081`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Sat, 11 May 2019 08:43:24 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 ADD file:66f49017dd7ba295602526dbf210046e47fd097298c17a3f268a47487b5b6379 in / 
-# Sat, 11 May 2019 08:43:25 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 CMD ["/bin/sh"]
-# Tue, 04 Jun 2019 22:33:35 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 04 Jun 2019 22:50:43 GMT
+# Wed, 19 Jun 2019 22:38:30 GMT
 ENV NGINX_VERSION=1.16.0
-# Tue, 04 Jun 2019 22:50:43 GMT
+# Wed, 19 Jun 2019 22:38:30 GMT
 ENV NJS_VERSION=0.3.1
-# Tue, 04 Jun 2019 22:50:44 GMT
+# Wed, 19 Jun 2019 22:38:30 GMT
 ENV PKG_RELEASE=1
-# Tue, 04 Jun 2019 22:53:57 GMT
+# Wed, 19 Jun 2019 22:41:40 GMT
 RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${PKG_RELEASE}     "     && case "$apkArch" in         x86_64)             set -x             && KEY_SHA512="e7fa8303923d9b95db37a77ad46c68fd4755ff935d0a534d26eba83de193c76166c68bfe7f65471bf8881004ef4aa6df3e34689c305662750c0172fca5d8552a *stdin"             && apk add --no-cache --virtual .cert-deps                 openssl curl ca-certificates             && curl -o /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if [ "$(openssl rsa -pubin -in /tmp/nginx_signing.rsa.pub -text -noout | openssl sha512 -r)" = "$KEY_SHA512" ]; then                  echo "key verification succeeded!";                  mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;                else                  echo "key verification failed!";                  exit 1;                fi             && printf "%s%s%s\n"                 "http://nginx.org/packages/alpine/v"                 `egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release`                 "/main"             | tee -a /etc/apk/repositories             && apk del .cert-deps             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 perl-dev                 libedit-dev                 mercurial                 bash                 alpine-sdk                 findutils             && su - nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && hg clone https://hg.nginx.org/pkg-oss                 && cd pkg-oss                 && hg up ${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make all                 && apk index -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && echo "${tempDir}/packages/alpine/" >> /etc/apk/repositories             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del .build-deps             ;;     esac     && apk add --no-cache $nginxPackages     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -n "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && if [ -n "/etc/apk/keys/nginx_signing.rsa.pub" ]; then rm -f /etc/apk/keys/nginx_signing.rsa.pub; fi     && sed -i '$ d' /etc/apk/repositories     && apk add --no-cache --virtual .gettext gettext     && mv /usr/bin/envsubst /tmp/         && runDeps="$(         scanelf --needed --nobanner /tmp/envsubst             | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )"     && apk add --no-cache $runDeps     && apk del .gettext     && mv /tmp/envsubst /usr/local/bin/     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log
-# Tue, 04 Jun 2019 22:53:58 GMT
+# Wed, 19 Jun 2019 22:41:41 GMT
 EXPOSE 80
-# Tue, 04 Jun 2019 22:53:58 GMT
+# Wed, 19 Jun 2019 22:41:41 GMT
 STOPSIGNAL SIGTERM
-# Tue, 04 Jun 2019 22:53:58 GMT
+# Wed, 19 Jun 2019 22:41:42 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
@@ -2073,9 +2073,9 @@ CMD ["nginx" "-g" "daemon off;"]
 		Last Modified: Sat, 11 May 2019 08:44:25 GMT  
 		Size: 2.7 MB (2688779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0b4e09c15f1135cde1a6aa6400fcce23fff449afb9c5bcee0ac58e0325a8790`  
-		Last Modified: Tue, 04 Jun 2019 22:59:31 GMT  
-		Size: 5.7 MB (5742888 bytes)  
+	-	`sha256:9af333ee6136727de78e785c6d6d6aba9ae74a102edb8a343ddb8d635a5755d6`  
+		Last Modified: Wed, 19 Jun 2019 22:45:53 GMT  
+		Size: 5.7 MB (5742973 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nginx:1.16-alpine` - linux; 386
@@ -2219,7 +2219,7 @@ CMD ["nginx" "-g" "daemon off;"]
 ## `nginx:1.16-alpine-perl`
 
 ```console
-$ docker pull nginx@sha256:f6c28bbd16c489f40875c6448a0ce4265ea445ad4acb69a0a44fc80b0e4ea33e
+$ docker pull nginx@sha256:cfc19cdbb39fd3c3c41cf847929ccaedafe1bb97b3a80ac719e122a63303e6ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2326,36 +2326,36 @@ CMD ["nginx" "-g" "daemon off;"]
 ### `nginx:1.16-alpine-perl` - linux; arm64 variant v8
 
 ```console
-$ docker pull nginx@sha256:acc61f1bfd134f3b542b1dfe6e53ba71308d1a8066124c6bacdf55040b1444b2
+$ docker pull nginx@sha256:5ca1533afa6776420c3d2f6d286ba17636e639acc1206bc8b410533d71c08d6f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.1 MB (17121008 bytes)**  
+-	Total Size: **17.1 MB (17121242 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e73f0e1487ff6c27189677d1e51f044618018f5ee99a03ed6f7236c052f2171`
+-	Image ID: `sha256:9f8be87cbb0349ed5b70d7fe23c995bc99f68f7d8c64e1cddce234f3ab83a7c6`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Sat, 11 May 2019 08:43:24 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 ADD file:66f49017dd7ba295602526dbf210046e47fd097298c17a3f268a47487b5b6379 in / 
-# Sat, 11 May 2019 08:43:25 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 CMD ["/bin/sh"]
-# Tue, 04 Jun 2019 22:33:35 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 04 Jun 2019 22:50:43 GMT
+# Wed, 19 Jun 2019 22:38:30 GMT
 ENV NGINX_VERSION=1.16.0
-# Tue, 04 Jun 2019 22:50:43 GMT
+# Wed, 19 Jun 2019 22:38:30 GMT
 ENV NJS_VERSION=0.3.1
-# Tue, 04 Jun 2019 22:50:44 GMT
+# Wed, 19 Jun 2019 22:38:30 GMT
 ENV PKG_RELEASE=1
-# Tue, 04 Jun 2019 22:57:23 GMT
+# Wed, 19 Jun 2019 22:44:43 GMT
 RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-perl=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${PKG_RELEASE}     "     && case "$apkArch" in         x86_64)             set -x             && KEY_SHA512="e7fa8303923d9b95db37a77ad46c68fd4755ff935d0a534d26eba83de193c76166c68bfe7f65471bf8881004ef4aa6df3e34689c305662750c0172fca5d8552a *stdin"             && apk add --no-cache --virtual .cert-deps                 openssl curl ca-certificates             && curl -o /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if [ "$(openssl rsa -pubin -in /tmp/nginx_signing.rsa.pub -text -noout | openssl sha512 -r)" = "$KEY_SHA512" ]; then                  echo "key verification succeeded!";                  mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;                else                  echo "key verification failed!";                  exit 1;                fi             && printf "%s%s%s\n"                 "http://nginx.org/packages/alpine/v"                 `egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release`                 "/main"             | tee -a /etc/apk/repositories             && apk del .cert-deps             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 perl-dev                 libedit-dev                 mercurial                 bash                 alpine-sdk                 findutils             && su - nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && hg clone https://hg.nginx.org/pkg-oss                 && cd pkg-oss                 && hg up ${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make all                 && apk index -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && echo "${tempDir}/packages/alpine/" >> /etc/apk/repositories             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del .build-deps             ;;     esac     && apk add --no-cache $nginxPackages     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -n "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && if [ -n "/etc/apk/keys/nginx_signing.rsa.pub" ]; then rm -f /etc/apk/keys/nginx_signing.rsa.pub; fi     && sed -i '$ d' /etc/apk/repositories     && apk add --no-cache --virtual .gettext gettext     && mv /usr/bin/envsubst /tmp/         && runDeps="$(         scanelf --needed --nobanner /tmp/envsubst             | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )"     && apk add --no-cache $runDeps     && apk del .gettext     && mv /tmp/envsubst /usr/local/bin/     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log
-# Tue, 04 Jun 2019 22:57:24 GMT
+# Wed, 19 Jun 2019 22:44:44 GMT
 EXPOSE 80
-# Tue, 04 Jun 2019 22:57:24 GMT
+# Wed, 19 Jun 2019 22:44:45 GMT
 STOPSIGNAL SIGTERM
-# Tue, 04 Jun 2019 22:57:25 GMT
+# Wed, 19 Jun 2019 22:44:45 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
@@ -2364,9 +2364,9 @@ CMD ["nginx" "-g" "daemon off;"]
 		Last Modified: Sat, 11 May 2019 08:44:25 GMT  
 		Size: 2.7 MB (2688779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0794e252500c4fe51e7b416deb1667e47aa4e0cf3dc9c9ef910ebafa428483e2`  
-		Last Modified: Tue, 04 Jun 2019 22:59:44 GMT  
-		Size: 14.4 MB (14432229 bytes)  
+	-	`sha256:f2ba613583e0994a200a6c33c711cb00b95a65b9ab6d2794edc5ee08931b66e8`  
+		Last Modified: Wed, 19 Jun 2019 22:46:08 GMT  
+		Size: 14.4 MB (14432463 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nginx:1.16-alpine-perl` - linux; 386
@@ -3491,7 +3491,7 @@ CMD ["nginx" "-g" "daemon off;"]
 ## `nginx:1.17.0-alpine`
 
 ```console
-$ docker pull nginx@sha256:366c39a589f69a893368d942d9d323893025e8c27a523657ba3a2119dfc66057
+$ docker pull nginx@sha256:d26f640031242d5b08dff39eb53e54f54a1cb48a6e3aaf24e90769e3bd5db177
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3598,36 +3598,36 @@ CMD ["nginx" "-g" "daemon off;"]
 ### `nginx:1.17.0-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull nginx@sha256:2e38066df2cd8ae6c7c0cec0915a709b6f475303b9314c61c683ce4e66e070d3
+$ docker pull nginx@sha256:faf9cfbabdaf52f4723fed5844504298bbd15d053ae2d5194e8e89165d8592ae
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.5 MB (8456203 bytes)**  
+-	Total Size: **8.5 MB (8456268 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9eae59a45f13f06603e175683ab19c67b54f2e952a6a327c6c4a899b8d8c97fe`
+-	Image ID: `sha256:9247aebe5b9679218755660e53a1a5519129575c2fdb3d293cb3376b4c4ff278`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Sat, 11 May 2019 08:43:24 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 ADD file:66f49017dd7ba295602526dbf210046e47fd097298c17a3f268a47487b5b6379 in / 
-# Sat, 11 May 2019 08:43:25 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 CMD ["/bin/sh"]
-# Tue, 04 Jun 2019 22:33:35 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 04 Jun 2019 22:33:36 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 ENV NGINX_VERSION=1.17.0
-# Tue, 04 Jun 2019 22:33:36 GMT
+# Wed, 19 Jun 2019 22:32:22 GMT
 ENV NJS_VERSION=0.3.2
-# Tue, 04 Jun 2019 22:33:37 GMT
+# Wed, 19 Jun 2019 22:32:22 GMT
 ENV PKG_RELEASE=1
-# Tue, 04 Jun 2019 22:36:38 GMT
+# Wed, 19 Jun 2019 22:35:16 GMT
 RUN set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${PKG_RELEASE}     "     && case "$apkArch" in         x86_64)             set -x             && KEY_SHA512="e7fa8303923d9b95db37a77ad46c68fd4755ff935d0a534d26eba83de193c76166c68bfe7f65471bf8881004ef4aa6df3e34689c305662750c0172fca5d8552a *stdin"             && apk add --no-cache --virtual .cert-deps                 openssl curl ca-certificates             && curl -o /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if [ "$(openssl rsa -pubin -in /tmp/nginx_signing.rsa.pub -text -noout | openssl sha512 -r)" = "$KEY_SHA512" ]; then                  echo "key verification succeeded!";                  mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;                else                  echo "key verification failed!";                  exit 1;                fi             && printf "%s%s%s\n"                 "http://nginx.org/packages/mainline/alpine/v"                 `egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release`                 "/main"             | tee -a /etc/apk/repositories             && apk del .cert-deps             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 perl-dev                 libedit-dev                 mercurial                 bash                 alpine-sdk                 findutils             && su - nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && hg clone https://hg.nginx.org/pkg-oss                 && cd pkg-oss                 && hg up ${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make all                 && apk index -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && echo "${tempDir}/packages/alpine/" >> /etc/apk/repositories             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del .build-deps             ;;     esac     && apk add --no-cache $nginxPackages     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -n "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && if [ -n "/etc/apk/keys/nginx_signing.rsa.pub" ]; then rm -f /etc/apk/keys/nginx_signing.rsa.pub; fi     && sed -i '$ d' /etc/apk/repositories     && apk add --no-cache --virtual .gettext gettext     && mv /usr/bin/envsubst /tmp/         && runDeps="$(         scanelf --needed --nobanner /tmp/envsubst             | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )"     && apk add --no-cache $runDeps     && apk del .gettext     && mv /tmp/envsubst /usr/local/bin/     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log
-# Tue, 04 Jun 2019 22:36:39 GMT
+# Wed, 19 Jun 2019 22:35:16 GMT
 EXPOSE 80
-# Tue, 04 Jun 2019 22:36:39 GMT
+# Wed, 19 Jun 2019 22:35:17 GMT
 STOPSIGNAL SIGTERM
-# Tue, 04 Jun 2019 22:36:39 GMT
+# Wed, 19 Jun 2019 22:35:17 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
@@ -3636,9 +3636,9 @@ CMD ["nginx" "-g" "daemon off;"]
 		Last Modified: Sat, 11 May 2019 08:44:25 GMT  
 		Size: 2.7 MB (2688779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee8a67eaae7306ee815d3cc312cf1a9922245725ccad0b90b02d916e1d22825f`  
-		Last Modified: Tue, 04 Jun 2019 22:58:36 GMT  
-		Size: 5.8 MB (5767424 bytes)  
+	-	`sha256:7a37073fcffe40e7c27bfb813521f0daa49e61be06f24b9317b44eaf5c4fc9c1`  
+		Last Modified: Wed, 19 Jun 2019 22:45:26 GMT  
+		Size: 5.8 MB (5767489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nginx:1.17.0-alpine` - linux; 386
@@ -3782,7 +3782,7 @@ CMD ["nginx" "-g" "daemon off;"]
 ## `nginx:1.17.0-alpine-perl`
 
 ```console
-$ docker pull nginx@sha256:571a080b748db242145f9a33cfecb15305c76a2d7dd7bb5a631e8674774930e8
+$ docker pull nginx@sha256:8cceee1ccec8021b4cf1cc71a398da596b00cab0a3e94366013d5000460a804f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3889,36 +3889,36 @@ CMD ["nginx" "-g" "daemon off;"]
 ### `nginx:1.17.0-alpine-perl` - linux; arm64 variant v8
 
 ```console
-$ docker pull nginx@sha256:a1620190f45032df7e5940b6af8dd5cfdfdbd148eca8a4d4852b4a465ca5c1dd
+$ docker pull nginx@sha256:2f29676a9e1355a19553dd0eaec5232e44a2d49d2eafc58c93ca3462315b76c4
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.1 MB (17143711 bytes)**  
+-	Total Size: **17.1 MB (17143653 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d85d2a11cb972c35a6d353d84255e6ae877e1cbf8a0c20086061d209c9b137c6`
+-	Image ID: `sha256:3dcf2eb7f626d485bf8236b545d060f94fc60145d1b59950c9e8217b3f0aee50`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Sat, 11 May 2019 08:43:24 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 ADD file:66f49017dd7ba295602526dbf210046e47fd097298c17a3f268a47487b5b6379 in / 
-# Sat, 11 May 2019 08:43:25 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 CMD ["/bin/sh"]
-# Tue, 04 Jun 2019 22:33:35 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 04 Jun 2019 22:33:36 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 ENV NGINX_VERSION=1.17.0
-# Tue, 04 Jun 2019 22:33:36 GMT
+# Wed, 19 Jun 2019 22:32:22 GMT
 ENV NJS_VERSION=0.3.2
-# Tue, 04 Jun 2019 22:33:37 GMT
+# Wed, 19 Jun 2019 22:32:22 GMT
 ENV PKG_RELEASE=1
-# Tue, 04 Jun 2019 22:39:57 GMT
+# Wed, 19 Jun 2019 22:38:17 GMT
 RUN set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-perl=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${PKG_RELEASE}     "     && case "$apkArch" in         x86_64)             set -x             && KEY_SHA512="e7fa8303923d9b95db37a77ad46c68fd4755ff935d0a534d26eba83de193c76166c68bfe7f65471bf8881004ef4aa6df3e34689c305662750c0172fca5d8552a *stdin"             && apk add --no-cache --virtual .cert-deps                 openssl curl ca-certificates             && curl -o /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if [ "$(openssl rsa -pubin -in /tmp/nginx_signing.rsa.pub -text -noout | openssl sha512 -r)" = "$KEY_SHA512" ]; then                  echo "key verification succeeded!";                  mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;                else                  echo "key verification failed!";                  exit 1;                fi             && printf "%s%s%s\n"                 "http://nginx.org/packages/mainline/alpine/v"                 `egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release`                 "/main"             | tee -a /etc/apk/repositories             && apk del .cert-deps             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 perl-dev                 libedit-dev                 mercurial                 bash                 alpine-sdk                 findutils             && su - nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && hg clone https://hg.nginx.org/pkg-oss                 && cd pkg-oss                 && hg up ${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make all                 && apk index -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && echo "${tempDir}/packages/alpine/" >> /etc/apk/repositories             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del .build-deps             ;;     esac     && apk add --no-cache $nginxPackages     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -n "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && if [ -n "/etc/apk/keys/nginx_signing.rsa.pub" ]; then rm -f /etc/apk/keys/nginx_signing.rsa.pub; fi     && sed -i '$ d' /etc/apk/repositories     && apk add --no-cache --virtual .gettext gettext     && mv /usr/bin/envsubst /tmp/         && runDeps="$(         scanelf --needed --nobanner /tmp/envsubst             | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )"     && apk add --no-cache $runDeps     && apk del .gettext     && mv /tmp/envsubst /usr/local/bin/     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log
-# Tue, 04 Jun 2019 22:39:57 GMT
+# Wed, 19 Jun 2019 22:38:17 GMT
 EXPOSE 80
-# Tue, 04 Jun 2019 22:39:58 GMT
+# Wed, 19 Jun 2019 22:38:18 GMT
 STOPSIGNAL SIGTERM
-# Tue, 04 Jun 2019 22:39:58 GMT
+# Wed, 19 Jun 2019 22:38:18 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
@@ -3927,9 +3927,9 @@ CMD ["nginx" "-g" "daemon off;"]
 		Last Modified: Sat, 11 May 2019 08:44:25 GMT  
 		Size: 2.7 MB (2688779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca0023718a21aaff5be135d02b3ef1e8eb3e3fe63176d285fcbe9817c5983dcd`  
-		Last Modified: Tue, 04 Jun 2019 22:58:51 GMT  
-		Size: 14.5 MB (14454932 bytes)  
+	-	`sha256:d0f6085d61ac6187cf3301a1dc60e7851422607b0b0fb32d2b5d7a375803dc45`  
+		Last Modified: Wed, 19 Jun 2019 22:45:41 GMT  
+		Size: 14.5 MB (14454874 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nginx:1.17.0-alpine-perl` - linux; 386
@@ -4400,7 +4400,7 @@ CMD ["nginx" "-g" "daemon off;"]
 ## `nginx:1.17-alpine`
 
 ```console
-$ docker pull nginx@sha256:366c39a589f69a893368d942d9d323893025e8c27a523657ba3a2119dfc66057
+$ docker pull nginx@sha256:d26f640031242d5b08dff39eb53e54f54a1cb48a6e3aaf24e90769e3bd5db177
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4507,36 +4507,36 @@ CMD ["nginx" "-g" "daemon off;"]
 ### `nginx:1.17-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull nginx@sha256:2e38066df2cd8ae6c7c0cec0915a709b6f475303b9314c61c683ce4e66e070d3
+$ docker pull nginx@sha256:faf9cfbabdaf52f4723fed5844504298bbd15d053ae2d5194e8e89165d8592ae
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.5 MB (8456203 bytes)**  
+-	Total Size: **8.5 MB (8456268 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9eae59a45f13f06603e175683ab19c67b54f2e952a6a327c6c4a899b8d8c97fe`
+-	Image ID: `sha256:9247aebe5b9679218755660e53a1a5519129575c2fdb3d293cb3376b4c4ff278`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Sat, 11 May 2019 08:43:24 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 ADD file:66f49017dd7ba295602526dbf210046e47fd097298c17a3f268a47487b5b6379 in / 
-# Sat, 11 May 2019 08:43:25 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 CMD ["/bin/sh"]
-# Tue, 04 Jun 2019 22:33:35 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 04 Jun 2019 22:33:36 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 ENV NGINX_VERSION=1.17.0
-# Tue, 04 Jun 2019 22:33:36 GMT
+# Wed, 19 Jun 2019 22:32:22 GMT
 ENV NJS_VERSION=0.3.2
-# Tue, 04 Jun 2019 22:33:37 GMT
+# Wed, 19 Jun 2019 22:32:22 GMT
 ENV PKG_RELEASE=1
-# Tue, 04 Jun 2019 22:36:38 GMT
+# Wed, 19 Jun 2019 22:35:16 GMT
 RUN set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${PKG_RELEASE}     "     && case "$apkArch" in         x86_64)             set -x             && KEY_SHA512="e7fa8303923d9b95db37a77ad46c68fd4755ff935d0a534d26eba83de193c76166c68bfe7f65471bf8881004ef4aa6df3e34689c305662750c0172fca5d8552a *stdin"             && apk add --no-cache --virtual .cert-deps                 openssl curl ca-certificates             && curl -o /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if [ "$(openssl rsa -pubin -in /tmp/nginx_signing.rsa.pub -text -noout | openssl sha512 -r)" = "$KEY_SHA512" ]; then                  echo "key verification succeeded!";                  mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;                else                  echo "key verification failed!";                  exit 1;                fi             && printf "%s%s%s\n"                 "http://nginx.org/packages/mainline/alpine/v"                 `egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release`                 "/main"             | tee -a /etc/apk/repositories             && apk del .cert-deps             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 perl-dev                 libedit-dev                 mercurial                 bash                 alpine-sdk                 findutils             && su - nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && hg clone https://hg.nginx.org/pkg-oss                 && cd pkg-oss                 && hg up ${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make all                 && apk index -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && echo "${tempDir}/packages/alpine/" >> /etc/apk/repositories             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del .build-deps             ;;     esac     && apk add --no-cache $nginxPackages     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -n "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && if [ -n "/etc/apk/keys/nginx_signing.rsa.pub" ]; then rm -f /etc/apk/keys/nginx_signing.rsa.pub; fi     && sed -i '$ d' /etc/apk/repositories     && apk add --no-cache --virtual .gettext gettext     && mv /usr/bin/envsubst /tmp/         && runDeps="$(         scanelf --needed --nobanner /tmp/envsubst             | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )"     && apk add --no-cache $runDeps     && apk del .gettext     && mv /tmp/envsubst /usr/local/bin/     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log
-# Tue, 04 Jun 2019 22:36:39 GMT
+# Wed, 19 Jun 2019 22:35:16 GMT
 EXPOSE 80
-# Tue, 04 Jun 2019 22:36:39 GMT
+# Wed, 19 Jun 2019 22:35:17 GMT
 STOPSIGNAL SIGTERM
-# Tue, 04 Jun 2019 22:36:39 GMT
+# Wed, 19 Jun 2019 22:35:17 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
@@ -4545,9 +4545,9 @@ CMD ["nginx" "-g" "daemon off;"]
 		Last Modified: Sat, 11 May 2019 08:44:25 GMT  
 		Size: 2.7 MB (2688779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee8a67eaae7306ee815d3cc312cf1a9922245725ccad0b90b02d916e1d22825f`  
-		Last Modified: Tue, 04 Jun 2019 22:58:36 GMT  
-		Size: 5.8 MB (5767424 bytes)  
+	-	`sha256:7a37073fcffe40e7c27bfb813521f0daa49e61be06f24b9317b44eaf5c4fc9c1`  
+		Last Modified: Wed, 19 Jun 2019 22:45:26 GMT  
+		Size: 5.8 MB (5767489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nginx:1.17-alpine` - linux; 386
@@ -4691,7 +4691,7 @@ CMD ["nginx" "-g" "daemon off;"]
 ## `nginx:1.17-alpine-perl`
 
 ```console
-$ docker pull nginx@sha256:571a080b748db242145f9a33cfecb15305c76a2d7dd7bb5a631e8674774930e8
+$ docker pull nginx@sha256:8cceee1ccec8021b4cf1cc71a398da596b00cab0a3e94366013d5000460a804f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4798,36 +4798,36 @@ CMD ["nginx" "-g" "daemon off;"]
 ### `nginx:1.17-alpine-perl` - linux; arm64 variant v8
 
 ```console
-$ docker pull nginx@sha256:a1620190f45032df7e5940b6af8dd5cfdfdbd148eca8a4d4852b4a465ca5c1dd
+$ docker pull nginx@sha256:2f29676a9e1355a19553dd0eaec5232e44a2d49d2eafc58c93ca3462315b76c4
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.1 MB (17143711 bytes)**  
+-	Total Size: **17.1 MB (17143653 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d85d2a11cb972c35a6d353d84255e6ae877e1cbf8a0c20086061d209c9b137c6`
+-	Image ID: `sha256:3dcf2eb7f626d485bf8236b545d060f94fc60145d1b59950c9e8217b3f0aee50`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Sat, 11 May 2019 08:43:24 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 ADD file:66f49017dd7ba295602526dbf210046e47fd097298c17a3f268a47487b5b6379 in / 
-# Sat, 11 May 2019 08:43:25 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 CMD ["/bin/sh"]
-# Tue, 04 Jun 2019 22:33:35 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 04 Jun 2019 22:33:36 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 ENV NGINX_VERSION=1.17.0
-# Tue, 04 Jun 2019 22:33:36 GMT
+# Wed, 19 Jun 2019 22:32:22 GMT
 ENV NJS_VERSION=0.3.2
-# Tue, 04 Jun 2019 22:33:37 GMT
+# Wed, 19 Jun 2019 22:32:22 GMT
 ENV PKG_RELEASE=1
-# Tue, 04 Jun 2019 22:39:57 GMT
+# Wed, 19 Jun 2019 22:38:17 GMT
 RUN set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-perl=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${PKG_RELEASE}     "     && case "$apkArch" in         x86_64)             set -x             && KEY_SHA512="e7fa8303923d9b95db37a77ad46c68fd4755ff935d0a534d26eba83de193c76166c68bfe7f65471bf8881004ef4aa6df3e34689c305662750c0172fca5d8552a *stdin"             && apk add --no-cache --virtual .cert-deps                 openssl curl ca-certificates             && curl -o /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if [ "$(openssl rsa -pubin -in /tmp/nginx_signing.rsa.pub -text -noout | openssl sha512 -r)" = "$KEY_SHA512" ]; then                  echo "key verification succeeded!";                  mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;                else                  echo "key verification failed!";                  exit 1;                fi             && printf "%s%s%s\n"                 "http://nginx.org/packages/mainline/alpine/v"                 `egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release`                 "/main"             | tee -a /etc/apk/repositories             && apk del .cert-deps             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 perl-dev                 libedit-dev                 mercurial                 bash                 alpine-sdk                 findutils             && su - nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && hg clone https://hg.nginx.org/pkg-oss                 && cd pkg-oss                 && hg up ${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make all                 && apk index -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && echo "${tempDir}/packages/alpine/" >> /etc/apk/repositories             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del .build-deps             ;;     esac     && apk add --no-cache $nginxPackages     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -n "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && if [ -n "/etc/apk/keys/nginx_signing.rsa.pub" ]; then rm -f /etc/apk/keys/nginx_signing.rsa.pub; fi     && sed -i '$ d' /etc/apk/repositories     && apk add --no-cache --virtual .gettext gettext     && mv /usr/bin/envsubst /tmp/         && runDeps="$(         scanelf --needed --nobanner /tmp/envsubst             | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )"     && apk add --no-cache $runDeps     && apk del .gettext     && mv /tmp/envsubst /usr/local/bin/     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log
-# Tue, 04 Jun 2019 22:39:57 GMT
+# Wed, 19 Jun 2019 22:38:17 GMT
 EXPOSE 80
-# Tue, 04 Jun 2019 22:39:58 GMT
+# Wed, 19 Jun 2019 22:38:18 GMT
 STOPSIGNAL SIGTERM
-# Tue, 04 Jun 2019 22:39:58 GMT
+# Wed, 19 Jun 2019 22:38:18 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
@@ -4836,9 +4836,9 @@ CMD ["nginx" "-g" "daemon off;"]
 		Last Modified: Sat, 11 May 2019 08:44:25 GMT  
 		Size: 2.7 MB (2688779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca0023718a21aaff5be135d02b3ef1e8eb3e3fe63176d285fcbe9817c5983dcd`  
-		Last Modified: Tue, 04 Jun 2019 22:58:51 GMT  
-		Size: 14.5 MB (14454932 bytes)  
+	-	`sha256:d0f6085d61ac6187cf3301a1dc60e7851422607b0b0fb32d2b5d7a375803dc45`  
+		Last Modified: Wed, 19 Jun 2019 22:45:41 GMT  
+		Size: 14.5 MB (14454874 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nginx:1.17-alpine-perl` - linux; 386
@@ -5309,7 +5309,7 @@ CMD ["nginx" "-g" "daemon off;"]
 ## `nginx:1-alpine`
 
 ```console
-$ docker pull nginx@sha256:366c39a589f69a893368d942d9d323893025e8c27a523657ba3a2119dfc66057
+$ docker pull nginx@sha256:d26f640031242d5b08dff39eb53e54f54a1cb48a6e3aaf24e90769e3bd5db177
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5416,36 +5416,36 @@ CMD ["nginx" "-g" "daemon off;"]
 ### `nginx:1-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull nginx@sha256:2e38066df2cd8ae6c7c0cec0915a709b6f475303b9314c61c683ce4e66e070d3
+$ docker pull nginx@sha256:faf9cfbabdaf52f4723fed5844504298bbd15d053ae2d5194e8e89165d8592ae
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.5 MB (8456203 bytes)**  
+-	Total Size: **8.5 MB (8456268 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9eae59a45f13f06603e175683ab19c67b54f2e952a6a327c6c4a899b8d8c97fe`
+-	Image ID: `sha256:9247aebe5b9679218755660e53a1a5519129575c2fdb3d293cb3376b4c4ff278`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Sat, 11 May 2019 08:43:24 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 ADD file:66f49017dd7ba295602526dbf210046e47fd097298c17a3f268a47487b5b6379 in / 
-# Sat, 11 May 2019 08:43:25 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 CMD ["/bin/sh"]
-# Tue, 04 Jun 2019 22:33:35 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 04 Jun 2019 22:33:36 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 ENV NGINX_VERSION=1.17.0
-# Tue, 04 Jun 2019 22:33:36 GMT
+# Wed, 19 Jun 2019 22:32:22 GMT
 ENV NJS_VERSION=0.3.2
-# Tue, 04 Jun 2019 22:33:37 GMT
+# Wed, 19 Jun 2019 22:32:22 GMT
 ENV PKG_RELEASE=1
-# Tue, 04 Jun 2019 22:36:38 GMT
+# Wed, 19 Jun 2019 22:35:16 GMT
 RUN set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${PKG_RELEASE}     "     && case "$apkArch" in         x86_64)             set -x             && KEY_SHA512="e7fa8303923d9b95db37a77ad46c68fd4755ff935d0a534d26eba83de193c76166c68bfe7f65471bf8881004ef4aa6df3e34689c305662750c0172fca5d8552a *stdin"             && apk add --no-cache --virtual .cert-deps                 openssl curl ca-certificates             && curl -o /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if [ "$(openssl rsa -pubin -in /tmp/nginx_signing.rsa.pub -text -noout | openssl sha512 -r)" = "$KEY_SHA512" ]; then                  echo "key verification succeeded!";                  mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;                else                  echo "key verification failed!";                  exit 1;                fi             && printf "%s%s%s\n"                 "http://nginx.org/packages/mainline/alpine/v"                 `egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release`                 "/main"             | tee -a /etc/apk/repositories             && apk del .cert-deps             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 perl-dev                 libedit-dev                 mercurial                 bash                 alpine-sdk                 findutils             && su - nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && hg clone https://hg.nginx.org/pkg-oss                 && cd pkg-oss                 && hg up ${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make all                 && apk index -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && echo "${tempDir}/packages/alpine/" >> /etc/apk/repositories             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del .build-deps             ;;     esac     && apk add --no-cache $nginxPackages     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -n "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && if [ -n "/etc/apk/keys/nginx_signing.rsa.pub" ]; then rm -f /etc/apk/keys/nginx_signing.rsa.pub; fi     && sed -i '$ d' /etc/apk/repositories     && apk add --no-cache --virtual .gettext gettext     && mv /usr/bin/envsubst /tmp/         && runDeps="$(         scanelf --needed --nobanner /tmp/envsubst             | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )"     && apk add --no-cache $runDeps     && apk del .gettext     && mv /tmp/envsubst /usr/local/bin/     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log
-# Tue, 04 Jun 2019 22:36:39 GMT
+# Wed, 19 Jun 2019 22:35:16 GMT
 EXPOSE 80
-# Tue, 04 Jun 2019 22:36:39 GMT
+# Wed, 19 Jun 2019 22:35:17 GMT
 STOPSIGNAL SIGTERM
-# Tue, 04 Jun 2019 22:36:39 GMT
+# Wed, 19 Jun 2019 22:35:17 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
@@ -5454,9 +5454,9 @@ CMD ["nginx" "-g" "daemon off;"]
 		Last Modified: Sat, 11 May 2019 08:44:25 GMT  
 		Size: 2.7 MB (2688779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee8a67eaae7306ee815d3cc312cf1a9922245725ccad0b90b02d916e1d22825f`  
-		Last Modified: Tue, 04 Jun 2019 22:58:36 GMT  
-		Size: 5.8 MB (5767424 bytes)  
+	-	`sha256:7a37073fcffe40e7c27bfb813521f0daa49e61be06f24b9317b44eaf5c4fc9c1`  
+		Last Modified: Wed, 19 Jun 2019 22:45:26 GMT  
+		Size: 5.8 MB (5767489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nginx:1-alpine` - linux; 386
@@ -5600,7 +5600,7 @@ CMD ["nginx" "-g" "daemon off;"]
 ## `nginx:1-alpine-perl`
 
 ```console
-$ docker pull nginx@sha256:571a080b748db242145f9a33cfecb15305c76a2d7dd7bb5a631e8674774930e8
+$ docker pull nginx@sha256:8cceee1ccec8021b4cf1cc71a398da596b00cab0a3e94366013d5000460a804f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5707,36 +5707,36 @@ CMD ["nginx" "-g" "daemon off;"]
 ### `nginx:1-alpine-perl` - linux; arm64 variant v8
 
 ```console
-$ docker pull nginx@sha256:a1620190f45032df7e5940b6af8dd5cfdfdbd148eca8a4d4852b4a465ca5c1dd
+$ docker pull nginx@sha256:2f29676a9e1355a19553dd0eaec5232e44a2d49d2eafc58c93ca3462315b76c4
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.1 MB (17143711 bytes)**  
+-	Total Size: **17.1 MB (17143653 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d85d2a11cb972c35a6d353d84255e6ae877e1cbf8a0c20086061d209c9b137c6`
+-	Image ID: `sha256:3dcf2eb7f626d485bf8236b545d060f94fc60145d1b59950c9e8217b3f0aee50`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Sat, 11 May 2019 08:43:24 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 ADD file:66f49017dd7ba295602526dbf210046e47fd097298c17a3f268a47487b5b6379 in / 
-# Sat, 11 May 2019 08:43:25 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 CMD ["/bin/sh"]
-# Tue, 04 Jun 2019 22:33:35 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 04 Jun 2019 22:33:36 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 ENV NGINX_VERSION=1.17.0
-# Tue, 04 Jun 2019 22:33:36 GMT
+# Wed, 19 Jun 2019 22:32:22 GMT
 ENV NJS_VERSION=0.3.2
-# Tue, 04 Jun 2019 22:33:37 GMT
+# Wed, 19 Jun 2019 22:32:22 GMT
 ENV PKG_RELEASE=1
-# Tue, 04 Jun 2019 22:39:57 GMT
+# Wed, 19 Jun 2019 22:38:17 GMT
 RUN set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-perl=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${PKG_RELEASE}     "     && case "$apkArch" in         x86_64)             set -x             && KEY_SHA512="e7fa8303923d9b95db37a77ad46c68fd4755ff935d0a534d26eba83de193c76166c68bfe7f65471bf8881004ef4aa6df3e34689c305662750c0172fca5d8552a *stdin"             && apk add --no-cache --virtual .cert-deps                 openssl curl ca-certificates             && curl -o /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if [ "$(openssl rsa -pubin -in /tmp/nginx_signing.rsa.pub -text -noout | openssl sha512 -r)" = "$KEY_SHA512" ]; then                  echo "key verification succeeded!";                  mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;                else                  echo "key verification failed!";                  exit 1;                fi             && printf "%s%s%s\n"                 "http://nginx.org/packages/mainline/alpine/v"                 `egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release`                 "/main"             | tee -a /etc/apk/repositories             && apk del .cert-deps             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 perl-dev                 libedit-dev                 mercurial                 bash                 alpine-sdk                 findutils             && su - nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && hg clone https://hg.nginx.org/pkg-oss                 && cd pkg-oss                 && hg up ${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make all                 && apk index -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && echo "${tempDir}/packages/alpine/" >> /etc/apk/repositories             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del .build-deps             ;;     esac     && apk add --no-cache $nginxPackages     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -n "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && if [ -n "/etc/apk/keys/nginx_signing.rsa.pub" ]; then rm -f /etc/apk/keys/nginx_signing.rsa.pub; fi     && sed -i '$ d' /etc/apk/repositories     && apk add --no-cache --virtual .gettext gettext     && mv /usr/bin/envsubst /tmp/         && runDeps="$(         scanelf --needed --nobanner /tmp/envsubst             | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )"     && apk add --no-cache $runDeps     && apk del .gettext     && mv /tmp/envsubst /usr/local/bin/     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log
-# Tue, 04 Jun 2019 22:39:57 GMT
+# Wed, 19 Jun 2019 22:38:17 GMT
 EXPOSE 80
-# Tue, 04 Jun 2019 22:39:58 GMT
+# Wed, 19 Jun 2019 22:38:18 GMT
 STOPSIGNAL SIGTERM
-# Tue, 04 Jun 2019 22:39:58 GMT
+# Wed, 19 Jun 2019 22:38:18 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
@@ -5745,9 +5745,9 @@ CMD ["nginx" "-g" "daemon off;"]
 		Last Modified: Sat, 11 May 2019 08:44:25 GMT  
 		Size: 2.7 MB (2688779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca0023718a21aaff5be135d02b3ef1e8eb3e3fe63176d285fcbe9817c5983dcd`  
-		Last Modified: Tue, 04 Jun 2019 22:58:51 GMT  
-		Size: 14.5 MB (14454932 bytes)  
+	-	`sha256:d0f6085d61ac6187cf3301a1dc60e7851422607b0b0fb32d2b5d7a375803dc45`  
+		Last Modified: Wed, 19 Jun 2019 22:45:41 GMT  
+		Size: 14.5 MB (14454874 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nginx:1-alpine-perl` - linux; 386
@@ -6218,7 +6218,7 @@ CMD ["nginx" "-g" "daemon off;"]
 ## `nginx:alpine`
 
 ```console
-$ docker pull nginx@sha256:366c39a589f69a893368d942d9d323893025e8c27a523657ba3a2119dfc66057
+$ docker pull nginx@sha256:d26f640031242d5b08dff39eb53e54f54a1cb48a6e3aaf24e90769e3bd5db177
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6325,36 +6325,36 @@ CMD ["nginx" "-g" "daemon off;"]
 ### `nginx:alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull nginx@sha256:2e38066df2cd8ae6c7c0cec0915a709b6f475303b9314c61c683ce4e66e070d3
+$ docker pull nginx@sha256:faf9cfbabdaf52f4723fed5844504298bbd15d053ae2d5194e8e89165d8592ae
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.5 MB (8456203 bytes)**  
+-	Total Size: **8.5 MB (8456268 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9eae59a45f13f06603e175683ab19c67b54f2e952a6a327c6c4a899b8d8c97fe`
+-	Image ID: `sha256:9247aebe5b9679218755660e53a1a5519129575c2fdb3d293cb3376b4c4ff278`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Sat, 11 May 2019 08:43:24 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 ADD file:66f49017dd7ba295602526dbf210046e47fd097298c17a3f268a47487b5b6379 in / 
-# Sat, 11 May 2019 08:43:25 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 CMD ["/bin/sh"]
-# Tue, 04 Jun 2019 22:33:35 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 04 Jun 2019 22:33:36 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 ENV NGINX_VERSION=1.17.0
-# Tue, 04 Jun 2019 22:33:36 GMT
+# Wed, 19 Jun 2019 22:32:22 GMT
 ENV NJS_VERSION=0.3.2
-# Tue, 04 Jun 2019 22:33:37 GMT
+# Wed, 19 Jun 2019 22:32:22 GMT
 ENV PKG_RELEASE=1
-# Tue, 04 Jun 2019 22:36:38 GMT
+# Wed, 19 Jun 2019 22:35:16 GMT
 RUN set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${PKG_RELEASE}     "     && case "$apkArch" in         x86_64)             set -x             && KEY_SHA512="e7fa8303923d9b95db37a77ad46c68fd4755ff935d0a534d26eba83de193c76166c68bfe7f65471bf8881004ef4aa6df3e34689c305662750c0172fca5d8552a *stdin"             && apk add --no-cache --virtual .cert-deps                 openssl curl ca-certificates             && curl -o /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if [ "$(openssl rsa -pubin -in /tmp/nginx_signing.rsa.pub -text -noout | openssl sha512 -r)" = "$KEY_SHA512" ]; then                  echo "key verification succeeded!";                  mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;                else                  echo "key verification failed!";                  exit 1;                fi             && printf "%s%s%s\n"                 "http://nginx.org/packages/mainline/alpine/v"                 `egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release`                 "/main"             | tee -a /etc/apk/repositories             && apk del .cert-deps             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 perl-dev                 libedit-dev                 mercurial                 bash                 alpine-sdk                 findutils             && su - nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && hg clone https://hg.nginx.org/pkg-oss                 && cd pkg-oss                 && hg up ${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make all                 && apk index -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && echo "${tempDir}/packages/alpine/" >> /etc/apk/repositories             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del .build-deps             ;;     esac     && apk add --no-cache $nginxPackages     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -n "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && if [ -n "/etc/apk/keys/nginx_signing.rsa.pub" ]; then rm -f /etc/apk/keys/nginx_signing.rsa.pub; fi     && sed -i '$ d' /etc/apk/repositories     && apk add --no-cache --virtual .gettext gettext     && mv /usr/bin/envsubst /tmp/         && runDeps="$(         scanelf --needed --nobanner /tmp/envsubst             | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )"     && apk add --no-cache $runDeps     && apk del .gettext     && mv /tmp/envsubst /usr/local/bin/     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log
-# Tue, 04 Jun 2019 22:36:39 GMT
+# Wed, 19 Jun 2019 22:35:16 GMT
 EXPOSE 80
-# Tue, 04 Jun 2019 22:36:39 GMT
+# Wed, 19 Jun 2019 22:35:17 GMT
 STOPSIGNAL SIGTERM
-# Tue, 04 Jun 2019 22:36:39 GMT
+# Wed, 19 Jun 2019 22:35:17 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
@@ -6363,9 +6363,9 @@ CMD ["nginx" "-g" "daemon off;"]
 		Last Modified: Sat, 11 May 2019 08:44:25 GMT  
 		Size: 2.7 MB (2688779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee8a67eaae7306ee815d3cc312cf1a9922245725ccad0b90b02d916e1d22825f`  
-		Last Modified: Tue, 04 Jun 2019 22:58:36 GMT  
-		Size: 5.8 MB (5767424 bytes)  
+	-	`sha256:7a37073fcffe40e7c27bfb813521f0daa49e61be06f24b9317b44eaf5c4fc9c1`  
+		Last Modified: Wed, 19 Jun 2019 22:45:26 GMT  
+		Size: 5.8 MB (5767489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nginx:alpine` - linux; 386
@@ -6509,7 +6509,7 @@ CMD ["nginx" "-g" "daemon off;"]
 ## `nginx:alpine-perl`
 
 ```console
-$ docker pull nginx@sha256:571a080b748db242145f9a33cfecb15305c76a2d7dd7bb5a631e8674774930e8
+$ docker pull nginx@sha256:8cceee1ccec8021b4cf1cc71a398da596b00cab0a3e94366013d5000460a804f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6616,36 +6616,36 @@ CMD ["nginx" "-g" "daemon off;"]
 ### `nginx:alpine-perl` - linux; arm64 variant v8
 
 ```console
-$ docker pull nginx@sha256:a1620190f45032df7e5940b6af8dd5cfdfdbd148eca8a4d4852b4a465ca5c1dd
+$ docker pull nginx@sha256:2f29676a9e1355a19553dd0eaec5232e44a2d49d2eafc58c93ca3462315b76c4
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.1 MB (17143711 bytes)**  
+-	Total Size: **17.1 MB (17143653 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d85d2a11cb972c35a6d353d84255e6ae877e1cbf8a0c20086061d209c9b137c6`
+-	Image ID: `sha256:3dcf2eb7f626d485bf8236b545d060f94fc60145d1b59950c9e8217b3f0aee50`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Sat, 11 May 2019 08:43:24 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 ADD file:66f49017dd7ba295602526dbf210046e47fd097298c17a3f268a47487b5b6379 in / 
-# Sat, 11 May 2019 08:43:25 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 CMD ["/bin/sh"]
-# Tue, 04 Jun 2019 22:33:35 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 04 Jun 2019 22:33:36 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 ENV NGINX_VERSION=1.17.0
-# Tue, 04 Jun 2019 22:33:36 GMT
+# Wed, 19 Jun 2019 22:32:22 GMT
 ENV NJS_VERSION=0.3.2
-# Tue, 04 Jun 2019 22:33:37 GMT
+# Wed, 19 Jun 2019 22:32:22 GMT
 ENV PKG_RELEASE=1
-# Tue, 04 Jun 2019 22:39:57 GMT
+# Wed, 19 Jun 2019 22:38:17 GMT
 RUN set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-perl=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${PKG_RELEASE}     "     && case "$apkArch" in         x86_64)             set -x             && KEY_SHA512="e7fa8303923d9b95db37a77ad46c68fd4755ff935d0a534d26eba83de193c76166c68bfe7f65471bf8881004ef4aa6df3e34689c305662750c0172fca5d8552a *stdin"             && apk add --no-cache --virtual .cert-deps                 openssl curl ca-certificates             && curl -o /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if [ "$(openssl rsa -pubin -in /tmp/nginx_signing.rsa.pub -text -noout | openssl sha512 -r)" = "$KEY_SHA512" ]; then                  echo "key verification succeeded!";                  mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;                else                  echo "key verification failed!";                  exit 1;                fi             && printf "%s%s%s\n"                 "http://nginx.org/packages/mainline/alpine/v"                 `egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release`                 "/main"             | tee -a /etc/apk/repositories             && apk del .cert-deps             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 perl-dev                 libedit-dev                 mercurial                 bash                 alpine-sdk                 findutils             && su - nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && hg clone https://hg.nginx.org/pkg-oss                 && cd pkg-oss                 && hg up ${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make all                 && apk index -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && echo "${tempDir}/packages/alpine/" >> /etc/apk/repositories             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del .build-deps             ;;     esac     && apk add --no-cache $nginxPackages     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -n "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && if [ -n "/etc/apk/keys/nginx_signing.rsa.pub" ]; then rm -f /etc/apk/keys/nginx_signing.rsa.pub; fi     && sed -i '$ d' /etc/apk/repositories     && apk add --no-cache --virtual .gettext gettext     && mv /usr/bin/envsubst /tmp/         && runDeps="$(         scanelf --needed --nobanner /tmp/envsubst             | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )"     && apk add --no-cache $runDeps     && apk del .gettext     && mv /tmp/envsubst /usr/local/bin/     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log
-# Tue, 04 Jun 2019 22:39:57 GMT
+# Wed, 19 Jun 2019 22:38:17 GMT
 EXPOSE 80
-# Tue, 04 Jun 2019 22:39:58 GMT
+# Wed, 19 Jun 2019 22:38:18 GMT
 STOPSIGNAL SIGTERM
-# Tue, 04 Jun 2019 22:39:58 GMT
+# Wed, 19 Jun 2019 22:38:18 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
@@ -6654,9 +6654,9 @@ CMD ["nginx" "-g" "daemon off;"]
 		Last Modified: Sat, 11 May 2019 08:44:25 GMT  
 		Size: 2.7 MB (2688779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca0023718a21aaff5be135d02b3ef1e8eb3e3fe63176d285fcbe9817c5983dcd`  
-		Last Modified: Tue, 04 Jun 2019 22:58:51 GMT  
-		Size: 14.5 MB (14454932 bytes)  
+	-	`sha256:d0f6085d61ac6187cf3301a1dc60e7851422607b0b0fb32d2b5d7a375803dc45`  
+		Last Modified: Wed, 19 Jun 2019 22:45:41 GMT  
+		Size: 14.5 MB (14454874 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nginx:alpine-perl` - linux; 386
@@ -7454,7 +7454,7 @@ CMD ["nginx" "-g" "daemon off;"]
 ## `nginx:mainline-alpine`
 
 ```console
-$ docker pull nginx@sha256:366c39a589f69a893368d942d9d323893025e8c27a523657ba3a2119dfc66057
+$ docker pull nginx@sha256:d26f640031242d5b08dff39eb53e54f54a1cb48a6e3aaf24e90769e3bd5db177
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7561,36 +7561,36 @@ CMD ["nginx" "-g" "daemon off;"]
 ### `nginx:mainline-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull nginx@sha256:2e38066df2cd8ae6c7c0cec0915a709b6f475303b9314c61c683ce4e66e070d3
+$ docker pull nginx@sha256:faf9cfbabdaf52f4723fed5844504298bbd15d053ae2d5194e8e89165d8592ae
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.5 MB (8456203 bytes)**  
+-	Total Size: **8.5 MB (8456268 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9eae59a45f13f06603e175683ab19c67b54f2e952a6a327c6c4a899b8d8c97fe`
+-	Image ID: `sha256:9247aebe5b9679218755660e53a1a5519129575c2fdb3d293cb3376b4c4ff278`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Sat, 11 May 2019 08:43:24 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 ADD file:66f49017dd7ba295602526dbf210046e47fd097298c17a3f268a47487b5b6379 in / 
-# Sat, 11 May 2019 08:43:25 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 CMD ["/bin/sh"]
-# Tue, 04 Jun 2019 22:33:35 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 04 Jun 2019 22:33:36 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 ENV NGINX_VERSION=1.17.0
-# Tue, 04 Jun 2019 22:33:36 GMT
+# Wed, 19 Jun 2019 22:32:22 GMT
 ENV NJS_VERSION=0.3.2
-# Tue, 04 Jun 2019 22:33:37 GMT
+# Wed, 19 Jun 2019 22:32:22 GMT
 ENV PKG_RELEASE=1
-# Tue, 04 Jun 2019 22:36:38 GMT
+# Wed, 19 Jun 2019 22:35:16 GMT
 RUN set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${PKG_RELEASE}     "     && case "$apkArch" in         x86_64)             set -x             && KEY_SHA512="e7fa8303923d9b95db37a77ad46c68fd4755ff935d0a534d26eba83de193c76166c68bfe7f65471bf8881004ef4aa6df3e34689c305662750c0172fca5d8552a *stdin"             && apk add --no-cache --virtual .cert-deps                 openssl curl ca-certificates             && curl -o /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if [ "$(openssl rsa -pubin -in /tmp/nginx_signing.rsa.pub -text -noout | openssl sha512 -r)" = "$KEY_SHA512" ]; then                  echo "key verification succeeded!";                  mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;                else                  echo "key verification failed!";                  exit 1;                fi             && printf "%s%s%s\n"                 "http://nginx.org/packages/mainline/alpine/v"                 `egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release`                 "/main"             | tee -a /etc/apk/repositories             && apk del .cert-deps             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 perl-dev                 libedit-dev                 mercurial                 bash                 alpine-sdk                 findutils             && su - nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && hg clone https://hg.nginx.org/pkg-oss                 && cd pkg-oss                 && hg up ${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make all                 && apk index -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && echo "${tempDir}/packages/alpine/" >> /etc/apk/repositories             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del .build-deps             ;;     esac     && apk add --no-cache $nginxPackages     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -n "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && if [ -n "/etc/apk/keys/nginx_signing.rsa.pub" ]; then rm -f /etc/apk/keys/nginx_signing.rsa.pub; fi     && sed -i '$ d' /etc/apk/repositories     && apk add --no-cache --virtual .gettext gettext     && mv /usr/bin/envsubst /tmp/         && runDeps="$(         scanelf --needed --nobanner /tmp/envsubst             | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )"     && apk add --no-cache $runDeps     && apk del .gettext     && mv /tmp/envsubst /usr/local/bin/     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log
-# Tue, 04 Jun 2019 22:36:39 GMT
+# Wed, 19 Jun 2019 22:35:16 GMT
 EXPOSE 80
-# Tue, 04 Jun 2019 22:36:39 GMT
+# Wed, 19 Jun 2019 22:35:17 GMT
 STOPSIGNAL SIGTERM
-# Tue, 04 Jun 2019 22:36:39 GMT
+# Wed, 19 Jun 2019 22:35:17 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
@@ -7599,9 +7599,9 @@ CMD ["nginx" "-g" "daemon off;"]
 		Last Modified: Sat, 11 May 2019 08:44:25 GMT  
 		Size: 2.7 MB (2688779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee8a67eaae7306ee815d3cc312cf1a9922245725ccad0b90b02d916e1d22825f`  
-		Last Modified: Tue, 04 Jun 2019 22:58:36 GMT  
-		Size: 5.8 MB (5767424 bytes)  
+	-	`sha256:7a37073fcffe40e7c27bfb813521f0daa49e61be06f24b9317b44eaf5c4fc9c1`  
+		Last Modified: Wed, 19 Jun 2019 22:45:26 GMT  
+		Size: 5.8 MB (5767489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nginx:mainline-alpine` - linux; 386
@@ -7745,7 +7745,7 @@ CMD ["nginx" "-g" "daemon off;"]
 ## `nginx:mainline-alpine-perl`
 
 ```console
-$ docker pull nginx@sha256:571a080b748db242145f9a33cfecb15305c76a2d7dd7bb5a631e8674774930e8
+$ docker pull nginx@sha256:8cceee1ccec8021b4cf1cc71a398da596b00cab0a3e94366013d5000460a804f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7852,36 +7852,36 @@ CMD ["nginx" "-g" "daemon off;"]
 ### `nginx:mainline-alpine-perl` - linux; arm64 variant v8
 
 ```console
-$ docker pull nginx@sha256:a1620190f45032df7e5940b6af8dd5cfdfdbd148eca8a4d4852b4a465ca5c1dd
+$ docker pull nginx@sha256:2f29676a9e1355a19553dd0eaec5232e44a2d49d2eafc58c93ca3462315b76c4
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.1 MB (17143711 bytes)**  
+-	Total Size: **17.1 MB (17143653 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d85d2a11cb972c35a6d353d84255e6ae877e1cbf8a0c20086061d209c9b137c6`
+-	Image ID: `sha256:3dcf2eb7f626d485bf8236b545d060f94fc60145d1b59950c9e8217b3f0aee50`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Sat, 11 May 2019 08:43:24 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 ADD file:66f49017dd7ba295602526dbf210046e47fd097298c17a3f268a47487b5b6379 in / 
-# Sat, 11 May 2019 08:43:25 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 CMD ["/bin/sh"]
-# Tue, 04 Jun 2019 22:33:35 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 04 Jun 2019 22:33:36 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 ENV NGINX_VERSION=1.17.0
-# Tue, 04 Jun 2019 22:33:36 GMT
+# Wed, 19 Jun 2019 22:32:22 GMT
 ENV NJS_VERSION=0.3.2
-# Tue, 04 Jun 2019 22:33:37 GMT
+# Wed, 19 Jun 2019 22:32:22 GMT
 ENV PKG_RELEASE=1
-# Tue, 04 Jun 2019 22:39:57 GMT
+# Wed, 19 Jun 2019 22:38:17 GMT
 RUN set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-perl=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${PKG_RELEASE}     "     && case "$apkArch" in         x86_64)             set -x             && KEY_SHA512="e7fa8303923d9b95db37a77ad46c68fd4755ff935d0a534d26eba83de193c76166c68bfe7f65471bf8881004ef4aa6df3e34689c305662750c0172fca5d8552a *stdin"             && apk add --no-cache --virtual .cert-deps                 openssl curl ca-certificates             && curl -o /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if [ "$(openssl rsa -pubin -in /tmp/nginx_signing.rsa.pub -text -noout | openssl sha512 -r)" = "$KEY_SHA512" ]; then                  echo "key verification succeeded!";                  mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;                else                  echo "key verification failed!";                  exit 1;                fi             && printf "%s%s%s\n"                 "http://nginx.org/packages/mainline/alpine/v"                 `egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release`                 "/main"             | tee -a /etc/apk/repositories             && apk del .cert-deps             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 perl-dev                 libedit-dev                 mercurial                 bash                 alpine-sdk                 findutils             && su - nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && hg clone https://hg.nginx.org/pkg-oss                 && cd pkg-oss                 && hg up ${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make all                 && apk index -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && echo "${tempDir}/packages/alpine/" >> /etc/apk/repositories             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del .build-deps             ;;     esac     && apk add --no-cache $nginxPackages     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -n "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && if [ -n "/etc/apk/keys/nginx_signing.rsa.pub" ]; then rm -f /etc/apk/keys/nginx_signing.rsa.pub; fi     && sed -i '$ d' /etc/apk/repositories     && apk add --no-cache --virtual .gettext gettext     && mv /usr/bin/envsubst /tmp/         && runDeps="$(         scanelf --needed --nobanner /tmp/envsubst             | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )"     && apk add --no-cache $runDeps     && apk del .gettext     && mv /tmp/envsubst /usr/local/bin/     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log
-# Tue, 04 Jun 2019 22:39:57 GMT
+# Wed, 19 Jun 2019 22:38:17 GMT
 EXPOSE 80
-# Tue, 04 Jun 2019 22:39:58 GMT
+# Wed, 19 Jun 2019 22:38:18 GMT
 STOPSIGNAL SIGTERM
-# Tue, 04 Jun 2019 22:39:58 GMT
+# Wed, 19 Jun 2019 22:38:18 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
@@ -7890,9 +7890,9 @@ CMD ["nginx" "-g" "daemon off;"]
 		Last Modified: Sat, 11 May 2019 08:44:25 GMT  
 		Size: 2.7 MB (2688779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca0023718a21aaff5be135d02b3ef1e8eb3e3fe63176d285fcbe9817c5983dcd`  
-		Last Modified: Tue, 04 Jun 2019 22:58:51 GMT  
-		Size: 14.5 MB (14454932 bytes)  
+	-	`sha256:d0f6085d61ac6187cf3301a1dc60e7851422607b0b0fb32d2b5d7a375803dc45`  
+		Last Modified: Wed, 19 Jun 2019 22:45:41 GMT  
+		Size: 14.5 MB (14454874 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nginx:mainline-alpine-perl` - linux; 386
@@ -9017,7 +9017,7 @@ CMD ["nginx" "-g" "daemon off;"]
 ## `nginx:stable-alpine`
 
 ```console
-$ docker pull nginx@sha256:04f8a19fce675089ee30c3058868e33a5ea113a011835b667062048a6e7109e0
+$ docker pull nginx@sha256:c0cf1ca85346cd6a802380938b6395a4b19b9ca1ad5950fe99760190b9d4eee8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9124,36 +9124,36 @@ CMD ["nginx" "-g" "daemon off;"]
 ### `nginx:stable-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull nginx@sha256:dd16d33f22c20877b404e51b32041f2f6472fc98244ea7b9d12c7cfa6a806d0a
+$ docker pull nginx@sha256:758712cd6f0abe2b5f559a3a3d0ff88b09da69ecf846e6d5b0a3aa88c2fba3a5
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.4 MB (8431667 bytes)**  
+-	Total Size: **8.4 MB (8431752 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d754f2382896d61c1de468f795c7d97e65a24fbb961ae1050405c98dc85e3bcb`
+-	Image ID: `sha256:36b4d2fa2d8beb0edca2efde9fbf7e1de90eff77bae3a4ef78961b84bb51a081`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Sat, 11 May 2019 08:43:24 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 ADD file:66f49017dd7ba295602526dbf210046e47fd097298c17a3f268a47487b5b6379 in / 
-# Sat, 11 May 2019 08:43:25 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 CMD ["/bin/sh"]
-# Tue, 04 Jun 2019 22:33:35 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 04 Jun 2019 22:50:43 GMT
+# Wed, 19 Jun 2019 22:38:30 GMT
 ENV NGINX_VERSION=1.16.0
-# Tue, 04 Jun 2019 22:50:43 GMT
+# Wed, 19 Jun 2019 22:38:30 GMT
 ENV NJS_VERSION=0.3.1
-# Tue, 04 Jun 2019 22:50:44 GMT
+# Wed, 19 Jun 2019 22:38:30 GMT
 ENV PKG_RELEASE=1
-# Tue, 04 Jun 2019 22:53:57 GMT
+# Wed, 19 Jun 2019 22:41:40 GMT
 RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${PKG_RELEASE}     "     && case "$apkArch" in         x86_64)             set -x             && KEY_SHA512="e7fa8303923d9b95db37a77ad46c68fd4755ff935d0a534d26eba83de193c76166c68bfe7f65471bf8881004ef4aa6df3e34689c305662750c0172fca5d8552a *stdin"             && apk add --no-cache --virtual .cert-deps                 openssl curl ca-certificates             && curl -o /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if [ "$(openssl rsa -pubin -in /tmp/nginx_signing.rsa.pub -text -noout | openssl sha512 -r)" = "$KEY_SHA512" ]; then                  echo "key verification succeeded!";                  mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;                else                  echo "key verification failed!";                  exit 1;                fi             && printf "%s%s%s\n"                 "http://nginx.org/packages/alpine/v"                 `egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release`                 "/main"             | tee -a /etc/apk/repositories             && apk del .cert-deps             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 perl-dev                 libedit-dev                 mercurial                 bash                 alpine-sdk                 findutils             && su - nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && hg clone https://hg.nginx.org/pkg-oss                 && cd pkg-oss                 && hg up ${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make all                 && apk index -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && echo "${tempDir}/packages/alpine/" >> /etc/apk/repositories             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del .build-deps             ;;     esac     && apk add --no-cache $nginxPackages     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -n "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && if [ -n "/etc/apk/keys/nginx_signing.rsa.pub" ]; then rm -f /etc/apk/keys/nginx_signing.rsa.pub; fi     && sed -i '$ d' /etc/apk/repositories     && apk add --no-cache --virtual .gettext gettext     && mv /usr/bin/envsubst /tmp/         && runDeps="$(         scanelf --needed --nobanner /tmp/envsubst             | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )"     && apk add --no-cache $runDeps     && apk del .gettext     && mv /tmp/envsubst /usr/local/bin/     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log
-# Tue, 04 Jun 2019 22:53:58 GMT
+# Wed, 19 Jun 2019 22:41:41 GMT
 EXPOSE 80
-# Tue, 04 Jun 2019 22:53:58 GMT
+# Wed, 19 Jun 2019 22:41:41 GMT
 STOPSIGNAL SIGTERM
-# Tue, 04 Jun 2019 22:53:58 GMT
+# Wed, 19 Jun 2019 22:41:42 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
@@ -9162,9 +9162,9 @@ CMD ["nginx" "-g" "daemon off;"]
 		Last Modified: Sat, 11 May 2019 08:44:25 GMT  
 		Size: 2.7 MB (2688779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0b4e09c15f1135cde1a6aa6400fcce23fff449afb9c5bcee0ac58e0325a8790`  
-		Last Modified: Tue, 04 Jun 2019 22:59:31 GMT  
-		Size: 5.7 MB (5742888 bytes)  
+	-	`sha256:9af333ee6136727de78e785c6d6d6aba9ae74a102edb8a343ddb8d635a5755d6`  
+		Last Modified: Wed, 19 Jun 2019 22:45:53 GMT  
+		Size: 5.7 MB (5742973 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nginx:stable-alpine` - linux; 386
@@ -9308,7 +9308,7 @@ CMD ["nginx" "-g" "daemon off;"]
 ## `nginx:stable-alpine-perl`
 
 ```console
-$ docker pull nginx@sha256:f6c28bbd16c489f40875c6448a0ce4265ea445ad4acb69a0a44fc80b0e4ea33e
+$ docker pull nginx@sha256:cfc19cdbb39fd3c3c41cf847929ccaedafe1bb97b3a80ac719e122a63303e6ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9415,36 +9415,36 @@ CMD ["nginx" "-g" "daemon off;"]
 ### `nginx:stable-alpine-perl` - linux; arm64 variant v8
 
 ```console
-$ docker pull nginx@sha256:acc61f1bfd134f3b542b1dfe6e53ba71308d1a8066124c6bacdf55040b1444b2
+$ docker pull nginx@sha256:5ca1533afa6776420c3d2f6d286ba17636e639acc1206bc8b410533d71c08d6f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.1 MB (17121008 bytes)**  
+-	Total Size: **17.1 MB (17121242 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e73f0e1487ff6c27189677d1e51f044618018f5ee99a03ed6f7236c052f2171`
+-	Image ID: `sha256:9f8be87cbb0349ed5b70d7fe23c995bc99f68f7d8c64e1cddce234f3ab83a7c6`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Sat, 11 May 2019 08:43:24 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 ADD file:66f49017dd7ba295602526dbf210046e47fd097298c17a3f268a47487b5b6379 in / 
-# Sat, 11 May 2019 08:43:25 GMT
+# Wed, 19 Jun 2019 20:39:47 GMT
 CMD ["/bin/sh"]
-# Tue, 04 Jun 2019 22:33:35 GMT
+# Wed, 19 Jun 2019 22:32:21 GMT
 LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 04 Jun 2019 22:50:43 GMT
+# Wed, 19 Jun 2019 22:38:30 GMT
 ENV NGINX_VERSION=1.16.0
-# Tue, 04 Jun 2019 22:50:43 GMT
+# Wed, 19 Jun 2019 22:38:30 GMT
 ENV NJS_VERSION=0.3.1
-# Tue, 04 Jun 2019 22:50:44 GMT
+# Wed, 19 Jun 2019 22:38:30 GMT
 ENV PKG_RELEASE=1
-# Tue, 04 Jun 2019 22:57:23 GMT
+# Wed, 19 Jun 2019 22:44:43 GMT
 RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-perl=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${PKG_RELEASE}     "     && case "$apkArch" in         x86_64)             set -x             && KEY_SHA512="e7fa8303923d9b95db37a77ad46c68fd4755ff935d0a534d26eba83de193c76166c68bfe7f65471bf8881004ef4aa6df3e34689c305662750c0172fca5d8552a *stdin"             && apk add --no-cache --virtual .cert-deps                 openssl curl ca-certificates             && curl -o /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if [ "$(openssl rsa -pubin -in /tmp/nginx_signing.rsa.pub -text -noout | openssl sha512 -r)" = "$KEY_SHA512" ]; then                  echo "key verification succeeded!";                  mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;                else                  echo "key verification failed!";                  exit 1;                fi             && printf "%s%s%s\n"                 "http://nginx.org/packages/alpine/v"                 `egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release`                 "/main"             | tee -a /etc/apk/repositories             && apk del .cert-deps             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 perl-dev                 libedit-dev                 mercurial                 bash                 alpine-sdk                 findutils             && su - nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && hg clone https://hg.nginx.org/pkg-oss                 && cd pkg-oss                 && hg up ${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make all                 && apk index -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && echo "${tempDir}/packages/alpine/" >> /etc/apk/repositories             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del .build-deps             ;;     esac     && apk add --no-cache $nginxPackages     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -n "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && if [ -n "/etc/apk/keys/nginx_signing.rsa.pub" ]; then rm -f /etc/apk/keys/nginx_signing.rsa.pub; fi     && sed -i '$ d' /etc/apk/repositories     && apk add --no-cache --virtual .gettext gettext     && mv /usr/bin/envsubst /tmp/         && runDeps="$(         scanelf --needed --nobanner /tmp/envsubst             | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )"     && apk add --no-cache $runDeps     && apk del .gettext     && mv /tmp/envsubst /usr/local/bin/     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log
-# Tue, 04 Jun 2019 22:57:24 GMT
+# Wed, 19 Jun 2019 22:44:44 GMT
 EXPOSE 80
-# Tue, 04 Jun 2019 22:57:24 GMT
+# Wed, 19 Jun 2019 22:44:45 GMT
 STOPSIGNAL SIGTERM
-# Tue, 04 Jun 2019 22:57:25 GMT
+# Wed, 19 Jun 2019 22:44:45 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
@@ -9453,9 +9453,9 @@ CMD ["nginx" "-g" "daemon off;"]
 		Last Modified: Sat, 11 May 2019 08:44:25 GMT  
 		Size: 2.7 MB (2688779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0794e252500c4fe51e7b416deb1667e47aa4e0cf3dc9c9ef910ebafa428483e2`  
-		Last Modified: Tue, 04 Jun 2019 22:59:44 GMT  
-		Size: 14.4 MB (14432229 bytes)  
+	-	`sha256:f2ba613583e0994a200a6c33c711cb00b95a65b9ab6d2794edc5ee08931b66e8`  
+		Last Modified: Wed, 19 Jun 2019 22:46:08 GMT  
+		Size: 14.4 MB (14432463 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nginx:stable-alpine-perl` - linux; 386
