@@ -1,7 +1,7 @@
 ## `eggdrop:develop`
 
 ```console
-$ docker pull eggdrop@sha256:fd9424a9b670e73ea1932b118ce1a5d71bb9c3c37fabe5c9f8e05c6b8ef4738a
+$ docker pull eggdrop@sha256:2d75d7771d67fcbc42d1bd50a15301a780920882df87d060a0568a0afea54eb8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -191,59 +191,59 @@ CMD ["eggdrop.conf"]
 ### `eggdrop:develop` - linux; arm64 variant v8
 
 ```console
-$ docker pull eggdrop@sha256:4a545c3fce1c5c93a4d2ff78ff73de4a0cc8ac3baf53e6082cb58464d4c3565d
+$ docker pull eggdrop@sha256:e4bd39340f36aefbf85d834c9db6cccc18e9f11f4fbbb38ffd5f86baa9f34da3
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.3 MB (13283576 bytes)**  
+-	Total Size: **13.3 MB (13285091 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ff82e29d56ca8e7f69b8fd45bbd6e4a8ba621c7e45ab56c640699003a93074c`
+-	Image ID: `sha256:00e7f146e4c8f50729b6ada38912da92042372d21350d123c957cbd90d6e6be1`
 -	Entrypoint: `["\/home\/eggdrop\/eggdrop\/entrypoint.sh"]`
 -	Default Command: `["eggdrop.conf"]`
 
 ```dockerfile
-# Fri, 08 Mar 2019 03:37:21 GMT
+# Wed, 19 Jun 2019 20:40:05 GMT
 ADD file:593fdff46d6e2edf7fc03d568a8d8d4149ef13f8c2b1af554299a8d0d0e06e2f in / 
-# Fri, 08 Mar 2019 03:37:22 GMT
+# Wed, 19 Jun 2019 20:40:05 GMT
 CMD ["/bin/sh"]
-# Fri, 08 Mar 2019 04:15:32 GMT
+# Wed, 19 Jun 2019 22:28:02 GMT
 MAINTAINER Geo Van O <geo@eggheads.org>
-# Fri, 08 Mar 2019 04:15:34 GMT
+# Wed, 19 Jun 2019 22:28:05 GMT
 RUN adduser -S eggdrop
-# Fri, 08 Mar 2019 04:15:36 GMT
+# Wed, 19 Jun 2019 22:28:07 GMT
 RUN apk add --no-cache 'su-exec>=0.2'
-# Fri, 08 Mar 2019 04:15:37 GMT
+# Wed, 19 Jun 2019 22:28:07 GMT
 ENV EGGDROP_SHA256=18839206eddcc529205328639c064f152316afd240b0ad5df1b53f3ccf623cbf
-# Fri, 08 Mar 2019 04:15:38 GMT
+# Wed, 19 Jun 2019 22:28:08 GMT
 ENV EGGDROP_COMMIT=35808b2bcaaf6a81e43835e4e18ecb4848ded75a
-# Fri, 08 Mar 2019 04:15:43 GMT
+# Wed, 19 Jun 2019 22:28:12 GMT
 RUN apk --update add --no-cache tcl bash openssl
-# Fri, 08 Mar 2019 04:17:52 GMT
+# Wed, 19 Jun 2019 22:29:42 GMT
 RUN apk --update add --no-cache --virtual egg-deps tcl-dev wget ca-certificates make tar gpgme build-base openssl-dev   && wget "https://github.com/eggheads/eggdrop/archive/$EGGDROP_COMMIT.tar.gz" -O develop.tar.gz   && echo "$EGGDROP_SHA256  develop.tar.gz" | sha256sum -c -   && tar -zxvf develop.tar.gz   && rm develop.tar.gz     && ( cd eggdrop-$EGGDROP_COMMIT     && ./configure     && make config     && make     && make install DEST=/home/eggdrop/eggdrop )   && rm -rf eggdrop-$EGGDROP_COMMIT   && mkdir /home/eggdrop/eggdrop/data   && chown -R eggdrop /home/eggdrop/eggdrop   && apk del egg-deps
-# Fri, 08 Mar 2019 04:17:53 GMT
+# Wed, 19 Jun 2019 22:29:42 GMT
 ENV NICK=
-# Fri, 08 Mar 2019 04:17:53 GMT
+# Wed, 19 Jun 2019 22:29:43 GMT
 ENV SERVER=
-# Fri, 08 Mar 2019 04:17:54 GMT
+# Wed, 19 Jun 2019 22:29:43 GMT
 ENV LISTEN=3333
-# Fri, 08 Mar 2019 04:17:55 GMT
+# Wed, 19 Jun 2019 22:29:43 GMT
 ENV OWNER=
-# Fri, 08 Mar 2019 04:17:56 GMT
+# Wed, 19 Jun 2019 22:29:44 GMT
 ENV USERFILE=eggdrop.user
-# Fri, 08 Mar 2019 04:17:56 GMT
+# Wed, 19 Jun 2019 22:29:44 GMT
 ENV CHANFILE=eggdrop.chan
-# Fri, 08 Mar 2019 04:17:57 GMT
+# Wed, 19 Jun 2019 22:29:45 GMT
 WORKDIR /home/eggdrop/eggdrop
-# Fri, 08 Mar 2019 04:17:58 GMT
+# Wed, 19 Jun 2019 22:29:45 GMT
 EXPOSE 3333
-# Fri, 08 Mar 2019 04:17:59 GMT
+# Wed, 19 Jun 2019 22:29:45 GMT
 COPY file:f8d85155d39ecdefdd2ce710ca8c1211edaffb7c3fbbde0877da166dd3aaa579 in /home/eggdrop/eggdrop 
-# Fri, 08 Mar 2019 04:17:59 GMT
+# Wed, 19 Jun 2019 22:29:46 GMT
 COPY file:b76e92fb28997fa3fd71a3b880ff3b73567ca05021b617d51ebdcefd8c31b457 in /home/eggdrop/eggdrop/scripts/ 
-# Fri, 08 Mar 2019 04:18:00 GMT
+# Wed, 19 Jun 2019 22:29:46 GMT
 ENTRYPOINT ["/home/eggdrop/eggdrop/entrypoint.sh"]
-# Fri, 08 Mar 2019 04:18:01 GMT
+# Wed, 19 Jun 2019 22:29:47 GMT
 CMD ["eggdrop.conf"]
 ```
 
@@ -252,27 +252,27 @@ CMD ["eggdrop.conf"]
 		Last Modified: Fri, 08 Mar 2019 03:38:13 GMT  
 		Size: 2.0 MB (1998986 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:119fc442ecf2b49fd9ea267b98086b10b01f91b6ddbf0cebb046d9373d31a56a`  
-		Last Modified: Fri, 08 Mar 2019 04:18:19 GMT  
-		Size: 1.3 KB (1265 bytes)  
+	-	`sha256:24aa7be2a38c6214cf10cef0167a8c76962251ba9327d30047db232624a4495d`  
+		Last Modified: Wed, 19 Jun 2019 22:30:06 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d3a81b846053ac2c11f412f6e8a1931ae6a0a24e8bf4784b082669858934c73`  
-		Last Modified: Fri, 08 Mar 2019 04:18:18 GMT  
-		Size: 9.0 KB (8969 bytes)  
+	-	`sha256:f35ee52ea02e38c9270e325f0258949020a18c19f3b1e576a190b0d189d53464`  
+		Last Modified: Wed, 19 Jun 2019 22:30:05 GMT  
+		Size: 9.0 KB (8972 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35f3c9e5384b33ea07d8f213d76a43d357d06f73076301b481f15d23e2142e13`  
-		Last Modified: Fri, 08 Mar 2019 04:18:20 GMT  
-		Size: 3.9 MB (3913297 bytes)  
+	-	`sha256:b41a5b64be3cd50849ec04ef458f17663c9b1153f941a134000bdfd2eb034b17`  
+		Last Modified: Wed, 19 Jun 2019 22:30:06 GMT  
+		Size: 3.9 MB (3914838 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ede2182b548f07365e21fdffa26764d3b3d13e466a49d76416f7be565591d8c`  
-		Last Modified: Fri, 08 Mar 2019 04:18:21 GMT  
-		Size: 7.4 MB (7358479 bytes)  
+	-	`sha256:c936f042051b2d18e06b190849033860fca31cd7eab2285b5293d5971db776e5`  
+		Last Modified: Wed, 19 Jun 2019 22:30:07 GMT  
+		Size: 7.4 MB (7358427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b831dd07225295a9fdf235e5e1b78d763f00b7e0cbcefb49443f33820101c265`  
-		Last Modified: Fri, 08 Mar 2019 04:18:17 GMT  
-		Size: 1.9 KB (1877 bytes)  
+	-	`sha256:a0ae5fa29a2b8200eb6879845ac3b5a68991dd87f493037c89cbdfd466d2849c`  
+		Last Modified: Wed, 19 Jun 2019 22:30:05 GMT  
+		Size: 1.9 KB (1875 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3659958c66b75cf65a0efb444f896c91948b54dc89f2d892344f4f5715e78e2b`  
-		Last Modified: Fri, 08 Mar 2019 04:18:18 GMT  
-		Size: 703.0 B  
+	-	`sha256:e1137c5cbe3b71cf6fd2fd4ce2d7552f8cb579b3e99fb4a62338dc5aee534429`  
+		Last Modified: Wed, 19 Jun 2019 22:30:05 GMT  
+		Size: 702.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
