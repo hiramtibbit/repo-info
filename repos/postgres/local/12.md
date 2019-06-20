@@ -598,21 +598,13 @@ Licenses: (parsed from: `/usr/share/doc/exim4-base/copyright`, `/usr/share/doc/e
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris exim4=4.92-7
-'http://deb.debian.org/debian/pool/main/e/exim4/exim4_4.92-7.dsc' exim4_4.92-7.dsc 2823 SHA256:fefcf220d57c20dbbc861ee87559bbc994c1a11f187dbc8da18be22dfebc1d81
-'http://deb.debian.org/debian/pool/main/e/exim4/exim4_4.92.orig.tar.xz' exim4_4.92.orig.tar.xz 1767136 SHA256:6ac9e62b484e78951c7c0517d1229ad7619a7eea70ca3b38b8ef430b28ef1d62
-'http://deb.debian.org/debian/pool/main/e/exim4/exim4_4.92.orig.tar.xz.asc' exim4_4.92.orig.tar.xz.asc 488 SHA256:2d0cbdce4ca1d5f8850a5335e2f7dc25c229c260b533220f1e647c746f8ad1d9
-'http://deb.debian.org/debian/pool/main/e/exim4/exim4_4.92-7.debian.tar.xz' exim4_4.92-7.debian.tar.xz 465380 SHA256:b047dfe28b5d2bab130e37b4111742821d7e3b3b37d1c9d4407c39699b9bf445
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/exim4/4.92-7/
 
-- https://sources.debian.net/src/exim4/4.92-7/ (for browsing the source)
-- https://sources.debian.net/src/exim4/4.92-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/exim4/4.92-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.2.6-1`
 
