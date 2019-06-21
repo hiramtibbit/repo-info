@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:75fa656a903842ff4aa83b44de85b22063e3a48289629c80c7bf12e94766e619`
-- Created: `2019-05-08T06:20:03.919925597Z`
-- Virtual Size: ~ 690.18 Mb  
+- Image ID: `sha256:3c385e0e59449556fb4c82dc1fca5eab5abe41e36fa1589eb3dd89ce0ed294bb`
+- Created: `2019-06-19T02:15:48.574934327Z`
+- Virtual Size: ~ 691.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
@@ -631,14 +631,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cryptsetup/2:1.6.6-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.38.0-4+deb8u14`
+### `dpkg` source package: `curl=7.38.0-4+deb8u15`
 
 Binary Packages:
 
-- `curl=7.38.0-4+deb8u14`
-- `libcurl3:amd64=7.38.0-4+deb8u14`
-- `libcurl3-gnutls:amd64=7.38.0-4+deb8u14`
-- `libcurl4-openssl-dev:amd64=7.38.0-4+deb8u14`
+- `curl=7.38.0-4+deb8u15`
+- `libcurl3:amd64=7.38.0-4+deb8u15`
+- `libcurl3-gnutls:amd64=7.38.0-4+deb8u15`
+- `libcurl4-openssl-dev:amd64=7.38.0-4+deb8u15`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -647,13 +647,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u15
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.38.0-4+deb8u15.dsc' curl_7.38.0-4+deb8u15.dsc 2824 SHA256:974ceb515fefc87cb735252d84a406c0b330721ee1f895d935c69828cd1c958f
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.38.0-4+deb8u15.debian.tar.xz' curl_7.38.0-4+deb8u15.debian.tar.xz 57928 SHA256:8fa2d674b499046c23d418c8d0c8e5531f5943a626cedd663c446270399bb8fe
+```
 
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u14/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u15/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u15/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u15/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
@@ -1810,23 +1817,23 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ilmbase/1.0.1-6.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ilmbase/1.0.1-6.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:6.8.9.9-5+deb8u15`
+### `dpkg` source package: `imagemagick=8:6.8.9.9-5+deb8u16`
 
 Binary Packages:
 
-- `imagemagick=8:6.8.9.9-5+deb8u15`
-- `imagemagick-6.q16=8:6.8.9.9-5+deb8u15`
-- `imagemagick-common=8:6.8.9.9-5+deb8u15`
-- `libmagickcore-6-arch-config:amd64=8:6.8.9.9-5+deb8u15`
-- `libmagickcore-6-headers=8:6.8.9.9-5+deb8u15`
-- `libmagickcore-6.q16-2:amd64=8:6.8.9.9-5+deb8u15`
-- `libmagickcore-6.q16-2-extra:amd64=8:6.8.9.9-5+deb8u15`
-- `libmagickcore-6.q16-dev:amd64=8:6.8.9.9-5+deb8u15`
-- `libmagickcore-dev=8:6.8.9.9-5+deb8u15`
-- `libmagickwand-6-headers=8:6.8.9.9-5+deb8u15`
-- `libmagickwand-6.q16-2:amd64=8:6.8.9.9-5+deb8u15`
-- `libmagickwand-6.q16-dev:amd64=8:6.8.9.9-5+deb8u15`
-- `libmagickwand-dev=8:6.8.9.9-5+deb8u15`
+- `imagemagick=8:6.8.9.9-5+deb8u16`
+- `imagemagick-6.q16=8:6.8.9.9-5+deb8u16`
+- `imagemagick-common=8:6.8.9.9-5+deb8u16`
+- `libmagickcore-6-arch-config:amd64=8:6.8.9.9-5+deb8u16`
+- `libmagickcore-6-headers=8:6.8.9.9-5+deb8u16`
+- `libmagickcore-6.q16-2:amd64=8:6.8.9.9-5+deb8u16`
+- `libmagickcore-6.q16-2-extra:amd64=8:6.8.9.9-5+deb8u16`
+- `libmagickcore-6.q16-dev:amd64=8:6.8.9.9-5+deb8u16`
+- `libmagickcore-dev=8:6.8.9.9-5+deb8u16`
+- `libmagickwand-6-headers=8:6.8.9.9-5+deb8u16`
+- `libmagickwand-6.q16-2:amd64=8:6.8.9.9-5+deb8u16`
+- `libmagickwand-6.q16-dev:amd64=8:6.8.9.9-5+deb8u16`
+- `libmagickwand-dev=8:6.8.9.9-5+deb8u16`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-6.q16/copyright`, `/usr/share/doc/imagemagick-common/copyright`, `/usr/share/doc/libmagickcore-6-arch-config/copyright`, `/usr/share/doc/libmagickcore-6-headers/copyright`, `/usr/share/doc/libmagickcore-6.q16-2/copyright`, `/usr/share/doc/libmagickcore-6.q16-2-extra/copyright`, `/usr/share/doc/libmagickcore-6.q16-dev/copyright`, `/usr/share/doc/libmagickcore-dev/copyright`, `/usr/share/doc/libmagickwand-6-headers/copyright`, `/usr/share/doc/libmagickwand-6.q16-2/copyright`, `/usr/share/doc/libmagickwand-6.q16-dev/copyright`, `/usr/share/doc/libmagickwand-dev/copyright`)
 
@@ -1844,13 +1851,20 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris imagemagick=8:6.8.9.9-5+deb8u16
+'http://security.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u16.dsc' imagemagick_6.8.9.9-5+deb8u16.dsc 4379 SHA256:c421b078d063926aaf8138d2d4110ea692264399de44a09f504b040dd6511220
+'http://security.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9.orig.tar.xz' imagemagick_6.8.9.9.orig.tar.xz 7891624 SHA256:a4cccc70179ff2c67550e063cdcb2e62907338ef3e68b45bb1c41931e515b3eb
+'http://security.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u16.debian.tar.xz' imagemagick_6.8.9.9-5+deb8u16.debian.tar.xz 308224 SHA256:897963f96ccf3d9f6a409e84ab64822084fce41535299bc77b42b5a4aa1a499e
+```
 
-- http://snapshot.debian.org/package/imagemagick/8:6.8.9.9-5+deb8u15/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u16/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u16/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:6.8.9.9-5+deb8u16/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.22`
 
@@ -2034,11 +2048,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/jbigkit/2.1-3.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/jbigkit/2.1-3.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `jquery=1.7.2+dfsg-3.2+deb8u6`
+### `dpkg` source package: `jquery=1.7.2+dfsg-3.2+deb8u7`
 
 Binary Packages:
 
-- `libjs-jquery=1.7.2+dfsg-3.2+deb8u6`
+- `libjs-jquery=1.7.2+dfsg-3.2+deb8u7`
 
 Licenses: (parsed from: `/usr/share/doc/libjs-jquery/copyright`)
 
@@ -2047,13 +2061,20 @@ Licenses: (parsed from: `/usr/share/doc/libjs-jquery/copyright`)
 - `MIT`
 - `MIT,`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris jquery=1.7.2+dfsg-3.2+deb8u7
+'http://security.debian.org/debian-security/pool/updates/main/j/jquery/jquery_1.7.2+dfsg-3.2+deb8u7.dsc' jquery_1.7.2+dfsg-3.2+deb8u7.dsc 2028 SHA256:4b7f7e2744f98983b61ba710869672c2301f04fd86e61618732f2deffe699738
+'http://security.debian.org/debian-security/pool/updates/main/j/jquery/jquery_1.7.2+dfsg.orig.tar.gz' jquery_1.7.2+dfsg.orig.tar.gz 147053 SHA256:43384d8c975c723a3b7d6f46e7ff1518d161760e0781a37675eeda1a05a503fe
+'http://security.debian.org/debian-security/pool/updates/main/j/jquery/jquery_1.7.2+dfsg-3.2+deb8u7.debian.tar.xz' jquery_1.7.2+dfsg-3.2+deb8u7.debian.tar.xz 6520 SHA256:0893dc1605fd0d82c3a4fedbe8c944c97bd0eca93a4dfc516cc62171cf30a1dd
+```
 
-- http://snapshot.debian.org/package/jquery/1.7.2+dfsg-3.2+deb8u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/jquery/1.7.2+dfsg-3.2+deb8u7/ (for browsing the source)
+- https://sources.debian.net/src/jquery/1.7.2+dfsg-3.2+deb8u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/jquery/1.7.2+dfsg-3.2+deb8u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `keyutils=1.5.9-5`
 
@@ -3540,11 +3561,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libyaml/0.1.6-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libyaml/0.1.6-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=3.16.64-2`
+### `dpkg` source package: `linux=3.16.68-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.16.64-2`
+- `linux-libc-dev:amd64=3.16.68-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3552,20 +3573,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=3.16.64-2
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.64-2.dsc' linux_3.16.64-2.dsc 140642 SHA256:2822d2dd6b3b622de2219a57cf81df3d1bbdbe8fd1e02b6e18ac58182ea5f259
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.64.orig.tar.xz' linux_3.16.64.orig.tar.xz 82030984 SHA256:9b790f2a34a33be968c76dfb1c71c4a5dbede590b5d5e8b18d2a2a8c1b95a036
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.64-2.debian.tar.xz' linux_3.16.64-2.debian.tar.xz 1835672 SHA256:6d461ec26396397cc1fe9328d6e46675e7434943c61d0d916bc94b93ce440442
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/3.16.68-1/
 
-- https://sources.debian.net/src/linux/3.16.64-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/3.16.64-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/3.16.64-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 
@@ -4292,25 +4306,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pkg-config/0.28-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pkg-config/0.28-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-9.4=9.4.21-0+deb8u1`
+### `dpkg` source package: `postgresql-9.4=9.4.22-0+deb8u1`
 
 Binary Packages:
 
-- `libpq-dev=9.4.21-0+deb8u1`
-- `libpq5:amd64=9.4.21-0+deb8u1`
+- `libpq-dev=9.4.22-0+deb8u1`
+- `libpq5:amd64=9.4.22-0+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
 - `Tcl`
 - `almost exclusively BSD`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris postgresql-9.4=9.4.22-0+deb8u1
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.22-0+deb8u1.dsc' postgresql-9.4_9.4.22-0+deb8u1.dsc 3546 SHA256:4001a60a125fedd5d81daeac19557bb09fe62ce3c527d0c59729147397022328
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.22.orig.tar.bz2' postgresql-9.4_9.4.22.orig.tar.bz2 16848787 SHA256:d6aa4c2b9204e375545b9845b0e5957b34affff1783863a80a194f2b2833c66b
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.22-0+deb8u1.debian.tar.xz' postgresql-9.4_9.4.22-0+deb8u1.debian.tar.xz 29196 SHA256:e7c3cf279fd0fec0e2830a196cfaf96cf75f35f1946734921de6b1acccfbe67d
+```
 
-- http://snapshot.debian.org/package/postgresql-9.4/9.4.21-0+deb8u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/postgresql-9.4/9.4.22-0+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-9.4/9.4.22-0+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-9.4/9.4.22-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.9-9+deb8u1`
 
