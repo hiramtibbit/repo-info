@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5f6bce0c580602526ee873a892b3f5824e1307686ba5c98d25ed8858c55f614e`
-- Created: `2019-06-18T01:35:30.935339906Z`
-- Virtual Size: ~ 73.13 Mb  
+- Image ID: `sha256:7856fff2a391aba18bf785bb96f00c1fd6910db2f409562ac8662f3b6a382a84`
+- Created: `2019-06-18T22:23:36.966378283Z`
+- Virtual Size: ~ 73.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -1062,6 +1062,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pam/1.1.8-3.6/ (for browsing the source)
 - https://sources.debian.net/src/pam/1.1.8-3.6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pam/1.1.8-3.6/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `pcre2=10.22-3`
+
+Binary Packages:
+
+- `libpcre2-8-0:amd64=10.22-3`
+- `libpcre2-posix0:amd64=10.22-3`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris pcre2=10.22-3
+'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.22-3.dsc' pcre2_10.22-3.dsc 2041 SHA256:c4458656524614e1bbe2992c5452c04eb971c22a2b27e64d64e1034ddcc2562b
+'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.22.orig.tar.gz' pcre2_10.22.orig.tar.gz 1985688 SHA256:e44d8a6f31bb33cce01ed43743f464290f1d96f60b5fd838786e632d3624a7bd
+'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.22-3.diff.gz' pcre2_10.22-3.diff.gz 4857 SHA256:d48a0afdd9e84aad0fcf2dc0d5e4a66fb2872cce565519371c4882235aad76de
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/pcre2/10.22-3/ (for browsing the source)
+- https://sources.debian.net/src/pcre2/10.22-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pcre2/10.22-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre3=2:8.39-3`
 

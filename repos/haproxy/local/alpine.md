@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f98ac6039f71e8995527b554d5d4e5b724bbcdad72f8061cf4e9637c9ee2645d`
-- Created: `2019-06-18T01:37:46.284177799Z`
-- Virtual Size: ~ 22.15 Mb  
+- Image ID: `sha256:10f93e31817be7545169a2abe652a549afa19cef41a1c110a245b5840b9a6197`
+- Created: `2019-06-18T22:25:35.638410279Z`
+- Virtual Size: ~ 22.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -221,19 +221,19 @@ MIT BSD GPL2+
 
 ```
 
-### `apk` package: `pcre`
+### `apk` package: `pcre2`
 
 ```console
-pcre-8.42-r1 description:
+pcre2-10.32-r1 description:
 Perl-compatible regular expression library
 
-pcre-8.42-r1 webpage:
-http://pcre.sourceforge.net
+pcre2-10.32-r1 webpage:
+http://pcre.sourceforge.net/
 
-pcre-8.42-r1 installed size:
-405504
+pcre2-10.32-r1 installed size:
+614400
 
-pcre-8.42-r1 license:
+pcre2-10.32-r1 license:
 BSD-3-Clause
 
 ```
