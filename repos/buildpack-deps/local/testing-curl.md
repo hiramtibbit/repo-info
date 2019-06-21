@@ -1018,20 +1018,13 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.17-2
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.17-2.dsc' krb5_1.17-2.dsc 3302 SHA256:73e4cd5e11f34716606dbb576c8e7ef7c4a11d890845effb9c28101b19833d4d
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA256:5a6e2284a53de5702d3dc2be3b9339c963f9b5397d3fbbc53beb249380a781f5
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.17-2.debian.tar.xz' krb5_1.17-2.debian.tar.xz 97812 SHA256:1b62fbebb304a3e3415ea7fcf91bb8827379939ce74ce6879f78536cec2ce752
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.17-2/
 
-- https://sources.debian.net/src/krb5/1.17-2/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.17-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.17-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libassuan=2.5.2-1`
 

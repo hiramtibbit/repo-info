@@ -2022,20 +2022,13 @@ Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/do
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.17-2
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.17-2.dsc' krb5_1.17-2.dsc 3302 SHA256:73e4cd5e11f34716606dbb576c8e7ef7c4a11d890845effb9c28101b19833d4d
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA256:5a6e2284a53de5702d3dc2be3b9339c963f9b5397d3fbbc53beb249380a781f5
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.17-2.debian.tar.xz' krb5_1.17-2.debian.tar.xz 97812 SHA256:1b62fbebb304a3e3415ea7fcf91bb8827379939ce74ce6879f78536cec2ce752
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.17-2/
 
-- https://sources.debian.net/src/krb5/1.17-2/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.17-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.17-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lcms2=2.9-3`
 
@@ -4509,20 +4502,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-11=11.3-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-11/postgresql-11_11.3-1.dsc' postgresql-11_11.3-1.dsc 3706 SHA256:c3b077eff6d49532bfc0294d323b3618566fa7aaf718cbda5cdd64611de04d48
-'http://deb.debian.org/debian/pool/main/p/postgresql-11/postgresql-11_11.3.orig.tar.bz2' postgresql-11_11.3.orig.tar.bz2 19718775 SHA256:2a85e082fc225944821dfd23990e32dfcd2284c19060864b0ad4ca537d30522d
-'http://deb.debian.org/debian/pool/main/p/postgresql-11/postgresql-11_11.3-1.debian.tar.xz' postgresql-11_11.3-1.debian.tar.xz 23928 SHA256:db88c01d8ed7718f659b7a3483dd1987268161a2c4773658c99afd8f39cc98af
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-11/11.3-1/
 
-- https://sources.debian.net/src/postgresql-11/11.3-1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-11/11.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-11/11.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.15-2`
 
