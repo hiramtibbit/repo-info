@@ -1,10 +1,10 @@
-# `lightstreamer:6.0.3`
+# `lightstreamer:7.0.3-jdk8-openjdk`
 
 ## Docker Metadata
 
-- Image ID: `sha256:27152c96765f9d8eeecdfad96b85cab97b1a018dd2875bb96b57cf1a8f0b519c`
-- Created: `2019-06-20T20:20:00.811604162Z`
-- Virtual Size: ~ 573.15 Mb  
+- Image ID: `sha256:d5faf97e5bc0b0c0b1a2b3b4aa1908ad9fa5e31725b6d6728d444e21988cdcbb`
+- Created: `2019-06-20T20:20:26.53158574Z`
+- Virtual Size: ~ 554.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["./LS.sh","run"]`
@@ -15,9 +15,10 @@
   - `JAVA_VERSION=8u212-b04`
   - `JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u212-b04/OpenJDK8U-`
   - `JAVA_URL_VERSION=8u212b04`
-  - `LIGHSTREAMER_EDITION=Allegro-Presto-Vivace`
-  - `LIGHSTREAMER_VERSION=6_0_3_20160905`
-  - `LIGHSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_Allegro-Presto-Vivace_6_0_3_20160905.tar.gz`
+  - `LIGHTSTREAMER_VERSION=7_0_3_20190107`
+  - `LIGHTSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_7_0_3_20190107.tar.gz`
+- Labels:
+  - `maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>`
 
 ## `dpkg` (`.deb`-based packages)
 
