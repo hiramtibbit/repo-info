@@ -1,4 +1,4 @@
-# `joomla:3.9.8-fpm-alpine`
+# `joomla:3.9.8-php7.1-fpm-alpine`
 
 ## Docker Metadata
 

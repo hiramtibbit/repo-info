@@ -1,10 +1,10 @@
-# `joomla:3.9.8-php7.2-fpm-alpine`
+# `joomla:3.9.8-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4d1df35adf5fa80fb26b631e7ab48df5c7aeec611ee169600457a26816922f13`
-- Created: `2019-06-18T02:21:00.667583716Z`
-- Virtual Size: ~ 132.17 Mb  
+- Image ID: `sha256:54ab237b15a191b82be740551036d085a0191943cf679a2a91241aaa8aea260c`
+- Created: `2019-06-18T02:08:44.8113719Z`
+- Virtual Size: ~ 123.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,11 +17,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
-  - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.19`
-  - `PHP_URL=https://www.php.net/get/php-7.2.19.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://www.php.net/get/php-7.2.19.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=4ffa2404a88d60e993a9fe69f829ebec3eb1e006de41b6048ce5e91bbeaa9282`
+  - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 1729F83938DA44E27BA0F4D3DBDB397470D12172`
+  - `PHP_VERSION=7.1.30`
+  - `PHP_URL=https://www.php.net/get/php-7.1.30.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://www.php.net/get/php-7.1.30.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=6310599811536dbe87e4bcf212bf93196bdfaff519d0c821e4c0068efd096a7c`
   - `PHP_MD5=`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
   - `JOOMLA_VERSION=3.9.8`
@@ -79,23 +79,6 @@ apk-tools-2.10.3-r1 installed size:
 
 apk-tools-2.10.3-r1 license:
 GPL2
-
-```
-
-### `apk` package: `argon2-libs`
-
-```console
-argon2-libs-20171227-r1 description:
-The password hash Argon2, winner of PHC (libraries)
-
-argon2-libs-20171227-r1 webpage:
-https://github.com/P-H-C/phc-winner-argon2
-
-argon2-libs-20171227-r1 installed size:
-49152
-
-argon2-libs-20171227-r1 license:
-Apache-2.0 CC0-1.0
 
 ```
 
@@ -337,6 +320,23 @@ custom
 
 ```
 
+### `apk` package: `libmcrypt`
+
+```console
+libmcrypt-2.5.8-r7 description:
+A library which provides a uniform interface to several symmetric encryption algorithms
+
+libmcrypt-2.5.8-r7 webpage:
+http://mcrypt.sourceforge.net/
+
+libmcrypt-2.5.8-r7 installed size:
+180224
+
+libmcrypt-2.5.8-r7 license:
+GPL
+
+```
+
 ### `apk` package: `libmemcached-libs`
 
 ```console
@@ -402,23 +402,6 @@ libsasl-2.1.27-r1 installed size:
 
 libsasl-2.1.27-r1 license:
 custom
-
-```
-
-### `apk` package: `libsodium`
-
-```console
-libsodium-1.0.16-r0 description:
-P(ortable|ackageable) NaCl-based crypto library
-
-libsodium-1.0.16-r0 webpage:
-https://github.com/jedisct1/libsodium
-
-libsodium-1.0.16-r0 installed size:
-327680
-
-libsodium-1.0.16-r0 license:
-ISC
 
 ```
 
